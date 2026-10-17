@@ -1,7 +1,7 @@
 /* WorldPulse — static GitHub Pages viewer. The scheduled workflow owns data updates. */
 'use strict';
-const COLORS={politics:'#eeb67e',environment:'#6edcb3',hazards:'#ef797d',society:'#ae94f3',economy:'#72baf1',science:'#e4d475',conflict:'#ff5878',social:'#eb8eeb'};
-const LABELS={politics:'Politics',environment:'Environment',hazards:'Hazards',society:'Society',economy:'Economy',science:'Science',conflict:'War & conflict'};
+const COLORS={politics:'#eeb67e',environment:'#6edcb3',hazards:'#ef797d',society:'#ae94f3',health:'#d3a1ff',education:'#a8a3ff',rights:'#ef9bd0',community:'#bb95dd',economy:'#72baf1',science:'#e4d475',conflict:'#ff5878',social:'#eb8eeb'};
+const LABELS={politics:'Politics',environment:'Environment',hazards:'Hazards',health:'Health',education:'Education',rights:'Rights & justice',community:'Community & culture',society:'Society (legacy)',economy:'Economy',science:'Science',conflict:'War & conflict'};
 const $=id=>document.getElementById(id);
 const state={news:[],posts:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null};
 let globe, currentPoints=[], lastTier=-1, translationCache=new Map();
@@ -32,7 +32,7 @@ function initGlobe(){
 function tier(){if(!globe)return 0;let alt=globe.pointOfView().altitude;return alt>1.4?0:alt>.72?1:alt>.30?2:3}
 function aggregate(items){if(!state.cluster||tier()===3)return items.map(p=>({...p,members:[p]}));
  let size=[19,9,4.5,1.5][tier()];let groups=new Map();
- for(let p of items){let x=Math.floor((p.lng+180)/size),y=Math.floor((p.lat+90)/size);let key=`${x}_${y}`;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(p)}
+ for(let p of items){let x=Math.floor((p.lng+180)/size),y=Math.floor((p.lat+90)/size);let key=`${p.category}_${x}_${y}`;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(p)}
  return [...groups.values()].map(members=>{
   if(members.length===1)return {...members[0],members};
   const count=members.reduce((n,p)=>n+p.count,0);
@@ -67,7 +67,7 @@ async function maybeTranslate(node,original){if(!state.translate)return;let key=
  try{let translated=await t.translate(original);if(translated){translationCache.set(key,translated);if(node.isConnected&&state.translate)node.textContent=translated}}catch{}
 }
 function paintDrawer(){const p=state.selected;if(!p)return; $('drawer').hidden=false;$('drawer-title').textContent=p.name;
- let members=p.members||[p];const total=members.reduce((n,x)=>n+x.count,0);let rising=members.filter(x=>x.velocity==='rising').length;let countries=members.some(x=>x.accuracy==='country');$('drawer-meta').textContent=`${total.toLocaleString()} ${state.layer==='news'?'deduplicated sampled articles':'posts'} · ${members.length} signals${rising?' · ↑ '+rising+' rising':''}${countries?' · Country pins are approximate':''}${p.distance!=null?' · nearest signal '+p.distance+' km away':''}`;
+ let members=p.members||[p];const total=members.reduce((n,x)=>n+x.count,0);let rising=members.filter(x=>x.velocity==='rising').length;let countries=members.some(x=>x.accuracy==='country');$('drawer-meta').textContent=`${total.toLocaleString()} ${state.layer==='news'?'deduplicated sampled articles':'posts'} · ${members.length} signals${rising?' · ↑ '+rising+' rising':''}${countries?' · Country pins are approximate':''}${members.some(x=>x.location_basis==='description')?' · Some locations from descriptions':''}${p.distance!=null?' · nearest signal '+p.distance+' km away':''}`;
  let area=$('drawer-stories');area.replaceChildren();
  const stories=new Map();for(let m of [...members].sort((a,b)=>b.count-a.count))for(let a of (m.articles||[])){if(a.url&&/^https?:\/\//.test(a.url)&&!stories.has(a.url))stories.set(a.url,{...a,category:m.category,place:m.name})}
  if(!stories.size){area.append(el('p',state.layer==='news'?'No article links available for this location in the current snapshot. Zoom out or select another signal.':'No location-verified social posts are available here.'));return}
@@ -101,9 +101,28 @@ function bind(){
  $('searchForm').onsubmit=e=>{e.preventDefault();let v=$('placeSearch').value.match(/^\s*(-?\d+(?:\.\d+)?)\s*[,; ]\s*(-?\d+(?:\.\d+)?)\s*$/);if(!v){$('placeSearch').setCustomValidity('Enter latitude,longitude, such as 35.68,139.69');$('placeSearch').reportValidity();return}let lat=+v[1],lng=+v[2];if(Math.abs(lat)>90||Math.abs(lng)>180){$('placeSearch').setCustomValidity('Coordinates out of range');$('placeSearch').reportValidity();return}$('placeSearch').setCustomValidity('');if(globe)globe.pointOfView({lat,lng,altitude:.75},1000);pickPlace({lat,lng})};
  $('placeSearch').oninput=()=>$('placeSearch').setCustomValidity('');
  $('aboutBtn').onclick=$('methodBtn').onclick=()=>$('about').hidden=false;
+ $('healthBtn').onclick=()=>{ $('healthModal').hidden=false; showHealth(); };
+ $('healthClose').onclick=()=>$('healthModal').hidden=true;
  $('aboutClose').onclick=()=>$('about').hidden=true;
  $('about').onclick=e=>{if(e.target===$('about'))$('about').hidden=true};
- document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('about').hidden=true;$('drawer').hidden=true}});
+ $('healthModal').onclick=e=>{if(e.target===$('healthModal'))$('healthModal').hidden=true};
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('about').hidden=true;$('healthModal').hidden=true;$('drawer').hidden=true}});
  function clock(){$('clock').textContent=new Intl.DateTimeFormat('en-GB',{timeZone:'UTC',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date())+' UTC'}clock();setInterval(clock,30000);
 }
 bind();initGlobe();loadData();setInterval(loadData,15*60*1000);
+
+async function showHealth(){
+ const host=$('healthContent');host.replaceChildren();
+ try{
+  const r=await fetch('data/data-health.json?t='+Date.now(),{cache:'no-store'});
+  if(!r.ok)throw Error('HTTP '+r.status);
+  const d=await r.json();
+  if(!d.updated_at){host.textContent='Waiting for the first v1.4A.1 collector run.';return}
+  const add=(k,v)=>{let row=el('p');let strong=el('strong',k+': ');row.append(strong,document.createTextNode(String(v)));host.append(row)};
+  add('Latest update',d.updated_at);add('Successful feeds',`${d.feeds_ok} / ${d.feeds_total}`);add('Unmapped feed entries',d.unmapped_sample_count);add('Duplicates removed',d.duplicates_removed);
+  add('Mapped category counts',Object.entries(d.mapped_articles_by_category||{}).map(([k,v])=>`${LABELS[k]||k} ${v}`).join(' · ')||'None');
+  add('Place precision',Object.entries(d.mapped_articles_by_location_precision||{}).map(([k,v])=>`${k} ${v}`).join(' · ')||'None');
+  add('Location evidence',Object.entries(d.location_evidence_counts||{}).map(([k,v])=>`${k} ${v}`).join(' · ')||'None');
+  add('Failed feeds',(d.feeds_failed||[]).join(' · ')||'None');
+ }catch(e){host.textContent='Could not load data-health.json: '+e.message}
+}
