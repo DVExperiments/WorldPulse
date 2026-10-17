@@ -499,7 +499,7 @@ function applyVisualMode(){
 function signalRadius(p){
  if(state.visualMode!=='neon')return p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11);
  const size=Math.min(1.55,.27+Math.sqrt(Math.max(1,p.count))*.17);
- return p.wpHalo ? Math.min(2.8,size*1.8) : size;
+ return p.wpHalo ? Math.min(2.8,size*1.8) : size*(1+0.15*(p.wpShimmer||0));
 }
 function signalAltitude(p){
  if(state.visualMode!=='neon')return Math.min(.08,.011+Math.log1p(p.count)*.008);
@@ -514,6 +514,7 @@ function signalColor(p){
   const activity=Math.min(1,Math.log1p(p.count)/Math.log(25));
   return `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${(.085+.11*activity).toFixed(3)})`;
  }
+ if(state.twinkle&&typeof p.wpShimmer==='number')return blendTowardWhite(base,.08+.60*p.wpShimmer);
  return neonPointColor(p);
 }
 function hexRgb(hex){return [1,3,5].map(i=>parseInt(hex.slice(i,i+2),16))}
@@ -544,18 +545,15 @@ function blendTowardWhite(hex,mix){
 function refreshSignalGlow(){
  if(!globe)return;
  const active=state.visualMode==='neon'&&state.twinkle;
+ // Globe.gl builds WebGL geometry from pointsData. Merely replacing the accessor
+ // callbacks does NOT consistently repaint existing points. Publish fresh point
+ // objects with a time-varying shimmer value to trigger the geometry update.
  const now=Date.now();
- globe.pointColor(p=>{
-  if(!active||p.wpHalo)return signalColor(p);
-  const base=COLORS[p.category]||COLORS.social;
-  const glow=shimmerAmount(p,now);
-  return blendTowardWhite(base,.07+glow*.40);
- });
- globe.pointRadius(p=>{
-  const r=signalRadius(p);
-  if(!active||p.wpHalo)return r;
-  return r*(1+.07*shimmerAmount(p,now));
- });
+ const visible=signalDisplayPoints(currentPoints).map(p=>({
+  ...p,
+  wpShimmer:(!active||p.wpHalo)?0:shimmerAmount(p,now)
+ }));
+ globe.pointsData(visible);
 }
 
 function initVisualControls(){
@@ -569,5 +567,5 @@ function initVisualControls(){
  document.querySelectorAll('[data-visual]').forEach(b=>b.classList.toggle('active',b.dataset.visual===state.visualMode));
  // Smooth enough to be perceptible, slow enough to stay inexpensive on laptops.
  // Avoid requesting WebGL updates when the document is hidden.
- setInterval(()=>{if(!document.hidden)refreshSignalGlow()},220);
+ setInterval(()=>{if(!document.hidden&&state.twinkle&&state.visualMode==='neon'&&currentPoints.length)refreshSignalGlow()},280);
 }
