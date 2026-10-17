@@ -1,100 +1,101 @@
 {
  "schema": 1,
- "updated_at": "2026-10-17T17:44:08.397237+00:00",
+ "updated_at": "2026-10-17T17:52:07.113253+00:00",
  "feeds_total": 119,
- "feeds_ok": 115,
+ "feeds_ok": 114,
  "feeds_failed": [
   "direct/DW World",
   "direct/CBC World",
   "direct/ReliefWeb Updates",
+  "direct/UN News",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 124
+   "mapped_pre_dedupe": 120
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 98
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 127
+   "mapped_pre_dedupe": 124
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 100
+   "mapped_pre_dedupe": 99
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 122
+   "mapped_pre_dedupe": 123
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 100
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 124
+   "mapped_pre_dedupe": 126
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 102
   }
  },
  "mapped_articles_by_category": {
   "community": 106,
-  "education": 42,
-  "society": 37,
+  "education": 41,
   "hazards": 18,
-  "economy": 43,
+  "society": 37,
   "politics": 37,
-  "health": 52,
-  "conflict": 27,
+  "economy": 45,
+  "health": 49,
+  "conflict": 26,
   "rights": 6,
-  "science": 11,
+  "science": 13,
   "environment": 8
  },
  "mapped_articles_by_location_precision": {
-  "country": 238,
+  "country": 237,
   "place": 136,
   "region": 13
  },
  "location_evidence_counts": {
-  "headline": 325,
-  "description": 62
+  "headline": 321,
+  "description": 65
  },
  "geographic_quadrants": {
-  "NE": 250,
-  "NW": 94,
-  "SE": 35,
+  "NE": 247,
+  "NW": 95,
+  "SE": 36,
   "SW": 8
  },
- "geo_signal_count": 212,
- "mapped_total": 387,
+ "geo_signal_count": 214,
+ "mapped_total": 386,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1096,
- "unmapped_distinct_titles": 378,
+ "unmapped_sample_count": 1098,
+ "unmapped_distinct_titles": 385,
  "unmapped_by_feed": {
-  "Google News US": 169,
-  "Google News IN": 164,
+  "Google News US": 175,
+  "Google News ZA": 164,
+  "Google News IN": 162,
   "Google News PH": 162,
-  "Google News ZA": 159,
-  "Google News CA": 99,
-  "Google News NG": 85,
-  "Google News AU": 84,
-  "Google News GB": 81,
-  "RNZ National": 14,
-  "France24 ES": 14,
+  "Google News CA": 96,
+  "Google News AU": 83,
+  "Google News NG": 83,
+  "Google News GB": 79,
+  "RNZ National": 15,
+  "France24 ES": 15,
   "France24 FR": 11,
   "BBC Brasil": 10,
   "ABC Australia": 9,
@@ -114,12 +115,12 @@
    "description_excerpt": " Gujarat strengthens healthcare infrastructure with two new 1,500-bed hospital plans, focus on cleanliness, medicine quality    Devdiscourse "
   },
   {
-   "title": "Pope Leo to leave hospital on Saturday, four days after lung cancer surgery",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTWcteFlXcVU4d21pdUxLckM0THJ0NExZaUZUck9jbmUyS2FfaTZhSnJzQnJid0p1eC1PUEdQLVV1c1h0OExHc2NkUTlSdHFpVjJmUDM2QzJnWlFhRlplRFZQUWNyNVA0bjZSRjIyS0dpMHdnS043aFdfNnp6VXZHNThMbno2dzhWY0ZlcUtTTWdPNzJkQU5OdG9HckMzOG5ZLUJKVGx0TXQ2WFF5bVlueUNsTFY1Sk5keVloRg?oc=5",
-   "publisher": "KSL News",
-   "feed_occurrences": 8,
-   "feed_count": 4,
-   "description_excerpt": " Pope Leo to leave hospital on Saturday, four days after lung cancer surgery    KSL News "
+   "title": "Pope Leo returns to Vatican four days after lung cancer surgery",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNc2JudEtUMUltWllFNEJnYTA3T0ZHYlJndFNqeTBKOVk3YmJpWFpSZUdpazNYZl9WMVVxRk5WZUpTWVNma19KWGlzTFlMMHRjV1dJS1k3dWlYWmJ2UF9hSDRlYUVtbk9Sb0J4MmhuZTdiVTM0MF85dGxiY1NjdGNtTENR?oc=5",
+   "publisher": "WTAQ",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Pope Leo returns to Vatican four days after lung cancer surgery    WTAQ "
   },
   {
    "title": "‘Is this too little, too late?’: Cornell students on school’s response to gang-rape allegations",
@@ -130,20 +131,28 @@
    "description_excerpt": " ‘Is this too little, too late?’: Cornell students on school’s response to gang-rape allegations    The Guardian "
   },
   {
+   "title": "Pope Leo to leave hospital on Saturday, four days after lung cancer surgery",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTWcteFlXcVU4d21pdUxLckM0THJ0NExZaUZUck9jbmUyS2FfaTZhSnJzQnJid0p1eC1PUEdQLVV1c1h0OExHc2NkUTlSdHFpVjJmUDM2QzJnWlFhRlplRFZQUWNyNVA0bjZSRjIyS0dpMHdnS043aFdfNnp6VXZHNThMbno2dzhWY0ZlcUtTTWdPNzJkQU5OdG9HckMzOG5ZLUJKVGx0TXQ2WFF5bVlueUNsTFY1Sk5keVloRg?oc=5",
+   "publisher": "KSL News",
+   "feed_occurrences": 7,
+   "feed_count": 4,
+   "description_excerpt": " Pope Leo to leave hospital on Saturday, four days after lung cancer surgery    KSL News "
+  },
+  {
+   "title": "University of Hawai’i system expands direct admissions to all 10 campuses",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTURrazg3LXg3ZXR6bXpEYlV3OEkta2tGb0dwYWl4eWV5YkNVUHdLcEY2WHZQUDlKemhiRzNQNWlxaDhHOVhBcGlJNURyV0hRVzFrYmpPc3JuWU8zbEQ3TVUwU0FyTUV3bUlkLVgxeko3bC02Q0d1RGwybGtKVU1pOE0tdG50c2ZTT01JTy1kVmhXeGFPelc2SFpQZ2RHS1RzMUNSVXoxSThyRlIzRTAzbEl1cy0?oc=5",
+   "publisher": "Higher Ed Dive",
+   "feed_occurrences": 5,
+   "feed_count": 4,
+   "description_excerpt": " University of Hawai’i system expands direct admissions to all 10 campuses    Higher Ed Dive "
+  },
+  {
    "title": "A socialist perspective to fight against war and austerity! Support the Socialist Equality Party in the Victorian election!",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1EUE9oTWtTeDg3Q0NYUFJ3LVhXeDhZSUJadWJJMkgtX2ZMU1VjYk1fSUF1NVVmY0hacDc2dzVfazJETDU2TlN0Z1ZFTlJMNXlEVjdubnNNcVdpZFJrcTRVZGpBX3ZkODJ6?oc=5",
    "publisher": "World Socialist Web Site",
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " A socialist perspective to fight against war and austerity! Support the Socialist Equality Party in the Victorian election!    World Socialist Web Site "
-  },
-  {
-   "title": "Top News, Latest headlines, Latest News, World News & U.S News",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85dU9QMXpSaklLTmJnMlB3TWJ2OVRvM1NmUWZ5UFV6X1B0b28xc3ZpLWRTUkNFaTV1cV9rZkJueWJfMFZlcmFoQkg0OFBEdUJxOWJSeGZDZEJSNEJoOEVad0tGbjBaenhzWTF0d0dZV2FiX05sMVpEZG5QZFdZZw?oc=5",
-   "publisher": "upi.com",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Top News, Latest headlines, Latest News, World News & U.S News    upi.com "
   },
   {
    "title": "Liberal Democrat Voice",
@@ -160,14 +169,6 @@
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " If the economic narrative doesn't improve, things could get ugly for Labor    ABC News & Headlines – Australian Broadcasting Corporation "
-  },
-  {
-   "title": "The Hungarian parliament voted to remove the president from office",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSElHZzZ4MEJ0UjVSYmFoYnhzR3lIaVZTekxFeVJhUy0xa2J6UWNVc3hYN0xOT05ud3lhc1VGRlgzbjYxYm43VHAxZlR0djdoUDBzUmJWek8ySm9GTWlmWEI5MmJSTjNqWTRVS2RfVlgtVEpNdUpMaER3RmkwWEhWSjR4VkFQYWFnQTN2dEF5dmdtU0lGbENZTHoySVVHdTZzT3VIeUNPYXdkYUpoRFVac0pjVQ?oc=5",
-   "publisher": "Turkmenportal.com",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " The Hungarian parliament voted to remove the president from office    Turkmenportal.com "
   },
   {
    "title": "A year after July Charter signing, key reforms in limbo",
@@ -226,12 +227,12 @@
    "description_excerpt": " Nicușor Dan hopes that the Government proposed by Luca Niculescu will be approved by Parliament: “I am glad that there are agreements between the prime ministe"
   },
   {
-   "title": "Greek Under-15s Face Losing Instagram as Parliament Weighs Ban",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YVm9CeXBwRlNKaUJTSGh6Tm11RVRZb25BY1M2TmVaVHpxWEl2R1hXWklNbk1wQzN6clNKS3BHT3ppYWVIMjhBVUlyZ2g3aUxuMm96LTJRSTRBbTZQc2FYMW5zTlhOb0Y4ejRacGJ1SVJFaHFWaXc?oc=5",
-   "publisher": "Greek City Times",
+   "title": "War of words erupts between BJP and P Chidambaram over 'regime change'; BJP says 'exposes your anarchy'",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPZWN4V2FKN0JSSWpFMXRqbklPa3FJNzNzbTBSblc1Z1FpVlp5a0xUUmxWREo5MHBnZFQ1UkNOMy1oZkRycGUyNjhlaVg5M1FSazZzT3ZBaXo1VGFXX2ctcE5Yei1WVzJETmVPOUNLS3pLVDdWbE1JY25FUndoSGpmbENrODlldlczS09DRExlRTA5c05VLVNidW50MmZjUG04N01ja25nOVJFeDVkUEZhdDR5TkVEd3pjbTJaaGU3NVhJMHNLczB2NDctcHQ3cGlBdHp5NFNxUW5qcko5YVlHc2dGWGZjTW9zTWpfM0tMbUVSanpJ?oc=5",
+   "publisher": "ANI News",
    "feed_occurrences": 4,
    "feed_count": 4,
-   "description_excerpt": " Greek Under-15s Face Losing Instagram as Parliament Weighs Ban    Greek City Times "
+   "description_excerpt": " War of words erupts between BJP and P Chidambaram over 'regime change'; BJP says 'exposes your anarchy'    ANI News "
   },
   {
    "title": "Pheu Thai leadership assures PM of support in the No Conference debate and vote at the end of October",
@@ -346,14 +347,6 @@
    "description_excerpt": " CNW Newswire    Canadian Geographic "
   },
   {
-   "title": "Groups sue PSC for refusing to consider climate change",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVy1VaWZHY190VHJ4TVVnMXFheE9FQ3VGQUotLTlFalVlcUVmdFlhMXFtQjNZQzlZRGZudm1QaDZib0ZXNW0yZzYwUGRrcWUyY3BfbC1fekoyb2cyR1c1S1ltb05idWFmZFVFczR0SGlkZWRXaXU2LWN2OEJnaXM1OA?oc=5",
-   "publisher": "Montana Free Press",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Groups sue PSC for refusing to consider climate change    Montana Free Press "
-  },
-  {
    "title": "Find Us at COP17",
    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBDMm5RUktLaHJUZnBTZnJyVUVMenpOQUs5UEZCaDloU2ZLR1ZQRjF4WlphQU1telM1ak04Y09YMHdURUNYbTB2Zw?oc=5",
    "publisher": "African Wildlife Foundation",
@@ -384,57 +377,65 @@
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Conservation Beyond Parks: How OECMs Could Reshape the Global 30 by 30 Race    Bioengineer.org "
+  },
+  {
+   "title": "Emotional Elephant Photo Wins Wildlife Photographer of the Year Award",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNzczUk1wSnR6SEZYX0tvYV9xZXFSYjRsXzhuTENrMUlDc3hvcXRham1zMW5XQ1VrZVNENGR3X1F4NDF4LXpnaElfcGtrcjhlRTNtbnYzTHJ6cEk1V3V2T3pCTDhEU2RNa2toVHU1RXhsdlc4VG1mNDl6VnhqVmFQOUYyUVRrYTAya2ZybEVBRS1TM1E4OUNyODVWMzFadklfS3JTZXE1WHIxV1lwTFd0N1ZId1A?oc=5",
+   "publisher": "Ratopati",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Emotional Elephant Photo Wins Wildlife Photographer of the Year Award    Ratopati "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 31,
-  "successful": 27,
-  "mapped_pre_dedupe": 148
+  "successful": 26,
+  "mapped_pre_dedupe": 147
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 124
+   "mapped_pre_dedupe": 120
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 98
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 127
+   "mapped_pre_dedupe": 124
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 100
+   "mapped_pre_dedupe": 99
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 122
+   "mapped_pre_dedupe": 123
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 100
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 124
+   "mapped_pre_dedupe": 126
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 102
   }
  },
- "duplicates_removed": 661,
+ "duplicates_removed": 653,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "warning": "Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred."
