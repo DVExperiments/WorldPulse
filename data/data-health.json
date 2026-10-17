@@ -1,322 +1,442 @@
 {
  "schema": 1,
- "updated_at": "2026-10-17T09:16:45.870744+00:00",
- "feeds_total": 111,
- "feeds_ok": 106,
+ "updated_at": "2026-10-17T09:28:54.093662+00:00",
+ "feeds_total": 119,
+ "feeds_ok": 112,
  "feeds_failed": [
   "direct/DW World",
   "direct/CBC World",
   "direct/ReliefWeb Updates",
   "direct/UN News",
+  "direct/France24 FR",
+  "direct/France24 ES",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 90
+   "mapped_pre_dedupe": 89
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 91
+   "mapped_pre_dedupe": 89
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 115
+   "mapped_pre_dedupe": 108
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 92
+   "mapped_pre_dedupe": 89
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 98
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 93
+   "mapped_pre_dedupe": 92
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 103
+   "mapped_pre_dedupe": 100
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 91
+   "mapped_pre_dedupe": 94
   }
  },
  "mapped_articles_by_category": {
-  "economy": 64,
-  "community": 111,
-  "politics": 24,
-  "health": 50,
-  "society": 44,
-  "education": 27,
-  "conflict": 20,
-  "hazards": 11,
+  "economy": 60,
+  "community": 94,
+  "education": 28,
+  "politics": 22,
+  "society": 39,
+  "health": 49,
+  "hazards": 14,
   "science": 13,
+  "conflict": 17,
   "rights": 5,
   "environment": 5
  },
  "mapped_articles_by_location_precision": {
-  "country": 234,
-  "place": 140
+  "country": 222,
+  "place": 124
  },
  "location_evidence_counts": {
-  "headline": 309,
-  "description": 65
+  "headline": 280,
+  "description": 66
  },
  "geographic_quadrants": {
-  "NE": 243,
-  "SE": 38,
-  "NW": 79,
-  "SW": 14
+  "NE": 220,
+  "SE": 41,
+  "NW": 73,
+  "SW": 12
  },
- "geo_signal_count": 211,
- "mapped_total": 374,
+ "geo_signal_count": 203,
+ "mapped_total": 346,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1409,
- "unmapped_distinct_titles": 465,
+ "unmapped_sample_count": 1383,
+ "unmapped_distinct_titles": 449,
  "unmapped_by_feed": {
-  "Google News US": 220,
-  "Google News IN": 216,
+  "Google News US": 224,
+  "Google News IN": 215,
   "Google News ZA": 210,
-  "Google News PH": 203,
-  "Google News CA": 123,
-  "Google News AU": 114,
-  "Google News GB": 112,
-  "Google News NG": 110,
+  "Google News PH": 205,
+  "Google News CA": 121,
+  "Google News AU": 111,
+  "Google News GB": 110,
+  "Google News NG": 108,
   "RNZ National": 15,
   "ABC Australia": 13,
-  "France24 ES": 12,
-  "France24 FR": 11,
   "BBC Brasil": 9,
   "BBC World": 7,
   "Al Jazeera": 6,
   "The Guardian World": 6,
   "BBC Science": 5,
-  "NASA News": 5
+  "NASA News": 5,
+  "BBC Business": 4,
+  "The Guardian Environment": 3
  },
  "unmapped_examples": [
   {
+   "title": "Praxis launches interactive online guide to help migrants access services and support in the UK",
+   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9XZ3JMUkduejM2RS0zVFVCcENtRWlMa085b1JaTFRKME9LWC12eU1EaWpMQ2ZMYm1mZFNHaE5DQm11WWhPWkwtUjB3?oc=5",
+   "publisher": "Electronic Immigration Network",
+   "feed_occurrences": 8,
+   "feed_count": 8,
+   "description_excerpt": " Praxis launches interactive online guide to help migrants access services and support in the UK    Electronic Immigration Network "
+  },
+  {
+   "title": "Ebola disease outbreak 2026: How MSF is responding",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaHh3TFlDZ05hYUNDR2swZzQxbWtjYnNBQ0tDTEcxT3NpRmtSR19zeTRsVFpuUVBJU2VpTXZFMjRIZlZTMzM5d25EZUFoR21EeVhGUXdYRVhIc3luMHVfd0NBOWJfWUZJbTlTMXZVUHdkTlZtTi1OdlV6Zlhhcy1OUWYyRjllUENBZVdXSEZkT3V1TG1mQ3c?oc=5",
+   "publisher": "Doctors Without Borders",
+   "feed_occurrences": 8,
+   "feed_count": 8,
+   "description_excerpt": " Ebola disease outbreak 2026: How MSF is responding    Doctors Without Borders "
+  },
+  {
+   "title": "Ships in Strait of Hormuz still face \"indiscriminate attacks,\" maritime monitor warns",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQT1N6LVU4X3R3a3ljSC1KY3BYOGI1bFVCWjA0bnM1WjE2eDRZQW43VVUxMnhFbThpcDdGSUdneU03ZFFjeFFmVWczeDVaelRBeXZGekhFdmNxeWZzUHlHNUpseS0tN09GMWtkSzB2WnJEV3ZnUXhqQnlyMEY3VVl0bA?oc=5",
+   "publisher": "CBS News",
+   "feed_occurrences": 8,
+   "feed_count": 8,
+   "description_excerpt": " Ships in Strait of Hormuz still face \"indiscriminate attacks,\" maritime monitor warns    CBS News "
+  },
+  {
+   "title": "Pediatric Medical Devices Market To 2035: Rising Congenital Disorder Prevalence Drives Growth - News and Statistics",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMnBPTG12S1QwWGxDeVNXMXN4V2V2dFd4WTVNd0ZrQzlrQlN1S0NEWjFJQzM4eEtmS0hDWjFDZVd5SmZtbWlyOVpiVk1CTkN1R2xwN0FqVFRuNkNSMlNZTXlreEFFenBBaU9kSEJhZ3l5RklrQjBLU0ZNZkVXc21oNU9zTy1rLVNkRktpNUJmNHNvMmx3dFJNMVlCUTRIaDBSTlVHQTZ6S3VnYzBLZVVXREllRWJqSmpNMjRrWHQzd2t6eTFEOTVvSUY5MTRnMlc4ZTJ3ZzR3?oc=5",
+   "publisher": "IndexBox",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Pediatric Medical Devices Market To 2035: Rising Congenital Disorder Prevalence Drives Growth - News and Statistics    IndexBox "
+  },
+  {
+   "title": "On Our Radar",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1TTTkyVGppeko1WEFvMmEzamUxWU9rVzBaOEh6MklzRUhjRUVaWkJidHEweHFXTDcyT2dERWt4ZDV6bG9hSVdvVWtrTXpLcVRqZjhBVUVNZ2hqdkct?oc=5",
+   "publisher": "International Crisis Group",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " On Our Radar    International Crisis Group "
+  },
+  {
+   "title": "Homicide suspect's body found, Trump backs Flint in Kalispell",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPbV9OZWE4VXBrem5kU3NHQmNNUzI5TU5UOEFZSUxMVlRUb2ZuUDVUT0IzNjVNQ2pfeWZkTmg2a3czdmgzMHhSc19INnBQZ3hjOVdiNVQ3eVZ1NE5RZTl0MW5GMmpWWEhEM25xYUpGaXo2MUNvU3pCYXlueEVKMWVZZVNZbTBGM1RibTdkUnUzRUxVVDFTeG94cFZGZDU2LVRfNnFRZ1RhRTZWSXJlaUN0ZTRLd21zcUJhMmMyZW1vX0IwSzMwXzYyNThFZnhGcDlBX3hmSWcyeEV0VkE0WHlwSGFiajJOWk1FNHFjbXZpWHBFaEhiX2dhNA?oc=5",
+   "publisher": "Bozeman Daily Chronicle",
+   "feed_occurrences": 8,
+   "feed_count": 4,
+   "description_excerpt": " Homicide suspect's body found, Trump backs Flint in Kalispell    Bozeman Daily Chronicle "
+  },
+  {
+   "title": "Generation 6-7 Does May ’68: A New Generation of Rebellion in Europe",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMjBJc3ZFRHdScWNJY0g5aGFWdFAxRU04Qzl0MVlWY2dUWUlVYXVoX0ZwNndVLXI3Slp1NFhrTGRNdHB5RTZvclVJUzhFM3hUbU5iTFJld0hDOTFEZVV5VENfdkZpWWdDYm1CZk1yanBEaTZZWjhyZ2M5Rno2ZWl4QjZCWnFwVFhYdmVPeUxINFFTNC1kUmJMSw?oc=5",
+   "publisher": "Left Voice",
+   "feed_occurrences": 8,
+   "feed_count": 4,
+   "description_excerpt": " Generation 6-7 Does May ’68: A New Generation of Rebellion in Europe    Left Voice "
+  },
+  {
+   "title": "Parkview Health announces agreement to acquire Ovation Healthcare to strengthen community healthcare nationwide, advance local affordability",
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQSWxyNW5YUno0N2ZxUWZybmdkVm5iUVlPU2lrZDhvcmhNM2xKc1F6MHVBQTVmTUEtTXA3SVMyQ3BucTFzY1ZqbGI0ZlNHWmVGeXJuTmc4RFhiZUxpZW5aTWRRT0NISHdsWllXR1VzVk9pemJyV0ppYXZxV2lxZ0pkTG5iZ2dWVExiVlU3aFdOT2ZyZ1M5TkVpbllveWxNVTM0YlIxV0EteVRtZVFpa3prNEU0OU5NaWV5RjlnRmNlSWlzUUROQnJJX09FMllsSVhWRUt0aktwbmctVUJEeFZLQWFGVTQwNzlEaXhkRzM0U0JJeTVEU09mRVlGVDZ4MkRN?oc=5",
+   "publisher": "GreatNews.Life",
+   "feed_occurrences": 8,
+   "feed_count": 4,
+   "description_excerpt": " Parkview Health announces agreement to acquire Ovation Healthcare to strengthen community healthcare nationwide, advance local affordability    GreatNews.Life "
+  },
+  {
+   "title": "Deputy Minister Phuti hails initiative to take healthcare to underserved communities",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbVpEdmEtQ3QzX2N6cEdKbDlQUjJ0bmowYlI5aFpJLVNET3ZlQ1pJd01nYm5DTWhZdkk3cjN4cXZ0WFlQTmpNXzRTVFdPZXNuU2gyejFubGpsRVgzalpUMjBYLUtON0dXX3ZvSEFfc0ZOcGVIQXZUMi10cEpGLXR5VFFtZTgzYUNfWEZYd1ZOSWJPOG5WMTJTR1VhcFNuYkF0M195bWxjOEd4OWxMckd6T2JvOHpseFk?oc=5",
+   "publisher": "Herald.co.zw",
+   "feed_occurrences": 8,
+   "feed_count": 4,
+   "description_excerpt": " Deputy Minister Phuti hails initiative to take healthcare to underserved communities    Herald.co.zw "
+  },
+  {
+   "title": "Anurag University’s Faculty Ranked Among the Stanford-Elsevier Worlds Top 2 Percent Scientists",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNVGJmV1JEVVRBakFteklSa3V4UGs5NFZXU1BOdTViWFFiVXQyX1pwd0djZ2lJU0NmSk1nVjRnTHU4ZG9GaVBnc3pseTZoa2NodVgzbW91Rmw0VVZlOGRiZmJKWnAtNkwweG9GM2xDeHZDRjgybFFFLW5xck9DTXdhSkRvUjl0Z0Zyb2NfcnZLT053SFdlc29yX1U3ejkzRF9YUDdNUjMzbXhzNTgwR3ZsSk1qWFNTMEpQUUxDZFU3VUxGTV84TGlYSHFwMmrSAdIBQVVfeXFMT3R3RGQtZk9CRkpFMzlwNk1HVTVVWEdlWEl3dXFJWVFhbTNoX3J2dWhjeHhQZ2YzYTJzR0Jrblp1ZEhtQm40Q01nMEF5VWMtQlhDeUdsbEVNUXhKMzd6MWo3b1c3ZVBPUGRSMmZZbnNqZFI4YXBJX1NkOWljSDd6cVd2S2ZENzhzYmxqZGlGZWFTbGs3OGhTLVRXTHQxZnBIb1l1RzVkM3JyRHBwT0s1dVMtVTBMVWRFQlV3NVdJMnp1ZGlMUUhXcXJvbGlTVzFIS2hB?oc=5",
+   "publisher": "TheWire.in",
+   "feed_occurrences": 5,
+   "feed_count": 4,
+   "description_excerpt": " Anurag University’s Faculty Ranked Among the Stanford-Elsevier Worlds Top 2 Percent Scientists    TheWire.in "
+  },
+  {
    "title": "Opinion: Idaho's future depends on your vote",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTktERmlRTXgtaTZpZUVWaVgtUHRtZFhEMWlxaGJiM3dhcF9rdXB0NGZ4LXJzRlVucW1mRVg1NEoxbkFoMkJiRDBCaGp1ODlwWTVQZ0c4S2FDY2Jnc3V6OGl6TEt0LTZRSHVTUy1XRVdUY0hMMl9XRnZyT2RJMW1oLVBKTDdTejRvdjdHZE95N25yS2tLSWFvSXhRQ0RBbU5JTUJlWUF0SWd5d0VUa3RMeFlIeVRKWkNZZ1Z3VDVxWko3UzdKMnFOTGltb1RmQ2FnVE5uTzVHTDA?oc=5",
    "publisher": "Idaho State Journal",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T13:00:00+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Opinion: Idaho's future depends on your vote    Idaho State Journal "
   },
   {
    "title": "A socialist perspective to fight against war and austerity! Support the Socialist Equality Party in the Victorian election!",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1EUE9oTWtTeDg3Q0NYUFJ3LVhXeDhZSUJadWJJMkgtX2ZMU1VjYk1fSUF1NVVmY0hacDc2dzVfazJETDU2TlN0Z1ZFTlJMNXlEVjdubnNNcVdpZFJrcTRVZGpBX3ZkODJ6?oc=5",
    "publisher": "World Socialist Web Site",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T04:15:09+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " A socialist perspective to fight against war and austerity! Support the Socialist Equality Party in the Victorian election!    World Socialist Web Site "
   },
   {
    "title": "If the economic narrative doesn't improve, things could get ugly for Labor - ABC News & Headlines",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZGlwbnIxaWJMUkwydVNnR1JHSkh0R1otLTFOZk44NktZOF9lakpTRUw0QzNpTmg0VTRrWTQ0cFVGUWVScTVVOUNwR3hid1k3X1pVWHVsX1RkVFQtM2xGa3VvbW1PcFZiTmdST1RFeFNDMFRSVU1pU0x0eDc2RW9ELUxsZUMxLU9pemlrVkJYUFlJbFRTUU54YmZDRQ?oc=5",
    "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T18:00:00+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " If the economic narrative doesn't improve, things could get ugly for Labor    ABC News & Headlines – Australian Broadcasting Corporation "
+  },
+  {
+   "title": "Power struggle deepens in Iraqi Kurdistan after elections / Stephen Quillen",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTWN0ZVllVC11ckkwQmhXU0FfNHJLYlVDNjlMTkhVR1RTWWhDOUlXNXczRDJodl9EUWxZWS13VUVMbDV3S0JHUUlYd0w2UC1CT0FzZWdJVTNzb29BdEJDd1dyYU1HOHpHRTQ4bml1V2xZb3FhamJTdkdjQ3gzSkFfcndMQnp1a3pJejdFMGFDNWl0OEx0S0JGSlhKV0dQaldmSXBONEZnNTNHUWMxaDJpT1VNa0w?oc=5",
+   "publisher": "کردپرس",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Power struggle deepens in Iraqi Kurdistan after elections / Stephen Quillen    کردپرس "
   },
   {
    "title": "Iraqi Parliament Votes on 14 Candidates for Ministerial and Government Positions",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTlRqTm9XazhqWU1nR1BjTUVNUU9laE1LX1BTNUx2dHpwMHhiTW9SVExmUVdOZXhGS2FEdEY2LVRkbUJSUEVMNzJqY1NvTkFSbFNGbVhoWnZPRUkwQnpudlhYYm5XTDBZV00zcHZ1VWZqeTR5NHhwdlhzSF9haWpEQ0E0bm14UUNBNWVPeURKZjY4UlhZU3lXbzFNZ1ZmazFYWXFDRHIxSTgzU0Q4NEYtMkxNTlFXNFFTRDRoamFYZW1YX3o3Y0ZwT3JIQQ?oc=5",
    "publisher": "کردپرس",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T10:05:58+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Iraqi Parliament Votes on 14 Candidates for Ministerial and Government Positions    کردپرس "
   },
   {
    "title": "A group of lawmakers urge Somali opposition to establish alternative election schedule",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPU091cUE4UmdTbW82aFVXXy1UUmpSMkM0UjBKdUx1SmxUSk9DTjhoUmgxWVdreTlHMUdOcEZmWDF2M1VJaGIzUDJHZVN2bWNOc2Z5VVFrVzkyaVQwQzB6cGRvYVJER2wzekFZTVozRHhXMVVWdnA4ZHpISE9Sb1prRlVQV3phbXdXRE1vYXRFMGxYaFQtbnN3dFY4SnZ1ODVuR1FkNlVFUnN0ckNxZWNPWVBzXzBjUUIyQmU0M05iYnZiaGF4VTA2T0txVWRCajdOWUk0?oc=5",
    "publisher": "Hiiraan Online",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T04:03:02+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " A group of lawmakers urge Somali opposition to establish alternative election schedule    Hiiraan Online "
   },
   {
    "title": "MK Stalin chairs DMK MPs meeting amid protests over Election Commission’s SIR exercise",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQUdJN29lTVFjZE1MajdhVlNLUE5aeW8zb25ndGE0VTYyLUtfRnFlVVdEb0VnUm9YYTVLLUhUSzVHQ1V5QmNLRFpLSGFHSGlTMmRXdDhocVlYNGRYLTl4WlRhNVlta3ZQa2U2T3NYbXh1SFBodFBQWVFsN2dGaFdFbmdKaU1mR2xyVHBCdGk2VjFVM0IyeFBsTjQzaHRPaUlhRG1CS3RReFJjSmdrY3FEbk9RZnNTVnkyanc?oc=5",
    "publisher": "The News Mill",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T05:27:37+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " MK Stalin chairs DMK MPs meeting amid protests over Election Commission’s SIR exercise    The News Mill "
   },
   {
    "title": "Former Somali President rejects electoral commission’s 2027 election schedule",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOd3JjVDV4b0Q3QzFORDhlRlBEYm9qbFdDNTRyMkpWUXNTdmVGZEZFUXQ5ODlubzZpdVhDc0FwRFdwRllHdEFtaHRfLTlvSFJQOUtfMktJc1JFSm51V0ZmOVV6OHhXUnlzeTBwb1Z6NDllajQ2Z1M3aDNIV0NRQldRd1JrandOZWJsaFB5clROUGFERjlPaUFaTVJtUjVuOFpWcWxPU1FlY2Q2ajVfMTRYTlAxYkZxWlBBekgxWjZPanhycnUyWnE1VjJPcw?oc=5",
    "publisher": "Hiiraan Online",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T18:28:29+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Former Somali President rejects electoral commission’s 2027 election schedule    Hiiraan Online "
   },
   {
    "title": "US greenlights inclusion of Iraqi resistance figures in government cabinet: Report",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaWtKSXpwaWtaN3N2NXUtSGxMOEtwaE1JWGlHNjlFVEhFZVJ6Rmo3SEU0MHFHTHdRTllTVE1leENiYVV6NkZGLUlMRFdiZkNuUlEwWmc3ZjJBNDBtOTJhcERKbzhwZm1Veno0d2M5VWd6ZG5vaEV5S2ljbkJXV1piUVgtMkdYcUVsOE1ZbG5lb1cxR1NfakxWaU1nSzdtODRYQ1o2SF9nalE4VkFwVnFyMw?oc=5",
    "publisher": "thecradle.co",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T14:42:30+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " US greenlights inclusion of Iraqi resistance figures in government cabinet: Report    thecradle.co "
   },
   {
    "title": "Barmm chief welcomes PBBM’s affirmation of region’s autonomy",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWWphZm44cUxrSUV4Y1Y5dGFDRDBtTWI5d0gyNG1zWWF5Zkd6NG91TzFfVGQyeEV0MFd6SjZZa25BbGx2cjFOOHdBallMek9QQ1NmZndsWU5UUXRGNzNSdDVlZW8wV1RzNmhXVGg5dmI1ZFNhNDFBRFRkdTdVclBGMVZsM1Fabk81MjZtMEw5dHF3SlI0QnFNWklMTWZtU3pqeHhz0gGjAUFVX3lxTE1ZamFmbjhxTGtJRXhjVjl0YUNEMG1NYjl3SDI0bXNZYXlmR3o0b3VPMV9UZDJ4RXQwV3pKNllrbkFsbHZyMU44d0FqWUx6T1BDU2Zmd2xZTlRRdEY3M1J0NWVlbzBXVHM2aFdUaDl2YjVkU2E0MUFEVGR1N1VyUEYxVmwzUVpuTzUyNm0wTDl0cXdKUjRCcU1aSUxNZm1Temp4eHM?oc=5",
    "publisher": "SunStar Publishing Inc.",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T18:30:51+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Barmm chief welcomes PBBM’s affirmation of region’s autonomy    SunStar Publishing Inc. "
   },
   {
    "title": "SNP see hung Westminster parliament as ‘most realistic’ route to indyref2, MP says",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdEtpWDl2WVJFQUotcjREUWFWLWp1d3RtRjBGMlVHeHVIOEV1akhBYUEyUkdLQWVVZ1ZfWC1ZTXFLMUJqRU1WS2V4dy1fOElvbThaTjQwckRqWlAtdzlLS283SThxMHBtU3YyN2RLdE1XTGc3Ul9JeGdlYUhOVDc0Y3dJVFlNcDZkeWgweG5oUHpGdmtoMHBaLVNDWjhXMXRvektULXRHVTNCZlZhVmc?oc=5",
    "publisher": "The National Scot",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T02:22:27+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " SNP see hung Westminster parliament as ‘most realistic’ route to indyref2, MP says    The National Scot "
   },
   {
    "title": "MK Stalin chairs DMK MPs meeting on SIR, other key issues today",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcm5WN2gxcm1jbUdEOTBldFBqdnIxdllEOHBpQUZDWlBDbHJ1bGFUSmlKT3VrRWxBMDZIMVpWNW9JY0xoQWFTYmJadkZyY2QtOWdITERRZ1J1Z2F0bUVJRVh2V0xLYTdDX0doVEM5SjV1WEFfRWp3QXBBRkN6YjR3NUhRdll2M3pfQ0dweTFSRFdFUHZaTEtUUEtUaXJ0Z09FZUd3WVltU09BcDdRWF9TM0FabWhKWEN6aXhJcDlTbmp4V2lQSG9TTUl1NUJHQWlGd1hSZW5WZUdiLXVUblVzQmR2NDY2ZC11c1ZN0gHwAUFVX3lxTE5TZTl2blhlY2wxSlJsSE1NYkxvWEdHNEFmMnNFMUpiczNqaV96NjduSlZac1FmQkprS1U5OFRmUmdJOGZMWWM4ZXZNZjVtcXNxZ3dMSTllQUg1MTIzNlc3bWVob1lIMFM2b0NLRE9WWHVyQWhRNVVlYXI2cjYzNGRqbFB3dTFuUDBXUDl5TUE1TUVKcW54ckZ5TEhXSnprYWxuU2Zjd1NFcWNyVWxabl96QklCVWZXVjJCODRBbkJLanRHTnEwVFhCejNoaTF0V2tJM2FhRDR4RHF4RnIzdkU0X1ZQcXBDUzFPNkxRMktFSA?oc=5",
    "publisher": "The Economic Times",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T06:30:43+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " MK Stalin chairs DMK MPs meeting on SIR, other key issues today    The Economic Times "
   },
   {
    "title": "Opposition unites against governor's rule in K-P",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNckFrYmprR25zcjhRbmFGMzVjcE8wS0d4ZkRWcWU1VFVfU3BmaGk2YVg1VElKaDBzN3RhUXdWVmZITVZpclo2alloQjVsSUdydW5Gd1k5NU4yalRJWjdvQlIxSHdLYm9ITi1pUjlvSE54MEVBUEwzUlQ5NW5sMXc5NHY5TU9aLThGVlBwYdIBlAFBVV95cUxOMmpUeWY2ellCTTl2dzdvT3hZMUs3UEszeG94NXlUcVVvdEpuTnJVNDB1bUZCWmMyQUlMa2kxNDBTQjBIdnJwVUZnYmYxcjFuYWhKU0JrdGpXRWJfVzRkS1VqMEN5bWY0VUJZbUkyMzV4MElkQ2dmN3VNVnVCeHB0dXJBd0NpVXUtYWtKcmxOOWtWamEz?oc=5",
    "publisher": "The Express Tribune",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T21:56:55+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Opposition unites against governor's rule in K-P    The Express Tribune "
   },
   {
    "title": "MPs and Experts: Judge Zidan’s Call Is an Opportunity to Resolve Constitutional Issues and Strengthen State Stability",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxORGY3ekJEZTc5ekxuMWNxbWxSSUJfaDJMVTlibWpoME1ZcUNOTUFHaURYcGl4cDJ0OGtMWHB3R1lJa3FmTkd6MTVzVjZ5R2s2ZE1ELVp3ZzBNNHNMRmE1OFBGeE1jTVFkT2RERllJZ0ZnQ040R2xvM1BFLVBQbE5IRXdqMEVuUFU1aDdraWdVZW1CNVZiSi1ta1dMU09ZQkRXN0hnRUE4X0FYN0wxUEVTSDNrc3U2bzRLU3otQXljcFBidjVaS2dCb0c4aG5DRVJYZ0d5bE93YS1YTzJiNDAwby02eHVOcTA?oc=5",
    "publisher": "وكالة الانباء العراقية (واع)",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T19:15:08+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " MPs and Experts: Judge Zidan’s Call Is an Opportunity to Resolve Constitutional Issues and Strengthen State Stability    وكالة الانباء العراقية (واع) "
   },
   {
    "title": "DMK demands removal of Chief Election Commissioner Gyanesh Kumar",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUTJ4SG9rRFgyQkRBTjZIelREa29yWU8wNEtLT1dBT0pJcTNfRzlVdXVoclEtV2x1SFlCbmRhZkw3Mmx1dzJCbVVGNEhmY2hnMlpfN3lkQnVsQWVLTDR0LTQwT2xDX3pDSllBOUJneGtpUGQtZTdPWEdkZXRMM2VNaDJyMmtNOU02ZEg2eUdMVkVkODVJZHEwc0d4OVNNZw?oc=5",
    "publisher": "The News Mill",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T07:37:24+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " DMK demands removal of Chief Election Commissioner Gyanesh Kumar    The News Mill "
   },
   {
    "title": "Chidambaram hits back at BJP over 'regime change' remark, says Opposition's duty to \"oppose, expose, depose' government",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQTXZWMGJSUVlFRldOcW1VSDJGU0JsMksybFFtZkNrUkVWVWVUTlB1M0ppUXJpZFZqc1lMck1ha2JRdDdQWHpBUmgyWUJSTXRwNG01bjZESXp0TEZMMVRaV25aemJpbDlQX0RlYlhHSVpONzZPMEVneFl3R3VEd0d6LXFsQTBJRFNZc0NoZmU4aVBkV2dKX3lYZDNWZVB2NWdCTUhYN2RBWUxhc0t4SUl1N3ZjU2E2eC1BLWkwYlFMX1Z1NUUtU1VzTXoyRDRPSTBIS0IxX0szZnVEUlBfcUl3TWpMelRfZW92MlhLWUpVVFlTTWNncUF2ekhlNS1zYjdQeV9fV0xB?oc=5",
    "publisher": "ANI News",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T03:04:00+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Chidambaram hits back at BJP over 'regime change' remark, says Opposition's duty to \"oppose, expose, depose' government    ANI News "
   },
   {
    "title": "Devendra Fadnavis says regime change possible only through elections under constitution",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQWkRMZ0hGanU0R2FEa2M1d1N6R2ExOFExTUswX2dydnhCMGV3M2MwX3JsVTZEWldKU1N6LWF1UmY5VWpCYXRuaXhXQ3Z1RTR2WDN2UnNmbXZJcHdaRmt5UVVkYThqUDZoVzNoOEtxUFlxaXdSTWlBOWlFVkNlWVFYN2RBNEpCS3d2cTFaeFl3MVQ4dzV2bzRKUmNmSDNLZFF1cW5lamNJT1p6c2NwQ3hyaVRPS2NJU0g1OGZvX0lGTEVVdUdXY1ZLSmZNdTRMSnEtZ0lJNNIB4gFBVV95cUxQNlNlOVFpeWpETnc5YjdHOEE3Nmp4MEtESW9rRHJ3am1CTWJyeUVsN2dhTHFHdjVRWV9OaldtYy1UeE4wcHJLMHlfanZhM0dmNUhnQ1RaVDkxc2EzSk9pUG03dVpNTnp6bTcwMVpNNnZPRzhvYkZvTndjd0l3dW1ULW9qamVMcjVNTWdURHFYWlNSenFTX0NZajR2UHhSeWNNRnlkNXl0NDI4MU5rZ05QaklLZ1Q1RGtYYUhaaHBwck9LODhyY2h1T2lTWUdsazd0Ym5wQ0Z4YjlkV3ZubWU2NVln?oc=5",
    "publisher": "The New Indian Express",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T13:58:21+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Devendra Fadnavis says regime change possible only through elections under constitution    The New Indian Express "
   },
   {
    "title": "Nazlı: Elections Must Bring Workers’ Struggle Into Parliament",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaWNtU1JIOXVPMWxGSEd0aV91Ml9YdWsxQ1k2bjNMMXQ3LXkxekJnbUczYWgzMU5WaEZmbVJ4a0dpNFFFaEpBWXlvV1gzcFc2STRXTUgtLVh1a3pwWkc3ZGZUOEEwWVRQR01Ea3hVbnZrU0FwVVNIOFpPbTYxX2lSdlFGUTZjam9SWk5qd3hzTmZHdlJwX3JrX0Q5Z3dEanJZdlpPODE1YXhTVWM0UDBGMDh6OA?oc=5",
    "publisher": "Kıbrıs Postası",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T11:30:00+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Nazlı: Elections Must Bring Workers’ Struggle Into Parliament    Kıbrıs Postası "
   },
   {
    "title": "Nicușor Dan hopes that the Government proposed by Luca Niculescu will be approved by Parliament: “I am glad that there are agreements between the prime minister and the parties”",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSlBmMGZqNHhndXNMWG1NeEQxaGxXTS1HQ0M2Q2NZUFV0V0JfM1UyQ3I5Z1doNWVjZmttZzRJTmY3bDVvVjg4ZWlUbWtEVTJwaXkyemQwenBZMVhnM2hRRU1pQlVxZ1NjanIyRHJHSmx5NTJUbkM1VXQwenBWZmI1bnFrdG5PVV9pcmxHT0ZMRmNBVHRaRGluT3V1OV9vdExmUWt5Tg?oc=5",
    "publisher": "Informat.ro",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T17:53:22+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Nicușor Dan hopes that the Government proposed by Luca Niculescu will be approved by Parliament: “I am glad that there are agreements between the prime ministe"
   },
   {
    "title": "BJP govt. at the Centre undermining constitutional values, rights of people: Kanimozhi",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQaGpvQ3Q4NkRQV2xoU2tfM25HN1JfZ2lwREEyUHlfcndIdDNYVmdCTHhJNXZnMkRHendPQ0Z3QU9hcXRSM2RLcFdxR3hDbWtuZDlXd3c5VXZ0SmR4WUJTNFctNEtzNHhzQzhnQUxOa2RvczdiZ1pmbE9hNnBwZzBpSnlpaDZ1VjRkSFVkUkxIWHp1UnFtTE5xUjU5OGpWME1xRnE0M1F2QlJGckVKTlBTbmwyVktadV90MDRSUEJvNGhlRy1sSV82QXZXZ2h4NFU1QnBxN3hDcnFHb0Y3OHVIX2FBZHBweXY0LVhGdjNOd9IB7wFBVV95cUxQaGpvQ3Q4NkRQV2xoU2tfM25HN1JfZ2lwREEyUHlfcndIdDNYVmdCTHhJNXZnMkRHendPQ0Z3QU9hcXRSM2RLcFdxR3hDbWtuZDlXd3c5VXZ0SmR4WUJTNFctNEtzNHhzQzhnQUxOa2RvczdiZ1pmbE9hNnBwZzBpSnlpaDZ1VjRkSFVkUkxIWHp1UnFtTE5xUjU5OGpWME1xRnE0M1F2QlJGckVKTlBTbmwyVktadV90MDRSUEJvNGhlRy1sSV82QXZXZ2h4NFU1QnBxN3hDcnFHb0Y3OHVIX2FBZHBweXY0LVhGdjNOdw?oc=5",
    "publisher": "The Hindu",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T11:06:36+00:00"
-  },
-  {
-   "title": "Naveen Patnaik congratulates Biju Chhatra Janata Dal for student election performance, alleges BJP used",
-   "publisher": "https://www.indiagazette.com/",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T04:06:00+00:00"
-  },
-  {
-   "title": "Greek Under-15s Face Losing Instagram as Parliament Weighs Ban",
-   "publisher": "Greek City Times",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T05:29:36+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " BJP govt. at the Centre undermining constitutional values, rights of people: Kanimozhi    The Hindu "
   },
   {
    "title": "Pheu Thai leadership assures PM of support in the No Conference debate and vote at the end of October",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONDJDQlF1SjZoMDNnZzgybmR6WVMtblF1OXRpSVd2WExnV09kZXRNcnFHRHF6Uk9zZ3M1SVpOODZwOWIxNTZBY0Nic284ODlpWXYydEpINGRndXJCZ2pBaEpPaUtiY1hneXVJanltS0dQbS0yWkUydzBGdTRzdnB6YVMzTnQwZklPRnR5Z01BaGhHcUhkWkFkdmlmRTVQZXZTNzlabGx6SFlJaWFJVGJXbDMxUVAtZlNza1YyUF85VlVtRmtQQk1WZnZ0UmNtbFB5RHZGSDZocnFVMER4a2xBM0o3VXdQOUVkYXpmWkU0UGNUaHM0VGc?oc=5",
    "publisher": "Thai Examiner",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T03:41:03+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Pheu Thai leadership assures PM of support in the No Conference debate and vote at the end of October    Thai Examiner "
   },
   {
    "title": "GRS targets 16 parliament seats",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBhd0IySEdtYWxDMzRhZUp2SnktLU9WU0pKcWZxRTMybVdTS3BlWm45VzROM180WV9YZVU0QnRMUnlDUHQtNnNnbC1LekczN0hZRHFVZ09acUVuTXVZUjdNWkJWdjNvN0Vob3BhRThINDZ1QUxCMVRwSmo2cEs?oc=5",
    "publisher": "Newswav",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T02:41:51+00:00"
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " GRS targets 16 parliament seats    Newswav "
   },
   {
-   "title": "MK Stalin chairs DMK MPs meeting amid protests over Election Commission’s SIR exercise",
-   "publisher": "The News Mill",
-   "feed": "Google News IN",
-   "published_at": "2026-10-17T05:27:37+00:00"
+   "title": "Question 6 would dedicate existing tax revenue to conservation | Opinion",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNWDgzYnROTzY3MHBockJxV0FRVzlVeWsyLThHRGZjM0JlTU96QXUyYko3MlpHSDk0enphcC1VLVd6ZTNZY3VEaXFEUWNpRmo5dko2aUJkSXhHRGNLWGIyTGVTdzV4QTFCSzQtNUdSQml4aEZxLW9YbVBJRHQ3N1VwVlZxVFE0MWtPZ2lQZ1Y1RUYwVUpYY01zQTJYUTJCU2duUy11eVBvUzdXeEttWFRDMlhXVE1YYWlUSTg4MWdxNTktZDZoVnBzbHdaU282d2FyNHdZR0tnbERtRllPRjRoWm5QS2hYdw?oc=5",
+   "publisher": "MetroWest Daily News",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Question 6 would dedicate existing tax revenue to conservation | Opinion    MetroWest Daily News "
   },
   {
-   "title": "Devendra Fadnavis says regime change possible only through elections under constitution",
-   "publisher": "The New Indian Express",
-   "feed": "Google News IN",
-   "published_at": "2026-10-16T13:58:21+00:00"
+   "title": "Rising temperatures putting koala populations at risk, scientists say - ABC News",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSU9xd19SY3BSRnhfWGpIRmp4dDhhSUFHTHcxclhwTmZPWG9UejQtTXpYYWgtaWs2aWV2SGtFaHlJczJ3amJURWx1V0dMbUhDUFVMdUlCZEdMZGlCVjlSMDY1ckNPa2dVTHl2ZldKbVdwQU1BWFhxSHQ1ZFBvMnVYeXlSTXQ3b2NfWHNsR1ZRS2dicXMzeVFXNWg0YWN5U2cyR0RQZ1hmM3p2eWExS1NJZi1VYjjSAboBQVVfeXFMT2Z2aGEwVWpnTkZlX2lJSjdJbkV3RFBCQ2M1RXNralVEd1ppTUFYTjl4NTJ0MFJtd3FNSHI2TlNFRGhGdWxVZExRSHlzbC1yT2JEMWo0bkp0bHJZZHBzSTJaMzUzMEZOc0tsMUFrQnRfdnVJMVRRaTdHQTY3Sm1LZU9MOC0xTklfQTJLa2J3czVzUjduU0RkM3otOFZTV1JmRHpZQWZzeXRUbGtRRkpQUkJ5QlVTZTZ6MzZR?oc=5",
+   "publisher": "ABC News - Breaking News, Latest News and Videos",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Rising temperatures putting koala populations at risk, scientists say    ABC News - Breaking News, Latest News and Videos "
   },
   {
-   "title": "Chidambaram hits back at BJP over 'regime change' remark, says Opposition's duty to \"oppose, expose, depose' government",
-   "publisher": "ANI News",
-   "feed": "Google News IN",
-   "published_at": "2026-10-17T03:04:00+00:00"
-  },
-  {
-   "title": "BJP govt. at the Centre undermining constitutional values, rights of people: Kanimozhi",
-   "publisher": "The Hindu",
-   "feed": "Google News IN",
-   "published_at": "2026-10-16T11:06:36+00:00"
-  },
-  {
-   "title": "Naveen Patnaik congratulates Biju Chhatra Janata Dal for student election performance, alleges BJP used",
-   "publisher": "https://www.indiagazette.com/",
-   "feed": "Google News IN",
-   "published_at": "2026-10-17T04:06:00+00:00"
-  },
-  {
-   "title": "MK Stalin chairs DMK MPs meeting on SIR, other key issues today",
-   "publisher": "The Economic Times",
-   "feed": "Google News IN",
-   "published_at": "2026-10-17T06:30:43+00:00"
-  },
-  {
-   "title": "DMK demands removal of Chief Election Commissioner Gyanesh Kumar",
-   "publisher": "The News Mill",
-   "feed": "Google News IN",
-   "published_at": "2026-10-17T07:37:24+00:00"
-  },
-  {
-   "title": "A socialist perspective to fight against war and austerity! Support the Socialist Equality Party in the Victorian election!",
-   "publisher": "World Socialist Web Site",
-   "feed": "Google News IN",
-   "published_at": "2026-10-17T04:15:09+00:00"
-  },
-  {
-   "title": "If the economic narrative doesn't improve, things could get ugly for Labor - ABC News & Headlines",
-   "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed": "Google News IN",
-   "published_at": "2026-10-16T18:00:00+00:00"
-  },
-  {
-   "title": "Opinion: Idaho's future depends on your vote",
-   "publisher": "Idaho State Journal",
-   "feed": "Google News IN",
-   "published_at": "2026-10-16T13:00:00+00:00"
-  },
-  {
-   "title": "Opposition unites against governor's rule in K-P",
-   "publisher": "The Express Tribune",
-   "feed": "Google News IN",
-   "published_at": "2026-10-16T21:56:55+00:00"
-  },
-  {
-   "title": "MPs and Experts: Judge Zidan’s Call Is an Opportunity to Resolve Constitutional Issues and Strengthen State Stability",
-   "publisher": "وكالة الانباء العراقية (واع)",
-   "feed": "Google News IN",
-   "published_at": "2026-10-16T19:15:08+00:00"
+   "title": "We cannot wait for wildlife to reach crisis point",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMDVEem5kNzdYRG1JUlpJSjRKTVJhQXBwQXNGeFByM0t4dXBFN05iQ2xTX2tqYk5PNDJSa1FVYzE0V1Z2anpkb2lwVnhvNE9seWc3UktudFZaWnRrMG4yckRXRGNiV3NwVl9UNGlHbXVpWDE0ZmpFa2EwU3JMR215YjZMM2k5dG1NWFVvQQ?oc=5",
+   "publisher": "International Fund for Animal Welfare | IFAW",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " We cannot wait for wildlife to reach crisis point    International Fund for Animal Welfare | IFAW "
   }
  ],
- "duplicates_removed": 543,
+ "unmapped_review_file": "data/unmatched-review.json",
+ "direct_source_breakdown": {
+  "configured": 31,
+  "successful": 24,
+  "mapped_pre_dedupe": 145
+ },
+ "source_editions": {
+  "US": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 89
+  },
+  "GB": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 89
+  },
+  "IN": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 108
+  },
+  "AU": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 89
+  },
+  "ZA": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 98
+  },
+  "NG": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 92
+  },
+  "PH": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 100
+  },
+  "CA": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 94
+  }
+ },
+ "duplicates_removed": 558,
  "gazetteer_entries": 1094,
  "warning": "Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred."
 }
