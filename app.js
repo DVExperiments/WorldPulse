@@ -522,18 +522,26 @@ function signalDisplayPoints(points){
  const halos=points.filter(p=>p.count>=2).map(p=>({...p,wpHalo:true,signalSource:p}));
  return [...halos,...points];
 }
+// Visible but restrained twinkle: a small rotating subset of real news signals
+// brightens on each frame. The map and ambient population grid never animate.
 function refreshSignalGlow(){
  if(!globe||!currentPoints.length)return;
  if(state.visualMode!=='neon'||!state.twinkle){globe.pointColor(p=>signalColor(p));return}
- const tick=Math.floor(Date.now()/1600);
+ const tick=Math.floor(Date.now()/950);
  globe.pointColor(p=>{
   if(p.wpHalo)return signalColor(p);
   const base=COLORS[p.category]||COLORS.social;
-  const phase=(Math.sin(p.lat*8.71+p.lng*2.29+tick*.45)+1)/2;
-  if(phase>.97){const rgb=hexRgb(base);return `rgb(${Math.round(rgb[0]+(255-rgb[0])*.26)},${Math.round(rgb[1]+(255-rgb[1])*.26)},${Math.round(rgb[2]+(255-rgb[2])*.26)})`}
-  return base;
+  // Stable geographical seed ensures twinkles stay attached to real signals.
+  const seed=Math.abs(Math.sin(p.lat*12.9898+p.lng*78.233)*43758.5453);
+  const slot=Math.floor((seed%1)*23);
+  // Each signal sparkles for one of 23 frames, or ~1 second per 22 seconds.
+  const sparkle=(tick+slot)%23===0;
+  if(!sparkle)return base;
+  const rgb=hexRgb(base);
+  return `rgb(${Math.round(rgb[0]+(255-rgb[0])*.74)},${Math.round(rgb[1]+(255-rgb[1])*.74)},${Math.round(rgb[2]+(255-rgb[2])*.74)})`;
  });
 }
+
 function initVisualControls(){
  const panel=document.getElementById('visualModes');if(!panel)return;
  panel.querySelectorAll('[data-visual]').forEach(button=>button.addEventListener('click',()=>{
@@ -543,5 +551,5 @@ function initVisualControls(){
  if(glow)glow.onchange=()=>{state.twinkle=glow.checked;applyVisualMode()};
  document.body.classList.toggle('wp-neon',state.visualMode==='neon');
  document.querySelectorAll('[data-visual]').forEach(b=>b.classList.toggle('active',b.dataset.visual===state.visualMode));
- setInterval(refreshSignalGlow,1600);
+ setInterval(refreshSignalGlow,950);
 }
