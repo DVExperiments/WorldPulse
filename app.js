@@ -18,12 +18,9 @@ function initGlobe(){
   .pointsMerge(false).pointLat('lat').pointLng('lng')
   .pointColor(p=>COLORS[p.category]||COLORS.social)
   .pointAltitude(p=>Math.min(.08,.011+Math.log1p(p.count)*.008))
-  .pointRadius(p=>p.broadAnchor?.11:Math.min(1.6,.19+Math.sqrt(p.count)*.11))
+  .pointRadius(p=>p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11))
   .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
-  .ringsData([]).ringLat('lat').ringLng('lng')
-  .ringColor(p=>COLORS[p.category]||'#6edcb3')
-  .ringMaxRadius(p=>p.accuracy==='country'?9:3.5)
-  .ringPropagationSpeed(.6).ringRepeatPeriod(5000)
+  .ringsData([])
   .onPointClick(p=>openPoint(p))
   .onGlobeClick(({lat,lng})=>pickPlace({lat,lng}))
   .onZoom(()=>refreshZoom());
@@ -50,10 +47,8 @@ function aggregate(items){if(!state.cluster||tier()===3)return items.map(p=>({..
 function refreshZoom(){let t=tier();if(t!==lastTier){lastTier=t;renderPoints()}}
 function renderPoints(){if(!globe)return;let data=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.layer==='events'?(state.categories.has('hazards')?state.events:[]):state.posts;
  if(state.layer==='news'&&state.precision!=='all')data=data.filter(p=>p.accuracy===state.precision);
- // Country subjects are displayed as broad geographic rings, not invented local pin positions.
- const broad=state.layer==='news'?data.filter(p=>p.accuracy==='country'):[];
- globe.ringsData(broad);
- // Keep tiny country anchor points selectable; the broad rings communicate uncertainty.
+ // Country-level subjects remain small selectable anchors; never imply an event footprint.
+ // All perpetual pulse rings are disabled: they were country-only and caused clutter.
  const mapped=state.layer==='news'?data.map(p=>p.accuracy==='country'?{...p,broadAnchor:true}:p):data;
  currentPoints=aggregate(mapped);globe.pointsData(currentPoints);
  $('locations').textContent=data.length.toLocaleString();$('total').textContent=data.reduce((n,p)=>n+p.count,0).toLocaleString();
