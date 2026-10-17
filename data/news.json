@@ -1,35 +1,35 @@
 {
  "schema": 2,
- "version": "1.4A.2",
+ "version": "1.5",
  "source": "Google News RSS and independent publisher RSS samples",
- "updated_at": "2026-10-17T08:57:12+00:00",
- "last_attempt_at": "2026-10-17T08:57:12+00:00",
+ "updated_at": "2026-10-17T09:12:11+00:00",
+ "last_attempt_at": "2026-10-17T09:12:11+00:00",
  "window": "rolling 24 hours",
  "status": "partial",
- "query_successes": 63,
- "query_attempts": 67,
+ "query_successes": 106,
+ "query_attempts": 111,
  "articles_scanned": {
-  "politics": 83,
-  "environment": 61,
-  "hazards": 18,
-  "society": 126,
-  "health": 210,
-  "education": 197,
-  "rights": 18,
-  "community": 43,
-  "economy": 172,
-  "science": 103,
-  "conflict": 44,
-  "direct": 552
+  "politics": 162,
+  "environment": 110,
+  "hazards": 29,
+  "society": 233,
+  "health": 424,
+  "education": 394,
+  "rights": 36,
+  "community": 70,
+  "economy": 295,
+  "science": 215,
+  "conflict": 84,
+  "direct": 522
  },
- "distinct_mapped_articles": 362,
- "duplicates_removed": 171,
+ "distinct_mapped_articles": 371,
+ "duplicates_removed": 536,
  "source_count": 181,
- "direct_sources_ok": 19,
- "unmapped_articles_sample": 790,
+ "direct_sources_ok": 18,
+ "unmapped_articles_sample": 1387,
  "geographic_confidence": {
-  "headline": 367,
-  "description": 166
+  "headline": 637,
+  "description": 270
  },
  "source_health_file": "data/source-health.json",
  "history_file": "data/history.json",
@@ -40,6 +40,7 @@
   "direct/DW World": "Feed contained no recognizable RSS/Atom items",
   "direct/CBC World": "The read operation timed out",
   "direct/ReliefWeb Updates": "no element found: line 1, column 0",
+  "direct/UN News": "not well-formed (invalid token): line 1, column 0",
   "direct/DW Español": "syntax error: line 1, column 0"
  },
  "points": [
@@ -218,11 +219,21 @@
    "count": 9,
    "publisher_count": 4,
    "category": "community",
-   "recent_3h": 0,
+   "recent_3h": 1,
    "previous_3h": 2,
    "velocity": "steady",
-   "velocity_change_pct_sample": -67,
+   "velocity_change_pct_sample": -33,
    "articles": [
+    {
+     "title": "Journée de mobilisation massive des jeunes et gilets jaunes en France",
+     "url": "https://www.france24.com/fr/vid%C3%A9o/20261017-journ%C3%A9e-de-mobilisation-massive-des-jeunes-et-gilets-jaunes-en-france",
+     "published_at": "2026-10-17T09:10:10+00:00",
+     "publisher": "France24 FR",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "fr",
+     "geo_match": "headline"
+    },
     {
      "title": "Mobilisation du 17 octobre en direct : Gilets jaunes et lycéens veulent faire converger leurs luttes",
      "url": "https://www.france24.com/fr/france/20261017-france-en-direct-mobilisation-17-octobre-gilets-jaunes-lyceens-font-converger-leurs-coleres-dans-la-rue",
@@ -257,16 +268,6 @@
      "title": "\"Une priorité absolue\" de ramener les pays du Sahel dans l'OIF, souligne la Mauritanienne Coumba Bâ",
      "url": "https://www.france24.com/fr/%C3%A9missions/en-t%C3%AAte-%C3%A0-t%C3%AAte/20261016-une-priorit%C3%A9-absolue-de-ramener-les-pays-du-sahel-dans-l-oif-souligne-la-mauritanienne-coumba-b%C3%A2",
      "published_at": "2026-10-16T16:39:31+00:00",
-     "publisher": "France24 FR",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "fr",
-     "geo_match": "description"
-    },
-    {
-     "title": "Italie, Grèce, Allemagne... la mobilisation française, source d'inspiration pour l'Europe ?",
-     "url": "https://www.france24.com/fr/france/20261016-italie-gr%C3%A8ce-allemagne-la-mobilisation-fran%C3%A7aise-source-d-inspiration-pour-l-europe",
-     "published_at": "2026-10-16T16:07:43+00:00",
      "publisher": "France24 FR",
      "source_url": "",
      "source_kind": "publisher",
@@ -400,14 +401,100 @@
      "geo_match": "headline"
     },
     {
-     "title": "Ukraine: Civilian casualty rates among ‘deadliest’ in years, as energy attacks intensify",
-     "url": "https://news.un.org/feed/view/en/story/2026/10/1168614",
-     "published_at": "2026-10-16T12:00:00+00:00",
-     "publisher": "UN News",
-     "source_url": "",
-     "source_kind": "publisher",
+     "title": "IOM Warns Ukraine Energy Attacks Could Displace More People This Winter",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaGJVT01uRFlhVWt5WEVBdnZpdVNWdVhlSGcweUsxckd6YU9lMW5rVDh1ZWhqSXNrMjhpQ21vQTF2eGJpUHFmV3JFVWxoTzdEallPZlJMYXpMOUQ2SEppbWFzdHg5RUNCaEtpNVdITHRSQzNaRXNfRzdEMVV2UHAwa04yWVZjclNINlNj?oc=5",
+     "published_at": "2026-10-16T09:26:00+00:00",
+     "publisher": "Mirage News",
+     "source_url": "https://www.miragenews.com",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 10.0,
+   "lng": 49.0,
+   "name": "Somalia",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 7,
+   "publisher_count": 4,
+   "category": "politics",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Former NISA Chief Accuses President Mohamud of Steering Somalia Toward Sudanese-Style Collapse",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdXNkQ2lZYmNDRDZZSXdENzZKaEYwRWRHSFpLZkxhaldvMDdIUWtXN2pDY0ZHNGNiUmVrSU5OMzVuLWsxbHdkQVptdkkxQkppX2Q3Q0VhRS1hSmd3dTFFTmVrYk5TUW95a2ZsNXJCNHpfSFE1bVV3SWVwYWNPbW9rRE5yWEUxbGJKM1JITVhRVVlPNVdpSi1OME5Ud1hCYjl0WEJLcTcwWWQ2WkZoWEs5b2h4a0ZKcFl4dlhWZnhYWQ?oc=5",
+     "published_at": "2026-10-17T08:02:20+00:00",
+     "publisher": "FTL Somalia",
+     "source_url": "https://www.ftlsomalia.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Somalia says it will hold elections in 2027",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMjBpalFiTEY3c0t4cGE4UFRuQlR6WUhwWFJHZXpGaTZLczlkd0lrU3B6VHVvTHZXbDdSa3h3VXo0bGNLTFhkM1JWOUdrNG9iVTc0RzVQaWdTZ0QwV3VZVk9kNmZHbkhlczJYMnZGTGZEbkI5OWh4VGhNdU9zYWpVMnlvZTF4aUVmdlVCaEZidC1Ebld4RnhpQ0hWRmJjMFE?oc=5",
+     "published_at": "2026-10-16T19:43:10+00:00",
+     "publisher": "Hiiraan Online",
+     "source_url": "https://www.hiiraan.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Somalia to hold parliamentary and presidential elections in 2027",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQ1J4NElPdEttbTVOeWRXNnRDcVFLX1J3clZEbHhCa191Ql9SUHliRjQ3TVdwZ2JkZFBILWNxSHZ5ckZ2ejJRaG0yeG55dnhwMEY5cWd5Sm1oOGVKRVdGZ0lLX2l1ckxyZ3FKWVIxZmZkbU9KR09BZ1hwWVpyM0ZEOHkyTHdXUEQwX0FDaW5TT2lDVTVqTHR3Wm5zY1ZPelpSUE1YekJzLXEyUQ?oc=5",
+     "published_at": "2026-10-16T15:04:38+00:00",
+     "publisher": "GBC Ghana",
+     "source_url": "https://www.gbcghanaonline.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Somalia announces parliamentary and presidential elections for 2027",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWjNRSEsybno3ai1PWUlJMTFHcExzV1U2bUJVb1RNZUs2ZE5lWV9GMEM0cVJERTZ0YTB2WkNnUm96QmJrODdaUXNPNnAyX05RT09va2ZtQjRUa1Nid2xTeHVWWFFfeFlWTWNsXzJHenJCcnVEdTh2Vjg2Nl9kb3Yxa2ZCWkJHY0ExTGdBSWlXMEVzYXZHVzVFNTNiSS1wT1J3Nlg3aGZwVDBzVXVmaktZLXhyXzFuWGQ5YkE?oc=5",
+     "published_at": "2026-10-16T14:26:10+00:00",
+     "publisher": "Hiiraan Online",
+     "source_url": "https://www.hiiraan.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Somalia Backs New Election Timetable Despite Opposition Pushback",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAxSWQ1eGdDaVhndFdFNlpJV3FrOTNvMG9kaVFlcmdSRG41bzBQVTRKUm1wc2doWkhMblluajVWZUxFTF9YS1h0N0FMc1NPZk5QWUkzLTVXYXFTU2tSNkw1WGNUeUhXQ0EyUVpB?oc=5",
+     "published_at": "2026-10-16T13:01:32+00:00",
+     "publisher": "allAfrica.com",
+     "source_url": "https://allafrica.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Somalia's Govt Welcomes Election Timetable and Urges Political Dialogue",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE90LTM2bi1lZkZrbExZZWFUalFDQkpuMGdWTDRjTC1iSVY2TWp1YUNHNFlvekdhZjhFUVhTU0ZaZmZCcmZjTUFHN2Z3eTJ6ZWhBZ3pTeVRwRm55MUk?oc=5",
+     "published_at": "2026-10-16T10:16:25+00:00",
+     "publisher": "allAfrica.com",
+     "source_url": "https://allafrica.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "President Hassan Sheikh Mohamud Meets JSP Parliamentarians as Electoral Dispute Deepens",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdENPd1dzbmtyV2JBX1FtR1FZUEpaSUdIcUYtNDBFWFk0bUo4ZGM2cXR6RDdwZGhLRGJyazBsR3RCV1BzOG15bUhvWTJBTy11bVdPekZmTFc3b0xrUDJucHNFT2tBcENkRGE1bFBzeDl0akFCdmZuSDBaaG9Ma2VBaTMxeHNvMlhYVHpiSUk4aHFpWkNfYTQ0azkwWVVSRk9sc0Y2eHVkX0hpcUVwdG5uMS1hZWZUdw?oc=5",
+     "published_at": "2026-10-16T09:16:23+00:00",
+     "publisher": "FTL Somalia",
+     "source_url": "https://www.ftlsomalia.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
     }
    ]
   },
@@ -481,82 +568,6 @@
      "published_at": "2026-10-16T09:43:55+00:00",
      "publisher": "The Economic Times",
      "source_url": "https://m.economictimes.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 48.86,
-   "lng": 2.35,
-   "name": "France",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 6,
-   "publisher_count": 5,
-   "category": "society",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "France braces for wider protests as students join Yellow Vests",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTF9jdWVlOVNGUFFLcEFWMEE5anNHaFNBQk5Ed21FUGkzcURtcmVQUnNtTUFEMnoyQldlaTVEMjNkeW8yZTRxdUI3c1pkS0o4aEs3dGVWc01sOUE3NGFUOE8tQjlVWVJmQjkzNVBDQlJtSGYwRVBIMDkwUzhNQ1FkQ3QtVkRDOEwzemlSVkc3ZnFxajFfd2U2d1hSalIzUmc0U1ZvWGpzMExLQ0xtSlhDcWRESHVCQ1U0Z0F3TmpuX1PSAcABQVVfeXFMUExfY3VlZTlTRlBRS3BBVjBBOWpzR2hTQUJORHdtRVBpM3FEbXJlUFJzbU1BRDJ6MkJXZWk1RDIzZHlvMmU0cXVCN3NaZEtKOGhLN3RlVnNNbDlBNzRhVDhPLUI5VVlSZkI5MzVQQ0JSbUhmMEVQSDA5MFM4TUNRZEN0LVZEQzhMM3ppUlZHN2ZxcWoxX3dlNndYUmpSM1JnNFNWb1hqczBMS0NMbUpYQ3FkREh1QkNVNGdBd05qbl9T?oc=5",
-     "published_at": "2026-10-17T08:03:38+00:00",
-     "publisher": "Moneycontrol.com",
-     "source_url": "https://www.moneycontrol.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "A family at the heart of France's working-class anger",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeDVrN0VpNEE4aEpPc3o5VklmZzIxSVVzLUFLT3hjUkNYVlFDWWhBcUVYZmc0Ym5jMnNOUm8wQXNfdmhRMWhGaUtwbUduWjJzbWRtNV9SRFFaaUJsY04yQzQ2Yy1jeXpwVUNyemlneE5iN1VDdm5rTzNCRW9USjhJTkhia0NsM3B2YXg2Z2NVMzk3T3FVMm5GTVg3ZUhQZVZGTE1ORTVHN3FPd0pSSmNPWUxEY09JRW44QlhKYw?oc=5",
-     "published_at": "2026-10-17T02:00:11+00:00",
-     "publisher": "Le Monde.fr",
-     "source_url": "https://www.lemonde.fr",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Macron calls for calm amid fears of violence at France protests",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQmw1aUhWS0FScWFLcjU3dFFpZDdkR0dXSUVESTk3ZUJ4Y0pQTjdMSm1oa2RNd2xOdnhyMl9nSHBnRFozamdGSi0tVkFwSDU1VjRJVm9Eek5oaDZXTlBiNmVzVHc1UTk3VUpyd3o3RFJGMkR2WVJoNHVfMmUxSFY1bzlvX3E5bnNQMFoxMFhWRG9SNDlpcnRVbHMyUFdPXzNXLUhHTHhPVS0?oc=5",
-     "published_at": "2026-10-16T21:15:27+00:00",
-     "publisher": "RTL Today",
-     "source_url": "https://today.rtl.lu",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Yellow Vest movement revival: Cost-of-living demonstrations to grip pre-election France",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPenZ3TENYbXViSWFZdlJudi03MnNldXh5OFJVdnFuQnlaQzlaUndjcnJFcF9vSFNUSHNNcWpwbHRaYnJEODY5dkloQVcxV0tlY081Vk9xWlZnXy1XQXhnd3gtSjJSRGpPZDVXWVo0MWszb012MkZscFNfMm9KY2JKOWNuUHFEV005NFRSNVhrUk9ySjl6NmVxZmdtVFo3ZFJH?oc=5",
-     "published_at": "2026-10-16T11:32:22+00:00",
-     "publisher": "RTL Today",
-     "source_url": "https://today.rtl.lu",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "France's high-school student woes in numbers",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPak45dk1zUUh1b2Z0cVRPS21fLTZTNUpOUVFaSnFCbjNiVGU4ZFZUNE1MN0dEcjFJSnVodWNZQXBHN2dvclRhN19VSGdMRU5mRGEzWUMwQ0Q1eEJ6ZVZ1MWppdEpNbGYtZnJ0MkNVbzM4TzVmdEhpVWFxSkdVMXg1R0RvUEVrbzAyNkVid1RWQWZnUlU?oc=5",
-     "published_at": "2026-10-16T10:44:00+00:00",
-     "publisher": "Yahoo",
-     "source_url": "https://www.yahoo.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Cost-of-living demonstrations to grip pre-election France",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQjR0WjBqN1FIUzQwVVZCbzA3YURUTDRKMTZfRmZKUkJkYXVGQVFjelVfQkxJTjBLUHJFekUwRjdqemwyMzVjblFDRVkzQm0ya2dkQ0dVUE9wUzhDZ3JzZ3c0bVpTcVF4UUFFZzE2UVBmRTVPVXdEWGUwY3NtaUcyUVB6V2dZYXZ3c1Vhems5cFQ2bUpXdS01Nm4xU3p4d1lfQ2cyMWFwZF91ZmdWSW1EbzVtbURUUGhjdUdTYw?oc=5",
-     "published_at": "2026-10-16T10:00:00+00:00",
-     "publisher": "The Straits Times",
-     "source_url": "https://www.straitstimes.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -640,82 +651,6 @@
    ]
   },
   {
-   "lat": 10.0,
-   "lng": 49.0,
-   "name": "Somalia",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 6,
-   "publisher_count": 4,
-   "category": "politics",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Somalia to hold parliamentary and presidential elections in 2027 – Page 3",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcHJoQVZvTVJnNzJuQTJFZTJOS2FHWXFFcE1MNXVJcjhfdUlaejdiUEYyZEVmbzg1WkM1b2JaNWd5NUtlTGRJRW9oakVCWVZLelBucV80aDZDb1lESDhUaU5mY2Z1YzZmdFFZT01JUmdMa1RVckNYUElOSzNGYlBvUVpsMHRlMDl1aEEtZ1QyUkhPV1BoWm1CNXNyOUV0NmlJdGg4RzAwZVZraFd4?oc=5",
-     "published_at": "2026-10-17T01:09:50+00:00",
-     "publisher": "GBC Ghana",
-     "source_url": "https://www.gbcghanaonline.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Somalia says it will hold elections in 2027",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMjBpalFiTEY3c0t4cGE4UFRuQlR6WUhwWFJHZXpGaTZLczlkd0lrU3B6VHVvTHZXbDdSa3h3VXo0bGNLTFhkM1JWOUdrNG9iVTc0RzVQaWdTZ0QwV3VZVk9kNmZHbkhlczJYMnZGTGZEbkI5OWh4VGhNdU9zYWpVMnlvZTF4aUVmdlVCaEZidC1Ebld4RnhpQ0hWRmJjMFE?oc=5",
-     "published_at": "2026-10-16T19:43:10+00:00",
-     "publisher": "Hiiraan Online",
-     "source_url": "https://www.hiiraan.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Somalia announces parliamentary and presidential elections for 2027",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWjNRSEsybno3ai1PWUlJMTFHcExzV1U2bUJVb1RNZUs2ZE5lWV9GMEM0cVJERTZ0YTB2WkNnUm96QmJrODdaUXNPNnAyX05RT09va2ZtQjRUa1Nid2xTeHVWWFFfeFlWTWNsXzJHenJCcnVEdTh2Vjg2Nl9kb3Yxa2ZCWkJHY0ExTGdBSWlXMEVzYXZHVzVFNTNiSS1wT1J3Nlg3aGZwVDBzVXVmaktZLXhyXzFuWGQ5YkE?oc=5",
-     "published_at": "2026-10-16T14:26:10+00:00",
-     "publisher": "Hiiraan Online",
-     "source_url": "https://www.hiiraan.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Somalia Backs New Election Timetable Despite Opposition Pushback",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAxSWQ1eGdDaVhndFdFNlpJV3FrOTNvMG9kaVFlcmdSRG41bzBQVTRKUm1wc2doWkhMblluajVWZUxFTF9YS1h0N0FMc1NPZk5QWUkzLTVXYXFTU2tSNkw1WGNUeUhXQ0EyUVpB?oc=5",
-     "published_at": "2026-10-16T13:01:32+00:00",
-     "publisher": "allAfrica.com",
-     "source_url": "https://allafrica.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Somalia's Govt Welcomes Election Timetable and Urges Political Dialogue",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE90LTM2bi1lZkZrbExZZWFUalFDQkpuMGdWTDRjTC1iSVY2TWp1YUNHNFlvekdhZjhFUVhTU0ZaZmZCcmZjTUFHN2Z3eTJ6ZWhBZ3pTeVRwRm55MUk?oc=5",
-     "published_at": "2026-10-16T10:16:25+00:00",
-     "publisher": "allAfrica.com",
-     "source_url": "https://allafrica.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "President Hassan Sheikh Mohamud Meets JSP Parliamentarians as Electoral Dispute Deepens",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdENPd1dzbmtyV2JBX1FtR1FZUEpaSUdIcUYtNDBFWFk0bUo4ZGM2cXR6RDdwZGhLRGJyazBsR3RCV1BzOG15bUhvWTJBTy11bVdPekZmTFc3b0xrUDJucHNFT2tBcENkRGE1bFBzeDl0akFCdmZuSDBaaG9Ma2VBaTMxeHNvMlhYVHpiSUk4aHFpWkNfYTQ0azkwWVVSRk9sc0Y2eHVkX0hpcUVwdG5uMS1hZWZUdw?oc=5",
-     "published_at": "2026-10-16T09:16:23+00:00",
-     "publisher": "FTL Somalia",
-     "source_url": "https://www.ftlsomalia.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    }
-   ]
-  },
-  {
    "lat": 35.18,
    "lng": 33.36,
    "name": "Nicosia",
@@ -776,72 +711,6 @@
      "publisher": "Cyprus Mail",
      "source_url": "https://cyprus-mail.com",
      "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 31.5,
-   "lng": 34.47,
-   "name": "Gaza",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "count": 5,
-   "publisher_count": 5,
-   "category": "conflict",
-   "recent_3h": 2,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 50,
-   "articles": [
-    {
-     "title": "A U.S.-brokered ceasefire was supposed to end the war in Gaza. A year later, progress has stalled",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5jcGgyVGVEY1p1RjRYS2JXb0tUNHZQaUMtWlJLYm5LLTNnX0lldEZaa2J5emN6amlLdlZRUXB4MVIxclVMS0kxT1NILUhFc2ZxTXBiX19BaU1LWDlmQ2czeW5tTFdSUFNyMVVJSl9zeVhMRVVaMlVlYWpoMTBrb0k?oc=5",
-     "published_at": "2026-10-17T08:37:48+00:00",
-     "publisher": "PressReader",
-     "source_url": "https://www.pressreader.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "‘I cannot carry all of this alone’: the couples kept apart by the war in Gaza",
-     "url": "https://www.theguardian.com/world/2026/oct/17/couples-families-separated-war-in-gaza",
-     "published_at": "2026-10-17T07:00:24+00:00",
-     "publisher": "The Guardian World",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "340 Gaza Children Killed Since the Ceasefire, UNICEF Says",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQV0NhWk5PVjJMNHNfYkdYUU5TU0NlQ0dNVV9aMGJfUk1PV25uQW9najZYaEdrWndTYlFVaXpwcFYxaHh3ckVKSU1QS1lpTnZnN1prM0k4NWhaMzBNNmduX2huN3lGN0lKSjJOTW9ELTRRNW9RbHJWeFFXSjVDelhzWFhYSV8?oc=5",
-     "published_at": "2026-10-17T04:42:31+00:00",
-     "publisher": "The Eastern Herald",
-     "source_url": "https://easternherald.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "IDF says 2 Hamas terrorists who invaded Israel on Oct. 7 killed in separate Gaza strikes",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVkhzaGZyZ2NFS285dW9GSUlldWRlRGtfMzRHNWlUXzJXMWgybExFc3FjdTl5MEZYaXN5TlJCV2M5bExhTTRWNm1uQ3VLUURXVnpYRnVqSzR5WVlJT2pod2doV0NnMXdNdnJIRVgwcXdRWVZlbThzVHQxT3ZqZ291NkV1TDQ2dEtvbFk2NVY3bW1feEN3d2V4LTR1X3BiUy1EbkZRMWtFeGpQOUXSAbABQVVfeXFMTVhtdFNzZFZUN3JMRjhhMGFLd3d6dVFCYlVWTVdHd1pQbDU3c3hOZjNpN0RQcFRWbFNaRm1NU3lNY0RVb2VnMlJqQndpSXlMQnFkd2FVeDl5d0Job2pmSVRqb29WNlBVeThUREkzMzZfNXA4UWpXZWc3SVhyY0g2eGd0M2p3ZmFlSkc0WndDZUE4M09nNEpKQ1ZzU1JiNnpRVnpDNV9TSy11bkh6NzhVNzM?oc=5",
-     "published_at": "2026-10-16T23:34:41+00:00",
-     "publisher": "The Times of Israel",
-     "source_url": "https://www.timesofisrael.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Gaza: 340 children killed despite ceasefire agreement",
-     "url": "https://news.un.org/feed/view/en/story/2026/10/1168611",
-     "published_at": "2026-10-16T12:00:00+00:00",
-     "publisher": "UN News",
-     "source_url": "",
-     "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
     }
@@ -914,65 +783,65 @@
    ]
   },
   {
-   "lat": 19.43,
-   "lng": -99.13,
-   "name": "Mexico",
+   "lat": 48.86,
+   "lng": 2.35,
+   "name": "France",
    "accuracy": "country",
    "location_basis": "headline",
    "count": 5,
-   "publisher_count": 5,
-   "category": "hazards",
+   "publisher_count": 4,
+   "category": "society",
    "recent_3h": 1,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": 0,
+   "velocity_change_pct_sample": 100,
    "articles": [
     {
-     "title": "Hurricane Trudy Surges to Category 3, Threatening Mexico Coast",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRVVicE91elRjUnR3aXdIS3NseFRuTUllSUZaX2xiRTZybElZLUpmdlo1SlgtdHVXYzNJM1loanNPQ0ZLX0pTbmo5c3BXUXNQUHV1bnhfeTdINmVNTkN4X1JDcWlGTzdDVGlSU1NNMTZpbXF3THcwZ1JWbl9NYkQ5SVhaY0RnTDROaEY2cklneEZBSFhBcXc?oc=5",
-     "published_at": "2026-10-17T08:05:08+00:00",
-     "publisher": "Menafn",
-     "source_url": "https://menafn.com",
+     "title": "France braces for wider protests as students join Yellow Vests",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTF9jdWVlOVNGUFFLcEFWMEE5anNHaFNBQk5Ed21FUGkzcURtcmVQUnNtTUFEMnoyQldlaTVEMjNkeW8yZTRxdUI3c1pkS0o4aEs3dGVWc01sOUE3NGFUOE8tQjlVWVJmQjkzNVBDQlJtSGYwRVBIMDkwUzhNQ1FkQ3QtVkRDOEwzemlSVkc3ZnFxajFfd2U2d1hSalIzUmc0U1ZvWGpzMExLQ0xtSlhDcWRESHVCQ1U0Z0F3TmpuX1PSAcABQVVfeXFMUExfY3VlZTlTRlBRS3BBVjBBOWpzR2hTQUJORHdtRVBpM3FEbXJlUFJzbU1BRDJ6MkJXZWk1RDIzZHlvMmU0cXVCN3NaZEtKOGhLN3RlVnNNbDlBNzRhVDhPLUI5VVlSZkI5MzVQQ0JSbUhmMEVQSDA5MFM4TUNRZEN0LVZEQzhMM3ppUlZHN2ZxcWoxX3dlNndYUmpSM1JnNFNWb1hqczBMS0NMbUpYQ3FkREh1QkNVNGdBd05qbl9T?oc=5",
+     "published_at": "2026-10-17T08:03:38+00:00",
+     "publisher": "Moneycontrol.com",
+     "source_url": "https://www.moneycontrol.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Hurricane Trudy strengthens slightly as it moves towards Mexico’s Pacific coast",
-     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNOTdtTEtEeXptdnlMLUwxQktnUmM4MmpiV2pSSzlXUHJSSUJTOWtfcVY1ekp6cEdtdTFsQUNiX09ON2dCTGhHNFFFTFJySXNHbEtvNmhSMUNJNmdCQTFMQ3hCdnNzb3JrMElsLUNNaEFJRXBXQlppZG9hNF9Ob21zY3dlUm5saVB4SXNOekFsYXhuTV9HLTJhU3ZWemlPM0Jfb0pXLWdSbkp5cGtVaW9GOEZHYjV5VDdURHF0SUxqT2RjUEJveTlRVmMtNnhOdzFORDZOajBHOWZLR1lGVUNmSFBYMEZxbElYU0NKX3BwdERzT0FtOWh2ZTlHSTZkY2JXQkpZ?oc=5",
-     "published_at": "2026-10-17T03:56:58+00:00",
-     "publisher": "Antigo Daily Journal",
-     "source_url": "https://www.antigojournal.com",
+     "title": "Macron calls for calm amid fears of violence at France protests",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQmw1aUhWS0FScWFLcjU3dFFpZDdkR0dXSUVESTk3ZUJ4Y0pQTjdMSm1oa2RNd2xOdnhyMl9nSHBnRFozamdGSi0tVkFwSDU1VjRJVm9Eek5oaDZXTlBiNmVzVHc1UTk3VUpyd3o3RFJGMkR2WVJoNHVfMmUxSFY1bzlvX3E5bnNQMFoxMFhWRG9SNDlpcnRVbHMyUFdPXzNXLUhHTHhPVS0?oc=5",
+     "published_at": "2026-10-16T21:15:27+00:00",
+     "publisher": "RTL Today",
+     "source_url": "https://today.rtl.lu",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Hurricane Trudy strengthens to Category 3 off Mexico’s Pacific coast",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZDlxekVmNEVnMndtZmpNX3dDeENfY01TOUhGbUhrZ2JUQjFNTnZEeEloTnI1NmhyaENzQy05SDFuSVk2eGlLSGhMaXBEZENrX1RpTnJPVGRidXFYak5JUzRuRkZGckxHSmNHazR3NzdaSzR5NU1LVUtyMVgzdG5sNVpUanNTM0JTUVhYQzFZQk9BR1ltM1NSNU9CVHJ3bmY1VXg2VEQ4Q0Y0RFU4THQ4?oc=5",
-     "published_at": "2026-10-16T20:34:34+00:00",
-     "publisher": "Anadolu Ajansı",
-     "source_url": "https://www.aa.com.tr",
+     "title": "Yellow Vest movement revival: Cost-of-living demonstrations to grip pre-election France",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPenZ3TENYbXViSWFZdlJudi03MnNldXh5OFJVdnFuQnlaQzlaUndjcnJFcF9vSFNUSHNNcWpwbHRaYnJEODY5dkloQVcxV0tlY081Vk9xWlZnXy1XQXhnd3gtSjJSRGpPZDVXWVo0MWszb012MkZscFNfMm9KY2JKOWNuUHFEV005NFRSNVhrUk9ySjl6NmVxZmdtVFo3ZFJH?oc=5",
+     "published_at": "2026-10-16T11:32:22+00:00",
+     "publisher": "RTL Today",
+     "source_url": "https://today.rtl.lu",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "HURRICANE POLO DRENCHES MEXICO’S COAST AS NOLO TAKES AIM AT HAWAII",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1BSc0V1b0N3ZzkwMm1wUHFVNVVCZjFlOG5KNlZTQmt5dUMyUmpXemdiZzJDbEZuTnF6bjRWWFhfVVdWN0gyOU12WGlGcDAtYmhzTTVHUGVPZl9ac2FOSnVFdVlnSEZvRTFxQ3k2MkRCdlpUSHkyRm1fVkJxU1YyRHJiZzRYaFVyZnJWdzNQdkltdE5YbXlmZWFtQjVpREE?oc=5",
-     "published_at": "2026-10-16T15:52:17+00:00",
-     "publisher": "Travel Industry Today",
-     "source_url": "https://travelindustrytoday.com",
+     "title": "France's high-school student woes in numbers",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPak45dk1zUUh1b2Z0cVRPS21fLTZTNUpOUVFaSnFCbjNiVGU4ZFZUNE1MN0dEcjFJSnVodWNZQXBHN2dvclRhN19VSGdMRU5mRGEzWUMwQ0Q1eEJ6ZVZ1MWppdEpNbGYtZnJ0MkNVbzM4TzVmdEhpVWFxSkdVMXg1R0RvUEVrbzAyNkVid1RWQWZnUlU?oc=5",
+     "published_at": "2026-10-16T10:44:00+00:00",
+     "publisher": "Yahoo",
+     "source_url": "https://www.yahoo.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Hurricane Trudy hits category 3 off Mexico’s coast after earlier storms kill six",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSEplWEdYRTc3QmFlU0lDUHk1NWhoY0JneUtBMEYxQkZSNHhWSUFRNHhZS3E2OUFhZ2ZkbnV5WDZtRGxzcTdDSk10V1RzUy0wY1luVEpMdTdtRjJWNUNRMHJiU19ucmxFOEs2RnBmVTBGVkZKSklwcm1VUV9FMFJ1aDB5QU5KTHdieng1MklHZmNfcXBTTFJaMEFfelQyTXNjNkY3aUFXdHRPc2ZzTDd4WUV4dFdLcEE?oc=5",
-     "published_at": "2026-10-16T09:03:03+00:00",
-     "publisher": "Newswav",
-     "source_url": "https://newswav.com",
+     "title": "Cost-of-living demonstrations to grip pre-election France",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQjR0WjBqN1FIUzQwVVZCbzA3YURUTDRKMTZfRmZKUkJkYXVGQVFjelVfQkxJTjBLUHJFekUwRjdqemwyMzVjblFDRVkzQm0ya2dkQ0dVUE9wUzhDZ3JzZ3c0bVpTcVF4UUFFZzE2UVBmRTVPVXdEWGUwY3NtaUcyUVB6V2dZYXZ3c1Vhems5cFQ2bUpXdS01Nm4xU3p4d1lfQ2cyMWFwZF91ZmdWSW1EbzVtbURUUGhjdUdTYw?oc=5",
+     "published_at": "2026-10-16T10:00:00+00:00",
+     "publisher": "The Straits Times",
+     "source_url": "https://www.straitstimes.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1108,6 +977,72 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 28.61,
+   "lng": 77.21,
+   "name": "India",
+   "accuracy": "country",
+   "location_basis": "description",
+   "count": 5,
+   "publisher_count": 2,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -50,
+   "articles": [
+    {
+     "title": "Mark Zuckerberg's wife Priscilla Chan donates $900,000 to Pulama Ola Kauai, the medical respite's directo",
+     "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxQWUhGQ2lXd2RMcUduYjQ4dUpWRi02Ql9zcUxDSWlGaC04OS1ISFhoMTJRZ2dXeXRqVlU5S0lUZ1FOYWt3N3E3UlAzNUZkZElnRVpvWEFMNHoxVVBmSHE3MUNJSEdtbHRHcGxnLWpTeVBBbzhic3BjYnBEam1MR0MyQmYtX2VfSzlQbmxzXzZHbC1wRVJWdUhxY1E3NnNqUlY0cVp6TmVNZ0hCQTFVTy0tUDNLR0JCeFNHZXJTMTdWYWVLejlNSU5tb3NvSlY3UXFtUnd3VFU0VUd3bldfOWx3Z25ZZnlXcnBMejc5YV93MmZrRldHaXpyOHJnRUhsT0JBaW01eTc5cVlmaWQxNnFLLThaUkw3bmt6ZkdLbWRnZnJaVk94aGhFWFB1TDE1U3d0S1R6YWFMc0R4UmIyTHk5dktyRFpnbzVkWmtOdEE4Q1d4LVJ0MDl6ZEpKZUV1bW1MQm1KcU1scFFlUdIB7wJBVV95cUxNcjZKaUpETUJIUzVYVHNuT1Z5YTltX1RUcEg0RmliaWJ4aU05N2JDTmVNX2o5TllkanU2b3ZrTi1Db1JsSm5FTkRmRW9idVMyUVA3OGhDb1ZzUTl1UnU3OHJhWUcyS0N5bXZpcHVpVDRKaGpVaXJwc0xBdGxZSkthUk9Rc1Fnb1ZMWFJwWF9lclRaTnp2TDVXa3k3RExFZFBSUm9IdWZOcjNSVVFJazZoVVJVZVBReHk1aWZ0TUhYVGJ0Rk5PaUxOaExHdnVYcTF6TDdzQ2tmcXdVOHY3eF9yTkZTUWxFLVA3R1ZFbXI4MEJURlF0QlhFRmU3ZFdzY0ZRUW1DRmpSYmp2NHpUTmpDckluWEtKdzItVXNFbHNUMW5hUEhxTUVLakkzZlA1YVd4QklnSFNTSmxyYVF2RTkwRlg5b0hqaFRnVUlRejF3SDI4bGNPNjRxYkNWRGdVN1hRbEo0SEpmSDVmcWtEU2hv?oc=5",
+     "published_at": "2026-10-17T05:08:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "UP elections: Polling booths may be set up in housing societies",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUEtTZm11V2I3bG1vb1kxTXpJQjJnU3UxYVZValJsU1BMX1VsWkZISWpSdnlhdDBnOVpOb2pwZlA1R0pXYUJDVmRUYUJpeTFjVnZZeHdMbG84RjBlNjNBek91Y1gwZzhyUzBmWndaR0pLTDFMb2FpZ19EMnZVM28tX1NzWVVxU2xrYmgyOW8wQVhzbWJ3em1keGJTWWt3NWdXT21DUFZrcl8yWGhFMWg2MDMxSVpwU2xtVHhwZjlaVTc5QTMzTVNyMlAwdXV0NXNOQ3ow0gHYAUFVX3lxTE9Xc3ZXWUs3TTFvRUJTV0Jnak4yMmQwSEVGYjZhWTZIcUUwVGE2ZGRFQkJ0cWUtYUpXRTlFUG93SnIzZnBnakhjY3NPd0ZqakxrbUhQZ3BEcUJwVHpOc3J0TjFDVFozc3ZDWmswX1dZQmJxUUVBS3VGZHRRMzJyVGk5RWNOc1V2MUMwM29vcGxRNFNGTTBkQzh5ZzNfMDRyMkhkZTlMazdOd2p2cjJaQU13Y005dFlTZlFNSm03dnZCT3p2V0xFNHZaYzhaZm04SlVZOGJjMmVQTw?oc=5",
+     "published_at": "2026-10-16T19:53:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "In Gurgaon, man returns to find his wife murdered in loo, hands tied",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVVBGS0l5OFVHRXpfY1k0T21iSnFVeFVPc0lybkRlVEpyUlgzU2tyUTZKN0R4ZFFrYUllYjVpYmplYVlkMzdOVjk1VW9kUlZlSXNvOUpodF9sdlFaRmNBZXA2Y3M2aXo3SUFsb2RZaEtRZTJlTV9IcUpLVThLTDhsUk9CSG1oYl9jNFJnSHMwYm05LTN6Yjl2bFlZdkxndXhJZEJaYU52TzY1cTlNbVVadzhLQ21XZGJJSVNjeW5QMlA0WjNqcEhpLW0ya2ZXeTgtVHd4QUw1MDnSAd4BQVVfeXFMT2dpNFRORVVNV1luQjZxQkh5Wlk0SGdTVlBpUDY1ZG9GSkdSS01wOTBPVDlpZ1pHMW9YTEFKQXBMNC1hT3NPckZmYjJuWVYxaWVySHpNQjhlQ3dmOUV1dlpjOGtaSFBOck1qanZxMUU4X2tsMzBOY3NsQ3ZydDk1MlVqNW9uOWxqNkY2ZzBVbVBkMDBVeDdwLWpZNG5hSWliWU5zRlI2WlBTeW05M2R2UVNqT2F5UGhMYkNQVDJZX0dBcG83NEk3WlI5N2cxT1JoUXpJNm1SRGNtUUxESXFB?oc=5",
+     "published_at": "2026-10-16T19:46:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "6,000 cops, 2 notices, Dipke among 150 detained: How unrest unfolded during CP 'Tiranga march'",
+     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQdEFiX1BTbVVJQzdzeHdCdlByRzN1Qk1kVXVtcGxiSG9yT0ZpSFRROVRIS3RFREhEYzZDTm1FZXVFN0U5Z1FmcEkxNWxtaEtQSmFnUkp4VXoxZ0xNbnRiYlMwQkpmVV95S3FjTUhpeTZMNFduT2RNcWNxQlJoWUFyVXVianFCckREbXBfNG00cy1PVS01a2JyLW5uVWRWQjBCWWlqYmtYOTNMQnJrMWpTTXlYUkZaQjVhQXhnZU9RbjdVdExGVmRvWk1MOEdWLW5GdEtNSVh3d0RZZkgyTUJVM0xPVGJ4M0Z5TjdFOHJiRG5mVVdnelY0MdIB-AFBVV95cUxQdEFiX1BTbVVJQzdzeHdCdlByRzN1Qk1kVXVtcGxiSG9yT0ZpSFRROVRIS3RFREhEYzZDTm1FZXVFN0U5Z1FmcEkxNWxtaEtQSmFnUkp4VXoxZ0xNbnRiYlMwQkpmVV95S3FjTUhpeTZMNFduT2RNcWNxQlJoWUFyVXVianFCckREbXBfNG00cy1PVS01a2JyLW5uVWRWQjBCWWlqYmtYOTNMQnJrMWpTTXlYUkZaQjVhQXhnZU9RbjdVdExGVmRvWk1MOEdWLW5GdEtNSVh3d0RZZkgyTUJVM0xPVGJ4M0Z5TjdFOHJiRG5mVVdnelY0MQ?oc=5",
+     "published_at": "2026-10-16T14:59:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Protest Over SIR In Photos: AISA's Neha Bora Detained At Mandi House",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdXpFNmE5TWQxRk9FczEybXpsZzF3NUhhWFRDNm5DMzBCYTJsQ01vTGZDbzRJd2psTWRRclp6MGRfWlB2eUJBeGt1YmExcWtOaVI2amJnSXFUcU5GR1ZoLURjN0l2eVN0VEVoUnJNd3ZTSXhGZDUxZ1Zvcl93VW1WdHlKblJidGdFQzJfQTR3eVhrUExKWWo3b0dvbGc2YW90SFN0bXRQVdIBtAFBVV95cUxNYVY0MUtwM0RBczI4V1JHcFRtbEdjTEUxWlpLMUFpbUxTWHVhVXVPdjk2NFFlckRGRklPekVpS042dnNsclhjWHdOMkUyZjdVTkF5VEVsb3hjUEt0NnRobURQcjczdUFXdWpHMmZ2enlBZlM3Zkt5T1JJZFAyOUlKR05ibC1RcTE0OUxqMmpWZEZRX252Y0lHd3Mta3RyRzZuVnNuMUM2YlhPUE4wNnJMTkFlb2c?oc=5",
+     "published_at": "2026-10-16T14:52:05+00:00",
+     "publisher": "Outlook India",
+     "source_url": "https://www.outlookindia.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
     }
    ]
   },
@@ -1310,6 +1245,174 @@
    ]
   },
   {
+   "lat": 31.5,
+   "lng": 34.47,
+   "name": "Gaza",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "count": 4,
+   "publisher_count": 4,
+   "category": "conflict",
+   "recent_3h": 2,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 50,
+   "articles": [
+    {
+     "title": "A U.S.-brokered ceasefire was supposed to end the war in Gaza. A year later, progress has stalled",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5jcGgyVGVEY1p1RjRYS2JXb0tUNHZQaUMtWlJLYm5LLTNnX0lldEZaa2J5emN6amlLdlZRUXB4MVIxclVMS0kxT1NILUhFc2ZxTXBiX19BaU1LWDlmQ2czeW5tTFdSUFNyMVVJSl9zeVhMRVVaMlVlYWpoMTBrb0k?oc=5",
+     "published_at": "2026-10-17T08:37:48+00:00",
+     "publisher": "PressReader",
+     "source_url": "https://www.pressreader.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "‘I cannot carry all of this alone’: the couples kept apart by the war in Gaza",
+     "url": "https://www.theguardian.com/world/2026/oct/17/couples-families-separated-war-in-gaza",
+     "published_at": "2026-10-17T07:00:24+00:00",
+     "publisher": "The Guardian World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "340 Gaza Children Killed Since the Ceasefire, UNICEF Says",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQV0NhWk5PVjJMNHNfYkdYUU5TU0NlQ0dNVV9aMGJfUk1PV25uQW9najZYaEdrWndTYlFVaXpwcFYxaHh3ckVKSU1QS1lpTnZnN1prM0k4NWhaMzBNNmduX2huN3lGN0lKSjJOTW9ELTRRNW9RbHJWeFFXSjVDelhzWFhYSV8?oc=5",
+     "published_at": "2026-10-17T04:42:31+00:00",
+     "publisher": "The Eastern Herald",
+     "source_url": "https://easternherald.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "IDF says 2 Hamas terrorists who invaded Israel on Oct. 7 killed in separate Gaza strikes",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVkhzaGZyZ2NFS285dW9GSUlldWRlRGtfMzRHNWlUXzJXMWgybExFc3FjdTl5MEZYaXN5TlJCV2M5bExhTTRWNm1uQ3VLUURXVnpYRnVqSzR5WVlJT2pod2doV0NnMXdNdnJIRVgwcXdRWVZlbThzVHQxT3ZqZ291NkV1TDQ2dEtvbFk2NVY3bW1feEN3d2V4LTR1X3BiUy1EbkZRMWtFeGpQOUXSAbABQVVfeXFMTVhtdFNzZFZUN3JMRjhhMGFLd3d6dVFCYlVWTVdHd1pQbDU3c3hOZjNpN0RQcFRWbFNaRm1NU3lNY0RVb2VnMlJqQndpSXlMQnFkd2FVeDl5d0Job2pmSVRqb29WNlBVeThUREkzMzZfNXA4UWpXZWc3SVhyY0g2eGd0M2p3ZmFlSkc0WndDZUE4M09nNEpKQ1ZzU1JiNnpRVnpDNV9TSy11bkh6NzhVNzM?oc=5",
+     "published_at": "2026-10-16T23:34:41+00:00",
+     "publisher": "The Times of Israel",
+     "source_url": "https://www.timesofisrael.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 19.43,
+   "lng": -99.13,
+   "name": "Mexico",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 4,
+   "publisher_count": 4,
+   "category": "hazards",
+   "recent_3h": 1,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Hurricane Trudy Surges to Category 3, Threatening Mexico Coast",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRVVicE91elRjUnR3aXdIS3NseFRuTUllSUZaX2xiRTZybElZLUpmdlo1SlgtdHVXYzNJM1loanNPQ0ZLX0pTbmo5c3BXUXNQUHV1bnhfeTdINmVNTkN4X1JDcWlGTzdDVGlSU1NNMTZpbXF3THcwZ1JWbl9NYkQ5SVhaY0RnTDROaEY2cklneEZBSFhBcXc?oc=5",
+     "published_at": "2026-10-17T08:05:08+00:00",
+     "publisher": "Menafn",
+     "source_url": "https://menafn.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Hurricane Trudy strengthens slightly as it moves towards Mexico’s Pacific coast",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNOTdtTEtEeXptdnlMLUwxQktnUmM4MmpiV2pSSzlXUHJSSUJTOWtfcVY1ekp6cEdtdTFsQUNiX09ON2dCTGhHNFFFTFJySXNHbEtvNmhSMUNJNmdCQTFMQ3hCdnNzb3JrMElsLUNNaEFJRXBXQlppZG9hNF9Ob21zY3dlUm5saVB4SXNOekFsYXhuTV9HLTJhU3ZWemlPM0Jfb0pXLWdSbkp5cGtVaW9GOEZHYjV5VDdURHF0SUxqT2RjUEJveTlRVmMtNnhOdzFORDZOajBHOWZLR1lGVUNmSFBYMEZxbElYU0NKX3BwdERzT0FtOWh2ZTlHSTZkY2JXQkpZ?oc=5",
+     "published_at": "2026-10-17T03:56:58+00:00",
+     "publisher": "Antigo Daily Journal",
+     "source_url": "https://www.antigojournal.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Hurricane Trudy strengthens to Category 3 off Mexico’s Pacific coast",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZDlxekVmNEVnMndtZmpNX3dDeENfY01TOUhGbUhrZ2JUQjFNTnZEeEloTnI1NmhyaENzQy05SDFuSVk2eGlLSGhMaXBEZENrX1RpTnJPVGRidXFYak5JUzRuRkZGckxHSmNHazR3NzdaSzR5NU1LVUtyMVgzdG5sNVpUanNTM0JTUVhYQzFZQk9BR1ltM1NSNU9CVHJ3bmY1VXg2VEQ4Q0Y0RFU4THQ4?oc=5",
+     "published_at": "2026-10-16T20:34:34+00:00",
+     "publisher": "Anadolu Ajansı",
+     "source_url": "https://www.aa.com.tr",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Hurricane Trudy eyes Category 4 strength as Mexico braces for heavy rain",
+     "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPOGp2QjNuTlJqQmhxR0VIdUVNV21QbGhTWVZISkJWN0M1RFpCdF9rYmh3U2hhYjNyT3ZBX3dnZmdxZDdiTlhqcDZWNUVxb1h6R1hqcm9maDA0cmpXb0lhQVl1UmdYbWhKM0tRd282NjhkRllDdzNDTl9vRGJVc0Vab19yYXNPaTF1S01IU0FLbjRScUpPQmw0Um1GVG5LaW9YUE42b18xY19EVHlSSDV0dDU4WGhKa191MnpXbkJwdV9SUF9YcDlnQm9KVzYzY3BEd19XR29ZTDg0ck9PMXRKNGwwT2NhVHYtMG5BNlZKZmlUcnpfNlljZ2t2N0c1OS0wcHVxb2NLU2VYZ2JmczkybkhZYw?oc=5",
+     "published_at": "2026-10-16T18:44:00+00:00",
+     "publisher": "The Weather Network",
+     "source_url": "https://www.theweathernetwork.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 28.61,
+   "lng": 77.21,
+   "name": "India",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 4,
+   "publisher_count": 3,
+   "category": "science",
+   "recent_3h": 2,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 200,
+   "articles": [
+    {
+     "title": "Starlink Says It Is Ready to Connect India, but Final Satellite Internet Clearances Remain Crucial",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa0NOVHhvSHY4ajhkZzFuU0RwS3lDczI4Q0hOeHBCZ1d1eUpEdWMwbXdVZWhEeWxHdWtlRmNsWmgtMHJnMUdNR1QyY3RZUTNKQTJabkRYVkk2dW9vYjY4ZnFYVVgwWlAxcTlSQjV2Mk43T05yUzJYMG1mZlVVLThRUnpGZ20xVURJVHBpY0VWdGZIVjh6M25WMnRmbXItRkxpbFQ5ODF6WQ?oc=5",
+     "published_at": "2026-10-17T08:01:57+00:00",
+     "publisher": "www.nationpathindia.com",
+     "source_url": "https://www.nationpathindia.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "India Backs Indigenous 32-Slice CT Scanner Project to Strengthen Medical Technology Manufacturing",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVWRGTk12RTBZV2poOFRMSURKYktkUFE2eUdQQmxQNjREdklEWXNCZlpfS1ZSc01ad2xMTWpxRW9Bb3NKZ3pBSzdRLXNWMkU2dnpsQ29NdVVyTnd5ZXZYekdrRE8yRjkzVE9WM1lGbzhqb3BTT045ZzZnZUU5TlA5c19fQlM5emNiVVgxWlc2ZEs1ODBIVGoxQ2E1S3ptekZ4MHBCUW5vck14azAz?oc=5",
+     "published_at": "2026-10-17T07:32:24+00:00",
+     "publisher": "www.nationpathindia.com",
+     "source_url": "https://www.nationpathindia.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "India’s centipede family tree extended with discovery of three new species from South India",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQblBKRGhVT21hMUh4ZEdiRkdBdWxlejM2eGNIMVAtYl9lTF9SV2lmS3ZXM3A0VVlvSjBFNlYyT2JBT2ZET0RqaTU3S25pWm10VFdtTEtMNzQ5bU1PWTMxWkRNT2RueVZTLVYyTW5NcENVeUlEOUlxai1oS1daSlE2dVhaNXp3UGh5R3kzLWhvQ0JROVFJVXBRTzk0WDRhTDRwN0VpVGx4V2RUUkhCMDhmeldwbVBmV3E0T3FydS12dw?oc=5",
+     "published_at": "2026-10-16T16:28:24+00:00",
+     "publisher": "Research Matters",
+     "source_url": "https://researchmatters.in",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "AI enters the world of mathematics: Simons Foundation, OpenAI and Anthropic join hands for $15 million re",
+     "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPOXh6WkVoY2lMckJPT1RfSmFNQkYtSFdaYmhvWmJSXzdDN0djdzdEcGpRYVhDeXhDV2U5V0ZKMEZieVpJOXFmTmVYNWZSUnVLR2lyejRVUHV3eFNhTTBieklDbXFJcVd0aFlDa0xaYjlkRVo0VEZYdGlvS1FFZU0yaVFfUTlsUjFrcUUxeGk3dnJLeGxDellvUl9IbGtNb3ZvaHN4cHQ2Y0ZEa2lEQU5sd0tacGFsM0d0SVZOeHFuaHBnOUJZUkxRZ1B6b3dmLW94MmVURVhlejEta3EzeGtWX3RuWk9XRGdvVDlZVVU4Vm1HZFFDaUJfc1hXUnJuX2tLSjk4eThDRi14dWRub1d3WXM4OHJOMFpDeUlyQm9NU0lQUGc3WHZr0gGnAkFVX3lxTE85eHpaRWhjaUxyQk9PVF9KYU1CRi1IV1piaG9aYlJfN0M3R2N3N0RwalFhWEN5eENXZTlXRkowRmJ5Wkk5cWZOZVg1ZlJSdUtHaXJ6NFVQdXd4U2FNMGJ6SUNtcUlxV3RoWUNrTFpiOWRFWjRURlh0aW9LUUVlTTJpUV9ROWxSMWtxRTF4aTd2ckt4bEN6WW9SX0hsa01vdm9oc3hwdDZjRkRraURBTmx3S1pwYWwzR3RJVk54cW5ocGc5QllSTFFnUHpvd2Ytb3gyZVRFWGV6MS1rcTN4a1ZfdG5aT1dEZ29UOVlVVThWbUdkUUNpQl9zWFdScm5fa0tKOTh5OENGLXh1ZG5vV3dZczg4ck4wWkN5SXJCb01TSVBQZzdYdms?oc=5",
+     "published_at": "2026-10-16T11:01:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
    "lat": 36.78,
    "lng": -119.42,
    "name": "California",
@@ -1478,58 +1581,58 @@
    ]
   },
   {
-   "lat": 28.61,
-   "lng": 77.21,
-   "name": "India",
+   "lat": 48.86,
+   "lng": 2.35,
+   "name": "France",
    "accuracy": "country",
-   "location_basis": "description",
+   "location_basis": "headline",
    "count": 4,
-   "publisher_count": 2,
-   "category": "society",
+   "publisher_count": 3,
+   "category": "education",
    "recent_3h": 0,
    "previous_3h": 1,
    "velocity": "steady",
    "velocity_change_pct_sample": -50,
    "articles": [
     {
-     "title": "Mark Zuckerberg's wife Priscilla Chan donates $900,000 to Pulama Ola Kauai, the medical respite's directo",
-     "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxQWUhGQ2lXd2RMcUduYjQ4dUpWRi02Ql9zcUxDSWlGaC04OS1ISFhoMTJRZ2dXeXRqVlU5S0lUZ1FOYWt3N3E3UlAzNUZkZElnRVpvWEFMNHoxVVBmSHE3MUNJSEdtbHRHcGxnLWpTeVBBbzhic3BjYnBEam1MR0MyQmYtX2VfSzlQbmxzXzZHbC1wRVJWdUhxY1E3NnNqUlY0cVp6TmVNZ0hCQTFVTy0tUDNLR0JCeFNHZXJTMTdWYWVLejlNSU5tb3NvSlY3UXFtUnd3VFU0VUd3bldfOWx3Z25ZZnlXcnBMejc5YV93MmZrRldHaXpyOHJnRUhsT0JBaW01eTc5cVlmaWQxNnFLLThaUkw3bmt6ZkdLbWRnZnJaVk94aGhFWFB1TDE1U3d0S1R6YWFMc0R4UmIyTHk5dktyRFpnbzVkWmtOdEE4Q1d4LVJ0MDl6ZEpKZUV1bW1MQm1KcU1scFFlUdIB7wJBVV95cUxNcjZKaUpETUJIUzVYVHNuT1Z5YTltX1RUcEg0RmliaWJ4aU05N2JDTmVNX2o5TllkanU2b3ZrTi1Db1JsSm5FTkRmRW9idVMyUVA3OGhDb1ZzUTl1UnU3OHJhWUcyS0N5bXZpcHVpVDRKaGpVaXJwc0xBdGxZSkthUk9Rc1Fnb1ZMWFJwWF9lclRaTnp2TDVXa3k3RExFZFBSUm9IdWZOcjNSVVFJazZoVVJVZVBReHk1aWZ0TUhYVGJ0Rk5PaUxOaExHdnVYcTF6TDdzQ2tmcXdVOHY3eF9yTkZTUWxFLVA3R1ZFbXI4MEJURlF0QlhFRmU3ZFdzY0ZRUW1DRmpSYmp2NHpUTmpDckluWEtKdzItVXNFbHNUMW5hUEhxTUVLakkzZlA1YVd4QklnSFNTSmxyYVF2RTkwRlg5b0hqaFRnVUlRejF3SDI4bGNPNjRxYkNWRGdVN1hRbEo0SEpmSDVmcWtEU2hv?oc=5",
-     "published_at": "2026-10-17T05:08:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
-     "source_kind": "aggregator",
+     "title": "Live: France's Yellow Vests throw their weight behind mounting student protests",
+     "url": "https://www.france24.com/en/france/20261017-live-france-s-yellow-vests-throw-their-weight-behind-mounting-student-protests",
+     "published_at": "2026-10-17T05:17:22+00:00",
+     "publisher": "France24",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
-     "geo_match": "description"
+     "geo_match": "headline"
     },
     {
-     "title": "In Gurgaon, man returns to find his wife murdered in loo, hands tied",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVVBGS0l5OFVHRXpfY1k0T21iSnFVeFVPc0lybkRlVEpyUlgzU2tyUTZKN0R4ZFFrYUllYjVpYmplYVlkMzdOVjk1VW9kUlZlSXNvOUpodF9sdlFaRmNBZXA2Y3M2aXo3SUFsb2RZaEtRZTJlTV9IcUpLVThLTDhsUk9CSG1oYl9jNFJnSHMwYm05LTN6Yjl2bFlZdkxndXhJZEJaYU52TzY1cTlNbVVadzhLQ21XZGJJSVNjeW5QMlA0WjNqcEhpLW0ya2ZXeTgtVHd4QUw1MDnSAd4BQVVfeXFMT2dpNFRORVVNV1luQjZxQkh5Wlk0SGdTVlBpUDY1ZG9GSkdSS01wOTBPVDlpZ1pHMW9YTEFKQXBMNC1hT3NPckZmYjJuWVYxaWVySHpNQjhlQ3dmOUV1dlpjOGtaSFBOck1qanZxMUU4X2tsMzBOY3NsQ3ZydDk1MlVqNW9uOWxqNkY2ZzBVbVBkMDBVeDdwLWpZNG5hSWliWU5zRlI2WlBTeW05M2R2UVNqT2F5UGhMYkNQVDJZX0dBcG83NEk3WlI5N2cxT1JoUXpJNm1SRGNtUUxESXFB?oc=5",
-     "published_at": "2026-10-16T19:46:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
+     "title": "France's high-school student protests have developed a language of their own, mixing wordplay, political codes and internet memes. Here's what some of the signs actually mean. #DWNews",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNW94MVpaZGkwSGJPTllYSm5RdGNsa3U2T2dDakJnOERfaW1oRVZBME14ajZwTWJ5dVFqVmNMUU02LU1IS1JhMDRhMm5aeW8yMHdpdHFCamZNeEIzR0NSUWlSSmlYMDVLLUlYTEFKMGZkWDJmSnNZaUIyRXdudnZaeC0zWjdkTEdTN0wwdjZZcVN4X05VWnptamxucXpSWDRWZkJWV1locjl6dGx2RU1tc2tyZVhITWRvaWZOZDROc1lWY2wwOVRsY3VsdjZJdlhmYnZWWV90ZUVJd2pXTUF6Tg?oc=5",
+     "published_at": "2026-10-16T21:34:15+00:00",
+     "publisher": "Facebook",
+     "source_url": "https://www.facebook.com",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "description"
+     "geo_match": "headline"
     },
     {
-     "title": "6,000 cops, 2 notices, Dipke among 150 detained: How unrest unfolded during CP 'Tiranga march'",
-     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQdEFiX1BTbVVJQzdzeHdCdlByRzN1Qk1kVXVtcGxiSG9yT0ZpSFRROVRIS3RFREhEYzZDTm1FZXVFN0U5Z1FmcEkxNWxtaEtQSmFnUkp4VXoxZ0xNbnRiYlMwQkpmVV95S3FjTUhpeTZMNFduT2RNcWNxQlJoWUFyVXVianFCckREbXBfNG00cy1PVS01a2JyLW5uVWRWQjBCWWlqYmtYOTNMQnJrMWpTTXlYUkZaQjVhQXhnZU9RbjdVdExGVmRvWk1MOEdWLW5GdEtNSVh3d0RZZkgyTUJVM0xPVGJ4M0Z5TjdFOHJiRG5mVVdnelY0MdIB-AFBVV95cUxQdEFiX1BTbVVJQzdzeHdCdlByRzN1Qk1kVXVtcGxiSG9yT0ZpSFRROVRIS3RFREhEYzZDTm1FZXVFN0U5Z1FmcEkxNWxtaEtQSmFnUkp4VXoxZ0xNbnRiYlMwQkpmVV95S3FjTUhpeTZMNFduT2RNcWNxQlJoWUFyVXVianFCckREbXBfNG00cy1PVS01a2JyLW5uVWRWQjBCWWlqYmtYOTNMQnJrMWpTTXlYUkZaQjVhQXhnZU9RbjdVdExGVmRvWk1MOEdWLW5GdEtNSVh3d0RZZkgyTUJVM0xPVGJ4M0Z5TjdFOHJiRG5mVVdnelY0MQ?oc=5",
-     "published_at": "2026-10-16T14:59:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
-     "source_kind": "aggregator",
+     "title": "'Finish what we started': After student protests, France braces for return of the Yellow Vests",
+     "url": "https://www.france24.com/en/europe/20261016-finish-what-we-started-after-student-protests-france-braces-return-yellow-vests",
+     "published_at": "2026-10-16T20:10:18+00:00",
+     "publisher": "France24",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
-     "geo_match": "description"
+     "geo_match": "headline"
     },
     {
-     "title": "Protest Over SIR In Photos: AISA's Neha Bora Detained At Mandi House",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdXpFNmE5TWQxRk9FczEybXpsZzF3NUhhWFRDNm5DMzBCYTJsQ01vTGZDbzRJd2psTWRRclp6MGRfWlB2eUJBeGt1YmExcWtOaVI2amJnSXFUcU5GR1ZoLURjN0l2eVN0VEVoUnJNd3ZTSXhGZDUxZ1Zvcl93VW1WdHlKblJidGdFQzJfQTR3eVhrUExKWWo3b0dvbGc2YW90SFN0bXRQVdIBtAFBVV95cUxNYVY0MUtwM0RBczI4V1JHcFRtbEdjTEUxWlpLMUFpbUxTWHVhVXVPdjk2NFFlckRGRklPekVpS042dnNsclhjWHdOMkUyZjdVTkF5VEVsb3hjUEt0NnRobURQcjczdUFXdWpHMmZ2enlBZlM3Zkt5T1JJZFAyOUlKR05ibC1RcTE0OUxqMmpWZEZRX252Y0lHd3Mta3RyRzZuVnNuMUM2YlhPUE4wNnJMTkFlb2c?oc=5",
-     "published_at": "2026-10-16T14:52:05+00:00",
-     "publisher": "Outlook India",
-     "source_url": "https://www.outlookindia.com",
+     "title": "Why is France Burning?",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5XNUJhNkpCYTQ0RFIwTU8zMEx5SGx2c21XNmJwRGVrQU9OOFA0ZUxEcDhEVEQtS3J2WHFNRWJxeW1uLXBxUExPWTNUMTZ4Uzc1OHY3N0p2emN0ckVIVU5LS2plcldsOHM2aVM0S0M0aDBlNFpDQ0E?oc=5",
+     "published_at": "2026-10-16T10:00:00+00:00",
+     "publisher": "Time Magazine",
+     "source_url": "https://time.com",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "description"
+     "geo_match": "headline"
     }
    ]
   },
@@ -1539,53 +1642,89 @@
    "name": "Delhi",
    "accuracy": "place",
    "location_basis": "headline",
-   "count": 4,
+   "count": 3,
    "publisher_count": 3,
-   "category": "society",
-   "recent_3h": 0,
+   "category": "community",
+   "recent_3h": 1,
    "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": 0,
+   "velocity_change_pct_sample": 100,
    "articles": [
     {
-     "title": "A thousand slogans echoed here - but it could be the end for iconic Delhi protest site",
-     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAteFhZS0RNd1dESnIzOW0yNTI4YUg0Z1dWOHZIOGhRY0ZRcVRNOVU5RHRhLWlxbDlvUUFtY1djMFpFWkhVQ2dYZFZ0RDJCcTczOHNMWkY5Vm82NG1jT1E?oc=5",
+     "title": "Contestations en Inde : le chef des \"cafards\" à nouveau arrêté à New Delhi",
+     "url": "https://www.france24.com/fr/vid%C3%A9o/20261017-contestations-en-inde-le-chef-des-cafards-%C3%A0-nouveau-arr%C3%AAt%C3%A9-%C3%A0-new-delhi",
+     "published_at": "2026-10-17T09:05:24+00:00",
+     "publisher": "France24 FR",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "fr",
+     "geo_match": "headline"
+    },
+    {
+     "title": "A thousand slogans echoed here",
+     "url": "https://www.bbc.co.uk/news/articles/c6kgqjvdv4n2o?at_medium=RSS&at_campaign=rss",
      "published_at": "2026-10-17T00:41:58+00:00",
-     "publisher": "BBC",
-     "source_url": "https://www.bbc.co.uk",
+     "publisher": "BBC World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
+     "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
+     "published_at": "2026-10-16T13:26:43+00:00",
+     "publisher": "NPR World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 38.72,
+   "lng": -9.14,
+   "name": "Portugal",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 3,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 2,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 200,
+   "articles": [
+    {
+     "title": "Thousands expected at protests across Portugal over cost of living",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUExIdEkxWDdVRUxINmNUSTVmTVV1TEdwTHpGMTd0Tm0tTW56X1k2YlRROEdPM0lFdUNxTDdFYmI3T2FrTzJvR0JOSU91bW4tQ080X1NxWE1ZZ1F6NTE4MzZYMzJmcUFhalN4S0V4OUMwS1NoNEJhcl92MXRucHNXckg4dy16TkhuamhHT2RTcUxrdEpBMnZiY3IzZEFfWnlsNnc?oc=5",
+     "published_at": "2026-10-17T08:44:29+00:00",
+     "publisher": "Portugal Resident",
+     "source_url": "https://www.portugalresident.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "‘Police can break bones, not satyagraha’: Rahul Gandhi alleges Delhi Police refused to file FIR over assa",
-     "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxOS29UbkhVWHZlUndxdzZGZGtnRXRnV3BydnNpbFZQcGxwNkxLc1V0T0R3UjJWZTltSFRRU3J2bUZnbUdySVM3cm5ULUdXcTB0Y1dVSUI4N1EzRGIwY2RRZjJJWmd0Z1MyVVc2RUFmalowZUNIQXljTElhN3phZWlfSk5QU29WZ0tkcXV3YUYweEw5TTYtcUtNNkNsbzVwM293MkROVjhjcmJCZmFVdlVBUzVWR0hnUm9rMEVkLWZjaVBjMFluVWFBSmxaQ014Y0NmU2ZMdXpGc0hyb3k2ekpsTy1SSnMtRmFPdGZWanF0QWJodzZLLUphdFkyclg5WndXVm1ha2tTaEhlSTBuTGhmYU0zNGE5Mk1ISkZrcFNQZ9IBpAJBVV95cUxQVzRHemUtcDF5TDVvVnlMU1pFZkhobnpja2RVUlFnSlVoY3k3QVdOZjRXbTJKN0JZalFJbEVOV2hpektCMFdSTTQ3R2M5ZmJJY0ZXbUxyeTZQSXZZREdSR01OTTExOFFyc1gxNjhXZ3gyNWJSaVhWU19zUGg0M2RkelhNVFFzSGZ1SlJsUEpTWjFiM2tPakhEUFNJNW41eWZXdFBUUWR2QkdST094di1GaWFiZkpNZ080UnNhdlMxX1BXamNuckhEYzA5ZXZTREd4ZHVvV1VLRV9rMzY2OHAwWldGVGNGYlo0c2hjdU9SLU9qUzc5SUlZU2J6MUR4RWp0WUxRa1BXSElpS2RYNlo5aWxNUElFMVJKVWNCeHdPWWhkNWpx?oc=5",
-     "published_at": "2026-10-16T12:58:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
+     "title": "Portugal PM denounces threats against his home and family at housing protest",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVF9HRUtwV2NheFNKaG83WUJUUWNpRUNQcHM2UHRib2hxaHVRNmhfU1FYbldJWC1kc3ltb2NyaDByWkJ4Y3drV1I5VWsycXFqNE5fNVVvS0hsWUtGYW1HdlVIaU04c1RnSUdPT0p2V2VlQnNoOUhOUE5Wak9ZTHRwZ0lFa1ZvX2JaQTJvWjRyaWRSc3E3Yy1mZzFFa3hQOVdnYV96MUU3c1dXVGREenk4?oc=5",
+     "published_at": "2026-10-17T08:34:54+00:00",
+     "publisher": "Portugal Resident",
+     "source_url": "https://www.portugalresident.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Delhi’s Vasant Kunj: Narmada, Saraswati, Ganga and Yamuna residents protest DDA's commercial development",
-     "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQUk51ckZDM1FyTXE0dy14bnJmRDNlM1VMS2xzeDRqbkVBdEh3LWhlNDExeldVcDBXZDVtVzlIMmhxQXprMlV1VTAtZk90TWt6LXlzWjR6N1hDMllLdXdDMXc1OWFwTjhSTDBvOGw1b3J0UXpSQmIxaGRxRUlwamo3THI0THROSlB3LUd4a0lNc2oxUTN5dDhZb0J0RC1GV1pNd3hRUEZ5ejg3aS1jc2EtUHJwTW41eFotSmJhQlFQelkxcDFSVklCZVg4NEFJSGJnNHViVldINXhIdU9yVjB2Rlc2alYzeU55cFhJbWFxS29jRTVxWldZWlZPUTVqbi1NY3lSeHktSFZlMXNncUJURkxPSHI2UzNWTlMwN9IBogJBVV95cUxQX092VWdPc0pKYWF0SDZvYl90cXFNdEhmeE9GOU5ndjRsSUw5dmRSbFVURkxydXNnTF9LRWduQXFGZjBlakwtZU1MblBva3dWT3ZWaDFwTzVmTTY2ZzJaQUxZTWdKcjdFbE5MVnhJaTdod3IxSHhoSGNMb0Nlb2c1UWlfcS1ZNlBrZ1NaQnJGR3oycU9YTlZzRWFsZENKcmYyY2tDaVd2YjJKdXg0Q1U1akRPS3NpeE50VDdyMDlQbEx2RDR0VWhjc013NENDV0NoVWlzaEplbktSaGRjMEhzN1RlVHVxbDR5SlBHMDhUOVY3WkgxTlp3Nm1FRWhQT1pkYWo2Yk1YQ2lmSlZlcVIxTUtCSEdxYU1hVW5veFA0aXdyZw?oc=5",
-     "published_at": "2026-10-16T12:12:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
+     "title": "Government ‘will not give in to shouts from the street’ over housing protests – minister",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRHVTbF9pVWZqQ2d0dUpocWpod2tQWWtIRG5qb1dHUmlFcmJCNDhQZm05cllKeGV1LXJ4dENVeFJsLVNiRV9pdjVBNkw0X0t1MXozMVAyMEU3LW5fbVdpMl9OT2RrU3FDaFFBSXhfZEI4VVFTLV9qZ0JzWDNJOURJWGg4ZmxRaVR1emVtdA?oc=5",
+     "published_at": "2026-10-16T11:29:17+00:00",
+     "publisher": "Portugal Resident",
+     "source_url": "https://www.portugalresident.com",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Video | CJP Protest | Delhi Police Reaches Dipke's House Ahead Of Tiranga Yatra, Serves Him Notice",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSWFuUzhBUVh1SUI0TUktb2Z5TEZ5TGpoR3lKNk1DU3NZd3JEOExDUzBLSVBBTi1tTmp2ZFBwUzRsUnBsdnhIa3BHWW1zZVBNWDc4TjN4NlE5Z0JfUktISm51R2tRWVdkSkwwTlRkQnVoY29CSDVpLTBqNWk4TmswcjhBaDJ2NnRzUTdxZTBxRUhmVWc4NThRSW04dDFNbWduakhQaFdHZ09MRUY4TXZDWEFiamN4cXVRZ1dpbTlfRQ?oc=5",
-     "published_at": "2026-10-16T09:05:08+00:00",
-     "publisher": "NDTV",
-     "source_url": "https://www.ndtv.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
+     "geo_match": "description"
     }
    ]
   },
@@ -1636,52 +1775,6 @@
    ]
   },
   {
-   "lat": 28.61,
-   "lng": 77.21,
-   "name": "India",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 3,
-   "publisher_count": 3,
-   "category": "science",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Starlink Says It Is Ready to Connect India, but Final Satellite Internet Clearances Remain Crucial",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa0NOVHhvSHY4ajhkZzFuU0RwS3lDczI4Q0hOeHBCZ1d1eUpEdWMwbXdVZWhEeWxHdWtlRmNsWmgtMHJnMUdNR1QyY3RZUTNKQTJabkRYVkk2dW9vYjY4ZnFYVVgwWlAxcTlSQjV2Mk43T05yUzJYMG1mZlVVLThRUnpGZ20xVURJVHBpY0VWdGZIVjh6M25WMnRmbXItRkxpbFQ5ODF6WQ?oc=5",
-     "published_at": "2026-10-17T08:01:57+00:00",
-     "publisher": "www.nationpathindia.com",
-     "source_url": "https://www.nationpathindia.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "India’s centipede family tree extended with discovery of three new species from South India",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQblBKRGhVT21hMUh4ZEdiRkdBdWxlejM2eGNIMVAtYl9lTF9SV2lmS3ZXM3A0VVlvSjBFNlYyT2JBT2ZET0RqaTU3S25pWm10VFdtTEtMNzQ5bU1PWTMxWkRNT2RueVZTLVYyTW5NcENVeUlEOUlxai1oS1daSlE2dVhaNXp3UGh5R3kzLWhvQ0JROVFJVXBRTzk0WDRhTDRwN0VpVGx4V2RUUkhCMDhmeldwbVBmV3E0T3FydS12dw?oc=5",
-     "published_at": "2026-10-16T16:28:24+00:00",
-     "publisher": "Research Matters",
-     "source_url": "https://researchmatters.in",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "AI enters the world of mathematics: Simons Foundation, OpenAI and Anthropic join hands for $15 million re",
-     "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPOXh6WkVoY2lMckJPT1RfSmFNQkYtSFdaYmhvWmJSXzdDN0djdzdEcGpRYVhDeXhDV2U5V0ZKMEZieVpJOXFmTmVYNWZSUnVLR2lyejRVUHV3eFNhTTBieklDbXFJcVd0aFlDa0xaYjlkRVo0VEZYdGlvS1FFZU0yaVFfUTlsUjFrcUUxeGk3dnJLeGxDellvUl9IbGtNb3ZvaHN4cHQ2Y0ZEa2lEQU5sd0tacGFsM0d0SVZOeHFuaHBnOUJZUkxRZ1B6b3dmLW94MmVURVhlejEta3EzeGtWX3RuWk9XRGdvVDlZVVU4Vm1HZFFDaUJfc1hXUnJuX2tLSjk4eThDRi14dWRub1d3WXM4OHJOMFpDeUlyQm9NU0lQUGc3WHZr0gGnAkFVX3lxTE85eHpaRWhjaUxyQk9PVF9KYU1CRi1IV1piaG9aYlJfN0M3R2N3N0RwalFhWEN5eENXZTlXRkowRmJ5Wkk5cWZOZVg1ZlJSdUtHaXJ6NFVQdXd4U2FNMGJ6SUNtcUlxV3RoWUNrTFpiOWRFWjRURlh0aW9LUUVlTTJpUV9ROWxSMWtxRTF4aTd2ckt4bEN6WW9SX0hsa01vdm9oc3hwdDZjRkRraURBTmx3S1pwYWwzR3RJVk54cW5ocGc5QllSTFFnUHpvd2Ytb3gyZVRFWGV6MS1rcTN4a1ZfdG5aT1dEZ29UOVlVVThWbUdkUUNpQl9zWFdScm5fa0tKOTh5OENGLXh1ZG5vV3dZczg4ck4wWkN5SXJCb01TSVBQZzdYdms?oc=5",
-     "published_at": "2026-10-16T11:01:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    }
-   ]
-  },
-  {
    "lat": -33.87,
    "lng": 151.21,
    "name": "Sydney",
@@ -1722,52 +1815,6 @@
      "publisher": "The Guardian World",
      "source_url": "",
      "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 48.86,
-   "lng": 2.35,
-   "name": "France",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 3,
-   "publisher_count": 2,
-   "category": "education",
-   "recent_3h": 0,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": -50,
-   "articles": [
-    {
-     "title": "Live: France's Yellow Vests throw their weight behind mounting student protests",
-     "url": "https://www.france24.com/en/france/20261017-live-france-s-yellow-vests-throw-their-weight-behind-mounting-student-protests",
-     "published_at": "2026-10-17T05:17:22+00:00",
-     "publisher": "France24",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "'Finish what we started': After student protests, France braces for return of the Yellow Vests",
-     "url": "https://www.france24.com/en/europe/20261016-finish-what-we-started-after-student-protests-france-braces-return-yellow-vests",
-     "published_at": "2026-10-16T20:10:18+00:00",
-     "publisher": "France24",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Why is France Burning?",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5XNUJhNkpCYTQ0RFIwTU8zMEx5SGx2c21XNmJwRGVrQU9OOFA0ZUxEcDhEVEQtS3J2WHFNRWJxeW1uLXBxUExPWTNUMTZ4Uzc1OHY3N0p2emN0ckVIVU5LS2plcldsOHM2aVM0S0M0aDBlNFpDQ0E?oc=5",
-     "published_at": "2026-10-16T10:00:00+00:00",
-     "publisher": "Time Magazine",
-     "source_url": "https://time.com",
-     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     }
@@ -1921,9 +1968,9 @@
    "publisher_count": 3,
    "category": "community",
    "recent_3h": 0,
-   "previous_3h": 2,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -67,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
@@ -1997,6 +2044,52 @@
      "published_at": "2026-10-16T10:51:09+00:00",
      "publisher": "DW.com",
      "source_url": "https://www.dw.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 28.61,
+   "lng": 77.21,
+   "name": "Delhi",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "count": 3,
+   "publisher_count": 2,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "A thousand slogans echoed here - but it could be the end for iconic Delhi protest site",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAteFhZS0RNd1dESnIzOW0yNTI4YUg0Z1dWOHZIOGhRY0ZRcVRNOVU5RHRhLWlxbDlvUUFtY1djMFpFWkhVQ2dYZFZ0RDJCcTczOHNMWkY5Vm82NG1jT1E?oc=5",
+     "published_at": "2026-10-17T00:41:58+00:00",
+     "publisher": "BBC",
+     "source_url": "https://www.bbc.co.uk",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "‘Police can break bones, not satyagraha’: Rahul Gandhi alleges Delhi Police refused to file FIR over assa",
+     "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxOS29UbkhVWHZlUndxdzZGZGtnRXRnV3BydnNpbFZQcGxwNkxLc1V0T0R3UjJWZTltSFRRU3J2bUZnbUdySVM3cm5ULUdXcTB0Y1dVSUI4N1EzRGIwY2RRZjJJWmd0Z1MyVVc2RUFmalowZUNIQXljTElhN3phZWlfSk5QU29WZ0tkcXV3YUYweEw5TTYtcUtNNkNsbzVwM293MkROVjhjcmJCZmFVdlVBUzVWR0hnUm9rMEVkLWZjaVBjMFluVWFBSmxaQ014Y0NmU2ZMdXpGc0hyb3k2ekpsTy1SSnMtRmFPdGZWanF0QWJodzZLLUphdFkyclg5WndXVm1ha2tTaEhlSTBuTGhmYU0zNGE5Mk1ISkZrcFNQZ9IBpAJBVV95cUxQVzRHemUtcDF5TDVvVnlMU1pFZkhobnpja2RVUlFnSlVoY3k3QVdOZjRXbTJKN0JZalFJbEVOV2hpektCMFdSTTQ3R2M5ZmJJY0ZXbUxyeTZQSXZZREdSR01OTTExOFFyc1gxNjhXZ3gyNWJSaVhWU19zUGg0M2RkelhNVFFzSGZ1SlJsUEpTWjFiM2tPakhEUFNJNW41eWZXdFBUUWR2QkdST094di1GaWFiZkpNZ080UnNhdlMxX1BXamNuckhEYzA5ZXZTREd4ZHVvV1VLRV9rMzY2OHAwWldGVGNGYlo0c2hjdU9SLU9qUzc5SUlZU2J6MUR4RWp0WUxRa1BXSElpS2RYNlo5aWxNUElFMVJKVWNCeHdPWWhkNWpx?oc=5",
+     "published_at": "2026-10-16T12:58:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Delhi’s Vasant Kunj: Narmada, Saraswati, Ganga and Yamuna residents protest DDA's commercial development",
+     "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQUk51ckZDM1FyTXE0dy14bnJmRDNlM1VMS2xzeDRqbkVBdEh3LWhlNDExeldVcDBXZDVtVzlIMmhxQXprMlV1VTAtZk90TWt6LXlzWjR6N1hDMllLdXdDMXc1OWFwTjhSTDBvOGw1b3J0UXpSQmIxaGRxRUlwamo3THI0THROSlB3LUd4a0lNc2oxUTN5dDhZb0J0RC1GV1pNd3hRUEZ5ejg3aS1jc2EtUHJwTW41eFotSmJhQlFQelkxcDFSVklCZVg4NEFJSGJnNHViVldINXhIdU9yVjB2Rlc2alYzeU55cFhJbWFxS29jRTVxWldZWlZPUTVqbi1NY3lSeHktSFZlMXNncUJURkxPSHI2UzNWTlMwN9IBogJBVV95cUxQX092VWdPc0pKYWF0SDZvYl90cXFNdEhmeE9GOU5ndjRsSUw5dmRSbFVURkxydXNnTF9LRWduQXFGZjBlakwtZU1MblBva3dWT3ZWaDFwTzVmTTY2ZzJaQUxZTWdKcjdFbE5MVnhJaTdod3IxSHhoSGNMb0Nlb2c1UWlfcS1ZNlBrZ1NaQnJGR3oycU9YTlZzRWFsZENKcmYyY2tDaVd2YjJKdXg0Q1U1akRPS3NpeE50VDdyMDlQbEx2RDR0VWhjc013NENDV0NoVWlzaEplbktSaGRjMEhzN1RlVHVxbDR5SlBHMDhUOVY3WkgxTlp3Nm1FRWhQT1pkYWo2Yk1YQ2lmSlZlcVIxTUtCSEdxYU1hVW5veFA0aXdyZw?oc=5",
+     "published_at": "2026-10-16T12:12:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -2188,35 +2281,35 @@
    ]
   },
   {
-   "lat": 38.72,
-   "lng": -9.14,
-   "name": "Portugal",
-   "accuracy": "country",
-   "location_basis": "headline",
+   "lat": 40.71,
+   "lng": -74.01,
+   "name": "New York",
+   "accuracy": "place",
+   "location_basis": "description",
    "count": 2,
    "publisher_count": 1,
-   "category": "society",
+   "category": "economy",
    "recent_3h": 1,
    "previous_3h": 0,
    "velocity": "steady",
    "velocity_change_pct_sample": 100,
    "articles": [
     {
-     "title": "Portugal PM denounces threats against his home and family at housing protest",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVF9HRUtwV2NheFNKaG83WUJUUWNpRUNQcHM2UHRib2hxaHVRNmhfU1FYbldJWC1kc3ltb2NyaDByWkJ4Y3drV1I5VWsycXFqNE5fNVVvS0hsWUtGYW1HdlVIaU04c1RnSUdPT0p2V2VlQnNoOUhOUE5Wak9ZTHRwZ0lFa1ZvX2JaQTJvWjRyaWRSc3E3Yy1mZzFFa3hQOVdnYV96MUU3c1dXVGREenk4?oc=5",
-     "published_at": "2026-10-17T08:34:54+00:00",
-     "publisher": "Portugal Resident",
-     "source_url": "https://www.portugalresident.com",
+     "title": "Corporate Tax Revenue Falls Even as Profits Soar Under Trump",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbmp2Sng2bWlSM1g3UVMwaVFHMnhFSUw3MHJrdHRNLUVNbi1UalFUXzRqUjRBZEtmZEQtSkpydGRQYUpGZjZ4RW56Qk0zV2xzREtJMHJTUVBIem9acGZGdTd2V2JyVDd2eUlhMnFMb05RMk92M251Yzd2Tjkwb1hvWHZB?oc=5",
+     "published_at": "2026-10-17T09:02:09+00:00",
+     "publisher": "The New York Times",
+     "source_url": "https://www.nytimes.com",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "headline"
+     "geo_match": "description"
     },
     {
-     "title": "Government ‘will not give in to shouts from the street’ over housing protests – minister",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRHVTbF9pVWZqQ2d0dUpocWpod2tQWWtIRG5qb1dHUmlFcmJCNDhQZm05cllKeGV1LXJ4dENVeFJsLVNiRV9pdjVBNkw0X0t1MXozMVAyMEU3LW5fbVdpMl9OT2RrU3FDaFFBSXhfZEI4VVFTLV9qZ0JzWDNJOURJWGg4ZmxRaVR1emVtdA?oc=5",
-     "published_at": "2026-10-16T11:29:17+00:00",
-     "publisher": "Portugal Resident",
-     "source_url": "https://www.portugalresident.com",
+     "title": "Indonesian Stocks Plunge as MSCI Threatens to Drop Market from Indexes",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE80RVBxa1dIdzVrRHhvanBmT1hMMnlkU2phYUtlV09sM1RUNzEwWHRhYVhjMV95dEJBS3pUSlo1a09mMzk3emxuM2lWLXpfSFQxbFJQRVFGbmxZTl8wRWFtLW5NdEl0QkZva2xzc0JzSk92bFRVLXBCMjQ3aU1BZw?oc=5",
+     "published_at": "2026-10-16T09:20:59+00:00",
+     "publisher": "The New York Times",
+     "source_url": "https://www.nytimes.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "description"
@@ -2304,10 +2397,10 @@
    "count": 2,
    "publisher_count": 2,
    "category": "politics",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Israel Election 2026: Can Netanyahu Lose Power?",
@@ -2340,10 +2433,10 @@
    "count": 2,
    "publisher_count": 2,
    "category": "conflict",
-   "recent_3h": 1,
-   "previous_3h": 1,
+   "recent_3h": 0,
+   "previous_3h": 2,
    "velocity": "steady",
-   "velocity_change_pct_sample": 0,
+   "velocity_change_pct_sample": -67,
    "articles": [
     {
      "title": "Yemen's Houthis claim responsibility for fresh missile strike on Aden airport",
@@ -2398,42 +2491,6 @@
      "publisher": "RNZ National",
      "source_url": "",
      "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 40.5,
-   "lng": 47.5,
-   "name": "Azerbaijan",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 2,
-   "publisher_count": 2,
-   "category": "society",
-   "recent_3h": 0,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": -50,
-   "articles": [
-    {
-     "title": "Protests Against Hijab Ban in Azerbaijan: Why are Children Involved?",
-     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9WSVYwVlZQVERTTElrR01aYWFwNjhmdUx0UVA0cFlnZ3R0bkxBSnl6Rm93RVBabTBpRmxTQTRQRkx1eEZ4eHZIMVFoTGczVXpOR3RxRFR6Y0Q0VG1hM0E?oc=5",
-     "published_at": "2026-10-17T04:58:06+00:00",
-     "publisher": "RTV News",
-     "source_url": "https://rtvonline.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Azerbaijan: Stop denying access to education through discriminatory hijab restrictions and release peaceful protesters",
-     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQS3RfV0pWY2VSa3V0QlY1cmh2bnVBRWJoVXBvRUFSd3lQMHRWdnJnbVg3NUJfcUxHMTBsb3Z0RC02RE1QUXdidzJuM0RFODJCRmR0QlpTWmpXYVNlVGpVeVVjbjd2OXdwWDhFcGY0cThFZndjWGx1SE9fUUxxS2tzWDZzcWN6X2c1c1p2SGdjYXNSYUx1TDItbWR1UEE4ZlkxendKWTlIWUtQdHdHOVprbm9OTXVBMmUzejRTT3BfVDdiX293NlhPMnJ3TzR2QzkteHNFamFKbXR2QkFqaFNRVmxqUll2dU9rMXRRSXNaXzJBVVd5cDdRcw?oc=5",
-     "published_at": "2026-10-16T11:03:59+00:00",
-     "publisher": "Amnesty International",
-     "source_url": "https://www.amnesty.org",
-     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     }
@@ -2584,36 +2641,36 @@
    ]
   },
   {
-   "lat": 28.61,
-   "lng": 77.21,
-   "name": "Delhi",
-   "accuracy": "place",
+   "lat": 21.03,
+   "lng": 105.85,
+   "name": "Vietnam",
+   "accuracy": "country",
    "location_basis": "headline",
    "count": 2,
-   "publisher_count": 2,
-   "category": "community",
+   "publisher_count": 1,
+   "category": "society",
    "recent_3h": 0,
    "previous_3h": 0,
    "velocity": "steady",
    "velocity_change_pct_sample": 0,
    "articles": [
     {
-     "title": "A thousand slogans echoed here",
-     "url": "https://www.bbc.co.uk/news/articles/c6kgqjvdv4n2o?at_medium=RSS&at_campaign=rss",
-     "published_at": "2026-10-17T00:41:58+00:00",
-     "publisher": "BBC World",
-     "source_url": "",
-     "source_kind": "publisher",
+     "title": "Having received the title of Outstanding Asian Enterprise for two consecutive years, Long Chau marks a milestone in its journey of developing a healthcare ecosystem.",
+     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOR0ZRZTVjUG5ERWJ4cGVEdkRKcDRtU0poYlh2b0Uzc3JyMkJkVTByU3FZUWIzTjQ0OG9McUNNSWJfVTdaZkpDS0JRZThYdjZQYWN6YXlJUm1YT3d6cjJzVWpYZWo3ZGd0QURGMTUxMDNSeGFGcTZiY0VfeDRua3VSMndJemFkM2k3cm5JaVkyQmJvR1FoYnoyajQzXzc5cHhWTWp1UDMzbEVpSXJCa2ZGX2ZES1N5NWc4MXVkVngtckpoejlPQzJILVc0TEZ3SmZ0VUpvTnpQSGxjZU1nR09ISFZXX1B6b0xQUHl0QndrWQ?oc=5",
+     "published_at": "2026-10-17T00:36:01+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "description"
     },
     {
-     "title": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
-     "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
-     "published_at": "2026-10-16T13:26:43+00:00",
-     "publisher": "NPR World",
-     "source_url": "",
-     "source_kind": "publisher",
+     "title": "The only representative from the pharmaceutical and healthcare retail sector to be included in Forbes Vietnam's Top 50 ESG 2026, and named \"Outstanding Asian Enterprise\" for two consecutive years.",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPZEdTMmdLRlBOUDdELV8yVzVzRHlWT3pXRzNobjQzdTM2SU95VnlXYTdOYmF1Y1VmNmhadXM4MWV1c1owa0NCSDNrclBIUXBZVC1rTmpsS1JCcV9lTkVJenVEbkZRVnZlZ1dCaGVrOXBXeUtyY0lBMjdRYXI2VVFwT1NJbTJsLUxkU1lXUjJFWWVaZG10cW9yYjVsVDBkSlVxM0o3TGVyb19hZlRfWVBPdFZaNGdzQnluN1pMaDcwcVVzd0ozZHYtblBDYWxqOWl6bWJmZm1ldEJMUWYxb2QtR3kxT25abzdjT3hHTmhVa24?oc=5",
+     "published_at": "2026-10-16T13:04:29+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     }
@@ -2836,6 +2893,78 @@
    ]
   },
   {
+   "lat": 40.5,
+   "lng": 47.5,
+   "name": "Azerbaijan",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 2,
+   "publisher_count": 2,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Hijab ban at schools in Azerbaijan: What's behind the rare wave of protests?",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeFFkb2tiWk12eUo3bWNYQkxrQ1RKcU1JMlVjZzZId3NzZHZoVUpNVWI5XzFCUGsxcGNvZElHMWs5MFhSa3pYR2wzdG83aTFhTXRoNnM3UDJNX3dYT0laOWdWZE5Ya2pkSG0tVVJzQ2x1ZTN1QXJ2eUJyWldobDNvVUtQS1hjR0NmZ0RFWm5HblFqMks4cnNBTFVGdGsxbENRZmJqblltd2pxQdIBqgFBVV95cUxNdXRTei02TGFQV0JSSWhQVEdJeDNIbUNoV0xsUmpVd3Y1R1lsRW9yREtNLWJoV0JCUXVIWWd2dmxJbHc0ZWVGQTd1YnEzX29uRjlLVTYtLWJNMnoxVl9XVnBZYTZBWTg5YlVNajdMNWpwV3A0TEJibDI4bTFyVXFfZ19DWlMzaHJkNm9FX1cyTTNMV0VKN1hIN3RkaVV0TXVzNkVkU3hkcVJGdw?oc=5",
+     "published_at": "2026-10-16T18:57:35+00:00",
+     "publisher": "DW.com",
+     "source_url": "https://www.dw.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Azerbaijan: Stop denying access to education through discriminatory hijab restrictions and release peaceful protesters",
+     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQS3RfV0pWY2VSa3V0QlY1cmh2bnVBRWJoVXBvRUFSd3lQMHRWdnJnbVg3NUJfcUxHMTBsb3Z0RC02RE1QUXdidzJuM0RFODJCRmR0QlpTWmpXYVNlVGpVeVVjbjd2OXdwWDhFcGY0cThFZndjWGx1SE9fUUxxS2tzWDZzcWN6X2c1c1p2SGdjYXNSYUx1TDItbWR1UEE4ZlkxendKWTlIWUtQdHdHOVprbm9OTXVBMmUzejRTT3BfVDdiX293NlhPMnJ3TzR2QzkteHNFamFKbXR2QkFqaFNRVmxqUll2dU9rMXRRSXNaXzJBVVd5cDdRcw?oc=5",
+     "published_at": "2026-10-16T11:03:59+00:00",
+     "publisher": "Amnesty International",
+     "source_url": "https://www.amnesty.org",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 19.08,
+   "lng": 72.88,
+   "name": "Mumbai",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "count": 2,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "India Housing Demand Rises 8.2% In Q3 2026 Ahead Of Festive Season; Mumbai, Chennai See Strong Price Gains:",
+     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObVczcmctblpBNTVqNW9NU04zWm1VbW41S1BPVE03Q0laS25WZHUyN3NtcE5UUzFQU1dRRjhKWV9CZERBOXoyT0pfUVBIOE43eWJkVm1paGE4bkpjYnBURExGVXdCd3FqLUZsb0RLNzFOS1p2MHBKeWhtSWdWalhpSlBJVk5XVHVCSUhVTWwzME54Qk5vRWFMMnA1OE9nX1piNk1LLVdjZ2g0R2l4SElJblA0WFlWTnBBMk1OZHJHQVVSNHFoVGVVRTJ6dWlRcXVxLXRlNGFucXo0YzZBY2QzNUN30gHnAUFVX3lxTE9ZYzYyNVcxSWxHQ09iclR3YkFxNHAwdXh0TExHcGVfbUoxbFNHRS1VTThMWF9qWTNra011U3Ziczd2akdXNkJBUnhXZXlWeUphVU0xRElmZTgyeGQ0MEtOWENCUzVTVDlJeDVDckplbTN5ODBKcjhwSy1VNjRxZ1pGd2JUc2FOODAza0JuRTVTMmlWSmtKMFhmSGhteDk3c3JUY1FpVGpHdU9LXzJxekR2UXJwYWtDT1ZMcjNCRkpNSDM0SWkwLTJWUE4taXBXaXRzaHRpR3hxYnpWVGJDXzVscGVEUEdvOA?oc=5",
+     "published_at": "2026-10-16T18:54:40+00:00",
+     "publisher": "Free Press Journal",
+     "source_url": "https://www.freepressjournal.in",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Mumbai Housing Demand Jumps 8.2% In Q3 2026, Homes Below ₹1.5 Crore See Strong Buyer Interest Amid Supply",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYkF4TXViSU1HVTluakd2OXdCV3VvcEtlUjR4c3lnTUFNSzd6eDJINl9icFRvclJzZ1NkQ25jZ2dwamxyZG5kbUhpTkl6elNuczZwU1N4NC1FYlpueWJRS2N2TEowNk1wbUdQOVlvNkRUekNUSkRtcFg2RnY0NU90ZFQzbERpSG1makx4ZlhfaDJFQ2p3c3E5ekJuQzMwTHNEcF9iLVY4ODB1N2h2QTJJNlBESDVhLW42Yi1ablhwcVNKMV91THRQbHRpcGVuX1lwZi04Ul9SLXVMbGfSAeABQVVfeXFMUDRndlN0alhNal92dEEwOXR3TFlCQ202b0NpaXBMYjJLTnp1OG1MRzhLcUZHbUV3MEFhQUh1MW9RMWpYWkRjOE9IY3U5dGMtVXVlRU42LUowbHFfTWl4QjFYeHVzYUtPUWpQT2hYMERSMkFkaldsc25VYlQ2czlNdFFRaDIzQjg4TlY2Q2Z3dVY3TFFvZUxxV2Y0R3lEWktoVm9ZVzhuQjZYdGd6emZoSkUxZ1k0U2VlWl80QnZrbHBJREJwWThJbGtscV9VVEg0OXNMQlJPM2E1bU1nZGtsV00?oc=5",
+     "published_at": "2026-10-16T18:43:43+00:00",
+     "publisher": "Free Press Journal",
+     "source_url": "https://www.freepressjournal.in",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 19.43,
    "lng": -99.13,
    "name": "Mexico",
@@ -2868,42 +2997,6 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "description"
-    }
-   ]
-  },
-  {
-   "lat": 15.5,
-   "lng": 32.56,
-   "name": "Sudan",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 2,
-   "publisher_count": 2,
-   "category": "conflict",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Deadly air strike on goldminers lays bare a Sudan deeply mired in economic deprivation caused by war",
-     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNandJY09EVVNDTzNLZUd1YndOb3lnakNSN0ljN0p0VnpxS0NVb3lzdllIMHFqSFRuQWNBNXI1SnNXZEVfdm94SzRYMDBLVm93M0lYb2w2UGZVa0xudHRWbGYyVURoNjJVSTExdl8zUm9rejBIazNsRDVNTnhXdVNfWTlCbFU4VnNNajR3TzFDdmJFMDFsZDY4SDFpc1FEcFVNRnJjYmRIR3FfcmpqWjAyT1ZOM1RxMU5YdV9KYmlpRFc4WHVLWEhrWUx4VXZzXzRDbW5Xc1RETnFPclpwSXNyQkktZmtyTkhHVEE?oc=5",
-     "published_at": "2026-10-16T18:27:45+00:00",
-     "publisher": "The National",
-     "source_url": "https://www.thenationalnews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Security Council LIVE: Sudan’s war spreads as drones and hunger take a deadly toll",
-     "url": "https://news.un.org/feed/view/en/story/2026/10/1168612",
-     "published_at": "2026-10-16T12:00:00+00:00",
-     "publisher": "UN News",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
     }
    ]
   },
@@ -3232,6 +3325,84 @@
    ]
   },
   {
+   "lat": 28.61,
+   "lng": 77.21,
+   "name": "Delhi",
+   "accuracy": "place",
+   "location_basis": "description",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Sidewalk sleepers: They have nowhere else to stay while a loved one is in the hospital",
+     "url": "https://www.npr.org/2026/10/17/g-s1-147874/hospital-diagnosis-patients-india-sidewalk",
+     "published_at": "2026-10-17T09:00:00+00:00",
+     "publisher": "NPR World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
+   "lat": 28.0,
+   "lng": 84.0,
+   "name": "Nepal",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Nepal’s Deadly Flood Puts Its Always On Health System to the Test",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSl9hb01BSG1tRVE4dUZLTVljaWNCWUxIOWJucDByNHFDTm5FRVBOd09rcVMwUzJUd2hOMWh2enU1ei03aWhfWS1qLWI2QjlicG53c2p5Nm5uYjMzMGRXTktSSjZqRjZWeXNOSncteFh4ZTl4UEFkRTU3MnVhQUIyYlJDZ004TXljanctc2NQRWhrNHM?oc=5",
+     "published_at": "2026-10-17T08:56:57+00:00",
+     "publisher": "Bioengineer.org",
+     "source_url": "https://bioengineer.org",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 3.14,
+   "lng": 101.69,
+   "name": "Malaysia",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Murder in Malaysia: Justice for Altantuya Shaariibuu",
+     "url": "https://www.aljazeera.com/video/101-east/2026/10/17/murder-in-malaysia-justice-for-altantuya-shaariibuu?traffic_source=rss",
+     "published_at": "2026-10-17T08:40:47+00:00",
+     "publisher": "Al Jazeera",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 41.0,
    "lng": 64.0,
    "name": "Uzbekistan",
@@ -3336,6 +3507,32 @@
    ]
   },
   {
+   "lat": -1.29,
+   "lng": 36.82,
+   "name": "Kenya",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "economy",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Walton to expand in Kenya",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPX3F4RWVsM3JwNGZobW1QeURHeU5aYl81ZFlkTm54MXlUM1d6TnpJTWR3cG82WmpFaWFJRDFnQVdEZUJpUThMclZiWXZ2UzlETFlrdnU3bnJuRUpyejFVXzdYVDdzcFRlMzAyc1JKMGYzT1ZxSlQzZVFHZ3cxVFprSTNRenc?oc=5",
+     "published_at": "2026-10-17T07:54:20+00:00",
+     "publisher": "The Daily Star",
+     "source_url": "https://www.thedailystar.net",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 43.51,
    "lng": 16.44,
    "name": "Split",
@@ -3409,6 +3606,32 @@
      "source_url": "",
      "source_kind": "publisher",
      "language": "fr",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
+   "lat": 7.0,
+   "lng": 81.0,
+   "name": "Sri Lanka",
+   "accuracy": "country",
+   "location_basis": "description",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "science",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Google expands AI research into healthcare, disaster forecasting and scientific discovery",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQjBGOXNCc0Z3b1lFdENZNzY5aHYxa2JBd0ZXN3BkSnoxaUtwbHhScVFSQUVpV2FycWxOWUZsNVloOGFUbnM0ajc5eVRtbUZ3UEJnQUxrUmJnWVA1amtoRnpYVzBoNURxMmlhYzlpeHJKeEFFdXlNdGZMR2hWNEF3UnJ2dW1zX0ZXY1AyMlRqTURIZUs3UTR3WVc0dm82WldhMUlEQ0lsUzJmb2dCWFZiS3ZB?oc=5",
+     "published_at": "2026-10-17T07:33:49+00:00",
+     "publisher": "Sri Lanka Guardian",
+     "source_url": "https://slguardian.org",
+     "source_kind": "aggregator",
+     "language": "en",
      "geo_match": "description"
     }
    ]
@@ -3492,32 +3715,6 @@
    ]
   },
   {
-   "lat": 23.81,
-   "lng": 90.41,
-   "name": "Bangladesh",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 1,
-   "publisher_count": 1,
-   "category": "politics",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Political Parties and the Future of Reform in Bangladesh",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQelJXblVlUk1lQVdCN1N5MElpY1RTYWJCZV9KcXBwWU5tWmY5RGFVVEpBQm1kZDlNY2tUNXpvdllMdUxrOEJ1Y085T19TUnF2a19KSG9rbFVZOTZGSTd4cVhXaU85Q2Z6OUVUWE9Ncmhia0p0a3BkeG52T1FDcko0UEpfODJFYmxSRnQtdkk5c2ltSFdkWG1YeGd3?oc=5",
-     "published_at": "2026-10-17T06:51:26+00:00",
-     "publisher": "https://dailyasianage.com/",
-     "source_url": "https://dailyasianage.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 15.37,
    "lng": 44.19,
    "name": "Yemen",
@@ -3578,10 +3775,10 @@
    "count": 1,
    "publisher_count": 1,
    "category": "community",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Charity reflects on changing needs over 25 years",
@@ -3604,10 +3801,10 @@
    "count": 1,
    "publisher_count": 1,
    "category": "environment",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Namibia Chamber of Commerce and Industry donates N$1.5 million to FMD Support Fund Staff Reporter THE Namibia Chamber of Commerce and Industry (NCCI) has contributed N$1.5 million to the Foot-and-Mouth Disease (FMD) Support Fund to support ef",
@@ -3630,10 +3827,10 @@
    "count": 1,
    "publisher_count": 1,
    "category": "hazards",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Australia's deadliest asylum seeker boat disaster remembered 25 years on",
@@ -3771,6 +3968,32 @@
      "published_at": "2026-10-17T05:17:12+00:00",
      "publisher": "The Economist",
      "source_url": "https://www.economist.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 33.75,
+   "lng": -84.39,
+   "name": "Atlanta",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -50,
+   "articles": [
+    {
+     "title": "Atlanta-based charity honours community servants at fundraiser",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbXpaeVZsUmYxMHdvMUZJeEpwZTVnTFEwX0dKbFg0d1puNS1aWUxmVVBiUHBVbUNscVUtLVdpTlFsNHdlSlc3M2p5YW1mT0YtSjJxcjZPbFZuNXI4R3dXNElwRV9hRjF2QmRKb2NvTnA2elNuS0pHaUNPVU9zdGtRYUdic0ZGclhJQ1NIOEwtWU1YeWN2M2E1YnRzY3g1M0EyOFo0aHRjUVlOMmVS?oc=5",
+     "published_at": "2026-10-17T05:06:23+00:00",
+     "publisher": "Jamaica Gleaner",
+     "source_url": "http://jamaica-gleaner.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -4047,9 +4270,9 @@
    "publisher_count": 1,
    "category": "economy",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "High Operating Costs, Poor Infrastructure Weigh On Lagos Economy",
@@ -4324,6 +4547,32 @@
    ]
   },
   {
+   "lat": 23.81,
+   "lng": 90.41,
+   "name": "Bangladesh",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "politics",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Political Parties and the Future of Reform in Bangladesh",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQelJXblVlUk1lQVdCN1N5MElpY1RTYWJCZV9KcXBwWU5tWmY5RGFVVEpBQm1kZDlNY2tUNXpvdllMdUxrOEJ1Y085T19TUnF2a19KSG9rbFVZOTZGSTd4cVhXaU85Q2Z6OUVUWE9Ncmhia0p0a3BkeG52T1FDcko0UEpfODJFYmxSRnQtdkk5c2ltSFdkWG1YeGd3?oc=5",
+     "published_at": "2026-10-17T00:51:26+00:00",
+     "publisher": "https://dailyasianage.com/",
+     "source_url": "https://dailyasianage.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 40.42,
    "lng": -3.7,
    "name": "Madrid",
@@ -4345,6 +4594,32 @@
      "source_url": "",
      "source_kind": "publisher",
      "language": "es",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 10.82,
+   "lng": 106.63,
+   "name": "Ho Chi Minh City",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Ho Chi Minh City strengthens support for people with disabilities and promotes community integration.",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWGdldS0zQVNXa2RJWWVTaVhrM0NUbzlDNksxcjN2M3p0Q1dBMDBGV2Nwc0FiSkdBdUNTSEItMHA4UFJNV0FFMzV2Y1RiS2RuYTJ0UDlQbzBMVnV3ejFmaTlYaUVBU042R09aMWtZY0FJUzEwaU1vQjZBWlVLSVhVNXJVWFBibHdUMlNuUDBrbUlLcTBtRER3UnpBX25UbTgzRFBqYXlHRTE?oc=5",
+     "published_at": "2026-10-17T00:48:03+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
      "geo_match": "headline"
     }
    ]
@@ -4421,6 +4696,32 @@
      "published_at": "2026-10-17T00:00:08+00:00",
      "publisher": "Qazinform",
      "source_url": "https://qazinform.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 36.78,
+   "lng": -119.42,
+   "name": "California",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "2026 California Voter Guide: Proposition 44",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1MWjdKall0YTBKLWIzdGtxX1RQTWFrLXdIcW90X21wcE5ZS3g2Y1VzTW0xcXFaSDlBRlJ3YWdjTUYweFQtNFlZNTZOVktKM2dLVGJuamY2Y1VJbERqd05RVmRIUHQ2RlZr?oc=5",
+     "published_at": "2026-10-17T00:00:00+00:00",
+     "publisher": "KQED",
+     "source_url": "https://www.kqed.org",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -5026,6 +5327,32 @@
    ]
   },
   {
+   "lat": 15.5,
+   "lng": 32.56,
+   "name": "Sudan",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "conflict",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Deadly air strike on goldminers lays bare a Sudan deeply mired in economic deprivation caused by war",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNandJY09EVVNDTzNLZUd1YndOb3lnakNSN0ljN0p0VnpxS0NVb3lzdllIMHFqSFRuQWNBNXI1SnNXZEVfdm94SzRYMDBLVm93M0lYb2w2UGZVa0xudHRWbGYyVURoNjJVSTExdl8zUm9rejBIazNsRDVNTnhXdVNfWTlCbFU4VnNNajR3TzFDdmJFMDFsZDY4SDFpc1FEcFVNRnJjYmRIR3FfcmpqWjAyT1ZOM1RxMU5YdV9KYmlpRFc4WHVLWEhrWUx4VXZzXzRDbW5Xc1RETnFPclpwSXNyQkktZmtyTkhHVEE?oc=5",
+     "published_at": "2026-10-16T18:27:45+00:00",
+     "publisher": "The National",
+     "source_url": "https://www.thenationalnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 50.45,
    "lng": 30.52,
    "name": "Kyiv",
@@ -5390,32 +5717,6 @@
    ]
   },
   {
-   "lat": 35.23,
-   "lng": -80.84,
-   "name": "Charlotte",
-   "accuracy": "place",
-   "location_basis": "description",
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Dix ans après le démantèlement de la jungle de Calais : des migrant·e·s toujours plus vulnérables",
-     "url": "https://www.france24.com/fr/%C3%A9missions/actuelles/20261016-dix-ans-apr%C3%A8s-le-d%C3%A9mant%C3%A8lement-de-la-jungle-de-calais-des-migrant%C2%B7e%C2%B7s-toujours-plus-vuln%C3%A9rables",
-     "published_at": "2026-10-16T16:26:24+00:00",
-     "publisher": "France24 FR",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "fr",
-     "geo_match": "description"
-    }
-   ]
-  },
-  {
    "lat": -34.6,
    "lng": -58.38,
    "name": "Buenos Aires",
@@ -5437,32 +5738,6 @@
      "source_url": "",
      "source_kind": "publisher",
      "language": "en",
-     "geo_match": "description"
-    }
-   ]
-  },
-  {
-   "lat": 49.75,
-   "lng": 6.16666666,
-   "name": "Luxembourg",
-   "accuracy": "country",
-   "location_basis": "description",
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Pierre Moscovici : \"Il est compliqué d’adopter un budget européen avant des élections majeures\"",
-     "url": "https://www.france24.com/fr/%C3%A9missions/ici-l-europe/20261016-pierre-moscovici-il-est-compliqu%C3%A9-d-adopter-un-budget-europ%C3%A9en-avant-des-%C3%A9lections-majeures",
-     "published_at": "2026-10-16T16:05:58+00:00",
-     "publisher": "France24 FR",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "fr",
      "geo_match": "description"
     }
    ]
@@ -5644,32 +5919,6 @@
      "publisher": "France24",
      "source_url": "",
      "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": -41.29,
-   "lng": 174.78,
-   "name": "New Zealand",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 1,
-   "publisher_count": 1,
-   "category": "economy",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "New Zealand Dollar: Inflation and weak demand challenge RBNZ – Commerzbank",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNWTM5Rlp6XzhJVkt3alhLMjVJT2lfc2pWb2hIOU83VlFydDA0Q09nT0RMeEdCaG5TZVppLUhheUtEOGZ6bWtsNlF1ZUp6MkRoM2d2bFVuS3RSZmJWR25ZeVA3TjFiT1RGUlhwMHU4UEt4TThFMEZEajVKQkJRYVlLRXRoalZsSFVuNTlYSGE2TmtuNXBhbi1ZS2oxUU14Y3dHNXhhaEFvN3NWc3lwSXBybERIZEEybXhUeHZVbFFXeVI3OW1VRGJGMlRaM01aWjVadWpWdlUybw?oc=5",
-     "published_at": "2026-10-16T15:14:50+00:00",
-     "publisher": "www.tmgm.com",
-     "source_url": "https://www.tmgm.com",
-     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     }
@@ -5982,6 +6231,32 @@
      "publisher": "BBC World",
      "source_url": "",
      "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 41.9,
+   "lng": 12.5,
+   "name": "Italy",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Europe's student riots spread to Italy as hooded protesters clash with cops sparking chaos in cities",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYW5uQXdrZmpGTFZ0c0xZclo1Z0toWVg0ZFI0WkJPdnktcnBEMjlrMFBRNkZwWlNvUjA3RjdXbVBfUTVQSnpMdnR3YldDRk1YQjFIQ1BoaUNxXzdTR0MxbzlEVW1JSHNKb2E1YU1TTUkyTElKaHVoS2dnTllfRWJleEU1UmRDcWdnMFA2WXBmdWQ3MHNDUktLcENGV3VXOGVpYmFtatIBqgFBVV95cUxPSldTaDJCUVRKSGx6ZWhEczhrSzBick9rekVJVElkajNNVTVuX1pMeS1XV0l0VlA2ekhKb0dQTmxlbUFyaExvMndrVmhpVFdPTkFYUHh5d2pyek0zUzRFeWVpNWJhVlNfeGIzTW5BaGlCaXFBRV9EdU5tTEoxWmphMlFJMFRJM1lRcnVNUXBlMTQ1MUJ5V09jaFhiWUJUeERFeWI3Z00zYjRLZw?oc=5",
+     "published_at": "2026-10-16T14:21:24+00:00",
+     "publisher": "Daily Mail",
+     "source_url": "https://www.dailymail.com",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     }
@@ -6378,32 +6653,6 @@
    ]
   },
   {
-   "lat": 36.9,
-   "lng": 30.7,
-   "name": "Antalya",
-   "accuracy": "place",
-   "location_basis": "description",
-   "count": 1,
-   "publisher_count": 1,
-   "category": "environment",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "As disasters mount, next UN climate summit faces a test of trust",
-     "url": "https://news.un.org/feed/view/en/story/2026/10/1168617",
-     "published_at": "2026-10-16T12:00:00+00:00",
-     "publisher": "UN News",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description"
-    }
-   ]
-  },
-  {
    "lat": 25.03,
    "lng": 121.56,
    "name": "Taiwan",
@@ -6472,7 +6721,7 @@
     {
      "title": "Airtel Tanzania partners with Zoom and Sibia Technologies for virtual medical appointments",
      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOWNjRzlsSTY1OTdGUXd6TWpmMW5heDJtTHhOREVoS05VdGhLTmdyWUE2SXdDVjJ6czR1aUhEaGk3N2EyaWRqSkU1T0wzUXl6UGY5akQtRDFuWUduTjVKWUc4LVRHdDV4RVhwWXd3Y0hHcVl3Q0piWkhTMzV1bDlNZHpJU0NncU05ZzRPSnBJb2dpOU1pSEdTdTJOZ2d1eEZkOUZpOVVQQVo1TjB3QXYyZTdMZzNUcDNxMGNPUGpwaU9nLWZ1YlRENGxjNlo0QQ?oc=5",
-     "published_at": "2026-10-16T11:39:41+00:00",
+     "published_at": "2026-10-16T11:34:54+00:00",
      "publisher": "Telecompaper",
      "source_url": "https://www.telecompaper.com",
      "source_kind": "aggregator",
@@ -6742,6 +6991,32 @@
    ]
   },
   {
+   "lat": 10.82,
+   "lng": 106.63,
+   "name": "Ho Chi Minh City",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "count": 1,
+   "publisher_count": 1,
+   "category": "education",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Schools in Ho Chi Minh City plan to temporarily suspend linked programs and adjust timetables",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYXB2OTYxWHhlcmFwdl9hZnZNQUNUWi1IVEJmaFlFRWstZGFUbEFWZTdBdUNjQXByX1RobDdGS3pUNzNxOGZod0tYWFVoSzNGMGlHalFVM1pqdnlOT0IzUWUyOTF4alZHR3ZQa0NoVzI5WWkyNzVKM2Zwb0k1aHNBcF9fYnpvalBoYzc2bmxYR01DVUhmTjlyNWJPWVVxRmFjTWxLcG9QZnQzNDkyU0hfeHRMVk5TRjhXcjhHMjJVZGM3OVk?oc=5",
+     "published_at": "2026-10-16T09:49:43+00:00",
+     "publisher": "Laodong.vn",
+     "source_url": "https://news.laodong.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": -34.6,
    "lng": -58.38,
    "name": "Argentina",
@@ -6790,32 +7065,6 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 40.71,
-   "lng": -74.01,
-   "name": "New York",
-   "accuracy": "place",
-   "location_basis": "description",
-   "count": 1,
-   "publisher_count": 1,
-   "category": "economy",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Indonesian Stocks Plunge as MSCI Threatens to Drop Market from Indexes",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE80RVBxa1dIdzVrRHhvanBmT1hMMnlkU2phYUtlV09sM1RUNzEwWHRhYVhjMV95dEJBS3pUSlo1a09mMzk3emxuM2lWLXpfSFQxbFJQRVFGbmxZTl8wRWFtLW5NdEl0QkZva2xzc0JzSk92bFRVLXBCMjQ3aU1BZw?oc=5",
-     "published_at": "2026-10-16T09:20:59+00:00",
-     "publisher": "The New York Times",
-     "source_url": "https://www.nytimes.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
     }
    ]
   },
@@ -6894,84 +7143,6 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "description"
-    }
-   ]
-  },
-  {
-   "lat": 48.86,
-   "lng": 2.35,
-   "name": "France",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 1,
-   "publisher_count": 1,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "High-Protein Nutrition Drinks Could Save Millions in France Elders’ Care Costs",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbU5tRS1KMWtUVGhZZ24yZFlBeHB0UmlTMXBUb2M2Z2VyMmZpRzctaEF0V0tXUGljWEN2ZFF1aWFPZDA4X0N0a1FTSEs4LXJUU1EyTkhzcnZUa01tc2hLaDYzRU1NTXBBeHlVX3otT2hYT2hQTGlSaGFsUjdXS01zR090QWdfTVJUbUZ1NlRjdDlTN0tGOUlGREdFeklZMkhUakk3QjlLai00TXhFWFpHcEYwYkhvbUFjdHlGWmU0ZVFQRklsYVhNVnMtUzdyZ9IBzgFBVV95cUxNbU5tRS1KMWtUVGhZZ24yZFlBeHB0UmlTMXBUb2M2Z2VyMmZpRzctaEF0V0tXUGljWEN2ZFF1aWFPZDA4X0N0a1FTSEs4LXJUU1EyTkhzcnZUa01tc2hLaDYzRU1NTXBBeHlVX3otT2hYT2hQTGlSaGFsUjdXS01zR090QWdfTVJUbUZ1NlRjdDlTN0tGOUlGREdFeklZMkhUakk3QjlLai00TXhFWFpHcEYwYkhvbUFjdHlGWmU0ZVFQRklsYVhNVnMtUzdyZw?oc=5",
-     "published_at": "2026-10-16T09:12:11+00:00",
-     "publisher": "Devdiscourse",
-     "source_url": "https://www.devdiscourse.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 30.04,
-   "lng": 31.24,
-   "name": "Egypt",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 1,
-   "publisher_count": 1,
-   "category": "economy",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Egypt, World Bank discuss investment, private sector support at IMF meetings - Economy - Business",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYkFUN0xyZ3FPX1pBOEV5SlBTdVYyenFTT0NvdDBwaDQ0c1FfTGxZaF9KMU03YU5KX0oxU29vTVNxS0U1anFZN0hpTTA0dXRxVk1sV1laYVZZMGJkamNkTEdfbFU4UkMyR3BLMjJsMmRmYThMZlNmTXJKbkpQX1pUVml4S2FycU5XamFhcEEyRGN2a2w5YlFJNEdWTkZMUnhvYWFkT1R5ZUtSanhRZmF6R2xKX0EyUQ?oc=5",
-     "published_at": "2026-10-16T09:11:15+00:00",
-     "publisher": "Ahram Online",
-     "source_url": "https://english.ahram.org.eg",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": -25.75,
-   "lng": 28.23,
-   "name": "South Africa",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "count": 1,
-   "publisher_count": 1,
-   "category": "economy",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Nigeria, South Africa Face Major Funding Shortfall for Black-Owned Businesses",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbFk3bEZCTk5rYzZ1RjFsY0tLbTltd2g4bW8tQWJmZEhzWF95ZTV5d3BpTkhMRUwxTmFOZklwNENMdnRWUTFxYTgza0lIa0s4TElmT2U1bGE4YkpmdFc0U28wdmJZT3Y2b1BRT19LNi1Sdy11RVlpeks1OXN6NTNsVnMtaVNaT3JjU1pDdDJUck85Qk1IZ0t2ZlBOTHE?oc=5",
-     "published_at": "2026-10-16T08:58:21+00:00",
-     "publisher": "https://www.nigeriahousingmarket.com/",
-     "source_url": "https://www.nigeriahousingmarket.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
     }
    ]
   }

@@ -1,65 +1,108 @@
 {
  "schema": 1,
- "updated_at": "2026-10-17T08:57:12.186516+00:00",
- "feeds_total": 67,
- "feeds_ok": 63,
+ "updated_at": "2026-10-17T09:12:11.067120+00:00",
+ "feeds_total": 111,
+ "feeds_ok": 106,
  "feeds_failed": [
   "direct/DW World",
   "direct/CBC World",
   "direct/ReliefWeb Updates",
+  "direct/UN News",
   "direct/DW Español"
  ],
+ "google_feeds_by_region": {
+  "US": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 93
+  },
+  "GB": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 90
+  },
+  "IN": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 116
+  },
+  "AU": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 73
+  },
+  "ZA": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 100
+  },
+  "NG": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 95
+  },
+  "PH": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 104
+  },
+  "CA": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 94
+  }
+ },
  "mapped_articles_by_category": {
-  "economy": 58,
+  "economy": 57,
   "community": 112,
-  "society": 38,
-  "politics": 22,
-  "health": 49,
-  "conflict": 23,
-  "hazards": 12,
-  "education": 26,
-  "science": 11,
+  "politics": 23,
+  "health": 51,
+  "society": 45,
+  "education": 28,
+  "conflict": 21,
+  "hazards": 11,
+  "science": 13,
   "rights": 5,
-  "environment": 6
+  "environment": 5
  },
  "mapped_articles_by_location_precision": {
-  "country": 228,
-  "place": 134
+  "country": 232,
+  "place": 139
  },
  "location_evidence_counts": {
-  "headline": 293,
-  "description": 69
+  "headline": 301,
+  "description": 70
  },
  "geographic_quadrants": {
-  "NE": 235,
-  "SE": 37,
-  "NW": 76,
+  "NE": 243,
+  "SE": 36,
+  "NW": 78,
   "SW": 14
  },
- "geo_signal_count": 207,
- "mapped_total": 362,
+ "geo_signal_count": 212,
+ "mapped_total": 371,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 790,
- "unmapped_distinct_titles": 464,
+ "unmapped_sample_count": 1387,
+ "unmapped_distinct_titles": 461,
  "unmapped_by_feed": {
-  "Google News US": 227,
-  "Google News IN": 224,
-  "Google News AU": 119,
-  "Google News GB": 117,
-  "RNZ National": 16,
+  "Google News US": 215,
+  "Google News IN": 212,
+  "Google News ZA": 211,
+  "Google News PH": 204,
+  "Google News CA": 123,
+  "Google News GB": 111,
+  "Google News NG": 109,
+  "Google News AU": 102,
+  "RNZ National": 15,
   "ABC Australia": 13,
   "France24 ES": 12,
-  "France24 FR": 10,
+  "France24 FR": 11,
   "BBC Brasil": 10,
   "BBC World": 7,
-  "Al Jazeera": 7,
+  "Al Jazeera": 6,
   "BBC Science": 5,
   "The Guardian World": 5,
-  "NASA News": 5,
-  "BBC Business": 4,
-  "The Guardian Environment": 2,
-  "The Conversation": 2,
-  "UN News": 2
+  "NASA News": 5
  },
  "unmapped_examples": [
   {
@@ -69,22 +112,10 @@
    "published_at": "2026-10-16T13:00:00+00:00"
   },
   {
-   "title": "Fact Check: UK not ending voting ID, nor is ID only way to verify age on social media",
-   "publisher": "Reuters",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T09:07:37+00:00"
-  },
-  {
    "title": "Liberman Accuses Eisenkot Of Seeking Government With Netanyahu",
    "publisher": "i24NEWS",
    "feed": "Google News US",
    "published_at": "2026-10-16T09:16:40+00:00"
-  },
-  {
-   "title": "Power struggle deepens in Iraqi Kurdistan after elections / Stephen Quillen",
-   "publisher": "کردپرس",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T11:58:40+00:00"
   },
   {
    "title": "If the economic narrative doesn't improve, things could get ugly for Labor - ABC News & Headlines",
@@ -97,12 +128,6 @@
    "publisher": "کردپرس",
    "feed": "Google News US",
    "published_at": "2026-10-16T10:05:58+00:00"
-  },
-  {
-   "title": "Liberal Democrat Voice",
-   "publisher": "Liberal Democrat Voice",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T07:47:21+00:00"
   },
   {
    "title": "A group of lawmakers urge Somali opposition to establish alternative election schedule",
@@ -135,22 +160,16 @@
    "published_at": "2026-10-16T18:30:51+00:00"
   },
   {
-   "title": "SNP see hung Westminster parliament as ‘most realistic’ route to indyref2, MP says",
-   "publisher": "The National Scot",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T02:22:27+00:00"
-  },
-  {
-   "title": "Saeima seat switcheroo as new government starts work / Article",
-   "publisher": "Latvian Public Media",
-   "feed": "Google News US",
-   "published_at": "2026-10-16T09:11:22+00:00"
-  },
-  {
    "title": "MK Stalin chairs DMK MPs meeting on SIR, other key issues today",
    "publisher": "The Economic Times",
    "feed": "Google News US",
    "published_at": "2026-10-17T06:30:43+00:00"
+  },
+  {
+   "title": "SNP see hung Westminster parliament as ‘most realistic’ route to indyref2, MP says",
+   "publisher": "The National Scot",
+   "feed": "Google News US",
+   "published_at": "2026-10-17T02:22:27+00:00"
   },
   {
    "title": "MPs and Experts: Judge Zidan’s Call Is an Opportunity to Resolve Constitutional Issues and Strengthen State Stability",
@@ -165,16 +184,22 @@
    "published_at": "2026-10-16T21:56:55+00:00"
   },
   {
-   "title": "Devendra Fadnavis says regime change possible only through elections under constitution",
-   "publisher": "The New Indian Express",
+   "title": "DMK demands removal of Chief Election Commissioner Gyanesh Kumar",
+   "publisher": "The News Mill",
    "feed": "Google News US",
-   "published_at": "2026-10-16T13:58:21+00:00"
+   "published_at": "2026-10-17T07:37:24+00:00"
   },
   {
    "title": "Chidambaram hits back at BJP over 'regime change' remark, says Opposition's duty to \"oppose, expose, depose' government",
    "publisher": "ANI News",
    "feed": "Google News US",
    "published_at": "2026-10-17T03:04:00+00:00"
+  },
+  {
+   "title": "Devendra Fadnavis says regime change possible only through elections under constitution",
+   "publisher": "The New Indian Express",
+   "feed": "Google News US",
+   "published_at": "2026-10-16T13:58:21+00:00"
   },
   {
    "title": "Nazlı: Elections Must Bring Workers’ Struggle Into Parliament",
@@ -237,10 +262,10 @@
    "published_at": "2026-10-17T06:30:43+00:00"
   },
   {
-   "title": "If the economic narrative doesn't improve, things could get ugly for Labor - ABC News & Headlines",
-   "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "title": "DMK demands removal of Chief Election Commissioner Gyanesh Kumar",
+   "publisher": "The News Mill",
    "feed": "Google News IN",
-   "published_at": "2026-10-16T18:00:00+00:00"
+   "published_at": "2026-10-17T07:37:24+00:00"
   },
   {
    "title": "Opinion: Idaho's future depends on your vote",
@@ -249,31 +274,49 @@
    "published_at": "2026-10-16T13:00:00+00:00"
   },
   {
-   "title": "Power struggle deepens in Iraqi Kurdistan after elections / Stephen Quillen",
-   "publisher": "کردپرس",
+   "title": "If the economic narrative doesn't improve, things could get ugly for Labor - ABC News & Headlines",
+   "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
    "feed": "Google News IN",
-   "published_at": "2026-10-16T11:58:40+00:00"
+   "published_at": "2026-10-16T18:00:00+00:00"
   },
   {
-   "title": "Fact Check: UK not ending voting ID, nor is ID only way to verify age on social media",
-   "publisher": "Reuters",
+   "title": "Former Somali President rejects electoral commission’s 2027 election schedule",
+   "publisher": "Hiiraan Online",
    "feed": "Google News IN",
-   "published_at": "2026-10-16T09:07:37+00:00"
+   "published_at": "2026-10-16T18:28:29+00:00"
   },
   {
-   "title": "The Hungarian parliament voted to remove the president from office",
-   "publisher": "Turkmenportal.com",
+   "title": "A group of lawmakers urge Somali opposition to establish alternative election schedule",
+   "publisher": "Hiiraan Online",
    "feed": "Google News IN",
-   "published_at": "2026-10-17T05:24:18+00:00"
+   "published_at": "2026-10-17T04:03:02+00:00"
+  },
+  {
+   "title": "Liberman Accuses Eisenkot Of Seeking Government With Netanyahu",
+   "publisher": "i24NEWS",
+   "feed": "Google News IN",
+   "published_at": "2026-10-16T09:16:40+00:00"
+  },
+  {
+   "title": "Barmm chief welcomes PBBM’s affirmation of region’s autonomy",
+   "publisher": "SunStar Publishing Inc.",
+   "feed": "Google News IN",
+   "published_at": "2026-10-16T18:30:51+00:00"
   },
   {
    "title": "Opposition unites against governor's rule in K-P",
    "publisher": "The Express Tribune",
    "feed": "Google News IN",
    "published_at": "2026-10-16T21:56:55+00:00"
+  },
+  {
+   "title": "MPs and Experts: Judge Zidan’s Call Is an Opportunity to Resolve Constitutional Issues and Strengthen State Stability",
+   "publisher": "وكالة الانباء العراقية (واع)",
+   "feed": "Google News IN",
+   "published_at": "2026-10-16T19:15:08+00:00"
   }
  ],
- "duplicates_removed": 171,
+ "duplicates_removed": 536,
  "gazetteer_entries": 1094,
  "warning": "Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred."
 }
