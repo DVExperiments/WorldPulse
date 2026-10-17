@@ -1,14 +1,16 @@
-# WorldPulse v1.6D.7 — Smoother Living Earth
+# WorldPulse v1.6D.8 — Gentle Ambient Flicker
 
-Increases the population-grid shimmer refresh rate from approximately **4 FPS** to **11 FPS** by reducing the render interval from 240 ms to 90 ms and the frame throttle from 220 ms to 85 ms.
+Changes the cyan population-grid animation from a smooth, periodic pulse into irregular gentle flickering.
 
-The grid, country borders, measured population brightness, category colours and news sources remain unchanged. Animation pauses in hidden tabs.
+## Changes
+- Fixed dot positions, sizes and grid spacing.
+- Smooth, deterministic noise-based brightness variation without synchronized periodic pulsing.
+- Existing category-coloured news markers, coastlines and borders unchanged.
+- Existing Subtle signal twinkle checkbox enables or disables the grid flicker.
 
 ## Installation
-Replace **app.js** in the repository root; keep all other files unchanged, including `update.yml`. Wait for GitHub Pages deployment and hard-refresh.
+Replace only `app.js` in the repository root. Preserve all data files, the population raster, `world-borders.geojson`, CSS, HTML and `.github/workflows/update.yml`.
 
-## Performance note
-Each update still redraws a 2048×1024 texture; this update requests more GPU uploads and may cost more performance on older devices. If globe rotation becomes sluggish, revert to v1.6D.6, or request an adaptive animation-quality setting.
+After deployment, hard refresh the website. `WorldPulseShimmerStatus()` is still available in the console. `WorldPulseShimmerTest(true)` enables a brighter diagnostic preview; use `WorldPulseShimmerTest(false)` to return to the normal visual effect.
 
-## Verify
-Use `WorldPulseShimmerStatus()` in the console. `frames` should increase more quickly than before. This patch has undergone a JavaScript syntax check, not a live WebGL benchmark.
+The flicker is decorative and does not indicate news velocity or real-time population activity.

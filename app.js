@@ -115,10 +115,20 @@ function updateLivingEarth(now){
  if(state.twinkle){
   const t=now/1000;
   for(const dot of ambientGridSamples){
-   const wave=Math.sin(t*dot.speed+dot.phase);
-   const glint=Math.pow(Math.max(0,Math.sin(t*(dot.speed*.69)+dot.phase*1.73)),7);
-   const shimmer=.5+.5*wave;
-   const brightness=ambientContrastTest ? (.05+.92*shimmer) : Math.min(.88,.035+dot.base*(.22+1.75*shimmer+1.15*glint));
+   // Smoothly interpolated seeded noise, not a repeating sine wave.
+   const seed=dot.u*131.73+dot.v*17.37+dot.phase*3.91;
+   const q=t*(1.7+.85*dot.speed)+dot.phase;
+   const frame=Math.floor(q),fraction=q-frame;
+   const eased=fraction*fraction*(3-2*fraction);
+   const randomAt=k=>ambientHash(seed+k*41.13);
+   const jitter=randomAt(frame)*(1-eased)+randomAt(frame+1)*eased;
+   const slow=q*.27,si=Math.floor(slow),sf=slow-si;
+   const blend=sf*sf*(3-2*sf);
+   const drift=randomAt(si+903)*(1-blend)+randomAt(si+904)*blend;
+   const flicker=.68*jitter+.32*drift;
+   const brightness=ambientContrastTest
+     ? .16+.76*flicker
+     : Math.min(.77,.055+dot.base*(.78+.92*flicker));
    ctx.fillStyle=`rgba(156,255,249,${brightness.toFixed(3)})`;
    ctx.fillRect(dot.u,dot.v,ambientContrastTest?2:1.55,ambientContrastTest?2:1.55);
   }
