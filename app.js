@@ -94,9 +94,9 @@ function initGlobe(){
   .backgroundColor('rgba(0,0,0,0)')
   .showAtmosphere(true).atmosphereColor(state.visualMode==='neon'?'#00e7ee':'#4baec0').atmosphereAltitude(state.visualMode==='neon'?.095:.14)
   .pointsMerge(false).pointLat('lat').pointLng('lng')
-  .pointColor(p=>neonPointColor(p))
-  .pointAltitude(p=>state.visualMode==='neon'?.008:Math.min(.08,.011+Math.log1p(p.count)*.008))
-  .pointRadius(p=>state.visualMode==='neon'?Math.min(1.3,.25+Math.sqrt(p.count)*.16):p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11))
+  .pointColor(p=>signalColor(p))
+  .pointAltitude(p=>signalAltitude(p))
+  .pointRadius(p=>signalRadius(p))
   .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
   .ringsData([])
   .polygonsData([]).polygonCapColor(p=>coverageColor(p.properties.wpCount||0))
@@ -104,7 +104,7 @@ function initGlobe(){
   .polygonAltitude(()=>.004)
   .polygonLabel(p=>`${clean(p.properties.name)}: ${p.properties.wpCount||0} sampled mapped articles (approximate)`)
   .onPolygonClick(p=>selectCoverageCountry(p))
-  .onPointClick(p=>openPoint(p))
+  .onPointClick(p=>openPoint(p.signalSource||p))
   .onGlobeClick(({lat,lng})=>pickPlace({lat,lng}))
   .onZoom(()=>refreshZoom());
  globe.pointOfView({lat:17,lng:16,altitude:2.15},0);
@@ -133,7 +133,7 @@ function renderPoints(){if(!globe)return;let data=state.layer==='news'?state.new
  // Country-level subjects remain small selectable anchors; never imply an event footprint.
  // All perpetual pulse rings are disabled: they were country-only and caused clutter.
  const mapped=state.layer==='news'?data.map(p=>p.accuracy==='country'?{...p,broadAnchor:true}:p):data;
- currentPoints=aggregate(mapped);globe.pointsData(currentPoints);refreshSignalGlow();refreshMarkerHalos();renderCoverage();
+ currentPoints=aggregate(mapped);globe.pointsData(signalDisplayPoints(currentPoints));refreshSignalGlow();refreshMarkerHalos();renderCoverage();
  $('locations').textContent=data.length.toLocaleString();$('total').textContent=data.reduce((n,p)=>n+p.count,0).toLocaleString();
 }
 function pickPlace(pos){let source=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.layer==='events'?(state.categories.has('hazards')?state.events:[]):state.posts;
@@ -485,9 +485,9 @@ function applyVisualMode(){
  document.querySelectorAll('[data-visual]').forEach(b=>{b.classList.toggle('active',b.dataset.visual===state.visualMode);b.setAttribute('aria-pressed',String(b.dataset.visual===state.visualMode));});
  globe.globeImageUrl(state.visualMode==='neon'?makeNeonTexture():REAL_EARTH);
  globe.atmosphereColor(state.visualMode==='neon'?'#00e7ee':'#4baec0').atmosphereAltitude(state.visualMode==='neon'?.095:.14);
- globe.pointAltitude(p=>state.visualMode==='neon'?.008:Math.min(.08,.011+Math.log1p(p.count)*.008));
- globe.pointRadius(p=>state.visualMode==='neon'?Math.min(1.3,.25+Math.sqrt(p.count)*.16):p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11));
- globe.pointColor(p=>neonPointColor(p));
+ globe.pointAltitude(p=>signalAltitude(p));
+ globe.pointRadius(p=>signalRadius(p));
+ globe.pointColor(p=>signalColor(p));
  if(state.visualMode==='neon'&&state.coverageReady)updateNeonTexture();
  updateCartographicPaths();
  refreshMarkerHalos();
@@ -495,14 +495,43 @@ function applyVisualMode(){
  globe.bumpImageUrl(state.visualMode==='real'?'https://unpkg.com/three-globe/example/img/earth-topology.png':null);
  renderPoints();
 }
+// v1.6D: all decorative light is derived from actual signals. No synthetic locations.
+function signalRadius(p){
+ if(state.visualMode!=='neon')return p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11);
+ const size=Math.min(1.55,.27+Math.sqrt(Math.max(1,p.count))*.17);
+ return p.wpHalo ? Math.min(2.8,size*1.8) : size;
+}
+function signalAltitude(p){
+ if(state.visualMode!=='neon')return Math.min(.08,.011+Math.log1p(p.count)*.008);
+ return p.wpHalo ? .003 : .013;
+}
+function signalColor(p){
+ const base=COLORS[p.category]||COLORS.social;
+ if(state.visualMode!=='neon')return base;
+ if(p.wpHalo){
+  // Low-opacity cyan/category light under the core. Alpha deliberately capped.
+  const rgb=hexRgb(base);
+  const activity=Math.min(1,Math.log1p(p.count)/Math.log(25));
+  return `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${(.085+.11*activity).toFixed(3)})`;
+ }
+ return neonPointColor(p);
+}
+function hexRgb(hex){return [1,3,5].map(i=>parseInt(hex.slice(i,i+2),16))}
+function signalDisplayPoints(points){
+ if(state.visualMode!=='neon')return points;
+ const halos=points.filter(p=>p.count>=2).map(p=>({...p,wpHalo:true,signalSource:p}));
+ return [...halos,...points];
+}
 function refreshSignalGlow(){
- if(!globe||state.visualMode!=='neon'||!state.twinkle||!currentPoints.length)return;
- // Subtle selective brightness, never a full-globe strobe or country-only pulses.
- const tick=Math.floor(Date.now()/1500);
+ if(!globe||!currentPoints.length)return;
+ if(state.visualMode!=='neon'||!state.twinkle){globe.pointColor(p=>signalColor(p));return}
+ const tick=Math.floor(Date.now()/1600);
  globe.pointColor(p=>{
-  const phase=Math.abs(Math.sin(p.lat*17.1+p.lng*6.7+tick*.63));
+  if(p.wpHalo)return signalColor(p);
   const base=COLORS[p.category]||COLORS.social;
-  return phase>.975?'#f3ffff':base;
+  const phase=(Math.sin(p.lat*8.71+p.lng*2.29+tick*.45)+1)/2;
+  if(phase>.97){const rgb=hexRgb(base);return `rgb(${Math.round(rgb[0]+(255-rgb[0])*.26)},${Math.round(rgb[1]+(255-rgb[1])*.26)},${Math.round(rgb[2]+(255-rgb[2])*.26)})`}
+  return base;
  });
 }
 function initVisualControls(){
