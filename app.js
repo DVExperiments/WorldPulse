@@ -83,6 +83,8 @@ let neonTextureUrl=null,twinkleFrame=0;
 let ambientBaseCanvas=null, ambientLiveCanvas=null, ambientGridSamples=[];
 let ambientLastFrame=0, ambientStarted=false;
 let ambientGpuTexture=null,ambientGpuMaterial=null,ambientFrames=0,ambientUploads=0,ambientTimer=null,ambientError='';
+let ambientContrastTest=false;
+window.WorldPulseShimmerTest=(enabled=true)=>{ambientContrastTest=!!enabled;return {testMode:ambientContrastTest, message:'Temporary high-contrast test mode; call WorldPulseShimmerTest(false) to disable.'}};
 function ambientHash(n){const v=Math.sin(n*12.9898)*43758.5453;return v-Math.floor(v)}
 function clearAmbientTexture(){ambientBaseCanvas=null;ambientLiveCanvas=null;ambientGridSamples=[];ambientStarted=false;ambientLastFrame=0;ambientFrames=0;ambientUploads=0;ambientGpuTexture=null;ambientGpuMaterial=null;ambientError=''}
 function bindLivingEarthTexture(){
@@ -115,15 +117,15 @@ function updateLivingEarth(now){
   for(const dot of ambientGridSamples){
    const wave=Math.sin(t*dot.speed+dot.phase);
    const glint=Math.pow(Math.max(0,Math.sin(t*(dot.speed*.69)+dot.phase*1.73)),7);
-   const brightness=Math.min(.62,dot.base*(.23+.92*(.5+.5*wave)+.8*glint));
-   if(brightness<.04)continue;
-   ctx.fillStyle=`rgba(116,255,246,${brightness.toFixed(3)})`;
-   ctx.fillRect(dot.u,dot.v,1.35,1.35);
+   const shimmer=.5+.5*wave;
+   const brightness=ambientContrastTest ? (.05+.92*shimmer) : Math.min(.88,.035+dot.base*(.22+1.75*shimmer+1.15*glint));
+   ctx.fillStyle=`rgba(156,255,249,${brightness.toFixed(3)})`;
+   ctx.fillRect(dot.u,dot.v,ambientContrastTest?2:1.55,ambientContrastTest?2:1.55);
   }
  }
  ambientFrames++;ambientGpuTexture.needsUpdate=true;ambientUploads++;
 }
-window.WorldPulseShimmerStatus=()=>({mode:state.visualMode,enabled:state.twinkle,dots:ambientGridSamples.length,canvasBound:!!ambientGpuTexture&&ambientGpuMaterial?.map===ambientGpuTexture,displayedTextureIsCanvas:ambientGpuMaterial?.map?.image===ambientLiveCanvas,frames:ambientFrames,uploadsRequested:ambientUploads,lastError:ambientError});
+window.WorldPulseShimmerStatus=()=>({mode:state.visualMode,enabled:state.twinkle,dots:ambientGridSamples.length,canvasBound:!!ambientGpuTexture&&ambientGpuMaterial?.map===ambientGpuTexture,displayedTextureIsCanvas:ambientGpuMaterial?.map?.image===ambientLiveCanvas,testMode:ambientContrastTest,frames:ambientFrames,uploadsRequested:ambientUploads,lastError:ambientError});
 
 let measuredPopulationImage=null, measuredPopulationStatus='not-loaded';
 
@@ -512,8 +514,8 @@ function updateNeonTexture(){
    // Select a stable subset of EXISTING grid points for gentle shimmer.
    // Every dot stays at the same coordinate and size across all frames.
    const h=ambientHash(u*19+v*71);
-   if(h>.925 && shimmerDots.length<3600){
-    shimmerDots.push({u,v,base:.11+.19*t,phase:h*125.7,speed:.44+.45*ambientHash(u*3+v*7)});
+   if(h>.67 && shimmerDots.length<16000){
+    shimmerDots.push({u,v,base:.18+.27*t,phase:h*125.7,speed:.65+.65*ambientHash(u*3+v*7)});
    }
   }
   // Permanent boundaries: doubled luminous strokes, fixed to the Earth texture.

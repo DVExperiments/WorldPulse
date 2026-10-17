@@ -1,13 +1,17 @@
-# WorldPulse v1.6D.5 — Living Earth Texture Repair
+# WorldPulse v1.6D.6 — Visible Population Grid Shimmer
 
-This patch addresses the population-grid shimmer initializing but not displaying.
-
-It binds a canvas-backed WebGL texture directly to the globe material, marks that texture for refresh, and prevents duplicate animation timers. It retains the existing neon country outlines, measured population brightness, news marker appearance, and news collector.
+## Fix
+The previous texture implementation selected ~1,900 tiny squares worldwide. Those tiny changes are almost invisible once projected onto the globe. This build increases the proportion of **existing** ambient population grid dots that shimmer and raises their small brightness variation, without moving the grid or changing news dots and country borders.
 
 ## Install
-Replace the repository-root `app.js` only. Leave `index.html`, existing CSS, `world-borders.geojson`, population raster, data files and `.github/workflows/update.yml` unchanged.
+Replace `app.js` in your repository root. Do not change any news collection files, GeoJSON, or population raster. Commit and hard-refresh after GitHub Pages deploys.
 
-## Verify
-After a hard refresh, type `WorldPulseShimmerStatus()` in the browser console. `canvasBound` and `displayedTextureIsCanvas` should be true, and `frames`/`uploadsRequested` should rise over time. These diagnose update requests, not independently confirmed GPU upload.
+## How to test
+1. With neon mode and Subtle signal twinkle enabled, keep the globe still and observe land dots.
+2. If unclear, type `WorldPulseShimmerTest(true)` in the developer console yourself. This enables an intentionally exaggerated **temporary** brightness test, not the intended final appearance.
+3. Watch for clear asynchronous dot changes, then type `WorldPulseShimmerTest(false)` to restore the gentler mode.
+4. You can check `WorldPulseShimmerStatus()` for frames, texture binding, and test-mode state.
 
-The visual effect still requires testing in the deployed browser.
+Note: The previous city/settlement grid remains an ambient interpretation, not a news source. This update only alters the animation. No new geographic facts are implied.
+
+If test mode shows no changes, the issue is still with texture updates or browser rendering, not ordinary shimmer contrast.
