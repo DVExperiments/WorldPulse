@@ -128,6 +128,15 @@ DIRECT_FEEDS = [
  ('France24 ES','https://www.france24.com/es/rss','regional','es'),
  ('DW Español','https://rss.dw.com/rdf/rss-es-all','regional','es'),
  ('BBC Brasil','https://www.bbc.com/portuguese/index.xml','regional','pt'),
+ # Independent regional publishers (best effort; checked individually and never required).
+ ('BBC Africa','https://feeds.bbci.co.uk/news/world/africa/rss.xml','regional','en'),
+ ('BBC Asia','https://feeds.bbci.co.uk/news/world/asia/rss.xml','regional','en'),
+ ('BBC Latin America','https://feeds.bbci.co.uk/news/world/latin_america/rss.xml','regional','en'),
+ ('BBC Middle East','https://feeds.bbci.co.uk/news/world/middle_east/rss.xml','regional','en'),
+ ('BBC Europe','https://feeds.bbci.co.uk/news/world/europe/rss.xml','regional','en'),
+ ('RNZ Pacific','https://www.rnz.co.nz/rss/pacific.xml','regional','en'),
+ ('Guardian Africa','https://www.theguardian.com/world/africa/rss','regional','en'),
+ ('Guardian Asia','https://www.theguardian.com/world/asia/rss','regional','en'),
 ]
 CATEGORY_TERMS = {
  'conflict':('war','military','troop','missile','airstrike','ceasefire','invasion','conflict','army','bomb','guerra','guerre','ataque'),
@@ -181,7 +190,7 @@ def collect(now):
    if not a['title'] or not a['url'].startswith('https://'):continue
    place,match_origin=locate(a['title'],a.get('description',''))
    if not place:
-    unmapped.append({'title':a['title'][:180],'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat()})
+    unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260], 'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
     continue
    mapped+=1
    results.append({**a,'category':category or classify(a['title']),'place':place,'geo_match':match_origin,'at':when.isoformat(), 'publisher':a.get('publisher') or source,'source_kind':kind,'source_name':source,'source_region':region,'language':language})
@@ -284,8 +293,24 @@ def update_diagnostics(now,feeds,unmapped,points,duplicates):
  cat=Counter();geo=Counter();regions=Counter();hemispheres=Counter()
  for p in points:
   cat[p['category']]+=p['count'];geo[p.get('accuracy','unknown')]+=p['count'];regions[p.get('location_basis','unknown')]+=p['count'];hemispheres[('N' if p['lat']>=0 else 'S')+('E' if p['lng']>=0 else 'W')]+=p['count']
- obj={'schema':1,'updated_at':now.isoformat(),'feeds_total':len(feeds),'feeds_ok':sum(f['status']=='ok' for f in feeds),'feeds_failed':[f['source'] for f in feeds if f['status']!='ok'], 'google_feeds_by_region':{code:{'total':sum(f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'ok':sum(f['status']=='ok' and f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code))} for code,_,_ in REGIONS}, 'mapped_articles_by_category':dict(cat),'mapped_articles_by_location_precision':dict(geo),'location_evidence_counts':dict(regions),'geographic_quadrants':dict(hemispheres),'geo_signal_count':len(points),'mapped_total':sum(p['count'] for p in points),'geo_match_rate_note':'Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.','unmapped_sample_count':len(unmapped),'unmapped_distinct_titles':len(set(re.sub(r'\W+',' ',a['title'].casefold()) for a in unmapped)),'unmapped_by_feed':dict(Counter(a['feed'] for a in unmapped).most_common(18)),'unmapped_examples':unmapped[:35], 'duplicates_removed':duplicates,'gazetteer_entries':len(PLACES),'warning':'Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.'}
+ # Distinct unmatched stories are grouped independently of feed repetition.
+ unmatched_unique={}
+ for row in unmapped:
+  title_key=re.sub(r'\W+',' ',row['title'].casefold()).strip()
+  if not title_key:continue
+  if title_key not in unmatched_unique:unmatched_unique[title_key]={**row,'feed_occurrences':0,'feeds':set()}
+  unmatched_unique[title_key]['feed_occurrences']+=1
+  unmatched_unique[title_key]['feeds'].add(row['feed'])
+ ranked=sorted(unmatched_unique.values(),key=lambda r:(len(r['feeds']),r['feed_occurrences']),reverse=True)
+ unmatched_review=[{'title':r['title'],'url':r['url'],'publisher':r['publisher'],'feed_occurrences':r['feed_occurrences'],'feed_count':len(r['feeds']),'description_excerpt':r.get('description','')[:160]} for r in ranked[:120]]
+ region_rollup={}
+ for code,_,_ in REGIONS:
+  fs=[f for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code)]
+  region_rollup[code]={'requests':len(fs),'successful':sum(f['status']=='ok' for f in fs),'mapped_pre_dedupe':sum(f['mapped'] for f in fs)}
+ direct_rollup={'configured':sum(f['kind']=='publisher' for f in feeds),'successful':sum(f['kind']=='publisher' and f['status']=='ok' for f in feeds),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['kind']=='publisher')}
+ obj={'schema':1,'updated_at':now.isoformat(),'feeds_total':len(feeds),'feeds_ok':sum(f['status']=='ok' for f in feeds),'feeds_failed':[f['source'] for f in feeds if f['status']!='ok'], 'google_feeds_by_region':{code:{'total':sum(f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'ok':sum(f['status']=='ok' and f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code))} for code,_,_ in REGIONS}, 'mapped_articles_by_category':dict(cat),'mapped_articles_by_location_precision':dict(geo),'location_evidence_counts':dict(regions),'geographic_quadrants':dict(hemispheres),'geo_signal_count':len(points),'mapped_total':sum(p['count'] for p in points),'geo_match_rate_note':'Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.','unmapped_sample_count':len(unmapped),'unmapped_distinct_titles':len(set(re.sub(r'\W+',' ',a['title'].casefold()) for a in unmapped)),'unmapped_by_feed':dict(Counter(a['feed'] for a in unmapped).most_common(18)),'unmapped_examples':unmatched_review[:35], 'unmapped_review_file':'data/unmatched-review.json', 'direct_source_breakdown':direct_rollup, 'source_editions':region_rollup, 'duplicates_removed':duplicates,'gazetteer_entries':len(PLACES),'warning':'Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.'}
  DIAGNOSTICS.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
+ (ROOT/'data/unmatched-review.json').write_text(json.dumps({'schema':1,'updated_at':now.isoformat(),'distinct_unmatched':len(unmatched_unique),'note':'Headlines lack a confidently matched place. Not every headline is geographically attributable. Samples may repeat over time.','examples':unmatched_review},ensure_ascii=False,indent=1),encoding='utf8')
 
 def main():
  now=dt.datetime.now(dt.timezone.utc)
@@ -301,7 +326,7 @@ def main():
   raise SystemExit('Every RSS feed failed; retained last-known snapshot')
  points,duplicates,unique=produce(raw,now)
  publishers=set(a['publisher'].casefold() for a in raw if a.get('publisher'))
- record={'schema':2,'version':'1.5','source':'Google News RSS and independent publisher RSS samples','updated_at':now.isoformat(timespec='seconds'),
+ record={'schema':2,'version':'1.5.1','source':'Google News RSS and independent publisher RSS samples','updated_at':now.isoformat(timespec='seconds'),
   'last_attempt_at':now.isoformat(timespec='seconds'),'window':'rolling 24 hours',
   'status':'live' if not failures else 'partial','query_successes':success,'query_attempts':len(health),
   'articles_scanned':scanned,'distinct_mapped_articles':unique,'duplicates_removed':duplicates,
@@ -317,6 +342,6 @@ def main():
  update_history(now,points)
  update_article_history(now,points)
  update_diagnostics(now,health,unmapped,points,duplicates)
- print(f'WorldPulse v1.5: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
+ print(f'WorldPulse v1.5.1: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
  if not points:print('WARNING: feeds succeeded but no headline-place matches',flush=True)
 if __name__=='__main__':main()

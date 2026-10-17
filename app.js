@@ -134,6 +134,8 @@ async function showHealth(){
   add('Distinct unmatched headlines',d.unmapped_distinct_titles??'Not available');
   add('Geographic quadrants (sampled records)',Object.entries(d.geographic_quadrants||{}).map(([k,v])=>`${k}: ${v}`).join(' · ')||'Not available');
   add('Most unmatched feeds',Object.entries(d.unmapped_by_feed||{}).slice(0,8).map(([k,v])=>`${k}: ${v}`).join(' · ')||'Not available');
+  add('Independent publisher feeds', d.direct_source_breakdown ? `${d.direct_source_breakdown.successful}/${d.direct_source_breakdown.configured} successful · ${d.direct_source_breakdown.mapped_pre_dedupe} mapped before deduplication` : 'Awaiting new collection');
+  add('Unmatched headline audit',d.unmapped_review_file ? `${d.unmapped_distinct_titles} distinct headlines · review data/unmatched-review.json` : 'Awaiting new collection');
   add('Google News regional editions',Object.entries(d.google_feeds_by_region||{}).map(([k,v])=>`${k}: ${v.ok}/${v.total} feeds · ${v.mapped_pre_dedupe} mapped before deduplication`).join(' · ')||'Awaiting new collection');
   add('Failed feeds',(d.feeds_failed||[]).join(' · ')||'None');
  }catch(e){host.textContent='Could not load data-health.json: '+e.message}
