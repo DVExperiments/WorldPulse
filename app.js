@@ -3,7 +3,7 @@
 const COLORS={politics:'#eeb67e',environment:'#6edcb3',hazards:'#ef797d',society:'#ae94f3',health:'#d3a1ff',education:'#a8a3ff',rights:'#ef9bd0',community:'#bb95dd',economy:'#72baf1',science:'#e4d475',conflict:'#ff5878',social:'#eb8eeb'};
 const LABELS={politics:'Politics',environment:'Environment',hazards:'Hazards',health:'Health',education:'Education',rights:'Rights & justice',community:'Community & culture',society:'Society (legacy)',economy:'Economy',science:'Science',conflict:'War & conflict'};
 const $=id=>document.getElementById(id);
-const state={news:[],posts:[],events:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null};
+const state={news:[],posts:[],events:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,precision:'all',rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null};
 let globe, currentPoints=[], lastTier=-1, translationCache=new Map();
 function clean(s){return String(s??'').slice(0,500)}
 function dist(a,b){let rad=Math.PI/180,dLat=(b.lat-a.lat)*rad,dLng=(b.lng-a.lng)*rad;let x=Math.sin(dLat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(dLng/2)**2;return 6371*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x))}
@@ -18,8 +18,12 @@ function initGlobe(){
   .pointsMerge(false).pointLat('lat').pointLng('lng')
   .pointColor(p=>COLORS[p.category]||COLORS.social)
   .pointAltitude(p=>Math.min(.08,.011+Math.log1p(p.count)*.008))
-  .pointRadius(p=>Math.min(1.6,.19+Math.sqrt(p.count)*.11))
-  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.velocity==='rising'?' · ↑ Rising':''}`)
+  .pointRadius(p=>p.broadAnchor?.11:Math.min(1.6,.19+Math.sqrt(p.count)*.11))
+  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
+  .ringsData([]).ringLat('lat').ringLng('lng')
+  .ringColor(p=>COLORS[p.category]||'#6edcb3')
+  .ringMaxRadius(p=>p.accuracy==='country'?9:3.5)
+  .ringPropagationSpeed(.6).ringRepeatPeriod(5000)
   .onPointClick(p=>openPoint(p))
   .onGlobeClick(({lat,lng})=>pickPlace({lat,lng}))
   .onZoom(()=>refreshZoom());
@@ -45,10 +49,17 @@ function aggregate(items){if(!state.cluster||tier()===3)return items.map(p=>({..
 }
 function refreshZoom(){let t=tier();if(t!==lastTier){lastTier=t;renderPoints()}}
 function renderPoints(){if(!globe)return;let data=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.layer==='events'?(state.categories.has('hazards')?state.events:[]):state.posts;
- currentPoints=aggregate(data);globe.pointsData(currentPoints);
+ if(state.layer==='news'&&state.precision!=='all')data=data.filter(p=>p.accuracy===state.precision);
+ // Country subjects are displayed as broad geographic rings, not invented local pin positions.
+ const broad=state.layer==='news'?data.filter(p=>p.accuracy==='country'):[];
+ globe.ringsData(broad);
+ // Keep tiny country anchor points selectable; the broad rings communicate uncertainty.
+ const mapped=state.layer==='news'?data.map(p=>p.accuracy==='country'?{...p,broadAnchor:true}:p):data;
+ currentPoints=aggregate(mapped);globe.pointsData(currentPoints);
  $('locations').textContent=data.length.toLocaleString();$('total').textContent=data.reduce((n,p)=>n+p.count,0).toLocaleString();
 }
 function pickPlace(pos){let source=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.layer==='events'?(state.categories.has('hazards')?state.events:[]):state.posts;
+ if(state.layer==='news'&&state.precision!=='all')source=source.filter(p=>p.accuracy===state.precision);
  if(!source.length){openEmpty(pos);return}
  const nearest=[...source].sort((a,b)=>dist(pos,a)-dist(pos,b))[0];
  const km=dist(pos,nearest);
@@ -103,6 +114,7 @@ function bind(){
  $('resetBtn').onclick=()=>{if(globe)globe.pointOfView({lat:17,lng:16,altitude:2.15},850);if(globe)globe.controls().autoRotate=state.rotate};
  $('rotate').onchange=e=>{state.rotate=e.target.checked;if(globe)globe.controls().autoRotate=state.rotate};
  $('clusters').onchange=e=>{state.cluster=e.target.checked;renderPoints()};
+ $('precisionFilter').onchange=e=>{state.precision=e.target.value;renderPoints()};
  $('translate').onchange=e=>{state.translate=e.target.checked;if(state.selected)paintDrawer()};
  $('drawerClose').onclick=()=>{state.selected=null;$('drawer').hidden=true;if(globe)globe.controls().autoRotate=state.rotate};
  $('searchForm').onsubmit=e=>{e.preventDefault();let v=$('placeSearch').value.match(/^\s*(-?\d+(?:\.\d+)?)\s*[,; ]\s*(-?\d+(?:\.\d+)?)\s*$/);if(!v){$('placeSearch').setCustomValidity('Enter latitude,longitude, such as 35.68,139.69');$('placeSearch').reportValidity();return}let lat=+v[1],lng=+v[2];if(Math.abs(lat)>90||Math.abs(lng)>180){$('placeSearch').setCustomValidity('Coordinates out of range');$('placeSearch').reportValidity();return}$('placeSearch').setCustomValidity('');if(globe)globe.pointOfView({lat,lng,altitude:.75},1000);pickPlace({lat,lng})};

@@ -87,6 +87,13 @@ for p in PLACES:
   if len(name)<4 or name.casefold() in AMBIGUOUS:continue
   MATCHERS.append((p,re.compile(r'(?<!\w)'+re.escape(name)+r'(?!\w)',re.I),name))
 
+# Representative administrative anchors: state/province-level SUBJECTS, not event coordinates.
+NA_REGIONS = json.loads((ROOT/'data/north-america-regions.json').read_text(encoding='utf8'))
+NA_MATCHERS=[]
+for item in NA_REGIONS:
+ for phrase in item['terms']:
+  NA_MATCHERS.append((item,re.compile(r'(?<!\w)'+re.escape(phrase)+r'(?!\w)',re.I),phrase))
+
 PUBLISHERS = {'reuters.com','apnews.com','bbc.com','bbc.co.uk','aljazeera.com','theguardian.com','dw.com','france24.com'}
 
 def norm_title(title):
@@ -130,9 +137,11 @@ def locate(title, description=''):
   contextual=[(p,phrase) for p,rx,phrase in GEO_MATCHERS if rx.search(field)]
   matches=[(p,name) for p,rx,name in MATCHERS if rx.search(field)]
   # Specific explicit or contextual locality outranks a generic country reference.
-  choices=contextual+matches
+  regional=[(p,phrase) for p,rx,phrase in NA_MATCHERS if rx.search(field)]
+  choices=contextual+matches+regional
   if not choices: continue
-  choices.sort(key=lambda item:(item[0].get('level')!='country',len(item[1])),reverse=True)
+  priority={'place':3,'region':2,'country':1}
+  choices.sort(key=lambda item:(4 if item[0] in NA_REGIONS and ('state' in item[1].lower() or 'province' in item[1].lower()) else priority.get(item[0].get('level'),0),len(item[1])),reverse=True)
   return choices[0][0],quality
  return None,'unmapped'
 
@@ -342,7 +351,7 @@ def update_diagnostics(now,feeds,unmapped,points,duplicates):
   fs=[f for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code)]
   region_rollup[code]={'requests':len(fs),'successful':sum(f['status']=='ok' for f in fs),'mapped_pre_dedupe':sum(f['mapped'] for f in fs)}
  direct_rollup={'configured':sum(f['kind']=='publisher' for f in feeds),'successful':sum(f['kind']=='publisher' and f['status']=='ok' for f in feeds),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['kind']=='publisher')}
- obj={'schema':1,'updated_at':now.isoformat(),'feeds_total':len(feeds),'feeds_ok':sum(f['status']=='ok' for f in feeds),'feeds_failed':[f['source'] for f in feeds if f['status']!='ok'], 'google_feeds_by_region':{code:{'total':sum(f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'ok':sum(f['status']=='ok' and f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code))} for code,_,_ in REGIONS}, 'mapped_articles_by_category':dict(cat),'mapped_articles_by_location_precision':dict(geo),'location_evidence_counts':dict(regions),'geographic_quadrants':dict(hemispheres),'geo_signal_count':len(points),'mapped_total':sum(p['count'] for p in points),'geo_match_rate_note':'Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.','unmapped_sample_count':len(unmapped),'unmapped_distinct_titles':len(set(re.sub(r'\W+',' ',a['title'].casefold()) for a in unmapped)),'unmapped_by_feed':dict(Counter(a['feed'] for a in unmapped).most_common(18)),'unmapped_examples':unmatched_review[:35], 'unmapped_review_file':'data/unmatched-review.json', 'direct_source_breakdown':direct_rollup, 'source_editions':region_rollup, 'duplicates_removed':duplicates,'gazetteer_entries':len(PLACES)+len(GEO_HINTS),'contextual_alias_groups':len(GEO_HINTS),'warning':'Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.'}
+ obj={'schema':1,'updated_at':now.isoformat(),'feeds_total':len(feeds),'feeds_ok':sum(f['status']=='ok' for f in feeds),'feeds_failed':[f['source'] for f in feeds if f['status']!='ok'], 'google_feeds_by_region':{code:{'total':sum(f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'ok':sum(f['status']=='ok' and f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code))} for code,_,_ in REGIONS}, 'mapped_articles_by_category':dict(cat),'mapped_articles_by_location_precision':dict(geo),'location_evidence_counts':dict(regions),'geographic_quadrants':dict(hemispheres),'geo_signal_count':len(points),'mapped_total':sum(p['count'] for p in points),'geo_match_rate_note':'Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.','unmapped_sample_count':len(unmapped),'unmapped_distinct_titles':len(set(re.sub(r'\W+',' ',a['title'].casefold()) for a in unmapped)),'unmapped_by_feed':dict(Counter(a['feed'] for a in unmapped).most_common(18)),'unmapped_examples':unmatched_review[:35], 'unmapped_review_file':'data/unmatched-review.json', 'direct_source_breakdown':direct_rollup, 'source_editions':region_rollup, 'duplicates_removed':duplicates,'gazetteer_entries':len(PLACES)+len(GEO_HINTS)+len(NA_REGIONS),'contextual_alias_groups':len(GEO_HINTS),'warning':'Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.'}
  DIAGNOSTICS.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
  (ROOT/'data/unmatched-review.json').write_text(json.dumps({'schema':1,'updated_at':now.isoformat(),'distinct_unmatched':len(unmatched_unique),'note':'Headlines lack a confidently matched place. Not every headline is geographically attributable. Samples may repeat over time.','examples':unmatched_review},ensure_ascii=False,indent=1),encoding='utf8')
 
