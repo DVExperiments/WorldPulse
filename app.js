@@ -123,6 +123,10 @@ async function showHealth(){
   add('Mapped category counts',Object.entries(d.mapped_articles_by_category||{}).map(([k,v])=>`${LABELS[k]||k} ${v}`).join(' · ')||'None');
   add('Place precision',Object.entries(d.mapped_articles_by_location_precision||{}).map(([k,v])=>`${k} ${v}`).join(' · ')||'None');
   add('Location evidence',Object.entries(d.location_evidence_counts||{}).map(([k,v])=>`${k} ${v}`).join(' · ')||'None');
+  add('Gazetteer entries',d.gazetteer_entries??'Unknown');
+  add('Distinct unmatched headlines',d.unmapped_distinct_titles??'Not available');
+  add('Geographic quadrants (sampled records)',Object.entries(d.geographic_quadrants||{}).map(([k,v])=>`${k}: ${v}`).join(' · ')||'Not available');
+  add('Most unmatched feeds',Object.entries(d.unmapped_by_feed||{}).slice(0,8).map(([k,v])=>`${k}: ${v}`).join(' · ')||'Not available');
   add('Failed feeds',(d.feeds_failed||[]).join(' · ')||'None');
  }catch(e){host.textContent='Could not load data-health.json: '+e.message}
 }
