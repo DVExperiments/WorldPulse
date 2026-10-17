@@ -1,0 +1,12 @@
+/* WorldPulse v1.6A visual design — progressive enhancement */
+body.wp-neon #scene{background:radial-gradient(ellipse at 50% 46%,#063342 0%,#021b2b 42%,#010a16 79%);}
+body.wp-neon #globe canvas{filter:drop-shadow(0 0 16px rgba(0,229,233,.27)) saturate(1.3);}
+.wp-visual-modes{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:12px 0;}
+.wp-visual-modes button{border:1px solid #345265;background:#0b1e2f;color:#b6d6e0;border-radius:9px;padding:12px 9px;font:600 12px inherit;font-size:13px;cursor:pointer;text-align:left;min-width:0;}
+.wp-visual-modes button small{display:block;color:#91b0c4;font-size:11px;margin:5px 0 0 18px;}
+.wp-visual-modes button.active{border-color:#46eee8;box-shadow:inset 0 0 14px rgba(15,233,218,.13),0 0 9px rgba(15,233,218,.13);color:#66f6e8;background:#0c3242;}
+.wp-visual-modes button:focus-visible{outline:2px solid #6df8f1;outline-offset:2px;}
+.wp-twinkle{margin:9px 0 2px;}
+body.wp-neon .mark{color:#53ffed;text-shadow:0 0 10px rgba(44,255,234,.6)}
+body.wp-neon .live-dot{box-shadow:0 0 13px 3px rgba(81,255,214,.45)}
+@media(max-width:650px){.wp-visual-modes button{font-size:12px;padding:10px 7px}}

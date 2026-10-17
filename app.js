@@ -3,22 +3,24 @@
 const COLORS={politics:'#eeb67e',environment:'#6edcb3',hazards:'#ef797d',society:'#ae94f3',health:'#d3a1ff',education:'#a8a3ff',rights:'#ef9bd0',community:'#bb95dd',economy:'#72baf1',science:'#e4d475',conflict:'#ff5878',social:'#eb8eeb'};
 const LABELS={politics:'Politics',environment:'Environment',hazards:'Hazards',health:'Health',education:'Education',rights:'Rights & justice',community:'Community & culture',society:'Society (legacy)',economy:'Economy',science:'Science',conflict:'War & conflict'};
 const $=id=>document.getElementById(id);
-const state={news:[],posts:[],events:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,precision:'all',rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null,coverage:false,countries:[],countryStats:new Map(),coverageReady:false};
+const state={news:[],posts:[],events:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,precision:'all',rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null,coverage:false,countries:[],countryStats:new Map(),coverageReady:false,visualMode:localStorage.getItem("worldpulse-globe-mode")==="real"?"real":"neon",twinkle:true};
 let globe, currentPoints=[], lastTier=-1, translationCache=new Map();
+const REAL_EARTH='https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg';
+let neonTextureUrl=null,twinkleFrame=0;
 function clean(s){return String(s??'').slice(0,500)}
 function dist(a,b){let rad=Math.PI/180,dLat=(b.lat-a.lat)*rad,dLng=(b.lng-a.lng)*rad;let x=Math.sin(dLat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(dLng/2)**2;return 6371*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x))}
 function age(ts){if(!ts)return 'not yet updated';let m=Math.floor((Date.now()-new Date(ts).getTime())/60000);if(!Number.isFinite(m))return 'unknown';if(m<0)return 'just updated';if(m<60)return `${m} minutes ago`;return `${Math.floor(m/60)} hours ago`}
 function initGlobe(){
  if(typeof Globe==='undefined'){$('emptyNotice').hidden=false;$('emptyNotice').textContent='The 3D globe could not load. Check your internet connection or browser WebGL support.';return;}
  globe=Globe()($('globe'))
-  .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
-  .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
+  .globeImageUrl(state.visualMode==='neon'?makeNeonTexture():REAL_EARTH)
+  .bumpImageUrl(null)
   .backgroundColor('rgba(0,0,0,0)')
-  .showAtmosphere(true).atmosphereColor('#4baec0').atmosphereAltitude(.14)
+  .showAtmosphere(true).atmosphereColor(state.visualMode==='neon'?'#00e7ee':'#4baec0').atmosphereAltitude(state.visualMode==='neon'?.095:.14)
   .pointsMerge(false).pointLat('lat').pointLng('lng')
-  .pointColor(p=>COLORS[p.category]||COLORS.social)
-  .pointAltitude(p=>Math.min(.08,.011+Math.log1p(p.count)*.008))
-  .pointRadius(p=>p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11))
+  .pointColor(p=>neonPointColor(p))
+  .pointAltitude(p=>state.visualMode==='neon'?.008:Math.min(.08,.011+Math.log1p(p.count)*.008))
+  .pointRadius(p=>state.visualMode==='neon'?Math.min(1.3,.25+Math.sqrt(p.count)*.16):p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11))
   .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
   .ringsData([])
   .polygonsData([]).polygonCapColor(p=>coverageColor(p.properties.wpCount||0))
@@ -55,7 +57,7 @@ function renderPoints(){if(!globe)return;let data=state.layer==='news'?state.new
  // Country-level subjects remain small selectable anchors; never imply an event footprint.
  // All perpetual pulse rings are disabled: they were country-only and caused clutter.
  const mapped=state.layer==='news'?data.map(p=>p.accuracy==='country'?{...p,broadAnchor:true}:p):data;
- currentPoints=aggregate(mapped);globe.pointsData(currentPoints);renderCoverage();
+ currentPoints=aggregate(mapped);globe.pointsData(currentPoints);refreshSignalGlow();renderCoverage();
  $('locations').textContent=data.length.toLocaleString();$('total').textContent=data.reduce((n,p)=>n+p.count,0).toLocaleString();
 }
 function pickPlace(pos){let source=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.layer==='events'?(state.categories.has('hazards')?state.events:[]):state.posts;
@@ -121,6 +123,7 @@ function bind(){
  $('placeSearch').oninput=()=>$('placeSearch').setCustomValidity('');
  $('aboutBtn').onclick=$('methodBtn').onclick=()=>$('about').hidden=false;
  initCoverageControls();
+ initVisualControls();
  $('healthBtn').onclick=()=>{ $('healthModal').hidden=false; showHealth(); };
  $('healthClose').onclick=()=>$('healthModal').hidden=true;
  $('aboutClose').onclick=()=>$('about').hidden=true;
@@ -205,6 +208,7 @@ async function loadBoundaries(){
   state.countries=features.filter(f=>f.geometry&&f.properties);
   state.coverageReady=true;
   if(note)note.textContent=`${state.countries.length} country/territory shapes available · sampled counts only`;
+  if(state.visualMode==='neon')updateNeonTexture();
   renderCoverage();
  }catch(e){if(note)note.textContent='Coverage outlines unavailable. News markers remain usable.'}
 }
@@ -228,4 +232,81 @@ function addHealthOverview(host,d){
  section('Topic breakdown (mapped sample)',d.mapped_articles_by_category);
  section('Geographic precision',d.mapped_articles_by_location_precision);
  const note=el('p','Country-level counts are only available when supported by explicit geographic mapping. A missing country does not mean no news occurred. Counts are samples, not worldwide totals.','wp-caution');host.append(note);
+}
+
+
+/* v1.6A — neon globe: all location markers remain grounded in collected data. */
+function neonPointColor(p){
+ const base=COLORS[p.category]||COLORS.social;
+ if(state.visualMode!=='neon'||!state.twinkle)return base;
+ // Small deterministic variations per signal, not a changing news-velocity claim.
+ let seed=Math.abs(Math.sin(p.lat*12.9898+p.lng*78.233)*43758.5453)%1;
+ return seed>.87?'#ffffff':base;
+}
+function makeNeonTexture(){
+ if(neonTextureUrl)return neonTextureUrl;
+ const canvas=document.createElement('canvas');canvas.width=2048;canvas.height=1024;
+ const ctx=canvas.getContext('2d');ctx.fillStyle='#020d1c';ctx.fillRect(0,0,2048,1024);
+ // Latitude/longitude wireframe. Lines are decorative, not geographic events.
+ ctx.lineWidth=1;
+ for(let lat=-75;lat<=75;lat+=15){const y=(90-lat)/180*1024;ctx.strokeStyle=lat===0?'rgba(24,244,239,.34)':'rgba(26,201,221,.22)';ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(2048,y);ctx.stroke();}
+ for(let lon=-180;lon<180;lon+=15){const x=(lon+180)/360*2048;ctx.strokeStyle=lon===0?'rgba(24,244,239,.34)':'rgba(26,201,221,.20)';ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,1024);ctx.stroke();}
+ neonTextureUrl=canvas.toDataURL('image/png');return neonTextureUrl;
+}
+function updateNeonTexture(){
+ if(!globe||state.visualMode!=='neon')return;
+ const canvas=document.createElement('canvas');canvas.width=2048;canvas.height=1024;
+ const ctx=canvas.getContext('2d');const img=new Image();
+ img.onload=()=>{
+  ctx.drawImage(img,0,0,2048,1024);
+  if(state.countries.length&&typeof d3!=='undefined'){
+   const projection=d3.geoEquirectangular().translate([1024,512]).scale(2048/(2*Math.PI));
+   const path=d3.geoPath(projection,ctx);
+   ctx.fillStyle='rgba(0,142,159,.06)';ctx.strokeStyle='rgba(49,242,238,.9)';ctx.lineWidth=1.1;
+   for(const feature of state.countries){ctx.beginPath();path(feature);ctx.fill();ctx.stroke();}
+   // Tiny dotted points on land, purely cartographic texture, not news markers.
+   ctx.fillStyle='rgba(40,239,228,.32)';
+   for(let lat=-82;lat<=82;lat+=4){for(let lng=-178;lng<=178;lng+=4){
+    if(!state.countries.some(f=>d3.geoContains(f,[lng,lat])))continue;
+    const [x,y]=projection([lng,lat]);ctx.beginPath();ctx.arc(x,y,1.05,0,Math.PI*2);ctx.fill();
+   }}
+  }
+  neonTextureUrl=canvas.toDataURL('image/png');globe.globeImageUrl(neonTextureUrl);
+ };
+ img.src=makeNeonTexture();
+}
+function applyVisualMode(){
+ if(!globe)return;
+ document.body.classList.toggle('wp-neon',state.visualMode==='neon');
+ document.querySelectorAll('[data-visual]').forEach(b=>{b.classList.toggle('active',b.dataset.visual===state.visualMode);b.setAttribute('aria-pressed',String(b.dataset.visual===state.visualMode));});
+ globe.globeImageUrl(state.visualMode==='neon'?makeNeonTexture():REAL_EARTH);
+ globe.atmosphereColor(state.visualMode==='neon'?'#00e7ee':'#4baec0').atmosphereAltitude(state.visualMode==='neon'?.095:.14);
+ globe.pointAltitude(p=>state.visualMode==='neon'?.008:Math.min(.08,.011+Math.log1p(p.count)*.008));
+ globe.pointRadius(p=>state.visualMode==='neon'?Math.min(1.3,.25+Math.sqrt(p.count)*.16):p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11));
+ globe.pointColor(p=>neonPointColor(p));
+ if(state.visualMode==='neon'&&state.coverageReady)updateNeonTexture();
+ // Satellite view uses original bump texture; neon surface stays completely smooth.
+ globe.bumpImageUrl(state.visualMode==='real'?'https://unpkg.com/three-globe/example/img/earth-topology.png':null);
+ renderPoints();
+}
+function refreshSignalGlow(){
+ if(!globe||state.visualMode!=='neon'||!state.twinkle||!currentPoints.length)return;
+ // Subtle selective brightness, never a full-globe strobe or country-only pulses.
+ const tick=Math.floor(Date.now()/1500);
+ globe.pointColor(p=>{
+  const phase=Math.abs(Math.sin(p.lat*17.1+p.lng*6.7+tick*.63));
+  const base=COLORS[p.category]||COLORS.social;
+  return phase>.975?'#f3ffff':base;
+ });
+}
+function initVisualControls(){
+ const panel=document.getElementById('visualModes');if(!panel)return;
+ panel.querySelectorAll('[data-visual]').forEach(button=>button.addEventListener('click',()=>{
+  state.visualMode=button.dataset.visual;localStorage.setItem('worldpulse-globe-mode',state.visualMode);applyVisualMode();
+ }));
+ const glow=document.getElementById('twinkleToggle');
+ if(glow)glow.onchange=()=>{state.twinkle=glow.checked;applyVisualMode()};
+ document.body.classList.toggle('wp-neon',state.visualMode==='neon');
+ document.querySelectorAll('[data-visual]').forEach(b=>b.classList.toggle('active',b.dataset.visual===state.visualMode));
+ setInterval(refreshSignalGlow,1600);
 }
