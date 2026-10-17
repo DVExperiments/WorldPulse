@@ -1,49 +1,72 @@
 {
  "schema": 1,
- "updated_at": "2026-10-17T08:40:32.254087+00:00",
+ "updated_at": "2026-10-17T08:57:12.186516+00:00",
  "feeds_total": 67,
- "feeds_ok": 62,
+ "feeds_ok": 63,
  "feeds_failed": [
   "direct/DW World",
   "direct/CBC World",
   "direct/ReliefWeb Updates",
-  "direct/UN News",
   "direct/DW Español"
  ],
  "mapped_articles_by_category": {
-  "economy": 54,
-  "community": 107,
+  "economy": 58,
+  "community": 112,
+  "society": 38,
   "politics": 22,
-  "society": 36,
-  "education": 23,
-  "health": 43,
-  "hazards": 13,
-  "conflict": 20,
-  "science": 9,
+  "health": 49,
+  "conflict": 23,
+  "hazards": 12,
+  "education": 26,
+  "science": 11,
   "rights": 5,
-  "environment": 5
+  "environment": 6
  },
  "mapped_articles_by_location_precision": {
-  "country": 246,
-  "place": 91
+  "country": 228,
+  "place": 134
  },
  "location_evidence_counts": {
-  "headline": 280,
-  "description": 57
+  "headline": 293,
+  "description": 69
  },
- "unmapped_sample_count": 821,
+ "geographic_quadrants": {
+  "NE": 235,
+  "SE": 37,
+  "NW": 76,
+  "SW": 14
+ },
+ "geo_signal_count": 207,
+ "mapped_total": 362,
+ "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
+ "unmapped_sample_count": 790,
+ "unmapped_distinct_titles": 464,
+ "unmapped_by_feed": {
+  "Google News US": 227,
+  "Google News IN": 224,
+  "Google News AU": 119,
+  "Google News GB": 117,
+  "RNZ National": 16,
+  "ABC Australia": 13,
+  "France24 ES": 12,
+  "France24 FR": 10,
+  "BBC Brasil": 10,
+  "BBC World": 7,
+  "Al Jazeera": 7,
+  "BBC Science": 5,
+  "The Guardian World": 5,
+  "NASA News": 5,
+  "BBC Business": 4,
+  "The Guardian Environment": 2,
+  "The Conversation": 2,
+  "UN News": 2
+ },
  "unmapped_examples": [
   {
    "title": "Opinion: Idaho's future depends on your vote",
    "publisher": "Idaho State Journal",
    "feed": "Google News US",
    "published_at": "2026-10-16T13:00:00+00:00"
-  },
-  {
-   "title": "Netanyahu risks losing power despite election gains: Smaller right-wing parties threaten to split votes and...",
-   "publisher": "Bhaskar English",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T01:15:57+00:00"
   },
   {
    "title": "Fact Check: UK not ending voting ID, nor is ID only way to verify age on social media",
@@ -74,6 +97,12 @@
    "publisher": "کردپرس",
    "feed": "Google News US",
    "published_at": "2026-10-16T10:05:58+00:00"
+  },
+  {
+   "title": "Liberal Democrat Voice",
+   "publisher": "Liberal Democrat Voice",
+   "feed": "Google News US",
+   "published_at": "2026-10-17T07:47:21+00:00"
   },
   {
    "title": "A group of lawmakers urge Somali opposition to establish alternative election schedule",
@@ -136,12 +165,6 @@
    "published_at": "2026-10-16T21:56:55+00:00"
   },
   {
-   "title": "DMK demands removal of Chief Election Commissioner Gyanesh Kumar",
-   "publisher": "The News Mill",
-   "feed": "Google News US",
-   "published_at": "2026-10-17T07:37:24+00:00"
-  },
-  {
    "title": "Devendra Fadnavis says regime change possible only through elections under constitution",
    "publisher": "The New Indian Express",
    "feed": "Google News US",
@@ -182,12 +205,6 @@
    "publisher": "Newswav",
    "feed": "Google News US",
    "published_at": "2026-10-17T02:41:51+00:00"
-  },
-  {
-   "title": "Netanyahu risks losing power despite election gains: Smaller right-wing parties threaten to split votes and...",
-   "publisher": "Bhaskar English",
-   "feed": "Google News IN",
-   "published_at": "2026-10-17T01:15:57+00:00"
   },
   {
    "title": "MK Stalin chairs DMK MPs meeting amid protests over Election Commission’s SIR exercise",
@@ -242,8 +259,21 @@
    "publisher": "Reuters",
    "feed": "Google News IN",
    "published_at": "2026-10-16T09:07:37+00:00"
+  },
+  {
+   "title": "The Hungarian parliament voted to remove the president from office",
+   "publisher": "Turkmenportal.com",
+   "feed": "Google News IN",
+   "published_at": "2026-10-17T05:24:18+00:00"
+  },
+  {
+   "title": "Opposition unites against governor's rule in K-P",
+   "publisher": "The Express Tribune",
+   "feed": "Google News IN",
+   "published_at": "2026-10-16T21:56:55+00:00"
   }
  ],
- "duplicates_removed": 156,
+ "duplicates_removed": 171,
+ "gazetteer_entries": 1094,
  "warning": "Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred."
 }
