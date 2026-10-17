@@ -1,35 +1,35 @@
 {
  "schema": 2,
- "version": "1.5.4A",
+ "version": "1.5.4B",
  "source": "Google News RSS and independent publisher RSS samples",
- "updated_at": "2026-10-17T18:03:39+00:00",
- "last_attempt_at": "2026-10-17T18:03:39+00:00",
+ "updated_at": "2026-10-17T18:15:59+00:00",
+ "last_attempt_at": "2026-10-17T18:15:59+00:00",
  "window": "rolling 24 hours",
  "status": "partial",
- "query_successes": 114,
- "query_attempts": 119,
+ "query_successes": 131,
+ "query_attempts": 136,
  "articles_scanned": {
-  "politics": 193,
-  "environment": 101,
-  "hazards": 40,
-  "society": 174,
-  "health": 395,
-  "education": 387,
-  "rights": 28,
-  "community": 36,
-  "economy": 234,
-  "science": 202,
-  "conflict": 99,
-  "direct": 704
+  "politics": 192,
+  "environment": 111,
+  "hazards": 39,
+  "society": 172,
+  "health": 398,
+  "education": 386,
+  "rights": 24,
+  "community": 32,
+  "economy": 235,
+  "science": 203,
+  "conflict": 96,
+  "direct": 1327
  },
- "distinct_mapped_articles": 415,
- "duplicates_removed": 720,
- "source_count": 234,
- "direct_sources_ok": 26,
- "unmapped_articles_sample": 995,
+ "distinct_mapped_articles": 416,
+ "duplicates_removed": 710,
+ "source_count": 230,
+ "direct_sources_ok": 43,
+ "unmapped_articles_sample": 1020,
  "geographic_confidence": {
-  "headline": 834,
-  "description": 301
+  "headline": 819,
+  "description": 307
  },
  "source_health_file": "data/source-health.json",
  "history_file": "data/history.json",
@@ -55,10 +55,10 @@
    "count": 17,
    "publisher_count": 6,
    "category": "community",
-   "recent_3h": 8,
-   "previous_3h": 5,
-   "velocity": "rising",
-   "velocity_change_pct_sample": 50,
+   "recent_3h": 6,
+   "previous_3h": 7,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -12,
    "articles": [
     {
      "title": "🔴 En direct : 800 000 manifestants en France, une mobilisation émaillée de scènes de chaos",
@@ -240,8 +240,8 @@
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 13,
-   "publisher_count": 13,
+   "count": 12,
+   "publisher_count": 12,
    "category": "society",
    "recent_3h": 3,
    "previous_3h": 3,
@@ -354,16 +354,6 @@
      "published_at": "2026-10-17T09:39:04+00:00",
      "publisher": "National Herald",
      "source_url": "https://www.nationalheraldindia.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "France braces for nationwide protests inspired by Yellow Vests movement",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOW9pQy1PY2tTTGYyOVhaaHBjVEpSS2puRWtQVXVYWURWSXN0TXZaTGFYel96aEZPanJ3WXlIejhjUmtRUE1RTFFjNUlIYmlVanF3bUNLc1E5TmJ1VklQRmxZdTVFT2laUldIQTV6aW9ScjNwTUFaUGxSMWN3ejN1TjBZYk9HNENjcFl0QXpn?oc=5",
-     "published_at": "2026-10-17T09:22:35+00:00",
-     "publisher": "NewsBytes",
-     "source_url": "https://www.newsbytesapp.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -891,74 +881,6 @@
    ]
   },
   {
-   "lat": 35.69,
-   "lng": 51.39,
-   "name": "Iran",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 5,
-   "publisher_count": 3,
-   "category": "conflict",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "'Hormuz Is Closed,' Warns Iran As Multiple Ships Come Under Attack; Houthi-Saudi Conflict Escalates",
-     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTGR1SGRZRWNoSlVMLV9zdXJQYnAtaGVzbW1Pa1d3QlhDb1N2OGZoRW9Oc21hcG1FWkZkOVBxVkRFTkc1d1N0ZS12S1BzaU5WVzRRaGJFTEI2LXpYMEd1ZjNwSDZtREdlNmc4a0RjRDI0S0cxZFhWM0tvZjl1YVkwcWVrMVB5eEk3NGw3czYyNTlHeTVDQVB5QXQyUEJQN2gzOS0yNzZkWjJwZzM2MnlKS3pVSXE4aUNuS0FOY1hoellnRG5GNmlzdXRCeUFnNXR6WEhhSXlQWlRKM2x3dTZEblBSeTFoRWxFOVJsM2czYmo5Z9IB9wFBVV95cUxQV1NkMTY0cWU1dzB6eVRKRTE5T3EwUEJDMTlxRlEtcU9TMks2NFB1SzFsZXhSQ1BwNG56TXMyckRMQWFFd3pMWFBJRDhoV2NmVDBkQW9ENEpxRFQyVDRDcUVUaS1YMC1KaGhla2QzUFBWZTB2V004MC1URXNXY2hTZTQtOXBaVDRxNF9OdTBfSnpVaWEwVzNDOEs5b1Vyam1MM3piUHhsQjhtTC1ZeWFIdThKcGFNMWZVSFYtYi1LMEJicEdSVGo1bHU1ajY3WDltU0swcmFJaWpMSnh5YkY4TXBXTUNtdDJFTlNBWXBOY1kyWGE0YTh3?oc=5",
-     "published_at": "2026-10-17T16:16:56+00:00",
-     "publisher": "Times Now",
-     "source_url": "https://www.timesnownews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Pentagon lowers count of Iran war dead and wounded, sparking questions and outrage - ABC News",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ1BwUjctMk8yVXY0LVVRRjB3eW1ENUVYYjFzWkNyMWVIOWpNVzBEeTNaQzU5M2pDWEE1ZXRJb2g2WGk2a1ZMT0hEbnhtV3lZRmsxTzhaSFFTckxTWmM2ZUVZWmVkaWVkbDZVak9vSGl6b3dMNk5UdnBjOHZZM1phbEZwbS1MTHhxVEItb2gyZ2FDYVpfaTJBSzZ30gGfAUFVX3lxTE1fLUdKUGQ3NTBmZzZnSkduVmJkc3V0d3FtX2ZnWkhzaVZQUHp5LXlTT0tackNubUt4ZFFDUlA3NGlNVGFoQ3ZJeWltR3lCX3VHVXlibl9zVThCQ3BaSUllamM2NmdUeGN6UzdKWE8zZ2NuLXlJMUdWUUNfcHhmWC1ZV2pmdko2cHFDRjd4ZUFYdWxUaU1BN0IzOVBXZjhiOA?oc=5",
-     "published_at": "2026-10-17T08:40:12+00:00",
-     "publisher": "ABC News - Breaking News, Latest News and Videos",
-     "source_url": "https://abcnews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "What to know about 'black rain' that fell in Iran after strikes on oil reserves - ABC News",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUERWLUNDUmpCUjdsMVFHWm44UGRJLXZEdkRvMG9lRmp3NnpGUEFDUXkteFFkaUFLX2lhOENuX2pWNnE2bllqdnVpVGFLWjJDV1BpWUFOODJKMTJYVUJYSm14bk1vTkV5dGx2WENqbE83Q211eVNNNE9SYjBPZXZ5LVQ5OUpQblJYNThfLWVHN1VINkZhWUIwTWMyVHYzOVl5aEHSAacBQVVfeXFMTzh0SjVrcUdMX19zXzhRVTFkYkZIcWp4OUR5SVN5bm42TnQwQ1M0dGVxMWdydFBkMExsQ2RTaUtHYkk4VUlxVzNnWldueXRpTlhJeGJMdl9tQnkyM3RTYUlaUVFYWkRaNlIzd3RnSUI4NWd6b0g2S05hdk83MFlSa01SVV84OHpVcDBfU1FqOTYwM09yU2RJSGEzeXk2U2JDcUI0Tjd6Y00?oc=5",
-     "published_at": "2026-10-17T05:28:12+00:00",
-     "publisher": "ABC News - Breaking News, Latest News and Videos",
-     "source_url": "https://abcnews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Trump claims military victory in Iran. But is the mission accomplished? ANALYSIS - ABC News",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWnZ4cllvVUNVMWJidExDVmVfQjI5V3k1WF9xakpiNlBDWnIwbThWREVBRTd5R2RRaS1QRXMwYnJWSGI4OURfX2N1MDlUOVJ2VDlCSnJvaDBmVkNobDZvb2FvdXZ5cDNXb3ZYOGpMdTVBa3luSGx5WmJVa3RYaGl3cVlYS2VIempuOXBLbll1anB3UlZtd1pqbWVVSHo2ejVVVG4weGZlcWtCUGlmR05YN0xB0gG3AUFVX3lxTFB5WDBGakw1MEdlVzRUN3pTMWIyLXBCek1RbTNRLWRidUt3aXFtbTA0TXJyTTJrOVJTQ2t5X3hMaFVESVh6NTlZYk1XNWJQVFRnV3NlM0tlRHhzRVotRTc1NFRrY2hGX3RrOEdQZVVIYzZ4aXNTaWViWFV1UFFSRzN0R19PWXdwZjVndEEzdXJrbHZiNS1mbXRiWkdYRmpYVDJfeGdqQXhzdTZ6SEw5ZWhxOVd6YzhiRQ?oc=5",
-     "published_at": "2026-10-17T01:33:23+00:00",
-     "publisher": "ABC News - Breaking News, Latest News and Videos",
-     "source_url": "https://abcnews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Iran Boosts Air Defenses as It Braces for Fresh US Attacks",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUGF2WG91bnpMb3hfdjI3NV9lRFk2ZUJCNXdLY1FLN0wzY29scHFnbms3WTkzZnFLZERkUi1Iclloa0Znb05mMHM2MGNPaGNDaGpHV1pQM3dCc1VreFNEQWdCal9fWFpLZFgweUFlamlUbE03WGU0NmlCTXFqUno4RWd0cnRXcEhBZ3Qw?oc=5",
-     "published_at": "2026-10-16T18:53:42+00:00",
-     "publisher": "Military.com",
-     "source_url": "https://www.military.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 28.61,
    "lng": 77.21,
    "name": "India",
@@ -967,7 +889,7 @@
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 5,
-   "publisher_count": 4,
+   "publisher_count": 5,
    "category": "economy",
    "recent_3h": 0,
    "previous_3h": 2,
@@ -985,11 +907,11 @@
      "geo_match": "headline"
     },
     {
-     "title": "India’s space economy projected to reach $45 billion in 7-8 years, says Jitendra Singh",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWkNfVm5TQU5RcTNGc1F0Wm1FMVY5X2k3N2k2WXhGTFE4Z2lWM1RCbW0wX0ticnlYT21jTldBRkl0bFBHaU83d3pjUE85Z1Q1NHFZU2txQmZtbFJLd2JGQjhkWVFBWnZFTE5kYzNLWi15WDMzSjFrYmxwSGlZdUVzZkdGRlNpMHp2RHpPQVlabS1hdlV6eThtb2pZUERZdERDMTBvRmpLMkhkOVFXd2NuVW9RSnVBX3hZaVBLMWhCMU9ucjBDYjJLVnh0dHg2ek3SAdwBQVVfeXFMTTk0NmtSSzJHbi1Id3liWEZPLU53YmdoOEhSZ3NtRnBsV1RidW1OR1lTVHlBMnV2RjN5R1p4ZElzRGdRejN6OTJoRDlWWUJwaU0xRTJVTXJlYnZNeDJGb1h3RFFTX1pwZDZUTVFYQTh0Q2s3WXdLb1ZfOUN3Wk1oMVdJaWNZREZFeVlTSGFsRHAydDdFZFVZbFNjblUwU2RvUDBVcThhQ2ZLRm5zYlNNWEJyTWdXZEF0eW9LYjVnT3pxRFdVMnduQWdTdFdwX01Ja0VXZGxlQ0phdEtLaA?oc=5",
-     "published_at": "2026-10-17T13:08:14+00:00",
-     "publisher": "The New Indian Express",
-     "source_url": "https://www.newindianexpress.com",
+     "title": "India’s space economy projected to reach $45 billion in 7–8 years: Jitendra Singh",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTEgwZk1udE9BalBZcXZFcHBOdWZhWHRLeGpKcnRwam1DaWZhaFJ3ZDMxcUJ4X1p1X0VpdWFTWVpoZjA3bmlkMFJXTm5HSDM4M0JJUjZqT3NDQUV6MnJWOXRRbVNyZUhUR2VydFRrcDdTWEdhRXM3QkVELVNJMHZGSkFYc25PV1ZCR0lmdHJ4TEVtLTYyMkl4SXpUSjVHdXhCTU5TRFlObm83aWwwQXhiV2RUbVRxcm1uTklUY2pJa0thdm8?oc=5",
+     "published_at": "2026-10-17T12:49:13+00:00",
+     "publisher": "Kashmir News Service",
+     "source_url": "https://www.knskashmir.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1153,6 +1075,64 @@
    ]
   },
   {
+   "lat": 35.69,
+   "lng": 51.39,
+   "name": "Iran",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 4,
+   "publisher_count": 3,
+   "category": "conflict",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "'Hormuz Is Closed,' Warns Iran As Multiple Ships Come Under Attack; Houthi-Saudi Conflict Escalates",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTGR1SGRZRWNoSlVMLV9zdXJQYnAtaGVzbW1Pa1d3QlhDb1N2OGZoRW9Oc21hcG1FWkZkOVBxVkRFTkc1d1N0ZS12S1BzaU5WVzRRaGJFTEI2LXpYMEd1ZjNwSDZtREdlNmc4a0RjRDI0S0cxZFhWM0tvZjl1YVkwcWVrMVB5eEk3NGw3czYyNTlHeTVDQVB5QXQyUEJQN2gzOS0yNzZkWjJwZzM2MnlKS3pVSXE4aUNuS0FOY1hoellnRG5GNmlzdXRCeUFnNXR6WEhhSXlQWlRKM2x3dTZEblBSeTFoRWxFOVJsM2czYmo5Z9IB9wFBVV95cUxQV1NkMTY0cWU1dzB6eVRKRTE5T3EwUEJDMTlxRlEtcU9TMks2NFB1SzFsZXhSQ1BwNG56TXMyckRMQWFFd3pMWFBJRDhoV2NmVDBkQW9ENEpxRFQyVDRDcUVUaS1YMC1KaGhla2QzUFBWZTB2V004MC1URXNXY2hTZTQtOXBaVDRxNF9OdTBfSnpVaWEwVzNDOEs5b1Vyam1MM3piUHhsQjhtTC1ZeWFIdThKcGFNMWZVSFYtYi1LMEJicEdSVGo1bHU1ajY3WDltU0swcmFJaWpMSnh5YkY4TXBXTUNtdDJFTlNBWXBOY1kyWGE0YTh3?oc=5",
+     "published_at": "2026-10-17T16:16:56+00:00",
+     "publisher": "Times Now",
+     "source_url": "https://www.timesnownews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Pentagon lowers count of Iran war dead and wounded, sparking questions and outrage - ABC News",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ1BwUjctMk8yVXY0LVVRRjB3eW1ENUVYYjFzWkNyMWVIOWpNVzBEeTNaQzU5M2pDWEE1ZXRJb2g2WGk2a1ZMT0hEbnhtV3lZRmsxTzhaSFFTckxTWmM2ZUVZWmVkaWVkbDZVak9vSGl6b3dMNk5UdnBjOHZZM1phbEZwbS1MTHhxVEItb2gyZ2FDYVpfaTJBSzZ30gGfAUFVX3lxTE1fLUdKUGQ3NTBmZzZnSkduVmJkc3V0d3FtX2ZnWkhzaVZQUHp5LXlTT0tackNubUt4ZFFDUlA3NGlNVGFoQ3ZJeWltR3lCX3VHVXlibl9zVThCQ3BaSUllamM2NmdUeGN6UzdKWE8zZ2NuLXlJMUdWUUNfcHhmWC1ZV2pmdko2cHFDRjd4ZUFYdWxUaU1BN0IzOVBXZjhiOA?oc=5",
+     "published_at": "2026-10-17T08:40:12+00:00",
+     "publisher": "ABC News - Breaking News, Latest News and Videos",
+     "source_url": "https://abcnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "What to know about 'black rain' that fell in Iran after strikes on oil reserves - ABC News",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUERWLUNDUmpCUjdsMVFHWm44UGRJLXZEdkRvMG9lRmp3NnpGUEFDUXkteFFkaUFLX2lhOENuX2pWNnE2bllqdnVpVGFLWjJDV1BpWUFOODJKMTJYVUJYSm14bk1vTkV5dGx2WENqbE83Q211eVNNNE9SYjBPZXZ5LVQ5OUpQblJYNThfLWVHN1VINkZhWUIwTWMyVHYzOVl5aEHSAacBQVVfeXFMTzh0SjVrcUdMX19zXzhRVTFkYkZIcWp4OUR5SVN5bm42TnQwQ1M0dGVxMWdydFBkMExsQ2RTaUtHYkk4VUlxVzNnWldueXRpTlhJeGJMdl9tQnkyM3RTYUlaUVFYWkRaNlIzd3RnSUI4NWd6b0g2S05hdk83MFlSa01SVV84OHpVcDBfU1FqOTYwM09yU2RJSGEzeXk2U2JDcUI0Tjd6Y00?oc=5",
+     "published_at": "2026-10-17T05:28:12+00:00",
+     "publisher": "ABC News - Breaking News, Latest News and Videos",
+     "source_url": "https://abcnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Iran Boosts Air Defenses as It Braces for Fresh US Attacks",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUGF2WG91bnpMb3hfdjI3NV9lRFk2ZUJCNXdLY1FLN0wzY29scHFnbms3WTkzZnFLZERkUi1Iclloa0Znb05mMHM2MGNPaGNDaGpHV1pQM3dCc1VreFNEQWdCal9fWFpLZFgweUFlamlUbE03WGU0NmlCTXFqUno4RWd0cnRXcEhBZ3Qw?oc=5",
+     "published_at": "2026-10-16T18:53:42+00:00",
+     "publisher": "Military.com",
+     "source_url": "https://www.military.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 31.5,
    "lng": 34.47,
    "name": "Gaza",
@@ -1221,10 +1201,10 @@
    "count": 4,
    "publisher_count": 4,
    "category": "health",
-   "recent_3h": 2,
-   "previous_3h": 2,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
+   "recent_3h": 1,
+   "previous_3h": 3,
+   "velocity": "cooling",
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Pope Leo leaves hospital after lung cancer surgery",
@@ -1327,6 +1307,64 @@
    ]
   },
   {
+   "lat": 21.03,
+   "lng": 105.85,
+   "name": "Vietnam",
+   "accuracy": "country",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 4,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 2,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -67,
+   "articles": [
+    {
+     "title": "Meningococcal meningitis is not easily transmitted widely.",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBYSHVFTEtwbThpbjhVVUs3RHJENEpRN3BuVzNRaUlXcFUtbHFWTTZnRGpNc2tlZUZ4Y0FwUkxtbml6bmZ3Mzl1Z05oTXpUV1FLa05Qb0RIeGpNU3lKZ2VpVFpDTklQN09oTDhERlFGYk5ZcWEyWnF3?oc=5",
+     "published_at": "2026-10-17T14:19:17+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "With the increase in meningococcal cases, parents need to take proper preventive measures.",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcDhicGozcVZOcVFfZXFVQTNxdEstSWlkb041Mnk0T2RaVmVaaWNvZ0xuRExEend0NHg2OFYzbWRvR2ZwV3dObEFrSGROOTZ3X0lLaWNyR0ZzRzgyZEo4NnBKbWVmMVdYZmJkNmxxa2dFUU9QTGpUWG1CZ2dPWmpCcmdoSjJrbWRhOFhJ?oc=5",
+     "published_at": "2026-10-17T14:19:16+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Bringing healthcare services closer to the people.",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5iYUJVdno1YndSWWp4ZHpzVU4wVmwzV3JUdzhjY0JubExaSzJrQXczSEdURGp4T0hBMHJsSWNVaEg0aTdEdW05WmIxdjdvb1JQZWo0T05xMWRJakxoLXJmeGw4THdhTXVsbUpGcVRWUmhvRmVJV0VZ?oc=5",
+     "published_at": "2026-10-17T10:59:23+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Learn from President Ho Chi Minh by practicing medical ethics and caring for patients.",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhWG5jZ240UExHdm4tcXVtQUpIdXlLWDRDU3NQakNsUzE2blEzQTNROEJWOU9Fb2RjbWVfRDBuZHRIRHA3R3FYbWxUMUhONU5NeDZiOWh3X1IwYWtOcE1sendZcTZLSS1rV3BCX0pjb1R2LUdLWTRPVUcwMHBYTGM?oc=5",
+     "published_at": "2026-10-17T06:57:10+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
    "lat": 15.37,
    "lng": 44.19,
    "name": "Yemen",
@@ -1338,9 +1376,9 @@
    "publisher_count": 4,
    "category": "conflict",
    "recent_3h": 0,
-   "previous_3h": 2,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": -67,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Airstrikes On Residential Area In Yemen Kill Three Children, Injure More Than A Dozen",
@@ -1396,9 +1434,9 @@
    "publisher_count": 3,
    "category": "society",
    "recent_3h": 0,
-   "previous_3h": 4,
-   "velocity": "cooling",
-   "velocity_change_pct_sample": -80,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "APTOPIX Spain Housing Protest - Springfield News-Sun",
@@ -1436,6 +1474,64 @@
      "published_at": "2026-10-17T12:03:41+00:00",
      "publisher": "dailyrecordnews.com",
      "source_url": "https://www.dailyrecordnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 11.1,
+   "lng": 78.7,
+   "name": "Tamil Nadu",
+   "accuracy": "region",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 4,
+   "publisher_count": 3,
+   "category": "politics",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "DMK demands removal of Chief Election Commissioner Gyanesh Kumar",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUTJ4SG9rRFgyQkRBTjZIelREa29yWU8wNEtLT1dBT0pJcTNfRzlVdXVoclEtV2x1SFlCbmRhZkw3Mmx1dzJCbVVGNEhmY2hnMlpfN3lkQnVsQWVLTDR0LTQwT2xDX3pDSllBOUJneGtpUGQtZTdPWEdkZXRMM2VNaDJyMmtNOU02ZEg2eUdMVkVkODVJZHEwc0d4OVNNZw?oc=5",
+     "published_at": "2026-10-17T07:37:24+00:00",
+     "publisher": "The News Mill",
+     "source_url": "https://thenewsmill.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "MK Stalin chairs DMK MPs meeting on SIR, other key issues today",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcm5WN2gxcm1jbUdEOTBldFBqdnIxdllEOHBpQUZDWlBDbHJ1bGFUSmlKT3VrRWxBMDZIMVpWNW9JY0xoQWFTYmJadkZyY2QtOWdITERRZ1J1Z2F0bUVJRVh2V0xLYTdDX0doVEM5SjV1WEFfRWp3QXBBRkN6YjR3NUhRdll2M3pfQ0dweTFSRFdFUHZaTEtUUEtUaXJ0Z09FZUd3WVltU09BcDdRWF9TM0FabWhKWEN6aXhJcDlTbmp4V2lQSG9TTUl1NUJHQWlGd1hSZW5WZUdiLXVUblVzQmR2NDY2ZC11c1ZN0gHwAUFVX3lxTE5TZTl2blhlY2wxSlJsSE1NYkxvWEdHNEFmMnNFMUpiczNqaV96NjduSlZac1FmQkprS1U5OFRmUmdJOGZMWWM4ZXZNZjVtcXNxZ3dMSTllQUg1MTIzNlc3bWVob1lIMFM2b0NLRE9WWHVyQWhRNVVlYXI2cjYzNGRqbFB3dTFuUDBXUDl5TUE1TUVKcW54ckZ5TEhXSnprYWxuU2Zjd1NFcWNyVWxabl96QklCVWZXVjJCODRBbkJLanRHTnEwVFhCejNoaTF0V2tJM2FhRDR4RHF4RnIzdkU0X1ZQcXBDUzFPNkxRMktFSA?oc=5",
+     "published_at": "2026-10-17T06:30:43+00:00",
+     "publisher": "The Economic Times",
+     "source_url": "https://m.economictimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "India News | Tamil Nadu: MK Stalin Chairs DMK MPs Meeting on SIR, Other Key Issues Today",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQLW1TS3lYZENFNHlvM0N5b2ZxWXhqUkNGZEt1YjN6SFZLeFJvbHFjT1ZVU0ZIWmlNVFhjbF8wRF9TQkZJT1BJM3d3VG1rZWQ4S2wwNWJmQjkyRTV6cXQwdU9hZ2xvQ3F2ZmJNVGd6NXVQN1lfZXJ3eGRHN2dNZlNFT1VZcFZOUjBKMjNlanBmcTNzRnN1WGNUdFB2T2pFaExZZFFDZXpxSlhpUGM4dEhoV0JfOWVmM3VIdmVrVDRYZEFDOXVNcnp0ZHl4WFRtLUnSAdQBQVVfeXFMTUZFOVVPaVY0dzhjSUs5UEI4R0htUkhCNDViV0ZvWVVmU0h5akZITk9aUmloS2Z0YWVhSUU5aFdVbG1XbUFVcEhwM01tanVoeHJzQWJoWHhHVUFtY093a0VQVHI4SUpuMGdDb0JpaVMwM2NTVGpMR0RVRGE1aEFhQ2hKWHdsd3JiX0ZTbnNpYlNsOHRmZUh5TmxOakN2MzRKTHl5M0NxbC1qZ0twTllrbks5b3VvSDk2X3NPN1JmUGJrdGRrYzdzamRlaFJicHE5SEV0aGo?oc=5",
+     "published_at": "2026-10-17T05:38:23+00:00",
+     "publisher": "LatestLY",
+     "source_url": "https://www.latestly.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "MK Stalin chairs DMK MPs meeting amid protests over Election Commission’s SIR exercise",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQUdJN29lTVFjZE1MajdhVlNLUE5aeW8zb25ndGE0VTYyLUtfRnFlVVdEb0VnUm9YYTVLLUhUSzVHQ1V5QmNLRFpLSGFHSGlTMmRXdDhocVlYNGRYLTl4WlRhNVlta3ZQa2U2T3NYbXh1SFBodFBQWVFsN2dGaFdFbmdKaU1mR2xyVHBCdGk2VjFVM0IyeFBsTjQzaHRPaUlhRG1CS3RReFJjSmdrY3FEbk9RZnNTVnkyanc?oc=5",
+     "published_at": "2026-10-17T05:27:37+00:00",
+     "publisher": "The News Mill",
+     "source_url": "https://thenewsmill.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1501,60 +1597,50 @@
    ]
   },
   {
-   "lat": 21.03,
-   "lng": 105.85,
-   "name": "Vietnam",
-   "accuracy": "country",
+   "lat": 36.78,
+   "lng": -119.42,
+   "name": "California",
+   "accuracy": "place",
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 4,
-   "publisher_count": 2,
-   "category": "economy",
-   "recent_3h": 0,
+   "count": 3,
+   "publisher_count": 3,
+   "category": "hazards",
+   "recent_3h": 1,
    "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": 0,
+   "velocity_change_pct_sample": 100,
    "articles": [
     {
-     "title": "Party members involved in investment and business must uphold ethical standards and build a healthy business culture.",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWl94YXdwWGFJdUJBcVp2WmROOG9WX2JQc3JWQ19oaG1ET0dPX0cwcWlITEhZY1lRc1dXWWFpZkt3Ym1YLXN6bzZ1UFVkOGY1YldQOG9tS051Tjl3V0taWTc2XzZ4SWQtR2V6ay1GNWFxSUJyRVZKZWRMalRMdUV1T3FKSTB3bS1OR09xaTg0c3hpT29NX2k2azlMWHdRenBIMlVfTFBTYm5iNUJtVHNvaElYWHpZOUg3cm5rVHh3?oc=5",
-     "published_at": "2026-10-17T05:15:14+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
+     "title": "Six homes burned and two firefighters injured in fast-moving California wildfire",
+     "url": "https://www.theguardian.com/us-news/2026/oct/17/southern-california-wildfires",
+     "published_at": "2026-10-17T18:10:26+00:00",
+     "publisher": "The Guardian World",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
-     "geo_match": "description"
+     "geo_match": "headline"
     },
     {
-     "title": "Where is the greenback going?",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE52WTRtQnVSbndUUVFqbTJ6WWxPV0lsdktKVkJGajA3dEdLNUxNSzBPUi11Y3lvZHdCZEFKRUpUOWx0dmRjaVIySll5Mzl1d2FQbFBUMW11a1JLYWc?oc=5",
-     "published_at": "2026-10-17T05:02:25+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Vietnam, US look to strengthen business, investment ties",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMDlHSXpKVHZPWWZJX2FKSkpXNWc5QnppNGN6YkNQTEhNN0I2cFR4SWdsTlNvVTV6SkZ2d3RhV1ZhTzFtYjNncnBZMDd4RzFFSUtpZDkzcVp6OEltQWVnb3RBUXJ4NGxReWJyN1dpbDJXMDRHQk1ZVzJmLUplRlg4YV9yaTFWVUFLY0ExYVMtT2NZa2xFRkpPc0UyaWRQUEo4cThBYlhHUQ?oc=5",
-     "published_at": "2026-10-17T04:14:48+00:00",
-     "publisher": "VOV.VN",
-     "source_url": "https://english.vov.vn",
+     "title": "California wildfire near San Juan Capistrano prompts evacuations",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QdC1fWk1QQTlKeF91US1qOEVVR0xHZE1DdnMxRjRmdDNYWXFGMk5nYldrUi1QOHNKd1JEb2tSYlhZVjR3OFE0YXd5SUU2ZEdSOTJpajBOVHdPT084blh2eGVVVWZUT1E?oc=5",
+     "published_at": "2026-10-17T01:39:54+00:00",
+     "publisher": "Reuters",
+     "source_url": "https://www.reuters.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Encouraging wealth creation, emphasizing responsibility.",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9QekJ6NHFlYWZnakpLczQ1ekJNdU1HOWI2QmJGTldzZExpdXp5NkNyX0pwUXA3WGpfZTJKTS1JUm4wcnVMVVVOeWNSQmNaa09tcXhMOFZpTi1sUGlhdlpGSXhhQjVFeXNuSXpLRFY3bE1DZVJS?oc=5",
-     "published_at": "2026-10-17T04:02:13+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
+     "title": "Fast-moving California wildfire burns homes as people are ordered to leave",
+     "url": "https://www.bbc.co.uk/news/articles/c6vgjnk8nw2wo?at_medium=RSS&at_campaign=rss",
+     "published_at": "2026-10-17T01:36:39+00:00",
+     "publisher": "BBC Science",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
-     "geo_match": "description"
+     "geo_match": "headline"
     }
    ]
   },
@@ -1799,50 +1885,50 @@
    ]
   },
   {
-   "lat": 41.0,
-   "lng": 20.0,
-   "name": "Albania",
+   "lat": -15.79,
+   "lng": -47.88,
+   "name": "Brazil",
    "accuracy": "country",
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 3,
    "publisher_count": 3,
-   "category": "society",
+   "category": "environment",
    "recent_3h": 1,
-   "previous_3h": 2,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -33,
+   "velocity_change_pct_sample": 100,
    "articles": [
     {
-     "title": "Anti-government protests rage on for fifth day in Albania",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBfVlQwa3ZSSjJtMDZwNC1VYmNaaFI0aEVBWnFNTkg2R1N4b2Nyd01hTUpVR3A1LUtEelJoZ252Z3FmM015SXRJd0dDYmdGVVNtam5MNFg0Z0tBRG5WeUhN?oc=5",
-     "published_at": "2026-10-17T16:17:49+00:00",
-     "publisher": "The Jerusalem Post",
-     "source_url": "https://www.jpost.com",
-     "source_kind": "aggregator",
+     "title": "Brazil: Amazon deforestation at 40-year low",
+     "url": "https://www.france24.com/en/video/20261017-brazil-amazon-deforestation-at-40-year-low",
+     "published_at": "2026-10-17T16:07:46+00:00",
+     "publisher": "France24",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Violent clashes between police and protesters in Albania",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFByODRxeG1SQmJRWGtVOTNKc01taUZDUUs5MWd4N1g0OF9uRUU3WDJ6MC1JU1E1bDJXYzM2NXpDOXU5YzlrM0ItZmUwd0xidUtQRncxdi16VUo?oc=5",
-     "published_at": "2026-10-17T13:11:20+00:00",
-     "publisher": "BBC",
-     "source_url": "https://www.bbc.com",
-     "source_kind": "aggregator",
+     "title": "Brazil sees record fall in Amazon deforestation as key election looms",
+     "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
+     "published_at": "2026-10-17T02:33:09+00:00",
+     "publisher": "BBC World",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Albania sees fresh clashes as student-led movement targets PM Rama",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMDhjalJLMDFoSEhxZ2lpeF9kQUstMVJCaG80WHJoQTNhejVRcWZpM3E4c2w3Z3RYN2FIeENuTm5jbk9KSXQ3YXJhTElMSEtTeGlBMzQ4ak9ZdWZ1WGZUWmhKdlpOTVNfYUw1UEJJMkJHd01YcEpwd3dvckNkUVM2U1BRLUNHM18wMHNMaDZxVDlsUUpja2JDNGtEU1FlS1RZcDdnTDZoUVFkUFhFSkh1NXVRUTFpZEpTVTE3UlZHSlhmN0xxQ0M4V0Fya01UOXVGZDZoR2h6eXXSAd4BQVVfeXFMUGhmTkpma2VvazZrYnhfemJXWVFKai1OdHBHcFVJSXRLRkYwdDc5YWctODk3UWNfWDZqRlFmWXlNbGcyRXBXMFFyQ1JzdDI2ZnowMzBlZUFESjNodzZWa3JDQWc2c185aERjSnUxV0tUWmR6QjVneTA0M2pIckhnRXNITWM1SF96ZW9XUWE2c21kdFgtRWtjVVNZSnpxQUhoVzJvd3JXcm8wNDBZWk01dWZ0MnBWMU5yRG9WdGEwNGk0ejRoc3JXd2NpT3d5R1NULVJZb1pjdlFtR0FFMGJ3?oc=5",
-     "published_at": "2026-10-17T12:38:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
-     "source_kind": "aggregator",
+     "title": "Amazon deforestation falls 42% to a record low",
+     "url": "https://news.mongabay.com/short-article/2026/10/amazon-deforestation-falls-42-to-a-record-low/",
+     "published_at": "2026-10-16T21:49:41+00:00",
+     "publisher": "Mongabay Global",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
-     "geo_match": "headline"
+     "geo_match": "description"
     }
    ]
   },
@@ -1939,54 +2025,6 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 21.03,
-   "lng": 105.85,
-   "name": "Vietnam",
-   "accuracy": "country",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 3,
-   "publisher_count": 1,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 2,
-   "velocity": "steady",
-   "velocity_change_pct_sample": -67,
-   "articles": [
-    {
-     "title": "Meningococcal meningitis is not easily transmitted widely.",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBYSHVFTEtwbThpbjhVVUs3RHJENEpRN3BuVzNRaUlXcFUtbHFWTTZnRGpNc2tlZUZ4Y0FwUkxtbml6bmZ3Mzl1Z05oTXpUV1FLa05Qb0RIeGpNU3lKZ2VpVFpDTklQN09oTDhERlFGYk5ZcWEyWnF3?oc=5",
-     "published_at": "2026-10-17T14:19:17+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "With the increase in meningococcal cases, parents need to take proper preventive measures.",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcDhicGozcVZOcVFfZXFVQTNxdEstSWlkb041Mnk0T2RaVmVaaWNvZ0xuRExEend0NHg2OFYzbWRvR2ZwV3dObEFrSGROOTZ3X0lLaWNyR0ZzRzgyZEo4NnBKbWVmMVdYZmJkNmxxa2dFUU9QTGpUWG1CZ2dPWmpCcmdoSjJrbWRhOFhJ?oc=5",
-     "published_at": "2026-10-17T14:19:16+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Bringing healthcare services closer to the people.",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5iYUJVdno1YndSWWp4ZHpzVU4wVmwzV3JUdzhjY0JubExaSzJrQXczSEdURGp4T0hBMHJsSWNVaEg0aTdEdW05WmIxdjdvb1JQZWo0T05xMWRJakxoLXJmeGw4THdhTXVsbUpGcVRWUmhvRmVJV0VZ?oc=5",
-     "published_at": "2026-10-17T10:59:23+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
     }
    ]
   },
@@ -2183,50 +2221,50 @@
    ]
   },
   {
-   "lat": 11.1,
-   "lng": 78.7,
-   "name": "Tamil Nadu",
-   "accuracy": "region",
-   "location_basis": "headline",
+   "lat": 21.03,
+   "lng": 105.85,
+   "name": "Vietnam",
+   "accuracy": "country",
+   "location_basis": "description",
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 3,
-   "publisher_count": 2,
-   "category": "politics",
+   "publisher_count": 1,
+   "category": "economy",
    "recent_3h": 0,
    "previous_3h": 0,
    "velocity": "steady",
    "velocity_change_pct_sample": 0,
    "articles": [
     {
-     "title": "DMK demands removal of Chief Election Commissioner Gyanesh Kumar",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUTJ4SG9rRFgyQkRBTjZIelREa29yWU8wNEtLT1dBT0pJcTNfRzlVdXVoclEtV2x1SFlCbmRhZkw3Mmx1dzJCbVVGNEhmY2hnMlpfN3lkQnVsQWVLTDR0LTQwT2xDX3pDSllBOUJneGtpUGQtZTdPWEdkZXRMM2VNaDJyMmtNOU02ZEg2eUdMVkVkODVJZHEwc0d4OVNNZw?oc=5",
-     "published_at": "2026-10-17T07:37:24+00:00",
-     "publisher": "The News Mill",
-     "source_url": "https://thenewsmill.com",
+     "title": "Party members involved in investment and business must uphold ethical standards and build a healthy business culture.",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWl94YXdwWGFJdUJBcVp2WmROOG9WX2JQc3JWQ19oaG1ET0dPX0cwcWlITEhZY1lRc1dXWWFpZkt3Ym1YLXN6bzZ1UFVkOGY1YldQOG9tS051Tjl3V0taWTc2XzZ4SWQtR2V6ay1GNWFxSUJyRVZKZWRMalRMdUV1T3FKSTB3bS1OR09xaTg0c3hpT29NX2k2azlMWHdRenBIMlVfTFBTYm5iNUJtVHNvaElYWHpZOUg3cm5rVHh3?oc=5",
+     "published_at": "2026-10-17T05:15:14+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "headline"
+     "geo_match": "description"
     },
     {
-     "title": "MK Stalin chairs DMK MPs meeting on SIR, other key issues today",
-     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcm5WN2gxcm1jbUdEOTBldFBqdnIxdllEOHBpQUZDWlBDbHJ1bGFUSmlKT3VrRWxBMDZIMVpWNW9JY0xoQWFTYmJadkZyY2QtOWdITERRZ1J1Z2F0bUVJRVh2V0xLYTdDX0doVEM5SjV1WEFfRWp3QXBBRkN6YjR3NUhRdll2M3pfQ0dweTFSRFdFUHZaTEtUUEtUaXJ0Z09FZUd3WVltU09BcDdRWF9TM0FabWhKWEN6aXhJcDlTbmp4V2lQSG9TTUl1NUJHQWlGd1hSZW5WZUdiLXVUblVzQmR2NDY2ZC11c1ZN0gHwAUFVX3lxTE5TZTl2blhlY2wxSlJsSE1NYkxvWEdHNEFmMnNFMUpiczNqaV96NjduSlZac1FmQkprS1U5OFRmUmdJOGZMWWM4ZXZNZjVtcXNxZ3dMSTllQUg1MTIzNlc3bWVob1lIMFM2b0NLRE9WWHVyQWhRNVVlYXI2cjYzNGRqbFB3dTFuUDBXUDl5TUE1TUVKcW54ckZ5TEhXSnprYWxuU2Zjd1NFcWNyVWxabl96QklCVWZXVjJCODRBbkJLanRHTnEwVFhCejNoaTF0V2tJM2FhRDR4RHF4RnIzdkU0X1ZQcXBDUzFPNkxRMktFSA?oc=5",
-     "published_at": "2026-10-17T06:30:43+00:00",
-     "publisher": "The Economic Times",
-     "source_url": "https://m.economictimes.com",
+     "title": "Where is the greenback going?",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE52WTRtQnVSbndUUVFqbTJ6WWxPV0lsdktKVkJGajA3dEdLNUxNSzBPUi11Y3lvZHdCZEFKRUpUOWx0dmRjaVIySll5Mzl1d2FQbFBUMW11a1JLYWc?oc=5",
+     "published_at": "2026-10-17T05:02:25+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "headline"
+     "geo_match": "description"
     },
     {
-     "title": "MK Stalin chairs DMK MPs meeting amid protests over Election Commission’s SIR exercise",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQUdJN29lTVFjZE1MajdhVlNLUE5aeW8zb25ndGE0VTYyLUtfRnFlVVdEb0VnUm9YYTVLLUhUSzVHQ1V5QmNLRFpLSGFHSGlTMmRXdDhocVlYNGRYLTl4WlRhNVlta3ZQa2U2T3NYbXh1SFBodFBQWVFsN2dGaFdFbmdKaU1mR2xyVHBCdGk2VjFVM0IyeFBsTjQzaHRPaUlhRG1CS3RReFJjSmdrY3FEbk9RZnNTVnkyanc?oc=5",
-     "published_at": "2026-10-17T05:27:37+00:00",
-     "publisher": "The News Mill",
-     "source_url": "https://thenewsmill.com",
+     "title": "Encouraging wealth creation, emphasizing responsibility.",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9QekJ6NHFlYWZnakpLczQ1ekJNdU1HOWI2QmJGTldzZExpdXp5NkNyX0pwUXA3WGpfZTJKTS1JUm4wcnVMVVVOeWNSQmNaa09tcXhMOFZpTi1sUGlhdlpGSXhhQjVFeXNuSXpLRFY3bE1DZVJS?oc=5",
+     "published_at": "2026-10-17T04:02:13+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "headline"
+     "geo_match": "description"
     }
    ]
   },
@@ -2393,6 +2431,44 @@
    ]
   },
   {
+   "lat": 28.61,
+   "lng": 77.21,
+   "name": "India",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "education",
+   "recent_3h": 1,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Govt directs 80,000 school teachers to complete AI course by month end",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMzcwNkhRdmZSTGZodjY1cGQ2aDgyMzlmWkUzWnBNaGowRFU0ODhUV0N3TWEtb2hFY0FZVkhmbXRIZmp1U25ENXZBR3dEdUs5V2ROZEZEUnZHRE9yUmQ2bWE3TUdneElRYkRERjV3V0lyYmUtQm1uRnczZDFkYWM2ZWxXdExCdjUwcjctQTl4Sm5ZcWlIVzdGZEVGODkxT2VfOGFLU3BNWU9tbUUtcXZZMlg2WDJNSjd2T2ZoWkFKRHE0bFJrT1hFVExoODhURnVHQkJ4TG1ZTlhaNi1nTG8tZdIB5gFBVV95cUxQNlZMQ290M1YwdEpUNkdfclJSNXR4a3BPZ0VSNEltTDdzU1lyTmRBQ19DM3RGdUlDQzFSWlMwR0pQcFloc3NGUmdUd19DT19ZS2tsTXo5d2h3SVpHMEZ2M3MzOUJJX3AwanJBQXhKOS1IYzdTS05UYzZ0OHRadkRHU2QycVg5cllLbmp0d044WmI4VGJEVk1KYThLSGh4OGxBbTB2cldwUFdicmZOcFFqakxDRzVjbmNoTEtDWktfSUtTYWhvR0l6WjM5NUlJOG5leGFoNndBWTZDVXQ1TnZZQjlKLTNsZw?oc=5",
+     "published_at": "2026-10-17T17:00:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "India News",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOSk9qeHBxZmR4MmFXdnVHS2NhWFV1bmxzNnRvYnRtUUl4RUtSU3BJN2EybDZXMUs5VWk5QVdjUTlQOHc0WW10VTZPcDRORmoyWWRNdVNwWFh6bUFZdno5ZUNka3RLQlhGQzJHWDlDelFtRUN0N1hUZVp0bmJWNzc0eklDdlZCd2pZbGFkZHlWS2VkX0hOTXN5OGJjQkphQTF3c0lWV0lPWlZ2TjlPWHI1OVpnX1ItN0lCT2RFOFlRR2o5c3VmZXA3Q0otSzFiRjFTZjlTNTRTX2dsd1NPUVE3TUsxY2Q0YmZ1MzZV0gHwAUFVX3lxTE9wYWhRYllLakduSHJFU0RuTXZWTGJBWFFRdFVNV1hqSjlyTHB1OUFQY05tcEsyTmw5UmU1NUV1aVVROGhpc0pUbTZyMzV4X1JKOTZVXzhSMHV3TlJDR19kT1lpejRKTVQzRW8xWUoyek5wOUtDbEVTZ01nVkswQnVsVVIyMm9nQS11elZqSHEyLV9BcS1iWXpzWk45bmc5MUR3SFZWbWl3RDUwaTdlNkJTZm80cDdBYjJ3a3VqbHJEalhjd3lTcVFSVVFqRnNzLTNvZUdxeXJwTXNSY051S0treWpiNzdOZHhDaTNFSzkxWQ?oc=5",
+     "published_at": "2026-10-17T12:54:22+00:00",
+     "publisher": "LatestLY",
+     "source_url": "https://www.latestly.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 31.77,
    "lng": 35.22,
    "name": "Israel",
@@ -2499,44 +2575,6 @@
      "url": "https://www.france24.com/en/video/20261017-kenya-reports-third-ebola-case-contact-tracing-continues",
      "published_at": "2026-10-17T10:56:48+00:00",
      "publisher": "France24",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": -15.79,
-   "lng": -47.88,
-   "name": "Brazil",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "environment",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Brazil: Amazon deforestation at 40-year low",
-     "url": "https://www.france24.com/en/video/20261017-brazil-amazon-deforestation-at-40-year-low",
-     "published_at": "2026-10-17T16:07:46+00:00",
-     "publisher": "France24",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Brazil sees record fall in Amazon deforestation as key election looms",
-     "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
-     "published_at": "2026-10-17T02:33:09+00:00",
-     "publisher": "BBC World",
      "source_url": "",
      "source_kind": "publisher",
      "language": "en",
@@ -2670,9 +2708,9 @@
    "publisher_count": 2,
    "category": "health",
    "recent_3h": 1,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": 0,
+   "velocity_change_pct_sample": 100,
    "articles": [
     {
      "title": "Army Medical camp in Doda’s Basantgarh draws 600 patients",
@@ -2811,44 +2849,6 @@
    ]
   },
   {
-   "lat": 34.05,
-   "lng": -118.24,
-   "name": "Los Angeles",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": -50,
-   "articles": [
-    {
-     "title": "Selma Blair ‘did not intend to harm anyone’ during airplane incident, representatives say",
-     "url": "https://www.theguardian.com/film/2026/oct/17/selma-blair-airplane-incident",
-     "published_at": "2026-10-17T13:52:37+00:00",
-     "publisher": "The Guardian World",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Etats-Unis : des maisons détruites par des incendies près de Los Angeles",
-     "url": "https://www.france24.com/fr/vid%C3%A9o/20261017-etats-unis-des-maisons-d%C3%A9truites-par-des-incendies-pr%C3%A8s-de-los-angeles",
-     "published_at": "2026-10-17T10:22:09+00:00",
-     "publisher": "France24 FR",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "fr",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 50.45,
    "lng": 30.52,
    "name": "Kyiv",
@@ -2882,6 +2882,44 @@
      "source_url": "",
      "source_kind": "publisher",
      "language": "fr",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 41.0,
+   "lng": 20.0,
+   "name": "Albania",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 2,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -67,
+   "articles": [
+    {
+     "title": "Violent clashes between police and protesters in Albania",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFByODRxeG1SQmJRWGtVOTNKc01taUZDUUs5MWd4N1g0OF9uRUU3WDJ6MC1JU1E1bDJXYzM2NXpDOXU5YzlrM0ItZmUwd0xidUtQRncxdi16VUo?oc=5",
+     "published_at": "2026-10-17T13:11:20+00:00",
+     "publisher": "BBC",
+     "source_url": "https://www.bbc.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Albania sees fresh clashes as student-led movement targets PM Rama",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMDhjalJLMDFoSEhxZ2lpeF9kQUstMVJCaG80WHJoQTNhejVRcWZpM3E4c2w3Z3RYN2FIeENuTm5jbk9KSXQ3YXJhTElMSEtTeGlBMzQ4ak9ZdWZ1WGZUWmhKdlpOTVNfYUw1UEJJMkJHd01YcEpwd3dvckNkUVM2U1BRLUNHM18wMHNMaDZxVDlsUUpja2JDNGtEU1FlS1RZcDdnTDZoUVFkUFhFSkh1NXVRUTFpZEpTVTE3UlZHSlhmN0xxQ0M4V0Fya01UOXVGZDZoR2h6eXXSAd4BQVVfeXFMUGhmTkpma2VvazZrYnhfemJXWVFKai1OdHBHcFVJSXRLRkYwdDc5YWctODk3UWNfWDZqRlFmWXlNbGcyRXBXMFFyQ1JzdDI2ZnowMzBlZUFESjNodzZWa3JDQWc2c185aERjSnUxV0tUWmR6QjVneTA0M2pIckhnRXNITWM1SF96ZW9XUWE2c21kdFgtRWtjVVNZSnpxQUhoVzJvd3JXcm8wNDBZWk01dWZ0MnBWMU5yRG9WdGEwNGk0ejRoc3JXd2NpT3d5R1NULVJZb1pjdlFtR0FFMGJ3?oc=5",
+     "published_at": "2026-10-17T12:38:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
      "geo_match": "headline"
     }
    ]
@@ -3647,44 +3685,6 @@
    ]
   },
   {
-   "lat": 36.78,
-   "lng": -119.42,
-   "name": "California",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "hazards",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "California wildfire near San Juan Capistrano prompts evacuations",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QdC1fWk1QQTlKeF91US1qOEVVR0xHZE1DdnMxRjRmdDNYWXFGMk5nYldrUi1QOHNKd1JEb2tSYlhZVjR3OFE0YXd5SUU2ZEdSOTJpajBOVHdPT084blh2eGVVVWZUT1E?oc=5",
-     "published_at": "2026-10-17T01:39:54+00:00",
-     "publisher": "Reuters",
-     "source_url": "https://www.reuters.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Fast-moving California wildfire burns homes as people are ordered to leave",
-     "url": "https://www.bbc.co.uk/news/articles/c6vgjnk8nw2wo?at_medium=RSS&at_campaign=rss",
-     "published_at": "2026-10-17T01:36:39+00:00",
-     "publisher": "BBC Science",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 33.69,
    "lng": 73.06,
    "name": "Pakistan",
@@ -3827,34 +3827,6 @@
    ]
   },
   {
-   "lat": -35.28,
-   "lng": 149.13,
-   "name": "Australia",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "economy",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Being pregnant can still cost women their jobs in Australia",
-     "url": "https://www.abc.net.au/news/2026-10-18/pregnancy-discrimination-costs-women-their-jobs-in-australia/107081688",
-     "published_at": "2026-10-17T18:00:00+00:00",
-     "publisher": "ABC Australia",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 40.6501,
    "lng": -73.94958,
    "name": "Brooklyn",
@@ -3879,6 +3851,34 @@
      "source_kind": "publisher",
      "language": "en",
      "geo_match": "description"
+    }
+   ]
+  },
+  {
+   "lat": -35.28,
+   "lng": 149.13,
+   "name": "Australia",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "economy",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Being pregnant can still cost women their jobs in Australia",
+     "url": "https://www.abc.net.au/news/2026-10-18/pregnancy-discrimination-costs-women-their-jobs-in-australia/107081688",
+     "published_at": "2026-10-17T18:00:00+00:00",
+     "publisher": "ABC Australia",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
     }
    ]
   },
@@ -4023,6 +4023,34 @@
    ]
   },
   {
+   "lat": -6.0,
+   "lng": 35.0,
+   "name": "Tanzania",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "education",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Collaboration key to improving school infrastructure across Tanzania",
+     "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE50WDFKbHVvT2FwV0pmQlAwdDVRYnAzV1VuT0JVVDJSX1Rqb1M1cUJPR3ZsVUJCUjNYZTJGSFpZbmw3RjhEOUNyTg?oc=5",
+     "published_at": "2026-10-17T17:17:20+00:00",
+     "publisher": "Daily News",
+     "source_url": "https://dailynews.co.tz",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 41.70149,
    "lng": -71.15505,
    "name": "Fall River",
@@ -4159,6 +4187,34 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "description"
+    }
+   ]
+  },
+  {
+   "lat": 9.06,
+   "lng": 7.49,
+   "name": "Nigeria",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Nigeria drove thousands of gold miners from a national park. But can it keep them out?",
+     "url": "https://news.mongabay.com/2026/10/nigeria-drove-thousands-of-gold-miners-from-a-national-park-but-can-it-keep-them-out/",
+     "published_at": "2026-10-17T16:18:07+00:00",
+     "publisher": "Mongabay Global",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
     }
    ]
   },
@@ -4408,34 +4464,6 @@
      "published_at": "2026-10-17T14:48:05+00:00",
      "publisher": "Reuters",
      "source_url": "https://www.reuters.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 10.31032,
-   "lng": 9.84388,
-   "name": "Bauchi",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "education",
-   "recent_3h": 0,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": -50,
-   "articles": [
-    {
-     "title": "Safe school: Bauchi federal varsity seeks govt intervention on perimeter fencing",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOUsza2d4ZFc2Qm1hdjBxYlhSZUdMdkd6NkVQVmVMbG15dmJyemwtWE9neUo4R0dKc1RKdXF0NlFTQXE5TkEzaGVrdVlvYnUtOGxjYUNNc0UzQ0hOMkF0OGkwSzY3R21feWlpTWlLcEdkWW5Rd3pkcVJnel9RcnozWV9OczJzY1FBQVZ3X1RkQzkyRE4zdFNibFR5U205dnlzYXc?oc=5",
-     "published_at": "2026-10-17T14:42:53+00:00",
-     "publisher": "Punch Newspapers",
-     "source_url": "https://punchng.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -4891,29 +4919,57 @@
    ]
   },
   {
-   "lat": 28.61,
-   "lng": 77.21,
-   "name": "India",
-   "accuracy": "country",
-   "location_basis": "headline",
+   "lat": 10.65,
+   "lng": -71.64,
+   "name": "Maracaibo",
+   "accuracy": "place",
+   "location_basis": "description",
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 1,
    "publisher_count": 1,
-   "category": "education",
+   "category": "community",
    "recent_3h": 0,
    "previous_3h": 1,
    "velocity": "steady",
    "velocity_change_pct_sample": -50,
    "articles": [
     {
-     "title": "India News",
-     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOSk9qeHBxZmR4MmFXdnVHS2NhWFV1bmxzNnRvYnRtUUl4RUtSU3BJN2EybDZXMUs5VWk5QVdjUTlQOHc0WW10VTZPcDRORmoyWWRNdVNwWFh6bUFZdno5ZUNka3RLQlhGQzJHWDlDelFtRUN0N1hUZVp0bmJWNzc0eklDdlZCd2pZbGFkZHlWS2VkX0hOTXN5OGJjQkphQTF3c0lWV0lPWlZ2TjlPWHI1OVpnX1ItN0lCT2RFOFlRR2o5c3VmZXA3Q0otSzFiRjFTZjlTNTRTX2dsd1NPUVE3TUsxY2Q0YmZ1MzZV0gHwAUFVX3lxTE9wYWhRYllLakduSHJFU0RuTXZWTGJBWFFRdFVNV1hqSjlyTHB1OUFQY05tcEsyTmw5UmU1NUV1aVVROGhpc0pUbTZyMzV4X1JKOTZVXzhSMHV3TlJDR19kT1lpejRKTVQzRW8xWUoyek5wOUtDbEVTZ01nVkswQnVsVVIyMm9nQS11elZqSHEyLV9BcS1iWXpzWk45bmc5MUR3SFZWbWl3RDUwaTdlNkJTZm80cDdBYjJ3a3VqbHJEalhjd3lTcVFSVVFqRnNzLTNvZUdxeXJwTXNSY051S0treWpiNzdOZHhDaTNFSzkxWQ?oc=5",
-     "published_at": "2026-10-17T12:54:22+00:00",
-     "publisher": "LatestLY",
-     "source_url": "https://www.latestly.com",
-     "source_kind": "aggregator",
-     "language": "en",
+     "title": "Delfines, marsopas y albatros mueren por la pesca en Latinoamérica: científicos buscan soluciones para protegerlos | Coyuntura ambiental",
+     "url": "https://es.mongabay.com/2026/10/delfines-marsopas-albatros-mueren-pesca-latinoamerica-cientificos-buscan-soluciones-coyuntura-ambiental/",
+     "published_at": "2026-10-17T12:57:52+00:00",
+     "publisher": "Mongabay Latam",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "es",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
+   "lat": 10.0,
+   "lng": -84.0,
+   "name": "Costa Rica",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -50,
+   "articles": [
+    {
+     "title": "Tapir Valley: la reserva en Costa Rica donde la conservación de la danta permite recuperar el árbol endémico jícaro danto",
+     "url": "https://es.mongabay.com/2026/10/ciencia-estiercol-danta-monitoreo-reserva-costa-rica-protege-tapir-centroamericano/",
+     "published_at": "2026-10-17T12:57:24+00:00",
+     "publisher": "Mongabay Latam",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "es",
      "geo_match": "headline"
     }
    ]
@@ -5126,9 +5182,9 @@
    "publisher_count": 1,
    "category": "politics",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Rival demonstrations in London reflect divisions over India’s election controversy",
@@ -5154,9 +5210,9 @@
    "publisher_count": 1,
    "category": "community",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Nursery owner in China jailed for life after hundreds of children poisoned",
@@ -5182,9 +5238,9 @@
    "publisher_count": 1,
    "category": "community",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "US and Iran both claim control of Strait of Hormuz amid attacks on vessels",
@@ -5328,8 +5384,8 @@
    "articles": [
     {
      "title": "Moody’s upgrades Egypt’s credit rating to ‘B3’ with positive outlook - Economy - Business",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBQQkNNaFRoTHRrVHZCOVpuZU9JZ2NHZVcwdEZXejh2S1BBRGVVU2RvZUJFWEdHMDRGNlhFS3dfX3hKeTRhckktd3pyTmQ3RnBIRGFVNTFKXzA?oc=5",
-     "published_at": "2026-10-17T11:42:58+00:00",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQU0k5RjJpalptc1FyVEN3VE9kbUpiYUtxcnpMdDZ2YkZrRklEUzhyeEhrM0Vmb21lakdoeFF4b1J5dkR3bEZrY19CeTBvbDc0NktHQnhSS0NaTFNkMEs1ZUJxOThoeTdiTFlIdXY2OEtxMVJJVjJkcmREOE1SLWpxOHYtUW5uMkU3c0ZPS19STUw0N2cxN05qSGVLOHZUbGx5bEZwYUVhSzdiMENpeVhvN3FnM29VTUVQT0J3RlFNRVdlZHROQzBOWEhMbktPcUFnZk1zWWN3LWVTVW04M3hNTQ?oc=5",
+     "published_at": "2026-10-17T11:43:04+00:00",
      "publisher": "Ahram Online",
      "source_url": "https://english.ahram.org.eg",
      "source_kind": "aggregator",
@@ -5726,6 +5782,34 @@
      "source_url": "https://english.ahram.org.eg",
      "source_kind": "aggregator",
      "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 34.05,
+   "lng": -118.24,
+   "name": "Los Angeles",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Etats-Unis : des maisons détruites par des incendies près de Los Angeles",
+     "url": "https://www.france24.com/fr/vid%C3%A9o/20261017-etats-unis-des-maisons-d%C3%A9truites-par-des-incendies-pr%C3%A8s-de-los-angeles",
+     "published_at": "2026-10-17T10:22:09+00:00",
+     "publisher": "France24 FR",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "fr",
      "geo_match": "headline"
     }
    ]
@@ -6151,6 +6235,34 @@
    ]
   },
   {
+   "lat": -6.21,
+   "lng": 106.85,
+   "name": "Jakarta",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Indonesian women cash in on mangrove restoration: Interview with community leader Wisye Sahambangung",
+     "url": "https://news.mongabay.com/2026/10/indonesian-women-cash-in-on-mangrove-restoration-interview-with-community-leader-wisye-sahambangung/",
+     "published_at": "2026-10-17T07:57:59+00:00",
+     "publisher": "Mongabay Global",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
    "lat": 0.35,
    "lng": 32.58,
    "name": "Kampala",
@@ -6487,6 +6599,34 @@
    ]
   },
   {
+   "lat": -27.46363,
+   "lng": -58.98665,
+   "name": "Resistencia",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "“Un lugar de silencio, contemplación y belleza también puede volverse una forma de resistencia”, en conversación con el artista catalán Jaume Amigó",
+     "url": "https://es.globalvoices.org/2026/10/17/un-lugar-de-silencio-contemplacion-y-belleza-tambien-puede-volverse-una-forma-de-resistencia-en-conversacion-con-el-artista-catalan-jaume-amigo/",
+     "published_at": "2026-10-17T06:00:18+00:00",
+     "publisher": "Global Voices Spanish",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "es",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": -35.28,
    "lng": 149.13,
    "name": "Australia",
@@ -6761,6 +6901,34 @@
      "publisher": "RNZ National",
      "source_url": "",
      "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 4.5,
+   "lng": 114.66666666,
+   "name": "Brunei",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Cardiovascular Disease Deaths Climb in Brunei; Ministry of Health Steps Up Preventive Care",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ORGNpcVF4QjFtYmF5ZndKMkMtMTBjTGhZZkRnVWViTWhUaEt3djU2NTYwVFZYcHhha2Z2TEdEb0tMUFk0OHJZMUF4eU1mTXJ6dUJ0QVU0R0VLdmZyOHF4WVJ4VVFRMWRsRkpGZnlTRQ?oc=5",
+     "published_at": "2026-10-17T04:44:54+00:00",
+     "publisher": "联合日报",
+     "source_url": "https://uniteddaily.my",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     }
@@ -7439,34 +7607,6 @@
    ]
   },
   {
-   "lat": 37.57,
-   "lng": 126.98,
-   "name": "Seoul",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "education",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "'You can tell it's Seoul National University at a glance — what kind of blind review is this?'",
-     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8taW9uc2s5RllGOUNFMVk1VVVidWVQdHNtNWhFUmJUTm9sSHFUcFEyLTF0a0V4eS1zWFJVRGpBMUItTmxWOE1aaWJDdU4xNUx3TjlNaDZNUQ?oc=5",
-     "published_at": "2026-10-17T00:19:34+00:00",
-     "publisher": "헤럴드경제",
-     "source_url": "https://mbiz.heraldcorp.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 25.76,
    "lng": -80.19,
    "name": "Miami",
@@ -7551,34 +7691,6 @@
    ]
   },
   {
-   "lat": 32.72,
-   "lng": -117.16,
-   "name": "San Diego",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "education",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Judge Orders Release Of San Diego County College Student Detained By ICE",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPS1Vndy1FWW1RWmpDcTg4QXpSbmNIUlM3VFhFVF9HOUlPbEtxc0Zlc0tBamtYTlc2NmFqTnE1QnhTbUVSUEs3MnZra3c3cjBycFp3UGY4YWJJcWgzR3NBZkRLT0hlU1BkN18wYjFoSmlJSW5KY21ySWV0VTJJTk82U21OdnQzMlBCd1h3UzFQM3B3VkJ3aDJKRmdWNzRQaFh4NlJiVnFJMlnSAcIBQVVfeXFMT2NKTUY5YkFNZHRVRXFtTUFOa0h5Ym5kbm42c0I5eUlNcloyXzM3MWU3TGRjcXlSLWR1cFNWaUJWUjE1NjlrWDVnQzNPb1NUSTVoS2M3a1ZaVWgxMUNOd003UWlpbXFoWFJxdkVOV2RFYTIxbklwM2sxQjgtdlVuc3JBTlZrMjlwVEhLVUtlQ0hrMnNJclM5OFc1S0Exa2dJM3UzQ1ptSVNTTG9EQS1taU44S3g4Q2t6WlJPQmJwdVRReFE?oc=5",
-     "published_at": "2026-10-16T23:59:25+00:00",
-     "publisher": "Patch",
-     "source_url": "https://patch.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 50.45,
    "lng": 30.52,
    "name": "Ukraine",
@@ -7601,6 +7713,34 @@
      "publisher": "BBC World",
      "source_url": "",
      "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 52.23,
+   "lng": 21.01,
+   "name": "Poland",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "conflict",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "'Mystery drones over UK' and 'Troops heading to Poland for war games'",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5TckluWmtKajQ1aEJuUS15Rl9rcXJ3Nm8wNDlkOG8zZ0JYejdTMTFwQWl6M0g3amltMFlpRzBFNTFUNWYzdk9BZ3JRLUJFM3pwZGJhcngwWlZ6NjJaSEE?oc=5",
+     "published_at": "2026-10-16T23:50:00+00:00",
+     "publisher": "BBC",
+     "source_url": "https://www.bbc.co.uk",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     }
@@ -8251,6 +8391,62 @@
    ]
   },
   {
+   "lat": -17.83,
+   "lng": 31.05,
+   "name": "Zimbabwe",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "The uplifting story of one of Zimbabwe’s pioneering women rangers",
+     "url": "https://news.mongabay.com/2026/10/the-uplifting-story-of-one-of-zimbabwes-pioneering-women-rangers/",
+     "published_at": "2026-10-16T19:03:07+00:00",
+     "publisher": "Mongabay Global",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": -19.93167,
+   "lng": -44.05361,
+   "name": "Contagem",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Especialistas votaram por interromper acréscimo de segundos extras no relógio, e resultado favorece as “Big Techs”",
+     "url": "https://theconversation.com/especialistas-votaram-por-interromper-acrescimo-de-segundos-extras-no-relogio-e-resultado-favorece-as-big-techs-294633",
+     "published_at": "2026-10-16T19:01:23+00:00",
+     "publisher": "The Conversation Brasil",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "pt",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
    "lat": 26.46523,
    "lng": 80.34975,
    "name": "Kanpur",
@@ -8415,174 +8611,6 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 39.8,
-   "lng": -98.6,
-   "name": "United States",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "2026 Voter’s Guide - US House District 6",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVEdSNGZGS05vVndNWWszM3hBTGFBMlBsemNTNXJGdFNlcG50T25ReG5lUW12Vzk1VXhOTDVRb3RKUFJBVWNod1JBYzJqbUlnb2JvdGNQcndmMEs5WFNHWm9DeWpjQjNCZXluQm5ZTm1yYi1pYkVPUVpsSUw1b2JJU1dwLVFwTWcxRm56T0JJclNscHQyRnc?oc=5",
-     "published_at": "2026-10-16T18:15:04+00:00",
-     "publisher": "WKMG",
-     "source_url": "https://www.clickorlando.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 24.71,
-   "lng": 46.68,
-   "name": "Riyadh",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "conflict",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Saudi Arabia Weighs Its Response to Deadly Houthi Attack on Riyadh",
-     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQbkhTaS1tX2JNdjdPSXJ2NTBydXdSYURlZEc2R3ZCcHRfZFY2eC1CSkc1cy1Dd0s5a0pkbXVTdXY2T1V0WjJEQTJHaDhfX29vd0stcFBSbU02OGpfckVOSDFWT05lRGVmcXBIQ3BzMjM4TGtKMTFKdEFBX1VMVUs2dW1ON2xVOVZ3X0ZpWm5mWjJvNE1rTmgxVVpYMDBNcTlBbS1vN19qRlFHQ2JKelR4d2N6UFFOb1pfdnB4MnpPQV9MYmk4MTNWZDlRU2NwRF9sMU9UUHQ4cURfck1mRkE?oc=5",
-     "published_at": "2026-10-16T18:10:00+00:00",
-     "publisher": "RANE Worldview",
-     "source_url": "https://worldview.ranenetwork.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 39.9,
-   "lng": 116.4,
-   "name": "China",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Xi Jinping calls for decisive advancement of Healthy China initiative — ECNS",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS1lzZk03RUJEMG9nNjJHMWN6M2YtcVdKYUJSMFZtWElOSEpVY3dVdVhESHRGcHBOdHhiR1VpREpfRFRDUlU0V1BVYl8xSHdZZVQwUTR2Wk9MeldSLXlXTjBSRW10UmlIczh5QWFqMzRIN1d4OFlTM1dsaVMxb2prb2g1cEFCYktWS3F0NndEV1dwSTNPZ0s4c2FYVTY?oc=5",
-     "published_at": "2026-10-16T18:09:59+00:00",
-     "publisher": "UA.NEWS",
-     "source_url": "https://ua.news",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 39.9,
-   "lng": 116.4,
-   "name": "Beijing",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "No 10 leaves option open to impose Chinese EV tariffs if UK joins EU scheme",
-     "url": "https://www.theguardian.com/politics/2026/oct/16/uk-chinese-electric-vehicle-ev-tariffs-eu-made-in-europe-scheme",
-     "published_at": "2026-10-16T18:09:34+00:00",
-     "publisher": "The Guardian World",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description"
-    }
-   ]
-  },
-  {
-   "lat": 25.03,
-   "lng": 121.56,
-   "name": "Taiwan",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Eswatini And Taiwan Strengthen Healthcare Cooperation Through AI And Smart Medical Technologies",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRG05UnJSTE5OOC16aFpSR1NuTHAtTkdnRl9zR3hSY2lpSnBVWGxYNkhJUXVKdkJIQ2FfSFpzLUp2SzlnUVNzUnYyTExpNWlHeVBSOEpzLTRZS1pDT2RMMS1lNTUzX1VpcWNuS0FVdm5nbFpMRUduNzMzcWRYb1hJR0hTUVE1TVRqUk5xSTFyeVhFRmFqOGdINkRONDc5cDBTa1c3ZVhQNjdMNm5peDBGQXNvWnRvaGlSaGxxZnJpONIBxwFBVV95cUxONVFqbXBYTjdTQ09MQnNWbTNRRTBLazZnalZDNmNSM2oyWDBlRlhvcGtfY2xLT2VKM0g0UXNoaFpPNTdaRzlkSjZlYWVpb1puSFE1OVotaG1zVDZleDFsRjY3ZlpaVWlBTjlOcnRxMDE5SGVHejFDT1p2Z0xTZS1rTDA2N0laVTN0WnpLM2RaZjZ1X2xTdmlERDBfOWUzWUNURWxHRnB0dTZMRE4zdmF5YUZWSUtFMkNVbHZnZ1hkNGFGeFZsek9F?oc=5",
-     "published_at": "2026-10-16T18:08:45+00:00",
-     "publisher": "Trendsnafrica",
-     "source_url": "https://trendsnafrica.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 40.27,
-   "lng": -76.88,
-   "name": "Pennsylvania, USA",
-   "accuracy": "region",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "education",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "TLT to host ‘Learning Tools for Teaching: Explore, Engage, Elevate’ fall event",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQUI4cmpwY1F4OWx5N2Z5aXZhRTF4V19kQ1ROUkhWMncyQjdtS04zSnd6bGRCdmZnWjd4WU5DZHlkYjZRUkFpNTMxMlpUOFRrSlRCbmk4N29RZWFCY2R2bmd2T0d5WDJEWmRFUE5weXJSSDFQSWFCdXNKaUgtUlV3eUdubHBlNVFkOE13WkE3ZXN2dWZ2c2RUUWdDeURUdkRtaFBEaTgtdEdoMno4UTdmcjZIcEF0LTI5dmc?oc=5",
-     "published_at": "2026-10-16T18:04:39+00:00",
-     "publisher": "The Pennsylvania State University",
-     "source_url": "https://www.psu.edu",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
     }
    ]
   }
