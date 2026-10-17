@@ -125,12 +125,18 @@ function updateLivingEarth(now){
    const slow=q*.27,si=Math.floor(slow),sf=slow-si;
    const blend=sf*sf*(3-2*sf);
    const drift=randomAt(si+903)*(1-blend)+randomAt(si+904)*blend;
-   const flicker=.68*jitter+.32*drift;
+   // Mostly quiet, with small independent flickers that occasionally catch the eye.
+   // Short stochastic glints avoid the impression that the whole Earth is breathing.
+   const sparkTime=t*(2.2+.9*dot.speed)+dot.phase*2.3;
+   const beat=Math.floor(sparkTime),progress=sparkTime-beat;
+   const spike=ambientHash(seed+beat*73.17)>.78
+     ? Math.pow(Math.max(0,1-Math.abs(progress-.22)*4),2) : 0;
+   const flicker=.58*jitter+.42*drift;
    const brightness=ambientContrastTest
-     ? .16+.76*flicker
-     : Math.min(.77,.055+dot.base*(.78+.92*flicker));
-   ctx.fillStyle=`rgba(156,255,249,${brightness.toFixed(3)})`;
-   ctx.fillRect(dot.u,dot.v,ambientContrastTest?2:1.55,ambientContrastTest?2:1.55);
+     ? .10+.86*Math.max(flicker,spike)
+     : Math.min(.94,.025+dot.base*(.28+1.40*flicker+1.65*spike));
+   ctx.fillStyle=`rgba(171,255,249,${brightness.toFixed(3)})`;
+   ctx.fillRect(dot.u,dot.v,ambientContrastTest?2:1.65,ambientContrastTest?2:1.65);
   }
  }
  ambientFrames++;ambientGpuTexture.needsUpdate=true;ambientUploads++;
@@ -171,9 +177,9 @@ function initGlobe(){
  const resize=()=>{if(!globe)return;globe.width($('scene').clientWidth);globe.height($('scene').clientHeight)};
  new ResizeObserver(resize).observe($('scene'));resize();
 }
-function tier(){if(!globe)return 0;let alt=globe.pointOfView().altitude;return alt>1.4?0:alt>.72?1:alt>.30?2:3}
-function aggregate(items){if(!state.cluster||tier()===3)return items.map(p=>({...p,members:[p]}));
- let size=[19,9,4.5,1.5][tier()];let groups=new Map();
+function tier(){if(!globe)return 0;let alt=globe.pointOfView().altitude;return alt>.72?0:alt>.30?1:2}
+function aggregate(items){if(!state.cluster||tier()===2)return items.map(p=>({...p,members:[p]}));
+ let size=[9,4.5,1.5][tier()];let groups=new Map();
  for(let p of items){let x=Math.floor((p.lng+180)/size),y=Math.floor((p.lat+90)/size);let key=`${p.category}_${x}_${y}`;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(p)}
  return [...groups.values()].map(members=>{
   if(members.length===1)return {...members[0],members};
