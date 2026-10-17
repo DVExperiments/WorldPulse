@@ -1,24 +1,18 @@
-# WorldPulse v1.6C.1 — Population Brightness Refinement
+# WorldPulse v1.6C.2 — Ambient Brightness Refinement
 
-This patch refines the neon globe's ambient land grid so it keeps the same regular dotted grid while showing population density through clearer brightness variation.
+Visual-only patch, building on v1.6C.1.
 
-## What changed
+## What changes
+- Preserves the uniform 5-pixel land-dot grid and the working cyan borders.
+- Uses modest brightness variation to suggest settlement concentration: denser areas are brighter, sparse land is darker.
+- Adds restrained urban-node glows beneath grid dots.
+- Reduces random sparkle variations so regional brightness patterns remain readable.
+- Does not alter news markers, news collection, JSON schemas, or GitHub Actions.
 
-- Preserves the existing neon country and coastline outlines.
-- Preserves the regular land grid pattern.
-- Dense population regions now render with brighter cyan dots.
-- Sparse regions remain dimmer.
-- Keeps subtle metropolitan glow under the grid.
-- Does not change the news collection workflow or category markers.
+**Accuracy note:** The glow is an illustrative settlement proxy based on an approximate curated city-hub list, *not* a measured global population raster. Do not interpret it as exact census density or live activity.
 
 ## Install
+Replace the repository-root `app.js` with this version. Keep `world-borders.geojson` in the repository root; it is also included in this ZIP for convenience. Keep the site's other files and `.github/workflows/update.yml` unchanged. Commit to `main`, wait for GitHub Pages, and hard refresh.
 
-Replace `app.js` in the repository root with the version from this patch.
-
-Keep `world-borders.geojson` in the repository root.
-
-Then let GitHub Pages redeploy and hard refresh the site.
-
-## Notes
-
-The background grid is an ambient visual layer and is not a live population feed. It is intended to make the globe feel more alive and closer to the digital concept aesthetic.
+## Verification
+Check Europe, eastern North America, India/East Asia and the Sahara or central Australia in Neon mode. Borders should stay fixed. Dots should remain on the same grid while showing subtle brightness differences. Toggle Real globe to confirm it is unchanged. Confirm that news dots and category filters still work.
