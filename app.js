@@ -1,7 +1,7 @@
 /* WorldPulse — static GitHub Pages viewer. The scheduled workflow owns data updates. */
 'use strict';
-const COLORS={politics:'#eeb67e',environment:'#6edcb3',hazards:'#ef797d',society:'#ae94f3',economy:'#72baf1',science:'#e4d475',social:'#eb8eeb'};
-const LABELS={politics:'Politics',environment:'Environment',hazards:'Hazards',society:'Society',economy:'Economy',science:'Science'};
+const COLORS={politics:'#eeb67e',environment:'#6edcb3',hazards:'#ef797d',society:'#ae94f3',economy:'#72baf1',science:'#e4d475',conflict:'#ff5878',social:'#eb8eeb'};
+const LABELS={politics:'Politics',environment:'Environment',hazards:'Hazards',society:'Society',economy:'Economy',science:'Science',conflict:'War & conflict'};
 const $=id=>document.getElementById(id);
 const state={news:[],posts:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null};
 let globe, currentPoints=[], lastTier=-1, translationCache=new Map();
@@ -19,7 +19,7 @@ function initGlobe(){
   .pointColor(p=>COLORS[p.category]||COLORS.social)
   .pointAltitude(p=>Math.min(.08,.011+Math.log1p(p.count)*.008))
   .pointRadius(p=>Math.min(1.6,.19+Math.sqrt(p.count)*.11))
-  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':'posts'}`)
+  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':'posts'}${p.velocity==='rising'?' · ↑ Rising':''}`)
   .onPointClick(p=>openPoint(p))
   .onGlobeClick(({lat,lng})=>pickPlace({lat,lng}))
   .onZoom(()=>refreshZoom());
@@ -40,7 +40,7 @@ function aggregate(items){if(!state.cluster||tier()===3)return items.map(p=>({..
   let ss=members.reduce((n,p)=>n+Math.sin(p.lng*Math.PI/180)*p.count,0),cc=members.reduce((n,p)=>n+Math.cos(p.lng*Math.PI/180)*p.count,0);
   let lng=Math.atan2(ss,cc)*180/Math.PI;
   const winner=[...members].sort((a,b)=>b.count-a.count)[0];
-  return {lat,lng,count,category:winner.category,name:`${members.length} nearby signals`,members};
+  return {lat,lng,count,category:winner.category,name:`${members.length} nearby signals`,velocity:members.some(p=>p.velocity==='rising')?'rising':'steady',members};
  });
 }
 function refreshZoom(){let t=tier();if(t!==lastTier){lastTier=t;renderPoints()}}
@@ -67,20 +67,20 @@ async function maybeTranslate(node,original){if(!state.translate)return;let key=
  try{let translated=await t.translate(original);if(translated){translationCache.set(key,translated);if(node.isConnected&&state.translate)node.textContent=translated}}catch{}
 }
 function paintDrawer(){const p=state.selected;if(!p)return; $('drawer').hidden=false;$('drawer-title').textContent=p.name;
- let members=p.members||[p];const total=members.reduce((n,x)=>n+x.count,0);$('drawer-meta').textContent=`${total.toLocaleString()} ${state.layer==='news'?'matched articles in sampled results':'posts'} · ${members.length} signals${p.distance!=null?' · nearest signal '+p.distance+' km away':''}`;
+ let members=p.members||[p];const total=members.reduce((n,x)=>n+x.count,0);let rising=members.filter(x=>x.velocity==='rising').length;let countries=members.some(x=>x.accuracy==='country');$('drawer-meta').textContent=`${total.toLocaleString()} ${state.layer==='news'?'deduplicated sampled articles':'posts'} · ${members.length} signals${rising?' · ↑ '+rising+' rising':''}${countries?' · Country pins are approximate':''}${p.distance!=null?' · nearest signal '+p.distance+' km away':''}`;
  let area=$('drawer-stories');area.replaceChildren();
  const stories=new Map();for(let m of [...members].sort((a,b)=>b.count-a.count))for(let a of (m.articles||[])){if(a.url&&/^https?:\/\//.test(a.url)&&!stories.has(a.url))stories.set(a.url,{...a,category:m.category,place:m.name})}
  if(!stories.size){area.append(el('p',state.layer==='news'?'No article links available for this location in the current snapshot. Zoom out or select another signal.':'No location-verified social posts are available here.'));return}
  for(let s of [...stories.values()].slice(0,30)){
   let row=el('div',undefined,'story'),anchor=el('a',clean(s.title));anchor.href=s.url;anchor.target='_blank';anchor.rel='noopener noreferrer';row.append(anchor);
   let source='';try{source=new URL(s.url).hostname.replace(/^www\./,'')}catch{}
-  row.append(el('small',`${source} · ${s.place} · ${LABELS[s.category]||'Social'} ↗`));area.append(row);maybeTranslate(anchor,clean(s.title));
+  row.append(el('small',`${s.publisher||source} · ${s.place} · ${LABELS[s.category]||'Social'}${s.published_at?' · '+age(s.published_at):''} ↗`));area.append(row);maybeTranslate(anchor,clean(s.title));
  }
  if(stories.size>30)area.append(el('p',`Showing 30 of ${stories.size} example links.`));
 }
 function updateStatus(){let d=state.feed||{};let st=d.status;let dot=$('status');dot.classList.toggle('live',st==='live');
  dot.lastChild.textContent=st==='live'?' Updated feed':st==='partial'?' Partial feed':st==='stale'?' Outdated feed':' Awaiting feed';
- $('updated').textContent=`Feed: ${age(d.updated_at)} · refreshed via GitHub Actions`;
+ $('updated').textContent=`Feed: ${age(d.updated_at)} · ${d.query_successes||'?'} / ${d.query_attempts||'?'} regional queries · ${d.duplicates_removed||0} duplicates removed`;
  let notice=$('emptyNotice');notice.hidden=true;
  if(!state.news.length){notice.hidden=false;notice.textContent='No news snapshot yet. On GitHub, run Actions → Refresh geographic news → Run workflow, then reload this page.'}
  else if(st!=='live'){notice.hidden=false;notice.textContent=st==='partial'?'Some categories failed to refresh. Older category results may be shown.':'News is from the last successful update, not live.'}

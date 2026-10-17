@@ -1,56 +1,48 @@
-# WORLD PULSE — Interactive Global News Globe
+# WorldPulse v1.3 — Global News Signals
 
-A GitHub Pages–ready 3D news geography visualization: spin the globe, choose coverage themes, select locations and open linked articles. Built with HTML/CSS/JS, [Globe.GL](https://globe.gl/) and a scheduled Python data pipeline pulling article results from [GDELT DOC 2.0](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/).
+An interactive 3D globe for geographically referenced headlines. Static GitHub Pages frontend and scheduled GitHub Actions Python collector. **No API keys, Python dependencies, hosting fees, or server required.**
 
-## Deploy (no server, no API keys)
+## What's new in 1.3
 
-1. Create a **public** GitHub repository (e.g. `WorldPulse`).
-2. Upload **all contents** of this package into the **repository root**, preserving `.github/workflows/update.yml`, `scripts/`, and `data/`. Do not upload only the enclosing folder.
-3. Open **Settings → Pages → Build and deployment → Deploy from a branch** and choose `main` / `(root)`, then save.
-4. Open **Actions → Refresh geographic news → Run workflow**. It fetches geographic coverage and commits `data/news.json`. If GitHub asks to enable Actions, enable them.
-5. Reload `https://YOUR-USERNAME.github.io/WorldPulse/`. The scheduled job attempts a refresh at `:17` and `:47` each hour, subject to GitHub Actions queue/delay, GDELT uptime and GitHub repository settings.
-6. In **Settings → Actions → General → Workflow permissions**, ensure **Read and write permissions** is selected if workflow push fails with HTTP 403. Some repos block pushes to protected branches; adjust permissions or commit using a PR process.
+- Seven categories including **War & conflict**, visually differentiated with a pink-red marker.
+- 28 RSS searches: seven themes × four regional Google News editions (US, UK, India, Australia) for broader coverage than one global query.
+- Bundled gazetteer of ~380 named places, countries and key cities / conflict-reporting areas. Unmatched headlines aren't assigned locations. The named place is a reference, not an independently verified incident site; country markers are approximate.
+- Deduplicates article URLs across overlapping regional searches, with conservative normalized-title matching to merge nearly identical syndicated headline copies in the same category and location.
+- Per-marker news **velocity**: latest 3 hours compared with previous 3 hours in the current RSS sample (`rising`, `steady`, `cooling`). Shown as rising in tooltip and panel, not asserted as event severity.
+- Source names and publication ages in the story drawer; up to 20 article links per marker-category.
+- Collector errors, successful query counts and removed duplicate counts visible in metadata and logs.
 
-A new repository starts with **no sample or fabricated news**. The site needs the first successful Actions run to populate signals. The globe JavaScript and Earth texture need internet/CDN access. You can run `python scripts/update.py` locally (Python 3.10+ standard library only) if desired.
+## Publishing / upgrading
 
-## What the numbers mean (v1.1 collector)
+To deploy, upload all files and folders to the **root** of the `WorldPulse` GitHub repository; use the GitHub web editor to create/update the hidden workflow file at `.github/workflows/update.yml` if the upload dialog hides the `.github` folder.
 
-**This release uses GDELT DOC 2.0, not GEO 2.0.** The old GEO endpoint returned HTTP 404 and was replaced. The scheduled script requests the newest **up to 250 articles for each of six category searches** from the preceding 24 hours. It matches explicit named places in article *headlines* against a bundled 165-entry geographic name table, placing a dot at the reference coordinate for that named place. It does **not** infer a reporter's location from an outlet's domain, or a news event location from the whole article. Some headlines have no recognized place; those are omitted. Ambiguous locations can still occur. Country markers represent a reference point, not a country's news centroid.
+For an existing working v1.2 site, replace these files:
 
-**Marker count = unique article URLs in this limited query sample whose title matched the chosen place and category**, not the number of all new articles over 24 hours, not internet traffic, not unique news events, and not a complete representation of reporting for a country. One article can contribute to multiple category searches; global totals can overlap. For a matched article, the collector assigns its single longest explicitly named place and saves up to eight source links per marker. An empty category can be legitimate, but check Actions logs for API errors.
+1. `scripts/update.py`
+2. `data/places.json` (NEW and essential)
+3. `app.js`
+4. `index.html`
+5. `.github/workflows/update.yml` (recommended: new step name and longer timeout)
+6. `README.md` (optional)
 
-The six categories are independent keyword queries, not objective classifications of the event. Source titles may arrive in languages other than English; location matching uses Roman-script named places and is incomplete for other languages. Article titles appear as retrieved, with experimental on-device translation on supported browsers only. Older snapshots are kept if a category fails. A mixture of new and older category samples means totals are not synchronized across categories.
+**Keep the existing working `data/news.json` file.** The next workflow run will replace it with a new v1.3 snapshot. Do not overwrite it with the empty starter snapshot in this ZIP when upgrading an existing repository.
 
-## Translation
+Go to **Actions → Refresh geographic news → Run workflow**. After a successful run, inspect `data/news.json`: `schema: 2`, `status: live` or `partial`, and `points` should be populated. Refresh the Pages site with Ctrl+Shift+R.
 
-The site reads `navigator.language`. If the user's browser supports the emerging on-device `Translator` API and can translate from English to that browser language, the interface attempts automatic translation of article link titles. If unavailable, titles remain as originally provided by GDELT. There is **no guaranteed cross-browser translation service** in this release. Opening the original link always goes to the publisher, in their own language. Later production versions can pre-translate from a licensed provider in the GitHub Actions pipeline (observe quotas and rights) and cache translated titles as static files.
+## Limitations and honest metrics
 
-## Social layer
+- **This is a sampled monitoring view, not a census of 24-hour global articles.** Google News RSS returns ranked, capped feed results; searches are performed in English and overrepresent locations prominently featured in headlines. Counts cannot be compared as unbiased estimates of all reporting.
+- One article is assigned to the most specific explicitly named recognized place in its headline, not necessarily the real event location. A story mentioning multiple cities gets only one pin. Some names are ambiguous and a finite gazetteer misses many small towns.
+- The category means *query theme that found the article*. War coverage includes reports, official claims and opinions: it is not a verified record of battlefield incidents or casualties. Article links lead to the Google News item (which may redirect); the collector also stores source labels.
+- URL deduplication and near-identical-title matching remove repeats, but different headlines and sources about the same event remain as separate article records. Thus counts are articles rather than unique real-world events.
+- **News velocity** compares sampled publication-time counts in the most recent three hours to the previous three; sample variation or missing feeds can create false signals. It is not a dependable incident-alert system. Never treat it as an emergency warning.
+- Social posts layer remains disabled without verified, permission-appropriate geolocation sources. Browser translation only works where supported, otherwise original-language titles display.
+- Google News RSS availability, rate limits and output format can change. The workflow retains older news on total failure and marks it stale.
 
-The social tab is functional but **empty by default**. It will render `data/social.json` posts **only** if they include `verified_location: true`, numeric `lat`/`lng`, and article-like post links; don't equate hashtag/location mentions, profile bios, IP guesses or topics with a user's physical posting location. Build a legally/ethically sourced and consent-aware feed before enabling globally. Example schema (not real data):
+## Architecture
 
-```json
-{"updated_at":"2026-10-17T06:00:00Z","source":"consented geotagged content","posts":[{"lat":40.7,"lng":-74,"name":"Example","verified_location":true,"articles":[{"title":"Example post","url":"https://example.org/post/123"}]}]}
-```
+`GitHub Actions` -> Python stdlib RSS collector (`scripts/update.py` + bundled `data/places.json`) -> `data/news.json` -> `globe.gl` static viewer (`index.html`, `app.js`, `style.css`). Scheduled twice per hour. No client-side access to paid APIs, secrets or scraping of article bodies.
 
-No social platform APIs or tokens are currently configured. Avoid publishing precise personal whereabouts without permission. Social activity drawn from one platform is not equivalent to the world's internet traffic.
+## Test the collector locally
 
-## Files
-
-- `index.html` / `style.css` / `app.js`: frontend and 3D interactions.
-- `scripts/update.py`: GDELT DOC article-list retrieval and headline-based location matching; retains old category data if a query fails and reports stale status.
-- `.github/workflows/update.yml`: public repository scheduled automation / manual run.
-- `data/news.json`: machine-generated snapshot (empty at first).
-- `data/social.json`: optional verified-social-location dataset.
-
-## Next improvements
-
-- Add event-level deduplication, a larger reviewed gazetteer, and reliable event-location geocoding rather than headline place-name matching.
-- Add automatic multilingual translation via a service-side translation provider with language caches and correct attribution.
-- Add a vetted platform-specific public social feed with consented coarse locations, geographic confidence and sampling disclosures.
-- Add date sliders, time-series archives, entity search, source diversity/credibility context and automated tests on live feed schemas.
-- Add accessible non-WebGL 2D map / list fallback and mobile optimizations.
-
-## Libraries & providers
-
-[Globe.GL](https://github.com/vasturiano/globe.gl) (MIT) and GDELT DOC 2.0 (data source, terms governed by provider). Earth texture via the Three Globe example assets. No news article full text is stored in this app, just source links and title snippets. Browser requests also contact image/CDN providers. Check licensing and rate limits before public commercial deployment.
+Run `python scripts/update.py` from the repository root (uses network access). Check console results and `data/news.json`. JS syntax can be tested with `node --check app.js` if Node.js is installed.
