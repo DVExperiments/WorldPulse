@@ -106,7 +106,7 @@ function bindLivingEarthTexture(){
 }
 function updateLivingEarth(now){
  if(!globe||state.visualMode!=='neon'||!ambientBaseCanvas||!ambientLiveCanvas||document.hidden)return;
- if(now-ambientLastFrame<220)return;
+ if(now-ambientLastFrame<85)return;
  ambientLastFrame=now;
  if(!bindLivingEarthTexture())return;
  const ctx=ambientLiveCanvas.getContext('2d');
@@ -617,12 +617,12 @@ function initVisualControls(){
   state.visualMode=button.dataset.visual;localStorage.setItem('worldpulse-globe-mode',state.visualMode);applyVisualMode();
  }));
  const glow=document.getElementById('twinkleToggle');
- if(glow)glow.onchange=()=>{state.twinkle=glow.checked;updateLivingEarth(performance.now()+220)};
+ if(glow)glow.onchange=()=>{state.twinkle=glow.checked;updateLivingEarth(performance.now()+90)};
  document.body.classList.toggle('wp-neon',state.visualMode==='neon');
  document.querySelectorAll('[data-visual]').forEach(b=>b.classList.toggle('active',b.dataset.visual===state.visualMode));
- // Smooth enough to be perceptible, slow enough to stay inexpensive on laptops.
+ // v1.6D.7: target ~11 frames per second (was ~4), keeping uploads capped.
  // Avoid requesting WebGL updates when the document is hidden.
  // Animate the existing globe texture rather than rebuilding news WebGL points.
- if(!ambientTimer)ambientTimer=setInterval(()=>{if(!document.hidden&&state.visualMode==='neon')updateLivingEarth(performance.now())},240);
+ if(!ambientTimer)ambientTimer=setInterval(()=>{if(!document.hidden&&state.visualMode==='neon')updateLivingEarth(performance.now())},90);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)ambientLastFrame=0});
 }
