@@ -10,3 +10,12 @@ body.wp-neon #globe canvas{filter:drop-shadow(0 0 16px rgba(0,229,233,.27)) satu
 body.wp-neon .mark{color:#53ffed;text-shadow:0 0 10px rgba(44,255,234,.6)}
 body.wp-neon .live-dot{box-shadow:0 0 13px 3px rgba(81,255,214,.45)}
 @media(max-width:650px){.wp-visual-modes button{font-size:12px;padding:10px 7px}}
+/* v1.6B: luminous cartography, calm ambient space, data-grounded light blooms */
+body.wp-neon #scene{background:radial-gradient(ellipse at 55% 45%,#08303f 0%,#031b2a 41%,#010914 80%);isolation:isolate;}
+body.wp-neon #scene::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.27;background-image:radial-gradient(circle,#62f9ec 0.65px,transparent 1.15px),radial-gradient(circle,#9cf5ff .5px,transparent 1.1px);background-size:131px 137px,211px 197px;background-position:19px 43px,105px 18px;}
+body.wp-neon #globe canvas{filter:drop-shadow(0 0 24px rgba(0,240,238,.40)) saturate(1.28);}
+.wp-signal-halo{display:block;border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);background:radial-gradient(circle,var(--signal-color) 0%,transparent 67%);opacity:.47;box-shadow:0 0 13px 2px var(--signal-color);animation:wp-shimmer 5.8s ease-in-out infinite;}
+@keyframes wp-shimmer{0%,100%{opacity:.30;transform:translate(-50%,-50%) scale(.88)}50%{opacity:.57;transform:translate(-50%,-50%) scale(1.12)}}
+@media(prefers-reduced-motion:reduce){.wp-signal-halo{animation:none;opacity:.35}}
+body.wp-neon .side,body.wp-neon aside{border-color:rgba(72,220,229,.20)}
+body.wp-neon button:focus-visible{outline:2px solid #62eae9;outline-offset:2px}

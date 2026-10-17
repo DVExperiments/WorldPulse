@@ -57,7 +57,7 @@ function renderPoints(){if(!globe)return;let data=state.layer==='news'?state.new
  // Country-level subjects remain small selectable anchors; never imply an event footprint.
  // All perpetual pulse rings are disabled: they were country-only and caused clutter.
  const mapped=state.layer==='news'?data.map(p=>p.accuracy==='country'?{...p,broadAnchor:true}:p):data;
- currentPoints=aggregate(mapped);globe.pointsData(currentPoints);refreshSignalGlow();renderCoverage();
+ currentPoints=aggregate(mapped);globe.pointsData(currentPoints);refreshSignalGlow();refreshMarkerHalos();renderCoverage();
  $('locations').textContent=data.length.toLocaleString();$('total').textContent=data.reduce((n,p)=>n+p.count,0).toLocaleString();
 }
 function pickPlace(pos){let source=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.layer==='events'?(state.categories.has('hazards')?state.events:[]):state.posts;
@@ -253,27 +253,51 @@ function makeNeonTexture(){
  for(let lon=-180;lon<180;lon+=15){const x=(lon+180)/360*2048;ctx.strokeStyle=lon===0?'rgba(24,244,239,.34)':'rgba(26,201,221,.20)';ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,1024);ctx.stroke();}
  neonTextureUrl=canvas.toDataURL('image/png');return neonTextureUrl;
 }
+// v1.6B cartography: generated in-browser from country geometries, not news data.
+// A raster mask avoids doing thousands of costly point-in-country searches.
 function updateNeonTexture(){
- if(!globe||state.visualMode!=='neon')return;
- const canvas=document.createElement('canvas');canvas.width=2048;canvas.height=1024;
- const ctx=canvas.getContext('2d');const img=new Image();
- img.onload=()=>{
-  ctx.drawImage(img,0,0,2048,1024);
-  if(state.countries.length&&typeof d3!=='undefined'){
-   const projection=d3.geoEquirectangular().translate([1024,512]).scale(2048/(2*Math.PI));
-   const path=d3.geoPath(projection,ctx);
-   ctx.fillStyle='rgba(0,142,159,.06)';ctx.strokeStyle='rgba(49,242,238,.9)';ctx.lineWidth=1.1;
-   for(const feature of state.countries){ctx.beginPath();path(feature);ctx.fill();ctx.stroke();}
-   // Tiny dotted points on land, purely cartographic texture, not news markers.
-   ctx.fillStyle='rgba(40,239,228,.32)';
-   for(let lat=-82;lat<=82;lat+=4){for(let lng=-178;lng<=178;lng+=4){
-    if(!state.countries.some(f=>d3.geoContains(f,[lng,lat])))continue;
-    const [x,y]=projection([lng,lat]);ctx.beginPath();ctx.arc(x,y,1.05,0,Math.PI*2);ctx.fill();
-   }}
-  }
-  neonTextureUrl=canvas.toDataURL('image/png');globe.globeImageUrl(neonTextureUrl);
- };
- img.src=makeNeonTexture();
+ if(!globe||state.visualMode!=='neon'||!state.coverageReady||!state.countries.length||typeof d3==='undefined')return;
+ const W=2048,H=1024,canvas=document.createElement('canvas');canvas.width=W;canvas.height=H;
+ const ctx=canvas.getContext('2d'),projection=d3.geoEquirectangular().translate([W/2,H/2]).scale(W/(2*Math.PI));
+ const path=d3.geoPath(projection,ctx);
+ ctx.fillStyle='#020d1c';ctx.fillRect(0,0,W,H);
+ // Quiet grid; the bright coastlines, not the meridians, define the Earth.
+ ctx.lineWidth=.85;
+ for(let lat=-75;lat<=75;lat+=15){let y=(90-lat)*H/180;ctx.strokeStyle=lat===0?'rgba(38,225,229,.19)':'rgba(30,170,195,.12)';ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke()}
+ for(let lon=-180;lon<=180;lon+=15){let x=(lon+180)*W/360;ctx.strokeStyle=lon===0?'rgba(38,225,229,.18)':'rgba(30,170,195,.13)';ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke()}
+ // Render land as a pixel mask and sample it for a much denser dotted silhouette.
+ const mask=document.createElement('canvas');mask.width=W;mask.height=H;const mc=mask.getContext('2d',{willReadFrequently:true});
+ mc.fillStyle='#ffffff';for(const feature of state.countries){mc.beginPath();path.context(mc)(feature);mc.fill()}path.context(ctx);
+ const pixels=mc.getImageData(0,0,W,H).data;
+ ctx.fillStyle='rgba(14,100,119,.15)';for(const feature of state.countries){ctx.beginPath();path(feature);ctx.fill()}
+ for(let y=4;y<H-4;y+=5){for(let x=4;x<W-4;x+=5){
+  if(pixels[(y*W+x)*4+3]<128)continue;
+  const rnd=Math.abs(Math.sin(x*12.9898+y*78.233)*43758.5453)%1;
+  if(rnd<.17)continue;
+  const radius=rnd>.95?1.18:.62;
+  ctx.fillStyle=rnd>.94?'rgba(99,255,239,.82)':rnd>.54?'rgba(56,224,225,.47)':'rgba(30,160,181,.29)';
+  ctx.fillRect(x,y,radius*2,radius*2);
+ }}
+ // Separate broad bloom, thin shore glow and crisp geographic contour.
+ for(const [blur,color,width] of [[13,'rgba(0,238,242,.65)',2.4],[5,'rgba(38,250,246,.85)',1.6],[0,'rgba(94,255,252,.89)',.8]]){
+  ctx.save();ctx.shadowColor='#00ffff';ctx.shadowBlur=blur;ctx.strokeStyle=color;ctx.lineWidth=width;
+  for(const feature of state.countries){ctx.beginPath();path(feature);ctx.stroke()}ctx.restore();
+ }
+ neonTextureUrl=canvas.toDataURL('image/png');globe.globeImageUrl(neonTextureUrl);
+}
+// Decorative glow around actual map signals. Never generates additional locations.
+function refreshMarkerHalos(){
+ if(!globe||typeof globe.htmlElementsData!=='function')return;
+ if(state.visualMode!=='neon'){globe.htmlElementsData([]);return}
+ const points=currentPoints.filter(p=>Number.isFinite(p.lat)&&Number.isFinite(p.lng));
+ globe.htmlLat('lat').htmlLng('lng').htmlAltitude(p=>.017).htmlElement(p=>{
+  const e=document.createElement('span');e.className='wp-signal-halo';
+  const rgb=COLORS[p.category]||'#70e8de';e.style.setProperty('--signal-color',rgb);
+  const size=Math.min(38,9+Math.sqrt(Math.max(1,p.count||1))*5);
+  e.style.width=size+'px';e.style.height=size+'px';
+  e.style.animationDelay=(-(Math.abs(p.lat*19+p.lng*31)%5)).toFixed(2)+'s';
+  return e;
+ }).htmlElementsData(points);
 }
 function applyVisualMode(){
  if(!globe)return;
@@ -285,6 +309,7 @@ function applyVisualMode(){
  globe.pointRadius(p=>state.visualMode==='neon'?Math.min(1.3,.25+Math.sqrt(p.count)*.16):p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11));
  globe.pointColor(p=>neonPointColor(p));
  if(state.visualMode==='neon'&&state.coverageReady)updateNeonTexture();
+ refreshMarkerHalos();
  // Satellite view uses original bump texture; neon surface stays completely smooth.
  globe.bumpImageUrl(state.visualMode==='real'?'https://unpkg.com/three-globe/example/img/earth-topology.png':null);
  renderPoints();
