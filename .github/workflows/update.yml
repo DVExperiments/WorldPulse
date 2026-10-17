@@ -36,14 +36,14 @@ jobs:
           git reset --hard origin/main
           echo "Starting from main at $(git rev-parse --short HEAD)"
       - name: Fetch multi-source global RSS news coverage
-        run: python scripts/update.py
+        run: python scripts/run_all.py
       - name: Commit updated snapshot (v1.4A push repair)
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/news.json data/history.json data/source-health.json data/article-history.json data/data-health.json
+          git add data/news.json data/history.json data/source-health.json data/article-history.json data/data-health.json data/events.json
           if git diff --cached --quiet; then
             echo 'No snapshot changes to commit.'
             exit 0
