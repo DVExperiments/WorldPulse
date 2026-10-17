@@ -79,6 +79,67 @@ function ambientSettlementDensity(lat,lng){
 }
 
 let neonTextureUrl=null,twinkleFrame=0;
+// v1.6D.4: the population grid, not news signals, owns the living shimmer.
+let ambientBaseCanvas=null, ambientLiveCanvas=null, ambientGridSamples=[];
+let ambientLastFrame=0, ambientStarted=false;
+let ambientGpuTexture=null,ambientGpuMaterial=null,ambientFrames=0,ambientUploads=0,ambientTimer=null,ambientError='';
+let ambientContrastTest=false;
+const wpReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+if(wpReducedMotion.matches)state.twinkle=false;
+window.WorldPulseShimmerTest=(enabled=true)=>{ambientContrastTest=!!enabled;return {testMode:ambientContrastTest, message:'Temporary high-contrast test mode; call WorldPulseShimmerTest(false) to disable.'}};
+function ambientHash(n){const v=Math.sin(n*12.9898)*43758.5453;return v-Math.floor(v)}
+function clearAmbientTexture(){ambientBaseCanvas=null;ambientLiveCanvas=null;ambientGridSamples=[];ambientStarted=false;ambientLastFrame=0;ambientFrames=0;ambientUploads=0;ambientGpuTexture=null;ambientGpuMaterial=null;ambientError=''}
+function bindLivingEarthTexture(){
+ if(!globe||!ambientLiveCanvas||state.visualMode!=='neon')return false;
+ const material=globe.globeMaterial?.();
+ if(!material?.map)return false;
+ if(ambientGpuTexture===material.map&&ambientGpuMaterial===material)return true;
+ try{
+  const previous=material.map;
+  const live=new previous.constructor(ambientLiveCanvas);
+  for(const key of ['colorSpace','encoding','mapping','wrapS','wrapT','magFilter','minFilter','anisotropy','flipY','premultiplyAlpha','generateMipmaps']){
+   try{if(previous[key]!==undefined)live[key]=previous[key]}catch{}
+  }
+  live.needsUpdate=true;material.map=live;material.needsUpdate=true;
+  ambientGpuTexture=live;ambientGpuMaterial=material;ambientStarted=true;
+  console.info('WorldPulse: living Earth canvas texture attached to globe material');
+  return true;
+ }catch(e){ambientError=String(e);console.warn('WorldPulse canvas texture:',e);return false}
+}
+function updateLivingEarth(now){
+ if(!globe||state.visualMode!=='neon'||!ambientBaseCanvas||!ambientLiveCanvas||document.hidden)return;
+ if(now-ambientLastFrame<135)return;
+ ambientLastFrame=now;
+ if(!bindLivingEarthTexture())return;
+ const ctx=ambientLiveCanvas.getContext('2d');
+ ctx.clearRect(0,0,ambientLiveCanvas.width,ambientLiveCanvas.height);
+ ctx.drawImage(ambientBaseCanvas,0,0);
+ if(state.twinkle&&!wpReducedMotion.matches){
+  const t=now/1000;
+  for(const dot of ambientGridSamples){
+   // Smoothly interpolated seeded noise, not a repeating sine wave.
+   const seed=dot.u*131.73+dot.v*17.37+dot.phase*3.91;
+   // Slower, irregular ambient drift with eased transitions and no flashes.
+   const q=t*(.78+.42*dot.speed)+dot.phase;
+   const frame=Math.floor(q),fraction=q-frame;
+   const eased=fraction*fraction*(3-2*fraction);
+   const randomAt=k=>ambientHash(seed+k*41.13);
+   const jitter=randomAt(frame)*(1-eased)+randomAt(frame+1)*eased;
+   const slow=q*.31,si=Math.floor(slow),sf=slow-si;
+   const blend=sf*sf*(3-2*sf);
+   const drift=randomAt(si+903)*(1-blend)+randomAt(si+904)*blend;
+   const flicker=.78*jitter+.22*drift;
+   const brightness=ambientContrastTest
+     ? .10+.68*flicker
+     : Math.min(.82,.035+dot.base*(.22+2.0*flicker));
+   ctx.fillStyle=`rgba(171,255,249,${brightness.toFixed(3)})`;
+   ctx.fillRect(dot.u,dot.v,ambientContrastTest?2:1.65,ambientContrastTest?2:1.65);
+  }
+ }
+ ambientFrames++;ambientGpuTexture.needsUpdate=true;ambientUploads++;
+}
+window.WorldPulseShimmerStatus=()=>({mode:state.visualMode,enabled:state.twinkle,dots:ambientGridSamples.length,canvasBound:!!ambientGpuTexture&&ambientGpuMaterial?.map===ambientGpuTexture,displayedTextureIsCanvas:ambientGpuMaterial?.map?.image===ambientLiveCanvas,testMode:ambientContrastTest,reducedMotion:wpReducedMotion.matches,frames:ambientFrames,uploadsRequested:ambientUploads,lastError:ambientError});
+
 let measuredPopulationImage=null, measuredPopulationStatus='not-loaded';
 
 let permanentBorders=[]; // Cartographic geometry, completely independent of news data
@@ -97,7 +158,7 @@ function initGlobe(){
   .pointColor(p=>signalColor(p))
   .pointAltitude(p=>signalAltitude(p))
   .pointRadius(p=>signalRadius(p))
-  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
+  .pointLabel(p=>`${clean((p.signalSource||p).name)} · ${(p.signalSource||p).count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
   .ringsData([])
   .polygonsData([]).polygonCapColor(p=>coverageColor(p.properties.wpCount||0))
   .polygonSideColor(()=>'rgba(22,68,85,0.05)').polygonStrokeColor(()=>'rgba(167,204,219,0.26)')
@@ -113,9 +174,9 @@ function initGlobe(){
  const resize=()=>{if(!globe)return;globe.width($('scene').clientWidth);globe.height($('scene').clientHeight)};
  new ResizeObserver(resize).observe($('scene'));resize();
 }
-function tier(){if(!globe)return 0;let alt=globe.pointOfView().altitude;return alt>1.4?0:alt>.72?1:alt>.30?2:3}
-function aggregate(items){if(!state.cluster||tier()===3)return items.map(p=>({...p,members:[p]}));
- let size=[19,9,4.5,1.5][tier()];let groups=new Map();
+function tier(){if(!globe)return 0;let alt=globe.pointOfView().altitude;return alt>.72?0:alt>.30?1:2}
+function aggregate(items){if(!state.cluster||tier()===2)return items.map(p=>({...p,members:[p]}));
+ let size=[9,4.5,1.5][tier()];let groups=new Map();
  for(let p of items){let x=Math.floor((p.lng+180)/size),y=Math.floor((p.lat+90)/size);let key=`${p.category}_${x}_${y}`;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(p)}
  return [...groups.values()].map(members=>{
   if(members.length===1)return {...members[0],members};
@@ -450,6 +511,7 @@ function updateNeonTexture(){
    x.fillStyle=g;x.beginPath();x.arc(u,v,radius,0,Math.PI*2);x.fill();
   }
   const gridStep=5;
+ const shimmerDots=[];
   for(let v=2;v<H;v+=gridStep)for(let u=2;u<W;u+=gridStep){
    if(alpha[(v*W+u)*4+3]<128)continue;
    const lat=90-(v/H)*180,lon=(u/W)*360-180;
@@ -457,11 +519,17 @@ function updateNeonTexture(){
    // Perceptually lift intermediate density without flattening contrast.
    const t=Math.pow(Math.max(0,Math.min(1,density)),.82);
    const variation=(Math.abs(Math.sin(u*12.9898+v*78.233)*43758.5453)%1-.5)*.045;
-   const opacity=Math.max(.085,Math.min(.70,.09+.56*t+variation));
+   const opacity=Math.max(.11,Math.min(.78,.13+.62*t+variation));
    const channelG=Math.round(150+77*t);
    const channelB=Math.round(172+59*t);
-   x.fillStyle=`rgba(57,${channelG},${channelB},${opacity.toFixed(3)})`;
+   x.fillStyle=`rgba(69,${channelG},${channelB},${opacity.toFixed(3)})`;
    x.fillRect(u,v,1.35,1.35);
+   // Select a stable subset of EXISTING grid points for gentle shimmer.
+   // Every dot stays at the same coordinate and size across all frames.
+   const h=ambientHash(u*19+v*71);
+   if(h>.67 && shimmerDots.length<16000){
+    shimmerDots.push({u,v,base:.18+.27*t,phase:h*125.7,speed:.65+.65*ambientHash(u*3+v*7)});
+   }
   }
   // Permanent boundaries: doubled luminous strokes, fixed to the Earth texture.
   for(const [width,color,blur] of [[4,'rgba(0,240,233,.23)',7],[1.35,'rgba(56,240,235,.88)',0]]){
@@ -469,7 +537,16 @@ function updateNeonTexture(){
    for(const poly of polys)for(const ring of poly)traceRing(ring);
    x.restore();
   }
+  // Retain a static master and animated clone. The outlines are part of the
+  // master so that they never shift, blink or disappear while dots shimmer.
+  clearAmbientTexture();
+  ambientBaseCanvas=c;
+  ambientLiveCanvas=document.createElement('canvas');
+  ambientLiveCanvas.width=W;ambientLiveCanvas.height=H;
+  ambientLiveCanvas.getContext('2d').drawImage(c,0,0);
+  ambientGridSamples=shimmerDots;
   neonTextureUrl=c.toDataURL('image/png');globe.globeImageUrl(neonTextureUrl);
+  console.info('WorldPulse: living population grid initialized:',shimmerDots.length,'shimmer-capable dots');
  }catch(error){console.error('WorldPulse neon cartography texture:',error);}
 }
 // Decorative glow around actual map signals. Never generates additional locations.
@@ -483,6 +560,7 @@ function applyVisualMode(){
  if(!globe)return;
  document.body.classList.toggle('wp-neon',state.visualMode==='neon');
  document.querySelectorAll('[data-visual]').forEach(b=>{b.classList.toggle('active',b.dataset.visual===state.visualMode);b.setAttribute('aria-pressed',String(b.dataset.visual===state.visualMode));});
+ if(state.visualMode!=='neon')clearAmbientTexture();
  globe.globeImageUrl(state.visualMode==='neon'?makeNeonTexture():REAL_EARTH);
  globe.atmosphereColor(state.visualMode==='neon'?'#00e7ee':'#4baec0').atmosphereAltitude(state.visualMode==='neon'?.095:.14);
  globe.pointAltitude(p=>signalAltitude(p));
@@ -496,50 +574,74 @@ function applyVisualMode(){
  renderPoints();
 }
 // v1.6D: all decorative light is derived from actual signals. No synthetic locations.
+// v1.6E.2: all cluster styling is applied exclusively to the news-point layer.
+// These WebGL points are not population grid cells, which are in the globe texture.
 function signalRadius(p){
  if(state.visualMode!=='neon')return p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11);
- const size=Math.min(1.55,.27+Math.sqrt(Math.max(1,p.count))*.17);
- return p.wpHalo ? Math.min(2.8,size*1.8) : size;
+ if(p.wpMemberDot)return .16;
+ if(p.wpClusterCore)return .25;
+ return p.broadAnchor?.23:.27;
 }
 function signalAltitude(p){
  if(state.visualMode!=='neon')return Math.min(.08,.011+Math.log1p(p.count)*.008);
- return p.wpHalo ? .003 : .013;
+ // Flat disks close to the surface, rather than tall cylinders.
+ return p.wpMemberDot?.0016:.002;
 }
 function signalColor(p){
  const base=COLORS[p.category]||COLORS.social;
  if(state.visualMode!=='neon')return base;
- if(p.wpHalo){
-  // Low-opacity cyan/category light under the core. Alpha deliberately capped.
-  const rgb=hexRgb(base);
-  const activity=Math.min(1,Math.log1p(p.count)/Math.log(25));
-  return `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${(.085+.11*activity).toFixed(3)})`;
- }
- return neonPointColor(p);
+ if(p.wpMemberDot)return base;
+ if(p.wpClusterCore)return blendTowardWhite(base,.18);
+ return base;
 }
 function hexRgb(hex){return [1,3,5].map(i=>parseInt(hex.slice(i,i+2),16))}
+// Render actual mapped cluster members at their real positions, not a synthetic ring
+// surrounding an oversized central cylinder. Exact duplicate coordinates get a
+// tiny render-only displacement; the source point remains unchanged for clicks.
 function signalDisplayPoints(points){
- if(state.visualMode!=='neon')return points;
- const halos=points.filter(p=>p.count>=2).map(p=>({...p,wpHalo:true,signalSource:p}));
- return [...halos,...points];
+ if(state.visualMode!=='neon'||state.layer!=='news')return points;
+ const shown=[];
+ for(const group of points){
+  const members=group.members||[group];
+  if(!state.cluster||members.length<2||tier()===2){shown.push(group);continue;}
+  const ordered=[...members].sort((a,b)=>b.count-a.count);
+  const maxDots=Math.min(12,ordered.length);
+  shown.push({...group,wpClusterCore:true,signalSource:group});
+  for(let i=0;i<maxDots;i++){
+   const member=ordered[i];
+   // If the article location coincides with the centre, offset just enough
+   // to make the lights distinct; otherwise use the real geographic location.
+   const near=Math.abs(member.lat-group.lat)<.14 && Math.abs(member.lng-group.lng)<.14;
+   const angle=i*2.399963229728653;
+   const lat=near?Math.max(-89.8,Math.min(89.8,member.lat+Math.sin(angle)*.38)):member.lat;
+   const lng=near?((member.lng+Math.cos(angle)*.38/Math.max(.4,Math.cos(member.lat*Math.PI/180))+540)%360)-180:member.lng;
+   shown.push({...member,lat,lng,wpMemberDot:true,signalSource:group});
+  }
+ }
+ return shown;
 }
-// Visible but restrained twinkle: a small rotating subset of real news signals
-// brightens on each frame. The map and ambient population grid never animate.
+// v1.6D.2: continuous, slow optical shimmer. This is decorative rather than
+// an indicator of story age, urgency or news velocity. Nothing is re-geolocated.
+function signalPhase(p){
+ const n=Math.sin(p.lat*12.9898+p.lng*78.233)*43758.5453;
+ return (n-Math.floor(n))*Math.PI*2;
+}
+function shimmerAmount(p,now){
+ const phase=signalPhase(p);
+ const seconds=now/1000;
+ // Three spatially staggered slow waves prevent synchronous flashing.
+ const wave=Math.sin(seconds*(.74+(phase/Math.PI)*.075)+phase);
+ const glint=Math.pow(Math.max(0,Math.sin(seconds*1.36+phase*2.9)),10);
+ return Math.min(1,.31+.27*wave+.40*glint);
+}
+function blendTowardWhite(hex,mix){
+ const rgb=hexRgb(hex);
+ const k=Math.max(0,Math.min(1,mix));
+ return `rgb(${rgb.map(v=>Math.round(v+(255-v)*k)).join(',')})`;
+}
 function refreshSignalGlow(){
- if(!globe||!currentPoints.length)return;
- if(state.visualMode!=='neon'||!state.twinkle){globe.pointColor(p=>signalColor(p));return}
- const tick=Math.floor(Date.now()/950);
- globe.pointColor(p=>{
-  if(p.wpHalo)return signalColor(p);
-  const base=COLORS[p.category]||COLORS.social;
-  // Stable geographical seed ensures twinkles stay attached to real signals.
-  const seed=Math.abs(Math.sin(p.lat*12.9898+p.lng*78.233)*43758.5453);
-  const slot=Math.floor((seed%1)*23);
-  // Each signal sparkles for one of 23 frames, or ~1 second per 22 seconds.
-  const sparkle=(tick+slot)%23===0;
-  if(!sparkle)return base;
-  const rgb=hexRgb(base);
-  return `rgb(${Math.round(rgb[0]+(255-rgb[0])*.74)},${Math.round(rgb[1]+(255-rgb[1])*.74)},${Math.round(rgb[2]+(255-rgb[2])*.74)})`;
- });
+ // Retained for existing rendering hooks; news signals are intentionally static.
+ if(globe)globe.pointsData(signalDisplayPoints(currentPoints));
 }
 
 function initVisualControls(){
@@ -548,8 +650,13 @@ function initVisualControls(){
   state.visualMode=button.dataset.visual;localStorage.setItem('worldpulse-globe-mode',state.visualMode);applyVisualMode();
  }));
  const glow=document.getElementById('twinkleToggle');
- if(glow)glow.onchange=()=>{state.twinkle=glow.checked;applyVisualMode()};
+ if(glow){glow.checked=state.twinkle;glow.onchange=()=>{state.twinkle=glow.checked;ambientLastFrame=0;updateLivingEarth(performance.now())};}
+ wpReducedMotion.addEventListener?.('change',e=>{if(e.matches){state.twinkle=false;if(glow)glow.checked=false;ambientLastFrame=0;updateLivingEarth(performance.now());}});
  document.body.classList.toggle('wp-neon',state.visualMode==='neon');
  document.querySelectorAll('[data-visual]').forEach(b=>b.classList.toggle('active',b.dataset.visual===state.visualMode));
- setInterval(refreshSignalGlow,950);
+ // v1.6D.10: slower, smoothed ambient flicker; ~5fps texture refresh cap.
+ // Avoid requesting WebGL updates when the document is hidden.
+ // Animate the existing globe texture rather than rebuilding news WebGL points.
+ if(!ambientTimer)ambientTimer=setInterval(()=>{if(!document.hidden&&state.visualMode==='neon'&&state.twinkle&&!wpReducedMotion.matches)updateLivingEarth(performance.now())},140);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)ambientLastFrame=0});
 }

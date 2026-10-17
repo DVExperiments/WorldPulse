@@ -1,17 +1,16 @@
-# WorldPulse v1.6E — Constellation News Clusters
+# WorldPulse v1.6E.2 — News markers and population grid separation
 
-A frontend-only visual patch based on v1.6D.11. It retains the balanced population-grid flicker, permanent neon borders, news filters, and the working data pipeline.
+This is a corrective patch on top of v1.6E.1.
 
-## What changed
-- Collapsed news groups now show a **central clickable signal with up to seven small category-coloured satellite lights** instead of a single giant dot.
-- Soft category glow scales logarithmically with mapped article volume.
-- Constellation details disappear at close zoom or when clustering is disabled.
-- Category-specific grouping and the existing less-aggressive geographic grouping are preserved.
-- Decorative mini-lights open the **same original news cluster**. They are **not** additional reports or verified positions.
-- Reduced motion users see static constellation visuals, without a new animation effect.
+## Changes
+- **News only:** removes large cluster halos and cylinder-like oversized cores; keeps a small central clickable news marker, with satellite news markers sourced from the cluster's **real mapped member coordinates** (capped at 12 for performance). News category colours are preserved. Clicking a satellite opens the same news group.
+- **Population only:** slightly raises the static background cyan-dot opacity so population lights remain clearly visible beneath the news layer. The balanced slow, irregular v1.6D.11 shimmer algorithm is unchanged.
+- Does not change news data, categories, collection, geocoding, border geometry, cluster cell sizes, or GitHub Actions.
 
-## Installation
-Replace only `app.js` in the root of your WorldPulse GitHub Pages repository. Keep the current `index.html`, CSS, `world-borders.geojson`, population raster, collectors, data files, and `.github/workflows/update.yml` unchanged. Commit and hard-refresh after Pages deployment.
+## Install
+Replace only the repository-root `app.js` and hard refresh after GitHub Pages redeploys. Keep all data files, population-density raster, styles and `.github/workflows/update.yml` unchanged.
 
-## Limitations
-The constellation layout is a local decorative arrangement near each aggregated geographic centre. It must not be interpreted as precise locations for its satellite lights. Cluster article counts still refer only to the underlying news records. This patch has been syntax-checked but needs visual testing in the deployed browser.
+## Notes
+The news dots are still globe.gl's point cylinders, but their radii and heights are greatly reduced. This patch prioritizes actual geolocations and distinct points over synthetic decorative rings. The small rendering-only displacement is used solely when a news signal sits essentially on the core, to prevent exact overlap.
+
+Browser/WebGL appearance must be tested on the live site. If it still looks too cylindrical, the next architectural step is to use custom THREE.Sprite objects for **news only**, which would require dedicated click/pointer handling.
