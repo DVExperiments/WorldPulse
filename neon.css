@@ -19,3 +19,7 @@ body.wp-neon #globe canvas{filter:drop-shadow(0 0 24px rgba(0,240,238,.40)) satu
 @media(prefers-reduced-motion:reduce){.wp-signal-halo{animation:none;opacity:.35}}
 body.wp-neon .side,body.wp-neon aside{border-color:rgba(72,220,229,.20)}
 body.wp-neon button:focus-visible{outline:2px solid #62eae9;outline-offset:2px}
+
+/* v1.6B.1 — bright geographic outlines, no screen-space marker sprites */
+.wp-signal-halo{display:none!important}
+body.wp-neon #globe canvas{filter:drop-shadow(0 0 13px rgba(0,232,234,.27)) saturate(1.18)}
