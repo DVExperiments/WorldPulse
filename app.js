@@ -108,7 +108,7 @@ function bindLivingEarthTexture(){
 }
 function updateLivingEarth(now){
  if(!globe||state.visualMode!=='neon'||!ambientBaseCanvas||!ambientLiveCanvas||document.hidden)return;
- if(now-ambientLastFrame<185)return;
+ if(now-ambientLastFrame<135)return;
  ambientLastFrame=now;
  if(!bindLivingEarthTexture())return;
  const ctx=ambientLiveCanvas.getContext('2d');
@@ -120,25 +120,25 @@ function updateLivingEarth(now){
    // Smoothly interpolated seeded noise, not a repeating sine wave.
    const seed=dot.u*131.73+dot.v*17.37+dot.phase*3.91;
    // Slower, irregular ambient drift with eased transitions and no flashes.
-   const q=t*(.38+.26*dot.speed)+dot.phase;
+   const q=t*(.78+.42*dot.speed)+dot.phase;
    const frame=Math.floor(q),fraction=q-frame;
    const eased=fraction*fraction*(3-2*fraction);
    const randomAt=k=>ambientHash(seed+k*41.13);
    const jitter=randomAt(frame)*(1-eased)+randomAt(frame+1)*eased;
-   const slow=q*.22,si=Math.floor(slow),sf=slow-si;
+   const slow=q*.31,si=Math.floor(slow),sf=slow-si;
    const blend=sf*sf*(3-2*sf);
    const drift=randomAt(si+903)*(1-blend)+randomAt(si+904)*blend;
-   const flicker=.52*jitter+.48*drift;
+   const flicker=.78*jitter+.22*drift;
    const brightness=ambientContrastTest
      ? .10+.68*flicker
-     : Math.min(.72,.06+dot.base*(.42+.90*flicker));
+     : Math.min(.82,.035+dot.base*(.22+2.0*flicker));
    ctx.fillStyle=`rgba(171,255,249,${brightness.toFixed(3)})`;
    ctx.fillRect(dot.u,dot.v,ambientContrastTest?2:1.65,ambientContrastTest?2:1.65);
   }
  }
  ambientFrames++;ambientGpuTexture.needsUpdate=true;ambientUploads++;
 }
-window.WorldPulseShimmerStatus=()=>({mode:state.visualMode,enabled:state.twinkle,dots:ambientGridSamples.length,canvasBound:!!ambientGpuTexture&&ambientGpuMaterial?.map===ambientGpuTexture,displayedTextureIsCanvas:ambientGpuMaterial?.map?.image===ambientLiveCanvas,testMode:ambientContrastTest,frames:ambientFrames,uploadsRequested:ambientUploads,lastError:ambientError});
+window.WorldPulseShimmerStatus=()=>({mode:state.visualMode,enabled:state.twinkle,dots:ambientGridSamples.length,canvasBound:!!ambientGpuTexture&&ambientGpuMaterial?.map===ambientGpuTexture,displayedTextureIsCanvas:ambientGpuMaterial?.map?.image===ambientLiveCanvas,testMode:ambientContrastTest,reducedMotion:wpReducedMotion.matches,frames:ambientFrames,uploadsRequested:ambientUploads,lastError:ambientError});
 
 let measuredPopulationImage=null, measuredPopulationStatus='not-loaded';
 
@@ -637,6 +637,6 @@ function initVisualControls(){
  // v1.6D.10: slower, smoothed ambient flicker; ~5fps texture refresh cap.
  // Avoid requesting WebGL updates when the document is hidden.
  // Animate the existing globe texture rather than rebuilding news WebGL points.
- if(!ambientTimer)ambientTimer=setInterval(()=>{if(!document.hidden&&state.visualMode==='neon'&&state.twinkle&&!wpReducedMotion.matches)updateLivingEarth(performance.now())},190);
+ if(!ambientTimer)ambientTimer=setInterval(()=>{if(!document.hidden&&state.visualMode==='neon'&&state.twinkle&&!wpReducedMotion.matches)updateLivingEarth(performance.now())},140);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)ambientLastFrame=0});
 }
