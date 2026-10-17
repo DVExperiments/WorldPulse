@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-17T17:27:50.190285+00:00",
+ "updated_at": "2026-10-17T17:44:08.397237+00:00",
  "feeds_total": 119,
  "feeds_ok": 115,
  "feeds_failed": [
@@ -13,94 +13,94 @@
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 116
+   "mapped_pre_dedupe": 124
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 98
+   "mapped_pre_dedupe": 101
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 118
+   "mapped_pre_dedupe": 127
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 98
+   "mapped_pre_dedupe": 100
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 115
+   "mapped_pre_dedupe": 122
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 83
+   "mapped_pre_dedupe": 101
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 118
+   "mapped_pre_dedupe": 124
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 99
+   "mapped_pre_dedupe": 101
   }
  },
  "mapped_articles_by_category": {
-  "community": 105,
-  "education": 38,
+  "community": 106,
+  "education": 42,
+  "society": 37,
   "hazards": 18,
-  "society": 36,
-  "economy": 44,
-  "politics": 36,
-  "health": 51,
-  "conflict": 24,
+  "economy": 43,
+  "politics": 37,
+  "health": 52,
+  "conflict": 27,
   "rights": 6,
-  "science": 10,
+  "science": 11,
   "environment": 8
  },
  "mapped_articles_by_location_precision": {
-  "country": 234,
-  "place": 133,
-  "region": 9
+  "country": 238,
+  "place": 136,
+  "region": 13
  },
  "location_evidence_counts": {
-  "headline": 317,
-  "description": 59
+  "headline": 325,
+  "description": 62
  },
  "geographic_quadrants": {
-  "NE": 245,
-  "NW": 88,
+  "NE": 250,
+  "NW": 94,
   "SE": 35,
   "SW": 8
  },
- "geo_signal_count": 205,
- "mapped_total": 376,
+ "geo_signal_count": 212,
+ "mapped_total": 387,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1125,
- "unmapped_distinct_titles": 392,
+ "unmapped_sample_count": 1096,
+ "unmapped_distinct_titles": 378,
  "unmapped_by_feed": {
-  "Google News US": 178,
-  "Google News IN": 168,
-  "Google News PH": 167,
-  "Google News ZA": 164,
-  "Google News CA": 100,
-  "Google News AU": 87,
-  "Google News GB": 85,
-  "Google News NG": 83,
+  "Google News US": 169,
+  "Google News IN": 164,
+  "Google News PH": 162,
+  "Google News ZA": 159,
+  "Google News CA": 99,
+  "Google News NG": 85,
+  "Google News AU": 84,
+  "Google News GB": 81,
   "RNZ National": 14,
   "France24 ES": 14,
   "France24 FR": 11,
-  "ABC Australia": 10,
   "BBC Brasil": 10,
+  "ABC Australia": 9,
   "BBC World": 7,
+  "The Guardian World": 6,
   "Al Jazeera": 5,
-  "The Guardian World": 5,
   "France24": 4,
   "BBC Science": 3
  },
@@ -390,52 +390,52 @@
  "direct_source_breakdown": {
   "configured": 31,
   "successful": 27,
-  "mapped_pre_dedupe": 147
+  "mapped_pre_dedupe": 148
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 116
+   "mapped_pre_dedupe": 124
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 98
+   "mapped_pre_dedupe": 101
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 118
+   "mapped_pre_dedupe": 127
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 98
+   "mapped_pre_dedupe": 100
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 115
+   "mapped_pre_dedupe": 122
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 83
+   "mapped_pre_dedupe": 101
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 118
+   "mapped_pre_dedupe": 124
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 99
+   "mapped_pre_dedupe": 101
   }
  },
- "duplicates_removed": 616,
- "gazetteer_entries": 1110,
+ "duplicates_removed": 661,
+ "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "warning": "Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred."
 }
