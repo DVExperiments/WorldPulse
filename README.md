@@ -1,27 +1,16 @@
-# WorldPulse v1.4A — Global Coverage Expansion
+# WorldPulse v1.6B.4 — startup and cartography hotfix
 
-GitHub Pages compatible. This release adds independent editorial RSS alongside Google News regional RSS queries, feed health reporting, headline deduplication across categories, sampled source diversity, and a compact 30-day archive of daily collection statistics. Existing 3D globe, v1.3 format, categorization, clustering and velocity are maintained.
+## What was fixed
+
+- `ReferenceError: Cannot access 'bordersLoading' before initialization`: the border-loading flag now initializes before `bind()` and before `loadBoundaries()` can run.
+- Duplicate early calls to `loadBoundaries()` removed.
+- Removed the incompatible `pathsData()` renderer for country boundaries, implicated by `t.Adder is not a constructor` in d3-geo on the deployed site. The bundled GeoJSON instead draws the real country/continent geometry into the neon globe texture, so it rotates with the Earth and does not depend on news records.
+- Existing UI/data collector unchanged; favicon 404 is unrelated to news/globe.
 
 ## Install
 
-Upload the contents of this folder into the **root** of the existing GitHub repository, replacing files where prompted. Keep only **one** workflow in `.github/workflows/` (replace your existing workflow content rather than adding another). Then Actions → Refresh geographic news → Run workflow.
+Upload **app.js** to the repository root, replacing the current one. Ensure **world-borders.geojson** exists in the repository root (included here for convenience, overwrite if unsure). Do not alter `index.html`, styles, `data/` or `.github/workflows/update.yml`.
 
-## Files
+Commit changes, wait for GitHub Pages deployment, then hard-refresh (Ctrl+Shift+R). The globe should render coastlines/country borders without waiting for news articles. The underlying news may still show 'Partial feed' if some publisher feeds fail; that is independent of the map.
 
-- `scripts/update.py`: multi-source RSS collector (standard Python library only).
-- `data/places.json`: existing gazetteer.
-- `data/news.json`: generated 24-hour view (preserved until next successful run).
-- `data/source-health.json`: feed status, counts and errors.
-- `data/history.json`: compact daily maxima of **sampled** mapped articles (NOT complete daily story totals).
-
-## What the numbers mean
-
-RSS responses are ranked, limited samples. Article timestamps may be absent or inaccurate, and a place mentioned in a headline may not be the event's true location. Exact URL duplicates and very similar same-place titles are collapsed; syndicated stories and semantic duplicates can remain. Counts and velocity are **not global census metrics**. A daily historical maximum is not the total unique stories that day. Source counts use returned publisher labels and can count alternate names separately. A feed failure produces partial status rather than erasing successful results. The Globe panel presents a location's stories with source links. The social activity layer remains intentionally unconnected.
-
-## Source coverage
-
-Configuration includes 28 region-specific Google News searches plus 23 direct feeds (including some French, Spanish and Portuguese), whose availability varies. A working feed doesn't guarantee any geographically matched articles. Failed feeds are listed in `data/source-health.json`. News source content and original links belong to their publishers. No article bodies are copied.
-
-## Limitations and next steps
-
-This is a discovery interface, not a fact verification engine. Geographic matches are conservative but not geolocation proof; multilingual headlines may need additional alias dictionaries. To make a meaningful overlooked-stories analysis, the next phase should maintain event identities, source market baselines, and normalized coverage shares; don't infer intentional suppression from a coverage decline.
+If country outlines are still missing: DevTools → Network → check `world-borders.geojson` returns HTTP 200; DevTools → Console → send any `WorldPulse neon cartography texture` or `WorldPulse cartography` error. Browser rendering has not been live-verified here.

@@ -8,6 +8,7 @@ let globe, currentPoints=[], lastTier=-1, translationCache=new Map();
 const REAL_EARTH='https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg';
 let neonTextureUrl=null,twinkleFrame=0;
 let permanentBorders=[]; // Cartographic geometry, completely independent of news data
+let bordersLoading=false; // MUST initialize before bind() calls initCoverageControls()
 function clean(s){return String(s??'').slice(0,500)}
 function dist(a,b){let rad=Math.PI/180,dLat=(b.lat-a.lat)*rad,dLng=(b.lng-a.lng)*rad;let x=Math.sin(dLat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(dLng/2)**2;return 6371*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x))}
 function age(ts){if(!ts)return 'not yet updated';let m=Math.floor((Date.now()-new Date(ts).getTime())/60000);if(!Number.isFinite(m))return 'unknown';if(m<0)return 'just updated';if(m<60)return `${m} minutes ago`;return `${Math.floor(m/60)} hours ago`}
@@ -135,7 +136,7 @@ function bind(){
 }
 try{bind()}catch(error){console.error('WorldPulse control setup:',error)}
 try{initGlobe()}catch(error){console.error('WorldPulse globe setup:',error);const n=$('emptyNotice');if(n){n.hidden=false;n.textContent='Globe setup error: '+error.message}}
-loadData();loadEvents();loadBoundaries();setInterval(loadData,15*60*1000);
+loadData();loadEvents();setInterval(loadData,15*60*1000);
 
 async function showHealth(){
  const host=$('healthContent');host.replaceChildren();
@@ -201,7 +202,6 @@ function initCoverageControls(){
  control.onchange=()=>{state.coverage=control.checked;renderCoverage()};
  loadBoundaries();
 }
-let bordersLoading=false;
 async function loadBoundaries(){
  if(bordersLoading||state.coverageReady)return;
  bordersLoading=true;
@@ -241,23 +241,11 @@ function buildCartographicPaths(features){
  return paths;
 }
 function updateCartographicPaths(){
- // Borders are actual Three-Globe geographic 3D paths, never news-dependent.
- // The previous version mistakenly cleared pathsData([]) after generating them.
- if(!globe || typeof globe.pathsData!=='function')return;
- if(state.visualMode!=='neon' || !state.coverageReady){globe.pathsData([]);return;}
- try {
-  globe.pathPoints('coords')
-   .pathPointLat(point=>point[1])
-   .pathPointLng(point=>point[0])
-   .pathColor(p=>p.kind==='coast'?'rgba(53,245,239,0.86)':'rgba(53,208,220,0.54)')
-   .pathAltitude(0.0035)
-   .pathStroke(0.34)
-   .pathResolution(2)
-   .pathsData(permanentBorders);
-  console.info('WorldPulse: permanent neon country paths rendered:',permanentBorders.length);
- } catch(error) {
-  console.error('WorldPulse boundary path layer failed:',error);
- }
+ // Keep geographic borders baked into the equirectangular surface texture.
+ // The three-globe paths API triggered an incompatible d3-geo runtime exception
+ // (t.Adder is not a constructor) on the deployed dependency versions.
+ // Texture lines are globe-fixed and do not depend on the news feed.
+ if(globe && typeof globe.pathsData === 'function') globe.pathsData([]);
 }
 
 function healthStat(container,label,value){const c=el('div',undefined,'wp-health-stat');c.append(el('span',label),el('strong',String(value)));container.append(c)}
