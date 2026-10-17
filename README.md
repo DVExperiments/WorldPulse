@@ -1,31 +1,13 @@
-# WorldPulse v1.6D.4 — Living Earth
+# WorldPulse v1.6D.5 — Living Earth Texture Repair
 
-A focused frontend patch that animates the **ambient population grid**, not the news markers.
+This patch addresses the population-grid shimmer initializing but not displaying.
 
-## Installation
+It binds a canvas-backed WebGL texture directly to the globe material, marks that texture for refresh, and prevents duplicate animation timers. It retains the existing neon country outlines, measured population brightness, news marker appearance, and news collector.
 
-Replace `app.js` in your GitHub Pages repository root with the included file. Leave all other files, especially `index.html`, `world-borders.geojson`, `assets/population-density.png`, and `.github/workflows/update.yml`, unchanged.
+## Install
+Replace the repository-root `app.js` only. Leave `index.html`, existing CSS, `world-borders.geojson`, population raster, data files and `.github/workflows/update.yml` unchanged.
 
-Deploy via GitHub Pages and hard refresh. Use **Neon globe** with **Subtle signal twinkle** enabled.
+## Verify
+After a hard refresh, type `WorldPulseShimmerStatus()` in the browser console. `canvasBound` and `displayedTextureIsCanvas` should be true, and `frames`/`uploadsRequested` should rise over time. These diagnose update requests, not independently confirmed GPU upload.
 
-## What changed
-
-- Keeps regular grid spacing, fixed pixel positions and measured-population brightness from v1.6C.3.
-- Builds an offscreen base texture with the country/coastline outlines and regular population dots.
-- Selects a stable subset of the *existing* population grid for gentle, asynchronous luminance shimmer.
-- Updates the existing WebGL globe texture in place, instead of reloading the entire image or rebuilding news geometry each frame.
-- News signal radius and colour remain stable; only their normal cluster halos remain.
-- The existing **Subtle signal twinkle** toggle now controls ambient grid shimmer.
-- Real globe view remains unchanged; updates pause while the tab is hidden.
-
-## Console diagnostics
-
-Once the boundaries and population raster load, look for:
-
-`WorldPulse: living population grid initialized: <number> shimmer-capable dots`
-
-The existing `WorldPulse: measured population brightness raster ready.` message should also appear.
-
-## Limitations
-
-The animation is a visual effect and does not imply changes in population or news. Browser GPU/driver support for refreshing the existing texture still needs live verification. If the grid remains static, inspect the browser console and compare with the twinkle checkbox on/off.
+The visual effect still requires testing in the deployed browser.

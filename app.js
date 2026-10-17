@@ -82,13 +82,31 @@ let neonTextureUrl=null,twinkleFrame=0;
 // v1.6D.4: the population grid, not news signals, owns the living shimmer.
 let ambientBaseCanvas=null, ambientLiveCanvas=null, ambientGridSamples=[];
 let ambientLastFrame=0, ambientStarted=false;
+let ambientGpuTexture=null,ambientGpuMaterial=null,ambientFrames=0,ambientUploads=0,ambientTimer=null,ambientError='';
 function ambientHash(n){const v=Math.sin(n*12.9898)*43758.5453;return v-Math.floor(v)}
-function clearAmbientTexture(){ambientBaseCanvas=null;ambientLiveCanvas=null;ambientGridSamples=[];ambientStarted=false;ambientLastFrame=0}
+function clearAmbientTexture(){ambientBaseCanvas=null;ambientLiveCanvas=null;ambientGridSamples=[];ambientStarted=false;ambientLastFrame=0;ambientFrames=0;ambientUploads=0;ambientGpuTexture=null;ambientGpuMaterial=null;ambientError=''}
+function bindLivingEarthTexture(){
+ if(!globe||!ambientLiveCanvas||state.visualMode!=='neon')return false;
+ const material=globe.globeMaterial?.();
+ if(!material?.map)return false;
+ if(ambientGpuTexture===material.map&&ambientGpuMaterial===material)return true;
+ try{
+  const previous=material.map;
+  const live=new previous.constructor(ambientLiveCanvas);
+  for(const key of ['colorSpace','encoding','mapping','wrapS','wrapT','magFilter','minFilter','anisotropy','flipY','premultiplyAlpha','generateMipmaps']){
+   try{if(previous[key]!==undefined)live[key]=previous[key]}catch{}
+  }
+  live.needsUpdate=true;material.map=live;material.needsUpdate=true;
+  ambientGpuTexture=live;ambientGpuMaterial=material;ambientStarted=true;
+  console.info('WorldPulse: living Earth canvas texture attached to globe material');
+  return true;
+ }catch(e){ambientError=String(e);console.warn('WorldPulse canvas texture:',e);return false}
+}
 function updateLivingEarth(now){
  if(!globe||state.visualMode!=='neon'||!ambientBaseCanvas||!ambientLiveCanvas||document.hidden)return;
- if(now-ambientLastFrame<210)return;
+ if(now-ambientLastFrame<220)return;
  ambientLastFrame=now;
- // Repaint only the 2D globe texture. News point geometry is NOT changed.
+ if(!bindLivingEarthTexture())return;
  const ctx=ambientLiveCanvas.getContext('2d');
  ctx.clearRect(0,0,ambientLiveCanvas.width,ambientLiveCanvas.height);
  ctx.drawImage(ambientBaseCanvas,0,0);
@@ -97,22 +115,15 @@ function updateLivingEarth(now){
   for(const dot of ambientGridSamples){
    const wave=Math.sin(t*dot.speed+dot.phase);
    const glint=Math.pow(Math.max(0,Math.sin(t*(dot.speed*.69)+dot.phase*1.73)),7);
-   const intensity=Math.max(0,.5+.5*wave);
-   const brightness=Math.min(.48, dot.base*(.20+.55*intensity+.55*glint));
-   if(brightness<.045)continue;
+   const brightness=Math.min(.62,dot.base*(.23+.92*(.5+.5*wave)+.8*glint));
+   if(brightness<.04)continue;
    ctx.fillStyle=`rgba(116,255,246,${brightness.toFixed(3)})`;
    ctx.fillRect(dot.u,dot.v,1.35,1.35);
   }
  }
- try{
-  const material=globe.globeMaterial?.();
-  if(!material?.map)return;
-  // Reuse the existing Three.js map texture: no new GPU allocation each frame.
-  if(material.map.image!==ambientLiveCanvas)material.map.image=ambientLiveCanvas;
-  material.map.needsUpdate=true;
- }catch(e){if(!ambientStarted)console.warn('WorldPulse living earth:',e)}
- ambientStarted=true;
+ ambientFrames++;ambientGpuTexture.needsUpdate=true;ambientUploads++;
 }
+window.WorldPulseShimmerStatus=()=>({mode:state.visualMode,enabled:state.twinkle,dots:ambientGridSamples.length,canvasBound:!!ambientGpuTexture&&ambientGpuMaterial?.map===ambientGpuTexture,displayedTextureIsCanvas:ambientGpuMaterial?.map?.image===ambientLiveCanvas,frames:ambientFrames,uploadsRequested:ambientUploads,lastError:ambientError});
 
 let measuredPopulationImage=null, measuredPopulationStatus='not-loaded';
 
@@ -610,6 +621,6 @@ function initVisualControls(){
  // Smooth enough to be perceptible, slow enough to stay inexpensive on laptops.
  // Avoid requesting WebGL updates when the document is hidden.
  // Animate the existing globe texture rather than rebuilding news WebGL points.
- setInterval(()=>{if(!document.hidden&&state.visualMode==='neon')updateLivingEarth(performance.now())},240);
+ if(!ambientTimer)ambientTimer=setInterval(()=>{if(!document.hidden&&state.visualMode==='neon')updateLivingEarth(performance.now())},240);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)ambientLastFrame=0});
 }
