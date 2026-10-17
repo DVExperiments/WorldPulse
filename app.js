@@ -6,6 +6,78 @@ const $=id=>document.getElementById(id);
 const state={news:[],posts:[],events:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,precision:'all',rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null,coverage:false,countries:[],countryStats:new Map(),coverageReady:false,visualMode:localStorage.getItem("worldpulse-globe-mode")==="real"?"real":"neon",twinkle:true};
 let globe, currentPoints=[], lastTier=-1, translationCache=new Map();
 const REAL_EARTH='https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg';
+
+const POP_HUBS=[
+ {name:'Tokyo',lat:35.68,lng:139.69,pop:37.4},{name:'Delhi',lat:28.61,lng:77.21,pop:32.1},{name:'Shanghai',lat:31.23,lng:121.47,pop:29.9},
+ {name:'Dhaka',lat:23.81,lng:90.41,pop:23.9},{name:'Sao Paulo',lat:-23.55,lng:-46.63,pop:22.6},{name:'Mexico City',lat:19.43,lng:-99.13,pop:22.3},
+ {name:'Cairo',lat:30.04,lng:31.24,pop:22.0},{name:'Beijing',lat:39.90,lng:116.40,pop:21.8},{name:'Mumbai',lat:19.08,lng:72.88,pop:21.3},
+ {name:'Osaka',lat:34.69,lng:135.50,pop:19.0},{name:'Chongqing',lat:29.56,lng:106.55,pop:18.6},{name:'Karachi',lat:24.86,lng:67.01,pop:17.6},
+ {name:'Istanbul',lat:41.01,lng:28.98,pop:16.0},{name:'Buenos Aires',lat:-34.60,lng:-58.38,pop:15.6},{name:'Kolkata',lat:22.57,lng:88.36,pop:15.3},
+ {name:'Lagos',lat:6.52,lng:3.37,pop:15.2},{name:'Kinshasa',lat:-4.33,lng:15.31,pop:15.0},{name:'Manila',lat:14.60,lng:120.98,pop:14.9},
+ {name:'Tianjin',lat:39.13,lng:117.20,pop:14.7},{name:'Rio de Janeiro',lat:-22.91,lng:-43.17,pop:13.6},{name:'Guangzhou',lat:23.13,lng:113.26,pop:13.6},
+ {name:'Lahore',lat:31.55,lng:74.34,pop:13.5},{name:'Bangalore',lat:12.97,lng:77.59,pop:13.2},{name:'Paris',lat:48.86,lng:2.35,pop:11.2},
+ {name:'Shenzhen',lat:22.54,lng:114.06,pop:12.6},{name:'Jakarta',lat:-6.21,lng:106.85,pop:11.4},{name:'Moscow',lat:55.76,lng:37.62,pop:12.5},
+ {name:'Chennai',lat:13.08,lng:80.27,pop:11.1},{name:'Lima',lat:-12.05,lng:-77.04,pop:11.0},{name:'Bogota',lat:4.71,lng:-74.07,pop:11.0},
+ {name:'Seoul',lat:37.57,lng:126.98,pop:9.9},{name:'London',lat:51.51,lng:-0.13,pop:9.6},{name:'Tehran',lat:35.69,lng:51.39,pop:9.5},
+ {name:'Bangkok',lat:13.76,lng:100.50,pop:10.7},{name:'Hong Kong',lat:22.32,lng:114.17,pop:7.5},{name:'Wuhan',lat:30.59,lng:114.30,pop:10.0},
+ {name:'Chengdu',lat:30.66,lng:104.06,pop:9.5},{name:'Ho Chi Minh City',lat:10.82,lng:106.63,pop:9.0},{name:'Hyderabad',lat:17.39,lng:78.49,pop:9.7},
+ {name:'Ahmedabad',lat:23.03,lng:72.58,pop:8.7},{name:'Singapore',lat:1.35,lng:103.82,pop:5.9},{name:'Santiago',lat:-33.45,lng:-70.67,pop:6.8},
+ {name:'Toronto',lat:43.65,lng:-79.38,pop:6.7},{name:'Johannesburg',lat:-26.20,lng:28.04,pop:6.2},{name:'Nairobi',lat:-1.29,lng:36.82,pop:5.3},
+ {name:'Khartoum',lat:15.50,lng:32.56,pop:6.3},{name:'Casablanca',lat:33.57,lng:-7.59,pop:4.0},{name:'Algiers',lat:36.75,lng:3.06,pop:4.2},
+ {name:'Baghdad',lat:33.31,lng:44.36,pop:7.6},{name:'Riyadh',lat:24.71,lng:46.67,pop:7.7},{name:'Jeddah',lat:21.49,lng:39.19,pop:4.7},
+ {name:'Dubai',lat:25.20,lng:55.27,pop:3.6},{name:'Doha',lat:25.29,lng:51.53,pop:2.5},{name:'Kuwait City',lat:29.37,lng:47.98,pop:3.2},
+ {name:'Tel Aviv',lat:32.09,lng:34.78,pop:4.2},{name:'Athens',lat:37.98,lng:23.73,pop:3.1},{name:'Rome',lat:41.90,lng:12.50,pop:4.2},
+ {name:'Milan',lat:45.46,lng:9.19,pop:4.3},{name:'Madrid',lat:40.42,lng:-3.70,pop:6.7},{name:'Barcelona',lat:41.39,lng:2.17,pop:5.5},
+ {name:'Berlin',lat:52.52,lng:13.40,pop:3.7},{name:'Hamburg',lat:53.55,lng:10.00,pop:1.8},{name:'Munich',lat:48.14,lng:11.58,pop:1.5},
+ {name:'Warsaw',lat:52.23,lng:21.01,pop:1.9},{name:'Kyiv',lat:50.45,lng:30.52,pop:3.0},{name:'Bucharest',lat:44.43,lng:26.10,pop:2.1},
+ {name:'Budapest',lat:47.50,lng:19.04,pop:1.8},{name:'Vienna',lat:48.21,lng:16.37,pop:1.9},{name:'Amsterdam',lat:52.37,lng:4.90,pop:2.5},
+ {name:'Brussels',lat:50.85,lng:4.35,pop:2.1},{name:'Copenhagen',lat:55.68,lng:12.57,pop:1.4},{name:'Stockholm',lat:59.33,lng:18.07,pop:1.7},
+ {name:'Oslo',lat:59.91,lng:10.75,pop:1.1},{name:'Helsinki',lat:60.17,lng:24.94,pop:1.3},{name:'Dublin',lat:53.35,lng:-6.26,pop:1.4},
+ {name:'Lisbon',lat:38.72,lng:-9.14,pop:2.8},{name:'Prague',lat:50.08,lng:14.43,pop:1.3},{name:'Zurich',lat:47.38,lng:8.54,pop:1.4},
+ {name:'New York',lat:40.71,lng:-74.01,pop:19.5},{name:'Boston',lat:42.36,lng:-71.06,pop:4.9},{name:'Washington DC',lat:38.90,lng:-77.04,pop:6.4},
+ {name:'Philadelphia',lat:39.95,lng:-75.17,pop:5.7},{name:'Atlanta',lat:33.75,lng:-84.39,pop:6.1},{name:'Miami',lat:25.76,lng:-80.19,pop:6.2},
+ {name:'Chicago',lat:41.88,lng:-87.63,pop:8.8},{name:'Detroit',lat:42.33,lng:-83.05,pop:4.3},{name:'Dallas',lat:32.78,lng:-96.80,pop:7.8},
+ {name:'Houston',lat:29.76,lng:-95.37,pop:7.3},{name:'Phoenix',lat:33.45,lng:-112.07,pop:4.9},{name:'Denver',lat:39.74,lng:-104.99,pop:3.0},
+ {name:'Seattle',lat:47.61,lng:-122.33,pop:4.0},{name:'San Francisco',lat:37.77,lng:-122.42,pop:4.6},{name:'Los Angeles',lat:34.05,lng:-118.24,pop:12.8},
+ {name:'San Diego',lat:32.72,lng:-117.16,pop:3.3},{name:'Las Vegas',lat:36.17,lng:-115.14,pop:2.9},{name:'Minneapolis',lat:44.98,lng:-93.27,pop:3.7},
+ {name:'St Louis',lat:38.63,lng:-90.20,pop:2.8},{name:'Mexico Monterrey',lat:25.69,lng:-100.32,pop:5.3},{name:'Guadalajara',lat:20.67,lng:-103.35,pop:5.3},
+ {name:'Vancouver',lat:49.28,lng:-123.12,pop:2.7},{name:'Montreal',lat:45.50,lng:-73.57,pop:4.1},{name:'Ottawa',lat:45.42,lng:-75.69,pop:1.4},
+ {name:'Calgary',lat:51.05,lng:-114.07,pop:1.6},{name:'Edmonton',lat:53.55,lng:-113.49,pop:1.5},{name:'Winnipeg',lat:49.90,lng:-97.14,pop:0.8},
+ {name:'Havana',lat:23.11,lng:-82.37,pop:2.1},{name:'Santo Domingo',lat:18.49,lng:-69.99,pop:3.3},{name:'San Juan',lat:18.47,lng:-66.11,pop:2.3},
+ {name:'Panama City',lat:8.98,lng:-79.52,pop:2.0},{name:'San Jose',lat:9.93,lng:-84.08,pop:2.4},{name:'Guatemala City',lat:14.63,lng:-90.55,pop:3.0},
+ {name:'Quito',lat:-0.18,lng:-78.47,pop:2.8},{name:'Guayaquil',lat:-2.17,lng:-79.92,pop:3.0},{name:'Caracas',lat:10.48,lng:-66.90,pop:3.0},
+ {name:'Medellin',lat:6.24,lng:-75.58,pop:4.1},{name:'La Paz',lat:-16.50,lng:-68.15,pop:2.0},{name:'Santa Cruz',lat:-17.78,lng:-63.18,pop:2.2},
+ {name:'Asuncion',lat:-25.27,lng:-57.64,pop:2.2},{name:'Montevideo',lat:-34.90,lng:-56.16,pop:1.7},{name:'Cordoba',lat:-31.42,lng:-64.18,pop:1.6},
+ {name:'Perth',lat:-31.95,lng:115.86,pop:2.2},{name:'Adelaide',lat:-34.93,lng:138.60,pop:1.4},{name:'Melbourne',lat:-37.81,lng:144.96,pop:5.2},
+ {name:'Sydney',lat:-33.87,lng:151.21,pop:5.3},{name:'Brisbane',lat:-27.47,lng:153.03,pop:2.6},{name:'Auckland',lat:-36.85,lng:174.76,pop:1.7},
+ {name:'Wellington',lat:-41.29,lng:174.78,pop:0.5},{name:'Christchurch',lat:-43.53,lng:172.63,pop:0.4},{name:'Port Moresby',lat:-9.44,lng:147.18,pop:0.4},
+ {name:'Honolulu',lat:21.31,lng:-157.86,pop:1.0},{name:'Anchorage',lat:61.22,lng:-149.90,pop:0.4},{name:'Reykjavik',lat:64.15,lng:-21.94,pop:0.2},
+ {name:'Addis Ababa',lat:8.98,lng:38.79,pop:5.6},{name:'Dar es Salaam',lat:-6.79,lng:39.21,pop:7.0},{name:'Kampala',lat:0.35,lng:32.58,pop:4.0},
+ {name:'Kigali',lat:-1.95,lng:30.06,pop:1.2},{name:'Lusaka',lat:-15.39,lng:28.32,pop:3.0},{name:'Harare',lat:-17.82,lng:31.05,pop:2.1},
+ {name:'Maputo',lat:-25.97,lng:32.58,pop:1.8},{name:'Luanda',lat:-8.84,lng:13.23,pop:9.0},{name:'Abidjan',lat:5.36,lng:-4.01,pop:6.3},
+ {name:'Accra',lat:5.56,lng:-0.20,pop:5.5},{name:'Dakar',lat:14.69,lng:-17.45,pop:3.8},{name:'Bamako',lat:12.64,lng:-8.00,pop:2.8},
+ {name:'Lome',lat:6.13,lng:1.22,pop:2.2},{name:'Cotonou',lat:6.37,lng:2.43,pop:2.4},{name:'Yaounde',lat:3.85,lng:11.50,pop:3.0},
+ {name:'Douala',lat:4.05,lng:9.70,pop:3.7},{name:'Rabat',lat:34.02,lng:-6.84,pop:2.0},{name:'Tunis',lat:36.81,lng:10.18,pop:2.7},
+ {name:'Antananarivo',lat:-18.91,lng:47.54,pop:3.4},{name:'Kathmandu',lat:27.72,lng:85.32,pop:3.0},{name:'Colombo',lat:6.93,lng:79.86,pop:5.6},
+ {name:'Yangon',lat:16.86,lng:96.20,pop:5.4},{name:'Hanoi',lat:21.03,lng:105.85,pop:8.0},{name:'Phnom Penh',lat:11.56,lng:104.93,pop:2.3},
+ {name:'Vientiane',lat:17.98,lng:102.63,pop:1.0},{name:'Kuala Lumpur',lat:3.14,lng:101.69,pop:8.8},{name:'Taipei',lat:25.03,lng:121.56,pop:7.0},
+ {name:'Fukuoka',lat:33.59,lng:130.40,pop:2.6},{name:'Sapporo',lat:43.06,lng:141.35,pop:2.0},{name:'Novosibirsk',lat:55.03,lng:82.92,pop:1.7},
+ {name:'Yekaterinburg',lat:56.84,lng:60.61,pop:1.6},{name:'Almaty',lat:43.24,lng:76.92,pop:2.1},{name:'Tashkent',lat:41.31,lng:69.28,pop:2.7}
+].map(h=>({...h,weight:Math.sqrt(h.pop)}));
+function wrapLngDelta(a,b){let d=Math.abs(a-b)%360;return d>180?360-d:d}
+function ambientSettlementDensity(lat,lng){
+ let score=0;
+ const cosLat=Math.max(.28,Math.cos(lat*Math.PI/180));
+ for(const h of POP_HUBS){
+  const dLat=lat-h.lat;
+  const dLng=wrapLngDelta(lng,h.lng)*cosLat;
+  const d2=dLat*dLat+dLng*dLng;
+  if(d2>2200)continue;
+  score += (h.weight*0.9)*Math.exp(-d2/140) + (h.weight*0.35)*Math.exp(-d2/900);
+ }
+ return Math.min(1,score/7.8);
+}
+
 let neonTextureUrl=null,twinkleFrame=0;
 let permanentBorders=[]; // Cartographic geometry, completely independent of news data
 let bordersLoading=false; // MUST initialize before bind() calls initCoverageControls()
@@ -319,7 +391,8 @@ function updateNeonTexture(){
    }
    if(segmentOpen)x.stroke();
   }
-  // Land dotted texture from polygon point membership using native canvas.
+  // Land dotted texture with ambient settlement-density modulation.
+  // This is NOT live news density; it is background human-settlement texture.
   const mask=document.createElement('canvas');mask.width=W;mask.height=H;
   const m=mask.getContext('2d',{willReadFrequently:true});m.fillStyle='#ffffff';
   for(const poly of polys){m.beginPath();let opened=false;
@@ -329,12 +402,28 @@ function updateNeonTexture(){
    if(opened)m.fill('evenodd');
   }
   const alpha=m.getImageData(0,0,W,H).data;
-  for(let v=3;v<H;v+=6)for(let u=3;u<W;u+=6){
+  // Subtle metro halos first, so borders and live markers still dominate above them.
+  for(const hub of POP_HUBS){
+   const u=px(hub.lng),v=py(hub.lat),r=Math.max(16,Math.min(38,hub.weight*2.1));
+   const g=x.createRadialGradient(u,v,0,u,v,r);
+   g.addColorStop(0,`rgba(59,244,236,${Math.min(.17,.045+hub.weight*.010).toFixed(3)})`);
+   g.addColorStop(.45,`rgba(30,175,198,${Math.min(.08,.018+hub.weight*.005).toFixed(3)})`);
+   g.addColorStop(1,'rgba(0,0,0,0)');
+   x.fillStyle=g;x.beginPath();x.arc(u,v,r,0,Math.PI*2);x.fill();
+  }
+  for(let v=2;v<H;v+=5)for(let u=2;u<W;u+=5){
    if(alpha[(v*W+u)*4+3]<128)continue;
+   const lat=90-(v/H)*180,lon=(u/W)*360-180;
+   const dens=ambientSettlementDensity(lat,lon);
    const r=Math.abs(Math.sin(u*12.9898+v*78.233)*43758.5453)%1;
-   if(r<.15)continue;
-   x.fillStyle=r>.9?'rgba(64,239,227,.70)':'rgba(33,166,183,.36)';
-   x.fillRect(u,v,r>.9?2:1.5,r>.9?2:1.5);
+   const probability=.10 + dens*.62;
+   if(r>probability)continue;
+   const bright=dens>.72&&r>.76;
+   const alphaDot=(.10 + dens*.42 + (bright?.14:0)).toFixed(3);
+   const size=bright?2.2:dens>.46?1.6:1.1;
+   const cyan=bright?74:46+Math.round(dens*28), green=bright?248:166+Math.round(dens*56), blue=bright?241:183+Math.round(dens*38);
+   x.fillStyle=`rgba(${cyan},${green},${blue},${alphaDot})`;
+   x.fillRect(u,v,size,size);
   }
   // Permanent boundaries: doubled luminous strokes, fixed to the Earth texture.
   for(const [width,color,blur] of [[4,'rgba(0,240,233,.23)',7],[1.35,'rgba(56,240,235,.88)',0]]){

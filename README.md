@@ -1,16 +1,24 @@
-# WorldPulse v1.6B.4 — startup and cartography hotfix
+# WorldPulse v1.6C — Settlement Density Globe
 
-## What was fixed
+This patch refines the neon globe surface so the ambient land texture feels more alive and closer to the concept direction.
 
-- `ReferenceError: Cannot access 'bordersLoading' before initialization`: the border-loading flag now initializes before `bind()` and before `loadBoundaries()` can run.
-- Duplicate early calls to `loadBoundaries()` removed.
-- Removed the incompatible `pathsData()` renderer for country boundaries, implicated by `t.Adder is not a constructor` in d3-geo on the deployed site. The bundled GeoJSON instead draws the real country/continent geometry into the neon globe texture, so it rotates with the Earth and does not depend on news records.
-- Existing UI/data collector unchanged; favicon 404 is unrelated to news/globe.
+## Changes
+
+- Keeps the working neon country and coastline outlines from v1.6B.4.
+- Adds a population / settlement-inspired ambient dot field across land.
+- Major urban regions receive brighter cyan dot density and faint local glow.
+- Sparse regions remain quieter and dimmer.
+- Live news dots remain the coloured foreground layer.
+- No changes to the news collection pipeline or workflow.
 
 ## Install
 
-Upload **app.js** to the repository root, replacing the current one. Ensure **world-borders.geojson** exists in the repository root (included here for convenience, overwrite if unsure). Do not alter `index.html`, styles, `data/` or `.github/workflows/update.yml`.
+Replace `app.js` in the repository root.
 
-Commit changes, wait for GitHub Pages deployment, then hard-refresh (Ctrl+Shift+R). The globe should render coastlines/country borders without waiting for news articles. The underlying news may still show 'Partial feed' if some publisher feeds fail; that is independent of the map.
+Keep `world-borders.geojson` in the repository root. A copy is included for convenience.
 
-If country outlines are still missing: DevTools → Network → check `world-borders.geojson` returns HTTP 200; DevTools → Console → send any `WorldPulse neon cartography texture` or `WorldPulse cartography` error. Browser rendering has not been live-verified here.
+Hard refresh the site after GitHub Pages deploys.
+
+## Notes
+
+The background settlement texture is an ambient visual layer derived from a built-in worldwide city hub set. It is not a live population dataset and should not be interpreted as live news activity.
