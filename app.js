@@ -79,6 +79,41 @@ function ambientSettlementDensity(lat,lng){
 }
 
 let neonTextureUrl=null,twinkleFrame=0;
+// v1.6D.4: the population grid, not news signals, owns the living shimmer.
+let ambientBaseCanvas=null, ambientLiveCanvas=null, ambientGridSamples=[];
+let ambientLastFrame=0, ambientStarted=false;
+function ambientHash(n){const v=Math.sin(n*12.9898)*43758.5453;return v-Math.floor(v)}
+function clearAmbientTexture(){ambientBaseCanvas=null;ambientLiveCanvas=null;ambientGridSamples=[];ambientStarted=false;ambientLastFrame=0}
+function updateLivingEarth(now){
+ if(!globe||state.visualMode!=='neon'||!ambientBaseCanvas||!ambientLiveCanvas||document.hidden)return;
+ if(now-ambientLastFrame<210)return;
+ ambientLastFrame=now;
+ // Repaint only the 2D globe texture. News point geometry is NOT changed.
+ const ctx=ambientLiveCanvas.getContext('2d');
+ ctx.clearRect(0,0,ambientLiveCanvas.width,ambientLiveCanvas.height);
+ ctx.drawImage(ambientBaseCanvas,0,0);
+ if(state.twinkle){
+  const t=now/1000;
+  for(const dot of ambientGridSamples){
+   const wave=Math.sin(t*dot.speed+dot.phase);
+   const glint=Math.pow(Math.max(0,Math.sin(t*(dot.speed*.69)+dot.phase*1.73)),7);
+   const intensity=Math.max(0,.5+.5*wave);
+   const brightness=Math.min(.48, dot.base*(.20+.55*intensity+.55*glint));
+   if(brightness<.045)continue;
+   ctx.fillStyle=`rgba(116,255,246,${brightness.toFixed(3)})`;
+   ctx.fillRect(dot.u,dot.v,1.35,1.35);
+  }
+ }
+ try{
+  const material=globe.globeMaterial?.();
+  if(!material?.map)return;
+  // Reuse the existing Three.js map texture: no new GPU allocation each frame.
+  if(material.map.image!==ambientLiveCanvas)material.map.image=ambientLiveCanvas;
+  material.map.needsUpdate=true;
+ }catch(e){if(!ambientStarted)console.warn('WorldPulse living earth:',e)}
+ ambientStarted=true;
+}
+
 let measuredPopulationImage=null, measuredPopulationStatus='not-loaded';
 
 let permanentBorders=[]; // Cartographic geometry, completely independent of news data
@@ -450,6 +485,7 @@ function updateNeonTexture(){
    x.fillStyle=g;x.beginPath();x.arc(u,v,radius,0,Math.PI*2);x.fill();
   }
   const gridStep=5;
+ const shimmerDots=[];
   for(let v=2;v<H;v+=gridStep)for(let u=2;u<W;u+=gridStep){
    if(alpha[(v*W+u)*4+3]<128)continue;
    const lat=90-(v/H)*180,lon=(u/W)*360-180;
@@ -462,6 +498,12 @@ function updateNeonTexture(){
    const channelB=Math.round(172+59*t);
    x.fillStyle=`rgba(57,${channelG},${channelB},${opacity.toFixed(3)})`;
    x.fillRect(u,v,1.35,1.35);
+   // Select a stable subset of EXISTING grid points for gentle shimmer.
+   // Every dot stays at the same coordinate and size across all frames.
+   const h=ambientHash(u*19+v*71);
+   if(h>.925 && shimmerDots.length<3600){
+    shimmerDots.push({u,v,base:.11+.19*t,phase:h*125.7,speed:.44+.45*ambientHash(u*3+v*7)});
+   }
   }
   // Permanent boundaries: doubled luminous strokes, fixed to the Earth texture.
   for(const [width,color,blur] of [[4,'rgba(0,240,233,.23)',7],[1.35,'rgba(56,240,235,.88)',0]]){
@@ -469,7 +511,16 @@ function updateNeonTexture(){
    for(const poly of polys)for(const ring of poly)traceRing(ring);
    x.restore();
   }
+  // Retain a static master and animated clone. The outlines are part of the
+  // master so that they never shift, blink or disappear while dots shimmer.
+  clearAmbientTexture();
+  ambientBaseCanvas=c;
+  ambientLiveCanvas=document.createElement('canvas');
+  ambientLiveCanvas.width=W;ambientLiveCanvas.height=H;
+  ambientLiveCanvas.getContext('2d').drawImage(c,0,0);
+  ambientGridSamples=shimmerDots;
   neonTextureUrl=c.toDataURL('image/png');globe.globeImageUrl(neonTextureUrl);
+  console.info('WorldPulse: living population grid initialized:',shimmerDots.length,'shimmer-capable dots');
  }catch(error){console.error('WorldPulse neon cartography texture:',error);}
 }
 // Decorative glow around actual map signals. Never generates additional locations.
@@ -483,6 +534,7 @@ function applyVisualMode(){
  if(!globe)return;
  document.body.classList.toggle('wp-neon',state.visualMode==='neon');
  document.querySelectorAll('[data-visual]').forEach(b=>{b.classList.toggle('active',b.dataset.visual===state.visualMode);b.setAttribute('aria-pressed',String(b.dataset.visual===state.visualMode));});
+ if(state.visualMode!=='neon')clearAmbientTexture();
  globe.globeImageUrl(state.visualMode==='neon'?makeNeonTexture():REAL_EARTH);
  globe.atmosphereColor(state.visualMode==='neon'?'#00e7ee':'#4baec0').atmosphereAltitude(state.visualMode==='neon'?.095:.14);
  globe.pointAltitude(p=>signalAltitude(p));
@@ -499,7 +551,7 @@ function applyVisualMode(){
 function signalRadius(p){
  if(state.visualMode!=='neon')return p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11);
  const size=Math.min(1.55,.27+Math.sqrt(Math.max(1,p.count))*.17);
- return p.wpHalo ? Math.min(2.8,size*1.8) : size*(1+0.15*(p.wpShimmer||0));
+ return p.wpHalo ? Math.min(2.8,size*1.8) : size;
 }
 function signalAltitude(p){
  if(state.visualMode!=='neon')return Math.min(.08,.011+Math.log1p(p.count)*.008);
@@ -514,8 +566,7 @@ function signalColor(p){
   const activity=Math.min(1,Math.log1p(p.count)/Math.log(25));
   return `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${(.085+.11*activity).toFixed(3)})`;
  }
- if(state.twinkle&&typeof p.wpShimmer==='number')return blendTowardWhite(base,.08+.60*p.wpShimmer);
- return neonPointColor(p);
+ return base;
 }
 function hexRgb(hex){return [1,3,5].map(i=>parseInt(hex.slice(i,i+2),16))}
 function signalDisplayPoints(points){
@@ -543,17 +594,8 @@ function blendTowardWhite(hex,mix){
  return `rgb(${rgb.map(v=>Math.round(v+(255-v)*k)).join(',')})`;
 }
 function refreshSignalGlow(){
- if(!globe)return;
- const active=state.visualMode==='neon'&&state.twinkle;
- // Globe.gl builds WebGL geometry from pointsData. Merely replacing the accessor
- // callbacks does NOT consistently repaint existing points. Publish fresh point
- // objects with a time-varying shimmer value to trigger the geometry update.
- const now=Date.now();
- const visible=signalDisplayPoints(currentPoints).map(p=>({
-  ...p,
-  wpShimmer:(!active||p.wpHalo)?0:shimmerAmount(p,now)
- }));
- globe.pointsData(visible);
+ // Retained for existing rendering hooks; news signals are intentionally static.
+ if(globe)globe.pointsData(signalDisplayPoints(currentPoints));
 }
 
 function initVisualControls(){
@@ -562,10 +604,12 @@ function initVisualControls(){
   state.visualMode=button.dataset.visual;localStorage.setItem('worldpulse-globe-mode',state.visualMode);applyVisualMode();
  }));
  const glow=document.getElementById('twinkleToggle');
- if(glow)glow.onchange=()=>{state.twinkle=glow.checked;applyVisualMode()};
+ if(glow)glow.onchange=()=>{state.twinkle=glow.checked;updateLivingEarth(performance.now()+220)};
  document.body.classList.toggle('wp-neon',state.visualMode==='neon');
  document.querySelectorAll('[data-visual]').forEach(b=>b.classList.toggle('active',b.dataset.visual===state.visualMode));
  // Smooth enough to be perceptible, slow enough to stay inexpensive on laptops.
  // Avoid requesting WebGL updates when the document is hidden.
- setInterval(()=>{if(!document.hidden&&state.twinkle&&state.visualMode==='neon'&&currentPoints.length)refreshSignalGlow()},280);
+ // Animate the existing globe texture rather than rebuilding news WebGL points.
+ setInterval(()=>{if(!document.hidden&&state.visualMode==='neon')updateLivingEarth(performance.now())},240);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)ambientLastFrame=0});
 }
