@@ -3,7 +3,7 @@
 const COLORS={politics:'#eeb67e',environment:'#6edcb3',hazards:'#ef797d',society:'#ae94f3',health:'#d3a1ff',education:'#a8a3ff',rights:'#ef9bd0',community:'#bb95dd',economy:'#72baf1',science:'#e4d475',conflict:'#ff5878',social:'#eb8eeb'};
 const LABELS={politics:'Politics',environment:'Environment',hazards:'Hazards',health:'Health',education:'Education',rights:'Rights & justice',community:'Community & culture',society:'Society (legacy)',economy:'Economy',science:'Science',conflict:'War & conflict'};
 const $=id=>document.getElementById(id);
-const state={news:[],posts:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null};
+const state={news:[],posts:[],events:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null};
 let globe, currentPoints=[], lastTier=-1, translationCache=new Map();
 function clean(s){return String(s??'').slice(0,500)}
 function dist(a,b){let rad=Math.PI/180,dLat=(b.lat-a.lat)*rad,dLng=(b.lng-a.lng)*rad;let x=Math.sin(dLat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(dLng/2)**2;return 6371*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x))}
@@ -19,7 +19,7 @@ function initGlobe(){
   .pointColor(p=>COLORS[p.category]||COLORS.social)
   .pointAltitude(p=>Math.min(.08,.011+Math.log1p(p.count)*.008))
   .pointRadius(p=>Math.min(1.6,.19+Math.sqrt(p.count)*.11))
-  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':'posts'}${p.velocity==='rising'?' · ↑ Rising':''}`)
+  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.velocity==='rising'?' · ↑ Rising':''}`)
   .onPointClick(p=>openPoint(p))
   .onGlobeClick(({lat,lng})=>pickPlace({lat,lng}))
   .onZoom(()=>refreshZoom());
@@ -44,11 +44,11 @@ function aggregate(items){if(!state.cluster||tier()===3)return items.map(p=>({..
  });
 }
 function refreshZoom(){let t=tier();if(t!==lastTier){lastTier=t;renderPoints()}}
-function renderPoints(){if(!globe)return;let data=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.posts;
+function renderPoints(){if(!globe)return;let data=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.layer==='events'?(state.categories.has('hazards')?state.events:[]):state.posts;
  currentPoints=aggregate(data);globe.pointsData(currentPoints);
  $('locations').textContent=data.length.toLocaleString();$('total').textContent=data.reduce((n,p)=>n+p.count,0).toLocaleString();
 }
-function pickPlace(pos){let source=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.posts;
+function pickPlace(pos){let source=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.layer==='events'?(state.categories.has('hazards')?state.events:[]):state.posts;
  if(!source.length){openEmpty(pos);return}
  const nearest=[...source].sort((a,b)=>dist(pos,a)-dist(pos,b))[0];
  const km=dist(pos,nearest);
@@ -67,10 +67,10 @@ async function maybeTranslate(node,original){if(!state.translate)return;let key=
  try{let translated=await t.translate(original);if(translated){translationCache.set(key,translated);if(node.isConnected&&state.translate)node.textContent=translated}}catch{}
 }
 function paintDrawer(){const p=state.selected;if(!p)return; $('drawer').hidden=false;$('drawer-title').textContent=p.name;
- let members=p.members||[p];const total=members.reduce((n,x)=>n+x.count,0);let rising=members.filter(x=>x.velocity==='rising').length;let countries=members.some(x=>x.accuracy==='country');$('drawer-meta').textContent=`${total.toLocaleString()} ${state.layer==='news'?'deduplicated sampled articles':'posts'} · ${members.length} signals${rising?' · ↑ '+rising+' rising':''}${countries?' · Country pins are approximate':''}${members.some(x=>x.location_basis==='description')?' · Some locations from descriptions':''}${p.distance!=null?' · nearest signal '+p.distance+' km away':''}`;
+ let members=p.members||[p];const total=members.reduce((n,x)=>n+x.count,0);let rising=members.filter(x=>x.velocity==='rising').length;let countries=members.some(x=>x.accuracy==='country');$('drawer-meta').textContent=`${total.toLocaleString()} ${state.layer==='news'?'deduplicated sampled articles':state.layer==='events'?'officially reported earthquake events':'posts'} · ${members.length} signals${rising?' · ↑ '+rising+' rising':''}${countries?' · Country pins are approximate':''}${members.some(x=>x.location_basis==='description')?' · Some locations from descriptions':''}${p.distance!=null?' · nearest signal '+p.distance+' km away':''}`;
  let area=$('drawer-stories');area.replaceChildren();
  const stories=new Map();for(let m of [...members].sort((a,b)=>b.count-a.count))for(let a of (m.articles||[])){if(a.url&&/^https?:\/\//.test(a.url)&&!stories.has(a.url))stories.set(a.url,{...a,category:m.category,place:m.name})}
- if(!stories.size){area.append(el('p',state.layer==='news'?'No article links available for this location in the current snapshot. Zoom out or select another signal.':'No location-verified social posts are available here.'));return}
+ if(!stories.size){area.append(el('p',state.layer==='news'?'No article links available for this location in the current snapshot. Zoom out or select another signal.':state.layer==='events'?'No official event links available here.':'No location-verified social posts are available here.'));return}
  for(let s of [...stories.values()].slice(0,30)){
   let row=el('div',undefined,'story'),anchor=el('a',clean(s.title));anchor.href=s.url;anchor.target='_blank';anchor.rel='noopener noreferrer';row.append(anchor);
   let source='';try{source=new URL(s.url).hostname.replace(/^www\./,'')}catch{}
@@ -89,10 +89,17 @@ async function loadData(){try{let r=await fetch('data/news.json?t='+Date.now(),{
  catch(e){$('emptyNotice').hidden=false;$('emptyNotice').textContent='Could not load news data: '+e.message}
  try{let r=await fetch('data/social.json?t='+Date.now(),{cache:'no-store'});let d=await r.json();state.posts=(d.posts||[]).filter(p=>Number.isFinite(p.lat)&&Number.isFinite(p.lng)&&Array.isArray(p.articles)&&p.verified_location===true).map(p=>({...p,count:1,category:'social'}))}catch{}
 }
+async function loadEvents(){
+ try{
+  let r=await fetch('data/events.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('Event feed HTTP '+r.status);
+  let d=await r.json();state.events=(d.events||[]).filter(e=>Number.isFinite(e.lat)&&Number.isFinite(e.lng)&&e.url?.startsWith('https://earthquake.usgs.gov/')).map(e=>({lat:e.lat,lng:e.lng,count:1,category:'hazards',name:e.name,accuracy:'observed coordinates',velocity:'steady',articles:[{title:e.title+(typeof e.magnitude==='number'?' · M'+e.magnitude.toFixed(1):''),url:e.url,publisher:'USGS',published_at:e.published_at}],location_basis:'observed_event_coordinates'}));
+  if(state.layer==='events')renderPoints();
+ }catch(err){console.warn('Optional events overlay unavailable:',err.message)}
+}
 function bind(){
  for(let [key,label] of Object.entries(LABELS)){let btn=el('button',undefined,'filter on');btn.type='button';btn.dataset.cat=key;let sw=el('span',undefined,'swatch');sw.style.background=COLORS[key];sw.style.color=COLORS[key];btn.append(sw,el('span',label));btn.addEventListener('click',()=>{if(state.categories.has(key))state.categories.delete(key);else state.categories.add(key);btn.classList.toggle('on',state.categories.has(key));renderPoints()});$('filters').append(btn)}
  $('allBtn').onclick=()=>{let all=state.categories.size!==Object.keys(LABELS).length;state.categories=all?new Set(Object.keys(LABELS)):new Set();document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('on',all));renderPoints()};
- document.querySelectorAll('[data-layer]').forEach(b=>b.addEventListener('click',()=>{state.layer=b.dataset.layer;document.querySelectorAll('[data-layer]').forEach(x=>x.classList.toggle('active',x===b));$('socialExplain').hidden=state.layer!=='social';$('drawer').hidden=true;state.selected=null;renderPoints();if(state.layer==='social'&&!state.posts.length){$('emptyNotice').hidden=false;$('emptyNotice').textContent='Social layer is ready for a verified-location feed. None is configured.'}else updateStatus()}));
+ document.querySelectorAll('[data-layer]').forEach(b=>b.addEventListener('click',()=>{state.layer=b.dataset.layer;document.querySelectorAll('[data-layer]').forEach(x=>x.classList.toggle('active',x===b));$('socialExplain').hidden=state.layer!=='social';$('drawer').hidden=true;state.selected=null;renderPoints();if(state.layer==='events'&&!state.events.length){$('emptyNotice').hidden=false;$('emptyNotice').textContent='No recorded event snapshot available. The event adapter runs with the news workflow.'}else if(state.layer==='social'&&!state.posts.length){$('emptyNotice').hidden=false;$('emptyNotice').textContent='Social layer is ready for a verified-location feed. None is configured.'}else updateStatus()}));
  $('resetBtn').onclick=()=>{if(globe)globe.pointOfView({lat:17,lng:16,altitude:2.15},850);if(globe)globe.controls().autoRotate=state.rotate};
  $('rotate').onchange=e=>{state.rotate=e.target.checked;if(globe)globe.controls().autoRotate=state.rotate};
  $('clusters').onchange=e=>{state.cluster=e.target.checked;renderPoints()};
@@ -109,7 +116,7 @@ function bind(){
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('about').hidden=true;$('healthModal').hidden=true;$('drawer').hidden=true}});
  function clock(){$('clock').textContent=new Intl.DateTimeFormat('en-GB',{timeZone:'UTC',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date())+' UTC'}clock();setInterval(clock,30000);
 }
-bind();initGlobe();loadData();setInterval(loadData,15*60*1000);
+bind();initGlobe();loadData();loadEvents();setInterval(loadData,15*60*1000);
 
 async function showHealth(){
  const host=$('healthContent');host.replaceChildren();
@@ -127,6 +134,7 @@ async function showHealth(){
   add('Distinct unmatched headlines',d.unmapped_distinct_titles??'Not available');
   add('Geographic quadrants (sampled records)',Object.entries(d.geographic_quadrants||{}).map(([k,v])=>`${k}: ${v}`).join(' · ')||'Not available');
   add('Most unmatched feeds',Object.entries(d.unmapped_by_feed||{}).slice(0,8).map(([k,v])=>`${k}: ${v}`).join(' · ')||'Not available');
+  add('Google News regional editions',Object.entries(d.google_feeds_by_region||{}).map(([k,v])=>`${k}: ${v.ok}/${v.total} feeds · ${v.mapped_pre_dedupe} mapped before deduplication`).join(' · ')||'Awaiting new collection');
   add('Failed feeds',(d.feeds_failed||[]).join(' · ')||'None');
  }catch(e){host.textContent='Could not load data-health.json: '+e.message}
 }
