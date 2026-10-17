@@ -79,6 +79,8 @@ function ambientSettlementDensity(lat,lng){
 }
 
 let neonTextureUrl=null,twinkleFrame=0;
+let measuredPopulationImage=null, measuredPopulationStatus='not-loaded';
+
 let permanentBorders=[]; // Cartographic geometry, completely independent of news data
 let bordersLoading=false; // MUST initialize before bind() calls initCoverageControls()
 function clean(s){return String(s??'').slice(0,500)}
@@ -195,7 +197,14 @@ function bind(){
  $('drawerClose').onclick=()=>{state.selected=null;$('drawer').hidden=true;if(globe)globe.controls().autoRotate=state.rotate};
  $('searchForm').onsubmit=e=>{e.preventDefault();let v=$('placeSearch').value.match(/^\s*(-?\d+(?:\.\d+)?)\s*[,; ]\s*(-?\d+(?:\.\d+)?)\s*$/);if(!v){$('placeSearch').setCustomValidity('Enter latitude,longitude, such as 35.68,139.69');$('placeSearch').reportValidity();return}let lat=+v[1],lng=+v[2];if(Math.abs(lat)>90||Math.abs(lng)>180){$('placeSearch').setCustomValidity('Coordinates out of range');$('placeSearch').reportValidity();return}$('placeSearch').setCustomValidity('');if(globe)globe.pointOfView({lat,lng,altitude:.75},1000);pickPlace({lat,lng})};
  $('placeSearch').oninput=()=>$('placeSearch').setCustomValidity('');
- $('aboutBtn').onclick=$('methodBtn').onclick=()=>$('about').hidden=false;
+ $('aboutBtn').onclick=$('methodBtn').onclick=()=>{
+  $('about').hidden=false;
+  const body=$('about').querySelector('.modal-content');
+  if(body&&!$('populationAttribution')){
+   const note=el('p','Population brightness: where loaded, a preprocessed WorldPop 2020 1-km population-density model (CC BY 4.0) influences ambient cyan grid brightness, not news signals. If unavailable, the previous city-hub approximation is used. This is a historical population estimate, not a live feed.');
+   note.id='populationAttribution';body.append(note);
+  }
+ };
  initCoverageControls();
  initVisualControls();
  $('healthBtn').onclick=()=>{ $('healthModal').hidden=false; showHealth(); };
@@ -273,6 +282,7 @@ function initCoverageControls(){
  wrap.append(label,explanation,note);panel.append(wrap);
  control.onchange=()=>{state.coverage=control.checked;renderCoverage()};
  loadBoundaries();
+ loadPopulationDensityTexture();
 }
 async function loadBoundaries(){
  if(bordersLoading||state.coverageReady)return;
@@ -363,6 +373,23 @@ function makeNeonTexture(){
 }
 // v1.6B cartography: generated in-browser from country geometries, not news data.
 // A raster mask avoids doing thousands of costly point-in-country searches.
+// This image is generated separately using WorldPop data, not the news feed.
+function loadPopulationDensityTexture(){
+ if(measuredPopulationStatus!=='not-loaded')return;
+ measuredPopulationStatus='loading';
+ const image=new Image();
+ image.onload=()=>{
+  measuredPopulationImage=image;
+  measuredPopulationStatus='ready';
+  console.info('WorldPulse: measured population brightness raster ready.');
+  if(globe&&state.coverageReady&&state.visualMode==='neon')updateNeonTexture();
+ };
+ image.onerror=()=>{
+  measuredPopulationStatus='unavailable';
+  console.info('WorldPulse: optional population raster not available; using existing approximate settlement brightness.');
+ };
+ image.src='assets/population-density.png';
+}
 function updateNeonTexture(){
  // Build a geographically accurate equirectangular image directly from the
  // bundled GeoJSON. This does NOT depend on D3, news data, or WebGL paths APIs.
@@ -402,10 +429,18 @@ function updateNeonTexture(){
    if(opened)m.fill('evenodd');
   }
   const alpha=m.getImageData(0,0,W,H).data;
+  let populationPixels=null;
+  if(measuredPopulationImage){
+   const populationCanvas=document.createElement('canvas');populationCanvas.width=W;populationCanvas.height=H;
+   const pctx=populationCanvas.getContext('2d',{willReadFrequently:true});
+   pctx.drawImage(measuredPopulationImage,0,0,W,H);
+   populationPixels=pctx.getImageData(0,0,W,H).data;
+  }
+
   // Keep the regular dot grid. Settlement intensity changes brightness only,
   // so background structure stays distinct from foreground news events.
   // City-hub estimates are an aesthetic proxy, NOT measured census density.
-  for(const hub of POP_HUBS){
+  if(!measuredPopulationImage)for(const hub of POP_HUBS){
    const u=px(hub.lng),v=py(hub.lat);
    const radius=Math.max(12,Math.min(29,hub.weight*1.8));
    const g=x.createRadialGradient(u,v,0,u,v,radius);
@@ -418,7 +453,7 @@ function updateNeonTexture(){
   for(let v=2;v<H;v+=gridStep)for(let u=2;u<W;u+=gridStep){
    if(alpha[(v*W+u)*4+3]<128)continue;
    const lat=90-(v/H)*180,lon=(u/W)*360-180;
-   const density=ambientSettlementDensity(lat,lon);
+   const density=populationPixels ? populationPixels[(v*W+u)*4]/255 : ambientSettlementDensity(lat,lon);
    // Perceptually lift intermediate density without flattening contrast.
    const t=Math.pow(Math.max(0,Math.min(1,density)),.82);
    const variation=(Math.abs(Math.sin(u*12.9898+v*78.233)*43758.5453)%1-.5)*.045;

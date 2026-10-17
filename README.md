@@ -1,18 +1,31 @@
-# WorldPulse v1.6C.2 — Ambient Brightness Refinement
+# WorldPulse v1.6C.3 — Measured population brightness
 
-Visual-only patch, building on v1.6C.1.
+This **incremental patch** builds on v1.6C.2. The neon globe's fixed, regularly spaced cyan land dots are brightness-modulated by a small static texture generated from WorldPop 2020 population-density data. Dot spacing and sizes do not change. Country outlines, category-coloured news signals, the Real/Neon toggle, and all news collection scripts are unchanged.
 
-## What changes
-- Preserves the uniform 5-pixel land-dot grid and the working cyan borders.
-- Uses modest brightness variation to suggest settlement concentration: denser areas are brighter, sparse land is darker.
-- Adds restrained urban-node glows beneath grid dots.
-- Reduces random sparkle variations so regional brightness patterns remain readable.
-- Does not alter news markers, news collection, JSON schemas, or GitHub Actions.
+## Install (GitHub Pages)
 
-**Accuracy note:** The glow is an illustrative settlement proxy based on an approximate curated city-hub list, *not* a measured global population raster. Do not interpret it as exact census density or live activity.
+1. Replace root `app.js` with the included file.
+2. Create `scripts/build_population_texture.py` using the included script.
+3. Add `.github/workflows/build-population-texture.yml` as a **new workflow**. GitHub's upload interface can hide dot-folders; use **Add file → Create new file** and enter `.github/workflows/build-population-texture.yml` as the filename, then paste its contents if necessary.
+4. Keep existing root `world-borders.geojson` unchanged. Keep your existing `.github/workflows/update.yml` unchanged.
+5. After committing, open **Actions → Build WorldPulse population texture → Run workflow**. This runs a *one-time*, independent build and commits `assets/population-density.png` and the source metadata file to `main`.
+6. Wait for the Pages build, then hard-refresh WorldPulse. In Console, look for `WorldPulse: measured population brightness raster ready.`
 
-## Install
-Replace the repository-root `app.js` with this version. Keep `world-borders.geojson` in the repository root; it is also included in this ZIP for convenience. Keep the site's other files and `.github/workflows/update.yml` unchanged. Commit to `main`, wait for GitHub Pages, and hard refresh.
+**Important:** This ZIP **does not include a measured population PNG**. The external raster could not be fetched from the artifact-building environment. GitHub Actions must fetch it and generate the static PNG. If that action fails or the PNG does not exist, the site's earlier city-hub approximation remains in use. The workflow fails rather than inventing measured data. The action does not modify `update.yml` or any news data.
 
-## Verification
-Check Europe, eastern North America, India/East Asia and the Sahara or central Australia in Neon mode. Borders should stay fixed. Dots should remain on the same grid while showing subtle brightness differences. Toggle Real globe to confirm it is unchanged. Confirm that news dots and category filters still work.
+## What the generated PNG represents
+
+- Source: WorldPop 1km population density time-series (year 2020), persons/km², delivered by the WorldPop ArcGIS ImageServer.
+- Method: the source raster is downsampled into a global equirectangular image (1440×720) and logarithmically scaled to 8-bit brightness. This is an *ambient visualization* of modelled residential density, not exact population counts at each drawn dot and not a real-time reading.
+- Areas outside the source raster extent (around south of 59.5°S / north of 83.6°N) are blank in the derived density layer. Country borders remain visible.
+- License: CC BY 4.0. Attribution: WorldPop et al., *Global High Resolution Population Denominators Project*, DOI 10.5258/SOTON/WP00674. See `assets/population-density-info.json` after generation.
+
+## Testing
+
+- `node --check app.js`
+- `python -m unittest discover -s tests -v`
+- Live download and WebGL rendering must be tested after deployment. Check the *population* Action log to ensure that measured raster values were actually obtained.
+
+## Files
+
+`app.js` (replace), `scripts/build_population_texture.py` (add), `.github/workflows/build-population-texture.yml` (add), `tests/test_population_texture.py` (optional). No changes to the main `update.yml`.
