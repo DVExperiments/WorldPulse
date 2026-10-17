@@ -391,8 +391,8 @@ function updateNeonTexture(){
    }
    if(segmentOpen)x.stroke();
   }
-  // Land dotted texture with ambient settlement-density modulation.
-  // This is NOT live news density; it is background human-settlement texture.
+  // Land dotted texture with population-informed brightness.
+  // The grid spacing stays uniform; only brightness changes with settlement density.
   const mask=document.createElement('canvas');mask.width=W;mask.height=H;
   const m=mask.getContext('2d',{willReadFrequently:true});m.fillStyle='#ffffff';
   for(const poly of polys){m.beginPath();let opened=false;
@@ -402,12 +402,12 @@ function updateNeonTexture(){
    if(opened)m.fill('evenodd');
   }
   const alpha=m.getImageData(0,0,W,H).data;
-  // Subtle metro halos first, so borders and live markers still dominate above them.
+  // Soft metro halos help dense regions feel more inhabited without impersonating live news.
   for(const hub of POP_HUBS){
-   const u=px(hub.lng),v=py(hub.lat),r=Math.max(16,Math.min(38,hub.weight*2.1));
+   const u=px(hub.lng),v=py(hub.lat),r=Math.max(18,Math.min(42,hub.weight*2.35));
    const g=x.createRadialGradient(u,v,0,u,v,r);
-   g.addColorStop(0,`rgba(59,244,236,${Math.min(.17,.045+hub.weight*.010).toFixed(3)})`);
-   g.addColorStop(.45,`rgba(30,175,198,${Math.min(.08,.018+hub.weight*.005).toFixed(3)})`);
+   g.addColorStop(0,`rgba(72,248,240,${Math.min(.16,.035+hub.weight*.008).toFixed(3)})`);
+   g.addColorStop(.48,`rgba(34,170,196,${Math.min(.07,.012+hub.weight*.0035).toFixed(3)})`);
    g.addColorStop(1,'rgba(0,0,0,0)');
    x.fillStyle=g;x.beginPath();x.arc(u,v,r,0,Math.PI*2);x.fill();
   }
@@ -415,15 +415,16 @@ function updateNeonTexture(){
    if(alpha[(v*W+u)*4+3]<128)continue;
    const lat=90-(v/H)*180,lon=(u/W)*360-180;
    const dens=ambientSettlementDensity(lat,lon);
-   const r=Math.abs(Math.sin(u*12.9898+v*78.233)*43758.5453)%1;
-   const probability=.10 + dens*.62;
-   if(r>probability)continue;
-   const bright=dens>.72&&r>.76;
-   const alphaDot=(.10 + dens*.42 + (bright?.14:0)).toFixed(3);
-   const size=bright?2.2:dens>.46?1.6:1.1;
-   const cyan=bright?74:46+Math.round(dens*28), green=bright?248:166+Math.round(dens*56), blue=bright?241:183+Math.round(dens*38);
+   const noise=Math.abs(Math.sin(u*12.9898+v*78.233)*43758.5453)%1;
+   // Maintain the full grid, but let dense regions become noticeably brighter.
+   const alphaBase=.10 + dens*.52 + (dens>.75?.05:0) + (noise>.92?.04:0);
+   const alphaDot=Math.min(.72,alphaBase).toFixed(3);
+   const lift=Math.min(1,dens*1.1);
+   const cyan=54 + Math.round(lift*24);
+   const green=160 + Math.round(lift*76);
+   const blue=178 + Math.round(lift*54);
    x.fillStyle=`rgba(${cyan},${green},${blue},${alphaDot})`;
-   x.fillRect(u,v,size,size);
+   x.fillRect(u,v,1.2,1.2);
   }
   // Permanent boundaries: doubled luminous strokes, fixed to the Earth texture.
   for(const [width,color,blur] of [[4,'rgba(0,240,233,.23)',7],[1.35,'rgba(56,240,235,.88)',0]]){

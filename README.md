@@ -1,24 +1,24 @@
-# WorldPulse v1.6C — Settlement Density Globe
+# WorldPulse v1.6C.1 — Population Brightness Refinement
 
-This patch refines the neon globe surface so the ambient land texture feels more alive and closer to the concept direction.
+This patch refines the neon globe's ambient land grid so it keeps the same regular dotted grid while showing population density through clearer brightness variation.
 
-## Changes
+## What changed
 
-- Keeps the working neon country and coastline outlines from v1.6B.4.
-- Adds a population / settlement-inspired ambient dot field across land.
-- Major urban regions receive brighter cyan dot density and faint local glow.
-- Sparse regions remain quieter and dimmer.
-- Live news dots remain the coloured foreground layer.
-- No changes to the news collection pipeline or workflow.
+- Preserves the existing neon country and coastline outlines.
+- Preserves the regular land grid pattern.
+- Dense population regions now render with brighter cyan dots.
+- Sparse regions remain dimmer.
+- Keeps subtle metropolitan glow under the grid.
+- Does not change the news collection workflow or category markers.
 
 ## Install
 
-Replace `app.js` in the repository root.
+Replace `app.js` in the repository root with the version from this patch.
 
-Keep `world-borders.geojson` in the repository root. A copy is included for convenience.
+Keep `world-borders.geojson` in the repository root.
 
-Hard refresh the site after GitHub Pages deploys.
+Then let GitHub Pages redeploy and hard refresh the site.
 
 ## Notes
 
-The background settlement texture is an ambient visual layer derived from a built-in worldwide city hub set. It is not a live population dataset and should not be interpreted as live news activity.
+The background grid is an ambient visual layer and is not a live population feed. It is intended to make the globe feel more alive and closer to the digital concept aesthetic.
