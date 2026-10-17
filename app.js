@@ -3,7 +3,7 @@
 const COLORS={politics:'#eeb67e',environment:'#6edcb3',hazards:'#ef797d',society:'#ae94f3',health:'#d3a1ff',education:'#a8a3ff',rights:'#ef9bd0',community:'#bb95dd',economy:'#72baf1',science:'#e4d475',conflict:'#ff5878',social:'#eb8eeb'};
 const LABELS={politics:'Politics',environment:'Environment',hazards:'Hazards',health:'Health',education:'Education',rights:'Rights & justice',community:'Community & culture',society:'Society (legacy)',economy:'Economy',science:'Science',conflict:'War & conflict'};
 const $=id=>document.getElementById(id);
-const state={news:[],posts:[],events:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,precision:'all',rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null};
+const state={news:[],posts:[],events:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,precision:'all',rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null,coverage:false,countries:[],countryStats:new Map(),coverageReady:false};
 let globe, currentPoints=[], lastTier=-1, translationCache=new Map();
 function clean(s){return String(s??'').slice(0,500)}
 function dist(a,b){let rad=Math.PI/180,dLat=(b.lat-a.lat)*rad,dLng=(b.lng-a.lng)*rad;let x=Math.sin(dLat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(dLng/2)**2;return 6371*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x))}
@@ -21,6 +21,11 @@ function initGlobe(){
   .pointRadius(p=>p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11))
   .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
   .ringsData([])
+  .polygonsData([]).polygonCapColor(p=>coverageColor(p.properties.wpCount||0))
+  .polygonSideColor(()=>'rgba(22,68,85,0.05)').polygonStrokeColor(()=>'rgba(167,204,219,0.26)')
+  .polygonAltitude(()=>.004)
+  .polygonLabel(p=>`${clean(p.properties.name)}: ${p.properties.wpCount||0} sampled mapped articles (approximate)`)
+  .onPolygonClick(p=>selectCoverageCountry(p))
   .onPointClick(p=>openPoint(p))
   .onGlobeClick(({lat,lng})=>pickPlace({lat,lng}))
   .onZoom(()=>refreshZoom());
@@ -50,7 +55,7 @@ function renderPoints(){if(!globe)return;let data=state.layer==='news'?state.new
  // Country-level subjects remain small selectable anchors; never imply an event footprint.
  // All perpetual pulse rings are disabled: they were country-only and caused clutter.
  const mapped=state.layer==='news'?data.map(p=>p.accuracy==='country'?{...p,broadAnchor:true}:p):data;
- currentPoints=aggregate(mapped);globe.pointsData(currentPoints);
+ currentPoints=aggregate(mapped);globe.pointsData(currentPoints);renderCoverage();
  $('locations').textContent=data.length.toLocaleString();$('total').textContent=data.reduce((n,p)=>n+p.count,0).toLocaleString();
 }
 function pickPlace(pos){let source=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.layer==='events'?(state.categories.has('hazards')?state.events:[]):state.posts;
@@ -115,6 +120,7 @@ function bind(){
  $('searchForm').onsubmit=e=>{e.preventDefault();let v=$('placeSearch').value.match(/^\s*(-?\d+(?:\.\d+)?)\s*[,; ]\s*(-?\d+(?:\.\d+)?)\s*$/);if(!v){$('placeSearch').setCustomValidity('Enter latitude,longitude, such as 35.68,139.69');$('placeSearch').reportValidity();return}let lat=+v[1],lng=+v[2];if(Math.abs(lat)>90||Math.abs(lng)>180){$('placeSearch').setCustomValidity('Coordinates out of range');$('placeSearch').reportValidity();return}$('placeSearch').setCustomValidity('');if(globe)globe.pointOfView({lat,lng,altitude:.75},1000);pickPlace({lat,lng})};
  $('placeSearch').oninput=()=>$('placeSearch').setCustomValidity('');
  $('aboutBtn').onclick=$('methodBtn').onclick=()=>$('about').hidden=false;
+ initCoverageControls();
  $('healthBtn').onclick=()=>{ $('healthModal').hidden=false; showHealth(); };
  $('healthClose').onclick=()=>$('healthModal').hidden=true;
  $('aboutClose').onclick=()=>$('about').hidden=true;
@@ -133,6 +139,7 @@ async function showHealth(){
   const d=await r.json();
   if(!d.updated_at){host.textContent='Waiting for the first v1.4A.1 collector run.';return}
   const add=(k,v)=>{let row=el('p');let strong=el('strong',k+': ');row.append(strong,document.createTextNode(String(v)));host.append(row)};
+  addHealthOverview(host,d);
   add('Latest update',d.updated_at);add('Successful feeds',`${d.feeds_ok} / ${d.feeds_total}`);add('Unmapped feed entries',d.unmapped_sample_count);add('Duplicates removed',d.duplicates_removed);
   add('Mapped category counts',Object.entries(d.mapped_articles_by_category||{}).map(([k,v])=>`${LABELS[k]||k} ${v}`).join(' · ')||'None');
   add('Place precision',Object.entries(d.mapped_articles_by_location_precision||{}).map(([k,v])=>`${k} ${v}`).join(' · ')||'None');
@@ -146,4 +153,79 @@ async function showHealth(){
   add('Google News regional editions',Object.entries(d.google_feeds_by_region||{}).map(([k,v])=>`${k}: ${v.ok}/${v.total} feeds · ${v.mapped_pre_dedupe} mapped before deduplication`).join(' · ')||'Awaiting new collection');
   add('Failed feeds',(d.feeds_failed||[]).join(' · ')||'None');
  }catch(e){host.textContent='Could not load data-health.json: '+e.message}
+}
+
+
+// v1.5.4C: approximate observed coverage, never a map of actual event frequency.
+function coverageColor(n){if(!n)return 'rgba(57,94,111,0.14)';let t=Math.min(1,Math.log1p(n)/Math.log(60));return `rgba(${Math.round(32+29*t)},${Math.round(103+100*t)},${Math.round(139+83*t)},${(.17+.48*t).toFixed(2)})`}
+function coverageSource(){return state.news.filter(p=>state.categories.has(p.category)&&(state.precision==='all'||p.accuracy===state.precision))}
+function recomputeCountryStats(){
+ if(!state.coverageReady||typeof d3==='undefined')return;
+ const polygons=state.countries;
+ const counts=new Map(polygons.map(c=>[c.id,0]));
+ // Each map signal is counted once in the enclosing polygon. A country-level
+ // subject remains approximate even if its anchor falls within a boundary.
+ for(const p of coverageSource()){
+  const feature=polygons.find(f=>d3.geoContains(f,[p.lng,p.lat]));
+  if(feature)counts.set(feature.id,(counts.get(feature.id)||0)+p.count);
+ }
+ state.countryStats=counts;
+ for(const country of polygons)country.properties.wpCount=counts.get(country.id)||0;
+}
+function renderCoverage(){
+ if(!globe)return;
+ if(!state.coverage||state.layer!=='news'||!state.coverageReady){globe.polygonsData([]);return}
+ recomputeCountryStats();globe.polygonsData(state.countries);
+}
+function selectCoverageCountry(country){
+ if(!state.coverage||state.layer!=='news')return;
+ const members=coverageSource().filter(p=>typeof d3!=='undefined'&&d3.geoContains(country,[p.lng,p.lat]));
+ state.selected={name:country.properties.name+' · sampled coverage',members,count:members.reduce((a,p)=>a+p.count,0)};
+ paintDrawer();
+}
+function initCoverageControls(){
+ const panel=$('precisionFilter')?.closest('.control-panel');if(!panel)return;
+ const wrap=el('div',undefined,'wp-coverage-control');
+ const label=el('label');label.className='toggle';
+ const control=document.createElement('input');control.type='checkbox';control.id='coverageLayer';
+ label.append(control,el('span','Shade countries by sampled reporting'));
+ const explanation=el('p','Approximate coverage only. Unshaded countries may still have news; areas are not incident sites.','hint');
+ const note=el('p','Country boundaries loading…','hint');note.id='coverageInfo';
+ wrap.append(label,explanation,note);panel.append(wrap);
+ control.onchange=()=>{state.coverage=control.checked;renderCoverage()};
+ loadBoundaries();
+}
+async function loadBoundaries(){
+ const note=$('coverageInfo');
+ if(typeof topojson==='undefined'||typeof d3==='undefined'){if(note)note.textContent='Coverage layer unavailable (mapping library missing).';return}
+ try{
+  const r=await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json');
+  if(!r.ok)throw Error('HTTP '+r.status);
+  const topo=await r.json();const features=topojson.feature(topo,topo.objects.countries).features;
+  state.countries=features.filter(f=>f.geometry&&f.properties);
+  state.coverageReady=true;
+  if(note)note.textContent=`${state.countries.length} country/territory shapes available · sampled counts only`;
+  renderCoverage();
+ }catch(e){if(note)note.textContent='Coverage outlines unavailable. News markers remain usable.'}
+}
+function healthStat(container,label,value){const c=el('div',undefined,'wp-health-stat');c.append(el('span',label),el('strong',String(value)));container.append(c)}
+function addHealthOverview(host,d){
+ const card=el('div',undefined,'wp-health-overview');
+ healthStat(card,'Mapped articles',d.mapped_total??'—');
+ healthStat(card,'Mapped signals',d.geo_signal_count??'—');
+ healthStat(card,'Feeds responding',`${d.feeds_ok??'—'} / ${d.feeds_total??'—'}`);
+ healthStat(card,'Distinct unmatched headlines',d.unmapped_distinct_titles??'—');
+ host.append(card);
+ const section=(heading,values)=>{
+  const entries=Object.entries(values||{}).sort((a,b)=>b[1]-a[1]);if(!entries.length)return;
+  const wrap=el('section',undefined,'wp-health-breakdown');wrap.append(el('h3',heading));const max=Math.max(1,...entries.map(x=>Number(x[1])||0));
+  for(const [k,v] of entries.slice(0,12)){
+   const line=el('div',undefined,'wp-bar-row');const title=el('span',LABELS[k]||k);const bar=el('div',undefined,'wp-bar-track');
+   const fill=el('div',undefined,'wp-bar-fill');fill.style.width=(100*Number(v)/max).toFixed(1)+'%';bar.append(fill);
+   line.append(title,bar,el('b',String(v)));wrap.append(line);
+  }host.append(wrap);
+ };
+ section('Topic breakdown (mapped sample)',d.mapped_articles_by_category);
+ section('Geographic precision',d.mapped_articles_by_location_precision);
+ const note=el('p','Country-level counts are only available when supported by explicit geographic mapping. A missing country does not mean no news occurred. Counts are samples, not worldwide totals.','wp-caution');host.append(note);
 }

@@ -1,0 +1,15 @@
+
+/* WorldPulse v1.5.4C analytics and coverage */
+.wp-coverage-control{border-top:1px solid #274051;margin-top:14px;padding-top:13px}
+.wp-health-overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0 24px}
+.wp-health-stat{border:1px solid #30485b;background:#102434;border-radius:12px;padding:13px;display:flex;flex-direction:column;gap:6px}
+.wp-health-stat span{font-size:12px;color:#9bb6c9}
+.wp-health-stat strong{font-size:22px;color:#e8f7fc}
+.wp-health-breakdown{margin:16px 0 22px}
+.wp-health-breakdown h3{font-size:15px;color:#75ddcf;margin:0 0 12px}
+.wp-bar-row{display:grid;grid-template-columns:minmax(110px,1.3fr) minmax(75px,2fr) 34px;gap:10px;align-items:center;margin:8px 0;font-size:12px;color:#b9d1df}
+.wp-bar-row b{text-align:right;color:#e9f5fa}
+.wp-bar-track{height:8px;background:#203747;border-radius:6px;overflow:hidden}
+.wp-bar-fill{height:100%;background:linear-gradient(90deg,#3192a6,#6bddce);border-radius:6px}
+.wp-caution{font-size:12px;line-height:1.6;color:#b0c5d0}
+@media(max-width:550px){.wp-health-overview{grid-template-columns:1fr}}
