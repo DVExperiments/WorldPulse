@@ -241,10 +241,23 @@ function buildCartographicPaths(features){
  return paths;
 }
 function updateCartographicPaths(){
- // Outlines are permanently baked into the neon Earth material.
- // Never allow an optional paths API to interrupt globe/news startup.
- if(!globe)return;
- if(typeof globe.pathsData==='function')globe.pathsData([]);
+ // Borders are actual Three-Globe geographic 3D paths, never news-dependent.
+ // The previous version mistakenly cleared pathsData([]) after generating them.
+ if(!globe || typeof globe.pathsData!=='function')return;
+ if(state.visualMode!=='neon' || !state.coverageReady){globe.pathsData([]);return;}
+ try {
+  globe.pathPoints('coords')
+   .pathPointLat(point=>point[1])
+   .pathPointLng(point=>point[0])
+   .pathColor(p=>p.kind==='coast'?'rgba(53,245,239,0.86)':'rgba(53,208,220,0.54)')
+   .pathAltitude(0.0035)
+   .pathStroke(0.34)
+   .pathResolution(2)
+   .pathsData(permanentBorders);
+  console.info('WorldPulse: permanent neon country paths rendered:',permanentBorders.length);
+ } catch(error) {
+  console.error('WorldPulse boundary path layer failed:',error);
+ }
 }
 
 function healthStat(container,label,value){const c=el('div',undefined,'wp-health-stat');c.append(el('span',label),el('strong',String(value)));container.append(c)}
