@@ -522,23 +522,39 @@ function signalDisplayPoints(points){
  const halos=points.filter(p=>p.count>=2).map(p=>({...p,wpHalo:true,signalSource:p}));
  return [...halos,...points];
 }
-// Visible but restrained twinkle: a small rotating subset of real news signals
-// brightens on each frame. The map and ambient population grid never animate.
+// v1.6D.2: continuous, slow optical shimmer. This is decorative rather than
+// an indicator of story age, urgency or news velocity. Nothing is re-geolocated.
+function signalPhase(p){
+ const n=Math.sin(p.lat*12.9898+p.lng*78.233)*43758.5453;
+ return (n-Math.floor(n))*Math.PI*2;
+}
+function shimmerAmount(p,now){
+ const phase=signalPhase(p);
+ const seconds=now/1000;
+ // Three spatially staggered slow waves prevent synchronous flashing.
+ const wave=Math.sin(seconds*(.74+(phase/Math.PI)*.075)+phase);
+ const glint=Math.pow(Math.max(0,Math.sin(seconds*1.36+phase*2.9)),10);
+ return Math.min(1,.31+.27*wave+.40*glint);
+}
+function blendTowardWhite(hex,mix){
+ const rgb=hexRgb(hex);
+ const k=Math.max(0,Math.min(1,mix));
+ return `rgb(${rgb.map(v=>Math.round(v+(255-v)*k)).join(',')})`;
+}
 function refreshSignalGlow(){
- if(!globe||!currentPoints.length)return;
- if(state.visualMode!=='neon'||!state.twinkle){globe.pointColor(p=>signalColor(p));return}
- const tick=Math.floor(Date.now()/950);
+ if(!globe)return;
+ const active=state.visualMode==='neon'&&state.twinkle;
+ const now=Date.now();
  globe.pointColor(p=>{
-  if(p.wpHalo)return signalColor(p);
+  if(!active||p.wpHalo)return signalColor(p);
   const base=COLORS[p.category]||COLORS.social;
-  // Stable geographical seed ensures twinkles stay attached to real signals.
-  const seed=Math.abs(Math.sin(p.lat*12.9898+p.lng*78.233)*43758.5453);
-  const slot=Math.floor((seed%1)*23);
-  // Each signal sparkles for one of 23 frames, or ~1 second per 22 seconds.
-  const sparkle=(tick+slot)%23===0;
-  if(!sparkle)return base;
-  const rgb=hexRgb(base);
-  return `rgb(${Math.round(rgb[0]+(255-rgb[0])*.74)},${Math.round(rgb[1]+(255-rgb[1])*.74)},${Math.round(rgb[2]+(255-rgb[2])*.74)})`;
+  const glow=shimmerAmount(p,now);
+  return blendTowardWhite(base,.07+glow*.40);
+ });
+ globe.pointRadius(p=>{
+  const r=signalRadius(p);
+  if(!active||p.wpHalo)return r;
+  return r*(1+.07*shimmerAmount(p,now));
  });
 }
 
@@ -551,5 +567,7 @@ function initVisualControls(){
  if(glow)glow.onchange=()=>{state.twinkle=glow.checked;applyVisualMode()};
  document.body.classList.toggle('wp-neon',state.visualMode==='neon');
  document.querySelectorAll('[data-visual]').forEach(b=>b.classList.toggle('active',b.dataset.visual===state.visualMode));
- setInterval(refreshSignalGlow,950);
+ // Smooth enough to be perceptible, slow enough to stay inexpensive on laptops.
+ // Avoid requesting WebGL updates when the document is hidden.
+ setInterval(()=>{if(!document.hidden)refreshSignalGlow()},220);
 }
