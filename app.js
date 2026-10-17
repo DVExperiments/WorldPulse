@@ -84,6 +84,8 @@ let ambientBaseCanvas=null, ambientLiveCanvas=null, ambientGridSamples=[];
 let ambientLastFrame=0, ambientStarted=false;
 let ambientGpuTexture=null,ambientGpuMaterial=null,ambientFrames=0,ambientUploads=0,ambientTimer=null,ambientError='';
 let ambientContrastTest=false;
+const wpReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+if(wpReducedMotion.matches)state.twinkle=false;
 window.WorldPulseShimmerTest=(enabled=true)=>{ambientContrastTest=!!enabled;return {testMode:ambientContrastTest, message:'Temporary high-contrast test mode; call WorldPulseShimmerTest(false) to disable.'}};
 function ambientHash(n){const v=Math.sin(n*12.9898)*43758.5453;return v-Math.floor(v)}
 function clearAmbientTexture(){ambientBaseCanvas=null;ambientLiveCanvas=null;ambientGridSamples=[];ambientStarted=false;ambientLastFrame=0;ambientFrames=0;ambientUploads=0;ambientGpuTexture=null;ambientGpuMaterial=null;ambientError=''}
@@ -106,35 +108,30 @@ function bindLivingEarthTexture(){
 }
 function updateLivingEarth(now){
  if(!globe||state.visualMode!=='neon'||!ambientBaseCanvas||!ambientLiveCanvas||document.hidden)return;
- if(now-ambientLastFrame<85)return;
+ if(now-ambientLastFrame<185)return;
  ambientLastFrame=now;
  if(!bindLivingEarthTexture())return;
  const ctx=ambientLiveCanvas.getContext('2d');
  ctx.clearRect(0,0,ambientLiveCanvas.width,ambientLiveCanvas.height);
  ctx.drawImage(ambientBaseCanvas,0,0);
- if(state.twinkle){
+ if(state.twinkle&&!wpReducedMotion.matches){
   const t=now/1000;
   for(const dot of ambientGridSamples){
    // Smoothly interpolated seeded noise, not a repeating sine wave.
    const seed=dot.u*131.73+dot.v*17.37+dot.phase*3.91;
-   const q=t*(1.7+.85*dot.speed)+dot.phase;
+   // Slower, irregular ambient drift with eased transitions and no flashes.
+   const q=t*(.38+.26*dot.speed)+dot.phase;
    const frame=Math.floor(q),fraction=q-frame;
    const eased=fraction*fraction*(3-2*fraction);
    const randomAt=k=>ambientHash(seed+k*41.13);
    const jitter=randomAt(frame)*(1-eased)+randomAt(frame+1)*eased;
-   const slow=q*.27,si=Math.floor(slow),sf=slow-si;
+   const slow=q*.22,si=Math.floor(slow),sf=slow-si;
    const blend=sf*sf*(3-2*sf);
    const drift=randomAt(si+903)*(1-blend)+randomAt(si+904)*blend;
-   // Mostly quiet, with small independent flickers that occasionally catch the eye.
-   // Short stochastic glints avoid the impression that the whole Earth is breathing.
-   const sparkTime=t*(2.2+.9*dot.speed)+dot.phase*2.3;
-   const beat=Math.floor(sparkTime),progress=sparkTime-beat;
-   const spike=ambientHash(seed+beat*73.17)>.78
-     ? Math.pow(Math.max(0,1-Math.abs(progress-.22)*4),2) : 0;
-   const flicker=.58*jitter+.42*drift;
+   const flicker=.52*jitter+.48*drift;
    const brightness=ambientContrastTest
-     ? .10+.86*Math.max(flicker,spike)
-     : Math.min(.94,.025+dot.base*(.28+1.40*flicker+1.65*spike));
+     ? .10+.68*flicker
+     : Math.min(.72,.06+dot.base*(.42+.90*flicker));
    ctx.fillStyle=`rgba(171,255,249,${brightness.toFixed(3)})`;
    ctx.fillRect(dot.u,dot.v,ambientContrastTest?2:1.65,ambientContrastTest?2:1.65);
   }
@@ -633,12 +630,13 @@ function initVisualControls(){
   state.visualMode=button.dataset.visual;localStorage.setItem('worldpulse-globe-mode',state.visualMode);applyVisualMode();
  }));
  const glow=document.getElementById('twinkleToggle');
- if(glow)glow.onchange=()=>{state.twinkle=glow.checked;updateLivingEarth(performance.now()+90)};
+ if(glow){glow.checked=state.twinkle;glow.onchange=()=>{state.twinkle=glow.checked;ambientLastFrame=0;updateLivingEarth(performance.now())};}
+ wpReducedMotion.addEventListener?.('change',e=>{if(e.matches){state.twinkle=false;if(glow)glow.checked=false;ambientLastFrame=0;updateLivingEarth(performance.now());}});
  document.body.classList.toggle('wp-neon',state.visualMode==='neon');
  document.querySelectorAll('[data-visual]').forEach(b=>b.classList.toggle('active',b.dataset.visual===state.visualMode));
- // v1.6D.7: target ~11 frames per second (was ~4), keeping uploads capped.
+ // v1.6D.10: slower, smoothed ambient flicker; ~5fps texture refresh cap.
  // Avoid requesting WebGL updates when the document is hidden.
  // Animate the existing globe texture rather than rebuilding news WebGL points.
- if(!ambientTimer)ambientTimer=setInterval(()=>{if(!document.hidden&&state.visualMode==='neon')updateLivingEarth(performance.now())},90);
+ if(!ambientTimer)ambientTimer=setInterval(()=>{if(!document.hidden&&state.visualMode==='neon'&&state.twinkle&&!wpReducedMotion.matches)updateLivingEarth(performance.now())},190);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)ambientLastFrame=0});
 }
