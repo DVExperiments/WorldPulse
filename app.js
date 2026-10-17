@@ -19,7 +19,7 @@ function initGlobe(){
   .pointColor(p=>COLORS[p.category]||COLORS.social)
   .pointAltitude(p=>Math.min(.08,.011+Math.log1p(p.count)*.008))
   .pointRadius(p=>Math.min(1.6,.19+Math.sqrt(p.count)*.11))
-  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'mentions':'posts'}`)
+  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':'posts'}`)
   .onPointClick(p=>openPoint(p))
   .onGlobeClick(({lat,lng})=>pickPlace({lat,lng}))
   .onZoom(()=>refreshZoom());
@@ -67,7 +67,7 @@ async function maybeTranslate(node,original){if(!state.translate)return;let key=
  try{let translated=await t.translate(original);if(translated){translationCache.set(key,translated);if(node.isConnected&&state.translate)node.textContent=translated}}catch{}
 }
 function paintDrawer(){const p=state.selected;if(!p)return; $('drawer').hidden=false;$('drawer-title').textContent=p.name;
- let members=p.members||[p];const total=members.reduce((n,x)=>n+x.count,0);$('drawer-meta').textContent=`${total.toLocaleString()} ${state.layer==='news'?'location mentions':'posts'} · ${members.length} signals${p.distance!=null?' · nearest signal '+p.distance+' km away':''}`;
+ let members=p.members||[p];const total=members.reduce((n,x)=>n+x.count,0);$('drawer-meta').textContent=`${total.toLocaleString()} ${state.layer==='news'?'matched articles in sampled results':'posts'} · ${members.length} signals${p.distance!=null?' · nearest signal '+p.distance+' km away':''}`;
  let area=$('drawer-stories');area.replaceChildren();
  const stories=new Map();for(let m of [...members].sort((a,b)=>b.count-a.count))for(let a of (m.articles||[])){if(a.url&&/^https?:\/\//.test(a.url)&&!stories.has(a.url))stories.set(a.url,{...a,category:m.category,place:m.name})}
  if(!stories.size){area.append(el('p',state.layer==='news'?'No article links available for this location in the current snapshot. Zoom out or select another signal.':'No location-verified social posts are available here.'));return}

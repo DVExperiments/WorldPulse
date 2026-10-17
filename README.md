@@ -1,6 +1,6 @@
 # WORLD PULSE — Interactive Global News Globe
 
-A GitHub Pages–ready 3D news geography visualization: spin the globe, choose coverage themes, select locations and open linked articles. Built with HTML/CSS/JS, [Globe.GL](https://globe.gl/) and a scheduled Python data pipeline pulling from [GDELT GEO 2.0](https://blog.gdeltproject.org/gdelt-geo-2-0-api-debuts/).
+A GitHub Pages–ready 3D news geography visualization: spin the globe, choose coverage themes, select locations and open linked articles. Built with HTML/CSS/JS, [Globe.GL](https://globe.gl/) and a scheduled Python data pipeline pulling article results from [GDELT DOC 2.0](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/).
 
 ## Deploy (no server, no API keys)
 
@@ -13,13 +13,13 @@ A GitHub Pages–ready 3D news geography visualization: spin the globe, choose c
 
 A new repository starts with **no sample or fabricated news**. The site needs the first successful Actions run to populate signals. The globe JavaScript and Earth texture need internet/CDN access. You can run `python scripts/update.py` locally (Python 3.10+ standard library only) if desired.
 
-## What the numbers mean
+## What the numbers mean (v1.1 collector)
 
-**Critical distinction:** the 24-hour total is **not the number of unique news articles published in the last 24 hours**. GDELT's GEO `pointdata` counts the geographic **mentions** within news coverage matching a query during the rolling 24-hour window. One article may reference multiple locations and themes; each theme query captures only a subset of available news. Markers are locations discussed in the news, not necessarily events physically happening at those points. Geo-location and automated thematic search can make mistakes.
+**This release uses GDELT DOC 2.0, not GEO 2.0.** The old GEO endpoint returned HTTP 404 and was replaced. The scheduled script requests the newest **up to 250 articles for each of six category searches** from the preceding 24 hours. It matches explicit named places in article *headlines* against a bundled 165-entry geographic name table, placing a dot at the reference coordinate for that named place. It does **not** infer a reporter's location from an outlet's domain, or a news event location from the whole article. Some headlines have no recognized place; those are omitted. Ambiguous locations can still occur. Country markers represent a reference point, not a country's news centroid.
 
-The six categories are separate news keyword searches: politics, environment, hazards, society, economy, science. A marker's color denotes the category query that surfaced the mention, not editorial classification or severity. Clusters sum mentions over nearby grid cells; the dominant theme determines cluster color. Clustering bins change as the globe zooms, and counts from overlapping thematic results can be double-counted.
+**Marker count = unique article URLs in this limited query sample whose title matched the chosen place and category**, not the number of all new articles over 24 hours, not internet traffic, not unique news events, and not a complete representation of reporting for a country. One article can contribute to multiple category searches; global totals can overlap. For a matched article, the collector assigns its single longest explicitly named place and saves up to eight source links per marker. An empty category can be legitimate, but check Actions logs for API errors.
 
-Up to five example source links per mapped location are parsed from GDELT's HTML popups. Links go to the original publishers. They are not guarantees of article availability, not an exhaustive feed and not necessarily the newest five unique stories. GDELT monitors many languages and news sources but is not comprehensive, and precise article publication times are not available in this feed.
+The six categories are independent keyword queries, not objective classifications of the event. Source titles may arrive in languages other than English; location matching uses Roman-script named places and is incomplete for other languages. Article titles appear as retrieved, with experimental on-device translation on supported browsers only. Older snapshots are kept if a category fails. A mixture of new and older category samples means totals are not synchronized across categories.
 
 ## Translation
 
@@ -38,14 +38,14 @@ No social platform APIs or tokens are currently configured. Avoid publishing pre
 ## Files
 
 - `index.html` / `style.css` / `app.js`: frontend and 3D interactions.
-- `scripts/update.py`: GDELT ingestion and GeoJSON article-link extraction; retains old category data if a query fails and reports stale status.
+- `scripts/update.py`: GDELT DOC article-list retrieval and headline-based location matching; retains old category data if a query fails and reports stale status.
 - `.github/workflows/update.yml`: public repository scheduled automation / manual run.
 - `data/news.json`: machine-generated snapshot (empty at first).
 - `data/social.json`: optional verified-social-location dataset.
 
 ## Next improvements
 
-- Add properly deduplicated story-level counts and a verified event-location geocoder using event-centric data, rather than keyword mention tallies.
+- Add event-level deduplication, a larger reviewed gazetteer, and reliable event-location geocoding rather than headline place-name matching.
 - Add automatic multilingual translation via a service-side translation provider with language caches and correct attribution.
 - Add a vetted platform-specific public social feed with consented coarse locations, geographic confidence and sampling disclosures.
 - Add date sliders, time-series archives, entity search, source diversity/credibility context and automated tests on live feed schemas.
@@ -53,4 +53,4 @@ No social platform APIs or tokens are currently configured. Avoid publishing pre
 
 ## Libraries & providers
 
-[Globe.GL](https://github.com/vasturiano/globe.gl) (MIT) and GDELT GEO 2.0 (data source, terms governed by provider). Earth texture via the Three Globe example assets. No news article full text is stored in this app, just source links and title snippets. Browser requests also contact image/CDN providers. Check licensing and rate limits before public commercial deployment.
+[Globe.GL](https://github.com/vasturiano/globe.gl) (MIT) and GDELT DOC 2.0 (data source, terms governed by provider). Earth texture via the Three Globe example assets. No news article full text is stored in this app, just source links and title snippets. Browser requests also contact image/CDN providers. Check licensing and rate limits before public commercial deployment.
