@@ -24,9 +24,6 @@ function initGlobe(){
   .pointRadius(p=>state.visualMode==='neon'?Math.min(1.3,.25+Math.sqrt(p.count)*.16):p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11))
   .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
   .ringsData([])
-  .pathsData([]).pathPoints('coords').pathPointLat(d=>d[1]).pathPointLng(d=>d[0])
-  .pathColor(d=>d.kind==='coast'?'rgba(65,255,244,0.94)':'rgba(38,194,217,0.54)')
-  .pathStroke(d=>d.kind==='coast'?0.40:0.19).pathAltitude(d=>d.kind==='coast'?.015:.011)
   .polygonsData([]).polygonCapColor(p=>coverageColor(p.properties.wpCount||0))
   .polygonSideColor(()=>'rgba(22,68,85,0.05)').polygonStrokeColor(()=>'rgba(167,204,219,0.26)')
   .polygonAltitude(()=>.004)
@@ -136,7 +133,9 @@ function bind(){
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('about').hidden=true;$('healthModal').hidden=true;$('drawer').hidden=true}});
  function clock(){$('clock').textContent=new Intl.DateTimeFormat('en-GB',{timeZone:'UTC',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date())+' UTC'}clock();setInterval(clock,30000);
 }
-bind();initGlobe();loadData();loadEvents();setInterval(loadData,15*60*1000);
+try{bind()}catch(error){console.error('WorldPulse control setup:',error)}
+try{initGlobe()}catch(error){console.error('WorldPulse globe setup:',error);const n=$('emptyNotice');if(n){n.hidden=false;n.textContent='Globe setup error: '+error.message}}
+loadData();loadEvents();loadBoundaries();setInterval(loadData,15*60*1000);
 
 async function showHealth(){
  const host=$('healthContent');host.replaceChildren();
@@ -202,7 +201,10 @@ function initCoverageControls(){
  control.onchange=()=>{state.coverage=control.checked;renderCoverage()};
  loadBoundaries();
 }
+let bordersLoading=false;
 async function loadBoundaries(){
+ if(bordersLoading||state.coverageReady)return;
+ bordersLoading=true;
  const note=$('coverageInfo');
  try{
   // Ship actual boundaries with WorldPulse: no dependency on a third-party
@@ -221,7 +223,7 @@ async function loadBoundaries(){
  }catch(e){
   if(note)note.textContent='Country geography could not load. Check world-borders.geojson is in the repository root.';
   console.warn('WorldPulse cartography:',e);
- }
+ }finally{bordersLoading=false}
 }
 // Each polygon exterior becomes a permanent neon outline. Holes remain fine
 // secondary strokes. All points are geographic lon/lat, never synthetic news.
@@ -239,8 +241,10 @@ function buildCartographicPaths(features){
  return paths;
 }
 function updateCartographicPaths(){
+ // Outlines are permanently baked into the neon Earth material.
+ // Never allow an optional paths API to interrupt globe/news startup.
  if(!globe)return;
- globe.pathsData(state.visualMode==='neon'?permanentBorders:[]);
+ if(typeof globe.pathsData==='function')globe.pathsData([]);
 }
 
 function healthStat(container,label,value){const c=el('div',undefined,'wp-health-stat');c.append(el('span',label),el('strong',String(value)));container.append(c)}
@@ -287,31 +291,58 @@ function makeNeonTexture(){
 // v1.6B cartography: generated in-browser from country geometries, not news data.
 // A raster mask avoids doing thousands of costly point-in-country searches.
 function updateNeonTexture(){
- if(!globe||state.visualMode!=='neon'||!state.coverageReady||!state.countries.length||typeof d3==='undefined')return;
- const W=2048,H=1024,canvas=document.createElement('canvas');canvas.width=W;canvas.height=H;
- const ctx=canvas.getContext('2d'),projection=d3.geoEquirectangular().translate([W/2,H/2]).scale(W/(2*Math.PI));
- const path=d3.geoPath(projection,ctx);
- ctx.fillStyle='#020d1c';ctx.fillRect(0,0,W,H);
- // Quiet grid; the bright coastlines, not the meridians, define the Earth.
- ctx.lineWidth=.85;
- for(let lat=-75;lat<=75;lat+=15){let y=(90-lat)*H/180;ctx.strokeStyle=lat===0?'rgba(38,225,229,.19)':'rgba(30,170,195,.12)';ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke()}
- for(let lon=-180;lon<=180;lon+=15){let x=(lon+180)*W/360;ctx.strokeStyle=lon===0?'rgba(38,225,229,.18)':'rgba(30,170,195,.13)';ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke()}
- // Render land as a pixel mask and sample it for a much denser dotted silhouette.
- const mask=document.createElement('canvas');mask.width=W;mask.height=H;const mc=mask.getContext('2d',{willReadFrequently:true});
- mc.fillStyle='#ffffff';for(const feature of state.countries){mc.beginPath();path.context(mc)(feature);mc.fill()}path.context(ctx);
- const pixels=mc.getImageData(0,0,W,H).data;
- ctx.fillStyle='rgba(14,100,119,.15)';for(const feature of state.countries){ctx.beginPath();path(feature);ctx.fill()}
- for(let y=4;y<H-4;y+=5){for(let x=4;x<W-4;x+=5){
-  if(pixels[(y*W+x)*4+3]<128)continue;
-  const rnd=Math.abs(Math.sin(x*12.9898+y*78.233)*43758.5453)%1;
-  if(rnd<.17)continue;
-  const radius=rnd>.95?1.18:.62;
-  ctx.fillStyle=rnd>.94?'rgba(99,255,239,.82)':rnd>.54?'rgba(56,224,225,.47)':'rgba(30,160,181,.29)';
-  ctx.fillRect(x,y,radius*2,radius*2);
- }}
- // Permanent sharp boundaries are separately rendered as 3D geographic
- // lines, not baked into this surface texture.
- neonTextureUrl=canvas.toDataURL('image/png');globe.globeImageUrl(neonTextureUrl);
+ // Build a geographically accurate equirectangular image directly from the
+ // bundled GeoJSON. This does NOT depend on D3, news data, or WebGL paths APIs.
+ if(!globe||state.visualMode!=='neon'||!state.coverageReady||!state.countries.length)return;
+ try{
+  const W=2048,H=1024,c=document.createElement('canvas');c.width=W;c.height=H;
+  const x=c.getContext('2d');x.fillStyle='#020c19';x.fillRect(0,0,W,H);
+  const px=lon=>(lon+180)/360*W,py=lat=>(90-lat)/180*H;
+  // Restrained latitude-longitude grid, well below geographic outlines.
+  x.strokeStyle='rgba(24,140,166,.13)';x.lineWidth=1;
+  for(let lat=-75;lat<=75;lat+=15){x.beginPath();x.moveTo(0,py(lat));x.lineTo(W,py(lat));x.stroke()}
+  for(let lon=-180;lon<=180;lon+=15){x.beginPath();x.moveTo(px(lon),0);x.lineTo(px(lon),H);x.stroke()}
+  const polys=[];
+  for(const feat of state.countries){const g=feat.geometry;if(!g)continue;
+   if(g.type==='Polygon')polys.push(g.coordinates);
+   else if(g.type==='MultiPolygon')polys.push(...g.coordinates);
+  }
+  function traceRing(ring){
+   if(!Array.isArray(ring)||ring.length<3)return;
+   let last=null,segmentOpen=false;
+   for(const pt of ring){if(!Array.isArray(pt)||pt.length<2)continue;
+    const u=px(pt[0]),v=py(pt[1]);
+    if(!last||Math.abs(u-last[0])>W*.5){if(segmentOpen)x.stroke();x.beginPath();x.moveTo(u,v);segmentOpen=true}
+    else x.lineTo(u,v);
+    last=[u,v];
+   }
+   if(segmentOpen)x.stroke();
+  }
+  // Land dotted texture from polygon point membership using native canvas.
+  const mask=document.createElement('canvas');mask.width=W;mask.height=H;
+  const m=mask.getContext('2d',{willReadFrequently:true});m.fillStyle='#ffffff';
+  for(const poly of polys){m.beginPath();let opened=false;
+   for(const ring of poly){if(!ring?.length)continue;for(let k=0;k<ring.length;k++){
+    const u=px(ring[k][0]),v=py(ring[k][1]);if(k===0)m.moveTo(u,v);else m.lineTo(u,v)
+   }m.closePath();opened=true}
+   if(opened)m.fill('evenodd');
+  }
+  const alpha=m.getImageData(0,0,W,H).data;
+  for(let v=3;v<H;v+=6)for(let u=3;u<W;u+=6){
+   if(alpha[(v*W+u)*4+3]<128)continue;
+   const r=Math.abs(Math.sin(u*12.9898+v*78.233)*43758.5453)%1;
+   if(r<.15)continue;
+   x.fillStyle=r>.9?'rgba(64,239,227,.70)':'rgba(33,166,183,.36)';
+   x.fillRect(u,v,r>.9?2:1.5,r>.9?2:1.5);
+  }
+  // Permanent boundaries: doubled luminous strokes, fixed to the Earth texture.
+  for(const [width,color,blur] of [[4,'rgba(0,240,233,.23)',7],[1.35,'rgba(56,240,235,.88)',0]]){
+   x.save();x.lineWidth=width;x.strokeStyle=color;x.shadowColor='#03d6df';x.shadowBlur=blur;
+   for(const poly of polys)for(const ring of poly)traceRing(ring);
+   x.restore();
+  }
+  neonTextureUrl=c.toDataURL('image/png');globe.globeImageUrl(neonTextureUrl);
+ }catch(error){console.error('WorldPulse neon cartography texture:',error);}
 }
 // Decorative glow around actual map signals. Never generates additional locations.
 function refreshMarkerHalos(){
