@@ -1,15 +1,17 @@
-# WorldPulse v1.6D.11 — Balanced Ambient Flicker
+# WorldPulse v1.6E — Constellation News Clusters
 
-A visibility adjustment for the cyan population grid after v1.6D.10 became imperceptible.
+A frontend-only visual patch based on v1.6D.11. It retains the balanced population-grid flicker, permanent neon borders, news filters, and the working data pipeline.
 
-- Interpolated irregular brightness changes now occur at a middle-ground rate between v1.6D.9 and v1.6D.10.
-- Wider dot brightness range while maintaining fixed size and positions.
-- About 7 texture updates/second (hardware-dependent), rather than a rapid flash.
-- Preserves `prefers-reduced-motion` behavior, and the manual twinkle checkbox.
-- Preserves v1.6D.9 reduced clustering, news data, and the neon geography.
+## What changed
+- Collapsed news groups now show a **central clickable signal with up to seven small category-coloured satellite lights** instead of a single giant dot.
+- Soft category glow scales logarithmically with mapped article volume.
+- Constellation details disappear at close zoom or when clustering is disabled.
+- Category-specific grouping and the existing less-aggressive geographic grouping are preserved.
+- Decorative mini-lights open the **same original news cluster**. They are **not** additional reports or verified positions.
+- Reduced motion users see static constellation visuals, without a new animation effect.
 
-## Install
-Replace only root `app.js`; hard-refresh after GitHub Pages deploys.
+## Installation
+Replace only `app.js` in the root of your WorldPulse GitHub Pages repository. Keep the current `index.html`, CSS, `world-borders.geojson`, population raster, collectors, data files, and `.github/workflows/update.yml` unchanged. Commit and hard-refresh after Pages deployment.
 
-## Diagnostics
-Run `WorldPulseShimmerStatus()` to check `enabled`, `reducedMotion`, `frames`, and `canvasBound`. Reduced motion must be false for the flicker to play. This is a visual-tuning patch, not a medically verified photosensitivity-safe setting.
+## Limitations
+The constellation layout is a local decorative arrangement near each aggregated geographic centre. It must not be interpreted as precise locations for its satellite lights. Cluster article counts still refer only to the underlying news records. This patch has been syntax-checked but needs visual testing in the deployed browser.

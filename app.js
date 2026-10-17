@@ -158,7 +158,7 @@ function initGlobe(){
   .pointColor(p=>signalColor(p))
   .pointAltitude(p=>signalAltitude(p))
   .pointRadius(p=>signalRadius(p))
-  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
+  .pointLabel(p=>`${clean((p.signalSource||p).name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'sampled articles':state.layer==='events'?'recorded events':'posts'}${p.accuracy==='country'?' · COUNTRY-LEVEL SUBJECT (approximate)':p.accuracy==='region'?' · regional reference':''}${p.velocity==='rising'?' · ↑ Rising':''}`)
   .ringsData([])
   .polygonsData([]).polygonCapColor(p=>coverageColor(p.properties.wpCount||0))
   .polygonSideColor(()=>'rgba(22,68,85,0.05)').polygonStrokeColor(()=>'rgba(167,204,219,0.26)')
@@ -575,17 +575,20 @@ function applyVisualMode(){
 }
 // v1.6D: all decorative light is derived from actual signals. No synthetic locations.
 function signalRadius(p){
+ if(p.wpSpark)return p.wpSparkSize;
+ if(p.wpClusterCore)return Math.min(1.36,.31+Math.log1p(p.count)*.20);
  if(state.visualMode!=='neon')return p.broadAnchor?.32:Math.min(1.6,.19+Math.sqrt(p.count)*.11);
  const size=Math.min(1.55,.27+Math.sqrt(Math.max(1,p.count))*.17);
  return p.wpHalo ? Math.min(2.8,size*1.8) : size;
 }
 function signalAltitude(p){
  if(state.visualMode!=='neon')return Math.min(.08,.011+Math.log1p(p.count)*.008);
- return p.wpHalo ? .003 : .013;
+ return p.wpHalo ? .003 : p.wpSpark ? .016 : .013;
 }
 function signalColor(p){
  const base=COLORS[p.category]||COLORS.social;
  if(state.visualMode!=='neon')return base;
+ if(p.wpSpark)return p.wpSparkBright?'#eaffff':base;
  if(p.wpHalo){
   // Low-opacity cyan/category light under the core. Alpha deliberately capped.
   const rgb=hexRgb(base);
@@ -595,10 +598,32 @@ function signalColor(p){
  return base;
 }
 function hexRgb(hex){return [1,3,5].map(i=>parseInt(hex.slice(i,i+2),16))}
+// v1.6E: one georeferenced cluster object with decorative mini-lights.
+// Satellite lights visualize constituent signals, not new article locations.
 function signalDisplayPoints(points){
  if(state.visualMode!=='neon')return points;
- const halos=points.filter(p=>p.count>=2).map(p=>({...p,wpHalo:true,signalSource:p}));
- return [...halos,...points];
+ const halos=[],decorations=[],cores=[];
+ for(const group of points){
+  const many=group.members?.length>1 && state.cluster && tier()<2;
+  const core=many?{...group,wpClusterCore:true}:group;
+  cores.push(core);
+  if(group.count>=2)halos.push({...group,wpHalo:true,signalSource:group});
+  if(!many)continue;
+  const samples=Math.min(7,Math.max(3,group.members.length));
+  // Constellation lights stay close to the cluster centroid, rather than
+  // scattering invented markers across country- or city-scale geographies.
+  const radius=tier()===0?.44:.23;
+  for(let j=0;j<samples;j++){
+   const angle=(j*2.3999632)+group.lat*.17+group.lng*.037;
+   const ring=Math.sqrt((j+.5)/samples)*radius;
+   const lat=Math.max(-89.8,Math.min(89.8,group.lat+Math.sin(angle)*ring));
+   const lng=((group.lng+Math.cos(angle)*ring/Math.max(.35,Math.cos(group.lat*Math.PI/180))+540)%360)-180;
+   decorations.push({lat,lng,category:group.category,count:group.count,
+    wpSpark:true,wpSparkSize:j%3===0?.17:.115,wpSparkBright:j===0,
+    signalSource:group});
+  }
+ }
+ return [...halos,...decorations,...cores];
 }
 // v1.6D.2: continuous, slow optical shimmer. This is decorative rather than
 // an indicator of story age, urgency or news velocity. Nothing is re-geolocated.
