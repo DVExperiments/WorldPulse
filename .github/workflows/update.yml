@@ -8,13 +8,13 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Fetch GDELT geographic coverage
+      - name: Fetch regional RSS news coverage
         run: python scripts/update.py
       - name: Commit updated snapshot
         run: |
