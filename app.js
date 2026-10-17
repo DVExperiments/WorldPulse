@@ -1,0 +1,109 @@
+/* WorldPulse — static GitHub Pages viewer. The scheduled workflow owns data updates. */
+'use strict';
+const COLORS={politics:'#eeb67e',environment:'#6edcb3',hazards:'#ef797d',society:'#ae94f3',economy:'#72baf1',science:'#e4d475',social:'#eb8eeb'};
+const LABELS={politics:'Politics',environment:'Environment',hazards:'Hazards',society:'Society',economy:'Economy',science:'Science'};
+const $=id=>document.getElementById(id);
+const state={news:[],posts:[],layer:'news',categories:new Set(Object.keys(LABELS)),cluster:true,rotate:true,translate:true,selected:null,translator:null,language:navigator.language||'en',feed:null};
+let globe, currentPoints=[], lastTier=-1, translationCache=new Map();
+function clean(s){return String(s??'').slice(0,500)}
+function dist(a,b){let rad=Math.PI/180,dLat=(b.lat-a.lat)*rad,dLng=(b.lng-a.lng)*rad;let x=Math.sin(dLat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(dLng/2)**2;return 6371*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x))}
+function age(ts){if(!ts)return 'not yet updated';let m=Math.floor((Date.now()-new Date(ts).getTime())/60000);if(!Number.isFinite(m))return 'unknown';if(m<0)return 'just updated';if(m<60)return `${m} minutes ago`;return `${Math.floor(m/60)} hours ago`}
+function initGlobe(){
+ if(typeof Globe==='undefined'){$('emptyNotice').hidden=false;$('emptyNotice').textContent='The 3D globe could not load. Check your internet connection or browser WebGL support.';return;}
+ globe=Globe()($('globe'))
+  .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+  .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
+  .backgroundColor('rgba(0,0,0,0)')
+  .showAtmosphere(true).atmosphereColor('#4baec0').atmosphereAltitude(.14)
+  .pointsMerge(false).pointLat('lat').pointLng('lng')
+  .pointColor(p=>COLORS[p.category]||COLORS.social)
+  .pointAltitude(p=>Math.min(.08,.011+Math.log1p(p.count)*.008))
+  .pointRadius(p=>Math.min(1.6,.19+Math.sqrt(p.count)*.11))
+  .pointLabel(p=>`${clean(p.name)} · ${p.count.toLocaleString()} ${state.layer==='news'?'mentions':'posts'}`)
+  .onPointClick(p=>openPoint(p))
+  .onGlobeClick(({lat,lng})=>pickPlace({lat,lng}))
+  .onZoom(()=>refreshZoom());
+ globe.pointOfView({lat:17,lng:16,altitude:2.15},0);
+ globe.controls().autoRotate=true;globe.controls().autoRotateSpeed=.27;
+ globe.controls().enableDamping=true;globe.controls().minDistance=115;globe.controls().maxDistance=850;
+ const resize=()=>{if(!globe)return;globe.width($('scene').clientWidth);globe.height($('scene').clientHeight)};
+ new ResizeObserver(resize).observe($('scene'));resize();
+}
+function tier(){if(!globe)return 0;let alt=globe.pointOfView().altitude;return alt>1.4?0:alt>.72?1:alt>.30?2:3}
+function aggregate(items){if(!state.cluster||tier()===3)return items.map(p=>({...p,members:[p]}));
+ let size=[19,9,4.5,1.5][tier()];let groups=new Map();
+ for(let p of items){let x=Math.floor((p.lng+180)/size),y=Math.floor((p.lat+90)/size);let key=`${x}_${y}`;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(p)}
+ return [...groups.values()].map(members=>{
+  if(members.length===1)return {...members[0],members};
+  const count=members.reduce((n,p)=>n+p.count,0);
+  let lat=members.reduce((n,p)=>n+p.lat*p.count,0)/Math.max(count,1);
+  let ss=members.reduce((n,p)=>n+Math.sin(p.lng*Math.PI/180)*p.count,0),cc=members.reduce((n,p)=>n+Math.cos(p.lng*Math.PI/180)*p.count,0);
+  let lng=Math.atan2(ss,cc)*180/Math.PI;
+  const winner=[...members].sort((a,b)=>b.count-a.count)[0];
+  return {lat,lng,count,category:winner.category,name:`${members.length} nearby signals`,members};
+ });
+}
+function refreshZoom(){let t=tier();if(t!==lastTier){lastTier=t;renderPoints()}}
+function renderPoints(){if(!globe)return;let data=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.posts;
+ currentPoints=aggregate(data);globe.pointsData(currentPoints);
+ $('locations').textContent=data.length.toLocaleString();$('total').textContent=data.reduce((n,p)=>n+p.count,0).toLocaleString();
+}
+function pickPlace(pos){let source=state.layer==='news'?state.news.filter(p=>state.categories.has(p.category)):state.posts;
+ if(!source.length){openEmpty(pos);return}
+ const nearest=[...source].sort((a,b)=>dist(pos,a)-dist(pos,b))[0];
+ const km=dist(pos,nearest);
+ if(km>450){openEmpty(pos);return}
+ openPoint({...nearest,name:`Near ${nearest.name}`,distance:Math.round(km),members:[nearest]});
+}
+function openEmpty(pos){state.selected={lat:pos.lat,lng:pos.lng,count:0,members:[],name:`${pos.lat.toFixed(2)}°, ${pos.lng.toFixed(2)}°`};paintDrawer()}
+function openPoint(p){state.selected=p;paintDrawer();if(globe){globe.controls().autoRotate=false;globe.pointOfView({lat:p.lat,lng:p.lng,altitude:Math.max(.48,globe.pointOfView().altitude*.84)},700)}}
+function el(tag,text,cls){let e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e}
+async function getTranslator(){let target=state.language.split('-')[0].toLowerCase();if(!state.translate||target==='en')return null;
+ if(state.translator)return state.translator;
+ try{if(!('Translator' in self))return null;let r=await self.Translator.availability({sourceLanguage:'en',targetLanguage:target});if(r==='unavailable')return null;state.translator=await self.Translator.create({sourceLanguage:'en',targetLanguage:target});return state.translator}catch{return null}
+}
+async function maybeTranslate(node,original){if(!state.translate)return;let key=state.language+'|'+original;let cached=translationCache.get(key);if(cached){node.textContent=cached;return}
+ let t=await getTranslator();if(!t||!node.isConnected)return;
+ try{let translated=await t.translate(original);if(translated){translationCache.set(key,translated);if(node.isConnected&&state.translate)node.textContent=translated}}catch{}
+}
+function paintDrawer(){const p=state.selected;if(!p)return; $('drawer').hidden=false;$('drawer-title').textContent=p.name;
+ let members=p.members||[p];const total=members.reduce((n,x)=>n+x.count,0);$('drawer-meta').textContent=`${total.toLocaleString()} ${state.layer==='news'?'location mentions':'posts'} · ${members.length} signals${p.distance!=null?' · nearest signal '+p.distance+' km away':''}`;
+ let area=$('drawer-stories');area.replaceChildren();
+ const stories=new Map();for(let m of [...members].sort((a,b)=>b.count-a.count))for(let a of (m.articles||[])){if(a.url&&/^https?:\/\//.test(a.url)&&!stories.has(a.url))stories.set(a.url,{...a,category:m.category,place:m.name})}
+ if(!stories.size){area.append(el('p',state.layer==='news'?'No article links available for this location in the current snapshot. Zoom out or select another signal.':'No location-verified social posts are available here.'));return}
+ for(let s of [...stories.values()].slice(0,30)){
+  let row=el('div',undefined,'story'),anchor=el('a',clean(s.title));anchor.href=s.url;anchor.target='_blank';anchor.rel='noopener noreferrer';row.append(anchor);
+  let source='';try{source=new URL(s.url).hostname.replace(/^www\./,'')}catch{}
+  row.append(el('small',`${source} · ${s.place} · ${LABELS[s.category]||'Social'} ↗`));area.append(row);maybeTranslate(anchor,clean(s.title));
+ }
+ if(stories.size>30)area.append(el('p',`Showing 30 of ${stories.size} example links.`));
+}
+function updateStatus(){let d=state.feed||{};let st=d.status;let dot=$('status');dot.classList.toggle('live',st==='live');
+ dot.lastChild.textContent=st==='live'?' Updated feed':st==='partial'?' Partial feed':st==='stale'?' Outdated feed':' Awaiting feed';
+ $('updated').textContent=`Feed: ${age(d.updated_at)} · refreshed via GitHub Actions`;
+ let notice=$('emptyNotice');notice.hidden=true;
+ if(!state.news.length){notice.hidden=false;notice.textContent='No news snapshot yet. On GitHub, run Actions → Refresh geographic news → Run workflow, then reload this page.'}
+ else if(st!=='live'){notice.hidden=false;notice.textContent=st==='partial'?'Some categories failed to refresh. Older category results may be shown.':'News is from the last successful update, not live.'}
+}
+async function loadData(){try{let r=await fetch('data/news.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('News HTTP '+r.status);let data=await r.json();state.feed=data;state.news=(data.points||[]).filter(p=>Number.isFinite(p.lat)&&Number.isFinite(p.lng)&&Number.isFinite(p.count)&&p.count>=0&&LABELS[p.category]);updateStatus();renderPoints()}
+ catch(e){$('emptyNotice').hidden=false;$('emptyNotice').textContent='Could not load news data: '+e.message}
+ try{let r=await fetch('data/social.json?t='+Date.now(),{cache:'no-store'});let d=await r.json();state.posts=(d.posts||[]).filter(p=>Number.isFinite(p.lat)&&Number.isFinite(p.lng)&&Array.isArray(p.articles)&&p.verified_location===true).map(p=>({...p,count:1,category:'social'}))}catch{}
+}
+function bind(){
+ for(let [key,label] of Object.entries(LABELS)){let btn=el('button',undefined,'filter on');btn.type='button';btn.dataset.cat=key;let sw=el('span',undefined,'swatch');sw.style.background=COLORS[key];sw.style.color=COLORS[key];btn.append(sw,el('span',label));btn.addEventListener('click',()=>{if(state.categories.has(key))state.categories.delete(key);else state.categories.add(key);btn.classList.toggle('on',state.categories.has(key));renderPoints()});$('filters').append(btn)}
+ $('allBtn').onclick=()=>{let all=state.categories.size!==Object.keys(LABELS).length;state.categories=all?new Set(Object.keys(LABELS)):new Set();document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('on',all));renderPoints()};
+ document.querySelectorAll('[data-layer]').forEach(b=>b.addEventListener('click',()=>{state.layer=b.dataset.layer;document.querySelectorAll('[data-layer]').forEach(x=>x.classList.toggle('active',x===b));$('socialExplain').hidden=state.layer!=='social';$('drawer').hidden=true;state.selected=null;renderPoints();if(state.layer==='social'&&!state.posts.length){$('emptyNotice').hidden=false;$('emptyNotice').textContent='Social layer is ready for a verified-location feed. None is configured.'}else updateStatus()}));
+ $('resetBtn').onclick=()=>{if(globe)globe.pointOfView({lat:17,lng:16,altitude:2.15},850);if(globe)globe.controls().autoRotate=state.rotate};
+ $('rotate').onchange=e=>{state.rotate=e.target.checked;if(globe)globe.controls().autoRotate=state.rotate};
+ $('clusters').onchange=e=>{state.cluster=e.target.checked;renderPoints()};
+ $('translate').onchange=e=>{state.translate=e.target.checked;if(state.selected)paintDrawer()};
+ $('drawerClose').onclick=()=>{state.selected=null;$('drawer').hidden=true;if(globe)globe.controls().autoRotate=state.rotate};
+ $('searchForm').onsubmit=e=>{e.preventDefault();let v=$('placeSearch').value.match(/^\s*(-?\d+(?:\.\d+)?)\s*[,; ]\s*(-?\d+(?:\.\d+)?)\s*$/);if(!v){$('placeSearch').setCustomValidity('Enter latitude,longitude, such as 35.68,139.69');$('placeSearch').reportValidity();return}let lat=+v[1],lng=+v[2];if(Math.abs(lat)>90||Math.abs(lng)>180){$('placeSearch').setCustomValidity('Coordinates out of range');$('placeSearch').reportValidity();return}$('placeSearch').setCustomValidity('');if(globe)globe.pointOfView({lat,lng,altitude:.75},1000);pickPlace({lat,lng})};
+ $('placeSearch').oninput=()=>$('placeSearch').setCustomValidity('');
+ $('aboutBtn').onclick=$('methodBtn').onclick=()=>$('about').hidden=false;
+ $('aboutClose').onclick=()=>$('about').hidden=true;
+ $('about').onclick=e=>{if(e.target===$('about'))$('about').hidden=true};
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('about').hidden=true;$('drawer').hidden=true}});
+ function clock(){$('clock').textContent=new Intl.DateTimeFormat('en-GB',{timeZone:'UTC',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date())+' UTC'}clock();setInterval(clock,30000);
+}
+bind();initGlobe();loadData();setInterval(loadData,15*60*1000);
