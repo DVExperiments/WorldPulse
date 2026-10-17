@@ -52,6 +52,33 @@ ALIASES = {'Kyiv':'Kiev','Odesa':'Odessa','Zaporizhzhia':'Zaporozhye','Kharkiv':
 # Words such as "Nice", "Gaza" and "Jordan" can be ambiguous. A small blocked
 # list prevents common false positives unless corroborated by other context.
 AMBIGUOUS = {'nice','turkey','georgia','jordan','victoria','reading','mobile','brest','sudan khartoum','tripoli lebanon','odessa texas'}
+# v1.5.2: Curated contextual location hints. These are approximate geographic
+# SUBJECTS, not verified incident locations. Do not use publisher domicile.
+GEO_HINTS = [
+ # (display name, latitude, longitude, level, matching phrases, context restriction)
+ ('Strait of Hormuz',26.56,56.25,'region',['strait of hormuz'],None),
+ ('Iraqi Kurdistan',36.19,44.01,'region',['iraqi kurdistan','kurdistan region of iraq'],None),
+ ('Macquarie Island',-54.62,158.86,'place',['macquarie island'],None),
+ ('Ho Chi Minh City',10.82,106.63,'place',['hcm city','ho chi minh city','saigon'],None),
+ ('Kalispell',48.19,-114.31,'place',['kalispell'],None),
+ ('Bacolod',10.68,122.95,'place',['bacolod'],None),
+ ('Malaga Province',36.72,-4.42,'region',['malaga province','málaga province'],None),
+ ('Jaintia Hills',25.42,92.35,'region',['jaintia hills'],None),
+ ('Khyber Pakhtunkhwa',34.0,71.5,'region',['khyber pakhtunkhwa','k-p province','k-p government','k-p assembly'],None),
+ ('Somalia',5.15,46.2,'country',['somali opposition','somali president','somali parliament','somali election'],None),
+ ('Iraq',33.2,44.4,'country',['iraqi parliament','iraqi cabinet','iraqi government'],None),
+ ('United States',39.8,-98.6,'country',['in the us','across the us','us house','in the u.s.'],None),
+ ('United Kingdom',54.0,-2.0,'country',['in the uk','across the uk','in the u.k.'],None),
+ ('Bangsamoro',7.2,124.2,'region',['barmm','bangsamoro'],None),
+ ('Scotland',56.5,-4.2,'region',['westminster parliament','indyref2','snp leader'],None),
+ ('Tamil Nadu',11.1,78.7,'region',['dmk mps','mk stalin','dmk demands'],None),
+]
+# Explicit false-positive safeguards; a mention alone establishes geographic subject,
+# not local event site, and some stand-alone words must not resolve to a location.
+GEO_MATCHERS=[]
+for label,lat,lng,level,terms,_ in GEO_HINTS:
+ for term in terms:
+  GEO_MATCHERS.append(({'name':label,'lat':lat,'lng':lng,'level':level}, re.compile(r'(?<!\w)'+re.escape(term)+r'(?!\w)',re.I),term))
 MATCHERS=[]
 for p in PLACES:
  names=[p['name']]
@@ -94,13 +121,20 @@ def fetch(query,locale):
    'source_url':source.attrib.get('url','') if source is not None else '', 'description':html.unescape(re.sub(r'<[^>]+>',' ',item.findtext('description') or ''))[:650]}
 
 def locate(title, description=''):
- """Prefer explicit headline geography; description matches are weaker contextual evidence."""
+ """Use explicit phrases before contextual aliases; never infer from publisher origin.
+
+ The second return value remains headline/description for legacy metrics. The
+ actual interpretation is *geographic subject*, NOT a confirmed event site.
+ """
  for field, quality in ((title,'headline'),(re.sub(r'https?://\S+',' ',description),'description')):
+  contextual=[(p,phrase) for p,rx,phrase in GEO_MATCHERS if rx.search(field)]
   matches=[(p,name) for p,rx,name in MATCHERS if rx.search(field)]
-  if not matches:continue
-  matches.sort(key=lambda item:(item[0].get('level')!='country',len(item[1])),reverse=True)
-  return matches[0][0], quality
- return None, 'unmapped'
+  # Specific explicit or contextual locality outranks a generic country reference.
+  choices=contextual+matches
+  if not choices: continue
+  choices.sort(key=lambda item:(item[0].get('level')!='country',len(item[1])),reverse=True)
+  return choices[0][0],quality
+ return None,'unmapped'
 
 # Independent editorial feeds complement Google News; feeds can independently fail.
 # Feed metadata is configuration, not a guarantee of availability or geographic representation.
@@ -240,7 +274,7 @@ def produce(raw,now):
   # +1 smoothing prevents undefined ratios; present as directional sampled comparison.
   delta=round((recent-previous)/(previous+1)*100)
   velocity='rising' if recent>=3 and recent>=previous+2 else ('cooling' if previous>=3 and previous>=recent+2 else 'steady')
-  points.append({'lat':p['lat'],'lng':p['lng'],'name':p['name'],'accuracy':p.get('level','place'),'location_basis':'description' if all(a.get('geo_match')=='description' for a in articles) else 'headline',
+  points.append({'lat':p['lat'],'lng':p['lng'],'name':p['name'],'accuracy':p.get('level','place'),'location_basis':'description' if all(a.get('geo_match')=='description' for a in articles) else 'headline','location_role':'geographic_subject','event_location_verified':False,
    'count':len(articles),'publisher_count':len({a['publisher'].casefold() for a in articles}),'category':category,'recent_3h':recent,'previous_3h':previous,
    'velocity':velocity,'velocity_change_pct_sample':delta,
    'articles':[{'title':a['title'][:260],'url':a['url'],'published_at':a['at'],'publisher':a['publisher'],
@@ -308,7 +342,7 @@ def update_diagnostics(now,feeds,unmapped,points,duplicates):
   fs=[f for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code)]
   region_rollup[code]={'requests':len(fs),'successful':sum(f['status']=='ok' for f in fs),'mapped_pre_dedupe':sum(f['mapped'] for f in fs)}
  direct_rollup={'configured':sum(f['kind']=='publisher' for f in feeds),'successful':sum(f['kind']=='publisher' and f['status']=='ok' for f in feeds),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['kind']=='publisher')}
- obj={'schema':1,'updated_at':now.isoformat(),'feeds_total':len(feeds),'feeds_ok':sum(f['status']=='ok' for f in feeds),'feeds_failed':[f['source'] for f in feeds if f['status']!='ok'], 'google_feeds_by_region':{code:{'total':sum(f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'ok':sum(f['status']=='ok' and f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code))} for code,_,_ in REGIONS}, 'mapped_articles_by_category':dict(cat),'mapped_articles_by_location_precision':dict(geo),'location_evidence_counts':dict(regions),'geographic_quadrants':dict(hemispheres),'geo_signal_count':len(points),'mapped_total':sum(p['count'] for p in points),'geo_match_rate_note':'Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.','unmapped_sample_count':len(unmapped),'unmapped_distinct_titles':len(set(re.sub(r'\W+',' ',a['title'].casefold()) for a in unmapped)),'unmapped_by_feed':dict(Counter(a['feed'] for a in unmapped).most_common(18)),'unmapped_examples':unmatched_review[:35], 'unmapped_review_file':'data/unmatched-review.json', 'direct_source_breakdown':direct_rollup, 'source_editions':region_rollup, 'duplicates_removed':duplicates,'gazetteer_entries':len(PLACES),'warning':'Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.'}
+ obj={'schema':1,'updated_at':now.isoformat(),'feeds_total':len(feeds),'feeds_ok':sum(f['status']=='ok' for f in feeds),'feeds_failed':[f['source'] for f in feeds if f['status']!='ok'], 'google_feeds_by_region':{code:{'total':sum(f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'ok':sum(f['status']=='ok' and f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code))} for code,_,_ in REGIONS}, 'mapped_articles_by_category':dict(cat),'mapped_articles_by_location_precision':dict(geo),'location_evidence_counts':dict(regions),'geographic_quadrants':dict(hemispheres),'geo_signal_count':len(points),'mapped_total':sum(p['count'] for p in points),'geo_match_rate_note':'Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.','unmapped_sample_count':len(unmapped),'unmapped_distinct_titles':len(set(re.sub(r'\W+',' ',a['title'].casefold()) for a in unmapped)),'unmapped_by_feed':dict(Counter(a['feed'] for a in unmapped).most_common(18)),'unmapped_examples':unmatched_review[:35], 'unmapped_review_file':'data/unmatched-review.json', 'direct_source_breakdown':direct_rollup, 'source_editions':region_rollup, 'duplicates_removed':duplicates,'gazetteer_entries':len(PLACES)+len(GEO_HINTS),'contextual_alias_groups':len(GEO_HINTS),'warning':'Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.'}
  DIAGNOSTICS.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
  (ROOT/'data/unmatched-review.json').write_text(json.dumps({'schema':1,'updated_at':now.isoformat(),'distinct_unmatched':len(unmatched_unique),'note':'Headlines lack a confidently matched place. Not every headline is geographically attributable. Samples may repeat over time.','examples':unmatched_review},ensure_ascii=False,indent=1),encoding='utf8')
 
@@ -326,7 +360,7 @@ def main():
   raise SystemExit('Every RSS feed failed; retained last-known snapshot')
  points,duplicates,unique=produce(raw,now)
  publishers=set(a['publisher'].casefold() for a in raw if a.get('publisher'))
- record={'schema':2,'version':'1.5.1','source':'Google News RSS and independent publisher RSS samples','updated_at':now.isoformat(timespec='seconds'),
+ record={'schema':2,'version':'1.5.2','source':'Google News RSS and independent publisher RSS samples','updated_at':now.isoformat(timespec='seconds'),
   'last_attempt_at':now.isoformat(timespec='seconds'),'window':'rolling 24 hours',
   'status':'live' if not failures else 'partial','query_successes':success,'query_attempts':len(health),
   'articles_scanned':scanned,'distinct_mapped_articles':unique,'duplicates_removed':duplicates,
@@ -334,7 +368,7 @@ def main():
   'unmapped_articles_sample':len(unmapped),'geographic_confidence':{'headline':sum(a.get('geo_match')=='headline' for a in raw),'description':sum(a.get('geo_match')=='description' for a in raw)},
   'source_health_file':'data/source-health.json','history_file':'data/history.json',
   'metric':'Deduplicated mapped articles in sampled RSS feeds, not all news worldwide',
-  'accuracy_note':'Locations are place mentions from headlines or descriptions, not verified event coordinates. Description matches are contextual; country pins use representative anchors.',
+  'accuracy_note':'Locations are geographic SUBJECTS, never automatically verified incident sites. Locations are place mentions from headlines or descriptions, not verified event coordinates. Description matches are contextual; country pins use representative anchors.',
   'velocity_note':'Recent 3-hour vs previous 3-hour counts within sampled articles; directional, not a verified activity surge.',
   'errors':failures,'points':points}
  OUT.parent.mkdir(parents=True,exist_ok=True)
@@ -342,6 +376,6 @@ def main():
  update_history(now,points)
  update_article_history(now,points)
  update_diagnostics(now,health,unmapped,points,duplicates)
- print(f'WorldPulse v1.5.1: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
+ print(f'WorldPulse v1.5.2: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
  if not points:print('WARNING: feeds succeeded but no headline-place matches',flush=True)
 if __name__=='__main__':main()
