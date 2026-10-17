@@ -80,7 +80,7 @@ function paintDrawer(){const p=state.selected;if(!p)return; $('drawer').hidden=f
 }
 function updateStatus(){let d=state.feed||{};let st=d.status;let dot=$('status');dot.classList.toggle('live',st==='live');
  dot.lastChild.textContent=st==='live'?' Updated feed':st==='partial'?' Partial feed':st==='stale'?' Outdated feed':' Awaiting feed';
- $('updated').textContent=`Feed: ${age(d.updated_at)} · ${d.query_successes||'?'} / ${d.query_attempts||'?'} regional queries · ${d.duplicates_removed||0} duplicates removed`;
+ $('updated').textContent=`Feed: ${age(d.updated_at)} · ${d.query_successes||'?'} / ${d.query_attempts||'?'} feeds · ${d.duplicates_removed||0} duplicates removed`; if($('sourceBreakdown'))$('sourceBreakdown').textContent=`${d.direct_sources_ok??0} direct feeds responding · ${d.source_count??0} source names in sample · 30-day summary stored`; 
  let notice=$('emptyNotice');notice.hidden=true;
  if(!state.news.length){notice.hidden=false;notice.textContent='No news snapshot yet. On GitHub, run Actions → Refresh geographic news → Run workflow, then reload this page.'}
  else if(st!=='live'){notice.hidden=false;notice.textContent=st==='partial'?'Some categories failed to refresh. Older category results may be shown.':'News is from the last successful update, not live.'}

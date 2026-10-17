@@ -10,10 +10,13 @@ import html
 import json
 import re
 import time
+import os
+import socket
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import defaultdict, Counter
+from urllib.parse import urlsplit
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -72,27 +75,104 @@ def locate(title):
  matches.sort(key=lambda p:(p.get('level')!='country',len(p['name'])),reverse=True)
  return matches[0]
 
+# Independent editorial feeds complement Google News; feeds can independently fail.
+# Feed metadata is configuration, not a guarantee of availability or geographic representation.
+DIRECT_FEEDS = [
+ ('BBC World','https://feeds.bbci.co.uk/news/world/rss.xml','international','en'),
+ ('BBC Science','https://feeds.bbci.co.uk/news/science_and_environment/rss.xml','international','en'),
+ ('BBC Business','https://feeds.bbci.co.uk/news/business/rss.xml','international','en'),
+ ('Al Jazeera','https://www.aljazeera.com/xml/rss/all.xml','international','en'),
+ ('The Guardian World','https://www.theguardian.com/world/rss','international','en'),
+ ('The Guardian Environment','https://www.theguardian.com/environment/rss','international','en'),
+ ('DW World','https://rss.dw.com/rdf/rss-en-world','international','en'),
+ ('France24','https://www.france24.com/en/rss','international','en'),
+ ('NPR World','https://feeds.npr.org/1004/rss.xml','international','en'),
+ ('NPR Science','https://feeds.npr.org/1007/rss.xml','international','en'),
+ ('ABC Australia','https://www.abc.net.au/news/feed/51120/rss.xml','regional','en'),
+ ('RNZ World','https://www.rnz.co.nz/rss/world.xml','regional','en'),
+ ('RNZ National','https://www.rnz.co.nz/rss/national.xml','regional','en'),
+ ('The Conversation','https://theconversation.com/global/articles.atom','international','en'),
+ ('CBC World','https://www.cbc.ca/cmlink/rss-world','regional','en'),
+ ('AfricaNews','https://www.africanews.com/feed/','regional','en'),
+ ('ReliefWeb Updates','https://reliefweb.int/updates/rss.xml','specialist','en'),
+ ('UN News','https://news.un.org/feed/subscribe/en/news/all/rss.xml','specialist','en'),
+ ('NASA News','https://www.nasa.gov/feed/','specialist','en'),
+ ('France24 FR','https://www.france24.com/fr/rss','regional','fr'),
+ ('France24 ES','https://www.france24.com/es/rss','regional','es'),
+ ('DW Español','https://rss.dw.com/rdf/rss-es-all','regional','es'),
+ ('BBC Brasil','https://www.bbc.com/portuguese/index.xml','regional','pt'),
+]
+CATEGORY_TERMS = {
+ 'conflict':('war','military','troop','missile','airstrike','ceasefire','invasion','conflict','army','bomb','guerra','guerre','ataque'),
+ 'hazards':('earthquake','flood','wildfire','hurricane','typhoon','volcano','cyclone','storm','disaster','terremoto','inundación'),
+ 'environment':('climate','conservation','wildlife','emissions','pollution','deforestation','environment','clima','environnement'),
+ 'politics':('election','parliament','president','minister','government','vote','diplomacy','elección','gobierno','élection'),
+ 'economy':('inflation','market','trade','jobs','unemployment','bank','economy','economía','économie'),
+ 'science':('research','study','spacecraft','scientist','technology','discovery','science','ciencia','recherche'),
+ 'society':('school','education','housing','health','community','protest','rights','society','santé','educación'),
+}
+
+def classify(title):
+ t=title.casefold();scores={k:sum(bool(re.search(r'(?<!\w)'+re.escape(term)+r'(?!\w)',t)) for term in words) for k,words in CATEGORY_TERMS.items()}
+ top=max(scores,key=scores.get)
+ return top if scores[top] else 'society'
+
+def direct_fetch(url):
+ req=urllib.request.Request(url,headers={'User-Agent':'WorldPulse-NewsMonitor/1.4 (+https://github.com/DVExperiments/WorldPulse)', 'Accept':'application/rss+xml,application/atom+xml,application/xml,text/xml'})
+ with urllib.request.urlopen(req,timeout=14) as response: raw=response.read(2_000_000)
+ root=ET.fromstring(raw)
+ rows=[]
+ for item in root.findall('./channel/item'):
+  rows.append({'title':norm_title(item.findtext('title') or ''),'url':(item.findtext('link') or '').strip(), 'published':item.findtext('pubDate') or item.findtext('date') or '', 'publisher':'','source_url':''})
+ ns={'a':'http://www.w3.org/2005/Atom'}
+ for item in root.findall('a:entry',ns):
+  link=next((x.attrib.get('href','') for x in item.findall('a:link',ns) if x.attrib.get('rel','alternate')=='alternate'), '')
+  if not link:
+   node=item.find('a:link',ns);link=node.attrib.get('href','') if node is not None else ''
+  rows.append({'title':norm_title(item.findtext('a:title',default='',namespaces=ns)), 'url':link,'published':item.findtext('a:published',default='',namespaces=ns) or item.findtext('a:updated',default='',namespaces=ns),'publisher':'','source_url':''})
+ if not rows:raise ValueError('Feed contained no recognizable RSS/Atom items')
+ return rows
+
+def parsed_timestamp(value):
+ parsed=timeparse(value)
+ if parsed:return parsed.astimezone(dt.timezone.utc)
+ try:return dt.datetime.fromisoformat(value.replace('Z','+00:00')).astimezone(dt.timezone.utc)
+ except (ValueError,AttributeError):return None
+
 def collect(now):
  cutoff=now-dt.timedelta(hours=24)
- results=[]; failures={}; scanned=Counter(); seen_queries=0
- for cat,queries in QUERIES.items():
+ results=[];failures={}; scanned=Counter();health=[];seen_queries=0
+ def ingest(rows,category,source,kind,region,language):
+  mapped=0
+  for a in rows:
+   when=parsed_timestamp(a['published'])
+   if not when or not cutoff<=when<=now+dt.timedelta(minutes=20):continue
+   if not a['title'] or not a['url'].startswith('https://'):continue
+   place=locate(a['title'])
+   if not place:continue
+   mapped+=1
+   results.append({**a,'category':category or classify(a['title']),'place':place,'at':when.isoformat(), 'publisher':a.get('publisher') or source,'source_kind':kind,'source_name':source,'source_region':region,'language':language})
+  return mapped
+ for cat in QUERIES:
   for j,locale in enumerate(REGIONS):
-   # Rotate query variants across locales; more variety with limited requests.
-   q=queries[j%len(queries)]; key=f'{cat}/{locale[0]}'
+   q=QUERIES[cat][j%len(QUERIES[cat])];key=f'google/{cat}/{locale[0]}'
    try:
     rows=list(fetch(q,locale));seen_queries+=1;scanned[cat]+=len(rows)
-    for a in rows:
-     when=timeparse(a['published'])
-     if not when or not cutoff<=when<=now+dt.timedelta(minutes=20):continue
-     if not a['title'] or not a['url'].startswith('https://'):continue
-     place=locate(a['title'])
-     if not place:continue
-     results.append({**a,'category':cat,'place':place,'at':when.astimezone(dt.timezone.utc).isoformat()})
-    print(f'{key}: received {len(rows)} RSS items',flush=True)
+    mapped=ingest(rows,cat,'Google News '+locale[0],'aggregator',locale[0],'en')
+    health.append({'source':key,'status':'ok','items':len(rows),'mapped':mapped,'kind':'aggregator'})
    except Exception as exc:
-    failures[key]=str(exc);print(f'{key}: FAILED {exc}',flush=True)
-   time.sleep(.35)
- return results,failures,dict(scanned),seen_queries
+    failures[key]=str(exc);health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'aggregator'})
+   time.sleep(.12)
+ for name,url,region,language in DIRECT_FEEDS:
+  key='direct/'+name
+  try:
+   rows=direct_fetch(url);seen_queries+=1;scanned['direct']+=len(rows)
+   mapped=ingest(rows,None,name,'publisher',region,language)
+   health.append({'source':key,'status':'ok','items':len(rows),'mapped':mapped,'kind':'publisher'})
+  except Exception as exc:
+   failures[key]=str(exc);health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'publisher'})
+  time.sleep(.12)
+ return results,failures,dict(scanned),seen_queries,health
 
 def produce(raw,now):
  # Cross-region / cross-category canonical de-duplication. Similar titles across different
@@ -100,12 +180,12 @@ def produce(raw,now):
  exact=set();kept=[];sig_index=defaultdict(list);duplicates=0
  for a in sorted(raw,key=lambda x:x['at'],reverse=True):
   canonical=a['url'].split('?')[0].rstrip('/')
-  key=(canonical, a['category'])
+  key=canonical
   if key in exact:duplicates+=1;continue
   exact.add(key)
   sig=signature(a['title'])
-  nearby=sig_index[(a['category'],a['place']['name'].lower())]
-  if len(sig)>=5 and any(len(sig&s)/len(sig|s)>.89 for s in nearby if s):
+  nearby=sig_index[a['place']['name'].lower()]
+  if len(sig)>=5 and any(len(sig&s)/len(sig|s)>.82 for s in nearby if s):
    duplicates+=1;continue
   nearby.append(sig)
   kept.append(a)
@@ -119,11 +199,30 @@ def produce(raw,now):
   delta=round((recent-previous)/(previous+1)*100)
   velocity='rising' if recent>=3 and recent>=previous+2 else ('cooling' if previous>=3 and previous>=recent+2 else 'steady')
   points.append({'lat':p['lat'],'lng':p['lng'],'name':p['name'],'accuracy':p.get('level','place'),
-   'count':len(articles),'category':category,'recent_3h':recent,'previous_3h':previous,
+   'count':len(articles),'publisher_count':len({a['publisher'].casefold() for a in articles}),'category':category,'recent_3h':recent,'previous_3h':previous,
    'velocity':velocity,'velocity_change_pct_sample':delta,
    'articles':[{'title':a['title'][:260],'url':a['url'],'published_at':a['at'],'publisher':a['publisher'],
-                'source_url':a['source_url']} for a in articles[:20]]})
+                'source_url':a['source_url'],'source_kind':a.get('source_kind'),'language':a.get('language','en')} for a in articles[:20]]})
  return sorted(points,key=lambda p:p['count'],reverse=True),duplicates,len(kept)
+
+HISTORY=ROOT/'data/history.json'
+HEALTH=ROOT/'data/source-health.json'
+
+def update_history(now,points):
+ """Per-day sampled category totals. Does not claim full daily coverage."""
+ try:hist=json.loads(HISTORY.read_text(encoding='utf8'))
+ except (OSError,ValueError):hist={'schema':1,'days':{}}
+ day=now.date().isoformat()
+ daydata=hist.setdefault('days',{}).setdefault(day,{'samples':0,'max_mapped_articles':0,'categories':{},'last_updated':''})
+ counts=Counter()
+ for p in points:counts[p['category']]+=p['count']
+ daydata['samples']+=1
+ daydata['max_mapped_articles']=max(daydata['max_mapped_articles'],sum(counts.values()))
+ daydata['categories']={k:max(v,daydata.get('categories',{}).get(k,0)) for k,v in counts.items()}
+ daydata['last_updated']=now.isoformat(timespec='seconds')
+ hist['days']={k:v for k,v in sorted(hist['days'].items()) if k>=(now.date()-dt.timedelta(days=30)).isoformat()}
+ hist['updated_at']=now.isoformat(timespec='seconds')
+ HISTORY.write_text(json.dumps(hist,indent=1),encoding='utf8')
 
 def main():
  now=dt.datetime.now(dt.timezone.utc)
@@ -131,22 +230,27 @@ def main():
  if OUT.exists():
   try:old=json.loads(OUT.read_text(encoding='utf8'))
   except (OSError,ValueError):pass
- raw,failures,scanned,success=collect(now)
+ raw,failures,scanned,success,health=collect(now)
+ HEALTH.write_text(json.dumps({'updated_at':now.isoformat(timespec='seconds'),'ok':success,'attempts':len(health),'sources':health,'failures':failures},indent=1),encoding='utf8')
  if not success:
   old['status']='stale';old['last_attempt_at']=now.isoformat();old['errors']=failures
   OUT.write_text(json.dumps(old,ensure_ascii=False,indent=1),encoding='utf8')
-  raise SystemExit('Every regional RSS search failed; retained last-known snapshot')
+  raise SystemExit('Every RSS feed failed; retained last-known snapshot')
  points,duplicates,unique=produce(raw,now)
- record={'schema':2,'version':'1.3','source':'Google News RSS regional samples','updated_at':now.isoformat(timespec='seconds'),
+ publishers=set(a['publisher'].casefold() for a in raw if a.get('publisher'))
+ record={'schema':2,'version':'1.4A','source':'Google News RSS and independent publisher RSS samples','updated_at':now.isoformat(timespec='seconds'),
   'last_attempt_at':now.isoformat(timespec='seconds'),'window':'rolling 24 hours',
-  'status':'live' if not failures else 'partial','query_successes':success,'query_attempts':len(REGIONS)*len(QUERIES),
+  'status':'live' if not failures else 'partial','query_successes':success,'query_attempts':len(health),
   'articles_scanned':scanned,'distinct_mapped_articles':unique,'duplicates_removed':duplicates,
-  'metric':'Deduplicated mapped articles in sampled RSS queries, not all news worldwide',
+  'source_count':len(publishers),'direct_sources_ok':sum(h['status']=='ok' for h in health if h['kind']=='publisher'),
+  'source_health_file':'data/source-health.json','history_file':'data/history.json',
+  'metric':'Deduplicated mapped articles in sampled RSS feeds, not all news worldwide',
   'accuracy_note':'Places are inferred from explicit headline names. Country markers are representative anchors, not exact incident locations.',
   'velocity_note':'Recent 3-hour vs previous 3-hour counts within sampled articles; directional, not a verified activity surge.',
   'errors':failures,'points':points}
  OUT.parent.mkdir(parents=True,exist_ok=True)
  OUT.write_text(json.dumps(record,ensure_ascii=False,indent=1),encoding='utf8')
- print(f'WorldPulse v1.3: {success}/{record["query_attempts"]} regional queries; {unique} distinct mapped articles; {duplicates} duplicates removed; {len(points)} location-category signals; status={record["status"]}',flush=True)
- if not points:print('WARNING: feeds succeeded but no headline-place matches; inspect gazetteer/query coverage',flush=True)
+ update_history(now,points)
+ print(f'WorldPulse v1.4A: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
+ if not points:print('WARNING: feeds succeeded but no headline-place matches',flush=True)
 if __name__=='__main__':main()
