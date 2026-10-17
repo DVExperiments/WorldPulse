@@ -43,7 +43,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/news.json data/history.json data/source-health.json data/article-history.json data/data-health.json data/events.json
+          git add data/news.json data/history.json data/source-health.json data/article-history.json data/data-health.json data/events.json data/unmatched-review.json
           if git diff --cached --quiet; then
             echo 'No snapshot changes to commit.'
             exit 0
