@@ -1,29 +1,30 @@
 {
  "schema": 1,
- "updated_at": "2026-10-18T09:06:52.676992+00:00",
+ "updated_at": "2026-10-18T09:17:52.536433+00:00",
  "feeds_total": 136,
- "feeds_ok": 132,
+ "feeds_ok": 131,
  "feeds_failed": [
   "direct/DW World",
   "direct/CBC World",
   "direct/ReliefWeb Updates",
+  "direct/NASA News",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 142
+   "mapped_pre_dedupe": 138
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 94
+   "mapped_pre_dedupe": 91
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 137
+   "mapped_pre_dedupe": 138
   },
   "AU": {
    "total": 11,
@@ -33,7 +34,7 @@
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 137
+   "mapped_pre_dedupe": 135
   },
   "NG": {
    "total": 11,
@@ -43,66 +44,66 @@
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 143
+   "mapped_pre_dedupe": 140
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 100
+   "mapped_pre_dedupe": 96
   }
  },
  "mapped_articles_by_category": {
-  "community": 125,
-  "society": 55,
-  "education": 53,
+  "society": 58,
+  "community": 120,
   "hazards": 16,
+  "education": 51,
   "health": 51,
-  "conflict": 25,
-  "economy": 38,
-  "politics": 29,
+  "conflict": 23,
+  "economy": 37,
+  "politics": 27,
   "environment": 12,
-  "science": 13,
+  "science": 11,
   "rights": 4
  },
  "mapped_articles_by_location_precision": {
-  "country": 248,
-  "place": 161,
+  "country": 249,
+  "place": 149,
   "region": 12
  },
  "location_evidence_counts": {
-  "headline": 333,
-  "description": 88
+  "headline": 328,
+  "description": 82
  },
  "geographic_quadrants": {
-  "NE": 274,
-  "NW": 103,
+  "NE": 269,
+  "NW": 98,
   "SE": 35,
-  "SW": 9
+  "SW": 8
  },
- "geo_signal_count": 246,
- "mapped_total": 421,
+ "geo_signal_count": 234,
+ "mapped_total": 410,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 931,
- "unmapped_distinct_titles": 321,
+ "unmapped_sample_count": 959,
+ "unmapped_distinct_titles": 326,
  "unmapped_by_feed": {
-  "Google News US": 139,
-  "Google News PH": 138,
-  "Google News IN": 134,
-  "Google News ZA": 132,
-  "Google News CA": 81,
+  "Google News US": 143,
+  "Google News PH": 142,
+  "Google News IN": 140,
+  "Google News ZA": 140,
+  "Google News CA": 83,
   "Google News NG": 77,
   "Google News AU": 75,
   "Google News GB": 74,
-  "ABC Australia": 13,
-  "RNZ National": 11,
+  "ABC Australia": 14,
+  "RNZ National": 12,
+  "Al Jazeera": 8,
   "France24 ES": 8,
   "The Guardian World": 7,
   "BBC Brasil": 7,
-  "BBC World": 6,
-  "Al Jazeera": 6,
   "France24 FR": 6,
+  "BBC World": 5,
   "The Conversation France": 4,
-  "BBC Business": 3
+  "BBC Science": 3
  },
  "unmapped_examples": [
   {
@@ -144,6 +145,14 @@
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Electoral collapse for Czech far-right Prime Minister Andrej Babiš in Senate elections    European Interest "
+  },
+  {
+   "title": "Warning Issued Regarding Continued Political Gridlock in the Kurdistan Region",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRFFaa1RFbnk3dk9MZHVrY1Z2bjh1eXdfQWFjTUNjMGhFNDVSakM1SDV5b3NPNHA3dDV6Nm1HcEYxeU1aaklVZDk1U29HVWxseWpBWFZHb2wySXkyV2doVlRib2J4dFpPRFpMcGwzSmZmWjBDR3kxSmpYTHBtNV9JaUcwaEl0WFJjeWRzS29mVUFxcmxMVnEtSUVoSEJDbWMzNDVjRy1xNklKTzVDVXVBUHc5azZtczdienc?oc=5",
+   "publisher": "کردپرس",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Warning Issued Regarding Continued Political Gridlock in the Kurdistan Region    کردپرس "
   },
   {
    "title": "A Stinging Defeat for the Government in the Czech Senate Election",
@@ -218,6 +227,14 @@
    "description_excerpt": " Election Promise Warfare    Wyndham TV "
   },
   {
+   "title": "‘Ignore the treaty at your peril’: Warning for Victorians as Wilson vows to repeal sacred covenant",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTTFJZzVzYzdaWl9XN0ZVcWZYckl2VV9UX2JGNDRQUHV3UjFjQVBRc0c4SkdvMGhmUEkwN3JQNU4tZWdXQ1F2UGRQelRQcTRDN0x2OWtNMkk0cVdzTEhVcHdFTTZtMUVFOU9BeFpMa0pDaVl5WUZIMTNrSVZWOXdnLWZVTkpmdFNCNWg5NFlqeEJvQ1gzcDFmRmdhRnVDVHpoLTlUMlYxRWVrLUhxNFhsem5NNjNINTFjZ1V0WlNjbjRJN3JORkVVU3kzZm9BX3E3STlaU25HNGUtVnZpZ25ycnRVX2poN28?oc=5",
+   "publisher": "SMH.com.au",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " ‘Ignore the treaty at your peril’: Warning for Victorians as Wilson vows to repeal sacred covenant    SMH.com.au "
+  },
+  {
    "title": "Election clouds future of historic First Peoples treaty",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUVNCVHFDVFg0aTV3NnFvT1hMOUtSS0JNMGxjWE9hbWllQjJwcERTTWZENFJhNjVqUUs1UlNvN3NBTXMtS0hOSkRvWWdpZm5NZndPYkpYelJvRFlZbmFGYzdmYnVTazdTLXlEdDdac2xkZk1CVGVoT2ZGb3JLYTFlbVRJWGxsSUpYZ3R6dE5EWVo?oc=5",
    "publisher": "aapnews.aap.com.au",
@@ -274,6 +291,14 @@
    "description_excerpt": " Will the students change the regime? A lesson from history    Mathrubhumi English "
   },
   {
+   "title": "Parliament must not be a spectator in BRICS decision – Hassan Ayariga",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNLVpSMFF3RXYweGJUd0ZYWDNCRnBOMU12VS1BOEdLelQ3eWlTVnVTeXcwRWlOYU9mTEVOeXlISWNVTDhSTTFVWVBIbUtqNnZTNlNZYUNzdHMzSjc4X2J4RWYwQ1RabmpRMTFOc2pYV0swMS1fcGQyc3AxQ19tVGk2V05RQ2JqbW1oZVEwRVYzNVFJS3ZWX0VxdWdoUGs?oc=5",
+   "publisher": "MyJoyOnline",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Parliament must not be a spectator in BRICS decision – Hassan Ayariga    MyJoyOnline "
+  },
+  {
    "title": "NPP has resolved its internal wrangling – Bawumia",
    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdTU5M2Jyem11WUtOZWtMWktJOUtDN2x3NnhVQ0Jsem5zdjBrUDJKS1hITkFIeEFTcS1LSW1HazQtRVlNcWctLVEyT251R1Znc2dsTldWZjdQQ3BaUVUwbk9aUFBFWU9UczU4NG5mZzZybGVZVHI5b3ZpcDZtODFidTRn?oc=5",
    "publisher": "MyJoyOnline",
@@ -306,6 +331,14 @@
    "description_excerpt": " How the quirky puffin became a symbol of the climate crisis – and hope    The Guardian "
   },
   {
+   "title": "Find Us at COP17",
+   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBDMm5RUktLaHJUZnBTZnJyVUVMenpOQUs5UEZCaDloU2ZLR1ZQRjF4WlphQU1telM1ak04Y09YMHdURUNYbTB2Zw?oc=5",
+   "publisher": "African Wildlife Foundation",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Find Us at COP17    African Wildlife Foundation "
+  },
+  {
    "title": "Data shows 73% decline in world’s wildlife population – and more animals are not being counted",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVTB3S2FKdlN0V0xBSHJKZzFLSlotNkhseldEV0lpS2JPXzB2LVVmRmd5UnVsbW5hUGlfRFU0dkJ6cEVsM0pMR1BERDhoNWlBOFhCcTNOeWVnbzMyS20tYXJ5djFvck9EMHEzWTd0bkQtc3V2ekU0ZjJxV21hQzIxQmJLZExQTHp0cFhYbjc3QWg1THlmMzJCekF2cWp5dC0wNFlqUDlGNjFBUVJZNV8xeG5ibmpCR0F3SDA5X21XTEhlVkxxelQ5UXVB0gHKAUFVX3lxTE5VMHdLYUp2U3RXTEFIckpnMUtKWi02SGx6V0RXSWlLYk9fMHYtVWZGZ3lSdWxtbmFQaV9EVTR2QnpwRWwzSkxHUEREOGg1aUE4WEJxM055ZWdvMzJLbS1hcnl2MW9yT0QwcTNZN3RuRC1zdXZ6RTRmMnFXbWFDMjFCYktkTFBMenRwWFhuNzdBaDVMeWYzMkJ6QXZxanl0LTA0WWpQOUY2MUFRUlk1XzF4bmJuakJHQXdIMDlfbVdMSGVWTHF6VDlRdUE?oc=5",
    "publisher": "Scroll.in",
@@ -330,6 +363,14 @@
    "description_excerpt": " Breathtaking images of nature by wildlife legend Paul Nicklen from across his incredible 30-year career    Amateur Photographer "
   },
   {
+   "title": "COP17: Nature knows no boundaries – neither can our solutions - Eco-Business",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdHpyWkg5U0d6c2x4UVg0UHRzRWhiRTJFZFhub2tvUndTU1JmcWtSbE1YcF9PQkcxY2JMSU1HaEhKdHE2ZTNiVm56NDJ0NEk2LWVScUZSdXhseG1PRW1yUV9EaC0zN2NFY3Z1bml0RTdoTmVIV1ZiVjQ2OUljV1IzSTZMcFdHYTA0ZmRUc1NyVnlrX19PakRHaQ?oc=5",
+   "publisher": "Eco-Business",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " COP17: Nature knows no boundaries – neither can our solutions    Eco-Business "
+  },
+  {
    "title": "NHAI Allocates ₹50 Crore For Wildlife Conservation Along Varanasi-Kolkata Expressway",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZTBWbzRYSy1qYzA3SkVQZ0ZnZkk2dFNVU3RNdThsTlJIZGg5LXZrUG82WjJyeno2NEJ1SGp5NmgzMkZXbndLM1VqUmdnV2NaUGc0R2xSLU5ONXp4TmIyY1hjOUhLZ1hkUUs4WDZ5MkZtRzd4dHNaMThSNDhrYUdiZ2RNQ3dQX2lzM3VCNXpMTGl6TWZoekxGQzJDa1FtOXdQdDdDckVZNE1Pc0p5dUttQ29UQXJmS1dGanVN0gHAAUFVX3lxTE1aYkxQZkpFNjFvQkZva0Y5UkZJeUNmaTkyVXpWcjNzRHpEUjI2dGdlblBGT0N3TlhQR2RQdXJvWHduTklEQU0tVDhYbnp0TXpQQ0xZNkw0Y2dWd1VpeHIzbTRDMkxxbUxMc1dsNlF3M0lPSzltZDB4cnhWcTcwbUcyQ3BKbnRNdW53QkhfQ2R3MGhkd0Z6UW5rWnpEbnRFd0EwZmlCMmhLOS12Unp4U3VFTk55dEJpak03MmRKSG9UQQ?oc=5",
    "publisher": "Curly Tales",
@@ -344,140 +385,99 @@
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Dikho calls for conservation of environment and springsheds : 18th oct26    E-Pao.net "
-  },
-  {
-   "title": "Emotional Elephant Photo Wins Wildlife Photographer of the Year Award",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNzczUk1wSnR6SEZYX0tvYV9xZXFSYjRsXzhuTENrMUlDc3hvcXRham1zMW5XQ1VrZVNENGR3X1F4NDF4LXpnaElfcGtrcjhlRTNtbnYzTHJ6cEk1V3V2T3pCTDhEU2RNa2toVHU1RXhsdlc4VG1mNDl6VnhqVmFQOUYyUVRrYTAya2ZybEVBRS1TM1E4OUNyODVWMzFadklfS3JTZXE1WHIxV1lwTFd0N1ZId1A?oc=5",
-   "publisher": "Ratopati",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Emotional Elephant Photo Wins Wildlife Photographer of the Year Award    Ratopati "
-  },
-  {
-   "title": "Find Us at COP17",
-   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBDMm5RUktLaHJUZnBTZnJyVUVMenpOQUs5UEZCaDloU2ZLR1ZQRjF4WlphQU1telM1ak04Y09YMHdURUNYbTB2Zw?oc=5",
-   "publisher": "African Wildlife Foundation",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Find Us at COP17    African Wildlife Foundation "
-  },
-  {
-   "title": "COP17: Nature knows no boundaries – neither can our solutions - Eco-Business",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdHpyWkg5U0d6c2x4UVg0UHRzRWhiRTJFZFhub2tvUndTU1JmcWtSbE1YcF9PQkcxY2JMSU1HaEhKdHE2ZTNiVm56NDJ0NEk2LWVScUZSdXhseG1PRW1yUV9EaC0zN2NFY3Z1bml0RTdoTmVIV1ZiVjQ2OUljV1IzSTZMcFdHYTA0ZmRUc1NyVnlrX19PakRHaQ?oc=5",
-   "publisher": "Eco-Business",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " COP17: Nature knows no boundaries – neither can our solutions    Eco-Business "
-  },
-  {
-   "title": "ICEYE's Sielker: Earth observation creating a new era of catastrophe intelligence",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUk5xcmdNQ3RpVTBudXdrRG00VFZESlRlR3lmbnNNd1V0NEY1dnlud2R0V2dQeTZ6V0dCeHNGRlNjNmR3ZnhPYjE1VU9SZjhpY1pzNGpwTnlTSGc2d2JpSHVRSzhCRWlRQm53WTVQczRSaGxjc1ZucnlmNk9wZDRxZ3Z4TEZOTlhLbmtPWmlwWnlFSWlNUlFUTG1TU1FVckIwSnlTVGdaVjBKVDRuLTJQc010VldCOGpiektRX0FxWEdYTE51Zl92OUZxMA?oc=5",
-   "publisher": "theinsurer.com",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " ICEYE's Sielker: Earth observation creating a new era of catastrophe intelligence    theinsurer.com "
-  },
-  {
-   "title": "Hurricane Simon Roars Below as Strange Waves Ripple Across the Sky",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQi1pWlhLUkJSR0p2RXlyOHowSDNxNWxrX1VfT1lYYS10VzhRZ0pSNlFpeVlTWEltOXdEUUEzbWxvUVFjNDlkXzc5ZTFSSDBKdnFPWXFZbkNCc0t3NnNJSEZhMGpSN0lqSjNSa3pXWVBTaUtaQnRHdV8yQ0VPNDNzVl9INXpJUlFITmxFN1g3SjRVZTFMSzR3?oc=5",
-   "publisher": "SciTechDaily",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Hurricane Simon Roars Below as Strange Waves Ripple Across the Sky    SciTechDaily "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 48,
-  "successful": 44,
-  "mapped_pre_dedupe": 171
+  "successful": 43,
+  "mapped_pre_dedupe": 166
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 146,
-  "unique_google_urls_not_in_direct_sample": 296,
+  "unique_direct_urls_not_in_google_sample": 140,
+  "unique_google_urls_not_in_direct_sample": 287,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
    "France24": 20,
-   "Al Jazeera": 19,
-   "The Guardian World": 18,
+   "The Guardian World": 19,
+   "Al Jazeera": 17,
    "France24 FR": 15,
    "France24 ES": 14,
-   "ABC Australia": 12,
-   "RNZ National": 11,
+   "ABC Australia": 11,
+   "RNZ National": 10,
    "BBC World": 9,
    "RNZ Pacific": 8,
    "NPR World": 7,
    "BBC Europe": 6,
-   "BBC Science": 4,
    "Guardian Africa": 3,
    "BBC Brasil": 3,
-   "Mongabay Global": 2,
+   "BBC Science": 3,
    "Mongabay Latam": 2,
-   "The Guardian Environment": 2,
    "UN News": 2,
+   "The Guardian Environment": 2,
+   "Mongabay Global": 2,
+   "Global Voices English": 1,
    "BBC Business": 1,
-   "Guardian Asia": 1,
-   "Global Voices Spanish": 1,
    "BBC Asia": 1,
-   "BBC Middle East": 1,
    "NPR Science": 1,
-   "Global Voices English": 1
+   "Global Voices Spanish": 1,
+   "BBC Middle East": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 248,
-  "country_labels_count": 63,
+  "country_labelled_articles": 249,
+  "country_labels_count": 61,
   "top_country_subjects": {
-   "France": 48,
-   "India": 24,
-   "Vietnam": 20,
+   "France": 51,
+   "India": 23,
+   "Vietnam": 18,
    "Mexico": 12,
-   "Portugal": 7,
    "Canada": 7,
+   "Kenya": 7,
+   "Portugal": 6,
    "Yemen": 6,
-   "Kenya": 6,
+   "Pakistan": 6,
    "Russia": 5,
    "Australia": 5,
+   "Morocco": 5,
    "Nigeria": 5,
-   "Pakistan": 5,
    "Bangladesh": 5,
    "Albania": 5,
    "Egypt": 5,
    "Cook Islands": 4,
-   "Morocco": 4,
-   "Cyprus": 4,
+   "Israel": 3,
    "Thailand": 3,
    "Spain": 3,
+   "Sri Lanka": 3,
    "Ukraine": 3,
+   "Cyprus": 3,
    "Iran": 3,
    "Malaysia": 3,
-   "Israel": 2,
    "Indonesia": 2,
    "New Zealand": 2,
-   "Sri Lanka": 2,
    "Guam": 2,
    "Guatemala": 2,
    "Somalia": 2
   },
-  "distinct_geographic_signal_centers": 175,
+  "distinct_geographic_signal_centers": 165,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 142
+   "mapped_pre_dedupe": 138
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 94
+   "mapped_pre_dedupe": 91
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 137
+   "mapped_pre_dedupe": 138
   },
   "AU": {
    "requests": 11,
@@ -487,7 +487,7 @@
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 137
+   "mapped_pre_dedupe": 135
   },
   "NG": {
    "requests": 11,
@@ -497,15 +497,15 @@
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 143
+   "mapped_pre_dedupe": 140
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 100
+   "mapped_pre_dedupe": 96
   }
  },
- "duplicates_removed": 695,
+ "duplicates_removed": 686,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
