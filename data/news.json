@@ -2,34 +2,34 @@
  "schema": 2,
  "version": "1.5.4B",
  "source": "Google News RSS and independent publisher RSS samples",
- "updated_at": "2026-10-18T01:05:34+00:00",
- "last_attempt_at": "2026-10-18T01:05:34+00:00",
+ "updated_at": "2026-10-18T01:13:52+00:00",
+ "last_attempt_at": "2026-10-18T01:13:52+00:00",
  "window": "rolling 24 hours",
  "status": "partial",
- "query_successes": 131,
+ "query_successes": 132,
  "query_attempts": 136,
  "articles_scanned": {
-  "politics": 199,
-  "environment": 90,
+  "politics": 202,
+  "environment": 86,
   "hazards": 41,
-  "society": 167,
-  "health": 361,
-  "education": 357,
-  "rights": 23,
+  "society": 170,
+  "health": 365,
+  "education": 388,
+  "rights": 24,
   "community": 38,
   "economy": 206,
-  "science": 212,
-  "conflict": 88,
-  "direct": 1324
+  "science": 210,
+  "conflict": 89,
+  "direct": 1359
  },
- "distinct_mapped_articles": 423,
- "duplicates_removed": 696,
- "source_count": 231,
- "direct_sources_ok": 43,
- "unmapped_articles_sample": 913,
+ "distinct_mapped_articles": 426,
+ "duplicates_removed": 713,
+ "source_count": 233,
+ "direct_sources_ok": 44,
+ "unmapped_articles_sample": 930,
  "geographic_confidence": {
-  "headline": 821,
-  "description": 291
+  "headline": 830,
+  "description": 302
  },
  "source_health_file": "data/source-health.json",
  "history_file": "data/history.json",
@@ -40,8 +40,7 @@
   "direct/DW World": "Feed contained no recognizable RSS/Atom items",
   "direct/CBC World": "The read operation timed out",
   "direct/ReliefWeb Updates": "no element found: line 1, column 0",
-  "direct/DW Español": "syntax error: line 1, column 0",
-  "direct/Inter Press Service Headlines": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
+  "direct/DW Español": "syntax error: line 1, column 0"
  },
  "points": [
   {
@@ -270,7 +269,7 @@
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 16,
+   "count": 17,
    "publisher_count": 1,
    "category": "education",
    "recent_3h": 1,
@@ -342,6 +341,16 @@
      "title": "Nearly 400 Chinese language teachers update their HSK 3.0 skills and apply AI.",
      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQm1DU0hKYkY2MjZ2QkFFQUE5VUJ4R0V6WGJGSHhOYzNKbTNleFM5TXNENTc3elNNRUZCcGJWeXl0cWx2UlpIXzRGMGltNWt1aE1kd2ZhZldySnhLejVoMFJCZjFEeE5XLXJBbkI5VWlBQnFDLXd4ZEFWZnVrM2hPN3B6RjFtcGhmSmM5Sm41Qzg?oc=5",
      "published_at": "2026-10-17T10:29:54+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "The Ministry of Education and Training requires universities not to lower standards in order to increase the percentage of excellent students.",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeGE2bFpSTDRDRldzS2pmVDJQT25rcXZYU3Q3bnFsRjloZ0ctWlpsS2wxa21ZOFkwbjY4MzJRclo2VTR4VThlcGJnbF94ajh1ZkRPVW5PNmUwd1BRb3puVVplampLeHpHU3Nnbl9FT0V2TVJDLWxHQVJmZGJhTGJONmRoUG1RdVR1V2lmcmJ6UERmZw?oc=5",
+     "published_at": "2026-10-17T09:33:48+00:00",
      "publisher": "Vietnam.vn",
      "source_url": "https://www.vietnam.vn",
      "source_kind": "aggregator",
@@ -448,13 +457,13 @@
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 15,
-   "publisher_count": 13,
+   "count": 16,
+   "publisher_count": 14,
    "category": "society",
-   "recent_3h": 1,
-   "previous_3h": 6,
+   "recent_3h": 0,
+   "previous_3h": 7,
    "velocity": "cooling",
-   "velocity_change_pct_sample": -71,
+   "velocity_change_pct_sample": -88,
    "articles": [
     {
      "title": "France: Protesters clash with police in nationwide protests, amid rising social polarization",
@@ -512,6 +521,16 @@
      "published_at": "2026-10-17T19:59:00+00:00",
      "publisher": "AP News",
      "source_url": "https://apnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Half a million protesters sweep France in major show of youth unrest",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPN2R3RzdVVXpmVnowVWlEeVJxSzVUQjVGOFF6eE8zT0tFZmJnWS1ZMWpWc24yVWJ0Z0VsbkRoN3pLMUxOY3QxU3EzTkpZRC1mSEdtYUJvaEw2NzBYZW1Wb2dPeGtrZnZYLVl6U1Q4ekNNRFBOZGM1cDl2aUdfMlBmbGdIOHR4emtwRGh6cjFXd0FvRF9RTVl6ZHZRakpvSVhxOTB3?oc=5",
+     "published_at": "2026-10-17T19:52:31+00:00",
+     "publisher": "CNN",
+     "source_url": "https://www.cnn.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -923,6 +942,84 @@
    ]
   },
   {
+   "lat": 55.75,
+   "lng": 37.62,
+   "name": "Russia",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 6,
+   "publisher_count": 6,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+     "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+     "published_at": "2026-10-18T01:10:25+00:00",
+     "publisher": "BBC World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Trump faces bipartisan backlash over Russia sanctions waiver",
+     "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver?traffic_source=rss",
+     "published_at": "2026-10-17T17:24:07+00:00",
+     "publisher": "Al Jazeera",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Trump’s pause on Russia sanctions is ‘reward’ for Putin, Zelenskyy says",
+     "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine",
+     "published_at": "2026-10-17T15:38:17+00:00",
+     "publisher": "The Guardian World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
+     "url": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
+     "published_at": "2026-10-17T14:25:10+00:00",
+     "publisher": "NPR World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Por que Trump suspendeu várias sanções contra a Rússia em meio a tensões com Ucrânia",
+     "url": "https://www.bbc.com/portuguese/articles/cmdxw58v17gno?at_medium=RSS&at_campaign=rss",
+     "published_at": "2026-10-17T12:50:05+00:00",
+     "publisher": "BBC Brasil",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "pt",
+     "geo_match": "title-normalized"
+    },
+    {
+     "title": "Russia hails Trump waiving sanctions as 'historic'",
+     "url": "https://www.france24.com/en/video/20261017-russia-hails-trump-waiving-sanctions-as-historic",
+     "published_at": "2026-10-17T10:41:22+00:00",
+     "publisher": "France24",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 38.72,
    "lng": -9.14,
    "name": "Portugal",
@@ -1001,78 +1098,78 @@
    ]
   },
   {
-   "lat": 55.75,
-   "lng": 37.62,
-   "name": "Russia",
+   "lat": -1.29,
+   "lng": 36.82,
+   "name": "Kenya",
    "accuracy": "country",
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 6,
    "publisher_count": 6,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 1,
+   "category": "health",
+   "recent_3h": 2,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 200,
    "articles": [
     {
-     "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
-     "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-     "published_at": "2026-10-17T19:19:19+00:00",
-     "publisher": "BBC World",
-     "source_url": "",
-     "source_kind": "publisher",
+     "title": "Kenya gazettes new Ebola rules, tightens surveillance and containment",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSklWMzNCSGRVNnEyTnZnYm9TemllWEtGTWttVDhkNW5RVF9JeC1uQjYwNF9aRkxwOWp1Z3RJcmZKZ2tUcDl4ZUppNzBEZFIteXQyWWt6S3BFOVRnNjk2c1hBQm9kZWpVcFF5RkNsLVVITTEyRl92aGkxNjlKUnRvSzZzWFRIaVNmSmZnbWVpQk1pc3FTZEgxUQ?oc=5",
+     "published_at": "2026-10-17T23:20:22+00:00",
+     "publisher": "Radiokaya",
+     "source_url": "https://radiokaya.co.ke",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Trump faces bipartisan backlash over Russia sanctions waiver",
-     "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver?traffic_source=rss",
-     "published_at": "2026-10-17T17:24:07+00:00",
-     "publisher": "Al Jazeera",
-     "source_url": "",
-     "source_kind": "publisher",
+     "title": "Kenya confirms four new Ebola cases, total rises to seven",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUWVmcGQxM19RaWJuTElFVHVWNjhlSThfMkh0NWVhVnpTWEthTlB1VTN1eE56alJZVmNvcUh4MVZRb01STDJ5bW83MEItV2FDb2w3ZDR5aXUzTmFOVk5xcVBiNjQ3eWJmZ3hMaDRKcEthQUN2MUx2TVRVMkpfX0ktTGFDTTRQdTR1R2pDQjc1NDQ5T3J2VEdyOTZpZ9IBmwFBVV95cUxOUWVmcGQxM19RaWJuTElFVHVWNjhlSThfMkh0NWVhVnpTWEthTlB1VTN1eE56alJZVmNvcUh4MVZRb01STDJ5bW83MEItV2FDb2w3ZDR5aXUzTmFOVk5xcVBiNjQ3eWJmZ3hMaDRKcEthQUN2MUx2TVRVMkpfX0ktTGFDTTRQdTR1R2pDQjc1NDQ5T3J2VEdyOTZpZw?oc=5",
+     "published_at": "2026-10-17T22:43:16+00:00",
+     "publisher": "Social News XYZ",
+     "source_url": "https://www.socialnews.xyz",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Trump’s pause on Russia sanctions is ‘reward’ for Putin, Zelenskyy says",
-     "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine",
-     "published_at": "2026-10-17T15:38:17+00:00",
-     "publisher": "The Guardian World",
-     "source_url": "",
-     "source_kind": "publisher",
+     "title": "Kenya confirms 4 new Ebola cases, total rises to 7",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQThFNHRaczFRWkcwZ1FYaW1CQlJiRjhkaTY1WF9EUzJrM293elB6RkJRaFBzZmJXWGNGZG5ydXhJeUVmcndmb25KaHlSdUw4SE9XZGNDbkZGa09OYzM4ZlZRZWxuSi1nLTd2NXNFV3lINU9XLV83aWRLMl8tN0dJemZHd2ZsZw?oc=5",
+     "published_at": "2026-10-17T16:48:30+00:00",
+     "publisher": "Xinhua",
+     "source_url": "https://english.news.cn",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
-     "url": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
-     "published_at": "2026-10-17T14:25:10+00:00",
-     "publisher": "NPR World",
-     "source_url": "",
-     "source_kind": "publisher",
+     "title": "WHO Urges Vigilance after Kenya Confirms Second Ebola Case",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOX1lCSjRrUlNDUEFlXzZkQnNxaHF4MjE4eWlzYmRnSGpLNGx5VHgydU1kc2ZWbXQ4UFZnTGdsVmdMWFV0bl9OVU1YWEswNDg2blBPS1lYN2x2c1hqdXBOa2NBb3NNbVRtMk42VXRsOUw0SXRzMVQ2VmljX1VrWmp2aVdZRUFUa1k?oc=5",
+     "published_at": "2026-10-17T10:41:24+00:00",
+     "publisher": "Vellum Kenya",
+     "source_url": "https://vellum.co.ke",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Por que Trump suspendeu várias sanções contra a Rússia em meio a tensões com Ucrânia",
-     "url": "https://www.bbc.com/portuguese/articles/cmdxw58v17gno?at_medium=RSS&at_campaign=rss",
-     "published_at": "2026-10-17T12:50:05+00:00",
-     "publisher": "BBC Brasil",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "pt",
-     "geo_match": "title-normalized"
+     "title": "𝐊𝐞𝐧𝐲𝐚 𝐜𝐨𝐧𝐟𝐢𝐫𝐦𝐬 𝐭𝐡𝐢𝐫𝐝 𝐄𝐛𝐨𝐥𝐚 𝐜𝐚𝐬𝐞; 𝐬𝐚𝐲𝐬 𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲 𝐭𝐫𝐚𝐧𝐬𝐦𝐢𝐬𝐬𝐢𝐨𝐧 𝐫𝐞𝐦𝐚𝐢𝐧𝐬 𝐥𝐨𝐰 Kenya has confirmed a third case of Ebola (Bundibugyo virus disease), with the Ministry of Health saying there is no evidence of community transmiss",
+     "url": "https://news.google.com/rss/articles/CBMi6whBVV95cUxQZ09pUGZLYW0tNlNTY2VQT1VpUHpGNTVjUVJMcjAyN2ZmU09tV3B0M2pERXBZXy1NS0Q2bF9XNk9vbWExQkg3NXdhLVhGVEQ1NWZIMzE4X1RjeGNEOVkwckJnRjZ0emNSOFVJSU5LSUQ3VlVWeWNKd2o2UFdmSXVaMS12Y08xNUtISGNzUEQ3ZHpnYldRTThhNldaZzBzbnFUd0xjWWNFVFNSb3VyVUdFRTQ0NTEtZHlldHRfSThJc0NuUndSeEgwdTNTYzBTX2c5WEIzWnU4LWlOSGx1ZDl5ckNKRGIya1hJYWttRGF1elpTam5QQlBuWkx4aXBFMjNCTkRubEZzR3E5UWprLVBWeHRqeXVSWEtrc0hBYUxuX1hXYU40ZWJjcE1DUWJxVHdvTVRHZWpYVVItYW9WV1l4VFdlVnQwYjZHWUdCX3BJVkx1Ym9jMkpTS1QzV2pNVWxldVBMaXdwaGNCUlNDVTROOWFOZnN4Q3VNY1FMMGlSM1lWVEFRU0JaQnhCWGV4NG5hTGNGN3o5cUp4ZHBwM0ZPSkNxMmYycEhjX0V2VU14U1lzN3E0R21MQ0RwN2pRTjBmTTQxU1RKeVpWaG1QbjQzMGNtT0lORzJmUnhUbk1fTC1NaTZZbGNrdkoyUTlJYnlKeXAxTXdaTndKcUVId0RRd0NzNm9XTmNNWUYxNTdsbUtRakhoV282NXUzaVFsaE1yeGNpbFRVcmpUSDhYQ0VkZGk5VjJBaHhqNUlGN1FVU2dwc2dsOXMxQWJDNmhXRTR4X2dTaEFnejJYbGV1VFJNNkxOeEJGTGxDaGlfbkNSQkYwSERxTE8tTEJXbllxQS1DYmV5MHJGbVN6QW9yeTlzMW5kZHJIWlgwTEo0X0liRWtSVFJDdldhbEd1cjc2UnctSDVZa3p0S1BtZlFFREF2WmlxT2dZMnNlMF9mMThoVnl1Q202cWJ4SGtwZHpLLVhkVDEzek50T1JpYUtpNlo2dmxUX3FRSjhSRkl2aTVoV0F6R09wR05lclNDZlF0MERvNXRQYmRZY2hNZ2FxNHZKSk1WalRYWFBRaVN5SEQwMEVxUDRMNV9oRjFzM1diaUowYlFYWnNIRldsNnpKcTBLakZkb3VKalZuV29BRTNmczVHVlhaVHVueUJWRHJiVVR1cVdqZWgzbXNfRF9rNHZlNTJGalpjYW82MzdwTTk1QW5FODJxbm9YT0NSWFdHaVlxSTRuQXZ1RXRUenZDRmY4akF3cjFrUDg2SzZfbXpuZF9qdWEyV1BxWnNBZjIxV1hNVUdibk1KVjI2bEFHWThVblZ1QkpYQWtId2FVT0dnWkhnU3hGUVowSGQ0NmhYdE4xeWozNHRtMXgxLURmYkQtcWI4dThSMlpEOVV5a2ZkempLZkptTTZ2ZnlVUklkeFRaRWNVQ3VDSndrb3lVUElMNlFsZzNoa0RETmFQVDdNdzBkQ2dkSDdKYlVabWZSTEpZdlUzdUdzWURTMDg?oc=5",
+     "published_at": "2026-10-17T10:05:01+00:00",
+     "publisher": "Facebook",
+     "source_url": "https://www.facebook.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
     },
     {
-     "title": "Russia hails Trump waiving sanctions as 'historic'",
-     "url": "https://www.france24.com/en/video/20261017-russia-hails-trump-waiving-sanctions-as-historic",
-     "published_at": "2026-10-17T10:41:22+00:00",
-     "publisher": "France24",
-     "source_url": "",
-     "source_kind": "publisher",
+     "title": "Kenya's race to contain Ebola: Two cases, one death and a health system caught off guard",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaWJmUWttd0VFVTlCMTZUTm9waHZIV1poUFhBTW9IUFZwRldFMmNxTW5tWUlnSVFGZGxVNllkbFRnNG41cklMZlQ3cl9jRXB2QXBKOVg4Z0toWXRudmRVUTJ1Sm5YY0FURkNRdmhzdHBWRlRrVlNGUnNsNktiSGg1aUxR0gGCAUFVX3lxTFBfa1MyOU1QZG9Pd01HZ2xzTlQtbzBJeUpMZ2dwcm1mVUhqZmg3NkNvVS0yVXQzQjJYV2E5OHExakl6ZDl5dlUxc2dZVDR3MERuSllXa2JiNHhfMVBHT0ZsTURGeEpwYm8zdk1SVHNXdzNMcDdBcDJYWUp6Y3V6bTA2VkE?oc=5",
+     "published_at": "2026-10-17T08:48:20+00:00",
+     "publisher": "dw.com",
+     "source_url": "https://www.dw.com",
+     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     }
@@ -1215,74 +1312,6 @@
    ]
   },
   {
-   "lat": -1.29,
-   "lng": 36.82,
-   "name": "Kenya",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 5,
-   "publisher_count": 5,
-   "category": "health",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Kenya confirms four new Ebola cases, total rises to seven",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUWVmcGQxM19RaWJuTElFVHVWNjhlSThfMkh0NWVhVnpTWEthTlB1VTN1eE56alJZVmNvcUh4MVZRb01STDJ5bW83MEItV2FDb2w3ZDR5aXUzTmFOVk5xcVBiNjQ3eWJmZ3hMaDRKcEthQUN2MUx2TVRVMkpfX0ktTGFDTTRQdTR1R2pDQjc1NDQ5T3J2VEdyOTZpZ9IBmwFBVV95cUxOUWVmcGQxM19RaWJuTElFVHVWNjhlSThfMkh0NWVhVnpTWEthTlB1VTN1eE56alJZVmNvcUh4MVZRb01STDJ5bW83MEItV2FDb2w3ZDR5aXUzTmFOVk5xcVBiNjQ3eWJmZ3hMaDRKcEthQUN2MUx2TVRVMkpfX0ktTGFDTTRQdTR1R2pDQjc1NDQ5T3J2VEdyOTZpZw?oc=5",
-     "published_at": "2026-10-17T22:43:16+00:00",
-     "publisher": "Social News XYZ",
-     "source_url": "https://www.socialnews.xyz",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Kenya confirms 4 new Ebola cases, total rises to 7",
-     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQThFNHRaczFRWkcwZ1FYaW1CQlJiRjhkaTY1WF9EUzJrM293elB6RkJRaFBzZmJXWGNGZG5ydXhJeUVmcndmb25KaHlSdUw4SE9XZGNDbkZGa09OYzM4ZlZRZWxuSi1nLTd2NXNFV3lINU9XLV83aWRLMl8tN0dJemZHd2ZsZw?oc=5",
-     "published_at": "2026-10-17T16:48:30+00:00",
-     "publisher": "Xinhua",
-     "source_url": "https://english.news.cn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "WHO Urges Vigilance after Kenya Confirms Second Ebola Case",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOX1lCSjRrUlNDUEFlXzZkQnNxaHF4MjE4eWlzYmRnSGpLNGx5VHgydU1kc2ZWbXQ4UFZnTGdsVmdMWFV0bl9OVU1YWEswNDg2blBPS1lYN2x2c1hqdXBOa2NBb3NNbVRtMk42VXRsOUw0SXRzMVQ2VmljX1VrWmp2aVdZRUFUa1k?oc=5",
-     "published_at": "2026-10-17T10:41:24+00:00",
-     "publisher": "Vellum Kenya",
-     "source_url": "https://vellum.co.ke",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "𝐊𝐞𝐧𝐲𝐚 𝐜𝐨𝐧𝐟𝐢𝐫𝐦𝐬 𝐭𝐡𝐢𝐫𝐝 𝐄𝐛𝐨𝐥𝐚 𝐜𝐚𝐬𝐞; 𝐬𝐚𝐲𝐬 𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲 𝐭𝐫𝐚𝐧𝐬𝐦𝐢𝐬𝐬𝐢𝐨𝐧 𝐫𝐞𝐦𝐚𝐢𝐧𝐬 𝐥𝐨𝐰 Kenya has confirmed a third case of Ebola (Bundibugyo virus disease), with the Ministry of Health saying there is no evidence of community transmiss",
-     "url": "https://news.google.com/rss/articles/CBMi6whBVV95cUxQZ09pUGZLYW0tNlNTY2VQT1VpUHpGNTVjUVJMcjAyN2ZmU09tV3B0M2pERXBZXy1NS0Q2bF9XNk9vbWExQkg3NXdhLVhGVEQ1NWZIMzE4X1RjeGNEOVkwckJnRjZ0emNSOFVJSU5LSUQ3VlVWeWNKd2o2UFdmSXVaMS12Y08xNUtISGNzUEQ3ZHpnYldRTThhNldaZzBzbnFUd0xjWWNFVFNSb3VyVUdFRTQ0NTEtZHlldHRfSThJc0NuUndSeEgwdTNTYzBTX2c5WEIzWnU4LWlOSGx1ZDl5ckNKRGIya1hJYWttRGF1elpTam5QQlBuWkx4aXBFMjNCTkRubEZzR3E5UWprLVBWeHRqeXVSWEtrc0hBYUxuX1hXYU40ZWJjcE1DUWJxVHdvTVRHZWpYVVItYW9WV1l4VFdlVnQwYjZHWUdCX3BJVkx1Ym9jMkpTS1QzV2pNVWxldVBMaXdwaGNCUlNDVTROOWFOZnN4Q3VNY1FMMGlSM1lWVEFRU0JaQnhCWGV4NG5hTGNGN3o5cUp4ZHBwM0ZPSkNxMmYycEhjX0V2VU14U1lzN3E0R21MQ0RwN2pRTjBmTTQxU1RKeVpWaG1QbjQzMGNtT0lORzJmUnhUbk1fTC1NaTZZbGNrdkoyUTlJYnlKeXAxTXdaTndKcUVId0RRd0NzNm9XTmNNWUYxNTdsbUtRakhoV282NXUzaVFsaE1yeGNpbFRVcmpUSDhYQ0VkZGk5VjJBaHhqNUlGN1FVU2dwc2dsOXMxQWJDNmhXRTR4X2dTaEFnejJYbGV1VFJNNkxOeEJGTGxDaGlfbkNSQkYwSERxTE8tTEJXbllxQS1DYmV5MHJGbVN6QW9yeTlzMW5kZHJIWlgwTEo0X0liRWtSVFJDdldhbEd1cjc2UnctSDVZa3p0S1BtZlFFREF2WmlxT2dZMnNlMF9mMThoVnl1Q202cWJ4SGtwZHpLLVhkVDEzek50T1JpYUtpNlo2dmxUX3FRSjhSRkl2aTVoV0F6R09wR05lclNDZlF0MERvNXRQYmRZY2hNZ2FxNHZKSk1WalRYWFBRaVN5SEQwMEVxUDRMNV9oRjFzM1diaUowYlFYWnNIRldsNnpKcTBLakZkb3VKalZuV29BRTNmczVHVlhaVHVueUJWRHJiVVR1cVdqZWgzbXNfRF9rNHZlNTJGalpjYW82MzdwTTk1QW5FODJxbm9YT0NSWFdHaVlxSTRuQXZ1RXRUenZDRmY4akF3cjFrUDg2SzZfbXpuZF9qdWEyV1BxWnNBZjIxV1hNVUdibk1KVjI2bEFHWThVblZ1QkpYQWtId2FVT0dnWkhnU3hGUVowSGQ0NmhYdE4xeWozNHRtMXgxLURmYkQtcWI4dThSMlpEOVV5a2ZkempLZkptTTZ2ZnlVUklkeFRaRWNVQ3VDSndrb3lVUElMNlFsZzNoa0RETmFQVDdNdzBkQ2dkSDdKYlVabWZSTEpZdlUzdUdzWURTMDg?oc=5",
-     "published_at": "2026-10-17T10:05:01+00:00",
-     "publisher": "Facebook",
-     "source_url": "https://www.facebook.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Kenya's race to contain Ebola: Two cases, one death and a health system caught off guard",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaWJmUWttd0VFVTlCMTZUTm9waHZIV1poUFhBTW9IUFZwRldFMmNxTW5tWUlnSVFGZGxVNllkbFRnNG41cklMZlQ3cl9jRXB2QXBKOVg4Z0toWXRudmRVUTJ1Sm5YY0FURkNRdmhzdHBWRlRrVlNGUnNsNktiSGg1aUxR0gGCAUFVX3lxTFBfa1MyOU1QZG9Pd01HZ2xzTlQtbzBJeUpMZ2dwcm1mVUhqZmg3NkNvVS0yVXQzQjJYV2E5OHExakl6ZDl5dlUxc2dZVDR3MERuSllXa2JiNHhfMVBHT0ZsTURGeEpwYm8zdk1SVHNXdzNMcDdBcDJYWUp6Y3V6bTA2VkE?oc=5",
-     "published_at": "2026-10-17T08:48:20+00:00",
-     "publisher": "DW.com",
-     "source_url": "https://www.dw.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 31.5,
    "lng": 34.47,
    "name": "Gaza",
@@ -1419,64 +1448,6 @@
    ]
   },
   {
-   "lat": 35.69,
-   "lng": 51.39,
-   "name": "Iran",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 4,
-   "publisher_count": 3,
-   "category": "conflict",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Iran war live: Tankers hit in Hormuz; Israeli settlers attack EU diplomats",
-     "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-     "published_at": "2026-10-18T00:00:11+00:00",
-     "publisher": "Al Jazeera",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "'Hormuz Is Closed,' Warns Iran As Multiple Ships Come Under Attack; Houthi-Saudi Conflict Escalates",
-     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTGR1SGRZRWNoSlVMLV9zdXJQYnAtaGVzbW1Pa1d3QlhDb1N2OGZoRW9Oc21hcG1FWkZkOVBxVkRFTkc1d1N0ZS12S1BzaU5WVzRRaGJFTEI2LXpYMEd1ZjNwSDZtREdlNmc4a0RjRDI0S0cxZFhWM0tvZjl1YVkwcWVrMVB5eEk3NGw3czYyNTlHeTVDQVB5QXQyUEJQN2gzOS0yNzZkWjJwZzM2MnlKS3pVSXE4aUNuS0FOY1hoellnRG5GNmlzdXRCeUFnNXR6WEhhSXlQWlRKM2x3dTZEblBSeTFoRWxFOVJsM2czYmo5Z9IB9wFBVV95cUxQV1NkMTY0cWU1dzB6eVRKRTE5T3EwUEJDMTlxRlEtcU9TMks2NFB1SzFsZXhSQ1BwNG56TXMyckRMQWFFd3pMWFBJRDhoV2NmVDBkQW9ENEpxRFQyVDRDcUVUaS1YMC1KaGhla2QzUFBWZTB2V004MC1URXNXY2hTZTQtOXBaVDRxNF9OdTBfSnpVaWEwVzNDOEs5b1Vyam1MM3piUHhsQjhtTC1ZeWFIdThKcGFNMWZVSFYtYi1LMEJicEdSVGo1bHU1ajY3WDltU0swcmFJaWpMSnh5YkY4TXBXTUNtdDJFTlNBWXBOY1kyWGE0YTh3?oc=5",
-     "published_at": "2026-10-17T16:16:56+00:00",
-     "publisher": "Times Now",
-     "source_url": "https://www.timesnownews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Pentagon lowers count of Iran war dead and wounded, sparking questions and outrage - ABC News",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ1BwUjctMk8yVXY0LVVRRjB3eW1ENUVYYjFzWkNyMWVIOWpNVzBEeTNaQzU5M2pDWEE1ZXRJb2g2WGk2a1ZMT0hEbnhtV3lZRmsxTzhaSFFTckxTWmM2ZUVZWmVkaWVkbDZVak9vSGl6b3dMNk5UdnBjOHZZM1phbEZwbS1MTHhxVEItb2gyZ2FDYVpfaTJBSzZ30gGfAUFVX3lxTE1fLUdKUGQ3NTBmZzZnSkduVmJkc3V0d3FtX2ZnWkhzaVZQUHp5LXlTT0tackNubUt4ZFFDUlA3NGlNVGFoQ3ZJeWltR3lCX3VHVXlibl9zVThCQ3BaSUllamM2NmdUeGN6UzdKWE8zZ2NuLXlJMUdWUUNfcHhmWC1ZV2pmdko2cHFDRjd4ZUFYdWxUaU1BN0IzOVBXZjhiOA?oc=5",
-     "published_at": "2026-10-17T08:40:12+00:00",
-     "publisher": "ABC News - Breaking News, Latest News and Videos",
-     "source_url": "https://abcnews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "What to know about 'black rain' that fell in Iran after strikes on oil reserves - ABC News",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUERWLUNDUmpCUjdsMVFHWm44UGRJLXZEdkRvMG9lRmp3NnpGUEFDUXkteFFkaUFLX2lhOENuX2pWNnE2bllqdnVpVGFLWjJDV1BpWUFOODJKMTJYVUJYSm14bk1vTkV5dGx2WENqbE83Q211eVNNNE9SYjBPZXZ5LVQ5OUpQblJYNThfLWVHN1VINkZhWUIwTWMyVHYzOVl5aEHSAacBQVVfeXFMTzh0SjVrcUdMX19zXzhRVTFkYkZIcWp4OUR5SVN5bm42TnQwQ1M0dGVxMWdydFBkMExsQ2RTaUtHYkk4VUlxVzNnWldueXRpTlhJeGJMdl9tQnkyM3RTYUlaUVFYWkRaNlIzd3RnSUI4NWd6b0g2S05hdk83MFlSa01SVV84OHpVcDBfU1FqOTYwM09yU2RJSGEzeXk2U2JDcUI0Tjd6Y00?oc=5",
-     "published_at": "2026-10-17T05:28:12+00:00",
-     "publisher": "ABC News - Breaking News, Latest News and Videos",
-     "source_url": "https://abcnews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 48.86,
    "lng": 2.35,
    "name": "France",
@@ -1505,7 +1476,7 @@
     {
      "title": "Student Protests Spread Across France as Anger Over School Conditions Reaches Boiling Point",
      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcW9oZnVFS2hEWWh4MElnUzA4bUZ4aG04Wm9IODZLWTZJTU5xUVBiRHNfWktnVk9jUzlnMXlHYmxnc3U4eTBKM3ZIVDkxNjdNcmNreDFkYk9GWm5zQ1pUTHhaVjlScW1HekNpZmx3NWJFNWdiTnpWYlFlakZ3alJZanI4RnlWaGhEcnAybHBZNEFrLUpGWHJGbXVpc3MtUmd6QTB2dTRZOGRSQTZRaWdmNDIwN3pBUFN2Y2EwMm9Xc20tQQ?oc=5",
-     "published_at": "2026-10-17T13:08:34+00:00",
+     "published_at": "2026-10-17T13:08:35+00:00",
      "publisher": "BBN Times",
      "source_url": "https://www.bbntimes.com",
      "source_kind": "aggregator",
@@ -1593,6 +1564,64 @@
    ]
   },
   {
+   "lat": 35.69,
+   "lng": 51.39,
+   "name": "Iran",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 4,
+   "publisher_count": 3,
+   "category": "conflict",
+   "recent_3h": 0,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -50,
+   "articles": [
+    {
+     "title": "Iran War: Latest News, Live Coverage and Video",
+     "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1vRFdEaTJrbkd5dmlGNzFrY19yTEJFZko2aXBSejFKbXNsbl95eFBsM2dSNkRjdVNudjhZTl9DSzFud3JoTTJ2R2ttX3lBNkE?oc=5",
+     "published_at": "2026-10-17T19:24:41+00:00",
+     "publisher": "NBC News",
+     "source_url": "https://www.nbcnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "'Hormuz Is Closed,' Warns Iran As Multiple Ships Come Under Attack; Houthi-Saudi Conflict Escalates",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTGR1SGRZRWNoSlVMLV9zdXJQYnAtaGVzbW1Pa1d3QlhDb1N2OGZoRW9Oc21hcG1FWkZkOVBxVkRFTkc1d1N0ZS12S1BzaU5WVzRRaGJFTEI2LXpYMEd1ZjNwSDZtREdlNmc4a0RjRDI0S0cxZFhWM0tvZjl1YVkwcWVrMVB5eEk3NGw3czYyNTlHeTVDQVB5QXQyUEJQN2gzOS0yNzZkWjJwZzM2MnlKS3pVSXE4aUNuS0FOY1hoellnRG5GNmlzdXRCeUFnNXR6WEhhSXlQWlRKM2x3dTZEblBSeTFoRWxFOVJsM2czYmo5Z9IB9wFBVV95cUxQV1NkMTY0cWU1dzB6eVRKRTE5T3EwUEJDMTlxRlEtcU9TMks2NFB1SzFsZXhSQ1BwNG56TXMyckRMQWFFd3pMWFBJRDhoV2NmVDBkQW9ENEpxRFQyVDRDcUVUaS1YMC1KaGhla2QzUFBWZTB2V004MC1URXNXY2hTZTQtOXBaVDRxNF9OdTBfSnpVaWEwVzNDOEs5b1Vyam1MM3piUHhsQjhtTC1ZeWFIdThKcGFNMWZVSFYtYi1LMEJicEdSVGo1bHU1ajY3WDltU0swcmFJaWpMSnh5YkY4TXBXTUNtdDJFTlNBWXBOY1kyWGE0YTh3?oc=5",
+     "published_at": "2026-10-17T16:16:56+00:00",
+     "publisher": "Times Now",
+     "source_url": "https://www.timesnownews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "White House says Iran 'backed down' to Trump in agreeing to ceasefire - ABC News",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWlFUWUlFZVlBbGNWQkNvWlRkMGNsRlRBQzdIbEN1cWJxSDZVWUI2cVcxdTlGUFFyUW1IeHVWN3RCZFRVdWlld3A5Mkk0bERKYjBUb0xCWGRmcUgyMUVCbFhQUEQ2SW9YNzdBc0FmUVU2eFRLWVZMWmJmSS10NnR5UEZUQnZBY3BPNFBpRldkUHJxaE8zeVFyZkNPZVjSAaIBQVVfeXFMTnVrbFFDcnEzbmxyQ280Qk9STF94YVFzdFBlWWJOWUo2UHB1SGtxZ2ZXX2JndklWZ3dMZ21fVGNUaVZXWkcxYTZMX1JaMVVFMEdXYnd2TlFRamxWQlhvS21pUUN0VF9EN0F6RjlyX0FkU1BkN1ZhQ0o5bUZBbUg5MUxhYW1xNTVhUzVYYjBPMlEtaUJ1R0JqcklRMjFXaHFac1Bn?oc=5",
+     "published_at": "2026-10-17T11:01:41+00:00",
+     "publisher": "ABC News - Breaking News, Latest News and Videos",
+     "source_url": "https://abcnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Pentagon lowers count of Iran war dead and wounded, sparking questions and outrage - ABC News",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ1BwUjctMk8yVXY0LVVRRjB3eW1ENUVYYjFzWkNyMWVIOWpNVzBEeTNaQzU5M2pDWEE1ZXRJb2g2WGk2a1ZMT0hEbnhtV3lZRmsxTzhaSFFTckxTWmM2ZUVZWmVkaWVkbDZVak9vSGl6b3dMNk5UdnBjOHZZM1phbEZwbS1MTHhxVEItb2gyZ2FDYVpfaTJBSzZ30gGfAUFVX3lxTE1fLUdKUGQ3NTBmZzZnSkduVmJkc3V0d3FtX2ZnWkhzaVZQUHp5LXlTT0tackNubUt4ZFFDUlA3NGlNVGFoQ3ZJeWltR3lCX3VHVXlibl9zVThCQ3BaSUllamM2NmdUeGN6UzdKWE8zZ2NuLXlJMUdWUUNfcHhmWC1ZV2pmdko2cHFDRjd4ZUFYdWxUaU1BN0IzOVBXZjhiOA?oc=5",
+     "published_at": "2026-10-17T08:40:12+00:00",
+     "publisher": "ABC News - Breaking News, Latest News and Videos",
+     "source_url": "https://abcnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 28.61,
    "lng": 77.21,
    "name": "India",
@@ -1644,64 +1673,6 @@
      "published_at": "2026-10-17T06:27:23+00:00",
      "publisher": "The New Indian Express",
      "source_url": "https://www.newindianexpress.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 41.9,
-   "lng": 12.5,
-   "name": "Rome",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 4,
-   "publisher_count": 4,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Pope Leo leaves hospital after lung cancer surgery",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/pope-leo-leaves-hospital-after-lung-cancer-surgery?traffic_source=rss",
-     "published_at": "2026-10-17T15:47:52+00:00",
-     "publisher": "Al Jazeera",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Pope Leo XIV leaves hospital days after lung cancer surgery",
-     "url": "https://www.npr.org/2026/10/17/nx-s1-6006762/pope-leo-xiv-leaves-hospital-days-after-lung-cancer-surgery",
-     "published_at": "2026-10-17T15:10:14+00:00",
-     "publisher": "NPR World",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Pope Leo discharged from hospital after cancer operation",
-     "url": "https://www.theguardian.com/world/2026/oct/17/pope-leo-discharged-from-hospital-after-cancer-operation",
-     "published_at": "2026-10-17T13:41:49+00:00",
-     "publisher": "The Guardian World",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Pope Leo leaves Rome’s Gemelli hospital 4 days after lung cancer surgery - The Tribune-Democrat",
-     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOemY5UElqMHp0aHNPc0FnckdidzYtbUhPbnlDa0xVNWU5WTdhRHdHZDlYbkVHc09tcHlOdUxXWHQyMFJFX21GTkFNNG1BY1hXLTl0cm1Jb2R5aHdYX29NRGNPbHpsMGdNR0ZyMzJ1SjgxSzEwTHZVSkg3eDJGN3Vza05BOUoxMGhEOUNUeXk5MjZtd0dtem5qUkcxQ2QxQ0Y5a3Nqb05mN3o2aUdmampOYi1WZmN2aFJ4OVh6cWVoa19zN25YcVlSU2VkSXdXbHM2V3JoSVViX2dFYTk5WkJLamZSM0hsdw?oc=5",
-     "published_at": "2026-10-17T13:34:00+00:00",
-     "publisher": "The Tribune-Democrat",
-     "source_url": "https://www.tribdem.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1818,64 +1789,6 @@
      "published_at": "2026-10-17T09:57:00+00:00",
      "publisher": "The Tribune-Democrat",
      "source_url": "https://www.tribdem.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 10.0,
-   "lng": 49.0,
-   "name": "Somalia",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 4,
-   "publisher_count": 4,
-   "category": "politics",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Somalia Announces Election Schedule",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBMWWdPZ3RwSW9JcmRCYkNmdWdTRHZGN1owNXlVMHBoU1FvWE55SjJfN0s3SDdnSm5rdDdIcHNFbzZ4MkR5eTdJNm5DVVpsSVhDQUQxbjQ2SUREU2ptYWNkRy1RMnJsQQ?oc=5",
-     "published_at": "2026-10-17T13:51:16+00:00",
-     "publisher": "Voice of Nigeria",
-     "source_url": "https://von.gov.ng",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Former NISA Chief Accuses President Mohamud of Steering Somalia Toward Sudanese-Style Collapse",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdXNkQ2lZYmNDRDZZSXdENzZKaEYwRWRHSFpLZkxhaldvMDdIUWtXN2pDY0ZHNGNiUmVrSU5OMzVuLWsxbHdkQVptdkkxQkppX2Q3Q0VhRS1hSmd3dTFFTmVrYk5TUW95a2ZsNXJCNHpfSFE1bVV3SWVwYWNPbW9rRE5yWEUxbGJKM1JITVhRVVlPNVdpSi1OME5Ud1hCYjl0WEJLcTcwWWQ2WkZoWEs5b2h4a0ZKcFl4dlhWZnhYWQ?oc=5",
-     "published_at": "2026-10-17T08:02:20+00:00",
-     "publisher": "FTL Somalia",
-     "source_url": "https://www.ftlsomalia.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "A group of lawmakers urge Somali opposition to establish alternative election schedule",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPU091cUE4UmdTbW82aFVXXy1UUmpSMkM0UjBKdUx1SmxUSk9DTjhoUmgxWVdreTlHMUdOcEZmWDF2M1VJaGIzUDJHZVN2bWNOc2Z5VVFrVzkyaVQwQzB6cGRvYVJER2wzekFZTVozRHhXMVVWdnA4ZHpISE9Sb1prRlVQV3phbXdXRE1vYXRFMGxYaFQtbnN3dFY4SnZ1ODVuR1FkNlVFUnN0ckNxZWNPWVBzXzBjUUIyQmU0M05iYnZiaGF4VTA2T0txVWRCajdOWUk0?oc=5",
-     "published_at": "2026-10-17T04:03:02+00:00",
-     "publisher": "Hiiraan Online",
-     "source_url": "https://www.hiiraan.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Somalia to hold parliamentary and presidential elections in 2027 – Page 3",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcHJoQVZvTVJnNzJuQTJFZTJOS2FHWXFFcE1MNXVJcjhfdUlaejdiUEYyZEVmbzg1WkM1b2JaNWd5NUtlTGRJRW9oakVCWVZLelBucV80aDZDb1lESDhUaU5mY2Z1YzZmdFFZT01JUmdMa1RVckNYUElOSzNGYlBvUVpsMHRlMDl1aEEtZ1QyUkhPV1BoWm1CNXNyOUV0NmlJdGg4RzAwZVZraFd4?oc=5",
-     "published_at": "2026-10-17T01:09:50+00:00",
-     "publisher": "GBC Ghana",
-     "source_url": "https://www.gbcghanaonline.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -2009,26 +1922,26 @@
    "count": 3,
    "publisher_count": 3,
    "category": "economy",
-   "recent_3h": 1,
-   "previous_3h": 1,
+   "recent_3h": 2,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": 0,
+   "velocity_change_pct_sample": 200,
    "articles": [
     {
-     "title": "European diplomats attacked by Israeli settlers in West Bank",
-     "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
-     "published_at": "2026-10-17T23:52:38+00:00",
-     "publisher": "BBC World",
+     "title": "Israeli settlers attack European diplomats in the occupied West Bank",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/israeli-settlers-attack-european-diplomats-in-the-occupied-west-bank?traffic_source=rss",
+     "published_at": "2026-10-18T01:02:37+00:00",
+     "publisher": "Al Jazeera",
      "source_url": "",
      "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Israeli settlers attack European diplomats in West Bank",
-     "url": "https://www.abc.net.au/news/2026-10-18/israeli-settler-attack-palestinians-european-diplomats-west-bank/107280242",
-     "published_at": "2026-10-17T20:49:25+00:00",
-     "publisher": "ABC Australia",
+     "title": "European diplomats attacked by Israeli settlers in West Bank",
+     "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
+     "published_at": "2026-10-17T23:52:38+00:00",
+     "publisher": "BBC World",
      "source_url": "",
      "source_kind": "publisher",
      "language": "en",
@@ -2431,6 +2344,102 @@
    ]
   },
   {
+   "lat": 41.9,
+   "lng": 12.5,
+   "name": "Rome",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 3,
+   "publisher_count": 3,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Pope Leo XIV leaves hospital days after lung cancer surgery",
+     "url": "https://www.npr.org/2026/10/17/nx-s1-6006762/pope-leo-xiv-leaves-hospital-days-after-lung-cancer-surgery",
+     "published_at": "2026-10-17T15:10:14+00:00",
+     "publisher": "NPR World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Pope Leo discharged from hospital after cancer operation",
+     "url": "https://www.theguardian.com/world/2026/oct/17/pope-leo-discharged-from-hospital-after-cancer-operation",
+     "published_at": "2026-10-17T13:41:49+00:00",
+     "publisher": "The Guardian World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Pope Leo leaves Rome’s Gemelli hospital 4 days after lung cancer surgery - The Tribune-Democrat",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOemY5UElqMHp0aHNPc0FnckdidzYtbUhPbnlDa0xVNWU5WTdhRHdHZDlYbkVHc09tcHlOdUxXWHQyMFJFX21GTkFNNG1BY1hXLTl0cm1Jb2R5aHdYX29NRGNPbHpsMGdNR0ZyMzJ1SjgxSzEwTHZVSkg3eDJGN3Vza05BOUoxMGhEOUNUeXk5MjZtd0dtem5qUkcxQ2QxQ0Y5a3Nqb05mN3o2aUdmampOYi1WZmN2aFJ4OVh6cWVoa19zN25YcVlSU2VkSXdXbHM2V3JoSVViX2dFYTk5WkJLamZSM0hsdw?oc=5",
+     "published_at": "2026-10-17T13:34:00+00:00",
+     "publisher": "The Tribune-Democrat",
+     "source_url": "https://www.tribdem.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 10.0,
+   "lng": 49.0,
+   "name": "Somalia",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 3,
+   "publisher_count": 3,
+   "category": "politics",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Somalia Announces Election Schedule",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBMWWdPZ3RwSW9JcmRCYkNmdWdTRHZGN1owNXlVMHBoU1FvWE55SjJfN0s3SDdnSm5rdDdIcHNFbzZ4MkR5eTdJNm5DVVpsSVhDQUQxbjQ2SUREU2ptYWNkRy1RMnJsQQ?oc=5",
+     "published_at": "2026-10-17T13:51:16+00:00",
+     "publisher": "Voice of Nigeria",
+     "source_url": "https://von.gov.ng",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Former NISA Chief Accuses President Mohamud of Steering Somalia Toward Sudanese-Style Collapse",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdXNkQ2lZYmNDRDZZSXdENzZKaEYwRWRHSFpLZkxhaldvMDdIUWtXN2pDY0ZHNGNiUmVrSU5OMzVuLWsxbHdkQVptdkkxQkppX2Q3Q0VhRS1hSmd3dTFFTmVrYk5TUW95a2ZsNXJCNHpfSFE1bVV3SWVwYWNPbW9rRE5yWEUxbGJKM1JITVhRVVlPNVdpSi1OME5Ud1hCYjl0WEJLcTcwWWQ2WkZoWEs5b2h4a0ZKcFl4dlhWZnhYWQ?oc=5",
+     "published_at": "2026-10-17T08:02:20+00:00",
+     "publisher": "FTL Somalia",
+     "source_url": "https://www.ftlsomalia.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "A group of lawmakers urge Somali opposition to establish alternative election schedule",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPU091cUE4UmdTbW82aFVXXy1UUmpSMkM0UjBKdUx1SmxUSk9DTjhoUmgxWVdreTlHMUdOcEZmWDF2M1VJaGIzUDJHZVN2bWNOc2Z5VVFrVzkyaVQwQzB6cGRvYVJER2wzekFZTVozRHhXMVVWdnA4ZHpISE9Sb1prRlVQV3phbXdXRE1vYXRFMGxYaFQtbnN3dFY4SnZ1ODVuR1FkNlVFUnN0ckNxZWNPWVBzXzBjUUIyQmU0M05iYnZiaGF4VTA2T0txVWRCajdOWUk0?oc=5",
+     "published_at": "2026-10-17T04:03:02+00:00",
+     "publisher": "Hiiraan Online",
+     "source_url": "https://www.hiiraan.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 21.03,
    "lng": 105.85,
    "name": "Vietnam",
@@ -2467,11 +2476,49 @@
      "geo_match": "description"
     },
     {
-     "title": "Vietnam, US look to strengthen business, investment ties",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMDlHSXpKVHZPWWZJX2FKSkpXNWc5QnppNGN6YkNQTEhNN0I2cFR4SWdsTlNvVTV6SkZ2d3RhV1ZhTzFtYjNncnBZMDd4RzFFSUtpZDkzcVp6OEltQWVnb3RBUXJ4NGxReWJyN1dpbDJXMDRHQk1ZVzJmLUplRlg4YV9yaTFWVUFLY0ExYVMtT2NZa2xFRkpPc0UyaWRQUEo4cThBYlhHUQ?oc=5",
-     "published_at": "2026-10-17T04:14:48+00:00",
+     "title": "Vietnam, US propel economic, trade, investment ties",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOHdQVUpucUduTjNYYTlLQjgyaHh0N0NHTXJPWmQzZU1GNHN3ZU83VS02akhtN2xodWdYTkxqekZDOE9QbnY0X09reWt4dmE1NTZMSi1pTVM2OUQ4aDV1S3pEb0lGd2xRc25MOUx0dTd3eDF4N2pXYnRaSVhvNU5zYnMtMlJUZmNsTi0xeDJxa1RxdE03ekJWNkplUE1vVHM?oc=5",
+     "published_at": "2026-10-17T04:15:12+00:00",
      "publisher": "VOV.VN",
      "source_url": "https://english.vov.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 40.42,
+   "lng": -3.7,
+   "name": "Spain",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "politics",
+   "recent_3h": 2,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 200,
+   "articles": [
+    {
+     "title": "Spain’s housing decrees face crucial vote as talk of a snap election grows",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS1FPUmhyeGRrb2MzWGlISHM2VFFrSnh4NldOQ3U4cEd1dkxMT0tQaXdKRXBMSmVqMUkwaFRYbWlScGR4blI5TldjM3FiMENHWUI4WlNCVF8yWnRqUUFGWU51YU05b3BJdmcwTU1IYTc3Ym5Xa1RHbGNVT2s3RV9WWUx1NlZ6U0FMS0RTSEU4M0JGOWk1S25CTGRHd2xiaDhxbTBIZ2IzejhhZmc?oc=5",
+     "published_at": "2026-10-18T00:33:30+00:00",
+     "publisher": "Spanien Press",
+     "source_url": "https://spanienpress.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Spain election poll tracker: Who will be the next prime minister?",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9aTy1leVltUDQ1SlNWWXVtSXR0b3lKLUthM2hTd3dBZ0dxVFR2c0pJam9IX0pfRFdOSjVKcGNhWEI4MTVMbFRiM0JISzVDNEpTRXBZX25nb2lvdTVvUlNKQkEzNlJ0a2VfRTFPbkhtU2Yzb0U?oc=5",
+     "published_at": "2026-10-17T23:37:01+00:00",
+     "publisher": "The Economist",
+     "source_url": "https://www.economist.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -2724,11 +2771,11 @@
    "articles": [
     {
      "title": "Anti-government protesters battle with police in Albania",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VNmp6ZzZwWnJDb0k5UElrZjNkMFJXbVZ2MXl3RndzdUZNb255OVJqZF9uVVdWZmZ6blI5S1czT0syUU55OWd4Y2ptaDVsa01WR1pRN1l4eEl4aW8?oc=5",
+     "url": "https://www.bbc.co.uk/news/articles/crwydey50xeno?at_medium=RSS&at_campaign=rss",
      "published_at": "2026-10-17T20:53:00+00:00",
-     "publisher": "BBC",
-     "source_url": "https://www.bbc.com",
-     "source_kind": "aggregator",
+     "publisher": "BBC World",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
     },
@@ -2832,9 +2879,9 @@
    "publisher_count": 2,
    "category": "hazards",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Fast-moving California wildfire burns homes as people are ordered to leave",
@@ -3266,10 +3313,10 @@
     },
     {
      "title": "Indian Army holds Mega Medical Camp in Basantgarh under operation Sadbhavana, 600 patients register",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZ0R0RURQMGpGa0ZJMUlZUTBUNGI0VERfYjVNZVVaVklNLTZVMnBYSlROT3NPeGdjS3plTHRjeVY0Z2JyNXJwTzhCVXdJX184ZHlaaWxSdXRvMmtLZ1Z4WmdYNUJJV3dneXhhSjRMeVVscFUyTFo5N3p0TTZsa2lJWDVncHd4NnZ2ZDVRS0QwZkV6NTZRTEhwc1l0YTRrWWJIV2ZWMEVGOGV3bkVxVHlra3RaWGdjZE10Y1A0a3JtZkNHQWJmNVZBUmRpYVRJeEQ0RG1xY3V6c3Y?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObE9UdXZCVnBsQ00zQ3NYZW9WM3BUYjBlWXZHUkZWcmxnVk9Ia05iSVdfeWthOTRrMnFrVUlrVk5KQ3FNSWhaOUZDQzl1RldYWWVPdy1HUVNFZjVrYW5JNjYyd0pDU1JvVEQzeHc3eEVwVTBzVEtQcGhuOHNaZExhZXhZZzhHcG5tNjd4YjZoeDhEVExvdUVYd0ZHZ01HSmI4RkxWUTNwWTF3ZmRPSjM1RnI5Z3BvN3NWUEJxRC1sN2NKOGQ4dzA1WEh4UEdGX1VJZlVMdWxLaw?oc=5",
      "published_at": "2026-10-17T12:12:16+00:00",
      "publisher": "Kashmir Indepth",
-     "source_url": "https://www.kashmirindepth.com",
+     "source_url": "http://www.kashmirindepth.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "description"
@@ -3408,7 +3455,7 @@
    "articles": [
     {
      "title": "Protesters Set Tourism Office Ablaze in Lyon at Cost-of-Living Rallies",
-     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0yLWEwNi1FTk1uQTQwZ1JqeFhta0drTURxejdxUWJ5OWxxQ0p4SU1IOFpmRnQ4elJ3a0dIczJIbEJSSV9KMUlWUVA2UWY0YmEyeUN3TWNB?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOV9UN0YyRHc2ZVdGZG1xeW5NeXNrWE9XbGliS0Fta002TkVSeGJzbURkVFo0RC1Rb3Q0UnhLMHJhUnFQcFJ3d0tUZXAyTW1FRi1GN1U3UzJuVEs1b3V6ZzNGN3RfRWl5cDZsdUhDcGtEWDFsRkRYQnZtLTNfak9HN1pEb0ZkVnJyMHNSbnpFLU1SaWUxR2lrSWpmWDl6cksyYk9wS3JqX3VGWUdzOV9JdXduTUk?oc=5",
      "published_at": "2026-10-17T13:28:56+00:00",
      "publisher": "Kurdistan24",
      "source_url": "https://www.kurdistan24.net",
@@ -3885,6 +3932,34 @@
    ]
   },
   {
+   "lat": 13.00715,
+   "lng": 76.0962,
+   "name": "Hassan",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "politics",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Parliament must not be a spectator in BRICS decision – Hassan Ayariga",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNLVpSMFF3RXYweGJUd0ZYWDNCRnBOMU12VS1BOEdLelQ3eWlTVnVTeXcwRWlOYU9mTEVOeXlISWNVTDhSTTFVWVBIbUtqNnZTNlNZYUNzdHMzSjc4X2J4RWYwQ1RabmpRMTFOc2pYV0swMS1fcGQyc3AxQ19tVGk2V05RQ2JqbW1oZVEwRVYzNVFJS3ZWX0VxdWdoUGs?oc=5",
+     "published_at": "2026-10-18T01:06:36+00:00",
+     "publisher": "MyJoyOnline",
+     "source_url": "https://www.myjoyonline.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 15.5,
    "lng": -90.25,
    "name": "Guatemala",
@@ -4053,6 +4128,34 @@
    ]
   },
   {
+   "lat": 24.71,
+   "lng": 46.68,
+   "name": "Riyadh",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "conflict",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
+     "published_at": "2026-10-18T00:00:11+00:00",
+     "publisher": "Al Jazeera",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": -33.87,
    "lng": 151.21,
    "name": "Sydney",
@@ -4077,34 +4180,6 @@
      "source_kind": "publisher",
      "language": "en",
      "geo_match": "description"
-    }
-   ]
-  },
-  {
-   "lat": 40.42,
-   "lng": -3.7,
-   "name": "Spain",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "politics",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Spain election poll tracker: Who will be the next prime minister?",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9aTy1leVltUDQ1SlNWWXVtSXR0b3lKLUthM2hTd3dBZ0dxVFR2c0pJam9IX0pfRFdOSjVKcGNhWEI4MTVMbFRiM0JISzVDNEpTRXBZX25nb2lvdTVvUlNKQkEzNlJ0a2VfRTFPbkhtU2Yzb0U?oc=5",
-     "published_at": "2026-10-17T23:37:01+00:00",
-     "publisher": "The Economist",
-     "source_url": "https://www.economist.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
     }
    ]
   },
@@ -4753,34 +4828,6 @@
    ]
   },
   {
-   "lat": 34.05,
-   "lng": -118.24,
-   "name": "Los Angeles",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": -50,
-   "articles": [
-    {
-     "title": "Confirmed hantavirus cases linked to suspected cluster rises to 5, WHO says",
-     "url": "https://news.google.com/rss/articles/CBMilgpBVV95cUxON0QzZHZsXzhsQWZhdVVkVTRsZ0o5UThHQUE3bkpHZ2JxcEhreS16blZUN042V0NrSjRpTjhiUVREWUJVSHlhczZCcENYV1Z2WmN1SmdJaXNYcXhIOEh4a3JvRllUTGE5bXZUNUZFU0U2WEFuNHR0S0gyVmZ3NFp0RXhMakhXQWd5Q0VrYms3WGRTc0ZtR0Zuc2Z6SmRDaTZCX3BJYnduelZfYVI5UmRWYktEWVA0QVJIMUE3dzVKb09UYkZGWURUUmZvdXkyZklrc2kydzdQX2VsclJudGlhQnpFM2FJUlh0Zmt3aGF6MW5jWkR6NWlrQ2VRRDBFajNsMlBhX3FKZDRCSF9pZnNtMERiX193X0tHVGUwVThJYjc3R3lNdlZwVWs4T2hQNDk2dTVzbWNmN1loYUdHNGJrclNDNnlMbElsUC05Sm1DNl9pMVQyS1kxeWtOZjRMeTl4QUZwSUNqQkhYYi14dDNqME4xQ0h3N3d5eWlTRXNEcGE4a0ZKSS1sTHBUSTRkaVE2bTJYbTJNbVhGa0NTUXJjc3YyNUFnMUFRT0Fsb0I2dmlqTjhyLUxYR01idzNfYlp1RHN6U21ZU0d1WE81TmJ0cUVDOERrSGpUdndPUjRna2FjRnIxMFNqR1BUUkJIam9BWGY1NDlFZGQyNk45NjZOU2VpSzhqc2FHb2dlSUo3anJucmJUUmhFYmRCYXhYWk93VzRyS1A1dm1MZDJUVWt2ZXg5N0o4c1FjbXFJMkRCZi0tUV9TNUdmQ2M0TlFDV1dnOHFvWGFNbFpGUGx3RDc1YzZiaWs5UlVYNm1LVWdoNjBDSGpnYlZoOUpkVWVKRWhpc200cGZQeDZpaFVQOW0ySWZFUWJ1Nk1NM19BcmdQT0lGR2lMZDdRU3lDUk5BMzltcFZxTWE4VDZjV3YwNVY5eHNWYlY4ZVlwRDZZUXM4Sk0tblNpYUZWU25ocmNFRlA4US1jS2lRZV9JZkxSc1RCTTltWU9oekF2c1JRTUo4MGxEZW44NXR3Nld6MnYxMlYxbnY4WXVqM0lubGE3T1hzdkxpaDRVU2FzQUxuLTlERkxwNlYtVm9ZRnpfMElOUWljR2VlSHdnTEZvbWVpdzdYTlMxTjh3MDJscXBua3BKMGdlUjAxWmRqQm40SER0ZzY3SGRtMk10SFMtblpVODZDWGJpVnRtM3BWSHo1eF9qSVlpVXZPMmR4TU9jRXRiQ2JtNXN5NVNYSzhtNU85QVpueUROU0IzdFNrc185QVBhdEcyZWNPUHRBb1dFbFpqd3E4RVlyUXdTeUFCa3ZGTG91ZE9EaFRQSk9RaFdSdkdnVUZ5Wk0wajBuTTNJb2FFRXlMYS1SNjZyaFVoak1pZ1F2WkZxcVpYVE5FcHNEaEoyMzM4UXNyT2pfM203X0JxemtGbWJxVG1IUGxXUUpXSTAtRXI4UkN1XzdTMDlLV2N6bnFNV0JoYTFOSDYyS1cyWVFOU1g2cktPNkFtSGlLZzltVTdjbVVxN3VUNEl1RDFnb2g5V19RRzUxUTQ3ZXZ5Nkx0eDdNOXUwbmd6LWNTbndfLW9IMU1Uc2FoT1JTdVprb2hqOW42YS1aTUp1dHpiU0xNZnBPeTZONTFRMnFCYkhNSzVWNlpRTDV6WVZPZk9LSWpieTNxYW54S1hZblNHZzVEUTZYTGluYzl4MFZrdks5a0hPWHgyam5jZk9sWGNoM2FGODR1amc?oc=5",
-     "published_at": "2026-10-17T19:42:50+00:00",
-     "publisher": "ABC7 Los Angeles",
-     "source_url": "https://abc7.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    }
-   ]
-  },
-  {
    "lat": 4.71,
    "lng": -74.07,
    "name": "Colombia",
@@ -5369,6 +5416,62 @@
    ]
   },
   {
+   "lat": 43.65,
+   "lng": -79.38,
+   "name": "Toronto",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "education",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "OSAP pause leads career college to suspend classes",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRTNtMXpneFdlWkliUkZpRWJfclpUMlFpUUItUEJUS2hxTm4zVG9lejNNdTFHOGhqR2M4YnRPZTJtTXFFQkxqaU5Nb1BsM0xIT3JSX3ZvSC16Z2MxbWt2S2RMY0pMYllBc3VUblVheEFnV0pROG5wVkpDLXNJdGpQVGQyTEFnREoxS1NjSGZiRDhENUY0?oc=5",
+     "published_at": "2026-10-17T16:59:00+00:00",
+     "publisher": "CityNews Toronto",
+     "source_url": "https://toronto.citynews.ca",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
+   "lat": 47.0,
+   "lng": 29.0,
+   "name": "Moldova",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "economy",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Moldova’s CNPF Warns of Risky Investment Schemes on Social Media - logos-pres.md",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTkk1VzUxVmQ0MG9KZW9XWXFuTmtSU3ZjLTVvZkJ2bFZDM19Wa0NPckhJd2ItUWVoUHc5M0dlNFVHS1RYVDNPdG1xaXp5TVg0V2V0ek16WDdPOWh6aTlXVTVWY0NZdEZfOVlaX1R3SGlkZjcxMzk4Nndhb2I2OU40S1VOWmdDX1drOWQtd20tMmdGdllpVXZfOFNWb2RkV2lRSVhtc2xNU2NrN1dlNUVTT3pzQzhucDhGaTdn?oc=5",
+     "published_at": "2026-10-17T16:56:09+00:00",
+     "publisher": "logos-pres.md",
+     "source_url": "https://logos-pres.md",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 24.71,
    "lng": 46.67,
    "name": "Saudi Arabia",
@@ -5817,34 +5920,6 @@
    ]
   },
   {
-   "lat": 35.0,
-   "lng": 33.0,
-   "name": "Cyprus",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "economy",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "AmCham Cyprus: International investors' concerns cannot be ignored - U.S. investment is a strategic asset for Cyprus",
-     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNb09mVHd1MEctM2MwQjFob1JkcVlEQURlVklFaURmOFpMdWs1ZTB4OWZaVk9TZ3QwWTZCdUJVMjhseE5NNGdLMUFTclcycTdiMlBBdjMtb0luTnh3RUdsVF9RVHliMDZUMkI4dzMxTG80bHdhR05rNGtaN3I5MWpoOE1acUpCNFJDMXR6TEd3THFjR1pqZWR6RWNhcW11WUhmbjQxaGw3dXR0ekxHN0gwNjdrbUFWeUMyeFJES1B6T2pHQndtT0JEeWtLLTdDSnFYb2JSUTFQMmNjWFZNQ3R6Skd2WEFpWUd6V3hScnpQT09MdEZMRTVYVw?oc=5",
-     "published_at": "2026-10-17T14:50:22+00:00",
-     "publisher": "InBusinessNews",
-     "source_url": "https://inbusinessnews.reporter.com.cy",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 10.31032,
    "lng": 9.84388,
    "name": "Bauchi",
@@ -6062,6 +6137,34 @@
      "published_at": "2026-10-17T13:41:27+00:00",
      "publisher": "World Health Organization (WHO)",
      "source_url": "https://www.emro.who.int",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 51.45,
+   "lng": -2.59,
+   "name": "Bristol",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "education",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "The north-south divide in Bristol",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jMEYzajZUOEpSUjR5R2txUWhJXzY3ODFqRU1RSUxfZk5LR29RQ1p5Z0YwNTNLY2NMNEUtUUNhZkNsVDlHMzYwU2t4bU5ER2ZPMzAwS2tiZEhRRDd5VF9xNTQzM1Y5TUx6?oc=5",
+     "published_at": "2026-10-17T13:40:12+00:00",
+     "publisher": "epigram.org.uk",
+     "source_url": "https://epigram.org.uk",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -7609,34 +7712,6 @@
    ]
   },
   {
-   "lat": 42.91336,
-   "lng": -85.70531,
-   "name": "Wyoming",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "society",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Here’s where the Republican candidates for Wyoming governor diverge on policy",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaE0wbzlUaUpTU0JpWlRYNXZ3aHhTSE1ZcDk0cjJBWUFZX01EcXdCRVJ3ZXBiRi1MZFVPemstRnQyLWJLc3F6RElyQ0V4UjhlRndaS29WVkxaazMtV294T0NmOEtRWFZ6WkxZQ081SnpFWmgzWm52N25WaHFjbkhkZUM2LTlHcXdDWG1pYWk3X05TQm1tc2xVVFMwUVlOeUtrODBhTDBRV2IyblE?oc=5",
-     "published_at": "2026-10-17T07:08:36+00:00",
-     "publisher": "News From The States",
-     "source_url": "https://www.newsfromthestates.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 11.58528,
    "lng": 122.75111,
    "name": "Roxas City",
@@ -8389,34 +8464,6 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 45.5,
-   "lng": -73.57,
-   "name": "Montreal",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "education",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "McGill ‘reviewing matter’ after convicted murderer revealed to be studying on campus",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSTY3bHBZRE92REY5bTBUb1duRHUxbDZuMHdtRktZSUVGN0xWYWNVbG56MGdLMXFTUG1HY3I3UkVVNExuY2kzbnV6Qmpkd0d1UkNJSEprSmZhTDE4ZkFybjBtMmxmUjkyQlF3M01tT3JBcFgwa2VwLUJOelRuaDVBOXAxanlWQmxxOE45UFpHWFZqMndhYnlXaFV1ZHVtVDU3MVZSZW5JRVNjYXQ4V3FHRkw5Y3dKQVU?oc=5",
-     "published_at": "2026-10-17T01:48:11+00:00",
-     "publisher": "Montreal Gazette",
-     "source_url": "https://montrealgazette.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
     }
    ]
   },
