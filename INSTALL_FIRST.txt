@@ -1,17 +1,1 @@
-WorldPulse 2.0E.2 — ORIGINAL COLLECTOR ONLY
-
-Upload scripts/geo_decision.py and scripts/apply_e2_patch.py to your repository scripts/ folder.
-Upload tests/test_e2.py to repository tests/ folder.
-
-Codespace:
- git pull origin main
- python scripts/apply_e2_patch.py
- python -m py_compile scripts/update.py scripts/geo_decision.py
- python -m unittest discover -s tests -p 'test_e2.py' -v
- GIT_PAGER=cat git diff -- scripts/update.py
- git add scripts/update.py
- git commit -m "Add v2.0E.2 geographic decision corrections"
- git push origin main
-
-Then Actions > Refresh geographic news > Run workflow.
-Inspect data/unmatched-review.json -> geo_decision_corrections.
+WorldPulse v2.0E.3: upload the files into original DVExperiments/WorldPulse, preserving scripts/ and tests/ folders. Commit uploaded files, then run `python scripts/apply_e3_patch.py` in Codespaces and follow README.md. No changes to WorldPulse-2 or GitHub Actions.
