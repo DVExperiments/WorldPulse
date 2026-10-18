@@ -220,6 +220,13 @@ DIRECT_FEEDS = [
  ('RNZ Pacific','https://www.rnz.co.nz/rss/pacific.xml','regional','en'),
  ('Guardian Africa','https://www.theguardian.com/world/africa/rss','regional','en'),
  ('Guardian Asia','https://www.theguardian.com/world/asia/rss','regional','en'),
+ # v2.4D.2 publisher-network pilot: AllAfrica publishes documented RSS 1.0/RDF
+ # category feeds, sourced from many African publishers. 'africa' is editorial
+ # geography only; it must never be used as an article's mapped subject.
+ ('AllAfrica West Africa','https://allafrica.com/tools/headlines/rdf/westafrica/headlines.rdf','africa','en'),
+ ('AllAfrica East Africa','https://allafrica.com/tools/headlines/rdf/eastafrica/headlines.rdf','africa','en'),
+ ('AllAfrica Central Africa','https://allafrica.com/tools/headlines/rdf/centralafrica/headlines.rdf','africa','en'),
+ ('AllAfrica Southern Africa','https://allafrica.com/tools/headlines/rdf/southernafrica/headlines.rdf','africa','en'),
 ]
 DIRECT_FEEDS = merge_feeds(DIRECT_FEEDS)
 CATEGORY_TERMS = {
@@ -254,7 +261,17 @@ def direct_fetch(url):
   if not link:
    node=item.find('a:link',ns);link=node.attrib.get('href','') if node is not None else ''
   rows.append({'title':norm_title(item.findtext('a:title',default='',namespaces=ns)), 'url':link,'published':item.findtext('a:published',default='',namespaces=ns) or item.findtext('a:updated',default='',namespaces=ns),'publisher':'','source_url':'','description':html.unescape(re.sub(r'<[^>]+>',' ',item.findtext('a:summary',default='',namespaces=ns) or ''))[:650]})
- if not rows:raise ValueError('Feed contained no recognizable RSS/Atom items')
+ # RSS 1.0 / RDF feeds (including allAfrica) place items directly under rdf:RDF.
+ # This is a parser extension, not a relaxation of geographic matching rules.
+ rdf={'r':'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+      'rss':'http://purl.org/rss/1.0/', 'dc':'http://purl.org/dc/elements/1.1/'}
+ for item in root.findall('rss:item',rdf):
+  rows.append({'title':norm_title(item.findtext('rss:title',default='',namespaces=rdf)),
+   'url':(item.findtext('rss:link',default='',namespaces=rdf) or '').strip(),
+   'published':item.findtext('dc:date',default='',namespaces=rdf) or '',
+   'publisher':'','source_url':'',
+   'description':html.unescape(re.sub(r'<[^>]+>',' ',item.findtext('rss:description',default='',namespaces=rdf) or ''))[:650]})
+ if not rows:raise ValueError('Feed contained no recognizable RSS/Atom/RDF items')
  return rows
 
 def parsed_timestamp(value):
@@ -463,8 +480,25 @@ def update_diagnostics(now,feeds,unmapped,points,duplicates):
  for code,_,_ in REGIONS:
   fs=[f for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code)]
   region_rollup[code]={'requests':len(fs),'successful':sum(f['status']=='ok' for f in fs),'mapped_pre_dedupe':sum(f['mapped'] for f in fs)}
+ # Audit news *discovery channels* separately from mapped subjects: a feed's
+ # editorial home is not evidence that an article happened in that region.
+ publisher_by_editorial_region={}
+ for region in sorted({f['editorial_region'] for f in feeds if f['kind']=='publisher'}):
+  fs=[f for f in feeds if f['kind']=='publisher' and f['editorial_region']==region]
+  publisher_by_editorial_region[region]={
+   'configured':len(fs),'successful':sum(f['status']=='ok' for f in fs),
+   'mapped_pre_dedupe':sum(f['mapped'] for f in fs),
+   'feeds':[{'source':f['source'],'status':f['status'],'mapped_pre_dedupe':f['mapped']} for f in fs]}
+ # Separate the genuinely missing mapping work from increased article throughput.
+ # This is a list for human review, not an automatic geocoder repair.
+ mapping_review={'distinct_unmapped_titles':len(unmatched_unique),
+  'high_repeat_unmapped_examples':unmatched_review[:20],
+  'country_label_concentration':{'largest_label':country_names.most_common(1)[0][0] if country_names else None,
+   'largest_label_articles':country_names.most_common(1)[0][1] if country_names else 0,
+   'share_of_country_labelled_articles':round(country_names.most_common(1)[0][1]/sum(country_names.values()),3) if country_names else 0},
+  'note':'High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation.'}
  direct_rollup={'configured':sum(f['kind']=='publisher' for f in feeds),'successful':sum(f['kind']=='publisher' and f['status']=='ok' for f in feeds),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['kind']=='publisher')}
- obj={'schema':1,'updated_at':now.isoformat(),'feeds_total':len(feeds),'feeds_ok':sum(f['status']=='ok' for f in feeds),'feeds_failed':[f['source'] for f in feeds if f['status']!='ok'], 'google_feeds_by_region':{code:{'total':sum(f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'ok':sum(f['status']=='ok' and f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code))} for code,_,_ in REGIONS}, 'mapped_articles_by_category':dict(cat),'mapped_articles_by_location_precision':dict(geo),'location_evidence_counts':dict(regions),'geographic_quadrants':dict(hemispheres),'geo_signal_count':len(points),'mapped_total':sum(p['count'] for p in points),'geo_match_rate_note':'Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.','unmapped_sample_count':len(unmapped),'unmapped_distinct_titles':len(set(re.sub(r'\W+',' ',a['title'].casefold()) for a in unmapped)),'unmapped_by_feed':dict(Counter(a['feed'] for a in unmapped).most_common(18)),'unmapped_examples':unmatched_review[:35], 'unmapped_review_file':'data/unmatched-review.json', 'direct_source_breakdown':direct_rollup, 'publisher_network_contributions':source_network, 'coverage_overview':coverage_overview, 'source_editions':region_rollup, 'duplicates_removed':duplicates,'gazetteer_entries':len(PLACES)+len(GEO_HINTS)+len(NA_REGIONS),'contextual_alias_groups':len(GEO_HINTS),'global_gazetteer':GEO_RESOLVER.meta if GEO_RESOLVER else {'available':False,'reason':'not initialized'},'warning':'Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.'}
+ obj={'schema':1,'updated_at':now.isoformat(),'feeds_total':len(feeds),'feeds_ok':sum(f['status']=='ok' for f in feeds),'feeds_failed':[f['source'] for f in feeds if f['status']!='ok'], 'google_feeds_by_region':{code:{'total':sum(f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'ok':sum(f['status']=='ok' and f['source'].endswith('/'+code) for f in feeds if f['source'].startswith('google/')),'mapped_pre_dedupe':sum(f['mapped'] for f in feeds if f['source'].startswith('google/') and f['source'].endswith('/'+code))} for code,_,_ in REGIONS}, 'mapped_articles_by_category':dict(cat),'mapped_articles_by_location_precision':dict(geo),'location_evidence_counts':dict(regions),'geographic_quadrants':dict(hemispheres),'geo_signal_count':len(points),'mapped_total':sum(p['count'] for p in points),'geo_match_rate_note':'Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.','unmapped_sample_count':len(unmapped),'unmapped_distinct_titles':len(set(re.sub(r'\W+',' ',a['title'].casefold()) for a in unmapped)),'unmapped_by_feed':dict(Counter(a['feed'] for a in unmapped).most_common(18)),'unmapped_examples':unmatched_review[:35], 'unmapped_review_file':'data/unmatched-review.json', 'direct_source_breakdown':direct_rollup, 'publisher_by_editorial_region':publisher_by_editorial_region, 'geographic_mapping_review':mapping_review, 'publisher_network_contributions':source_network, 'coverage_overview':coverage_overview, 'source_editions':region_rollup, 'duplicates_removed':duplicates,'gazetteer_entries':len(PLACES)+len(GEO_HINTS)+len(NA_REGIONS),'contextual_alias_groups':len(GEO_HINTS),'global_gazetteer':GEO_RESOLVER.meta if GEO_RESOLVER else {'available':False,'reason':'not initialized'},'warning':'Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.'}
  DIAGNOSTICS.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
  (ROOT/'data/unmatched-review.json').write_text(json.dumps({'schema':1,'updated_at':now.isoformat(),'distinct_unmatched':len(unmatched_unique),'note':'Headlines lack a confidently matched place. Not every headline is geographically attributable. Samples may repeat over time.','examples':unmatched_review},ensure_ascii=False,indent=1),encoding='utf8')
 
