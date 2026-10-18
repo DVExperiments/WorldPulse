@@ -31,6 +31,7 @@ from geo_decision import DecisionAudit
 from geo_confidence import publish_confidence
 from geo_public_evidence import public_evidence
 from story_clustering import cluster_bundle
+from story_tracking import enrich_story_clusters
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -456,6 +457,7 @@ def main():
   OUT.write_text(json.dumps(old,ensure_ascii=False,indent=1),encoding='utf8')
   raise SystemExit('Every RSS feed failed; retained last-known snapshot')
  points,duplicates,unique=produce(raw,now)
+ clusters=enrich_story_clusters(cluster_bundle(points),now,ROOT/'data/story-history.json')
  publishers=set(a['publisher'].casefold() for a in raw if a.get('publisher'))
  record={'schema':2,'version':'1.5.4B','source':'Google News RSS and independent publisher RSS samples','updated_at':now.isoformat(timespec='seconds'),
   'last_attempt_at':now.isoformat(timespec='seconds'),'window':'rolling 24 hours',
@@ -467,7 +469,7 @@ def main():
   'metric':'Deduplicated mapped articles in sampled RSS feeds, not all news worldwide',
   'accuracy_note':'Locations are geographic SUBJECTS, never automatically verified incident sites. Locations are place mentions from headlines or descriptions, not verified event coordinates. Description matches are contextual; country pins use representative anchors.',
   'velocity_note':'Recent 3-hour vs previous 3-hour counts within sampled articles; directional, not a verified activity surge.',
-  'errors':failures,'points':points,**cluster_bundle(points),
+  'errors':failures,'points':points,**clusters,
   'unlocated_articles':getattr(collect,'browse_articles',[]),
   'browse_retention':{'window_hours':72,'globe_window_hours':24,'note':'Unlocated articles are for browsing only, never globe pins. Archive entries are older than 24 hours.', **getattr(collect,'browse_stats',{})}}
  OUT.parent.mkdir(parents=True,exist_ok=True)
