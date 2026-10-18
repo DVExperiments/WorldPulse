@@ -1,44 +1,47 @@
-# WorldPulse v2.0E — Geographic Intelligence Expansion
+# WorldPulse v2.0E.1 — Geographic Accuracy Audit
 
-**Collector-only patch for the ORIGINAL `DVExperiments/WorldPulse` GitHub repository.** Do **not** upload these files to `WorldPulse-2`.
+**For the ORIGINAL `DVExperiments/WorldPulse` repository only.** Not `WorldPulse-2`.
 
-## Included
-- `scripts/geo_expansion.py` — reviewed geographic fallback containing **158 place/region entries**, with distinctive multilingual variants and boundaries. Names are geographic *subjects*, not verified incident locations. No third-party runtime dependency, API key, or geocoding request.
-- `scripts/apply_e_patch.py` — fail-closed, repeat-safe installer for the D.6.1 collector.
-- `scripts/audit_e_samples.py` — optional offline unmatched-headline sample audit.
-- `tests/test_e.py` — ten regression tests.
+This is a diagnostic-first collector patch. It does **not** change the geographic matching algorithm or move/remove any globe pins. It highlights cases worth human review, with an intentionally incomplete screening catalogue from E's 158 reviewed geographic entries. Flags do not prove a mapping is wrong. The geographic subject is **not** a verified event location.
+
+## Files to upload
+- `scripts/geo_accuracy_audit.py` — zero-dependency accuracy auditor
+- `scripts/apply_e1_patch.py` — safe installer for the existing v2.0E collector
+- `tests/test_e1.py` — nine regression tests
+
+Do **not** upload or overwrite `scripts/update.py` from another version; the installer updates your currently deployed file in place.
 
 ## Installation
-1. Upload the three `scripts/*.py` files to the original repo's `scripts/` folder; upload `tests/test_e.py` to `tests/`. Commit uploads on GitHub.
-2. Open **original WorldPulse** Codespace, and run:
-   ```bash
-   git pull origin main
-   python scripts/apply_e_patch.py
-   python -m py_compile scripts/update.py scripts/geo_expansion.py
-   python -m unittest discover -s tests -p 'test_e.py' -v
-   git diff -- scripts/update.py
-   ```
-3. If installation and tests succeed, commit only modified collector file:
-   ```bash
-   git add scripts/update.py
-   git commit -m "Add v2.0E geographic recognition expansion"
-   git push origin main
-   ```
-4. Go to original `WorldPulse` Actions and run **Refresh geographic news**. Inspect `data/unmatched-review.json` > `geo_intelligence` > `mapping_methods`: watch for **`method/headline-expanded`** and **`method/description-expanded`**. The counts are per-feed, before deduplication. These methods may appear even when distinct mapped article counts are unchanged.
+1. Extract ZIP. Upload `geo_accuracy_audit.py` and `apply_e1_patch.py` to **original WorldPulse** repo's `scripts/` folder, and `test_e1.py` into `tests/`. Commit the uploads through GitHub.
+2. Open the original WorldPulse Codespace, and run:
 
-## Optional offline audit
 ```bash
-python scripts/audit_e_samples.py data/unmatched-review.json
+git pull origin main
+python scripts/apply_e1_patch.py
+python -m py_compile scripts/update.py scripts/geo_accuracy_audit.py
+python -m unittest discover -s tests -p 'test_e1.py' -v
+GIT_PAGER=cat git diff -- scripts/update.py
 ```
-Shows how many *sampled* headlines the v2.0E fallback could recognise. This is not a prediction of distinct live article recoveries. On the supplied 120-example D.4 file, 12 had names recognised by the expanded table, but **several were already covered by D.6**; they are not all new recoveries.
 
-## Deliberate limits
-- This patch **does not replace or refactor** existing `locate`, global geography, multilingual, or D.6 matching layers. It runs **only if all earlier matchers fail**. Therefore it cannot correct inaccurate older matches; this requires a separate audit/refactor.
-- It does not change the 24-hour globe window, 72-hour Discover window, 350-story limit, publisher attribution, JSON structure, GitHub Actions, or WorldPulse-2 website.
-- No location is invented from the publisher's country, article feed edition, or a generic place word.
-- When the expanded matcher sees **more than one distinct place** in the same headline/description, it declines to choose one. Existing older matchers may behave differently.
-- Coordinates represent cities or approximate region anchors, **not verified incident coordinates**.
-- This is a reviewed 158-entry expansion, **not** a complete global gazetteer or NLP entity recogniser.
+3. If successful:
 
-## Verification
-Ten tests passed; installation was checked for safe repeat execution and collector Python syntax on a local reconstructed D.6.1 copy. Live feed and browser testing have **not** been run from this patch package.
+```bash
+git add scripts/update.py
+git commit -m "Add v2.0E.1 geographic accuracy diagnostics"
+git push origin main
+```
+
+4. Manually run **Refresh geographic news** via GitHub Actions for the **original** repository.
+5. Inspect `data/unmatched-review.json` -> **`geo_accuracy_audit`**. Send that file for review.
+
+## Diagnostics
+- `risk_bands`: `low`, `watch`, `review_priority`, counted per eligible mapped *feed occurrence* (not distinct stories)
+- `risk_flags`: `description_only_selection`, `url_path_selection`, `multiple_reviewed_headline_places`, `multiple_reviewed_description_places`, `description_overrides_named_headline_place`, `not_independently_confirmed_by_e_catalogue`
+- `review_examples`: up to 45 examples needing attention, including chosen location, match method, title and reviewed place hints
+
+The full diagnostic is additionally saved as `data/geo-accuracy-audit.json` during the workflow, but **only the embedded version** in the already-committed `data/unmatched-review.json` is guaranteed to persist under the current GitHub Actions workflow. No workflow changes required.
+
+## Limitations and next steps
+The 158-entry reviewed catalogue is used as a *screening* list, not a complete gazetteer. Thus a flag such as `not_independently_confirmed_by_e_catalogue` is expected for many legitimate matches and must not be treated as a definite error. This release creates evidence for a later precision refactor without risking the currently working globe.
+
+Tested against a locally reconstructed v2.0E collector, not the live GitHub repository. Nine tests passed; syntax and repeat-installation checks passed. Verify workflow results after deployment.
