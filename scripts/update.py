@@ -26,6 +26,7 @@ from browse_retention import BrowseRetention
 from publisher_metadata import annotate
 from geographic_quality import curated_match
 from geo_expansion import expanded_match
+from geo_accuracy_audit import publish_audit
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -470,6 +471,7 @@ def main():
  update_diagnostics.raw_for_report=raw
  update_diagnostics(now,health,unmapped,points,duplicates)
  embed_geo_report(ROOT/'data')
+ publish_audit(raw,now,ROOT/'data')
  print(f'WorldPulse v1.5.4B: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
  if not points:print('WARNING: feeds succeeded but no headline-place matches',flush=True)
 if __name__=='__main__':main()
