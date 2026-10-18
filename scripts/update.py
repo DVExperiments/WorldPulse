@@ -29,6 +29,7 @@ from geo_expansion import expanded_match
 from geo_accuracy_audit import publish_audit
 from geo_decision import DecisionAudit
 from geo_confidence import publish_confidence
+from geo_public_evidence import public_evidence
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -335,7 +336,7 @@ def produce(raw,now):
    'count':len(articles),'publisher_count':len({a['publisher'].casefold() for a in articles}),'category':category,'recent_3h':recent,'previous_3h':previous,
    'velocity':velocity,'velocity_change_pct_sample':delta,
    'articles':[{'title':a['title'][:260],'url':a['url'],'published_at':a['at'],'publisher':a['publisher'],
-                'source_url':a['source_url'],'source_kind':a.get('source_kind'),'language':a.get('language','en'),'geo_match':a.get('geo_match','headline')} for a in articles[:20]]})
+                'source_url':a['source_url'],'source_kind':a.get('source_kind'),'language':a.get('language','en'),'geo_match':a.get('geo_match','headline'),**public_evidence(a)} for a in articles[:20]]})
  return sorted(points,key=lambda p:p['count'],reverse=True),duplicates,len(kept)
 
 HISTORY=ROOT/'data/history.json'
