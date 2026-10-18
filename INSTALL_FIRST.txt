@@ -1,23 +1,17 @@
-WORLD PULSE v2.0E.1 — ORIGINAL REPOSITORY ONLY
+WorldPulse 2.0E.2 — ORIGINAL COLLECTOR ONLY
 
-1. Upload scripts/geo_accuracy_audit.py and scripts/apply_e1_patch.py to
-   https://github.com/DVExperiments/WorldPulse/tree/main/scripts
-2. Upload tests/test_e1.py to WorldPulse/tests and commit uploads.
-3. Open WorldPulse Codespace terminal:
+Upload scripts/geo_decision.py and scripts/apply_e2_patch.py to your repository scripts/ folder.
+Upload tests/test_e2.py to repository tests/ folder.
 
-   git pull origin main
-   python scripts/apply_e1_patch.py
-   python -m py_compile scripts/update.py scripts/geo_accuracy_audit.py
-   python -m unittest discover -s tests -p 'test_e1.py' -v
-   GIT_PAGER=cat git diff -- scripts/update.py
+Codespace:
+ git pull origin main
+ python scripts/apply_e2_patch.py
+ python -m py_compile scripts/update.py scripts/geo_decision.py
+ python -m unittest discover -s tests -p 'test_e2.py' -v
+ GIT_PAGER=cat git diff -- scripts/update.py
+ git add scripts/update.py
+ git commit -m "Add v2.0E.2 geographic decision corrections"
+ git push origin main
 
-4. If all pass:
-
-   git add scripts/update.py
-   git commit -m "Add v2.0E.1 geographic accuracy diagnostics"
-   git push origin main
-
-5. GitHub Actions > Refresh geographic news > Run workflow.
-6. Send data/unmatched-review.json with its new geo_accuracy_audit section.
-
-NO WEBSITE UPDATE. NO EXISTING update.py REPLACEMENT.
+Then Actions > Refresh geographic news > Run workflow.
+Inspect data/unmatched-review.json -> geo_decision_corrections.
