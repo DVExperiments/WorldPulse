@@ -40,7 +40,20 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
 PLACES = json.loads((ROOT/'data/places.json').read_text(encoding='utf8')) + json.loads((ROOT/'data/places-extra.json').read_text(encoding='utf8'))
 # Three regionally distributed searches per theme reduce single-market bias.
-REGIONS = [('US','en-US','US:en'),('GB','en-GB','GB:en'),('IN','en-IN','IN:en'),('AU','en-AU','AU:en'),('ZA','en-ZA','ZA:en'),('NG','en-NG','NG:en'),('PH','en-PH','PH:en'),('CA','en-CA','CA:en')]
+REGIONS = [('US','en-US','US:en'),('GB','en-GB','GB:en'),('IN','en-IN','IN:en'),('AU','en-AU','AU:en'),('ZA','en-ZA','ZA:en'),('NG','en-NG','NG:en'),('PH','en-PH','PH:en'),('CA','en-CA','CA:en'),
+           # v2.4D.1 pilot: additional local Google News editions; country edition
+           # is a *discovery channel*, never evidence of a news event's location.
+           ('BR','pt-BR','BR:pt-419'),('MX','es-419','MX:es-419'),('KE','en-KE','KE:en')]
+REGION_LANGUAGES = {'BR':'pt','MX':'es','KE':'en'}
+LOCAL_QUERIES = {
+ 'pt': {'politics':['eleições governo congresso','política diplomacia'], 'environment':['clima floresta desmatamento','conservação meio ambiente'], 'hazards':['enchente terremoto incêndio','tempestade deslizamento'], 'society':['sociedade direitos protesto','moradia educação'], 'health':['saúde hospitais doença','medicina saúde pública'], 'education':['escolas universidades estudantes','professores ensino'], 'rights':['direitos humanos igualdade','justiça discriminação'], 'community':['comunidades habitação cultura','serviços locais'], 'economy':['inflação economia empregos','comércio investimento'], 'science':['pesquisa ciência tecnologia','descoberta científica'], 'conflict':['conflito guerra cessar-fogo','violência forças armadas']},
+ 'es': {'politics':['elecciones gobierno parlamento','política diplomacia'], 'environment':['clima conservación deforestación','medio ambiente contaminación'], 'hazards':['inundaciones terremoto incendios','tormenta deslizamiento'], 'society':['sociedad protestas vivienda','educación comunidad'], 'health':['salud hospitales enfermedad','medicina salud pública'], 'education':['escuelas universidades estudiantes','profesores educación'], 'rights':['derechos humanos igualdad','justicia discriminación'], 'community':['comunidades vivienda cultura','servicios locales'], 'economy':['inflación economía empleo','comercio inversión'], 'science':['ciencia investigación tecnología','descubrimiento científico'], 'conflict':['conflicto guerra alto el fuego','ataque fuerzas armadas']}
+}
+def region_query(category, index, region):
+ language = REGION_LANGUAGES.get(region, 'en')
+ variants = LOCAL_QUERIES.get(language, QUERIES)[category]
+ return variants[index % len(variants)]
+
 QUERIES = {
  'politics':['election parliament government','diplomacy summit referendum'],
  'environment':['climate conservation wildlife','pollution deforestation drought'],
@@ -298,13 +311,13 @@ def collect(now):
   return mapped
  for cat in QUERIES:
   for j,locale in enumerate(REGIONS):
-   q=QUERIES[cat][j%len(QUERIES[cat])];key=f'google/{cat}/{locale[0]}'
+   q=region_query(cat,j,locale[0]);key=f'google/{cat}/{locale[0]}'
    try:
     rows=list(fetch(q,locale));seen_queries+=1;scanned[cat]+=len(rows)
-    mapped=ingest(rows,cat,'Google News '+locale[0],'aggregator',locale[0],'en')
-    health.append({'source':key,'status':'ok','items':len(rows),'mapped':mapped,'kind':'aggregator','editorial_region':locale[0],'language':'en'})
+    mapped=ingest(rows,cat,'Google News '+locale[0],'aggregator',locale[0],REGION_LANGUAGES.get(locale[0],'en'))
+    health.append({'source':key,'status':'ok','items':len(rows),'mapped':mapped,'kind':'aggregator','editorial_region':locale[0],'language':REGION_LANGUAGES.get(locale[0],'en')})
    except Exception as exc:
-    failures[key]=str(exc);health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'aggregator','editorial_region':locale[0],'language':'en'})
+    failures[key]=str(exc);health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'aggregator','editorial_region':locale[0],'language':REGION_LANGUAGES.get(locale[0],'en')})
    time.sleep(.12)
  for name,url,region,language in DIRECT_FEEDS:
   key='direct/'+name
