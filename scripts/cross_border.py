@@ -56,6 +56,35 @@ def detect(title):
  if relation is None:return None
  return tuple(sorted(countries)),relation
 
+# Narrow headline-derived descriptions are preferable to broad relationship labels.
+# They describe what the headline says, not independent verification of the claim.
+def relationship_details(title, base_kind):
+ lower = title.casefold()
+ if base_kind == 'sanctions':
+  if re.search(r'\b(?:waiver|waives?|waived|exemption|exempts?|exempted|relief from sanctions)\b', lower):
+   return ('sanctions_waiver', 'Sanctions waiver or exemption',
+           'The headline describes a waiver, exemption or relief from sanctions; it does not establish newly imposed sanctions.')
+  if re.search(r'\b(?:on hold|put.*on hold|paused?|suspended?|delayed|postponed|freeze|frozen)\b', lower):
+   return ('sanctions_on_hold', 'Sanctions delayed or on hold',
+           'The headline describes sanctions being delayed, paused or put on hold; it does not establish that new sanctions took effect.')
+  if re.search(r'\b(?:proposed|proposal|urges?|calls? for|seeks?|mulls?|considering)\b',lower):
+   return ('sanctions_proposed', 'Proposed or requested sanctions',
+           'The headline refers to proposed, requested or considered sanctions, not necessarily sanctions in effect.')
+  return ('sanctions', 'Sanctions-related reporting',
+          'The headline refers to sanctions, but this label does not establish the measures are in effect.')
+ if base_kind == 'diplomacy' and re.search(r'\bambassadors?\b', lower):
+  return ('diplomatic_statement', 'Diplomatic statement or involvement',
+          'The headline reports an ambassador\'s involvement or statement; it does not imply an agreement between governments.')
+ labels = {
+  'agreement':'Reported agreement or partnership',
+  'diplomacy':'Diplomatic contact or talks',
+  'trade':'Trade or investment reporting',
+  'dispute':'Reported dispute or tensions',
+  'security':'Security-related reporting',
+ }
+ return (base_kind,labels.get(base_kind, 'Cross-border reporting'),
+         'A headline indicates this bilateral topic; the classification is automated and has not been independently verified.')
+
 def publish_links(points,max_articles=3000):
  # Deduplicate the same article syndicated into several country/category points.
  by_url={}
@@ -68,15 +97,16 @@ def publish_links(points,max_articles=3000):
  for article in by_url.values():
   match=detect(article.get('title',''))
   if not match:continue
-  pair,relation=match
-  key=(pair,relation)
+  pair,base_relation=match
+  relation,label,explanation=relationship_details(article.get('title',''),base_relation)
+  key=(pair,relation,label,explanation)
   grouped.setdefault(key,[]).append({'title':article.get('title',''),'publisher':article.get('publisher',''),'url':article['url'],'published_at':article.get('published_at','')})
  links=[]
- for (pair,relation),articles in grouped.items():
+ for (pair,relation,label,explanation),articles in grouped.items():
   dedup=list({a['url']:a for a in articles}.values())
   publisher_count=len({a['publisher'].casefold() for a in dedup if a['publisher']})
   links.append({'countries':[{'name':n,'lat':COUNTRIES[n][0],'lng':COUNTRIES[n][1]} for n in pair],
-    'relationship':relation,'article_count':len(dedup),'publisher_count':publisher_count,
+    'relationship':relation,'relationship_label':label,'relationship_explanation':explanation,'article_count':len(dedup),'publisher_count':publisher_count,
     'evidence':'explicit_bilateral_headline','note':'Headline-based relationship candidate. Country points are representative anchors; not verified event sites.',
     'articles':dedup[:12]})
  links.sort(key=lambda x:(-x['publisher_count'],-x['article_count'],x['countries'][0]['name']))

@@ -1,21 +1,15 @@
-WORLDPULSE V1.2 — RSS DATA COLLECTOR PATCH
+WorldPulse v2.0F.4.5 — Relationship Accuracy Refinement
 
-1. Open https://github.com/DVExperiments/WorldPulse/blob/main/scripts/update.py
-2. Click Edit (pencil), select all, replace with the contents of scripts/update.py from this ZIP.
-3. Commit directly to main.
-4. Actions > Refresh geographic news > Run workflow.
-5. Check log for 'RSS read' and 'Wrote N points ... status=live'.
-6. Verify data/news.json shows source 'Google News RSS' and points is nonempty.
+Upload ONLY:
+  scripts/cross_border.py -> DVExperiments/WorldPulse / scripts /
+  tests/test_f45.py -> DVExperiments/WorldPulse / tests / (optional)
 
-Only scripts/update.py MUST be replaced. You do not have to upload the .github folder.
-The existing workflow step will still say 'Fetch GDELT geographic coverage' because that
-is just its display label; it will actually execute this new RSS collector.
+Do not replace scripts/update.py or modify the workflow.
+Commit, then run the existing Refresh geographic news GitHub Action.
+This is compatible with F.4 collector import and adds relationship_label and
+relationship_explanation to cross_border.links entries without altering country
+coordinates, article URLs, or other news feed content.
 
-Limitations:
-- Uses a sample of English-language Google News RSS search results.
-- Markers appear only when a headline contains a known place name.
-- Counts are article links observed in a 24-hour sample, not complete geographic news counts.
-- RSS URLs sometimes link through Google News rather than directly to publishers.
-- A country name's position on the globe is a representative anchor, not the event coordinate.
-- News RSS availability can vary; if it fails, the log now reports the specific RSS error.
-- This patch cannot be live end-to-end tested from the authoring environment.
+Example: Sanctions waiver is labelled a waiver; "on hold" is labelled delayed;
+ambassador speech is labelled diplomatic statement, not an agreement.
+These are headline-derived labels, not fact-checked factual claims.
