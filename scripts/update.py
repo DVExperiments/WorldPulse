@@ -34,6 +34,7 @@ from story_clustering import cluster_bundle
 from story_tracking import enrich_story_clusters
 from cross_border import publish_links
 from geographic_disambiguation import evaluate as evaluate_geographic_subject
+from geographic_quality_monitor import update_health_file
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -493,6 +494,7 @@ def main():
  update_article_history(now,points)
  update_diagnostics.raw_for_report=raw
  update_diagnostics(now,health,unmapped,points,duplicates)
+ update_health_file(DIAGNOSTICS, record)
  embed_geo_report(ROOT/'data')
  publish_audit(raw,now,ROOT/'data')
  collect.decision_audit.publish(ROOT/'data',now)
