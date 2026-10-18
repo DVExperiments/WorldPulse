@@ -1,40 +1,40 @@
-# WorldPulse 2.0D.6 — Geographic Recognition & Coverage Quality
+# WorldPulse 2.0D.6.1 — Publisher Metadata Correction
 
-**Upload ONLY to the original `DVExperiments/WorldPulse` repository**. Do not upload to WorldPulse-2.
+**Target:** original `DVExperiments/WorldPulse` collector repository, **not** `WorldPulse-2`.
 
-Requires D.5 (`scripts/browse_retention.py`) already installed.
-
-## Features
-- 12 curated geographic entries, including Gujarat, West Bengal, Balochistan, Kudat, Kisoro, Worcestershire, and Whangārei. The conservative fallback only runs when the earlier matcher failed. Geographic points represent approximate subjects, NOT verified incident coordinates. Ambiguous multiple curated references remain unlocated.
-- Publisher-balanced Browse-only selection: first pass selects up to 12 stories per publisher, then fills unused slots by recency. The existing 350-story cap remains unchanged. This improves publisher diversity, NOT proven country diversity.
-- The existing `browse_retention` section in `data/news.json` gains `publisher_balance` with publisher variety, largest-publisher share, and leading publisher counts.
-- The globe's 24-hour rule and Discover's 72-hour retention remain unchanged. No GitHub Actions workflow or frontend changes.
+## Purpose
+- Recover missing RSS publisher names from the configured direct-feed name or a short, audited list of article hostnames.
+- Preserve existing trustworthy article publisher fields.
+- Do **not** infer publishers from Google News redirect URLs, unknown domains, article subject matter, or the geographic location of news events.
+- Resolve publisher **before** retention/balancing, so publisher variety measurements become more meaningful.
+- No changes to globe, article freshness window, map coordinates, feed requirements or Github Actions workflow.
 
 ## Install
-1. Extract the ZIP. Upload `scripts/geographic_quality.py` and `scripts/apply_d6_patch.py` to the original repo's `scripts` directory. Upload `tests/test_d6.py` to `tests` if desired. Commit the upload.
-2. Open a Codespace for ORIGINAL WorldPulse and run:
+1. Extract ZIP. Upload `scripts/publisher_metadata.py` and `scripts/apply_d61_patch.py` to existing `scripts/` directory in original WorldPulse repo. Upload `tests/test_d61.py` to existing `tests/` (create tests folder if necessary). Commit the uploaded files in GitHub.
+2. In original WorldPulse Codespace terminal:
 
 ```bash
 git pull origin main
-python scripts/apply_d6_patch.py
-python -m py_compile scripts/update.py scripts/browse_retention.py scripts/geographic_quality.py
-python -m unittest discover -s tests -p 'test_d6.py'
-git diff -- scripts/update.py scripts/browse_retention.py
+python scripts/apply_d61_patch.py
+python -m py_compile scripts/update.py scripts/publisher_metadata.py
+python -m unittest discover -s tests -p 'test_d61.py' -v
+git diff -- scripts/update.py
 ```
 
-3. If successful, commit only the two modified files:
+3. If those pass, commit the collector's updated import and ingestion line:
 
 ```bash
-git add scripts/update.py scripts/browse_retention.py
-git commit -m "Add D6 geographic quality and balanced story selection"
+git add scripts/update.py
+git commit -m "Correct browse article publisher attribution"
 git push origin main
 ```
 
-4. Run **Refresh geographic news** in GitHub Actions, then inspect `data/news.json` > `browse_retention` > `publisher_balance` and `data/source-health.json` mapping counts.
+4. In Actions run **Refresh geographic news**. Then inspect `data/news.json` > `browse_retention` > `publisher_balance` and `unlocated_articles` > `publisher`.
 
-## Safety
-- Do NOT upload `node_modules`, `dist`, or replace the original workflow.
-- Publication timestamps are not modified. Unlocatable stories remain browse-only.
-- This patch does not independently verify publisher reports. Do not infer article location from the publisher's country.
-- Exact place candidate coordinates are representative region/city anchors, not event sites.
-- Measured improvements require a live collection run; unit tests alone do not establish mapping gains.
+**Success checks:** fewer `Unknown` browse-only entries, a sensible set of identified publishers, no unexpected increase in news map points purely from metadata, and standard 132/136-ish feed health (feed availability varies).
+
+## Expected effect, not guaranteed live count
+An offline pass on the 2.0D.6 `news.json` snapshot recovered **115 of 129** empty publisher names among its 350 browse-only articles. There were 14 remaining after domain matching. The live output can differ because selection is performed again after repair, and articles change between runs.
+
+## Safety notes
+The installer refuses to proceed if D.6 `balanced_select` integration or known update.py insertion points are absent. Running it twice does not duplicate the patch. No tracked data files are overwritten during installation. The Python code is standard-library only.
