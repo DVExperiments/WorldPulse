@@ -32,6 +32,7 @@ from geo_confidence import publish_confidence
 from geo_public_evidence import public_evidence
 from story_clustering import cluster_bundle
 from story_tracking import enrich_story_clusters
+from cross_border import publish_links
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -469,7 +470,7 @@ def main():
   'metric':'Deduplicated mapped articles in sampled RSS feeds, not all news worldwide',
   'accuracy_note':'Locations are geographic SUBJECTS, never automatically verified incident sites. Locations are place mentions from headlines or descriptions, not verified event coordinates. Description matches are contextual; country pins use representative anchors.',
   'velocity_note':'Recent 3-hour vs previous 3-hour counts within sampled articles; directional, not a verified activity surge.',
-  'errors':failures,'points':points,**clusters,
+  'errors':failures,'points':points,**clusters, 'cross_border':publish_links(points),
   'unlocated_articles':getattr(collect,'browse_articles',[]),
   'browse_retention':{'window_hours':72,'globe_window_hours':24,'note':'Unlocated articles are for browsing only, never globe pins. Archive entries are older than 24 hours.', **getattr(collect,'browse_stats',{})}}
  OUT.parent.mkdir(parents=True,exist_ok=True)
