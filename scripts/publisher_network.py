@@ -26,6 +26,8 @@ NEW_FEEDS = [
  ('Inter Press Service Headlines','https://www.ipsnews.net/feed/','global','en'),
 ]
 
+from coverage_expansion import append_candidates
+
 def merge_feeds(current):
     names={row[0].casefold() for row in current}
     urls={row[1].rstrip('/') for row in current}
@@ -36,4 +38,4 @@ def merge_feeds(current):
         merged.append(record)
         names.add(record[0].casefold())
         urls.add(record[1].rstrip('/'))
-    return merged
+    return append_candidates(merged)
