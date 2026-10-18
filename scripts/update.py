@@ -27,6 +27,7 @@ from publisher_metadata import annotate
 from geographic_quality import curated_match
 from geo_expansion import expanded_match
 from geo_accuracy_audit import publish_audit
+from geo_decision import DecisionAudit
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -244,7 +245,7 @@ def parsed_timestamp(value):
 
 def collect(now):
  cutoff=now-dt.timedelta(hours=24)
- results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention()
+ results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit()
  def ingest(rows,category,source,kind,region,language):
   mapped=0
   for a in rows:
@@ -274,6 +275,7 @@ def collect(now):
     geo_audit.record(source,classify_unmatched(a['title'],a.get('description',''),a['url'],language),mapped=True)
     unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260], 'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
     continue
+   place,match_origin=decision_audit.decide(a,place,match_origin)
    mapped+=1
    geo_audit.record(source,'mapped',mapped=True)
    geo_audit.record(source,'method/'+match_origin,mapped=True)
@@ -301,6 +303,7 @@ def collect(now):
  geo_audit.save(ROOT/'data/geo-intelligence.json',now)
  collect.browse_articles=browse_retention.export()
  collect.browse_stats=browse_retention.stats
+ collect.decision_audit=decision_audit
  return results,failures,dict(scanned),seen_queries,health,unmapped
 
 def produce(raw,now):
@@ -472,6 +475,7 @@ def main():
  update_diagnostics(now,health,unmapped,points,duplicates)
  embed_geo_report(ROOT/'data')
  publish_audit(raw,now,ROOT/'data')
+ collect.decision_audit.publish(ROOT/'data',now)
  print(f'WorldPulse v1.5.4B: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
  if not points:print('WARNING: feeds succeeded but no headline-place matches',flush=True)
 if __name__=='__main__':main()
