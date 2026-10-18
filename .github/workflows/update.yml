@@ -7,9 +7,11 @@ on:
 
 permissions:
   contents: write
+
 concurrency:
   group: worldpulse-news-refresh-main
   cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -21,10 +23,12 @@ jobs:
           ref: main
           persist-credentials: true
           fetch-depth: 0
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Refresh local branch before collection
         shell: bash
         run: |
@@ -33,19 +37,52 @@ jobs:
           git checkout main
           git reset --hard origin/main
           echo "Starting from main at $(git rev-parse --short HEAD)"
+
       - name: Fetch multi-source global RSS news coverage
         run: python scripts/run_all.py
-      - name: Commit updated snapshot (v1.4A push repair)
+
+      - name: Check feed contribution audit
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'git add data/news.json data/history.json data/source-health.json data/article-history.json data/story-history.json data/data-health.json data/events.json data/unmatched-review.json data/feed-contribution-audit.json
-          git add data/news.json data/history.json data/source-health.json data/article-history.json data/story-history.json data/data-health.json data/events.json data/unmatched-review.json
+          if [[ -f data/feed-contribution-audit.json ]]; then
+            echo 'Feed contribution audit generated.'
+            ls -lh data/feed-contribution-audit.json
+          else
+            echo '::warning::Feed contribution audit was not generated. Check that v2.4D.3 scripts/update.py is installed and called by scripts/run_all.py.'
+          fi
+
+      - name: Commit updated snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          # Stage only generated files that actually exist.
+          files=(
+            data/news.json
+            data/history.json
+            data/source-health.json
+            data/article-history.json
+            data/story-history.json
+            data/data-health.json
+            data/events.json
+            data/unmatched-review.json
+            data/feed-contribution-audit.json
+          )
+          for file in "${files[@]}"; do
+            if [[ -f "$file" ]]; then
+              git add -- "$file"
+            else
+              echo "::notice::Not generated: $file"
+            fi
+          done
           if git diff --cached --quiet; then
             echo 'No snapshot changes to commit.'
             exit 0
           fi
+          git diff --cached --stat
           git commit -m 'Refresh geographic news snapshot'
           for attempt in 1 2 3 4 5; do
             if git push origin HEAD:main; then
@@ -63,15 +100,21 @@ jobs:
           done
           echo 'Push could not be completed after five retries.'
           exit 1
-      # 2.1B.4.1: Archive as part of the collector rather than relying solely
-      # on a separate workflow_run event that has not been firing reliably.
+
       - name: Archive the successfully collected observation
         run: python scripts/archive_news.py
+
       - name: Commit historical observation
         shell: bash
         run: |
           set -euo pipefail
-          git add -A data/archive
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [[ ! -d data/archive ]]; then
+            echo 'No archive directory; nothing to commit.'
+            exit 0
+          fi
+          git add -A -- data/archive
           if git diff --cached --quiet; then
             echo 'No new observation (duplicate snapshot); archive unchanged.'
             exit 0
