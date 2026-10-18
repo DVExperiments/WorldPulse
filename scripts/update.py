@@ -33,6 +33,7 @@ from geo_public_evidence import public_evidence
 from story_clustering import cluster_bundle
 from story_tracking import enrich_story_clusters
 from cross_border import publish_links
+from geographic_disambiguation import evaluate as evaluate_geographic_subject
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -250,7 +251,7 @@ def parsed_timestamp(value):
 
 def collect(now):
  cutoff=now-dt.timedelta(hours=24)
- results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit()
+ results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_rejections=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit()
  def ingest(rows,category,source,kind,region,language):
   mapped=0
   for a in rows:
