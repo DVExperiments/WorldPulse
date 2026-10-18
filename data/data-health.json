@@ -1,12 +1,15 @@
 {
  "schema": 1,
- "updated_at": "2026-10-18T16:57:03.468485+00:00",
+ "updated_at": "2026-10-18T18:01:24.327709+00:00",
  "feeds_total": 136,
- "feeds_ok": 132,
+ "feeds_ok": 129,
  "feeds_failed": [
   "direct/DW World",
+  "direct/France24",
   "direct/CBC World",
   "direct/ReliefWeb Updates",
+  "direct/France24 FR",
+  "direct/France24 ES",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
@@ -18,22 +21,22 @@
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 109
+   "mapped_pre_dedupe": 113
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 140
+   "mapped_pre_dedupe": 137
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 109
+   "mapped_pre_dedupe": 110
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 132
+   "mapped_pre_dedupe": 129
   },
   "NG": {
    "total": 11,
@@ -43,81 +46,73 @@
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 132
+   "mapped_pre_dedupe": 130
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 112
+   "mapped_pre_dedupe": 111
   }
  },
  "mapped_articles_by_category": {
-  "community": 117,
-  "society": 49,
+  "society": 48,
   "education": 66,
-  "health": 57,
-  "hazards": 12,
-  "economy": 49,
-  "politics": 25,
-  "rights": 10,
-  "conflict": 25,
-  "science": 17,
-  "environment": 9
+  "hazards": 13,
+  "health": 58,
+  "economy": 46,
+  "politics": 23,
+  "science": 16,
+  "rights": 11,
+  "conflict": 19,
+  "community": 76,
+  "environment": 7
  },
  "mapped_articles_by_location_precision": {
-  "country": 266,
-  "place": 165,
-  "region": 5
+  "country": 232,
+  "place": 148,
+  "region": 3
  },
  "location_evidence_counts": {
-  "headline": 335,
-  "description": 101
+  "headline": 288,
+  "description": 95
  },
  "geographic_quadrants": {
-  "NE": 291,
-  "NW": 92,
-  "SE": 45,
-  "SW": 8
+  "NE": 245,
+  "NW": 89,
+  "SE": 42,
+  "SW": 7
  },
- "geo_signal_count": 237,
- "mapped_total": 436,
+ "geo_signal_count": 218,
+ "mapped_total": 383,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 959,
- "unmapped_distinct_titles": 323,
+ "unmapped_sample_count": 964,
+ "unmapped_distinct_titles": 319,
  "unmapped_by_feed": {
-  "Google News US": 146,
-  "Google News ZA": 143,
-  "Google News PH": 143,
-  "Google News IN": 141,
-  "Google News CA": 77,
-  "Google News AU": 76,
-  "Google News GB": 75,
-  "Google News NG": 75,
-  "RNZ National": 15,
+  "Google News US": 145,
+  "Google News PH": 145,
+  "Google News ZA": 144,
+  "Google News IN": 143,
+  "Google News AU": 80,
+  "Google News GB": 79,
+  "Google News CA": 79,
+  "Google News NG": 77,
+  "RNZ National": 16,
   "ABC Australia": 12,
   "BBC Brasil": 8,
-  "France24 FR": 7,
   "BBC Business": 6,
-  "The Guardian World": 6,
   "BBC Science": 5,
-  "France24 ES": 5,
+  "The Guardian World": 5,
   "BBC World": 4,
-  "The Conversation France": 4
+  "The Conversation France": 4,
+  "Al Jazeera": 3,
+  "The Conversation Africa": 2
  },
  "unmapped_examples": [
-  {
-   "title": "SpaceX’s Dragon Spacecraft Delivers Supplies and Innovative Research to ISS",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRUhRWHd5V19wczc3WUhSRno1b3lzWl9GckpDTk9vWWZOX3dGSF9xYlZ0Vm1RV0FRMVlzeXhfalNGV21hQkd4cHotTTVQWWQwQ2UwSWdHaFB2RllYbFZEWDdkUFJpeEtCUzhnc1JMRF85TUZiV3JvRmZyZHdySWdYdV9YQWJDek40VkdnZ3YwcEF0MVA3amdfS24zQXdET2JHQXVB?oc=5",
-   "publisher": "SSBCrack",
-   "feed_occurrences": 6,
-   "feed_count": 6,
-   "description_excerpt": " SpaceX’s Dragon Spacecraft Delivers Supplies and Innovative Research to ISS    SSBCrack "
-  },
   {
    "title": "Europe student protests and the emergence of new generation on the left - International - World",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbFF3bnRhMEZOZXh5VlhMeXlfRk04b2ZVRjBJMWVNeC01NEVfZFBrY1pCd2M3Mk8wUkpEeVRLSnBnSGZIOUt3ZGJYVUtKZGxzSjZCcnBWcmNjQjl0eUtId0VldWlaNUEtNWYtR1R0R1VWOVVpeTJUR0VrUC1lb3BrNTdCZVFvZ0owb3hZZDlTSDk0VG9fWFVVeTZQWjdOb21CTURFSjJmWl9Da3lMSHo4c0pxWjVMRGVWOGlTZElUa1VHUFFaVGc?oc=5",
    "publisher": "Ahram Online",
-   "feed_occurrences": 7,
+   "feed_occurrences": 8,
    "feed_count": 4,
    "description_excerpt": " Europe student protests and the emergence of new generation on the left - International - World    Ahram Online "
   },
@@ -146,22 +141,6 @@
    "description_excerpt": " Somali civil society coalition urges election dialogue, criticizes 2027 timetable    Hiiraan Online "
   },
   {
-   "title": "Electoral collapse for Czech far-right Prime Minister Andrej Babiš in Senate elections",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdlR2RVFhcUd6bm1JMUVwM0VrcTlqRktBdnFFTTFtV3ZzN0xqZlRjeVBKSEFjZjhCMXVnRk9YSEVacV9nOWFVRE5ERDV2X29kMHZLUXV2aGFlZHhWeTQ0TF9Fc2pkSXhHZ0otLXIxU3ZaV01oTzhkcEJYam0tYmlRSlphd2NrdlJJVTFvdExOVHVfQllET2F6RmhudjJkNVktR0kyckFFRkFESTZfODJKZC04S3BJYXlYeDEw?oc=5",
-   "publisher": "European Interest",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Electoral collapse for Czech far-right Prime Minister Andrej Babiš in Senate elections    European Interest "
-  },
-  {
-   "title": "Warning Issued Regarding Continued Political Gridlock in the Kurdistan Region",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRFFaa1RFbnk3dk9MZHVrY1Z2bjh1eXdfQWFjTUNjMGhFNDVSakM1SDV5b3NPNHA3dDV6Nm1HcEYxeU1aaklVZDk1U29HVWxseWpBWFZHb2wySXkyV2doVlRib2J4dFpPRFpMcGwzSmZmWjBDR3kxSmpYTHBtNV9JaUcwaEl0WFJjeWRzS29mVUFxcmxMVnEtSUVoSEJDbWMzNDVjRy1xNklKTzVDVXVBUHc5azZtczdienc?oc=5",
-   "publisher": "کردپرس",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Warning Issued Regarding Continued Political Gridlock in the Kurdistan Region    کردپرس "
-  },
-  {
    "title": "‘Please vote for me’: Chris Bishop admits anxiety over political future",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUkJqU05RY2ZQT21lMFREc0JKTXZEd3NKV3JaNzBOdTFka2U2N2RGQ2dGUk9mMDlENUVyOVVBaTlRVzVqT2RVNlhpRFViVzNNNWx3eDN3ZU96NUNDalh5Y1ZUeHpWSDdEaWVtbmtzdC1KWHVsNDAwbW5DdVhld3EyVC1FTG1VREZDUUxDYmppcktVYnlzTEtkWGRvOGdacnBHak9JaGZuMUFGZUU?oc=5",
    "publisher": "Stuff",
@@ -186,14 +165,6 @@
    "description_excerpt": " YS Jagan Reddy Revisits Election Commissioner Appointment Law, Calls for CJI’s Return to Selection Panel    www.nationpathindia.com "
   },
   {
-   "title": "SODELPA warns proposed constitutional changes could delay elections by up to 12 months",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbWpUWEpsVXhWeE0yWW1ZMG0yY1ZUeFVqV3YtN0RNRW5sajZ2Tno0QlYzamUyQ3k1cklVSlBwaWVQNUVZQkVqTFQyX3FMaV93c0Utbm1NbWFnMlI1Y1NUWDcyYURoVjNfeXg2cHo0YkhRQ29CUjM0VXQ1X201VnVrRGZZSURjMDNJU3g4YmxfeDd5cFdMeGVWQTFoOUxJYnBGNHIzbk9zSk1uOW1CcTZWQnJfdllpZzJUOUJFczM4QkVfUQ?oc=5",
-   "publisher": "Fijivillage",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " SODELPA warns proposed constitutional changes could delay elections by up to 12 months    Fijivillage "
-  },
-  {
    "title": "Cunninghame North MSYP candidate Emma outlines her priorities",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMnZidjA0eTEzcFhMai0wSXE3Z3RPZlpycktELXRIcWZON1RPTHBSSTNuNkRMUGk5WTNvUHhtNHdvb3lSNG5zOHo1MkNNT2xtVFRVOUd5eE9Za1ZmS3VMa3NnS2djdEJnOHR0UUhYVmdtb1JQYWhDaUI3a050aTE4U2pmZ3RwT2NUY09EOFF5VjQxMDJK?oc=5",
    "publisher": "Irvine Times",
@@ -208,6 +179,14 @@
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " From street dissent to Parliament: How the battle over electoral rolls threatens delimitation    The Week "
+  },
+  {
+   "title": "SODELPA warns proposed constitutional changes could delay elections by up to 12 months",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNa2xnRXV6emh3eE5OLXNFUDMxVHlZTmVxSUdkQkFGRS1LMzdGc1VHQ1dZM0JKNEJaS092SmItMFhreHV6THZZWXVrU05WUm9wUlRESEYtYndhbmF5SzhQNVRjN2w4X045RHBlS3pXOTUtaFhmY3VkVXpFNHNQYVF0b1dOckpLVTYtTnZwcjlZZVYxaWMyUkExWExZaWc1MVFUZ0lRSHloSEkyZExuZzR2YUIyWDdmalZCUGJDSHlXbm4zdjg?oc=5",
+   "publisher": "Fijivillage",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " SODELPA warns proposed constitutional changes could delay elections by up to 12 months    Fijivillage "
   },
   {
    "title": "Elections that could change the face of Europe",
@@ -242,20 +221,20 @@
    "description_excerpt": " National Referendum expected on 9th December if 3rd parliamentary vote has support of 66% of MPs    Fijivillage "
   },
   {
-   "title": "A year after July Charter signing, key reforms lie in limbo",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNalZha1ZKYS0yenJCMUxMQngtaFYxYkNQVXhiTFZLa1pLWGtxZjdvYXh4MWxRdl9VMlhfUTMxZHVsX0NMNnUyaFVZNk1sdUdhak9wVVp3U2NzYk4tU2hYaDZ1WWtKWjUxX29qRllBeXE5WThMM0Y1WE80MkZOWUFtRlBxVnY2ZEM4bWRTZFUzdm5PSU0xNzdjUTBFQkZnbUttZ2lDV0ZVSVZOLWNETmhxT0V4YnU1cE9aTW4yVzBQWnY1VDBIdWFwMdIByAFBVV95cUxNalZha1ZKYS0yenJCMUxMQngtaFYxYkNQVXhiTFZLa1pLWGtxZjdvYXh4MWxRdl9VMlhfUTMxZHVsX0NMNnUyaFVZNk1sdUdhak9wVVp3U2NzYk4tU2hYaDZ1WWtKWjUxX29qRllBeXE5WThMM0Y1WE80MkZOWUFtRlBxVnY2ZEM4bWRTZFUzdm5PSU0xNzdjUTBFQkZnbUttZ2lDV0ZVSVZOLWNETmhxT0V4YnU1cE9aTW4yVzBQWnY1VDBIdWFwMQ?oc=5",
-   "publisher": "The Financial Express",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " A year after July Charter signing, key reforms lie in limbo    The Financial Express "
-  },
-  {
    "title": "Election Promise Warfare",
    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MeWZDdWF3cUNlWFNtbFh1OWFFZmE2WG1ybW41ZWNPd0tuMzlzd3lIQ2h4bWFJcE1YUVRxd0FsUER6Yy1uVXR1Szhvbmk1TFRVbFJjNmZVbDhQVlAxOFcxOUhkcmw?oc=5",
    "publisher": "Wyndham TV",
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Election Promise Warfare    Wyndham TV "
+  },
+  {
+   "title": "A year after July Charter signing, key reforms lie in limbo",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObHNzR0NuZE41aEFJSTRPR252YjBUWnRMbXpTMG5CdWtUa252aTB2WVU3N1cxRTBwSVpmRUE0Y3FmOWxBTzFGa1pEa3o4Vk9GZTRkSnhRYTVVX3Z4ZmNCRFRuSkxFWUxldUFGanNYdGdOY1ZXZmxDNEpzVVhBUmYza2c3OVY1S1p3OFFieFRUV3RKcktyUjNpeVVCTXpuRldKX244cEFIOFR3aXVPTTJJVnhRODRFMzI5d3FfRtIByAFBVV95cUxNalZha1ZKYS0yenJCMUxMQngtaFYxYkNQVXhiTFZLa1pLWGtxZjdvYXh4MWxRdl9VMlhfUTMxZHVsX0NMNnUyaFVZNk1sdUdhak9wVVp3U2NzYk4tU2hYaDZ1WWtKWjUxX29qRllBeXE5WThMM0Y1WE80MkZOWUFtRlBxVnY2ZEM4bWRTZFUzdm5PSU0xNzdjUTBFQkZnbUttZ2lDV0ZVSVZOLWNETmhxT0V4YnU1cE9aTW4yVzBQWnY1VDBIdWFwMQ?oc=5",
+   "publisher": "The Financial Express",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " A year after July Charter signing, key reforms lie in limbo    The Financial Express "
   },
   {
    "title": "Constitution Bill passes second reading with required 35 votes",
@@ -314,14 +293,6 @@
    "description_excerpt": " NHAI Allocates ₹50 Crore For Wildlife Conservation Along Varanasi-Kolkata Expressway    Curly Tales "
   },
   {
-   "title": "Where have Hanningfield’s waterbirds gone?",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSV9wWnB3amNUTUZmakRqVGZETXFYcXNNVTBEZkwyckQzUElKei1CQWx6LUZIUm5Ea1pERFh4VjE0THJ2RlhLbG9ReHJ3RENRMnBHSVU2X0JDVHhFX2NxWDUyYlFPSnBfVW9aRnRxMm1FRkNZTjNVUUNmQXYxOW9QbXVTTUtmR2V4STQ1Rm5B?oc=5",
-   "publisher": "East Anglia Bylines",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Where have Hanningfield’s waterbirds gone?    East Anglia Bylines "
-  },
-  {
    "title": "New elephant protection initiative launched in memory of Kavantissa",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMkN2WHVIYURLT0Uwb2trTXV1cERWOHN0QnVuV0RKdlNFbFQ2NUpaclcyYjlHeU9ta1ZCNUFEdWNiNFpaMjBBdVhIcFEtY0JBQkNpdUpyb21kZlBWMnQ1NnJfR2p0azBFVDg3eGVvdXhYX25pSHZNZkNoVlczQXlDNzNxOF9PVDktRlp0OFl6aUVPcDJKRUpmSkxBU0hFQ2xHRWh0YW5n?oc=5",
    "publisher": "Newswire",
@@ -330,12 +301,28 @@
    "description_excerpt": " New elephant protection initiative launched in memory of Kavantissa    Newswire "
   },
   {
+   "title": "Where have Hanningfield’s waterbirds gone?",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSV9wWnB3amNUTUZmakRqVGZETXFYcXNNVTBEZkwyckQzUElKei1CQWx6LUZIUm5Ea1pERFh4VjE0THJ2RlhLbG9ReHJ3RENRMnBHSVU2X0JDVHhFX2NxWDUyYlFPSnBfVW9aRnRxMm1FRkNZTjNVUUNmQXYxOW9QbXVTTUtmR2V4STQ1Rm5B?oc=5",
+   "publisher": "East Anglia Bylines",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Where have Hanningfield’s waterbirds gone?    East Anglia Bylines "
+  },
+  {
    "title": "Dikho calls for conservation of environment and springsheds : 18th oct26 - E-Pao.net",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9kb05adk8wc0hVVlQ4Mm1kcHB0MEtxR2QzM1ItSHFsdGs2UF9pcmRtd0dlU1hKS1BRQ3dzTGFaXy10UF9JS05QZWk2bWJVY3ZLS1JTQWNYaHY?oc=5",
    "publisher": "E-Pao.net",
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Dikho calls for conservation of environment and springsheds : 18th oct26    E-Pao.net "
+  },
+  {
+   "title": "Environment Ministry sows 5,000 seeds, plants 300 wild seedlings in Al Suwairiyat ahead of rainy season | Gulf Times",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTTctZkRDY1lLX3ltb0ZHUXQzTFFmeFR1NWpIYlE2c2ZGUl9xLV9HdXVTZDVKb2ZqRWxKeWVGTFNRZnlhZjZDOGMxLWQxQURjX1hsU09HTjVMeXc0cEgwNExHbWdZR2YtV2tfR0drNVlpSVg3Z3lmb25Na2hSUXNiZU1HQ2U0aEk1WkNTVDk0a0xnakJPVEZVcDA0Ym43U3ByeDNoaXlvbHZSMVkyTEdUYTNKZk9lZ3MydUw0SFZMNlBHWDRsLTVIR2o1VFBocnRTcnpsdDFLU2Vaa1RyTS1ScXlva9IB6AFBVV95cUxNd2JVZXdKRWFMczA5d29fWDNHUi16VkM4QjBRdGZTaXd0ajNRRDJZeUJmYjNwLU5OcHZPRW5WUkZIUjdfWHhwX1pxV1F6amctNjA5M3VMWGt6VFJwUkJ5U1lFQlFBMndXVnp4cFBPU1p2MVo0cnlVMkxCWF9DUTQ1bmRyQTBCNFJUOHUxNzNWZ3BmNjZxRjByMzVsNkt6c3hoaUhxdy1Id3pFNUsxTnIzcVo3cXhLNjF6Q3NWR0JQTnRTVXE1ZHVhOVJkSXJOODRuZGhPLWFiUWJHMmZ1c0dFRlF3c0RlMmJF?oc=5",
+   "publisher": "Gulf Times",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Environment Ministry sows 5,000 seeds, plants 300 wild seedlings in Al Suwairiyat ahead of rainy season | Gulf Times    Gulf Times "
   },
   {
    "title": "Find Us at COP17",
@@ -384,82 +371,95 @@
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Hurricane Trudy, Typhoon Champi tracker: Heavy rains, flooding, landslides predicted for weekend in parts    The Economic Times "
+  },
+  {
+   "title": "Hurricane Simon Roars Below as Strange Waves Ripple Across the Sky",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQi1pWlhLUkJSR0p2RXlyOHowSDNxNWxrX1VfT1lYYS10VzhRZ0pSNlFpeVlTWEltOXdEUUEzbWxvUVFjNDlkXzc5ZTFSSDBKdnFPWXFZbkNCc0t3NnNJSEZhMGpSN0lqSjNSa3pXWVBTaUtaQnRHdV8yQ0VPNDNzVl9INXpJUlFITmxFN1g3SjRVZTFMSzR3?oc=5",
+   "publisher": "SciTechDaily",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Hurricane Simon Roars Below as Strange Waves Ripple Across the Sky    SciTechDaily "
+  },
+  {
+   "title": "Why are people protesting across Europe?",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMlo5YnZlR2tLQUl1a3FqNUNRUW9XN19oRHlhNThpY3BZVW5pRWloV1I4N3RBSDdSN0RVZlBrYkk2clFJdTB5czFXakRBaVgwTWxLSl9HcUxQdm9nTU9tNUNITUx3OGVKSV9iVDhKbzE0ZC1KaFYySWJQZGFNNjJuVDdOOXZLeUhUeU9feUFNT3hfY2lFRVdDMFlyQzZpem8?oc=5",
+   "publisher": "The Guardian",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Why are people protesting across Europe?    The Guardian "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 48,
-  "successful": 44,
-  "mapped_pre_dedupe": 177
+  "successful": 41,
+  "mapped_pre_dedupe": 119
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 153,
-  "unique_google_urls_not_in_direct_sample": 302,
+  "unique_direct_urls_not_in_google_sample": 101,
+  "unique_google_urls_not_in_direct_sample": 296,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "Al Jazeera": 23,
-   "France24": 22,
-   "The Guardian World": 20,
-   "France24 ES": 17,
-   "France24 FR": 16,
+   "Al Jazeera": 22,
+   "The Guardian World": 22,
    "ABC Australia": 13,
    "RNZ National": 9,
    "BBC World": 8,
+   "RNZ Pacific": 7,
    "The Guardian Environment": 7,
-   "RNZ Pacific": 6,
    "BBC Europe": 5,
-   "BBC Science": 4,
    "Guardian Africa": 4,
+   "BBC Science": 4,
    "NPR World": 3,
-   "Mongabay Latam": 3,
    "The Conversation Canada": 3,
+   "Mongabay Latam": 3,
    "BBC Brasil": 2,
    "BBC Business": 1,
-   "BBC Asia": 1,
    "BBC Middle East": 1,
-   "Mongabay Global": 1,
+   "Global Voices English": 1,
    "The Conversation": 1,
    "Global Voices Spanish": 1,
-   "Global Voices English": 1
+   "Mongabay Global": 1,
+   "BBC Asia": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 266,
-  "country_labels_count": 63,
+  "country_labelled_articles": 232,
+  "country_labels_count": 59,
   "top_country_subjects": {
-   "France": 46,
-   "Vietnam": 26,
-   "India": 25,
-   "Kenya": 11,
-   "Mexico": 8,
-   "Bangladesh": 8,
-   "Pakistan": 8,
-   "Portugal": 7,
+   "France": 29,
+   "Vietnam": 27,
+   "India": 23,
+   "Kenya": 13,
+   "Mexico": 9,
+   "Pakistan": 9,
    "Israel": 7,
-   "Yemen": 6,
-   "Nigeria": 6,
-   "Ukraine": 6,
+   "Nigeria": 7,
+   "Bangladesh": 7,
+   "Portugal": 5,
+   "Yemen": 5,
    "Australia": 5,
    "Ghana": 5,
-   "China": 5,
    "Canada": 5,
-   "Saudi Arabia": 4,
    "New Zealand": 4,
-   "Colombia": 3,
-   "Russia": 3,
+   "China": 4,
+   "United States": 3,
    "Belgium": 3,
-   "Albania": 3,
-   "Ethiopia": 3,
+   "Ukraine": 3,
    "Cook Islands": 3,
-   "Qatar": 3,
+   "Guam": 3,
    "Egypt": 3,
+   "Colombia": 2,
+   "Russia": 2,
    "Spain": 2,
-   "United States": 2,
    "Somalia": 2,
-   "Guam": 2
+   "Thailand": 2,
+   "Venezuela": 2,
+   "Peru": 2,
+   "Albania": 2
   },
-  "distinct_geographic_signal_centers": 166,
+  "distinct_geographic_signal_centers": 152,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
@@ -471,22 +471,22 @@
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 109
+   "mapped_pre_dedupe": 113
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 140
+   "mapped_pre_dedupe": 137
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 109
+   "mapped_pre_dedupe": 110
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 132
+   "mapped_pre_dedupe": 129
   },
   "NG": {
    "requests": 11,
@@ -496,15 +496,15 @@
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 132
+   "mapped_pre_dedupe": 130
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 112
+   "mapped_pre_dedupe": 111
   }
  },
- "duplicates_removed": 720,
+ "duplicates_removed": 711,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -515,5 +515,56 @@
   "ambiguous_names": 1417,
   "downloaded": true
  },
- "warning": "Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred."
+ "warning": "Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.",
+ "geographic_quality_monitor": {
+  "schema": 1,
+  "version": "2.2C.2",
+  "retention_days": 90,
+  "observations": [
+   {
+    "at": "2026-10-18T18:01:24+00:00",
+    "mapped_articles": 383,
+    "geographic_signals": 218,
+    "feeds_ok": 129,
+    "feeds_attempted": 136,
+    "rejected_matching_occurrences": 5,
+    "ambiguous_mapped_signal_count": 1
+   }
+  ],
+  "latest": {
+   "at": "2026-10-18T18:01:24+00:00",
+   "mapped_articles": 383,
+   "geographic_signals": 218,
+   "feeds_ok": 129,
+   "feeds_attempted": 136,
+   "rejected_matching_occurrences": 5,
+   "ambiguous_mapped_signal_count": 1
+  },
+  "recent_change": {
+   "baseline_at": "2026-10-18T18:01:24+00:00",
+   "geographic_signals_delta": 0,
+   "rejected_occurrences_delta": 0,
+   "feed_successes_delta": 0
+  },
+  "rejected_place_labels_in_examples": {
+   "David": 2,
+   "Sunrise": 1,
+   "Union": 1,
+   "Rubio": 1
+  },
+  "ambiguous_mapped_review": [
+   {
+    "name": "Ontario",
+    "category": "education",
+    "sampled_article_count": 1,
+    "review_reason": "ambiguous_place_name_needs_manual_review"
+   }
+  ],
+  "limitations": [
+   "This report flags possible mistakes; flags are not proven errors.",
+   "Repeated RSS items may inflate rejected matching occurrences.",
+   "Changes can reflect different feeds, article ages or publication cycles.",
+   "Monitoring does not change or remove any globe markers."
+  ]
+ }
 }
