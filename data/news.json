@@ -2,35 +2,36 @@
  "schema": 2,
  "version": "1.5.4B",
  "source": "Google News RSS and independent publisher RSS samples",
- "updated_at": "2026-10-18T22:48:05+00:00",
- "last_attempt_at": "2026-10-18T22:48:05+00:00",
+ "updated_at": "2026-10-18T23:05:15+00:00",
+ "last_attempt_at": "2026-10-18T23:05:15+00:00",
  "window": "rolling 24 hours",
  "status": "partial",
  "query_successes": 170,
  "query_attempts": 173,
  "articles_scanned": {
-  "politics": 272,
-  "environment": 174,
-  "hazards": 64,
-  "society": 294,
-  "health": 474,
-  "education": 533,
+  "politics": 270,
+  "environment": 173,
+  "hazards": 65,
+  "society": 306,
+  "health": 475,
+  "education": 507,
   "rights": 109,
-  "community": 106,
-  "economy": 301,
-  "science": 320,
-  "conflict": 113,
-  "direct": 1504
+  "community": 74,
+  "economy": 299,
+  "science": 321,
+  "conflict": 109,
+  "direct": 1502
  },
- "distinct_mapped_articles": 734,
- "duplicates_removed": 865,
- "source_count": 367,
+ "distinct_mapped_articles": 712,
+ "duplicates_removed": 874,
+ "source_count": 352,
  "direct_sources_ok": 49,
- "unmapped_articles_sample": 1437,
+ "unmapped_articles_sample": 1405,
  "geographic_confidence": {
-  "headline": 1082,
-  "description": 449
+  "headline": 1073,
+  "description": 447
  },
+ "feed_pipeline_audit_file": "data/feed-contribution-audit.json",
  "source_health_file": "data/source-health.json",
  "history_file": "data/history.json",
  "metric": "Deduplicated mapped articles in sampled RSS feeds, not all news worldwide",
@@ -54,9 +55,9 @@
    "publisher_count": 1,
    "category": "education",
    "recent_3h": 0,
-   "previous_3h": 2,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": -67,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "El Ministerio de Educación y Formación aclara las circunstancias en las que los docentes deben ser readmitidos en sus títulos profesionales.",
@@ -766,7 +767,7 @@
    "location_basis": "description",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 26,
+   "count": 27,
    "publisher_count": 1,
    "category": "science",
    "recent_3h": 0,
@@ -1124,7 +1125,7 @@
    "location_basis": "description",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 26,
+   "count": 27,
    "publisher_count": 1,
    "category": "health",
    "recent_3h": 0,
@@ -1482,13 +1483,13 @@
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 20,
+   "count": 19,
    "publisher_count": 8,
    "category": "community",
    "recent_3h": 3,
-   "previous_3h": 7,
+   "previous_3h": 5,
    "velocity": "cooling",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": -33,
    "articles": [
     {
      "title": "Macron calls for 'calm and order' after riots across France",
@@ -1712,23 +1713,6 @@
      "geo_match_method": "description"
     },
     {
-     "title": "France protests updates: Macron vows rioters will ‘pay for their crimes’",
-     "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/france-protests-live-macron-to-address-nation-after-deadly-protests?traffic_source=rss",
-     "published_at": "2026-10-18T14:26:11+00:00",
-     "publisher": "Al Jazeera",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline"
-    },
-    {
      "title": "Cancer du sein en France : recherches cruciales et traitements alternatifs",
      "url": "https://www.france24.com/fr/vid%C3%A9o/20261018-cancer-du-sein-en-france-recherches-cruciales-et-traitements-alternatifs",
      "published_at": "2026-10-18T13:39:28+00:00",
@@ -1843,10 +1827,10 @@
    "count": 11,
    "publisher_count": 4,
    "category": "environment",
-   "recent_3h": 1,
-   "previous_3h": 1,
+   "recent_3h": 0,
+   "previous_3h": 2,
    "velocity": "steady",
-   "velocity_change_pct_sample": 0,
+   "velocity_change_pct_sample": -67,
    "articles": [
     {
      "title": "Día de la Protección de la Naturaleza: pequeñas acciones para mejorar las comunidades",
@@ -2294,8 +2278,8 @@
     },
     {
      "title": "France Protests: Embassy Urges Indonesians to Stay Alert",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQkg4bXlJdURXcE0tVDhiTTA4U0QxWm4yTUlSS0ZPT3F6SFBkbk5BY2lQYmYyUEFGcVVHYnhhZkZ2b2V2NUdURjNTdlFRUng1NGF6cjM5V2FqaGwzd1NLd0pONFlHT3Z6Q1NEQ0ZmajdTOEhhb1NNRzhCVmZxN1A5VGpub2tVai1rLVVkTGV2cE0?oc=5",
-     "published_at": "2026-10-18T14:11:26+00:00",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMElnQm9GamNQQ1BaME5JLVFMa2Ewb0FkMDJ0cXVlRER6RGctYXlVS3p4aUNMRzduVm9pREZTQWc1TEIwSjRyYnNDaFdvek9uVTVDOFI2SVYyRVNCUEwxXzVWSUtmQ1dHUzloRllXR29yZHpHMDN3MS1NcWlGOWpzaEZwX3phV1VjT004MVdPWmtjdw?oc=5",
+     "published_at": "2026-10-18T14:08:21+00:00",
      "publisher": "Tempo.co English",
      "source_url": "https://en.tempo.co",
      "source_kind": "aggregator",
@@ -2596,9 +2580,9 @@
    "publisher_count": 9,
    "category": "hazards",
    "recent_3h": 0,
-   "previous_3h": 2,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": -67,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Hurricane Trudy Brings Heavy Rain, Strong Winds to Mexico’s Pacific Coast: how 18 outlets framed it",
@@ -2767,9 +2751,9 @@
    "publisher_count": 7,
    "category": "community",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Renewed clashes in Paris: \"We've seen numerous CRS charges to disperse protesters\"",
@@ -2938,9 +2922,9 @@
    "publisher_count": 8,
    "category": "society",
    "recent_3h": 0,
-   "previous_3h": 2,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": -67,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Huelga indefinida de educación en Madrid: la segunda semana arranca el lunes 19 de octubre",
@@ -3338,6 +3322,126 @@
    ]
   },
   {
+   "lat": 28.61,
+   "lng": 77.21,
+   "name": "India",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 6,
+   "publisher_count": 4,
+   "category": "society",
+   "recent_3h": 1,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "In 1968, Cassandra Henderson graduated from a North Carolina school; nearly 60 years later, she moved bac",
+     "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOQml4MGlGektkWW5xX0JiWENxZ2N3NzVLTUk1X0FYaUNHaXVBdFZad2R3TzJFRE9LNFVaa3Bwa1FXMHA0WFVBY283T2l4MVBLNDFKZ01vTTlDMnFDVll6MDk4cTdYY0NSS3lyenBtWVpiM2ZCczFENWZEYm1BcU02dW9sTElvM3pHV04xUkZ0X0M4RElkTk9Kd3lzUnJrZ1FOZkswZ3pRQ2pMOHVQS0lzUzJ3djZhdDY3NE5zVFpSNDZCS0R5SnlXSWFMTTQyMzczTmEzMXo0ZkduV0MtV0ZtSjJXZG9HVmRHckNMOGkwaHJaTzB1WGtEbWFjekJPbVp4WEtmRUtwSHZPZG1iOGVoaW16ai05OVAwM005OV9YaWR3MFZ6MXBTRXdxeHRQXzRrRjJaZW1WZ2JRQmxwQUM5aUIzdm5FYWZaakg1dUpsbG1SYm5pSFU1UkRNTG55d1JfMU1SQnR5ZmZKNzJIa0tTb09hZkdtYUdJeXlpZHhlek9fZ21C0gGKA0FVX3lxTE9Xcjc5Z0R6TFphaFl0R2VILTg1R08wT0tuWU9keWxJelo0UGtPc2FzY1I0b2JNNk1CQWZZQ0NBNWJOal9WSkJmWEhDaWtNWlN5OG1YVU9lcmdCVHBUSlFTQ0pNWGx6NmtmUnVDSVdEZHZsWVVONDhPbkxhSVZBeWdOdUxTN1I0bVRhWnc5TkEtR0daTXV1M3N1MkdxWWZuUklpQWdiTUpEMzdEZFg5SWYwWEw0T0ktVEo1R3N2ckhsNDl1QXVyc1R5MTNhZXBhT2JYbUd4X29sd1pneVhpWWxvQjAyWlhBaFZXWDZCa1lsRVU1anFJT3VsaHZaQThuR3oxbnk0S010aVdqcXBLa0cyQ2hDT0N1YXM5MkVpRHVXQjFLTmRjaUo1WDBSUmFJU0Z5VC1yMUJEa0lNSUd2N2ZnOFZhYm1yVk1fSzZ5cFE4Qy0wWjIxV0hsV3VSeE52NmMxNVNZUTE2Q0dfYXFHNFd5WEdDclVtWmZoVU9pT2FZa1BRZVBzVXNWcFE?oc=5",
+     "published_at": "2026-10-18T22:26:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "description"
+    },
+    {
+     "title": "Alumni Seek Young India Residential Integrated School Construction",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbDlveGg5NGxfN1dsb0JZR0FLYjdtb0NsaFBqY0xUcDgycURWakI1ZVdfaGg5WkpNaFdFdEJtU2s2LWQxOTRqdmlSM1JpRERWZi0zTlBYcGlWVTJGMHhfcXZ6TjNhTFhFYUxycXlNWERzMGFsd014ajhtc3A2TWVJTXM1VGhlemduaWNlMVFhbk9aT1FLOHhxWDdtWUtRSTN4WUFhSDc1WWZ1WndMQVdzS1M4S1YxZEc5bTQ3QmxFdy1IZ1ZZVDlSX2pQWk7SAdIBQVVfeXFMTm9tYW9sc3k2NGw2Y3lLMEw2YWNxaHhpYjJLM2I2MW1Va2Z4SlNiNEJiby1XZ1dONXdHRzM3blF3Rnc0dkxwU1pmZ3JWaUJFZEVsWEV6VUs1MXplUjFZekRNSThncDhGZ0NNemh4RUhzZ2FaVm5TTUwyY2tlb0dXQU5waXMzdmlYSWloQ2Y5MW5DU2NJTEl5MTc3T2VwWURqRXpzYW1LS1VaMnkzYjY4M1I3MjdBakI3Q2wwUzJTVUFVZDVCNC1memNqUTZ3alpsWGVn?oc=5",
+     "published_at": "2026-10-18T17:14:29+00:00",
+     "publisher": "Deccan Chronicle",
+     "source_url": "https://www.deccanchronicle.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "headline"
+    },
+    {
+     "title": "Being a good doctor is risky in India",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTUFEZk82S2pUUVlvNElQeWlCMF9pcWpjUFZtWWVsdG15WGRtUGFFQ0F1WG1PdGF5QjgycUxwamtoT29vU3NJeDB4UWt3c3VZVEU1VUZnN0NuN2tYa0plTk03MURHZFJka3VReUtiV0MtakNjaDBXOGtmSnoxdnpJT3RoaTBlelZ2ZlJvYXZ5ckxkM0gwVWp0WDlvZ1doX3JmMHJ2WkV30gGmAUFVX3lxTE9NQURmTzZLalRRWW80SVB5aUIwX2lxamNQVm1ZZWx0bXlYZG1QYUVDQXVYbU90YXlCODJxTHBqa2hPb29Tc0l4MHhRa3dzdVlURTVVRmc3Q243a1hrSmVOTTcxREdkUmRrdVF5S2JXQy1qQ2NoMFc4a2ZKejF2eklPdGhpMGV6VnZmUm9hdnlyTGQzSDBVanRYOW9nV2hfcmYwcnZaRXc?oc=5",
+     "published_at": "2026-10-18T13:37:29+00:00",
+     "publisher": "The Hindu",
+     "source_url": "https://www.thehindu.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "headline"
+    },
+    {
+     "title": "Season Of Protests: Not Just India, These Countries Are Also Witnessing Demonstrations Around The World",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdWc2Yi1yaEI3cGhkaWFXMmxHTTBldEFXcmh4TDdQQUdoS05xYUExemVfRW5ieHk4eFl0VzVaZlJMMUhJWTBIeHNFT1JYVDM3RzVYWGt1OHRtNlN6eDFjOHVfMmhtR0daY2xSY2NCQTlrVFY4aFBENHVOMXp1NVVBX2loOXFkdDdMQTczeVpYNHd3UVF2Y1R1RmJuUG5mZ2JDV2tRaUUzTnQwYW9RWjEwc2t6cERBT053alBnMW1fV0JSZ0t4MTdtZzRSQ2pLM3BUZmc?oc=5",
+     "published_at": "2026-10-18T07:02:34+00:00",
+     "publisher": "Oneindia",
+     "source_url": "https://www.oneindia.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "headline"
+    },
+    {
+     "title": "Student grievances, cost-of-living crisis, political discontent: Why are protests turning violent in Fran",
+     "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQdlk4RW0yRElDMV9nb1Z2RlZ3SzBvMU5UR2cyNUNLNE1kZ09HZ1RSTnlJS1FSTkdYRk1qRFozblhEYy1yZG5RRVlUUmdXUE8tZ2JBaFQyUF83Q09kV3c1YTk3Ql9BRWY3U29XTm1KTFFwR2k2bmVuOEdVZ1c2WldYcFo5RUdMbGUtemk4cGZOU0VrZnRGRTd3M3pKTDBDMl9kYVJQY29fbUdZWWEtZF9lTktTd3Q4RXg3dkpQVlhQcmk3RnpReWZ1XzFuRUtRRmZPd1JuTzQ1V2huX0JkR1BCNzlBb2ZlV1ltbDhDQkZHUXpDU1VsNGRkczhRSDUxRzB0Y2JLNVp3U0dpVzDSAZACQVVfeXFMTTFPTXZnUDd1aUZQcllIU05oNTZtSWM4cHdfVlV0bWpuRjZveWdnOXhtUVJFdVpySEZBa00zM2dJTmRGUmhqaEQyN3VKYVprdWdFaDJsTUJJTHgxT2ZSRnJ6N1RKVElpdGVsal9scEVyR01ZN0FzbVd6VXpjaGFTZlFOQ19La1JTaC0wYjVRWHpkM1pFd0ZiUTQ3TF9nRUZMckk3c3kwcFM4bWxjUDRLdXY0UU1NWUUyeGRNRmMtdDVjblFPY3ZVY0M0bC1JRlBsUUNtOFBmczU0cGRMSlJKZnNUczdPMmlfeW1DRHctRldpdi1rSEZ1QTY1WEcyZEh4cmR0XzJYRWF3Vk1DaXdkX1k?oc=5",
+     "published_at": "2026-10-18T05:19:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "description"
+    },
+    {
+     "title": "5,50,000 on streets: How cost-of-living anger is sweeping Europe",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdkdIVThSQy1hc1FOMktIbjZoSVIwV3NfMTVPRnpJZ1o0eWwzU1pkazRTX0N4UVU4aGFleUZVTnZCbURmdTVHcEV2amxBYWpiNUpSUkx2T0hxam5pajEwNUs5RUo0amloRXhHR1ZzZ3dlaUxWRjdfRjc3TGlkSnRoWDRkU0hKdjIzMmxzbThzT2RzRDZhS0RiZ29sZmVHY2lsODZQaHoyNDRsNUhCeHdSSERnS0RUOFZOcDhzUlQ3R210UzVEMlFtR2VyVkFoVS1pT1B3bXBLd9IB1wFBVV95cUxNdkdIVThSQy1hc1FOMktIbjZoSVIwV3NfMTVPRnpJZ1o0eWwzU1pkazRTX0N4UVU4aGFleUZVTnZCbURmdTVHcEV2amxBYWpiNUpSUkx2T0hxam5pajEwNUs5RUo0amloRXhHR1ZzZ3dlaUxWRjdfRjc3TGlkSnRoWDRkU0hKdjIzMmxzbThzT2RzRDZhS0RiZ29sZmVHY2lsODZQaHoyNDRsNUhCeHdSSERnS0RUOFZOcDhzUlQ3R210UzVEMlFtR2VyVkFoVS1pT1B3bXBLdw?oc=5",
+     "published_at": "2026-10-18T03:26:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "description"
+    }
+   ]
+  },
+  {
    "lat": 41.15,
    "lng": -8.61,
    "name": "Porto",
@@ -3709,9 +3813,9 @@
    "publisher_count": 3,
    "category": "economy",
    "recent_3h": 0,
-   "previous_3h": 2,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": -67,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Guardian reporter filmed masked militants seconds before West Bank attack on French mayor",
@@ -3938,212 +4042,6 @@
    ]
   },
   {
-   "lat": 28.61,
-   "lng": 77.21,
-   "name": "India",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 5,
-   "publisher_count": 3,
-   "category": "society",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "In 1968, Cassandra Henderson graduated from a North Carolina school; nearly 60 years later, she moved bac",
-     "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOQml4MGlGektkWW5xX0JiWENxZ2N3NzVLTUk1X0FYaUNHaXVBdFZad2R3TzJFRE9LNFVaa3Bwa1FXMHA0WFVBY283T2l4MVBLNDFKZ01vTTlDMnFDVll6MDk4cTdYY0NSS3lyenBtWVpiM2ZCczFENWZEYm1BcU02dW9sTElvM3pHV04xUkZ0X0M4RElkTk9Kd3lzUnJrZ1FOZkswZ3pRQ2pMOHVQS0lzUzJ3djZhdDY3NE5zVFpSNDZCS0R5SnlXSWFMTTQyMzczTmEzMXo0ZkduV0MtV0ZtSjJXZG9HVmRHckNMOGkwaHJaTzB1WGtEbWFjekJPbVp4WEtmRUtwSHZPZG1iOGVoaW16ai05OVAwM005OV9YaWR3MFZ6MXBTRXdxeHRQXzRrRjJaZW1WZ2JRQmxwQUM5aUIzdm5FYWZaakg1dUpsbG1SYm5pSFU1UkRNTG55d1JfMU1SQnR5ZmZKNzJIa0tTb09hZkdtYUdJeXlpZHhlek9fZ21C0gGKA0FVX3lxTE9Xcjc5Z0R6TFphaFl0R2VILTg1R08wT0tuWU9keWxJelo0UGtPc2FzY1I0b2JNNk1CQWZZQ0NBNWJOal9WSkJmWEhDaWtNWlN5OG1YVU9lcmdCVHBUSlFTQ0pNWGx6NmtmUnVDSVdEZHZsWVVONDhPbkxhSVZBeWdOdUxTN1I0bVRhWnc5TkEtR0daTXV1M3N1MkdxWWZuUklpQWdiTUpEMzdEZFg5SWYwWEw0T0ktVEo1R3N2ckhsNDl1QXVyc1R5MTNhZXBhT2JYbUd4X29sd1pneVhpWWxvQjAyWlhBaFZXWDZCa1lsRVU1anFJT3VsaHZaQThuR3oxbnk0S010aVdqcXBLa0cyQ2hDT0N1YXM5MkVpRHVXQjFLTmRjaUo1WDBSUmFJU0Z5VC1yMUJEa0lNSUd2N2ZnOFZhYm1yVk1fSzZ5cFE4Qy0wWjIxV0hsV3VSeE52NmMxNVNZUTE2Q0dfYXFHNFd5WEdDclVtWmZoVU9pT2FZa1BRZVBzVXNWcFE?oc=5",
-     "published_at": "2026-10-18T22:26:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "description"
-    },
-    {
-     "title": "Being a good doctor is risky in India",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTUFEZk82S2pUUVlvNElQeWlCMF9pcWpjUFZtWWVsdG15WGRtUGFFQ0F1WG1PdGF5QjgycUxwamtoT29vU3NJeDB4UWt3c3VZVEU1VUZnN0NuN2tYa0plTk03MURHZFJka3VReUtiV0MtakNjaDBXOGtmSnoxdnpJT3RoaTBlelZ2ZlJvYXZ5ckxkM0gwVWp0WDlvZ1doX3JmMHJ2WkV30gGmAUFVX3lxTE9NQURmTzZLalRRWW80SVB5aUIwX2lxamNQVm1ZZWx0bXlYZG1QYUVDQXVYbU90YXlCODJxTHBqa2hPb29Tc0l4MHhRa3dzdVlURTVVRmc3Q243a1hrSmVOTTcxREdkUmRrdVF5S2JXQy1qQ2NoMFc4a2ZKejF2eklPdGhpMGV6VnZmUm9hdnlyTGQzSDBVanRYOW9nV2hfcmYwcnZaRXc?oc=5",
-     "published_at": "2026-10-18T13:37:29+00:00",
-     "publisher": "The Hindu",
-     "source_url": "https://www.thehindu.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "Season Of Protests: Not Just India, These Countries Are Also Witnessing Demonstrations Around The World",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdWc2Yi1yaEI3cGhkaWFXMmxHTTBldEFXcmh4TDdQQUdoS05xYUExemVfRW5ieHk4eFl0VzVaZlJMMUhJWTBIeHNFT1JYVDM3RzVYWGt1OHRtNlN6eDFjOHVfMmhtR0daY2xSY2NCQTlrVFY4aFBENHVOMXp1NVVBX2loOXFkdDdMQTczeVpYNHd3UVF2Y1R1RmJuUG5mZ2JDV2tRaUUzTnQwYW9RWjEwc2t6cERBT053alBnMW1fV0JSZ0t4MTdtZzRSQ2pLM3BUZmc?oc=5",
-     "published_at": "2026-10-18T07:02:34+00:00",
-     "publisher": "Oneindia",
-     "source_url": "https://www.oneindia.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "Student grievances, cost-of-living crisis, political discontent: Why are protests turning violent in Fran",
-     "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQdlk4RW0yRElDMV9nb1Z2RlZ3SzBvMU5UR2cyNUNLNE1kZ09HZ1RSTnlJS1FSTkdYRk1qRFozblhEYy1yZG5RRVlUUmdXUE8tZ2JBaFQyUF83Q09kV3c1YTk3Ql9BRWY3U29XTm1KTFFwR2k2bmVuOEdVZ1c2WldYcFo5RUdMbGUtemk4cGZOU0VrZnRGRTd3M3pKTDBDMl9kYVJQY29fbUdZWWEtZF9lTktTd3Q4RXg3dkpQVlhQcmk3RnpReWZ1XzFuRUtRRmZPd1JuTzQ1V2huX0JkR1BCNzlBb2ZlV1ltbDhDQkZHUXpDU1VsNGRkczhRSDUxRzB0Y2JLNVp3U0dpVzDSAZACQVVfeXFMTTFPTXZnUDd1aUZQcllIU05oNTZtSWM4cHdfVlV0bWpuRjZveWdnOXhtUVJFdVpySEZBa00zM2dJTmRGUmhqaEQyN3VKYVprdWdFaDJsTUJJTHgxT2ZSRnJ6N1RKVElpdGVsal9scEVyR01ZN0FzbVd6VXpjaGFTZlFOQ19La1JTaC0wYjVRWHpkM1pFd0ZiUTQ3TF9nRUZMckk3c3kwcFM4bWxjUDRLdXY0UU1NWUUyeGRNRmMtdDVjblFPY3ZVY0M0bC1JRlBsUUNtOFBmczU0cGRMSlJKZnNUczdPMmlfeW1DRHctRldpdi1rSEZ1QTY1WEcyZEh4cmR0XzJYRWF3Vk1DaXdkX1k?oc=5",
-     "published_at": "2026-10-18T05:19:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "description"
-    },
-    {
-     "title": "5,50,000 on streets: How cost-of-living anger is sweeping Europe",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdkdIVThSQy1hc1FOMktIbjZoSVIwV3NfMTVPRnpJZ1o0eWwzU1pkazRTX0N4UVU4aGFleUZVTnZCbURmdTVHcEV2amxBYWpiNUpSUkx2T0hxam5pajEwNUs5RUo0amloRXhHR1ZzZ3dlaUxWRjdfRjc3TGlkSnRoWDRkU0hKdjIzMmxzbThzT2RzRDZhS0RiZ29sZmVHY2lsODZQaHoyNDRsNUhCeHdSSERnS0RUOFZOcDhzUlQ3R210UzVEMlFtR2VyVkFoVS1pT1B3bXBLd9IB1wFBVV95cUxNdkdIVThSQy1hc1FOMktIbjZoSVIwV3NfMTVPRnpJZ1o0eWwzU1pkazRTX0N4UVU4aGFleUZVTnZCbURmdTVHcEV2amxBYWpiNUpSUkx2T0hxam5pajEwNUs5RUo0amloRXhHR1ZzZ3dlaUxWRjdfRjc3TGlkSnRoWDRkU0hKdjIzMmxzbThzT2RzRDZhS0RiZ29sZmVHY2lsODZQaHoyNDRsNUhCeHdSSERnS0RUOFZOcDhzUlQ3R210UzVEMlFtR2VyVkFoVS1pT1B3bXBLdw?oc=5",
-     "published_at": "2026-10-18T03:26:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "description"
-    }
-   ]
-  },
-  {
-   "lat": 45.42,
-   "lng": -75.7,
-   "name": "Canada",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 5,
-   "publisher_count": 5,
-   "category": "economy",
-   "recent_3h": 4,
-   "previous_3h": 0,
-   "velocity": "rising",
-   "velocity_change_pct_sample": 400,
-   "articles": [
-    {
-     "title": "Canadá recibirá este lunes a Ito Bisonó después de 20 años para abordar comercio, inversión y minería",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX3Y3QXdVOS1rYjM1WUlLWnM3Mi12M2NXYjVsUVA0V2prTndqVkVLdGUxdHFRZzhYc20zcjV3aXdVX3ROckZjaW9OSG9UN0t5SExIY2RSUzBYVU13MDJwZ3dFNFlHRDNVT1didGlLSEpCaUFNbWtqMmVTTjRXSmc2NFBGMlJ1dTlpQW5xLTg0WkctbDA1eXMyQWpnYlk0RTFkOUtKa29XQ1B6V0p1LVRYQjVnMmxUUTlCbExoeTFZUElvNTdQUlJ2RA?oc=5",
-     "published_at": "2026-10-18T22:09:34+00:00",
-     "publisher": "N Digital",
-     "source_url": "https://n.com.do",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "title-normalized",
-     "evidence_class": "other_heuristic",
-     "evidence_label": "Heuristic association",
-     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "title-normalized"
-    },
-    {
-     "title": "Bisonó inicia visita oficial a Canadá tras más de 20 años sin viajes de cancilleres dominicanos",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdm5ERDNwaGVSNktDM2hCWVN4TDRvQlFKX2h0SnVIX2lUSHRYeWNZZDFGQWo0VkpVTFBlMUk0ZXA3b1lvTllhU1E5QUxUTFVBQy10b3NNejkwaFFwcnEzam9FMG1QWkVZelp1QVJ4eWRvMXpvN0prVjNrNE5Rb0xUUW1wbk9LQXFrOEhIMXVuTTBLT045dkpOak10T1o3NG9UU2p6VXBuTGRBUVBkZWfSAa4BQVVfeXFMTnZuREQzcGhlUjZLQzNoQllTeEw0b0JRSl9odEp1SF9pVEh0WHljWWQxRkFqNFZKVUxQZTFJNGVwN29Zb05ZYVNROUFMVExVQUMtdG9zTXo5MGhRcHJxM2pvRTBtUFpFWXpadUFSeHlkbzF6bzdKa1YzazROUW9MVFFtcG5PS0FxazhISDF1bk0wS09OOXZKTmpNdE9aNzRvVFNqelVwbkxkQVFQZGVn?oc=5",
-     "published_at": "2026-10-18T21:00:42+00:00",
-     "publisher": "Noticias SIN",
-     "source_url": "https://noticiassin.com",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "title-normalized",
-     "evidence_class": "other_heuristic",
-     "evidence_label": "Heuristic association",
-     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "title-normalized"
-    },
-    {
-     "title": "Ito Bisonó inicia visita oficial a Canadá para impulsar comercio e inversión",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeFc5WjR0MElFTE5nUXdJTkp6RUllQkRiTjJFcGVURjNNUU5MTGYxME1yR2tnY3JUNmNuT1lMUXBVMC1zWkRjeTBpQmdHZWxUVUV4b3BOcGhaalZORndVLUI4Z2hJRnFjcm44V1N2dnJkcDcyWktmeFhNUjJmaXM5OGM2cTdWRW1VSGZnS1BkRjI4SW5yaG9Ja1F3aWZOdDN4b0lnbWlLRGs1OGJOX0hoNUU2ZmxCdk00YlhJcdIBvAFBVV95cUxPeFc5WjR0MElFTE5nUXdJTkp6RUllQkRiTjJFcGVURjNNUU5MTGYxME1yR2tnY3JUNmNuT1lMUXBVMC1zWkRjeTBpQmdHZWxUVUV4b3BOcGhaalZORndVLUI4Z2hJRnFjcm44V1N2dnJkcDcyWktmeFhNUjJmaXM5OGM2cTdWRW1VSGZnS1BkRjI4SW5yaG9Ja1F3aWZOdDN4b0lnbWlLRGs1OGJOX0hoNUU2ZmxCdk00YlhJcQ?oc=5",
-     "published_at": "2026-10-18T20:30:53+00:00",
-     "publisher": "Acento",
-     "source_url": "https://acento.com.do",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "title-normalized",
-     "evidence_class": "other_heuristic",
-     "evidence_label": "Heuristic association",
-     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "title-normalized"
-    },
-    {
-     "title": "Canciller Ito Bisonó inicia visita a Canadá para fortalecer comercio e inversión",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORUd3MWRFOEFhZm5KZUtfT092NncxX2dybDFETGRXcWI0LWMtcFlOVS1ydXM1SnpMa3BIVUItVVgtbHhKeFlYSlZUS3FLX3ZlOFpWNHVHbER1QTI0aXNISDBsTVJxLUUtZUtON3lGVWs5Tmx6blBudUU5cXdhVGdyZm0zSmd6M1Jpck1jd2RUeURUdDBWSnZORjJaSm1yT0MxWkRhNzQwVURrci1vQWRYN3BXbjZxcFY1bWFqQg?oc=5",
-     "published_at": "2026-10-18T20:18:07+00:00",
-     "publisher": "El Caribe",
-     "source_url": "https://www.elcaribe.com.do",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "title-normalized",
-     "evidence_class": "other_heuristic",
-     "evidence_label": "Heuristic association",
-     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "title-normalized"
-    },
-    {
-     "title": "Week Ahead: BoK Meeting; China LPR; U.K., Japan, Canada and NZ Inflation Reports; China GDP; U.K. Jobs Report; Global Flash PMIs; France Credit Ratings' Update - www.christophe-barraud.com",
-     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNenhqVlR4bVBsQ1RPQmcwVXFqZGVWM1V1cGZSTE9GOFYtM1NpbWxJVGg1bWUzVWhVTGc0UXpSQ0hWTWxiS1lfTm1QV2VVbVoxdURpNWphRnBZN3JRQXcwNXh0X3FUQ1Y0MjZSN3cwLWtrSzBsTjlfcVdSN3VzdkRscVgyZEF0bkkzWlFGQUJITEpUZFVTUC1JZlRUcWRJU0xQVHViQUpJY1MyeHdwUE0xV0k0a2JfSFBKV0FDRTIwQVBoOXd5b0pOVFl5b3lkLVhmcUVlNkNhQnNWT0E5WW5nQ3N1cTN6ZDdWbHhVSC1KQWdqRkZhMnhzbWtUM0VPRTBXMUpTS3JYdEhDREZYY0VpRw?oc=5",
-     "published_at": "2026-10-18T14:16:21+00:00",
-     "publisher": "www.christophe-barraud.com",
-     "source_url": "https://www.christophe-barraud.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
    "lat": 19.08,
    "lng": 72.88,
    "name": "Mumbai",
@@ -4350,6 +4248,92 @@
    ]
   },
   {
+   "lat": -33.87,
+   "lng": 151.21,
+   "name": "Sydney",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 4,
+   "publisher_count": 2,
+   "category": "community",
+   "recent_3h": 2,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 50,
+   "articles": [
+    {
+     "title": "Sydney man charged after alleged gunfire prompted Dulwich Hill lockdown",
+     "url": "https://www.theguardian.com/australia-news/2026/oct/19/man-charged-dulwich-hill-sydney-inner-west-alleged-gun-ntwnfb",
+     "published_at": "2026-10-18T22:48:26+00:00",
+     "publisher": "The Guardian World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "headline"
+    },
+    {
+     "title": "Hearings NSW Police wanted secret begin today. This is what to expect",
+     "url": "https://www.abc.net.au/news/2026-10-19/lecc-town-hall-protest-public-examinations-nsw-police/107261744",
+     "published_at": "2026-10-18T20:22:27+00:00",
+     "publisher": "ABC Australia",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "description"
+    },
+    {
+     "title": "Man charged after gun lockdown in Sydney's Dulwich Hill",
+     "url": "https://www.abc.net.au/news/2026-10-19/man-charged-investigation-gunman-sydney-dulwich-hill-lockdown/107281586",
+     "published_at": "2026-10-18T19:45:46+00:00",
+     "publisher": "ABC Australia",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "headline"
+    },
+    {
+     "title": "Ebike rider, 13, charged with sexual touching after girls and women allegedly harassed on northern beaches",
+     "url": "https://www.theguardian.com/australia-news/2026/oct/18/sydney-northern-beaches-teenage-ebike-rider-13-charged-sexual-touching-trails-ntwnfb",
+     "published_at": "2026-10-17T23:53:08+00:00",
+     "publisher": "The Guardian World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "description"
+    }
+   ]
+  },
+  {
    "lat": 55.75,
    "lng": 37.62,
    "name": "Russia",
@@ -4436,88 +4420,88 @@
    ]
   },
   {
-   "lat": -33.87,
-   "lng": 151.21,
-   "name": "Sydney",
-   "accuracy": "place",
+   "lat": 45.42,
+   "lng": -75.7,
+   "name": "Canada",
+   "accuracy": "country",
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 4,
-   "publisher_count": 2,
-   "category": "community",
-   "recent_3h": 2,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 50,
+   "publisher_count": 4,
+   "category": "economy",
+   "recent_3h": 4,
+   "previous_3h": 0,
+   "velocity": "rising",
+   "velocity_change_pct_sample": 400,
    "articles": [
     {
-     "title": "Sydney man charged after alleged gunfire prompted Dulwich Hill lockdown",
-     "url": "https://www.theguardian.com/australia-news/2026/oct/19/man-charged-dulwich-hill-sydney-inner-west-alleged-gun-ntwnfb",
-     "published_at": "2026-10-18T21:22:51+00:00",
-     "publisher": "The Guardian World",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
+     "title": "Canadá recibirá este lunes a Ito Bisonó después de 20 años para abordar comercio, inversión y minería",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX3Y3QXdVOS1rYjM1WUlLWnM3Mi12M2NXYjVsUVA0V2prTndqVkVLdGUxdHFRZzhYc20zcjV3aXdVX3ROckZjaW9OSG9UN0t5SExIY2RSUzBYVU13MDJwZ3dFNFlHRDNVT1didGlLSEpCaUFNbWtqMmVTTjRXSmc2NFBGMlJ1dTlpQW5xLTg0WkctbDA1eXMyQWpnYlk0RTFkOUtKa29XQ1B6V0p1LVRYQjVnMmxUUTlCbExoeTFZUElvNTdQUlJ2RA?oc=5",
+     "published_at": "2026-10-18T22:09:34+00:00",
+     "publisher": "N Digital",
+     "source_url": "https://n.com.do",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "title-normalized",
+     "evidence_class": "other_heuristic",
+     "evidence_label": "Heuristic association",
+     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
+     "location_precision": "country",
+     "geo_match_method": "title-normalized"
     },
     {
-     "title": "Hearings NSW Police wanted secret begin today. This is what to expect",
-     "url": "https://www.abc.net.au/news/2026-10-19/lecc-town-hall-protest-public-examinations-nsw-police/107261744",
-     "published_at": "2026-10-18T20:22:27+00:00",
-     "publisher": "ABC Australia",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "title": "Bisonó inicia visita oficial a Canadá tras más de 20 años sin viajes de cancilleres dominicanos",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdm5ERDNwaGVSNktDM2hCWVN4TDRvQlFKX2h0SnVIX2lUSHRYeWNZZDFGQWo0VkpVTFBlMUk0ZXA3b1lvTllhU1E5QUxUTFVBQy10b3NNejkwaFFwcnEzam9FMG1QWkVZelp1QVJ4eWRvMXpvN0prVjNrNE5Rb0xUUW1wbk9LQXFrOEhIMXVuTTBLT045dkpOak10T1o3NG9UU2p6VXBuTGRBUVBkZWfSAa4BQVVfeXFMTnZuREQzcGhlUjZLQzNoQllTeEw0b0JRSl9odEp1SF9pVEh0WHljWWQxRkFqNFZKVUxQZTFJNGVwN29Zb05ZYVNROUFMVExVQUMtdG9zTXo5MGhRcHJxM2pvRTBtUFpFWXpadUFSeHlkbzF6bzdKa1YzazROUW9MVFFtcG5PS0FxazhISDF1bk0wS09OOXZKTmpNdE9aNzRvVFNqelVwbkxkQVFQZGVn?oc=5",
+     "published_at": "2026-10-18T21:00:42+00:00",
+     "publisher": "Noticias SIN",
+     "source_url": "https://noticiassin.com",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "title-normalized",
+     "evidence_class": "other_heuristic",
+     "evidence_label": "Heuristic association",
+     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
+     "location_precision": "country",
+     "geo_match_method": "title-normalized"
     },
     {
-     "title": "Man charged after gun lockdown in Sydney's Dulwich Hill",
-     "url": "https://www.abc.net.au/news/2026-10-19/man-charged-investigation-gunman-sydney-dulwich-hill-lockdown/107281586",
-     "published_at": "2026-10-18T19:45:46+00:00",
-     "publisher": "ABC Australia",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
+     "title": "Ito Bisonó inicia visita oficial a Canadá para impulsar comercio e inversión",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeFc5WjR0MElFTE5nUXdJTkp6RUllQkRiTjJFcGVURjNNUU5MTGYxME1yR2tnY3JUNmNuT1lMUXBVMC1zWkRjeTBpQmdHZWxUVUV4b3BOcGhaalZORndVLUI4Z2hJRnFjcm44V1N2dnJkcDcyWktmeFhNUjJmaXM5OGM2cTdWRW1VSGZnS1BkRjI4SW5yaG9Ja1F3aWZOdDN4b0lnbWlLRGs1OGJOX0hoNUU2ZmxCdk00YlhJcdIBvAFBVV95cUxPeFc5WjR0MElFTE5nUXdJTkp6RUllQkRiTjJFcGVURjNNUU5MTGYxME1yR2tnY3JUNmNuT1lMUXBVMC1zWkRjeTBpQmdHZWxUVUV4b3BOcGhaalZORndVLUI4Z2hJRnFjcm44V1N2dnJkcDcyWktmeFhNUjJmaXM5OGM2cTdWRW1VSGZnS1BkRjI4SW5yaG9Ja1F3aWZOdDN4b0lnbWlLRGs1OGJOX0hoNUU2ZmxCdk00YlhJcQ?oc=5",
+     "published_at": "2026-10-18T20:30:53+00:00",
+     "publisher": "Acento",
+     "source_url": "https://acento.com.do",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "title-normalized",
+     "evidence_class": "other_heuristic",
+     "evidence_label": "Heuristic association",
+     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
+     "location_precision": "country",
+     "geo_match_method": "title-normalized"
     },
     {
-     "title": "Ebike rider, 13, charged with sexual touching after girls and women allegedly harassed on northern beaches",
-     "url": "https://www.theguardian.com/australia-news/2026/oct/18/sydney-northern-beaches-teenage-ebike-rider-13-charged-sexual-touching-trails-ntwnfb",
-     "published_at": "2026-10-17T23:53:08+00:00",
-     "publisher": "The Guardian World",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "title": "Canciller Ito Bisonó inicia visita a Canadá para fortalecer comercio e inversión",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORUd3MWRFOEFhZm5KZUtfT092NncxX2dybDFETGRXcWI0LWMtcFlOVS1ydXM1SnpMa3BIVUItVVgtbHhKeFlYSlZUS3FLX3ZlOFpWNHVHbER1QTI0aXNISDBsTVJxLUUtZUtON3lGVWs5Tmx6blBudUU5cXdhVGdyZm0zSmd6M1Jpck1jd2RUeURUdDBWSnZORjJaSm1yT0MxWkRhNzQwVURrci1vQWRYN3BXbjZxcFY1bWFqQg?oc=5",
+     "published_at": "2026-10-18T20:18:07+00:00",
+     "publisher": "El Caribe",
+     "source_url": "https://www.elcaribe.com.do",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "title-normalized",
+     "evidence_class": "other_heuristic",
+     "evidence_label": "Heuristic association",
+     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
+     "location_precision": "country",
+     "geo_match_method": "title-normalized"
     }
    ]
   },
@@ -4532,10 +4516,10 @@
    "count": 4,
    "publisher_count": 4,
    "category": "economy",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Nigeria’s $1trn economy requires productive investment, efficient spending – Experts",
@@ -4690,92 +4674,6 @@
      "event_location_verified": false,
      "location_precision": "country",
      "geo_match_method": "description"
-    }
-   ]
-  },
-  {
-   "lat": 15.37,
-   "lng": 44.19,
-   "name": "Yemen",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 4,
-   "publisher_count": 4,
-   "category": "conflict",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Airstrike kills at least 9 in rebel-held Yemen, and other Mideast news",
-     "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOSUZNTXpBcTJyaWVOSk1sZnVEY1ZzTTBza0NlQS1TQVFpY1l1R1ZfQkZDcC1ab1Eyenk3bzZJWjFNYW5YMnJOOURXTDRndjYzMElmbHlVN3plQkNSSC1IcGQ3cWhtNk0tX3JlOHZlS2ZYcWcwZmkxTGhWTU4walhtWDFzbmNodWJ5VExkeEJDOVhNd0RMSGFiR3hpT2RlWk5BRnpSLTZ2LWZCY29LVW9jNkNlMXRyNTJxOUE4eXBoRk9TZGRoeWVSWkJrSV9EZHlkSm9Ob2ROdG1vS3dVc2t3UWwzQWZSWDRmV0VERDJlU05sMnhuUkU2TVdxWUxMOVk?oc=5",
-     "published_at": "2026-10-18T14:43:54+00:00",
-     "publisher": "Beloit Daily News",
-     "source_url": "https://www.beloitdailynews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "Airstrike kills 3 children in Yemen, and other Middle East developments",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcEVMclJnZDVjNWVSc25vRV9HVTRDajlFUWR3UFpKbkdhaWhabXNISEY3UGRPQjA3NzVtajM0S05ZRUFaLS1Ra2hmbGY3cFJtektkREtEUjctQmdJR2MzeDBQN1Q5eVllVVpIQ0tyelVwQnNpN0hMV01uUVpQbUhZZGFPYmlsUExHUnJPbURBS3g2eXRMV0NmYVVwaXdoSTBjNjU4anRXS0dpcUhwbER5QVRR?oc=5",
-     "published_at": "2026-10-18T10:55:09+00:00",
-     "publisher": "CityNews Kitchener",
-     "source_url": "https://kitchener.citynews.ca",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "Why America doesn't want to fight a war in Yemen",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbWR2VXNmcFk3NEZYQVA2WFIzcDRQS0VIQkdVODZGY3R6Uk01QmM3TnNpQ2lVdlprSDRtMTd2YVJHckRZQmpHM3NhMFBrd1hCZ0xWdWVsV1UxQzJpUVU3UjdJNUhTV3VtRG1pdE9MR0EtRUEtdEhCbXpYOUxPMjdtaVpOd0lMdlhMUXppYVdn?oc=5",
-     "published_at": "2026-10-18T06:59:22+00:00",
-     "publisher": "www.israelhayom.com",
-     "source_url": "https://www.israelhayom.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "Saudi airstrikes kill 12 civilians, including children, across Yemen",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNc0E5YnY3cDVMcm9MT05KTXE2bkJqMHlQTVVwSkFwSlFBVC1FOFp0anRCUDVOemtjVFNydHlKX0lteWU1SjdlYmlHSkxTNW5kbEI4ZjJoZkRDU0xORERlWVRGS1NsT3ptNDZ3VVFNd0ZUWkFlbjYzSHlENmk2LVF5bzVyUmF0WWMtTzZ6cFRpanFqcjZHVFN0QXRqRkFMdkNKTV9XOUktbU4?oc=5",
-     "published_at": "2026-10-18T06:36:34+00:00",
-     "publisher": "İlke Haber Ajansı",
-     "source_url": "https://ilkha.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline"
     }
    ]
   },
@@ -5410,10 +5308,10 @@
    "count": 3,
    "publisher_count": 2,
    "category": "economy",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Bangladesh seeks tailored IMF support as it targets $1 trillion economy by 2034",
@@ -5469,144 +5367,6 @@
    ]
   },
   {
-   "lat": -15.79,
-   "lng": -47.88,
-   "name": "Brasília",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 3,
-   "publisher_count": 3,
-   "category": "politics",
-   "recent_3h": 1,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Ato pró-Lula reúne 200 mil apoiadores no Centro de Brasília",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeHVfNko3UkJYVzZnVEMyMEF3eDc2Z2hnZzk2ZmhpNmNMQm5JUzJoZEZmRzZ0RTRhMnlJT3dYSDNsVG1URjJzaGZhaG1ZenU0c0ZnTUx2UXlnVEN0SXotYkQxczdhQVprQlNjTk5ZX0I3OURUb2FhVWlLQk9BMzNHX1c1eW0wN0FESUltemlic3VmMFJaVHFjbk45cjJKX1NZUm5PLTlHdnVTaGJlQ0xBRtIBtgFBVV95cUxOSWliajFIUXRuOU5ETEE3LU5GQkR1WUhQVGZwT0xCbFNZZDZieUVMM1NGRVhrY0g5MkVnZkIyMjdFS2pKSDF4UzBFZmtMTnpEZWhWb2k4azQ3NXl3UGtfSFZBRlBEWWphd1puTldIYThqeHNPYWlqRjhiY0w2ZS1wTnAwWm1mOF9GZWVYTE9ueXNmLXc1NGtyWTNLcDF3MUd0ZjV1YURJbWQ0bFpjZDhSZnpYSEhxdw?oc=5",
-     "published_at": "2026-10-18T19:54:00+00:00",
-     "publisher": "Portal Piauí Hoje",
-     "source_url": "https://piauihoje.com",
-     "source_kind": "aggregator",
-     "language": "pt",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "Alexandre Carlo, do Natiruts, canta para apoiadores de Lula em Brasília",
-     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdGItbUdMNXdiT1ZrWFpieWF2YUF6VHJSNHBjT0cxNmR0YjZ1SXN2bnNPYl9yVWJnNUYxRWQyWklZUGtJZG01a09xWTNSblhJd1ZuQUpwRHBaWTBNSnVsVXUxelJGbzRxTS1Gak1sdk1TbnBKdmF3Z21NZVZQczBCemwtNDdzcjJTM0JfU2tucm8xeS1ESkVrSlhzLThfaVZMSkgySE5fWHplSUxwYlU0ckJFZTN6ZGZ6WHhDb3I5TFhOUlZRbUVJbUJXNWZwZ1RfbzNRMm1R0gHbAUFVX3lxTE9qWWs3QjlUOTVnb1ZscUxjcmpBZVFzMTJBcE85aHg3dXJ5WEhUQnRlMkphT0tHc2xyZ3B3M2hGRjlHenV4NzZmbTNoQXh4XzY3UkNROW03cjJINDY0azktUVREaTZERDVSTGFuMXBmTWtrQ09RWjRwMW5xeG5QOHVmVFE1dG5taEpac3NZYS10T1FfY3QwR1hhVWhsdE9rNzRGWkxZMWhzZm1qTVAtWkdDbVJ3UmtXNTZuRDg2VFNGVGhrS2Z0aFI5c0lVSHBaQkh5ZlV1VkxDZU1Jdw?oc=5",
-     "published_at": "2026-10-18T18:02:00+00:00",
-     "publisher": "Correio Braziliense",
-     "source_url": "https://www.correiobraziliense.com.br",
-     "source_kind": "aggregator",
-     "language": "pt",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "Influente em Brasília, derrotado em 'casa': o revés eleitoral de Randolfe no Amapá",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMDBxVndaVndhQXBrclQ2VXFDQXFJZGdJVTZMUnJTcjRSUWJlTDRUNFNNMHRGSUQ0RERja3NoSHhOUjlaNGxvYkNUSF9jdU51Ymp2elRnT1BfYnZDc2VEVS04eGNTNFZjYWRDNHNaV2NON2hRRURTNlZ5aEkzblZJb2ZGeEg2UTdsR19hSWwzaVE1MlNNZWVJajM3cmF6cXJjZ0Q5dWhZTWMyQW5DTFcxbU5SR3ROV1NhZFFSNURXX21yUGl2X0N0NFBuWEhDb2tlTUNncWZZWFVJd1I2U0NnZdIB7wFBVV95cUxQQ2lCcExLSEJoa29vbmt5ZFdOUUE3azdHRTN0MmZtd2kwVTRSZHdLTHBMYjZ6dG9OeFhKaWV5em9qbE4xZDJrTlkyV3lDTlB5eXlaNVlhenNQWEhsWU93LVY0d0tRbC1CZkZiNnFkalJvUm5kekZrS1E4NU1CRUVOMWl1QmhPR1dhemY3OC1LSjR2TXFQWmRCcDlTYVRFcWVaeDVvbmZWVE9xcXYycEFycGQtQkNoelJFYVBaM0ZjRTd5VjBvcGE1RnFPZTZKbEhWckxBWVlSSlZZemlRaDlEc1dVU2dvZ3NOTnVlVjVPbw?oc=5",
-     "published_at": "2026-10-18T07:00:01+00:00",
-     "publisher": "G1",
-     "source_url": "https://g1.globo.com",
-     "source_kind": "aggregator",
-     "language": "pt",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 19.43,
-   "lng": -99.13,
-   "name": "Mexico",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 3,
-   "publisher_count": 2,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 3,
-   "velocity": "cooling",
-   "velocity_change_pct_sample": -75,
-   "articles": [
-    {
-     "title": "Fracking no garantiza soberanía energética y traslada costos socioambientales: Investigadora UAM",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdTZPeDVJOEFTLTRrV3RTUUVHX0FJc1FlM3c0OUxYLUNjOFdFLWtiQVBveV92Z1NQalloZFNRYnQtNG9VX01vbEMybWRNTHN6T2dnS3c4c2d1S1cyeVdGckJ2cjZTT3Atc2czM0FOQXI4ODMwME5DZGE4OV9leHpCYzF0RFAyZGk2RkdsNUh4XzJRUjJyVlgyN3BuNERvS2VwalZxNjFKX1NPamFfYjh6V2ZLYXpUelpGelF2RlpPako2eFo1QlFma1Flb3VMSmtRR1VBX2dPWQ?oc=5",
-     "published_at": "2026-10-18T19:23:11+00:00",
-     "publisher": "El Sol de México",
-     "source_url": "https://oem.com.mx",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description-normalized",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "description-normalized"
-    },
-    {
-     "title": "Simplicity busca ampliar sus servicios de inteligencia artificial en México",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcTRYZjU3OTJCRjRVWTlxWGJBNlZ1SWkzQmhIaHZCdF9fblBuU2Z0bVdra3B3V3VfTWRxWVNqVkcxQWljMGl3SkJrSjRqdU00SWFnd1FWal9mZldlSHd3eVk3UVBQVG5mdGo3VzFWdXNzQzd3RndCOHM4SUNwSlA0blBfQUJVYnM5VGx3dnYxZmFQWENhQl9SS21yTW1fdUdFbnZ6TDJKYjhBZURIbG1v?oc=5",
-     "published_at": "2026-10-18T19:08:00+00:00",
-     "publisher": "Forbes México",
-     "source_url": "https://forbes.com.mx",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "title-normalized",
-     "evidence_class": "other_heuristic",
-     "evidence_label": "Heuristic association",
-     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "title-normalized"
-    },
-    {
-     "title": "Lluvias provocan apagones en el alumbrado público en sectores de Parral: Servicios Públicos los atienden",
-     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUUVxS2lCX2xwN0owLUVQTm5wcVNia3prZmo4YllsYmlOT2p1WW1UT0hFSVpNUU9URXZIamZoTkVQTDZoVkJqRVRFN2MwTEdFQV8xQ2R6cDlNbXduMkNySVZ1aGxWYnRoZ3NxcGwxRFNnZndzYi1UcW51ZHd2N0RRVGNyellFYVVsQURtckVWQlJ2Zkw0Z0RzYS1rT2liX0hOcWpkU3N0QkVaUGJoRzRVaWYxZXNEQ1RsdUh1UUowYmwtRW1yNl9lS3BPLTQ2NVRERkNLX3lJLVRVQTJRaGFGVFl6c1B4QQ?oc=5",
-     "published_at": "2026-10-18T18:39:49+00:00",
-     "publisher": "El Sol de México",
-     "source_url": "https://oem.com.mx",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description-normalized",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "description-normalized"
-    }
-   ]
-  },
-  {
    "lat": 50.85,
    "lng": 4.35,
    "name": "Belgium",
@@ -5641,7 +5401,7 @@
     },
     {
      "title": "Protests Hit France, Italy, Belgium, Albania: What Is Fueling Unrest Across Europe?",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdWpWVVM3eGtYUWNKM3BiVkdMaXZBWWI2Sy1NY1lfcDhZeEVpNjZTWG1wdGxGWGc5QzVKcE5YVElCSUdyUXVvSFB5QUpqLVZURkN2TkFiUEpvS09EUzg2MjVfXy1aZkdvaFVSVzZsZVNkUnc5NjJybXA5enFfaTM3MXBOSmtQSXdRd2daZnVHRWlZS3NvLWxpeWV6QzBRVFF1blgzaWNtVnZqY3otZHVLMy1YU1NkX2E1WTF5SXI1NNIBxAFBVV95cUxNT3FCZHJlb2poY1RTcENlYzgwSm1WWFV1Q0ZnYzQ5VmdTaEtvUEVIWFR0R25mTDlkUGpuSUpZQUR0cW1PbHZBMjhMeEh0T2tQYXpjMnpkR3lfNmRRZ1JEWGZiRXVYM0JDVGdWNGMzRGd0YmY3anpLdHFKTzV6aGx3bGE0MWhZYUhlVnZUbWpfdFVjY2J6MjFxUmNqU0JOYkMzVXRYazZzMDRDeC1jR3Nyd3VmNXJoajZBVGNEVXVlei1heW5Z?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNT3FCZHJlb2poY1RTcENlYzgwSm1WWFV1Q0ZnYzQ5VmdTaEtvUEVIWFR0R25mTDlkUGpuSUpZQUR0cW1PbHZBMjhMeEh0T2tQYXpjMnpkR3lfNmRRZ1JEWGZiRXVYM0JDVGdWNGMzRGd0YmY3anpLdHFKTzV6aGx3bGE0MWhZYUhlVnZUbWpfdFVjY2J6MjFxUmNqU0JOYkMzVXRYazZzMDRDeC1jR3Nyd3VmNXJoajZBVGNEVXVlei1heW5Z0gHEAUFVX3lxTE1PcUJkcmVvamhjVFNwQ2VjODBKbVZYVXVDRmdjNDlWZ1NoS29QRUhYVHRHbmZMOWRQam5JSllBRHRxbU9sdkEyOEx4SHRPa1BhemMyemRHeV82ZFFnUkRYZmJFdVgzQkNUZ1Y0YzNEZ3RiZjdqekt0cUpPNXpobHdsYTQxaFlhSGVWdlRtal90VWNjYnoyMXFSY2pTQk5iQzNVdFhrNnMwNEN4LWNHc3J3dWY1cmhqNkFUY0RVdWV6LWF5blk?oc=5",
      "published_at": "2026-10-18T10:26:42+00:00",
      "publisher": "ABP Live English",
      "source_url": "https://news.abplive.com",
@@ -5762,7 +5522,7 @@
    "articles": [
     {
      "title": "Bazar Canaco reúne a 40 negocios locales en Reynosa",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMHFKZU5FRlMtc3ROSURkaWtrTjhudXFkUE5NOU9WUFZUNFpUWks4a1ZQcmJHNEFSWjF6RnpxRF9jWXhSa3h5YVMwTGRiQzRqRFE3NjhONnhRUTc2RnltUFl5bjJha2tHMjRreUg0cW9nNUVOby13eDFYOVU5T1dpS0ZJLWplcFNmV0FnN2FlVThzOTVqQ19ISktYcDRUVWUt0gGgAUFVX3lxTE8wcUplTkVGUy1zdE5JRGRpa2tOOG51cWRQTk05T1ZQVlQ0WlRaSzhrVlByYkc0QVJaMXpGenFEX2NZeFJreHlhUzBMZGJDNGpEUTc2OE42eFFRNzZGeW1QWXluMmFra0cyNGt5SDRxb2c1RU5vLXd4MVg5VTlPV2lLRkktamVwU2ZXQWc3YWVVOHM5NWpDX0hKS1hwNFRVZS0?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObHE2SmFSWWhuTl9JclFMd1JhbklXZVZsRUYxd2dSZk11S2h3WllvX2ZZQ1JteWtrWElEdzhnanJTSTlIYjZKU1g1MkxaTlVmd3hxeE1ISVQyS0tMb2dEczlaUFVKNERqMHZ4ZE9aMlQ5RVdKekRvR1lTWUxXZDlsbjA3TTVkZERyQXNaZkNfR3pON2xRc1dsTzJ6a9IBoAFBVV95cUxPMHFKZU5FRlMtc3ROSURkaWtrTjhudXFkUE5NOU9WUFZUNFpUWks4a1ZQcmJHNEFSWjF6RnpxRF9jWXhSa3h5YVMwTGRiQzRqRFE3NjhONnhRUTc2RnltUFl5bjJha2tHMjRreUg0cW9nNUVOby13eDFYOVU5T1dpS0ZJLWplcFNmV0FnN2FlVThzOTVqQ19ISktYcDRUVWUt?oc=5",
      "published_at": "2026-10-18T18:30:00+00:00",
      "publisher": "La Tarde de Reynosa",
      "source_url": "https://www.latarde.com.mx",
@@ -6021,71 +5781,71 @@
    ]
   },
   {
-   "lat": 21.03,
-   "lng": 105.85,
-   "name": "Vietnam",
+   "lat": 15.37,
+   "lng": 44.19,
+   "name": "Yemen",
    "accuracy": "country",
-   "location_basis": "description",
+   "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 3,
-   "publisher_count": 1,
-   "category": "community",
+   "publisher_count": 3,
+   "category": "conflict",
    "recent_3h": 0,
    "previous_3h": 0,
    "velocity": "steady",
    "velocity_change_pct_sample": 0,
    "articles": [
     {
-     "title": "Comienzan las obras del proyecto del complejo turístico, comercial y de servicios Kon Riverfront.",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQX1pkTlBCajhlUzd3LV9iWE1mNlJwenZYekxjS0pDUGM4MzJMaUU1eUFTUXFFMEtuVFJQMS1xUmF2WEkxQU90V1pCRnY2aTdSM0kwOUlfMVlVTTlnWjhCbDZkaFNUYllyR3dPS01QUnhtUkJwam9rYmhnRS1WTk1Kd2U1T2o3bUtzZjdCUm1FYmlndktESmRNaE51cTN3ZUZh?oc=5",
-     "published_at": "2026-10-18T13:52:36+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
+     "title": "Airstrike kills at least 9 in rebel-held Yemen, and other Mideast news",
+     "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOSUZNTXpBcTJyaWVOSk1sZnVEY1ZzTTBza0NlQS1TQVFpY1l1R1ZfQkZDcC1ab1Eyenk3bzZJWjFNYW5YMnJOOURXTDRndjYzMElmbHlVN3plQkNSSC1IcGQ3cWhtNk0tX3JlOHZlS2ZYcWcwZmkxTGhWTU4walhtWDFzbmNodWJ5VExkeEJDOVhNd0RMSGFiR3hpT2RlWk5BRnpSLTZ2LWZCY29LVW9jNkNlMXRyNTJxOUE4eXBoRk9TZGRoeWVSWkJrSV9EZHlkSm9Ob2ROdG1vS3dVc2t3UWwzQWZSWDRmV0VERDJlU05sMnhuUkU2TVdxWUxMOVk?oc=5",
+     "published_at": "2026-10-18T14:43:54+00:00",
+     "publisher": "Beloit Daily News",
+     "source_url": "https://www.beloitdailynews.com",
      "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
      "location_precision": "country",
-     "geo_match_method": "description"
+     "geo_match_method": "headline"
     },
     {
-     "title": "Jovens oferecem ideias sobre como usar a tecnologia digital para desenvolver suas comunidades locais.",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbmx4dTl0eUpoZEtpQkdHci1kNnlzeGFsWmJzMXRCYWJjdDZHczhKZzVkejQtVmxqd1pCNEdIZzZVejZDcGpFOEY3UmJNSHFidG9mdGs3VEdoNm1fMTdmeS1XNi1JcTdhQkdQSHB3MGQ5QWZSS2dIdENtWlhzYTRLZWlRZlBQNHp3Skl3?oc=5",
-     "published_at": "2026-10-18T03:44:12+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
+     "title": "Why America doesn't want to fight a war in Yemen",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbWR2VXNmcFk3NEZYQVA2WFIzcDRQS0VIQkdVODZGY3R6Uk01QmM3TnNpQ2lVdlprSDRtMTd2YVJHckRZQmpHM3NhMFBrd1hCZ0xWdWVsV1UxQzJpUVU3UjdJNUhTV3VtRG1pdE9MR0EtRUEtdEhCbXpYOUxPMjdtaVpOd0lMdlhMUXppYVdn?oc=5",
+     "published_at": "2026-10-18T06:59:22+00:00",
+     "publisher": "www.israelhayom.com",
+     "source_url": "https://www.israelhayom.com",
      "source_kind": "aggregator",
-     "language": "pt",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
      "location_precision": "country",
-     "geo_match_method": "description"
+     "geo_match_method": "headline"
     },
     {
-     "title": "Dien Bien abre el mercado turístico internacional a través de rutas de conexión regionales.",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMlh6Q3hHYklRLU5mQ3k2MXlCTXdXeHpRLXh6WFIyOTRkd1FVQkFPWVAtdzJBTlZ2Zl85ckFNUFB6eWNmXzVhN1VtV2t1V2pWOTR5NW5zdDRZcnVLRl9qMVducU9FS2VZUWZVc29tcmZZNHpRZVp1bm1BUmRxY0t1ZWZ6cVU1VXkzZVMwb3E5N1J5dWdXN3piRDJR?oc=5",
-     "published_at": "2026-10-18T03:29:26+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
+     "title": "Saudi airstrikes kill 12 civilians, including children, across Yemen",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNc0E5YnY3cDVMcm9MT05KTXE2bkJqMHlQTVVwSkFwSlFBVC1FOFp0anRCUDVOemtjVFNydHlKX0lteWU1SjdlYmlHSkxTNW5kbEI4ZjJoZkRDU0xORERlWVRGS1NsT3ptNDZ3VVFNd0ZUWkFlbjYzSHlENmk2LVF5bzVyUmF0WWMtTzZ6cFRpanFqcjZHVFN0QXRqRkFMdkNKTV9XOUktbU4?oc=5",
+     "published_at": "2026-10-18T06:36:34+00:00",
+     "publisher": "İlke Haber Ajansı",
+     "source_url": "https://ilkha.com",
      "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
      "location_precision": "country",
-     "geo_match_method": "description"
+     "geo_match_method": "headline"
     }
    ]
   },
@@ -6228,75 +5988,6 @@
    ]
   },
   {
-   "lat": 21.88262,
-   "lng": -102.2843,
-   "name": "Aguascalientes",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 3,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Empresarios pagan, pero el IMSS falla",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00bEZVTzBMT0Q0c2hlanFSQnBQLUU2Z0U4WHRhM3E4emx1VGtnZUMxNG1udlh2amR0WUd1TnlxUGhyZ2EyQThIQ3lFX1dyU05VZTZEQ01ZVkZObXFFc1FEYmJENGpvNEwtS3ZOaw?oc=5",
-     "published_at": "2026-10-18T06:54:07+00:00",
-     "publisher": "El Heraldo de Aguascalientes",
-     "source_url": "https://www.heraldo.mx",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    },
-    {
-     "title": "Vivir lejos cuesta tiempo y servicios",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9jc2NYSzI4NmVXXzhMczVPQnFFcGF0S2pHMmxQbGVfRks2bGFGcWtQU1FlOXZTMHMwQTFVNDBfM0RjTV9ic0VrbWhlZUpteGRCYnF5NWF0ZTctcFZyRTB6clhwM293V1Y0bXduVWJ3?oc=5",
-     "published_at": "2026-10-18T06:45:49+00:00",
-     "publisher": "El Heraldo de Aguascalientes",
-     "source_url": "https://www.heraldo.mx",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    },
-    {
-     "title": "Hallan sin vida a trailero",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5GZm9sbTVXX1BOYWtyNGxpYjdDTTJmQWNZcnZERkh5MWhiWms3LUZSTVozckRMRmFtVGJvRnBISXRMVUNZelp3LXNNdnhIakpGRF8xMFB2b2ZyZmhjTjNn?oc=5",
-     "published_at": "2026-10-18T06:29:02+00:00",
-     "publisher": "El Heraldo de Aguascalientes",
-     "source_url": "https://www.heraldo.mx",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    }
-   ]
-  },
-  {
    "lat": 33.69,
    "lng": 73.06,
    "name": "Pakistan",
@@ -6366,6 +6057,58 @@
    ]
   },
   {
+   "lat": 34.05,
+   "lng": -118.24,
+   "name": "Los Angeles",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "‘We are beyond heartbroken’: Cindy Crawford, Rande and Kaia Gerber share tributes to Presley",
+     "url": "https://www.theguardian.com/lifeandstyle/2026/oct/19/we-are-beyond-heartbroken-cindy-crawford-rande-and-kaia-gerber-share-tributes-to-presley",
+     "published_at": "2026-10-18T22:52:17+00:00",
+     "publisher": "The Guardian World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "description"
+    },
+    {
+     "title": "If Trump fells 430 trees in the middle of a golf course, do they make a sound?",
+     "url": "https://www.theguardian.com/commentisfree/2026/oct/18/trump-golf-course-washington-dc",
+     "published_at": "2026-10-18T10:00:56+00:00",
+     "publisher": "The Guardian Environment",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "description"
+    }
+   ]
+  },
+  {
    "lat": 45.83362,
    "lng": 1.24759,
    "name": "Limoges",
@@ -6418,54 +6161,54 @@
    ]
   },
   {
-   "lat": 48.86,
-   "lng": 2.35,
-   "name": "Paris",
-   "accuracy": "place",
+   "lat": 45.42,
+   "lng": -75.7,
+   "name": "Canada",
+   "accuracy": "country",
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 2,
    "publisher_count": 2,
-   "category": "society",
-   "recent_3h": 1,
+   "category": "politics",
+   "recent_3h": 2,
    "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": 200,
    "articles": [
     {
-     "title": "Kiwi student in Paris back to laptop learning as protests shut uni",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNalNFLUZ0cWNFR3RyVnZGYzFHNHNHdUZ1RzJXMXR0OXNnS0FmTTV5RnlsMHRWRXVPeldHRlo1VEJsTHc2TExJd1BaU0RqVFlyNGZQMGVhaE00OGR1RV9Xc2FRTkJrdzh3VUlSQ01ROFNvRmU3TFE5aE1scEgzN2NaWlgyUnFuZWl6QnBGcnlXdmNkWWpjQTlTeXJmTm16dUxSc19FbQ?oc=5",
-     "published_at": "2026-10-18T22:14:55+00:00",
-     "publisher": "1News",
-     "source_url": "https://www.1news.co.nz",
+     "title": "El canciller dominicano viaja a Canadá para ampliar la cooperación bilateral",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNVBEUzRBd0ZhYVFKRUdWbkJyclRkSlpiVWFZUk5PMVQ0RzZjaXlYSmlIV1NCd05WOHgtRXkyWGdma013VnVrM09sdXdrVy11TUxCaERuME94dW8tY2s0aDBJLTd5ajlrNm1mR1F1TWtMaVFTNWN4RmxYUjM4Wm5FR2tJa3VrSXR4ampjV3pkZy1CT1JSaFlCZWg1MGRGaENwNDR4Rm9lOEd0a1NBcFpjM3dxS3Rqdk5acTU1SUF5TVBVSEY3T2Rta2MwckY2d9IB0wFBVV95cUxOYWhWcW9LeGI2eHJGLWZ3cnNzakplRGMxV2hGU3RmU3dPcFYwYkUyUE1BT1lWRG1mbHg5NzZLb2VfanBRNkttVWFwUV92bGtjZ3QySlcxWHpmbzIwaEwxOGxXQjRuSkRwdDJTUXhfd2ZBQjFZS2RPMzctVWc4d0h0cndqVmZva1ZzS3ZSUlRsOGlpcEpkRUZNZUg4elNtZjg2LUIzUW5Pbk5FQ2FHejBGajh1Q05ZUTRTRE9NWHhGcF93M0xSTHpjU2hfbUFaRnd4dWl3?oc=5",
+     "published_at": "2026-10-18T22:17:00+00:00",
+     "publisher": "Diario Libre",
+     "source_url": "https://www.diariolibre.com",
      "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
+     "language": "es",
+     "geo_match": "title-normalized",
+     "evidence_class": "other_heuristic",
+     "evidence_label": "Heuristic association",
+     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
+     "location_precision": "country",
+     "geo_match_method": "title-normalized"
     },
     {
-     "title": "Paris's cost of living protests spiral into France's worst violence, riots in decades",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE16MXdTd19uSGdTZGNld3llbmE0cml3amd4czQySnI3VkxFVDRjSjRRMW83ZDFfY21CeHVwcDU1Z2oxRWIyX0QzRFVjdHpWSTVESEt4dEVYZ2JYWmNQdC1n?oc=5",
-     "published_at": "2026-10-18T04:37:25+00:00",
-     "publisher": "The Jerusalem Post",
-     "source_url": "https://www.jpost.com",
+     "title": "EUA/Eleições: Trump com nível mais baixo de sempre de apoio do eleitorado – Sondagem",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdWN1RjRsWlN6TW1kNUJ4RTZoMnF2eVhrTTFBcU1pbGhveVNUa1R0dmlNck1Wa2JteUloODNUaEg3MEk2NFh2elBCcXhPZ3BtT1hVbU1qVGQzTWJPSy1OaVNpUVdQZ1lJenVDX2lfWFFQMnJ4dDR2cE01dG1CRG1pSnBaOTRoSjFpdXRsbEVlTDZkSVU3UXhaQVd6bDZTaWdHSTNBaGJXQWFTS3RfUDNHR2o2S3h2WlFIeTRB?oc=5",
+     "published_at": "2026-10-18T21:10:34+00:00",
+     "publisher": "Correio da Manhã Canadá",
+     "source_url": "https://www.correiodamanhacanada.com",
      "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
+     "language": "pt",
+     "geo_match": "description-normalized",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
+     "location_precision": "country",
+     "geo_match_method": "description-normalized"
     }
    ]
   },
@@ -6570,58 +6313,6 @@
      "event_location_verified": false,
      "location_precision": "place",
      "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 35.69,
-   "lng": 51.39,
-   "name": "Iran",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "politics",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Trump endorses 'great warrior' Netanyahu ahead of Israeli election",
-     "url": "https://www.abc.net.au/news/2026-10-19/trump-endorses-netanyahu-ahead-of-israeli-election/107281646",
-     "published_at": "2026-10-18T21:13:30+00:00",
-     "publisher": "ABC Australia",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "description"
-    },
-    {
-     "title": "Rusia, Irán y la política exterior de conmoción y pavor de Trump",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5VGVXTmZIaG1nWVpXMTNWQTlFQ01HMENrejRTVTRac2p2el80QVQxTFhqdWRieXR5YmNLRUJSaDMwWnBzbnZJZU83MWV3SkFjOHM0SFV0SGZyYVBJLUt6LWtDNVczLWhVOHMxV2dkdzFrS2RDUDlzbjJja9IBe0FVX3lxTFA5VGVXTmZIaG1nWVpXMTNWQTlFQ01HMENrejRTVTRac2p2el80QVQxTFhqdWRieXR5YmNLRUJSaDMwWnBzbnZJZU83MWV3SkFjOHM0SFV0SGZyYVBJLUt6LWtDNVczLWhVOHMxV2dkdzFrS2RDUDlzbjJjaw?oc=5",
-     "published_at": "2026-10-17T23:02:00+00:00",
-     "publisher": "El Mundo",
-     "source_url": "https://amp.elmundo.es",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline-multilingual",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline-multilingual"
     }
    ]
   },
@@ -6782,58 +6473,6 @@
    ]
   },
   {
-   "lat": 4.60971,
-   "lng": -74.08175,
-   "name": "Bogotá",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 2,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 200,
-   "articles": [
-    {
-     "title": "‘Barrios Unidos se Forma, se Activa y se Transforma’, el programa de apoyos a emprendedores en el noroccidente de Bogotá",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNGtwNGN5X3lndkFNYTV2cEYydEk1MGFZRFlHT2VNc3FkTVJtWjl6WlZueWFrbV9rVnBFM0FDM3pLU21uVEwxaUFHek02SWZTQVJkSjREQzRNQ1pybDRqOUN0MnlvTGNkTGo5bGQzVTVnRm1zMHNHWGhJcTNCdEpHclFIZEEtZDRPdngzX2xfQlRjU0xueVBiZ2d4LXZIM1FNc2tuRmJFeVVOVGlBdXQ4NVNHNjNoZw?oc=5",
-     "published_at": "2026-10-18T20:36:57+00:00",
-     "publisher": "Bogota.gov.co",
-     "source_url": "https://bogota.gov.co",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "Durante 2026, ya se han terminado 1.125 obras financiadas por los Fondos de Desarrollo Local en Bogotá",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSEM2Qzl0eG1aT01RdzQxNVhVMG1NT1ZmNHhTb01GRlByai02djlBbzJXcFhkSGdtVzg2Wk10eWxTZDVod0szSzBYOWhvdzZDb094eG54RW8zZ3MwemZQNTBsUlFfWjdtZXdYYzlGWG80YWM1VTNGUXFRY2k1NFpibXdxdkZtdmZUdjFoRDhqOXpmMHowVW1YUTcwY3o5UWUtT0NKUmkyRU5sT0cwQjh4aWxvZ3BaaFU?oc=5",
-     "published_at": "2026-10-18T19:51:45+00:00",
-     "publisher": "Bogota.gov.co",
-     "source_url": "https://bogota.gov.co",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
    "lat": -21.23333333,
    "lng": -159.76666666,
    "name": "Cook Islands",
@@ -6948,10 +6587,10 @@
    "count": 2,
    "publisher_count": 2,
    "category": "community",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Workers blamed for low productivity but measurement may be the problem",
@@ -7000,10 +6639,10 @@
    "count": 2,
    "publisher_count": 1,
    "category": "society",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Colegios cerrados este lunes 19 de octubre por municipios en Valencia y Alicante",
@@ -7052,10 +6691,10 @@
    "count": 2,
    "publisher_count": 2,
    "category": "community",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Noise control was warned Olivia Dean concert would break curfew",
@@ -7142,6 +6781,58 @@
      "event_location_verified": false,
      "location_precision": "place",
      "geo_match_method": "description"
+    }
+   ]
+  },
+  {
+   "lat": 19.43,
+   "lng": -99.13,
+   "name": "Mexico",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 2,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -67,
+   "articles": [
+    {
+     "title": "Fracking no garantiza soberanía energética y traslada costos socioambientales: Investigadora UAM",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdTZPeDVJOEFTLTRrV3RTUUVHX0FJc1FlM3c0OUxYLUNjOFdFLWtiQVBveV92Z1NQalloZFNRYnQtNG9VX01vbEMybWRNTHN6T2dnS3c4c2d1S1cyeVdGckJ2cjZTT3Atc2czM0FOQXI4ODMwME5DZGE4OV9leHpCYzF0RFAyZGk2RkdsNUh4XzJRUjJyVlgyN3BuNERvS2VwalZxNjFKX1NPamFfYjh6V2ZLYXpUelpGelF2RlpPako2eFo1QlFma1Flb3VMSmtRR1VBX2dPWQ?oc=5",
+     "published_at": "2026-10-18T19:23:11+00:00",
+     "publisher": "El Sol de México",
+     "source_url": "https://oem.com.mx",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "description-normalized",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "description-normalized"
+    },
+    {
+     "title": "Simplicity busca ampliar sus servicios de inteligencia artificial en México",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcTRYZjU3OTJCRjRVWTlxWGJBNlZ1SWkzQmhIaHZCdF9fblBuU2Z0bVdra3B3V3VfTWRxWVNqVkcxQWljMGl3SkJrSjRqdU00SWFnd1FWal9mZldlSHd3eVk3UVBQVG5mdGo3VzFWdXNzQzd3RndCOHM4SUNwSlA0blBfQUJVYnM5VGx3dnYxZmFQWENhQl9SS21yTW1fdUdFbnZ6TDJKYjhBZURIbG1v?oc=5",
+     "published_at": "2026-10-18T19:08:00+00:00",
+     "publisher": "Forbes México",
+     "source_url": "https://forbes.com.mx",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "title-normalized",
+     "evidence_class": "other_heuristic",
+     "evidence_label": "Heuristic association",
+     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "title-normalized"
     }
    ]
   },
@@ -7246,58 +6937,6 @@
      "event_location_verified": false,
      "location_precision": "country",
      "geo_match_method": "description-normalized"
-    }
-   ]
-  },
-  {
-   "lat": -31.25285,
-   "lng": -61.49078,
-   "name": "Rafaela",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": -50,
-   "articles": [
-    {
-     "title": "¿Dónde estará La Muni en tu Barrio esta semana y qué servicios ofrecerá?",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOXZQQjViMmpJcnhPYlhJbTVaRGpPR1hkMkJwYkpxNjFMUUJYbHhKQ0E1RkdmZXBwLWZsZ1F4ZkZJNlZUQ0VCNm5EZkQ4dWxpMkpSMDRZVE1hRGNCOVpPQWZhLU5KZFQ5VG14clV5RVpYVE8tOF9sdGF3NkdpRHJCZ1BBbUlpLVFkQWVOVzF1VWV2SkFYdTNEMllhT1J2NFR0SU1YemlsQ1lxZw?oc=5",
-     "published_at": "2026-10-18T18:45:00+00:00",
-     "publisher": "Radio Rafaela",
-     "source_url": "https://radiorafaela.com.ar",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    },
-    {
-     "title": "La Muni en tu Barrio llega al Malvinas Argentinas con servicios y trámites",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeHlMNl8ybFM0Y3dwQUFCRlhGX0pqSDlPd2QxTDladUY1dnRVSXFKdmhRQlJEdVkzNnFPSW1lQ1VuR1lRQWN1TTktTEZPWUQwZkVfVDh1bU41d0E1S0Z4clJTYklwMDhJZmsxRU9XZ0M2YklmelBPS1pHdkdsekNoUl9CZjV4SFNtOEFPd2dEdldqZ1JTdV9INTlqMWwxejh0Y1VqdXBkS0N2TlhTZjIxYWZBQzU?oc=5",
-     "published_at": "2026-10-18T15:13:54+00:00",
-     "publisher": "Rafaela Noticias",
-     "source_url": "https://rafaelanoticias.com",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
     }
    ]
   },
@@ -7562,6 +7201,58 @@
    ]
   },
   {
+   "lat": -15.79,
+   "lng": -47.88,
+   "name": "Brasília",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "politics",
+   "recent_3h": 0,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -50,
+   "articles": [
+    {
+     "title": "Alexandre Carlo, do Natiruts, canta para apoiadores de Lula em Brasília",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdGItbUdMNXdiT1ZrWFpieWF2YUF6VHJSNHBjT0cxNmR0YjZ1SXN2bnNPYl9yVWJnNUYxRWQyWklZUGtJZG01a09xWTNSblhJd1ZuQUpwRHBaWTBNSnVsVXUxelJGbzRxTS1Gak1sdk1TbnBKdmF3Z21NZVZQczBCemwtNDdzcjJTM0JfU2tucm8xeS1ESkVrSlhzLThfaVZMSkgySE5fWHplSUxwYlU0ckJFZTN6ZGZ6WHhDb3I5TFhOUlZRbUVJbUJXNWZwZ1RfbzNRMm1R0gHbAUFVX3lxTE9qWWs3QjlUOTVnb1ZscUxjcmpBZVFzMTJBcE85aHg3dXJ5WEhUQnRlMkphT0tHc2xyZ3B3M2hGRjlHenV4NzZmbTNoQXh4XzY3UkNROW03cjJINDY0azktUVREaTZERDVSTGFuMXBmTWtrQ09RWjRwMW5xeG5QOHVmVFE1dG5taEpac3NZYS10T1FfY3QwR1hhVWhsdE9rNzRGWkxZMWhzZm1qTVAtWkdDbVJ3UmtXNTZuRDg2VFNGVGhrS2Z0aFI5c0lVSHBaQkh5ZlV1VkxDZU1Jdw?oc=5",
+     "published_at": "2026-10-18T18:02:00+00:00",
+     "publisher": "Correio Braziliense",
+     "source_url": "https://www.correiobraziliense.com.br",
+     "source_kind": "aggregator",
+     "language": "pt",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "headline"
+    },
+    {
+     "title": "Influente em Brasília, derrotado em 'casa': o revés eleitoral de Randolfe no Amapá",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMDBxVndaVndhQXBrclQ2VXFDQXFJZGdJVTZMUnJTcjRSUWJlTDRUNFNNMHRGSUQ0RERja3NoSHhOUjlaNGxvYkNUSF9jdU51Ymp2elRnT1BfYnZDc2VEVS04eGNTNFZjYWRDNHNaV2NON2hRRURTNlZ5aEkzblZJb2ZGeEg2UTdsR19hSWwzaVE1MlNNZWVJajM3cmF6cXJjZ0Q5dWhZTWMyQW5DTFcxbU5SR3ROV1NhZFFSNURXX21yUGl2X0N0NFBuWEhDb2tlTUNncWZZWFVJd1I2U0NnZdIB7wFBVV95cUxQQ2lCcExLSEJoa29vbmt5ZFdOUUE3azdHRTN0MmZtd2kwVTRSZHdLTHBMYjZ6dG9OeFhKaWV5em9qbE4xZDJrTlkyV3lDTlB5eXlaNVlhenNQWEhsWU93LVY0d0tRbC1CZkZiNnFkalJvUm5kekZrS1E4NU1CRUVOMWl1QmhPR1dhemY3OC1LSjR2TXFQWmRCcDlTYVRFcWVaeDVvbmZWVE9xcXYycEFycGQtQkNoelJFYVBaM0ZjRTd5VjBvcGE1RnFPZTZKbEhWckxBWVlSSlZZemlRaDlEc1dVU2dvZ3NOTnVlVjVPbw?oc=5",
+     "published_at": "2026-10-18T07:00:01+00:00",
+     "publisher": "G1",
+     "source_url": "https://g1.globo.com",
+     "source_kind": "aggregator",
+     "language": "pt",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "headline"
+    }
+   ]
+  },
+  {
    "lat": 12.05,
    "lng": 24.88,
    "name": "Nyala",
@@ -7714,110 +7405,6 @@
      "event_location_verified": false,
      "location_precision": "place",
      "geo_match_method": "description"
-    }
-   ]
-  },
-  {
-   "lat": 39.8,
-   "lng": -98.6,
-   "name": "United States",
-   "accuracy": "country",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": -50,
-   "articles": [
-    {
-     "title": "Trump ‘border czar’ says Ilhan Omar could be ‘of course’ denaturalized and deported",
-     "url": "https://www.theguardian.com/us-news/2026/oct/18/tom-homan-trump-ilhan-omar-citizenship-deportation",
-     "published_at": "2026-10-18T17:16:02+00:00",
-     "publisher": "The Guardian World",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "description"
-    },
-    {
-     "title": "US workers facing deadly heat borrow from tomato pickers to win key protections",
-     "url": "https://www.theguardian.com/environment/2026/oct/18/workers-heat-protections",
-     "published_at": "2026-10-18T12:00:02+00:00",
-     "publisher": "The Guardian Environment",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "description"
-    }
-   ]
-  },
-  {
-   "lat": 10.52066,
-   "lng": -74.18504,
-   "name": "Fundación",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Fundación Progreso y Salud, premiada por divulgar",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNGt4c1A3clVmYzdrXzNYbEN4X1ZVdUNxRldSRDZzeFIyZXpLZjVWN2JpUlNFTUJlS1NfbUJVN2QxNFNyTTJEWW9sc29xTXFkSk9BTWFaTHdvbjlsaHFfdG16N2pzY0xLTGpTbVoyYlA3dnozU0Yyc3ZzME5aemR6UnJPN18zYWxxeDJZbTFQQU1jY05HVDNVUjFvWU1ScjVzTkNhbGxHMEJTbjM0RUNVdTRVdm8wWmpfbmpWRVdzNW8?oc=5",
-     "published_at": "2026-10-18T15:57:47+00:00",
-     "publisher": "Noticias de Almería",
-     "source_url": "https://www.noticiasdealmeria.com",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "La Fundación Progreso y Salud, premiada por su labor de divulgación científica",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPU0swQVZCZFJSc1pLY3QyS1dMLS1OMThVNEhuaVZTazVYNEFSV3NjaURMSDltbW5mbnEzdklvZ29jMVgwVEVqSVljU2JDZXVJV2ZwWGVKZURsajdZbUVDOFUtWHJtSGdjamdxQ3liNWk3Z3ZDbVVEVnJXTjJOR2RjcFY0XzI2ZkNiblc2YnY2NDlqWjlCbTk1NnliTW5KV2ZDZ0FqWGJzQ05fbEQyY2FfYUR5ZC1PSjVLc2E1WTQ5LUM?oc=5",
-     "published_at": "2026-10-18T11:39:11+00:00",
-     "publisher": "Junta de Andalucía",
-     "source_url": "https://www.juntadeandalucia.es",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
     }
    ]
   },
@@ -8174,58 +7761,6 @@
      "source_url": "https://www.aninews.in",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
-   "lat": -34.72065,
-   "lng": -58.25454,
-   "name": "Quilmes",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "society",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "La comunidad de la UNQ marchó al Congreso en reclamo de financiamiento universitario",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcVdUM01NSm5qS0F3ZjExNVYzQXF1dEJLQmVLdTU5Mk1lejJta2FtY09WWmpyanJ3c1ZFaF80dlhsQ2c4czAwaUprZlg2R2g4YmlvQVZiOTYwaTUyTFhBbEVoMmM4VEpCcXAxOUw2MnBGb3NGSnkzLXEyS3BkcDdobFdqd1RhZF9ielE3Z091NFNHZDF6VG5zMXpfYnloWXVPZXQ5a1czZDJfNmcxcXY4NUhlMXNhdzhENHY1VGtTVVRCYkc4empMeEZJRdIB0AFBVV95cUxOSTZSZUI5ZzIwTXhrVmplOEtxYTdBbzM3V1QzaHZ0SW9uMjAyaVFXUXlkbnpEbGNnM0RMcENKVlQwMjZ2ckhUNnBhamVPOUZTQjh2NVd0ZDVSdm1WSTZiTlo2Rlc0aG9jMTJDa2pxTmFGd1I5RFJWRXBkR05aTWJyN0F0cE4yV1c3ZFJ2N1MwRDNFZk5kVlo1bzJ3RkVDenFVellVOWU0bWVwRlo2MzNoQUczX3ZCU3dJNHVzM2ZZdk5ma2tpdlpuWWh4aXRrLUFU?oc=5",
-     "published_at": "2026-10-18T12:29:00+00:00",
-     "publisher": "Info Quilmes",
-     "source_url": "https://www.infoquilmes.com.ar",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    },
-    {
-     "title": "Dolor en la comunidad educativa de Quilmes por la muerte de un estudiante",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWHV5RVdTUFAxcmpSX05QczByYjI0czNOaEo0cERzX1haM1UxaWZWNVdOU0EyaVVDYXVrY29OMUVfQlFja1NWRHpzZmNsQzBJbFJ1VjIwZ2FnZWxmM2UtX09pX2RITHZqRFF4NHdOc05BdTVfUUdxS2N4WjVrNlNacWkyLVJaZFgyVUJxVTMxY1g3N2tMR0pydFNNczF1R3AzdFJVZnlDdzREdnJWVHNEY3lqMHhWQQ?oc=5",
-     "published_at": "2026-10-17T23:11:58+00:00",
-     "publisher": "Perspectiva Sur",
-     "source_url": "https://www.perspectivasur.com",
-     "source_kind": "aggregator",
-     "language": "es",
      "geo_match": "headline",
      "evidence_class": "explicit_headline",
      "evidence_label": "Headline evidence",
@@ -8758,58 +8293,6 @@
    ]
   },
   {
-   "lat": 52.36,
-   "lng": -1.17,
-   "name": "England",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Landmark Study Maps 406 Rare Diseases and COVID-19 Infection Across 62.5 Million People in England",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeDM1Z3NPT2pPVEpTdFFMTFRncGZlbmplMWFnc1pFSE10UWd2Z1pPNHJ5QTdnNmFsaExnSGhVSWk4VjNWMmVXbWZrUXNQTkp2NHU3aFR4YUs2QUxEbkNKOU1vODhsOE1wS2FQbUM4Qld2ekluZkFkdVU1VlNVUXFhM1Y3WWh5TVlEM2FEdU43Y1RFTE53UkNsWmlGcjhZQ2daZHZVWTAyY2xRU3ZYSDlyNWZqdzRmZGF2MmhqQWFDUjQ?oc=5",
-     "published_at": "2026-10-18T06:06:18+00:00",
-     "publisher": "Bioengineer.org",
-     "source_url": "https://bioengineer.org",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    },
-    {
-     "title": "UNE research gives people with intellectual disability a voice in rural health care",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSm01bV9vLUZVcUZSdHBXLTR6RHcwZ2oybmlTakxUWTlwb2VvSXM5UV9LWjVjaGpYbHlaU3c5b3J1T0FMRFA1blVvUU9iLXRXLV9oUFNtcDFJcHRtV29td0hNMkNONTdqdmFEWUt4UTBTM2xBZ2dIeW1VT3NENENQLVAtWlhzMjJGNmNuRVhlX05aYzFaQlNRNVJkWTQ2aklzdmlFQTlTTHZSRndjeURuZk9KeWRrUVZ6UUx4dGxLMA?oc=5",
-     "published_at": "2026-10-18T03:09:00+00:00",
-     "publisher": "New England Times",
-     "source_url": "https://www.netimes.com.au",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    }
-   ]
-  },
-  {
    "lat": 35.83333333,
    "lng": 14.58333333,
    "name": "Malta",
@@ -9018,6 +8501,146 @@
    ]
   },
   {
+   "lat": -13.58333333,
+   "lng": -172.33333333,
+   "name": "Samoa",
+   "accuracy": "country",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Samoan PM accused of being 'a leader who believes he is above the law'",
+     "url": "https://www.rnz.co.nz/news/pacific/2017315/samoan-pm-accused-of-being-a-leader-who-believes-he-is-above-the-law",
+     "published_at": "2026-10-18T23:07:46+00:00",
+     "publisher": "RNZ National",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "description"
+    }
+   ]
+  },
+  {
+   "lat": 33.69,
+   "lng": 73.06,
+   "name": "Pakistan",
+   "accuracy": "country",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "education",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "DWP Technologies, Gnext explore future of digital learning at ‘Teaching Beyond the Textbook’",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWVJCVjRGNUZFdW8zWHk4cFZ1SnNJZUNXN05lZ1c2ODNIcWpQNlNRVVBEcU4zbDM5aTBQblhtLWZ4bU1TYWR0eHA4X19nLWZBMDdoMW42Rm45QWo5OE1ZQjBoRHRtd0hlMEF6SWVXN3VsVHdYSTlCemNpcG51OUtDMks5bk4zN3FNV216NEgwbXpRaG1CdFdRZUh0eVFKTWFqVUk1djhWbmxwNl9HNmhCOEdqOHlDRnVM?oc=5",
+     "published_at": "2026-10-18T23:06:03+00:00",
+     "publisher": "The Nation (Pakistan )",
+     "source_url": "https://www.nation.com.pk",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "description"
+    }
+   ]
+  },
+  {
+   "lat": 18.51957,
+   "lng": -88.30397,
+   "name": "Chetumal",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "environment",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "URGE SANEAMIENTO: Alertan sobre contaminación del relleno sanitario de Chetumal",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTFJkXzhqOFFmU1BVN1FtMC1MV0dfbC1XWU9naDA2RzlGZ1hQeDhnUVZJdnRMdWRTTkx6emFsVGc5VmRWQUcyTEtPT3h3NEU5UjZZUVNudXFlV0xmTWFfanV3MUpBSm56OXdvV1BjMXpRZ2xMN2F5XzRieVRYTGxudzZJN09SdnpMeDBRMlZ4Qm1TS1RL?oc=5",
+     "published_at": "2026-10-18T23:01:22+00:00",
+     "publisher": "Caribe Peninsular",
+     "source_url": "https://caribepeninsular.mx",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 29.76,
+   "lng": -95.37,
+   "name": "Houston",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "EPA quietly backtracks on claims US has phased out toxic Pfas compounds",
+     "url": "https://www.theguardian.com/environment/2026/oct/18/epa-pfas-compounds-toxins",
+     "published_at": "2026-10-18T22:53:27+00:00",
+     "publisher": "The Guardian World",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "description"
+    }
+   ]
+  },
+  {
    "lat": -16.0,
    "lng": 167.0,
    "name": "Vanuatu",
@@ -9088,6 +8711,41 @@
    ]
   },
   {
+   "lat": 10.48,
+   "lng": -66.9,
+   "name": "Venezuela",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Venezuela opposition renews support for Maria Corina Machado as leader",
+     "url": "https://www.aljazeera.com/news/2026/10/18/venezuela-opposition-renews-support-for-maria-corina-machado-as-leader?traffic_source=rss",
+     "published_at": "2026-10-18T22:41:49+00:00",
+     "publisher": "Al Jazeera",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "headline"
+    }
+   ]
+  },
+  {
    "lat": -29.03333333,
    "lng": 167.95,
    "name": "Norfolk Island",
@@ -9123,41 +8781,6 @@
    ]
   },
   {
-   "lat": 45.42,
-   "lng": -75.7,
-   "name": "Canada",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "politics",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "El canciller dominicano viaja a Canadá para ampliar la cooperación bilateral",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNVBEUzRBd0ZhYVFKRUdWbkJyclRkSlpiVWFZUk5PMVQ0RzZjaXlYSmlIV1NCd05WOHgtRXkyWGdma013VnVrM09sdXdrVy11TUxCaERuME94dW8tY2s0aDBJLTd5ajlrNm1mR1F1TWtMaVFTNWN4RmxYUjM4Wm5FR2tJa3VrSXR4ampjV3pkZy1CT1JSaFlCZWg1MGRGaENwNDR4Rm9lOEd0a1NBcFpjM3dxS3Rqdk5acTU1SUF5TVBVSEY3T2Rta2MwckY2d9IB0wFBVV95cUxOYWhWcW9LeGI2eHJGLWZ3cnNzakplRGMxV2hGU3RmU3dPcFYwYkUyUE1BT1lWRG1mbHg5NzZLb2VfanBRNkttVWFwUV92bGtjZ3QySlcxWHpmbzIwaEwxOGxXQjRuSkRwdDJTUXhfd2ZBQjFZS2RPMzctVWc4d0h0cndqVmZva1ZzS3ZSUlRsOGlpcEpkRUZNZUg4elNtZjg2LUIzUW5Pbk5FQ2FHejBGajh1Q05ZUTRTRE9NWHhGcF93M0xSTHpjU2hfbUFaRnd4dWl3?oc=5",
-     "published_at": "2026-10-18T22:17:00+00:00",
-     "publisher": "Diario Libre",
-     "source_url": "https://www.diariolibre.com",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "title-normalized",
-     "evidence_class": "other_heuristic",
-     "evidence_label": "Heuristic association",
-     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "title-normalized"
-    }
-   ]
-  },
-  {
    "lat": -12.05,
    "lng": -77.04,
    "name": "Peru",
@@ -9189,6 +8812,41 @@
      "event_location_verified": false,
      "location_precision": "country",
      "geo_match_method": "headline-multilingual"
+    }
+   ]
+  },
+  {
+   "lat": 48.86,
+   "lng": 2.35,
+   "name": "Paris",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Kiwi student in Paris back to laptop learning as protests shut uni",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNalNFLUZ0cWNFR3RyVnZGYzFHNHNHdUZ1RzJXMXR0OXNnS0FmTTV5RnlsMHRWRXVPeldHRlo1VEJsTHc2TExJd1BaU0RqVFlyNGZQMGVhaE00OGR1RV9Xc2FRTkJrdzh3VUlSQ01ROFNvRmU3TFE5aE1scEgzN2NaWlgyUnFuZWl6QnBGcnlXdmNkWWpjQTlTeXJmTm16dUxSc19FbQ?oc=5",
+     "published_at": "2026-10-18T22:14:55+00:00",
+     "publisher": "1News",
+     "source_url": "https://www.1news.co.nz",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "headline"
     }
    ]
   },
@@ -9259,6 +8917,41 @@
      "event_location_verified": false,
      "location_precision": "place",
      "geo_match_method": "description"
+    }
+   ]
+  },
+  {
+   "lat": -34.5627,
+   "lng": -58.45829,
+   "name": "Belgrano",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Muestra institucional «Raíces y promesas» del Colegio Hogar Belgrano",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaHdvUDE1LWdYU2RDZjlOM1JOTEZvWlRzQUVfZV9nU3dkdlJFaWVZeVVNcHQ2WDBRWTFsb3hid0l4MXQ1M1hZbDZPTnc1c0dKbk16NkxtYjkycVdHQnFCSHE4RzZuWjdUWUpnZlNRbHh4SnJuQUhZQmRSWDVIbFdXWDlqWEF3Z3NYS0dibWdES3pDS2IyaE5fTzl3?oc=5",
+     "published_at": "2026-10-18T22:04:39+00:00",
+     "publisher": "La Verdad Junín",
+     "source_url": "https://laverdadonline.com",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "headline"
     }
    ]
   },
@@ -9438,41 +9131,6 @@
    ]
   },
   {
-   "lat": 34.05,
-   "lng": -118.24,
-   "name": "Los Angeles",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "society",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Thousands take to streets of WeHo to make an impact at AIDS Walk Los Angeles",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRnVzcHN1Y0NOMV9UVmtERFZzSV9RYUx6M3phaVJ6UlY5Nk1vOUs3S2NaamJkNVJsODRDMm9yWGRzQmZjcHlQRlFOdVpOZ0VubWVwWTVrZDZfTk1xWXEzWUduY3hOcWtGYm1NbDQySEFpX2lRa1U1c29JZHd4TTJ1Mnp4emNWeThRZEMtV2tnR0lINkh5bk1pQ05OanR6ZFhvc0tiZGE2YWpnQQ?oc=5",
-     "published_at": "2026-10-18T21:25:49+00:00",
-     "publisher": "ABC7 Los Angeles",
-     "source_url": "https://abc7.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
    "lat": -28.73226,
    "lng": 24.76232,
    "name": "Kimberley",
@@ -9539,6 +9197,41 @@
      "event_location_verified": false,
      "location_precision": "place",
      "geo_match_method": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 35.69,
+   "lng": 51.39,
+   "name": "Iran",
+   "accuracy": "country",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "politics",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Trump endorses 'great warrior' Netanyahu ahead of Israeli election",
+     "url": "https://www.abc.net.au/news/2026-10-19/trump-endorses-netanyahu-ahead-of-israeli-election/107281646",
+     "published_at": "2026-10-18T21:13:30+00:00",
+     "publisher": "ABC Australia",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "description"
     }
    ]
   },
@@ -10029,41 +9722,6 @@
      "event_location_verified": false,
      "location_precision": "country",
      "geo_match_method": "description"
-    }
-   ]
-  },
-  {
-   "lat": -7.94083,
-   "lng": -34.87306,
-   "name": "Paulista",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "politics",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Flávio reúne 71 mil apoiadores na Paulista em ato de campanha",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSUJSUDRtZGVWQlVIVDQxdnVYZXJSd09wZDZmZ0kwbHU4dGt1NFY2dk5aVkVpeVV4Ym9HM0hsbFRmUlA4REhPOUNLWEx5RWFMTW5LTG1NcW1RRDVWYzh2bjB3RWlCa2RGR0prZ1F0bHRkaXltUFREbVBoRkp0NlcxSGxlZzVCbnlTaXVaRWdfY3ZlUkIyVG9paWlmdjFPRDM4TjZkamU4bGhISzZ5UXMzTg?oc=5",
-     "published_at": "2026-10-18T20:03:54+00:00",
-     "publisher": "Congresso em Foco",
-     "source_url": "https://www.congressoemfoco.com.br",
-     "source_kind": "aggregator",
-     "language": "pt",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
     }
    ]
   },
@@ -10694,6 +10352,41 @@
      "event_location_verified": false,
      "location_precision": "country",
      "geo_match_method": "headline"
+    }
+   ]
+  },
+  {
+   "lat": -31.25285,
+   "lng": -61.49078,
+   "name": "Rafaela",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -50,
+   "articles": [
+    {
+     "title": "¿Dónde estará La Muni en tu Barrio esta semana y qué servicios ofrecerá?",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOXZQQjViMmpJcnhPYlhJbTVaRGpPR1hkMkJwYkpxNjFMUUJYbHhKQ0E1RkdmZXBwLWZsZ1F4ZkZJNlZUQ0VCNm5EZkQ4dWxpMkpSMDRZVE1hRGNCOVpPQWZhLU5KZFQ5VG14clV5RVpYVE8tOF9sdGF3NkdpRHJCZ1BBbUlpLVFkQWVOVzF1VWV2SkFYdTNEMllhT1J2NFR0SU1YemlsQ1lxZw?oc=5",
+     "published_at": "2026-10-18T18:45:00+00:00",
+     "publisher": "Radio Rafaela",
+     "source_url": "https://radiorafaela.com.ar",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "description"
     }
    ]
   },
@@ -11584,9 +11277,9 @@
    "publisher_count": 1,
    "category": "economy",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Perú y México retoman relaciones y sellan una nueva alianza para impulsar comercio e inversiones",
@@ -11619,9 +11312,9 @@
    "publisher_count": 1,
    "category": "science",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Celina soma 60,7% dos votos válidos, diz IGAPE",
@@ -11654,9 +11347,9 @@
    "publisher_count": 1,
    "category": "community",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Regidor Alejandro Gómez critica retraso en túneles de Cholula - e-consulta.com",
@@ -11689,9 +11382,9 @@
    "publisher_count": 1,
    "category": "economy",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Mudar de emprego já foi uma das melhores formas de proteção contra a inflação. Agora a vantagem está a desaparecer",
@@ -11724,9 +11417,9 @@
    "publisher_count": 1,
    "category": "education",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "High number of TTC trainees referred in examinations sparks calls for investigation",
@@ -11759,9 +11452,9 @@
    "publisher_count": 1,
    "category": "community",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "À une semaine des législatives en Israël, Trump apporte son \"soutien plein et entier\" à Netanyahu",
@@ -11794,9 +11487,9 @@
    "publisher_count": 1,
    "category": "community",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Israeli settlers attack European diplomats, beat French mayor",
@@ -11829,9 +11522,9 @@
    "publisher_count": 1,
    "category": "conflict",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Militares en Sucumbíos enfrentan a grupo armado cerca de la frontera con Colombia",
@@ -11883,41 +11576,6 @@
      "location_role": "geographic_subject",
      "event_location_verified": false,
      "location_precision": "country",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 25.54389,
-   "lng": -103.41898,
-   "name": "Torreón",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Caída de elevador en Torreón: cuatro lesionados en vivienda",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9nU1M0cm5fUFhSV0JfV0MtUkNVSkN0U25sTmFQN3NEdGI0emVBMGRFWnk3SnJUOGI3Vkp3Y19iQU8yVHFOYnNZZDVOZGxFY0pveUNvanVybG81b01sb2EtdDdaei02WVZfUVJjZ09GQUx3amxPNzFLMWpCYmxDd2M?oc=5",
-     "published_at": "2026-10-18T16:11:43+00:00",
-     "publisher": "https://estrelladigital.com.mx/",
-     "source_url": "https://estrelladigital.com.mx",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
      "geo_match_method": "headline"
     }
    ]
@@ -12198,41 +11856,6 @@
      "location_role": "geographic_subject",
      "event_location_verified": false,
      "location_precision": "country",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 10.52066,
-   "lng": -74.18504,
-   "name": "Fundación",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "El Municipio acompañó la entrega de un nuevo crédito junto a la Fundación para el Desarrollo Regional",
-     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5vRkx4TFQyb0x3ZWFjVDlhY1lVa0R1UVp4MFgzSjR4MmVFME9kNVI0ZVc3OVlXcnFDMFRtbmlYMUpFZ05BdVJJMXJUZktFdGN2NUV5ZmlUZU1WeWVo?oc=5",
-     "published_at": "2026-10-18T15:30:44+00:00",
-     "publisher": "Pampa Diario",
-     "source_url": "https://pampadiario.com",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
      "geo_match_method": "headline"
     }
    ]
@@ -12549,41 +12172,6 @@
      "event_location_verified": false,
      "location_precision": "place",
      "geo_match_method": "description"
-    }
-   ]
-  },
-  {
-   "lat": -40.57395,
-   "lng": -73.13348,
-   "name": "Osorno",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "environment",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Osorno: Detectan aguas servidas en el Río Rahue a días de clave reunión territorial",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBaS3k1cXp6MncyZk9QUEFmVGpDOXM3dzd1aFpmVEFXbXB2N3E1X0V0UXJROG9HVnZyZC1zclh4TG5VR050TDdUV2IwRkttRXVNYnNUanQtdkkyYm5WaHdGVGJhRVFRVktaUGdwdXJ6YS0wa2FJYWZ5cXN2bk4zZw?oc=5",
-     "published_at": "2026-10-18T15:00:00+00:00",
-     "publisher": "Paislobo Prensa",
-     "source_url": "https://www.paislobo.cl",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
     }
    ]
   },
@@ -13129,8 +12717,8 @@
    "velocity_change_pct_sample": 0,
    "articles": [
     {
-     "title": "Calidad del aire hoy domingo 18 de octubre de 2026 en Puebla",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOT20ydDBSU3FPM3F6UDhZWjd0UGljNmx1bWxNNXpJRHpFWWFXa2FUWGoxaW92S0ljV004b0FkOUNZUjJPcHZILTF0S3ZQZTZjZll3T3hRS1dlUlFTeVJFSVJlQnZpYTU3THljb2xibVdPaFZ4eDRmZEQwSkd1Q2hXTGg1Q0tvb3VvRVFYbXRWVHNadHB4dkdwOW1VdHZWYzFqcjRpcFg4cFJKQzBTWmk2Sk1qaDcxTkNrQjBxMHlOLWc?oc=5",
+     "title": "Calidad del aire hoy domingo 18 de octubre de 2026 en Ajalpan, Puebla",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQc0RfZFBMNUVxNXc2clh2TTJSLXZMcmNhRE9LcEp4MVl2R3BRUENHQWNKZmxnMG1rQWlrQU5MQ2FZZVcxcmxtN0dGLXc0ZVVhS28wS3pDTU5VX211U0lrY2VxX0dEb21yUWNKUXEyelU3OVVvdWl4UnhDMnZuRkpTVjJtUmM2YkhHTEg2eHhlLVM0VzMyZmt4NjhyQmQxb3c3MklVWG1ySnZHSFVfSHRfZnNGSXJyTEFXVFRfOXE2VGZ2ZEUwdEdYUGlwWQ?oc=5",
      "published_at": "2026-10-18T14:01:00+00:00",
      "publisher": "El Heraldo de México",
      "source_url": "https://heraldodemexico.com.mx",
@@ -14023,111 +13611,6 @@
    ]
   },
   {
-   "lat": 40.42,
-   "lng": -3.7,
-   "name": "Madrid",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "El Ayuntamiento de Getafe y la Comunidad de Madrid acuerdan la financiación y desarrollo de los servicios sociales municipales para el periodo 2027-2030 - Getafe Central -",
-     "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPNXF2UFNORnN5OW83cnA3azV2bFd6c1BuSU5HRWVjM3R1UUpaeG14M1l2OUt3aXFPZnIyMEgtYlpxbTcwdlNXaWVWaXlzXzRWRklka3c3RXNISGhNY09nMkRGcWJ3U2lwTDB1OGpGVzNEMjBrRnNTQld1T01lX25YV1RxUDluaTNBUlY5Zi1xVHJKUlpTQVptZHE2ZXl2QVctZDFXOGtzQ1lnVU4tWlRIVVA3MXpaZjc4QS1MREN0b3hOdWRsekZLZDFQVlBmbkcyS1ZiNUx3Mmt6aVEyOWxORklwTGNSUnVUUTEwNDFQWmZxLTJ1WVJ0S1dXUjdqOXBSMDZhRllaTmpiZU5QX0c4Z0RFdHEzeVQ2MGMtcUJpbw?oc=5",
-     "published_at": "2026-10-18T13:00:00+00:00",
-     "publisher": "Getafe Central -",
-     "source_url": "https://www.getafecentral.com",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 16.05,
-   "lng": 108.2,
-   "name": "Da Nang",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Da Nang aplica la inteligencia artificial para mejorar la experiencia del turismo inteligente.",
-     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mNTJhbU5kV3NWMDhjcFBvX3otOEpiSzZaRFFtNE05WG40MDV1aTdRYnVYbzNWdmp5blVkRmdwdmdLQl9iQTJZTkZlSkJ1eWJhNHRr?oc=5",
-     "published_at": "2026-10-18T12:47:47+00:00",
-     "publisher": "شبكة تواصل الإخبارية",
-     "source_url": "https://twaslnews1.twaslnews.com",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 45.42,
-   "lng": -75.7,
-   "name": "Canada",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Jamie Sarkonak: Canada — the medical resort of the developing world",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPamdZZWNYSU9rbVA0R1NUYlU5aWk5QVFqRVlacGlPamdGZmozV2sybTMzMS04QXh6V0RpN1lNa1B3LUU4U0hsZmdWLXJRRTl1Z3ktSHROakQtQ2JaV2ZBSVcycEduOHhoMDJsUUo3cmJFM0RHVGhkbjdpWmdQMkFKYmh5bnN0ZFYxWU1qNVZyelNWTnNkRjdEUlowRUp0dw?oc=5",
-     "published_at": "2026-10-18T12:35:50+00:00",
-     "publisher": "National Post",
-     "source_url": "https://nationalpost.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
    "lat": 32.08354,
    "lng": -81.09983,
    "name": "Savannah",
@@ -14256,6 +13739,41 @@
      "source_url": "https://hartfordhealthcare.org",
      "source_kind": "aggregator",
      "language": "en",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "description"
+    }
+   ]
+  },
+  {
+   "lat": -34.72065,
+   "lng": -58.25454,
+   "name": "Quilmes",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "La comunidad de la UNQ marchó al Congreso en reclamo de financiamiento universitario",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcVdUM01NSm5qS0F3ZjExNVYzQXF1dEJLQmVLdTU5Mk1lejJta2FtY09WWmpyanJ3c1ZFaF80dlhsQ2c4czAwaUprZlg2R2g4YmlvQVZiOTYwaTUyTFhBbEVoMmM4VEpCcXAxOUw2MnBGb3NGSnkzLXEyS3BkcDdobFdqd1RhZF9ielE3Z091NFNHZDF6VG5zMXpfYnloWXVPZXQ5a1czZDJfNmcxcXY4NUhlMXNhdzhENHY1VGtTVVRCYkc4empMeEZJRdIB0AFBVV95cUxOSTZSZUI5ZzIwTXhrVmplOEtxYTdBbzM3V1QzaHZ0SW9uMjAyaVFXUXlkbnpEbGNnM0RMcENKVlQwMjZ2ckhUNnBhamVPOUZTQjh2NVd0ZDVSdm1WSTZiTlo2Rlc0aG9jMTJDa2pxTmFGd1I5RFJWRXBkR05aTWJyN0F0cE4yV1c3ZFJ2N1MwRDNFZk5kVlo1bzJ3RkVDenFVellVOWU0bWVwRlo2MzNoQUczX3ZCU3dJNHVzM2ZZdk5ma2tpdlpuWWh4aXRrLUFU?oc=5",
+     "published_at": "2026-10-18T12:29:00+00:00",
+     "publisher": "Info Quilmes",
+     "source_url": "https://www.infoquilmes.com.ar",
+     "source_kind": "aggregator",
+     "language": "es",
      "geo_match": "description",
      "evidence_class": "description_context",
      "evidence_label": "Description evidence",
@@ -14513,10 +14031,10 @@
    ]
   },
   {
-   "lat": 29.76,
-   "lng": -95.37,
-   "name": "Houston",
-   "accuracy": "place",
+   "lat": 39.8,
+   "lng": -98.6,
+   "name": "United States",
+   "accuracy": "country",
    "location_basis": "description",
    "location_role": "geographic_subject",
    "event_location_verified": false,
@@ -14529,9 +14047,9 @@
    "velocity_change_pct_sample": 0,
    "articles": [
     {
-     "title": "EPA quietly backtracks on claims US has phased out toxic Pfas compounds",
-     "url": "https://www.theguardian.com/environment/2026/oct/18/epa-pfas-compounds-toxins",
-     "published_at": "2026-10-18T12:00:03+00:00",
+     "title": "US workers facing deadly heat borrow from tomato pickers to win key protections",
+     "url": "https://www.theguardian.com/environment/2026/oct/18/workers-heat-protections",
+     "published_at": "2026-10-18T12:00:02+00:00",
      "publisher": "The Guardian Environment",
      "source_url": "",
      "source_kind": "publisher",
@@ -14542,7 +14060,7 @@
      "evidence_explanation": "The feed description was used to associate this story with a location.",
      "location_role": "geographic_subject",
      "event_location_verified": false,
-     "location_precision": "place",
+     "location_precision": "country",
      "geo_match_method": "description"
     }
    ]
@@ -14614,6 +14132,41 @@
      "event_location_verified": false,
      "location_precision": "place",
      "geo_match_method": "description"
+    }
+   ]
+  },
+  {
+   "lat": 10.52066,
+   "lng": -74.18504,
+   "name": "Fundación",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "La Fundación Progreso y Salud, premiada por su labor de divulgación científica",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPU0swQVZCZFJSc1pLY3QyS1dMLS1OMThVNEhuaVZTazVYNEFSV3NjaURMSDltbW5mbnEzdklvZ29jMVgwVEVqSVljU2JDZXVJV2ZwWGVKZURsajdZbUVDOFUtWHJtSGdjamdxQ3liNWk3Z3ZDbVVEVnJXTjJOR2RjcFY0XzI2ZkNiblc2YnY2NDlqWjlCbTk1NnliTW5KV2ZDZ0FqWGJzQ05fbEQyY2FfYUR5ZC1PSjVLc2E1WTQ5LUM?oc=5",
+     "published_at": "2026-10-18T11:39:11+00:00",
+     "publisher": "Junta de Andalucía",
+     "source_url": "https://www.juntadeandalucia.es",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "headline"
     }
    ]
   },
@@ -14746,41 +14299,6 @@
      "source_url": "https://www.manilatimes.net",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    }
-   ]
-  },
-  {
-   "lat": -40.57395,
-   "lng": -73.13348,
-   "name": "Osorno",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "society",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "CON ORGULLO Y EMOCIÓN, ESCUELA CLAUDIO ARRAU CELEBRA EL REGRESO DE SU MEDALLISTA NACIONAL DE JUDO.",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdjZIYjVyQmxYZlVIeDYycUU4eVJpVGUxSVdWWENGLXFNYVNrSjNSSFBqNWNDU2VoendqcHNnNU16b2xoN1htNU5CRkliSzd4MUhVSnpGejY1Q1lncGpYS0JMak14eWdHSVh6c3A3NWFvY1V1SHctc1ZiX0pGM1gtWjQ4NWpoRHdZVkxOOUVyd0dPR3d3M0hBMVJtQXo0M1NhV1kxUkZMR2NXQ2ozVEVGWGJBV2s4ejUzdzBacm9NekRHLXFERHloa0RqOA?oc=5",
-     "published_at": "2026-10-18T11:28:55+00:00",
-     "publisher": "Soy de Osorno",
-     "source_url": "https://soydeosorno.cl",
-     "source_kind": "aggregator",
-     "language": "es",
      "geo_match": "description",
      "evidence_class": "description_context",
      "evidence_label": "Description evidence",
@@ -14954,41 +14472,6 @@
      "published_at": "2026-10-18T11:08:33+00:00",
      "publisher": "Infobae",
      "source_url": "https://www.infobae.com",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 36.13326,
-   "lng": -5.45051,
-   "name": "Algeciras",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "La Junta organiza en Algeciras el IV Encuentro Provincial de Consejos Locales de Infancia y Adolescencia",
-     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOWWV3N0dZOU5jWHUyVXBPTjZKVW5xdjlYWUdmRGZYSFNxNFo5RUFoQUFNczNFX1VNeEdvdDR3aXpGZEdPNVNqbjB3RklOVDNlZVM3Q1BCaEoyYTdMQVB1VkEyU1JzR3NsT3dBcWtQWnNldDVldDl2VnVBbF9kR0w2MzV2VUFsNmVEZVNMU3psbXdjMW83OVFLYmlUN1U2SE50d01zbEplWERybGJrdnAxa0FGX20ydUVSWVlrUEgtdnlSejc1QzE5RThac1lfZ1dkU19hZFpmM0FXazZ6ZkNvS2RJVURnVlJfTm9KcDBR0gHzAUFVX3lxTFBJZzg5MTJwazFxM1pDanhNaEV0NGNKWnFtbjRyQldiMXlweDljUG5sWkYzT0Q4Slo5LWlZbmRLWUV4dWZZLXViWGJvUWZwOUNJZzc3R0N0NVhHaXVRQ0lfa0tjTVlWWWhBS3llRnFmVDg4R3dZRm9VX3d1Wi1KWU9sTEwtWUw2eWZEZm5pSTk1dFF3bTNPNWpMSnRsU0U1MFR4UHlRQjBXdDh1UENFcGZoRDVNaDlJakYtTlFxR3dZeG5DclkxUENFZG5RdHpCaXQzUHp6NGNTZmN6eEI5NlFIel9LSm92X0hKcXFVTmFDRXRmRQ?oc=5",
-     "published_at": "2026-10-18T11:07:16+00:00",
-     "publisher": "Teleprensa",
-     "source_url": "https://www.teleprensa.com",
      "source_kind": "aggregator",
      "language": "es",
      "geo_match": "headline",
@@ -15458,41 +14941,6 @@
    ]
   },
   {
-   "lat": 34.05,
-   "lng": -118.24,
-   "name": "Los Angeles",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "If Trump fells 430 trees in the middle of a golf course, do they make a sound?",
-     "url": "https://www.theguardian.com/commentisfree/2026/oct/18/trump-golf-course-washington-dc",
-     "published_at": "2026-10-18T10:00:56+00:00",
-     "publisher": "The Guardian Environment",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    }
-   ]
-  },
-  {
    "lat": 41.76371,
    "lng": -72.68509,
    "name": "Hartford",
@@ -15650,7 +15098,7 @@
    "articles": [
     {
      "title": "\"In Tirana, Rama's resignation is demanded, police shoot protesters with rubber bullets\"/ Well-known German media, DIE ZEIT: From France to Italy and Albania, Europe in protest!",
-     "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNNm55WTJrbGtvcFpXWlM0eGFic1o5aVE1X1hmY3RiSGd6TmRVOGFSWnRXT2UxSWRUaTkzMkVQMUNmakJTVHdoXzJNUjJ6WnFTQklvTE9udmNpZFhfZFlDbkgzY0l0QUFTMEVGN3hmQUZhbWRuQzZVNG9tLTdOcy1CUW9vSTRnejZ5ZVJPTXRldmkzTm5Tb2ZSdkNxaGFUUmJxazFGMjd6NS1hblc5aU05bGg1OGNEWEJ6eUd2RTZSZmhIc0VrZ1dTcWtIOVhRU3ljOWV6S2NrVW9USFlDVlAwOE10WjZJOEIwN0xPN1ZVMmVsQWpLZDRRaWRyLUhId1U?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdEpQVVR5eVpIdTdHNWlrcDNuT09CQkNrYk1ZNGNqOGdQVlhaNUxfTzcwNDlvN2Q3TjBma01JRUd3X2o0STUzOXBPaklsM2FrOTJKUDBaeFZxdGpZeUY4aFVSUkNrTXNWSnN5RnNLQlhaajJnY2oyWFlLTWptUGI2YUtzWlpBT0d1MDVQNGpNQjA3b1NrdS01Q0NMVTE3MVRlVXZxenRJLWZ5RTJ2OU9DWTRqb08xR3pOVGNuZ1JQNTRBMVpPZnVoOExyRGo4a2hLUFJPdDV0ZDVvSWRuNlVOZVhWTQ?oc=5",
      "published_at": "2026-10-18T09:40:00+00:00",
      "publisher": "Balkanweb.com",
      "source_url": "https://www.balkanweb.com",
@@ -16263,41 +15711,6 @@
    ]
   },
   {
-   "lat": 39.47,
-   "lng": -0.38,
-   "name": "Valencia",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Catarroja homenajea a cuatro policías locales de Calatayud por su ayuda tras la DANA de Valencia de 2024",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQMW82MVVZekNUMW1TUFJGZElycXJ2d3NRa3BPNWxfYXRfT1NFMmh6THFQbEVkTklLcnk0WDNKaGh2VlZBVzFUeV9pa0U3c0E4clhCVE1EN1ZGSUwybi03V3VFdGt1ZUFKZzNOMVRTOTZ4c0NidWp6Vm5VbXlON29kY2J1bXcxOU1DSU9fZzNqSS04aWVLeXZ2MU5KeUtzd0VlMWxLaTlNWDR1ek10TjNtaExkN0FkT294V3NLT3dpZThWc2QyanYtak9WdENJQWc?oc=5",
-     "published_at": "2026-10-18T08:13:00+00:00",
-     "publisher": "El Alto Jalón",
-     "source_url": "https://www.elaltojalon.es",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
    "lat": -33.45,
    "lng": -70.67,
    "name": "Chile",
@@ -16893,6 +16306,41 @@
    ]
   },
   {
+   "lat": 21.88262,
+   "lng": -102.2843,
+   "name": "Aguascalientes",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Vivir lejos cuesta tiempo y servicios",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9jc2NYSzI4NmVXXzhMczVPQnFFcGF0S2pHMmxQbGVfRks2bGFGcWtQU1FlOXZTMHMwQTFVNDBfM0RjTV9ic0VrbWhlZUpteGRCYnF5NWF0ZTctcFZyRTB6clhwM293V1Y0bXduVWJ3?oc=5",
+     "published_at": "2026-10-18T06:45:49+00:00",
+     "publisher": "El Heraldo de Aguascalientes",
+     "source_url": "https://www.heraldo.mx",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
+     "geo_match_method": "description"
+    }
+   ]
+  },
+  {
    "lat": 40.5,
    "lng": 47.5,
    "name": "Azerbaijan",
@@ -17098,6 +16546,41 @@
      "location_role": "geographic_subject",
      "event_location_verified": false,
      "location_precision": "country",
+     "geo_match_method": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 52.36,
+   "lng": -1.17,
+   "name": "England",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Landmark Study Maps 406 Rare Diseases and COVID-19 Infection Across 62.5 Million People in England",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeDM1Z3NPT2pPVEpTdFFMTFRncGZlbmplMWFnc1pFSE10UWd2Z1pPNHJ5QTdnNmFsaExnSGhVSWk4VjNWMmVXbWZrUXNQTkp2NHU3aFR4YUs2QUxEbkNKOU1vODhsOE1wS2FQbUM4Qld2ekluZkFkdVU1VlNVUXFhM1Y3WWh5TVlEM2FEdU43Y1RFTE53UkNsWmlGcjhZQ2daZHZVWTAyY2xRU3ZYSDlyNWZqdzRmZGF2MmhqQWFDUjQ?oc=5",
+     "published_at": "2026-10-18T06:06:18+00:00",
+     "publisher": "Bioengineer.org",
+     "source_url": "https://bioengineer.org",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "place",
      "geo_match_method": "headline"
     }
    ]
@@ -17523,6 +17006,41 @@
    ]
   },
   {
+   "lat": 33.69,
+   "lng": 73.06,
+   "name": "Pakistan",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "conflict",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "From sponsor to enemy: What’s behind Pakistan’s attack on Afghan Taliban?",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWWUybkFhUlY5bmRyUjNuUlBaY2ZDWHpMWmFDQVNWczdVWV9QdGVaS0trUHBUQWM0ODFSMExkcnVwVHlsS3M2My1FWEE0Zk9UaTZJZnZWNi1NcFVfOHhVMFRGSEtmUzVWRU1nTnhkMzVNN3pldmFFWFpvMGtYNENsSWlKSG8ySmFfMEVKcnNaMUlLTl9FWjV6eWM3VQ?oc=5",
+     "published_at": "2026-10-18T04:01:18+00:00",
+     "publisher": "DD News",
+     "source_url": "https://ddnews.gov.in",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline",
+     "evidence_class": "explicit_headline",
+     "evidence_label": "Headline evidence",
+     "evidence_explanation": "The headline supports the location assignment.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "headline"
+    }
+   ]
+  },
+  {
    "lat": 28.61,
    "lng": 77.21,
    "name": "India",
@@ -17838,6 +17356,41 @@
    ]
   },
   {
+   "lat": 21.03,
+   "lng": 105.85,
+   "name": "Vietnam",
+   "accuracy": "country",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Dien Bien abre el mercado turístico internacional a través de rutas de conexión regionales.",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMlh6Q3hHYklRLU5mQ3k2MXlCTXdXeHpRLXh6WFIyOTRkd1FVQkFPWVAtdzJBTlZ2Zl85ckFNUFB6eWNmXzVhN1VtV2t1V2pWOTR5NW5zdDRZcnVLRl9qMVducU9FS2VZUWZVc29tcmZZNHpRZVp1bm1BUmRxY0t1ZWZ6cVU1VXkzZVMwb3E5N1J5dWdXN3piRDJR?oc=5",
+     "published_at": "2026-10-18T03:29:26+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "es",
+     "geo_match": "description",
+     "evidence_class": "description_context",
+     "evidence_label": "Description evidence",
+     "evidence_explanation": "The feed description was used to associate this story with a location.",
+     "location_role": "geographic_subject",
+     "event_location_verified": false,
+     "location_precision": "country",
+     "geo_match_method": "description"
+    }
+   ]
+  },
+  {
    "lat": 31.9,
    "lng": 35.25,
    "name": "West Bank",
@@ -18078,41 +17631,6 @@
      "location_role": "geographic_subject",
      "event_location_verified": false,
      "location_precision": "country",
-     "geo_match_method": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 22.15234,
-   "lng": -100.97135,
-   "name": "San Luis Potosí",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Sismo de magnitud 3.7 se registra en Cerritos, San Luis Potosí este 17 de octubre",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeEp0dllxR1lHLUNabmk5Y0lYRUJ0cnRsbXdHRGp6UlhRejA2eVBQbXNCSno5b29QTGkzb2stZFpaSkZNUTE1THJUYjhhMEVoMENud3pWeF9oSHZPM2x5SjRKd0lzMG5sNWt2RUhUcGVKa09ROGtfcEFaenhHRDRSbW5FZmRBY3BnMEJwOE5kMk9sT182QXk4Nk1qYTQ2cTg3QzcxVkVUbGd3Zm4yOE9HbHdGXzlSMlRZVFEwRV80X1BjcEhjb2FtU3EzWVF1dkVnRkN3TW9JaUdndw?oc=5",
-     "published_at": "2026-10-18T02:04:00+00:00",
-     "publisher": "El Heraldo de México",
-     "source_url": "https://heraldodemexico.com.mx",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "headline",
-     "evidence_class": "explicit_headline",
-     "evidence_label": "Headline evidence",
-     "evidence_explanation": "The headline supports the location assignment.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
      "geo_match_method": "headline"
     }
    ]
@@ -18746,111 +18264,6 @@
      "geo_match_method": "headline"
     }
    ]
-  },
-  {
-   "lat": 33.01984,
-   "lng": -96.69889,
-   "name": "Plano",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Pozos ofrece servicios de inhumación y remodelación de espacios funerarios",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNEtNQ0ctWDlubXFnei1oT1pqWUh4SGhkYVI4c1dUN3NxMVVmeXFxNm9QVVcwS21GV3QwOGY5T2V3T0FFRzl3UlVueWtRZ2hUdnVPYzFUMWtlckhQREo4VDlOM0RYeWt0eEdPSzVNVm1xZnJzX1NGTm1GR2JmY2l6R2dWZTIwcjhtWURQejRyREFYdVFaN0JMczRhMVVjTlpQdkdYQzlIRHBpMFpQYTk3YQ?oc=5",
-     "published_at": "2026-10-17T22:59:00+00:00",
-     "publisher": "Plano Informativo",
-     "source_url": "https://planoinformativo.com",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    }
-   ]
-  },
-  {
-   "lat": 19.0,
-   "lng": -72.41666666,
-   "name": "Haiti",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "politics",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Michel Martelly busca volver a la Presidencia de Haití pese a sanciones internacionales",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVE5sTFFwMlJhQWNYdFdQMk90Ymd1ZldsOHFHYjV1eFhvak9NTUktNGZ3VGNLNGpVZE96UU01cElqaWo1VEhBNzU2cm5lcTB5Z2J5R2w4d19BQ1dNQmxmRjF2ZHAtNU1LTGtCUTktY0FIa2VveXFuMjR1eDJvYnhRSmpqOWtJdF8zYWN0ZEd1SWwzZGVRdXJ1Qm9jQkFtemJyVHJlLUwwOC1SUnBIbkVKd1FxRENFUVpwWVpkN0RuWlEtLWE5b0tVcEFQd3RSY18wMGfSAdIBQVVfeXFMTVRObExRcDJSYUFjWHRXUDJPdGJndWZXbDhxR2I1dXhYb2pPTU1JLTRmd1RjSzRqVWRPelFNNXBJamlqNVRIQTc1NnJuZXEweWdieUdsOHdfQUNXTUJsZkYxdmRwLTVNS0xrQlE5LWNBSGtlb3lxbjI0dXgyb2J4UUpqajlrSXRfM2FjdGRHdUlsM2RlUXVydUJvY0JBbXpiclRyZS1MMDgtUlJwSG5FSndRcURDRVFacFlaZDdEblpRLS1hOW9LVXBBUHd0UmNfMDBn?oc=5",
-     "published_at": "2026-10-17T22:56:53+00:00",
-     "publisher": "Acento",
-     "source_url": "https://acento.com.do",
-     "source_kind": "aggregator",
-     "language": "es",
-     "geo_match": "title-normalized",
-     "evidence_class": "other_heuristic",
-     "evidence_label": "Heuristic association",
-     "evidence_explanation": "The collector matched geographic text but could not assign a clearer evidence category.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "country",
-     "geo_match_method": "title-normalized"
-    }
-   ]
-  },
-  {
-   "lat": 45.5,
-   "lng": -73.57,
-   "name": "Montreal",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Nearly 90% of countries adopt biodiversity targets, but most remain off track",
-     "url": "https://news.mongabay.com/2026/10/nearly-90-of-countries-adopt-biodiversity-targets-but-most-remain-off-track/",
-     "published_at": "2026-10-17T22:50:40+00:00",
-     "publisher": "Mongabay Global",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description",
-     "evidence_class": "description_context",
-     "evidence_label": "Description evidence",
-     "evidence_explanation": "The feed description was used to associate this story with a location.",
-     "location_role": "geographic_subject",
-     "event_location_verified": false,
-     "location_precision": "place",
-     "geo_match_method": "description"
-    }
-   ]
   }
  ],
  "story_clusters": [
@@ -18936,6 +18349,12 @@
      "active_publishers": 4,
      "total_seen_publishers": 6,
      "new_publishers": 0
+    },
+    {
+     "at": "2026-10-18T23:05:15.741038+00:00",
+     "active_publishers": 4,
+     "total_seen_publishers": 6,
+     "new_publishers": 0
     }
    ],
    "tracking_note": "Sampled publisher coverage only; not event severity, verified facts, or global media volume."
@@ -18969,12 +18388,6 @@
    "new_publishers_since_previous_observation": 0,
    "observed_publishers_total": 2,
    "coverage_timeline": [
-    {
-     "at": "2026-10-18T08:27:53.819744+00:00",
-     "active_publishers": 2,
-     "total_seen_publishers": 2,
-     "new_publishers": 2
-    },
     {
      "at": "2026-10-18T08:37:08.600559+00:00",
      "active_publishers": 2,
@@ -19040,6 +18453,12 @@
      "active_publishers": 2,
      "total_seen_publishers": 2,
      "new_publishers": 0
+    },
+    {
+     "at": "2026-10-18T23:05:15.741038+00:00",
+     "active_publishers": 2,
+     "total_seen_publishers": 2,
+     "new_publishers": 0
     }
    ],
    "tracking_note": "Sampled publisher coverage only; not event severity, verified facts, or global media volume."
@@ -19050,12 +18469,12 @@
   "scope": "published_article_previews",
   "note": "Similarity groups are not verified events. Counts refer to sampled published previews.",
   "counts": {
-   "candidate_articles": 702,
+   "candidate_articles": 678,
    "same_publisher_headlines_collapsed": 0,
    "clusters_produced": 2,
    "grouped_articles": 6,
    "groups_using_guarded_expansion": 1,
-   "articles_after_publisher_dedupe": 702
+   "articles_after_publisher_dedupe": 678
   }
  },
  "story_tracking_diagnostics": {
@@ -19193,10 +18612,70 @@
  },
  "unlocated_articles": [
   {
+   "title": "Light-Switching Brain Proteins Earn 2026 Nobel Prize in Physiology or Medicine",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdndzelBEZVl1TS0tcmlKSGxlTXNEODlTTzlscTk2ZHZHUGpIVURDVVhGeHFrb3Voc3dMb19QbWZxcEU1Rm9Bb2RuUF9QQzF0eEtxR0Q3MVlkbXFrTXlVR2Z0RFlUQnFQcVppck1ReUpnQU5LQkktQ0pqUnMyUDF3YmlvWkRqdE8wU2lfSlZtOUlZT1BOY0lZOTA0WXdJOXN3WGFjNWV3?oc=5",
+   "publisher": "Bioengineer.org",
+   "published_at": "2026-10-18T23:01:56+00:00",
+   "category": "science",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Mission set to blast off for Mars to grab a piece of its moon",
+   "url": "https://www.bbc.co.uk/news/articles/cmvgxvkv54w1o?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Science",
+   "published_at": "2026-10-18T23:00:48+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Home sellers cut asking prices on 3,000 properties a day",
+   "url": "https://www.bbc.co.uk/news/articles/c84g13z6xx4eo?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Business",
+   "published_at": "2026-10-18T23:00:45+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Support from political parties for Working for Families reform",
+   "url": "https://www.rnz.co.nz/news/personal-finance/2017178/support-from-political-parties-for-working-for-families-reform",
+   "publisher": "RNZ National",
+   "published_at": "2026-10-18T23:00:37+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Labour pledges social media ban for under-16s",
+   "url": "https://www.rnz.co.nz/news/politics_election-2026/2015458/labour-pledges-social-media-ban-for-under-16s",
+   "publisher": "RNZ National",
+   "published_at": "2026-10-18T23:00:32+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "La Verde celebró sus 109 años con inauguraciones, anuncios de viviendas, pavimento y luminarias LED",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMUt4eDFwNW5iSTVPbnBGTWFVR2x2NXJOTzBiRHo3Z2psTGhaZmhaWkpDbC05ekpnVm4wYU1QZExxdEhxTG1mTzNucmhmRUtfb2J3czJGc0FoMWYxSkZWM01FRE9tdXFpZEFpN1FMOWhramM5Mm92N0YzT1p1MDh5azNVa1F1ZnFXTG83UzNMTUlHWHhrSGRsYlJfa1pfMXk5MjlobU9UcjE4N2EwcXA2X2NTZTl5LWFLc0pXTTE1bzdyTEZOQkpVQmpoYk4?oc=5",
    "publisher": "Diario Primera Linea",
    "published_at": "2026-10-18T22:46:24+00:00",
+   "category": "society",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Presidente Luis Abinader inaugura ampliación del Centro Educativo San Vicente de Paúl en Los Minas, que beneficiará a más de 2,000 estudiantes",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWEtob2FuTGRGMGFQcjU5T21aQVF5WktKdEFQUi1mVDl3SUtERy1QN3Q5Z1o0clA2RkdiazlfNHNxdmYyYUp5LVdrVjFmQTJyX2tHajJnemM1dkg3M05xa0tsRmh2LWhZMHN3ZEVvVWlhcnpwWVREaWVFV3h2MzhlWDBvcUFMOEQ2c0ZhMGlpOHMyNTIwN2k2OXczV1NZTkZMT3JnWnphSUFXVDg1TGVfNVV1N2NqYk9wM1dDYkxQeTM5QQ?oc=5",
+   "publisher": "Presidencia de la República Dominicana",
+   "published_at": "2026-10-18T22:45:14+00:00",
    "category": "society",
    "location_status": "unverified",
    "browse_status": "recent",
@@ -19253,6 +18732,16 @@
    "reason": "no_confident_geography"
   },
   {
+   "title": "WESTERN PROVINCIAL HEALTH AUTHORITY FAREWELLS 19 HEALTH WORKERS",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQlZ6Ui0yQzdHcjF3WnZpYzRxam9GcVFjR2NhM2tFYVRHSzQ5TmpYZnB2SXpQcnNSdkRKdlp3anR5R0k0WjlSQlpfSTY4aXpPWFR5bG5uYUwzOUZSSmFBM2tCdXRWQjlHUmdHTG5KdDNGYW5NRHZhakE1ZFdwallkbWVzNjhlWl9FRDlnaw?oc=5",
+   "publisher": "emtv online",
+   "published_at": "2026-10-18T22:37:33+00:00",
+   "category": "health",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "Springfield educators call for moratorium on AI in class",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSi1yekMzd01KNDlXYWx3M2pMRHNMbk1NM2dsRHRXTVBiR0xmeHFPX21ycFdiVi16SXhaSUZIV3dKOHk1ZTNYeUlxNFFuSnljaGhmajlXWm5Vc1F3QnlDSlo5ci1hOEM2am9fNWgtZDB4Z1NQMllZc1JXcFI0TjlKaXJWZFVFMUkzTXNoR29iRXk4M3BtaG5mM0JZQVRnWEJzT3ozcGphX2ZtZw?oc=5",
    "publisher": "MassLive.com",
@@ -19268,6 +18757,16 @@
    "publisher": "MundoBA",
    "published_at": "2026-10-18T22:30:00+00:00",
    "category": "politics",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Benny Metz recibe reconocimiento de Procuradora General y Ministro de Justicia por su trabajo en favor de la personas con discapacidad",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeVNwVnVsVjR1eWdaN1diX1NNdF9CX20tNENLMjhjYVdMeExNZ1NrRTE5UVpzVHRBdzZkSmFoRVhCQ3drMEJ1LWoybFkwOE9VZkpXRC1DWmlsc0F3RzJGakZYeFVIVVVHMkY0ODJZS1Z5bXAwd3NKLWhkaWtBclJvM3RoVUhOWGlaOFNWNVVzaThUb21XbmswRWR3c0FDRzlYUVVqWk45OWxvMWtQZHFTdkhkSy01Y3N6NUQxOTFxNy1GVzdDcmlMNEs3enc2X2oyNm1XUHdhVElRZmpYZHN1b0ZFYTZ0eHNhZlNralNsNnVaRzA?oc=5",
+   "publisher": "Noticentro",
+   "published_at": "2026-10-18T22:29:31+00:00",
+   "category": "rights",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -19313,31 +18812,11 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Labour pledges social media ban for under-16s within 100 days",
-   "url": "https://www.rnz.co.nz/news/politics_election-2026/2015458/labour-pledges-social-media-ban-for-under-16s-within-100-days",
-   "publisher": "RNZ National",
-   "published_at": "2026-10-18T22:08:41+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Por que é uma má ideia seguir o modelo econômico de Milei, inspiração de Flávio Bolsonaro",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYUhlNmZQdGZPU2NFZVpZSFozblJ1U2xnQ254M0gzTEpEakJQdlloVno3RnJhdTViX0p0N1Q3b0lFNjlUMlJnM0h4N3E2UVBvT3NnZ2xlbzd2bXgxLUk0VFg3QkQxR0xNR3M3NTBtTWVnaENPOVhFRFVwYWVmbDZXVExPRUQwbXdqYV9CeEVQQ3EtTHg2NW9ydTNSWGxpRm90NVRITF96bFF3dlVJMHgwM0ZldXZYcEt4WWYwUDlKaUF2RlgzdG5yZlVn?oc=5",
    "publisher": "Viomundo",
    "published_at": "2026-10-18T22:08:00+00:00",
    "category": "economy",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Especialistas alertam para risco fiscal do programa Prospera MEI",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcndUSHRrZ2FEYmpRMHJMRUFsS3JyRTFXZkdQVHVhLWFJcDZZSEtuWGoyY3NoZFVIRmpycWRkRTNtZ3BnazJsb0dfZUlWYl9pcF9jc1pPUFJFX01HWDRQdUdLMmw3MDRBWXo1eGN0OUtIcmJoUUZ4dnN6bkFrUWNXSnF1Yk9adDd1RFhoS1Etd2JrYnFwbnBxWnB1WjBfUdIBpgFBVV95cUxQMjVpY1RmNW9OUXpRNHE3Sy02c0h0WVJ2U3J6eFFFa3BkNTNjcE45eVpteEJfXzNJUUxZN2o2Nmp3WG8za19meFh5cEQzUHFscnJXdEQzS2FzX1o1dlRQOGp2XzhMVkJlTFhKZXFnMUs5YjNKODFSVUtCQkZUSVV5OG5aVHhyZG5GLVZ0TllacWFuYmQ0akVVd3FqZWNCZVZwYjNvSk5n?oc=5",
-   "publisher": "Pleno.News",
-   "published_at": "2026-10-18T22:06:00+00:00",
-   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -19408,6 +18887,16 @@
    "publisher": "La Prensa Digital",
    "published_at": "2026-10-18T21:48:34+00:00",
    "category": "conflict",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Governo estima tarifa zero em R$ 10 bi, mas entidade diz que é o dobro",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSnFONktnWjBMYVdYNlJjQnBKdnJmYV9SWm14UFFrd2JyZDlGYWdROUNwOVlCdE1vNlpZa195aWlMSF8xNlEzM2J2cXdVMHdBRFd6Y0RMR1JWMXFzZ056d1JDRlVaMTdONDBvRFNSVWw1ZUFuWFR4OEVjOEt2czVqeDJyT0xmQlo1c0VSUnh1T0E3YThNS1BBUENPUXpXX1AwejU4UHhSTkVPdUluWUE?oc=5",
+   "publisher": "TV Sim Brasil",
+   "published_at": "2026-10-18T21:42:07+00:00",
+   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -19493,16 +18982,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "What Netflix’s Layoffs Mean for Other Companies; Inflation Ripple Effects",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNEN5cGFwM2VXLVlfVEpvWGsxSzYtUjR5d1JPRTJCd0ZLdjdJRFl5WlBrS3dEcmRwb19NZTBYSms2emdHYTZqdHZYUk5OWmVRWURxSHJEZkxObDhjdllEOTU5bUJXZ0tiUWxNQkhmclRkYjgzV0Rwb0dCVWpBODhZbzZpMWhFSEY3NVVuSHpCZ0pXZlFRVEpnaHFJbU5TbjBQQlQ3R3VDajlGREdWcmdQNnd3?oc=5",
-   "publisher": "WSJ",
-   "published_at": "2026-10-18T21:23:48+00:00",
-   "category": "economy",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Mujeres que conquistaron a los hombres más poderosos y se volvieron imparables",
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYUhmSktzUmlhTnhLVEd1T0FLVGpnMWpycEpuSF9kcFhleWItVGxOYzFCcFU3NFlwNjFXR1ctODB1TDNKdkhfWGxxM2dNanNxMEVad1dyTDRMTU1fbFJLQjZBYi0tQmgwVXlJcjJ0bXpTOUlGVWpOS3Zxano3LVo2dTRCY2F1T2tjTWFDYVhPT3JTUVJCdHllaHg0bG5BdktqdTdFaHhFRzYwb0V3ajZZcHhmemhva2VnZll0dmp5djU?oc=5",
    "publisher": "Soy Carmín",
@@ -19518,6 +18997,16 @@
    "publisher": "kens5.com",
    "published_at": "2026-10-18T21:14:00+00:00",
    "category": "education",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Pra começar a semana: Semana final da eleição tem debate na Globo e série de pesquisas",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORmZBRUw2RURPbWlTUzZqb1BDWllITkhxdHliQ2JZX1dLaVlpWThUTGNTNmdUM3BINzdfZjJXNVQyU0hfRzZVN1VKU2hUZmszUHdqXzF0LUtOVlo1TE9lV1RCWXV2OEp0SkVGSWswNDNBcHp2WnZEaVYzYWRMcVJSUHZIaFF5bEtJY3lGaENlYWRsUEh0TFVURHVYN2llaHZ0N0RoYXlFOW15TzF6SGdRVkppU1MzVEZsLUpHMnZlUEhuRURTVFdLVWtkMGRwZmpBelE?oc=5",
+   "publisher": "UOL Notícias",
+   "published_at": "2026-10-18T21:13:40+00:00",
+   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -19663,16 +19152,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "🏥🎉 Realizan por primera vez una cirugía fetal intraútero en el Materno Infantil del Este https://www.notitarde.com.ve/salud/109255/realizan-por-primera-vez-una-cirugia-fetal-intrautero-en-el-materno-infantil-del-este",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPcEZUSEI4cWFlQWs1NjBsYUYwMnBPUEJrcXRlVTlpaHJyTldRMGJmQU5kT2xwOXJJQ1FKMjRyeHNiOXp3UTFOT1RQS1pndV9XaEhFVWJPX0lqaTFZRzdHd244VTFxQmo5NmdEUE9pTUR1TWRBX29tVnZwNnV0NkNJbUZsVXJrejBwamVSTlRXVmU3NDl6NFNXRE1uaVFIWWlmbHNnaDlWM3NpbXlUVGN2R0hab3RmYUMycmlRRU9wQnVtSF8zLUlEek0tbEp6aFR6aXIxNlhldFBPdEU0bzNabTQyLVJKLWVL?oc=5",
-   "publisher": "Facebook",
-   "published_at": "2026-10-18T20:44:23+00:00",
-   "category": "health",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Atos com artistas e estudantes reforçam campanha de Lula pelo país neste domingo",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMFpMQWd6UHVDTGc4UF9aXzY3eHJRNWc4Z0psZGZ0MVBiMDlnMmZma19HekFmUGY1aTQwQ3NhUkkybGRYcTFPaDhjb1JCODM0V0NZZ2pPU00teXM3cmlqLUF2aXdKVUljd0ZZMG5hM2JXTk9neHF0ekR4MklFSWlRTHFrWkM4RThaRGlOWDMwTHhDNW42NndpUDJZRjByazdmVFdfaE4teVhfdUs1WEFwWWIyeUdKcjV2R3dJ0gHAAUFVX3lxTE9MUldBVzE1V296ZEFMX0ROSjdzZElTWlJUV1dybEtjZVNOR01nU05NUFRTZVlqNjVDa1BKMF9FS1R2eTFnY2VTNVZOYjM1bWZDVUx5YmxubVU3eU1kOVQzaHRzQXVZc3JXRk9GaUZtaFRvTjBuSU55eXRWSE96TmRqVWlFalJJNGkxVG9fLWtRc3o5MVJyMXFsdmlBWlNvbzkwSmJDMGJMUlQzczNNN2ZRQmR3MFR0bGRmTGJPNkx2Tw?oc=5",
    "publisher": "Correio Braziliense",
@@ -19794,9 +19273,9 @@
   },
   {
    "title": "Qué autos descansan por el Hoy No Circula de este lunes en CDMX y Edomex",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYk93NUZ2Z3RWSkZBV2VxTGRiaEFmZk90dUY5aHZ4ZkxSUzE2UVhSYmUyRTFvRzQ4N1ZablBPSDhzMnJXeW5mLXhIdzB3WDRwaklyMGNSSkRZckp5aF9DRjVWZ1ZPSnlhV0VFU0tVdTU4YmxkOTZLazNPOHZpTlFESFZJQzB0bkVKSVVYNWFHMXc0YXRiUzlaY3FTTnFSR2Y3dHUwRi1WWjhaYlNVR2huYkNZRjhwd9IB0AFBVV95cUxONkRlVmpPMUtCbmxNYTVVYlRHODE0RFNodUlOYUVKZ1ZGZU8yY1JBRV9sTkxsRFVDOVh1dVlxT05LV29LYzM1VEVYREs4YjVSN3ZoS2gtVXVxbDM3MEhCZ2hNTmxUWS1hVlVMY0VrTWxWUURrMTIxUmhSRjhGOFZPNDN2VzJzQW9feHAxYVpnVFM1eDl1TmpMT085aFU2X2luWFhnN0gtNmVvcXlGUU56ZkVSSWJUd2RjYzFrWEpFTW9CUWNpSDlibWtCU0VGdWt2?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxONkRlVmpPMUtCbmxNYTVVYlRHODE0RFNodUlOYUVKZ1ZGZU8yY1JBRV9sTkxsRFVDOVh1dVlxT05LV29LYzM1VEVYREs4YjVSN3ZoS2gtVXVxbDM3MEhCZ2hNTmxUWS1hVlVMY0VrTWxWUURrMTIxUmhSRjhGOFZPNDN2VzJzQW9feHAxYVpnVFM1eDl1TmpMT085aFU2X2luWFhnN0gtNmVvcXlGUU56ZkVSSWJUd2RjYzFrWEpFTW9CUWNpSDlibWtCU0VGdWt20gHQAUFVX3lxTE42RGVWak8xS0JubE1hNVViVEc4MTREU2h1SU5hRUpnVkZlTzJjUkFFX2xOTGxEVUM5WHV1WXFPTktXb0tjMzVURVhESzhiNVI3dmhLaC1VdXFsMzcwSEJnaE1ObFRZLWFWVUxjRWtNbFZRRGsxMjFSaFJGOEY4Vk80M3ZXMnNBb194cDFhWmdUUzV4OXVOakxPTzloVTZfaW5YWGc3SC02ZW9xeUZRTnpmRVJJYlR3ZGNjMWtYSkVNb0JRY2lIOWJta0JTRUZ1a3Y?oc=5",
    "publisher": "Infobae",
-   "published_at": "2026-10-18T20:21:53+00:00",
+   "published_at": "2026-10-18T20:21:55+00:00",
    "category": "environment",
    "location_status": "unverified",
    "browse_status": "recent",
@@ -19844,7 +19323,7 @@
   },
   {
    "title": "Hugo Pizzi, primer “Maestro de la Medicina” del interior | 18 de octubre de 2026",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPak51bHRFSTg0clBkNnRiRnNSLVpjM2FwOV9nLVhPMnc5UDlLYkhDRTJvNlNmQlJHV25DaGxsUmljMG9Nc2FKVmdpV2QxeW9Nejc3OTdtR0Z5cjVwQWg0R01nVnI3LVR1ZE1XTUZWTjFfeTFoMlBNM3lBQlFaNjdESWF5RjVkWUZLWVh6Y2F5Qk5WZ9IBlwFBVV95cUxOWDQxTVdCWWpGV1RMaVNxVDl5bk5PRHJHR3dCQVh0bEI4eE83NnA0eHF4djFJYWwzNkw2R3JjWUZ3SWtEaDJjOXM2dlE4U1JNdjVsTWhYdDF4UzZZMGkwSmRaQy1CQzJUY2pmSU9Eb1FyZFdLbS0td2FkQW5yTDBSWlBrZlQxekQ3SDRqOGdMVkJYMHV1cFJB?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWDQxTVdCWWpGV1RMaVNxVDl5bk5PRHJHR3dCQVh0bEI4eE83NnA0eHF4djFJYWwzNkw2R3JjWUZ3SWtEaDJjOXM2dlE4U1JNdjVsTWhYdDF4UzZZMGkwSmRaQy1CQzJUY2pmSU9Eb1FyZFdLbS0td2FkQW5yTDBSWlBrZlQxekQ3SDRqOGdMVkJYMHV1cFJB0gGXAUFVX3lxTE5YNDFNV0JZakZXVExpU3FUOXluTk9EckdHd0JBWHRsQjh4Tzc2cDR4cXh2MUlhbDM2TDZHcmNZRndJa0RoMmM5czZ2UThTUk12NWxNaFh0MXhTNlkwaTBKZFpDLUJDMlRjamZJT0RvUXJkV0ttLS13YWRBbnJMMFJaUGtmVDF6RDdINGo4Z0xWQlgwdXVwUkE?oc=5",
    "publisher": "Hoy Día Córdoba",
    "published_at": "2026-10-18T20:15:43+00:00",
    "category": "health",
@@ -20093,6 +19572,16 @@
    "reason": "no_confident_geography"
   },
   {
+   "title": "La prueba de Olé: fue gol de Zaracho en el clásico de Avellaneda",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObkZfMVFuS0tmV2U3TnBpSFFqQU9VN1NBWDZBTDZxQXl5X3B4R3Z6U2FpM1dLb2dCZjRxY2xsMFBVTlJyZ2VraXhKVUJWRU5panpHLUZFUFI3NjZ2dGRueDRQa0J2TkZicEo2Sk1SamxXLUFtRjdVci1oM2hfYmtxQVNZa1UyaEo5ZDZQMnBxdThCSlRGelpDS3o2cUQtbEE4U1U4cGdrR1J5ZkNZNm1yYw?oc=5",
+   "publisher": "FM Universo 97.3",
+   "published_at": "2026-10-18T19:30:26+00:00",
+   "category": "science",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "🔴\"Colère et honte\", \"transparence\" attendue... Ce qu'il faut retenir de l'allocution d'Emmanuel Macron",
    "url": "https://www.france24.com/fr/france/20261018-col%C3%A8re-et-honte-transparence-attendue-ce-qu-il-faut-retenir-de-l-allocution-d-emmanuel-macron",
    "publisher": "France24 FR",
@@ -20283,16 +19772,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Outrage after Meta suspends No Kings Instagram account during protests",
-   "url": "https://www.theguardian.com/us-news/2026/oct/18/no-kings-instagram-account-suspended-during-protests",
-   "publisher": "The Guardian World",
-   "published_at": "2026-10-18T19:00:02+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Vic Chamber of Commerce warns over Labor's $30-a-week transport cap",
    "url": "https://www.abc.net.au/news/2026-10-19/victorian-labor-pledges-public-transport-fare-cap/107280670",
    "publisher": "ABC Australia",
@@ -20403,6 +19882,16 @@
    "reason": "no_confident_geography"
   },
   {
+   "title": "Yunnan Fungi Survey Reveals Three Novel Species",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE84djJrNU9qVnNGTVVoV1JSb2o1akNlUjBKc1oxbm04NXJsTmxFZkZ6SVBaQkJfMFVlVVZFbFZDX0NJaGM1ZGVSSUN4VGFPSDZfWGFRY0RhdFJHb1VVYS1RTERJLWFxM3NPcVp2emgzS05uQzJ1V2lJRkZHTTQ?oc=5",
+   "publisher": "Bioengineer.org",
+   "published_at": "2026-10-18T18:36:19+00:00",
+   "category": "science",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "Grávida de 35 semanas, mulher sofre AVC e descobre doença cerebral rara",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbEQyUmRDbE56SzZEVlZickJFX0xXU05oa2Y4WWhDNzN2WTFFcW9wWXMySTR6a1k3aTdhRDVxR2pQVXB5RHo5SEd1Q1djQnRzVUd3T0szcHZoX0NWZlZJRWllbjVncGVCcjZEVkpiNjQtRGMxeFo4TDhzLS1RNk40YmdmU2RHTDRwc0tCbmZTcFlUam1EVXlJbG5HaE9RR0x0R2RscExR?oc=5",
    "publisher": "Metrópoles",
@@ -20428,26 +19917,6 @@
    "publisher": "France24",
    "published_at": "2026-10-18T18:33:34+00:00",
    "category": "politics",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Invita Senado a congresistas de EU a retomar diálogo bilateral sobre migración, seguridad y T-MEC",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQc0VXX1NhTjcxSDRlRVNsRFl5cWxnOUR2aWRmbl8tMG1yeklPMy1faUNUUV9XZGZZLUNlMFdGc1JGVjctckRsMFRyU3BYRnlqOHNhcEs1b0tKZjZHdzctZVFhREVEZDh6NXZGcUwyMTNtWGVZY1hMUU9DSFIyekNkS0lXZFhlX1lRWEFYSjBEWllOWXZGd2dKRkN0WkFmc19aUWQ0THdneS11VnNacE5VTkM3NW5SVkRLdnl3NTRfQW9RamdJdFAzd2JZOUJKeEJtYUhpM01FSQ?oc=5",
-   "publisher": "NVnoticias",
-   "published_at": "2026-10-18T18:31:47+00:00",
-   "category": "politics",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "الطقس غدًا En Egipto Y Las Alertas Por Lluvias",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQbHI5QXhfWk11d1BiT1B0MXBzS0M4RUtMZXlLeW9FdFBkQVN2U25nZHIzbG80N210Um1rbVVzSUUwMlpCS2lQTkItSGRoa2tGa0hzTVVTaUMzOG9qRklaSW0xcndhOUZCV2RVOUJ4VTdBX3JrM2pqcm9oR1prcGJLaXlBd1pmYW1tdXBtZVpkWnBwdUkxNUpjNzhFWGE3bHlYZmloMlItZEVVNXk0a2ZCYlZnN195V2NteW5BeHJMUjh2VG1uYTVhU2VRc0NvWEl0MkhDX0M1TnJUc2F4NUE?oc=5",
-   "publisher": "www.elperiodico.digital",
-   "published_at": "2026-10-18T18:31:24+00:00",
-   "category": "community",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -20488,16 +19957,6 @@
    "publisher": "bahia.ba",
    "published_at": "2026-10-18T18:25:30+00:00",
    "category": "politics",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "\"Municipalidades bajo ataque: el rol de los gobiernos locales frente a la crisis\"",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNaWR4T1FRVE4yOHdURl8tRGxzVmpVN2UxZGNPUExKWER5aUtWdTlHMXNfLXA5MWxtb19OQ3h4cDlVUF9QMWRMTHl1RF83Z3dXcVVfeHFBMldtNmhjNXM3ZEZaNGduZjlxS05pX1YxZFo3eGZtbHlUbWpkTXlrSVNZZExSXzkzMmtfY0M1UTZaQ0pLcmVNUWYtREpDdzJ2WFR2N2E2cGlRTldoRldTVXVNcGFZbTBMSEZm?oc=5",
-   "publisher": "El Miércoles Digital",
-   "published_at": "2026-10-18T18:24:31+00:00",
-   "category": "community",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -20623,6 +20082,16 @@
    "reason": "no_confident_geography"
   },
   {
+   "title": "Tras 73 años de voto femenino, especialistas advierten rezagos en partidos y municipios",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPS3ptMVN3eHNhendIazNoYWhLS3ZrSnpLX0N2Y1hvYUp5SU1sNkJJY3lYMEdPQWVGNDF2QjB1OGk1akU1ejRMLUZvV1hyeDlwRmtWVFgxUnoyMklFMjRsTWZydndlLVVMeVRNSzJQd3JpQ2htSE1Pbk5OYzVWLVg0WXZvdTRKOGpwSTI5RWxtellZQUpTN01tMHFEM1EwaEJ2VEp6WE51UzNRbVc2bjNWaFFrekxBeTdSelFuZzBfU3dGN29FOTBRS0JEcnlQVDd6VTNBc9IB1AFBVV95cUxPS3ptMVN3eHNhendIazNoYWhLS3ZrSnpLX0N2Y1hvYUp5SU1sNkJJY3lYMEdPQWVGNDF2QjB1OGk1akU1ejRMLUZvV1hyeDlwRmtWVFgxUnoyMklFMjRsTWZydndlLVVMeVRNSzJQd3JpQ2htSE1Pbk5OYzVWLVg0WXZvdTRKOGpwSTI5RWxtellZQUpTN01tMHFEM1EwaEJ2VEp6WE51UzNRbVc2bjNWaFFrekxBeTdSelFuZzBfU3dGN29FOTBRS0JEcnlQVDd6VTNBcw?oc=5",
+   "publisher": "www.noroeste.com.mx",
+   "published_at": "2026-10-18T18:10:19+00:00",
+   "category": "politics",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "Why hospital metrics miss the patient who never returns",
    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWWV5ejBmQmxHdThRXzNiWVFVelZOckZvUkhHVDhvRE95YUlveFBEaXJjR0k2dUpNR014M19za1lRN25EZGFIdGstTC1ySTZlbks2REhtc2VUOVlBcGtmNjRwVEptNk8zamRLZ3F2QXlNMXYxU3lxQ1lHT3VORTRFcDJtbFp5MEk5T1cxb1hBR0xIdw?oc=5",
    "publisher": "KevinMD.com",
@@ -20703,16 +20172,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Señor de los Milagros: MML le rinde homenaje con bellas alfombras florales en Plaza Mayor",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeXctV3F4ZlNtc3ROSkZLM2RUNDdmZ1lCRlVTeTdZcDFWN0FJUHI5cms4aDkxWVg1aEgyM0k4UkpBTHozOW11UkdJeWlCcTZDbUdyWEdDMDlDejBDaE9ZQnlBWjlRTVA0UTdScFBIX0M3c0YtUTczcFZsWng3c1FTZDdTSEZ2MGdONVE0OHhwX2lnRXg1dERLRll6TUlsd2ZXeHhPRUJCZlI0ZlA5c0Y0UnpTN25LbGZnN3ZiRjNLVmhJRnc?oc=5",
-   "publisher": "Agencia Andina",
-   "published_at": "2026-10-18T18:00:00+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "The science of hope",
    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4xRDVhaU02NWl6Sm9TclpKaGZ1akJmWHlTVFBJSnY4V3oxaHNMNnM1ZE84ZGtHQjJsalNXR3VLWWtwTzFSVTZ0UVo4MVFuRDN1QmFQdTlZYm1Jajg0bWowMm0wdTg0T1pzQTcxXzQ4djE?oc=5",
    "publisher": "World Wildlife Fund",
@@ -20768,16 +20227,6 @@
    "publisher": "The Scientist",
    "published_at": "2026-10-18T17:44:50+00:00",
    "category": "science",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "La estrategia electoral altera la interna del Gobierno: pelea por los acuerdos y el compañero/a de Milei",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5qcnhzSFkwa3c1aXA3aDFObkZFUDZmY1hhTzVFNUNxWDQwNnFHNFZXYjBiRXpEOUo0bUYycmFMaVNDNDZGcjM4a1BIZEpLNE9HRFR0YVhnbXQ?oc=5",
-   "publisher": "Impacto Castex",
-   "published_at": "2026-10-18T17:41:20+00:00",
-   "category": "community",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -20853,11 +20302,11 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Plantean en Durango ampliar servicios para prevenir cáncer femenino",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRUxYRXVvdDVVQXhvTWh2QjV6emNxVmxrSXhJZk9ib0poMDlkZEhvSi00MFZBX1F2MHdDaUZHVlFvYUFGck5sa0VlcnVPUW1CMVVpcVJ3ajRuTWpfeWJBeTZsaURHTm5HSlZGREoxYUFtSHhSQkVONjU5UkZJSThKUzFNZGIwb2VMdzBnTnd0T0trWUI4a1NEOTVod29lSEtiTU00VzJUSUVvTVM2Qm02S1NRMURsZnNzTHF5eU1R?oc=5",
-   "publisher": "El Siglo de Durango",
-   "published_at": "2026-10-18T17:16:14+00:00",
-   "category": "community",
+   "title": "Pedro Sánchez convoca eleições antecipadas na Espanha para tentar manter governo",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZHAwWVYwR01sSzBJYWk3MEswWmEwSU5LSGM2QkVFSllKcVBlenRBM0p5SWZIVlFVbTlDLU1xd0liRnhKeEswemxmb21MLUlUYUZSZGU2UkRIWWIwcUtSeUItNFZoYXVlYlY1eXhyVm0zRXlmN0hkemtybUNrMURGaEdGaWZHTWVCeDR2bC1tTWtWMEZraU9uUHY0NDlieHJ1OTNvTFJTNnVQcDhuMHE2ZUpFSlFBQ3FiaW5r?oc=5",
+   "publisher": "Gazeta do Povo",
+   "published_at": "2026-10-18T17:21:00+00:00",
+   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -20913,16 +20362,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Rail safety systems 'have to evolve' as concerns raised over trains running red lights",
-   "url": "https://www.rnz.co.nz/news/community/2009896/rail-safety-systems-have-to-evolve-as-concerns-raised-over-trains-running-red-lights",
-   "publisher": "RNZ National",
-   "published_at": "2026-10-18T17:00:12+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "'I expected life. But not this': Experts are uncovering a trove of very strange creatures hiding under Antarctica",
    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5BX2wtY0I1RW51Yng2V09RRE9iSDJwTVdyU1R3bXg3RzNoVUU1dzNNQkd0OUxkMl9wajBDV0toTXVBaGpwX1RYbTVXNGRlVUF0WC1TMnVDYjg0VjV1OGpOSk1EdmM4d3BfNHoxZlhNbHo?oc=5",
    "publisher": "BBC Science Focus Magazine",
@@ -20968,16 +20407,6 @@
    "publisher": "Money Crashers",
    "published_at": "2026-10-18T16:45:00+00:00",
    "category": "education",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Tras 73 años de voto femenino, especialistas advierten rezagos en partidos y municipios",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOandjWEpNSjFYNmVELVpPcjI2S0hCM0lzdVp3WGRDbzJFX2dkQmozQVVmUEtjd2tXMHdDOFJYREtPanQ5ejgtQ1NySnVzWVBmb2VYWWtzNjJBWTBUN3BaQnVobWpuUHlWQ05TMDVhdWRhTmRnY214cWpFVmk4SUl0UE1SdEhEVW9NNUpxekdqN0RCMWFZWmY2bEZUa0h6WUtHdlBXOC1fZmNNekdJckNNYUVIN0NPZzF6MEREanc3TG9UZkoyOVZXY1RFay1RWnPSAdQBQVVfeXFMT0t6bTFTd3hzYXp3SGszaGFoS0t2a0p6S19DdmNYb2FKeUlNbDZCSWN5WDBHT0FlRjQxdkIwdThpNWpFNXo0TC1Gb1dYcng5cEZrVlRYMVJ6MjJJRTI0bE1mcnZ3ZS1VTHlUTUsyUHdyaUNobUhNT25OTmM1Vi1YNFl2b3U0SjhqcEkyOUVsbXpZWUFKUzdNbTBxRDNRMGhCdlRKelhOdVMzUW1XNm4zVmhRa3pMQXk3UnpRbmcwX1N3RjdvRTkwUUtCRHJ5UFQ3elUzQXM?oc=5",
-   "publisher": "www.noroeste.com.mx",
-   "published_at": "2026-10-18T16:40:58+00:00",
-   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -21068,16 +20497,6 @@
    "publisher": "Infobae",
    "published_at": "2026-10-18T16:34:00+00:00",
    "category": "conflict",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Inauguran en Tlaltizapán el Mercado Gastronómico y Artesanal 'Emiliano Zapata' para reactivar la economía y el turismo",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNaURIN1l3dmZKS0EwUy1pOVpDc0NuMFZUU1lzZzdHX0hVR0hkS05VNXlrQ3lwMkJpYXZuMkROeUlmZVp1Z0FmNm5lUmJ3Y0ZXaENRZlpKZmlMSFBWb2pRdjZDLU9zS3Y5cU5CWEE3dWNVZUZCdGhNOV93M0dWcUpWeUoteHltOFg3S0dlZVVWaEhPOFF2OWdWS3FjTDl6NURGZG15eEtnRmk4djBEbmNhVkZTMUZXdkx2SkFGQ196TENhdlk0RWo5NVF0aE5idm1YQlpVMFFn0gHbAUFVX3lxTFBVRVd0Q29PMm05OURwN0xwd1pSa0dDVzU4Yks5a2QzeWE4WDktRTBwcDl5bGhQUTNyRmkzbU1LNWtHak1vd2E4TUR3R0V6NDF0NGZlbWhnLWpCaHllTmV0d0xUX21ZdERISEw1TXhJdHNwN3h6MEdKMXB2NnFjZ2hrZUVqa3otVUlGU25xWUpOQ1hRdUVyYldhVWpfRGRhaXFaTHU3YU5yRE1Pc1M4M2VjMUNHbVdYb2hwVFJzaG5DVmlJX0xJZTUzWmlXTkxLR3ZYQW9uNWVCQjVTYw?oc=5",
-   "publisher": "Diario de Morelos",
-   "published_at": "2026-10-18T16:33:59+00:00",
-   "category": "community",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -21303,16 +20722,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "«La Muni en tu Barrio» llega al barrio Malvinas Argentinas",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaC1fbTIwU0RNV3Q5eV9TMUVTUEhSMDIyREp5VlhjYTVqbEFkU0dnU3o2M3JOVEs5aDRWYWRzQm9fVjNSbFZ3ZUdMWGh5SjNGOVNjby15cmxMQ3E5SHJSdVhyYmlLTnBRbDhLTUNzbE5sMzZSMjlkSFpUS3hOa1VzMzlOUFNiMmpmRWNjM3E1NTNNM0ZUUlFvQW8zcXlGMWVGdHM2SWhQRE0zbmN5dlZqenhR?oc=5",
-   "publisher": "Diario Castellanos",
-   "published_at": "2026-10-18T15:28:44+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Cardenal sobre asambleas de médicos: 'Atentar contra la salud es un delito'",
    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNT3VXS1Y4cHF4UndDWTAyVklhQ1VrVWJFN0hXY1NKd0E0XzZNV1ZheHdmQjVmQUdPcHQtZnNXU2ZldVdWRGFGMnFHc0E3OTJkSUpnMElZZlhhRnNLM1k3TTJNRmoxTk5TZkd0aHdDOWozUnNST0Njb014WURfMnlFNVlYNlhkLVVyZnc?oc=5",
    "publisher": "TuNota",
@@ -21408,16 +20817,6 @@
    "publisher": "The College Fix",
    "published_at": "2026-10-18T15:07:08+00:00",
    "category": "education",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Promessas de Lula e Flávio enfrentam limites no Congresso e na Constituição",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRm5ZNnY2dHY5N1RvaVRJZHlNMm1fRkh5a2pUSzNGYXA4ZUZubXl1YUF3Y0NOZU9kOWlNNFJFWWZmLWk1bnktSkM0NEthNGotQzFFbHBVd1JkZWNpUVNqUENEWEZ3dHZnakpxVHNUNTZVWklidjVSUzloOHN4RUIwS2tkSXk3TERkVVV0MGp5ZGVfckZKUGt4dkpZYm9KRlFzdFk4N3A0WnNuRHlJR0E?oc=5",
-   "publisher": "Tribuna do Planalto",
-   "published_at": "2026-10-18T15:07:00+00:00",
-   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -21574,7 +20973,7 @@
   },
   {
    "title": "Europe student protests and the emergence of new generation on the left - International - World",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbFF3bnRhMEZOZXh5VlhMeXlfRk04b2ZVRjBJMWVNeC01NEVfZFBrY1pCd2M3Mk8wUkpEeVRLSnBnSGZIOUt3ZGJYVUtKZGxzSjZCcnBWcmNjQjl0eUtId0VldWlaNUEtNWYtR1R0R1VWOVVpeTJUR0VrUC1lb3BrNTdCZVFvZ0owb3hZZDlTSDk0VG9fWFVVeTZQWjdOb21CTURFSjJmWl9Da3lMSHo4c0pxWjVMRGVWOGlTZElUa1VHUFFaVGc?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVmFzU2R5MmQ3cWFmWFVMa3pHTm9tbUx0OVRKMlUtVU55ZjVkNmEtTGVJTzBYQzhsQ08zaHZyYm9leTBlU3FQZk9ZeTJuWjM1ZlJZMDVZSEQ0eDBna19McDBVWldZMnBaVnRuYVFzUGdDQkY3dndwem5VdUNpeEVVOG8xR2h5bXotM3VzT3A0TTRLWS1nSWgxWWlDUmNrT0lraW04c2drX1NvVzNESTBnLUpR?oc=5",
    "publisher": "Ahram Online",
    "published_at": "2026-10-18T14:48:21+00:00",
    "category": "society",
@@ -21818,6 +21217,16 @@
    "publisher": "vigilante informativo",
    "published_at": "2026-10-18T13:48:24+00:00",
    "category": "politics",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Ad-Dulayl Development Zone Invites Investors to Explore Investment Opportunities in Phase 3 Expansion",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZTc1TjF4S19JVHpfM3A3Tng1VEdORXE1VDM3TkRZSkJYaVdvOVR1MUEtM3hQU1pQRzkzbDVRWFZWSlhiTlNRZEN2MXB2ZVdhOFhTVzRGaDl3M3Voa3NLYlcxWU9iSTMtbkpPb0lSNEszZlpRRGlyNGdOaHctcWdoS0xDQm9LWmpuWmJDc1RBenFrZmJTaXhlV0pNYVVzX2R2cURuS1pFdXBRcWU4RGhBbEI3U1gxYVVDb2hFbDRCUzBRRTZzVEw2NkN3?oc=5",
+   "publisher": "وكالة الانباء الاردنية",
+   "published_at": "2026-10-18T13:47:28+00:00",
+   "category": "economy",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -22473,16 +21882,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Cementerio Municipal de Santa Fe: el horario especial de visitas por el Día de la Madre",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ0JqNjJTN01aSExkNjhNaGtvbXpNZHBlM0k2dWJhM1hib21wSG93Yk5hYTBQb2VjQ0FnR0thb1BBOGFTTDZrVm9CQ1FiejJGOWpjREFyemphbjQ3VWNKTmM0VUVHc2ZQQUktNVdTTlQweUxqSjZUZTlyUXRjUTYxelBkR0t5LXpObzlpWnV3M2hNZTBqenVmd25qX0lub251SjhjWk1ZeVJvQWttc25XaFF6SQ?oc=5",
-   "publisher": "SOL 91.5",
-   "published_at": "2026-10-18T11:32:58+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Cunninghame North MSYP candidate Emma outlines her priorities",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMnZidjA0eTEzcFhMai0wSXE3Z3RPZlpycktELXRIcWZON1RPTHBSSTNuNkRMUGk5WTNvUHhtNHdvb3lSNG5zOHo1MkNNT2xtVFRVOUd5eE9Za1ZmS3VMa3NnS2djdEJnOHR0UUhYVmdtb1JQYWhDaUI3a050aTE4U2pmZ3RwT2NUY09EOFF5VjQxMDJK?oc=5",
    "publisher": "Irvine Times",
@@ -22528,16 +21927,6 @@
    "publisher": "Reforma",
    "published_at": "2026-10-18T11:27:44+00:00",
    "category": "health",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Barbate activa su Plan Territorial de Emergencia Local en fase de preemergencia ante la previsión de lluvias",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOYkZHNkhFV3BUdFNpcGM2ZTB1amowbU02czZ1aTE0VzYzM3RDU25ralh2bGFNcU0xNVp5S0M3MXRwS3JRV19hdFk3ZjZBZVZDQkRXODRsbG9DMFAwV01mOHo4Q2k1cXNCRkNqbFV3aGYwNGx6VUtJOUZfQ1dyVnVONENwd19JMGZQenB1MmY1aXgyd0UzRklGOTN6N3ZCOVFtaGd6MVBXV1g2eGZUXzJlcUEzWjNscVdKczE4Z1pEN3hWTGhZQ1NlY0RLRi10TVY1MU95SDlKZE9WR2ZZWjhfYjhQMy1oUUNiZG1j0gHwAUFVX3lxTE81cXpvQjBUeVl3RmVSMWw4NzFuNVM3MWRicV9iZ3dLSzFWbXQ4U3FiOGdhRFRtVXRnV1l4cjZFYVRvaXNlNGN6VTRJbW55bkNMNDBzNDFscGdrVWxndnJraFVFemlraVhEeWg0Wi1wZjJfZ2pNUXRKbmxmQW4yWVpHU0tVS1Q3c1RMNFQ4OXRaV3NVSGNsVVRPZzJlSzhtSHVjaVhxX1FBQkNBVk9VSWZBSTg2UkNrYVltS3dtRzhjTXVBakktdnhENTBMU3ZUYVZXTU1TSkt5WkFYb2ZSTFVvMzVSaTFXcGxzTWt6QkRHag?oc=5",
-   "publisher": "Teleprensa",
-   "published_at": "2026-10-18T11:27:15+00:00",
-   "category": "community",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -22663,16 +22052,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Govt to expand digital hygiene programme to health cen",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMTFvOE1xZ1dhVVhpY2F1eVVZS1ZKdkNFT0xfbHZPc19VejZlTXBGZWZYRWlmSUpJNzlJRHFoTmVQY2xXYlk2cURBNFNZRkJWblJJbG1idXFXcE5FUmszSkFrZVcwZWZaX0VSRWFJNUh1WmhqMXlOVERWRFJ0RWhOX3RaOGVEYjVLQXowNWQxZzNROGUxNWNTdWtGaGhONXpwbmdQUEtzNA?oc=5",
-   "publisher": "NewVision.co.ug",
-   "published_at": "2026-10-18T11:00:05+00:00",
-   "category": "health",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "FT: Tarifas de Trump viram fardo para seu partido nas eleições legislativas",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQb0hwT2hsendOLXhQVTdNcWk0Sm5zWHJNYzRIc1NPLUpzQjktSjRIaDJGcmk2TEJuZnBvcGdzZk5fZUkteUN6VWhJVzJzSTVxREVUZ1BVUW9vTjV0NEhfSG00SVZIRUN6NVV6QlRyaFZWNkpHcm03ODJWa2VvRmdCa2lDTG1Rd0o0OW5SSkYyaFpKQjl3cndadDZodkM3SWV0RG9yNW5ZU2VOREM1amZNLWVESzdnbzVWNWU3LUdhSEZIOHBBUm9MQtIB1wFBVV95cUxNeVJrQks1RERLeFk3NndLU1hwbTU0SVFmc3pDY0NGcXBobk9RTEhzNU81VWRLNGlOQVV4MXZJaGExTkpJcFdRUEFwRjhIZllXYkQwdWhXNWxEbmhXV2hDVTZ3UUM3elY5UlZ2Zm10MEsxcnJMWEtuS2hWMU1pTERONEZTanNtTXdHMVRLck9MWk53YjBOVEZiZ0pCMVVLUFA3T0pxbUczMDdDaVY5MXlfR3FtQ3JBNjFHZlFudzhzdU12OFo4ME9nSy1xUWxfWlFQNnU4bHBZNA?oc=5",
    "publisher": "Valor Econômico",
@@ -22691,6 +22070,46 @@
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
+  },
+  {
+   "title": "IPCA-15 traz última prévia da inflação antes do segundo turno; confira o calendário econômico",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNcXRpMGVNU2RoUEwzMElsNG1rRDBieWVVYTd1ZFRvcm9NcDl4Q0NRZ1NKNFdsTF9jdHczMTJOWGZqY3Ftcmg2cFowQjdUY2dKZHNWRmx0VVlJZ2tnSU9wVm5kQVMzQS1vcWxZNlU1RGJBRFctUGdyQ2FicHFzR3dYOGVpZ2k1MVRaeFBUb1lTaWFQeHcxTjRGaDNDaVZfM2hhdGt1VnRtdUF3eDJzTzYtSzg1OW9pbktZcHpZLTBEMjhMLTNVS2MxNk1UbHJKa3dkUzNyTmdkRVZGMUxEUUFGNjBMVUhVUdIB6wFBVV95cUxPZE1XZVc1NDFndGlFWUJLaklTczlwYXpQNW94cE1RclBhZlFMMUtMZVliSkx5N0dLa1FranJ4VHFMTUhLU0xVN1dOMVo4OHBNV0ZzbmM4c0hEZ0hHLW1kQmVWWmk5ak5FeG5YYmxQSzV4RnpBc0F2UGQtaFVJTkNHU0RlTkZlTjBUQ1BoWTJtN3NKYm1sYVBkdk0yQ2dmcWVCWTIxeGZOWmVCckpmemZQUENFd1Y4MmJUQlhzOS1sajdFelZZTVgxdklvemlSN0tQams1VGtmNmxOdHpkem82OWR0MlpqVTBiRzVB?oc=5",
+   "publisher": "Estadão",
+   "published_at": "2026-10-18T11:00:00+00:00",
+   "category": "economy",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Unimar completa 70 anos com nota máxima no MEC e mais de 130 mil profissionais formados",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNN2YtSkU1VFNqZm5EX1ZHRVVRNTd5N25CaUt3cXdNUlNyWUdCS3VuSDVKcWpZX3hTbGpGaktxTEtFaGZVUEFYY05jQ1ptTGNqUk9HS05FMUg1RXpybWFWdWlDMk5ZQkR6dlYtWXpBaFZ1YmVxcVMxaC1oZ3VyWnd4cXVTck9Pb3lXXzB0dWJ2WkNoTWRPUUVETWx2QW5fUTE2a3hSNUJZSFF0NXo5UExsRXBhRHIwV2pibWdrTkVkcGRUQmNXNHQ3QkhmMA?oc=5",
+   "publisher": "Visão Notícias",
+   "published_at": "2026-10-18T11:00:00+00:00",
+   "category": "science",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Free clear-up has big engagement on social media",
+   "url": "https://www.bbc.co.uk/news/articles/cly8q2rryejo?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Science",
+   "published_at": "2026-10-18T10:59:32+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "NASA’s Next Science Breakthrough Starts Here - Aero-News Network",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTW1vc3VTUFp0VGc5cDBSM2c2bmJfbXhoS1FmOEZlb2g4ekZobGZ2RjcxV29kTFRjc01KTVBXSEF5WFFCc2hSOGp5OU5GZFp4U01JZWdDTTMxQldySWRtd3JLck9CUHc3WDR4dHpIWFBaaFlBa3laYmFGVHFMV1g0dzJ5N25SQ2ZMVnltMHpjVUFTUnkxSWZz?oc=5",
+   "publisher": "Aero-News Network",
+   "published_at": "2026-10-18T10:57:52+00:00",
+   "category": "science",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
   }
  ],
  "browse_retention": {
@@ -22699,10 +22118,10 @@
   "note": "Unlocated articles are for browsing only, never globe pins. Archive entries are older than 24 hours.",
   "recent_unlocated": 350,
   "archive_24_to_72h": 0,
-  "excluded_older": 848,
+  "excluded_older": 840,
   "excluded_undated": 21,
   "publisher_balance": {
-   "distinct_publishers": 261,
+   "distinct_publishers": 256,
    "top_publisher_share_pct": 3.4,
    "top_publishers": {
     "RNZ National": 12,
@@ -22710,13 +22129,13 @@
     "BBC Brasil": 9,
     "France24 FR": 8,
     "Al Jazeera": 7,
-    "The Guardian World": 6,
+    "Bioengineer.org": 5,
+    "The Guardian World": 5,
     "France24 ES": 5,
     "Infobae": 5,
     "BBC World": 4,
     "Correio Braziliense": 4,
-    "France24": 3,
-    "AlMomento.net": 3
+    "BBC Science": 3
    },
    "method": "publisher-balanced two-pass sampling, not geographic inference"
   }
