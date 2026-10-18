@@ -1,0 +1,61 @@
+name: Archive WorldPulse news observations
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Refresh geographic news"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: worldpulse-historical-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Save current observation to archive
+        run: python scripts/archive_news.py
+      - name: Commit archive and index
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A data/archive
+          if git diff --cached --quiet; then
+            echo 'Archive unchanged; no commit necessary.'
+            exit 0
+          fi
+          git commit -m 'Archive historical news observation'
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo 'Historical archive saved.'
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; rebasing on latest main."
+            git fetch origin main
+            if ! git rebase -X theirs origin/main; then
+              git rebase --abort || true
+              echo 'Conflicting archive writes; stopping safely rather than overwriting.'
+              exit 1
+            fi
+            sleep 3
+          done
+          echo 'Unable to push archive safely.'
+          exit 1
