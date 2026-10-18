@@ -2,6 +2,7 @@
 Never assigns coordinates or changes the existing 24-hour globe eligibility rule.
 """
 import datetime as dt
+from geographic_quality import balanced_select
 import re
 from urllib.parse import urlsplit
 
@@ -47,8 +48,8 @@ class BrowseRetention:
             self._rows[key] = row
 
     def export(self):
-        items = sorted(self._rows.values(), key=lambda r: r['published_at'], reverse=True)
-        items = items[:_MAX_ITEMS]
+        items, balance_stats = balanced_select(self._rows.values(), _MAX_ITEMS)
+        self.stats['publisher_balance'] = balance_stats
         self.stats['recent_unlocated'] = sum(r['browse_status'] == 'recent' for r in items)
         self.stats['archive_24_to_72h'] = sum(r['browse_status'] == 'archive' for r in items)
         return items
