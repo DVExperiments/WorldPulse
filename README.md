@@ -1,47 +1,36 @@
-# WorldPulse 2.0D.2 — Worldwide Publisher Expansion (Collector Patch)
+# WorldPulse 2.0D.3 — Geographic Mapping Precision (first-pass repair)
 
-**Install into the ORIGINAL `DVExperiments/WorldPulse` repository, not `WorldPulse-2`.**
-The original collector produces `data/news.json` that the new site consumes.
+**Upload into `DVExperiments/WorldPulse` (original collector), NOT `WorldPulse-2`.**
 
-## What this release actually provides
+## Purpose
 
-- 34 **candidate** additional regional and multilingual RSS/Atom feed URLs in `scripts/coverage_expansion.py`. They are **not claimed to be verified live**. Some may fail, redirect, block scraping, or have changed since listed.
-- A conservative stage of **8 candidate feeds enabled by default** where their URLs are not already present in the existing registry. The existing registry already includes some overlapping sources, so the number of genuinely new feeds may be smaller.
-- No changes to `scripts/update.py`, its geoparsing/deduplication logic, or `.github/workflows/update.yml`.
-- `scripts/audit_global_coverage.py`, a stdlib-only utility that produces country-name-mention and source-health reports after a collector run.
-- `scripts/preflight_candidates.py` to live-check URLs when GitHub Actions/network access is available.
-- An inventory of 173 country / territory names derived from the current WorldPulse 2 boundary map, intended for an **initial** coverage report, NOT an exhaustive list of all countries or territories.
+The source-health results show numerous functioning feeds with low / zero mapped stories. This conservative improvement tries a second geography pass only when the existing resolver fails. It does not use the publisher's location, article language, or the news edition as a fake story location.
 
-## Install (browser-only)
+### What's added
 
-1. Download/extract this ZIP.
-2. Go to the **original** `WorldPulse` GitHub repository.
-3. Upload `scripts/publisher_network.py` (replace existing), `scripts/coverage_expansion.py`, `scripts/audit_global_coverage.py`, `scripts/preflight_candidates.py`, `data/country-inventory.json`, and `tests/test_coverage_extension.py`, keeping their directory paths.
-4. **Do not remove anything else or alter the existing update workflow.**
-5. Commit and check the next scheduled collector run and `data/source-health.json`. If feeds fail, the collector should record their failures; revert this commit if collection becomes unreliable.
+- Unicode/diacritic-insensitive explicit place detection; for example Whangārei vs Whangarei
+- Candidate names are checked for duplicates, with ambiguous short/generic labels suppressed
+- Strict URL geography-path fallback only for explicit `/city/auckland`, `/country/france` etc.
+- Existing `locate()` remains primary; news and geographic points retain their existing shape
+- Unit tests for positive and negative mapping cases
 
-**Compatibility prerequisite:** the currently deployed `scripts/update.py` must import `merge_feeds` from `publisher_network.py`. This was how the original v1.5.4B collector was configured. If your repository was changed afterward, check this before uploading. If that import is missing, the newly added feeds will not be used.
+This is a focused accuracy enhancement, **not a full solution** for zero-mapping feeds. Some articles have no explicit geographic subject in the metadata, and those must stay unmapped. Additional work is needed to compare unmatched samples and add verified context handling.
 
-## Generate the audit
+## Installation (browser-only, without replacing update.py)
 
-In a GitHub Codespace or any Python environment from the original repo root:
+1. Open the **original** `WorldPulse` GitHub repository and upload `scripts/geo_mapping_enhancements.py`, `scripts/apply_geo_patch.py`, and `tests/test_geo_mapping_enhancements.py` into the matching folders. Do not upload into WorldPulse-2.
+2. Open the original repo's existing GitHub Codespace (Code → Codespaces).
+3. In its terminal run: `python scripts/apply_geo_patch.py`
+4. Check the result. The script modifies the existing `scripts/update.py` **in place**, retaining the rest of your pipeline. It aborts if the expected insertion point isn't found, and is safe to run twice.
+5. In the Codespace Source Control panel, commit/push `scripts/update.py` (plus any uploaded files not yet committed). If files were already uploaded and committed, `update.py` may be the only uncommitted change.
+6. Wait for the normal news workflow. The existing `.github/workflows/update.yml` is **not changed**.
 
-```bash
-python scripts/audit_global_coverage.py
-```
+## Verification
 
-This writes `data/coverage-audit.json` and `data/coverage-audit.csv` in your working copy. The audit does **not** run automatically in GitHub Actions; adding that later requires an intentional workflow change.
+Run optional tests: `python -m unittest discover -s tests -p 'test_geo_mapping_enhancements.py'`
 
-The country-name counts are only a **partial lower bound** and exclude city- and region-labelled signals. A zero is NOT evidence of no news. Source region reports are about a feed's editorial focus, not the story's event location.
+Check subsequent `data/source-health.json`, `data/data-health.json`, and `data/unmatched-review.json`. The first patch may recover some place mentions but does not guarantee large gains. Continue to distinguish publisher country from the geographic subject of the story.
 
-To test candidate feeds using a network-enabled environment:
+## Revert
 
-```bash
-python scripts/preflight_candidates.py --limit 10
-```
-
-The check writes `data/feed-candidate-preflight.json`. Later, to opt into the full unverified candidate pool, set `WP_EXPAND_ALL_CANDIDATES=1` for the collector, but **only after** feed checks and runtime/performance assessment. Running all sources can lengthen scheduled jobs.
-
-## Next steps
-
-D.2 is an incremental first expansion and diagnostics foundation—not global coverage parity. Evaluate `source-health.json` and the audit, verify additional country-specific feeds, and prioritise countries with sparse confirmed reporting. Improve geographic country attribution (city + region + source are separate dimensions) before treating the audit as complete.
+If the collector fails, use GitHub's revert of the commit containing the code changes. Or remove the import and the two-line `find_explicit` fallback from `scripts/update.py`.
