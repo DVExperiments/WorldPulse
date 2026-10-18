@@ -23,6 +23,7 @@ from publisher_network import merge_feeds
 from geo_mapping_enhancements import find_explicit
 from geo_intelligence import CollectorAudit, context_match, classify_unmatched, embed_geo_report
 from browse_retention import BrowseRetention
+from publisher_metadata import annotate
 from geographic_quality import curated_match
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -245,6 +246,7 @@ def collect(now):
  def ingest(rows,category,source,kind,region,language):
   mapped=0
   for a in rows:
+   a = annotate(a,source,kind)
    geo_audit.record(source,'feed_items',mapped=True)
    when=parsed_timestamp(a['published'])
    if not when or not cutoff<=when<=now+dt.timedelta(minutes=20):
