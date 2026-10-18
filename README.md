@@ -1,40 +1,44 @@
-# WorldPulse 2.0D.6.1 — Publisher Metadata Correction
+# WorldPulse v2.0E — Geographic Intelligence Expansion
 
-**Target:** original `DVExperiments/WorldPulse` collector repository, **not** `WorldPulse-2`.
+**Collector-only patch for the ORIGINAL `DVExperiments/WorldPulse` GitHub repository.** Do **not** upload these files to `WorldPulse-2`.
 
-## Purpose
-- Recover missing RSS publisher names from the configured direct-feed name or a short, audited list of article hostnames.
-- Preserve existing trustworthy article publisher fields.
-- Do **not** infer publishers from Google News redirect URLs, unknown domains, article subject matter, or the geographic location of news events.
-- Resolve publisher **before** retention/balancing, so publisher variety measurements become more meaningful.
-- No changes to globe, article freshness window, map coordinates, feed requirements or Github Actions workflow.
+## Included
+- `scripts/geo_expansion.py` — reviewed geographic fallback containing **158 place/region entries**, with distinctive multilingual variants and boundaries. Names are geographic *subjects*, not verified incident locations. No third-party runtime dependency, API key, or geocoding request.
+- `scripts/apply_e_patch.py` — fail-closed, repeat-safe installer for the D.6.1 collector.
+- `scripts/audit_e_samples.py` — optional offline unmatched-headline sample audit.
+- `tests/test_e.py` — ten regression tests.
 
-## Install
-1. Extract ZIP. Upload `scripts/publisher_metadata.py` and `scripts/apply_d61_patch.py` to existing `scripts/` directory in original WorldPulse repo. Upload `tests/test_d61.py` to existing `tests/` (create tests folder if necessary). Commit the uploaded files in GitHub.
-2. In original WorldPulse Codespace terminal:
+## Installation
+1. Upload the three `scripts/*.py` files to the original repo's `scripts/` folder; upload `tests/test_e.py` to `tests/`. Commit uploads on GitHub.
+2. Open **original WorldPulse** Codespace, and run:
+   ```bash
+   git pull origin main
+   python scripts/apply_e_patch.py
+   python -m py_compile scripts/update.py scripts/geo_expansion.py
+   python -m unittest discover -s tests -p 'test_e.py' -v
+   git diff -- scripts/update.py
+   ```
+3. If installation and tests succeed, commit only modified collector file:
+   ```bash
+   git add scripts/update.py
+   git commit -m "Add v2.0E geographic recognition expansion"
+   git push origin main
+   ```
+4. Go to original `WorldPulse` Actions and run **Refresh geographic news**. Inspect `data/unmatched-review.json` > `geo_intelligence` > `mapping_methods`: watch for **`method/headline-expanded`** and **`method/description-expanded`**. The counts are per-feed, before deduplication. These methods may appear even when distinct mapped article counts are unchanged.
 
+## Optional offline audit
 ```bash
-git pull origin main
-python scripts/apply_d61_patch.py
-python -m py_compile scripts/update.py scripts/publisher_metadata.py
-python -m unittest discover -s tests -p 'test_d61.py' -v
-git diff -- scripts/update.py
+python scripts/audit_e_samples.py data/unmatched-review.json
 ```
+Shows how many *sampled* headlines the v2.0E fallback could recognise. This is not a prediction of distinct live article recoveries. On the supplied 120-example D.4 file, 12 had names recognised by the expanded table, but **several were already covered by D.6**; they are not all new recoveries.
 
-3. If those pass, commit the collector's updated import and ingestion line:
+## Deliberate limits
+- This patch **does not replace or refactor** existing `locate`, global geography, multilingual, or D.6 matching layers. It runs **only if all earlier matchers fail**. Therefore it cannot correct inaccurate older matches; this requires a separate audit/refactor.
+- It does not change the 24-hour globe window, 72-hour Discover window, 350-story limit, publisher attribution, JSON structure, GitHub Actions, or WorldPulse-2 website.
+- No location is invented from the publisher's country, article feed edition, or a generic place word.
+- When the expanded matcher sees **more than one distinct place** in the same headline/description, it declines to choose one. Existing older matchers may behave differently.
+- Coordinates represent cities or approximate region anchors, **not verified incident coordinates**.
+- This is a reviewed 158-entry expansion, **not** a complete global gazetteer or NLP entity recogniser.
 
-```bash
-git add scripts/update.py
-git commit -m "Correct browse article publisher attribution"
-git push origin main
-```
-
-4. In Actions run **Refresh geographic news**. Then inspect `data/news.json` > `browse_retention` > `publisher_balance` and `unlocated_articles` > `publisher`.
-
-**Success checks:** fewer `Unknown` browse-only entries, a sensible set of identified publishers, no unexpected increase in news map points purely from metadata, and standard 132/136-ish feed health (feed availability varies).
-
-## Expected effect, not guaranteed live count
-An offline pass on the 2.0D.6 `news.json` snapshot recovered **115 of 129** empty publisher names among its 350 browse-only articles. There were 14 remaining after domain matching. The live output can differ because selection is performed again after repair, and articles change between runs.
-
-## Safety notes
-The installer refuses to proceed if D.6 `balanced_select` integration or known update.py insertion points are absent. Running it twice does not duplicate the patch. No tracked data files are overwritten during installation. The Python code is standard-library only.
+## Verification
+Ten tests passed; installation was checked for safe repeat execution and collector Python syntax on a local reconstructed D.6.1 copy. Live feed and browser testing have **not** been run from this patch package.

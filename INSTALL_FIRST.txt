@@ -1,7 +1,20 @@
-UPLOAD THIS TO ORIGINAL WorldPulse, NOT WorldPulse-2.
+WorldPulse 2.0E — ORIGINAL REPOSITORY ONLY
 
-1) Copy scripts/geo_mapping_enhancements.py, scripts/apply_geo_patch.py and tests/test_geo_mapping_enhancements.py to their matching repo folders.
-2) In a WorldPulse GitHub Codespace terminal: python scripts/apply_geo_patch.py
-3) Commit and push the changed scripts/update.py.
+Repo: https://github.com/DVExperiments/WorldPulse
 
-The existing workflows and the WorldPulse-2 visual site stay unchanged. See README.md for safety guidance.
+Upload scripts/*.py to scripts/, tests/test_e.py to tests/.
+Then run these in the ORIGINAL repository Codespace:
+
+ git pull origin main
+ python scripts/apply_e_patch.py
+ python -m py_compile scripts/update.py scripts/geo_expansion.py
+ python -m unittest discover -s tests -p 'test_e.py' -v
+ git diff -- scripts/update.py
+
+If clean:
+ git add scripts/update.py
+ git commit -m "Add v2.0E geographic recognition expansion"
+ git push origin main
+
+Then manually run Actions > Refresh geographic news.
+See README.md for validation details.
