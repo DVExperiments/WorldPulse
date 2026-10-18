@@ -2,34 +2,34 @@
  "schema": 2,
  "version": "1.5.4B",
  "source": "Google News RSS and independent publisher RSS samples",
- "updated_at": "2026-10-18T01:40:11+00:00",
- "last_attempt_at": "2026-10-18T01:40:11+00:00",
+ "updated_at": "2026-10-18T01:52:15+00:00",
+ "last_attempt_at": "2026-10-18T01:52:15+00:00",
  "window": "rolling 24 hours",
  "status": "partial",
  "query_successes": 132,
  "query_attempts": 136,
  "articles_scanned": {
-  "politics": 160,
+  "politics": 208,
   "environment": 84,
   "hazards": 37,
-  "society": 171,
-  "health": 358,
-  "education": 388,
+  "society": 173,
+  "health": 338,
+  "education": 367,
   "rights": 28,
   "community": 38,
-  "economy": 215,
-  "science": 211,
-  "conflict": 86,
-  "direct": 1359
+  "economy": 213,
+  "science": 209,
+  "conflict": 85,
+  "direct": 1360
  },
- "distinct_mapped_articles": 433,
- "duplicates_removed": 740,
- "source_count": 240,
+ "distinct_mapped_articles": 432,
+ "duplicates_removed": 744,
+ "source_count": 237,
  "direct_sources_ok": 44,
- "unmapped_articles_sample": 854,
+ "unmapped_articles_sample": 855,
  "geographic_confidence": {
-  "headline": 813,
-  "description": 296
+  "headline": 828,
+  "description": 285
  },
  "source_health_file": "data/source-health.json",
  "history_file": "data/history.json",
@@ -272,10 +272,10 @@
    "count": 17,
    "publisher_count": 1,
    "category": "education",
-   "recent_3h": 2,
-   "previous_3h": 0,
+   "recent_3h": 1,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 200,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Risks of misusing homework assignments on laptops and iPads.",
@@ -1007,8 +1007,8 @@
    "location_basis": "description",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 6,
-   "publisher_count": 2,
+   "count": 5,
+   "publisher_count": 1,
    "category": "community",
    "recent_3h": 3,
    "previous_3h": 2,
@@ -1060,16 +1060,6 @@
      "url": "https://www.abc.net.au/news/2026-10-18/young-carers-advocates-call-for-better-identification/107241766",
      "published_at": "2026-10-17T20:27:30+00:00",
      "publisher": "ABC Australia",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Mimicking populists will not ease cost of living or boost productivity, Mathias Cormann warns",
-     "url": "https://www.theguardian.com/australia-news/2026/oct/17/mimicking-populists-will-not-ease-cost-of-living-or-raise-productivity-mathias-cormann-warns-ntwnfb",
-     "published_at": "2026-10-17T01:49:17+00:00",
-     "publisher": "The Guardian World",
      "source_url": "",
      "source_kind": "publisher",
      "language": "en",
@@ -1157,9 +1147,9 @@
    "publisher_count": 4,
    "category": "community",
    "recent_3h": 1,
-   "previous_3h": 2,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": -33,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Stampede kills at least 17 people at religious festival in India",
@@ -1275,6 +1265,74 @@
      "published_at": "2026-10-17T04:53:37+00:00",
      "publisher": "The Eastern Herald",
      "source_url": "https://easternherald.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 34.02,
+   "lng": -6.84,
+   "name": "Morocco",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 5,
+   "publisher_count": 4,
+   "category": "politics",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Morocco forms new government, but, except for women, very little changes",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWjB4ZTA5dFNqamhSS3NxZTZTSVV5QTZsSHkxU0NRWjVZcnlSTWczcUFKQmF5Z2FTMUNvVDZSZEgwd1hLZk5tWWJmd0dZOGFFNlQ4N1B0U3FxdC1aVHBockdBYkhHWU5XZ1BubGhDQXlfS0JCTk05YTlpT2VaOVBpajJLWXdHUUdJSFdsQU42QkZJOXRIeE05NjVZY1g3aWVvUmhXUXNLTFBadjhHVTlpMFhzVHZSREFtLWVQMGYySGRkRjVyYzNfSGktMnZQaWZ5QzdzUTdJc2Zld2M?oc=5",
+     "published_at": "2026-10-17T17:29:39+00:00",
+     "publisher": "Le Monde.fr",
+     "source_url": "https://www.lemonde.fr",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Moroccan MPs seek to resume assessment of Green Morocco plan - HESPRESS English",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMUNZRVJNb3RNR2owcTBJMmR0YWtWTEFNd0E4bUM4WFlod0dlSnRCNlNkMlh2UjhHNEdzaWVDZUNpOWdtS3JIbHNNRW1SWDVMYTk4czZUNWh1aDF4ZHRxSUl5ZldqUXp1dG9tQ21jaWNRSkdoRkZFTTJqMlN0UDF1LWNxWXRjOFQzTFZoaEVYUjFFMjc0cEJsQ1RFMm8?oc=5",
+     "published_at": "2026-10-17T14:15:15+00:00",
+     "publisher": "HESPRESS English - Morocco News",
+     "source_url": "https://en.hespress.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Both Houses of Parliament hold Monday joint plenary session to present Government’s program - HESPRESS English",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQ0psSzZvRUtSZ0NHbmpQWHdPMHk2Y19WcEtwdDVPMlBrM0pOcDh1b19FWk54bW94amV1OHNyblBtNkpKNzlpV0FCR3o1LVF3eEJYWGVHcmF6X1Y1YlFXMWtMQi1mSzhaemRMYXVOYUlTNkJueW5oN1BtZE83MjF4LWU3SG9oTkViWkNCNnZBSVR1cWRiU3hJdFNuaHRTTEJacHJ4WXFhWWVZNy1EUGpQQmVQaDUzMVdxWEtlUGxsMEJkN2RX?oc=5",
+     "published_at": "2026-10-17T13:10:15+00:00",
+     "publisher": "HESPRESS English - Morocco News",
+     "source_url": "https://en.hespress.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Morocco’s New Government to Present Program to Parliament on Monday",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ09nUThabWdwbDdia0h4OHAtbTFPMEVFS1BFYU9ZOU9LNjFWUksycWMwOEEwaF9UQThnblAyQnhyQ3VjVmVUdVJ4MWh4dG0tSEhXQkVKdEZaOW9Lc0NIdkVNVUdSUmlXZ1FsUkdPWDBDQWhwV0ZMZGtfMlRPemlNVXVGaFB5UkJzckNTUUFuMUV2YlpNdDJFRFFfWjVTZkRCVzFXZWZndUJqd0RxUlBFaU4tVkM1QQ?oc=5",
+     "published_at": "2026-10-17T12:52:10+00:00",
+     "publisher": "Morocco World News",
+     "source_url": "https://www.moroccoworldnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "morocco prime minister Fatima El Mansouri Leads New Govt",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMkp4X0ZLMm5zcHBJLUNwbXBKYmdXemtLZ1hOdTBlVUd5Uk1adE90SjhrRHREdzdkbWtIeUl3MldrT1UwTTNweW1pWVIyVFBoX09LZWdIeGV5V2gzTk1wNUVkSG5fYWZ2U093TlJNUi1MOTY3TDdNZ2o2b2NEdDJEVFVZQjdNUHJtQ255UkZQMA?oc=5",
+     "published_at": "2026-10-17T07:11:32+00:00",
+     "publisher": "NewzTodays",
+     "source_url": "https://newztodays.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1524,64 +1582,6 @@
    ]
   },
   {
-   "lat": 34.02,
-   "lng": -6.84,
-   "name": "Morocco",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 4,
-   "publisher_count": 3,
-   "category": "politics",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Morocco forms new government, but, except for women, very little changes",
-     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWjB4ZTA5dFNqamhSS3NxZTZTSVV5QTZsSHkxU0NRWjVZcnlSTWczcUFKQmF5Z2FTMUNvVDZSZEgwd1hLZk5tWWJmd0dZOGFFNlQ4N1B0U3FxdC1aVHBockdBYkhHWU5XZ1BubGhDQXlfS0JCTk05YTlpT2VaOVBpajJLWXdHUUdJSFdsQU42QkZJOXRIeE05NjVZY1g3aWVvUmhXUXNLTFBadjhHVTlpMFhzVHZSREFtLWVQMGYySGRkRjVyYzNfSGktMnZQaWZ5QzdzUTdJc2Zld2M?oc=5",
-     "published_at": "2026-10-17T17:29:39+00:00",
-     "publisher": "Le Monde.fr",
-     "source_url": "https://www.lemonde.fr",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Moroccan MPs seek to resume assessment of Green Morocco plan - HESPRESS English",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMUNZRVJNb3RNR2owcTBJMmR0YWtWTEFNd0E4bUM4WFlod0dlSnRCNlNkMlh2UjhHNEdzaWVDZUNpOWdtS3JIbHNNRW1SWDVMYTk4czZUNWh1aDF4ZHRxSUl5ZldqUXp1dG9tQ21jaWNRSkdoRkZFTTJqMlN0UDF1LWNxWXRjOFQzTFZoaEVYUjFFMjc0cEJsQ1RFMm8?oc=5",
-     "published_at": "2026-10-17T14:15:15+00:00",
-     "publisher": "HESPRESS English - Morocco News",
-     "source_url": "https://en.hespress.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Both Houses of Parliament hold Monday joint plenary session to present Government’s program - HESPRESS English",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQ0psSzZvRUtSZ0NHbmpQWHdPMHk2Y19WcEtwdDVPMlBrM0pOcDh1b19FWk54bW94amV1OHNyblBtNkpKNzlpV0FCR3o1LVF3eEJYWGVHcmF6X1Y1YlFXMWtMQi1mSzhaemRMYXVOYUlTNkJueW5oN1BtZE83MjF4LWU3SG9oTkViWkNCNnZBSVR1cWRiU3hJdFNuaHRTTEJacHJ4WXFhWWVZNy1EUGpQQmVQaDUzMVdxWEtlUGxsMEJkN2RX?oc=5",
-     "published_at": "2026-10-17T13:10:15+00:00",
-     "publisher": "HESPRESS English - Morocco News",
-     "source_url": "https://en.hespress.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Morocco’s New Government to Present Program to Parliament on Monday",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ09nUThabWdwbDdia0h4OHAtbTFPMEVFS1BFYU9ZOU9LNjFWUksycWMwOEEwaF9UQThnblAyQnhyQ3VjVmVUdVJ4MWh4dG0tSEhXQkVKdEZaOW9Lc0NIdkVNVUdSUmlXZ1FsUkdPWDBDQWhwV0ZMZGtfMlRPemlNVXVGaFB5UkJzckNTUUFuMUV2YlpNdDJFRFFfWjVTZkRCVzFXZWZndUJqd0RxUlBFaU4tVkM1QQ?oc=5",
-     "published_at": "2026-10-17T12:52:10+00:00",
-     "publisher": "Morocco World News",
-     "source_url": "https://www.moroccoworldnews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": -1.29,
    "lng": 36.82,
    "name": "Kenya",
@@ -1676,21 +1676,21 @@
      "geo_match": "headline"
     },
     {
-     "title": "Airstrike kills 3 children in Yemen, and other Middle East developments",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZkNhbTI3V3oyWldBd2FGYXN2cUtUdzNONmplV3gzdXZqdXN5allGdjl2NWhXRTdrMTNNVGt6eTg4SWxmbUppWUNXdjh0eFd2WTlnQWoxbWVacUpiVHhqZDlWWW5GMmZmRVhUd3pIUWRSVXVKWmZMeGJ0WW9EOExObXBCQUxHVy1OdVl5OW1NOE5NOXlNQ3dkNVpaUFgzNEw1TGRV0gGjAUFVX3lxTE9mQ2FtMjdXejJaV0F3YUZhc3ZxS1R3M042amVXeDN1dmp1c3lqWUZ2OXY1aFdFN2sxM01Ua3p5ODhJbGZtSmlZQ1d2OHR4V3ZZOWdBajFtZVpxSmJUeGpkOVZZbkYyZmZFWFR3ekhRZFJVdUpaZkx4YnRZb0Q4TE5tcEJBTEdXLU51WXk5bU04Tk05eU1Dd2Q1WlpQWDM0TDVMZFU?oc=5",
-     "published_at": "2026-10-17T11:58:13+00:00",
-     "publisher": "Action News Jax",
-     "source_url": "https://www.actionnewsjax.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
      "title": "Airstrike kills 3 children in Yemen, and other Middle East developments - The Tribune-Democrat",
      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQS2trbEYtUlZFcjBCOEIzaDBHUTlzU1dNUmZ6TjYxUlB2aDJqWnl4a2xFaUI1a2RCa3VkdGI2QXV2QVdFTDY5TnZSQm1WYm9kREhsQ0NnU1pjZ0ZjUklYbzZRRXVRb3d0RkROMzJfakNncUdYVGpFUDN4d3VDTmpzNDRUVE50MDVQSlA4ZUNIYUNmYkZPUjhYaU1PeHBCdzNjMjJwRjJxMkhkeXQ1TUx1aWY4a0daMjZIUFhGTnBZd1pHVFlHbmh3WktPaUU5OGdZbnoybzVKNEVrZEtnZGFuMjNBWWphcGF1ajQzbzhkcXJ0LUE?oc=5",
      "published_at": "2026-10-17T09:57:00+00:00",
      "publisher": "The Tribune-Democrat",
      "source_url": "https://www.tribdem.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Airstrike kills 3 children in Yemen, and other Middle East developments",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONGR2YlpuMlJUd1dya0txWDREQ2VzaUJHT21sLW9Da2xxdmVxbU4xMlpuclJna3FzUnRpUzZlV3pFYzBtU3BfalEyM09Wd1lVVjFGZE16LXRYeUR4c1pLRkUyYlhFS0c3bGctbVd4NnhEOXFIUDQyZ3U0aFJubGpDYk1fNFNaMjdGbUxwUXo1TFFjMVY5c2o2ZjF4Z2psWUNuYmpBYkdJTGR4RENCZFNNVw?oc=5",
+     "published_at": "2026-10-17T09:02:32+00:00",
+     "publisher": "Newswav",
+     "source_url": "https://newswav.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1914,54 +1914,6 @@
      "publisher": "France24",
      "source_url": "",
      "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 40.42,
-   "lng": -3.7,
-   "name": "Spain",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 3,
-   "publisher_count": 3,
-   "category": "politics",
-   "recent_3h": 2,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 200,
-   "articles": [
-    {
-     "title": "Spain’s housing decrees face crucial vote as talk of a snap election grows",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS1FPUmhyeGRrb2MzWGlISHM2VFFrSnh4NldOQ3U4cEd1dkxMT0tQaXdKRXBMSmVqMUkwaFRYbWlScGR4blI5TldjM3FiMENHWUI4WlNCVF8yWnRqUUFGWU51YU05b3BJdmcwTU1IYTc3Ym5Xa1RHbGNVT2s3RV9WWUx1NlZ6U0FMS0RTSEU4M0JGOWk1S25CTGRHd2xiaDhxbTBIZ2IzejhhZmc?oc=5",
-     "published_at": "2026-10-18T00:33:30+00:00",
-     "publisher": "Spanien Press",
-     "source_url": "https://spanienpress.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Spain election poll tracker: Who will be the next prime minister?",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9aTy1leVltUDQ1SlNWWXVtSXR0b3lKLUthM2hTd3dBZ0dxVFR2c0pJam9IX0pfRFdOSjVKcGNhWEI4MTVMbFRiM0JISzVDNEpTRXBZX25nb2lvdTVvUlNKQkEzNlJ0a2VfRTFPbkhtU2Yzb0U?oc=5",
-     "published_at": "2026-10-17T23:37:01+00:00",
-     "publisher": "The Economist",
-     "source_url": "https://www.economist.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Spain's Rajoy says will sack Catalan government, call regional elections",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPc3loYlpKYWJ5YnBFRy1ySFNWTzhZU29OTTdyQkZLX0tzVEF4TElKOWxMdVl3b1JoUFdDYzBtMWdpVGRWZTZWeXBySnRQYmNwR042elo0c1NTdExnQjFTc1JzczhfNlpzNVZPdEotNmVmeTBqOUFRNTZLVU4zSEc5S0x0ak92MkZzUm9oa0IwNm1la05nOVJGS0l0QzNtQlRELUVxR2xNdEdaamJ5Z3c?oc=5",
-     "published_at": "2026-10-17T10:01:39+00:00",
-     "publisher": "Yeni Şafak English",
-     "source_url": "https://en.yenisafak.com",
-     "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     }
@@ -2352,6 +2304,54 @@
    ]
   },
   {
+   "lat": 41.0,
+   "lng": 20.0,
+   "name": "Albania",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 3,
+   "publisher_count": 3,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Anti-government protests rage on for fifth day in Albania",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBfVlQwa3ZSSjJtMDZwNC1VYmNaaFI0aEVBWnFNTkg2R1N4b2Nyd01hTUpVR3A1LUtEelJoZ252Z3FmM015SXRJd0dDYmdGVVNtam5MNFg0Z0tBRG5WeUhN?oc=5",
+     "published_at": "2026-10-17T14:08:49+00:00",
+     "publisher": "The Jerusalem Post",
+     "source_url": "https://www.jpost.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Violent clashes between police and protesters in Albania",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFByODRxeG1SQmJRWGtVOTNKc01taUZDUUs5MWd4N1g0OF9uRUU3WDJ6MC1JU1E1bDJXYzM2NXpDOXU5YzlrM0ItZmUwd0xidUtQRncxdi16VUo?oc=5",
+     "published_at": "2026-10-17T13:11:20+00:00",
+     "publisher": "BBC",
+     "source_url": "https://www.bbc.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Albania sees fresh clashes as student-led movement targets PM Rama",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMDhjalJLMDFoSEhxZ2lpeF9kQUstMVJCaG80WHJoQTNhejVRcWZpM3E4c2w3Z3RYN2FIeENuTm5jbk9KSXQ3YXJhTElMSEtTeGlBMzQ4ak9ZdWZ1WGZUWmhKdlpOTVNfYUw1UEJJMkJHd01YcEpwd3dvckNkUVM2U1BRLUNHM18wMHNMaDZxVDlsUUpja2JDNGtEU1FlS1RZcDdnTDZoUVFkUFhFSkh1NXVRUTFpZEpTVTE3UlZHSlhmN0xxQ0M4V0Fya01UOXVGZDZoR2h6eXXSAd4BQVVfeXFMUGhmTkpma2VvazZrYnhfemJXWVFKai1OdHBHcFVJSXRLRkYwdDc5YWctODk3UWNfWDZqRlFmWXlNbGcyRXBXMFFyQ1JzdDI2ZnowMzBlZUFESjNodzZWa3JDQWc2c185aERjSnUxV0tUWmR6QjVneTA0M2pIckhnRXNITWM1SF96ZW9XUWE2c21kdFgtRWtjVVNZSnpxQUhoVzJvd3JXcm8wNDBZWk01dWZ0MnBWMU5yRG9WdGEwNGk0ejRoc3JXd2NpT3d5R1NULVJZb1pjdlFtR0FFMGJ3?oc=5",
+     "published_at": "2026-10-17T12:38:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 10.0,
    "lng": 49.0,
    "name": "Somalia",
@@ -2400,6 +2400,44 @@
    ]
   },
   {
+   "lat": 45.83362,
+   "lng": 1.24759,
+   "name": "Limoges",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "community",
+   "recent_3h": 2,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 200,
+   "articles": [
+    {
+     "title": "Buildings burn as French protests go into the night",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/buildings-burn-as-french-protests-go-into-the-night?traffic_source=rss",
+     "published_at": "2026-10-18T01:30:46+00:00",
+     "publisher": "Al Jazeera",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Watch: Moment historic French town hall spire collapses in flames amid protests",
+     "url": "https://www.bbc.co.uk/news/videos/c6e3xjw37wn7o?at_medium=RSS&at_campaign=rss",
+     "published_at": "2026-10-18T00:49:42+00:00",
+     "publisher": "BBC Europe",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
    "lat": 15.5,
    "lng": -90.25,
    "name": "Guatemala",
@@ -2433,6 +2471,44 @@
      "source_url": "",
      "source_kind": "publisher",
      "language": "es",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 40.42,
+   "lng": -3.7,
+   "name": "Spain",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "politics",
+   "recent_3h": 2,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 200,
+   "articles": [
+    {
+     "title": "Spain’s housing decrees face crucial vote as talk of a snap election grows",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS1FPUmhyeGRrb2MzWGlISHM2VFFrSnh4NldOQ3U4cEd1dkxMT0tQaXdKRXBMSmVqMUkwaFRYbWlScGR4blI5TldjM3FiMENHWUI4WlNCVF8yWnRqUUFGWU51YU05b3BJdmcwTU1IYTc3Ym5Xa1RHbGNVT2s3RV9WWUx1NlZ6U0FMS0RTSEU4M0JGOWk1S25CTGRHd2xiaDhxbTBIZ2IzejhhZmc?oc=5",
+     "published_at": "2026-10-18T00:33:30+00:00",
+     "publisher": "Spanien Press",
+     "source_url": "https://spanienpress.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Spain election poll tracker: Who will be the next prime minister?",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9aTy1leVltUDQ1SlNWWXVtSXR0b3lKLUthM2hTd3dBZ0dxVFR2c0pJam9IX0pfRFdOSjVKcGNhWEI4MTVMbFRiM0JISzVDNEpTRXBZX25nb2lvdTVvUlNKQkEzNlJ0a2VfRTFPbkhtU2Yzb0U?oc=5",
+     "published_at": "2026-10-17T23:37:01+00:00",
+     "publisher": "The Economist",
+     "source_url": "https://www.economist.com",
+     "source_kind": "aggregator",
+     "language": "en",
      "geo_match": "headline"
     }
    ]
@@ -2524,10 +2600,10 @@
    "count": 2,
    "publisher_count": 2,
    "category": "economy",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Bank of Canada set for pair of important data drops ahead of 'live' rate decision",
@@ -2562,10 +2638,10 @@
    "count": 2,
    "publisher_count": 2,
    "category": "society",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Tents spring up in Lisbon as Portugal’s housing protests spread",
@@ -2753,9 +2829,9 @@
    "publisher_count": 1,
    "category": "community",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "TC Wati strengthens to Category 2",
@@ -3122,44 +3198,6 @@
    ]
   },
   {
-   "lat": -1.29,
-   "lng": 36.82,
-   "name": "Kenya",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Kenya confirms four more Ebola cases, bringing total to seven",
-     "url": "https://www.aljazeera.com/news/2026/10/17/kenya-confirms-four-more-ebola-cases-bringing-total-to-seven?traffic_source=rss",
-     "published_at": "2026-10-17T16:48:46+00:00",
-     "publisher": "Al Jazeera",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Kenya reports third Ebola case, contact tracing continues",
-     "url": "https://www.france24.com/en/video/20261017-kenya-reports-third-ebola-case-contact-tracing-continues",
-     "published_at": "2026-10-17T10:56:48+00:00",
-     "publisher": "France24",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 35.69,
    "lng": 51.39,
    "name": "Iran",
@@ -3419,44 +3457,6 @@
      "published_at": "2026-10-17T12:00:00+00:00",
      "publisher": "srpske.rs",
      "source_url": "https://srpske.rs",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 41.0,
-   "lng": 20.0,
-   "name": "Albania",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "society",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Violent clashes between police and protesters in Albania",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFByODRxeG1SQmJRWGtVOTNKc01taUZDUUs5MWd4N1g0OF9uRUU3WDJ6MC1JU1E1bDJXYzM2NXpDOXU5YzlrM0ItZmUwd0xidUtQRncxdi16VUo?oc=5",
-     "published_at": "2026-10-17T13:11:20+00:00",
-     "publisher": "BBC",
-     "source_url": "https://www.bbc.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Albania sees fresh clashes as student-led movement targets PM Rama",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMDhjalJLMDFoSEhxZ2lpeF9kQUstMVJCaG80WHJoQTNhejVRcWZpM3E4c2w3Z3RYN2FIeENuTm5jbk9KSXQ3YXJhTElMSEtTeGlBMzQ4ak9ZdWZ1WGZUWmhKdlpOTVNfYUw1UEJJMkJHd01YcEpwd3dvckNkUVM2U1BRLUNHM18wMHNMaDZxVDlsUUpja2JDNGtEU1FlS1RZcDdnTDZoUVFkUFhFSkh1NXVRUTFpZEpTVTE3UlZHSlhmN0xxQ0M4V0Fya01UOXVGZDZoR2h6eXXSAd4BQVVfeXFMUGhmTkpma2VvazZrYnhfemJXWVFKai1OdHBHcFVJSXRLRkYwdDc5YWctODk3UWNfWDZqRlFmWXlNbGcyRXBXMFFyQ1JzdDI2ZnowMzBlZUFESjNodzZWa3JDQWc2c185aERjSnUxV0tUWmR6QjVneTA0M2pIckhnRXNITWM1SF96ZW9XUWE2c21kdFgtRWtjVVNZSnpxQUhoVzJvd3JXcm8wNDBZWk01dWZ0MnBWMU5yRG9WdGEwNGk0ejRoc3JXd2NpT3d5R1NULVJZb1pjdlFtR0FFMGJ3?oc=5",
-     "published_at": "2026-10-17T12:38:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -3806,44 +3806,6 @@
    ]
   },
   {
-   "lat": 23.22,
-   "lng": 72.64,
-   "name": "Gujarat",
-   "accuracy": "region",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 2,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Gujarat strengthens healthcare infrastructure with two new 1,500-bed hospital plans, focus on cleanliness, medicine quality",
-     "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdjFqbGFWbFpyMGMyd0lwRkhxNXJJZ0NLdWJmR2lYQkZpQURYTUM4bkZ3N3ZmekpmVFNGZmlwN1JGRzNBVkxKdWcwQ2dncUhkemVIU0hCTDNpMm4yTzRtczdUdlVrY3hHYTIyZnRFTnVlcF9HQnk5cTBMUEpvODN2eTJmZmppeWxFYS1UOHNCT19tTjZycVFlNjh4RVRrV1RzbzBKdVM4eFoxbFRqSHlhcU5PcWY2V2FOYmtlR3hqazhRUVRRSmN0TkFoR2dRenVmQ3lyQThIZzNkcld6OGtKdjkyTHFOakJsclVobzhSZlRRZ21mVHRMMDh6YXhyQUQ5MnBTdllqT0hBUHPSAYsCQVVfeXFMTXYxamxhVmxacjBjMndJcEZIcTVySWdDS3ViZkdpWEJGaUFEWE1DOG5Gdzd2ZnpKZlRTRmZpcDdSRkczQVZMSnVnMENnZ3FIZHplSFNIQkwzaTJuMk80bXM3VHZVa2N4R2EyMmZ0RU51ZXBfR0J5OXEwTFBKbzgzdnkyZmZqaXlsRWEtVDhzQk9fbU42cnFRZTY4eEVUa1dUc28wSnVTOHhaMWxUakh5YXFOT3FmNldhTmJrZUd4ams4UVFUUUpjdE5BaEdnUXp1ZkN5ckE4SGczZHJXejhrSnY5MkxxTmpCbHJVaG84UmZUUWdtZlR0TDA4emF4ckFEOTJwU3ZZak9IQVBz?oc=5",
-     "published_at": "2026-10-17T04:09:25+00:00",
-     "publisher": "Devdiscourse",
-     "source_url": "https://www.devdiscourse.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline-curated"
-    },
-    {
-     "title": "Gujarat boosts healthcare: Minister details cleanliness, infra upgrades",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVjZYNGVJX2NzbWpkSzd2UHdLSkhfbTVrUng5SlgyZDEyeTFBeDFDWlMyMGE1XzRYSWdJY2NNUjRJUWZtNXBVMkZuc293MVl0YWJIdzZXT3ZIVUF2TUFjbmE1M1Y3TFNfVmEwaTg4MDFZcnJRbFFJRzhFdUpFaG9fMTE5SG02VXRicHdTQWllckdXbC15XzFIejRBM3Jvd2NsMVJicS03MDI0RkowZV9UZjBnSE96RzdGZ2R1MFZTT1dtS1lHVGNR0gHMAUFVX3lxTE51ak5mcms0SGR5Z1FKRlpRa2Y1eHlhWDZSWFByaHczeEJTNWE0cFkyU3d3RDg4d1BjTC1SWnVWbGM5V01tSnZuQnpucVBlV2VQOVJxdTBEV3dFVGNUUWdkTEhHUy1UYzBXRkJGQVhLQmRramRwSkVULXRhbEZVMElSaVhjdHNOM19ISmNMSDYwa2E5S25nUk0tbDFMbGprV3JZRTlLaVZndFZwd2wyS3QwRzBBTGh3M0dnZ3lqdU1hUzB3dmg2TWxnRXFKeg?oc=5",
-     "published_at": "2026-10-17T04:00:44+00:00",
-     "publisher": "Asianet Newsable",
-     "source_url": "https://newsable.asianetnews.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline-curated"
-    }
-   ]
-  },
-  {
    "lat": 28.61,
    "lng": 77.21,
    "name": "Delhi",
@@ -3920,6 +3882,34 @@
    ]
   },
   {
+   "lat": -41.29,
+   "lng": 174.78,
+   "name": "New Zealand",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Live: New Zealand Kiwi Ferns v Fiji Bulikula",
+     "url": "https://www.rnz.co.nz/news/pacific/1986457/live-new-zealand-kiwi-ferns-v-fiji-bulikula-women-s-rugby-league-world-cup",
+     "published_at": "2026-10-18T01:45:20+00:00",
+     "publisher": "RNZ National",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 25.29,
    "lng": 51.53,
    "name": "Qatar",
@@ -3944,6 +3934,34 @@
      "source_kind": "publisher",
      "language": "es",
      "geo_match": "description"
+    }
+   ]
+  },
+  {
+   "lat": 33.75,
+   "lng": -84.39,
+   "name": "Atlanta",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "\"No Kings\" : à Atlanta, une manifestation anti-Trump tournée vers les urnes",
+     "url": "https://www.france24.com/fr/vid%C3%A9o/20261018-no-kings-%C3%A0-atlanta-une-manifestation-anti-trump-tourn%C3%A9e-vers-les-urnes",
+     "published_at": "2026-10-18T01:29:23+00:00",
+     "publisher": "France24 FR",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "fr",
+     "geo_match": "headline"
     }
    ]
   },
@@ -4000,34 +4018,6 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 45.83362,
-   "lng": 1.24759,
-   "name": "Limoges",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "Watch: Moment historic French town hall spire collapses in flames amid protests",
-     "url": "https://www.bbc.co.uk/news/videos/c6e3xjw37wn7o?at_medium=RSS&at_campaign=rss",
-     "published_at": "2026-10-18T00:49:42+00:00",
-     "publisher": "BBC Europe",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "description"
     }
    ]
   },
@@ -4109,6 +4099,34 @@
      "published_at": "2026-10-18T00:24:04+00:00",
      "publisher": "Bioengineer.org",
      "source_url": "https://bioengineer.org",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 45.46,
+   "lng": 9.19,
+   "name": "Milan",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Protesters clash with police in downtown Milan (VIDEOS)",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPclIyLTEzNG5xcjlZd0VCREozb0JOVE1UQUx4S3hvXzJFdV96T2RVd2xSQ2lYbjJRZF9memZHcWhvVm0yX1R5Q01NSTZJczZ5ZFFiWTJZQ2h6RVpoRlNQTldKLTB4ekFEbExNc01iZldFc0s1XzBDbEhKR3V6US1ZZ3NMWm1kMUVIZV9faWdBWk5PZ1FDNFVtRTZoWDR2Yk1i?oc=5",
+     "published_at": "2026-10-18T00:21:00+00:00",
+     "publisher": "Big News Network.com",
+     "source_url": "https://www.bignewsnetwork.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -4406,10 +4424,10 @@
    "count": 1,
    "publisher_count": 1,
    "category": "community",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Nearly 90% of countries adopt biodiversity targets, but most remain off track",
@@ -4434,10 +4452,10 @@
    "count": 1,
    "publisher_count": 1,
    "category": "society",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Senior citizens want constitutional protection",
@@ -4462,10 +4480,10 @@
    "count": 1,
    "publisher_count": 1,
    "category": "community",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "New York City police seek suspect in fatal subway station shooting",
@@ -4490,10 +4508,10 @@
    "count": 1,
    "publisher_count": 1,
    "category": "education",
-   "recent_3h": 1,
-   "previous_3h": 0,
+   "recent_3h": 0,
+   "previous_3h": 1,
    "velocity": "steady",
-   "velocity_change_pct_sample": 100,
+   "velocity_change_pct_sample": -50,
    "articles": [
     {
      "title": "Riyadh schools and universities to continue remote learning for this week",
@@ -4911,9 +4929,9 @@
    "publisher_count": 1,
    "category": "economy",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "US Advisor Discusses Energy Investment Opportunities in Libya and Alge",
@@ -7084,34 +7102,6 @@
    ]
   },
   {
-   "lat": 48.82586,
-   "lng": 2.3508,
-   "name": "Maison Blanche",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Trump écarte la nouvelle porte-parole de la Maison Blanche, Katie Zacharia",
-     "url": "https://www.france24.com/fr/vid%C3%A9o/20261017-trump-%C3%A9carte-la-nouvelle-porte-parole-de-la-maison-blanche-katie-zacharia",
-     "published_at": "2026-10-17T11:01:56+00:00",
-     "publisher": "France24 FR",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "fr",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": 24.45,
    "lng": 54.38,
    "name": "Abu Dhabi",
@@ -7136,34 +7126,6 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 40.71,
-   "lng": -74.01,
-   "name": "New York",
-   "accuracy": "place",
-   "location_basis": "description",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "education",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Opinion | This Is One of the Saddest Facts About the Cornell Rape Case",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VbUk3aFB4NnhJMEpWWl9fNGpHeFlfQmI5LVN3a29MT2pNQm53M0dSUXhWVDBPTVBZdDdiWkpGZGxNMEJsX3d5MnNkbE1INDlkRTdWMUJNbHdvSVBFM3d6Q0tzZlUxbHBGLVpwNjlGMkIxbU84c1ZiSTBxTHcwdw?oc=5",
-     "published_at": "2026-10-17T11:00:14+00:00",
-     "publisher": "The New York Times",
-     "source_url": "https://www.nytimes.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
     }
    ]
   },
@@ -7276,6 +7238,34 @@
      "source_kind": "publisher",
      "language": "en",
      "geo_match": "description"
+    }
+   ]
+  },
+  {
+   "lat": -1.29,
+   "lng": 36.82,
+   "name": "Kenya",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Kenya reports third Ebola case, contact tracing continues",
+     "url": "https://www.france24.com/en/video/20261017-kenya-reports-third-ebola-case-contact-tracing-continues",
+     "published_at": "2026-10-17T10:56:48+00:00",
+     "publisher": "France24",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
     }
    ]
   },
@@ -7980,34 +7970,6 @@
    ]
   },
   {
-   "lat": 11.58528,
-   "lng": 122.75111,
-   "name": "Roxas City",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "health",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "The provincial government of Capiz has begun transferring medical equipment, supplies and other medical facilities from the old Roxas Memorial Provincial Hospital (RMPH) to the new Capiz Medical Center (CMC) in Barangay Lanot, Roxas City, ahead of its",
-     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQeGtHMzJFMGE5RWdqQkxoek9NUzAyTkhQOVZuY0d6d3BkY0J5MEEtTnNYbWdhYk5iekk4WEJHVzhmV29JWFNkcFpwa0FuNjVXTHFrTFYyM2tDOTFMZHJaSXpFbkQ0TlNrNkg5WTlISUQtX1Bld3FhbG1IaWhmeURZbzhaMi1pMFpKNUFzakdfMHBQSXdPUlg0Sm9VdDlJRGV6TmFpMGYxQVdaelk1eUt5MFJWX3RiaExfS2g2eDltcV9RNTNKalg5QzIxYWdZUUJrRXA3N3FXMWtUenE3cWc?oc=5",
-     "published_at": "2026-10-17T07:01:01+00:00",
-     "publisher": "Facebook",
-     "source_url": "https://www.facebook.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": -9.44,
    "lng": 147.18,
    "name": "Port Moresby",
@@ -8456,6 +8418,34 @@
    ]
   },
   {
+   "lat": 23.22,
+   "lng": 72.64,
+   "name": "Gujarat",
+   "accuracy": "region",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Gujarat strengthens healthcare infrastructure with two new 1,500-bed hospital plans, focus on cleanliness, medicine quality",
+     "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdjFqbGFWbFpyMGMyd0lwRkhxNXJJZ0NLdWJmR2lYQkZpQURYTUM4bkZ3N3ZmekpmVFNGZmlwN1JGRzNBVkxKdWcwQ2dncUhkemVIU0hCTDNpMm4yTzRtczdUdlVrY3hHYTIyZnRFTnVlcF9HQnk5cTBMUEpvODN2eTJmZmppeWxFYS1UOHNCT19tTjZycVFlNjh4RVRrV1RzbzBKdVM4eFoxbFRqSHlhcU5PcWY2V2FOYmtlR3hqazhRUVRRSmN0TkFoR2dRenVmQ3lyQThIZzNkcld6OGtKdjkyTHFOakJsclVobzhSZlRRZ21mVHRMMDh6YXhyQUQ5MnBTdllqT0hBUHPSAYsCQVVfeXFMTXYxamxhVmxacjBjMndJcEZIcTVySWdDS3ViZkdpWEJGaUFEWE1DOG5Gdzd2ZnpKZlRTRmZpcDdSRkczQVZMSnVnMENnZ3FIZHplSFNIQkwzaTJuMk80bXM3VHZVa2N4R2EyMmZ0RU51ZXBfR0J5OXEwTFBKbzgzdnkyZmZqaXlsRWEtVDhzQk9fbU42cnFRZTY4eEVUa1dUc28wSnVTOHhaMWxUakh5YXFOT3FmNldhTmJrZUd4ams4UVFUUUpjdE5BaEdnUXp1ZkN5ckE4SGczZHJXejhrSnY5MkxxTmpCbHJVaG84UmZUUWdtZlR0TDA4emF4ckFEOTJwU3ZZak9IQVBz?oc=5",
+     "published_at": "2026-10-17T04:09:25+00:00",
+     "publisher": "Devdiscourse",
+     "source_url": "https://www.devdiscourse.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline-curated"
+    }
+   ]
+  },
+  {
    "lat": 33.69,
    "lng": 73.06,
    "name": "Pakistan",
@@ -8708,6 +8698,34 @@
    ]
   },
   {
+   "lat": -41.29,
+   "lng": 174.78,
+   "name": "Wellington",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "economy",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "The case for keeping Wellington’s visitor economy front and centre",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUkNMQWtGQkRsRHZia2dabThTMXZPVkY2ejBNT0lWYzNyOVhtdmV5c2VOdTlENGlSa1dhUS1nTm5PalowUkFXV3NDd3RLOGZLUzEyaHF4cDBOMURmeFpDUDY2aHU3U0RGZTl5bHRYRkZtdTRlOWZUV3NGaXZwR2F2bXFjRGI?oc=5",
+     "published_at": "2026-10-17T02:47:19+00:00",
+     "publisher": "PressReader",
+     "source_url": "https://www.pressreader.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": -13.5,
    "lng": 34.0,
    "name": "Malawi",
@@ -8790,41 +8808,23 @@
      "geo_match": "headline"
     }
    ]
-  },
-  {
-   "lat": 13.76,
-   "lng": 100.5,
-   "name": "Thailand",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "From piercings to purification: Thailand’s 2026 vegetarian festival",
-     "url": "https://www.theguardian.com/world/gallery/2026/oct/17/thailand-2026-vegetarian-festival-in-pictures",
-     "published_at": "2026-10-17T01:47:27+00:00",
-     "publisher": "Guardian Asia",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
   }
  ],
  "unlocated_articles": [
   {
+   "title": "First-Ever Discovery Beyond the Solar System of a Celestial Body with Water Clouds and Changing Weather",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM0o4ZTJTbWpsMWJnejRaN3B3d2dwOW5tOXlXaXdvZGdfU0hLRjZ3RnVtSzVDaWltOXM1Wkp2dTFZVlB4eXZSaUNaaVVaaGlzNFhUeVZNSGowS29TVTRjdTFXNW1NcTJuNTRfRngtLVhRd2dWQS1OMk5JSVI1VGllZngtOFB0eDJ6NWFtRzlfai1WSVlWbF9tREd1TVVGcmlYUE9pbURveEhpTGJCXzU2RzIxRFUzZkJiUFdob2c4OF9jZi1vZlNXN1h0R18?oc=5",
+   "publisher": "BGNES",
+   "published_at": "2026-10-18T01:48:14+00:00",
+   "category": "science",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "Ten years of fighting against extinction brought to life on film",
    "url": "https://www.abc.net.au/news/2026-10-18/australian-wildlife-conservancy-showcase-international-film/107269870",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-18T01:32:43+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -8844,7 +8844,7 @@
   {
    "title": "Search for missing Murray River man after cries for help heard",
    "url": "https://www.abc.net.au/news/2026-10-18/search-for-missing-man-near-tocumwal/107280424",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-18T01:18:05+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -8854,7 +8854,7 @@
   {
    "title": "Labour pledges $7 million to get kids off screens and 'back to being kids'",
    "url": "https://www.rnz.co.nz/news/politics_election-2026/1985304/labour-pledges-7-million-to-get-kids-off-screens-and-back-to-being-kids",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-18T01:15:28+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -8894,7 +8894,7 @@
   {
    "title": "Ulises Cortés: 'Los fallos de Meta contra cuentas de candidatos siempre tienen intensión'",
    "url": "https://www.france24.com/es/video/20261018-ulises-cort%C3%A9s-los-fallos-de-meta-contra-cuentas-de-candidatos-siempre-tienen-intensi%C3%B3n",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-18T00:33:28+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -8914,7 +8914,7 @@
   {
    "title": "Family of lost WA man want someone held accountable for his disappearance",
    "url": "https://www.abc.net.au/news/2026-10-18/no-answers-for-family-of-missing-wa-man-five-years-on/107270862",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-18T00:31:55+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -8924,7 +8924,7 @@
   {
    "title": "Papa León XIV regresa al Vaticano tras recibir el alta de su cirugía de pulmón",
    "url": "https://www.france24.com/es/video/20261018-papa-le%C3%B3n-xiv-regresa-al-vaticano-tras-recibir-el-alta-de-su-cirug%C3%ADa-de-pulm%C3%B3n",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-18T00:31:26+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -8954,7 +8954,7 @@
   {
    "title": "War of words erupts as Buti pitches uni merger passion project",
    "url": "https://www.abc.net.au/news/2026-10-18/tony-buti-public-university-mega-merger-wa/107275274",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-18T00:14:43+00:00",
    "category": "conflict",
    "location_status": "unverified",
@@ -8974,7 +8974,7 @@
   {
    "title": "O caso da herdeira alemã acusada de encomendar o sequestro dos próprios filhos que levou a um escândalo de espionagem",
    "url": "https://www.bbc.com/portuguese/articles/c674pd9lddwgo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Brasil",
    "published_at": "2026-10-18T00:05:59+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9014,7 +9014,7 @@
   {
    "title": "Gas company called 'rude' for not sharing decommissioning news earlier",
    "url": "https://www.abc.net.au/news/2026-10-18/secret-meetings-over-gas-network-albany/107272216",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-18T00:00:30+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9034,7 +9034,7 @@
   {
    "title": "Assistant treasurer knew about ATO's credit card ban plans months ago",
    "url": "https://www.abc.net.au/news/2026-10-18/federal-politics-insiders-daniel-mulino-ato-credit-card-ban/107280382",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-17T23:58:19+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9044,9 +9044,19 @@
   {
    "title": "Researchers work with Māori carvers to discover secrets of pounamu's strength",
    "url": "https://www.rnz.co.nz/news/science-and-technology/1982144/researchers-work-with-maori-carvers-to-discover-secrets-of-pounamu-s-strength",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T23:57:43+00:00",
    "category": "community",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "The Rage at Cornell: ‘Rapists Still Walk Among Us’",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBmSDhudGFQN2hWNFJ5UmNWUGNjZF9vc3ZfY050VlRSWjRmbnJnRG1jRG9INl84T25rUjhZQnVxR2NjaXZxTkxqa21mTXJ5Y0lzSEdSN0EtNmJhRnFkUGhULVQ1SW9OUnQ1alF1UEQ0M1Nieno5R2c?oc=5",
+   "publisher": "The Free Press",
+   "published_at": "2026-10-17T23:55:56+00:00",
+   "category": "education",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -9094,7 +9104,7 @@
   {
    "title": "En imágenes: protestas, disturbios y enfrentamientos sacuden las calles de Europa y Estados Unidos",
    "url": "https://www.france24.com/es/diaporama/20261017-en-im%C3%A1genes-protestas-disturbios-y-enfrentamientos-sacuden-las-calles-de-europa-y-estados-unidos",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-17T23:04:25+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9114,7 +9124,7 @@
   {
    "title": "A secret diagnosis could have torn us apart, but it brought us together",
    "url": "https://www.abc.net.au/news/2026-10-18/love-story-secret-diagnosis-vinko-and-andrea/107096790",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-17T23:00:00+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9144,7 +9154,7 @@
   {
    "title": "Prédio incendiado, mais de mil presos: o que está por trás de dia de protestos na França",
    "url": "https://www.bbc.com/portuguese/articles/ck0546rzg0gvo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Brasil",
    "published_at": "2026-10-17T22:41:03+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9164,7 +9174,7 @@
   {
    "title": "Women's group vows they're 'not going to get grey hair and do it quietly'",
    "url": "https://www.abc.net.au/news/2026-10-18/red-hat-rebels-south-wollongong-ruby-ragers/107164590",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-17T22:29:24+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9204,7 +9214,7 @@
   {
    "title": "Photos show luxury boat with 50m pool and water slides near Kim Jong Un's summer retreat",
    "url": "https://www.bbc.co.uk/news/articles/cmy4xnyyg1lyo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-17T22:09:50+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9294,7 +9304,7 @@
   {
    "title": "How artificial intelligence is helping the lobster industry",
    "url": "https://www.abc.net.au/news/2026-10-18/lobster-industry-ai-tools-helping-tracing-landline/107211678",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-17T21:22:29+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9324,7 +9334,7 @@
   {
    "title": "Siblings with feet turned backwards get life-changing care",
    "url": "https://www.abc.net.au/news/2026-10-18/siblings-with-birth-defect-recieve-donated-care/107271116",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-17T21:15:33+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9334,7 +9344,7 @@
   {
    "title": "Photos: No Kings rallies in US urge midterm voters to cast ballots early",
    "url": "https://www.aljazeera.com/gallery/2026/10/17/photos-no-kings-rallies-in-us-urge-midterm-voters-to-cast-ballots-early?traffic_source=rss",
-   "publisher": "",
+   "publisher": "Al Jazeera",
    "published_at": "2026-10-17T21:08:10+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9344,7 +9354,7 @@
   {
    "title": "Paramedics unable to respond to 'lights and sirens' cases while ramped",
    "url": "https://www.abc.net.au/news/2026-10-18/qld-state-of-the-state-health/107270722",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-17T21:02:49+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9354,9 +9364,19 @@
   {
    "title": "A lost knife, but a new love found for outback bladesmith",
    "url": "https://www.abc.net.au/news/2026-10-18/outback-grazier-turns-knifemaker-uses-recycled-wood-from-station/107260236",
-   "publisher": "",
+   "publisher": "ABC Australia",
    "published_at": "2026-10-17T21:00:31+00:00",
    "category": "community",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "President Begaj meets two groups of protesters, the young people ask him to dissolve the Parliament and form a transitional government",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQQlpBVTdqTlZpWHNTNEZOb0wxTkFqdE40VTZweUdEelZWZXBaUTJYR0VTMXM2SldZOEtuOEtUbFZPeFdJRjFIVlZEVEtEa19qS3hxV0UtNGljc0owOU5qUjVycFNWeHBBSGlqR0ZybEI5S0ZTQTdqNkxpRG9jR3hKT2czV1drSlE0eTFXOUpHUXdIR1ZSS2Y1M0w5QTZwZnM0WmxzUkt2aGo5aVVYSlJQZzc2R0NNWG04RlVUdkNmRjFqQy02bkNRQ0hzX2p0WU54VUFxMzRJRndBSi1MOHoxckhmMUJUbFJ4dGlaQl9rc3ZnakdsdlBrX2RQa1lYY0Y0bW10aTJxWjhROG5JUVBMZ1h3?oc=5",
+   "publisher": "Balkanweb.com",
+   "published_at": "2026-10-17T20:56:00+00:00",
+   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -9374,7 +9394,7 @@
   {
    "title": "Volodímir Zelenski teme que Trump \"continúe\" levantando las sanciones contra Rusia",
    "url": "https://www.france24.com/es/europa/20261017-volod%C3%ADmir-zelenski-teme-que-trump-contin%C3%BAe-levantando-las-sanciones-contra-rusia",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-17T20:52:00+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9404,7 +9424,7 @@
   {
    "title": "ONU: el expresidente senegalés Macky Sall retira su candidatura al cargo de secretario general",
    "url": "https://www.france24.com/es/%C3%A1frica/20261017-onu-el-expresidente-senegal%C3%A9s-macky-sall-retira-su-candidatura-al-cargo-de-secretario-general",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-17T20:39:53+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9414,7 +9434,7 @@
   {
    "title": "Por que os EUA estão retomando o pelotão de fuzilamento como método de execução",
    "url": "https://www.bbc.com/portuguese/articles/c9e8l387mn57o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Brasil",
    "published_at": "2026-10-17T20:38:56+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9424,7 +9444,7 @@
   {
    "title": "Vigilia en Oregon por tres niños y una profesora asesinados en un tiroteo escolar",
    "url": "https://www.france24.com/es/video/20261017-vigilia-en-oregon-por-tres-ni%C3%B1os-y-una-profesora-asesinados-en-un-tiroteo-escolar",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-17T20:35:04+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9434,7 +9454,7 @@
   {
    "title": "Estambul se prepara para una nueva jornada de lluvias y posibles inundaciones",
    "url": "https://www.france24.com/es/video/20261017-estambul-se-prepara-para-una-nueva-jornada-de-lluvias-y-posibles-inundaciones",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-17T20:33:41+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9452,16 +9472,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "A little-known office, $55k contracts and a growing political problem",
-   "url": "https://www.abc.net.au/news/2026-10-18/uncomfortable-questions-over-malinauskas-golf-course-upgrade/107279012",
-   "publisher": "",
-   "published_at": "2026-10-17T20:25:38+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "City College student detained by ICE released from federal detention",
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbWRCb1NQU3liX2FkdmtTa3V5X3Y2czNWZncwcXVWMENrU1YzT3k0cnRoQVlCbEU2dDh1cHloZUpUUGZEdno5U0RGUXlsX1JRcVp5TF9VOUV6UnlVV0xHU1NLRFF5VDMxZGdZOUNzd0RMSlNxbDl5WXFfUDIyLW1TNnhqbjNqWGctMnlOa1Qyb1JiUjdjMFFfbWxkTVByTWF6ajVsOFNoX0dBVmtSblFsRUlEajdVT25JemQ0Vjc5OHlFWGMzRG9JMVUyckRsZHZBZTNXVTlLa0VaVUI4Y3MySl9VOA?oc=5",
    "publisher": "cbs8.com",
@@ -9474,7 +9484,7 @@
   {
    "title": "Trump suspende por orden ejecutiva las sanciones a Rusia pese al Congreso y Moscú lo celebra",
    "url": "https://www.france24.com/es/video/20261017-trump-suspende-por-orden-ejecutiva-las-sanciones-a-rusia-pese-al-congreso-y-mosc%C3%BA-lo-celebra",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-17T20:21:25+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9484,7 +9494,7 @@
   {
    "title": "Papa León XIV sale del hospital tras someterse a una cirugía de pulmón",
    "url": "https://www.france24.com/es/video/20261017-papa-le%C3%B3n-xiv-sale-del-hospital-tras-someterse-a-una-cirug%C3%ADa-de-pulm%C3%B3n",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-17T20:17:17+00:00",
    "category": "health",
    "location_status": "unverified",
@@ -9514,7 +9524,7 @@
   {
    "title": "Iranian TV airs video said to show tanker explosion in Hormuz",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss",
-   "publisher": "",
+   "publisher": "Al Jazeera",
    "published_at": "2026-10-17T20:02:22+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9574,7 +9584,7 @@
   {
    "title": "No action to be taken against wife of PM’s aide over Palestine Action post",
    "url": "https://www.theguardian.com/politics/2026/oct/17/sarah-helm-jonathan-powell-palestine-action",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-17T19:47:45+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9624,7 +9634,7 @@
   {
    "title": "O que as imagens de uma elefanta carregando um filhote morto revelam sobre o luto dos animais",
    "url": "https://www.bbc.com/portuguese/articles/c63r583p3pw4o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Brasil",
    "published_at": "2026-10-17T19:13:41+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9644,7 +9654,7 @@
   {
    "title": "Reform candidate filmed saying asylum seekers should be put in ‘concentration camps’",
    "url": "https://www.theguardian.com/politics/2026/oct/17/reform-candidate-filmed-saying-asylum-seekers-should-be-put-in-concentration-camps",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-17T19:00:41+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9654,7 +9664,7 @@
   {
    "title": "Most NSW homes destroyed in black summer bushfires were within 100 metres of vegetation",
    "url": "https://www.theguardian.com/australia-news/2026/oct/18/nsw-homes-destroyed-in-black-summer-bushfires-in-high-risk-buffer-zone",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-17T19:00:40+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9702,9 +9712,19 @@
    "reason": "no_confident_geography"
   },
   {
+   "title": "A year after July Charter signing, key reforms lie in limbo",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObHNzR0NuZE41aEFJSTRPR252YjBUWnRMbXpTMG5CdWtUa252aTB2WVU3N1cxRTBwSVpmRUE0Y3FmOWxBTzFGa1pEa3o4Vk9GZTRkSnhRYTVVX3Z4ZmNCRFRuSkxFWUxldUFGanNYdGdOY1ZXZmxDNEpzVVhBUmYza2c3OVY1S1p3OFFieFRUV3RKcktyUjNpeVVCTXpuRldKX244cEFIOFR3aXVPTTJJVnhRODRFMzI5d3FfRtIByAFBVV95cUxNalZha1ZKYS0yenJCMUxMQngtaFYxYkNQVXhiTFZLa1pLWGtxZjdvYXh4MWxRdl9VMlhfUTMxZHVsX0NMNnUyaFVZNk1sdUdhak9wVVp3U2NzYk4tU2hYaDZ1WWtKWjUxX29qRllBeXE5WThMM0Y1WE80MkZOWUFtRlBxVnY2ZEM4bWRTZFUzdm5PSU0xNzdjUTBFQkZnbUttZ2lDV0ZVSVZOLWNETmhxT0V4YnU1cE9aTW4yVzBQWnY1VDBIdWFwMQ?oc=5",
+   "publisher": "The Financial Express",
+   "published_at": "2026-10-17T18:46:52+00:00",
+   "category": "politics",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "🔴 En directo: el Gobierno cifra en 550.000 los manifestantes y la policía, en 400 los detenidos en Francia",
    "url": "https://www.france24.com/es/francia/20261017-en-directo-fuertes-tensiones-entre-manifestantes-y-fuerzas-del-orden-en-una-jornada-de-protestas-en-francia",
-   "publisher": "",
+   "publisher": "France24 ES",
    "published_at": "2026-10-17T18:37:28+00:00",
    "category": "politics",
    "location_status": "unverified",
@@ -9744,7 +9764,7 @@
   {
    "title": "'No Brasil, rico fica mais rico dormindo, e pobre trabalha para pagar juros', diz fundador da Petz",
    "url": "https://www.bbc.com/portuguese/articles/cmy83ggg2168o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Brasil",
    "published_at": "2026-10-17T18:25:44+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9754,7 +9774,7 @@
   {
    "title": "Tenants 'distressed' by landlord's 'baseless threats of eviction' win tribunal dispute",
    "url": "https://www.rnz.co.nz/news/crime-and-justice/1969638/tenants-distressed-by-landlord-s-baseless-threats-of-eviction-win-tribunal-dispute",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T18:23:47+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9764,7 +9784,7 @@
   {
    "title": "Northland woman pleads guilty after dog kills four kiwi",
    "url": "https://www.rnz.co.nz/news/crime-and-justice/1974048/northland-woman-pleads-guilty-after-dog-kills-four-kiwi",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T18:23:45+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9786,6 +9806,16 @@
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQX2taWnZhejhjQ0xtUDY1UjhSM2pLTFBLV2dCcGxuaEJfc29TR3NwdFVpejNmc3JNWDVSTFQzVlVTWHhVWFVQbUZmak91eFB3ZGt5TlF2UndHZUZDMFVkSUpTOEZUeGVEWC0yUXpLUHkyMGpqQ0NieC1sUzhRX21xWHMtZEx1M1hyN3NUVHFHaG1pU0s5SXVkR2FrOWFJR3l5OFpOblVjb2s3RWV0UnZqTnJIcnFlNEM1QWVxY1NhVTZBN01wQVJCVEZLWUxnVUVHbU5nMlFJOVR6aVYzVkZB?oc=5",
    "publisher": "TAPinto",
    "published_at": "2026-10-17T18:13:09+00:00",
+   "category": "education",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "OSAP pause leads Trillium College to suspend classes",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbzZRYXV2djc1TEJKOUs1aGNUcXdubG9IekdKUEdtWTh3WlZOR0pIeEZZTGVKVnZaQzBKME5vR1RpTnEwRTNMQ2l3UVVSTnJ4Tk1RXzE1SzFqWmxHa3hkVkFkMEhxY2RIckQ4UVJnTmpFUXctUzd4RFRMSjBuUERoNGdxQkJkLS1ENkNRUVY0YW5KUVlJd2ZWMlBtdGJvQm1HMnZmakFJSjFZZw?oc=5",
+   "publisher": "CP24",
+   "published_at": "2026-10-17T18:05:11+00:00",
    "category": "education",
    "location_status": "unverified",
    "browse_status": "recent",
@@ -9817,16 +9847,6 @@
    "publisher": "Bioengineer.org",
    "published_at": "2026-10-17T18:01:18+00:00",
    "category": "science",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "A year after July Charter signing, key reforms lie in limbo",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNalZha1ZKYS0yenJCMUxMQngtaFYxYkNQVXhiTFZLa1pLWGtxZjdvYXh4MWxRdl9VMlhfUTMxZHVsX0NMNnUyaFVZNk1sdUdhak9wVVp3U2NzYk4tU2hYaDZ1WWtKWjUxX29qRllBeXE5WThMM0Y1WE80MkZOWUFtRlBxVnY2ZEM4bWRTZFUzdm5PSU0xNzdjUTBFQkZnbUttZ2lDV0ZVSVZOLWNETmhxT0V4YnU1cE9aTW4yVzBQWnY1VDBIdWFwMdIByAFBVV95cUxNalZha1ZKYS0yenJCMUxMQngtaFYxYkNQVXhiTFZLa1pLWGtxZjdvYXh4MWxRdl9VMlhfUTMxZHVsX0NMNnUyaFVZNk1sdUdhak9wVVp3U2NzYk4tU2hYaDZ1WWtKWjUxX29qRllBeXE5WThMM0Y1WE80MkZOWUFtRlBxVnY2ZEM4bWRTZFUzdm5PSU0xNzdjUTBFQkZnbUttZ2lDV0ZVSVZOLWNETmhxT0V4YnU1cE9aTW4yVzBQWnY1VDBIdWFwMQ?oc=5",
-   "publisher": "The Financial Express",
-   "published_at": "2026-10-17T18:00:00+00:00",
-   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -9864,7 +9884,7 @@
   {
    "title": "Fresh call for sugar tax to combat children's deteriorating oral health",
    "url": "https://www.rnz.co.nz/news/health/1973927/fresh-call-for-sugar-tax-to-combat-children-s-deteriorating-oral-health",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T17:42:42+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9874,7 +9894,7 @@
   {
    "title": "'Overuse of state power': Documents detail Gloriavale school's fight to stay open",
    "url": "https://www.rnz.co.nz/news/education/1973926/overuse-of-state-power-documents-detail-gloriavale-school-s-fight-to-stay-open",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T17:42:42+00:00",
    "category": "education",
    "location_status": "unverified",
@@ -9884,7 +9904,7 @@
   {
    "title": "Pope Leo returns to Vatican after lung cancer surgery",
    "url": "https://www.aljazeera.com/news/2026/10/17/pope-leo-returns-to-vatican-after-lung-cancer-surgery?traffic_source=rss",
-   "publisher": "",
+   "publisher": "Al Jazeera",
    "published_at": "2026-10-17T17:37:52+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9914,7 +9934,7 @@
   {
    "title": "🔴 Live: Chaotic scenes as organisers of French protests claim 800,000 have taken to streets",
    "url": "https://www.france24.com/en/france/20261017-live-france-s-yellow-vests-throw-their-weight-behind-mounting-student-protests",
-   "publisher": "",
+   "publisher": "France24",
    "published_at": "2026-10-17T17:18:35+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -9937,6 +9957,16 @@
    "publisher": "Bioengineer.org",
    "published_at": "2026-10-17T17:16:18+00:00",
    "category": "health",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
+   "title": "Pro-Western opposition keeps control of Czech Senate after big election gains",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeklPRjExNEljS0QxNFVJVWlvVmNOY0FMV2lBQlUxcjBPQU5qTTVKRjlTVnJ0YW5EUUxKNDh5dlFXYXVjVUhvcDVpWkF1R25VVW5WNno5OGh3YWg3eGg4Nkk4V1JxZGtGcXk3V1l1TEtmbm9USDhiZW9fa1ZSeEZ4WjhudGpsb3pwM2FHSEx0OWxGQzI5aEhuLWpidDdWNjM5aENLN0E3bWR1MHhJZnFDQy1B?oc=5",
+   "publisher": "The Edwardsville Intelligencer",
+   "published_at": "2026-10-17T17:14:51+00:00",
+   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -10004,7 +10034,7 @@
   {
    "title": "Manifestation du 17 octobre : Bernard Thibault apporte son soutien aux jeunes mobilisés",
    "url": "https://www.france24.com/fr/%C3%A9missions/avec-judith/20261017-manifestation-du-17-octobre-bernard-thibault-apporte-son-soutien-aux-jeunes-mobilis%C3%A9s",
-   "publisher": "",
+   "publisher": "France24 FR",
    "published_at": "2026-10-17T16:45:09+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10104,7 +10134,7 @@
   {
    "title": "SNP says campaign for next referendum on independence ‘has already begun’",
    "url": "https://www.theguardian.com/politics/2026/oct/17/snp-campaign-second-referendum-independence-john-swinney",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-17T15:45:53+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10134,7 +10164,7 @@
   {
    "title": "Debate na Band no segundo turno: o que esperar do primeiro confronto entre Lula e Flávio Bolsonaro",
    "url": "https://www.bbc.com/portuguese/articles/cwkg57dyvrn3o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Brasil",
    "published_at": "2026-10-17T15:33:57+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10204,7 +10234,7 @@
   {
    "title": "US: Four killed in Oregon school shooting",
    "url": "https://www.france24.com/en/video/20261017-us-four-killed-in-oregon-school-shooting",
-   "publisher": "",
+   "publisher": "France24",
    "published_at": "2026-10-17T15:16:26+00:00",
    "category": "education",
    "location_status": "unverified",
@@ -10254,7 +10284,7 @@
   {
    "title": "🔴 Cisjordanie occupée : un maire français frappé par des colons israéliens lors de l'attaque d'un convoi diplomatique européen",
    "url": "https://www.france24.com/fr/moyen-orient/20261017-cisjordanie-occup%C3%A9e-colons-israel-attaque-convoi-diplomatique-frappent-maire-fran%C3%A7ais",
-   "publisher": "",
+   "publisher": "France24 FR",
    "published_at": "2026-10-17T15:03:57+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10297,16 +10327,6 @@
    "publisher": "SooLeader.com",
    "published_at": "2026-10-17T14:51:54+00:00",
    "category": "society",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "K1.4bn to end long hospital trips in Ntcheu",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZ0FHSEJEZktSLUd1a3BsRkJKUmtibld2ZFBZSnlaUUUxWEFlbWZwaGppNldsZkdMazBLcmN1bk10Z1J4MzBZYmxSYXpWQzV3Vmk3UXlmMDYyNURHOHZ3YUkydHAwWmlnMDlHVTZXdnBPUjRvcDJXZy1KblFDVnlaMlRR?oc=5",
-   "publisher": "Malawi24",
-   "published_at": "2026-10-17T14:51:39+00:00",
-   "category": "health",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -10372,16 +10392,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "The Rage at Cornell: ‘Rapists Still Walk Among Us’",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBmSDhudGFQN2hWNFJ5UmNWUGNjZF9vc3ZfY050VlRSWjRmbnJnRG1jRG9INl84T25rUjhZQnVxR2NjaXZxTkxqa21mTXJ5Y0lzSEdSN0EtNmJhRnFkUGhULVQ1SW9OUnQ1alF1UEQ0M1Nieno5R2c?oc=5",
-   "publisher": "The Free Press",
-   "published_at": "2026-10-17T14:15:19+00:00",
-   "category": "education",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Fires and tear gas as French protests spiral - ABC News & Headlines",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWEx2MDEyR3ZJSU03QmZHMTVPV2FUQ2V1QnBuRlU5WjNjVFplaWp4bG1DQzhDS1Y5MGFkUGpIZXptbVJsMTNaREJZdDh3RTZFcDlaa05QRmxPM0s4Z0NIUjJJNjdzb1hvMkJab01YRUZoeVVYN29CVXNNTHo5X2VEckhjRjhjZ2dMQ0pFLTdmLW1wV1U?oc=5",
    "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
@@ -10394,7 +10404,7 @@
   {
    "title": "Low-cost clinic helps pet owners with vet bills",
    "url": "https://www.bbc.co.uk/news/articles/c6kgl39rnnvzo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Business",
    "published_at": "2026-10-17T14:12:02+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10454,7 +10464,7 @@
   {
    "title": "Pope discharged from hospital days after lung cancer surgery",
    "url": "https://www.bbc.co.uk/news/articles/c5x2vkddrkrko?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-17T13:51:36+00:00",
    "category": "health",
    "location_status": "unverified",
@@ -10514,7 +10524,7 @@
   {
    "title": "🔴 ONU : l'ex-président sénégalais Macky Sall retire sa candidature au poste de secrétaire général",
    "url": "https://www.france24.com/fr/am%C3%A9riques/20261017-onu-macky-sall-retire-senegal-candidature-poste-secr%C3%A9taire-g%C3%A9n%C3%A9ral",
-   "publisher": "",
+   "publisher": "France24 FR",
    "published_at": "2026-10-17T13:21:27+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10534,7 +10544,7 @@
   {
    "title": "Un dialogue est-il encore possible entre le gouvernement et la jeunesse ?",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261017-un-dialogue-est-il-encore-possible-entre-le-gouvernement-et-la-jeunesse",
-   "publisher": "",
+   "publisher": "France24 FR",
    "published_at": "2026-10-17T13:08:10+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10564,7 +10574,7 @@
   {
    "title": "‘We’re not playing games’: Parents launch playground protests to fight school field sell-off",
    "url": "https://www.theguardian.com/uk-news/2026/oct/17/were-not-playing-games-parents-launch-playground-protests-to-fight-school-field-sell-off",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-17T13:00:31+00:00",
    "category": "education",
    "location_status": "unverified",
@@ -10662,6 +10672,16 @@
    "reason": "no_confident_geography"
   },
   {
+   "title": "Grant for UK HEIs to Deliver Online ELT Master’s Scholarships - fundsforNGOs",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZk9LV0NXV2hrVlYxaHpOdkRjcGVOM0RpR1BHNGxHaW12dEhEVGFkT3BNb3U1R1dNRWxHSmdEUjA5aWNxNUNwVURNRzFITE4wQzZRVHVFVmFrbGNCMW9wQ2VaUXd6aDdZMDdFcHlFd1duSl9MSmZvU3VoUVZUSTVLQ2M4QlB4QUtoZzd6SWpHWnVfSmtqQlU0TEtWNElEV3k5c1E5clZ30gGrAUFVX3lxTFBmTTFxM1N2NkdCNEdNWEhQZ29haDlKZlktNUo2Z3ZUX25Nc0VTaXlGdElTbHA5RlRsaGRNWERQdzA0U21ZbG9YbC02X0VUUWVvUEVQUGFiMXlvalBBTHFWMVRMNWFnZnlaYVczNDBDY1MxUzg3Z1ZlTUpjR0t3S3hseE9QaDAwWUVwY3JGQ1FockJHYnZ4bHQtWWp5X1hHSC1sSkpacnZTYzFQdw?oc=5",
+   "publisher": "fundsforNGOs - Grants and Resources for Sustainability",
+   "published_at": "2026-10-17T12:25:01+00:00",
+   "category": "education",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "Why Learning Outcomes Are Changing the Way Competitive Exams Are Prepared For",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNX3ZvZ0V3ZTY1Q1M0T2ZjeWdxNVA0QWxEOEhNU0tqaktWQUczeEhGbzVlM3F4MDZMWnJKWXBTM3VoN3dlWC1ITlRJcTdOQTl1NU5QdjBDdmlxUDY0dGduTklYSk9UWDFlSmFDd1dxVlFzWXRNOGtHd3NuYVQweXhrNzVBc2I3SXJoUDhQczJCS3I4N2Vtb281a1N1TV9fcmtoN1NpRVFXRHZFVG5pNmZVTFVNNk9tOHN0T2RnQmJWUkRJbWVJb2Rhcjl30gHKAUFVX3lxTE1fdm9nRXdlNjVDUzRPZmN5Z3E1UDRBbEQ4SE1TS2pqS1ZBRzN4SEZvNWUzcXgwNkxackpZcFMzdWg3d2VYLUhOVElxN05BOXU1TlB2MEN2aXFQNjR0Z25OSVhKT1RYMWVKYUN3V3FWUXNZdE04a0d3c25hVDB5eGs3NUFzYjdJcmhQOFBzMkJLcjg3ZW1vbzVrU3VNX19ya2g3U2lFUVdEdkVUbmk2ZlVMVU02T204c3RPZGdCYlZSREltZUlvZGFyOXc?oc=5",
    "publisher": "Analytics Insight",
@@ -10692,16 +10712,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "A year after July Charter signing, key reforms in limbo",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTEF2TGxzLVJOMTluS3JWUUprSTc0aFdwZzhDSTMtbkdjUzVkVlkydXllYmZCWXNCVnJHOW9Cb0dFOTFWWFRSUGFQaGVXdktLRm1JLTIzdnR2TTZKak5CV1BfN3ZMUENOeWduZ08zakJjbXR5TU9PLU1pR2F1WXNDOXRMM3N2S0ZXQnByREkzMHVrNXFZQTFOdGpIeng1a0k?oc=5",
-   "publisher": "The Financial Express",
-   "published_at": "2026-10-17T12:10:43+00:00",
-   "category": "politics",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Cleanroom Robots Healthcare Market To 2035: Biologics Sterility Demand Accelerates Adoption - News and Statistics",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQb3hQYXEyT0l0NjlaVVN3Yzgtal9CeGVHOW9zRy0wamxESnZfWWRFbUplZDEtU1otZ2ZON2F2Q19hTlQ2WlNTTmVRYzQ1Yldha3NsQ254WXUxSkNFV29kT1IybWVVSENNV0tTeV9CdVFzLXJ3OHppNG9ERllWUC15UVBnMmlLMmhubXAyOHlqWTdObGFmVFMyM0FDRDl1SmlrVEg2S29JQjA5TzRrLWVOY0Y1WjFqTllWdEtDTEVSS2xfN3lUamVLbjVB?oc=5",
    "publisher": "IndexBox",
@@ -10714,7 +10724,7 @@
   {
    "title": "From little acorns … to his 1,000th article for the Guardian country diary",
    "url": "https://www.theguardian.com/environment/2026/oct/17/1000-articles-for-the-guardian-country-diary-mark-cocker",
-   "publisher": "",
+   "publisher": "The Guardian Environment",
    "published_at": "2026-10-17T12:00:30+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10784,7 +10794,7 @@
   {
    "title": "Aux États-Unis, la contestation anti-Trump encourage les Américains à voter aux midterms",
    "url": "https://www.france24.com/fr/am%C3%A9riques/20261017-aux-%C3%A9tats-unis-la-contestation-anti-trump-encourage-les-am%C3%A9ricains-%C3%A0-voter-aux-midterms",
-   "publisher": "",
+   "publisher": "France24 FR",
    "published_at": "2026-10-17T11:31:28+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10824,7 +10834,7 @@
   {
    "title": "US corporate lobbyists mounted ‘blitz’ to dilute landmark EU deforestation law, report finds",
    "url": "https://www.theguardian.com/environment/2026/oct/17/us-corporate-lobbyists-europe-deforestation",
-   "publisher": "",
+   "publisher": "The Guardian Environment",
    "published_at": "2026-10-17T11:00:31+00:00",
    "category": "environment",
    "location_status": "unverified",
@@ -10884,7 +10894,7 @@
   {
    "title": "Trump's new press secretary out after less than week",
    "url": "https://www.france24.com/en/video/20261017-trump-s-new-press-secretary-out-after-less-than-week",
-   "publisher": "",
+   "publisher": "France24",
    "published_at": "2026-10-17T10:36:12+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -10944,7 +10954,7 @@
   {
    "title": "Teacher fought US school attacker before armed dad shot suspect 'multiple times'",
    "url": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-17T09:58:17+00:00",
    "category": "education",
    "location_status": "unverified",
@@ -10954,19 +10964,9 @@
   {
    "title": "Distância entre Flávio e Lula é de 3 pontos no agregador de pesquisas da BBC",
    "url": "https://www.bbc.com/portuguese/articles/cm1dlv13yql9o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Brasil",
    "published_at": "2026-10-17T09:54:20+00:00",
    "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "New Python Package Puts Biomarker Discoveries to the Test Before They Reach the Clinic",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQU2hFVzhyeEl5cmlSNnRwOXdVRURONk4zZ1I3Y1IwbkVSRUk1Y2VPZ1FJRHdrNjVaMGFteXRJM0hJOG14X1hWcmpEOFlzeEZHYVU0V2dSemp2TmVURjhUblAtRGhBRDBkbHhCUC0xTmhyRl9qUHpwZFVNbGJBNmZsSnF5eWRzTmVlcmhBWlQ4VXIxRDVYU2Z6NXc5b0Ftd3J1Zk0xQm9id2dFLUp4WTFHUA?oc=5",
-   "publisher": "Bioengineer.org",
-   "published_at": "2026-10-17T09:51:15+00:00",
-   "category": "science",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -11064,7 +11064,7 @@
   {
    "title": "Katie Zacharia leaving White House role less than five days into job",
    "url": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-17T09:14:10+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11094,7 +11094,7 @@
   {
    "title": "Honeybees are barging aside wild pollinators in hunt for pollen and nectar, study finds",
    "url": "https://www.theguardian.com/environment/2026/oct/17/honeybees-are-barging-aside-wild-pollinators-in-hunt-for-pollen-and-nectar-study-finds",
-   "publisher": "",
+   "publisher": "The Guardian Environment",
    "published_at": "2026-10-17T09:00:27+00:00",
    "category": "science",
    "location_status": "unverified",
@@ -11184,7 +11184,7 @@
   {
    "title": "Dans nos déchets organiques, du plastique qui limite l’efficacité de la collecte",
    "url": "https://theconversation.com/dans-nos-dechets-organiques-du-plastique-qui-limite-lefficacite-de-la-collecte-287105",
-   "publisher": "",
+   "publisher": "The Conversation France",
    "published_at": "2026-10-17T08:09:01+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11194,7 +11194,7 @@
   {
    "title": "Face aux incertitudes budgétaires de 2027, les universités françaises poussées à changer de modèle ?",
    "url": "https://theconversation.com/face-aux-incertitudes-budgetaires-de-2027-les-universites-francaises-poussees-a-changer-de-modele-293365",
-   "publisher": "",
+   "publisher": "The Conversation France",
    "published_at": "2026-10-17T08:08:34+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11204,7 +11204,7 @@
   {
    "title": "Gare aux boycotts ! En temps de guerre, les entreprises doivent protéger leur réputation",
    "url": "https://theconversation.com/gare-aux-boycotts-en-temps-de-guerre-les-entreprises-doivent-proteger-leur-reputation-288640",
-   "publisher": "",
+   "publisher": "The Conversation France",
    "published_at": "2026-10-17T08:07:53+00:00",
    "category": "conflict",
    "location_status": "unverified",
@@ -11214,7 +11214,7 @@
   {
    "title": "At the UN, plans for a global coalition to attack LGBTQ+ and reproductive rights",
    "url": "https://globalvoices.org/2026/10/17/at-the-un-plans-for-a-global-coalition-to-attack-lgbtq-and-reproductive-rights/",
-   "publisher": "",
+   "publisher": "Global Voices English",
    "published_at": "2026-10-17T08:07:27+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11224,7 +11224,7 @@
   {
    "title": "« Nationaliser les pertes et privatiser les profits » ? Ce que nous apprend le précédent de la location-gérance de Boussac de 1981 à 1984",
    "url": "https://theconversation.com/nationaliser-les-pertes-et-privatiser-les-profits-ce-que-nous-apprend-le-precedent-de-la-location-gerance-de-boussac-de-1981-a-1984-292485",
-   "publisher": "",
+   "publisher": "The Conversation France",
    "published_at": "2026-10-17T08:07:18+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11294,7 +11294,7 @@
   {
    "title": "This orca destroyed a sunfish and no one is sure why",
    "url": "https://news.mongabay.com/short-article/2026/10/this-orca-destroyed-a-sunfish-and-no-one-is-sure-why/",
-   "publisher": "",
+   "publisher": "Mongabay Global",
    "published_at": "2026-10-17T07:27:04+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11304,7 +11304,7 @@
   {
    "title": "SH25 near Thames blocked following motorcycle crash",
    "url": "https://www.rnz.co.nz/news/emergencies_local/1972368/sh25-near-thames-blocked-following-motorcycle-crash",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T07:12:08+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11414,7 +11414,7 @@
   {
    "title": "Call for more food funding due to high living cost",
    "url": "https://www.bbc.co.uk/news/articles/cqde8zk6d916o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Business",
    "published_at": "2026-10-17T06:18:16+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11444,7 +11444,7 @@
   {
    "title": "Nightclubs are disappearing",
    "url": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Business",
    "published_at": "2026-10-17T06:01:55+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11454,7 +11454,7 @@
   {
    "title": "Thieves targeting trailer tyres in Bay of Plenty",
    "url": "https://www.rnz.co.nz/news/crime-and-justice/1972265/thieves-targeting-trailer-tyres-in-bay-of-plenty",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T06:00:57+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11554,7 +11554,7 @@
   {
    "title": "General practitioner called out of retirement to staff undermanned Horowhenua clinic",
    "url": "https://www.rnz.co.nz/news/health/1972192/general-practitioner-called-out-of-retirement-to-staff-undermanned-horowhenua-clinic",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T05:14:43+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11564,7 +11564,7 @@
   {
    "title": "Avian flu and costs among reasons for loss of captive birds at Castle Espie",
    "url": "https://www.bbc.co.uk/news/articles/c6m24e1ln130o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Science",
    "published_at": "2026-10-17T05:10:33+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11604,7 +11604,7 @@
   {
    "title": "APOD: 2026 October 17",
    "url": "https://science.nasa.gov/image-article/apod-2026-october-17-3d-67p/",
-   "publisher": "",
+   "publisher": "NASA News",
    "published_at": "2026-10-17T04:05:00+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11636,16 +11636,6 @@
    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONDJDQlF1SjZoMDNnZzgybmR6WVMtblF1OXRpSVd2WExnV09kZXRNcnFHRHF6Uk9zZ3M1SVpOODZwOWIxNTZBY0Nic284ODlpWXYydEpINGRndXJCZ2pBaEpPaUtiY1hneXVJanltS0dQbS0yWkUydzBGdTRzdnB6YVMzTnQwZklPRnR5Z01BaGhHcUhkWkFkdmlmRTVQZXZTNzlabGx6SFlJaWFJVGJXbDMxUVAtZlNza1YyUF85VlVtRmtQQk1WZnZ0UmNtbFB5RHZGSDZocnFVMER4a2xBM0o3VXdQOUVkYXpmWkU0UGNUaHM0VGc?oc=5",
    "publisher": "Thai Examiner",
    "published_at": "2026-10-17T03:41:03+00:00",
-   "category": "politics",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Regime Change Is Democracy’s Lifeblood and Modi is No Exception: 7 Reasons Why BJP is Wrong",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZjhSa181TFYtanMzZDZOODdBN19zQ0lYRm1ka3dnMXI3UFJhaDRsU194ZHRpcWZQemtrWEFjVDdNbWVQazJXLXlYb012cS1jR0xOUS02UThPTXFCRUx3YjRtamdMdWxGYmRfNTBwS0JMRkhUMm1jX09HdzJmRTlJLXhmWnRYYjNOTDJtUVh4RHg4amVLUXN3TWlEaFV6aVZaNDJVek9kdU9uMlpWZ1VqOTFjLTnSAbQBQVVfeXFMTmY4UmtfNUxWLWpzM2Q2Tjg3QTdfc0NJWEZtZGt3ZzFyN1BSYWg0bFNfeGR0aXFmUHpra1hBY1Q3TW1lUGsyVy15WG9NdnEtY0dMTlEtNlE4T01xQkVMd2I0bWpnTHVsRmJkXzUwcEtCTEZIVDJtY19PR3cyZkU5SS14Zlp0WGIzTkwybVFYeER4OGplS1Fzd01pRGhVemlWWjQyVXpPZHVPbjJaVmdVajkxYy05?oc=5",
-   "publisher": "TheWire.in",
-   "published_at": "2026-10-17T03:40:11+00:00",
    "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
@@ -11704,7 +11694,7 @@
   {
    "title": "St John introduces female-form manikins to address cardiac arrest survival gender gap",
    "url": "https://www.rnz.co.nz/news/health/1971362/st-john-introduces-female-form-manikins-to-address-cardiac-arrest-survival-gender-gap",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T02:38:21+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11724,7 +11714,7 @@
   {
    "title": "Can my stepkids sell my house? Ask Susan",
    "url": "https://www.rnz.co.nz/news/personal-finance/1970880/can-my-stepkids-sell-my-house-ask-susan",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T02:11:25+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11762,19 +11752,9 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Swiss Museum Collections Reveal 46 New Parasitoid Wasp Species",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOGJxdUd3WW1SZklVenB4cnI0ZWlqMHN4TEZudmRBNzk1aU9WV0VvWWVfZVhDaHhkdDFjWU5EbHRLUjJqTzdfcEtBbEFWRWpuSVpMaktwMDlXc1FHLW9aN1VMNVZuZ00tWl9pZEdNRHdhZmtwUWJuaVdfMHF0M2VGZ2NadF9XUjVNWmpfLU5Va1I?oc=5",
-   "publisher": "Bioengineer.org",
-   "published_at": "2026-10-17T01:56:15+00:00",
-   "category": "science",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
    "url": "https://www.bbc.co.uk/news/articles/cwly3zd1r45ro?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-17T01:55:45+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11784,7 +11764,7 @@
   {
    "title": "Why hasn't the UK had any named storms yet?",
    "url": "https://www.bbc.co.uk/weather/articles/ck5yn68mj88vo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Science",
    "published_at": "2026-10-17T01:53:34+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11792,19 +11772,29 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Mirror Neuron Research Moves from Hype to Mechanisms",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNV0dSZnlFU2I2Yll1bWFqTVNrMS1jN2NORXFNa2RLdV93ck5YZVNTOG90MjIzMlRYYWVrcTBHTnhsTFB2OUZxN3hVWWlMS1lVREVCQkswZmpTWHF2ek5pcmZYM0NCS0xUb3dMYlN2RnBrTnpLT2RRN1JOX2FfckMxU1FEYS1MOS1nY2x1YzRjMzhXdw?oc=5",
-   "publisher": "The Scientist",
-   "published_at": "2026-10-17T01:51:01+00:00",
-   "category": "science",
+   "title": "Mimicking populists will not ease cost of living or boost productivity, Mathias Cormann warns",
+   "url": "https://www.theguardian.com/australia-news/2026/oct/17/mimicking-populists-will-not-ease-cost-of-living-or-raise-productivity-mathias-cormann-warns-ntwnfb",
+   "publisher": "The Guardian World",
+   "published_at": "2026-10-17T01:49:17+00:00",
+   "category": "community",
    "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "From piercings to purification: Thailand’s 2026 vegetarian festival",
+   "url": "https://www.theguardian.com/world/gallery/2026/oct/17/thailand-2026-vegetarian-festival-in-pictures",
+   "publisher": "Guardian Asia",
+   "published_at": "2026-10-17T01:47:27+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
   },
   {
    "title": "The uncertain future of Canada's 30 rescued belugas",
    "url": "https://www.bbc.co.uk/news/articles/c623dnn3xvpko?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-17T01:18:08+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11814,7 +11804,7 @@
   {
    "title": "Cómo una red extremista difundió una mentira que vinculaba al presidente brasileño Lula con el abuso infantil en X",
    "url": "https://es.globalvoices.org/2026/10/17/como-una-red-extremista-difundio-una-mentira-que-vinculaba-al-presidente-brasileno-lula-con-el-abuso-infantil-en-x/",
-   "publisher": "",
+   "publisher": "Global Voices Spanish",
    "published_at": "2026-10-17T01:00:24+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11824,7 +11814,7 @@
   {
    "title": "A thousand slogans echoed here",
    "url": "https://www.bbc.co.uk/news/articles/c6kgqjvdv4n2o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-17T00:41:58+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11834,7 +11824,7 @@
   {
    "title": "Judge throws out child sex abuse charges against actor Timothy Busfield",
    "url": "https://www.bbc.co.uk/news/articles/c8vgxwq4q5r2o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-17T00:38:34+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11844,7 +11834,7 @@
   {
    "title": "Transport delays expected for Auckland's 'super Saturday of sports and sounds'",
    "url": "https://www.rnz.co.nz/news/regions_auckland/1970175/transport-delays-expected-for-auckland-s-super-saturday-of-sports-and-sounds",
-   "publisher": "",
+   "publisher": "RNZ National",
    "published_at": "2026-10-17T00:37:44+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11854,7 +11844,7 @@
   {
    "title": "Pueblos indígenas en aislamiento: ¿qué son, dónde están y por qué están amenazados?",
    "url": "https://es.mongabay.com/video/2026/10/pueblos-indigenas-en-aislamiento-que-son-donde-estan-y-por-que-estan-amenazados/",
-   "publisher": "",
+   "publisher": "Mongabay Latam",
    "published_at": "2026-10-16T23:55:35+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11864,7 +11854,7 @@
   {
    "title": "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC",
    "url": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-16T23:54:35+00:00",
    "category": "politics",
    "location_status": "unverified",
@@ -11872,29 +11862,9 @@
    "reason": "outside_globe_window"
   },
   {
-   "title": "Champi threatens Marianas as Guam braces for destructive winds",
-   "url": "https://www.rnz.co.nz/news/pacific/1969884/champi-threatens-marianas-as-guam-braces-for-destructive-winds",
-   "publisher": "",
-   "published_at": "2026-10-16T23:41:21+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "Country Life: The evolution of the country pub",
-   "url": "https://www.rnz.co.nz/news/country/1967857/country-life-the-evolution-of-the-country-pub",
-   "publisher": "",
-   "published_at": "2026-10-16T23:27:52+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
    "title": "China’s tourists flock to experience a pretend typhoon as ‘dark tourism’ flourishes",
    "url": "https://www.theguardian.com/world/2026/oct/17/china-tourists-fake-typhoon-experience-dark-tourism",
-   "publisher": "",
+   "publisher": "Guardian Asia",
    "published_at": "2026-10-16T23:15:14+00:00",
    "category": "hazards",
    "location_status": "unverified",
@@ -11904,18 +11874,8 @@
   {
    "title": "Trial of German steakhouse heiress that sparked a huge spy scandal",
    "url": "https://www.bbc.co.uk/news/articles/cwvgdn3d656vo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-16T23:07:18+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "'The power is in our hands': Young people aim for biggest youth voter turnout yet",
-   "url": "https://www.rnz.co.nz/news/politics_election-2026/1969495/the-power-is-in-our-hands-young-people-aim-for-biggest-youth-voter-turnout-yet",
-   "publisher": "",
-   "published_at": "2026-10-16T23:06:42+00:00",
    "category": "community",
    "location_status": "unverified",
    "browse_status": "archive",
@@ -11924,28 +11884,8 @@
   {
    "title": "Gone to the dogs: racing fans mourn closure of ‘Wenty’, Sydney’s historic greyhound track",
    "url": "https://www.theguardian.com/australia-news/2026/oct/17/gone-to-the-dogs-racing-fans-mourn-closure-of-wenty-sydneys-historic-greyhound-track",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-16T23:00:15+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "Car crashes, hundreds without water, after water main bursts",
-   "url": "https://www.rnz.co.nz/news/emergencies_local/1968902/car-crashes-hundreds-without-water-after-water-main-bursts",
-   "publisher": "",
-   "published_at": "2026-10-16T22:40:39+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "Conditions looking good as last South Island skifield shuts for the season",
-   "url": "https://www.rnz.co.nz/news/sport/1969037/conditions-looking-good-as-last-south-island-skifield-shuts-for-the-season",
-   "publisher": "",
-   "published_at": "2026-10-16T22:28:08+00:00",
    "category": "community",
    "location_status": "unverified",
    "browse_status": "archive",
@@ -11954,7 +11894,7 @@
   {
    "title": "Pai de Tamara Klink explica por que não quis ajudar filha a virar navegadora: 'História se constrói, não se herda'",
    "url": "https://www.bbc.com/portuguese/articles/c90k0320l7v7o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Brasil",
    "published_at": "2026-10-16T21:56:23+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11964,7 +11904,7 @@
   {
    "title": "Amazon deforestation falls 42% to a record low",
    "url": "https://news.mongabay.com/short-article/2026/10/amazon-deforestation-falls-42-to-a-record-low/",
-   "publisher": "",
+   "publisher": "Mongabay Global",
    "published_at": "2026-10-16T21:49:41+00:00",
    "category": "environment",
    "location_status": "unverified",
@@ -11974,7 +11914,7 @@
   {
    "title": "La víbora cornuda de cola de araña: tomografías revelan cómo está formado el señuelo que usa para cazar",
    "url": "https://es.mongabay.com/short-article/2026/10/vibora-cornuda-cola-arana-tomografias-revelan-senuelo-cazar/",
-   "publisher": "",
+   "publisher": "Mongabay Latam",
    "published_at": "2026-10-16T21:41:29+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -11982,40 +11922,10 @@
    "reason": "outside_globe_window"
   },
   {
-   "title": "Healthcare out of reach, Māori seats up for grabs",
-   "url": "https://www.rnz.co.nz/news/political/1966958/healthcare-out-of-reach-maori-seats-up-for-grabs",
-   "publisher": "",
-   "published_at": "2026-10-16T21:31:38+00:00",
-   "category": "health",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "Tropical depression develops into a cyclone in Cook Islands waters",
-   "url": "https://www.rnz.co.nz/news/pacific/1967513/tropical-depression-develops-into-a-cyclone-in-cook-islands-waters",
-   "publisher": "",
-   "published_at": "2026-10-16T21:31:00+00:00",
-   "category": "hazards",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
    "title": "O que acontece no seu cérebro quando você não consegue parar de rir?",
    "url": "https://theconversation.com/o-que-acontece-no-seu-cerebro-quando-voce-nao-consegue-parar-de-rir-294643",
-   "publisher": "",
+   "publisher": "The Conversation Brasil",
    "published_at": "2026-10-16T21:23:20+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "Country Life: Spring has sprung in the garden",
-   "url": "https://www.rnz.co.nz/news/country/1967856/country-life-spring-has-sprung-in-the-garden",
-   "publisher": "",
-   "published_at": "2026-10-16T21:16:18+00:00",
    "category": "community",
    "location_status": "unverified",
    "browse_status": "archive",
@@ -12024,7 +11934,7 @@
   {
    "title": "Pueblos indígenas peruanos en Cutivireni y Oviri toman medidas contra incendios forestales en la Amazonía",
    "url": "https://es.globalvoices.org/2026/10/16/pueblos-indigenas-peruanos-en-cutivireni-y-oviri-toman-medidas-contra-incendios-forestales-en-la-amazonia/",
-   "publisher": "",
+   "publisher": "Global Voices Spanish",
    "published_at": "2026-10-16T21:00:42+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12034,7 +11944,7 @@
   {
    "title": "NASA Names Stephen Cash Marshall Space Flight Center Director",
    "url": "https://www.nasa.gov/news-release/nasa-names-stephen-cash-marshall-space-flight-center-director/",
-   "publisher": "",
+   "publisher": "NASA News",
    "published_at": "2026-10-16T20:14:39+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12044,7 +11954,7 @@
   {
    "title": "Senador do PL promete dinheiro de emendas a cidades com mais votos em Flávio: especialistas veem indício de crime eleitoral",
    "url": "https://www.bbc.com/portuguese/articles/cm4g1888n52eo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Brasil",
    "published_at": "2026-10-16T20:00:48+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12054,7 +11964,7 @@
   {
    "title": "Brazilian Amazon deforestation falls to lowest on record as pivotal vote looms",
    "url": "https://www.theguardian.com/environment/2026/oct/16/brazil-amazon-deforestation-lowest-on-record-election",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-16T19:37:53+00:00",
    "category": "environment",
    "location_status": "unverified",
@@ -12064,7 +11974,7 @@
   {
    "title": "Trump denies limiting Ukraine access to Starlink network",
    "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Europe",
    "published_at": "2026-10-16T19:33:48+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12074,7 +11984,7 @@
   {
    "title": "What we learned from heated US midterm Senate debates",
    "url": "https://www.bbc.co.uk/news/articles/cqly03y3zg7lo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-16T19:09:37+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12084,7 +11994,7 @@
   {
    "title": "The uplifting story of one of Zimbabwe’s pioneering women rangers",
    "url": "https://news.mongabay.com/2026/10/the-uplifting-story-of-one-of-zimbabwes-pioneering-women-rangers/",
-   "publisher": "",
+   "publisher": "Mongabay Global",
    "published_at": "2026-10-16T19:03:07+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12094,7 +12004,7 @@
   {
    "title": "Especialistas votaram por interromper acréscimo de segundos extras no relógio, e resultado favorece as “Big Techs”",
    "url": "https://theconversation.com/especialistas-votaram-por-interromper-acrescimo-de-segundos-extras-no-relogio-e-resultado-favorece-as-big-techs-294633",
-   "publisher": "",
+   "publisher": "The Conversation Brasil",
    "published_at": "2026-10-16T19:01:23+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12104,7 +12014,7 @@
   {
    "title": "Missão espacial japonesa MMX pretende coletar amostras da lua marciana Phobos",
    "url": "https://theconversation.com/missao-espacial-japonesa-mmx-pretende-coletar-amostras-da-lua-marciana-phobos-294637",
-   "publisher": "",
+   "publisher": "The Conversation Brasil",
    "published_at": "2026-10-16T19:00:53+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12112,19 +12022,9 @@
    "reason": "outside_globe_window"
   },
   {
-   "title": "Analysis: Christopher Luxon says his government has 'certainly strengthened healthcare'",
-   "url": "https://www.rnz.co.nz/news/health/1963704/analysis-christopher-luxon-says-his-government-has-certainly-strengthened-healthcare-has-it-really",
-   "publisher": "",
-   "published_at": "2026-10-16T18:15:19+00:00",
-   "category": "politics",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
    "title": "Toxic algorithms wouldn't let them go",
    "url": "https://www.bbc.co.uk/news/articles/cwr7y8er1n8vo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC World",
    "published_at": "2026-10-16T18:11:29+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12134,7 +12034,7 @@
   {
    "title": "No 10 leaves option open to impose Chinese EV tariffs if UK joins EU scheme",
    "url": "https://www.theguardian.com/politics/2026/oct/16/uk-chinese-electric-vehicle-ev-tariffs-eu-made-in-europe-scheme",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-16T18:09:34+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12144,18 +12044,8 @@
   {
    "title": "Fundraising to protect oceans, forests and other key nature sites falling short ahead of UN summit",
    "url": "https://news.mongabay.com/short-article/2026/10/fundraising-to-protect-oceans-forests-and-other-key-nature-sites-falling-short-ahead-of-un-summit/",
-   "publisher": "",
+   "publisher": "Mongabay Global",
    "published_at": "2026-10-16T17:54:17+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "Exhibition celebrates six generations of Hetet and Te Kanawa weaving whānau",
-   "url": "https://www.rnz.co.nz/news/te-manu-korihi/1963705/exhibition-celebrates-six-generations-of-hetet-and-te-kanawa-weaving-whanau",
-   "publisher": "",
-   "published_at": "2026-10-16T17:45:25+00:00",
    "category": "community",
    "location_status": "unverified",
    "browse_status": "archive",
@@ -12164,7 +12054,7 @@
   {
    "title": "Hot flashes, night sweats, insomnia – OB-GYNS set new rules for menopause treatment",
    "url": "https://www.npr.org/2026/10/16/nx-s1-6005201/health-treatment-menopause-hot-flash-night-sweats-insomnia",
-   "publisher": "",
+   "publisher": "NPR Science",
    "published_at": "2026-10-16T17:45:16+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12174,7 +12064,7 @@
   {
    "title": "Brazil’s Lula says he now backs lowering age of criminal responsibility to 16",
    "url": "https://www.theguardian.com/world/2026/oct/16/brazil-lula-age-criminal-responsibility",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-16T16:47:35+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12184,7 +12074,7 @@
   {
    "title": "Israeli settlers attack olive farmers and Washington Post journalist in West Bank",
    "url": "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-16T16:34:58+00:00",
    "category": "economy",
    "location_status": "unverified",
@@ -12194,7 +12084,7 @@
   {
    "title": "Artemis II Heat Shield After Splashdown",
    "url": "https://www.nasa.gov/image-article/artemis-ii-heat-shield-after-splashdown/",
-   "publisher": "",
+   "publisher": "NASA News",
    "published_at": "2026-10-16T16:28:01+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12204,7 +12094,7 @@
   {
    "title": "India’s Cockroach Janta party leader arrested amid crackdown on protests",
    "url": "https://www.theguardian.com/world/2026/oct/16/india-cockroach-janta-party-leader-detained-amid-crackdown-protests",
-   "publisher": "",
+   "publisher": "The Guardian World",
    "published_at": "2026-10-16T16:22:32+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12214,28 +12104,8 @@
   {
    "title": "Como um fundo de capital político dos EUA está influenciando a eleição no Brasil",
    "url": "https://theconversation.com/como-um-fundo-de-capital-politico-dos-eua-esta-influenciando-a-eleicao-no-brasil-294551",
-   "publisher": "",
+   "publisher": "The Conversation Brasil",
    "published_at": "2026-10-16T16:12:37+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "Inside Ukrainian offensive pushing Russia back",
-   "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
-   "published_at": "2026-10-16T16:00:30+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "'Simply unacceptable': Charities call for sustained political action on child poverty",
-   "url": "https://www.rnz.co.nz/news/politics_election-2026/1960918/simply-unacceptable-charities-call-for-sustained-political-action-on-child-poverty",
-   "publisher": "",
-   "published_at": "2026-10-16T16:00:29+00:00",
    "category": "community",
    "location_status": "unverified",
    "browse_status": "archive",
@@ -12244,7 +12114,7 @@
   {
    "title": "Zelensky says Ukraine has right to defend itself after Trump calls latest strikes a 'disgrace'",
    "url": "https://www.bbc.co.uk/news/articles/c58jz174w89ro?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
+   "publisher": "BBC Europe",
    "published_at": "2026-10-16T15:59:30+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12254,7 +12124,7 @@
   {
    "title": "Israeli settlers beat Palestinians and a U.S. photojournalist in West Bank attacks",
    "url": "https://www.npr.org/2026/10/16/nx-s1-6004904/israeli-settlers-beat-us-photojournalist-washington-post-west-bank",
-   "publisher": "",
+   "publisher": "NPR World",
    "published_at": "2026-10-16T15:57:27+00:00",
    "category": "economy",
    "location_status": "unverified",
@@ -12264,7 +12134,7 @@
   {
    "title": "Legal gaps allow rampant pet trade, poaching reptiles and amphibians towards extinction",
    "url": "https://news.mongabay.com/2026/10/legal-gaps-allow-rampant-pet-trade-poaching-reptiles-and-amphibians-towards-extinction/",
-   "publisher": "",
+   "publisher": "Mongabay Global",
    "published_at": "2026-10-16T15:55:07+00:00",
    "category": "economy",
    "location_status": "unverified",
@@ -12274,7 +12144,7 @@
   {
    "title": "Plastic industry bookkeeping plans hide chemical recycling harms, critics say",
    "url": "https://news.mongabay.com/2026/10/plastic-industry-bookkeeping-plans-hide-chemical-recycling-harms-critics-say/",
-   "publisher": "",
+   "publisher": "Mongabay Global",
    "published_at": "2026-10-16T15:54:29+00:00",
    "category": "community",
    "location_status": "unverified",
@@ -12284,28 +12154,8 @@
   {
    "title": "As US states reduce recently restored wolf populations, here’s what we risk losing (commentary)",
    "url": "https://news.mongabay.com/2026/10/as-us-states-cull-recently-restored-wolf-populations-heres-what-we-stand-to-lose-commentary/",
-   "publisher": "",
+   "publisher": "Mongabay Global",
    "published_at": "2026-10-16T15:47:32+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "Watch: Will Ukraine get the support needed as tensions with US rise?",
-   "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss",
-   "publisher": "",
-   "published_at": "2026-10-16T15:45:10+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "archive",
-   "reason": "outside_globe_window"
-  },
-  {
-   "title": "‘Tough to watch, impossible to ignore’: reviewers on NAZA documentary",
-   "url": "https://www.theguardian.com/film/2026/oct/16/tough-to-watch-impossible-to-ignore-what-the-reviewers-say-about-naza-documentary",
-   "publisher": "",
-   "published_at": "2026-10-16T15:42:46+00:00",
    "category": "community",
    "location_status": "unverified",
    "browse_status": "archive",
@@ -12314,8 +12164,148 @@
   {
    "title": "‘Enclosed river:’ Women shellfish gatherers fight for access to mangroves in Brazil",
    "url": "https://news.mongabay.com/2026/10/enclosed-river-women-shellfish-gatherers-fight-for-access-to-mangroves-in-brazil/",
-   "publisher": "",
+   "publisher": "Mongabay Global",
    "published_at": "2026-10-16T15:38:23+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Brasil: Como uma rede extremista no X articulou a falsa associação de Lula à pedofilia",
+   "url": "https://pt.globalvoices.org/2026/10/16/brasil-como-uma-rede-extremista-no-x-articulou-a-falsa-associacao-de-lula-a-pedofilia/",
+   "publisher": "Global Voices Portuguese",
+   "published_at": "2026-10-16T15:35:41+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Saving big cats: Storytelling duo Steve Winter & Sharon Guynup publish new book",
+   "url": "https://news.mongabay.com/2026/10/saving-big-cats-storytelling-duo-steve-winter-sharon-guynup-publish-new-book/",
+   "publisher": "Mongabay Global",
+   "published_at": "2026-10-16T15:13:49+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Celebrity shark trapped in South Korean canal stirs concerns over warming seas",
+   "url": "https://news.mongabay.com/2026/10/celebrity-shark-trapped-in-south-korean-canal-stirs-concerns-over-warming-seas/",
+   "publisher": "Mongabay Global",
+   "published_at": "2026-10-16T15:01:00+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "US voters want more action on global heating. Why are Democrats and Republicans staying silent?",
+   "url": "https://www.theguardian.com/us-news/2026/oct/16/midterms-voters-climate-crisis-candidates",
+   "publisher": "The Guardian Environment",
+   "published_at": "2026-10-16T15:00:04+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Patients in chains rescued from suspected illegal rehab centre in South Africa",
+   "url": "https://www.bbc.co.uk/news/articles/cmwyvxj49gpwo?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Africa",
+   "published_at": "2026-10-16T14:57:51+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Ecuador: comunidad A’i Cofán de Sinangoe acude a CIDH y Naciones Unidas tras recibir graves amenazas",
+   "url": "https://es.mongabay.com/short-article/2026/10/ecuador-comunidad-ai-cofan-sinangoe-cidh-naciones-unidas-graves-amenazas/",
+   "publisher": "Mongabay Latam",
+   "published_at": "2026-10-16T14:50:44+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Albanian protests turn violent: What we know",
+   "url": "https://www.bbc.co.uk/news/articles/cqdjv90d1jpko?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Europe",
+   "published_at": "2026-10-16T14:33:32+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "South African rugby player Andrews dies at team hotel",
+   "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cqdjvxynj2kyo?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Africa",
+   "published_at": "2026-10-16T14:33:04+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+   "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Middle East",
+   "published_at": "2026-10-16T14:31:04+00:00",
+   "category": "economy",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Ménopause : une pause au milieu de la vie, non une date de péremption",
+   "url": "https://theconversation.com/menopause-une-pause-au-milieu-de-la-vie-non-une-date-de-peremption-294380",
+   "publisher": "The Conversation France",
+   "published_at": "2026-10-16T14:31:04+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "I Am Artemis: Allison Mjoen",
+   "url": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/",
+   "publisher": "NASA News",
+   "published_at": "2026-10-16T14:24:29+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Dad fined after son, 2, died in Cyprus hotel fall",
+   "url": "https://www.bbc.co.uk/news/articles/cvj6j1klez88o?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Europe",
+   "published_at": "2026-10-16T14:21:32+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "US senators call for investigation into Ukraine's Starlink restrictions",
+   "url": "https://www.bbc.co.uk/news/articles/cq398zl8jmvdo?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Science",
+   "published_at": "2026-10-16T14:19:50+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Is it better to vaccinate against COVID and flu together, or separately?",
+   "url": "https://theconversation.com/is-it-better-to-vaccinate-against-covid-and-flu-together-or-separately-294394",
+   "publisher": "The Conversation España",
+   "published_at": "2026-10-16T14:04:36+00:00",
    "category": "community",
    "location_status": "unverified",
    "browse_status": "archive",
@@ -12326,26 +12316,26 @@
   "window_hours": 72,
   "globe_window_hours": 24,
   "note": "Unlocated articles are for browsing only, never globe pins. Archive entries are older than 24 hours.",
-  "recent_unlocated": 298,
-  "archive_24_to_72h": 52,
+  "recent_unlocated": 296,
+  "archive_24_to_72h": 54,
   "excluded_older": 691,
   "excluded_undated": 20,
   "publisher_balance": {
-   "distinct_publishers": 164,
-   "top_publisher_share_pct": 36.9,
+   "distinct_publishers": 192,
+   "top_publisher_share_pct": 3.4,
    "top_publishers": {
-    "Unknown": 129,
-    "Bioengineer.org": 14,
+    "ABC Australia": 12,
+    "RNZ National": 12,
+    "Bioengineer.org": 12,
+    "BBC World": 12,
+    "The Guardian World": 12,
+    "France24 ES": 10,
+    "Mongabay Global": 10,
+    "BBC Brasil": 9,
     "IndexBox": 8,
     "ABC News - Breaking News, Latest News and Videos": 5,
     "Education News": 5,
-    "The Free Press": 3,
-    "Press Information Bureau": 3,
-    "Daily Independent": 3,
-    "The Economic Times": 3,
-    "SABC News": 3,
-    "Livemint": 3,
-    "The Citizen": 3
+    "France24 FR": 5
    },
    "method": "publisher-balanced two-pass sampling, not geographic inference"
   }
