@@ -21,6 +21,7 @@ from pathlib import Path
 from global_geography import get_resolver
 from publisher_network import merge_feeds
 from geo_mapping_enhancements import find_explicit
+from geo_intelligence import CollectorAudit, context_match, classify_unmatched, embed_geo_report
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -238,20 +239,32 @@ def parsed_timestamp(value):
 
 def collect(now):
  cutoff=now-dt.timedelta(hours=24)
- results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]
+ results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_audit=CollectorAudit()
  def ingest(rows,category,source,kind,region,language):
   mapped=0
   for a in rows:
+   geo_audit.record(source,'feed_items',mapped=True)
    when=parsed_timestamp(a['published'])
-   if not when or not cutoff<=when<=now+dt.timedelta(minutes=20):continue
-   if not a['title'] or not a['url'].startswith('https://'):continue
+   if not when or not cutoff<=when<=now+dt.timedelta(minutes=20):
+    geo_audit.record(source,'out_of_window',a.get('title',''),language,a.get('url',''))
+    continue
+   if not a['title'] or not a['url'].startswith('https://'):
+    geo_audit.record(source,'invalid_article',a.get('title',''),language,a.get('url',''))
+    continue
+   geo_audit.record(source,'eligible',mapped=True)
    place,match_origin=locate(a['title'],a.get('description',''))
    if not place:
     place,match_origin=find_explicit(a['title'],a.get('description',''),a['url'],PLACES)
    if not place:
+    place,match_origin=context_match(a['title'],a.get('description',''),a['url'],PLACES)
+   if not place:
+    geo_audit.record(source,'unmapped',a['title'],language,a['url'])
+    geo_audit.record(source,classify_unmatched(a['title'],a.get('description',''),a['url'],language),mapped=True)
     unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260], 'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
     continue
    mapped+=1
+   geo_audit.record(source,'mapped',mapped=True)
+   geo_audit.record(source,'method/'+match_origin,mapped=True)
    results.append({**a,'category':category or classify(a['title']),'place':place,'geo_match':match_origin,'at':when.isoformat(), 'publisher':a.get('publisher') or source,'source_kind':kind,'source_name':source,'source_region':region,'language':language})
   return mapped
  for cat in QUERIES:
@@ -273,6 +286,7 @@ def collect(now):
   except Exception as exc:
    failures[key]=str(exc);health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'publisher','editorial_region':region,'language':language})
   time.sleep(.12)
+ geo_audit.save(ROOT/'data/geo-intelligence.json',now)
  return results,failures,dict(scanned),seen_queries,health,unmapped
 
 def produce(raw,now):
@@ -440,6 +454,7 @@ def main():
  update_article_history(now,points)
  update_diagnostics.raw_for_report=raw
  update_diagnostics(now,health,unmapped,points,duplicates)
+ embed_geo_report(ROOT/'data')
  print(f'WorldPulse v1.5.4B: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
  if not points:print('WARNING: feeds succeeded but no headline-place matches',flush=True)
 if __name__=='__main__':main()
