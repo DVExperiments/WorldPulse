@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-
 concurrency:
   group: worldpulse-news-refresh-main
   cancel-in-progress: false
@@ -63,4 +62,34 @@ jobs:
             sleep 3
           done
           echo 'Push could not be completed after five retries.'
+          exit 1
+      # 2.1B.4.1: Archive as part of the collector rather than relying solely
+      # on a separate workflow_run event that has not been firing reliably.
+      - name: Archive the successfully collected observation
+        run: python scripts/archive_news.py
+      - name: Commit historical observation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -A data/archive
+          if git diff --cached --quiet; then
+            echo 'No new observation (duplicate snapshot); archive unchanged.'
+            exit 0
+          fi
+          git commit -m 'Archive historical news observation'
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo 'Historical observation archived.'
+              exit 0
+            fi
+            echo "Archive push attempt ${attempt} rejected; rebasing on latest main"
+            git fetch origin main
+            if ! git rebase -X theirs origin/main; then
+              git rebase --abort || true
+              echo 'Archive conflict; stopping safely without force push.'
+              exit 1
+            fi
+            sleep 3
+          done
+          echo 'Archive push could not be completed after five retries.'
           exit 1
