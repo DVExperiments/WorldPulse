@@ -282,20 +282,25 @@ def parsed_timestamp(value):
 
 def collect(now):
  cutoff=now-dt.timedelta(hours=24)
- results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_rejections=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit()
- def ingest(rows,category,source,kind,region,language):
+ results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_rejections=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit(); pipeline={}
+ def ingest(rows,category,source,kind,region,language,feed_key):
   mapped=0
+  counts=pipeline[feed_key]
+  counts['parsed_entries']=len(rows)
   for a in rows:
    a = annotate(a,source,kind)
    geo_audit.record(source,'feed_items',mapped=True)
    when=parsed_timestamp(a['published'])
    if not when or not cutoff<=when<=now+dt.timedelta(minutes=20):
     browse_retention.add(a,when,now,category or classify(a['title']),'outside_globe_window')
+    counts['date_rejected']+=1
     geo_audit.record(source,'out_of_window',a.get('title',''),language,a.get('url',''))
     continue
    if not a['title'] or not a['url'].startswith('https://'):
+    counts['invalid_article']+=1
     geo_audit.record(source,'invalid_article',a.get('title',''),language,a.get('url',''))
     continue
+   counts['date_passed']+=1
    geo_audit.record(source,'eligible',mapped=True)
    place,match_origin=locate(a['title'],a.get('description',''))
    if not place:
@@ -308,6 +313,7 @@ def collect(now):
     place,match_origin=expanded_match(a['title'],a.get('description',''))
    if not place:
     browse_retention.add(a,when,now,category or classify(a['title']),'no_confident_geography')
+    counts['geography_unmatched']+=1
     geo_audit.record(source,'unmapped',a['title'],language,a['url'])
     geo_audit.record(source,classify_unmatched(a['title'],a.get('description',''),a['url'],language),mapped=True)
     unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260], 'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
@@ -318,39 +324,56 @@ def collect(now):
    if not accepted:
     geo_rejections.append({'place':place.get('name',''),'reason':reason,'title':a['title'][:180],'publisher':a.get('publisher') or source,'url':a['url']})
     browse_retention.add(a,when,now,category or classify(a['title']),'ambiguous_geography')
+    counts['geography_rejected']+=1
     geo_audit.record(source,'ambiguous_geography_rejected',a['title'],language,a['url'])
     unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260], 'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
     continue
    mapped+=1
+   counts['geography_matched']+=1
    geo_audit.record(source,'mapped',mapped=True)
    geo_audit.record(source,'method/'+match_origin,mapped=True)
-   results.append({**a,'category':category or classify(a['title']),'place':place,'geo_match':match_origin,'at':when.isoformat(), 'publisher':a.get('publisher') or source,'source_kind':kind,'source_name':source,'source_region':region,'language':language})
+   results.append({**a,'category':category or classify(a['title']),'place':place,'geo_match':match_origin,'at':when.isoformat(), 'publisher':a.get('publisher') or source,'source_kind':kind,'source_name':source,'audit_feed_key':feed_key,'source_region':region,'language':language})
   return mapped
  for cat in QUERIES:
   for j,locale in enumerate(REGIONS):
    q=region_query(cat,j,locale[0]);key=f'google/{cat}/{locale[0]}'
    try:
+    pipeline[key]=new_feed_audit(key,'aggregator',locale[0],REGION_LANGUAGES.get(locale[0],'en'))
     rows=list(fetch(q,locale));seen_queries+=1;scanned[cat]+=len(rows)
-    mapped=ingest(rows,cat,'Google News '+locale[0],'aggregator',locale[0],REGION_LANGUAGES.get(locale[0],'en'))
+    mapped=ingest(rows,cat,'Google News '+locale[0],'aggregator',locale[0],REGION_LANGUAGES.get(locale[0],'en'),key)
     health.append({'source':key,'status':'ok','items':len(rows),'mapped':mapped,'kind':'aggregator','editorial_region':locale[0],'language':REGION_LANGUAGES.get(locale[0],'en')})
    except Exception as exc:
-    failures[key]=str(exc);health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'aggregator','editorial_region':locale[0],'language':REGION_LANGUAGES.get(locale[0],'en')})
+    failures[key]=str(exc)
+    pipeline.setdefault(key,new_feed_audit(key,'aggregator',locale[0],REGION_LANGUAGES.get(locale[0],'en')))['status']='failed'
+    pipeline[key]['error']=str(exc)[:300]
+    health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'aggregator','editorial_region':locale[0],'language':REGION_LANGUAGES.get(locale[0],'en')})
    time.sleep(.12)
  for name,url,region,language in DIRECT_FEEDS:
   key='direct/'+name
   try:
+   pipeline[key]=new_feed_audit(key,'publisher',region,language)
    rows=direct_fetch(url);seen_queries+=1;scanned['direct']+=len(rows)
-   mapped=ingest(rows,None,name,'publisher',region,language)
+   mapped=ingest(rows,None,name,'publisher',region,language,key)
    health.append({'source':key,'status':'ok','items':len(rows),'mapped':mapped,'kind':'publisher','editorial_region':region,'language':language})
   except Exception as exc:
-   failures[key]=str(exc);health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'publisher','editorial_region':region,'language':language})
+   failures[key]=str(exc)
+   pipeline.setdefault(key,new_feed_audit(key,'publisher',region,language))['status']='failed'
+   pipeline[key]['error']=str(exc)[:300]
+   health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'publisher','editorial_region':region,'language':language})
   time.sleep(.12)
  geo_audit.save(ROOT/'data/geo-intelligence.json',now)
  collect.browse_articles=browse_retention.export()
  collect.browse_stats=browse_retention.stats
  collect.decision_audit=decision_audit
  collect.geo_rejections=geo_rejections
+ collect.pipeline=pipeline
  return results,failures,dict(scanned),seen_queries,health,unmapped
+
+def new_feed_audit(key,kind,region,language):
+ return {'feed':key,'kind':kind,'editorial_region':region,'language':language,
+         'status':'ok','parsed_entries':0,'date_passed':0,'date_rejected':0,
+         'invalid_article':0,'geography_matched':0,'geography_unmatched':0,
+         'geography_rejected':0,'deduplication_survived':0,'globe_articles':0}
 
 def produce(raw,now):
  # Cross-region / cross-category canonical de-duplication. Similar titles across different
@@ -367,6 +390,9 @@ def produce(raw,now):
    duplicates+=1;continue
   nearby.append(sig)
   kept.append(a)
+  feed_key=a.get('audit_feed_key')
+  if feed_key in getattr(collect,'pipeline',{}):
+   collect.pipeline[feed_key]['deduplication_survived']+=1
  grouped=defaultdict(list)
  for a in kept:grouped[(a['place']['name'].lower(),a['category'])].append(a)
  points=[]
@@ -381,6 +407,13 @@ def produce(raw,now):
    'velocity':velocity,'velocity_change_pct_sample':delta,
    'articles':[{'title':a['title'][:260],'url':a['url'],'published_at':a['at'],'publisher':a['publisher'],
                 'source_url':a['source_url'],'source_kind':a.get('source_kind'),'language':a.get('language','en'),'geo_match':a.get('geo_match','headline'),**public_evidence(a)} for a in articles[:20]]})
+ # Only the first 20 articles per globe signal are serialized to news.json.
+ # Track these displayed records separately from retained post-dedup articles.
+ for articles in grouped.values():
+  for a in articles[:20]:
+   feed_key=a.get('audit_feed_key')
+   if feed_key in getattr(collect,'pipeline',{}):
+    collect.pipeline[feed_key]['globe_articles']+=1
  return sorted(points,key=lambda p:p['count'],reverse=True),duplicates,len(kept)
 
 HISTORY=ROOT/'data/history.json'
@@ -502,6 +535,43 @@ def update_diagnostics(now,feeds,unmapped,points,duplicates):
  DIAGNOSTICS.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
  (ROOT/'data/unmatched-review.json').write_text(json.dumps({'schema':1,'updated_at':now.isoformat(),'distinct_unmatched':len(unmatched_unique),'note':'Headlines lack a confidently matched place. Not every headline is geographically attributable. Samples may repeat over time.','examples':unmatched_review},ensure_ascii=False,indent=1),encoding='utf8')
 
+def publish_pipeline_audit(now,pipeline,unmapped):
+ # Review-only: do not assign inferred locations or mutate the globe.
+ # Candidate matches are named references present in existing gazetteers,
+ # recorded only for manual inspection (they can be misleading place names).
+ review=[]
+ for article in unmapped:
+  title=article.get('title','')
+  candidates=[]
+  for place in PLACES:
+   name=place.get('name','')
+   if len(name)>=5 and name.casefold() not in AMBIGUOUS and re.search(r'(?<!\w)'+re.escape(name)+r'(?!\w)',title,re.I):
+    candidates.append(name)
+    if len(candidates)>=5:break
+  if candidates:
+   review.append({'feed':article.get('feed'),'headline':title,'candidate_mentions':candidates,'url':article.get('url'),'warning':'Unverified headline place mention: manually review before any mapping change'})
+ feeds=list(pipeline.values())
+ totals={key:sum(f[key] for f in feeds) for key in ('parsed_entries','date_passed','date_rejected','invalid_article','geography_matched','geography_unmatched','geography_rejected','deduplication_survived','globe_articles')}
+ for f in feeds:
+  f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
+  f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
+  f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
+ obj={'schema':1,'release':'v2.4D.3','updated_at':now.isoformat(),'stage_definitions':{
+  'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
+  'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
+  'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
+  'deduplication_survived':'Mapped rows retained after canonical URL and same-location near-title deduplication; attribution goes to the first retained feed',
+  'globe_articles':'Retained records included among at most 20 articles serialized per location/category globe signal'},
+  'notes':['Source feed region is discovery metadata, NOT event location evidence.',
+           'Feed ordering affects attribution of identical articles across multiple feeds; this audit shows retained-row contribution, not exclusive publisher value.',
+           'Date-pass counts exclude malformed title or URL; see invalid_article.',
+           'No inferred locations have been added or remapped.'],
+  'totals':totals,'feeds':feeds,'possible_unmapped_geo_mentions_for_manual_review':review[:50]}
+ target=ROOT/'data/feed-contribution-audit.json'
+ target.parent.mkdir(parents=True,exist_ok=True)
+ target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
+ print('Feed audit:',len(feeds),'feeds;',totals['deduplication_survived'],'deduplicated mapped rows;',len(review),'manual review candidates',flush=True)
+
 def main():
  bootstrap_global_geography()
  now=dt.datetime.now(dt.timezone.utc)
@@ -516,6 +586,7 @@ def main():
   OUT.write_text(json.dumps(old,ensure_ascii=False,indent=1),encoding='utf8')
   raise SystemExit('Every RSS feed failed; retained last-known snapshot')
  points,duplicates,unique=produce(raw,now)
+ publish_pipeline_audit(now,getattr(collect,'pipeline',{}),unmapped)
  clusters=enrich_story_clusters(cluster_bundle(points),now,ROOT/'data/story-history.json')
  publishers=set(a['publisher'].casefold() for a in raw if a.get('publisher'))
  record={'schema':2,'version':'1.5.4B','source':'Google News RSS and independent publisher RSS samples','updated_at':now.isoformat(timespec='seconds'),
@@ -524,7 +595,7 @@ def main():
   'articles_scanned':scanned,'distinct_mapped_articles':unique,'duplicates_removed':duplicates,
   'source_count':len(publishers),'direct_sources_ok':sum(h['status']=='ok' for h in health if h['kind']=='publisher'),
   'unmapped_articles_sample':len(unmapped),'geographic_confidence':{'headline':sum(a.get('geo_match')=='headline' for a in raw),'description':sum(a.get('geo_match')=='description' for a in raw)},
-  'source_health_file':'data/source-health.json','history_file':'data/history.json',
+  'feed_pipeline_audit_file':'data/feed-contribution-audit.json','source_health_file':'data/source-health.json','history_file':'data/history.json',
   'metric':'Deduplicated mapped articles in sampled RSS feeds, not all news worldwide',
   'accuracy_note':'Locations are geographic SUBJECTS, never automatically verified incident sites. Locations are place mentions from headlines or descriptions, not verified event coordinates. Description matches are contextual; country pins use representative anchors.',
   'velocity_note':'Recent 3-hour vs previous 3-hour counts within sampled articles; directional, not a verified activity surge.',
