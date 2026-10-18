@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-17T22:41:10.886796+00:00",
+ "updated_at": "2026-10-18T00:24:51.953260+00:00",
  "feeds_total": 136,
  "feeds_ok": 132,
  "feeds_failed": [
@@ -13,7 +13,7 @@
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 135
+   "mapped_pre_dedupe": 143
   },
   "GB": {
    "total": 11,
@@ -23,17 +23,17 @@
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 145
+   "mapped_pre_dedupe": 148
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 104
+   "mapped_pre_dedupe": 100
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 138
+   "mapped_pre_dedupe": 145
   },
   "NG": {
    "total": 11,
@@ -43,66 +43,66 @@
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 141
+   "mapped_pre_dedupe": 144
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 106
+   "mapped_pre_dedupe": 103
   }
  },
  "mapped_articles_by_category": {
-  "community": 116,
-  "society": 51,
-  "education": 52,
-  "hazards": 17,
-  "conflict": 26,
-  "politics": 39,
-  "economy": 46,
-  "science": 12,
+  "community": 118,
+  "education": 55,
+  "society": 55,
+  "hazards": 16,
   "health": 49,
-  "rights": 5,
-  "environment": 10
+  "conflict": 25,
+  "politics": 38,
+  "science": 14,
+  "economy": 39,
+  "environment": 11,
+  "rights": 3
  },
  "mapped_articles_by_location_precision": {
-  "country": 248,
-  "place": 164,
-  "region": 11
+  "country": 254,
+  "place": 160,
+  "region": 9
  },
  "location_evidence_counts": {
-  "headline": 355,
-  "description": 68
+  "headline": 352,
+  "description": 71
  },
  "geographic_quadrants": {
   "NE": 277,
-  "NW": 104,
-  "SE": 34,
+  "NW": 99,
+  "SE": 39,
   "SW": 8
  },
- "geo_signal_count": 239,
+ "geo_signal_count": 237,
  "mapped_total": 423,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 934,
- "unmapped_distinct_titles": 332,
+ "unmapped_sample_count": 926,
+ "unmapped_distinct_titles": 319,
  "unmapped_by_feed": {
-  "Google News US": 142,
-  "Google News IN": 131,
-  "Google News ZA": 131,
-  "Google News PH": 130,
-  "Google News GB": 78,
-  "Google News CA": 78,
-  "Google News NG": 74,
-  "Google News AU": 72,
+  "Google News US": 137,
+  "Google News PH": 131,
+  "Google News IN": 129,
+  "Google News ZA": 129,
+  "Google News CA": 83,
+  "Google News AU": 76,
+  "Google News NG": 76,
+  "Google News GB": 74,
   "France24 ES": 17,
-  "ABC Australia": 14,
-  "RNZ National": 12,
+  "ABC Australia": 11,
+  "RNZ National": 11,
   "BBC Brasil": 8,
   "France24 FR": 7,
   "BBC World": 6,
-  "Al Jazeera": 5,
   "The Guardian World": 5,
   "The Guardian Environment": 4,
-  "The Conversation France": 4
+  "The Conversation France": 4,
+  "BBC Science": 3
  },
  "unmapped_examples": [
   {
@@ -171,19 +171,19 @@
   },
   {
    "title": "Top News, Latest headlines, Latest News, World News & U.S News",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5vb3hXdmVfdXJhV1VQWk5QUS00ODhnWHZqLUJhdnVtS2FSXy0tYlpDdTFtRzVhOTl3dDRLR0pjVUlFZXIzWlQyUDFOOFVMdmlsaUk3Q182dFNTMmFWaWIxdGRMVXNZcWhBSGNNc05aT2RDc3hfdF9aRzJqOElXQQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85dU9QMXpSaklLTmJnMlB3TWJ2OVRvM1NmUWZ5UFV6X1B0b28xc3ZpLWRTUkNFaTV1cV9rZkJueWJfMFZlcmFoQkg0OFBEdUJxOWJSeGZDZEJSNEJoOEVad0tGbjBaenhzWTF0d0dZV2FiX05sMVpEZG5QZFdZZw?oc=5",
    "publisher": "upi.com",
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Top News, Latest headlines, Latest News, World News & U.S News    upi.com "
   },
   {
-   "title": "Liberal Democrat Voice",
-   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5iWGpCNmlTYzF6UmU0RVpUMlBod1I5TmhIcXYwYXBhNHRyZTdZNU0wdXBzX3k3NzNCZjhOd0NTTVdQQQ?oc=5",
-   "publisher": "Liberal Democrat Voice",
+   "title": "Al Jama-ah puts land tenure, housing at centre of election promises",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdDFIeVJiWGtablNPU3lpQzZDZTRReFpaSGNHVHFBZjJIaldkeXNFaHZQc29fSWN4QWRjS1dBeWVoRmRKa2Q2cy1RMFVmMGIxbU1KS0dOVjBkLTFJVkxNVkg1RUVac0VfS1Z2REU2MEZkSDc3clRkMkI4NmVIaGkxYnhGNFc0U3BXMF9CRnZhT1R3ZGlLdlF3V014MTZPcVZncFZ3?oc=5",
+   "publisher": "SABC News",
    "feed_occurrences": 4,
    "feed_count": 4,
-   "description_excerpt": " Liberal Democrat Voice    Liberal Democrat Voice "
+   "description_excerpt": " Al Jama-ah puts land tenure, housing at centre of election promises    SABC News "
   },
   {
    "title": "GRS takes its election pitch to Kudat, with Hajiji eyeing 16 parliamentary seats",
@@ -200,14 +200,6 @@
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Constitution Bill passes second reading with required 35 votes    Fijivillage "
-  },
-  {
-   "title": "Al Jama-ah puts land tenure, housing at centre of election promises",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdDFIeVJiWGtablNPU3lpQzZDZTRReFpaSGNHVHFBZjJIaldkeXNFaHZQc29fSWN4QWRjS1dBeWVoRmRKa2Q2cy1RMFVmMGIxbU1KS0dOVjBkLTFJVkxNVkg1RUVac0VfS1Z2REU2MEZkSDc3clRkMkI4NmVIaGkxYnhGNFc0U3BXMF9CRnZhT1R3ZGlLdlF3V014MTZPcVZncFZ3?oc=5",
-   "publisher": "SABC News",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Al Jama-ah puts land tenure, housing at centre of election promises    SABC News "
   },
   {
    "title": "Impeachment Committee recommends Adv Madonsela to lead Phala Phala inquiry evidence",
@@ -282,14 +274,6 @@
    "description_excerpt": " Data shows 73% decline in world’s wildlife population – and more animals are not being counted    Scroll.in "
   },
   {
-   "title": "Breathtaking images of nature by wildlife legend Paul Nicklen from across his incredible 30-year career",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOYzY0bjhWTDZkNEQtckpUdmlGeDhWSWYzeVNfTGVVRmpyN1JYYlJuRmNNUDJWWTRUU2lVSTh4NkdFZHZqN0otMUU1YXZyQU9oQXZiYWhhTnlCZmpTazRfWlJOU1REaElrTGlZTmtHb3ZLOFNfaUR4Z016M0FfaEhyMExiLXpZN3hsV0FoSTEtOFRpbzBBaTQ5NWJ5T2M1TVZZcmZ1d1Y3cU9vRFBYRDI1NFZKVVlzSkI4b2JncTZCZnlST2M2SnhlSWYwRE1WVFdnZkM5X0FMc3IwdGtHbjN5bEVHSnVVTVRxV3c?oc=5",
-   "publisher": "Amateur Photographer",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Breathtaking images of nature by wildlife legend Paul Nicklen from across his incredible 30-year career    Amateur Photographer "
-  },
-  {
    "title": "Boost for KWS as Afristar donates cheetah tracking collars",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQLWVnZVNCbkFBLVhmUU1sUFU1UjVEOVZpaDVib1hTMkw0MzdENjd0T0FHeXFFbU9wQmppSFVzN3JhOHhYR2g0UGRwOVJHZ0xnWTNvSy1ybGNBV2RjaDMzY2k4Y3JtamppUndOcGRmUVNwQlZFTElfUHJISGIzVXpDUkhjUXlTUDVudDJIb2c4Tl9CcmM5RHdOQmlBRnVZbFN0dW1ZTkh2Z1NJV0pWQ3VoMGZqbjJ1X1UxQXNTd1IwLUpKc1ZBNjk2Xw?oc=5",
    "publisher": "The Standard",
@@ -314,28 +298,20 @@
    "description_excerpt": " Find Us at COP17    African Wildlife Foundation "
   },
   {
+   "title": "Breathtaking images of nature by wildlife legend Paul Nicklen from across his incredible 30-year career",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOYzY0bjhWTDZkNEQtckpUdmlGeDhWSWYzeVNfTGVVRmpyN1JYYlJuRmNNUDJWWTRUU2lVSTh4NkdFZHZqN0otMUU1YXZyQU9oQXZiYWhhTnlCZmpTazRfWlJOU1REaElrTGlZTmtHb3ZLOFNfaUR4Z016M0FfaEhyMExiLXpZN3hsV0FoSTEtOFRpbzBBaTQ5NWJ5T2M1TVZZcmZ1d1Y3cU9vRFBYRDI1NFZKVVlzSkI4b2JncTZCZnlST2M2SnhlSWYwRE1WVFdnZkM5X0FMc3IwdGtHbjN5bEVHSnVVTVRxV3c?oc=5",
+   "publisher": "Amateur Photographer",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Breathtaking images of nature by wildlife legend Paul Nicklen from across his incredible 30-year career    Amateur Photographer "
+  },
+  {
    "title": "COP17: Nature knows no boundaries – neither can our solutions - Eco-Business",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdHpyWkg5U0d6c2x4UVg0UHRzRWhiRTJFZFhub2tvUndTU1JmcWtSbE1YcF9PQkcxY2JMSU1HaEhKdHE2ZTNiVm56NDJ0NEk2LWVScUZSdXhseG1PRW1yUV9EaC0zN2NFY3Z1bml0RTdoTmVIV1ZiVjQ2OUljV1IzSTZMcFdHYTA0ZmRUc1NyVnlrX19PakRHaQ?oc=5",
    "publisher": "Eco-Business",
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " COP17: Nature knows no boundaries – neither can our solutions    Eco-Business "
-  },
-  {
-   "title": "Conservation Beyond Parks: How OECMs Could Reshape the Global 30 by 30 Race",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcGxLYl9jYm9PaUVHUVZwazlDWkFKREUxVllmc2VCUEhIb3pWc3BSallGb2U3N2o5RUZDWlVDTWtFcmZjbVhUVWZEYUZnYkcyRzZVS0UyUEZfVHZzd2x0ajV3RE5ZTVF6YUJMYWhqWHpfTTF1WVBibUpGcXcwNVhIRGNaMlJVMWN5X3JRRE1OZ1V6SVJWVU5xcHZMVnQxUkUz?oc=5",
-   "publisher": "Bioengineer.org",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Conservation Beyond Parks: How OECMs Could Reshape the Global 30 by 30 Race    Bioengineer.org "
-  },
-  {
-   "title": "Emotional Elephant Photo Wins Wildlife Photographer of the Year Award",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNzczUk1wSnR6SEZYX0tvYV9xZXFSYjRsXzhuTENrMUlDc3hvcXRham1zMW5XQ1VrZVNENGR3X1F4NDF4LXpnaElfcGtrcjhlRTNtbnYzTHJ6cEk1V3V2T3pCTDhEU2RNa2toVHU1RXhsdlc4VG1mNDl6VnhqVmFQOUYyUVRrYTAya2ZybEVBRS1TM1E4OUNyODVWMzFadklfS3JTZXE1WHIxV1lwTFd0N1ZId1A?oc=5",
-   "publisher": "Ratopati",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Emotional Elephant Photo Wins Wildlife Photographer of the Year Award    Ratopati "
   },
   {
    "title": "Castle Espie: County Down centre to lose all captive birds",
@@ -346,12 +322,28 @@
    "description_excerpt": " Castle Espie: County Down centre to lose all captive birds    BBC "
   },
   {
+   "title": "Hurricane Simon Roars Below as Strange Waves Ripple Across the Sky",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQi1pWlhLUkJSR0p2RXlyOHowSDNxNWxrX1VfT1lYYS10VzhRZ0pSNlFpeVlTWEltOXdEUUEzbWxvUVFjNDlkXzc5ZTFSSDBKdnFPWXFZbkNCc0t3NnNJSEZhMGpSN0lqSjNSa3pXWVBTaUtaQnRHdV8yQ0VPNDNzVl9INXpJUlFITmxFN1g3SjRVZTFMSzR3?oc=5",
+   "publisher": "SciTechDaily",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Hurricane Simon Roars Below as Strange Waves Ripple Across the Sky    SciTechDaily "
+  },
+  {
    "title": "Hurricane Trudy, Typhoon Champi tracker: Heavy rains, flooding, landslides predicted for weekend in parts",
    "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxQNk5SUy1iZE9sUjVUQTNFYXR0WjVaSnpXRUZpTE5LSnIxaUpmRTZUaUliZGt2alY1MzJ3TENZeVI2QXU2bERIWHZkWHYzNmZFaXdhYl91NVR0ZlJTeVM2blZ1MmNzNDBHMlpWbGZBZ1FKdkpXdFhWN1BYZ3hKZjltSTU0SDBIU2tOdThiMU52RXItS19IRUpKSFJRZlpaekZVNXMzcGo1Y1hUN2ZYNGc5Q0kzeS13Y1F5VnBPYTNWdGJ6eHlURmxLOHQ3MGg5Q1Z5NWdFOG5scUlfZk1KTVRzZlF6SGFYNW0wQ2xtWENramNWcXlXQ2Y1YUlwd0NnRUM0OWtFeTU2MHUwSFJJZkJ4UXNOcGd3aDVMVnNTS0VzQ0VuVXM2bnE0eEhRdkdZXzQ0cnk1clo0ZG1WSGRlZlVJV0Fxay1QVEZHelB2YmZ2VkdoX1pJWDZxaFhKbzM4QdIB4wJBVV95cUxNa1NUU1g5S1A0SVhtbFdORmh6UDVFS3BBQjNtLW41N0VpN0YtS0ppY2x5WGxxRUw3V0xpdFhqc1dsYVNIMkRRZHBiT2QyNXJfbkdjeTVGZ1gzVnZuMTZuRE03cUdkYnFQOU9sZ3JVX3ZsVmxSelFZOUxCdlA2YnlRSHhuSWNrelBfZzNyT041YXV5c2hzQVZ5SmRFQ3pJaWRJQlFwMWRtWTYxOG96YUxONTlnemNDdFk4WlI2bmU5cDlUbHN6UnJtdmdMX2VwbkQzcURHZzROeEg1NjZ2T0pLNXotRjFPU2FKT2wtcnVYRmdpWkpfZ1BEYV9KUU9zWnhCWFhoYnl4ZGEwMy1yUEs0Q0dxdkh0RXVPTzZJSFUtR19qRmFHZXA1Q19yNTQ3QXhTc3FDTHV3c0VaRDA0OXVSYjRwY2R3VjlCMHk2X1RaNFdfcXlZbHNXWTJuWXBUNGJJXzJR?oc=5",
    "publisher": "The Economic Times",
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Hurricane Trudy, Typhoon Champi tracker: Heavy rains, flooding, landslides predicted for weekend in parts    The Economic Times "
+  },
+  {
+   "title": "HOW THE YOUNG ARE MOBILISING TO BUILD A BETTER WORLD",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1FWUtCR1Y1WmppWm5zWEx3MkQya3dRMFJqbUZGZENzTkxMOGdVWC1xeXlULUVLdFN4Ny1CSGRKa2prZkFmZTRpbzI0WU9IVDRNajIzM29ma1lfYm82T3JLYllUNE1HYVllMFRpZExqNDBreVpEbWs0?oc=5",
+   "publisher": "PressReader",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " HOW THE YOUNG ARE MOBILISING TO BUILD A BETTER WORLD    PressReader "
   },
   {
    "title": "El-Sayed talks health care, labor rights and rural funding during Lake State stop",
@@ -384,89 +376,97 @@
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " polish tranny    白鲸出海 "
+  },
+  {
+   "title": "Time to hang up the stethoscope?",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNHBHRk13bVYzaVJvRTg1WThZenNJUlZxMlp5al81NHRvSER6UDhub2psTFBOTlA3Y3gxWmEzSjh5SnRONWpUSUw1MGhzUllxLVhBU0FfOWJteHFxU1pzVXdZQ2hfZHhzc3hKREdVUk5Sc1l6R0Ric05yUWJ6SjFuTHRsMHhOR0ZpLXdfblZXYWxMN3FETHUycFlubURrSENoVWZCSE5UZjZEYVM5TVhMU1hZdFhaWUht?oc=5",
+   "publisher": "Knowable Magazine",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Time to hang up the stethoscope?    Knowable Magazine "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 48,
   "successful": 44,
-  "mapped_pre_dedupe": 166
+  "mapped_pre_dedupe": 165
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 138,
-  "unique_google_urls_not_in_direct_sample": 309,
+  "unique_direct_urls_not_in_google_sample": 139,
+  "unique_google_urls_not_in_direct_sample": 308,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "Al Jazeera": 20,
-   "The Guardian World": 19,
+   "Al Jazeera": 22,
    "France24": 19,
+   "The Guardian World": 18,
    "France24 FR": 15,
-   "BBC World": 14,
+   "ABC Australia": 14,
+   "BBC World": 12,
    "RNZ National": 12,
-   "ABC Australia": 11,
-   "RNZ Pacific": 8,
-   "BBC Europe": 8,
    "NPR World": 7,
+   "RNZ Pacific": 7,
    "France24 ES": 6,
-   "BBC Brasil": 2,
-   "BBC Latin America": 2,
+   "BBC Europe": 5,
+   "Mongabay Global": 3,
    "BBC Asia": 2,
-   "BBC Business": 2,
-   "Guardian Asia": 2,
-   "BBC Science": 2,
-   "Mongabay Global": 2,
    "Mongabay Latam": 2,
-   "The Guardian Environment": 1,
+   "BBC Business": 2,
+   "BBC Science": 2,
+   "BBC Latin America": 2,
+   "The Guardian Environment": 2,
+   "BBC Brasil": 2,
    "UN News": 1,
-   "BBC Middle East": 1,
    "Global Voices Spanish": 1,
-   "NPR Science": 1
+   "Guardian Asia": 1,
+   "NPR Science": 1,
+   "BBC Middle East": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 248,
-  "country_labels_count": 60,
+  "country_labelled_articles": 254,
+  "country_labels_count": 61,
   "top_country_subjects": {
-   "France": 43,
-   "Vietnam": 24,
+   "France": 45,
+   "Vietnam": 25,
    "India": 23,
    "Mexico": 12,
-   "Kenya": 8,
-   "Morocco": 7,
-   "Spain": 7,
-   "Bangladesh": 7,
+   "Kenya": 11,
+   "Bangladesh": 8,
    "Portugal": 6,
-   "Canada": 6,
+   "Australia": 6,
+   "Morocco": 6,
+   "Spain": 6,
    "Russia": 5,
+   "Iran": 5,
    "Yemen": 5,
    "Albania": 5,
-   "Ukraine": 5,
-   "Australia": 4,
+   "Canada": 5,
    "Somalia": 4,
-   "Iran": 4,
    "Thailand": 4,
-   "Guam": 3,
-   "Egypt": 3,
+   "Ukraine": 4,
+   "Egypt": 4,
+   "Israel": 3,
    "Nigeria": 3,
    "Ethiopia": 3,
-   "Pakistan": 3,
-   "Cyprus": 3,
    "Saudi Arabia": 3,
    "China": 3,
    "Malaysia": 3,
    "Venezuela": 2,
    "Cook Islands": 2,
-   "Brazil": 2
+   "Guam": 2,
+   "Brazil": 2,
+   "Cyprus": 2
   },
-  "distinct_geographic_signal_centers": 165,
+  "distinct_geographic_signal_centers": 163,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 135
+   "mapped_pre_dedupe": 143
   },
   "GB": {
    "requests": 11,
@@ -476,17 +476,17 @@
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 145
+   "mapped_pre_dedupe": 148
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 104
+   "mapped_pre_dedupe": 100
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 138
+   "mapped_pre_dedupe": 145
   },
   "NG": {
    "requests": 11,
@@ -496,15 +496,15 @@
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 141
+   "mapped_pre_dedupe": 144
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 106
+   "mapped_pre_dedupe": 103
   }
  },
- "duplicates_removed": 705,
+ "duplicates_removed": 718,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
