@@ -22,6 +22,7 @@ from global_geography import get_resolver
 from publisher_network import merge_feeds
 from geo_mapping_enhancements import find_explicit
 from geo_intelligence import CollectorAudit, context_match, classify_unmatched, embed_geo_report
+from browse_retention import BrowseRetention
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -239,13 +240,14 @@ def parsed_timestamp(value):
 
 def collect(now):
  cutoff=now-dt.timedelta(hours=24)
- results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_audit=CollectorAudit()
+ results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention()
  def ingest(rows,category,source,kind,region,language):
   mapped=0
   for a in rows:
    geo_audit.record(source,'feed_items',mapped=True)
    when=parsed_timestamp(a['published'])
    if not when or not cutoff<=when<=now+dt.timedelta(minutes=20):
+    browse_retention.add(a,when,now,category or classify(a['title']),'outside_globe_window')
     geo_audit.record(source,'out_of_window',a.get('title',''),language,a.get('url',''))
     continue
    if not a['title'] or not a['url'].startswith('https://'):
@@ -258,6 +260,7 @@ def collect(now):
    if not place:
     place,match_origin=context_match(a['title'],a.get('description',''),a['url'],PLACES)
    if not place:
+    browse_retention.add(a,when,now,category or classify(a['title']),'no_confident_geography')
     geo_audit.record(source,'unmapped',a['title'],language,a['url'])
     geo_audit.record(source,classify_unmatched(a['title'],a.get('description',''),a['url'],language),mapped=True)
     unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260], 'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
@@ -287,6 +290,8 @@ def collect(now):
    failures[key]=str(exc);health.append({'source':key,'status':'failed','items':0,'mapped':0,'kind':'publisher','editorial_region':region,'language':language})
   time.sleep(.12)
  geo_audit.save(ROOT/'data/geo-intelligence.json',now)
+ collect.browse_articles=browse_retention.export()
+ collect.browse_stats=browse_retention.stats
  return results,failures,dict(scanned),seen_queries,health,unmapped
 
 def produce(raw,now):
@@ -447,7 +452,9 @@ def main():
   'metric':'Deduplicated mapped articles in sampled RSS feeds, not all news worldwide',
   'accuracy_note':'Locations are geographic SUBJECTS, never automatically verified incident sites. Locations are place mentions from headlines or descriptions, not verified event coordinates. Description matches are contextual; country pins use representative anchors.',
   'velocity_note':'Recent 3-hour vs previous 3-hour counts within sampled articles; directional, not a verified activity surge.',
-  'errors':failures,'points':points}
+  'errors':failures,'points':points,
+  'unlocated_articles':getattr(collect,'browse_articles',[]),
+  'browse_retention':{'window_hours':72,'globe_window_hours':24,'note':'Unlocated articles are for browsing only, never globe pins. Archive entries are older than 24 hours.', **getattr(collect,'browse_stats',{})}}
  OUT.parent.mkdir(parents=True,exist_ok=True)
  OUT.write_text(json.dumps(record,ensure_ascii=False,indent=1),encoding='utf8')
  update_history(now,points)
