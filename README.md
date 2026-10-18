@@ -1,29 +1,10 @@
-# WorldPulse v2.0E.3 — Geographic Confidence Refinement
+# WorldPulse v2.0E.4 — Collector evidence fields
 
-**Original repository only:** `DVExperiments/WorldPulse`, not `WorldPulse-2`.
+This is an additive update for the **original `DVExperiments/WorldPulse` collector**, after E.3. It publishes per-article geographic evidence in `data/news.json` under each `points[].articles[]` record. Globe locations do not change.
 
-This diagnostic-only update adds `geo_confidence_evidence` to the already committed `data/unmatched-review.json` (no workflow changes). It classifies mapped feed occurrences as `explicit_headline`, `description_context`, `conflicting_evidence`, `ambiguous_headline`, `url_context`, or `other_heuristic`. These are evidence categories, **not verified probabilities of correctness**. Missing entries in the small reviewed catalogue are separately counted, not misrepresented as weak matches. No map pins are moved, added, or removed. It does not claim verified incident locations.
+1. Upload `scripts/geo_public_evidence.py`, `scripts/apply_e4_patch.py` and `tests/test_e4.py` into the original collector repository. Commit.
+2. In Codespaces: `git pull origin main`; `python scripts/apply_e4_patch.py`; `python -m py_compile scripts/update.py scripts/geo_public_evidence.py`; `python -m unittest discover -s tests -p 'test_e4.py' -v`.
+3. `git add scripts/update.py && git commit -m "Add E4 article-level geographic evidence" && git push origin main`.
+4. Run the existing `Refresh geographic news` GitHub Action and inspect `data/news.json`.
 
-## Install
-1. Upload `scripts/geo_confidence.py` and `scripts/apply_e3_patch.py` and `tests/test_e3.py` into the same folders in the **original** repo, then commit the uploaded files in GitHub.
-2. In the original WorldPulse Codespace:
-
-```bash
-git pull origin main
-python scripts/apply_e3_patch.py
-python -m py_compile scripts/update.py scripts/geo_confidence.py
-python -m unittest discover -s tests -p 'test_e3.py' -v
-GIT_PAGER=cat git diff -- scripts/update.py
-```
-
-3. If successful:
-
-```bash
-git add scripts/update.py
-git commit -m "Add v2.0E.3 geographic evidence diagnostics"
-git push origin main
-```
-
-4. GitHub Actions > **Refresh geographic news** > Run workflow on main. Upload `data/unmatched-review.json` afterwards.
-
-**Requirements:** E.2 already installed; the patch deliberately stops if the expected anchors differ, to avoid corrupting customized collectors. The previous E.1 report is retained alongside the new report for comparison. Categories are method-derived; they are not externally ground-truthed. Where headlines contain several places, review flags are not proof the chosen one is wrong.
+Evidence is explanatory, NOT an actual calibrated probability or verified incident coordinate. The E.3 audit may classify individual matches as ambiguous or context-based; no retroactive event verification occurs.
