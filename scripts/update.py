@@ -20,6 +20,7 @@ from urllib.parse import urlsplit
 from pathlib import Path
 from global_geography import get_resolver
 from publisher_network import merge_feeds
+from geo_mapping_enhancements import find_explicit
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -245,6 +246,8 @@ def collect(now):
    if not when or not cutoff<=when<=now+dt.timedelta(minutes=20):continue
    if not a['title'] or not a['url'].startswith('https://'):continue
    place,match_origin=locate(a['title'],a.get('description',''))
+   if not place:
+    place,match_origin=find_explicit(a['title'],a.get('description',''),a['url'],PLACES)
    if not place:
     unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260], 'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
     continue
