@@ -18,7 +18,7 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 RETENTION_DAYS = 90
 MAX_ARTICLES = 12
-MAX_LOCATIONS = 45
+MAX_LOCATIONS = 500
 MAX_STORIES = 12
 MAX_PAIRS = 24
 UTC = dt.timezone.utc
@@ -98,13 +98,18 @@ def compact(news):
               'publisher_count':c.get('publisher_count'),
               'coverage_status':text(c.get('coverage_status'),40)} for c in clusters[:MAX_STORIES] if isinstance(c,dict)]
     most_recent=sorted(articles.values(),key=lambda a:a.get('published_at',''),reverse=True)[:MAX_ARTICLES]
+    all_locations=sorted(locations.values(),key=lambda p:(-p['sampled_article_count'],p['name']))
+    saved_locations=all_locations[:MAX_LOCATIONS]
     return {'at':timestamp.isoformat(timespec='seconds'),
         'feed_status':text(news.get('status'),24),
         'feeds_ok':news.get('query_successes'), 'feeds_attempted':news.get('query_attempts'),
         'mapped_signals':len(points),'reported_distinct_mapped_articles':news.get('distinct_mapped_articles'),
         'sampled_article_previews':len(articles),
         'category_signal_article_counts':dict(sorted(counts.items())),
-        'locations':sorted(locations.values(),key=lambda p:(-p['sampled_article_count'],p['name']))[:MAX_LOCATIONS],
+        'locations':saved_locations,
+        'location_entries_available':len(all_locations),
+        'location_entries_stored':len(saved_locations),
+        'location_entries_omitted':max(0,len(all_locations)-len(saved_locations)),
         'recent_article_examples':most_recent,
         'story_groups':stories,
         'cross_border':{'candidate_count':len(links),'types':dict(sorted(cross_types.items())),'pairs':pairs}}
