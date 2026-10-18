@@ -281,7 +281,15 @@ def collect(now):
     geo_audit.record(source,classify_unmatched(a['title'],a.get('description',''),a['url'],language),mapped=True)
     unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260], 'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
     continue
+   # Final safeguard runs AFTER every matcher and decision fallback.
    place,match_origin=decision_audit.decide(a,place,match_origin)
+   accepted,reason=evaluate_geographic_subject(place,a['title'],a.get('description',''))
+   if not accepted:
+    geo_rejections.append({'place':place.get('name',''),'reason':reason,'title':a['title'][:180],'publisher':a.get('publisher') or source,'url':a['url']})
+    browse_retention.add(a,when,now,category or classify(a['title']),'ambiguous_geography')
+    geo_audit.record(source,'ambiguous_geography_rejected',a['title'],language,a['url'])
+    unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260], 'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
+    continue
    mapped+=1
    geo_audit.record(source,'mapped',mapped=True)
    geo_audit.record(source,'method/'+match_origin,mapped=True)
@@ -310,6 +318,7 @@ def collect(now):
  collect.browse_articles=browse_retention.export()
  collect.browse_stats=browse_retention.stats
  collect.decision_audit=decision_audit
+ collect.geo_rejections=geo_rejections
  return results,failures,dict(scanned),seen_queries,health,unmapped
 
 def produce(raw,now):
@@ -472,6 +481,10 @@ def main():
   'accuracy_note':'Locations are geographic SUBJECTS, never automatically verified incident sites. Locations are place mentions from headlines or descriptions, not verified event coordinates. Description matches are contextual; country pins use representative anchors.',
   'velocity_note':'Recent 3-hour vs previous 3-hour counts within sampled articles; directional, not a verified activity surge.',
   'errors':failures,'points':points,**clusters, 'cross_border':publish_links(points),
+   'geographic_disambiguation':{'schema':1,'checked_stage':'after_all_matchers',
+    'rejected_total':len(getattr(collect,'geo_rejections',[])),
+    'rejected_examples':getattr(collect,'geo_rejections',[])[:35],
+    'note':'Selected ambiguous location labels require local geographic context. Rejected articles remain browse-only.'},
   'unlocated_articles':getattr(collect,'browse_articles',[]),
   'browse_retention':{'window_hours':72,'globe_window_hours':24,'note':'Unlocated articles are for browsing only, never globe pins. Archive entries are older than 24 hours.', **getattr(collect,'browse_stats',{})}}
  OUT.parent.mkdir(parents=True,exist_ok=True)
