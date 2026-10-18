@@ -25,6 +25,7 @@ from geo_intelligence import CollectorAudit, context_match, classify_unmatched, 
 from browse_retention import BrowseRetention
 from publisher_metadata import annotate
 from geographic_quality import curated_match
+from geo_expansion import expanded_match
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -264,6 +265,8 @@ def collect(now):
     place,match_origin=context_match(a['title'],a.get('description',''),a['url'],PLACES)
    if not place:
     place,match_origin=curated_match(a['title'],a.get('description',''))
+   if not place:
+    place,match_origin=expanded_match(a['title'],a.get('description',''))
    if not place:
     browse_retention.add(a,when,now,category or classify(a['title']),'no_confident_geography')
     geo_audit.record(source,'unmapped',a['title'],language,a['url'])
