@@ -2,34 +2,34 @@
  "schema": 2,
  "version": "1.5.4B",
  "source": "Google News RSS and independent publisher RSS samples",
- "updated_at": "2026-10-18T01:52:15+00:00",
- "last_attempt_at": "2026-10-18T01:52:15+00:00",
+ "updated_at": "2026-10-18T02:06:59+00:00",
+ "last_attempt_at": "2026-10-18T02:06:59+00:00",
  "window": "rolling 24 hours",
  "status": "partial",
- "query_successes": 132,
+ "query_successes": 131,
  "query_attempts": 136,
  "articles_scanned": {
-  "politics": 208,
+  "politics": 207,
   "environment": 84,
-  "hazards": 37,
-  "society": 173,
-  "health": 338,
-  "education": 367,
+  "hazards": 45,
+  "society": 177,
+  "health": 339,
+  "education": 383,
   "rights": 28,
   "community": 38,
-  "economy": 213,
+  "economy": 210,
   "science": 209,
-  "conflict": 85,
-  "direct": 1360
+  "conflict": 86,
+  "direct": 1330
  },
- "distinct_mapped_articles": 432,
- "duplicates_removed": 744,
- "source_count": 237,
- "direct_sources_ok": 44,
- "unmapped_articles_sample": 855,
+ "distinct_mapped_articles": 443,
+ "duplicates_removed": 769,
+ "source_count": 241,
+ "direct_sources_ok": 43,
+ "unmapped_articles_sample": 845,
  "geographic_confidence": {
-  "headline": 828,
-  "description": 285
+  "headline": 849,
+  "description": 294
  },
  "source_health_file": "data/source-health.json",
  "history_file": "data/history.json",
@@ -40,6 +40,7 @@
   "direct/DW World": "Feed contained no recognizable RSS/Atom items",
   "direct/CBC World": "The read operation timed out",
   "direct/ReliefWeb Updates": "no element found: line 1, column 0",
+  "direct/UN News": "not well-formed (invalid token): line 1, column 0",
   "direct/DW Español": "syntax error: line 1, column 0"
  },
  "points": [
@@ -262,194 +263,6 @@
    ]
   },
   {
-   "lat": 21.03,
-   "lng": 105.85,
-   "name": "Vietnam",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 17,
-   "publisher_count": 1,
-   "category": "education",
-   "recent_3h": 1,
-   "previous_3h": 1,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Risks of misusing homework assignments on laptops and iPads.",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcklMUS1vS0tqUnRhTnpZT2VxOEFLeFdNdVd0M2ZKRFhTV2NGRzFaa1FjZ0dIZlVqZE1XblJuS3BmTElsWDVZOUkzeEJLZkhxS2hmdXdVVmNtdkE2SmV4TGc0RDZyTnFjWmxTUUtCek5VNU12eENCcGJTYXZCNEhyRQ?oc=5",
-     "published_at": "2026-10-18T01:19:03+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "The Cham teacher, who rose to prominence through policy-making, is dedicated to her profession.",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUy1vR2VQZl9OSGtGZXhPQmFfZFNGNW5fVkhJOThzVHNKTy1nSUMzSmRTSjVBbmRBLTljWEJCa1RkUjRYVUZ5SWMzbTJpeFVlTndrWlU4YTNBU3Q1aW0wcFJVNk5vbEV5Vl9oT3ZnQlJ6Tk1OX0FxR2tvWmlWX0dwbmoxdURMWHB2UkgxNjhiVUZaZw?oc=5",
-     "published_at": "2026-10-17T22:40:23+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Universities must control grade inflation and tighten the quality of education.",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMHlUVExSaE9HelB6b0hhdkZiYTdEamtKaE9VZC1laktVd2QwSFRUbnUtcUkwQkV0LXRZTFpIdEdnWTd4d25ieXBGdS12VXR0RmZlOHA3ZlVkM2xfNFRtR3Y3dEdUUlRSWlZ4aHc5Y3B5VmUxa2xFa3JFd3c3VkpnejlXMVRtT3FIRktsVnlkRWlPLUVrZEhsVzFIbmp6dHdFTEE?oc=5",
-     "published_at": "2026-10-17T14:45:27+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "The high price of pretending everything is fine in college.",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBrUlp4b1BNaE1ucmdFbUhIRGJ2MmFPVDRTam5kRUVwWWhFWFUtY0pBb3k0OWxBcjNsYlFha3VnMTJZZ2hpVlNidDBIRjdhTGMzeVFTTUVoMVhRWTdUUmxEbmF3OEV2Y1JXd1RLYVFkMzBoUmVsWDAyUHlydEVYQlE?oc=5",
-     "published_at": "2026-10-17T14:25:28+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Closing Ceremony of the Provincial Excellent Teacher Competition for the 2016-2027 Academic Year",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONTYtbmswRXI3VG9LcDNDSEhXcmNmMGhFRnVITTVld0wzZTAwd09uX2piSXdlVDM2UDA0YzNOMERmTUhiSmxoMGJuX0tnUkQ3RnRxdGVPRm1JMEo0VHdJSlJET0hZQ2JTY3ltMTdPOWxmb0tZRFR5MnZkZFdFdGxzSW5pWmpwRHNYU3paQTlB?oc=5",
-     "published_at": "2026-10-17T13:05:03+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Creating a space for exchange among English teachers in the AI ​​era.",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZzQ4WnJ4eU8tWmJSUUFna3Yxd20wRUdOd3JOSnJhdXk3M0tPcDBGQVRjZEtDbktRNmtwbDZpOVFDUjcyVzYtY3ZRLVliQzlyVEpCUzAwSlMxLUpRMUt1V1NncDlXMnNsbmdNeTJFbjB5UHJVdUd1RFZNSjNzLTdZZVBBOTZIdGlITHVFOGo1ZjhoZE9lWk9jWFEtcURaYVg5OG1IWQ?oc=5",
-     "published_at": "2026-10-17T12:26:46+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Spreading love through the \"Supporting Students to School\" scholarship program in 2026.",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVzVrcm9PMHVRODYyY3haLXNkTGlUWE9aZFNFV3QydUpnTVE2OGt2aWg5VUl6VExaTmRsaFRJWmhNMExqLXRtS3dDNjFJWHRILXQzbWd0RlRvc1FwMTZXNUIzX3JZUlNKUUhBcC1UWnRRY245YUF2VHlOWWFOMzJYZmQxQmFVcVNnRm9DNDlB?oc=5",
-     "published_at": "2026-10-17T11:45:30+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Nearly 400 Chinese language teachers update their HSK 3.0 skills and apply AI.",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQm1DU0hKYkY2MjZ2QkFFQUE5VUJ4R0V6WGJGSHhOYzNKbTNleFM5TXNENTc3elNNRUZCcGJWeXl0cWx2UlpIXzRGMGltNWt1aE1kd2ZhZldySnhLejVoMFJCZjFEeE5XLXJBbkI5VWlBQnFDLXd4ZEFWZnVrM2hPN3B6RjFtcGhmSmM5Sm41Qzg?oc=5",
-     "published_at": "2026-10-17T10:29:54+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "The Ministry of Education and Training requires universities not to lower standards in order to increase the percentage of excellent students.",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeGE2bFpSTDRDRldzS2pmVDJQT25rcXZYU3Q3bnFsRjloZ0ctWlpsS2wxa21ZOFkwbjY4MzJRclo2VTR4VThlcGJnbF94ajh1ZkRPVW5PNmUwd1BRb3puVVplampLeHpHU3Nnbl9FT0V2TVJDLWxHQVJmZGJhTGJONmRoUG1RdVR1V2lmcmJ6UERmZw?oc=5",
-     "published_at": "2026-10-17T09:33:48+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Integrating AI into schools: How to invest without wasting resources?",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWEVwdVFFaVAzclpSVjhKMDAwU0h2MTRHalpYUWdSRHdhMFJ5UVpHNDgweDA1QnY0VkkxNEJ0VmJ1OGhVUXhJSXNWTU9OZ0R3Ni1jQUhReVk3Wl9ZRHE5TlpEOHNnSng2b0hRejFrQXpwNUNjTUJoWTdNQUJEZjdzLUxDYWY5Szg?oc=5",
-     "published_at": "2026-10-17T09:17:41+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Drug prevention and control in schools must become a regular task.",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRHc0dVc0Q2x1c3p0ckpMRXU2U1h0eXVxcHM1a3dDUTBHeTlzQ2JHMFpseUxOa3lXc2ZLalR5cDl5N0JaajdhUUM4UU11R2VVajYzRVladWlETTBPOHNGRVpGbVVMMFJ4cjBiNldxRWI3R3JpQ0IxLTY4MDdFdWl5czl3dEk1WG1neVVwc25hMzRRaEZMX1E?oc=5",
-     "published_at": "2026-10-17T08:22:39+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Students from Vietnam Maritime University conquer numerous intellectual competitions.",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNTRXQUEwRC1wOWRGajlMQmF2UzZCbWpubV9RMjhnQlZpdjlVVGg1S19MNVF5QTJ0aVdHYTVQY0hsSlJxSGtnNVRORmZITDlWdU03bjFraEw0Zm5ndTVTZDF3T3VmUmdaV0c3UlctMERiX05UVzRzeVFOd2VQSzMwQWFGMzlDMTZfcXdfbDZvREpRVDFHd2gtaHUzVQ?oc=5",
-     "published_at": "2026-10-17T07:31:10+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "The \"temporary\" circular on leadership allowances in educational institutions has been in effect for over 20 years.",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZGd2Rl9ieTFBQzN0VXVIR3BobE8xMURzdVJtdnlBSG4ycDJmWmdTZFExUHdjd0F4cGlQM3hZdDlOZm1GSzFmX2d4TnpCMlA4SURhb0lTWFJpT2xuVE10bGo1b3hmSWMxdHNibGp3dDkyVVlxZXdBdlRZSXpEZVh5NGxYTFNUX29USEUyTDJyUU9tZGg5UWJ2a243UkxYVXBzaHFFZl9oQWVVOEx0QW91OQ?oc=5",
-     "published_at": "2026-10-17T06:27:00+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Gradually integrating English into the teaching of Chemistry.",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9kVUFLcklNX3JsWHdRS196S3FzLThoc2dNZGdyVTc5UEtOQm9ELU14Z00xN0JBbDVlOXd1STRabHg3ZE4xNWQ0SXNDaDdlMGVtTXl4UVZzRC1qRnEtWTdLYkIwdHdkTGtvREtCREJFdkozNWM0QjV6eQ?oc=5",
-     "published_at": "2026-10-17T05:54:13+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Mobilizing students to strictly abide by the law on drug prevention and control in 2026.",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTzRlaThuMDRQYy1ldTJZR25uWjB5UmFRMDZqVFJNX0RfVUNXWFpGLXhSZVExTzctWDMzWlNqTWpESzNlR1lxZjBqNWhfczEyV3pTZzJPbjlSSklhaC1JNkx3TnJPLTgzNzRZUFJQRW9SdXBpYXRKM0FoSXJoS0FmRV81Q3k0a2xZLWVZa0t6X2xkT0VoNm5xNS15QTJQeU9aLUVqVXJCLXdQMnR1cGU4eEU0cTJmNVNrR0E?oc=5",
-     "published_at": "2026-10-17T04:55:52+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "The 2027 college admissions season kicks off: 2009 graduates begin choosing their majors and careers.",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTmZPUF81YTRKc3ZOY0JyVjl5ajlnOGZUNmtaSWtGVVh2QWh6cUh4YUhzN0NTUGV6YkdTeDRiaFNYVVdkR0FNMzFQVWx2bmpSSjMwUjdFMkZYZ3BIcHMxSklVcjNqQ2lnMlcwSnV3aFJhYVpIN25PRk13LUdIb1VwRjIxaXlFcnFkMHhjcFlPWnl1Zw?oc=5",
-     "published_at": "2026-10-17T03:33:45+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "Consider appropriate hierarchical structures for teacher recruitment and employment.",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeDNoUGd6b0kxTUhVWHl0V2I1eV9BamtKV0FBSjFyUDVueVBHQmFtUHJtUWFmRF9nM3VVOTVTbTY4Y1o0UERBSFNtQ3h3YlZJZmNycS1VemtIU1lyLW4yX0Y4TVpIS3dzTHItRlJ1RFVIdHUtYzNFdkJhenNoY2RTZzUxTXNJVmh3T2pTNFpSa2plUQ?oc=5",
-     "published_at": "2026-10-17T02:19:31+00:00",
-     "publisher": "Vietnam.vn",
-     "source_url": "https://www.vietnam.vn",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    }
-   ]
-  },
-  {
    "lat": 48.86,
    "lng": 2.35,
    "name": "France",
@@ -457,14 +270,24 @@
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 15,
-   "publisher_count": 14,
+   "count": 16,
+   "publisher_count": 15,
    "category": "society",
-   "recent_3h": 0,
-   "previous_3h": 6,
+   "recent_3h": 1,
+   "previous_3h": 3,
    "velocity": "cooling",
-   "velocity_change_pct_sample": -86,
+   "velocity_change_pct_sample": -50,
    "articles": [
+    {
+     "title": "France protests over school conditions and cost of living turn violent, 1,200 arrested",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONDFWSUVYM3BQUE1WM2YxdTZIbmpKMHRyVllyaUlEXzczSWExU1RQMEo0WUJWdENUNnhtRUZNQlZCc3J4bjA3d1IxLS0zYzl3SVpKTTBZNWFfYkdleTZtY1JrakEwZENlZl9rMW5XVC1lbGE5LVpEQk5yZ0RhbFZlWmFUeDZ6X0xYMExieUgtQUx6OFREank0VE0wRktZMjR1bnY4QUo0V3MyN25HcWxZUm1YejREYWxQNTh6bFBR?oc=5",
+     "published_at": "2026-10-18T01:59:44+00:00",
+     "publisher": "The Business Standard",
+     "source_url": "https://www.tbsnews.net",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
     {
      "title": "How day of protests unfolded as disorder breaks out across France",
      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5taTd2WHZzNDQ3akhiMEJ0bjRjb211MnhNaFRNd3lkazBCSTJfOWZ3QVdYOWtTWTJQTTNObkVIdHdFMFhXbzFFM3ZvZmFrRnFqWHhWQjJzcnY?oc=5",
@@ -618,6 +441,184 @@
    ]
   },
   {
+   "lat": 21.03,
+   "lng": 105.85,
+   "name": "Vietnam",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 16,
+   "publisher_count": 1,
+   "category": "education",
+   "recent_3h": 1,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Risks of misusing homework assignments on laptops and iPads.",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcklMUS1vS0tqUnRhTnpZT2VxOEFLeFdNdVd0M2ZKRFhTV2NGRzFaa1FjZ0dIZlVqZE1XblJuS3BmTElsWDVZOUkzeEJLZkhxS2hmdXdVVmNtdkE2SmV4TGc0RDZyTnFjWmxTUUtCek5VNU12eENCcGJTYXZCNEhyRQ?oc=5",
+     "published_at": "2026-10-18T01:19:03+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "The Cham teacher, who rose to prominence through policy-making, is dedicated to her profession.",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUy1vR2VQZl9OSGtGZXhPQmFfZFNGNW5fVkhJOThzVHNKTy1nSUMzSmRTSjVBbmRBLTljWEJCa1RkUjRYVUZ5SWMzbTJpeFVlTndrWlU4YTNBU3Q1aW0wcFJVNk5vbEV5Vl9oT3ZnQlJ6Tk1OX0FxR2tvWmlWX0dwbmoxdURMWHB2UkgxNjhiVUZaZw?oc=5",
+     "published_at": "2026-10-17T22:40:23+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Universities must control grade inflation and tighten the quality of education.",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMHlUVExSaE9HelB6b0hhdkZiYTdEamtKaE9VZC1laktVd2QwSFRUbnUtcUkwQkV0LXRZTFpIdEdnWTd4d25ieXBGdS12VXR0RmZlOHA3ZlVkM2xfNFRtR3Y3dEdUUlRSWlZ4aHc5Y3B5VmUxa2xFa3JFd3c3VkpnejlXMVRtT3FIRktsVnlkRWlPLUVrZEhsVzFIbmp6dHdFTEE?oc=5",
+     "published_at": "2026-10-17T14:45:27+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Closing Ceremony of the Provincial Excellent Teacher Competition for the 2016-2027 Academic Year",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONTYtbmswRXI3VG9LcDNDSEhXcmNmMGhFRnVITTVld0wzZTAwd09uX2piSXdlVDM2UDA0YzNOMERmTUhiSmxoMGJuX0tnUkQ3RnRxdGVPRm1JMEo0VHdJSlJET0hZQ2JTY3ltMTdPOWxmb0tZRFR5MnZkZFdFdGxzSW5pWmpwRHNYU3paQTlB?oc=5",
+     "published_at": "2026-10-17T13:05:03+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Creating a space for exchange among English teachers in the AI ​​era.",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZzQ4WnJ4eU8tWmJSUUFna3Yxd20wRUdOd3JOSnJhdXk3M0tPcDBGQVRjZEtDbktRNmtwbDZpOVFDUjcyVzYtY3ZRLVliQzlyVEpCUzAwSlMxLUpRMUt1V1NncDlXMnNsbmdNeTJFbjB5UHJVdUd1RFZNSjNzLTdZZVBBOTZIdGlITHVFOGo1ZjhoZE9lWk9jWFEtcURaYVg5OG1IWQ?oc=5",
+     "published_at": "2026-10-17T12:26:46+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Spreading love through the \"Supporting Students to School\" scholarship program in 2026.",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVzVrcm9PMHVRODYyY3haLXNkTGlUWE9aZFNFV3QydUpnTVE2OGt2aWg5VUl6VExaTmRsaFRJWmhNMExqLXRtS3dDNjFJWHRILXQzbWd0RlRvc1FwMTZXNUIzX3JZUlNKUUhBcC1UWnRRY245YUF2VHlOWWFOMzJYZmQxQmFVcVNnRm9DNDlB?oc=5",
+     "published_at": "2026-10-17T11:45:30+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Nearly 400 Chinese language teachers update their HSK 3.0 skills and apply AI.",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQm1DU0hKYkY2MjZ2QkFFQUE5VUJ4R0V6WGJGSHhOYzNKbTNleFM5TXNENTc3elNNRUZCcGJWeXl0cWx2UlpIXzRGMGltNWt1aE1kd2ZhZldySnhLejVoMFJCZjFEeE5XLXJBbkI5VWlBQnFDLXd4ZEFWZnVrM2hPN3B6RjFtcGhmSmM5Sm41Qzg?oc=5",
+     "published_at": "2026-10-17T10:29:54+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "The Ministry of Education and Training requires universities not to lower standards in order to increase the percentage of excellent students.",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeGE2bFpSTDRDRldzS2pmVDJQT25rcXZYU3Q3bnFsRjloZ0ctWlpsS2wxa21ZOFkwbjY4MzJRclo2VTR4VThlcGJnbF94ajh1ZkRPVW5PNmUwd1BRb3puVVplampLeHpHU3Nnbl9FT0V2TVJDLWxHQVJmZGJhTGJONmRoUG1RdVR1V2lmcmJ6UERmZw?oc=5",
+     "published_at": "2026-10-17T09:33:48+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Integrating AI into schools: How to invest without wasting resources?",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWEVwdVFFaVAzclpSVjhKMDAwU0h2MTRHalpYUWdSRHdhMFJ5UVpHNDgweDA1QnY0VkkxNEJ0VmJ1OGhVUXhJSXNWTU9OZ0R3Ni1jQUhReVk3Wl9ZRHE5TlpEOHNnSng2b0hRejFrQXpwNUNjTUJoWTdNQUJEZjdzLUxDYWY5Szg?oc=5",
+     "published_at": "2026-10-17T09:17:41+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Drug prevention and control in schools must become a regular task.",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRHc0dVc0Q2x1c3p0ckpMRXU2U1h0eXVxcHM1a3dDUTBHeTlzQ2JHMFpseUxOa3lXc2ZLalR5cDl5N0JaajdhUUM4UU11R2VVajYzRVladWlETTBPOHNGRVpGbVVMMFJ4cjBiNldxRWI3R3JpQ0IxLTY4MDdFdWl5czl3dEk1WG1neVVwc25hMzRRaEZMX1E?oc=5",
+     "published_at": "2026-10-17T08:22:39+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Students from Vietnam Maritime University conquer numerous intellectual competitions.",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNTRXQUEwRC1wOWRGajlMQmF2UzZCbWpubV9RMjhnQlZpdjlVVGg1S19MNVF5QTJ0aVdHYTVQY0hsSlJxSGtnNVRORmZITDlWdU03bjFraEw0Zm5ndTVTZDF3T3VmUmdaV0c3UlctMERiX05UVzRzeVFOd2VQSzMwQWFGMzlDMTZfcXdfbDZvREpRVDFHd2gtaHUzVQ?oc=5",
+     "published_at": "2026-10-17T07:31:10+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "The \"temporary\" circular on leadership allowances in educational institutions has been in effect for over 20 years.",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZGd2Rl9ieTFBQzN0VXVIR3BobE8xMURzdVJtdnlBSG4ycDJmWmdTZFExUHdjd0F4cGlQM3hZdDlOZm1GSzFmX2d4TnpCMlA4SURhb0lTWFJpT2xuVE10bGo1b3hmSWMxdHNibGp3dDkyVVlxZXdBdlRZSXpEZVh5NGxYTFNUX29USEUyTDJyUU9tZGg5UWJ2a243UkxYVXBzaHFFZl9oQWVVOEx0QW91OQ?oc=5",
+     "published_at": "2026-10-17T06:27:00+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Gradually integrating English into the teaching of Chemistry.",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9kVUFLcklNX3JsWHdRS196S3FzLThoc2dNZGdyVTc5UEtOQm9ELU14Z00xN0JBbDVlOXd1STRabHg3ZE4xNWQ0SXNDaDdlMGVtTXl4UVZzRC1qRnEtWTdLYkIwdHdkTGtvREtCREJFdkozNWM0QjV6eQ?oc=5",
+     "published_at": "2026-10-17T05:54:13+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Mobilizing students to strictly abide by the law on drug prevention and control in 2026.",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTzRlaThuMDRQYy1ldTJZR25uWjB5UmFRMDZqVFJNX0RfVUNXWFpGLXhSZVExTzctWDMzWlNqTWpESzNlR1lxZjBqNWhfczEyV3pTZzJPbjlSSklhaC1JNkx3TnJPLTgzNzRZUFJQRW9SdXBpYXRKM0FoSXJoS0FmRV81Q3k0a2xZLWVZa0t6X2xkT0VoNm5xNS15QTJQeU9aLUVqVXJCLXdQMnR1cGU4eEU0cTJmNVNrR0E?oc=5",
+     "published_at": "2026-10-17T04:55:52+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "The 2027 college admissions season kicks off: 2009 graduates begin choosing their majors and careers.",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTmZPUF81YTRKc3ZOY0JyVjl5ajlnOGZUNmtaSWtGVVh2QWh6cUh4YUhzN0NTUGV6YkdTeDRiaFNYVVdkR0FNMzFQVWx2bmpSSjMwUjdFMkZYZ3BIcHMxSklVcjNqQ2lnMlcwSnV3aFJhYVpIN25PRk13LUdIb1VwRjIxaXlFcnFkMHhjcFlPWnl1Zw?oc=5",
+     "published_at": "2026-10-17T03:33:45+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    },
+    {
+     "title": "Consider appropriate hierarchical structures for teacher recruitment and employment.",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeDNoUGd6b0kxTUhVWHl0V2I1eV9BamtKV0FBSjFyUDVueVBHQmFtUHJtUWFmRF9nM3VVOTVTbTY4Y1o0UERBSFNtQ3h3YlZJZmNycS1VemtIU1lyLW4yX0Y4TVpIS3dzTHItRlJ1RFVIdHUtYzNFdkJhenNoY2RTZzUxTXNJVmh3T2pTNFpSa2plUQ?oc=5",
+     "published_at": "2026-10-17T02:19:31+00:00",
+     "publisher": "Vietnam.vn",
+     "source_url": "https://www.vietnam.vn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description"
+    }
+   ]
+  },
+  {
    "lat": 19.43,
    "lng": -99.13,
    "name": "Mexico",
@@ -625,14 +626,24 @@
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
-   "count": 10,
-   "publisher_count": 10,
+   "count": 12,
+   "publisher_count": 12,
    "category": "hazards",
-   "recent_3h": 1,
+   "recent_3h": 2,
    "previous_3h": 2,
    "velocity": "steady",
-   "velocity_change_pct_sample": -33,
+   "velocity_change_pct_sample": 0,
    "articles": [
+    {
+     "title": "Trudy Approaches Mexico, Champy Passes Guam ᐉ News from Fakti.bg - World",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNWFWN2I0bGhQVS1SUEJSY3g1THBmSVpzVGVJNnpObjg1SWJ3YnNWZmFJTnJwVzUxYVY5eVNNdXhZZ21vNjUyR3VxWkpwdVBjWXdEdGxreEJ2Q0dScEZudHVaZzR1OVlaQk16Tko5cVcwUE9seG1WbTZGQmdjLUQtZEFn?oc=5",
+     "published_at": "2026-10-18T01:22:00+00:00",
+     "publisher": "Fakti.bg",
+     "source_url": "https://fakti.bg",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
     {
      "title": "Hurricane Trudy strengthens to category 2 as it heads toward Mexico",
      "url": "https://www.theguardian.com/world/2026/oct/17/hurricane-trudy-mexico",
@@ -699,6 +710,16 @@
      "published_at": "2026-10-17T14:03:51+00:00",
      "publisher": "Cyprus Inform",
      "source_url": "https://www.kiprinform.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Hurricane Trudy makes its way toward Mexico as Typhoon Champi threatens Guam",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNekI4czNrbWZ6S2FBeE83TEtfQk96MDFCaTJsaHNjbWEyUEFtTjRHdjNQbVA1NlBpVV9iOXZsZkFPZEdQeE1Bc0xTZWZaZmlRVVgtMUFwVGU0cC16YTZ4bTBwZ2F6WXFLOTRQRU81MzVPQ1Zzb1FNTGJ2LWJrN0kwR1hPTDZ0Wk5HaXFnYzBtZUJmRDBxZGxoSlVhRnRJMTJtUkFJaW51RC1ULTZ3WDNra0VB?oc=5",
+     "published_at": "2026-10-17T13:59:37+00:00",
+     "publisher": "NBC News",
+     "source_url": "https://www.nbcnews.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1010,10 +1031,10 @@
    "count": 5,
    "publisher_count": 1,
    "category": "community",
-   "recent_3h": 3,
-   "previous_3h": 2,
+   "recent_3h": 2,
+   "previous_3h": 3,
    "velocity": "steady",
-   "velocity_change_pct_sample": 33,
+   "velocity_change_pct_sample": -25,
    "articles": [
     {
      "title": "'Nerves and shame' gone, the DMC Boys look to the global stage",
@@ -1204,6 +1225,74 @@
    ]
   },
   {
+   "lat": -1.29,
+   "lng": 36.82,
+   "name": "Kenya",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 5,
+   "publisher_count": 5,
+   "category": "health",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Kenya gazettes new Ebola rules, tightens surveillance and containment",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSklWMzNCSGRVNnEyTnZnYm9TemllWEtGTWttVDhkNW5RVF9JeC1uQjYwNF9aRkxwOWp1Z3RJcmZKZ2tUcDl4ZUppNzBEZFIteXQyWWt6S3BFOVRnNjk2c1hBQm9kZWpVcFF5RkNsLVVITTEyRl92aGkxNjlKUnRvSzZzWFRIaVNmSmZnbWVpQk1pc3FTZEgxUQ?oc=5",
+     "published_at": "2026-10-17T23:20:22+00:00",
+     "publisher": "Radiokaya",
+     "source_url": "https://radiokaya.co.ke",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Kenya confirms 4 new Ebola cases, total rises to 7",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBuN1hxRkM3SjF3VTlocmQyOVVaODVJSnktV3JCYVNSWllUWWhHN2FCUThacUZXZkxpbDEzMUhaTW1MX2drR3Y1eFdmX0tLMGhjcFFVQTVMcVZ1VVpZcVlYMUUwaHIyeWViajlqaUdTUS0wX3VnU3FYeG5PM3o?oc=5",
+     "published_at": "2026-10-17T16:48:30+00:00",
+     "publisher": "Xinhua",
+     "source_url": "https://english.news.cn",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "WHO Urges Vigilance after Kenya Confirms Second Ebola Case",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOX1lCSjRrUlNDUEFlXzZkQnNxaHF4MjE4eWlzYmRnSGpLNGx5VHgydU1kc2ZWbXQ4UFZnTGdsVmdMWFV0bl9OVU1YWEswNDg2blBPS1lYN2x2c1hqdXBOa2NBb3NNbVRtMk42VXRsOUw0SXRzMVQ2VmljX1VrWmp2aVdZRUFUa1k?oc=5",
+     "published_at": "2026-10-17T10:41:24+00:00",
+     "publisher": "Vellum Kenya",
+     "source_url": "https://vellum.co.ke",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "𝐊𝐞𝐧𝐲𝐚 𝐜𝐨𝐧𝐟𝐢𝐫𝐦𝐬 𝐭𝐡𝐢𝐫𝐝 𝐄𝐛𝐨𝐥𝐚 𝐜𝐚𝐬𝐞; 𝐬𝐚𝐲𝐬 𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲 𝐭𝐫𝐚𝐧𝐬𝐦𝐢𝐬𝐬𝐢𝐨𝐧 𝐫𝐞𝐦𝐚𝐢𝐧𝐬 𝐥𝐨𝐰 Kenya has confirmed a third case of Ebola (Bundibugyo virus disease), with the Ministry of Health saying there is no evidence of community transmiss",
+     "url": "https://news.google.com/rss/articles/CBMi6whBVV95cUxQZ09pUGZLYW0tNlNTY2VQT1VpUHpGNTVjUVJMcjAyN2ZmU09tV3B0M2pERXBZXy1NS0Q2bF9XNk9vbWExQkg3NXdhLVhGVEQ1NWZIMzE4X1RjeGNEOVkwckJnRjZ0emNSOFVJSU5LSUQ3VlVWeWNKd2o2UFdmSXVaMS12Y08xNUtISGNzUEQ3ZHpnYldRTThhNldaZzBzbnFUd0xjWWNFVFNSb3VyVUdFRTQ0NTEtZHlldHRfSThJc0NuUndSeEgwdTNTYzBTX2c5WEIzWnU4LWlOSGx1ZDl5ckNKRGIya1hJYWttRGF1elpTam5QQlBuWkx4aXBFMjNCTkRubEZzR3E5UWprLVBWeHRqeXVSWEtrc0hBYUxuX1hXYU40ZWJjcE1DUWJxVHdvTVRHZWpYVVItYW9WV1l4VFdlVnQwYjZHWUdCX3BJVkx1Ym9jMkpTS1QzV2pNVWxldVBMaXdwaGNCUlNDVTROOWFOZnN4Q3VNY1FMMGlSM1lWVEFRU0JaQnhCWGV4NG5hTGNGN3o5cUp4ZHBwM0ZPSkNxMmYycEhjX0V2VU14U1lzN3E0R21MQ0RwN2pRTjBmTTQxU1RKeVpWaG1QbjQzMGNtT0lORzJmUnhUbk1fTC1NaTZZbGNrdkoyUTlJYnlKeXAxTXdaTndKcUVId0RRd0NzNm9XTmNNWUYxNTdsbUtRakhoV282NXUzaVFsaE1yeGNpbFRVcmpUSDhYQ0VkZGk5VjJBaHhqNUlGN1FVU2dwc2dsOXMxQWJDNmhXRTR4X2dTaEFnejJYbGV1VFJNNkxOeEJGTGxDaGlfbkNSQkYwSERxTE8tTEJXbllxQS1DYmV5MHJGbVN6QW9yeTlzMW5kZHJIWlgwTEo0X0liRWtSVFJDdldhbEd1cjc2UnctSDVZa3p0S1BtZlFFREF2WmlxT2dZMnNlMF9mMThoVnl1Q202cWJ4SGtwZHpLLVhkVDEzek50T1JpYUtpNlo2dmxUX3FRSjhSRkl2aTVoV0F6R09wR05lclNDZlF0MERvNXRQYmRZY2hNZ2FxNHZKSk1WalRYWFBRaVN5SEQwMEVxUDRMNV9oRjFzM1diaUowYlFYWnNIRldsNnpKcTBLakZkb3VKalZuV29BRTNmczVHVlhaVHVueUJWRHJiVVR1cVdqZWgzbXNfRF9rNHZlNTJGalpjYW82MzdwTTk1QW5FODJxbm9YT0NSWFdHaVlxSTRuQXZ1RXRUenZDRmY4akF3cjFrUDg2SzZfbXpuZF9qdWEyV1BxWnNBZjIxV1hNVUdibk1KVjI2bEFHWThVblZ1QkpYQWtId2FVT0dnWkhnU3hGUVowSGQ0NmhYdE4xeWozNHRtMXgxLURmYkQtcWI4dThSMlpEOVV5a2ZkempLZkptTTZ2ZnlVUklkeFRaRWNVQ3VDSndrb3lVUElMNlFsZzNoa0RETmFQVDdNdzBkQ2dkSDdKYlVabWZSTEpZdlUzdUdzWURTMDg?oc=5",
+     "published_at": "2026-10-17T10:05:01+00:00",
+     "publisher": "Facebook",
+     "source_url": "https://www.facebook.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Kenya's race to contain Ebola: Two cases, one death and a health system caught off guard",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaWJmUWttd0VFVTlCMTZUTm9waHZIV1poUFhBTW9IUFZwRldFMmNxTW5tWUlnSVFGZGxVNllkbFRnNG41cklMZlQ3cl9jRXB2QXBKOVg4Z0toWXRudmRVUTJ1Sm5YY0FURkNRdmhzdHBWRlRrVlNGUnNsNktiSGg1aUxR0gGCAUFVX3lxTFBfa1MyOU1QZG9Pd01HZ2xzTlQtbzBJeUpMZ2dwcm1mVUhqZmg3NkNvVS0yVXQzQjJYV2E5OHExakl6ZDl5dlUxc2dZVDR3MERuSllXa2JiNHhfMVBHT0ZsTURGeEpwYm8zdk1SVHNXdzNMcDdBcDJYWUp6Y3V6bTA2VkE?oc=5",
+     "published_at": "2026-10-17T08:48:20+00:00",
+     "publisher": "DW.com",
+     "source_url": "https://www.dw.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 31.5,
    "lng": 34.47,
    "name": "Gaza",
@@ -1333,74 +1422,6 @@
      "published_at": "2026-10-17T07:11:32+00:00",
      "publisher": "NewzTodays",
      "source_url": "https://newztodays.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 28.61,
-   "lng": 77.21,
-   "name": "India",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 5,
-   "publisher_count": 5,
-   "category": "economy",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "India’s space economy could hit $45 billion as government targets private investment",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVG1IamtOSVgtS0k0eFRzLW9nSy1IOGFiVE5RRDh3cTk0OWozZzFncTFnU1V2aGNnbC1rZkdOSzZuYU1QVmZSQjRmUUxneTl4NDVLNURRZm5xQ3AxSDlfQm9ieU5NamREMFlVaEhLTW1zdkY0OGpDQmpQMUxWOTFkUm9WRkdiRXo0XzBWbFZDU3ZuNGlDakxZQUplVkxsLURjdVln0gGjAUFVX3lxTE5UbUhqa05JWC1LSTR4VHMtb2dLLUg4YWJUTlFEOHdxOTQ5ajNnMWdxMWdTVXZoY2dsLWtmR05LNm5hTVBWZlJCNGZRTGd5OXg0NUs1RFFmbnFDcDFIOV9Cb2J5Tk1qZEQwWVVoSEtNbXN2RjQ4akNCalAxTFY5MWRSb1ZGR2JFejRfMFZsVkNTdm40aUNqTFlBSmVWTGwtRGN1WWc?oc=5",
-     "published_at": "2026-10-17T17:25:13+00:00",
-     "publisher": "DQ",
-     "source_url": "https://www.dqindia.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "India's space economy may reach USD 40-45 billion in 7–8 years, private investment key: Jitendra Singh",
-     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNNE5LMzhtUVd0TVg0MzA3R2JPUFVQVUxaWUROYmlrcTZVUVdSblFMYks3V3ZYQkUtZXZ6blVVbHc2WFpzZ242UXZXbjg1MFRGUVVFZFEyNDZOYnNLMjBwaXQ2dXJSMUNxZzA3YjZkQjBwdFZrSll3UjlPU0tuME5jRDFkbTFkTHBjQmdvVWQxNkRQdnNvakNYZVdtUmo2Z0d3bGtBQkdBdHNlSHJpUzdyLWFnUnhRUmlVZER0eDlGLTNXaVN0NUZtZFJUc1RjTnVjbXZnMGVkSkJNQUpQNXB3allPYmJOVnPSAewBQVVfeXFMUHJCcFZwRzkzeU1BMHdMWkNqNEJCbkc5SEcxMkwzSXRqbDltWFdGdk91SmJfVHdGQl9vMUV6MEU2TnNpcFVPNEhBcHBKRGxIQnBMOWpDTmRGWmVWMDRfX2VuU3BVQVYyVHRJTlhFY0JmbTNBLWk1VzVVY0p5SmpKRzRBSFdxWVk0dlhuZXVkc0ViOFZiSFhwUnk1eE9iQlhzNnR0U2o1ZjZFMzRfU3U3OEd5cHhzYzhyZ2RSWjJhM2xfYl8tTkY0WWtVWHBhbzQzVnh5eXhjd0JZTTRJZUVtUjFCMHJMUV9nbkF6a0Y?oc=5",
-     "published_at": "2026-10-17T14:51:24+00:00",
-     "publisher": "Devdiscourse",
-     "source_url": "https://www.devdiscourse.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "US Sanctions Waiver: Relief for India's Energy & Exporters",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWGVlTllCak83bTVzRDB3cVM0RXhSV0oxa0lwNnl2QUhJcTVOc3JpMUtwbGdCRFhmQ0NXa0RoNHdITlBkaDRyX3FxbFlqWUVKanFNWHp5X3lsR29pSkFIdWxPd1pWcVBMSF85eHliQ19rSGQzOFpqbTlLc1FDR3l5Zm1pSFRSSW5TMDgtSTZacmNoUGtmWG82bHNkUGpLZFJYaGRzaEhDTzVhOFU?oc=5",
-     "published_at": "2026-10-17T12:33:07+00:00",
-     "publisher": "Rediff MoneyWiz",
-     "source_url": "https://money.rediff.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Morgan Stanley sees risk asset bull market regaining momentum as growth, AI support returns",
-     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPb0pEVV96T2NBMTJ5Q3hUalA0OFY0SXdCekYzYVJ3b0gxeTQyaDJSTmxuSlJlbVR5V3pSdmdCOFhWeC1DR2Z1dDRfaDRRclp4MVh0RlNXWWFBVFBScGpZNGlFWlMzcVZUcE9nU1hPcXhSQnNLS1U2TGtPbFlhalRrdjZpamx2RmxBZVZxZk9TOGVOdFp1TXRSME50WGhlMmR6MmJfallBQkIyOVItMnF2c3h1dUd1QnVEOGhBSzQ2bWMwcHgzNFZfOFFkSmx5TDE5MkRweHpmUGpKdGRBYTlmdkswQzN2UlFCazFFTlYwOTRiVjkwNXBXNGJ5NjhJZzVLUG5yd3hHb3l5RjNqbHNxZ0xB0gGXAkFVX3lxTE5nRlB4U0YxX0puR2pJNjBHQ3B5VzdTQjhsMWsxTElKWk1JX29pQjNOT2l3LWIxcm9mNThLYTNBSFRRQ01mTHZJUE5FWGVCam5MUFBaSnVNMV9wT2hDYXhTTzBnYzl4T0Q3aUlwQWVFTXNWMm5JbkRwRnd3a29nWDltSjJRakN3bXFtc2MxX3l4alBSNU1tbzlLUlE3RVNFRE11VEN2bkFkN01RcklaRE1mdTRjYTZ3RmExbkpQZGxVWXd0bldINnpqcUlyLWstMlQ3OXRDdmp3LXZmMlR6ajVhQ1Jydnk1R2h3a1pPN0RqWU1NSHVyckNWVGZ3REdRbk0zYXBHOGlrQkRTdjc0bkl0RjVwSE9hVQ?oc=5",
-     "published_at": "2026-10-17T08:34:00+00:00",
-     "publisher": "The Times of India",
-     "source_url": "https://timesofindia.indiatimes.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "description"
-    },
-    {
-     "title": "India-UK relation must move beyond trade, investment",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZG9qZ0M1Rk51Z29hYl9sWUVLdVVpZUNaWGFZMExCUS00T3YtMjNEUUdLanViN3Vubm9lVUw1Q3FkQWpabUs0cUk2Uk1IdlZhd2pvSzkwR2I1b3JZWFpSZ1ZHMC1PUG5SM3A0U2JOaG5xMTAzWmZkNlFRTWE5VXd2MmRwaHdrTG54Qi1uSHk2U0xpWVFpcUNmNE13b3FHUlV1Ynk5dWItaTTSAbYBQVVfeXFMT3lnallRYkM2Y3BMWldZWUtEeEsySFhRMDR2Skw5RmFKc1VQVVM1eVR5YWcxUEpJbVk4bHlzWTBPZUZ4WVVQLTBxZTRoM2xJT1RtTEtDMTUteXNfOWVERFBWcnFvVXQ0TU5jQ1V1Wl9FWU1CWDRnZXFEVmZPSE5TSkZheGRRRGFyWHRyclphcnlZdExMU2N4YzV5THF1ZGV3WkwzUi1oZ2RXUkJ5eEg2REI3Z1p6dlE?oc=5",
-     "published_at": "2026-10-17T06:27:23+00:00",
-     "publisher": "The New Indian Express",
-     "source_url": "https://www.newindianexpress.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1582,57 +1603,57 @@
    ]
   },
   {
-   "lat": -1.29,
-   "lng": 36.82,
-   "name": "Kenya",
+   "lat": 28.61,
+   "lng": 77.21,
+   "name": "India",
    "accuracy": "country",
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 4,
    "publisher_count": 4,
-   "category": "health",
+   "category": "economy",
    "recent_3h": 0,
    "previous_3h": 0,
    "velocity": "steady",
    "velocity_change_pct_sample": 0,
    "articles": [
     {
-     "title": "Kenya confirms 4 new Ebola cases, total rises to 7",
-     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBuN1hxRkM3SjF3VTlocmQyOVVaODVJSnktV3JCYVNSWllUWWhHN2FCUThacUZXZkxpbDEzMUhaTW1MX2drR3Y1eFdmX0tLMGhjcFFVQTVMcVZ1VVpZcVlYMUUwaHIyeWViajlqaUdTUS0wX3VnU3FYeG5PM3o?oc=5",
-     "published_at": "2026-10-17T16:48:30+00:00",
-     "publisher": "Xinhua",
-     "source_url": "https://english.news.cn",
+     "title": "India’s space economy could hit $45 billion as government targets private investment",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVG1IamtOSVgtS0k0eFRzLW9nSy1IOGFiVE5RRDh3cTk0OWozZzFncTFnU1V2aGNnbC1rZkdOSzZuYU1QVmZSQjRmUUxneTl4NDVLNURRZm5xQ3AxSDlfQm9ieU5NamREMFlVaEhLTW1zdkY0OGpDQmpQMUxWOTFkUm9WRkdiRXo0XzBWbFZDU3ZuNGlDakxZQUplVkxsLURjdVln0gGjAUFVX3lxTE5UbUhqa05JWC1LSTR4VHMtb2dLLUg4YWJUTlFEOHdxOTQ5ajNnMWdxMWdTVXZoY2dsLWtmR05LNm5hTVBWZlJCNGZRTGd5OXg0NUs1RFFmbnFDcDFIOV9Cb2J5Tk1qZEQwWVVoSEtNbXN2RjQ4akNCalAxTFY5MWRSb1ZGR2JFejRfMFZsVkNTdm40aUNqTFlBSmVWTGwtRGN1WWc?oc=5",
+     "published_at": "2026-10-17T17:25:13+00:00",
+     "publisher": "DQ",
+     "source_url": "https://www.dqindia.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "WHO Urges Vigilance after Kenya Confirms Second Ebola Case",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOX1lCSjRrUlNDUEFlXzZkQnNxaHF4MjE4eWlzYmRnSGpLNGx5VHgydU1kc2ZWbXQ4UFZnTGdsVmdMWFV0bl9OVU1YWEswNDg2blBPS1lYN2x2c1hqdXBOa2NBb3NNbVRtMk42VXRsOUw0SXRzMVQ2VmljX1VrWmp2aVdZRUFUa1k?oc=5",
-     "published_at": "2026-10-17T10:41:24+00:00",
-     "publisher": "Vellum Kenya",
-     "source_url": "https://vellum.co.ke",
+     "title": "India's space economy may reach USD 40-45 billion in 7–8 years, private investment key: Jitendra Singh",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNNE5LMzhtUVd0TVg0MzA3R2JPUFVQVUxaWUROYmlrcTZVUVdSblFMYks3V3ZYQkUtZXZ6blVVbHc2WFpzZ242UXZXbjg1MFRGUVVFZFEyNDZOYnNLMjBwaXQ2dXJSMUNxZzA3YjZkQjBwdFZrSll3UjlPU0tuME5jRDFkbTFkTHBjQmdvVWQxNkRQdnNvakNYZVdtUmo2Z0d3bGtBQkdBdHNlSHJpUzdyLWFnUnhRUmlVZER0eDlGLTNXaVN0NUZtZFJUc1RjTnVjbXZnMGVkSkJNQUpQNXB3allPYmJOVnPSAewBQVVfeXFMUHJCcFZwRzkzeU1BMHdMWkNqNEJCbkc5SEcxMkwzSXRqbDltWFdGdk91SmJfVHdGQl9vMUV6MEU2TnNpcFVPNEhBcHBKRGxIQnBMOWpDTmRGWmVWMDRfX2VuU3BVQVYyVHRJTlhFY0JmbTNBLWk1VzVVY0p5SmpKRzRBSFdxWVk0dlhuZXVkc0ViOFZiSFhwUnk1eE9iQlhzNnR0U2o1ZjZFMzRfU3U3OEd5cHhzYzhyZ2RSWjJhM2xfYl8tTkY0WWtVWHBhbzQzVnh5eXhjd0JZTTRJZUVtUjFCMHJMUV9nbkF6a0Y?oc=5",
+     "published_at": "2026-10-17T14:51:24+00:00",
+     "publisher": "Devdiscourse",
+     "source_url": "https://www.devdiscourse.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "𝐊𝐞𝐧𝐲𝐚 𝐜𝐨𝐧𝐟𝐢𝐫𝐦𝐬 𝐭𝐡𝐢𝐫𝐝 𝐄𝐛𝐨𝐥𝐚 𝐜𝐚𝐬𝐞; 𝐬𝐚𝐲𝐬 𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲 𝐭𝐫𝐚𝐧𝐬𝐦𝐢𝐬𝐬𝐢𝐨𝐧 𝐫𝐞𝐦𝐚𝐢𝐧𝐬 𝐥𝐨𝐰 Kenya has confirmed a third case of Ebola (Bundibugyo virus disease), with the Ministry of Health saying there is no evidence of community transmiss",
-     "url": "https://news.google.com/rss/articles/CBMi6whBVV95cUxQZ09pUGZLYW0tNlNTY2VQT1VpUHpGNTVjUVJMcjAyN2ZmU09tV3B0M2pERXBZXy1NS0Q2bF9XNk9vbWExQkg3NXdhLVhGVEQ1NWZIMzE4X1RjeGNEOVkwckJnRjZ0emNSOFVJSU5LSUQ3VlVWeWNKd2o2UFdmSXVaMS12Y08xNUtISGNzUEQ3ZHpnYldRTThhNldaZzBzbnFUd0xjWWNFVFNSb3VyVUdFRTQ0NTEtZHlldHRfSThJc0NuUndSeEgwdTNTYzBTX2c5WEIzWnU4LWlOSGx1ZDl5ckNKRGIya1hJYWttRGF1elpTam5QQlBuWkx4aXBFMjNCTkRubEZzR3E5UWprLVBWeHRqeXVSWEtrc0hBYUxuX1hXYU40ZWJjcE1DUWJxVHdvTVRHZWpYVVItYW9WV1l4VFdlVnQwYjZHWUdCX3BJVkx1Ym9jMkpTS1QzV2pNVWxldVBMaXdwaGNCUlNDVTROOWFOZnN4Q3VNY1FMMGlSM1lWVEFRU0JaQnhCWGV4NG5hTGNGN3o5cUp4ZHBwM0ZPSkNxMmYycEhjX0V2VU14U1lzN3E0R21MQ0RwN2pRTjBmTTQxU1RKeVpWaG1QbjQzMGNtT0lORzJmUnhUbk1fTC1NaTZZbGNrdkoyUTlJYnlKeXAxTXdaTndKcUVId0RRd0NzNm9XTmNNWUYxNTdsbUtRakhoV282NXUzaVFsaE1yeGNpbFRVcmpUSDhYQ0VkZGk5VjJBaHhqNUlGN1FVU2dwc2dsOXMxQWJDNmhXRTR4X2dTaEFnejJYbGV1VFJNNkxOeEJGTGxDaGlfbkNSQkYwSERxTE8tTEJXbllxQS1DYmV5MHJGbVN6QW9yeTlzMW5kZHJIWlgwTEo0X0liRWtSVFJDdldhbEd1cjc2UnctSDVZa3p0S1BtZlFFREF2WmlxT2dZMnNlMF9mMThoVnl1Q202cWJ4SGtwZHpLLVhkVDEzek50T1JpYUtpNlo2dmxUX3FRSjhSRkl2aTVoV0F6R09wR05lclNDZlF0MERvNXRQYmRZY2hNZ2FxNHZKSk1WalRYWFBRaVN5SEQwMEVxUDRMNV9oRjFzM1diaUowYlFYWnNIRldsNnpKcTBLakZkb3VKalZuV29BRTNmczVHVlhaVHVueUJWRHJiVVR1cVdqZWgzbXNfRF9rNHZlNTJGalpjYW82MzdwTTk1QW5FODJxbm9YT0NSWFdHaVlxSTRuQXZ1RXRUenZDRmY4akF3cjFrUDg2SzZfbXpuZF9qdWEyV1BxWnNBZjIxV1hNVUdibk1KVjI2bEFHWThVblZ1QkpYQWtId2FVT0dnWkhnU3hGUVowSGQ0NmhYdE4xeWozNHRtMXgxLURmYkQtcWI4dThSMlpEOVV5a2ZkempLZkptTTZ2ZnlVUklkeFRaRWNVQ3VDSndrb3lVUElMNlFsZzNoa0RETmFQVDdNdzBkQ2dkSDdKYlVabWZSTEpZdlUzdUdzWURTMDg?oc=5",
-     "published_at": "2026-10-17T10:05:01+00:00",
-     "publisher": "Facebook",
-     "source_url": "https://www.facebook.com",
+     "title": "Morgan Stanley sees risk asset bull market regaining momentum as growth, AI support returns",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPb0pEVV96T2NBMTJ5Q3hUalA0OFY0SXdCekYzYVJ3b0gxeTQyaDJSTmxuSlJlbVR5V3pSdmdCOFhWeC1DR2Z1dDRfaDRRclp4MVh0RlNXWWFBVFBScGpZNGlFWlMzcVZUcE9nU1hPcXhSQnNLS1U2TGtPbFlhalRrdjZpamx2RmxBZVZxZk9TOGVOdFp1TXRSME50WGhlMmR6MmJfallBQkIyOVItMnF2c3h1dUd1QnVEOGhBSzQ2bWMwcHgzNFZfOFFkSmx5TDE5MkRweHpmUGpKdGRBYTlmdkswQzN2UlFCazFFTlYwOTRiVjkwNXBXNGJ5NjhJZzVLUG5yd3hHb3l5RjNqbHNxZ0xB0gGXAkFVX3lxTE5nRlB4U0YxX0puR2pJNjBHQ3B5VzdTQjhsMWsxTElKWk1JX29pQjNOT2l3LWIxcm9mNThLYTNBSFRRQ01mTHZJUE5FWGVCam5MUFBaSnVNMV9wT2hDYXhTTzBnYzl4T0Q3aUlwQWVFTXNWMm5JbkRwRnd3a29nWDltSjJRakN3bXFtc2MxX3l4alBSNU1tbzlLUlE3RVNFRE11VEN2bkFkN01RcklaRE1mdTRjYTZ3RmExbkpQZGxVWXd0bldINnpqcUlyLWstMlQ3OXRDdmp3LXZmMlR6ajVhQ1Jydnk1R2h3a1pPN0RqWU1NSHVyckNWVGZ3REdRbk0zYXBHOGlrQkRTdjc0bkl0RjVwSE9hVQ?oc=5",
+     "published_at": "2026-10-17T08:34:00+00:00",
+     "publisher": "The Times of India",
+     "source_url": "https://timesofindia.indiatimes.com",
      "source_kind": "aggregator",
      "language": "en",
-     "geo_match": "headline"
+     "geo_match": "description"
     },
     {
-     "title": "Kenya's race to contain Ebola: Two cases, one death and a health system caught off guard",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaWJmUWttd0VFVTlCMTZUTm9waHZIV1poUFhBTW9IUFZwRldFMmNxTW5tWUlnSVFGZGxVNllkbFRnNG41cklMZlQ3cl9jRXB2QXBKOVg4Z0toWXRudmRVUTJ1Sm5YY0FURkNRdmhzdHBWRlRrVlNGUnNsNktiSGg1aUxR0gGCAUFVX3lxTFBfa1MyOU1QZG9Pd01HZ2xzTlQtbzBJeUpMZ2dwcm1mVUhqZmg3NkNvVS0yVXQzQjJYV2E5OHExakl6ZDl5dlUxc2dZVDR3MERuSllXa2JiNHhfMVBHT0ZsTURGeEpwYm8zdk1SVHNXdzNMcDdBcDJYWUp6Y3V6bTA2VkE?oc=5",
-     "published_at": "2026-10-17T08:48:20+00:00",
-     "publisher": "DW.com",
-     "source_url": "https://www.dw.com",
+     "title": "India-UK relation must move beyond trade, investment",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZG9qZ0M1Rk51Z29hYl9sWUVLdVVpZUNaWGFZMExCUS00T3YtMjNEUUdLanViN3Vubm9lVUw1Q3FkQWpabUs0cUk2Uk1IdlZhd2pvSzkwR2I1b3JZWFpSZ1ZHMC1PUG5SM3A0U2JOaG5xMTAzWmZkNlFRTWE5VXd2MmRwaHdrTG54Qi1uSHk2U0xpWVFpcUNmNE13b3FHUlV1Ynk5dWItaTTSAbYBQVVfeXFMT3lnallRYkM2Y3BMWldZWUtEeEsySFhRMDR2Skw5RmFKc1VQVVM1eVR5YWcxUEpJbVk4bHlzWTBPZUZ4WVVQLTBxZTRoM2xJT1RtTEtDMTUteXNfOWVERFBWcnFvVXQ0TU5jQ1V1Wl9FWU1CWDRnZXFEVmZPSE5TSkZheGRRRGFyWHRyclphcnlZdExMU2N4YzV5THF1ZGV3WkwzUi1oZ2RXUkJ5eEg2REI3Z1p6dlE?oc=5",
+     "published_at": "2026-10-17T06:27:23+00:00",
+     "publisher": "The New Indian Express",
+     "source_url": "https://www.newindianexpress.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1676,21 +1697,21 @@
      "geo_match": "headline"
     },
     {
-     "title": "Airstrike kills 3 children in Yemen, and other Middle East developments - The Tribune-Democrat",
-     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQS2trbEYtUlZFcjBCOEIzaDBHUTlzU1dNUmZ6TjYxUlB2aDJqWnl4a2xFaUI1a2RCa3VkdGI2QXV2QVdFTDY5TnZSQm1WYm9kREhsQ0NnU1pjZ0ZjUklYbzZRRXVRb3d0RkROMzJfakNncUdYVGpFUDN4d3VDTmpzNDRUVE50MDVQSlA4ZUNIYUNmYkZPUjhYaU1PeHBCdzNjMjJwRjJxMkhkeXQ1TUx1aWY4a0daMjZIUFhGTnBZd1pHVFlHbmh3WktPaUU5OGdZbnoybzVKNEVrZEtnZGFuMjNBWWphcGF1ajQzbzhkcXJ0LUE?oc=5",
-     "published_at": "2026-10-17T09:57:00+00:00",
-     "publisher": "The Tribune-Democrat",
-     "source_url": "https://www.tribdem.com",
+     "title": "Airstrike kills 3 children in Yemen, and other Middle East developments",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZkNhbTI3V3oyWldBd2FGYXN2cUtUdzNONmplV3gzdXZqdXN5allGdjl2NWhXRTdrMTNNVGt6eTg4SWxmbUppWUNXdjh0eFd2WTlnQWoxbWVacUpiVHhqZDlWWW5GMmZmRVhUd3pIUWRSVXVKWmZMeGJ0WW9EOExObXBCQUxHVy1OdVl5OW1NOE5NOXlNQ3dkNVpaUFgzNEw1TGRV0gGjAUFVX3lxTE9mQ2FtMjdXejJaV0F3YUZhc3ZxS1R3M042amVXeDN1dmp1c3lqWUZ2OXY1aFdFN2sxM01Ua3p5ODhJbGZtSmlZQ1d2OHR4V3ZZOWdBajFtZVpxSmJUeGpkOVZZbkYyZmZFWFR3ekhRZFJVdUpaZkx4YnRZb0Q4TE5tcEJBTEdXLU51WXk5bU04Tk05eU1Dd2Q1WlpQWDM0TDVMZFU?oc=5",
+     "published_at": "2026-10-17T11:58:13+00:00",
+     "publisher": "Action News Jax",
+     "source_url": "https://www.actionnewsjax.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Airstrike kills 3 children in Yemen, and other Middle East developments",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONGR2YlpuMlJUd1dya0txWDREQ2VzaUJHT21sLW9Da2xxdmVxbU4xMlpuclJna3FzUnRpUzZlV3pFYzBtU3BfalEyM09Wd1lVVjFGZE16LXRYeUR4c1pLRkUyYlhFS0c3bGctbVd4NnhEOXFIUDQyZ3U0aFJubGpDYk1fNFNaMjdGbUxwUXo1TFFjMVY5c2o2ZjF4Z2psWUNuYmpBYkdJTGR4RENCZFNNVw?oc=5",
-     "published_at": "2026-10-17T09:02:32+00:00",
-     "publisher": "Newswav",
-     "source_url": "https://newswav.com",
+     "title": "Airstrike kills 3 children in Yemen, and other Middle East developments - The Tribune-Democrat",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQS2trbEYtUlZFcjBCOEIzaDBHUTlzU1dNUmZ6TjYxUlB2aDJqWnl4a2xFaUI1a2RCa3VkdGI2QXV2QVdFTDY5TnZSQm1WYm9kREhsQ0NnU1pjZ0ZjUklYbzZRRXVRb3d0RkROMzJfakNncUdYVGpFUDN4d3VDTmpzNDRUVE50MDVQSlA4ZUNIYUNmYkZPUjhYaU1PeHBCdzNjMjJwRjJxMkhkeXQ1TUx1aWY4a0daMjZIUFhGTnBZd1pHVFlHbmh3WktPaUU5OGdZbnoybzVKNEVrZEtnZGFuMjNBWWphcGF1ajQzbzhkcXJ0LUE?oc=5",
+     "published_at": "2026-10-17T09:57:00+00:00",
+     "publisher": "The Tribune-Democrat",
+     "source_url": "https://www.tribdem.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -1872,6 +1893,54 @@
    ]
   },
   {
+   "lat": 13.46666666,
+   "lng": 144.78333333,
+   "name": "Guam",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 3,
+   "publisher_count": 1,
+   "category": "hazards",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Category 4 Typhoon Champi narrowly misses Guam",
+     "url": "https://www.rnz.co.nz/news/pacific/1987119/category-4-typhoon-champi-narrowly-misses-guam",
+     "published_at": "2026-10-18T02:06:02+00:00",
+     "publisher": "RNZ National",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Category 4 Typhoon Champi bears down on Guam",
+     "url": "https://www.rnz.co.nz/news/pacific/1974263/category-4-typhoon-champi-bears-down-on-guam",
+     "published_at": "2026-10-17T19:35:40+00:00",
+     "publisher": "RNZ National",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Guam on high alert as Typhoon Champi strengthens, ports shut",
+     "url": "https://www.rnz.co.nz/news/pacific/1972209/guam-on-high-alert-as-typhoon-champi-strengthens-ports-shut",
+     "published_at": "2026-10-17T05:25:01+00:00",
+     "publisher": "RNZ National",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 31.9,
    "lng": 35.2,
    "name": "West Bank",
@@ -1916,54 +1985,6 @@
      "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 31.77,
-   "lng": 35.22,
-   "name": "Israel",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 3,
-   "publisher_count": 2,
-   "category": "community",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "US ambassador urges Israel to prosecute attackers of American journalist",
-     "url": "https://www.aljazeera.com/news/2026/10/17/us-ambassador-calls-on-israel-to-prosecute-settlers-over-journalist-attack?traffic_source=rss",
-     "published_at": "2026-10-17T23:40:59+00:00",
-     "publisher": "Al Jazeera",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Why are Latin American countries building closer ties with Israel?",
-     "url": "https://www.aljazeera.com/news/2026/10/17/why-are-latin-american-countries-building-closer-ties-with-israel?traffic_source=rss",
-     "published_at": "2026-10-17T16:54:44+00:00",
-     "publisher": "Al Jazeera",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Cisjordanie occupée : des colons attaquent un convoi diplomatique et frappent un maire français",
-     "url": "https://www.france24.com/fr/moyen-orient/20261017-cisjordanie-occup%C3%A9e-colons-israel-attaque-convoi-diplomatique-frappent-maire-fran%C3%A7ais",
-     "published_at": "2026-10-17T15:02:41+00:00",
-     "publisher": "France24 FR",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "fr",
-     "geo_match": "description-normalized"
     }
    ]
   },
@@ -2400,6 +2421,82 @@
    ]
   },
   {
+   "lat": 31.77,
+   "lng": 35.22,
+   "name": "Israel",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "politics",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Keen for change, Israel’s Arab minority sees election as existential",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTF9XLUZJR3ZHeU1xMVBqNmcxLUZIWjhleUhIeEY0ejE1Z0ZuTlBjdWx0VFByNHpTS2d4WDFtY0lMYU1Yb0dyZlRrY3d4TW1SU290UEszUzN2emd3NVBHcHpxRHQyTjFqU081OTZlWGtIUlBSMkM3dmFiaDZMV0RyUkJBcW9lYTJ1WjNQV3NvZ0V4ZUdHZDZrVElBczVIVWtiT21oemY2R0IxMzE1T2tYSQ?oc=5",
+     "published_at": "2026-10-18T01:59:20+00:00",
+     "publisher": "Arab News",
+     "source_url": "https://www.arabnews.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "Israel Election 2026: Can Netanyahu Lose Power?",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTV9pUXpJX3EwV3pnOUNVek9zQmNCMFVPekJ4azJZZjhJZWYxaTFiWVJ2elRQdUdCUERwUkhDMVRYMzRvU2ZXMDVWMWZ0SHFZWWw5Q2FUdVB2VGxNWFJEQVc0b0ljcHhITGdDNnVNdXcwU0NDWnllSWNOQ0dfak84N3ZoNFA?oc=5",
+     "published_at": "2026-10-17T06:04:51+00:00",
+     "publisher": "Dainik Jagran MP CG",
+     "source_url": "https://english.dainikjagranmpcg.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 33.75,
+   "lng": -84.39,
+   "name": "Atlanta",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 2,
+   "publisher_count": 2,
+   "category": "community",
+   "recent_3h": 2,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 200,
+   "articles": [
+    {
+     "title": "‘Standing up for democracy’: Atlanta ‘No Kings’ rally draws Trump critics ahead of midterms",
+     "url": "https://www.france24.com/en/americas/20261018-standing-up-for-democracy-atlanta-no-kings-rally-draws-trump-critics-ahead-of-us-midterms",
+     "published_at": "2026-10-18T01:50:29+00:00",
+     "publisher": "France24",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "headline"
+    },
+    {
+     "title": "\"No Kings\" : à Atlanta, une manifestation anti-Trump tournée vers les urnes",
+     "url": "https://www.france24.com/fr/vid%C3%A9o/20261018-no-kings-%C3%A0-atlanta-une-manifestation-anti-trump-tourn%C3%A9e-vers-les-urnes",
+     "published_at": "2026-10-18T01:29:23+00:00",
+     "publisher": "France24 FR",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "fr",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 45.83362,
    "lng": 1.24759,
    "name": "Limoges",
@@ -2590,38 +2687,38 @@
    ]
   },
   {
-   "lat": 45.42,
-   "lng": -75.7,
-   "name": "Canada",
+   "lat": 31.77,
+   "lng": 35.22,
+   "name": "Israel",
    "accuracy": "country",
    "location_basis": "headline",
    "location_role": "geographic_subject",
    "event_location_verified": false,
    "count": 2,
-   "publisher_count": 2,
-   "category": "economy",
-   "recent_3h": 0,
-   "previous_3h": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 100,
    "articles": [
     {
-     "title": "Bank of Canada set for pair of important data drops ahead of 'live' rate decision",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRXFJRWY3WS1Uanpqc0lFZDc1Yl9vNDI4SmZ4cTMzajNhaE1NVTI2amNfeGxEeUdHUEVZTnVMRlBFWmRGaUEyMzRLMHV2M1lNdkd3TWxVLURqam1zUTgwSWJzcDZsSE5nZUNpaWpXMlJBNENKbGs5OUhOZFhpVFE5TXplZGRTR1RsanhESmVNdDRZUlAtVFl5V3I1Nno4dHdVdnc5OEk3Z2tsSE1fbGhrUUFHbjlSby01NGFnNkdwTXBJeWN4c3hjbzdBNjhEbEY2WXVMQg?oc=5",
-     "published_at": "2026-10-17T22:43:58+00:00",
-     "publisher": "BNN Bloomberg",
-     "source_url": "https://www.bnnbloomberg.ca",
-     "source_kind": "aggregator",
+     "title": "US ambassador urges Israel to prosecute attackers of American journalist",
+     "url": "https://www.aljazeera.com/news/2026/10/17/us-ambassador-calls-on-israel-to-prosecute-settlers-over-journalist-attack?traffic_source=rss",
+     "published_at": "2026-10-17T23:40:59+00:00",
+     "publisher": "Al Jazeera",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
     },
     {
-     "title": "Canada’s Economic Sovereignty Faces a Test in a Multipolar World",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYnFPaG4yckU5dFJuZkFYa2FYVkY3LTlVOWNFQk9BS3FTMjQ5NnJCVVU4dzdXRnlYYjI5d2M5T19zRVhST09YY2d1NG13Z05KWHRFQlB6ZjJZenlIeUkyc1BYMmdCU1R4akVSZzdxbF9vN0kzSE5WYUJjeExMcmlkUkhUd2RtU1dEUGk4TTU2ZmwtNHFzYUxIakYwUzg?oc=5",
-     "published_at": "2026-10-17T02:05:14+00:00",
-     "publisher": "CEOWORLD magazine",
-     "source_url": "https://ceoworld.biz",
-     "source_kind": "aggregator",
+     "title": "Why are Latin American countries building closer ties with Israel?",
+     "url": "https://www.aljazeera.com/news/2026/10/17/why-are-latin-american-countries-building-closer-ties-with-israel?traffic_source=rss",
+     "published_at": "2026-10-17T16:54:44+00:00",
+     "publisher": "Al Jazeera",
+     "source_url": "",
+     "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
     }
@@ -2791,9 +2888,9 @@
    "publisher_count": 2,
    "category": "environment",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Giant lizard that can grow up to 6 feet is invading South Florida's ecosystem - ABC News",
@@ -2852,44 +2949,6 @@
      "source_kind": "publisher",
      "language": "en",
      "geo_match": "description"
-    }
-   ]
-  },
-  {
-   "lat": 13.46666666,
-   "lng": 144.78333333,
-   "name": "Guam",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 2,
-   "publisher_count": 1,
-   "category": "hazards",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Category 4 Typhoon Champi bears down on Guam",
-     "url": "https://www.rnz.co.nz/news/pacific/1974263/category-4-typhoon-champi-bears-down-on-guam",
-     "published_at": "2026-10-17T19:35:40+00:00",
-     "publisher": "RNZ National",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
-    },
-    {
-     "title": "Guam on high alert as Typhoon Champi strengthens, ports shut",
-     "url": "https://www.rnz.co.nz/news/pacific/1972209/guam-on-high-alert-as-typhoon-champi-strengthens-ports-shut",
-     "published_at": "2026-10-17T05:25:01+00:00",
-     "publisher": "RNZ National",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "en",
-     "geo_match": "headline"
     }
    ]
   },
@@ -3882,6 +3941,34 @@
    ]
   },
   {
+   "lat": 14.6,
+   "lng": 120.98,
+   "name": "Philippines",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Castill Health Announces Plans for Philippines Digital Healthcare Launch, Supported by Craig Astill and Caason Group",
+     "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNVkpYT3lRcTBFVVFQSzdRbmM0eWt5NEpqWjFmVk1vaGYwWHR3ZGhlaU5rX01hN1BnSlBHUmowc1hidDBLcDlBREhsYnhEWUFKeWtqMjFIamZKWGotdmxVSDZlX2o4UFppNlhLTk9McHplM0h6X0F5Mmw4R3NEQXR3dEd2SDVtVDdxSGY4WF9qS0pzcjFDdm4xR1pDR0FVS2dSdDI1NS14Ti1WUnVFNU9XTzZkUkx3dTM3c0dabFdEUTV2VmN5a1hoLW9LeGtvUk5zVThYM3FxNEdKOGhZbFlpV3pnN2Z2cm1zeUROM1FPNjJlNzFUenFaTjRSSUMzZEtscnJnbDNxQVh3bjYwbjRiVEs2VTLSAZoCQVVfeXFMT1plMV94bUZSUUpXV2pwcXNrbWxMT3BjRzhUWkZTMURDdUt3NzUzOTk3TEtxeExxZVV2cW1Qb21HTkRJTmhCMjRLV3ZEVm54aVpBTDFWemxRMkNKbDNOS0VNUUQ3RDZjLWxZc1I3SXRON0RsY1RpTVNGcUc5VXJ1Uno3dUJ6ZlRrRjI4Q0NsNmVBMFhsMkpfZ0lITFZLNDExN0NjRGV2ZjEzNjZyYm1JanBRbDlfMWh1MUptdzRHTVAzanZBVFNVOF9kNExCUTl5RU1PUE9nY2dOVUlieVFMbFRhZDFHRE1QVlloRHR4TkRvc2ljUTdlSUV1MmtPUTZrQ0pkUlJXYXotbHFHZTVCRkJqYU9rdHdSSWtR?oc=5",
+     "published_at": "2026-10-18T02:02:55+00:00",
+     "publisher": "The Manila Times",
+     "source_url": "https://www.manilatimes.net",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": -41.29,
    "lng": 174.78,
    "name": "New Zealand",
@@ -3899,13 +3986,41 @@
    "articles": [
     {
      "title": "Live: New Zealand Kiwi Ferns v Fiji Bulikula",
-     "url": "https://www.rnz.co.nz/news/pacific/1986457/live-new-zealand-kiwi-ferns-v-fiji-bulikula-women-s-rugby-league-world-cup",
-     "published_at": "2026-10-18T01:45:20+00:00",
+     "url": "https://www.rnz.co.nz/news/sport/1984715/live-new-zealand-kiwi-ferns-v-fiji-bulikula-women-s-rugby-league-world-cup",
+     "published_at": "2026-10-18T01:59:23+00:00",
      "publisher": "RNZ National",
      "source_url": "",
      "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": -37.69,
+   "lng": 176.17,
+   "name": "Tauranga",
+   "accuracy": "place",
+   "location_basis": "description",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Family mourns 'bright light' as harbour plunge victim named",
+     "url": "https://www.rnz.co.nz/news/community/1986632/family-mourns-bright-light-as-harbour-plunge-victim-named",
+     "published_at": "2026-10-18T01:51:31+00:00",
+     "publisher": "RNZ National",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "en",
+     "geo_match": "description"
     }
    ]
   },
@@ -3934,34 +4049,6 @@
      "source_kind": "publisher",
      "language": "es",
      "geo_match": "description"
-    }
-   ]
-  },
-  {
-   "lat": 33.75,
-   "lng": -84.39,
-   "name": "Atlanta",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "community",
-   "recent_3h": 1,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 100,
-   "articles": [
-    {
-     "title": "\"No Kings\" : à Atlanta, une manifestation anti-Trump tournée vers les urnes",
-     "url": "https://www.france24.com/fr/vid%C3%A9o/20261018-no-kings-%C3%A0-atlanta-une-manifestation-anti-trump-tourn%C3%A9e-vers-les-urnes",
-     "published_at": "2026-10-18T01:29:23+00:00",
-     "publisher": "France24 FR",
-     "source_url": "",
-     "source_kind": "publisher",
-     "language": "fr",
-     "geo_match": "headline"
     }
    ]
   },
@@ -4018,6 +4105,34 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 41.59,
+   "lng": 1.52,
+   "name": "Catalonia",
+   "accuracy": "region",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 1,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 100,
+   "articles": [
+    {
+     "title": "Ulises Cortés: 'Los fallos de Meta contra cuentas de candidatos siempre tienen intensión'",
+     "url": "https://www.france24.com/es/video/20261018-ulises-cort%C3%A9s-los-fallos-de-meta-contra-cuentas-de-candidatos-siempre-tienen-intensi%C3%B3n",
+     "published_at": "2026-10-18T00:33:28+00:00",
+     "publisher": "France24 ES",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "es",
+     "geo_match": "description-expanded"
     }
    ]
   },
@@ -4526,6 +4641,34 @@
    ]
   },
   {
+   "lat": 45.42,
+   "lng": -75.7,
+   "name": "Canada",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "economy",
+   "recent_3h": 0,
+   "previous_3h": 1,
+   "velocity": "steady",
+   "velocity_change_pct_sample": -50,
+   "articles": [
+    {
+     "title": "Bank of Canada set for pair of important data drops ahead of 'live' rate decision",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRXFJRWY3WS1Uanpqc0lFZDc1Yl9vNDI4SmZ4cTMzajNhaE1NVTI2amNfeGxEeUdHUEVZTnVMRlBFWmRGaUEyMzRLMHV2M1lNdkd3TWxVLURqam1zUTgwSWJzcDZsSE5nZUNpaWpXMlJBNENKbGs5OUhOZFhpVFE5TXplZGRTR1RsanhESmVNdDRZUlAtVFl5V3I1Nno4dHdVdnc5OEk3Z2tsSE1fbGhrUUFHbjlSby01NGFnNkdwTXBJeWN4c3hjbzdBNjhEbEY2WXVMQg?oc=5",
+     "published_at": "2026-10-17T22:43:58+00:00",
+     "publisher": "BNN Bloomberg",
+     "source_url": "https://www.bnnbloomberg.ca",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 21.30694,
    "lng": -157.85833,
    "name": "Honolulu",
@@ -4873,9 +5016,9 @@
    "publisher_count": 1,
    "category": "politics",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Even Sisi Asked His Parliament Before Defending Saudi Arabia. Pakistan’s Government Didn’t",
@@ -4901,9 +5044,9 @@
    "publisher_count": 1,
    "category": "conflict",
    "recent_3h": 0,
-   "previous_3h": 1,
+   "previous_3h": 0,
    "velocity": "steady",
-   "velocity_change_pct_sample": -50,
+   "velocity_change_pct_sample": 0,
    "articles": [
     {
      "title": "Israel destroys building in Beirut amid escalating Hezbollah conflict - ABC News",
@@ -6010,6 +6153,62 @@
    ]
   },
   {
+   "lat": 28.29,
+   "lng": -16.55,
+   "name": "Canary Islands",
+   "accuracy": "region",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Canary Islands: Clavijo fears a new reception centre for migrants",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdVR3WW5faUg3enpyLV9hQU5pTWNtY0ZBcGliWDNtcnl6R1J6STRiM3NGNm5IZlR1Wk5zSmhCU1BVdVJXOVpaLTN5MXRtRDBlelZwOWg1RUxMcC1oeHFxZEFwM0Rxckx4M2l2Q3ZfemRCcFo2TE1sdmtqdUxqY1FFa1JLcVdmVkNKUHRsM2dTZ0xvbzV6c3FTMjNtR1VPMnA1c0kxTVFMRXR5dmptc1d3bUo2ZU1MS2ZyMnRGNDRRRno0RzRSV3JsWWIzV2pnWmNOblctSQ?oc=5",
+     "published_at": "2026-10-17T15:17:28+00:00",
+     "publisher": "Teneriffa News",
+     "source_url": "https://www.teneriffa-news.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline-expanded"
+    }
+   ]
+  },
+  {
+   "lat": 31.9,
+   "lng": 35.25,
+   "name": "West Bank",
+   "accuracy": "region",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "community",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "🔴 Cisjordanie occupée : un maire français frappé par des colons israéliens lors de l'attaque d'un convoi diplomatique européen",
+     "url": "https://www.france24.com/fr/moyen-orient/20261017-cisjordanie-occup%C3%A9e-colons-israel-attaque-convoi-diplomatique-frappent-maire-fran%C3%A7ais",
+     "published_at": "2026-10-17T15:03:57+00:00",
+     "publisher": "France24 FR",
+     "source_url": "",
+     "source_kind": "publisher",
+     "language": "fr",
+     "geo_match": "headline-expanded"
+    }
+   ]
+  },
+  {
    "lat": 10.31032,
    "lng": 9.84388,
    "name": "Bauchi",
@@ -6283,6 +6482,34 @@
      "published_at": "2026-10-17T13:35:32+00:00",
      "publisher": "Pakistan Observer",
      "source_url": "https://pakobserver.net",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
+   "lat": 55.16667,
+   "lng": -118.80271,
+   "name": "Grande Prairie",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "society",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Grande Prairie high school students stage walkout in protest of teacher's social media post disputing graves at Kamloops Indian Residential School",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRjFIekhQMjdkcGllck1tZ20yT3ZvUTNwazFwTFFsSzJ4ZkNIVFhaME0wSTFXRHlLSDc0YmROYlNHR3EyMHl6cll1Z245OV9IOUtiNTN0V1hWZThGd2ItZ21FWXVnd29kN1BiMkhzcFJ0S1d5SUpQSnJUNFZLcERsR3R3?oc=5",
+     "published_at": "2026-10-17T13:34:48+00:00",
+     "publisher": "Yahoo News Canada",
+     "source_url": "https://ca.news.yahoo.com",
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline"
@@ -6704,34 +6931,6 @@
      "publisher": "Indian Masterminds",
      "source_url": "https://indianmasterminds.com",
      "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
-   "lat": 31.5,
-   "lng": 34.47,
-   "name": "Gaza",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "hazards",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Flour sacks turned flood barriers: Gaza faces another winter without safe shelter",
-     "url": "https://news.un.org/feed/view/en/story/2026/10/1168619",
-     "published_at": "2026-10-17T12:00:00+00:00",
-     "publisher": "UN News",
-     "source_url": "",
-     "source_kind": "publisher",
      "language": "en",
      "geo_match": "headline"
     }
@@ -7970,6 +8169,34 @@
    ]
   },
   {
+   "lat": 11.58528,
+   "lng": 122.75111,
+   "name": "Roxas City",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "The provincial government of Capiz has begun transferring medical equipment, supplies and other medical facilities from the old Roxas Memorial Provincial Hospital (RMPH) to the new Capiz Medical Center (CMC) in Barangay Lanot, Roxas City, ahead of its",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQeGtHMzJFMGE5RWdqQkxoek9NUzAyTkhQOVZuY0d6d3BkY0J5MEEtTnNYbWdhYk5iekk4WEJHVzhmV29JWFNkcFpwa0FuNjVXTHFrTFYyM2tDOTFMZHJaSXpFbkQ0TlNrNkg5WTlISUQtX1Bld3FhbG1IaWhmeURZbzhaMi1pMFpKNUFzakdfMHBQSXdPUlg0Sm9VdDlJRGV6TmFpMGYxQVdaelk1eUt5MFJWX3RiaExfS2g2eDltcV9RNTNKalg5QzIxYWdZUUJrRXA3N3FXMWtUenE3cWc?oc=5",
+     "published_at": "2026-10-17T07:01:01+00:00",
+     "publisher": "Facebook",
+     "source_url": "https://www.facebook.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": -9.44,
    "lng": 147.18,
    "name": "Port Moresby",
@@ -8078,34 +8305,6 @@
      "source_kind": "publisher",
      "language": "en",
      "geo_match": "description"
-    }
-   ]
-  },
-  {
-   "lat": 31.77,
-   "lng": 35.22,
-   "name": "Israel",
-   "accuracy": "country",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "politics",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "Israel Election 2026: Can Netanyahu Lose Power?",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTV9pUXpJX3EwV3pnOUNVek9zQmNCMFVPekJ4azJZZjhJZWYxaTFiWVJ2elRQdUdCUERwUkhDMVRYMzRvU2ZXMDVWMWZ0SHFZWWw5Q2FUdVB2VGxNWFJEQVc0b0ljcHhITGdDNnVNdXcwU0NDWnllSWNOQ0dfak84N3ZoNFA?oc=5",
-     "published_at": "2026-10-17T06:04:51+00:00",
-     "publisher": "Dainik Jagran MP CG",
-     "source_url": "https://english.dainikjagranmpcg.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
     }
    ]
   },
@@ -8474,6 +8673,34 @@
    ]
   },
   {
+   "lat": 23.81,
+   "lng": 90.41,
+   "name": "Bangladesh",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Bangladesh is battling measles. It's a 'real warning' to other nations, Asia News",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR2pKVzhEVDdzUk16MkNCZjh4c01rdjVHUTdrNV9lbmVvVHdELUNUdXBocjl1N3dGb3RFNWVqUmFkUWhId3BtbDJfemx6bHpWb0Y4UktseE5UUEpicjVwMTZwTko4WHQzcHFBU0xFbTFFcmpPRE9DdllrLVdKMkNNQ2NjN0ZjOFRwZWF1VzUyeDI?oc=5",
+     "published_at": "2026-10-17T04:07:36+00:00",
+     "publisher": "AsiaOne.com",
+     "source_url": "https://www.asiaone.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
+    }
+   ]
+  },
+  {
    "lat": 52.19,
    "lng": -2.22,
    "name": "Worcestershire",
@@ -8498,6 +8725,34 @@
      "source_kind": "aggregator",
      "language": "en",
      "geo_match": "headline-curated"
+    }
+   ]
+  },
+  {
+   "lat": 31.77,
+   "lng": 35.22,
+   "name": "Israel",
+   "accuracy": "country",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "economy",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "Michigan hosts US-Israel business summit amid anti-Israel protests",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5zMEM5T2FIbVBXS1JtbzJmYW5BWEdmQXV2X2pGbkh6QzJFMkJCZ1lsc2V5bW45NlpPM1N6UXhIekNJY3NVWjlxZ1l0VXhWS2ROdm1pMUwzNkI?oc=5",
+     "published_at": "2026-10-17T03:48:47+00:00",
+     "publisher": "The Jerusalem Post",
+     "source_url": "https://www.jpost.com",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "headline"
     }
    ]
   },
@@ -8698,34 +8953,6 @@
    ]
   },
   {
-   "lat": -41.29,
-   "lng": 174.78,
-   "name": "Wellington",
-   "accuracy": "place",
-   "location_basis": "headline",
-   "location_role": "geographic_subject",
-   "event_location_verified": false,
-   "count": 1,
-   "publisher_count": 1,
-   "category": "economy",
-   "recent_3h": 0,
-   "previous_3h": 0,
-   "velocity": "steady",
-   "velocity_change_pct_sample": 0,
-   "articles": [
-    {
-     "title": "The case for keeping Wellington’s visitor economy front and centre",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUkNMQWtGQkRsRHZia2dabThTMXZPVkY2ejBNT0lWYzNyOVhtdmV5c2VOdTlENGlSa1dhUS1nTm5PalowUkFXV3NDd3RLOGZLUzEyaHF4cDBOMURmeFpDUDY2aHU3U0RGZTl5bHRYRkZtdTRlOWZUV3NGaXZwR2F2bXFjRGI?oc=5",
-     "published_at": "2026-10-17T02:47:19+00:00",
-     "publisher": "PressReader",
-     "source_url": "https://www.pressreader.com",
-     "source_kind": "aggregator",
-     "language": "en",
-     "geo_match": "headline"
-    }
-   ]
-  },
-  {
    "lat": -13.5,
    "lng": 34.0,
    "name": "Malawi",
@@ -8808,6 +9035,34 @@
      "geo_match": "headline"
     }
    ]
+  },
+  {
+   "lat": 10.32,
+   "lng": 123.89,
+   "name": "Cebu",
+   "accuracy": "place",
+   "location_basis": "headline",
+   "location_role": "geographic_subject",
+   "event_location_verified": false,
+   "count": 1,
+   "publisher_count": 1,
+   "category": "health",
+   "recent_3h": 0,
+   "previous_3h": 0,
+   "velocity": "steady",
+   "velocity_change_pct_sample": 0,
+   "articles": [
+    {
+     "title": "DOH-7 monitors 26.8% rise in respiratory consultations",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQXpWaXJhS0RDdGxTYnZzM2Z5SmNicnUtOWs5Sm84OGdOWTJaUUlzSmVVUXlfVUY2ZHh2OEtKNl9jWVN2ejdBbnNTQ191TnltQldDUUZuSHFNZjJGMTNLcEhQVHk3Y0NCQmF6MkhOLXdjLUpvc2hDVHl2clBDSFAtQWZ3b0JZLUZxSUpjenFCdGNGeW1PVTdGWGlsY9IBoAFBVV95cUxNT0t0ZFh0bWJjWW0tODFvY0hBTnJGMjRnV3FINE05VTBXaEVpNUVpR0I0R1FoN2QzOGdvb0o3QVp3ZEVlY2hyZ3NyUmhWYXJlQXBXR2M3YWhnQ3BzT1MtanZ2TWpqVWp3Ynp2XzNGdzl4SFlURFc2bHljdm1XR04telhHbS0xak50ZlhPLTU5eS10blJWamxhT192NF9FNEZv?oc=5",
+     "published_at": "2026-10-17T02:11:00+00:00",
+     "publisher": "Cebu Daily News",
+     "source_url": "https://cebudailynews.inquirer.net",
+     "source_kind": "aggregator",
+     "language": "en",
+     "geo_match": "description-expanded"
+    }
+   ]
   }
  ],
  "unlocated_articles": [
@@ -8887,16 +9142,6 @@
    "publisher": "BBC",
    "published_at": "2026-10-18T00:49:42+00:00",
    "category": "society",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Ulises Cortés: 'Los fallos de Meta contra cuentas de candidatos siempre tienen intensión'",
-   "url": "https://www.france24.com/es/video/20261018-ulises-cort%C3%A9s-los-fallos-de-meta-contra-cuentas-de-candidatos-siempre-tienen-intensi%C3%B3n",
-   "publisher": "France24 ES",
-   "published_at": "2026-10-18T00:33:28+00:00",
-   "category": "community",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -9792,6 +10037,16 @@
    "reason": "no_confident_geography"
   },
   {
+   "title": "Anthropic Says AI Could Push US Economy to $44 Trillion by 2030",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBvTEZ1U0VzVHNIOS1IN0ZHWDVCN3VFZG53Q3hmSDNwemdsV2IxczVIdUp4N2I5aUl6bWlyV1huRVhoZzA3V2FjS2w5aDB1M1JwSDhnWUFIYlNoak1vRDlHeW1oXzZMMzlCR1ptU3Zyd1d3R3Fj?oc=5",
+   "publisher": "The420.in",
+   "published_at": "2026-10-17T18:21:30+00:00",
+   "category": "science",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "Constructing the evaluation model of students’ behaviors participation",
    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNMFEtdUhzQ2w1Qi1RRmNEYXEwYjJRTkxLRmd5MnY3S1NSOGJSQ1FsS2JER01zUmFoZDhHTmg1bVJTQ1gxT3FxZUpHcGdZWFE0Qm1adEc5XzlsS0h2ZUE5cUlTTC0tbU56U3kzSEk3bUpLaHo3Mk5OSkhMYnU1OU0wa2xYc3hHV2xYdWhqbXJxVDVITTNra3A2WFJORlp5VnViME53ZGFYSzV4RDB4VE50V1k1ZTlTaHlBRC04emRZSkt3LWZXbUFLUUNFRVVnbzE1b21PMG5pcFpHVEJQNTllYnA2Q0Q5M0kxZzF1OXN5X05uUUt3cDBmUGtGVEZNbTlIRDdpNE8wcUI?oc=5",
    "publisher": "Bioengineer.org",
@@ -9907,16 +10162,6 @@
    "publisher": "Al Jazeera",
    "published_at": "2026-10-17T17:37:52+00:00",
    "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "CAPEXIT hosts awareness day in Kirstenhof ahead of local elections",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5pLWxyVjlQUFZCN0JoMWhhMWo4UDBndm8tQmRRdm9kWXA2cjdhazRDMlFTZUtfNnlIUVRyQWE4U21KSDE4SEtYYy1KT0oyc2lZWU1NM2dRQQ?oc=5",
-   "publisher": "SABC News",
-   "published_at": "2026-10-17T17:35:37+00:00",
-   "category": "politics",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -10162,6 +10407,16 @@
    "reason": "no_confident_geography"
   },
   {
+   "title": "GMTF: No Family Should Be Crushed By The Cost Of Chronic Illness",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeVNHaVZBYVhyZnQ5VGxvWldablhZVER2UmZlRFctWFUtTkh4YWlHRHZRbzdlNVVYZjdDRUdOeFlRNmJTOFdLUG1qUTk5Y3BpNnRBbXZyMGpwT004OC1RVHo0MTloZXFRbGFmaGpQMDNkeG1kclR6T0dzWUM3TndqTC04U0tINWRXQlAxbko0WmJXVnRXOXkxbTZRUUxiX1luVi1tZHFUN21aUDU0?oc=5",
+   "publisher": "Peacefmonline.com",
+   "published_at": "2026-10-17T15:34:26+00:00",
+   "category": "health",
+   "location_status": "unverified",
+   "browse_status": "recent",
+   "reason": "no_confident_geography"
+  },
+  {
    "title": "Debate na Band no segundo turno: o que esperar do primeiro confronto entre Lula e Flávio Bolsonaro",
    "url": "https://www.bbc.com/portuguese/articles/cwkg57dyvrn3o?at_medium=RSS&at_campaign=rss",
    "publisher": "BBC Brasil",
@@ -10222,16 +10477,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Canary Islands: Clavijo fears a new reception centre for migrants",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdVR3WW5faUg3enpyLV9hQU5pTWNtY0ZBcGliWDNtcnl6R1J6STRiM3NGNm5IZlR1Wk5zSmhCU1BVdVJXOVpaLTN5MXRtRDBlelZwOWg1RUxMcC1oeHFxZEFwM0Rxckx4M2l2Q3ZfemRCcFo2TE1sdmtqdUxqY1FFa1JLcVdmVkNKUHRsM2dTZ0xvbzV6c3FTMjNtR1VPMnA1c0kxTVFMRXR5dmptc1d3bUo2ZU1MS2ZyMnRGNDRRRno0RzRSV3JsWWIzV2pnWmNOblctSQ?oc=5",
-   "publisher": "Teneriffa News",
-   "published_at": "2026-10-17T15:17:28+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "US: Four killed in Oregon school shooting",
    "url": "https://www.france24.com/en/video/20261017-us-four-killed-in-oregon-school-shooting",
    "publisher": "France24",
@@ -10282,16 +10527,6 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "🔴 Cisjordanie occupée : un maire français frappé par des colons israéliens lors de l'attaque d'un convoi diplomatique européen",
-   "url": "https://www.france24.com/fr/moyen-orient/20261017-cisjordanie-occup%C3%A9e-colons-israel-attaque-convoi-diplomatique-frappent-maire-fran%C3%A7ais",
-   "publisher": "France24 FR",
-   "published_at": "2026-10-17T15:03:57+00:00",
-   "category": "community",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Lawyers fault demand for deposits before emergency treatment of patients",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMWhLYVYtdTNtZmZub0RhSVZETWVOTi1OS3g4UUk0LXh3aWl3azlzV1pvWW1fMmFGVWl0bEw1ZTBGSTE2eUc0d0FuQi1SRU9CYWVKVzBMODB1bzdMMUc2X0dXMHNHNm5RZ09wNHFSYVFzc0xKcEdGbmRZYlFqMW1ZcTFsR0llUGtLdHNCbG1HdjkybERfUmFtRVFWVzVvNlFzZ04tTmszOXc0cWRxSmfSAbMBQVVfeXFMTThSdmI4SEF6T0phWk1IWThSQS1QWjVNTWlSNWc1YllOWlZTZ2pxcTNuVFl0aWJ6djBIZHN0bVdvOVlvMHppVXhDRUx4WFNuRXFYMTBQTVVGVkw1RzNodDRWSzdZNklzb080Tzl5LW9NcXJvZTNRRlBMR2oyeHpTZlctTENPTUdVd2xSeE9lQm1wZGtVV0EzeTFMcUZRZ3NweXlNbHl5SDBtSU9HZUo2c3l0ZTg?oc=5",
    "publisher": "Vanguard News",
@@ -10307,16 +10542,6 @@
    "publisher": "The Free Press",
    "published_at": "2026-10-17T14:57:48+00:00",
    "category": "education",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Business News",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQNG5ZTFZVdlk2Wk9zSG84SjdFMU9PUGI5QU5kVjVWRVJBbzN2dXNKWlBQR0M4dFRmeS16eFg3bXF1VnJmWnE4aFVTOWhPWkZDUThsZHFMeGkwTl9oR1g0Z2FKa2FEcEtDaHJyVFFfNHNyeW5sZVJVQ3ZhckJlQTg2Sk9fc3pUOWNjSWQ4YXZsYzg4S1V3R2o5VWpZX1VUY3Y0Q3BGa1E2LXdfdURqZndrdldRWmJNR19fSFdLYU9naGY3SmFSNlg3UkE5TzlBalJXOFVEaE9zMXVYbkxNRlptQWdsUzI1bDdCcEJSd2F0UlpaSDg1VmfSAfsBQVVfeXFMT0MwbHFNT3V6WHpfU3RFc3VfZ1VGaE5aVnN6dl9HRnlpdThNRXFEaVJvQm9wUVFGempTLUFOZ1JsQzY1V0hsX2lhcVF3Qm9aU25XX01qR0lVVTN5OXR2TnR4RWNya3pXdzFMX0lfcE1XRWFzUnAyVE9aX1NGc0NLR3NDNmkza281TG5RN1VPWnRXS21qS05lSm9CR21vTmE5UmRSY2VrWWU2czlkazgzMW8yMFcteVdkRDJteDlHclNZU0tWbWRYTEdDUHhSZmY0Z21JNTJneXFFbHltak9jdlBVZnh6MTBGNzJGRlpQYmZ5azd5TWRtOXNLY2c?oc=5",
-   "publisher": "LatestLY",
-   "published_at": "2026-10-17T14:54:23+00:00",
-   "category": "economy",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -10662,21 +10887,21 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "Neural Network Sharpens Early Drug Discovery With 95.9% Accuracy in Predicting Painkilling Compounds",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaEdKd2pWWFJTZkE2MFMwZzdIVzNOY3pUUG55Zk5WVmthLXR6UkxXU3BSNzNkWHd1ZDZ4aWQ5Q0tpdEd4NkZLOWQ0a3JaLUpQU050NmNJM3RyeU9iWU5RYmt2Zmc1b3lnN2dBRVVBZTM5Ymk2ZzdjYzZJUlRlQkNnMy03bVlwTTN1SGFtTk5zQk5rd2c1RE94SXplQzBzR0NvVk0yaU8xam1vckZtNzhnaGp4TXZza2dpdXpGSEFINnVzQQ?oc=5",
-   "publisher": "Bioengineer.org",
-   "published_at": "2026-10-17T12:26:15+00:00",
+   "title": "NASA’s Webb reveals the wild weather of a mysterious world 20 light-years away",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55cnFBWHpoSEFuMXBmM2E3U3lQb0VHODBzNGNvMWdMOVNnUXA0SktSbTk2RlBteTVaZVpYTVdtc3hOS1kxVks3elkwWnlXb1lQbE1YMlYtT21jWDlLWVhqTDNxc2VmdTZ4VmFGVmlR?oc=5",
+   "publisher": "Science Daily",
+   "published_at": "2026-10-17T12:28:21+00:00",
    "category": "science",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
   },
   {
-   "title": "Grant for UK HEIs to Deliver Online ELT Master’s Scholarships - fundsforNGOs",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZk9LV0NXV2hrVlYxaHpOdkRjcGVOM0RpR1BHNGxHaW12dEhEVGFkT3BNb3U1R1dNRWxHSmdEUjA5aWNxNUNwVURNRzFITE4wQzZRVHVFVmFrbGNCMW9wQ2VaUXd6aDdZMDdFcHlFd1duSl9MSmZvU3VoUVZUSTVLQ2M4QlB4QUtoZzd6SWpHWnVfSmtqQlU0TEtWNElEV3k5c1E5clZ30gGrAUFVX3lxTFBmTTFxM1N2NkdCNEdNWEhQZ29haDlKZlktNUo2Z3ZUX25Nc0VTaXlGdElTbHA5RlRsaGRNWERQdzA0U21ZbG9YbC02X0VUUWVvUEVQUGFiMXlvalBBTHFWMVRMNWFnZnlaYVczNDBDY1MxUzg3Z1ZlTUpjR0t3S3hseE9QaDAwWUVwY3JGQ1FockJHYnZ4bHQtWWp5X1hHSC1sSkpacnZTYzFQdw?oc=5",
-   "publisher": "fundsforNGOs - Grants and Resources for Sustainability",
-   "published_at": "2026-10-17T12:25:01+00:00",
-   "category": "education",
+   "title": "Neural Network Sharpens Early Drug Discovery With 95.9% Accuracy in Predicting Painkilling Compounds",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaEdKd2pWWFJTZkE2MFMwZzdIVzNOY3pUUG55Zk5WVmthLXR6UkxXU3BSNzNkWHd1ZDZ4aWQ5Q0tpdEd4NkZLOWQ0a3JaLUpQU050NmNJM3RyeU9iWU5RYmt2Zmc1b3lnN2dBRVVBZTM5Ymk2ZzdjYzZJUlRlQkNnMy03bVlwTTN1SGFtTk5zQk5rd2c1RE94SXplQzBzR0NvVk0yaU8xam1vckZtNzhnaGp4TXZza2dpdXpGSEFINnVzQQ?oc=5",
+   "publisher": "Bioengineer.org",
+   "published_at": "2026-10-17T12:26:15+00:00",
+   "category": "science",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -10887,16 +11112,6 @@
    "publisher": "SunStar Publishing Inc.",
    "published_at": "2026-10-17T10:38:27+00:00",
    "category": "health",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "Trump's new press secretary out after less than week",
-   "url": "https://www.france24.com/en/video/20261017-trump-s-new-press-secretary-out-after-less-than-week",
-   "publisher": "France24",
-   "published_at": "2026-10-17T10:36:12+00:00",
-   "category": "community",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -11393,7 +11608,7 @@
   },
   {
    "title": "Canacona locals seek better healthcare facilities during minister’s visit",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHM2MxSFY3WVJYVnFyeGUwVThNMEY4WjZMSE9lbkM0OFFUcFJzTWxnVHJtbXNHSVBtMFZEa0FPcDUxYkZhTV9jVVlmRkp0U2E4UXpocnRvOFdFT1EyNlNHNXAwRnFiZ2RBZlE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ITlhiVHFETUdPeU5SV2I3M0p5QXFGUnBaakl2S2E0enlOTWFTbWM4ZjNEa3cycGRiei1CUHJwdEJ1UGUtTTJZQ0hwMUlkUUhCMGR2dUpSdldJY2xVamY0dUZkaEJINS1HcVpueTh2a0cyc1oyNTE4?oc=5",
    "publisher": "Daijiworld",
    "published_at": "2026-10-17T06:20:45+00:00",
    "category": "health",
@@ -11492,11 +11707,11 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "IIT Madras School Outreach Programme: Nearly 50% of Enrolled Students Are Girls",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWWxrSW5rX2ZnMHRIdkhyRlFnWlU0eS1uOWFCUTJBclZXSkdhTFJKQjY1d08zUGYxZFpIT3lUZ0RIWFdTTUpkNnM0MFBwRzB1M25TakQ4MWs2OGgxMHA5QkZfb2xxaXNsaWhHOHdpZmhtdnd0S014Q2JDNFgxQkRaQUtMbVF3TmdiM0V0akdCN1lHS2NNaHVhQm8yZHNBYTRzTjhfWGJhTFJoTmtRdDJpMlR0OGFjekltYS1JejdmcWxORHfSAcoBQVVfeXFMT2prQXAtYUVmVm44YWlpaEFJa1gzZG1KcFMtcFFIUXVETzNOMnFFUlRGYloxcWZkWFBtY196VHZEQVFBUkVlVERzb1JTTnJ6LWlCWHhBd003bENCNElRUkhMSDRRenpiNV9BSmRpT1UxQ045UEVJLTl6WGF1akNhVTZmYVhQQ3c1a1dIN3BMUU4xMGM5WWpYd2NQWmRISTlWeDMtRDFPWl82RDNuZEhodnNRRHdRMy1GaU9XQUptaXhQNEkwY0drWkFMdw?oc=5",
-   "publisher": "Jagran Josh",
-   "published_at": "2026-10-17T05:31:23+00:00",
-   "category": "education",
+   "title": "‘When I came home from hospital, I didn’t know my brothers and sisters’ – polio survivor on her lost childhood years",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNT2ZQQzJpeU5yV1g5U1Z4cUk2SVhtZWFvSDhGSS1nSjc3b3VwWWI4akdpMWRIZUVxMmxmUUYyV3FvcmlnazRUT1ZGQTFPVGlScHlkdGhscGNXLTB6TWZhMmJhOWY5aUUyLVdhSHFMTU92NHE4dzdTdjdOZkhEdi04ZE1WcTF5SkRzeTRSODZyVFlROC1lMDZCcllnSzRXakFPbXFUZmxaOVpENGN2ZURlX0h0ZjNPZE9Lc0pFMURUNU9YZVk5Y3NIenZmYnN4RmJVdlpwQzdUNGlkWnpBX0RjZW1GekZuajhKXzJFR042cUJlQUFoZll6YzNOTDNCcXBQYnc?oc=5",
+   "publisher": "Irish Independent",
+   "published_at": "2026-10-17T05:30:00+00:00",
+   "category": "health",
    "location_status": "unverified",
    "browse_status": "recent",
    "reason": "no_confident_geography"
@@ -11722,44 +11937,14 @@
    "reason": "no_confident_geography"
   },
   {
-   "title": "DOH-7 monitors 26.8% rise in respiratory consultations",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQXpWaXJhS0RDdGxTYnZzM2Z5SmNicnUtOWs5Sm84OGdOWTJaUUlzSmVVUXlfVUY2ZHh2OEtKNl9jWVN2ejdBbnNTQ191TnltQldDUUZuSHFNZjJGMTNLcEhQVHk3Y0NCQmF6MkhOLXdjLUpvc2hDVHl2clBDSFAtQWZ3b0JZLUZxSUpjenFCdGNGeW1PVTdGWGlsY9IBoAFBVV95cUxNT0t0ZFh0bWJjWW0tODFvY0hBTnJGMjRnV3FINE05VTBXaEVpNUVpR0I0R1FoN2QzOGdvb0o3QVp3ZEVlY2hyZ3NyUmhWYXJlQXBXR2M3YWhnQ3BzT1MtanZ2TWpqVWp3Ynp2XzNGdzl4SFlURFc2bHljdm1XR04telhHbS0xak50ZlhPLTU5eS10blJWamxhT192NF9FNEZv?oc=5",
-   "publisher": "Cebu Daily News",
-   "published_at": "2026-10-17T02:11:00+00:00",
-   "category": "health",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "111 Primary Teachers Complete Five-Day Training on Foundational Literacy and Numeracy",
-   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBaSDFVLUN6cFAzdVY3MjUtYW84cFM2SGVqTURXWHcxUDlNNi15TlJKRnEtQkNsR1hnQmFJanhQdkxoM1hYZmdyQmtn?oc=5",
-   "publisher": "Andaman Sheekha",
-   "published_at": "2026-10-17T02:00:15+00:00",
-   "category": "education",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
-   "title": "World’s worst measles outbreak a ‘warning’ to other nations",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPOHllVzg2SHRFanpsaEdqMHpuNzlPV1JfaXFWN3J1SXBqdHZWUjJwbnlybXVQLTIxNm0zZ3RqdUlKLURhaTRLam91dVlxeDBwRmVVemJaRU94aEJqWU5NcHcxTkhxejJZck5SYTdXNHg2S1pLcDdBM25WeTNWb01FTUYxdjZZZ09Nbk44WGNlelNNUVowVGdvLVNQUXRZRUJzMnlvSWh5d3QyVE9lQ09JR2Rn?oc=5",
-   "publisher": "SMH.com.au",
-   "published_at": "2026-10-17T02:00:06+00:00",
-   "category": "health",
-   "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
-  },
-  {
    "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
    "url": "https://www.bbc.co.uk/news/articles/cwly3zd1r45ro?at_medium=RSS&at_campaign=rss",
    "publisher": "BBC World",
    "published_at": "2026-10-17T01:55:45+00:00",
    "category": "community",
    "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
   },
   {
    "title": "Why hasn't the UK had any named storms yet?",
@@ -11768,8 +11953,8 @@
    "published_at": "2026-10-17T01:53:34+00:00",
    "category": "community",
    "location_status": "unverified",
-   "browse_status": "recent",
-   "reason": "no_confident_geography"
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
   },
   {
    "title": "Mimicking populists will not ease cost of living or boost productivity, Mathias Cormann warns",
@@ -12310,18 +12495,88 @@
    "location_status": "unverified",
    "browse_status": "archive",
    "reason": "outside_globe_window"
+  },
+  {
+   "title": "El Niño amenaza la supervivencia de los pingüinos de Galápagos por el calentamiento del mar | Reportaje fotográfico",
+   "url": "https://es.mongabay.com/custom-story/2026/10/el-nino-amenaza-supervivencia-pinguinos-galapagos-calentamiento-mar-reportaje-fotografico/",
+   "publisher": "Mongabay Latam",
+   "published_at": "2026-10-16T13:45:00+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Norwegian teen 'hitman' jailed over UK murder plot",
+   "url": "https://www.bbc.co.uk/news/articles/cw8rzpl1ldkdo?at_medium=RSS&at_campaign=rss",
+   "publisher": "BBC Europe",
+   "published_at": "2026-10-16T13:43:21+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "La Amazonía necesita un bosque conectado, no solo en pie",
+   "url": "https://es.mongabay.com/2026/10/amazonia-necesita-bosque-conectado/",
+   "publisher": "Mongabay Latam",
+   "published_at": "2026-10-16T13:30:33+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
+   "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
+   "publisher": "NPR World",
+   "published_at": "2026-10-16T13:26:43+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Melatonina: uma aliada inesperada contra o mais agressivo dos cânceres do cérebro",
+   "url": "https://theconversation.com/melatonina-uma-aliada-inesperada-contra-o-mais-agressivo-dos-canceres-do-cerebro-294436",
+   "publisher": "The Conversation Brasil",
+   "published_at": "2026-10-16T13:18:36+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "Segurança e comunicação: notícias não comprovadas sobre nova facção no Rio mostram importância da checagem de informação e suas fontes",
+   "url": "https://theconversation.com/seguranca-e-comunicacao-noticias-nao-comprovadas-sobre-nova-faccao-no-rio-mostram-importancia-da-checagem-de-informacao-e-suas-fontes-291532",
+   "publisher": "The Conversation Brasil",
+   "published_at": "2026-10-16T13:14:14+00:00",
+   "category": "community",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
+  },
+  {
+   "title": "How an extremist network articulated a hoax linking Brazil’s President Lula to child abuse on X",
+   "url": "https://globalvoices.org/2026/10/16/how-an-extremist-network-articulated-a-hoax-linking-brazils-president-lula-to-child-abuse-on-x/",
+   "publisher": "Global Voices English",
+   "published_at": "2026-10-16T13:10:39+00:00",
+   "category": "politics",
+   "location_status": "unverified",
+   "browse_status": "archive",
+   "reason": "outside_globe_window"
   }
  ],
  "browse_retention": {
   "window_hours": 72,
   "globe_window_hours": 24,
   "note": "Unlocated articles are for browsing only, never globe pins. Archive entries are older than 24 hours.",
-  "recent_unlocated": 296,
-  "archive_24_to_72h": 54,
-  "excluded_older": 691,
+  "recent_unlocated": 287,
+  "archive_24_to_72h": 63,
+  "excluded_older": 679,
   "excluded_undated": 20,
   "publisher_balance": {
-   "distinct_publishers": 192,
+   "distinct_publishers": 189,
    "top_publisher_share_pct": 3.4,
    "top_publishers": {
     "ABC Australia": 12,
@@ -12329,13 +12584,13 @@
     "Bioengineer.org": 12,
     "BBC World": 12,
     "The Guardian World": 12,
-    "France24 ES": 10,
     "Mongabay Global": 10,
+    "France24 ES": 9,
     "BBC Brasil": 9,
     "IndexBox": 8,
+    "The Conversation Brasil": 6,
     "ABC News - Breaking News, Latest News and Videos": 5,
-    "Education News": 5,
-    "France24 FR": 5
+    "Education News": 5
    },
    "method": "publisher-balanced two-pass sampling, not geographic inference"
   }

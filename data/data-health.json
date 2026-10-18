@@ -1,24 +1,25 @@
 {
  "schema": 1,
- "updated_at": "2026-10-18T01:52:15.776134+00:00",
+ "updated_at": "2026-10-18T02:06:59.225581+00:00",
  "feeds_total": 136,
- "feeds_ok": 132,
+ "feeds_ok": 131,
  "feeds_failed": [
   "direct/DW World",
   "direct/CBC World",
   "direct/ReliefWeb Updates",
+  "direct/UN News",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 156
+   "mapped_pre_dedupe": 160
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 87
+   "mapped_pre_dedupe": 101
   },
   "IN": {
    "total": 11,
@@ -28,81 +29,81 @@
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 102
+   "mapped_pre_dedupe": 106
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 159
+   "mapped_pre_dedupe": 146
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 102
+   "mapped_pre_dedupe": 105
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 154
+   "mapped_pre_dedupe": 157
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 92
+   "mapped_pre_dedupe": 108
   }
  },
  "mapped_articles_by_category": {
-  "community": 120,
-  "education": 56,
-  "society": 54,
-  "hazards": 14,
-  "economy": 45,
+  "community": 124,
+  "society": 56,
+  "education": 55,
+  "hazards": 16,
+  "economy": 43,
+  "health": 54,
   "conflict": 24,
-  "politics": 38,
+  "politics": 39,
   "science": 14,
-  "health": 49,
   "environment": 14,
   "rights": 4
  },
  "mapped_articles_by_location_precision": {
-  "country": 250,
-  "place": 163,
-  "region": 19
+  "country": 255,
+  "place": 166,
+  "region": 22
  },
  "location_evidence_counts": {
-  "headline": 366,
-  "description": 66
+  "headline": 376,
+  "description": 67
  },
  "geographic_quadrants": {
-  "NE": 288,
-  "NW": 100,
-  "SE": 36,
+  "NE": 294,
+  "NW": 104,
+  "SE": 37,
   "SW": 8
  },
- "geo_signal_count": 247,
- "mapped_total": 432,
+ "geo_signal_count": 255,
+ "mapped_total": 443,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 855,
- "unmapped_distinct_titles": 301,
+ "unmapped_sample_count": 845,
+ "unmapped_distinct_titles": 291,
  "unmapped_by_feed": {
-  "Google News US": 130,
-  "Google News ZA": 125,
-  "Google News PH": 125,
-  "Google News IN": 122,
-  "Google News AU": 71,
-  "Google News NG": 71,
-  "Google News CA": 66,
-  "Google News GB": 62,
+  "Google News US": 128,
+  "Google News PH": 123,
+  "Google News IN": 120,
+  "Google News ZA": 113,
+  "Google News CA": 77,
+  "Google News AU": 69,
+  "Google News NG": 69,
+  "Google News GB": 68,
   "ABC Australia": 13,
   "RNZ National": 11,
-  "France24 ES": 11,
+  "France24 ES": 10,
   "BBC Brasil": 7,
-  "France24 FR": 6,
-  "BBC World": 5,
   "The Guardian World": 5,
+  "France24 FR": 5,
+  "BBC World": 4,
   "The Guardian Environment": 4,
   "The Conversation France": 4,
-  "BBC Science": 3
+  "BBC Business": 3
  },
  "unmapped_examples": [
   {
@@ -290,6 +291,14 @@
    "description_excerpt": " Data shows 73% decline in world’s wildlife population – and more animals are not being counted    Scroll.in "
   },
   {
+   "title": "Breathtaking images of nature by wildlife legend Paul Nicklen from across his incredible 30-year career",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOYzY0bjhWTDZkNEQtckpUdmlGeDhWSWYzeVNfTGVVRmpyN1JYYlJuRmNNUDJWWTRUU2lVSTh4NkdFZHZqN0otMUU1YXZyQU9oQXZiYWhhTnlCZmpTazRfWlJOU1REaElrTGlZTmtHb3ZLOFNfaUR4Z016M0FfaEhyMExiLXpZN3hsV0FoSTEtOFRpbzBBaTQ5NWJ5T2M1TVZZcmZ1d1Y3cU9vRFBYRDI1NFZKVVlzSkI4b2JncTZCZnlST2M2SnhlSWYwRE1WVFdnZkM5X0FMc3IwdGtHbjN5bEVHSnVVTVRxV3c?oc=5",
+   "publisher": "Amateur Photographer",
+   "feed_occurrences": 4,
+   "feed_count": 4,
+   "description_excerpt": " Breathtaking images of nature by wildlife legend Paul Nicklen from across his incredible 30-year career    Amateur Photographer "
+  },
+  {
    "title": "Boost for KWS as Afristar donates cheetah tracking collars",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQLWVnZVNCbkFBLVhmUU1sUFU1UjVEOVZpaDVib1hTMkw0MzdENjd0T0FHeXFFbU9wQmppSFVzN3JhOHhYR2g0UGRwOVJHZ0xnWTNvSy1ybGNBV2RjaDMzY2k4Y3JtamppUndOcGRmUVNwQlZFTElfUHJISGIzVXpDUkhjUXlTUDVudDJIb2c4Tl9CcmM5RHdOQmlBRnVZbFN0dW1ZTkh2Z1NJV0pWQ3VoMGZqbjJ1X1UxQXNTd1IwLUpKc1ZBNjk2Xw?oc=5",
    "publisher": "The Standard",
@@ -304,14 +313,6 @@
    "feed_occurrences": 4,
    "feed_count": 4,
    "description_excerpt": " Find Us at COP17    African Wildlife Foundation "
-  },
-  {
-   "title": "Breathtaking images of nature by wildlife legend Paul Nicklen from across his incredible 30-year career",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOYzY0bjhWTDZkNEQtckpUdmlGeDhWSWYzeVNfTGVVRmpyN1JYYlJuRmNNUDJWWTRUU2lVSTh4NkdFZHZqN0otMUU1YXZyQU9oQXZiYWhhTnlCZmpTazRfWlJOU1REaElrTGlZTmtHb3ZLOFNfaUR4Z016M0FfaEhyMExiLXpZN3hsV0FoSTEtOFRpbzBBaTQ5NWJ5T2M1TVZZcmZ1d1Y3cU9vRFBYRDI1NFZKVVlzSkI4b2JncTZCZnlST2M2SnhlSWYwRE1WVFdnZkM5X0FMc3IwdGtHbjN5bEVHSnVVTVRxV3c?oc=5",
-   "publisher": "Amateur Photographer",
-   "feed_occurrences": 4,
-   "feed_count": 4,
-   "description_excerpt": " Breathtaking images of nature by wildlife legend Paul Nicklen from across his incredible 30-year career    Amateur Photographer "
   },
   {
    "title": "COP17: Nature knows no boundaries – neither can our solutions - Eco-Business",
@@ -389,50 +390,49 @@
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 48,
-  "successful": 44,
-  "mapped_pre_dedupe": 168
+  "successful": 43,
+  "mapped_pre_dedupe": 173
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 141,
-  "unique_google_urls_not_in_direct_sample": 322,
+  "unique_direct_urls_not_in_google_sample": 144,
+  "unique_google_urls_not_in_direct_sample": 327,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
    "Al Jazeera": 22,
-   "France24": 19,
+   "France24": 20,
    "The Guardian World": 17,
    "France24 FR": 16,
+   "RNZ National": 14,
    "ABC Australia": 12,
-   "RNZ National": 12,
-   "France24 ES": 11,
+   "France24 ES": 12,
    "BBC World": 10,
-   "RNZ Pacific": 8,
+   "RNZ Pacific": 9,
    "NPR World": 7,
    "BBC Europe": 6,
    "BBC Brasil": 3,
    "Mongabay Global": 3,
-   "The Guardian Environment": 2,
-   "Mongabay Latam": 2,
-   "BBC Latin America": 2,
-   "BBC Science": 2,
    "BBC Business": 2,
+   "BBC Science": 2,
+   "BBC Latin America": 2,
+   "Mongabay Latam": 2,
+   "The Guardian Environment": 2,
    "BBC Asia": 1,
    "NPR Science": 1,
-   "BBC Middle East": 1,
-   "UN News": 1,
-   "Global Voices Spanish": 1
+   "Global Voices Spanish": 1,
+   "BBC Middle East": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 250,
+  "country_labelled_articles": 255,
   "country_labels_count": 61,
   "top_country_subjects": {
-   "France": 41,
-   "Vietnam": 25,
-   "India": 24,
-   "Mexico": 11,
-   "Bangladesh": 8,
-   "Kenya": 8,
+   "France": 42,
+   "Vietnam": 24,
+   "India": 23,
+   "Mexico": 13,
+   "Kenya": 9,
+   "Bangladesh": 9,
    "Portugal": 7,
    "Spain": 7,
    "Russia": 6,
@@ -441,10 +441,11 @@
    "Australia": 5,
    "Thailand": 5,
    "Yemen": 5,
-   "Canada": 5,
-   "Israel": 4,
+   "Israel": 5,
    "Ukraine": 4,
    "Egypt": 4,
+   "Canada": 4,
+   "Guam": 3,
    "Somalia": 3,
    "Nigeria": 3,
    "Ethiopia": 3,
@@ -455,22 +456,21 @@
    "Guatemala": 2,
    "Venezuela": 2,
    "Cook Islands": 2,
-   "Guam": 2,
    "Brazil": 2
   },
-  "distinct_geographic_signal_centers": 175,
+  "distinct_geographic_signal_centers": 181,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 156
+   "mapped_pre_dedupe": 160
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 87
+   "mapped_pre_dedupe": 101
   },
   "IN": {
    "requests": 11,
@@ -480,30 +480,30 @@
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 102
+   "mapped_pre_dedupe": 106
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 159
+   "mapped_pre_dedupe": 146
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 102
+   "mapped_pre_dedupe": 105
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 154
+   "mapped_pre_dedupe": 157
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 92
+   "mapped_pre_dedupe": 108
   }
  },
- "duplicates_removed": 744,
+ "duplicates_removed": 769,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
