@@ -35,6 +35,7 @@ from story_tracking import enrich_story_clusters
 from cross_border import publish_links
 from geographic_disambiguation import evaluate as evaluate_geographic_subject
 from geographic_quality_monitor import update_health_file
+from geo_recovery_d4 import recover_explicit_geography, diagnose_unmatched, summarize_efficiency
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -282,7 +283,7 @@ def parsed_timestamp(value):
 
 def collect(now):
  cutoff=now-dt.timedelta(hours=24)
- results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_rejections=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit(); pipeline={}
+ results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_rejections=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit(); pipeline={}; recovery_samples=[]; recovery_counts=Counter(); unmatched_diagnostics=Counter()
  def ingest(rows,category,source,kind,region,language,feed_key):
   mapped=0
   counts=pipeline[feed_key]
@@ -312,6 +313,18 @@ def collect(now):
    if not place:
     place,match_origin=expanded_match(a['title'],a.get('description',''))
    if not place:
+    recovered=recover_explicit_geography(a['title'],a.get('description',''),PLACES)
+    if recovered:
+     candidate, evidence=recovered
+     accepted, reason=evaluate_geographic_subject(candidate,a['title'],a.get('description',''))
+     if accepted:
+      place,match_origin=candidate,'d4_explicit_country'
+      recovery_counts[feed_key]+=1
+      counts['recovery_explicit']+=1
+      if len(recovery_samples)<80:recovery_samples.append({'feed':feed_key,'title':a['title'][:180],'place':candidate.get('name'),'evidence':evidence})
+   if not place:
+    reason=diagnose_unmatched(a['title'],a.get('description',''))
+    unmatched_diagnostics[reason]+=1
     browse_retention.add(a,when,now,category or classify(a['title']),'no_confident_geography')
     counts['geography_unmatched']+=1
     geo_audit.record(source,'unmapped',a['title'],language,a['url'])
@@ -367,28 +380,43 @@ def collect(now):
  collect.decision_audit=decision_audit
  collect.geo_rejections=geo_rejections
  collect.pipeline=pipeline
+ collect.recovery_stats={'recovered_by_feed':dict(recovery_counts),'recovered_total':sum(recovery_counts.values()),'recovered_examples':recovery_samples,'unmatched_reason_counts':dict(unmatched_diagnostics)}
  return results,failures,dict(scanned),seen_queries,health,unmapped
 
 def new_feed_audit(key,kind,region,language):
  return {'feed':key,'kind':kind,'editorial_region':region,'language':language,
          'status':'ok','parsed_entries':0,'date_passed':0,'date_rejected':0,
          'invalid_article':0,'geography_matched':0,'geography_unmatched':0,
-         'geography_rejected':0,'deduplication_survived':0,'globe_articles':0}
+         'geography_rejected':0,'deduplication_survived':0,'globe_articles':0,'duplicate_canonical':0,'duplicate_near_title':0,'lost_to_feeds':{},'recovery_explicit':0}
 
 def produce(raw,now):
  # Cross-region / cross-category canonical de-duplication. Similar titles across different
  # publishers remain distinct unless almost identical, preventing inflated reprints.
- exact=set();kept=[];sig_index=defaultdict(list);duplicates=0
+ exact={};kept=[];sig_index=defaultdict(list);duplicates=0
  for a in sorted(raw,key=lambda x:x['at'],reverse=True):
   canonical=a['url'].split('?')[0].rstrip('/')
   key=canonical
-  if key in exact:duplicates+=1;continue
-  exact.add(key)
+  if key in exact:
+   duplicates+=1
+   loser=collect.pipeline.get(a.get('audit_feed_key'))
+   if loser is not None:
+    loser['duplicate_canonical']+=1
+    winner=exact[key].get('audit_feed_key','unknown')
+    loser['lost_to_feeds'][winner]=loser['lost_to_feeds'].get(winner,0)+1
+   continue
+  exact[key]=a
   sig=signature(a['title'])
   nearby=sig_index[a['place']['name'].lower()]
-  if len(sig)>=5 and any(len(sig&s)/len(sig|s)>.82 for s in nearby if s):
-   duplicates+=1;continue
-  nearby.append(sig)
+  prior=next((old for old in nearby if len(sig)>=5 and old[0] and len(sig&old[0])/len(sig|old[0])>.82),None)
+  if prior:
+   duplicates+=1
+   loser=collect.pipeline.get(a.get('audit_feed_key'))
+   if loser is not None:
+    loser['duplicate_near_title']+=1
+    winner=prior[1].get('audit_feed_key','unknown')
+    loser['lost_to_feeds'][winner]=loser['lost_to_feeds'].get(winner,0)+1
+   continue
+  nearby.append((sig,a))
   kept.append(a)
   feed_key=a.get('audit_feed_key')
   if feed_key in getattr(collect,'pipeline',{}):
@@ -556,7 +584,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
   f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
   f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
- obj={'schema':1,'release':'v2.4D.3','updated_at':now.isoformat(),'stage_definitions':{
+ obj={'schema':1,'release':'v2.4D.4','updated_at':now.isoformat(),'stage_definitions':{
   'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
   'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
   'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
@@ -565,8 +593,10 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   'notes':['Source feed region is discovery metadata, NOT event location evidence.',
            'Feed ordering affects attribution of identical articles across multiple feeds; this audit shows retained-row contribution, not exclusive publisher value.',
            'Date-pass counts exclude malformed title or URL; see invalid_article.',
-           'No inferred locations have been added or remapped.'],
-  'totals':totals,'feeds':feeds,'possible_unmapped_geo_mentions_for_manual_review':review[:50]}
+           'D.4 recovery is restricted to explicit qualified country references already found in the existing PLACES gazetteer; it does not use source edition or publisher location.'],
+  'totals':totals,'feeds':feeds,'possible_unmapped_geo_mentions_for_manual_review':review[:50],
+  'd4_recovery':getattr(collect,'recovery_stats',{}),
+  'd4_efficiency':summarize_efficiency(feeds)}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
