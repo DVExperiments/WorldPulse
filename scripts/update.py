@@ -55,6 +55,7 @@ from feed_resilience_d191 import retry_open, assess_outage
 from feed_health_d192 import build_report as d192_build_report
 from geo_review_d20 import evaluate as d20_evaluate
 from geo_readiness_d21 import evaluate as d21_evaluate
+from intelligence_v25 import quality_report as v25_quality_report, shadow_consistency as v25_shadow_consistency, validate_snapshot as v25_validate
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -698,7 +699,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
   f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
   f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
- obj={'schema':1,'release':'v2.4D.21','updated_at':now.isoformat(),'stage_definitions':{
+ obj={'schema':1,'release':'v2.5.0','updated_at':now.isoformat(),'stage_definitions':{
   'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
   'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
   'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
@@ -730,7 +731,9 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   'd191_feed_resilience':getattr(publish_pipeline_audit,'d191_health',{}),
   'd192_feed_health_validation':getattr(publish_pipeline_audit,'d192_health',{}),
   'd20_verified_correction_pilot':getattr(publish_pipeline_audit,'d20_review',{}),
-  'd21_geographic_correction_readiness':getattr(publish_pipeline_audit,'d21_readiness',{})}
+  'd21_geographic_correction_readiness':getattr(publish_pipeline_audit,'d21_readiness',{}),
+  'v25_shadow_consistency':getattr(publish_pipeline_audit,'v25_shadow',{}),
+  'v25_quality_dashboard':{'file':'data/quality-v25.json','html':'quality.html', 'mode':'read_only'}}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
@@ -774,6 +777,11 @@ def main():
  publish_pipeline_audit.d20_review=d20_review
  publish_pipeline_audit.d21_readiness=d21_evaluate(points,d20_review,ROOT/'data/d21-source-evidence.json',now)
  (ROOT/'data/d20-correction-validation.json').write_text(json.dumps(d20_review,ensure_ascii=False,indent=1),encoding='utf8')
+ # D25: compare full in-memory derived outputs without altering live points or writing history.
+ v25_shadow=v25_shadow_consistency(points,publish_pipeline_audit.d21_readiness,now,cluster_fn=cluster_bundle,links_fn=publish_links)
+ publish_pipeline_audit.v25_shadow=v25_shadow
+ v25_quality=v25_quality_report(raw,points,getattr(collect,'pipeline',{}),unmapped,publish_pipeline_audit.d21_readiness,now)
+ (ROOT/'data/quality-v25.json').write_text(json.dumps(v25_quality,ensure_ascii=False,indent=1),encoding='utf8')
  publish_pipeline_audit.d191_health=outage
  publish_pipeline_audit.d18_activation=d18_activation
  publish_pipeline_audit.raw=raw
@@ -799,6 +807,10 @@ def main():
   'unlocated_articles':getattr(collect,'browse_articles',[]),
   'browse_retention':{'window_hours':72,'globe_window_hours':24,'note':'Unlocated articles are for browsing only, never globe pins. Archive entries are older than 24 hours.', **getattr(collect,'browse_stats',{})}}
  OUT.parent.mkdir(parents=True,exist_ok=True)
+ # Report-only validation; no automatic publication block and no mutation of live record.
+ v25_audit_snapshot=json.loads((ROOT/'data/feed-contribution-audit.json').read_text(encoding='utf8'))
+ v25_validation=v25_validate(record,v25_audit_snapshot,v25_quality)
+ (ROOT/'data/quality-validation-v25.json').write_text(json.dumps(v25_validation,ensure_ascii=False,indent=1),encoding='utf8')
  OUT.write_text(json.dumps(record,ensure_ascii=False,indent=1),encoding='utf8')
  update_history(now,points)
  update_article_history(now,points)
