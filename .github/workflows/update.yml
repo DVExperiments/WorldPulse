@@ -72,6 +72,8 @@ jobs:
             data/feed-contribution-audit.json
             data/feed-resilience-health.json
             data/feed-health-validation.json
+            data/quality-v25.json
+            data/quality-validation-v25.json
           )
           for file in "${files[@]}"; do
             if [[ -f "$file" ]]; then
