@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "release": "v2.4D.3",
- "updated_at": "2026-10-18T23:34:23.099054+00:00",
+ "release": "v2.4D.4",
+ "updated_at": "2026-10-19T00:01:51.553626+00:00",
  "stage_definitions": {
   "parsed_entries": "Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles",
   "date_passed": "Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title",
@@ -13,18 +13,18 @@
   "Source feed region is discovery metadata, NOT event location evidence.",
   "Feed ordering affects attribution of identical articles across multiple feeds; this audit shows retained-row contribution, not exclusive publisher value.",
   "Date-pass counts exclude malformed title or URL; see invalid_article.",
-  "No inferred locations have been added or remapped."
+  "D.4 recovery is restricted to explicit qualified country references already found in the existing PLACES gazetteer; it does not use source edition or publisher location."
  ],
  "totals": {
-  "parsed_entries": 4223,
-  "date_passed": 3023,
+  "parsed_entries": 4258,
+  "date_passed": 3058,
   "date_rejected": 1190,
   "invalid_article": 10,
-  "geography_matched": 1607,
-  "geography_unmatched": 1409,
+  "geography_matched": 1640,
+  "geography_unmatched": 1411,
   "geography_rejected": 7,
-  "deduplication_survived": 730,
-  "globe_articles": 697
+  "deduplication_survived": 744,
+  "globe_articles": 709
  },
  "feeds": [
   {
@@ -33,17 +33,24 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 36,
-   "date_passed": 36,
+   "parsed_entries": 37,
+   "date_passed": 37,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 16,
-   "geography_unmatched": 20,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
-   "deduplication_survived": 15,
-   "globe_articles": 15,
-   "matched_after_date_pct": 44.4,
-   "survival_after_mapping_pct": 93.8,
+   "deduplication_survived": 14,
+   "globe_articles": 14,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 2,
+   "lost_to_feeds": {
+    "google/politics/KE": 1,
+    "google/politics/IN": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 43.2,
+   "survival_after_mapping_pct": 87.5,
    "usefulness": "contributing"
   },
   {
@@ -61,6 +68,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_parsed_entries"
@@ -71,16 +82,22 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 36,
-   "date_passed": 36,
+   "parsed_entries": 37,
+   "date_passed": 37,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 17,
-   "geography_unmatched": 19,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
-   "matched_after_date_pct": 47.2,
+   "duplicate_canonical": 15,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/politics/US": 15
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 45.9,
    "survival_after_mapping_pct": 11.8,
    "usefulness": "contributing"
   },
@@ -99,6 +116,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_parsed_entries"
@@ -109,18 +130,25 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 36,
-   "date_passed": 36,
+   "parsed_entries": 38,
+   "date_passed": 38,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 17,
-   "geography_unmatched": 19,
+   "geography_matched": 18,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
-   "deduplication_survived": 0,
-   "globe_articles": 0,
-   "matched_after_date_pct": 47.2,
-   "survival_after_mapping_pct": 0.0,
-   "usefulness": "all_duplicate"
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 17,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/politics/US": 15,
+    "google/politics/IN": 2
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 47.4,
+   "survival_after_mapping_pct": 5.6,
+   "usefulness": "contributing"
   },
   {
    "feed": "google/politics/NG",
@@ -137,6 +165,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_parsed_entries"
@@ -147,16 +179,24 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 36,
-   "date_passed": 36,
+   "parsed_entries": 38,
+   "date_passed": 38,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 17,
-   "geography_unmatched": 19,
+   "geography_matched": 18,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 47.2,
+   "duplicate_canonical": 18,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/politics/US": 16,
+    "google/politics/ZA": 1,
+    "google/politics/IN": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 47.4,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -175,6 +215,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_parsed_entries"
@@ -185,16 +229,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 46,
-   "date_passed": 46,
+   "parsed_entries": 47,
+   "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
+   "geography_matched": 10,
    "geography_unmatched": 37,
    "geography_rejected": 0,
-   "deduplication_survived": 9,
-   "globe_articles": 9,
-   "matched_after_date_pct": 19.6,
+   "deduplication_survived": 10,
+   "globe_articles": 10,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 21.3,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -204,16 +252,22 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 43,
-   "date_passed": 43,
+   "parsed_entries": 40,
+   "date_passed": 40,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 20,
-   "geography_unmatched": 23,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
    "deduplication_survived": 18,
    "globe_articles": 18,
-   "matched_after_date_pct": 46.5,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 2,
+   "lost_to_feeds": {
+    "google/politics/MX": 2
+   },
+   "recovery_explicit": 1,
+   "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 90.0,
    "usefulness": "contributing"
   },
@@ -223,18 +277,26 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 20,
-   "date_passed": 20,
+   "parsed_entries": 38,
+   "date_passed": 38,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 10,
-   "geography_unmatched": 10,
+   "geography_matched": 18,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
-   "deduplication_survived": 0,
-   "globe_articles": 0,
-   "matched_after_date_pct": 50.0,
-   "survival_after_mapping_pct": 0.0,
-   "usefulness": "all_duplicate"
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 17,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/politics/US": 14,
+    "google/politics/ZA": 1,
+    "google/politics/IN": 2
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 47.4,
+   "survival_after_mapping_pct": 5.6,
+   "usefulness": "contributing"
   },
   {
    "feed": "google/environment/US",
@@ -242,16 +304,20 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 22,
-   "date_passed": 22,
+   "parsed_entries": 23,
+   "date_passed": 23,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 9,
-   "geography_unmatched": 13,
+   "geography_unmatched": 14,
    "geography_rejected": 0,
    "deduplication_survived": 9,
    "globe_articles": 9,
-   "matched_after_date_pct": 40.9,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 39.1,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -270,6 +336,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_parsed_entries"
@@ -280,16 +350,22 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 22,
-   "date_passed": 22,
+   "parsed_entries": 23,
+   "date_passed": 23,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 10,
-   "geography_unmatched": 12,
+   "geography_unmatched": 13,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "matched_after_date_pct": 45.5,
+   "duplicate_canonical": 8,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/environment/US": 9
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 43.5,
    "survival_after_mapping_pct": 10.0,
    "usefulness": "contributing"
   },
@@ -308,6 +384,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_parsed_entries"
@@ -318,16 +398,23 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 22,
-   "date_passed": 22,
+   "parsed_entries": 23,
+   "date_passed": 23,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 10,
-   "geography_unmatched": 12,
+   "geography_unmatched": 13,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 45.5,
+   "duplicate_canonical": 10,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/environment/US": 8,
+    "google/environment/IN": 2
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 43.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -346,6 +433,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_parsed_entries"
@@ -356,16 +447,23 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 22,
-   "date_passed": 22,
+   "parsed_entries": 23,
+   "date_passed": 23,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 9,
-   "geography_unmatched": 13,
+   "geography_unmatched": 14,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 40.9,
+   "duplicate_canonical": 9,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/environment/US": 8,
+    "google/environment/IN": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 39.1,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -384,6 +482,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_parsed_entries"
@@ -394,16 +496,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 8,
-   "date_passed": 8,
+   "parsed_entries": 9,
+   "date_passed": 9,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 2,
+   "geography_matched": 3,
    "geography_unmatched": 6,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
-   "matched_after_date_pct": 25.0,
+   "deduplication_survived": 3,
+   "globe_articles": 3,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 33.3,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -413,17 +519,23 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 50,
-   "date_passed": 50,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 32,
+   "geography_matched": 33,
    "geography_unmatched": 18,
    "geography_rejected": 0,
-   "deduplication_survived": 31,
-   "globe_articles": 31,
-   "matched_after_date_pct": 64.0,
-   "survival_after_mapping_pct": 96.9,
+   "deduplication_survived": 32,
+   "globe_articles": 32,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/environment/MX": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 64.7,
+   "survival_after_mapping_pct": 97.0,
    "usefulness": "contributing"
   },
   {
@@ -432,16 +544,23 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 22,
-   "date_passed": 22,
+   "parsed_entries": 23,
+   "date_passed": 23,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 9,
-   "geography_unmatched": 13,
+   "geography_unmatched": 14,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 40.9,
+   "duplicate_canonical": 9,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/environment/US": 8,
+    "google/environment/IN": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 39.1,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -460,6 +579,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -479,6 +602,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 10,
    "globe_articles": 10,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/hazards/GB": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 91.7,
    "survival_after_mapping_pct": 90.9,
    "usefulness": "contributing"
@@ -498,6 +627,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -508,16 +641,22 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 12,
+   "date_passed": 12,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
+   "geography_matched": 11,
    "geography_unmatched": 1,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 92.3,
+   "duplicate_canonical": 10,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/hazards/GB": 11
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 91.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -536,6 +675,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -546,16 +689,22 @@
    "editorial_region": "NG",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 12,
+   "date_passed": 12,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
+   "geography_matched": 11,
    "geography_unmatched": 1,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 92.3,
+   "duplicate_canonical": 11,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/hazards/GB": 11
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 91.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -574,6 +723,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -584,16 +737,22 @@
    "editorial_region": "CA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 12,
-   "date_passed": 12,
+   "parsed_entries": 11,
+   "date_passed": 11,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 11,
+   "geography_matched": 10,
    "geography_unmatched": 1,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 91.7,
+   "duplicate_canonical": 10,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/hazards/GB": 10
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 90.9,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -612,6 +771,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_parsed_entries"
@@ -631,6 +794,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 4,
    "globe_articles": 4,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 57.1,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -650,6 +817,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -669,6 +840,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 23,
    "globe_articles": 23,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/society/US": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 55.8,
    "survival_after_mapping_pct": 95.8,
    "usefulness": "contributing"
@@ -688,6 +865,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 4,
    "globe_articles": 4,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 57.1,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -698,17 +879,23 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 46,
-   "date_passed": 46,
+   "parsed_entries": 47,
+   "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 29,
-   "geography_unmatched": 17,
+   "geography_unmatched": 18,
    "geography_rejected": 0,
-   "deduplication_survived": 10,
-   "globe_articles": 10,
-   "matched_after_date_pct": 63.0,
-   "survival_after_mapping_pct": 34.5,
+   "deduplication_survived": 11,
+   "globe_articles": 11,
+   "duplicate_canonical": 18,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/society/US": 18
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 61.7,
+   "survival_after_mapping_pct": 37.9,
    "usefulness": "contributing"
   },
   {
@@ -726,6 +913,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 4,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/society/GB": 4
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 57.1,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -743,10 +936,16 @@
    "geography_matched": 21,
    "geography_unmatched": 21,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
+   "deduplication_survived": 2,
+   "globe_articles": 2,
+   "duplicate_canonical": 18,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/society/US": 19
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 50.0,
-   "survival_after_mapping_pct": 4.8,
+   "survival_after_mapping_pct": 9.5,
    "usefulness": "contributing"
   },
   {
@@ -764,6 +963,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 3,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/society/GB": 3
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -781,11 +986,18 @@
    "geography_matched": 23,
    "geography_unmatched": 22,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
+   "duplicate_canonical": 22,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/society/US": 20,
+    "google/society/ZA": 3
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 51.1,
-   "survival_after_mapping_pct": 4.3,
-   "usefulness": "contributing"
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "google/society/CA",
@@ -802,6 +1014,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
+   "duplicate_canonical": 3,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/society/GB": 3
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 25.0,
    "usefulness": "contributing"
@@ -812,16 +1030,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 12,
+   "date_passed": 12,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 8,
+   "geography_matched": 7,
    "geography_unmatched": 5,
    "geography_rejected": 0,
-   "deduplication_survived": 8,
-   "globe_articles": 8,
-   "matched_after_date_pct": 61.5,
+   "deduplication_survived": 7,
+   "globe_articles": 7,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 58.3,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -835,12 +1057,16 @@
    "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 24,
-   "geography_unmatched": 26,
+   "geography_matched": 25,
+   "geography_unmatched": 25,
    "geography_rejected": 0,
-   "deduplication_survived": 24,
-   "globe_articles": 24,
-   "matched_after_date_pct": 48.0,
+   "deduplication_survived": 25,
+   "globe_articles": 25,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -859,6 +1085,13 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 22,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/society/US": 19,
+    "google/society/ZA": 3
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -869,16 +1102,20 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 46,
-   "date_passed": 46,
+   "parsed_entries": 47,
+   "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 27,
+   "geography_matched": 28,
    "geography_unmatched": 19,
    "geography_rejected": 0,
-   "deduplication_survived": 27,
-   "globe_articles": 25,
-   "matched_after_date_pct": 58.7,
+   "deduplication_survived": 28,
+   "globe_articles": 26,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 59.6,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -888,16 +1125,23 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 45,
-   "date_passed": 45,
+   "parsed_entries": 43,
+   "date_passed": 43,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 22,
-   "geography_unmatched": 23,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 20,
    "globe_articles": 20,
-   "matched_after_date_pct": 48.9,
+   "duplicate_canonical": 2,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/health/US": 1,
+    "google/society/GB": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 51.2,
    "survival_after_mapping_pct": 90.9,
    "usefulness": "contributing"
   },
@@ -907,17 +1151,23 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 45,
-   "date_passed": 45,
+   "parsed_entries": 47,
+   "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 27,
-   "geography_unmatched": 18,
+   "geography_matched": 28,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
-   "deduplication_survived": 3,
-   "globe_articles": 3,
-   "matched_after_date_pct": 60.0,
-   "survival_after_mapping_pct": 11.1,
+   "deduplication_survived": 4,
+   "globe_articles": 4,
+   "duplicate_canonical": 23,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/health/US": 24
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 59.6,
+   "survival_after_mapping_pct": 14.3,
    "usefulness": "contributing"
   },
   {
@@ -926,17 +1176,25 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 42,
-   "date_passed": 42,
+   "parsed_entries": 43,
+   "date_passed": 43,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 21,
+   "geography_matched": 22,
    "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "matched_after_date_pct": 50.0,
-   "survival_after_mapping_pct": 4.8,
+   "duplicate_canonical": 21,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/health/GB": 19,
+    "google/health/US": 1,
+    "google/society/GB": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 51.2,
+   "survival_after_mapping_pct": 4.5,
    "usefulness": "contributing"
   },
   {
@@ -945,17 +1203,24 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 47,
-   "date_passed": 47,
+   "parsed_entries": 49,
+   "date_passed": 49,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 29,
-   "geography_unmatched": 18,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
-   "matched_after_date_pct": 61.7,
-   "survival_after_mapping_pct": 6.9,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 28,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/health/US": 24,
+    "google/health/IN": 4
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 59.2,
+   "survival_after_mapping_pct": 3.4,
    "usefulness": "contributing"
   },
   {
@@ -973,6 +1238,15 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 22,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/health/GB": 19,
+    "google/health/US": 1,
+    "google/health/AU": 1,
+    "google/society/GB": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 51.2,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -983,16 +1257,24 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 49,
-   "date_passed": 49,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 30,
-   "geography_unmatched": 19,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "matched_after_date_pct": 61.2,
+   "duplicate_canonical": 29,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/health/US": 24,
+    "google/health/IN": 4,
+    "google/health/ZA": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 58.8,
    "survival_after_mapping_pct": 3.3,
    "usefulness": "contributing"
   },
@@ -1011,6 +1293,15 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 21,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/health/GB": 18,
+    "google/health/US": 1,
+    "google/health/AU": 1,
+    "google/society/GB": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1021,16 +1312,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 29,
-   "date_passed": 29,
+   "parsed_entries": 30,
+   "date_passed": 30,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 20,
+   "geography_matched": 21,
    "geography_unmatched": 9,
    "geography_rejected": 0,
-   "deduplication_survived": 20,
+   "deduplication_survived": 21,
    "globe_articles": 16,
-   "matched_after_date_pct": 69.0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 70.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1040,16 +1335,20 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 42,
-   "date_passed": 42,
+   "parsed_entries": 41,
+   "date_passed": 41,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 11,
-   "geography_unmatched": 31,
+   "geography_unmatched": 30,
    "geography_rejected": 0,
    "deduplication_survived": 11,
    "globe_articles": 11,
-   "matched_after_date_pct": 26.2,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 26.8,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1059,16 +1358,23 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 45,
-   "date_passed": 45,
+   "parsed_entries": 48,
+   "date_passed": 48,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 27,
-   "geography_unmatched": 18,
+   "geography_matched": 29,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 60.0,
+   "duplicate_canonical": 28,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/health/US": 26,
+    "google/health/IN": 3
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 60.4,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1078,17 +1384,23 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 53,
-   "date_passed": 53,
+   "parsed_entries": 54,
+   "date_passed": 54,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 27,
+   "geography_matched": 28,
    "geography_unmatched": 26,
    "geography_rejected": 0,
    "deduplication_survived": 27,
-   "globe_articles": 27,
-   "matched_after_date_pct": 50.9,
-   "survival_after_mapping_pct": 100.0,
+   "globe_articles": 25,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/society/IN": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 51.9,
+   "survival_after_mapping_pct": 96.4,
    "usefulness": "contributing"
   },
   {
@@ -1097,17 +1409,24 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 50,
+   "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 32,
+   "geography_matched": 31,
    "geography_unmatched": 19,
    "geography_rejected": 0,
-   "deduplication_survived": 28,
-   "globe_articles": 24,
-   "matched_after_date_pct": 62.7,
-   "survival_after_mapping_pct": 87.5,
+   "deduplication_survived": 27,
+   "globe_articles": 23,
+   "duplicate_canonical": 3,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/education/AU": 1,
+    "google/education/US": 3
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 62.0,
+   "survival_after_mapping_pct": 87.1,
    "usefulness": "contributing"
   },
   {
@@ -1116,17 +1435,24 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 52,
+   "date_passed": 52,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
-   "geography_unmatched": 23,
+   "geography_matched": 30,
+   "geography_unmatched": 22,
    "geography_rejected": 0,
-   "deduplication_survived": 4,
-   "globe_articles": 4,
-   "matched_after_date_pct": 54.9,
-   "survival_after_mapping_pct": 14.3,
+   "deduplication_survived": 6,
+   "globe_articles": 6,
+   "duplicate_canonical": 24,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/education/US": 23,
+    "google/society/IN": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 57.7,
+   "survival_after_mapping_pct": 20.0,
    "usefulness": "contributing"
   },
   {
@@ -1135,16 +1461,23 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 50,
+   "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 31,
-   "geography_unmatched": 20,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "matched_after_date_pct": 60.8,
+   "duplicate_canonical": 30,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/education/GB": 27,
+    "google/education/US": 3
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 62.0,
    "survival_after_mapping_pct": 3.2,
    "usefulness": "contributing"
   },
@@ -1154,17 +1487,25 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 50,
-   "date_passed": 50,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 27,
-   "geography_unmatched": 23,
+   "geography_matched": 29,
+   "geography_unmatched": 22,
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
-   "matched_after_date_pct": 54.0,
-   "survival_after_mapping_pct": 7.4,
+   "duplicate_canonical": 27,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/education/IN": 4,
+    "google/education/US": 22,
+    "google/society/IN": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 56.9,
+   "survival_after_mapping_pct": 6.9,
    "usefulness": "contributing"
   },
   {
@@ -1173,18 +1514,26 @@
    "editorial_region": "NG",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 52,
-   "date_passed": 52,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 32,
-   "geography_unmatched": 20,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
-   "deduplication_survived": 0,
-   "globe_articles": 0,
-   "matched_after_date_pct": 61.5,
-   "survival_after_mapping_pct": 0.0,
-   "usefulness": "all_duplicate"
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 31,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/education/GB": 27,
+    "google/education/AU": 1,
+    "google/education/US": 3
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 62.7,
+   "survival_after_mapping_pct": 3.1,
+   "usefulness": "contributing"
   },
   {
    "feed": "google/education/PH",
@@ -1196,14 +1545,23 @@
    "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
-   "geography_unmatched": 23,
+   "geography_matched": 30,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
-   "matched_after_date_pct": 54.9,
-   "survival_after_mapping_pct": 3.6,
-   "usefulness": "contributing"
+   "deduplication_survived": 0,
+   "globe_articles": 0,
+   "duplicate_canonical": 30,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/education/IN": 6,
+    "google/education/US": 22,
+    "google/society/IN": 1,
+    "google/education/ZA": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 58.8,
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "google/education/CA",
@@ -1220,6 +1578,15 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 32,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/education/GB": 27,
+    "google/education/NG": 1,
+    "google/education/AU": 1,
+    "google/education/US": 3
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 62.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1239,6 +1606,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 9,
    "globe_articles": 7,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 64.3,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -1253,13 +1624,19 @@
    "date_passed": 55,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
-   "geography_unmatched": 27,
+   "geography_matched": 30,
+   "geography_unmatched": 25,
    "geography_rejected": 0,
-   "deduplication_survived": 24,
-   "globe_articles": 20,
-   "matched_after_date_pct": 50.9,
-   "survival_after_mapping_pct": 85.7,
+   "deduplication_survived": 26,
+   "globe_articles": 21,
+   "duplicate_canonical": 4,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/society/MX": 4
+   },
+   "recovery_explicit": 1,
+   "matched_after_date_pct": 54.5,
+   "survival_after_mapping_pct": 86.7,
    "usefulness": "contributing"
   },
   {
@@ -1272,12 +1649,21 @@
    "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 26,
-   "geography_unmatched": 24,
+   "geography_matched": 27,
+   "geography_unmatched": 23,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 52.0,
+   "duplicate_canonical": 27,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/education/IN": 4,
+    "google/education/US": 21,
+    "google/society/IN": 1,
+    "google/education/ZA": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 54.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1296,6 +1682,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -1310,12 +1700,16 @@
    "date_passed": 15,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
-   "geography_unmatched": 6,
+   "geography_matched": 10,
+   "geography_unmatched": 5,
    "geography_rejected": 0,
-   "deduplication_survived": 9,
-   "globe_articles": 9,
-   "matched_after_date_pct": 60.0,
+   "deduplication_survived": 10,
+   "globe_articles": 10,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1334,6 +1728,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 2,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/rights/US": 2
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1348,12 +1748,18 @@
    "date_passed": 15,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
-   "geography_unmatched": 6,
+   "geography_matched": 10,
+   "geography_unmatched": 5,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 60.0,
+   "duplicate_canonical": 10,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/rights/GB": 10
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1372,6 +1778,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 2,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/rights/US": 2
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1386,12 +1798,18 @@
    "date_passed": 15,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
-   "geography_unmatched": 6,
+   "geography_matched": 10,
+   "geography_unmatched": 5,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 60.0,
+   "duplicate_canonical": 10,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/rights/GB": 10
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1410,6 +1828,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 2,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/rights/US": 2
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1424,12 +1848,18 @@
    "date_passed": 15,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
-   "geography_unmatched": 6,
+   "geography_matched": 10,
+   "geography_unmatched": 5,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 60.0,
+   "duplicate_canonical": 10,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/rights/GB": 10
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1448,6 +1878,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 28.6,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -1467,6 +1901,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 6,
    "globe_articles": 6,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 31.6,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -1486,6 +1924,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 2,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/rights/US": 2
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1505,6 +1949,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 33.3,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -1524,6 +1972,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -1534,16 +1986,22 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 6,
-   "date_passed": 6,
+   "parsed_entries": 7,
+   "date_passed": 7,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 2,
-   "geography_unmatched": 4,
+   "geography_unmatched": 5,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 33.3,
+   "duplicate_canonical": 2,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/community/US": 2
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 28.6,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1562,6 +2020,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -1581,6 +2043,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 2,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/community/US": 2
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 33.3,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1600,6 +2068,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -1619,6 +2091,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 2,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/community/US": 2
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 33.3,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1638,6 +2116,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -1657,6 +2139,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -1667,16 +2153,20 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 55,
-   "date_passed": 55,
+   "parsed_entries": 56,
+   "date_passed": 56,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 34,
-   "geography_unmatched": 21,
+   "geography_unmatched": 22,
    "geography_rejected": 0,
    "deduplication_survived": 34,
    "globe_articles": 34,
-   "matched_after_date_pct": 61.8,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 60.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1695,6 +2185,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/community/US": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 20.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1705,16 +2201,20 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 12,
+   "date_passed": 12,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 8,
+   "geography_matched": 7,
    "geography_unmatched": 5,
    "geography_rejected": 0,
-   "deduplication_survived": 8,
-   "globe_articles": 8,
-   "matched_after_date_pct": 61.5,
+   "deduplication_survived": 7,
+   "globe_articles": 7,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 58.3,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1728,13 +2228,19 @@
    "date_passed": 44,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
-   "geography_unmatched": 16,
+   "geography_matched": 27,
+   "geography_unmatched": 17,
    "geography_rejected": 0,
-   "deduplication_survived": 28,
-   "globe_articles": 28,
-   "matched_after_date_pct": 63.6,
-   "survival_after_mapping_pct": 100.0,
+   "deduplication_survived": 26,
+   "globe_articles": 26,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/economy/NG": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 61.4,
+   "survival_after_mapping_pct": 96.3,
    "usefulness": "contributing"
   },
   {
@@ -1743,16 +2249,22 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 12,
-   "date_passed": 12,
+   "parsed_entries": 11,
+   "date_passed": 11,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 6,
+   "geography_matched": 5,
    "geography_unmatched": 6,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 50.0,
+   "duplicate_canonical": 5,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/economy/US": 5
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 45.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1762,17 +2274,23 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 44,
-   "date_passed": 44,
+   "parsed_entries": 45,
+   "date_passed": 45,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 28,
-   "geography_unmatched": 16,
+   "geography_unmatched": 17,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
-   "matched_after_date_pct": 63.6,
-   "survival_after_mapping_pct": 3.6,
+   "deduplication_survived": 2,
+   "globe_articles": 2,
+   "duplicate_canonical": 26,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/economy/GB": 26
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 62.2,
+   "survival_after_mapping_pct": 7.1,
    "usefulness": "contributing"
   },
   {
@@ -1781,16 +2299,22 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 12,
-   "date_passed": 12,
+   "parsed_entries": 11,
+   "date_passed": 11,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 6,
+   "geography_matched": 5,
    "geography_unmatched": 6,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 50.0,
+   "duplicate_canonical": 5,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/economy/US": 5
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 45.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1800,17 +2324,24 @@
    "editorial_region": "NG",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 46,
-   "date_passed": 46,
+   "parsed_entries": 45,
+   "date_passed": 45,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 31,
+   "geography_matched": 30,
    "geography_unmatched": 15,
    "geography_rejected": 0,
    "deduplication_survived": 5,
    "globe_articles": 5,
-   "matched_after_date_pct": 67.4,
-   "survival_after_mapping_pct": 16.1,
+   "duplicate_canonical": 24,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/economy/GB": 23,
+    "google/economy/AU": 2
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 66.7,
+   "survival_after_mapping_pct": 16.7,
    "usefulness": "contributing"
   },
   {
@@ -1828,6 +2359,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 4,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/economy/US": 5
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1838,17 +2375,24 @@
    "editorial_region": "CA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 42,
-   "date_passed": 42,
+   "parsed_entries": 44,
+   "date_passed": 44,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 26,
-   "geography_unmatched": 16,
+   "geography_matched": 27,
+   "geography_unmatched": 17,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "matched_after_date_pct": 61.9,
-   "survival_after_mapping_pct": 3.8,
+   "duplicate_canonical": 26,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/economy/GB": 25,
+    "google/economy/AU": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 61.4,
+   "survival_after_mapping_pct": 3.7,
    "usefulness": "contributing"
   },
   {
@@ -1861,12 +2405,16 @@
    "date_passed": 13,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 3,
-   "geography_unmatched": 10,
+   "geography_matched": 6,
+   "geography_unmatched": 7,
    "geography_rejected": 0,
-   "deduplication_survived": 3,
-   "globe_articles": 2,
-   "matched_after_date_pct": 23.1,
+   "deduplication_survived": 6,
+   "globe_articles": 5,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 3,
+   "matched_after_date_pct": 46.2,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1885,6 +2433,13 @@
    "geography_rejected": 1,
    "deduplication_survived": 45,
    "globe_articles": 37,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 5,
+   "lost_to_feeds": {
+    "google/politics/MX": 1,
+    "google/economy/MX": 5
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 89.5,
    "survival_after_mapping_pct": 88.2,
    "usefulness": "contributing"
@@ -1895,16 +2450,22 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 12,
-   "date_passed": 12,
+   "parsed_entries": 11,
+   "date_passed": 11,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 6,
+   "geography_matched": 5,
    "geography_unmatched": 6,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 50.0,
+   "duplicate_canonical": 5,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/economy/US": 5
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 45.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1918,13 +2479,19 @@
    "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
-   "geography_unmatched": 39,
+   "geography_matched": 13,
+   "geography_unmatched": 38,
    "geography_rejected": 0,
-   "deduplication_survived": 11,
-   "globe_articles": 11,
-   "matched_after_date_pct": 23.5,
-   "survival_after_mapping_pct": 91.7,
+   "deduplication_survived": 12,
+   "globe_articles": 12,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/science/IN": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 25.5,
+   "survival_after_mapping_pct": 92.3,
    "usefulness": "contributing"
   },
   {
@@ -1942,6 +2509,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -1961,6 +2532,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
+   "duplicate_canonical": 9,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/science/US": 9
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 21.6,
    "survival_after_mapping_pct": 18.2,
    "usefulness": "contributing"
@@ -1980,6 +2557,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/science/GB": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -1997,10 +2580,17 @@
    "geography_matched": 12,
    "geography_unmatched": 40,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 11,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/science/US": 9,
+    "google/science/IN": 2
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 23.1,
-   "survival_after_mapping_pct": 16.7,
+   "survival_after_mapping_pct": 8.3,
    "usefulness": "contributing"
   },
   {
@@ -2018,6 +2608,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/science/GB": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2028,16 +2624,24 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 53,
-   "date_passed": 53,
+   "parsed_entries": 52,
+   "date_passed": 52,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 13,
+   "geography_matched": 12,
    "geography_unmatched": 40,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 24.5,
+   "duplicate_canonical": 12,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/science/US": 9,
+    "google/science/ZA": 1,
+    "google/science/IN": 2
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 23.1,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2056,6 +2660,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/science/GB": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2074,7 +2684,11 @@
    "geography_unmatched": 15,
    "geography_rejected": 0,
    "deduplication_survived": 29,
-   "globe_articles": 26,
+   "globe_articles": 27,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 65.9,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2085,16 +2699,20 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 16,
-   "date_passed": 16,
+   "parsed_entries": 15,
+   "date_passed": 15,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 10,
+   "geography_matched": 9,
    "geography_unmatched": 5,
    "geography_rejected": 1,
-   "deduplication_survived": 10,
+   "deduplication_survived": 9,
    "globe_articles": 5,
-   "matched_after_date_pct": 62.5,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 60.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2108,12 +2726,18 @@
    "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
-   "geography_unmatched": 39,
+   "geography_matched": 13,
+   "geography_unmatched": 38,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "matched_after_date_pct": 23.5,
+   "duplicate_canonical": 13,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/science/US": 13
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 25.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2132,6 +2756,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 8,
    "globe_articles": 8,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2151,6 +2779,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 6,
    "globe_articles": 6,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 85.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2170,6 +2802,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 7,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/conflict/US": 7
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2189,6 +2827,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 5,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/conflict/GB": 5
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 83.3,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2208,6 +2852,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 8,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/conflict/US": 8
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2227,6 +2877,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 6,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/conflict/GB": 6
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 85.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2246,6 +2902,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 8,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/conflict/US": 8
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2265,6 +2927,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 6,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/conflict/GB": 6
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 85.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2275,16 +2943,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 5,
-   "date_passed": 5,
+   "parsed_entries": 4,
+   "date_passed": 4,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 2,
-   "geography_unmatched": 3,
+   "geography_unmatched": 2,
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
-   "matched_after_date_pct": 40.0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2303,6 +2975,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 11,
    "globe_articles": 11,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/community/MX": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 40.0,
    "survival_after_mapping_pct": 91.7,
    "usefulness": "contributing"
@@ -2322,6 +3000,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 8,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "google/conflict/US": 8
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2332,17 +3016,23 @@
    "editorial_region": "international",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 28,
-   "date_passed": 12,
+   "parsed_entries": 29,
+   "date_passed": 13,
    "date_rejected": 16,
    "invalid_article": 0,
-   "geography_matched": 9,
+   "geography_matched": 10,
    "geography_unmatched": 3,
    "geography_rejected": 0,
-   "deduplication_survived": 8,
-   "globe_articles": 8,
-   "matched_after_date_pct": 75.0,
-   "survival_after_mapping_pct": 88.9,
+   "deduplication_survived": 9,
+   "globe_articles": 9,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "direct/BBC World": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 76.9,
+   "survival_after_mapping_pct": 90.0,
    "usefulness": "contributing"
   },
   {
@@ -2360,6 +3050,10 @@
    "geography_rejected": 1,
    "deduplication_survived": 3,
    "globe_articles": 3,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 27.3,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2377,11 +3071,17 @@
    "geography_matched": 1,
    "geography_unmatched": 10,
    "geography_rejected": 1,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "direct/BBC World": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 8.3,
-   "survival_after_mapping_pct": 100.0,
-   "usefulness": "contributing"
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "direct/Al Jazeera",
@@ -2398,6 +3098,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 18,
    "globe_articles": 18,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 72.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2412,12 +3116,16 @@
    "date_passed": 27,
    "date_rejected": 18,
    "invalid_article": 0,
-   "geography_matched": 20,
-   "geography_unmatched": 6,
+   "geography_matched": 19,
+   "geography_unmatched": 7,
    "geography_rejected": 1,
-   "deduplication_survived": 20,
-   "globe_articles": 20,
-   "matched_after_date_pct": 74.1,
+   "deduplication_survived": 19,
+   "globe_articles": 19,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 70.4,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2428,16 +3136,22 @@
    "language": "en",
    "status": "ok",
    "parsed_entries": 34,
-   "date_passed": 7,
-   "date_rejected": 27,
+   "date_passed": 6,
+   "date_rejected": 28,
    "invalid_article": 0,
-   "geography_matched": 7,
+   "geography_matched": 6,
    "geography_unmatched": 0,
    "geography_rejected": 0,
-   "deduplication_survived": 6,
-   "globe_articles": 6,
+   "deduplication_survived": 5,
+   "globe_articles": 5,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "direct/The Guardian World": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
-   "survival_after_mapping_pct": 85.7,
+   "survival_after_mapping_pct": 83.3,
    "usefulness": "contributing"
   },
   {
@@ -2455,6 +3169,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2474,6 +3192,13 @@
    "geography_rejected": 0,
    "deduplication_survived": 17,
    "globe_articles": 17,
+   "duplicate_canonical": 2,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "direct/France24": 2,
+    "google/environment/US": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 83.3,
    "survival_after_mapping_pct": 85.0,
    "usefulness": "contributing"
@@ -2493,6 +3218,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 4,
    "globe_articles": 4,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 80.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2512,6 +3241,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -2531,6 +3264,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 11,
    "globe_articles": 11,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 44.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2550,6 +3287,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -2560,16 +3301,20 @@
    "editorial_region": "regional",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 47,
+   "parsed_entries": 48,
    "date_passed": 35,
-   "date_rejected": 11,
+   "date_rejected": 12,
    "invalid_article": 1,
-   "geography_matched": 14,
-   "geography_unmatched": 20,
+   "geography_matched": 15,
+   "geography_unmatched": 19,
    "geography_rejected": 1,
-   "deduplication_survived": 14,
-   "globe_articles": 14,
-   "matched_after_date_pct": 40.0,
+   "deduplication_survived": 15,
+   "globe_articles": 15,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 42.9,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2588,6 +3333,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2607,6 +3356,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "error": "The read operation timed out",
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
@@ -2627,6 +3380,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -2646,6 +3403,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "error": "no element found: line 1, column 0",
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
@@ -2666,6 +3427,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -2685,6 +3450,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -2699,13 +3468,19 @@
    "date_passed": 24,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 14,
-   "geography_unmatched": 10,
+   "geography_matched": 13,
+   "geography_unmatched": 11,
    "geography_rejected": 0,
-   "deduplication_survived": 13,
-   "globe_articles": 13,
-   "matched_after_date_pct": 58.3,
-   "survival_after_mapping_pct": 92.9,
+   "deduplication_survived": 12,
+   "globe_articles": 12,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "direct/France24 FR": 1
+   },
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 54.2,
+   "survival_after_mapping_pct": 92.3,
    "usefulness": "contributing"
   },
   {
@@ -2718,13 +3493,19 @@
    "date_passed": 24,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 15,
-   "geography_unmatched": 9,
+   "geography_matched": 17,
+   "geography_unmatched": 7,
    "geography_rejected": 0,
-   "deduplication_survived": 15,
-   "globe_articles": 15,
-   "matched_after_date_pct": 62.5,
-   "survival_after_mapping_pct": 100.0,
+   "deduplication_survived": 16,
+   "globe_articles": 16,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "direct/France24 ES": 1
+   },
+   "recovery_explicit": 2,
+   "matched_after_date_pct": 70.8,
+   "survival_after_mapping_pct": 94.1,
    "usefulness": "contributing"
   },
   {
@@ -2742,6 +3523,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "error": "syntax error: line 1, column 0",
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
@@ -2757,12 +3542,16 @@
    "date_passed": 10,
    "date_rejected": 17,
    "invalid_article": 0,
-   "geography_matched": 1,
-   "geography_unmatched": 9,
+   "geography_matched": 3,
+   "geography_unmatched": 7,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
-   "matched_after_date_pct": 10.0,
+   "deduplication_survived": 3,
+   "globe_articles": 3,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 2,
+   "matched_after_date_pct": 30.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2781,6 +3570,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -2800,6 +3593,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -2819,6 +3616,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -2838,6 +3639,12 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "direct/BBC World": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
@@ -2848,17 +3655,23 @@
    "editorial_region": "regional",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 30,
-   "date_passed": 7,
+   "parsed_entries": 31,
+   "date_passed": 8,
    "date_rejected": 23,
    "invalid_article": 0,
-   "geography_matched": 7,
+   "geography_matched": 8,
    "geography_unmatched": 0,
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
+   "duplicate_canonical": 6,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "direct/BBC World": 6
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
-   "survival_after_mapping_pct": 28.6,
+   "survival_after_mapping_pct": 25.0,
    "usefulness": "contributing"
   },
   {
@@ -2868,17 +3681,23 @@
    "language": "en",
    "status": "ok",
    "parsed_entries": 18,
-   "date_passed": 8,
-   "date_rejected": 10,
+   "date_passed": 9,
+   "date_rejected": 9,
    "invalid_article": 0,
-   "geography_matched": 8,
+   "geography_matched": 9,
    "geography_unmatched": 0,
    "geography_rejected": 0,
-   "deduplication_survived": 0,
-   "globe_articles": 0,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 8,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "direct/RNZ National": 8
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
-   "survival_after_mapping_pct": 0.0,
-   "usefulness": "all_duplicate"
+   "survival_after_mapping_pct": 11.1,
+   "usefulness": "contributing"
   },
   {
    "feed": "direct/Guardian Africa",
@@ -2895,6 +3714,13 @@
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
+   "duplicate_canonical": 3,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {
+    "direct/The Guardian Environment": 1,
+    "direct/The Guardian World": 2
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 25.0,
    "usefulness": "contributing"
@@ -2914,6 +3740,10 @@
    "geography_rejected": 1,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -2933,6 +3763,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -2952,6 +3786,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -2971,6 +3809,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -2990,6 +3832,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3009,6 +3855,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -3028,6 +3878,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -3047,6 +3901,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3066,6 +3924,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3085,6 +3947,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3104,6 +3970,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3123,6 +3993,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3142,6 +4016,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -3161,6 +4039,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3180,6 +4062,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3199,6 +4085,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 0.0,
    "survival_after_mapping_pct": null,
    "usefulness": "no_geographic_matches"
@@ -3218,6 +4108,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3237,6 +4131,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
@@ -3248,15 +4146,19 @@
    "language": "en",
    "status": "ok",
    "parsed_entries": 50,
-   "date_passed": 4,
-   "date_rejected": 46,
+   "date_passed": 5,
+   "date_rejected": 45,
    "invalid_article": 0,
-   "geography_matched": 2,
+   "geography_matched": 3,
    "geography_unmatched": 2,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
-   "matched_after_date_pct": 50.0,
+   "deduplication_survived": 3,
+   "globe_articles": 3,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
+   "matched_after_date_pct": 60.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -3275,6 +4177,13 @@
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
+   "duplicate_canonical": 1,
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/environment/US": 1,
+    "direct/The Conversation": 1
+   },
+   "recovery_explicit": 0,
    "matched_after_date_pct": 75.0,
    "survival_after_mapping_pct": 33.3,
    "usefulness": "contributing"
@@ -3294,6 +4203,10 @@
    "geography_rejected": 0,
    "deduplication_survived": 3,
    "globe_articles": 3,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
@@ -3313,10 +4226,1922 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
+   "duplicate_canonical": 0,
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
+   "recovery_explicit": 0,
    "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
    "usefulness": "no_recent_valid_articles"
   }
  ],
- "possible_unmapped_geo_mentions_for_manual_review": []
+ "possible_unmapped_geo_mentions_for_manual_review": [],
+ "d4_recovery": {
+  "recovered_by_feed": {
+   "google/politics/MX": 1,
+   "google/education/MX": 1,
+   "google/economy/BR": 3,
+   "direct/France24 ES": 2,
+   "direct/BBC Brasil": 2
+  },
+  "recovered_total": 9,
+  "recovered_examples": [
+   {
+    "feed": "google/politics/MX",
+    "title": "De la embajada al colmado: la nueva diplomacia popular de Estados Unidos en América Latina",
+    "place": "United States",
+    "evidence": {
+     "field": "headline",
+     "explicit_phrase": "estados unidos",
+     "method": "qualified_country_phrase"
+    }
+   },
+   {
+    "feed": "google/education/MX",
+    "title": "Profesores chilenos en Estados Unidos: requisitos, sueldos y cómo postular",
+    "place": "United States",
+    "evidence": {
+     "field": "headline",
+     "explicit_phrase": "estados unidos",
+     "method": "qualified_country_phrase"
+    }
+   },
+   {
+    "feed": "google/economy/BR",
+    "title": "Nobel de Economia 2026 premia Hall e Woodford; teorias sobre juros, inflação e expectativas ajudam a explicar desafios do Brasil | Por Carlos Augusto",
+    "place": "Brazil",
+    "evidence": {
+     "field": "headline",
+     "explicit_phrase": "brasil",
+     "method": "qualified_country_phrase"
+    }
+   },
+   {
+    "feed": "google/economy/BR",
+    "title": "Fim da escala 6×1 reacende resistência que marcou grandes conquistas trabalhistas no Brasil",
+    "place": "Brazil",
+    "evidence": {
+     "field": "headline",
+     "explicit_phrase": "brasil",
+     "method": "qualified_country_phrase"
+    }
+   },
+   {
+    "feed": "google/economy/BR",
+    "title": "Análise: Inflação alta nos EUA pode frear queda da Selic no Brasil",
+    "place": "Brazil",
+    "evidence": {
+     "field": "headline",
+     "explicit_phrase": "brasil",
+     "method": "qualified_country_phrase"
+    }
+   },
+   {
+    "feed": "direct/France24 ES",
+    "title": "Crece el escrutinio contra Meta en Brasil por las denuncias de restricciones a la campaña de Lula",
+    "place": "Brazil",
+    "evidence": {
+     "field": "headline",
+     "explicit_phrase": "brasil",
+     "method": "qualified_country_phrase"
+    }
+   },
+   {
+    "feed": "direct/France24 ES",
+    "title": "Crece el escrutinio contra Meta en Brasil por las denuncias de restricciones a la campaña de Lula",
+    "place": "Brazil",
+    "evidence": {
+     "field": "headline",
+     "explicit_phrase": "brasil",
+     "method": "qualified_country_phrase"
+    }
+   },
+   {
+    "feed": "direct/BBC Brasil",
+    "title": "Fim da escala 6x1: o que pensa uma mãe solo e um pequeno empresário",
+    "place": "Brazil",
+    "evidence": {
+     "field": "description",
+     "explicit_phrase": "brasil",
+     "method": "qualified_country_phrase"
+    }
+   },
+   {
+    "feed": "direct/BBC Brasil",
+    "title": "Como americanos enfrentam a alta da inflação: 'Já fiz coisas insanas para sobreviver'",
+    "place": "United States",
+    "evidence": {
+     "field": "description",
+     "explicit_phrase": "estados unidos",
+     "method": "qualified_country_phrase"
+    }
+   }
+  ],
+  "unmatched_reason_counts": {
+   "insufficient_unambiguous_location_evidence": 1373,
+   "global_or_nonlocal_topic": 32,
+   "limited_description_evidence": 6
+  }
+ },
+ "d4_efficiency": {
+  "usefulness_classes": {
+   "contributing": 82,
+   "no_parsed_entries": 9,
+   "all_duplicate": 46,
+   "no_geographic_matches": 16,
+   "fetch_failed": 3,
+   "no_recent_valid_articles": 17
+  },
+  "overlap_by_feed": [
+   {
+    "feed": "google/politics/US",
+    "mapped": 16,
+    "survived": 14,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 2,
+    "loss_attribution": [
+     [
+      "google/politics/KE",
+      1
+     ],
+     [
+      "google/politics/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 12.5
+   },
+   {
+    "feed": "google/politics/IN",
+    "mapped": 17,
+    "survived": 2,
+    "duplicate_canonical": 15,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/politics/US",
+      15
+     ]
+    ],
+    "duplicate_share_pct": 88.2
+   },
+   {
+    "feed": "google/politics/ZA",
+    "mapped": 18,
+    "survived": 1,
+    "duplicate_canonical": 17,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/politics/US",
+      15
+     ],
+     [
+      "google/politics/IN",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 94.4
+   },
+   {
+    "feed": "google/politics/PH",
+    "mapped": 18,
+    "survived": 0,
+    "duplicate_canonical": 18,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/politics/US",
+      16
+     ],
+     [
+      "google/politics/ZA",
+      1
+     ],
+     [
+      "google/politics/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/politics/BR",
+    "mapped": 10,
+    "survived": 10,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/politics/MX",
+    "mapped": 20,
+    "survived": 18,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 2,
+    "loss_attribution": [
+     [
+      "google/politics/MX",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 10.0
+   },
+   {
+    "feed": "google/politics/KE",
+    "mapped": 18,
+    "survived": 1,
+    "duplicate_canonical": 17,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/politics/US",
+      14
+     ],
+     [
+      "google/politics/IN",
+      2
+     ],
+     [
+      "google/politics/ZA",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 94.4
+   },
+   {
+    "feed": "google/environment/US",
+    "mapped": 9,
+    "survived": 9,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/environment/IN",
+    "mapped": 10,
+    "survived": 1,
+    "duplicate_canonical": 8,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/environment/US",
+      9
+     ]
+    ],
+    "duplicate_share_pct": 90.0
+   },
+   {
+    "feed": "google/environment/ZA",
+    "mapped": 10,
+    "survived": 0,
+    "duplicate_canonical": 10,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/environment/US",
+      8
+     ],
+     [
+      "google/environment/IN",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/environment/PH",
+    "mapped": 9,
+    "survived": 0,
+    "duplicate_canonical": 9,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/environment/US",
+      8
+     ],
+     [
+      "google/environment/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/environment/BR",
+    "mapped": 3,
+    "survived": 3,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/environment/MX",
+    "mapped": 33,
+    "survived": 32,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/environment/MX",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 3.0
+   },
+   {
+    "feed": "google/environment/KE",
+    "mapped": 9,
+    "survived": 0,
+    "duplicate_canonical": 9,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/environment/US",
+      8
+     ],
+     [
+      "google/environment/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/hazards/GB",
+    "mapped": 11,
+    "survived": 10,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/hazards/GB",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 9.1
+   },
+   {
+    "feed": "google/hazards/AU",
+    "mapped": 11,
+    "survived": 0,
+    "duplicate_canonical": 10,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/hazards/GB",
+      11
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/hazards/NG",
+    "mapped": 11,
+    "survived": 0,
+    "duplicate_canonical": 11,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/hazards/GB",
+      11
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/hazards/CA",
+    "mapped": 10,
+    "survived": 0,
+    "duplicate_canonical": 10,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/hazards/GB",
+      10
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/hazards/MX",
+    "mapped": 4,
+    "survived": 4,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/society/US",
+    "mapped": 24,
+    "survived": 23,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/society/US",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 4.2
+   },
+   {
+    "feed": "google/society/GB",
+    "mapped": 4,
+    "survived": 4,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/society/IN",
+    "mapped": 29,
+    "survived": 11,
+    "duplicate_canonical": 18,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/society/US",
+      18
+     ]
+    ],
+    "duplicate_share_pct": 62.1
+   },
+   {
+    "feed": "google/society/AU",
+    "mapped": 4,
+    "survived": 0,
+    "duplicate_canonical": 4,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/society/GB",
+      4
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/society/ZA",
+    "mapped": 21,
+    "survived": 2,
+    "duplicate_canonical": 18,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/society/US",
+      19
+     ]
+    ],
+    "duplicate_share_pct": 90.5
+   },
+   {
+    "feed": "google/society/NG",
+    "mapped": 3,
+    "survived": 0,
+    "duplicate_canonical": 3,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/society/GB",
+      3
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/society/PH",
+    "mapped": 23,
+    "survived": 0,
+    "duplicate_canonical": 22,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/society/US",
+      20
+     ],
+     [
+      "google/society/ZA",
+      3
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/society/CA",
+    "mapped": 4,
+    "survived": 1,
+    "duplicate_canonical": 3,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/society/GB",
+      3
+     ]
+    ],
+    "duplicate_share_pct": 75.0
+   },
+   {
+    "feed": "google/society/BR",
+    "mapped": 7,
+    "survived": 7,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/society/MX",
+    "mapped": 25,
+    "survived": 25,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/society/KE",
+    "mapped": 22,
+    "survived": 0,
+    "duplicate_canonical": 22,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/society/US",
+      19
+     ],
+     [
+      "google/society/ZA",
+      3
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/health/US",
+    "mapped": 28,
+    "survived": 28,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/health/GB",
+    "mapped": 22,
+    "survived": 20,
+    "duplicate_canonical": 2,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/health/US",
+      1
+     ],
+     [
+      "google/society/GB",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 9.1
+   },
+   {
+    "feed": "google/health/IN",
+    "mapped": 28,
+    "survived": 4,
+    "duplicate_canonical": 23,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/health/US",
+      24
+     ]
+    ],
+    "duplicate_share_pct": 85.7
+   },
+   {
+    "feed": "google/health/AU",
+    "mapped": 22,
+    "survived": 1,
+    "duplicate_canonical": 21,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/health/GB",
+      19
+     ],
+     [
+      "google/health/US",
+      1
+     ],
+     [
+      "google/society/GB",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 95.5
+   },
+   {
+    "feed": "google/health/ZA",
+    "mapped": 29,
+    "survived": 1,
+    "duplicate_canonical": 28,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/health/US",
+      24
+     ],
+     [
+      "google/health/IN",
+      4
+     ]
+    ],
+    "duplicate_share_pct": 96.6
+   },
+   {
+    "feed": "google/health/NG",
+    "mapped": 22,
+    "survived": 0,
+    "duplicate_canonical": 22,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/health/GB",
+      19
+     ],
+     [
+      "google/health/US",
+      1
+     ],
+     [
+      "google/health/AU",
+      1
+     ],
+     [
+      "google/society/GB",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/health/PH",
+    "mapped": 30,
+    "survived": 1,
+    "duplicate_canonical": 29,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/health/US",
+      24
+     ],
+     [
+      "google/health/IN",
+      4
+     ],
+     [
+      "google/health/ZA",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 96.7
+   },
+   {
+    "feed": "google/health/CA",
+    "mapped": 21,
+    "survived": 0,
+    "duplicate_canonical": 21,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/health/GB",
+      18
+     ],
+     [
+      "google/health/US",
+      1
+     ],
+     [
+      "google/health/AU",
+      1
+     ],
+     [
+      "google/society/GB",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/health/BR",
+    "mapped": 21,
+    "survived": 21,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/health/MX",
+    "mapped": 11,
+    "survived": 11,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/health/KE",
+    "mapped": 29,
+    "survived": 0,
+    "duplicate_canonical": 28,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/health/US",
+      26
+     ],
+     [
+      "google/health/IN",
+      3
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/education/US",
+    "mapped": 28,
+    "survived": 27,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/society/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 3.6
+   },
+   {
+    "feed": "google/education/GB",
+    "mapped": 31,
+    "survived": 27,
+    "duplicate_canonical": 3,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/education/US",
+      3
+     ],
+     [
+      "google/education/AU",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 12.9
+   },
+   {
+    "feed": "google/education/IN",
+    "mapped": 30,
+    "survived": 6,
+    "duplicate_canonical": 24,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/education/US",
+      23
+     ],
+     [
+      "google/society/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 80.0
+   },
+   {
+    "feed": "google/education/AU",
+    "mapped": 31,
+    "survived": 1,
+    "duplicate_canonical": 30,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/education/GB",
+      27
+     ],
+     [
+      "google/education/US",
+      3
+     ]
+    ],
+    "duplicate_share_pct": 96.8
+   },
+   {
+    "feed": "google/education/ZA",
+    "mapped": 29,
+    "survived": 2,
+    "duplicate_canonical": 27,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/education/US",
+      22
+     ],
+     [
+      "google/education/IN",
+      4
+     ],
+     [
+      "google/society/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 93.1
+   },
+   {
+    "feed": "google/education/NG",
+    "mapped": 32,
+    "survived": 1,
+    "duplicate_canonical": 31,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/education/GB",
+      27
+     ],
+     [
+      "google/education/US",
+      3
+     ],
+     [
+      "google/education/AU",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 96.9
+   },
+   {
+    "feed": "google/education/PH",
+    "mapped": 30,
+    "survived": 0,
+    "duplicate_canonical": 30,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/education/US",
+      22
+     ],
+     [
+      "google/education/IN",
+      6
+     ],
+     [
+      "google/society/IN",
+      1
+     ],
+     [
+      "google/education/ZA",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/education/CA",
+    "mapped": 32,
+    "survived": 0,
+    "duplicate_canonical": 32,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/education/GB",
+      27
+     ],
+     [
+      "google/education/US",
+      3
+     ],
+     [
+      "google/education/NG",
+      1
+     ],
+     [
+      "google/education/AU",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/education/BR",
+    "mapped": 9,
+    "survived": 9,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/education/MX",
+    "mapped": 30,
+    "survived": 26,
+    "duplicate_canonical": 4,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/society/MX",
+      4
+     ]
+    ],
+    "duplicate_share_pct": 13.3
+   },
+   {
+    "feed": "google/education/KE",
+    "mapped": 27,
+    "survived": 0,
+    "duplicate_canonical": 27,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/education/US",
+      21
+     ],
+     [
+      "google/education/IN",
+      4
+     ],
+     [
+      "google/society/IN",
+      1
+     ],
+     [
+      "google/education/ZA",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/rights/US",
+    "mapped": 2,
+    "survived": 2,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/rights/GB",
+    "mapped": 10,
+    "survived": 10,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/rights/IN",
+    "mapped": 2,
+    "survived": 0,
+    "duplicate_canonical": 2,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/rights/US",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/rights/AU",
+    "mapped": 10,
+    "survived": 0,
+    "duplicate_canonical": 10,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/rights/GB",
+      10
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/rights/ZA",
+    "mapped": 2,
+    "survived": 0,
+    "duplicate_canonical": 2,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/rights/US",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/rights/NG",
+    "mapped": 10,
+    "survived": 0,
+    "duplicate_canonical": 10,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/rights/GB",
+      10
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/rights/PH",
+    "mapped": 2,
+    "survived": 0,
+    "duplicate_canonical": 2,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/rights/US",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/rights/CA",
+    "mapped": 10,
+    "survived": 0,
+    "duplicate_canonical": 10,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/rights/GB",
+      10
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/rights/BR",
+    "mapped": 2,
+    "survived": 2,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/rights/MX",
+    "mapped": 6,
+    "survived": 6,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/rights/KE",
+    "mapped": 2,
+    "survived": 0,
+    "duplicate_canonical": 2,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/rights/US",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/community/US",
+    "mapped": 2,
+    "survived": 2,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/community/IN",
+    "mapped": 2,
+    "survived": 0,
+    "duplicate_canonical": 2,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/community/US",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/community/ZA",
+    "mapped": 2,
+    "survived": 0,
+    "duplicate_canonical": 2,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/community/US",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/community/PH",
+    "mapped": 2,
+    "survived": 0,
+    "duplicate_canonical": 2,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/community/US",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/community/BR",
+    "mapped": 2,
+    "survived": 2,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/community/MX",
+    "mapped": 34,
+    "survived": 34,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/community/KE",
+    "mapped": 1,
+    "survived": 0,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/community/US",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/economy/US",
+    "mapped": 7,
+    "survived": 7,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/economy/GB",
+    "mapped": 27,
+    "survived": 26,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/economy/NG",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 3.7
+   },
+   {
+    "feed": "google/economy/IN",
+    "mapped": 5,
+    "survived": 0,
+    "duplicate_canonical": 5,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/economy/US",
+      5
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/economy/AU",
+    "mapped": 28,
+    "survived": 2,
+    "duplicate_canonical": 26,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/economy/GB",
+      26
+     ]
+    ],
+    "duplicate_share_pct": 92.9
+   },
+   {
+    "feed": "google/economy/ZA",
+    "mapped": 5,
+    "survived": 0,
+    "duplicate_canonical": 5,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/economy/US",
+      5
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/economy/NG",
+    "mapped": 30,
+    "survived": 5,
+    "duplicate_canonical": 24,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/economy/GB",
+      23
+     ],
+     [
+      "google/economy/AU",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 83.3
+   },
+   {
+    "feed": "google/economy/PH",
+    "mapped": 5,
+    "survived": 0,
+    "duplicate_canonical": 4,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/economy/US",
+      5
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/economy/CA",
+    "mapped": 27,
+    "survived": 1,
+    "duplicate_canonical": 26,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/economy/GB",
+      25
+     ],
+     [
+      "google/economy/AU",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 96.3
+   },
+   {
+    "feed": "google/economy/BR",
+    "mapped": 6,
+    "survived": 6,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/economy/MX",
+    "mapped": 51,
+    "survived": 45,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 5,
+    "loss_attribution": [
+     [
+      "google/economy/MX",
+      5
+     ],
+     [
+      "google/politics/MX",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 11.8
+   },
+   {
+    "feed": "google/economy/KE",
+    "mapped": 5,
+    "survived": 0,
+    "duplicate_canonical": 5,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/economy/US",
+      5
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/science/US",
+    "mapped": 13,
+    "survived": 12,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/science/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 7.7
+   },
+   {
+    "feed": "google/science/GB",
+    "mapped": 1,
+    "survived": 1,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/science/IN",
+    "mapped": 11,
+    "survived": 2,
+    "duplicate_canonical": 9,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/science/US",
+      9
+     ]
+    ],
+    "duplicate_share_pct": 81.8
+   },
+   {
+    "feed": "google/science/AU",
+    "mapped": 1,
+    "survived": 0,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/science/GB",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/science/ZA",
+    "mapped": 12,
+    "survived": 1,
+    "duplicate_canonical": 11,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/science/US",
+      9
+     ],
+     [
+      "google/science/IN",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 91.7
+   },
+   {
+    "feed": "google/science/NG",
+    "mapped": 1,
+    "survived": 0,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/science/GB",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/science/PH",
+    "mapped": 12,
+    "survived": 0,
+    "duplicate_canonical": 12,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/science/US",
+      9
+     ],
+     [
+      "google/science/IN",
+      2
+     ],
+     [
+      "google/science/ZA",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/science/CA",
+    "mapped": 1,
+    "survived": 0,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/science/GB",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/science/BR",
+    "mapped": 29,
+    "survived": 29,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/science/MX",
+    "mapped": 9,
+    "survived": 9,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/science/KE",
+    "mapped": 13,
+    "survived": 0,
+    "duplicate_canonical": 13,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/science/US",
+      13
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/conflict/US",
+    "mapped": 8,
+    "survived": 8,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/conflict/GB",
+    "mapped": 6,
+    "survived": 6,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/conflict/IN",
+    "mapped": 7,
+    "survived": 0,
+    "duplicate_canonical": 7,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/conflict/US",
+      7
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/conflict/AU",
+    "mapped": 5,
+    "survived": 0,
+    "duplicate_canonical": 5,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/conflict/GB",
+      5
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/conflict/ZA",
+    "mapped": 8,
+    "survived": 0,
+    "duplicate_canonical": 8,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/conflict/US",
+      8
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/conflict/NG",
+    "mapped": 6,
+    "survived": 0,
+    "duplicate_canonical": 6,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/conflict/GB",
+      6
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/conflict/PH",
+    "mapped": 8,
+    "survived": 0,
+    "duplicate_canonical": 8,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/conflict/US",
+      8
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/conflict/CA",
+    "mapped": 6,
+    "survived": 0,
+    "duplicate_canonical": 6,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/conflict/GB",
+      6
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/conflict/BR",
+    "mapped": 2,
+    "survived": 2,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/conflict/MX",
+    "mapped": 12,
+    "survived": 11,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/community/MX",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 8.3
+   },
+   {
+    "feed": "google/conflict/KE",
+    "mapped": 8,
+    "survived": 0,
+    "duplicate_canonical": 8,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/conflict/US",
+      8
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "direct/BBC World",
+    "mapped": 10,
+    "survived": 9,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "direct/BBC World",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 10.0
+   },
+   {
+    "feed": "direct/BBC Science",
+    "mapped": 3,
+    "survived": 3,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/BBC Business",
+    "mapped": 1,
+    "survived": 0,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "direct/BBC World",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "direct/Al Jazeera",
+    "mapped": 18,
+    "survived": 18,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/The Guardian World",
+    "mapped": 19,
+    "survived": 19,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/The Guardian Environment",
+    "mapped": 6,
+    "survived": 5,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "direct/The Guardian World",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 16.7
+   },
+   {
+    "feed": "direct/DW World",
+    "mapped": 2,
+    "survived": 2,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/France24",
+    "mapped": 20,
+    "survived": 17,
+    "duplicate_canonical": 2,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "direct/France24",
+      2
+     ],
+     [
+      "google/environment/US",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 15.0
+   },
+   {
+    "feed": "direct/NPR World",
+    "mapped": 4,
+    "survived": 4,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/ABC Australia",
+    "mapped": 11,
+    "survived": 11,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/RNZ National",
+    "mapped": 15,
+    "survived": 15,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/The Conversation",
+    "mapped": 1,
+    "survived": 1,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/UN News",
+    "mapped": 1,
+    "survived": 1,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/France24 FR",
+    "mapped": 13,
+    "survived": 12,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "direct/France24 FR",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 7.7
+   },
+   {
+    "feed": "direct/France24 ES",
+    "mapped": 17,
+    "survived": 16,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "direct/France24 ES",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 5.9
+   },
+   {
+    "feed": "direct/BBC Brasil",
+    "mapped": 3,
+    "survived": 3,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/BBC Middle East",
+    "mapped": 1,
+    "survived": 0,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "direct/BBC World",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "direct/BBC Europe",
+    "mapped": 8,
+    "survived": 2,
+    "duplicate_canonical": 6,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "direct/BBC World",
+      6
+     ]
+    ],
+    "duplicate_share_pct": 75.0
+   },
+   {
+    "feed": "direct/RNZ Pacific",
+    "mapped": 9,
+    "survived": 1,
+    "duplicate_canonical": 8,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "direct/RNZ National",
+      8
+     ]
+    ],
+    "duplicate_share_pct": 88.9
+   },
+   {
+    "feed": "direct/Guardian Africa",
+    "mapped": 4,
+    "survived": 1,
+    "duplicate_canonical": 3,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "direct/The Guardian World",
+      2
+     ],
+     [
+      "direct/The Guardian Environment",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 75.0
+   },
+   {
+    "feed": "direct/Global Voices English",
+    "mapped": 1,
+    "survived": 1,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/Global Voices Spanish",
+    "mapped": 1,
+    "survived": 1,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/The Conversation NZ",
+    "mapped": 3,
+    "survived": 3,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "direct/The Conversation Canada",
+    "mapped": 3,
+    "survived": 1,
+    "duplicate_canonical": 1,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/environment/US",
+      1
+     ],
+     [
+      "direct/The Conversation",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 66.7
+   },
+   {
+    "feed": "direct/Mongabay Latam",
+    "mapped": 3,
+    "survived": 3,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   }
+  ],
+  "policy": "Observation only: no automatic feed removal or priority changes; duplicates are order-dependent and may provide fallback resilience."
+ }
 }
