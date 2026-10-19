@@ -52,6 +52,7 @@ from geo_pilot_d17 import trial as d17_trial, report as d17_report
 from geo_activation_d18 import simulate as d18_simulate
 from geo_integrity_d19 import simulate as d19_integrity
 from feed_resilience_d191 import retry_open, assess_outage
+from feed_health_d192 import build_report as d192_build_report
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -695,7 +696,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
   f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
   f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
- obj={'schema':1,'release':'v2.4D.19.1','updated_at':now.isoformat(),'stage_definitions':{
+ obj={'schema':1,'release':'v2.4D.19.2','updated_at':now.isoformat(),'stage_definitions':{
   'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
   'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
   'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
@@ -724,7 +725,8 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   'd17_controlled_semantic_pilot':d17_report(getattr(collect,'d17_rows',[]),getattr(publish_pipeline_audit,'points',[])),
   'd18_controlled_activation':getattr(publish_pipeline_audit,'d18_activation',{}),
   'd19_correction_integrity':getattr(publish_pipeline_audit,'d19_integrity',{}),
-  'd191_feed_resilience':getattr(publish_pipeline_audit,'d191_health',{})}
+  'd191_feed_resilience':getattr(publish_pipeline_audit,'d191_health',{}),
+  'd192_feed_health_validation':getattr(publish_pipeline_audit,'d192_health',{})}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
@@ -743,6 +745,9 @@ def main():
  outage['current_successes']=success
  outage['current_failed_feeds']=len(failures)
  (ROOT/'data/feed-resilience-health.json').write_text(json.dumps(outage,ensure_ascii=False,indent=1),encoding='utf8')
+ d192_health=d192_build_report(health,old,now=now,actual_d191=outage)
+ (ROOT/'data/feed-health-validation.json').write_text(json.dumps(d192_health,ensure_ascii=False,indent=1),encoding='utf8')
+ publish_pipeline_audit.d192_health=d192_health
  if outage['publication_blocked']:
   # Important: DO NOT overwrite news.json, historical metrics, geo QA files or
   # misleadingly publish a diminished audit in a catastrophic Google outage.
@@ -796,6 +801,6 @@ def main():
  publish_audit(raw,now,ROOT/'data')
  collect.decision_audit.publish(ROOT/'data',now)
  publish_confidence(raw,now,ROOT/'data')
- print(f'WorldPulse v2.4D.19.1: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
+ print(f'WorldPulse v2.4D.19.2: {success}/{len(health)} feeds; {unique} mapped articles; {duplicates} duplicates removed; {len(points)} signals; {len(publishers)} publisher names; status={record["status"]}',flush=True)
  if not points:print('WARNING: feeds succeeded but no headline-place matches',flush=True)
 if __name__=='__main__':main()
