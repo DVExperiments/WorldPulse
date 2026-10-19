@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-10-19T17:30:01.950330+00:00",
+ "updated_at": "2026-10-19T21:45:16.286282+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
@@ -29,17 +29,13 @@
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 47,
+   "successful_nonempty": 48,
    "successful_empty": 0,
-   "transport_failure": 5,
+   "transport_failure": 4,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
    "failure_samples": [
-    {
-     "source": "direct/France24",
-     "error": ""
-    },
     {
      "source": "direct/CBC World",
      "error": ""
@@ -49,7 +45,7 @@
      "error": ""
     },
     {
-     "source": "direct/France24 ES",
+     "source": "direct/UN News",
      "error": ""
     },
     {
@@ -113,7 +109,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "0c09b33ae41a0c6909971935ebcbef55b92d1af6f7dc253d063e6f0901081c4f",
+  "frozen_snapshot_fingerprint": "09b53af7de1dd9566ca4bade4af66e1593c82198552c2092a864c993cf0621eb",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
