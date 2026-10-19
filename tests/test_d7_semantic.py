@@ -21,5 +21,5 @@ check('Trump suspende sanções contra a Rússia','Paraná','retain')
 check('Israel elections enter final stretch','Vietnam','review',d6={'headline_places':['Israel']})
 assert summary([check('Decision sparks outrage','Sparks','withhold')])['decision_counts']['withhold']==1
 src=(Path(__file__).resolve().parents[1]/'scripts/update.py').read_text()
-assert "'release':'v2.4D.7'" in src and "'d7_semantic_accuracy'" in src
+assert "'release':'v2.4D.8'" in src and "'d7_semantic_accuracy'" in src
 print('v2.4D.7 semantic regression tests passed')
