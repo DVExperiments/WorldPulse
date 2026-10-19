@@ -36,6 +36,7 @@ from cross_border import publish_links
 from geographic_disambiguation import evaluate as evaluate_geographic_subject
 from geographic_quality_monitor import update_health_file
 from geo_recovery_d4 import recover_explicit_geography, diagnose_unmatched, summarize_efficiency
+from geo_evidence_d5 import coverage_report, evidence_for_match
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -584,7 +585,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
   f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
   f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
- obj={'schema':1,'release':'v2.4D.4','updated_at':now.isoformat(),'stage_definitions':{
+ obj={'schema':1,'release':'v2.4D.5','updated_at':now.isoformat(),'stage_definitions':{
   'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
   'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
   'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
@@ -596,7 +597,8 @@ def publish_pipeline_audit(now,pipeline,unmapped):
            'D.4 recovery is restricted to explicit qualified country references already found in the existing PLACES gazetteer; it does not use source edition or publisher location.'],
   'totals':totals,'feeds':feeds,'possible_unmapped_geo_mentions_for_manual_review':review[:50],
   'd4_recovery':getattr(collect,'recovery_stats',{}),
-  'd4_efficiency':summarize_efficiency(feeds)}
+  'd4_efficiency':summarize_efficiency(feeds),
+  'd5_geographic_evidence':coverage_report(getattr(publish_pipeline_audit,'raw',[]),getattr(publish_pipeline_audit,'points',[]),unmapped,feeds)}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
@@ -616,6 +618,8 @@ def main():
   OUT.write_text(json.dumps(old,ensure_ascii=False,indent=1),encoding='utf8')
   raise SystemExit('Every RSS feed failed; retained last-known snapshot')
  points,duplicates,unique=produce(raw,now)
+ publish_pipeline_audit.raw=raw
+ publish_pipeline_audit.points=points
  publish_pipeline_audit(now,getattr(collect,'pipeline',{}),unmapped)
  clusters=enrich_story_clusters(cluster_bundle(points),now,ROOT/'data/story-history.json')
  publishers=set(a['publisher'].casefold() for a in raw if a.get('publisher'))
