@@ -50,6 +50,7 @@ from geo_semantic_d15 import classify as d15_classify, report as d15_report
 from geo_trials_d16 import simulate as d16_simulate, report as d16_report
 from geo_pilot_d17 import trial as d17_trial, report as d17_report
 from geo_activation_d18 import simulate as d18_simulate
+from geo_integrity_d19 import simulate as d19_integrity
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -720,7 +721,8 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   'd15_semantic_hierarchy_validation':getattr(collect,'d15_semantic',{}),
   'd16_targeted_correction_trials':getattr(collect,'d16_trials',{}),
   'd17_controlled_semantic_pilot':d17_report(getattr(collect,'d17_rows',[]),getattr(publish_pipeline_audit,'points',[])),
-  'd18_controlled_activation':getattr(publish_pipeline_audit,'d18_activation',{})}
+  'd18_controlled_activation':getattr(publish_pipeline_audit,'d18_activation',{}),
+  'd19_correction_integrity':getattr(publish_pipeline_audit,'d19_integrity',{})}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
@@ -742,7 +744,10 @@ def main():
  points,duplicates,unique=produce(raw,now)
  # D18 activation gate defaults OFF. Both explicit environment switch and
  # a separately reviewed approval manifest are required for any filtering.
- points,d18_activation=d18_simulate(points,getattr(collect,'d17_rows',[]),ROOT/'data/d18-reviewed-approvals.json')
+ # D19 safety lock: prevent any D18 live activation during integrity validation.
+ points,d18_activation=d18_simulate(points,getattr(collect,'d17_rows',[]),ROOT/'data/d18-reviewed-approvals.json',enabled=False)
+ d19_integrity_report=d19_integrity(points,getattr(collect,'d17_rows',[]),ROOT/'data/d19-reviewed-articles.json')
+ publish_pipeline_audit.d19_integrity=d19_integrity_report
  publish_pipeline_audit.d18_activation=d18_activation
  publish_pipeline_audit.raw=raw
  publish_pipeline_audit.points=points
