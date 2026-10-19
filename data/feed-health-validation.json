@@ -1,0 +1,114 @@
+{
+ "schema": 1,
+ "release": "v2.4D.19.2",
+ "updated_at": "2026-10-19T06:39:27.115428+00:00",
+ "mode": "observation_and_offline_drills",
+ "feed_outcomes": {
+  "aggregator": {
+   "total": 121,
+   "successful_nonempty": 112,
+   "successful_empty": 9,
+   "transport_failure": 0,
+   "unknown_item_count": 0,
+   "unknown_status": 0,
+   "empty_samples": [
+    "google/politics/GB",
+    "google/politics/AU",
+    "google/politics/NG",
+    "google/politics/CA",
+    "google/environment/GB",
+    "google/environment/AU",
+    "google/environment/NG",
+    "google/environment/CA",
+    "google/hazards/BR"
+   ],
+   "failure_samples": []
+  },
+  "publisher": {
+   "total": 52,
+   "successful_nonempty": 49,
+   "successful_empty": 0,
+   "transport_failure": 3,
+   "unknown_item_count": 0,
+   "unknown_status": 0,
+   "empty_samples": [],
+   "failure_samples": [
+    {
+     "source": "direct/CBC World",
+     "error": ""
+    },
+    {
+     "source": "direct/ReliefWeb Updates",
+     "error": ""
+    },
+    {
+     "source": "direct/DW Español",
+     "error": ""
+    }
+   ]
+  }
+ },
+ "actual_publication_decision": {
+  "blocked": false,
+  "reason": "publish_as_normal",
+  "previous_snapshot_healthy": true
+ },
+ "frozen_outage_drills": {
+  "passed": true,
+  "scenarios": [
+   {
+    "scenario": "catastrophic_google_503",
+    "expected_publication_blocked": true,
+    "actual_publication_blocked": true,
+    "passed": true,
+    "old_snapshot_preserved": true,
+    "google_failed": 121,
+    "google_successful_empty": 0
+   },
+   {
+    "scenario": "partial_google_outage",
+    "expected_publication_blocked": false,
+    "actual_publication_blocked": false,
+    "passed": true,
+    "old_snapshot_preserved": true,
+    "google_failed": 30,
+    "google_successful_empty": 0
+   },
+   {
+    "scenario": "successful_but_empty_google",
+    "expected_publication_blocked": false,
+    "actual_publication_blocked": false,
+    "passed": true,
+    "old_snapshot_preserved": true,
+    "google_failed": 0,
+    "google_successful_empty": 121
+   },
+   {
+    "scenario": "healthy_google",
+    "expected_publication_blocked": false,
+    "actual_publication_blocked": false,
+    "passed": true,
+    "old_snapshot_preserved": true,
+    "google_failed": 0,
+    "google_successful_empty": 0
+   },
+   {
+    "scenario": "expired_snapshot_not_preserved",
+    "expected_publication_blocked": false,
+    "actual_publication_blocked": false,
+    "passed": true,
+    "old_snapshot_preserved": true,
+    "google_failed": 121,
+    "google_successful_empty": 0
+   }
+  ],
+  "frozen_snapshot_fingerprint": "734c608f3cb0934c0b2a677ee10c7ad94168edeb39277dd6cfaf9b897dd72da9",
+  "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
+ },
+ "limits": [
+  "A successful HTTP response with zero parsed items is not a transport failure; it can still represent an upstream empty or malformed response.",
+  "No automatic publication block is introduced for successful empty feeds.",
+  "Drills exercise the D19.1 decision helper with synthetic feed statuses, not real HTTP requests.",
+  "Geographic corrections remain disabled."
+ ]
+}
