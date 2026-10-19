@@ -42,6 +42,7 @@ from geo_semantic_d7 import decision as d7_decision, summary as d7_summary
 from geo_subject_d8 import decision as d8_decision, summary as d8_summary
 from geo_quality_d9 import report as d9_report, run_benchmark as d9_benchmark
 from geo_anomaly_d10 import report as d10_report
+from geo_diversity_d11 import report as d11_report
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -645,7 +646,8 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   'd8_geographic_subject':getattr(collect,'d8_subject',{}),
   'd9_quality_assurance':d9_report(getattr(publish_pipeline_audit,'raw',[]),getattr(publish_pipeline_audit,'points',[]),
    d9_benchmark(json.loads((ROOT/'tests/d9_geo_benchmark.json').read_text(encoding='utf8')),d7_decision,d8_decision)),
-  'd10_location_investigation':d10_report(getattr(publish_pipeline_audit,'raw',[]),getattr(publish_pipeline_audit,'points',[]))}
+  'd10_location_investigation':d10_report(getattr(publish_pipeline_audit,'raw',[]),getattr(publish_pipeline_audit,'points',[])),
+  'd11_publisher_diversity_geographic_precision':d11_report(getattr(publish_pipeline_audit,'raw',[]),PLACES)}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
