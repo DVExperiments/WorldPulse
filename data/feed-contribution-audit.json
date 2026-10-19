@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "release": "v2.4D.8",
- "updated_at": "2026-10-19T01:11:23.067223+00:00",
+ "release": "v2.4D.9",
+ "updated_at": "2026-10-19T01:28:59.586838+00:00",
  "stage_definitions": {
   "parsed_entries": "Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles",
   "date_passed": "Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title",
@@ -16,15 +16,15 @@
   "D.4 recovery is restricted to explicit qualified country references already found in the existing PLACES gazetteer; it does not use source edition or publisher location."
  ],
  "totals": {
-  "parsed_entries": 4279,
-  "date_passed": 3082,
-  "date_rejected": 1187,
+  "parsed_entries": 4250,
+  "date_passed": 3052,
+  "date_rejected": 1188,
   "invalid_article": 10,
-  "geography_matched": 1665,
-  "geography_unmatched": 1400,
+  "geography_matched": 1640,
+  "geography_unmatched": 1395,
   "geography_rejected": 17,
-  "deduplication_survived": 746,
-  "globe_articles": 707
+  "deduplication_survived": 734,
+  "globe_articles": 699
  },
  "feeds": [
   {
@@ -33,23 +33,21 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 36,
-   "date_passed": 36,
+   "parsed_entries": 35,
+   "date_passed": 35,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 15,
-   "geography_unmatched": 20,
+   "geography_unmatched": 19,
    "geography_rejected": 1,
-   "deduplication_survived": 13,
-   "globe_articles": 13,
-   "duplicate_canonical": 2,
+   "deduplication_survived": 15,
+   "globe_articles": 15,
+   "duplicate_canonical": 0,
    "duplicate_near_title": 0,
-   "lost_to_feeds": {
-    "google/politics/ZA": 2
-   },
+   "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 41.7,
-   "survival_after_mapping_pct": 86.7,
+   "matched_after_date_pct": 42.9,
+   "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
   {
@@ -81,23 +79,22 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 36,
-   "date_passed": 36,
+   "parsed_entries": 35,
+   "date_passed": 35,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 15,
-   "geography_unmatched": 20,
+   "geography_unmatched": 19,
    "geography_rejected": 1,
    "deduplication_survived": 0,
    "globe_articles": 0,
    "duplicate_canonical": 15,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/politics/US": 13,
-    "google/politics/ZA": 2
+    "google/politics/US": 15
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 41.7,
+   "matched_after_date_pct": 42.9,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -130,24 +127,24 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 36,
-   "date_passed": 36,
+   "parsed_entries": 35,
+   "date_passed": 35,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 15,
-   "geography_unmatched": 20,
+   "geography_unmatched": 19,
    "geography_rejected": 1,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
-   "duplicate_canonical": 13,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
+   "duplicate_canonical": 15,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/politics/US": 13
+    "google/politics/US": 15
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 41.7,
-   "survival_after_mapping_pct": 13.3,
-   "usefulness": "contributing"
+   "matched_after_date_pct": 42.9,
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "google/politics/NG",
@@ -178,23 +175,22 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 36,
-   "date_passed": 36,
+   "parsed_entries": 35,
+   "date_passed": 35,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 15,
-   "geography_unmatched": 20,
+   "geography_unmatched": 19,
    "geography_rejected": 1,
    "deduplication_survived": 0,
    "globe_articles": 0,
    "duplicate_canonical": 14,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/politics/US": 13,
-    "google/politics/ZA": 2
+    "google/politics/US": 15
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 41.7,
+   "matched_after_date_pct": 42.9,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -227,20 +223,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 48,
-   "date_passed": 48,
+   "parsed_entries": 47,
+   "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 10,
+   "geography_matched": 9,
    "geography_unmatched": 37,
    "geography_rejected": 1,
-   "deduplication_survived": 10,
-   "globe_articles": 10,
+   "deduplication_survived": 9,
+   "globe_articles": 9,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 20.8,
+   "matched_after_date_pct": 19.1,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -250,23 +246,23 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 41,
-   "date_passed": 41,
+   "parsed_entries": 39,
+   "date_passed": 39,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 21,
-   "geography_unmatched": 20,
+   "geography_matched": 20,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
-   "deduplication_survived": 19,
-   "globe_articles": 19,
+   "deduplication_survived": 18,
+   "globe_articles": 18,
    "duplicate_canonical": 0,
    "duplicate_near_title": 2,
    "lost_to_feeds": {
     "google/politics/MX": 2
    },
    "recovery_explicit": 1,
-   "matched_after_date_pct": 51.2,
-   "survival_after_mapping_pct": 90.5,
+   "matched_after_date_pct": 51.3,
+   "survival_after_mapping_pct": 90.0,
    "usefulness": "contributing"
   },
   {
@@ -279,21 +275,20 @@
    "date_passed": 36,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 15,
-   "geography_unmatched": 20,
+   "geography_matched": 16,
+   "geography_unmatched": 19,
    "geography_rejected": 1,
-   "deduplication_survived": 0,
-   "globe_articles": 0,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
    "duplicate_canonical": 15,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/politics/US": 13,
-    "google/politics/ZA": 2
+    "google/politics/US": 15
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 41.7,
-   "survival_after_mapping_pct": 0.0,
-   "usefulness": "all_duplicate"
+   "matched_after_date_pct": 44.4,
+   "survival_after_mapping_pct": 6.2,
+   "usefulness": "contributing"
   },
   {
    "feed": "google/environment/US",
@@ -301,20 +296,20 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 23,
-   "date_passed": 23,
+   "parsed_entries": 22,
+   "date_passed": 22,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
+   "geography_matched": 8,
    "geography_unmatched": 14,
    "geography_rejected": 0,
-   "deduplication_survived": 9,
-   "globe_articles": 9,
+   "deduplication_survived": 8,
+   "globe_articles": 8,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 39.1,
+   "matched_after_date_pct": 36.4,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -347,23 +342,23 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 23,
-   "date_passed": 23,
+   "parsed_entries": 22,
+   "date_passed": 22,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 10,
+   "geography_matched": 9,
    "geography_unmatched": 13,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "duplicate_canonical": 8,
+   "duplicate_canonical": 7,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/environment/US": 9
+    "google/environment/US": 8
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 43.5,
-   "survival_after_mapping_pct": 10.0,
+   "matched_after_date_pct": 40.9,
+   "survival_after_mapping_pct": 11.1,
    "usefulness": "contributing"
   },
   {
@@ -395,23 +390,23 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 23,
-   "date_passed": 23,
+   "parsed_entries": 22,
+   "date_passed": 22,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 10,
+   "geography_matched": 9,
    "geography_unmatched": 13,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 10,
+   "duplicate_canonical": 9,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/environment/US": 8,
+    "google/environment/US": 7,
     "google/environment/IN": 2
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 43.5,
+   "matched_after_date_pct": 40.9,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -444,23 +439,23 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 23,
-   "date_passed": 23,
+   "parsed_entries": 22,
+   "date_passed": 22,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
+   "geography_matched": 8,
    "geography_unmatched": 14,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 9,
+   "duplicate_canonical": 8,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/environment/US": 8,
+    "google/environment/US": 7,
     "google/environment/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 39.1,
+   "matched_after_date_pct": 36.4,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -541,23 +536,23 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 23,
-   "date_passed": 23,
+   "parsed_entries": 22,
+   "date_passed": 22,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
+   "geography_matched": 8,
    "geography_unmatched": 14,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 9,
+   "duplicate_canonical": 8,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/environment/US": 8,
+    "google/environment/US": 7,
     "google/environment/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 39.1,
+   "matched_after_date_pct": 36.4,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -590,23 +585,23 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 11,
+   "date_passed": 11,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
-   "geography_unmatched": 1,
+   "geography_matched": 11,
+   "geography_unmatched": 0,
    "geography_rejected": 0,
-   "deduplication_survived": 10,
-   "globe_articles": 10,
+   "deduplication_survived": 9,
+   "globe_articles": 9,
    "duplicate_canonical": 0,
    "duplicate_near_title": 2,
    "lost_to_feeds": {
     "google/hazards/GB": 2
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 92.3,
-   "survival_after_mapping_pct": 83.3,
+   "matched_after_date_pct": 100.0,
+   "survival_after_mapping_pct": 81.8,
    "usefulness": "contributing"
   },
   {
@@ -638,22 +633,22 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 11,
+   "date_passed": 11,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
-   "geography_unmatched": 1,
+   "geography_matched": 11,
+   "geography_unmatched": 0,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 12,
+   "duplicate_canonical": 11,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/hazards/GB": 12
+    "google/hazards/GB": 11
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 92.3,
+   "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -686,22 +681,22 @@
    "editorial_region": "NG",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 11,
+   "date_passed": 11,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
-   "geography_unmatched": 1,
+   "geography_matched": 11,
+   "geography_unmatched": 0,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 12,
+   "duplicate_canonical": 11,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/hazards/GB": 12
+    "google/hazards/GB": 11
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 92.3,
+   "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -734,22 +729,22 @@
    "editorial_region": "CA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 11,
+   "date_passed": 11,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
-   "geography_unmatched": 1,
+   "geography_matched": 11,
+   "geography_unmatched": 0,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 12,
+   "duplicate_canonical": 11,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/hazards/GB": 12
+    "google/hazards/GB": 11
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 92.3,
+   "matched_after_date_pct": 100.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -883,17 +878,17 @@
    "geography_matched": 29,
    "geography_unmatched": 17,
    "geography_rejected": 0,
-   "deduplication_survived": 8,
-   "globe_articles": 8,
-   "duplicate_canonical": 20,
+   "deduplication_survived": 7,
+   "globe_articles": 7,
+   "duplicate_canonical": 21,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/society/US": 20,
+    "google/society/US": 21,
     "google/education/US": 1
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 63.0,
-   "survival_after_mapping_pct": 27.6,
+   "survival_after_mapping_pct": 24.1,
    "usefulness": "contributing"
   },
   {
@@ -927,23 +922,23 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 44,
-   "date_passed": 44,
+   "parsed_entries": 45,
+   "date_passed": 45,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 23,
-   "geography_unmatched": 21,
+   "geography_unmatched": 22,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
-   "duplicate_canonical": 21,
-   "duplicate_near_title": 1,
+   "deduplication_survived": 3,
+   "globe_articles": 3,
+   "duplicate_canonical": 20,
+   "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/society/US": 22
+    "google/society/US": 20
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 52.3,
-   "survival_after_mapping_pct": 4.3,
+   "matched_after_date_pct": 51.1,
+   "survival_after_mapping_pct": 13.0,
    "usefulness": "contributing"
   },
   {
@@ -977,25 +972,25 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 46,
-   "date_passed": 46,
+   "parsed_entries": 47,
+   "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 23,
+   "geography_matched": 24,
    "geography_unmatched": 23,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
-   "duplicate_canonical": 21,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
+   "duplicate_canonical": 23,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/society/US": 20,
-    "google/society/ZA": 2
+    "google/society/US": 21,
+    "google/society/ZA": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 50.0,
-   "survival_after_mapping_pct": 4.3,
-   "usefulness": "contributing"
+   "matched_after_date_pct": 51.1,
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "google/society/CA",
@@ -1003,12 +998,12 @@
    "editorial_region": "CA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 9,
-   "date_passed": 9,
+   "parsed_entries": 10,
+   "date_passed": 10,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 4,
-   "geography_unmatched": 5,
+   "geography_unmatched": 6,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
@@ -1018,7 +1013,7 @@
     "google/society/GB": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 44.4,
+   "matched_after_date_pct": 40.0,
    "survival_after_mapping_pct": 25.0,
    "usefulness": "contributing"
   },
@@ -1051,20 +1046,20 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 49,
-   "date_passed": 49,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 26,
-   "geography_unmatched": 23,
+   "geography_matched": 27,
+   "geography_unmatched": 24,
    "geography_rejected": 0,
-   "deduplication_survived": 26,
-   "globe_articles": 26,
+   "deduplication_survived": 27,
+   "globe_articles": 27,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 53.1,
+   "matched_after_date_pct": 52.9,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1074,24 +1069,23 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 46,
-   "date_passed": 46,
+   "parsed_entries": 47,
+   "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 23,
+   "geography_matched": 24,
    "geography_unmatched": 23,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 23,
+   "duplicate_canonical": 24,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/society/US": 20,
-    "google/society/ZA": 2,
-    "google/society/PH": 1
+    "google/society/US": 21,
+    "google/society/ZA": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 50.0,
+   "matched_after_date_pct": 51.1,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1101,20 +1095,20 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 47,
-   "date_passed": 47,
+   "parsed_entries": 46,
+   "date_passed": 46,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 30,
+   "geography_matched": 29,
    "geography_unmatched": 17,
    "geography_rejected": 0,
-   "deduplication_survived": 30,
-   "globe_articles": 28,
+   "deduplication_survived": 29,
+   "globe_articles": 27,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 63.8,
+   "matched_after_date_pct": 63.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1124,12 +1118,12 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 43,
-   "date_passed": 43,
+   "parsed_entries": 42,
+   "date_passed": 42,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 23,
-   "geography_unmatched": 20,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
    "deduplication_survived": 21,
    "globe_articles": 21,
@@ -1140,7 +1134,7 @@
     "google/society/GB": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 53.5,
+   "matched_after_date_pct": 54.8,
    "survival_after_mapping_pct": 91.3,
    "usefulness": "contributing"
   },
@@ -1157,16 +1151,16 @@
    "geography_matched": 29,
    "geography_unmatched": 18,
    "geography_rejected": 0,
-   "deduplication_survived": 3,
-   "globe_articles": 3,
+   "deduplication_survived": 4,
+   "globe_articles": 4,
    "duplicate_canonical": 25,
-   "duplicate_near_title": 1,
+   "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/health/US": 26
+    "google/health/US": 25
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 61.7,
-   "survival_after_mapping_pct": 10.3,
+   "survival_after_mapping_pct": 13.8,
    "usefulness": "contributing"
   },
   {
@@ -1202,15 +1196,15 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 48,
-   "date_passed": 48,
+   "parsed_entries": 46,
+   "date_passed": 46,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 30,
+   "geography_matched": 28,
    "geography_unmatched": 18,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
    "duplicate_canonical": 28,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
@@ -1218,9 +1212,9 @@
     "google/health/IN": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.5,
-   "survival_after_mapping_pct": 6.7,
-   "usefulness": "contributing"
+   "matched_after_date_pct": 60.9,
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "google/health/NG",
@@ -1232,21 +1226,21 @@
    "date_passed": 44,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 23,
-   "geography_unmatched": 21,
+   "geography_matched": 24,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 23,
+   "duplicate_canonical": 24,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/health/GB": 20,
+    "google/health/GB": 21,
     "google/health/US": 1,
     "google/health/AU": 1,
     "google/society/GB": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 52.3,
+   "matched_after_date_pct": 54.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1256,26 +1250,25 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 49,
-   "date_passed": 49,
+   "parsed_entries": 47,
+   "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 30,
-   "geography_unmatched": 19,
+   "geography_matched": 29,
+   "geography_unmatched": 18,
    "geography_rejected": 0,
-   "deduplication_survived": 0,
-   "globe_articles": 0,
-   "duplicate_canonical": 30,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 28,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "google/health/US": 25,
-    "google/health/ZA": 2,
     "google/health/IN": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 61.2,
-   "survival_after_mapping_pct": 0.0,
-   "usefulness": "all_duplicate"
+   "matched_after_date_pct": 61.7,
+   "survival_after_mapping_pct": 3.4,
+   "usefulness": "contributing"
   },
   {
    "feed": "google/health/CA",
@@ -1311,20 +1304,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 31,
-   "date_passed": 31,
+   "parsed_entries": 30,
+   "date_passed": 30,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 22,
-   "geography_unmatched": 9,
+   "geography_matched": 20,
+   "geography_unmatched": 10,
    "geography_rejected": 0,
-   "deduplication_survived": 22,
+   "deduplication_survived": 20,
    "globe_articles": 13,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 71.0,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1361,19 +1354,19 @@
    "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
-   "geography_unmatched": 19,
+   "geography_matched": 29,
+   "geography_unmatched": 18,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
    "duplicate_canonical": 28,
-   "duplicate_near_title": 0,
+   "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/health/US": 26,
+    "google/health/US": 27,
     "google/health/IN": 2
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 59.6,
+   "matched_after_date_pct": 61.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1383,21 +1376,23 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 53,
-   "date_passed": 53,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 28,
-   "geography_unmatched": 25,
+   "geography_unmatched": 23,
    "geography_rejected": 0,
-   "deduplication_survived": 28,
-   "globe_articles": 26,
+   "deduplication_survived": 27,
+   "globe_articles": 25,
    "duplicate_canonical": 0,
-   "duplicate_near_title": 0,
-   "lost_to_feeds": {},
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/education/IN": 1
+   },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 52.8,
-   "survival_after_mapping_pct": 100.0,
+   "matched_after_date_pct": 54.9,
+   "survival_after_mapping_pct": 96.4,
    "usefulness": "contributing"
   },
   {
@@ -1406,14 +1401,14 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 52,
+   "date_passed": 52,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 32,
-   "geography_unmatched": 19,
+   "geography_matched": 31,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
-   "deduplication_survived": 28,
+   "deduplication_survived": 27,
    "globe_articles": 24,
    "duplicate_canonical": 3,
    "duplicate_near_title": 1,
@@ -1422,8 +1417,8 @@
     "google/education/US": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.7,
-   "survival_after_mapping_pct": 87.5,
+   "matched_after_date_pct": 59.6,
+   "survival_after_mapping_pct": 87.1,
    "usefulness": "contributing"
   },
   {
@@ -1457,24 +1452,24 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 52,
+   "date_passed": 52,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 32,
-   "geography_unmatched": 19,
+   "geography_matched": 30,
+   "geography_unmatched": 22,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
-   "duplicate_canonical": 30,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 29,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/education/GB": 27,
+    "google/education/GB": 26,
     "google/education/US": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.7,
-   "survival_after_mapping_pct": 6.2,
+   "matched_after_date_pct": 57.7,
+   "survival_after_mapping_pct": 3.3,
    "usefulness": "contributing"
   },
   {
@@ -1483,24 +1478,24 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 49,
-   "date_passed": 49,
+   "parsed_entries": 50,
+   "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
-   "geography_unmatched": 21,
+   "geography_matched": 30,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "duplicate_canonical": 27,
+   "duplicate_canonical": 29,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/education/IN": 5,
-    "google/education/US": 22
+    "google/education/US": 23,
+    "google/education/IN": 6
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 57.1,
-   "survival_after_mapping_pct": 3.6,
+   "matched_after_date_pct": 60.0,
+   "survival_after_mapping_pct": 3.3,
    "usefulness": "contributing"
   },
   {
@@ -1509,24 +1504,24 @@
    "editorial_region": "NG",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 52,
-   "date_passed": 52,
+   "parsed_entries": 53,
+   "date_passed": 53,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 32,
-   "geography_unmatched": 20,
+   "geography_matched": 30,
+   "geography_unmatched": 23,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 32,
+   "duplicate_canonical": 30,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/education/GB": 27,
-    "google/education/AU": 2,
+    "google/education/GB": 26,
+    "google/education/AU": 1,
     "google/education/US": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 61.5,
+   "matched_after_date_pct": 56.6,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1536,25 +1531,25 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 50,
-   "date_passed": 50,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 31,
-   "geography_unmatched": 19,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
-   "duplicate_canonical": 29,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 30,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
+    "google/education/US": 23,
     "google/education/IN": 6,
-    "google/education/US": 22,
     "google/education/ZA": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.0,
-   "survival_after_mapping_pct": 6.5,
+   "matched_after_date_pct": 60.8,
+   "survival_after_mapping_pct": 3.2,
    "usefulness": "contributing"
   },
   {
@@ -1563,24 +1558,24 @@
    "editorial_region": "CA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 52,
-   "date_passed": 52,
+   "parsed_entries": 53,
+   "date_passed": 53,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 32,
-   "geography_unmatched": 20,
+   "geography_matched": 31,
+   "geography_unmatched": 22,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 32,
+   "duplicate_canonical": 31,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "google/education/GB": 27,
-    "google/education/AU": 2,
+    "google/education/AU": 1,
     "google/education/US": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 61.5,
+   "matched_after_date_pct": 58.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1590,20 +1585,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 15,
-   "date_passed": 15,
+   "parsed_entries": 16,
+   "date_passed": 16,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
+   "geography_matched": 10,
    "geography_unmatched": 6,
    "geography_rejected": 0,
-   "deduplication_survived": 9,
-   "globe_articles": 7,
+   "deduplication_survived": 10,
+   "globe_articles": 8,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 60.0,
+   "matched_after_date_pct": 62.5,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1617,19 +1612,19 @@
    "date_passed": 52,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 26,
-   "geography_unmatched": 26,
+   "geography_matched": 25,
+   "geography_unmatched": 27,
    "geography_rejected": 0,
-   "deduplication_survived": 22,
-   "globe_articles": 18,
+   "deduplication_survived": 21,
+   "globe_articles": 17,
    "duplicate_canonical": 4,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "google/society/MX": 4
    },
    "recovery_explicit": 1,
-   "matched_after_date_pct": 50.0,
-   "survival_after_mapping_pct": 84.6,
+   "matched_after_date_pct": 48.1,
+   "survival_after_mapping_pct": 84.0,
    "usefulness": "contributing"
   },
   {
@@ -1638,24 +1633,24 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 48,
-   "date_passed": 48,
+   "parsed_entries": 49,
+   "date_passed": 49,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 28,
-   "geography_unmatched": 20,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
    "duplicate_canonical": 28,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/education/IN": 5,
-    "google/education/US": 22,
+    "google/education/US": 21,
+    "google/education/IN": 6,
     "google/education/ZA": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 58.3,
+   "matched_after_date_pct": 57.1,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1932,12 +1927,12 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 7,
-   "date_passed": 7,
+   "parsed_entries": 8,
+   "date_passed": 8,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 2,
-   "geography_unmatched": 5,
+   "geography_unmatched": 6,
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
@@ -1945,7 +1940,7 @@
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 28.6,
+   "matched_after_date_pct": 25.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2051,12 +2046,12 @@
    "editorial_region": "NG",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 4,
-   "date_passed": 4,
+   "parsed_entries": 5,
+   "date_passed": 5,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 0,
-   "geography_unmatched": 4,
+   "geography_unmatched": 5,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
@@ -2145,20 +2140,20 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 54,
-   "date_passed": 54,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 35,
-   "geography_unmatched": 18,
+   "geography_matched": 34,
+   "geography_unmatched": 16,
    "geography_rejected": 1,
-   "deduplication_survived": 35,
-   "globe_articles": 35,
+   "deduplication_survived": 34,
+   "globe_articles": 34,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 64.8,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2193,20 +2188,20 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 16,
-   "date_passed": 16,
+   "parsed_entries": 15,
+   "date_passed": 15,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 11,
+   "geography_matched": 10,
    "geography_unmatched": 5,
    "geography_rejected": 0,
-   "deduplication_survived": 11,
-   "globe_articles": 11,
+   "deduplication_survived": 10,
+   "globe_articles": 10,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 68.8,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2223,17 +2218,16 @@
    "geography_matched": 27,
    "geography_unmatched": 16,
    "geography_rejected": 0,
-   "deduplication_survived": 25,
-   "globe_articles": 25,
+   "deduplication_survived": 26,
+   "globe_articles": 26,
    "duplicate_canonical": 1,
-   "duplicate_near_title": 1,
+   "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/economy/US": 1,
-    "google/economy/CA": 1
+    "google/economy/US": 1
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 62.8,
-   "survival_after_mapping_pct": 92.6,
+   "survival_after_mapping_pct": 96.3,
    "usefulness": "contributing"
   },
   {
@@ -2242,24 +2236,24 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 16,
-   "date_passed": 16,
+   "parsed_entries": 14,
+   "date_passed": 14,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 10,
-   "geography_unmatched": 6,
+   "geography_matched": 9,
+   "geography_unmatched": 5,
    "geography_rejected": 0,
-   "deduplication_survived": 0,
-   "globe_articles": 0,
-   "duplicate_canonical": 10,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 8,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/economy/US": 10
+    "google/economy/US": 8
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.5,
-   "survival_after_mapping_pct": 0.0,
-   "usefulness": "all_duplicate"
+   "matched_after_date_pct": 64.3,
+   "survival_after_mapping_pct": 11.1,
+   "usefulness": "contributing"
   },
   {
    "feed": "google/economy/AU",
@@ -2267,15 +2261,15 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 44,
-   "date_passed": 44,
+   "parsed_entries": 45,
+   "date_passed": 45,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
+   "geography_matched": 29,
    "geography_unmatched": 16,
    "geography_rejected": 0,
-   "deduplication_survived": 3,
-   "globe_articles": 3,
+   "deduplication_survived": 4,
+   "globe_articles": 4,
    "duplicate_canonical": 25,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
@@ -2283,8 +2277,8 @@
     "google/economy/US": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 63.6,
-   "survival_after_mapping_pct": 10.7,
+   "matched_after_date_pct": 64.4,
+   "survival_after_mapping_pct": 13.8,
    "usefulness": "contributing"
   },
   {
@@ -2305,7 +2299,8 @@
    "duplicate_canonical": 7,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/economy/US": 7
+    "google/economy/US": 6,
+    "google/economy/IN": 1
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 58.3,
@@ -2325,18 +2320,18 @@
    "geography_matched": 31,
    "geography_unmatched": 13,
    "geography_rejected": 0,
-   "deduplication_survived": 6,
-   "globe_articles": 6,
-   "duplicate_canonical": 24,
+   "deduplication_survived": 4,
+   "globe_articles": 4,
+   "duplicate_canonical": 26,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
     "google/economy/GB": 23,
-    "google/economy/US": 1,
-    "google/economy/AU": 1
+    "google/economy/AU": 3,
+    "google/economy/US": 1
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 70.5,
-   "survival_after_mapping_pct": 19.4,
+   "survival_after_mapping_pct": 12.9,
    "usefulness": "contributing"
   },
   {
@@ -2345,22 +2340,23 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 12,
+   "date_passed": 12,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 8,
+   "geography_matched": 7,
    "geography_unmatched": 5,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 7,
+   "duplicate_canonical": 6,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/economy/US": 8
+    "google/economy/IN": 1,
+    "google/economy/US": 6
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 61.5,
+   "matched_after_date_pct": 58.3,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2377,19 +2373,19 @@
    "geography_matched": 28,
    "geography_unmatched": 16,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
-   "duplicate_canonical": 27,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
+   "duplicate_canonical": 28,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/economy/GB": 23,
+    "google/economy/GB": 24,
     "google/economy/AU": 3,
     "google/economy/US": 1
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 63.6,
-   "survival_after_mapping_pct": 3.6,
-   "usefulness": "contributing"
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "google/economy/BR",
@@ -2420,14 +2416,14 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 56,
-   "date_passed": 56,
+   "parsed_entries": 55,
+   "date_passed": 55,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 51,
+   "geography_matched": 50,
    "geography_unmatched": 4,
    "geography_rejected": 1,
-   "deduplication_survived": 45,
+   "deduplication_survived": 44,
    "globe_articles": 35,
    "duplicate_canonical": 1,
    "duplicate_near_title": 5,
@@ -2436,8 +2432,8 @@
     "google/economy/MX": 5
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 91.1,
-   "survival_after_mapping_pct": 88.2,
+   "matched_after_date_pct": 90.9,
+   "survival_after_mapping_pct": 88.0,
    "usefulness": "contributing"
   },
   {
@@ -2446,22 +2442,23 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 14,
-   "date_passed": 14,
+   "parsed_entries": 13,
+   "date_passed": 13,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 8,
+   "geography_matched": 7,
    "geography_unmatched": 6,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 8,
+   "duplicate_canonical": 7,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/economy/US": 8
+    "google/economy/US": 6,
+    "google/economy/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 57.1,
+   "matched_after_date_pct": 53.8,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2471,23 +2468,23 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 47,
-   "date_passed": 47,
+   "parsed_entries": 49,
+   "date_passed": 49,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 11,
-   "geography_unmatched": 36,
+   "geography_matched": 12,
+   "geography_unmatched": 37,
    "geography_rejected": 0,
-   "deduplication_survived": 10,
-   "globe_articles": 10,
+   "deduplication_survived": 11,
+   "globe_articles": 11,
    "duplicate_canonical": 0,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
     "google/science/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 23.4,
-   "survival_after_mapping_pct": 90.9,
+   "matched_after_date_pct": 24.5,
+   "survival_after_mapping_pct": 91.7,
    "usefulness": "contributing"
   },
   {
@@ -2671,20 +2668,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 49,
-   "date_passed": 49,
+   "parsed_entries": 48,
+   "date_passed": 48,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 34,
+   "geography_matched": 33,
    "geography_unmatched": 15,
    "geography_rejected": 0,
-   "deduplication_survived": 34,
-   "globe_articles": 32,
+   "deduplication_survived": 33,
+   "globe_articles": 31,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 69.4,
+   "matched_after_date_pct": 68.8,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2694,12 +2691,12 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 16,
-   "date_passed": 16,
+   "parsed_entries": 15,
+   "date_passed": 15,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 10,
-   "geography_unmatched": 5,
+   "geography_unmatched": 4,
    "geography_rejected": 1,
    "deduplication_survived": 10,
    "globe_articles": 6,
@@ -2707,7 +2704,7 @@
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.5,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2721,19 +2718,19 @@
    "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
-   "geography_unmatched": 38,
+   "geography_matched": 13,
+   "geography_unmatched": 37,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 12,
+   "duplicate_canonical": 13,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/science/US": 11,
+    "google/science/US": 12,
     "google/science/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 24.0,
+   "matched_after_date_pct": 26.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2743,15 +2740,15 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 8,
-   "date_passed": 8,
+   "parsed_entries": 6,
+   "date_passed": 6,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 8,
+   "geography_matched": 6,
    "geography_unmatched": 0,
    "geography_rejected": 0,
-   "deduplication_survived": 8,
-   "globe_articles": 8,
+   "deduplication_survived": 6,
+   "globe_articles": 6,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
@@ -2789,19 +2786,19 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 7,
-   "date_passed": 7,
+   "parsed_entries": 6,
+   "date_passed": 6,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 7,
+   "geography_matched": 6,
    "geography_unmatched": 0,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 7,
+   "duplicate_canonical": 6,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/conflict/US": 7
+    "google/conflict/US": 6
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
@@ -2839,19 +2836,19 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 8,
-   "date_passed": 8,
+   "parsed_entries": 6,
+   "date_passed": 6,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 8,
+   "geography_matched": 6,
    "geography_unmatched": 0,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 8,
+   "duplicate_canonical": 6,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/conflict/US": 8
+    "google/conflict/US": 6
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
@@ -2889,19 +2886,19 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 8,
-   "date_passed": 8,
+   "parsed_entries": 6,
+   "date_passed": 6,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 8,
+   "geography_matched": 6,
    "geography_unmatched": 0,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 8,
+   "duplicate_canonical": 6,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/conflict/US": 8
+    "google/conflict/US": 6
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
@@ -2962,20 +2959,20 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 31,
-   "date_passed": 31,
+   "parsed_entries": 32,
+   "date_passed": 32,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 11,
+   "geography_matched": 12,
    "geography_unmatched": 19,
    "geography_rejected": 1,
-   "deduplication_survived": 11,
-   "globe_articles": 11,
+   "deduplication_survived": 12,
+   "globe_articles": 12,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 35.5,
+   "matched_after_date_pct": 37.5,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2985,19 +2982,19 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 7,
-   "date_passed": 7,
+   "parsed_entries": 6,
+   "date_passed": 6,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 7,
+   "geography_matched": 6,
    "geography_unmatched": 0,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 7,
+   "duplicate_canonical": 6,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/conflict/US": 7
+    "google/conflict/US": 6
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
@@ -3253,16 +3250,16 @@
    "date_passed": 25,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
-   "geography_unmatched": 16,
+   "geography_matched": 10,
+   "geography_unmatched": 15,
    "geography_rejected": 0,
-   "deduplication_survived": 9,
-   "globe_articles": 9,
+   "deduplication_survived": 10,
+   "globe_articles": 10,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 36.0,
+   "matched_after_date_pct": 40.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -3295,12 +3292,12 @@
    "editorial_region": "regional",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 47,
-   "date_passed": 38,
+   "parsed_entries": 46,
+   "date_passed": 37,
    "date_rejected": 8,
    "invalid_article": 1,
    "geography_matched": 17,
-   "geography_unmatched": 20,
+   "geography_unmatched": 19,
    "geography_rejected": 1,
    "deduplication_survived": 17,
    "globe_articles": 17,
@@ -3308,7 +3305,7 @@
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 44.7,
+   "matched_after_date_pct": 45.9,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -3579,11 +3576,11 @@
    "language": "en",
    "status": "ok",
    "parsed_entries": 17,
-   "date_passed": 1,
-   "date_rejected": 16,
+   "date_passed": 0,
+   "date_rejected": 17,
    "invalid_article": 0,
    "geography_matched": 0,
-   "geography_unmatched": 1,
+   "geography_unmatched": 0,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
@@ -3591,9 +3588,9 @@
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 0.0,
+   "matched_after_date_pct": null,
    "survival_after_mapping_pct": null,
-   "usefulness": "no_geographic_matches"
+   "usefulness": "no_recent_valid_articles"
   },
   {
    "feed": "direct/BBC Latin America",
@@ -4342,34 +4339,29 @@
    }
   ],
   "unmatched_reason_counts": {
-   "insufficient_unambiguous_location_evidence": 1362,
-   "global_or_nonlocal_topic": 32,
+   "insufficient_unambiguous_location_evidence": 1360,
+   "global_or_nonlocal_topic": 29,
    "limited_description_evidence": 6
   }
  },
  "d4_efficiency": {
   "usefulness_classes": {
-   "contributing": 78,
+   "contributing": 77,
    "no_parsed_entries": 9,
-   "all_duplicate": 50,
-   "no_geographic_matches": 16,
+   "all_duplicate": 51,
+   "no_geographic_matches": 15,
    "fetch_failed": 3,
-   "no_recent_valid_articles": 17
+   "no_recent_valid_articles": 18
   },
   "overlap_by_feed": [
    {
     "feed": "google/politics/US",
     "mapped": 15,
-    "survived": 13,
-    "duplicate_canonical": 2,
+    "survived": 15,
+    "duplicate_canonical": 0,
     "duplicate_near_title": 0,
-    "loss_attribution": [
-     [
-      "google/politics/ZA",
-      2
-     ]
-    ],
-    "duplicate_share_pct": 13.3
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
    },
    {
     "feed": "google/politics/IN",
@@ -4380,11 +4372,7 @@
     "loss_attribution": [
      [
       "google/politics/US",
-      13
-     ],
-     [
-      "google/politics/ZA",
-      2
+      15
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -4392,16 +4380,16 @@
    {
     "feed": "google/politics/ZA",
     "mapped": 15,
-    "survived": 2,
-    "duplicate_canonical": 13,
+    "survived": 0,
+    "duplicate_canonical": 15,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/politics/US",
-      13
+      15
      ]
     ],
-    "duplicate_share_pct": 86.7
+    "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/politics/PH",
@@ -4412,58 +4400,13 @@
     "loss_attribution": [
      [
       "google/politics/US",
-      13
-     ],
-     [
-      "google/politics/ZA",
-      2
+      15
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/politics/BR",
-    "mapped": 10,
-    "survived": 10,
-    "duplicate_canonical": 0,
-    "duplicate_near_title": 0,
-    "loss_attribution": [],
-    "duplicate_share_pct": 0.0
-   },
-   {
-    "feed": "google/politics/MX",
-    "mapped": 21,
-    "survived": 19,
-    "duplicate_canonical": 0,
-    "duplicate_near_title": 2,
-    "loss_attribution": [
-     [
-      "google/politics/MX",
-      2
-     ]
-    ],
-    "duplicate_share_pct": 9.5
-   },
-   {
-    "feed": "google/politics/KE",
-    "mapped": 15,
-    "survived": 0,
-    "duplicate_canonical": 15,
-    "duplicate_near_title": 0,
-    "loss_attribution": [
-     [
-      "google/politics/US",
-      13
-     ],
-     [
-      "google/politics/ZA",
-      2
-     ]
-    ],
-    "duplicate_share_pct": 100.0
-   },
-   {
-    "feed": "google/environment/US",
     "mapped": 9,
     "survived": 9,
     "duplicate_canonical": 0,
@@ -4472,29 +4415,66 @@
     "duplicate_share_pct": 0.0
    },
    {
-    "feed": "google/environment/IN",
-    "mapped": 10,
+    "feed": "google/politics/MX",
+    "mapped": 20,
+    "survived": 18,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 2,
+    "loss_attribution": [
+     [
+      "google/politics/MX",
+      2
+     ]
+    ],
+    "duplicate_share_pct": 10.0
+   },
+   {
+    "feed": "google/politics/KE",
+    "mapped": 16,
     "survived": 1,
-    "duplicate_canonical": 8,
+    "duplicate_canonical": 15,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/politics/US",
+      15
+     ]
+    ],
+    "duplicate_share_pct": 93.8
+   },
+   {
+    "feed": "google/environment/US",
+    "mapped": 8,
+    "survived": 8,
+    "duplicate_canonical": 0,
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
+   },
+   {
+    "feed": "google/environment/IN",
+    "mapped": 9,
+    "survived": 1,
+    "duplicate_canonical": 7,
     "duplicate_near_title": 1,
     "loss_attribution": [
      [
       "google/environment/US",
-      9
+      8
      ]
     ],
-    "duplicate_share_pct": 90.0
+    "duplicate_share_pct": 88.9
    },
    {
     "feed": "google/environment/ZA",
-    "mapped": 10,
+    "mapped": 9,
     "survived": 0,
-    "duplicate_canonical": 10,
+    "duplicate_canonical": 9,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/environment/US",
-      8
+      7
      ],
      [
       "google/environment/IN",
@@ -4505,14 +4485,14 @@
    },
    {
     "feed": "google/environment/PH",
-    "mapped": 9,
+    "mapped": 8,
     "survived": 0,
-    "duplicate_canonical": 9,
+    "duplicate_canonical": 8,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/environment/US",
-      8
+      7
      ],
      [
       "google/environment/IN",
@@ -4546,14 +4526,14 @@
    },
    {
     "feed": "google/environment/KE",
-    "mapped": 9,
+    "mapped": 8,
     "survived": 0,
-    "duplicate_canonical": 9,
+    "duplicate_canonical": 8,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/environment/US",
-      8
+      7
      ],
      [
       "google/environment/IN",
@@ -4564,8 +4544,8 @@
    },
    {
     "feed": "google/hazards/GB",
-    "mapped": 12,
-    "survived": 10,
+    "mapped": 11,
+    "survived": 9,
     "duplicate_canonical": 0,
     "duplicate_near_title": 2,
     "loss_attribution": [
@@ -4574,46 +4554,46 @@
       2
      ]
     ],
-    "duplicate_share_pct": 16.7
+    "duplicate_share_pct": 18.2
    },
    {
     "feed": "google/hazards/AU",
-    "mapped": 12,
+    "mapped": 11,
     "survived": 0,
-    "duplicate_canonical": 12,
+    "duplicate_canonical": 11,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/hazards/GB",
-      12
+      11
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/hazards/NG",
-    "mapped": 12,
+    "mapped": 11,
     "survived": 0,
-    "duplicate_canonical": 12,
+    "duplicate_canonical": 11,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/hazards/GB",
-      12
+      11
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/hazards/CA",
-    "mapped": 12,
+    "mapped": 11,
     "survived": 0,
-    "duplicate_canonical": 12,
+    "duplicate_canonical": 11,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/hazards/GB",
-      12
+      11
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -4653,20 +4633,20 @@
    {
     "feed": "google/society/IN",
     "mapped": 29,
-    "survived": 8,
-    "duplicate_canonical": 20,
+    "survived": 7,
+    "duplicate_canonical": 21,
     "duplicate_near_title": 1,
     "loss_attribution": [
      [
       "google/society/US",
-      20
+      21
      ],
      [
       "google/education/US",
       1
      ]
     ],
-    "duplicate_share_pct": 72.4
+    "duplicate_share_pct": 75.9
    },
    {
     "feed": "google/society/AU",
@@ -4685,16 +4665,16 @@
    {
     "feed": "google/society/ZA",
     "mapped": 23,
-    "survived": 1,
-    "duplicate_canonical": 21,
-    "duplicate_near_title": 1,
+    "survived": 3,
+    "duplicate_canonical": 20,
+    "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/society/US",
-      22
+      20
      ]
     ],
-    "duplicate_share_pct": 95.7
+    "duplicate_share_pct": 87.0
    },
    {
     "feed": "google/society/NG",
@@ -4712,21 +4692,21 @@
    },
    {
     "feed": "google/society/PH",
-    "mapped": 23,
-    "survived": 1,
-    "duplicate_canonical": 21,
+    "mapped": 24,
+    "survived": 0,
+    "duplicate_canonical": 23,
     "duplicate_near_title": 1,
     "loss_attribution": [
      [
       "google/society/US",
-      20
+      21
      ],
      [
       "google/society/ZA",
-      2
+      3
      ]
     ],
-    "duplicate_share_pct": 95.7
+    "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/society/CA",
@@ -4753,8 +4733,8 @@
    },
    {
     "feed": "google/society/MX",
-    "mapped": 26,
-    "survived": 26,
+    "mapped": 27,
+    "survived": 27,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -4762,30 +4742,26 @@
    },
    {
     "feed": "google/society/KE",
-    "mapped": 23,
+    "mapped": 24,
     "survived": 0,
-    "duplicate_canonical": 23,
+    "duplicate_canonical": 24,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/society/US",
-      20
+      21
      ],
      [
       "google/society/ZA",
-      2
-     ],
-     [
-      "google/society/PH",
-      1
+      3
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/health/US",
-    "mapped": 30,
-    "survived": 30,
+    "mapped": 29,
+    "survived": 29,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -4812,16 +4788,16 @@
    {
     "feed": "google/health/IN",
     "mapped": 29,
-    "survived": 3,
+    "survived": 4,
     "duplicate_canonical": 25,
-    "duplicate_near_title": 1,
+    "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/health/US",
-      26
+      25
      ]
     ],
-    "duplicate_share_pct": 89.7
+    "duplicate_share_pct": 86.2
    },
    {
     "feed": "google/health/AU",
@@ -4847,8 +4823,8 @@
    },
    {
     "feed": "google/health/ZA",
-    "mapped": 30,
-    "survived": 2,
+    "mapped": 28,
+    "survived": 0,
     "duplicate_canonical": 28,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -4861,18 +4837,18 @@
       3
      ]
     ],
-    "duplicate_share_pct": 93.3
+    "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/health/NG",
-    "mapped": 23,
+    "mapped": 24,
     "survived": 0,
-    "duplicate_canonical": 23,
+    "duplicate_canonical": 24,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/health/GB",
-      20
+      21
      ],
      [
       "google/health/US",
@@ -4891,9 +4867,9 @@
    },
    {
     "feed": "google/health/PH",
-    "mapped": 30,
-    "survived": 0,
-    "duplicate_canonical": 30,
+    "mapped": 29,
+    "survived": 1,
+    "duplicate_canonical": 28,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
@@ -4903,13 +4879,9 @@
      [
       "google/health/IN",
       3
-     ],
-     [
-      "google/health/ZA",
-      2
      ]
     ],
-    "duplicate_share_pct": 100.0
+    "duplicate_share_pct": 96.6
    },
    {
     "feed": "google/health/CA",
@@ -4939,8 +4911,8 @@
    },
    {
     "feed": "google/health/BR",
-    "mapped": 22,
-    "survived": 22,
+    "mapped": 20,
+    "survived": 20,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -4957,14 +4929,14 @@
    },
    {
     "feed": "google/health/KE",
-    "mapped": 28,
+    "mapped": 29,
     "survived": 0,
     "duplicate_canonical": 28,
-    "duplicate_near_title": 0,
+    "duplicate_near_title": 1,
     "loss_attribution": [
      [
       "google/health/US",
-      26
+      27
      ],
      [
       "google/health/IN",
@@ -4976,16 +4948,21 @@
    {
     "feed": "google/education/US",
     "mapped": 28,
-    "survived": 28,
+    "survived": 27,
     "duplicate_canonical": 0,
-    "duplicate_near_title": 0,
-    "loss_attribution": [],
-    "duplicate_share_pct": 0.0
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/education/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 3.6
    },
    {
     "feed": "google/education/GB",
-    "mapped": 32,
-    "survived": 28,
+    "mapped": 31,
+    "survived": 27,
     "duplicate_canonical": 3,
     "duplicate_near_title": 1,
     "loss_attribution": [
@@ -4998,7 +4975,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 12.5
+    "duplicate_share_pct": 12.9
    },
    {
     "feed": "google/education/IN",
@@ -5016,50 +4993,50 @@
    },
    {
     "feed": "google/education/AU",
-    "mapped": 32,
-    "survived": 2,
-    "duplicate_canonical": 30,
+    "mapped": 30,
+    "survived": 1,
+    "duplicate_canonical": 29,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/education/GB",
-      27
+      26
      ],
      [
       "google/education/US",
       3
      ]
     ],
-    "duplicate_share_pct": 93.8
+    "duplicate_share_pct": 96.7
    },
    {
     "feed": "google/education/ZA",
-    "mapped": 28,
+    "mapped": 30,
     "survived": 1,
-    "duplicate_canonical": 27,
+    "duplicate_canonical": 29,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/education/US",
-      22
+      23
      ],
      [
       "google/education/IN",
-      5
+      6
      ]
     ],
-    "duplicate_share_pct": 96.4
+    "duplicate_share_pct": 96.7
    },
    {
     "feed": "google/education/NG",
-    "mapped": 32,
+    "mapped": 30,
     "survived": 0,
-    "duplicate_canonical": 32,
+    "duplicate_canonical": 30,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/education/GB",
-      27
+      26
      ],
      [
       "google/education/US",
@@ -5067,7 +5044,7 @@
      ],
      [
       "google/education/AU",
-      2
+      1
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5075,13 +5052,13 @@
    {
     "feed": "google/education/PH",
     "mapped": 31,
-    "survived": 2,
-    "duplicate_canonical": 29,
+    "survived": 1,
+    "duplicate_canonical": 30,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/education/US",
-      22
+      23
      ],
      [
       "google/education/IN",
@@ -5092,13 +5069,13 @@
       1
      ]
     ],
-    "duplicate_share_pct": 93.5
+    "duplicate_share_pct": 96.8
    },
    {
     "feed": "google/education/CA",
-    "mapped": 32,
+    "mapped": 31,
     "survived": 0,
-    "duplicate_canonical": 32,
+    "duplicate_canonical": 31,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
@@ -5111,15 +5088,15 @@
      ],
      [
       "google/education/AU",
-      2
+      1
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/education/BR",
-    "mapped": 9,
-    "survived": 9,
+    "mapped": 10,
+    "survived": 10,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5127,8 +5104,8 @@
    },
    {
     "feed": "google/education/MX",
-    "mapped": 26,
-    "survived": 22,
+    "mapped": 25,
+    "survived": 21,
     "duplicate_canonical": 4,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -5137,7 +5114,7 @@
       4
      ]
     ],
-    "duplicate_share_pct": 15.4
+    "duplicate_share_pct": 16.0
    },
    {
     "feed": "google/education/KE",
@@ -5148,11 +5125,11 @@
     "loss_attribution": [
      [
       "google/education/US",
-      22
+      21
      ],
      [
       "google/education/IN",
-      5
+      6
      ],
      [
       "google/education/ZA",
@@ -5357,8 +5334,8 @@
    },
    {
     "feed": "google/community/MX",
-    "mapped": 35,
-    "survived": 35,
+    "mapped": 34,
+    "survived": 34,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5380,8 +5357,8 @@
    },
    {
     "feed": "google/economy/US",
-    "mapped": 11,
-    "survived": 11,
+    "mapped": 10,
+    "survived": 10,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5390,39 +5367,35 @@
    {
     "feed": "google/economy/GB",
     "mapped": 27,
-    "survived": 25,
+    "survived": 26,
     "duplicate_canonical": 1,
-    "duplicate_near_title": 1,
-    "loss_attribution": [
-     [
-      "google/economy/US",
-      1
-     ],
-     [
-      "google/economy/CA",
-      1
-     ]
-    ],
-    "duplicate_share_pct": 7.4
-   },
-   {
-    "feed": "google/economy/IN",
-    "mapped": 10,
-    "survived": 0,
-    "duplicate_canonical": 10,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/economy/US",
-      10
+      1
      ]
     ],
-    "duplicate_share_pct": 100.0
+    "duplicate_share_pct": 3.7
+   },
+   {
+    "feed": "google/economy/IN",
+    "mapped": 9,
+    "survived": 1,
+    "duplicate_canonical": 8,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/economy/US",
+      8
+     ]
+    ],
+    "duplicate_share_pct": 88.9
    },
    {
     "feed": "google/economy/AU",
-    "mapped": 28,
-    "survived": 3,
+    "mapped": 29,
+    "survived": 4,
     "duplicate_canonical": 25,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -5435,7 +5408,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 89.3
+    "duplicate_share_pct": 86.2
    },
    {
     "feed": "google/economy/ZA",
@@ -5446,7 +5419,11 @@
     "loss_attribution": [
      [
       "google/economy/US",
-      7
+      6
+     ],
+     [
+      "google/economy/IN",
+      1
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5454,45 +5431,9 @@
    {
     "feed": "google/economy/NG",
     "mapped": 31,
-    "survived": 6,
-    "duplicate_canonical": 24,
+    "survived": 4,
+    "duplicate_canonical": 26,
     "duplicate_near_title": 1,
-    "loss_attribution": [
-     [
-      "google/economy/GB",
-      23
-     ],
-     [
-      "google/economy/US",
-      1
-     ],
-     [
-      "google/economy/AU",
-      1
-     ]
-    ],
-    "duplicate_share_pct": 80.6
-   },
-   {
-    "feed": "google/economy/PH",
-    "mapped": 8,
-    "survived": 0,
-    "duplicate_canonical": 7,
-    "duplicate_near_title": 1,
-    "loss_attribution": [
-     [
-      "google/economy/US",
-      8
-     ]
-    ],
-    "duplicate_share_pct": 100.0
-   },
-   {
-    "feed": "google/economy/CA",
-    "mapped": 28,
-    "survived": 1,
-    "duplicate_canonical": 27,
-    "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/economy/GB",
@@ -5507,7 +5448,47 @@
       1
      ]
     ],
-    "duplicate_share_pct": 96.4
+    "duplicate_share_pct": 87.1
+   },
+   {
+    "feed": "google/economy/PH",
+    "mapped": 7,
+    "survived": 0,
+    "duplicate_canonical": 6,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/economy/US",
+      6
+     ],
+     [
+      "google/economy/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/economy/CA",
+    "mapped": 28,
+    "survived": 0,
+    "duplicate_canonical": 28,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/economy/GB",
+      24
+     ],
+     [
+      "google/economy/AU",
+      3
+     ],
+     [
+      "google/economy/US",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/economy/BR",
@@ -5520,8 +5501,8 @@
    },
    {
     "feed": "google/economy/MX",
-    "mapped": 51,
-    "survived": 45,
+    "mapped": 50,
+    "survived": 44,
     "duplicate_canonical": 1,
     "duplicate_near_title": 5,
     "loss_attribution": [
@@ -5534,26 +5515,30 @@
       1
      ]
     ],
-    "duplicate_share_pct": 11.8
+    "duplicate_share_pct": 12.0
    },
    {
     "feed": "google/economy/KE",
-    "mapped": 8,
+    "mapped": 7,
     "survived": 0,
-    "duplicate_canonical": 8,
+    "duplicate_canonical": 7,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/economy/US",
-      8
+      6
+     ],
+     [
+      "google/economy/IN",
+      1
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/science/US",
-    "mapped": 11,
-    "survived": 10,
+    "mapped": 12,
+    "survived": 11,
     "duplicate_canonical": 0,
     "duplicate_near_title": 1,
     "loss_attribution": [
@@ -5562,7 +5547,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 9.1
+    "duplicate_share_pct": 8.3
    },
    {
     "feed": "google/science/GB",
@@ -5667,8 +5652,8 @@
    },
    {
     "feed": "google/science/BR",
-    "mapped": 34,
-    "survived": 34,
+    "mapped": 33,
+    "survived": 33,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5685,14 +5670,14 @@
    },
    {
     "feed": "google/science/KE",
-    "mapped": 12,
+    "mapped": 13,
     "survived": 0,
-    "duplicate_canonical": 12,
+    "duplicate_canonical": 13,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/science/US",
-      11
+      12
      ],
      [
       "google/science/IN",
@@ -5703,8 +5688,8 @@
    },
    {
     "feed": "google/conflict/US",
-    "mapped": 8,
-    "survived": 8,
+    "mapped": 6,
+    "survived": 6,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5721,14 +5706,14 @@
    },
    {
     "feed": "google/conflict/IN",
-    "mapped": 7,
+    "mapped": 6,
     "survived": 0,
-    "duplicate_canonical": 7,
+    "duplicate_canonical": 6,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/conflict/US",
-      7
+      6
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5749,14 +5734,14 @@
    },
    {
     "feed": "google/conflict/ZA",
-    "mapped": 8,
+    "mapped": 6,
     "survived": 0,
-    "duplicate_canonical": 8,
+    "duplicate_canonical": 6,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/conflict/US",
-      8
+      6
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5777,14 +5762,14 @@
    },
    {
     "feed": "google/conflict/PH",
-    "mapped": 8,
+    "mapped": 6,
     "survived": 0,
-    "duplicate_canonical": 8,
+    "duplicate_canonical": 6,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/conflict/US",
-      8
+      6
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5814,8 +5799,8 @@
    },
    {
     "feed": "google/conflict/MX",
-    "mapped": 11,
-    "survived": 11,
+    "mapped": 12,
+    "survived": 12,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5823,14 +5808,14 @@
    },
    {
     "feed": "google/conflict/KE",
-    "mapped": 7,
+    "mapped": 6,
     "survived": 0,
-    "duplicate_canonical": 7,
+    "duplicate_canonical": 6,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/conflict/US",
-      7
+      6
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5942,8 +5927,8 @@
    },
    {
     "feed": "direct/ABC Australia",
-    "mapped": 9,
-    "survived": 9,
+    "mapped": 10,
+    "survived": 10,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -6134,129 +6119,129 @@
   "schema": 1,
   "scope": "one collection run, duplicate feed entries counted before deduplication",
   "location_semantics": "matched geographic subject; verified incident location unavailable",
-  "mapped_before_dedupe": 1665,
-  "globe_serialized_articles": 707,
+  "mapped_before_dedupe": 1640,
+  "globe_serialized_articles": 699,
   "mapped_by_place_top": {
-   "Vietnam": 246,
-   "India": 92,
-   "France": 90,
-   "Mexico": 64,
-   "Kenya": 62,
+   "Vietnam": 236,
+   "France": 97,
+   "India": 87,
+   "Kenya": 61,
+   "Mexico": 60,
    "Portugal": 38,
-   "China": 32,
-   "Bangladesh": 31,
+   "China": 31,
+   "Bangladesh": 27,
+   "Ho Chi Minh City": 27,
    "New York": 26,
-   "Ho Chi Minh City": 25,
-   "Canada": 23,
+   "Canada": 24,
+   "Nigeria": 22,
    "Mumbai": 21,
    "Israel": 20,
-   "Yemen": 20,
-   "Nigeria": 19,
+   "Yemen": 19,
    "Pakistan": 19,
    "Ukraine": 19,
    "Ghana": 18,
    "Hanoi": 18,
-   "Paris": 15,
    "Saudi Arabia": 15,
-   "Belgium": 13,
+   "Paris": 14,
    "Madrid": 13,
    "Peru": 13,
+   "Belgium": 12,
+   "England": 12,
    "Darfur": 12,
-   "England": 11,
    "Spain": 10,
    "Hungary": 10,
+   "Indonesia": 10,
    "Abu Dhabi": 9,
-   "Egypt": 9,
-   "Tehran": 9,
    "Ethiopia": 8,
    "Russia": 8,
    "Argentina": 8,
-   "Indonesia": 8,
    "Sri Lanka": 8,
    "Philippines": 8,
    "Manchester": 8,
    "Sindh": 8,
    "Sparks": 8,
    "Dubai": 8,
+   "Egypt": 8,
    "West Bank": 7,
    "Gaza": 7,
    "Lagos": 7,
-   "Chicago": 7
+   "Chicago": 7,
+   "Malta": 7
   },
   "globe_by_place_top": {
    "Vietnam": 91,
-   "France": 41,
-   "Mexico": 28,
-   "India": 25,
-   "Kenya": 16,
+   "France": 42,
+   "Mexico": 27,
+   "India": 23,
+   "Kenya": 15,
    "Canada": 13,
-   "China": 11,
    "Paris": 10,
    "Ukraine": 10,
    "Portugal": 10,
+   "China": 10,
    "Madrid": 9,
-   "Nigeria": 9,
    "Bangladesh": 9,
-   "Hanoi": 8,
+   "Nigeria": 8,
    "Israel": 7,
+   "Hanoi": 7,
    "Mumbai": 6,
    "Russia": 6,
    "West Bank": 6,
    "Brazil": 6,
    "Ho Chi Minh City": 6,
    "Iran": 6,
-   "Yemen": 6,
    "New York": 6,
    "Pakistan": 6,
    "Peru": 6,
    "Porto": 5,
    "England": 5,
    "New Zealand": 5,
-   "Vista": 5,
+   "Yemen": 5,
    "Colombia": 5,
    "Liechtenstein": 4,
+   "Maringá": 4,
    "Ghana": 4,
    "California": 4,
+   "Vista": 4,
    "Gaza": 4,
    "United States": 4,
    "Saudi Arabia": 4,
    "Argentina": 4,
    "Auckland": 3,
-   "Tehran": 3,
    "Darfur": 3,
    "Belgium": 3,
    "Luhansk": 3,
-   "Maringá": 3,
    "Aguascalientes": 3,
+   "Australia": 3,
    "Pueblo": 3
   },
   "mapped_by_place_level": {
-   "country": 1083,
-   "place": 568,
+   "country": 1068,
+   "place": 558,
    "region": 14
   },
   "mapped_by_hemisphere": {
-   "NW": 409,
-   "NE": 1022,
-   "SW": 77,
-   "SE": 157
+   "NW": 404,
+   "NE": 1000,
+   "SW": 80,
+   "SE": 156
   },
   "mapped_by_method": {
-   "headline": 1067,
-   "description": 517,
+   "headline": 1051,
+   "description": 507,
    "title-normalized": 27,
    "headline-expanded": 9,
    "d4_explicit_country": 10,
-   "description-normalized": 12,
+   "description-normalized": 13,
    "headline-reviewed-correction": 12,
    "description-expanded": 5,
    "headline-multilingual": 4,
    "description-multilingual": 2
   },
   "mapped_by_literal_evidence": {
-   "literal_name_in_headline": 1104,
-   "literal_name_in_description": 531,
-   "contextual_or_alias_match": 30
+   "literal_name_in_headline": 1089,
+   "literal_name_in_description": 522,
+   "contextual_or_alias_match": 29
   },
   "mapped_country_languages": {
    "Albania": {
@@ -6274,14 +6259,14 @@
     "en": 3
    },
    "Azerbaijan": {
-    "en": 3
+    "en": 2
    },
    "Bangladesh": {
-    "en": 29,
+    "en": 25,
     "es": 2
    },
    "Belgium": {
-    "en": 13
+    "en": 12
    },
    "Bolivia": {
     "es": 3
@@ -6295,15 +6280,15 @@
    },
    "Canada": {
     "es": 10,
-    "en": 13
+    "en": 14
    },
    "Chile": {
-    "es": 2
+    "es": 3
    },
    "China": {
     "en": 27,
     "es": 1,
-    "pt": 4
+    "pt": 3
    },
    "Colombia": {
     "es": 5
@@ -6330,7 +6315,7 @@
     "en": 4
    },
    "Egypt": {
-    "en": 9
+    "en": 8
    },
    "El Salvador": {
     "es": 1
@@ -6342,7 +6327,7 @@
     "en": 6
    },
    "France": {
-    "en": 81,
+    "en": 88,
     "fr": 8,
     "es": 1
    },
@@ -6368,13 +6353,13 @@
     "en": 10
    },
    "India": {
-    "en": 92
+    "en": 87
    },
    "Indonesia": {
-    "en": 8
+    "en": 10
    },
    "Iran": {
-    "en": 4,
+    "en": 5,
     "es": 2
    },
    "Israel": {
@@ -6387,7 +6372,7 @@
     "en": 4
    },
    "Kenya": {
-    "en": 62
+    "en": 61
    },
    "Kuwait": {
     "en": 4
@@ -6400,10 +6385,10 @@
    },
    "Mexico": {
     "es": 20,
-    "en": 44
+    "en": 40
    },
    "Moldova": {
-    "en": 2
+    "en": 1
    },
    "Mozambique": {
     "en": 2
@@ -6414,8 +6399,11 @@
    "New Zealand": {
     "en": 6
    },
+   "Nicaragua": {
+    "es": 1
+   },
    "Nigeria": {
-    "en": 19
+    "en": 22
    },
    "Norfolk Island": {
     "en": 5
@@ -6424,7 +6412,7 @@
     "en": 19
    },
    "Panama": {
-    "es": 1
+    "es": 2
    },
    "Papua New Guinea": {
     "en": 4
@@ -6447,7 +6435,7 @@
     "es": 1
    },
    "Qatar": {
-    "en": 6
+    "en": 4
    },
    "Russia": {
     "pt": 2,
@@ -6487,12 +6475,15 @@
    "Tanzania": {
     "en": 5
    },
+   "Tonga": {
+    "en": 1
+   },
    "Ukraine": {
     "en": 18,
     "fr": 1
    },
    "United Kingdom": {
-    "en": 5
+    "en": 4
    },
    "United States": {
     "es": 2,
@@ -6507,81 +6498,81 @@
     "en": 1
    },
    "Vietnam": {
-    "en": 146,
-    "pt": 48,
-    "es": 52
+    "en": 139,
+    "pt": 46,
+    "es": 51
    },
    "Yemen": {
-    "es": 2,
-    "en": 18
+    "en": 18,
+    "es": 1
    }
   },
   "discovery_edition_vs_actual_match": {
    "AU": {
-    "matched_rows": 115,
+    "matched_rows": 113,
     "feed_count": 11,
     "globe_articles": 6,
-    "geography_unmatched": 70
+    "geography_unmatched": 72
    },
    "BR": {
-    "matched_rows": 95,
+    "matched_rows": 92,
     "feed_count": 11,
-    "globe_articles": 82,
-    "geography_unmatched": 94
+    "globe_articles": 81,
+    "geography_unmatched": 95
    },
    "CA": {
-    "matched_rows": 116,
+    "matched_rows": 114,
     "feed_count": 11,
-    "globe_articles": 2,
-    "geography_unmatched": 73
+    "globe_articles": 1,
+    "geography_unmatched": 75
    },
    "GB": {
-    "matched_rows": 115,
+    "matched_rows": 113,
     "feed_count": 11,
     "globe_articles": 101,
     "geography_unmatched": 69
    },
    "IN": {
-    "matched_rows": 146,
+    "matched_rows": 143,
     "feed_count": 11,
-    "globe_articles": 22,
-    "geography_unmatched": 142
+    "globe_articles": 23,
+    "geography_unmatched": 140
    },
    "KE": {
-    "matched_rows": 133,
+    "matched_rows": 134,
     "feed_count": 11,
-    "globe_articles": 0,
-    "geography_unmatched": 149
-   },
-   "MX": {
-    "matched_rows": 229,
-    "feed_count": 11,
-    "globe_articles": 198,
-    "geography_unmatched": 184
-   },
-   "NG": {
-    "matched_rows": 119,
-    "feed_count": 11,
-    "globe_articles": 6,
-    "geography_unmatched": 69
-   },
-   "PH": {
-    "matched_rows": 140,
-    "feed_count": 11,
-    "globe_articles": 3,
+    "globe_articles": 1,
     "geography_unmatched": 147
    },
-   "US": {
-    "matched_rows": 141,
+   "MX": {
+    "matched_rows": 227,
     "feed_count": 11,
-    "globe_articles": 133,
-    "geography_unmatched": 145
+    "globe_articles": 197,
+    "geography_unmatched": 182
+   },
+   "NG": {
+    "matched_rows": 117,
+    "feed_count": 11,
+    "globe_articles": 4,
+    "geography_unmatched": 71
+   },
+   "PH": {
+    "matched_rows": 136,
+    "feed_count": 11,
+    "globe_articles": 2,
+    "geography_unmatched": 146
+   },
+   "US": {
+    "matched_rows": 137,
+    "feed_count": 11,
+    "globe_articles": 130,
+    "geography_unmatched": 144
    },
    "ZA": {
-    "matched_rows": 138,
+    "matched_rows": 135,
     "feed_count": 11,
-    "globe_articles": 6,
-    "geography_unmatched": 145
+    "globe_articles": 4,
+    "geography_unmatched": 144
    },
    "africa": {
     "feed_count": 6,
@@ -6623,10 +6614,10 @@
     "geography_unmatched": 2
    },
    "regional": {
-    "matched_rows": 80,
+    "matched_rows": 81,
     "feed_count": 17,
-    "globe_articles": 58,
-    "geography_unmatched": 63
+    "globe_articles": 59,
+    "geography_unmatched": 60
    },
    "south-america": {
     "matched_rows": 3,
@@ -6645,12 +6636,12 @@
    {
     "feed_edition": "MX",
     "subject_country": "Vietnam",
-    "mapped_rows": 52
+    "mapped_rows": 51
    },
    {
     "feed_edition": "BR",
     "subject_country": "Vietnam",
-    "mapped_rows": 48
+    "mapped_rows": 46
    },
    {
     "feed_edition": "MX",
@@ -6658,114 +6649,94 @@
     "mapped_rows": 20
    },
    {
-    "feed_edition": "AU",
-    "subject_country": "Vietnam",
-    "mapped_rows": 19
-   },
-   {
-    "feed_edition": "CA",
-    "subject_country": "Vietnam",
-    "mapped_rows": 19
-   },
-   {
-    "feed_edition": "GB",
-    "subject_country": "Vietnam",
-    "mapped_rows": 18
-   },
-   {
-    "feed_edition": "NG",
-    "subject_country": "Vietnam",
-    "mapped_rows": 18
-   },
-   {
     "feed_edition": "IN",
     "subject_country": "France",
     "mapped_rows": 17
    },
    {
-    "feed_edition": "ZA",
-    "subject_country": "Vietnam",
-    "mapped_rows": 15
-   },
-   {
-    "feed_edition": "KE",
-    "subject_country": "Vietnam",
-    "mapped_rows": 15
-   },
-   {
-    "feed_edition": "US",
-    "subject_country": "Vietnam",
-    "mapped_rows": 14
-   },
-   {
-    "feed_edition": "IN",
-    "subject_country": "Vietnam",
-    "mapped_rows": 14
-   },
-   {
-    "feed_edition": "PH",
-    "subject_country": "Vietnam",
-    "mapped_rows": 14
-   },
-   {
-    "feed_edition": "PH",
-    "subject_country": "India",
-    "mapped_rows": 13
-   },
-   {
-    "feed_edition": "US",
-    "subject_country": "France",
-    "mapped_rows": 13
-   },
-   {
-    "feed_edition": "US",
-    "subject_country": "India",
-    "mapped_rows": 12
-   },
-   {
-    "feed_edition": "IN",
-    "subject_country": "India",
-    "mapped_rows": 12
-   },
-   {
-    "feed_edition": "KE",
-    "subject_country": "India",
-    "mapped_rows": 12
-   },
-   {
-    "feed_edition": "ZA",
-    "subject_country": "France",
-    "mapped_rows": 12
-   },
-   {
-    "feed_edition": "PH",
-    "subject_country": "France",
-    "mapped_rows": 12
-   },
-   {
-    "feed_edition": "KE",
-    "subject_country": "France",
-    "mapped_rows": 12
-   },
-   {
     "feed_edition": "GB",
-    "subject_country": "Mexico",
-    "mapped_rows": 11
-   },
-   {
-    "feed_edition": "AU",
-    "subject_country": "Mexico",
-    "mapped_rows": 11
-   },
-   {
-    "feed_edition": "NG",
-    "subject_country": "Mexico",
-    "mapped_rows": 11
+    "subject_country": "Vietnam",
+    "mapped_rows": 17
    },
    {
     "feed_edition": "CA",
-    "subject_country": "Mexico",
-    "mapped_rows": 11
+    "subject_country": "Vietnam",
+    "mapped_rows": 17
+   },
+   {
+    "feed_edition": "AU",
+    "subject_country": "Vietnam",
+    "mapped_rows": 16
+   },
+   {
+    "feed_edition": "NG",
+    "subject_country": "Vietnam",
+    "mapped_rows": 16
+   },
+   {
+    "feed_edition": "IN",
+    "subject_country": "Vietnam",
+    "mapped_rows": 15
+   },
+   {
+    "feed_edition": "ZA",
+    "subject_country": "Vietnam",
+    "mapped_rows": 15
+   },
+   {
+    "feed_edition": "PH",
+    "subject_country": "Vietnam",
+    "mapped_rows": 15
+   },
+   {
+    "feed_edition": "ZA",
+    "subject_country": "France",
+    "mapped_rows": 15
+   },
+   {
+    "feed_edition": "US",
+    "subject_country": "Vietnam",
+    "mapped_rows": 14
+   },
+   {
+    "feed_edition": "KE",
+    "subject_country": "Vietnam",
+    "mapped_rows": 14
+   },
+   {
+    "feed_edition": "US",
+    "subject_country": "France",
+    "mapped_rows": 14
+   },
+   {
+    "feed_edition": "KE",
+    "subject_country": "France",
+    "mapped_rows": 14
+   },
+   {
+    "feed_edition": "PH",
+    "subject_country": "France",
+    "mapped_rows": 13
+   },
+   {
+    "feed_edition": "US",
+    "subject_country": "India",
+    "mapped_rows": 12
+   },
+   {
+    "feed_edition": "IN",
+    "subject_country": "India",
+    "mapped_rows": 12
+   },
+   {
+    "feed_edition": "PH",
+    "subject_country": "India",
+    "mapped_rows": 12
+   },
+   {
+    "feed_edition": "KE",
+    "subject_country": "India",
+    "mapped_rows": 12
    },
    {
     "feed_edition": "US",
@@ -6783,13 +6754,23 @@
     "mapped_rows": 10
    },
    {
-    "feed_edition": "ZA",
-    "subject_country": "Kenya",
+    "feed_edition": "GB",
+    "subject_country": "Mexico",
     "mapped_rows": 10
    },
    {
-    "feed_edition": "PH",
-    "subject_country": "Kenya",
+    "feed_edition": "AU",
+    "subject_country": "Mexico",
+    "mapped_rows": 10
+   },
+   {
+    "feed_edition": "NG",
+    "subject_country": "Mexico",
+    "mapped_rows": 10
+   },
+   {
+    "feed_edition": "CA",
+    "subject_country": "Mexico",
     "mapped_rows": 10
    },
    {
@@ -6803,24 +6784,19 @@
     "mapped_rows": 9
    },
    {
-    "feed_edition": "AU",
-    "subject_country": "India",
+    "feed_edition": "ZA",
+    "subject_country": "Kenya",
     "mapped_rows": 9
    },
    {
-    "feed_edition": "GB",
-    "subject_country": "India",
-    "mapped_rows": 8
-   },
-   {
-    "feed_edition": "CA",
-    "subject_country": "India",
-    "mapped_rows": 8
+    "feed_edition": "PH",
+    "subject_country": "Kenya",
+    "mapped_rows": 9
    },
    {
     "feed_edition": "KE",
     "subject_country": "Kenya",
-    "mapped_rows": 8
+    "mapped_rows": 9
    },
    {
     "feed_edition": "US",
@@ -6828,8 +6804,18 @@
     "mapped_rows": 7
    },
    {
+    "feed_edition": "GB",
+    "subject_country": "India",
+    "mapped_rows": 7
+   },
+   {
     "feed_edition": "IN",
     "subject_country": "Portugal",
+    "mapped_rows": 7
+   },
+   {
+    "feed_edition": "AU",
+    "subject_country": "India",
     "mapped_rows": 7
    },
    {
@@ -6841,12 +6827,17 @@
     "feed_edition": "NG",
     "subject_country": "India",
     "mapped_rows": 7
+   },
+   {
+    "feed_edition": "PH",
+    "subject_country": "Portugal",
+    "mapped_rows": 7
    }
   ],
   "unmatched_diagnostic_counts": {
    "no_diagnostic_country_mention": 1358,
-   "explicit_country_candidate_requires_review": 27,
-   "global_or_nonlocal_topic": 32
+   "explicit_country_candidate_requires_review": 25,
+   "global_or_nonlocal_topic": 29
   },
   "unmatched_multi_country_rows": 0,
   "unmatched_language_candidate_examples": [
@@ -6902,21 +6893,6 @@
     "mapping_action": "none_manual_review_only"
    },
    {
-    "title": "Governo estima tarifa zero em R$ 10 bi, mas entidade diz que é o dobro",
-    "feed": "Google News BR",
-    "candidates": [
-     {
-      "country": "Brazil",
-      "alias": "brasil",
-      "field": "description",
-      "qualified": false
-     }
-    ],
-    "review_class": "explicit_country_candidate_requires_review",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSnFONktnWjBMYVdYNlJjQnBKdnJmYV9SWm14UFFrd2JyZDlGYWdROUNwOVlCdE1vNlpZa195aWlMSF8xNlEzM2J2cXdVMHdBRFd6Y0RMR1JWMXFzZ056d1JDRlVaMTdONDBvRFNSVWw1ZUFuWFR4OEVjOEt2czVqeDJyT0xmQlo1c0VSUnh1T0E3YThNS1BBUENPUXpXX1AwejU4UHhSTkVPdUluWUE?oc=5",
-    "mapping_action": "none_manual_review_only"
-   },
-   {
     "title": "Alíquota da reforma tributária estoura o teto antes da eleição decidir",
     "feed": "Google News BR",
     "candidates": [
@@ -6929,21 +6905,6 @@
     ],
     "review_class": "explicit_country_candidate_requires_review",
     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcTg3UmR5RXhvMWxkZ3BuTlR5bERIVXVxUDktTUFabWw5S21HWmJMeVNuTGFxb1R5LW1fVW5KQ2F4WS05WjVaa0QtRzJvQmJPSHJBTWVtTG5KMmxFdzVHMU54MS1NU2pCdGg5MHpTOHdkN2FrQXR4SGhOcV9PSUZ5bnNEQmFLNldsWWdYdUFnczlGbjU0WUFFOEIzREp3WjdWY0p1Y3hVV1pYRktFazBHM2p4NVE1SzNZWGRPSnFB?oc=5",
-    "mapping_action": "none_manual_review_only"
-   },
-   {
-    "title": "Paulo Paim é homenageado por Alcolumbre no fim da 6x1",
-    "feed": "Google News BR",
-    "candidates": [
-     {
-      "country": "Brazil",
-      "alias": "brasil",
-      "field": "description",
-      "qualified": false
-     }
-    ],
-    "review_class": "explicit_country_candidate_requires_review",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMVZ6bUt3U0JreDNFbU5tR0JtUDlqVXNOdGYxUzdSTk8yZFozTzZHaFlQbTRpSXFKeFM1ZXVqVWdpRWp1ZnNpVzQyMG04dGdvVmZscmdfSURaRFlKRjNiV254T0JUYXBwdVNudzl3em12MTM5OE9RSllsOGlMZ3RkcWpoYzFNTVlRSDlzWWxB?oc=5",
     "mapping_action": "none_manual_review_only"
    },
    {
@@ -6968,6 +6929,21 @@
     "mapping_action": "none_manual_review_only"
    },
    {
+    "title": "Governo estima tarifa zero em R$ 10 bi, mas entidade diz que é o dobro",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSnFONktnWjBMYVdYNlJjQnBKdnJmYV9SWm14UFFrd2JyZDlGYWdROUNwOVlCdE1vNlpZa195aWlMSF8xNlEzM2J2cXdVMHdBRFd6Y0RMR1JWMXFzZ056d1JDRlVaMTdONDBvRFNSVWw1ZUFuWFR4OEVjOEt2czVqeDJyT0xmQlo1c0VSUnh1T0E3YThNS1BBUENPUXpXX1AwejU4UHhSTkVPdUluWUE?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
     "title": "UCRANIA Y SU DIPLOMACIA: PRESIÓN GEOPOLÍTICA Y CORRUPCIÓN - Canarias-semanal.org",
     "feed": "Google News MX",
     "candidates": [
@@ -6986,27 +6962,6 @@
     ],
     "review_class": "explicit_country_candidate_requires_review",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOT0pJRzhreU9oMUxaeWs3VzkyUnN3VDZnSm1obVhTSXZMaHNlMV9JQzZTUEZ6ZmZNX1BhTkt6blpYOHp1TXZHV3I5emlkYWVRM0Z2aFlMMGVRZ1E5WW5Xci1MaTh0N2RkREcxN2dHV2VLbG0tZ3JaMWp1N1BsWndubEx6VGQ2b3I5R3c1T2ZfVl9IdHQ0YlE1U1I1VQ?oc=5",
-    "mapping_action": "none_manual_review_only"
-   },
-   {
-    "title": "550.000 manifestantes en las calles de Francia: las protestas se extienden por Europa",
-    "feed": "Google News MX",
-    "candidates": [
-     {
-      "country": "France",
-      "alias": "francia",
-      "field": "headline",
-      "qualified": true
-     },
-     {
-      "country": "France",
-      "alias": "francia",
-      "field": "description",
-      "qualified": true
-     }
-    ],
-    "review_class": "explicit_country_candidate_requires_review",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAyU3pfeHVuLWcyczNrTmQ1VzlVbGZmbUdGeHpCYWhqRDFkOUZaOThDRHNfb0k1ZjNLSTJQWjM4NXVidVZIeXFJQ3lsSUV5ZDgtUzZSbmE4OGE5Tm56NXBWVHVR?oc=5",
     "mapping_action": "none_manual_review_only"
    },
    {
@@ -7291,7 +7246,7 @@
      }
     ],
     "review_class": "explicit_country_candidate_requires_review",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQelVwVU1tUFJiNHhjZjdWMmtkY3V6ZzJBMTRCLW1tSk5jRzY2cEZCNHNaMUd6SjNOeWlKQ1EtR2ZaSDRtTkFSYXFNdV9XM3dUeU1YTXNLSk9kMldFb2NzSlN5aEx0anlrLTJEc2xKQ2RuczhKZXNUN2RwMVhQQnNnSUJBR0pQV3hPNERfejFQWkgxN1M2cUxra19qT0d5ZE9IRzVmelpSQmHSAagBQVVfeXFMTThQTkNvc0s0bWdNdHVkcW10ZC1VU0lPcDVUOXk4ZjMtMzVmQzdvRjVSWHBvVjZpak1mdjBjT3VGSTcyT3VIRnVGb0djUzlFWjduZ0s5cmZvTUcwZkxkWXhaMmZGUWRiblFXWnlPRVBuYlAxTmJVbHViUmdoU2ZoY2dSdXRzMUx0VUQzUkoyV1hSWnM0SGVaM2lZRzV5QXBCMXZIR01ZdjRN?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQelVwVU1tUFJiNHhjZjdWMmtkY3V6ZzJBMTRCLW1tSk5jRzY2cEZCNHNaMUd6SjNOeWlKQ1EtR2ZaSDRtTkFSYXFNdV9XM3dUeU1YTXNLSk9kMldFb2NzSlN5aEx0anlrLTJEc2xKQ2RuczhKZXNUN2RwMVhQQnNnSUJBR0pQV3hPNERfejFQWkgxN1M2cUxra19qT0d5ZE9IRzVmelpSQmE?oc=5",
     "mapping_action": "none_manual_review_only"
    },
    {
@@ -7705,17 +7660,6 @@
     "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
    },
    {
-    "title": "Here, there, and everywhere: Remote work and the employment of disabled and older workers in the UK",
-    "place": "United Kingdom",
-    "place_level": "country",
-    "matching_method": "headline",
-    "literal_place_fields": [],
-    "evidence_class": "contextual_or_alias_match",
-    "interpretation": "geographic_subject_not_verified_event_location",
-    "confidence_label": "contextual_review",
-    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
-   },
-   {
     "title": "O problema do Brasil é que a produtividade não acompanha o crescimento",
     "place": "Brazil",
     "place_level": "country",
@@ -7780,6 +7724,17 @@
     "interpretation": "geographic_subject_not_verified_event_location",
     "confidence_label": "contextual_review",
     "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Cuatro muertos en ataques atribuidos a Ucrania en Lugansk y San Petersburgo",
+    "place": "Luhansk",
+    "place_level": "place",
+    "matching_method": "headline-expanded",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
    }
   ],
   "limitations": [
@@ -7794,12 +7749,12 @@
  "d6_attribution_accuracy": {
   "policy": "conservative headline-versus-description diagnostic; only single explicit headline / conflicting description choices are withheld",
   "decision_counts": {
-   "retain": 1488,
-   "review": 184,
+   "retain": 1477,
+   "review": 170,
    "withhold_description_conflict": 3
   },
   "disagreement_count": 9,
-  "multi_headline_place_count": 161,
+  "multi_headline_place_count": 147,
   "withheld_count": 3,
   "withheld_samples": [
    {
@@ -8268,78 +8223,6 @@
    },
    {
     "action": "review",
-    "selected_place": "Mexico",
-    "headline_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "description_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "headline_description_disagree": false,
-    "multiple_headline_places": true,
-    "ambiguous_tokens": [],
-    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
-    "title": "Trudy Approaches Mexico, Champy Passes Guam ᐉ News from Fakti.bg - World",
-    "feed": "google/hazards/GB"
-   },
-   {
-    "action": "review",
-    "selected_place": "Mexico",
-    "headline_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "description_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "headline_description_disagree": false,
-    "multiple_headline_places": true,
-    "ambiguous_tokens": [],
-    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
-    "title": "Trudy Approaches Mexico, Champy Passes Guam ᐉ News from Fakti.bg - World",
-    "feed": "google/hazards/AU"
-   },
-   {
-    "action": "review",
-    "selected_place": "Mexico",
-    "headline_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "description_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "headline_description_disagree": false,
-    "multiple_headline_places": true,
-    "ambiguous_tokens": [],
-    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
-    "title": "Trudy Approaches Mexico, Champy Passes Guam ᐉ News from Fakti.bg - World",
-    "feed": "google/hazards/NG"
-   },
-   {
-    "action": "review",
-    "selected_place": "Mexico",
-    "headline_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "description_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "headline_description_disagree": false,
-    "multiple_headline_places": true,
-    "ambiguous_tokens": [],
-    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
-    "title": "Trudy Approaches Mexico, Champy Passes Guam ᐉ News from Fakti.bg - World",
-    "feed": "google/hazards/CA"
-   },
-   {
-    "action": "review",
     "selected_place": "California",
     "headline_places": [
      "Boston",
@@ -8450,28 +8333,6 @@
     "ambiguous_tokens": [],
     "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
     "title": "Riots Sweep European Nations: France, Albania, Italy, Portugal and Belgium face escalating street violence and unrest",
-    "feed": "google/society/US"
-   },
-   {
-    "action": "review",
-    "selected_place": "Tirana",
-    "headline_places": [
-     "Albania",
-     "France",
-     "Italy",
-     "Tirana"
-    ],
-    "description_places": [
-     "Albania",
-     "France",
-     "Italy",
-     "Tirana"
-    ],
-    "headline_description_disagree": false,
-    "multiple_headline_places": true,
-    "ambiguous_tokens": [],
-    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
-    "title": "\"In Tirana, Rama's resignation is demanded, police shoot protesters with rubber bullets\"/ Well-known German media, DIE ZEIT: From France to Italy and Albania, Europe in protest!",
     "feed": "google/society/US"
    },
    {
@@ -8856,28 +8717,6 @@
    },
    {
     "action": "review",
-    "selected_place": "Marseille",
-    "headline_places": [
-     "France",
-     "Lyon",
-     "Marseille",
-     "Paris"
-    ],
-    "description_places": [
-     "France",
-     "Lyon",
-     "Marseille",
-     "Paris"
-    ],
-    "headline_description_disagree": false,
-    "multiple_headline_places": true,
-    "ambiguous_tokens": [],
-    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
-    "title": "Watch Video | France Paris Protest Live News: Historic 1873 Limoges Town Hall Set Ablaze, Marseille City Hall Vandalised and Lyon Tourist Office Torched as Protests Over Living Cos",
-    "feed": "google/society/IN"
-   },
-   {
-    "action": "review",
     "selected_place": "Portugal",
     "headline_places": [
      "Belgium",
@@ -8921,6 +8760,143 @@
     "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
     "title": "Protests Across Europe Turn Violent As France, Albania See Clashes; Italy, Portugal, Belgium Also Hit By Un",
     "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "selected_place": "Portugal",
+    "headline_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "description_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "headline_description_disagree": false,
+    "multiple_headline_places": true,
+    "ambiguous_tokens": [],
+    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
+    "title": "Riots Sweep European Nations: France, Albania, Italy, Portugal and Belgium face escalating street violence and unrest",
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "selected_place": "Portugal",
+    "headline_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "description_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "headline_description_disagree": false,
+    "multiple_headline_places": true,
+    "ambiguous_tokens": [],
+    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
+    "title": "The cost of living drives hundreds of thousands of Europeans to the streets. Massive mobilizations in France and Italy, demonstrations in Portugal, Albania, and Belgium (Video)",
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "selected_place": "Tirana",
+    "headline_places": [
+     "Albania",
+     "France",
+     "Italy",
+     "Tirana"
+    ],
+    "description_places": [
+     "Albania",
+     "France",
+     "Italy",
+     "Tirana"
+    ],
+    "headline_description_disagree": false,
+    "multiple_headline_places": true,
+    "ambiguous_tokens": [],
+    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
+    "title": "\"In Tirana, Rama's resignation is demanded, police shoot protesters with rubber bullets\"/ Well-known German media, DIE ZEIT: From France to Italy and Albania, Europe in protest!",
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "selected_place": "Portugal",
+    "headline_places": [
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "description_places": [
+     "France",
+     "India",
+     "Italy",
+     "Portugal"
+    ],
+    "headline_description_disagree": false,
+    "multiple_headline_places": true,
+    "ambiguous_tokens": [],
+    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
+    "title": "Season of Anger: Protests break out across France, Italy and Portugal",
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "selected_place": "Belgium",
+    "headline_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy"
+    ],
+    "description_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy"
+    ],
+    "headline_description_disagree": false,
+    "multiple_headline_places": true,
+    "ambiguous_tokens": [],
+    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
+    "title": "Protests Hit France, Italy, Belgium, Albania: What Is Fueling Unrest Across Europe?",
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "selected_place": "Portugal",
+    "headline_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "description_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "headline_description_disagree": false,
+    "multiple_headline_places": true,
+    "ambiguous_tokens": [],
+    "note": "Mentions are not verified event locations. Other existing matchers may recognize additional aliases.",
+    "title": "Soaring Cost of Living: Violent Protests Erupt Across Europe; France, Belgium, Italy, Portugal, Albania Hit",
+    "feed": "google/society/ZA"
    }
   ],
   "important_limits": [
@@ -8932,12 +8908,12 @@
  "d7_semantic_accuracy": {
   "policy": "Targeted semantic false-positive rules; never relocates an article. All non-blocking uncertainty remains review-only.",
   "decision_counts": {
-   "retain": 1508,
-   "review": 162,
+   "retain": 1497,
+   "review": 148,
    "withhold": 2
   },
   "reason_counts": {
-   "multiple_headline_places": 161,
+   "multiple_headline_places": 147,
    "common_word_place_collision": 2,
    "headline_place_differs_from_selected": 1
   },
@@ -9137,54 +9113,6 @@
    {
     "action": "review",
     "reason": "multiple_headline_places",
-    "selected_place": "Mexico",
-    "title": "Trudy Approaches Mexico, Champy Passes Guam ᐉ News from Fakti.bg - World",
-    "headline_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "matched_rule": null,
-    "feed": "google/hazards/GB"
-   },
-   {
-    "action": "review",
-    "reason": "multiple_headline_places",
-    "selected_place": "Mexico",
-    "title": "Trudy Approaches Mexico, Champy Passes Guam ᐉ News from Fakti.bg - World",
-    "headline_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "matched_rule": null,
-    "feed": "google/hazards/AU"
-   },
-   {
-    "action": "review",
-    "reason": "multiple_headline_places",
-    "selected_place": "Mexico",
-    "title": "Trudy Approaches Mexico, Champy Passes Guam ᐉ News from Fakti.bg - World",
-    "headline_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "matched_rule": null,
-    "feed": "google/hazards/NG"
-   },
-   {
-    "action": "review",
-    "reason": "multiple_headline_places",
-    "selected_place": "Mexico",
-    "title": "Trudy Approaches Mexico, Champy Passes Guam ᐉ News from Fakti.bg - World",
-    "headline_places": [
-     "Guam",
-     "Mexico"
-    ],
-    "matched_rule": null,
-    "feed": "google/hazards/CA"
-   },
-   {
-    "action": "review",
-    "reason": "multiple_headline_places",
     "selected_place": "California",
     "title": "El Niño cambiará el invierno en Estados Unidos: menos nieve en Nueva York, Chicago y Boston y más riesgo de inundaciones en California",
     "headline_places": [
@@ -9250,20 +9178,6 @@
      "France",
      "Italy",
      "Portugal"
-    ],
-    "matched_rule": null,
-    "feed": "google/society/US"
-   },
-   {
-    "action": "review",
-    "reason": "multiple_headline_places",
-    "selected_place": "Tirana",
-    "title": "\"In Tirana, Rama's resignation is demanded, police shoot protesters with rubber bullets\"/ Well-known German media, DIE ZEIT: From France to Italy and Albania, Europe in protest!",
-    "headline_places": [
-     "Albania",
-     "France",
-     "Italy",
-     "Tirana"
     ],
     "matched_rule": null,
     "feed": "google/society/US"
@@ -9514,20 +9428,6 @@
    {
     "action": "review",
     "reason": "multiple_headline_places",
-    "selected_place": "Marseille",
-    "title": "Watch Video | France Paris Protest Live News: Historic 1873 Limoges Town Hall Set Ablaze, Marseille City Hall Vandalised and Lyon Tourist Office Torched as Protests Over Living Cos",
-    "headline_places": [
-     "France",
-     "Lyon",
-     "Marseille",
-     "Paris"
-    ],
-    "matched_rule": null,
-    "feed": "google/society/IN"
-   },
-   {
-    "action": "review",
-    "reason": "multiple_headline_places",
     "selected_place": "Portugal",
     "title": "Cost of living protests hit Belgium, Italy, Portugal and France",
     "headline_places": [
@@ -9614,6 +9514,20 @@
    {
     "action": "review",
     "reason": "multiple_headline_places",
+    "selected_place": "Belgium",
+    "title": "Protests Hit France, Italy, Belgium, Albania: What Is Fueling Unrest Across Europe?",
+    "headline_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy"
+    ],
+    "matched_rule": null,
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "reason": "multiple_headline_places",
     "selected_place": "Portugal",
     "title": "Soaring Cost of Living: Violent Protests Erupt Across Europe; France, Belgium, Italy, Portugal, Albania Hit",
     "headline_places": [
@@ -9625,6 +9539,72 @@
     ],
     "matched_rule": null,
     "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "reason": "multiple_headline_places",
+    "selected_place": "Portugal",
+    "title": "Season of anger? France was just the beginning as Italy, Portugal, US and more now erupt in protests and violence - Why is world burning?",
+    "headline_places": [
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "matched_rule": null,
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "reason": "multiple_headline_places",
+    "selected_place": "Lisbon",
+    "title": "Europe Hit by Protests on Multiple Fronts as French Cities Witness Violence and Mass Arrests, Albania Sees Calls for PM to Quit, and Housing Anger Hits Lisbon",
+    "headline_places": [
+     "Albania",
+     "Lisbon"
+    ],
+    "matched_rule": null,
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "reason": "multiple_headline_places",
+    "selected_place": "Argentina",
+    "title": "The Global Gen Z Rebellion: Why Youth Are Protesting from France to Argentina and Who They Target",
+    "headline_places": [
+     "Argentina",
+     "France"
+    ],
+    "matched_rule": null,
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "reason": "multiple_headline_places",
+    "selected_place": "Portugal",
+    "title": "Cost of living protests hit Belgium, Italy, Portugal and France",
+    "headline_places": [
+     "Belgium",
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "matched_rule": null,
+    "feed": "google/society/PH"
+   },
+   {
+    "action": "review",
+    "reason": "multiple_headline_places",
+    "selected_place": "Portugal",
+    "title": "Protests Across Europe Turn Violent As France, Albania See Clashes; Italy, Portugal, Belgium Also Hit By Un",
+    "headline_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy",
+     "Portugal"
+    ],
+    "matched_rule": null,
+    "feed": "google/society/PH"
    }
   ],
   "limitations": [
@@ -9636,15 +9616,15 @@
  "d8_geographic_subject": {
   "policy": "Narrow contextual suppression plus review-only multi-country role detection; no automatic relocation.",
   "decision_counts": {
-   "retain": 1613,
+   "retain": 1589,
    "withhold": 5,
-   "review": 52
+   "review": 51
   },
   "reason_counts": {
    "person_name_collision": 5,
    "headline_subject_differs_from_selected": 19,
    "multiple_country_roles_unresolved": 22,
-   "cross_border_local_story": 10,
+   "cross_border_local_story": 9,
    "ambiguous_place_only_in_description": 1
   },
   "withheld_samples": [
@@ -9798,27 +9778,6 @@
    },
    {
     "action": "review",
-    "reason": "cross_border_local_story",
-    "selected_place": "Tirana",
-    "title": "\"In Tirana, Rama's resignation is demanded, police shoot protesters with rubber bullets\"/ Well-known German media, DIE ZEIT: From France to Italy and Albania, Europe in protest!",
-    "headline_countries": [
-     "albania",
-     "france"
-    ],
-    "headline_places": [
-     "Albania",
-     "France",
-     "Italy",
-     "Tirana"
-    ],
-    "selected_in_title": true,
-    "selected_in_description": true,
-    "explicit_selected_locality": true,
-    "multi_country": true,
-    "feed": "google/society/US"
-   },
-   {
-    "action": "review",
     "reason": "multiple_country_roles_unresolved",
     "selected_place": "Belgium",
     "title": "Protests Hit France, Italy, Belgium, Albania: What Is Fueling Unrest Across Europe?",
@@ -10059,6 +10018,27 @@
    {
     "action": "review",
     "reason": "multiple_country_roles_unresolved",
+    "selected_place": "Belgium",
+    "title": "Protests Hit France, Italy, Belgium, Albania: What Is Fueling Unrest Across Europe?",
+    "headline_countries": [
+     "albania",
+     "france"
+    ],
+    "headline_places": [
+     "Albania",
+     "Belgium",
+     "France",
+     "Italy"
+    ],
+    "selected_in_title": true,
+    "selected_in_description": true,
+    "explicit_selected_locality": false,
+    "multi_country": true,
+    "feed": "google/society/ZA"
+   },
+   {
+    "action": "review",
+    "reason": "multiple_country_roles_unresolved",
     "selected_place": "Portugal",
     "title": "Soaring Cost of Living: Violent Protests Erupt Across Europe; France, Belgium, Italy, Portugal, Albania Hit",
     "headline_countries": [
@@ -10071,27 +10051,6 @@
      "France",
      "Italy",
      "Portugal"
-    ],
-    "selected_in_title": true,
-    "selected_in_description": true,
-    "explicit_selected_locality": false,
-    "multi_country": true,
-    "feed": "google/society/ZA"
-   },
-   {
-    "action": "review",
-    "reason": "multiple_country_roles_unresolved",
-    "selected_place": "Belgium",
-    "title": "Protests Hit France, Italy, Belgium, Albania: What Is Fueling Unrest Across Europe?",
-    "headline_countries": [
-     "albania",
-     "france"
-    ],
-    "headline_places": [
-     "Albania",
-     "Belgium",
-     "France",
-     "Italy"
     ],
     "selected_in_title": true,
     "selected_in_description": true,
@@ -10544,7 +10503,7 @@
     "action": "review",
     "reason": "headline_subject_differs_from_selected",
     "selected_place": "Vietnam",
-    "title": "El Kremlin habla de las \"declaraciones finales\" de Ucrania tras el atentado de San Petersburgo.",
+    "title": "El sector energético de Ucrania ha sido objeto de repetidos ataques a gran escala.",
     "headline_countries": [
      "ukraine"
     ],
@@ -10559,7 +10518,7 @@
     "action": "review",
     "reason": "headline_subject_differs_from_selected",
     "selected_place": "Vietnam",
-    "title": "El sector energético de Ucrania ha sido objeto de repetidos ataques a gran escala.",
+    "title": "El Kremlin habla de las \"declaraciones finales\" de Ucrania tras el atentado de San Petersburgo.",
     "headline_countries": [
      "ukraine"
     ],
@@ -10704,6 +10663,381 @@
    "A headline country can be an actor, target, comparison, or event site.",
    "Selected geographic names are not independently verified event locations.",
    "Review and withholding counts are feed observations before deduplication."
+  ]
+ },
+ "d9_quality_assurance": {
+  "schema": 1,
+  "policy": "Audit only. No added pins, inferred locations, automatic remapping or newly blocked articles.",
+  "unique_mapped_url_location_pairs": 761,
+  "pre_deduplication_mapped_entries": 1640,
+  "duplicate_url_location_observations_removed": 879,
+  "evidence_levels": {
+   "explicit_headline_place": 479,
+   "explicit_description_place": 261,
+   "contextual_or_alias": 21
+  },
+  "multilocation_classifications": {
+   "no_curated_country_reference": 595,
+   "single_country_reference": 151,
+   "multi_country_unresolved": 11,
+   "cross_border_explicit_locality": 4
+  },
+  "international_review_samples": [
+   {
+    "title": "Cost of living protests hit Belgium, Italy, Portugal and France",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcHVKZElXMUhIblBtS2pLOThuSmszNHRMQXBvOFR6ZjBJWHhJd1BCM094dlg3eDRmNmFaUTFJOFJQZHhBRkdyTjNISkhSaGlBVTE3ZWNPZW04eHh6S1JXSUxJVzBmNlN6QklYT2NmSTVfUVdLeS03TmNUWmNTM2tsTENLazJGODVrOUtsajY0d1pBemIyQnBERG5zNUtNNi1iNktLR3pn0gGrAUFVX3lxTE9wa3NJblczOVI5c2t3akxLWkM4NWFqSGVqREFiMHNpc2RvUGJMbHJURk8yaUhBRXlVRnhrYmFFS1kyamo3MVltQWd0NUc0SnhzX3pVZnRDSDVJNFBPRXBDQ0pPTFFMZm9WXzd6RjVjbl9OMlRKVE0zandhOE5kM2w3Y0plQ3RBczQ1UUZxMzlUUWxTQnBINFVobzBZdXJhNnZtVi1NS1NVUDBVbw?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "belgium",
+     "france",
+     "italy",
+     "portugal"
+    ],
+    "existing_selected_place": "Portugal",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Protests Across Europe Turn Violent As France, Albania See Clashes; Italy, Portugal, Belgium Also Hit By Un",
+    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOMDQxYTZYZXNMVXgxOXlVZkszV3d6WFk2blFSdU1kblhndzgtVlNJN2JOYzBqUUZLUjJHRVhqU3BqbUN1SXA3bjZwSG11R0R5OWQxSlg1MWRDVTdrS3NldDFLUUxiNUxIbWpBM2dmNXBLaHh6ZFB0WmE4dlVDVDhycWxsYWp1ZFRJVHA5eVVqT1RObUoxZVdGV2paUUNEZGNIVF8yYS1lc2hqWFQ0T29fLWlMd2NRQ2pWc0ZSWmhxTlVZR2lqUzNubDRoZjZuTTRzMEVrMzRjTkM2bXEtUl9jSDlhb0trSHRMUGZsTTJqMnHSAfYBQVVfeXFMTXJTYXVTQ0pkWDB5RDdXT0VOazFsOTR5aWtVTkxwVUQtSG1UMVlSTHAxZUtvUDBULWJpMVB3X2JwNjBOMTRqSUpYblVSMlg4OEF0QmNFQ3FJMzd6OHB4NFdqMXFlVEI0djNiR1FDTUdJQzJTMU5mZFplTUtwQUV3S1hEa1R4ZEFNUU9DSHNYVk5tTGQ5bzdTSzF0M2ExYndZZ1NkNTRpaTFReklxNm9fdWNseTNncFA4YlNpYk9VTEZHMFNmaUxrOUhiYkUyUVF1QlRTRlIwM1o0ZjBJVWYtTHRpUV9ZNmxxbkFxX2JIVHlTXzR1bjVn?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "albania",
+     "belgium",
+     "france",
+     "italy",
+     "portugal"
+    ],
+    "existing_selected_place": "Portugal",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "The cost of living drives hundreds of thousands of Europeans to the streets. Massive mobilizations in France and Italy, demonstrations in Portugal, Albania, and Belgium (Video)",
+    "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxNTlI5VW1MMHhzRWNUYjlTQzJxdm4zdE5SYm5RSEhxamg4ckUwQ3NLdWhRNDBzR1FIZUFYNVczZzFjMXBNek5vblY4bFN3VnU5elhMN3BMd2ZyakJCQjRYcFRqbUJOYVJmQmw3U1dmT3dEVFB5WTBQU2QwZ2owUWEwSjZUdXpVV3hlT2hnVWRIX3pka3c0em40NWd1c25OMC1zM2pLZkx0VGdQSzBsR0NxMHM4RmZsTllfVnotQ3NfUlNJT01BZHRtWkV4N1VTa0IzV2tOZ0dMakhmY2JYNnJ5U01BazFZSnJORHJtOVZQUzd2dzhSa0FkMmZ5Tkc4LTdaS2czVWE0ZHdYYnAxazZacTJFMVlXTzV0NmVBMU1oWDI1blhCQlltVmt0cms?oc=5",
+    "classification": "cross_border_explicit_locality",
+    "headline_countries": [
+     "albania",
+     "belgium",
+     "france",
+     "italy",
+     "portugal"
+    ],
+    "existing_selected_place": "Portugal",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Riots Sweep European Nations: France, Albania, Italy, Portugal and Belgium face escalating street violence and unrest",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQcE5VYkQ5Y20wZlYtSVptU0lNaEdYaERtVEZmVmoxN0t6dWQta0xxckkxdHl1ZnhkRWJuYXBXT1JrbGY1S19rZWtFX3BqYl9GN2RzOERCcm5sOXhfQ29wdElPaXBIYlRWaHlPVjVYSlFXd28xQTZUNjZrTC1WOHlhalNwS25HMTQtYi10ZXhvLTRKVXBZVVNGMWF3cTNtemcyaTY3ZzMxMHZEWU1aTFA3VnBoWVlGbmZvWW9mWVFWSF9tYlhRX2h6eHhBdk1YYXRnSzVJNnhyaVY1bk1xTWk3Ry1Ba0JrMkYtRDdQelk1eHY1UdIB9wFBVV95cUxQTlYxZ0hnUkhqNHlvaWZGMWU1N093c1F3QWdqQnRMc3poNUpETW9pQ3RaQnlVOTBpXzhqZERlX2g4YmViNUo5cVE5LU9QVU5xUS1xRkoxc3VILTBEaFJuM3prNUpHaElfdGJkZm9vd1VWM0FvWE1hZzZrb0VnTVBFWkFRVmJVQkx6LXRFNThEZzZNcDM4Q01HeFU3Wkl4dHJuUWo4X3BQaG1JM3paY0Jjd0RwQ29qbjY2S19sdDJoX0JIanBOVENRdU9FT0pmY2NhRGx2MzQ4N2U2MTc1M3lBNmMwUHVicjVHS0Q1Q21XcnJCUnN3bjJZ?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "albania",
+     "belgium",
+     "france",
+     "italy",
+     "portugal"
+    ],
+    "existing_selected_place": "Portugal",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Season of Anger: Protests break out across France, Italy and Portugal",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNVVsbDhBWDFIbF9HUm0wdHdhSVpQcXIwajF4Z0Y3alNRTDMySGR4ZXZKaXpjODJOa0R5YnA0TGZYVnBqY1FjSUJKeWkyLUJ4MzMxSktGdVVoR0NESUdzMGEyZlBxck1XNWJUYlpoNzF3Tm1LOFpMTDZ6U2puand1Sl9CZ1dKVm0wNFRXMkNkMnZqbEZVYy1aa1hVb3hxaU1VZzAxRmtleWdJZ2NCTVV4bFpJNGF6ZmhNeFBDdDkxYUw?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "france",
+     "italy",
+     "portugal"
+    ],
+    "existing_selected_place": "Portugal",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Protests Hit France, Italy, Belgium, Albania: What Is Fueling Unrest Across Europe?",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdWpWVVM3eGtYUWNKM3BiVkdMaXZBWWI2Sy1NY1lfcDhZeEVpNjZTWG1wdGxGWGc5QzVKcE5YVElCSUdyUXVvSFB5QUpqLVZURkN2TkFiUEpvS09EUzg2MjVfXy1aZkdvaFVSVzZsZVNkUnc5NjJybXA5enFfaTM3MXBOSmtQSXdRd2daZnVHRWlZS3NvLWxpeWV6QzBRVFF1blgzaWNtVnZqY3otZHVLMy1YU1NkX2E1WTF5SXI1NNIBxAFBVV95cUxNT3FCZHJlb2poY1RTcENlYzgwSm1WWFV1Q0ZnYzQ5VmdTaEtvUEVIWFR0R25mTDlkUGpuSUpZQUR0cW1PbHZBMjhMeEh0T2tQYXpjMnpkR3lfNmRRZ1JEWGZiRXVYM0JDVGdWNGMzRGd0YmY3anpLdHFKTzV6aGx3bGE0MWhZYUhlVnZUbWpfdFVjY2J6MjFxUmNqU0JOYkMzVXRYazZzMDRDeC1jR3Nyd3VmNXJoajZBVGNEVXVlei1heW5Z?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "albania",
+     "belgium",
+     "france",
+     "italy"
+    ],
+    "existing_selected_place": "Belgium",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Season of anger? France was just the beginning as Italy, Portugal, US and more now erupt in protests and violence - Why is world burning?",
+    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPUEtHMXQ0V3JvZnpBZWh6VWFaQXVzOV9oWk1ob0ZXdGRKOUhkYTM3UXJwMDN5VW9JOHdjWWVOT2NTVW1iNVZ1QlRfRkZHc2QyRWtDUnFFemlObzhkWThuTC1jdTlnSUdrMEVYdExEWURBbVgteUVSNVEwN3dvdHp1Y1FYdlBETkFGN0RfWWRWMF9PTUdJWTFkdXF2UXRsQk5QYjVncnJTSzg2dVlWMDVOd3dYODJNUHcwYVRCZ2RLSHJIVjZRQjZRMlFfXzlHcV8xQjNTV3hRM0pQQld4bnVqRVBKaWx0YnRKMF9lY2RkNjhiUndMYWh6RmQ1U01yN03SAYMCQVVfeXFMT3pTV0dLN1F3V1JsWjg5Y3FteGM0ajBWNnozTjdWYTNUeXctdlprQjRIMTY2dFQxQ2x5NVBtZS1JMmhQVjRJTXN5QThMVDNXdkxZNzVOQ3NTMEVnTlg4VnNmWHJlQ21HU08tWWpBOUZRQWt6RVo4d1lqbUtzY0hfbFJvcXVsaUc2Mm40TUdCMEZ4azJLd2lnQUwyaG55ZGpwbXhoRzFnZXVMRWJJaVlfR0ZDSl96VzFRVW5MN1NaU2lJbVY1c1FUWTBrVVJwUVhxQl9tWWZPN2c4ZXl6elFUUmJONWVVTGdIMW5ENnk0TF9qNThZZW91TG4xRlJNZDZJbWZ6dw?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "france",
+     "italy",
+     "portugal"
+    ],
+    "existing_selected_place": "Portugal",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Soaring Cost of Living: Violent Protests Erupt Across Europe; France, Belgium, Italy, Portugal, Albania Hit",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVG52a2p5Z2Q0SENDLThUdll6Mnpzb3RYM3RIVVBDX0NUblZSM3Uxb3d4aTRJc19DanduU19VcmFTcW82VXBtbUtUeXdvTGp3LVlLQ0I3MURtZ3R4Zkh0LWVVY2JCcFEtUGswTlFQS1BLQ3NJUVVrbTB2emkzSW94Nms4VkRzRXVxSEU3SXV0R0pYY09BLVpHMU1wd2VqOUZuNThXYm4yNk5TQjYxYjFDaTRzdGZDOTRPaFlEUkoyeUlSdVUzZFpLdHN2Y1FPZw?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "albania",
+     "belgium",
+     "france",
+     "italy",
+     "portugal"
+    ],
+    "existing_selected_place": "Portugal",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Not Just France, Italy And Belgium Among 5 European Countries Swept By Violent Protests; Why Are People Angry?",
+    "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOZ09pUkRwcDA1TTJ4c1pxUlA5ZUh5RVFpdmJ0NWIyeEJXR0MyZXQ0TkJHeGVrajlWUzdpakE5SHNobk9tcll6X052b0hZRUZ0S3VJam1iTEpYalFnNnY4TnFFSE0xVEQ1VGdmX2V6ZTBqVDFpTE1OTi1hN0l1TUVDRnhra0xmWUU2YnZzaloyWjZMR0F0aDBZNExBbzdJZXFySmVNTWthaDlXQVFlZWVOaVFrdTJqakFpN1FFN21QT3ZMQWUzQTdOUkJGSnVpRWtMU1l2cDhSdlgyTXZ0OUs1Ulh2SXdFVmRmb3dsOHl2YVZxYXdid2JCVE1jd3QtYTJRamRVeXVZNWV3dEx0b3pRMHpYeHNWcnVSOU9zTEZkcjFjZ9IBqAJBVV95cUxNbFBlbGxZd0ViaExEMU1TbFkwM2t2NjUwbW9LRXh3ZmhRX3EtQ1BlbE5HMHlFY0pQT1BrUkpZX0NaOUxqZHRDMzBQdzNmM0s2c2I3RmhrQUh4VktsbldtRHNUZWtXSE1UYUZsTndVQy16Ul9PRTVPblV4MHJhZ09Hc2FiOUEwSGRzVXA2dWVVX0JjVDVtckFlOE9fWC1pQWpMa1c4MnNtMG9obVRTRXdSNlFzZk8zSDZSc1FBajUxbTBBX1VnNURvemcxSmlIdTExemh1UHdwWUxmZW1YS3IwLWtlQmdydi1acTdDb0NQZ1BhLWJDY0RvV0trWk1kTnBlN19GdG4temNnMVc2VkdTZklPMFFPaDdZeEdDV1pCeGJsUFEyZFBnSg?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "belgium",
+     "france",
+     "italy"
+    ],
+    "existing_selected_place": "Belgium",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "\"In Tirana, Rama's resignation is demanded, police shoot protesters with rubber bullets\"/ Well-known German media, DIE ZEIT: From France to Italy and Albania, Europe in protest!",
+    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNNm55WTJrbGtvcFpXWlM0eGFic1o5aVE1X1hmY3RiSGd6TmRVOGFSWnRXT2UxSWRUaTkzMkVQMUNmakJTVHdoXzJNUjJ6WnFTQklvTE9udmNpZFhfZFlDbkgzY0l0QUFTMEVGN3hmQUZhbWRuQzZVNG9tLTdOcy1CUW9vSTRnejZ5ZVJPTXRldmkzTm5Tb2ZSdkNxaGFUUmJxazFGMjd6NS1hblc5aU05bGg1OGNEWEJ6eUd2RTZSZmhIc0VrZ1dTcWtIOVhRU3ljOWV6S2NrVW9USFlDVlAwOE10WjZJOEIwN0xPN1ZVMmVsQWpLZDRRaWRyLUhId1U?oc=5",
+    "classification": "cross_border_explicit_locality",
+    "headline_countries": [
+     "albania",
+     "france",
+     "italy"
+    ],
+    "existing_selected_place": "Tirana",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Protests Across Europe Turn Violent As France, Albania See Clashes; Italy, Portugal, Belgium Also Hit By Un",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNclNhdVNDSmRYMHlEN1dPRU5rMWw5NHlpa1VOTHBVRC1IbVQxWVJMcDFlS29QMFQtYmkxUHdfYnA2ME4xNGpJSlhuVVIyWDg4QXRCY0VDcUkzN3o4cHg0V2oxcWVUQjR2M2JHUUNNR0lDMlMxTmZkWmVNS3BBRXdLWERrVHhkQU1RT0NIc1hWTm1MZDlvN1NLMXQzYTFid1lnU2Q1NGlpMVF6SXE2b191Y2x5M2dwUDhiU2liT1VMRkcwU2ZpTGs5SGJiRTJRUXVCVFNGUjAzWjRmMElVZi1MdGlRX1k2bHFuQXFfYkhUeVNfNHVuNWfSAfYBQVVfeXFMTXJTYXVTQ0pkWDB5RDdXT0VOazFsOTR5aWtVTkxwVUQtSG1UMVlSTHAxZUtvUDBULWJpMVB3X2JwNjBOMTRqSUpYblVSMlg4OEF0QmNFQ3FJMzd6OHB4NFdqMXFlVEI0djNiR1FDTUdJQzJTMU5mZFplTUtwQUV3S1hEa1R4ZEFNUU9DSHNYVk5tTGQ5bzdTSzF0M2ExYndZZ1NkNTRpaTFReklxNm9fdWNseTNncFA4YlNpYk9VTEZHMFNmaUxrOUhiYkUyUVF1QlRTRlIwM1o0ZjBJVWYtTHRpUV9ZNmxxbkFxX2JIVHlTXzR1bjVn?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "albania",
+     "belgium",
+     "france",
+     "italy",
+     "portugal"
+    ],
+    "existing_selected_place": "Portugal",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Da França a Portugal: o que está por trás dos protestos que tomam a Europa?",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQS1o2a2hXdGZYTGFGbHZpWHgwYl9hMGJ0bFBJaGV5dWpMa2tRUlZhTGpONWpvRnZQQjNzTkZKN2N4UmxHZjZDVUtzQVFDZHF5ajVaSk1OSHAzTnJfcWxoRlcxcWFYZEhjdlBEZms1RkQxQ1NmRFFhVVRlbG8xcE5XVlFiZVFTU014Y2ItWGV0UktnbHRUQk43SS1MRVUzbm1oWGg1dmdQUnc3TVlKc3fSAbMBQVVfeXFMT040aUtCc2h6cHBOTGRoUVFSQktjMlkwTG9NQkhnQzM0NzYybXNRUkFXeV84bk4zejRRMXo2QjdEdS1Qb2NXYUhid1RNbjF1RTZDaTI2VHFtMWFpUXVJUDFmXzBPVi1CX1V5VlhsU0EySlBzRWdsYTBXSW9CdC1JWGtVM3FNYzVGcEttNGNBZlVKSFR4dFZmUURrbmtQdjFtY2xlX1JpY0Q0RUtBTlRZdHJEaVk?oc=5",
+    "classification": "cross_border_explicit_locality",
+    "headline_countries": [
+     "france",
+     "portugal"
+    ],
+    "existing_selected_place": "Portugal",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Rússia acelera ofensiva na Ucrânia, e Trump suspende sanções",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPS3I3c0VoaV95a1FPLVRER2E4cllKSWNjemk4NEZoeXRaYnoxU0xfWVljaDhZM01fUXd0blY0X3FZelZBUmpJdzZqVWNCeEw3MTZJdEJXa291OVh3S1lZQXMzWFFYTnZLbXpZR3J0UzlvODNVSDhKQi1MUjVRMThVMldCNG96cEVkOGE2bnFkY3BkSWVjY054UmpoUzJ2MHE1?oc=5",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "russia",
+     "ukraine"
+    ],
+    "existing_selected_place": "Russia",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Russia’s war on Ukraine ‘must be brought to an end’, Zelenskyy says",
+    "url": "https://www.aljazeera.com/news/2026/10/18/russias-war-on-ukraine-must-be-brought-to-an-end-zelenskyy-says?traffic_source=rss",
+    "classification": "multi_country_unresolved",
+    "headline_countries": [
+     "russia",
+     "ukraine"
+    ],
+    "existing_selected_place": "Ukraine",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   },
+   {
+    "title": "Mobilisation en France, manifestations en Albanie, violences en Cisjordanie : la semaine en images",
+    "url": "https://www.france24.com/fr/france/20261018-mobilisations-france-manifestations-albanie-violences-cisjordanie-la-semaine-en-images",
+    "classification": "cross_border_explicit_locality",
+    "headline_countries": [
+     "albania",
+     "france"
+    ],
+    "existing_selected_place": "France",
+    "location_verified": false,
+    "automatic_additional_pins": 0,
+    "quality_level": "explicit_headline_place"
+   }
+  ],
+  "top_location_concentrations": [
+   {
+    "place": "Vietnam",
+    "unique_articles": 128,
+    "share_of_unique_articles_pct": 16.8,
+    "review_recommended": true
+   },
+   {
+    "place": "France",
+    "unique_articles": 45,
+    "share_of_unique_articles_pct": 5.9,
+    "review_recommended": false
+   },
+   {
+    "place": "Mexico",
+    "unique_articles": 30,
+    "share_of_unique_articles_pct": 3.9,
+    "review_recommended": false
+   },
+   {
+    "place": "India",
+    "unique_articles": 26,
+    "share_of_unique_articles_pct": 3.4,
+    "review_recommended": false
+   },
+   {
+    "place": "Canada",
+    "unique_articles": 16,
+    "share_of_unique_articles_pct": 2.1,
+    "review_recommended": false
+   },
+   {
+    "place": "Kenya",
+    "unique_articles": 15,
+    "share_of_unique_articles_pct": 2.0,
+    "review_recommended": false
+   },
+   {
+    "place": "Portugal",
+    "unique_articles": 11,
+    "share_of_unique_articles_pct": 1.4,
+    "review_recommended": false
+   },
+   {
+    "place": "Bangladesh",
+    "unique_articles": 11,
+    "share_of_unique_articles_pct": 1.4,
+    "review_recommended": false
+   },
+   {
+    "place": "China",
+    "unique_articles": 11,
+    "share_of_unique_articles_pct": 1.4,
+    "review_recommended": false
+   },
+   {
+    "place": "Paris",
+    "unique_articles": 11,
+    "share_of_unique_articles_pct": 1.4,
+    "review_recommended": false
+   },
+   {
+    "place": "Ukraine",
+    "unique_articles": 10,
+    "share_of_unique_articles_pct": 1.3,
+    "review_recommended": false
+   },
+   {
+    "place": "Israel",
+    "unique_articles": 9,
+    "share_of_unique_articles_pct": 1.2,
+    "review_recommended": false
+   },
+   {
+    "place": "Madrid",
+    "unique_articles": 9,
+    "share_of_unique_articles_pct": 1.2,
+    "review_recommended": false
+   },
+   {
+    "place": "Nigeria",
+    "unique_articles": 8,
+    "share_of_unique_articles_pct": 1.1,
+    "review_recommended": false
+   },
+   {
+    "place": "Hanoi",
+    "unique_articles": 7,
+    "share_of_unique_articles_pct": 0.9,
+    "review_recommended": false
+   },
+   {
+    "place": "Russia",
+    "unique_articles": 6,
+    "share_of_unique_articles_pct": 0.8,
+    "review_recommended": false
+   },
+   {
+    "place": "West Bank",
+    "unique_articles": 6,
+    "share_of_unique_articles_pct": 0.8,
+    "review_recommended": false
+   },
+   {
+    "place": "New York",
+    "unique_articles": 6,
+    "share_of_unique_articles_pct": 0.8,
+    "review_recommended": false
+   },
+   {
+    "place": "Ho Chi Minh City",
+    "unique_articles": 6,
+    "share_of_unique_articles_pct": 0.8,
+    "review_recommended": false
+   },
+   {
+    "place": "Pakistan",
+    "unique_articles": 6,
+    "share_of_unique_articles_pct": 0.8,
+    "review_recommended": false
+   }
+  ],
+  "vietnam_unique_article_count": 128,
+  "benchmark": {
+   "total": 9,
+   "passed": 9,
+   "failed": 0,
+   "passing_pct": 100.0,
+   "failed_cases": [],
+   "note": "Regression expectations curated from prior observed errors and synthetic safety cases; not a representative measured real-world precision score."
+  },
+  "limitations": [
+   "Place mention does not prove incident coordinates or event location.",
+   "Curated countries dictionary does not detect every country, language or subnational place.",
+   "URL/location deduplication can count syndicated duplicates under separate URLs.",
+   "Concentration anomalies are only review triggers."
   ]
  }
 }
