@@ -70,6 +70,8 @@ jobs:
             data/events.json
             data/unmatched-review.json
             data/feed-contribution-audit.json
+            data/feed-resilience-health.json
+            data/feed-health-validation.json
           )
           for file in "${files[@]}"; do
             if [[ -f "$file" ]]; then
