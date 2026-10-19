@@ -41,6 +41,7 @@ from geo_accuracy_d6 import audit_decision, summary as d6_summary
 from geo_semantic_d7 import decision as d7_decision, summary as d7_summary
 from geo_subject_d8 import decision as d8_decision, summary as d8_summary
 from geo_quality_d9 import report as d9_report, run_benchmark as d9_benchmark
+from geo_anomaly_d10 import report as d10_report
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -625,7 +626,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
   f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
   f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
- obj={'schema':1,'release':'v2.4D.9','updated_at':now.isoformat(),'stage_definitions':{
+ obj={'schema':1,'release':'v2.4D.10','updated_at':now.isoformat(),'stage_definitions':{
   'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
   'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
   'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
@@ -643,7 +644,8 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   'd7_semantic_accuracy':getattr(collect,'d7_semantic',{}),
   'd8_geographic_subject':getattr(collect,'d8_subject',{}),
   'd9_quality_assurance':d9_report(getattr(publish_pipeline_audit,'raw',[]),getattr(publish_pipeline_audit,'points',[]),
-   d9_benchmark(json.loads((ROOT/'tests/d9_geo_benchmark.json').read_text(encoding='utf8')),d7_decision,d8_decision))}
+   d9_benchmark(json.loads((ROOT/'tests/d9_geo_benchmark.json').read_text(encoding='utf8')),d7_decision,d8_decision)),
+  'd10_location_investigation':d10_report(getattr(publish_pipeline_audit,'raw',[]),getattr(publish_pipeline_audit,'points',[]))}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
