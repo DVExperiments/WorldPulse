@@ -44,6 +44,7 @@ from geo_quality_d9 import report as d9_report, run_benchmark as d9_benchmark
 from geo_anomaly_d10 import report as d10_report
 from geo_diversity_d11 import report as d11_report
 from geo_integrity_d12 import isolate as d12_isolate, summarize as d12_summary
+from geo_recovery_d13 import independent_evidence as d13_evidence, summarize as d13_summary
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -290,7 +291,7 @@ def parsed_timestamp(value):
  except (ValueError,AttributeError):return None
 
 def collect(now):
- d6_records=[];d6_withheld=[];d7_records=[];d8_records=[];d12_records=[]
+ d6_records=[];d6_withheld=[];d7_records=[];d8_records=[];d12_records=[];d13_records=[]
  cutoff=now-dt.timedelta(hours=24)
  results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_rejections=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit(); pipeline={}; recovery_samples=[]; recovery_counts=Counter(); unmatched_diagnostics=Counter()
  def ingest(rows,category,source,kind,region,language,feed_key):
@@ -407,6 +408,14 @@ def collect(now):
     'source_url':a.get('source_url',''),'current_place':place.get('name',''), 'shadow_place':shadow_name,
     'classification':classification,'removed_metadata':removed_metadata[:5],
     'description_excerpt':a.get('description','')[:220], 'clean_description_excerpt':clean_description[:220]})
+   # D.13 analyzes the cleaned description and matches independently of branding.
+   # This is a shadow-only recovery audit, never an alternative published pin.
+   recovery=d13_evidence(a['title'],clean_description,place.get('name',''))
+   d13_records.append({'url':a['url'],'title':a['title'][:180],
+    'publisher':a.get('publisher') or source,'current_place':place.get('name',''),
+    'shadow_place':shadow_name,'classification':classification,
+    'recovery_class':recovery['class'],'evidence':recovery['evidence'],
+    'evidence_field':recovery['field'],'clean_description_excerpt':clean_description[:260]})
    mapped+=1
    counts['geography_matched']+=1
    geo_audit.record(source,'mapped',mapped=True)
@@ -450,6 +459,7 @@ def collect(now):
  collect.d7_semantic=d7_summary(d7_records)
  collect.d8_subject=d8_summary(d8_records)
  collect.d12_integrity=d12_summary(d12_records)
+ collect.d13_recovery=d13_summary(d13_records)
  collect.recovery_stats={'recovered_by_feed':dict(recovery_counts),'recovered_total':sum(recovery_counts.values()),'recovered_examples':recovery_samples,'unmatched_reason_counts':dict(unmatched_diagnostics)}
  return results,failures,dict(scanned),seen_queries,health,unmapped
 
@@ -654,7 +664,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
   f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
   f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
- obj={'schema':1,'release':'v2.4D.12','updated_at':now.isoformat(),'stage_definitions':{
+ obj={'schema':1,'release':'v2.4D.13','updated_at':now.isoformat(),'stage_definitions':{
   'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
   'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
   'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
@@ -675,7 +685,8 @@ def publish_pipeline_audit(now,pipeline,unmapped):
    d9_benchmark(json.loads((ROOT/'tests/d9_geo_benchmark.json').read_text(encoding='utf8')),d7_decision,d8_decision)),
   'd10_location_investigation':d10_report(getattr(publish_pipeline_audit,'raw',[]),getattr(publish_pipeline_audit,'points',[])),
   'd11_publisher_diversity_geographic_precision':d11_report(getattr(publish_pipeline_audit,'raw',[]),PLACES),
-  'd12_publisher_metadata_integrity':getattr(collect,'d12_integrity',{})}
+  'd12_publisher_metadata_integrity':getattr(collect,'d12_integrity',{}),
+  'd13_multilingual_recovery':getattr(collect,'d13_recovery',{})}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
