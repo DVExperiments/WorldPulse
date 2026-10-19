@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "release": "v2.6.0",
- "updated_at": "2026-10-19T10:49:09.639347+00:00",
+ "updated_at": "2026-10-19T17:30:01.950330+00:00",
  "mode": "conservative_live_lexical_withholding_plus_observation",
  "lexical_suppressed_total": 1,
  "lexical_suppressed_by_reason": {
@@ -17,27 +17,24 @@
   }
  ],
  "deduplication_review": {
-  "canonical_same_place_repeats": 955,
-  "cross_place_url_occurrences": 2,
-  "cross_place_examples": [
-   {
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbkRCXy14OG5vNHhNRTl2UXBSd1FWdlJkVHJEdmJwZ00zNWVEMURRdThKQUFPQTladXFXcm1GeVZoNDlQRy1xbGYwNVhlUUthNWEzT0YtT1kzeHczeHZBLXZWS2dPUW9yTm5aTHFsQ1EtYllqa2RjeWpnQlBHLU14a21Zb2ptUFRLYVNoZ1RTUTNZSVZCQU9yR1pZRFhTSXVHMVhhZy13SjdoNDRDUi1pX2VlcUxlbExqOUw4ajQ0TzM?oc=5",
-    "first": "Karachi",
-    "second": "Sindh"
-   },
-   {
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbkRCXy14OG5vNHhNRTl2UXBSd1FWdlJkVHJEdmJwZ00zNWVEMURRdThKQUFPQTladXFXcm1GeVZoNDlQRy1xbGYwNVhlUUthNWEzT0YtT1kzeHczeHZBLXZWS2dPUW9yTm5aTHFsQ1EtYllqa2RjeWpnQlBHLU14a21Zb2ptUFRLYVNoZ1RTUTNZSVZCQU9yR1pZRFhTSXVHMVhhZy13SjdoNDRDUi1pX2VlcUxlbExqOUw4ajQ0TzM?oc=5",
-    "first": "Karachi",
-    "second": "Sindh"
-   }
-  ],
+  "canonical_same_place_repeats": 903,
+  "cross_place_url_occurrences": 0,
+  "cross_place_examples": [],
   "note": "Cross-location reuse is not automatically incorrect; preserve separate evidence-backed assignments."
  },
- "top_publisher_share_pct": 13.9,
+ "top_publisher_share_pct": 11.5,
  "top_publishers": [
   {
    "publisher": "Vietnam.vn",
-   "mapped_rows": 265
+   "mapped_rows": 215
+  },
+  {
+   "publisher": "Facebook",
+   "mapped_rows": 35
+  },
+  {
+   "publisher": "Al Jazeera",
+   "mapped_rows": 34
   },
   {
    "publisher": "AllAfrica East Africa",
@@ -48,39 +45,23 @@
    "mapped_rows": 30
   },
   {
-   "publisher": "Facebook",
-   "mapped_rows": 29
+   "publisher": "The Guardian World",
+   "mapped_rows": 27
   },
   {
    "publisher": "AllAfrica West Africa",
-   "mapped_rows": 28
-  },
-  {
-   "publisher": "Al Jazeera",
    "mapped_rows": 26
   },
   {
-   "publisher": "The Guardian World",
-   "mapped_rows": 22
-  },
-  {
    "publisher": "ABC News - Breaking News, Latest News and Videos",
-   "mapped_rows": 19
+   "mapped_rows": 21
   },
   {
-   "publisher": "France24",
-   "mapped_rows": 19
-  },
-  {
-   "publisher": "France24 ES",
-   "mapped_rows": 18
+   "publisher": "France24 FR",
+   "mapped_rows": 20
   },
   {
    "publisher": "Bhaskar English",
-   "mapped_rows": 17
-  },
-  {
-   "publisher": "The Times of India",
    "mapped_rows": 17
   },
   {
@@ -88,18 +69,26 @@
    "mapped_rows": 17
   },
   {
-   "publisher": "India Today",
+   "publisher": "BBC World",
    "mapped_rows": 16
   },
   {
-   "publisher": "El Heraldo de México",
+   "publisher": "Bioengineer.org",
    "mapped_rows": 15
+  },
+  {
+   "publisher": "ABC Australia",
+   "mapped_rows": 14
+  },
+  {
+   "publisher": "Tribune Online",
+   "mapped_rows": 13
   }
  ],
- "unmapped_rows": 1732,
- "mapped_raw_rows": 1903,
- "mapped_signal_groups": 460,
- "history_samples": 2,
+ "unmapped_rows": 1875,
+ "mapped_raw_rows": 1871,
+ "mapped_signal_groups": 474,
+ "history_samples": 3,
  "geographic_attribution": "Geographic subject, not verified incident site",
  "limitations": [
   "Rules are narrow reviewed-language safeguards, not a universal multilingual disambiguator.",
