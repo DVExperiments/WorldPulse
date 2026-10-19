@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "release": "v2.4D.4",
- "updated_at": "2026-10-19T00:01:51.553626+00:00",
+ "release": "v2.4D.5",
+ "updated_at": "2026-10-19T00:20:00.005622+00:00",
  "stage_definitions": {
   "parsed_entries": "Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles",
   "date_passed": "Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title",
@@ -16,15 +16,15 @@
   "D.4 recovery is restricted to explicit qualified country references already found in the existing PLACES gazetteer; it does not use source edition or publisher location."
  ],
  "totals": {
-  "parsed_entries": 4258,
-  "date_passed": 3058,
-  "date_rejected": 1190,
+  "parsed_entries": 4240,
+  "date_passed": 3039,
+  "date_rejected": 1191,
   "invalid_article": 10,
-  "geography_matched": 1640,
-  "geography_unmatched": 1411,
+  "geography_matched": 1637,
+  "geography_unmatched": 1395,
   "geography_rejected": 7,
-  "deduplication_survived": 744,
-  "globe_articles": 709
+  "deduplication_survived": 743,
+  "globe_articles": 710
  },
  "feeds": [
   {
@@ -33,24 +33,23 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 37,
-   "date_passed": 37,
+   "parsed_entries": 20,
+   "date_passed": 20,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 16,
-   "geography_unmatched": 21,
+   "geography_matched": 9,
+   "geography_unmatched": 11,
    "geography_rejected": 0,
-   "deduplication_survived": 14,
-   "globe_articles": 14,
+   "deduplication_survived": 8,
+   "globe_articles": 8,
    "duplicate_canonical": 0,
-   "duplicate_near_title": 2,
+   "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/politics/KE": 1,
     "google/politics/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 43.2,
-   "survival_after_mapping_pct": 87.5,
+   "matched_after_date_pct": 45.0,
+   "survival_after_mapping_pct": 88.9,
    "usefulness": "contributing"
   },
   {
@@ -82,23 +81,24 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 37,
-   "date_passed": 37,
+   "parsed_entries": 35,
+   "date_passed": 35,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 17,
-   "geography_unmatched": 20,
+   "geography_matched": 16,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
-   "duplicate_canonical": 15,
-   "duplicate_near_title": 0,
+   "deduplication_survived": 7,
+   "globe_articles": 7,
+   "duplicate_canonical": 8,
+   "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/politics/US": 15
+    "google/politics/US": 8,
+    "google/politics/KE": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 45.9,
-   "survival_after_mapping_pct": 11.8,
+   "matched_after_date_pct": 45.7,
+   "survival_after_mapping_pct": 43.8,
    "usefulness": "contributing"
   },
   {
@@ -130,24 +130,24 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 38,
-   "date_passed": 38,
+   "parsed_entries": 36,
+   "date_passed": 36,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 18,
-   "geography_unmatched": 20,
+   "geography_matched": 17,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "duplicate_canonical": 17,
+   "duplicate_canonical": 16,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/politics/US": 15,
-    "google/politics/IN": 2
+    "google/politics/US": 8,
+    "google/politics/IN": 8
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 47.4,
-   "survival_after_mapping_pct": 5.6,
+   "matched_after_date_pct": 47.2,
+   "survival_after_mapping_pct": 5.9,
    "usefulness": "contributing"
   },
   {
@@ -179,24 +179,24 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 38,
-   "date_passed": 38,
+   "parsed_entries": 37,
+   "date_passed": 37,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 18,
+   "geography_matched": 17,
    "geography_unmatched": 20,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 18,
-   "duplicate_near_title": 0,
+   "duplicate_canonical": 16,
+   "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/politics/US": 16,
+    "google/politics/US": 8,
     "google/politics/ZA": 1,
-    "google/politics/IN": 1
+    "google/politics/IN": 8
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 47.4,
+   "matched_after_date_pct": 45.9,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -229,20 +229,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 47,
-   "date_passed": 47,
+   "parsed_entries": 48,
+   "date_passed": 48,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 10,
+   "geography_matched": 11,
    "geography_unmatched": 37,
    "geography_rejected": 0,
-   "deduplication_survived": 10,
-   "globe_articles": 10,
+   "deduplication_survived": 11,
+   "globe_articles": 11,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 21.3,
+   "matched_after_date_pct": 22.9,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -252,12 +252,12 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 40,
-   "date_passed": 40,
+   "parsed_entries": 41,
+   "date_passed": 41,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 20,
-   "geography_unmatched": 20,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 18,
    "globe_articles": 18,
@@ -267,7 +267,7 @@
     "google/politics/MX": 2
    },
    "recovery_explicit": 1,
-   "matched_after_date_pct": 50.0,
+   "matched_after_date_pct": 48.8,
    "survival_after_mapping_pct": 90.0,
    "usefulness": "contributing"
   },
@@ -277,25 +277,25 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 38,
-   "date_passed": 38,
+   "parsed_entries": 37,
+   "date_passed": 37,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 18,
+   "geography_matched": 17,
    "geography_unmatched": 20,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "duplicate_canonical": 17,
+   "duplicate_canonical": 16,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/politics/US": 14,
+    "google/politics/US": 8,
     "google/politics/ZA": 1,
-    "google/politics/IN": 2
+    "google/politics/IN": 7
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 47.4,
-   "survival_after_mapping_pct": 5.6,
+   "matched_after_date_pct": 45.9,
+   "survival_after_mapping_pct": 5.9,
    "usefulness": "contributing"
   },
   {
@@ -496,20 +496,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 9,
-   "date_passed": 9,
+   "parsed_entries": 8,
+   "date_passed": 8,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 3,
+   "geography_matched": 2,
    "geography_unmatched": 6,
    "geography_rejected": 0,
-   "deduplication_survived": 3,
-   "globe_articles": 3,
+   "deduplication_survived": 2,
+   "globe_articles": 2,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 33.3,
+   "matched_after_date_pct": 25.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -519,23 +519,23 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 50,
+   "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 33,
-   "geography_unmatched": 18,
+   "geography_matched": 31,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
-   "deduplication_survived": 32,
-   "globe_articles": 32,
+   "deduplication_survived": 30,
+   "globe_articles": 30,
    "duplicate_canonical": 0,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
     "google/environment/MX": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 64.7,
-   "survival_after_mapping_pct": 97.0,
+   "matched_after_date_pct": 62.0,
+   "survival_after_mapping_pct": 96.8,
    "usefulness": "contributing"
   },
   {
@@ -593,23 +593,23 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 12,
-   "date_passed": 12,
+   "parsed_entries": 11,
+   "date_passed": 11,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 11,
+   "geography_matched": 10,
    "geography_unmatched": 1,
    "geography_rejected": 0,
-   "deduplication_survived": 10,
-   "globe_articles": 10,
+   "deduplication_survived": 9,
+   "globe_articles": 9,
    "duplicate_canonical": 0,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
     "google/hazards/GB": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 91.7,
-   "survival_after_mapping_pct": 90.9,
+   "matched_after_date_pct": 90.9,
+   "survival_after_mapping_pct": 90.0,
    "usefulness": "contributing"
   },
   {
@@ -650,10 +650,11 @@
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 10,
-   "duplicate_near_title": 1,
+   "duplicate_canonical": 9,
+   "duplicate_near_title": 2,
    "lost_to_feeds": {
-    "google/hazards/GB": 11
+    "google/hazards/GB": 9,
+    "google/hazards/NG": 2
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 91.7,
@@ -689,24 +690,25 @@
    "editorial_region": "NG",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 12,
-   "date_passed": 12,
+   "parsed_entries": 13,
+   "date_passed": 13,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 11,
+   "geography_matched": 12,
    "geography_unmatched": 1,
    "geography_rejected": 0,
-   "deduplication_survived": 0,
-   "globe_articles": 0,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
    "duplicate_canonical": 11,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/hazards/GB": 11
+    "google/hazards/GB": 10,
+    "google/hazards/AU": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 91.7,
-   "survival_after_mapping_pct": 0.0,
-   "usefulness": "all_duplicate"
+   "matched_after_date_pct": 92.3,
+   "survival_after_mapping_pct": 8.3,
+   "usefulness": "contributing"
   },
   {
    "feed": "google/hazards/PH",
@@ -785,12 +787,12 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 7,
-   "date_passed": 7,
+   "parsed_entries": 6,
+   "date_passed": 6,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 4,
-   "geography_unmatched": 3,
+   "geography_unmatched": 2,
    "geography_rejected": 0,
    "deduplication_survived": 4,
    "globe_articles": 4,
@@ -798,7 +800,7 @@
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 57.1,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -835,19 +837,19 @@
    "date_passed": 43,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 24,
-   "geography_unmatched": 19,
+   "geography_matched": 22,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
-   "deduplication_survived": 23,
-   "globe_articles": 23,
+   "deduplication_survived": 21,
+   "globe_articles": 21,
    "duplicate_canonical": 0,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
     "google/society/US": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 55.8,
-   "survival_after_mapping_pct": 95.8,
+   "matched_after_date_pct": 51.2,
+   "survival_after_mapping_pct": 95.5,
    "usefulness": "contributing"
   },
   {
@@ -879,22 +881,23 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 47,
-   "date_passed": 47,
+   "parsed_entries": 46,
+   "date_passed": 46,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 29,
-   "geography_unmatched": 18,
+   "geography_unmatched": 17,
    "geography_rejected": 0,
    "deduplication_survived": 11,
    "globe_articles": 11,
-   "duplicate_canonical": 18,
-   "duplicate_near_title": 0,
+   "duplicate_canonical": 17,
+   "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/society/US": 18
+    "google/society/US": 17,
+    "google/education/US": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 61.7,
+   "matched_after_date_pct": 63.0,
    "survival_after_mapping_pct": 37.9,
    "usefulness": "contributing"
   },
@@ -904,22 +907,22 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 7,
-   "date_passed": 7,
+   "parsed_entries": 6,
+   "date_passed": 6,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 4,
+   "geography_matched": 3,
    "geography_unmatched": 3,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 4,
+   "duplicate_canonical": 3,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/society/GB": 4
+    "google/society/GB": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 57.1,
+   "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -929,23 +932,23 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 42,
-   "date_passed": 42,
+   "parsed_entries": 43,
+   "date_passed": 43,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 21,
-   "geography_unmatched": 21,
+   "geography_unmatched": 22,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
+   "deduplication_survived": 3,
+   "globe_articles": 3,
    "duplicate_canonical": 18,
-   "duplicate_near_title": 1,
+   "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/society/US": 19
+    "google/society/US": 18
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 50.0,
-   "survival_after_mapping_pct": 9.5,
+   "matched_after_date_pct": 48.8,
+   "survival_after_mapping_pct": 14.3,
    "usefulness": "contributing"
   },
   {
@@ -979,23 +982,23 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 45,
-   "date_passed": 45,
+   "parsed_entries": 46,
+   "date_passed": 46,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 23,
-   "geography_unmatched": 22,
+   "geography_matched": 22,
+   "geography_unmatched": 24,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 22,
-   "duplicate_near_title": 1,
+   "duplicate_canonical": 20,
+   "duplicate_near_title": 2,
    "lost_to_feeds": {
-    "google/society/US": 20,
+    "google/society/US": 19,
     "google/society/ZA": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 51.1,
+   "matched_after_date_pct": 47.8,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1030,12 +1033,12 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 12,
-   "date_passed": 12,
+   "parsed_entries": 13,
+   "date_passed": 13,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 7,
-   "geography_unmatched": 5,
+   "geography_unmatched": 6,
    "geography_rejected": 0,
    "deduplication_survived": 7,
    "globe_articles": 7,
@@ -1043,7 +1046,7 @@
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 58.3,
+   "matched_after_date_pct": 53.8,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1053,12 +1056,12 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 50,
-   "date_passed": 50,
+   "parsed_entries": 49,
+   "date_passed": 49,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 25,
-   "geography_unmatched": 25,
+   "geography_unmatched": 24,
    "geography_rejected": 0,
    "deduplication_survived": 25,
    "globe_articles": 25,
@@ -1066,7 +1069,7 @@
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 50.0,
+   "matched_after_date_pct": 51.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1076,12 +1079,12 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 44,
-   "date_passed": 44,
+   "parsed_entries": 46,
+   "date_passed": 46,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 22,
-   "geography_unmatched": 22,
+   "geography_unmatched": 24,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
@@ -1092,7 +1095,7 @@
     "google/society/ZA": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 50.0,
+   "matched_after_date_pct": 47.8,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1102,21 +1105,23 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 47,
-   "date_passed": 47,
+   "parsed_entries": 48,
+   "date_passed": 48,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
-   "geography_unmatched": 19,
+   "geography_matched": 30,
+   "geography_unmatched": 18,
    "geography_rejected": 0,
-   "deduplication_survived": 28,
-   "globe_articles": 26,
+   "deduplication_survived": 29,
+   "globe_articles": 27,
    "duplicate_canonical": 0,
-   "duplicate_near_title": 0,
-   "lost_to_feeds": {},
+   "duplicate_near_title": 1,
+   "lost_to_feeds": {
+    "google/health/IN": 1
+   },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 59.6,
-   "survival_after_mapping_pct": 100.0,
+   "matched_after_date_pct": 62.5,
+   "survival_after_mapping_pct": 96.7,
    "usefulness": "contributing"
   },
   {
@@ -1125,15 +1130,15 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 43,
-   "date_passed": 43,
+   "parsed_entries": 42,
+   "date_passed": 42,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 22,
+   "geography_matched": 21,
    "geography_unmatched": 21,
    "geography_rejected": 0,
-   "deduplication_survived": 20,
-   "globe_articles": 20,
+   "deduplication_survived": 19,
+   "globe_articles": 19,
    "duplicate_canonical": 2,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
@@ -1141,8 +1146,8 @@
     "google/society/GB": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 51.2,
-   "survival_after_mapping_pct": 90.9,
+   "matched_after_date_pct": 50.0,
+   "survival_after_mapping_pct": 90.5,
    "usefulness": "contributing"
   },
   {
@@ -1151,12 +1156,12 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 47,
-   "date_passed": 47,
+   "parsed_entries": 44,
+   "date_passed": 44,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 28,
-   "geography_unmatched": 19,
+   "geography_unmatched": 16,
    "geography_rejected": 0,
    "deduplication_survived": 4,
    "globe_articles": 4,
@@ -1166,7 +1171,7 @@
     "google/health/US": 24
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 59.6,
+   "matched_after_date_pct": 63.6,
    "survival_after_mapping_pct": 14.3,
    "usefulness": "contributing"
   },
@@ -1176,25 +1181,25 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 43,
-   "date_passed": 43,
+   "parsed_entries": 42,
+   "date_passed": 42,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 22,
+   "geography_matched": 21,
    "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "duplicate_canonical": 21,
+   "duplicate_canonical": 20,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/health/GB": 19,
+    "google/health/GB": 18,
     "google/health/US": 1,
     "google/society/GB": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 51.2,
-   "survival_after_mapping_pct": 4.5,
+   "matched_after_date_pct": 50.0,
+   "survival_after_mapping_pct": 4.8,
    "usefulness": "contributing"
   },
   {
@@ -1203,24 +1208,24 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 49,
-   "date_passed": 49,
+   "parsed_entries": 48,
+   "date_passed": 48,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 29,
-   "geography_unmatched": 20,
+   "geography_matched": 30,
+   "geography_unmatched": 18,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "duplicate_canonical": 28,
+   "duplicate_canonical": 29,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/health/US": 24,
-    "google/health/IN": 4
+    "google/health/US": 26,
+    "google/health/IN": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 59.2,
-   "survival_after_mapping_pct": 3.4,
+   "matched_after_date_pct": 62.5,
+   "survival_after_mapping_pct": 3.3,
    "usefulness": "contributing"
   },
   {
@@ -1257,26 +1262,26 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 48,
+   "date_passed": 48,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 30,
-   "geography_unmatched": 21,
+   "geography_unmatched": 18,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
-   "duplicate_canonical": 29,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
+   "duplicate_canonical": 30,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/health/US": 24,
-    "google/health/IN": 4,
-    "google/health/ZA": 1
+    "google/health/US": 26,
+    "google/health/ZA": 1,
+    "google/health/IN": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 58.8,
-   "survival_after_mapping_pct": 3.3,
-   "usefulness": "contributing"
+   "matched_after_date_pct": 62.5,
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "google/health/CA",
@@ -1312,20 +1317,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 30,
-   "date_passed": 30,
+   "parsed_entries": 29,
+   "date_passed": 29,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 21,
+   "geography_matched": 20,
    "geography_unmatched": 9,
    "geography_rejected": 0,
-   "deduplication_survived": 21,
-   "globe_articles": 16,
+   "deduplication_survived": 20,
+   "globe_articles": 14,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 70.0,
+   "matched_after_date_pct": 69.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1358,23 +1363,23 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 48,
-   "date_passed": 48,
+   "parsed_entries": 47,
+   "date_passed": 47,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 29,
-   "geography_unmatched": 19,
+   "geography_matched": 30,
+   "geography_unmatched": 17,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 28,
-   "duplicate_near_title": 1,
+   "duplicate_canonical": 30,
+   "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/health/US": 26,
+    "google/health/US": 27,
     "google/health/IN": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 60.4,
+   "matched_after_date_pct": 63.8,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1388,19 +1393,20 @@
    "date_passed": 54,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
-   "geography_unmatched": 26,
+   "geography_matched": 27,
+   "geography_unmatched": 27,
    "geography_rejected": 0,
-   "deduplication_survived": 27,
-   "globe_articles": 25,
+   "deduplication_survived": 25,
+   "globe_articles": 23,
    "duplicate_canonical": 1,
-   "duplicate_near_title": 0,
+   "duplicate_near_title": 1,
    "lost_to_feeds": {
+    "google/education/IN": 1,
     "google/society/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 51.9,
-   "survival_after_mapping_pct": 96.4,
+   "matched_after_date_pct": 50.0,
+   "survival_after_mapping_pct": 92.6,
    "usefulness": "contributing"
   },
   {
@@ -1409,15 +1415,15 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 50,
-   "date_passed": 50,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 31,
-   "geography_unmatched": 19,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
    "deduplication_survived": 27,
-   "globe_articles": 23,
+   "globe_articles": 24,
    "duplicate_canonical": 3,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
@@ -1425,7 +1431,7 @@
     "google/education/US": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.0,
+   "matched_after_date_pct": 60.8,
    "survival_after_mapping_pct": 87.1,
    "usefulness": "contributing"
   },
@@ -1435,15 +1441,15 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 52,
-   "date_passed": 52,
+   "parsed_entries": 53,
+   "date_passed": 53,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 30,
+   "geography_matched": 31,
    "geography_unmatched": 22,
    "geography_rejected": 0,
-   "deduplication_survived": 6,
-   "globe_articles": 6,
+   "deduplication_survived": 7,
+   "globe_articles": 7,
    "duplicate_canonical": 24,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
@@ -1451,8 +1457,8 @@
     "google/society/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 57.7,
-   "survival_after_mapping_pct": 20.0,
+   "matched_after_date_pct": 58.5,
+   "survival_after_mapping_pct": 22.6,
    "usefulness": "contributing"
   },
   {
@@ -1461,12 +1467,12 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 50,
-   "date_passed": 50,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 31,
-   "geography_unmatched": 19,
+   "geography_unmatched": 20,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
@@ -1477,7 +1483,7 @@
     "google/education/US": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.0,
+   "matched_after_date_pct": 60.8,
    "survival_after_mapping_pct": 3.2,
    "usefulness": "contributing"
   },
@@ -1487,24 +1493,24 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 50,
+   "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 29,
-   "geography_unmatched": 22,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 2,
    "globe_articles": 2,
    "duplicate_canonical": 27,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/education/IN": 4,
-    "google/education/US": 22,
+    "google/education/IN": 5,
+    "google/education/US": 21,
     "google/society/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 56.9,
+   "matched_after_date_pct": 58.0,
    "survival_after_mapping_pct": 6.9,
    "usefulness": "contributing"
   },
@@ -1514,25 +1520,25 @@
    "editorial_region": "NG",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 52,
+   "date_passed": 52,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 32,
-   "geography_unmatched": 19,
+   "geography_matched": 31,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 1,
    "globe_articles": 1,
-   "duplicate_canonical": 31,
+   "duplicate_canonical": 30,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/education/GB": 27,
+    "google/education/GB": 26,
     "google/education/AU": 1,
     "google/education/US": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.7,
-   "survival_after_mapping_pct": 3.1,
+   "matched_after_date_pct": 59.6,
+   "survival_after_mapping_pct": 3.2,
    "usefulness": "contributing"
   },
   {
@@ -1541,25 +1547,25 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 52,
+   "date_passed": 52,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 30,
-   "geography_unmatched": 21,
+   "geography_unmatched": 22,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
    "duplicate_canonical": 30,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/education/IN": 6,
-    "google/education/US": 22,
+    "google/education/IN": 7,
+    "google/education/US": 21,
     "google/society/IN": 1,
     "google/education/ZA": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 58.8,
+   "matched_after_date_pct": 57.7,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1569,25 +1575,24 @@
    "editorial_region": "CA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 52,
+   "date_passed": 52,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 32,
-   "geography_unmatched": 19,
+   "geography_matched": 31,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 32,
+   "duplicate_canonical": 31,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "google/education/GB": 27,
-    "google/education/NG": 1,
     "google/education/AU": 1,
     "google/education/US": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.7,
+   "matched_after_date_pct": 59.6,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1597,20 +1602,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 14,
-   "date_passed": 14,
+   "parsed_entries": 15,
+   "date_passed": 15,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
+   "geography_matched": 10,
    "geography_unmatched": 5,
    "geography_rejected": 0,
-   "deduplication_survived": 9,
-   "globe_articles": 7,
+   "deduplication_survived": 10,
+   "globe_articles": 8,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 64.3,
+   "matched_after_date_pct": 66.7,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -1620,12 +1625,12 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 55,
-   "date_passed": 55,
+   "parsed_entries": 57,
+   "date_passed": 57,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 30,
-   "geography_unmatched": 25,
+   "geography_unmatched": 27,
    "geography_rejected": 0,
    "deduplication_survived": 26,
    "globe_articles": 21,
@@ -1635,7 +1640,7 @@
     "google/society/MX": 4
    },
    "recovery_explicit": 1,
-   "matched_after_date_pct": 54.5,
+   "matched_after_date_pct": 52.6,
    "survival_after_mapping_pct": 86.7,
    "usefulness": "contributing"
   },
@@ -1645,25 +1650,25 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 50,
-   "date_passed": 50,
+   "parsed_entries": 51,
+   "date_passed": 51,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 27,
+   "geography_matched": 28,
    "geography_unmatched": 23,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 27,
+   "duplicate_canonical": 28,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/education/IN": 4,
+    "google/education/IN": 5,
     "google/education/US": 21,
     "google/society/IN": 1,
     "google/education/ZA": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 54.0,
+   "matched_after_date_pct": 54.9,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -1892,20 +1897,20 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 19,
-   "date_passed": 19,
+   "parsed_entries": 18,
+   "date_passed": 18,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 6,
+   "geography_matched": 5,
    "geography_unmatched": 13,
    "geography_rejected": 0,
-   "deduplication_survived": 6,
-   "globe_articles": 6,
+   "deduplication_survived": 5,
+   "globe_articles": 5,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 31.6,
+   "matched_after_date_pct": 27.8,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2082,12 +2087,12 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 6,
-   "date_passed": 6,
+   "parsed_entries": 7,
+   "date_passed": 7,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 2,
-   "geography_unmatched": 4,
+   "geography_unmatched": 5,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
@@ -2097,7 +2102,7 @@
     "google/community/US": 2
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 33.3,
+   "matched_after_date_pct": 28.6,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2130,15 +2135,15 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 2,
-   "date_passed": 2,
+   "parsed_entries": 4,
+   "date_passed": 4,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 2,
+   "geography_matched": 4,
    "geography_unmatched": 0,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
+   "deduplication_survived": 4,
+   "globe_articles": 4,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
@@ -2153,12 +2158,12 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 56,
-   "date_passed": 56,
+   "parsed_entries": 55,
+   "date_passed": 55,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 34,
-   "geography_unmatched": 22,
+   "geography_unmatched": 21,
    "geography_rejected": 0,
    "deduplication_survived": 34,
    "globe_articles": 34,
@@ -2166,7 +2171,7 @@
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 60.7,
+   "matched_after_date_pct": 61.8,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2201,20 +2206,20 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 12,
-   "date_passed": 12,
+   "parsed_entries": 15,
+   "date_passed": 15,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 7,
-   "geography_unmatched": 5,
+   "geography_matched": 9,
+   "geography_unmatched": 6,
    "geography_rejected": 0,
-   "deduplication_survived": 7,
-   "globe_articles": 7,
+   "deduplication_survived": 9,
+   "globe_articles": 9,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 58.3,
+   "matched_after_date_pct": 60.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2224,23 +2229,21 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 44,
-   "date_passed": 44,
+   "parsed_entries": 43,
+   "date_passed": 43,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 27,
+   "geography_matched": 26,
    "geography_unmatched": 17,
    "geography_rejected": 0,
    "deduplication_survived": 26,
    "globe_articles": 26,
    "duplicate_canonical": 0,
-   "duplicate_near_title": 1,
-   "lost_to_feeds": {
-    "google/economy/NG": 1
-   },
+   "duplicate_near_title": 0,
+   "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 61.4,
-   "survival_after_mapping_pct": 96.3,
+   "matched_after_date_pct": 60.5,
+   "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
   {
@@ -2249,22 +2252,22 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 11,
-   "date_passed": 11,
+   "parsed_entries": 12,
+   "date_passed": 12,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 5,
+   "geography_matched": 6,
    "geography_unmatched": 6,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 5,
+   "duplicate_canonical": 6,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/economy/US": 5
+    "google/economy/US": 6
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 45.5,
+   "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2274,23 +2277,23 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 45,
-   "date_passed": 45,
+   "parsed_entries": 43,
+   "date_passed": 43,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 28,
-   "geography_unmatched": 17,
+   "geography_matched": 27,
+   "geography_unmatched": 16,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
-   "duplicate_canonical": 26,
+   "deduplication_survived": 3,
+   "globe_articles": 3,
+   "duplicate_canonical": 24,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/economy/GB": 26
+    "google/economy/GB": 24
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 62.2,
-   "survival_after_mapping_pct": 7.1,
+   "matched_after_date_pct": 62.8,
+   "survival_after_mapping_pct": 11.1,
    "usefulness": "contributing"
   },
   {
@@ -2299,12 +2302,12 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 11,
-   "date_passed": 11,
+   "parsed_entries": 10,
+   "date_passed": 10,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 5,
-   "geography_unmatched": 6,
+   "geography_unmatched": 5,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
@@ -2314,7 +2317,7 @@
     "google/economy/US": 5
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 45.5,
+   "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2328,11 +2331,11 @@
    "date_passed": 45,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 30,
-   "geography_unmatched": 15,
+   "geography_matched": 31,
+   "geography_unmatched": 14,
    "geography_rejected": 0,
-   "deduplication_survived": 5,
-   "globe_articles": 5,
+   "deduplication_survived": 6,
+   "globe_articles": 6,
    "duplicate_canonical": 24,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
@@ -2340,8 +2343,8 @@
     "google/economy/AU": 2
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 66.7,
-   "survival_after_mapping_pct": 16.7,
+   "matched_after_date_pct": 68.9,
+   "survival_after_mapping_pct": 19.4,
    "usefulness": "contributing"
   },
   {
@@ -2350,22 +2353,22 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 10,
-   "date_passed": 10,
+   "parsed_entries": 13,
+   "date_passed": 13,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 5,
-   "geography_unmatched": 5,
+   "geography_matched": 7,
+   "geography_unmatched": 6,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 4,
+   "duplicate_canonical": 6,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
-    "google/economy/US": 5
+    "google/economy/US": 7
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 50.0,
+   "matched_after_date_pct": 53.8,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2375,25 +2378,26 @@
    "editorial_region": "CA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 44,
-   "date_passed": 44,
+   "parsed_entries": 43,
+   "date_passed": 43,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 27,
+   "geography_matched": 26,
    "geography_unmatched": 17,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
    "duplicate_canonical": 26,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/economy/GB": 25,
+    "google/economy/GB": 24,
+    "google/economy/NG": 1,
     "google/economy/AU": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 61.4,
-   "survival_after_mapping_pct": 3.7,
-   "usefulness": "contributing"
+   "matched_after_date_pct": 60.5,
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "google/economy/BR",
@@ -2401,20 +2405,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 13,
-   "date_passed": 13,
+   "parsed_entries": 14,
+   "date_passed": 14,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 6,
+   "geography_matched": 7,
    "geography_unmatched": 7,
    "geography_rejected": 0,
-   "deduplication_survived": 6,
-   "globe_articles": 5,
+   "deduplication_survived": 7,
+   "globe_articles": 6,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
-   "recovery_explicit": 3,
-   "matched_after_date_pct": 46.2,
+   "recovery_explicit": 4,
+   "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2450,22 +2454,22 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 11,
-   "date_passed": 11,
+   "parsed_entries": 14,
+   "date_passed": 14,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 5,
-   "geography_unmatched": 6,
+   "geography_matched": 7,
+   "geography_unmatched": 7,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 5,
+   "duplicate_canonical": 7,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/economy/US": 5
+    "google/economy/US": 7
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 45.5,
+   "matched_after_date_pct": 50.0,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2475,23 +2479,23 @@
    "editorial_region": "US",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 49,
+   "date_passed": 49,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 13,
-   "geography_unmatched": 38,
+   "geography_matched": 12,
+   "geography_unmatched": 37,
    "geography_rejected": 0,
-   "deduplication_survived": 12,
-   "globe_articles": 12,
+   "deduplication_survived": 11,
+   "globe_articles": 11,
    "duplicate_canonical": 0,
    "duplicate_near_title": 1,
    "lost_to_feeds": {
     "google/science/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 25.5,
-   "survival_after_mapping_pct": 92.3,
+   "matched_after_date_pct": 24.5,
+   "survival_after_mapping_pct": 91.7,
    "usefulness": "contributing"
   },
   {
@@ -2523,23 +2527,23 @@
    "editorial_region": "IN",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 50,
+   "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 11,
-   "geography_unmatched": 40,
+   "geography_matched": 12,
+   "geography_unmatched": 38,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
+   "deduplication_survived": 3,
+   "globe_articles": 3,
    "duplicate_canonical": 9,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "google/science/US": 9
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 21.6,
-   "survival_after_mapping_pct": 18.2,
+   "matched_after_date_pct": 24.0,
+   "survival_after_mapping_pct": 25.0,
    "usefulness": "contributing"
   },
   {
@@ -2573,25 +2577,25 @@
    "editorial_region": "ZA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 52,
-   "date_passed": 52,
+   "parsed_entries": 50,
+   "date_passed": 50,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 12,
-   "geography_unmatched": 40,
+   "geography_unmatched": 38,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
-   "duplicate_canonical": 11,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
+   "duplicate_canonical": 12,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "google/science/US": 9,
-    "google/science/IN": 2
+    "google/science/IN": 3
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 23.1,
-   "survival_after_mapping_pct": 8.3,
-   "usefulness": "contributing"
+   "matched_after_date_pct": 24.0,
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "google/science/NG",
@@ -2624,24 +2628,23 @@
    "editorial_region": "PH",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 52,
-   "date_passed": 52,
+   "parsed_entries": 48,
+   "date_passed": 48,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 12,
-   "geography_unmatched": 40,
+   "geography_matched": 11,
+   "geography_unmatched": 37,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 12,
-   "duplicate_near_title": 0,
+   "duplicate_canonical": 10,
+   "duplicate_near_title": 1,
    "lost_to_feeds": {
     "google/science/US": 9,
-    "google/science/ZA": 1,
     "google/science/IN": 2
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 23.1,
+   "matched_after_date_pct": 22.9,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2676,20 +2679,20 @@
    "editorial_region": "BR",
    "language": "pt",
    "status": "ok",
-   "parsed_entries": 44,
-   "date_passed": 44,
+   "parsed_entries": 43,
+   "date_passed": 43,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 29,
+   "geography_matched": 28,
    "geography_unmatched": 15,
    "geography_rejected": 0,
-   "deduplication_survived": 29,
+   "deduplication_survived": 28,
    "globe_articles": 27,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 65.9,
+   "matched_after_date_pct": 65.1,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2699,20 +2702,20 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 15,
-   "date_passed": 15,
+   "parsed_entries": 16,
+   "date_passed": 16,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 9,
+   "geography_matched": 10,
    "geography_unmatched": 5,
    "geography_rejected": 1,
-   "deduplication_survived": 9,
-   "globe_articles": 5,
+   "deduplication_survived": 10,
+   "globe_articles": 7,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 60.0,
+   "matched_after_date_pct": 62.5,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2722,22 +2725,23 @@
    "editorial_region": "KE",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 51,
-   "date_passed": 51,
+   "parsed_entries": 49,
+   "date_passed": 49,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 13,
-   "geography_unmatched": 38,
+   "geography_unmatched": 36,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
    "duplicate_canonical": 13,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/science/US": 13
+    "google/science/US": 12,
+    "google/science/IN": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 25.5,
+   "matched_after_date_pct": 26.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2770,20 +2774,20 @@
    "editorial_region": "GB",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 7,
-   "date_passed": 7,
+   "parsed_entries": 8,
+   "date_passed": 8,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 6,
+   "geography_matched": 7,
    "geography_unmatched": 1,
    "geography_rejected": 0,
-   "deduplication_survived": 6,
-   "globe_articles": 6,
+   "deduplication_survived": 7,
+   "globe_articles": 7,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 85.7,
+   "matched_after_date_pct": 87.5,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -2818,22 +2822,22 @@
    "editorial_region": "AU",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 6,
-   "date_passed": 6,
+   "parsed_entries": 8,
+   "date_passed": 8,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 5,
+   "geography_matched": 7,
    "geography_unmatched": 1,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 5,
+   "duplicate_canonical": 7,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/conflict/GB": 5
+    "google/conflict/GB": 7
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 83.3,
+   "matched_after_date_pct": 87.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2868,22 +2872,22 @@
    "editorial_region": "NG",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 7,
-   "date_passed": 7,
+   "parsed_entries": 8,
+   "date_passed": 8,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 6,
+   "geography_matched": 7,
    "geography_unmatched": 1,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 6,
+   "duplicate_canonical": 7,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/conflict/GB": 6
+    "google/conflict/GB": 7
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 85.7,
+   "matched_after_date_pct": 87.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2918,22 +2922,22 @@
    "editorial_region": "CA",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 7,
-   "date_passed": 7,
+   "parsed_entries": 8,
+   "date_passed": 8,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 6,
+   "geography_matched": 7,
    "geography_unmatched": 1,
    "geography_rejected": 0,
    "deduplication_survived": 0,
    "globe_articles": 0,
-   "duplicate_canonical": 6,
+   "duplicate_canonical": 7,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "google/conflict/GB": 6
+    "google/conflict/GB": 7
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 85.7,
+   "matched_after_date_pct": 87.5,
    "survival_after_mapping_pct": 0.0,
    "usefulness": "all_duplicate"
   },
@@ -2966,12 +2970,12 @@
    "editorial_region": "MX",
    "language": "es",
    "status": "ok",
-   "parsed_entries": 30,
-   "date_passed": 30,
+   "parsed_entries": 31,
+   "date_passed": 31,
    "date_rejected": 0,
    "invalid_article": 0,
    "geography_matched": 12,
-   "geography_unmatched": 18,
+   "geography_unmatched": 19,
    "geography_rejected": 0,
    "deduplication_survived": 11,
    "globe_articles": 11,
@@ -2981,7 +2985,7 @@
     "google/community/MX": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 40.0,
+   "matched_after_date_pct": 38.7,
    "survival_after_mapping_pct": 91.7,
    "usefulness": "contributing"
   },
@@ -3016,23 +3020,23 @@
    "editorial_region": "international",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 29,
-   "date_passed": 13,
+   "parsed_entries": 30,
+   "date_passed": 14,
    "date_rejected": 16,
    "invalid_article": 0,
-   "geography_matched": 10,
+   "geography_matched": 11,
    "geography_unmatched": 3,
    "geography_rejected": 0,
-   "deduplication_survived": 9,
-   "globe_articles": 9,
+   "deduplication_survived": 10,
+   "globe_articles": 10,
    "duplicate_canonical": 1,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "direct/BBC World": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 76.9,
-   "survival_after_mapping_pct": 90.0,
+   "matched_after_date_pct": 78.6,
+   "survival_after_mapping_pct": 90.9,
    "usefulness": "contributing"
   },
   {
@@ -3064,24 +3068,24 @@
    "editorial_region": "international",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 41,
+   "parsed_entries": 42,
    "date_passed": 12,
-   "date_rejected": 29,
+   "date_rejected": 30,
    "invalid_article": 0,
-   "geography_matched": 1,
-   "geography_unmatched": 10,
+   "geography_matched": 2,
+   "geography_unmatched": 9,
    "geography_rejected": 1,
-   "deduplication_survived": 0,
-   "globe_articles": 0,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
    "duplicate_canonical": 1,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "direct/BBC World": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 8.3,
-   "survival_after_mapping_pct": 0.0,
-   "usefulness": "all_duplicate"
+   "matched_after_date_pct": 16.7,
+   "survival_after_mapping_pct": 50.0,
+   "usefulness": "contributing"
   },
   {
    "feed": "direct/Al Jazeera",
@@ -3259,16 +3263,16 @@
    "date_passed": 25,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 11,
-   "geography_unmatched": 14,
+   "geography_matched": 10,
+   "geography_unmatched": 15,
    "geography_rejected": 0,
-   "deduplication_survived": 11,
-   "globe_articles": 11,
+   "deduplication_survived": 10,
+   "globe_articles": 10,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 44.0,
+   "matched_after_date_pct": 40.0,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -3301,20 +3305,20 @@
    "editorial_region": "regional",
    "language": "en",
    "status": "ok",
-   "parsed_entries": 48,
-   "date_passed": 35,
+   "parsed_entries": 49,
+   "date_passed": 36,
    "date_rejected": 12,
    "invalid_article": 1,
-   "geography_matched": 15,
+   "geography_matched": 16,
    "geography_unmatched": 19,
    "geography_rejected": 1,
-   "deduplication_survived": 15,
-   "globe_articles": 15,
+   "deduplication_survived": 16,
+   "globe_articles": 16,
    "duplicate_canonical": 0,
    "duplicate_near_title": 0,
    "lost_to_feeds": {},
    "recovery_explicit": 0,
-   "matched_after_date_pct": 42.9,
+   "matched_after_date_pct": 44.4,
    "survival_after_mapping_pct": 100.0,
    "usefulness": "contributing"
   },
@@ -3468,19 +3472,19 @@
    "date_passed": 24,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 13,
-   "geography_unmatched": 11,
+   "geography_matched": 14,
+   "geography_unmatched": 10,
    "geography_rejected": 0,
-   "deduplication_survived": 12,
-   "globe_articles": 12,
+   "deduplication_survived": 13,
+   "globe_articles": 13,
    "duplicate_canonical": 1,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "direct/France24 FR": 1
    },
    "recovery_explicit": 0,
-   "matched_after_date_pct": 54.2,
-   "survival_after_mapping_pct": 92.3,
+   "matched_after_date_pct": 58.3,
+   "survival_after_mapping_pct": 92.9,
    "usefulness": "contributing"
   },
   {
@@ -3493,19 +3497,19 @@
    "date_passed": 24,
    "date_rejected": 0,
    "invalid_article": 0,
-   "geography_matched": 17,
-   "geography_unmatched": 7,
+   "geography_matched": 16,
+   "geography_unmatched": 8,
    "geography_rejected": 0,
-   "deduplication_survived": 16,
-   "globe_articles": 16,
+   "deduplication_survived": 15,
+   "globe_articles": 15,
    "duplicate_canonical": 1,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
     "direct/France24 ES": 1
    },
    "recovery_explicit": 2,
-   "matched_after_date_pct": 70.8,
-   "survival_after_mapping_pct": 94.1,
+   "matched_after_date_pct": 66.7,
+   "survival_after_mapping_pct": 93.8,
    "usefulness": "contributing"
   },
   {
@@ -3662,16 +3666,16 @@
    "geography_matched": 8,
    "geography_unmatched": 0,
    "geography_rejected": 0,
-   "deduplication_survived": 2,
-   "globe_articles": 2,
-   "duplicate_canonical": 6,
+   "deduplication_survived": 1,
+   "globe_articles": 1,
+   "duplicate_canonical": 7,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "direct/BBC World": 6
+    "direct/BBC World": 7
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
-   "survival_after_mapping_pct": 25.0,
+   "survival_after_mapping_pct": 12.5,
    "usefulness": "contributing"
   },
   {
@@ -3687,17 +3691,17 @@
    "geography_matched": 9,
    "geography_unmatched": 0,
    "geography_rejected": 0,
-   "deduplication_survived": 1,
-   "globe_articles": 1,
-   "duplicate_canonical": 8,
+   "deduplication_survived": 0,
+   "globe_articles": 0,
+   "duplicate_canonical": 9,
    "duplicate_near_title": 0,
    "lost_to_feeds": {
-    "direct/RNZ National": 8
+    "direct/RNZ National": 9
    },
    "recovery_explicit": 0,
    "matched_after_date_pct": 100.0,
-   "survival_after_mapping_pct": 11.1,
-   "usefulness": "contributing"
+   "survival_after_mapping_pct": 0.0,
+   "usefulness": "all_duplicate"
   },
   {
    "feed": "direct/Guardian Africa",
@@ -4240,11 +4244,11 @@
   "recovered_by_feed": {
    "google/politics/MX": 1,
    "google/education/MX": 1,
-   "google/economy/BR": 3,
+   "google/economy/BR": 4,
    "direct/France24 ES": 2,
    "direct/BBC Brasil": 2
   },
-  "recovered_total": 9,
+  "recovered_total": 10,
   "recovered_examples": [
    {
     "feed": "google/politics/MX",
@@ -4263,6 +4267,16 @@
     "evidence": {
      "field": "headline",
      "explicit_phrase": "estados unidos",
+     "method": "qualified_country_phrase"
+    }
+   },
+   {
+    "feed": "google/economy/BR",
+    "title": "O problema do Brasil é que a produtividade não acompanha o crescimento",
+    "place": "Brazil",
+    "evidence": {
+     "field": "headline",
+     "explicit_phrase": "brasil",
      "method": "qualified_country_phrase"
     }
    },
@@ -4338,16 +4352,16 @@
    }
   ],
   "unmatched_reason_counts": {
-   "insufficient_unambiguous_location_evidence": 1373,
+   "insufficient_unambiguous_location_evidence": 1357,
    "global_or_nonlocal_topic": 32,
    "limited_description_evidence": 6
   }
  },
  "d4_efficiency": {
   "usefulness_classes": {
-   "contributing": 82,
+   "contributing": 80,
    "no_parsed_entries": 9,
-   "all_duplicate": 46,
+   "all_duplicate": 48,
    "no_geographic_matches": 16,
    "fetch_failed": 3,
    "no_recent_valid_articles": 17
@@ -4355,71 +4369,71 @@
   "overlap_by_feed": [
    {
     "feed": "google/politics/US",
-    "mapped": 16,
-    "survived": 14,
+    "mapped": 9,
+    "survived": 8,
     "duplicate_canonical": 0,
-    "duplicate_near_title": 2,
+    "duplicate_near_title": 1,
     "loss_attribution": [
-     [
-      "google/politics/KE",
-      1
-     ],
      [
       "google/politics/IN",
       1
      ]
     ],
-    "duplicate_share_pct": 12.5
+    "duplicate_share_pct": 11.1
    },
    {
     "feed": "google/politics/IN",
-    "mapped": 17,
-    "survived": 2,
-    "duplicate_canonical": 15,
-    "duplicate_near_title": 0,
+    "mapped": 16,
+    "survived": 7,
+    "duplicate_canonical": 8,
+    "duplicate_near_title": 1,
     "loss_attribution": [
      [
       "google/politics/US",
-      15
+      8
+     ],
+     [
+      "google/politics/KE",
+      1
      ]
     ],
-    "duplicate_share_pct": 88.2
+    "duplicate_share_pct": 56.2
    },
    {
     "feed": "google/politics/ZA",
-    "mapped": 18,
+    "mapped": 17,
     "survived": 1,
-    "duplicate_canonical": 17,
+    "duplicate_canonical": 16,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/politics/US",
-      15
+      8
      ],
      [
       "google/politics/IN",
-      2
+      8
      ]
     ],
-    "duplicate_share_pct": 94.4
+    "duplicate_share_pct": 94.1
    },
    {
     "feed": "google/politics/PH",
-    "mapped": 18,
+    "mapped": 17,
     "survived": 0,
-    "duplicate_canonical": 18,
-    "duplicate_near_title": 0,
+    "duplicate_canonical": 16,
+    "duplicate_near_title": 1,
     "loss_attribution": [
      [
       "google/politics/US",
-      16
-     ],
-     [
-      "google/politics/ZA",
-      1
+      8
      ],
      [
       "google/politics/IN",
+      8
+     ],
+     [
+      "google/politics/ZA",
       1
      ]
     ],
@@ -4427,8 +4441,8 @@
    },
    {
     "feed": "google/politics/BR",
-    "mapped": 10,
-    "survived": 10,
+    "mapped": 11,
+    "survived": 11,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -4450,25 +4464,25 @@
    },
    {
     "feed": "google/politics/KE",
-    "mapped": 18,
+    "mapped": 17,
     "survived": 1,
-    "duplicate_canonical": 17,
+    "duplicate_canonical": 16,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/politics/US",
-      14
+      8
      ],
      [
       "google/politics/IN",
-      2
+      7
      ],
      [
       "google/politics/ZA",
       1
      ]
     ],
-    "duplicate_share_pct": 94.4
+    "duplicate_share_pct": 94.1
    },
    {
     "feed": "google/environment/US",
@@ -4531,8 +4545,8 @@
    },
    {
     "feed": "google/environment/BR",
-    "mapped": 3,
-    "survived": 3,
+    "mapped": 2,
+    "survived": 2,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -4540,8 +4554,8 @@
    },
    {
     "feed": "google/environment/MX",
-    "mapped": 33,
-    "survived": 32,
+    "mapped": 31,
+    "survived": 30,
     "duplicate_canonical": 0,
     "duplicate_near_title": 1,
     "loss_attribution": [
@@ -4550,7 +4564,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 3.0
+    "duplicate_share_pct": 3.2
    },
    {
     "feed": "google/environment/KE",
@@ -4572,8 +4586,8 @@
    },
    {
     "feed": "google/hazards/GB",
-    "mapped": 11,
-    "survived": 10,
+    "mapped": 10,
+    "survived": 9,
     "duplicate_canonical": 0,
     "duplicate_near_title": 1,
     "loss_attribution": [
@@ -4582,35 +4596,43 @@
       1
      ]
     ],
-    "duplicate_share_pct": 9.1
+    "duplicate_share_pct": 10.0
    },
    {
     "feed": "google/hazards/AU",
     "mapped": 11,
     "survived": 0,
-    "duplicate_canonical": 10,
-    "duplicate_near_title": 1,
+    "duplicate_canonical": 9,
+    "duplicate_near_title": 2,
     "loss_attribution": [
      [
       "google/hazards/GB",
-      11
+      9
+     ],
+     [
+      "google/hazards/NG",
+      2
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/hazards/NG",
-    "mapped": 11,
-    "survived": 0,
+    "mapped": 12,
+    "survived": 1,
     "duplicate_canonical": 11,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/hazards/GB",
-      11
+      10
+     ],
+     [
+      "google/hazards/AU",
+      1
      ]
     ],
-    "duplicate_share_pct": 100.0
+    "duplicate_share_pct": 91.7
    },
    {
     "feed": "google/hazards/CA",
@@ -4637,8 +4659,8 @@
    },
    {
     "feed": "google/society/US",
-    "mapped": 24,
-    "survived": 23,
+    "mapped": 22,
+    "survived": 21,
     "duplicate_canonical": 0,
     "duplicate_near_title": 1,
     "loss_attribution": [
@@ -4647,7 +4669,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 4.2
+    "duplicate_share_pct": 4.5
    },
    {
     "feed": "google/society/GB",
@@ -4662,6 +4684,38 @@
     "feed": "google/society/IN",
     "mapped": 29,
     "survived": 11,
+    "duplicate_canonical": 17,
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/society/US",
+      17
+     ],
+     [
+      "google/education/US",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 62.1
+   },
+   {
+    "feed": "google/society/AU",
+    "mapped": 3,
+    "survived": 0,
+    "duplicate_canonical": 3,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/society/GB",
+      3
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/society/ZA",
+    "mapped": 21,
+    "survived": 3,
     "duplicate_canonical": 18,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -4670,35 +4724,7 @@
       18
      ]
     ],
-    "duplicate_share_pct": 62.1
-   },
-   {
-    "feed": "google/society/AU",
-    "mapped": 4,
-    "survived": 0,
-    "duplicate_canonical": 4,
-    "duplicate_near_title": 0,
-    "loss_attribution": [
-     [
-      "google/society/GB",
-      4
-     ]
-    ],
-    "duplicate_share_pct": 100.0
-   },
-   {
-    "feed": "google/society/ZA",
-    "mapped": 21,
-    "survived": 2,
-    "duplicate_canonical": 18,
-    "duplicate_near_title": 1,
-    "loss_attribution": [
-     [
-      "google/society/US",
-      19
-     ]
-    ],
-    "duplicate_share_pct": 90.5
+    "duplicate_share_pct": 85.7
    },
    {
     "feed": "google/society/NG",
@@ -4716,14 +4742,14 @@
    },
    {
     "feed": "google/society/PH",
-    "mapped": 23,
+    "mapped": 22,
     "survived": 0,
-    "duplicate_canonical": 22,
-    "duplicate_near_title": 1,
+    "duplicate_canonical": 20,
+    "duplicate_near_title": 2,
     "loss_attribution": [
      [
       "google/society/US",
-      20
+      19
      ],
      [
       "google/society/ZA",
@@ -4784,17 +4810,22 @@
    },
    {
     "feed": "google/health/US",
-    "mapped": 28,
-    "survived": 28,
+    "mapped": 30,
+    "survived": 29,
     "duplicate_canonical": 0,
-    "duplicate_near_title": 0,
-    "loss_attribution": [],
-    "duplicate_share_pct": 0.0
+    "duplicate_near_title": 1,
+    "loss_attribution": [
+     [
+      "google/health/IN",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 3.3
    },
    {
     "feed": "google/health/GB",
-    "mapped": 22,
-    "survived": 20,
+    "mapped": 21,
+    "survived": 19,
     "duplicate_canonical": 2,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -4807,7 +4838,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 9.1
+    "duplicate_share_pct": 9.5
    },
    {
     "feed": "google/health/IN",
@@ -4825,14 +4856,14 @@
    },
    {
     "feed": "google/health/AU",
-    "mapped": 22,
+    "mapped": 21,
     "survived": 1,
-    "duplicate_canonical": 21,
+    "duplicate_canonical": 20,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/health/GB",
-      19
+      18
      ],
      [
       "google/health/US",
@@ -4843,25 +4874,25 @@
       1
      ]
     ],
-    "duplicate_share_pct": 95.5
+    "duplicate_share_pct": 95.2
    },
    {
     "feed": "google/health/ZA",
-    "mapped": 29,
+    "mapped": 30,
     "survived": 1,
-    "duplicate_canonical": 28,
+    "duplicate_canonical": 29,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/health/US",
-      24
+      26
      ],
      [
       "google/health/IN",
-      4
+      3
      ]
     ],
-    "duplicate_share_pct": 96.6
+    "duplicate_share_pct": 96.7
    },
    {
     "feed": "google/health/NG",
@@ -4892,24 +4923,24 @@
    {
     "feed": "google/health/PH",
     "mapped": 30,
-    "survived": 1,
-    "duplicate_canonical": 29,
+    "survived": 0,
+    "duplicate_canonical": 30,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/health/US",
-      24
+      26
      ],
      [
       "google/health/IN",
-      4
+      3
      ],
      [
       "google/health/ZA",
       1
      ]
     ],
-    "duplicate_share_pct": 96.7
+    "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/health/CA",
@@ -4939,8 +4970,8 @@
    },
    {
     "feed": "google/health/BR",
-    "mapped": 21,
-    "survived": 21,
+    "mapped": 20,
+    "survived": 20,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -4957,14 +4988,14 @@
    },
    {
     "feed": "google/health/KE",
-    "mapped": 29,
+    "mapped": 30,
     "survived": 0,
-    "duplicate_canonical": 28,
-    "duplicate_near_title": 1,
+    "duplicate_canonical": 30,
+    "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/health/US",
-      26
+      27
      ],
      [
       "google/health/IN",
@@ -4975,17 +5006,21 @@
    },
    {
     "feed": "google/education/US",
-    "mapped": 28,
-    "survived": 27,
+    "mapped": 27,
+    "survived": 25,
     "duplicate_canonical": 1,
-    "duplicate_near_title": 0,
+    "duplicate_near_title": 1,
     "loss_attribution": [
+     [
+      "google/education/IN",
+      1
+     ],
      [
       "google/society/IN",
       1
      ]
     ],
-    "duplicate_share_pct": 3.6
+    "duplicate_share_pct": 7.4
    },
    {
     "feed": "google/education/GB",
@@ -5007,8 +5042,8 @@
    },
    {
     "feed": "google/education/IN",
-    "mapped": 30,
-    "survived": 6,
+    "mapped": 31,
+    "survived": 7,
     "duplicate_canonical": 24,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -5021,7 +5056,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 80.0
+    "duplicate_share_pct": 77.4
    },
    {
     "feed": "google/education/AU",
@@ -5050,11 +5085,11 @@
     "loss_attribution": [
      [
       "google/education/US",
-      22
+      21
      ],
      [
       "google/education/IN",
-      4
+      5
      ],
      [
       "google/society/IN",
@@ -5065,8 +5100,56 @@
    },
    {
     "feed": "google/education/NG",
-    "mapped": 32,
+    "mapped": 31,
     "survived": 1,
+    "duplicate_canonical": 30,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/education/GB",
+      26
+     ],
+     [
+      "google/education/US",
+      3
+     ],
+     [
+      "google/education/AU",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 96.8
+   },
+   {
+    "feed": "google/education/PH",
+    "mapped": 30,
+    "survived": 0,
+    "duplicate_canonical": 30,
+    "duplicate_near_title": 0,
+    "loss_attribution": [
+     [
+      "google/education/US",
+      21
+     ],
+     [
+      "google/education/IN",
+      7
+     ],
+     [
+      "google/society/IN",
+      1
+     ],
+     [
+      "google/education/ZA",
+      1
+     ]
+    ],
+    "duplicate_share_pct": 100.0
+   },
+   {
+    "feed": "google/education/CA",
+    "mapped": 31,
+    "survived": 0,
     "duplicate_canonical": 31,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -5083,64 +5166,12 @@
       1
      ]
     ],
-    "duplicate_share_pct": 96.9
-   },
-   {
-    "feed": "google/education/PH",
-    "mapped": 30,
-    "survived": 0,
-    "duplicate_canonical": 30,
-    "duplicate_near_title": 0,
-    "loss_attribution": [
-     [
-      "google/education/US",
-      22
-     ],
-     [
-      "google/education/IN",
-      6
-     ],
-     [
-      "google/society/IN",
-      1
-     ],
-     [
-      "google/education/ZA",
-      1
-     ]
-    ],
-    "duplicate_share_pct": 100.0
-   },
-   {
-    "feed": "google/education/CA",
-    "mapped": 32,
-    "survived": 0,
-    "duplicate_canonical": 32,
-    "duplicate_near_title": 0,
-    "loss_attribution": [
-     [
-      "google/education/GB",
-      27
-     ],
-     [
-      "google/education/US",
-      3
-     ],
-     [
-      "google/education/NG",
-      1
-     ],
-     [
-      "google/education/AU",
-      1
-     ]
-    ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/education/BR",
-    "mapped": 9,
-    "survived": 9,
+    "mapped": 10,
+    "survived": 10,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5162,9 +5193,9 @@
    },
    {
     "feed": "google/education/KE",
-    "mapped": 27,
+    "mapped": 28,
     "survived": 0,
-    "duplicate_canonical": 27,
+    "duplicate_canonical": 28,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
@@ -5173,7 +5204,7 @@
      ],
      [
       "google/education/IN",
-      4
+      5
      ],
      [
       "google/society/IN",
@@ -5299,8 +5330,8 @@
    },
    {
     "feed": "google/rights/MX",
-    "mapped": 6,
-    "survived": 6,
+    "mapped": 5,
+    "survived": 5,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5373,8 +5404,8 @@
    },
    {
     "feed": "google/community/BR",
-    "mapped": 2,
-    "survived": 2,
+    "mapped": 4,
+    "survived": 4,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5405,8 +5436,8 @@
    },
    {
     "feed": "google/economy/US",
-    "mapped": 7,
-    "survived": 7,
+    "mapped": 9,
+    "survived": 9,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5414,45 +5445,40 @@
    },
    {
     "feed": "google/economy/GB",
-    "mapped": 27,
+    "mapped": 26,
     "survived": 26,
     "duplicate_canonical": 0,
-    "duplicate_near_title": 1,
-    "loss_attribution": [
-     [
-      "google/economy/NG",
-      1
-     ]
-    ],
-    "duplicate_share_pct": 3.7
+    "duplicate_near_title": 0,
+    "loss_attribution": [],
+    "duplicate_share_pct": 0.0
    },
    {
     "feed": "google/economy/IN",
-    "mapped": 5,
+    "mapped": 6,
     "survived": 0,
-    "duplicate_canonical": 5,
+    "duplicate_canonical": 6,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/economy/US",
-      5
+      6
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/economy/AU",
-    "mapped": 28,
-    "survived": 2,
-    "duplicate_canonical": 26,
+    "mapped": 27,
+    "survived": 3,
+    "duplicate_canonical": 24,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/economy/GB",
-      26
+      24
      ]
     ],
-    "duplicate_share_pct": 92.9
+    "duplicate_share_pct": 88.9
    },
    {
     "feed": "google/economy/ZA",
@@ -5470,8 +5496,8 @@
    },
    {
     "feed": "google/economy/NG",
-    "mapped": 30,
-    "survived": 5,
+    "mapped": 31,
+    "survived": 6,
     "duplicate_canonical": 24,
     "duplicate_near_title": 1,
     "loss_attribution": [
@@ -5484,44 +5510,48 @@
       2
      ]
     ],
-    "duplicate_share_pct": 83.3
+    "duplicate_share_pct": 80.6
    },
    {
     "feed": "google/economy/PH",
-    "mapped": 5,
+    "mapped": 7,
     "survived": 0,
-    "duplicate_canonical": 4,
+    "duplicate_canonical": 6,
     "duplicate_near_title": 1,
     "loss_attribution": [
      [
       "google/economy/US",
-      5
+      7
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/economy/CA",
-    "mapped": 27,
-    "survived": 1,
+    "mapped": 26,
+    "survived": 0,
     "duplicate_canonical": 26,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/economy/GB",
-      25
+      24
+     ],
+     [
+      "google/economy/NG",
+      1
      ],
      [
       "google/economy/AU",
       1
      ]
     ],
-    "duplicate_share_pct": 96.3
+    "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/economy/BR",
-    "mapped": 6,
-    "survived": 6,
+    "mapped": 7,
+    "survived": 7,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5547,22 +5577,22 @@
    },
    {
     "feed": "google/economy/KE",
-    "mapped": 5,
+    "mapped": 7,
     "survived": 0,
-    "duplicate_canonical": 5,
+    "duplicate_canonical": 7,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/economy/US",
-      5
+      7
      ]
     ],
     "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/science/US",
-    "mapped": 13,
-    "survived": 12,
+    "mapped": 12,
+    "survived": 11,
     "duplicate_canonical": 0,
     "duplicate_near_title": 1,
     "loss_attribution": [
@@ -5571,7 +5601,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 7.7
+    "duplicate_share_pct": 8.3
    },
    {
     "feed": "google/science/GB",
@@ -5584,8 +5614,8 @@
    },
    {
     "feed": "google/science/IN",
-    "mapped": 11,
-    "survived": 2,
+    "mapped": 12,
+    "survived": 3,
     "duplicate_canonical": 9,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -5594,7 +5624,7 @@
       9
      ]
     ],
-    "duplicate_share_pct": 81.8
+    "duplicate_share_pct": 75.0
    },
    {
     "feed": "google/science/AU",
@@ -5613,8 +5643,8 @@
    {
     "feed": "google/science/ZA",
     "mapped": 12,
-    "survived": 1,
-    "duplicate_canonical": 11,
+    "survived": 0,
+    "duplicate_canonical": 12,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
@@ -5623,10 +5653,10 @@
      ],
      [
       "google/science/IN",
-      2
+      3
      ]
     ],
-    "duplicate_share_pct": 91.7
+    "duplicate_share_pct": 100.0
    },
    {
     "feed": "google/science/NG",
@@ -5644,10 +5674,10 @@
    },
    {
     "feed": "google/science/PH",
-    "mapped": 12,
+    "mapped": 11,
     "survived": 0,
-    "duplicate_canonical": 12,
-    "duplicate_near_title": 0,
+    "duplicate_canonical": 10,
+    "duplicate_near_title": 1,
     "loss_attribution": [
      [
       "google/science/US",
@@ -5656,10 +5686,6 @@
      [
       "google/science/IN",
       2
-     ],
-     [
-      "google/science/ZA",
-      1
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5680,8 +5706,8 @@
    },
    {
     "feed": "google/science/BR",
-    "mapped": 29,
-    "survived": 29,
+    "mapped": 28,
+    "survived": 28,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5689,8 +5715,8 @@
    },
    {
     "feed": "google/science/MX",
-    "mapped": 9,
-    "survived": 9,
+    "mapped": 10,
+    "survived": 10,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5705,7 +5731,11 @@
     "loss_attribution": [
      [
       "google/science/US",
-      13
+      12
+     ],
+     [
+      "google/science/IN",
+      1
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5721,8 +5751,8 @@
    },
    {
     "feed": "google/conflict/GB",
-    "mapped": 6,
-    "survived": 6,
+    "mapped": 7,
+    "survived": 7,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5744,14 +5774,14 @@
    },
    {
     "feed": "google/conflict/AU",
-    "mapped": 5,
+    "mapped": 7,
     "survived": 0,
-    "duplicate_canonical": 5,
+    "duplicate_canonical": 7,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/conflict/GB",
-      5
+      7
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5772,14 +5802,14 @@
    },
    {
     "feed": "google/conflict/NG",
-    "mapped": 6,
+    "mapped": 7,
     "survived": 0,
-    "duplicate_canonical": 6,
+    "duplicate_canonical": 7,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/conflict/GB",
-      6
+      7
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5800,14 +5830,14 @@
    },
    {
     "feed": "google/conflict/CA",
-    "mapped": 6,
+    "mapped": 7,
     "survived": 0,
-    "duplicate_canonical": 6,
+    "duplicate_canonical": 7,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "google/conflict/GB",
-      6
+      7
      ]
     ],
     "duplicate_share_pct": 100.0
@@ -5851,8 +5881,8 @@
    },
    {
     "feed": "direct/BBC World",
-    "mapped": 10,
-    "survived": 9,
+    "mapped": 11,
+    "survived": 10,
     "duplicate_canonical": 1,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -5861,7 +5891,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 10.0
+    "duplicate_share_pct": 9.1
    },
    {
     "feed": "direct/BBC Science",
@@ -5874,8 +5904,8 @@
    },
    {
     "feed": "direct/BBC Business",
-    "mapped": 1,
-    "survived": 0,
+    "mapped": 2,
+    "survived": 1,
     "duplicate_canonical": 1,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -5884,7 +5914,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 100.0
+    "duplicate_share_pct": 50.0
    },
    {
     "feed": "direct/Al Jazeera",
@@ -5956,8 +5986,8 @@
    },
    {
     "feed": "direct/ABC Australia",
-    "mapped": 11,
-    "survived": 11,
+    "mapped": 10,
+    "survived": 10,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5965,8 +5995,8 @@
    },
    {
     "feed": "direct/RNZ National",
-    "mapped": 15,
-    "survived": 15,
+    "mapped": 16,
+    "survived": 16,
     "duplicate_canonical": 0,
     "duplicate_near_title": 0,
     "loss_attribution": [],
@@ -5992,8 +6022,8 @@
    },
    {
     "feed": "direct/France24 FR",
-    "mapped": 13,
-    "survived": 12,
+    "mapped": 14,
+    "survived": 13,
     "duplicate_canonical": 1,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -6002,12 +6032,12 @@
       1
      ]
     ],
-    "duplicate_share_pct": 7.7
+    "duplicate_share_pct": 7.1
    },
    {
     "feed": "direct/France24 ES",
-    "mapped": 17,
-    "survived": 16,
+    "mapped": 16,
+    "survived": 15,
     "duplicate_canonical": 1,
     "duplicate_near_title": 0,
     "loss_attribution": [
@@ -6016,7 +6046,7 @@
       1
      ]
     ],
-    "duplicate_share_pct": 5.9
+    "duplicate_share_pct": 6.2
    },
    {
     "feed": "direct/BBC Brasil",
@@ -6044,30 +6074,30 @@
    {
     "feed": "direct/BBC Europe",
     "mapped": 8,
-    "survived": 2,
-    "duplicate_canonical": 6,
+    "survived": 1,
+    "duplicate_canonical": 7,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "direct/BBC World",
-      6
+      7
      ]
     ],
-    "duplicate_share_pct": 75.0
+    "duplicate_share_pct": 87.5
    },
    {
     "feed": "direct/RNZ Pacific",
     "mapped": 9,
-    "survived": 1,
-    "duplicate_canonical": 8,
+    "survived": 0,
+    "duplicate_canonical": 9,
     "duplicate_near_title": 0,
     "loss_attribution": [
      [
       "direct/RNZ National",
-      8
+      9
      ]
     ],
-    "duplicate_share_pct": 88.9
+    "duplicate_share_pct": 100.0
    },
    {
     "feed": "direct/Guardian Africa",
@@ -6143,5 +6173,1607 @@
    }
   ],
   "policy": "Observation only: no automatic feed removal or priority changes; duplicates are order-dependent and may provide fallback resilience."
+ },
+ "d5_geographic_evidence": {
+  "schema": 1,
+  "scope": "one collection run, duplicate feed entries counted before deduplication",
+  "location_semantics": "matched geographic subject; verified incident location unavailable",
+  "mapped_before_dedupe": 1637,
+  "globe_serialized_articles": 710,
+  "mapped_by_place_top": {
+   "Vietnam": 228,
+   "France": 88,
+   "India": 84,
+   "Mexico": 61,
+   "Kenya": 60,
+   "Portugal": 37,
+   "Bangladesh": 36,
+   "China": 30,
+   "New York": 25,
+   "Ho Chi Minh City": 25,
+   "Canada": 23,
+   "Nigeria": 23,
+   "Mumbai": 21,
+   "Israel": 20,
+   "Yemen": 19,
+   "Pakistan": 19,
+   "Ukraine": 19,
+   "Hanoi": 18,
+   "Ghana": 17,
+   "Saudi Arabia": 15,
+   "Madrid": 13,
+   "Peru": 13,
+   "Belgium": 12,
+   "Darfur": 12,
+   "Paris": 10,
+   "England": 10,
+   "Tehran": 10,
+   "Spain": 9,
+   "Hungary": 9,
+   "Anand": 9,
+   "Russia": 9,
+   "Argentina": 9,
+   "Indonesia": 9,
+   "Abu Dhabi": 9,
+   "Manchester": 9,
+   "Somalia": 8,
+   "West Bank": 8,
+   "Sri Lanka": 8,
+   "Philippines": 8,
+   "Sparks": 8,
+   "Dubai": 8,
+   "Ethiopia": 7,
+   "Gaza": 7,
+   "Lagos": 7,
+   "Chicago": 7
+  },
+  "globe_by_place_top": {
+   "Vietnam": 91,
+   "France": 42,
+   "Mexico": 29,
+   "India": 23,
+   "Kenya": 13,
+   "Canada": 12,
+   "Ukraine": 10,
+   "Portugal": 10,
+   "China": 10,
+   "Bangladesh": 10,
+   "Madrid": 9,
+   "Paris": 9,
+   "Nigeria": 9,
+   "Hanoi": 8,
+   "Russia": 7,
+   "Israel": 7,
+   "West Bank": 7,
+   "New York": 7,
+   "Mumbai": 6,
+   "Brazil": 6,
+   "Ho Chi Minh City": 6,
+   "Pakistan": 6,
+   "Peru": 6,
+   "Porto": 5,
+   "England": 5,
+   "Iran": 5,
+   "New Zealand": 5,
+   "Yemen": 5,
+   "Vista": 5,
+   "Colombia": 5,
+   "Argentina": 5,
+   "Liechtenstein": 4,
+   "Ghana": 4,
+   "California": 4,
+   "Gaza": 4,
+   "United States": 4,
+   "Saudi Arabia": 4,
+   "Tehran": 3,
+   "Darfur": 3,
+   "Albania": 3,
+   "Brasília": 3,
+   "Belgium": 3,
+   "Luhansk": 3,
+   "Aguascalientes": 3,
+   "Pueblo": 3
+  },
+  "mapped_by_place_level": {
+   "country": 1051,
+   "place": 575,
+   "region": 11
+  },
+  "mapped_by_hemisphere": {
+   "NW": 405,
+   "NE": 997,
+   "SW": 82,
+   "SE": 153
+  },
+  "mapped_by_method": {
+   "headline": 1078,
+   "description": 483,
+   "title-normalized": 25,
+   "headline-expanded": 9,
+   "d4_explicit_country": 10,
+   "description-normalized": 13,
+   "headline-reviewed-correction": 9,
+   "description-expanded": 4,
+   "headline-multilingual": 4,
+   "description-multilingual": 2
+  },
+  "mapped_by_literal_evidence": {
+   "literal_name_in_headline": 1111,
+   "literal_name_in_description": 498,
+   "contextual_or_alias_match": 28
+  },
+  "mapped_country_languages": {
+   "Albania": {
+    "en": 2,
+    "es": 1
+   },
+   "Angola": {
+    "pt": 1
+   },
+   "Argentina": {
+    "es": 4,
+    "en": 5
+   },
+   "Australia": {
+    "en": 3
+   },
+   "Azerbaijan": {
+    "en": 1
+   },
+   "Bangladesh": {
+    "en": 34,
+    "es": 2
+   },
+   "Belgium": {
+    "en": 12
+   },
+   "Bolivia": {
+    "es": 3
+   },
+   "Brazil": {
+    "pt": 5,
+    "es": 2
+   },
+   "Bulgaria": {
+    "en": 1
+   },
+   "Canada": {
+    "es": 9,
+    "en": 14
+   },
+   "Chile": {
+    "es": 3
+   },
+   "China": {
+    "en": 26,
+    "es": 1,
+    "pt": 3
+   },
+   "Colombia": {
+    "es": 5
+   },
+   "Cook Islands": {
+    "en": 6
+   },
+   "Costa Rica": {
+    "es": 1
+   },
+   "Croatia": {
+    "en": 4
+   },
+   "Cuba": {
+    "es": 1
+   },
+   "Cyprus": {
+    "en": 4
+   },
+   "Djibouti": {
+    "en": 1
+   },
+   "Ecuador": {
+    "en": 4
+   },
+   "Egypt": {
+    "en": 7
+   },
+   "El Salvador": {
+    "es": 1
+   },
+   "Ethiopia": {
+    "en": 7
+   },
+   "Fiji": {
+    "en": 6
+   },
+   "France": {
+    "en": 76,
+    "es": 3,
+    "fr": 9
+   },
+   "Gabon": {
+    "en": 2
+   },
+   "Germany": {
+    "en": 5
+   },
+   "Ghana": {
+    "en": 17
+   },
+   "Guam": {
+    "en": 4
+   },
+   "Honduras": {
+    "es": 1
+   },
+   "Hong Kong": {
+    "en": 5
+   },
+   "Hungary": {
+    "en": 9
+   },
+   "India": {
+    "en": 84
+   },
+   "Indonesia": {
+    "en": 9
+   },
+   "Iran": {
+    "es": 2,
+    "en": 3
+   },
+   "Israel": {
+    "en": 16,
+    "es": 2,
+    "pt": 1,
+    "fr": 1
+   },
+   "Japan": {
+    "en": 4
+   },
+   "Kenya": {
+    "en": 60
+   },
+   "Kuwait": {
+    "en": 4
+   },
+   "Liechtenstein": {
+    "es": 4
+   },
+   "Malta": {
+    "en": 7
+   },
+   "Mexico": {
+    "es": 21,
+    "en": 40
+   },
+   "Moldova": {
+    "en": 2
+   },
+   "Mozambique": {
+    "en": 2
+   },
+   "Nepal": {
+    "en": 5
+   },
+   "New Zealand": {
+    "en": 6
+   },
+   "Nicaragua": {
+    "es": 1
+   },
+   "Nigeria": {
+    "en": 23
+   },
+   "Norfolk Island": {
+    "en": 5
+   },
+   "Pakistan": {
+    "en": 19
+   },
+   "Panama": {
+    "es": 1
+   },
+   "Papua New Guinea": {
+    "en": 4
+   },
+   "Paraguay": {
+    "es": 1
+   },
+   "Peru": {
+    "en": 9,
+    "es": 4
+   },
+   "Philippines": {
+    "en": 8
+   },
+   "Portugal": {
+    "pt": 3,
+    "en": 34
+   },
+   "Puerto Rico": {
+    "es": 2
+   },
+   "Qatar": {
+    "en": 6
+   },
+   "Russia": {
+    "pt": 2,
+    "en": 7
+   },
+   "Réunion": {
+    "es": 1,
+    "fr": 1
+   },
+   "Samoa": {
+    "en": 2
+   },
+   "Saudi Arabia": {
+    "en": 15
+   },
+   "Somalia": {
+    "en": 8
+   },
+   "South Africa": {
+    "en": 1
+   },
+   "Spain": {
+    "en": 9
+   },
+   "Sri Lanka": {
+    "en": 8
+   },
+   "Sudan": {
+    "es": 1
+   },
+   "Switzerland": {
+    "en": 4
+   },
+   "Taiwan": {
+    "en": 1
+   },
+   "Tanzania": {
+    "en": 5
+   },
+   "Thailand": {
+    "en": 5
+   },
+   "Ukraine": {
+    "en": 18,
+    "fr": 1
+   },
+   "United Kingdom": {
+    "en": 3
+   },
+   "United States": {
+    "es": 2,
+    "en": 1,
+    "pt": 1
+   },
+   "Vanuatu": {
+    "en": 2
+   },
+   "Venezuela": {
+    "es": 2,
+    "en": 1
+   },
+   "Vietnam": {
+    "en": 130,
+    "pt": 45,
+    "es": 53
+   },
+   "Yemen": {
+    "es": 1,
+    "en": 18
+   }
+  },
+  "discovery_edition_vs_actual_match": {
+   "AU": {
+    "matched_rows": 111,
+    "feed_count": 11,
+    "globe_articles": 5,
+    "geography_unmatched": 71
+   },
+   "BR": {
+    "matched_rows": 93,
+    "feed_count": 11,
+    "globe_articles": 83,
+    "geography_unmatched": 92
+   },
+   "CA": {
+    "matched_rows": 110,
+    "feed_count": 11,
+    "globe_articles": 1,
+    "geography_unmatched": 74
+   },
+   "GB": {
+    "matched_rows": 110,
+    "feed_count": 11,
+    "globe_articles": 100,
+    "geography_unmatched": 71
+   },
+   "IN": {
+    "matched_rows": 143,
+    "feed_count": 11,
+    "globe_articles": 33,
+    "geography_unmatched": 139
+   },
+   "KE": {
+    "matched_rows": 137,
+    "feed_count": 11,
+    "globe_articles": 1,
+    "geography_unmatched": 148
+   },
+   "MX": {
+    "matched_rows": 233,
+    "feed_count": 11,
+    "globe_articles": 203,
+    "geography_unmatched": 186
+   },
+   "NG": {
+    "matched_rows": 117,
+    "feed_count": 11,
+    "globe_articles": 8,
+    "geography_unmatched": 70
+   },
+   "PH": {
+    "matched_rows": 138,
+    "feed_count": 11,
+    "globe_articles": 0,
+    "geography_unmatched": 149
+   },
+   "US": {
+    "matched_rows": 130,
+    "feed_count": 11,
+    "globe_articles": 120,
+    "geography_unmatched": 141
+   },
+   "ZA": {
+    "matched_rows": 136,
+    "feed_count": 11,
+    "globe_articles": 7,
+    "geography_unmatched": 143
+   },
+   "africa": {
+    "feed_count": 6,
+    "globe_articles": 0,
+    "geography_unmatched": 2
+   },
+   "asia": {
+    "feed_count": 3,
+    "globe_articles": 0,
+    "geography_unmatched": 0
+   },
+   "europe": {
+    "feed_count": 2,
+    "globe_articles": 0,
+    "geography_unmatched": 4
+   },
+   "global": {
+    "matched_rows": 2,
+    "feed_count": 6,
+    "globe_articles": 2,
+    "geography_unmatched": 0
+   },
+   "international": {
+    "matched_rows": 86,
+    "feed_count": 11,
+    "globe_articles": 80,
+    "geography_unmatched": 40
+   },
+   "north-america": {
+    "matched_rows": 3,
+    "feed_count": 1,
+    "globe_articles": 1,
+    "geography_unmatched": 1
+   },
+   "oceania": {
+    "matched_rows": 3,
+    "feed_count": 1,
+    "globe_articles": 3,
+    "geography_unmatched": 2
+   },
+   "regional": {
+    "matched_rows": 81,
+    "feed_count": 17,
+    "globe_articles": 59,
+    "geography_unmatched": 61
+   },
+   "south-america": {
+    "matched_rows": 3,
+    "feed_count": 2,
+    "globe_articles": 3,
+    "geography_unmatched": 0
+   },
+   "specialist": {
+    "matched_rows": 1,
+    "feed_count": 3,
+    "globe_articles": 1,
+    "geography_unmatched": 1
+   }
+  },
+  "edition_to_country_subject_top": [
+   {
+    "feed_edition": "MX",
+    "subject_country": "Vietnam",
+    "mapped_rows": 53
+   },
+   {
+    "feed_edition": "BR",
+    "subject_country": "Vietnam",
+    "mapped_rows": 45
+   },
+   {
+    "feed_edition": "MX",
+    "subject_country": "Mexico",
+    "mapped_rows": 21
+   },
+   {
+    "feed_edition": "IN",
+    "subject_country": "France",
+    "mapped_rows": 16
+   },
+   {
+    "feed_edition": "AU",
+    "subject_country": "Vietnam",
+    "mapped_rows": 16
+   },
+   {
+    "feed_edition": "GB",
+    "subject_country": "Vietnam",
+    "mapped_rows": 15
+   },
+   {
+    "feed_edition": "NG",
+    "subject_country": "Vietnam",
+    "mapped_rows": 15
+   },
+   {
+    "feed_edition": "CA",
+    "subject_country": "Vietnam",
+    "mapped_rows": 15
+   },
+   {
+    "feed_edition": "IN",
+    "subject_country": "Vietnam",
+    "mapped_rows": 14
+   },
+   {
+    "feed_edition": "ZA",
+    "subject_country": "Vietnam",
+    "mapped_rows": 14
+   },
+   {
+    "feed_edition": "PH",
+    "subject_country": "Vietnam",
+    "mapped_rows": 14
+   },
+   {
+    "feed_edition": "KE",
+    "subject_country": "Vietnam",
+    "mapped_rows": 14
+   },
+   {
+    "feed_edition": "US",
+    "subject_country": "Vietnam",
+    "mapped_rows": 13
+   },
+   {
+    "feed_edition": "US",
+    "subject_country": "India",
+    "mapped_rows": 12
+   },
+   {
+    "feed_edition": "KE",
+    "subject_country": "India",
+    "mapped_rows": 12
+   },
+   {
+    "feed_edition": "ZA",
+    "subject_country": "France",
+    "mapped_rows": 12
+   },
+   {
+    "feed_edition": "regional",
+    "subject_country": "France",
+    "mapped_rows": 12
+   },
+   {
+    "feed_edition": "IN",
+    "subject_country": "India",
+    "mapped_rows": 11
+   },
+   {
+    "feed_edition": "PH",
+    "subject_country": "India",
+    "mapped_rows": 11
+   },
+   {
+    "feed_edition": "AU",
+    "subject_country": "Mexico",
+    "mapped_rows": 11
+   },
+   {
+    "feed_edition": "NG",
+    "subject_country": "Mexico",
+    "mapped_rows": 11
+   },
+   {
+    "feed_edition": "US",
+    "subject_country": "France",
+    "mapped_rows": 11
+   },
+   {
+    "feed_edition": "US",
+    "subject_country": "Kenya",
+    "mapped_rows": 11
+   },
+   {
+    "feed_edition": "PH",
+    "subject_country": "France",
+    "mapped_rows": 11
+   },
+   {
+    "feed_edition": "KE",
+    "subject_country": "France",
+    "mapped_rows": 11
+   },
+   {
+    "feed_edition": "KE",
+    "subject_country": "Kenya",
+    "mapped_rows": 10
+   },
+   {
+    "feed_edition": "ZA",
+    "subject_country": "India",
+    "mapped_rows": 9
+   },
+   {
+    "feed_edition": "GB",
+    "subject_country": "Mexico",
+    "mapped_rows": 9
+   },
+   {
+    "feed_edition": "CA",
+    "subject_country": "Mexico",
+    "mapped_rows": 9
+   },
+   {
+    "feed_edition": "IN",
+    "subject_country": "Kenya",
+    "mapped_rows": 9
+   },
+   {
+    "feed_edition": "ZA",
+    "subject_country": "Kenya",
+    "mapped_rows": 9
+   },
+   {
+    "feed_edition": "PH",
+    "subject_country": "Kenya",
+    "mapped_rows": 9
+   },
+   {
+    "feed_edition": "MX",
+    "subject_country": "Canada",
+    "mapped_rows": 8
+   },
+   {
+    "feed_edition": "NG",
+    "subject_country": "India",
+    "mapped_rows": 8
+   },
+   {
+    "feed_edition": "US",
+    "subject_country": "Portugal",
+    "mapped_rows": 7
+   },
+   {
+    "feed_edition": "GB",
+    "subject_country": "India",
+    "mapped_rows": 7
+   },
+   {
+    "feed_edition": "ZA",
+    "subject_country": "Portugal",
+    "mapped_rows": 7
+   },
+   {
+    "feed_edition": "PH",
+    "subject_country": "Portugal",
+    "mapped_rows": 7
+   },
+   {
+    "feed_edition": "CA",
+    "subject_country": "India",
+    "mapped_rows": 7
+   },
+   {
+    "feed_edition": "KE",
+    "subject_country": "Portugal",
+    "mapped_rows": 7
+   }
+  ],
+  "unmatched_diagnostic_counts": {
+   "no_diagnostic_country_mention": 1347,
+   "explicit_country_candidate_requires_review": 23,
+   "global_or_nonlocal_topic": 32
+  },
+  "unmatched_multi_country_rows": 0,
+  "unmatched_language_candidate_examples": [
+   {
+    "title": "Governo prevê impacto fiscal em torno de R$ 10 bi com tarifa zero",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZHNnUXFpSVJQcFl1YWptV2oxUGJodEkzeWtZOU0yQkJ0YklMZXU3R2N6bGMtSUllR3UwNndqT08zSHprTzRYTlEzUk1uMzJLeG45bEtJY25FVmdKZFVMY2FYQ0ZyaGVPaUNyMFd4WnlQVjVBWEl1enAtTEZ1WUk2X3NfY0c2YWIwLWptQm5xaXhXMlV1T2JEbVdQQklmcVJFWmpfQUJn?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Vox Brasil: Lula tem 51% e Flávio 49% no segundo turno",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "headline",
+      "qualified": false
+     },
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWFc0M2JMVkJYWXVxb1FtZFduaG9oOTVGckFBMGZrSHNwWmFIYW4wcGxXMzFKTTdVbmdjaDZWaTBvVmxDM3g3Vi1rQnVmYmNKYWNoY0c0REQ1UW5rOWoyX2ExNkxQYmhqMS05MGQzRHA0VmJEdVduYXBaTnM4X1F1MFoybjNDTlNQNUE5RkZaSG5LbTd0THhzZXpYUmpmdmxDWkJ2bWRZUWI1eV9sTW1jSGlJclBGcFFHTU5V0gHAAUFVX3lxTE9FQkVYVWg5enRtaFNUMmZXUXVRNDV6V0FCS1NYZkFlNl9iVWM2WmZIS05OR3I5RWZiTWZhS2dPVl9TZmotQ2FkM0RmWG9xYlVWVld5VVVSMnhqSFBLTHM5NzhQdkhrWlRxbHZkckhrbTFKSW01eFAtdDFQY0luQ08zendNVVJRekxsQTVZcmxxMjduYTQ2dFJjanhTVTloX0lrMXlFVkVEd1d1REtnT0xIV1RiUFZpaS1XdllZS3B4QQ?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Governo Trump defende sanções a Moraes em carta ao Congresso dos EUA",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOczlUeWIyZFVoa1hGTXBST09uN1pqWXlCMDh0Vk1HNUx4akpwTnBlZEtnTDVyTXhfTmZCT2FYN04xTlp5dHZMSGU2Zkd4MzBfbnpjOUR6ZDlJYkJia21OUzFUVkVQRE1pMnl6Q05ibW9HQndkZlBsMzQzdDJMOEItbHh0Y25FekQ0NmNRTklYYm9kVFFMVmVXajczVFlzbHpEWDl4b19ZRW1OLWowRzZF?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Alíquota da reforma tributária estoura o teto antes da eleição decidir",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcTg3UmR5RXhvMWxkZ3BuTlR5bERIVXVxUDktTUFabWw5S21HWmJMeVNuTGFxb1R5LW1fVW5KQ2F4WS05WjVaa0QtRzJvQmJPSHJBTWVtTG5KMmxFdzVHMU54MS1NU2pCdGg5MHpTOHdkN2FrQXR4SGhOcV9PSUZ5bnNEQmFLNldsWWdYdUFnczlGbjU0WUFFOEIzREp3WjdWY0p1Y3hVV1pYRktFazBHM2p4NVE1SzNZWGRPSnFB?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Governo estima tarifa zero em R$ 10 bi, mas entidade diz que é o dobro",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSnFONktnWjBMYVdYNlJjQnBKdnJmYV9SWm14UFFrd2JyZDlGYWdROUNwOVlCdE1vNlpZa195aWlMSF8xNlEzM2J2cXdVMHdBRFd6Y0RMR1JWMXFzZ056d1JDRlVaMTdONDBvRFNSVWw1ZUFuWFR4OEVjOEt2czVqeDJyT0xmQlo1c0VSUnh1T0E3YThNS1BBUENPUXpXX1AwejU4UHhSTkVPdUluWUE?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "UCRANIA Y SU DIPLOMACIA: PRESIÓN GEOPOLÍTICA Y CORRUPCIÓN - Canarias-semanal.org",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "headline",
+      "qualified": false
+     },
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOT0pJRzhreU9oMUxaeWs3VzkyUnN3VDZnSm1obVhTSXZMaHNlMV9JQzZTUEZ6ZmZNX1BhTkt6blpYOHp1TXZHV3I5emlkYWVRM0Z2aFlMMGVRZ1E5WW5Xci1MaTh0N2RkREcxN2dHV2VLbG0tZ3JaMWp1N1BsWndubEx6VGQ2b3I5R3c1T2ZfVl9IdHQ0YlE1U1I1VQ?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "550.000 manifestantes en las calles de Francia: las protestas se extienden por Europa",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "France",
+      "alias": "francia",
+      "field": "headline",
+      "qualified": true
+     },
+     {
+      "country": "France",
+      "alias": "francia",
+      "field": "description",
+      "qualified": true
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAyU3pfeHVuLWcyczNrTmQ1VzlVbGZmbUdGeHpCYWhqRDFkOUZaOThDRHNfb0k1ZjNLSTJQWjM4NXVidVZIeXFJQ3lsSUV5ZDgtUzZSbmE4OGE5Tm56NXBWVHVR?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Análise: queda do desmatamento vira ativo econômico",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaFREYWJnUVEtZG5od0Fzdk04b2RZV2pLLXRhSW81YkIyX1VXU0NPQlpjX2NKN0lKdHR0RVcyWlZXbGQ1VmdkU3hneFNuajF5OUJ6ZmMwNlhsX1lLcHFaZlphSG56d1hNc0NDLVpRclBrazJaenl0R3l0TExkTjNyR0I1VzQ2aWRod1A2VkdlR2NHZnhURm44N0IxSWl3dFoyWEtNLS0zQ0ZzYUk?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "El operador de la central de Onagawa, en el noreste de Japón, detuvo el reactor 2 después de una fuga de agua con sustancias radiactivas. El medio ambiente no fue contaminado",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "Japan",
+      "alias": "japon",
+      "field": "headline",
+      "qualified": true
+     },
+     {
+      "country": "Japan",
+      "alias": "japon",
+      "field": "description",
+      "qualified": true
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQb2VtcFVjbVNYQ1dMbjJCZTJya2xUSU5Uc0NWTVo1NjVnd0JpUlhnSEp1SmtBM2Z4SUxGVDdHdzFoLWZMb1NHVkxNcEdRYzA0b0FocmpmN2dGb0xsRnlqWWFOZnhHcDBoa3hiNTUzRnZYTmVDc05LaHVhOUQ3VGRVdndCbnZnSWhPTXVzaElvOWplbE1ZOV85V1ZHNGpvVTQ0RlQw?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Ébola: União Africana oferece apoio técnico ao Quénia após casos subirem para sete",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Kenya",
+      "alias": "quênia",
+      "field": "headline",
+      "qualified": false
+     },
+     {
+      "country": "Kenya",
+      "alias": "quênia",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSFA4clVBRUxqMzI4Q0JxcFFOVzdyRkdQdk9wR09McEhlUW10dWRFRTB6dk1BS01xSzhxS0tiUUZPWFhmMXVxa3E1eThYaEpyRHA0RUVoQmctQ3U1aE9hN1BvWlJFdTMxWkdLQlR0Rjl3ak9yal9CWFc5RkxpaV9CUG9FS1lXd3J1YmFoMlBuZ3loQ2RZSnRWRzFJa2JkbHE3bWFOUC14QVlndlotMGdHUTU5OGdwelNaWE9SZg?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Estudantes retomam protagonismo em momento decisivo no país, diz UNE",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbjRFcnVBVUVOakRPU1R1a2s1RnhOb2pNcURUZzZTZDhTcXZYSkwxRXVrS1JaVlVCTmZQYUJ3ZTRXU2lGbm10SjVuMHdKdHJqNzdKRHRfZEJEbm5tZG9Cc0d6bEhXM3R6b0Rmb3pmQ2kxSjZ3dXJEMXl0NGdKZzhTelNSUXY4bEROUFZLeU0yWWxCaEx4ckEzdnhPQng5aVRONS1ILU8tZ2x4LTZhQVhYRDlMRXk0ZzRJWk8zTlQ2ZEYwTUk?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "CPI indica reajuste monetário mais cedo nos EUA, diz economista",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSVFSTUotRDdhSW1xRWotSHlXWlVXaTE0elBraVRjUHR6M2gwdVZWd2dMY044MlU3R1dWTmRkSmFKV0RpalNFeG85RWxMb0NkLUt3UnNOTjR1ZDNwYmJoQmlTQmkxZTNUNUZTRlR0NEdmVDlwVkNiTGNBSmJJZTRxOWMwMUlyWXRnN2JiYUQ1ZFNBaE9WODVlUDlEX0NOdjI3eF9nTGUxV0NILXFaZHZlU01HQVhndw?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "El presidente Asfura viajará a Italia y la Santa Sede para promover inversiones y cooperación",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "Italy",
+      "alias": "italia",
+      "field": "headline",
+      "qualified": false
+     },
+     {
+      "country": "Italy",
+      "alias": "italia",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPazhvSDU4R2xCeDhkYVVwQkdrVkhad1pwd1dPb1ZtTVJhR0s0THNKLUhLUUdGUnV6aU0zcUh5cWtuVnJGNEVlcUd4NzBQVEpuY1dwSnA3eWMzV2k3VTZiczR1ckMtd0k5RFJXMzFubXpGNVpLSjJuNEViekUyX3RqcnJaU1g0dnFtQnpRdGgwQ1I5OERmZjk5NVY1LVZEMDdHOEZSRU1HZ2dDWkJocVJCc2FzYw?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Pesquisa Vox Brasil: Lula tem 51% e Flávio Bolsonaro, 49%, em empate técnico",
+    "feed": "Google News BR",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "headline",
+      "qualified": false
+     },
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdVNVWEdBcU83cWtVZnJfMFViVXlteEE4WU53eHhHYThKUGRHcE9TcDlxNzhxN1JUTEN4N090Y09iRDhuQVFJbldJNVBMNmo4RVNYN25GOTZPcjBHN2tMVmtLYmRRNXJ1YWlwTVByaUZfOHdxRkhadHcxNzA3d2RpUkpBd0dxWTdQMGRSTDZlMUp0WTlSdmcyRlhkTmRoZw?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Rusia lanza ataque masivo a industrias energéticas Ucrania",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "headline",
+      "qualified": false
+     },
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOd3BmM1JlY3UyYkZ4a2lSakdIS1RxUFZfMlR3NU5FeVVaQXhqaXV2eXk0eG4zRnFFbDZzck9ZemJZREdZTDJMcGNnR1NDWm5WYzhnUTFnenNvN0RDaWxHY3dNbXY2MWxscWJobkYwOF9ZMTd3a2lKdVRUTnFFbGlxTWtORlluQmNB?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Zelenski afirma que Trump busca la rendición de Ucrania ante Rusia",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "headline",
+      "qualified": true
+     },
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "description",
+      "qualified": true
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOZjBmU1V4cUE3djZQMHA2UTlkRllyZ2kwekF2VTZFLTVxejV5U3JvME14aS1BZ3M4SE9JX1NPd1NjeHVRcmV4YmxidS04MHJUejhITjllbWdBOFVOQ1Vpd1dHSTdNT3ZISDYtZ2JkRmtJUG1MYjEzT3NxOGFRbkVmQURFSl9XMmxqczdQa1hRZXR0RTlGNzVORDBhenJFaTd5RjQwRXpLWG1nekxxRE9ISnhLelFoVldKZThuUXU2c2MyaGxhM28yV1hZUGtmSkxJcXJBWFp3ZkZ2c280d0FjdlhRX2I2YXNlVVhxcFcyY3NyZnp4Szd6OVBJNk16Y1I2NjFLNUJ30gGaAkFVX3lxTFBjUEo4V3I3aWpNTVVEYUtZUzhNY25IMnNvSzZsaGFUb2RkYUpLUGN4YkdoVFE1MkliSnZzT0hKei0zb1NtTXhKallzRm92SUowZ3hJbmd3Y3N0U2k4a20xaV8xSEpCeUdTTm9TR3dyM3VDWWc3WF9pRmZLNmRmb25ER0tibXZnUVRtMHZTNjRkU2dhTG1JbGw2d3hGZ0VlR3pfbkEzRjV5RGN2WE96TnhRMnFIdm5rSVhLWHdCQmpDb3owdGx0TEZrZjQxQjhWSUxiQ2lCLVpwM2Fzdnl5R00zMF9HRXpGbjBuaFlubTVGSU5XbjRSWjlFa0x2RExiTlZjdVFlWWFqOEYzbXVfRGhHem5oUmlEY1UtQQ?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Ucrania: la guerra contra el sistema que sostiene a las fuerzas armadas",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "headline",
+      "qualified": false
+     },
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUXljNG9xRW5qaXdodTRfVlFDV0hDWklpWmpJR2kxcEsyM0dlZWU0SEJWS0NPMlF6ZDF6SVp1YjlOUjMxWXhvendmNnhYMEFzS25qQWF5dTQwYmZJZlY0akpBR1BzbWVyQXVNbUV1YWczdWx5bUJhYUxDRkJSMDJubG9wSkFVUE9FN0J3LVI1SGZ1YmVvZmo0MnV3TlZXVmRsMFdBYWxQc1JULTJZc0dkV3BuTklhZw?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Polonia refuerza su defensa aérea tras ataques rusos con drones en el oeste de Ucrania",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "headline",
+      "qualified": true
+     },
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "description",
+      "qualified": true
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE55dl9uQXBfeWFCWkE3b1BHTmZ2aEFFRGwtbTdEUzloQnQyR1FnNVNvTm9YT1V6UXY4cHpINzFHSVpMRnlFY0E4Mw?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "3 muertos deja ataque masivo Ucrania a provincia control ruso",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "headline",
+      "qualified": false
+     },
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNczBmVG5UQnNoZVFjOVZBeDl0Z3NDZ3lDU2EzY19hc0xCSkZ5aXR0OGFiamE5bjBUaUJvOGM1SkFqSFMyemNJMzZJREJDckh3X2tyM1IxTWhROGpzT0dCc3RyQ3hxcW1XLVJkQ2NGQTY5UWlCZ2ZDYkZ4bGxfSVBXVWM4NUhzaV9yLXdYSw?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Guerra Rusia-Ucrania en directo | Zelenski denuncia que parece que Trump está intentando \"convencer a Ucrania para que capitule\"",
+    "feed": "Google News MX",
+    "candidates": [
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "headline",
+      "qualified": false
+     },
+     {
+      "country": "Ukraine",
+      "alias": "ucrania",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQelVwVU1tUFJiNHhjZjdWMmtkY3V6ZzJBMTRCLW1tSk5jRzY2cEZCNHNaMUd6SjNOeWlKQ1EtR2ZaSDRtTkFSYXFNdV9XM3dUeU1YTXNLSk9kMldFb2NzSlN5aEx0anlrLTJEc2xKQ2RuczhKZXNUN2RwMVhQQnNnSUJBR0pQV3hPNERfejFQWkgxN1M2cUxra19qT0d5ZE9IRzVmelpSQmHSAagBQVVfeXFMTThQTkNvc0s0bWdNdHVkcW10ZC1VU0lPcDVUOXk4ZjMtMzVmQzdvRjVSWHBvVjZpak1mdjBjT3VGSTcyT3VIRnVGb0djUzlFWjduZ0s5cmZvTUcwZkxkWXhaMmZGUWRiblFXWnlPRVBuYlAxTmJVbHViUmdoU2ZoY2dSdXRzMUx0VUQzUkoyV1hSWnM0SGVaM2lZRzV5QXBCMXZIR01ZdjRN?oc=5",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Macron se pronuncia sobre las protestas en Francia y condena la violencia",
+    "feed": "France24 ES",
+    "candidates": [
+     {
+      "country": "France",
+      "alias": "francia",
+      "field": "headline",
+      "qualified": true
+     },
+     {
+      "country": "France",
+      "alias": "francia",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://www.france24.com/es/video/20261018-macron-se-pronuncia-sobre-las-protestas-en-francia-y-condena-la-violencia",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Roxane Vigneron: \"Las protestas en Francia responden a problemas crónicos\"",
+    "feed": "France24 ES",
+    "candidates": [
+     {
+      "country": "France",
+      "alias": "francia",
+      "field": "headline",
+      "qualified": true
+     },
+     {
+      "country": "France",
+      "alias": "francia",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://www.france24.com/es/video/20261018-roxane-vigneron-las-protestas-en-francia-responden-a-problemas-cr%C3%B3nicos",
+    "mapping_action": "none_manual_review_only"
+   },
+   {
+    "title": "Flávio e Lula estão empatados no agregador de pesquisas da BBC: veja números",
+    "feed": "BBC Brasil",
+    "candidates": [
+     {
+      "country": "Brazil",
+      "alias": "brasil",
+      "field": "description",
+      "qualified": false
+     }
+    ],
+    "review_class": "explicit_country_candidate_requires_review",
+    "url": "https://www.bbc.com/portuguese/articles/cm1dlv13yql9o?at_medium=RSS&at_campaign=rss",
+    "mapping_action": "none_manual_review_only"
+   }
+  ],
+  "matched_literal_evidence_examples": [
+   {
+    "title": "Spain election poll tracker: Who will be the next prime minister?",
+    "place": "Spain",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "The Far Right Breaks Through in Germany",
+    "place": "Germany",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "2026 Israeli elections: What you need to know",
+    "place": "Israel",
+    "place_level": "country",
+    "matching_method": "description",
+    "literal_place_fields": [
+     "description"
+    ],
+    "evidence_class": "literal_name_in_description",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "What Serbia’s Opposition Can Learn from Hungary and Georgia",
+    "place": "Hungary",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Israeli parliamentary elections: A tense final stretch.",
+    "place": "Vietnam",
+    "place_level": "country",
+    "matching_method": "description",
+    "literal_place_fields": [
+     "description"
+    ],
+    "evidence_class": "literal_name_in_description",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Keen for change, Israel's Arab minority sees election as existential",
+    "place": "Israel",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Somalia’s Parliament voted to amend constitution, extending terms of both lawmakers & President",
+    "place": "Somalia",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Anand Sharma urges poll panel credibility amid ‘regime change’ debate",
+    "place": "Anand",
+    "place_level": "place",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Israel Election Forecast Points to a More Right Wing Parliament",
+    "place": "Israel",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Spain election poll tracker: Who will be the next prime minister?",
+    "place": "Spain",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Somalia’s Parliament voted to amend constitution, extending terms of both lawmakers & President",
+    "place": "Somalia",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "\"Regime change term being used loosely, credibility of electoral system must be restored\": Former Union Minister Anand Sharma",
+    "place": "Anand",
+    "place_level": "place",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Anand Sharma urges poll panel credibility amid ‘regime change’ debate",
+    "place": "Anand",
+    "place_level": "place",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "The Far Right Breaks Through in Germany",
+    "place": "Germany",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [
+     "headline",
+     "description"
+    ],
+    "evidence_class": "literal_name_in_headline",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Israeli parliamentary elections: A tense final stretch.",
+    "place": "Vietnam",
+    "place_level": "country",
+    "matching_method": "description",
+    "literal_place_fields": [
+     "description"
+    ],
+    "evidence_class": "literal_name_in_description",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "direct_literal",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   }
+  ],
+  "matched_contextual_review_examples": [
+   {
+    "title": "Internacional | Afp | UE condena ataque de colonos israelíes contra diplomáticos europeos en Cisjordania",
+    "place": "West Bank",
+    "place_level": "region",
+    "matching_method": "headline-expanded",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "De la embajada al colmado: la nueva diplomacia popular de Estados Unidos en América Latina",
+    "place": "United States",
+    "place_level": "country",
+    "matching_method": "d4_explicit_country",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Meningococcal outbreak kills one student, infects two in HCM City",
+    "place": "Ho Chi Minh City",
+    "place_level": "place",
+    "matching_method": "headline",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Meningococcal outbreak kills one student, infects two in HCM City",
+    "place": "Ho Chi Minh City",
+    "place_level": "place",
+    "matching_method": "headline",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Meningococcal outbreak kills one student, infects two in HCM City",
+    "place": "Ho Chi Minh City",
+    "place_level": "place",
+    "matching_method": "headline",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Meningococcal outbreak kills one student, infects two in HCM City",
+    "place": "Ho Chi Minh City",
+    "place_level": "place",
+    "matching_method": "headline",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Odontología especializada: una red en Andalucía",
+    "place": "Andalusia",
+    "place_level": "region",
+    "matching_method": "headline-reviewed-correction",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Meningococcal outbreak kills one student, infects two in HCM City",
+    "place": "Ho Chi Minh City",
+    "place_level": "place",
+    "matching_method": "headline",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Profesores chilenos en Estados Unidos: requisitos, sueldos y cómo postular",
+    "place": "United States",
+    "place_level": "country",
+    "matching_method": "d4_explicit_country",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "JAÉN PROYECTA AL MUNDO SU CULTURA DEL ACEITE CON UNA INVERSIÓN DE 4,5 MILLONES EN OLEOTURISMO",
+    "place": "Andalusia",
+    "place_level": "region",
+    "matching_method": "description-expanded",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Here, there, and everywhere: Remote work and the employment of disabled and older workers in the UK",
+    "place": "United Kingdom",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Here, there, and everywhere: Remote work and the employment of disabled and older workers in the UK",
+    "place": "United Kingdom",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "O problema do Brasil é que a produtividade não acompanha o crescimento",
+    "place": "Brazil",
+    "place_level": "country",
+    "matching_method": "d4_explicit_country",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Nobel de Economia 2026 premia Hall e Woodford; teorias sobre juros, inflação e expectativas ajudam a explicar desafios do Brasil | Por Carlos Augusto",
+    "place": "Brazil",
+    "place_level": "country",
+    "matching_method": "d4_explicit_country",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Fim da escala 6×1 reacende resistência que marcou grandes conquistas trabalhistas no Brasil",
+    "place": "Brazil",
+    "place_level": "country",
+    "matching_method": "d4_explicit_country",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Análise: Inflação alta nos EUA pode frear queda da Selic no Brasil",
+    "place": "Brazil",
+    "place_level": "country",
+    "matching_method": "d4_explicit_country",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Here, there, and everywhere: Remote work and the employment of disabled and older workers in the UK",
+    "place": "United Kingdom",
+    "place_level": "country",
+    "matching_method": "headline",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Tres muertos en ataques ucranianos sobre la región de Lugansk, controlada por Rusia",
+    "place": "Luhansk",
+    "place_level": "place",
+    "matching_method": "headline-expanded",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Cuatro muertos en ataques atribuidos a Ucrania en Lugansk y San Petersburgo",
+    "place": "Luhansk",
+    "place_level": "place",
+    "matching_method": "headline-expanded",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   },
+   {
+    "title": "Tres fallecidos en nuevos ataques ucranianos en Lugansk y San Petersburgo",
+    "place": "Luhansk",
+    "place_level": "place",
+    "matching_method": "headline-expanded",
+    "literal_place_fields": [],
+    "evidence_class": "contextual_or_alias_match",
+    "interpretation": "geographic_subject_not_verified_event_location",
+    "confidence_label": "contextual_review",
+    "note": "Rule-based evidence label, not a calibrated probability or verified event coordinate."
+   }
+  ],
+  "limitations": [
+   "Not all source editions are region-specific",
+   "A feed region is never used to establish story location",
+   "Multilingual candidates are diagnostic only and do not create pins",
+   "Counts are per feed row and include duplicate entries",
+   "No continental classification inferred from coordinates or country strings",
+   "Literal place mentions do not guarantee that the event happened there"
+  ]
  }
 }
