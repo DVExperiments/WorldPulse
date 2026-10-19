@@ -38,6 +38,7 @@ from geographic_quality_monitor import update_health_file
 from geo_recovery_d4 import recover_explicit_geography, diagnose_unmatched, summarize_efficiency
 from geo_evidence_d5 import coverage_report, evidence_for_match
 from geo_accuracy_d6 import audit_decision, summary as d6_summary
+from geo_semantic_d7 import decision as d7_decision, summary as d7_summary
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -284,7 +285,7 @@ def parsed_timestamp(value):
  except (ValueError,AttributeError):return None
 
 def collect(now):
- d6_records=[];d6_withheld=[]
+ d6_records=[];d6_withheld=[];d7_records=[]
  cutoff=now-dt.timedelta(hours=24)
  results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_rejections=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit(); pipeline={}; recovery_samples=[]; recovery_counts=Counter(); unmatched_diagnostics=Counter()
  def ingest(rows,category,source,kind,region,language,feed_key):
@@ -356,6 +357,16 @@ def collect(now):
     browse_retention.add(a,when,now,category or classify(a['title']),'conflicting_geographic_evidence')
     unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260],'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
     continue
+   # D.7 lexical false-positive suppression, after all existing safeguards.
+   d7=d7_decision(a,place,d6)
+   d7['feed']=feed_key
+   if len(d7_records)<2500:d7_records.append(d7)
+   if d7['action']=='withhold':
+    counts['geography_rejected']+=1
+    geo_audit.record(source,'d7_common_word_collision_withheld',a['title'],language,a['url'])
+    browse_retention.add(a,when,now,category or classify(a['title']),'d7_semantic_false_positive')
+    unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260],'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
+    continue
    mapped+=1
    counts['geography_matched']+=1
    geo_audit.record(source,'mapped',mapped=True)
@@ -396,6 +407,7 @@ def collect(now):
  collect.geo_rejections=geo_rejections
  collect.pipeline=pipeline
  collect.d6_evidence=d6_summary(d6_records,d6_withheld)
+ collect.d7_semantic=d7_summary(d7_records)
  collect.recovery_stats={'recovered_by_feed':dict(recovery_counts),'recovered_total':sum(recovery_counts.values()),'recovered_examples':recovery_samples,'unmatched_reason_counts':dict(unmatched_diagnostics)}
  return results,failures,dict(scanned),seen_queries,health,unmapped
 
@@ -600,7 +612,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
   f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
   f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
- obj={'schema':1,'release':'v2.4D.6','updated_at':now.isoformat(),'stage_definitions':{
+ obj={'schema':1,'release':'v2.4D.7','updated_at':now.isoformat(),'stage_definitions':{
   'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
   'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
   'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
@@ -614,7 +626,8 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   'd4_recovery':getattr(collect,'recovery_stats',{}),
   'd4_efficiency':summarize_efficiency(feeds),
   'd5_geographic_evidence':coverage_report(getattr(publish_pipeline_audit,'raw',[]),getattr(publish_pipeline_audit,'points',[]),unmapped,feeds),
-  'd6_attribution_accuracy':getattr(collect,'d6_evidence',{})}
+  'd6_attribution_accuracy':getattr(collect,'d6_evidence',{}),
+  'd7_semantic_accuracy':getattr(collect,'d7_semantic',{})}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
