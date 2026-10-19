@@ -55,6 +55,7 @@ from feed_resilience_d191 import retry_open, assess_outage
 from feed_health_d192 import build_report as d192_build_report
 from geo_review_d20 import evaluate as d20_evaluate
 from geo_readiness_d21 import evaluate as d21_evaluate
+from intelligence_v26 import lexical_collision as v26_collision, build_report as v26_report
 from intelligence_v25 import quality_report as v25_quality_report, shadow_consistency as v25_shadow_consistency, validate_snapshot as v25_validate
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -302,7 +303,7 @@ def parsed_timestamp(value):
  except (ValueError,AttributeError):return None
 
 def collect(now):
- d6_records=[];d6_withheld=[];d7_records=[];d8_records=[];d12_records=[];d13_records=[];d14_records=[];d15_records=[];d16_records=[];d17_records=[]
+ v26_withheld=[];d6_records=[];d6_withheld=[];d7_records=[];d8_records=[];d12_records=[];d13_records=[];d14_records=[];d15_records=[];d16_records=[];d17_records=[]
  cutoff=now-dt.timedelta(hours=24)
  results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_rejections=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit(); pipeline={}; recovery_samples=[]; recovery_counts=Counter(); unmatched_diagnostics=Counter()
  def ingest(rows,category,source,kind,region,language,feed_key):
@@ -392,6 +393,15 @@ def collect(now):
     counts['geography_rejected']+=1
     geo_audit.record(source,'d8_semantic_subject_withheld',a['title'],language,a['url'])
     browse_retention.add(a,when,now,category or classify(a['title']),'d8_geographic_subject_conflict')
+    unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260],'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
+    continue
+   # v2.6: narrowly proven Spanish common-word collisions are withheld pre-aggregation.
+   v26_reason=v26_collision(place,a['title'],a.get('description',''))
+   if v26_reason:
+    v26_withheld.append({'title':a['title'][:200],'url':a['url'],'place':place.get('name'),'reason':v26_reason,'publisher':a.get('publisher') or source})
+    counts['geography_rejected']+=1
+    geo_audit.record(source,'v26_verified_lexical_collision_withheld',a['title'],language,a['url'])
+    browse_retention.add(a,when,now,category or classify(a['title']),'v26_lexical_collision')
     unmapped.append({'title':a['title'][:180],'description':a.get('description','')[:260],'publisher':a.get('publisher') or source,'feed':source,'published_at':when.isoformat(),'url':a['url']})
     continue
    # D.12 shadow check: rerun the existing candidate sequence with publisher
@@ -486,6 +496,7 @@ def collect(now):
  collect.decision_audit=decision_audit
  collect.geo_rejections=geo_rejections
  collect.pipeline=pipeline
+ collect.v26_withheld=v26_withheld
  collect.d6_evidence=d6_summary(d6_records,d6_withheld)
  collect.d7_semantic=d7_summary(d7_records)
  collect.d8_subject=d8_summary(d8_records)
@@ -699,7 +710,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
   f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
   f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
- obj={'schema':1,'release':'v2.5.0','updated_at':now.isoformat(),'stage_definitions':{
+ obj={'schema':1,'release':'v2.6.0','updated_at':now.isoformat(),'stage_definitions':{
   'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
   'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
   'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
@@ -733,6 +744,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   'd20_verified_correction_pilot':getattr(publish_pipeline_audit,'d20_review',{}),
   'd21_geographic_correction_readiness':getattr(publish_pipeline_audit,'d21_readiness',{}),
   'v25_shadow_consistency':getattr(publish_pipeline_audit,'v25_shadow',{}),
+  'v26_live_accuracy_and_quality':getattr(publish_pipeline_audit,'v26_quality',{}),
   'v25_quality_dashboard':{'file':'data/quality-v25.json','html':'quality.html', 'mode':'read_only'}}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
@@ -747,6 +759,7 @@ def main():
   try:old=json.loads(OUT.read_text(encoding='utf8'))
   except (OSError,ValueError):pass
  raw,failures,scanned,success,health,unmapped=collect(now)
+ v26_lexical=getattr(collect,'v26_withheld',[])
  HEALTH.write_text(json.dumps({'updated_at':now.isoformat(timespec='seconds'),'ok':success,'attempts':len(health),'sources':health,'failures':failures},indent=1),encoding='utf8')
  outage=assess_outage(health,old,now=now)
  outage['current_successes']=success
@@ -782,6 +795,19 @@ def main():
  publish_pipeline_audit.v25_shadow=v25_shadow
  v25_quality=v25_quality_report(raw,points,getattr(collect,'pipeline',{}),unmapped,publish_pipeline_audit.d21_readiness,now)
  (ROOT/'data/quality-v25.json').write_text(json.dumps(v25_quality,ensure_ascii=False,indent=1),encoding='utf8')
+ # v2.6 quality run history is append-only, bounded, and descriptive; no event-site inference.
+ v26_history_path=ROOT/'data/quality-history-v26.json'
+ try:v26_history=json.loads(v26_history_path.read_text(encoding='utf8'))
+ except (OSError,ValueError):v26_history={'schema':1,'runs':[]}
+ if not isinstance(v26_history.get('runs'),list):v26_history={'schema':1,'runs':[]}
+ v26_run={'at':now.isoformat(),'globe_articles':sum(len(p.get('articles',[])) for p in points),
+          'mapped_retained':unique,'mapped_raw_rows':len(raw),'unmapped_rows':len(unmapped),
+          'geo_suppressed_lexical':len(v26_lexical),'feed_success':success,'feed_failure':len(failures)}
+ v26_history['runs']=(v26_history['runs']+[v26_run])[-96:]
+ v26_history_path.write_text(json.dumps(v26_history,ensure_ascii=False,indent=1),encoding='utf8')
+ v26_quality=v26_report(raw,points,unmapped,now,v26_lexical,v26_history)
+ (ROOT/'data/quality-v26.json').write_text(json.dumps(v26_quality,ensure_ascii=False,indent=1),encoding='utf8')
+ publish_pipeline_audit.v26_quality=v26_quality
  publish_pipeline_audit.d191_health=outage
  publish_pipeline_audit.d18_activation=d18_activation
  publish_pipeline_audit.raw=raw
@@ -789,7 +815,7 @@ def main():
  publish_pipeline_audit(now,getattr(collect,'pipeline',{}),unmapped)
  clusters=enrich_story_clusters(cluster_bundle(points),now,ROOT/'data/story-history.json')
  publishers=set(a['publisher'].casefold() for a in raw if a.get('publisher'))
- record={'schema':2,'version':'1.5.4B','source':'Google News RSS and independent publisher RSS samples','updated_at':now.isoformat(timespec='seconds'),
+ record={'schema':2,'version':'2.6.0','source':'Google News RSS and independent publisher RSS samples','updated_at':now.isoformat(timespec='seconds'),
   'last_attempt_at':now.isoformat(timespec='seconds'),'window':'rolling 24 hours',
   'status':'live' if not failures else 'partial','query_successes':success,'query_attempts':len(health),
   'articles_scanned':scanned,'distinct_mapped_articles':unique,'duplicates_removed':duplicates,
