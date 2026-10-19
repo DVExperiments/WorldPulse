@@ -48,6 +48,7 @@ from geo_recovery_d13 import independent_evidence as d13_evidence, summarize as 
 from geo_hierarchy_d14 import classify as d14_classify, report as d14_report
 from geo_semantic_d15 import classify as d15_classify, report as d15_report
 from geo_trials_d16 import simulate as d16_simulate, report as d16_report
+from geo_pilot_d17 import trial as d17_trial, report as d17_report
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'data/news.json'
@@ -294,7 +295,7 @@ def parsed_timestamp(value):
  except (ValueError,AttributeError):return None
 
 def collect(now):
- d6_records=[];d6_withheld=[];d7_records=[];d8_records=[];d12_records=[];d13_records=[];d14_records=[];d15_records=[];d16_records=[]
+ d6_records=[];d6_withheld=[];d7_records=[];d8_records=[];d12_records=[];d13_records=[];d14_records=[];d15_records=[];d16_records=[];d17_records=[]
  cutoff=now-dt.timedelta(hours=24)
  results=[];failures={}; scanned=Counter();health=[];seen_queries=0;unmapped=[]; geo_rejections=[]; geo_audit=CollectorAudit(); browse_retention=BrowseRetention(); decision_audit=DecisionAudit(); pipeline={}; recovery_samples=[]; recovery_counts=Counter(); unmatched_diagnostics=Counter()
  def ingest(rows,category,source,kind,region,language,feed_key):
@@ -433,6 +434,12 @@ def collect(now):
    d16_records.append({'url':a['url'],'title':a['title'][:180],
     'publisher':a.get('publisher') or source,'selected_place':place.get('name',''),
     'd15_decision':d15['decision'],'isolation_status':classification,**d16})
+   # D.17: strict shadow-only pilot eligibility; no live record modifications.
+   d17=d17_trial(a['title'],place.get('name',''),clean_description,language,
+                 d16['candidate_action'],d15['decision'])
+   d17_records.append({'url':a['url'],'title':a['title'][:180],
+    'publisher':a.get('publisher') or source,'selected_place':place.get('name',''),
+    'language':language,'clean_description_excerpt':clean_description[:220],**d17})
    mapped+=1
    counts['geography_matched']+=1
    geo_audit.record(source,'mapped',mapped=True)
@@ -480,6 +487,7 @@ def collect(now):
  collect.d14_hierarchy=d14_report(d14_records)
  collect.d15_semantic=d15_report(d15_records)
  collect.d16_trials=d16_report(d16_records)
+ collect.d17_rows=d17_records
  collect.recovery_stats={'recovered_by_feed':dict(recovery_counts),'recovered_total':sum(recovery_counts.values()),'recovered_examples':recovery_samples,'unmatched_reason_counts':dict(unmatched_diagnostics)}
  return results,failures,dict(scanned),seen_queries,health,unmapped
 
@@ -684,7 +692,7 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   f['matched_after_date_pct']=round(100*f['geography_matched']/f['date_passed'],1) if f['date_passed'] else None
   f['survival_after_mapping_pct']=round(100*f['deduplication_survived']/f['geography_matched'],1) if f['geography_matched'] else None
   f['usefulness']='fetch_failed' if f['status']=='failed' else ('no_parsed_entries' if not f['parsed_entries'] else ('no_recent_valid_articles' if not f['date_passed'] else ('no_geographic_matches' if not f['geography_matched'] else ('all_duplicate' if not f['deduplication_survived'] else 'contributing'))))
- obj={'schema':1,'release':'v2.4D.16','updated_at':now.isoformat(),'stage_definitions':{
+ obj={'schema':1,'release':'v2.4D.17','updated_at':now.isoformat(),'stage_definitions':{
   'parsed_entries':'Rows extracted from RSS/Atom/RDF (Google or direct publisher); count may include repeated titles',
   'date_passed':'Publication time within rolling 24h + 20 min future tolerance, with valid HTTPS URL and title',
   'geography_matched':'Passed existing conservative geography matchers and disambiguation safeguards before deduplication',
@@ -709,7 +717,8 @@ def publish_pipeline_audit(now,pipeline,unmapped):
   'd13_multilingual_recovery':getattr(collect,'d13_recovery',{}),
   'd14_global_hierarchy_contradictions':getattr(collect,'d14_hierarchy',{}),
   'd15_semantic_hierarchy_validation':getattr(collect,'d15_semantic',{}),
-  'd16_targeted_correction_trials':getattr(collect,'d16_trials',{})}
+  'd16_targeted_correction_trials':getattr(collect,'d16_trials',{}),
+  'd17_controlled_semantic_pilot':d17_report(getattr(collect,'d17_rows',[]),getattr(publish_pipeline_audit,'points',[]))}
  target=ROOT/'data/feed-contribution-audit.json'
  target.parent.mkdir(parents=True,exist_ok=True)
  target.write_text(json.dumps(obj,ensure_ascii=False,indent=1),encoding='utf8')
