@@ -1,28 +1,13 @@
 {
  "schema": 1,
  "release": "v2.6.0",
- "updated_at": "2026-10-20T00:43:51.423302+00:00",
+ "updated_at": "2026-10-20T05:23:50.740706+00:00",
  "mode": "conservative_live_lexical_withholding_plus_observation",
- "lexical_suppressed_total": 3,
+ "lexical_suppressed_total": 1,
  "lexical_suppressed_by_reason": {
-  "spanish_parliamentary_meeting_not_reunion_island": 1,
-  "spanish_chilean_lakes_not_lagos_nigeria": 2
+  "spanish_chilean_lakes_not_lagos_nigeria": 1
  },
  "lexical_suppressed_examples": [
-  {
-   "title": "Interesa a Senado reunión parlamentaria con legisladores de EEUU",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZE82b3Vkei1VbFlRWkQweXlqVDZRZnpTNkxqNGFlODk2TmZnaW5oTUFIWS1vMUV3SF8zUGFrZVA2aHBHUUF6QVZQSGp1N3F3eVNsLV9wRTJXUWNhdC1rSmsyblYyamNXZkV1YkdvUTZvRi00d2VLczM1dFJaNzIwUG5aQnYzYU4tX2xFejhQMUc5UU1mZ01CNHFYSkw3cG9URTRoQUlR?oc=5",
-   "place": "Réunion",
-   "reason": "spanish_parliamentary_meeting_not_reunion_island",
-   "publisher": "Misión Política"
-  },
-  {
-   "title": "Catorce lagos del sur de Chile podrían contar con nuevas normas ambientales para prevenir su contaminación",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOam5IQ2EwQ3V6V3BsZDREb0ZacHk3dEVXOXJ4Uks5azhqRjZtUUZyUzJoTnp5bTk4NDNscEZKT1VJQ092ejNQTnd5dFQ4RXJvLTZNeVdJY3FWSEZqSDVvNFp5QjBfeDFmaDRZclI5RDNnX3BZZXUzbjN3MENiaWVDMUU5RHpYb1N5aHN3UHNwZGctRGVmUE55R1JTNDZXaXM1bjAxbzFzRThvQ1JHWW1jOXFuT3h1R0NxYXlRcnphcDBZU1NUeE50Sw?oc=5",
-   "place": "Lagos",
-   "reason": "spanish_chilean_lakes_not_lagos_nigeria",
-   "publisher": "Publimicro"
-  },
   {
    "title": "Chile y Argentina buscan conectar las rutas escénicas Lagos y Volcanes y Nacional 40 para potenciar el turismo binacional",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNY1ZWd2FlZEZVVjJzRE9ZWXhyYUF6azBOaHFsWHo3a3JCbl9MNTJNTGw5eDhrb0hlbmhIRzZGb21WRXdDRWgzdjl4WVNhdEtaLW9faWV0aDA1ODJCcTh6N08tTE8taFhYZWFuWmRaTWZ0NzNocnBCWFNJLTJpQlhJUnVhaF92YlZpM3FZLXBnOWxTVFZJdFdiVTNvbFJhbTYxZ3RLTlAzSm1sWndOOV9wbDd5WVROd0k?oc=5",
@@ -32,7 +17,7 @@
   }
  ],
  "deduplication_review": {
-  "canonical_same_place_repeats": 725,
+  "canonical_same_place_repeats": 731,
   "cross_place_url_occurrences": 1,
   "cross_place_examples": [
    {
@@ -43,50 +28,46 @@
   ],
   "note": "Cross-location reuse is not automatically incorrect; preserve separate evidence-backed assignments."
  },
- "top_publisher_share_pct": 9.1,
+ "top_publisher_share_pct": 8.1,
  "top_publishers": [
   {
    "publisher": "Vietnam.vn",
-   "mapped_rows": 152
+   "mapped_rows": 135
+  },
+  {
+   "publisher": "Al Jazeera",
+   "mapped_rows": 40
   },
   {
    "publisher": "AllAfrica East Africa",
-   "mapped_rows": 31
+   "mapped_rows": 30
   },
   {
    "publisher": "AllAfrica Southern Africa",
-   "mapped_rows": 30
+   "mapped_rows": 29
+  },
+  {
+   "publisher": "RNZ National",
+   "mapped_rows": 28
+  },
+  {
+   "publisher": "AllAfrica West Africa",
+   "mapped_rows": 28
   },
   {
    "publisher": "The Guardian World",
    "mapped_rows": 26
   },
   {
-   "publisher": "AllAfrica West Africa",
-   "mapped_rows": 26
-  },
-  {
    "publisher": "Facebook",
-   "mapped_rows": 24
-  },
-  {
-   "publisher": "RNZ National",
-   "mapped_rows": 24
-  },
-  {
-   "publisher": "Al Jazeera",
-   "mapped_rows": 22
+   "mapped_rows": 21
   },
   {
    "publisher": "France24",
-   "mapped_rows": 22
+   "mapped_rows": 21
   },
   {
    "publisher": "France24 FR",
-   "mapped_rows": 19
-  },
-  {
-   "publisher": "France24 ES",
    "mapped_rows": 19
   },
   {
@@ -94,22 +75,26 @@
    "mapped_rows": 18
   },
   {
-   "publisher": "Bhaskar English",
-   "mapped_rows": 13
-  },
-  {
-   "publisher": "The Guardian Nigeria News",
-   "mapped_rows": 13
+   "publisher": "France24 ES",
+   "mapped_rows": 16
   },
   {
    "publisher": "Tribune Online",
    "mapped_rows": 13
+  },
+  {
+   "publisher": "AllAfrica Central Africa",
+   "mapped_rows": 13
+  },
+  {
+   "publisher": "Nilepost",
+   "mapped_rows": 12
   }
  ],
- "unmapped_rows": 1986,
- "mapped_raw_rows": 1678,
- "mapped_signal_groups": 457,
- "history_samples": 5,
+ "unmapped_rows": 1969,
+ "mapped_raw_rows": 1672,
+ "mapped_signal_groups": 472,
+ "history_samples": 6,
  "geographic_attribution": "Geographic subject, not verified incident site",
  "limitations": [
   "Rules are narrow reviewed-language safeguards, not a universal multilingual disambiguator.",
