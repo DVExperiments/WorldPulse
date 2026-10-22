@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-10-22T01:55:15.233153+00:00",
+ "updated_at": "2026-10-22T07:38:18.836685+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
@@ -25,9 +25,9 @@
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 49,
+   "successful_nonempty": 48,
    "successful_empty": 0,
-   "transport_failure": 3,
+   "transport_failure": 4,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
@@ -38,6 +38,10 @@
     },
     {
      "source": "direct/ReliefWeb Updates",
+     "error": ""
+    },
+    {
+     "source": "direct/UN News",
      "error": ""
     },
     {
@@ -101,7 +105,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "611e36622f91f5ec23183a993fa64c8365c5cc2789eb178c2c5d93cb9c1b080a",
+  "frozen_snapshot_fingerprint": "e65c26417c3fb88ccc1152b60e771b1b7c83997ddd7b098aa59087911cb34552",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
