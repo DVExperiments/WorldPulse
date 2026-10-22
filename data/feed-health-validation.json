@@ -1,13 +1,13 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-10-22T13:13:28.629446+00:00",
+ "updated_at": "2026-10-22T18:01:56.194021+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 109,
-   "successful_empty": 12,
+   "successful_nonempty": 112,
+   "successful_empty": 9,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
@@ -20,9 +20,6 @@
     "google/environment/AU",
     "google/environment/NG",
     "google/environment/CA",
-    "google/hazards/GB",
-    "google/hazards/AU",
-    "google/hazards/CA",
     "google/hazards/BR"
    ],
    "failure_samples": []
@@ -37,7 +34,7 @@
    "empty_samples": [],
    "failure_samples": [
     {
-     "source": "direct/France24",
+     "source": "direct/RNZ World",
      "error": ""
     },
     {
@@ -113,7 +110,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "ec475120e1cdf600409350f034254cc6f82f70a59cae49d2603b0cdab26b9849",
+  "frozen_snapshot_fingerprint": "b96ec07a391049e3aea62a5e29933add1f35ea0c2a0e791ffd18ce59c4ad14fe",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
