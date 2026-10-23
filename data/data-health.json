@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-23T10:07:57.130375+00:00",
+ "updated_at": "2026-10-23T15:07:56.675098+00:00",
  "feeds_total": 173,
  "feeds_ok": 170,
  "feeds_failed": [
@@ -12,158 +12,142 @@
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 153
+   "mapped_pre_dedupe": 138
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 94
+   "mapped_pre_dedupe": 92
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 139
+   "mapped_pre_dedupe": 144
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 85
+   "mapped_pre_dedupe": 93
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 142
+   "mapped_pre_dedupe": 143
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 95
+   "mapped_pre_dedupe": 94
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 164
+   "mapped_pre_dedupe": 142
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 86
+   "mapped_pre_dedupe": 92
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 92
+   "mapped_pre_dedupe": 89
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 230
+   "mapped_pre_dedupe": 210
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 161
+   "mapped_pre_dedupe": 137
   }
  },
  "mapped_articles_by_category": {
-  "community": 291,
-  "economy": 110,
-  "education": 80,
-  "health": 80,
-  "society": 73,
-  "politics": 96,
+  "community": 279,
+  "economy": 107,
+  "health": 79,
   "science": 46,
-  "environment": 45,
-  "conflict": 60,
-  "hazards": 29,
-  "rights": 26
+  "society": 67,
+  "conflict": 59,
+  "politics": 92,
+  "education": 68,
+  "environment": 50,
+  "hazards": 28,
+  "rights": 29
  },
  "mapped_articles_by_location_precision": {
-  "country": 565,
-  "place": 355,
-  "region": 16
+  "country": 525,
+  "place": 357,
+  "region": 22
  },
  "location_evidence_counts": {
-  "headline": 802,
-  "description": 134
+  "headline": 762,
+  "description": 142
  },
  "geographic_quadrants": {
-  "NE": 417,
-  "NW": 286,
-  "SE": 118,
-  "SW": 115
+  "NE": 405,
+  "SE": 120,
+  "SW": 126,
+  "NW": 253
  },
- "geo_signal_count": 529,
- "mapped_total": 936,
+ "geo_signal_count": 513,
+ "mapped_total": 904,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1836,
+ "unmapped_sample_count": 1879,
  "unmapped_distinct_titles": 881,
  "unmapped_by_feed": {
-  "Google News MX": 198,
-  "Google News BR": 186,
-  "Google News PH": 177,
+  "Google News BR": 195,
+  "Google News MX": 193,
+  "Google News IN": 180,
+  "Google News ZA": 175,
   "Google News US": 174,
-  "Google News KE": 174,
-  "Google News ZA": 166,
-  "Google News IN": 164,
-  "Google News NG": 114,
-  "Google News GB": 113,
-  "Google News CA": 105,
-  "Google News AU": 100,
+  "Google News PH": 166,
+  "Google News KE": 158,
+  "Google News CA": 128,
+  "Google News GB": 119,
+  "Google News NG": 118,
+  "Google News AU": 117,
   "RNZ National": 17,
-  "ABC Australia": 12,
-  "BBC Science": 11,
-  "BBC Business": 11,
-  "BBC Brasil": 11,
+  "BBC Science": 14,
+  "ABC Australia": 11,
+  "BBC World": 10,
+  "France24 FR": 10,
   "France24 ES": 10,
-  "BBC World": 9
+  "The Conversation España": 10
  },
  "unmapped_examples": [
   {
-   "title": "The Dutch economy is doing surprisingly well",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV0FtMXktTWppOTlwZ2JHblQwd3cxYnhITXNpZktJUkhlZVV3dS14WTdJdEF3OUV2Sk9oQlhvUzFLMnhDc01WdUp4ZkhIOGdCLXNWWGk5Rmx4TUFIbzREVG1kVG1pYlpwYVh0SXF6LWk4RXdSeEZad0NMbzZRTVFiUC1SbHFKVXJtd1NrRUhhNGpmYm1vcUlXNkhfZVZ4d0NUOWZqWGl3cl8?oc=5",
-   "publisher": "ing think",
+   "title": "What’s happening this week in economics?",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPakZIT0JxM3JJV25jVHR1SjVUTkdCQThCNkRXOWN6T1ctQWN1RUp4MEctbWVEYVRsX3Y2UmZfS2Zhcmg0LUFUaVVadUNsYXJLWHEtRFR2Zm5aYmc2US1jcVd1YnRqTjdURksyZGdiVVRRNTFGRVFrX2l2WkxvX1JHWlFXYXVKcjNYQnNiWkJGSkRBVVlqYmRUcjc1QU55dEVUaWVR?oc=5",
+   "publisher": "Deloitte",
    "feed_occurrences": 8,
    "feed_count": 8,
-   "description_excerpt": " The Dutch economy is doing surprisingly well    ing think "
+   "description_excerpt": " What’s happening this week in economics?    Deloitte "
   },
   {
-   "title": "Youth protests across Europe: the overlapping crises facing Gen Z",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUUpYT01Cc3ZleVlsbjg5UEoteVVUUEFXM0VRRTQ3dzg0RkRfdm8ybllhQUZqZ0dLdXh6czBMbEUzb3dvUExwNnBJWVlsdVpVd2JhOUJ0QTduTGlDUDBmelNLSVF2Sm9rcllVWnptMkFsaURHUnhtQTYyWEFaS1RRRWl1NS1IRnlYajg4ZnlmcEptQmh5WUlWUllyb2JlT2E5?oc=5",
-   "publisher": "The Conversation",
+   "title": "US Growth Holds Up in 2026: Sector Data, PMIs, Housing, Autos and Inflation Outlook - News and Statistics",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcno0Q0hDamVRSW1SRTdSMjhtR1V4RFBkVEFtekNnSWZGR3N0VUlhbHFBQ1FYdm10ZHJqemFWTmdLdFpMaUd2dTRtYkpsU1VtY1VoOWxlOXcyLWlraWtoNDdRQjNJcXVVOFRvS2tmbXJ0ZklfSWR5bWUzOThkaS10NXkySDdEZ0tObEF5YXlMSi1mYzI4cHJ4SnBCelg2SDIyN3VncTV4MTBlemtQ?oc=5",
+   "publisher": "IndexBox",
    "feed_occurrences": 7,
    "feed_count": 7,
-   "description_excerpt": " Youth protests across Europe: the overlapping crises facing Gen Z    The Conversation "
+   "description_excerpt": " US Growth Holds Up in 2026: Sector Data, PMIs, Housing, Autos and Inflation Outlook - News and Statistics    IndexBox "
   },
   {
-   "title": "Ruling out Opportunity only harms Luxon’s election chances, right? It’s not that simple",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLUszR010N1FlbDYtbmNkdzdLZ2xnMHdGbTFzWERaazNkd2FuU1Q0aUdZRG1hOTVLcTFSYW1xTzdrVlRDaUhURncyZTVKWHQwUW90Q0RzREVwU0p2RHFHVHNrTzhSNjdyb2JqcnhWWm4zUzFJTEw2U3dhU3pXaWN4ZnNHdC1adWM3NHltcWx5R0hoenJFVm1mWWNmN0s1S3dkYXE3MUJHMnhMMF9RRERidk43a2cyOXJxTHc?oc=5",
-   "publisher": "The Conversation",
-   "feed_occurrences": 6,
-   "feed_count": 6,
-   "description_excerpt": " Ruling out Opportunity only harms Luxon’s election chances, right? It’s not that simple    The Conversation "
-  },
-  {
-   "title": "Discovery Day: High school students explore a world of health-care careers",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Vbmp1WUwyZm1hT1BEMGFKMVJ3M3l6UkxQQVk2TUJSa2o1bUN3UGp5LVRjZVB6cFRnTnA2anR0c3cyZC1IUkxQaUNhMWJQMzhhLWZobHRpYnZmSDUzQkk0TEE1MjhJWFFGVDNUYTQwSHY?oc=5",
-   "publisher": "Hamilton Health Sciences",
-   "feed_occurrences": 10,
-   "feed_count": 5,
-   "description_excerpt": " Discovery Day: High school students explore a world of health-care careers    Hamilton Health Sciences "
-  },
-  {
-   "title": "Putting a price on the mass migration betrayal",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdG1Ld1pFWVE3eU4zZVdXaGZyOUd4a3hHaE1KanE0Y2xISmhnVVY2ZGlUTGlrUzI4Sl95ek42SUprZUZZckRwcnMyR0tGMTBhc0M1b01LdG1mXzhoT2xLRmJkQzhaWndDTHA1OHQ2d1pOSVpDU0p1MXo0eDhJOTNrMHkxeFlTbUtwQkhqeTNWZUxuV1EteTZFekdTazQ1UQ?oc=5",
-   "publisher": "Yahoo",
+   "title": "Workers Struggles: Europe, Middle East & Africa",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1DSHFURUZseDIxVldYREVaaVhSNkx4QXhvX1BPTk9CTFpIZ1pYSVRxaWRFMmcxWXRJYmZUdkRFU0F1WlkzR2xEVVRqUm1pdXl3RGtUYTBhc1BTbFBoOHk2TklYVVhGTTZD?oc=5",
+   "publisher": "World Socialist Web Site",
    "feed_occurrences": 9,
    "feed_count": 5,
-   "description_excerpt": " Putting a price on the mass migration betrayal    Yahoo "
+   "description_excerpt": " Workers Struggles: Europe, Middle East & Africa    World Socialist Web Site "
   },
   {
    "title": "Researchers Identify Audio from Mysterious 39-Foot Whale Rarely Seen Since Its 2003 Discovery",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONW9QRnhIdkdRZS1WY3dxODZJTDdPTjg3VzZ6Y2p6THZuREVKeXhHdHJpWDZ4RE9iY3VVRzZNdzltRXA0aGloQnoxQU1GdHlkRE5wUzRFU3RVMlR4bElOLVZVdFQ0aFNlUDZWeHRNRF9NZG1xaUd6NkpUQl9jSU1pSG42R19QdGd1cGllQ2Q0OFplZy03QnJXUEo2alBPLTdPTFRNR3pOWnFpd2tXSm9oSEdTMUY4X083OHdGWQ?oc=5",
    "publisher": "People.com",
-   "feed_occurrences": 8,
+   "feed_occurrences": 9,
    "feed_count": 5,
    "description_excerpt": " Researchers Identify Audio from Mysterious 39-Foot Whale Rarely Seen Since Its 2003 Discovery    People.com "
   },
@@ -176,20 +160,12 @@
    "description_excerpt": " Serbian Students Challenge Ruling Party in Snap Parliamentary Election    Kurdistan24 "
   },
   {
-   "title": "How Do Israeli Elections Work?",
-   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5uZHVvVnNQdzBkOU5OeVpXVlY5WTdPZUVrOW01Y05hRG1oQ2Y2MzFYb29GbWpVLWxEVVlnVkZjdzdiQQ?oc=5",
-   "publisher": "الحرة",
+   "title": "Parliament Today: Bloc culture motion awaits Monday vote as supply days continue",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbkFuRWtDRnRJNjBDQ0FKcG1icmZtWUFVX21QenI3RDQwT1RkTERpOWZPaUJPVE5LOGZjd2Rvb2ZWMVUxUU9Xc09USkFudVVGQmk5NnJ1bkkzOEJ3MVB4blZXLWZpbTBmNUhuc0h5MjVuaTZTVjlGS0I0YlJEWHRpLXY0RTdGZkc1akFBVUFIY3E1QWk4QVRNREQ2RU4zMTNJM0VUbnNzazNIQXd4UUE?oc=5",
+   "publisher": "The Hub | More Signal. Less Noise.",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " How Do Israeli Elections Work?    الحرة "
-  },
-  {
-   "title": "At the far right, far from normalisation: Where Marine Le Pen’s party stands in the EU",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa2NxaHJzTi1haTRrQzdUT1pReWx3di05dC1DNXRfTkE0UlUyQ3lobTZkdXM2U1FIQVZ3UmNMUlJTV2FBUFFHMmRtbUo1TGVib2Ffc3Jsa1NpWU5GeDZObkdvRDZGUnpkSmVUcnZhMm5Yck0wcHpFUTB4TXJ4cWRPeVdKZWgzMTRYazFpSk0xLWZBd2p5ZWFESmpRVmhXLTY4MXdUZDJyN0hoaVFxNmJRSDc5a2F0UQ?oc=5",
-   "publisher": "EPC, European Policy Centre",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " At the far right, far from normalisation: Where Marine Le Pen’s party stands in the EU    EPC, European Policy Centre "
+   "description_excerpt": " Parliament Today: Bloc culture motion awaits Monday vote as supply days continue    The Hub | More Signal. Less Noise. "
   },
   {
    "title": "The Moroccan Parliament overwhelmingly supports the program of the new Government of El Mansuri.",
@@ -216,12 +192,20 @@
    "description_excerpt": " Landmark Koala Protection Law Passes NSW Parliament    Mirage News "
   },
   {
-   "title": "Independent costings extended to One Nation",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUF9FQ2JjanhXRS1jWkRaVWNTRW9uTnpJRF90WUprOXZvUjVhNHFXNllLUC1keXBNSWRTbjdhNUFZN0lZa3U2UlJvMng5RFpiRHZyVjJwaTZJM2loUHJEanN2Tk1pNmNtZklUaDI4UnVMYjlJRTZPWGg4LTllaWU2cWY4dVpucmsxdUxncUtoaVo?oc=5",
-   "publisher": "NSW Government",
+   "title": "Ruling out Opportunity only harms Luxon’s election chances, right? It’s not that simple",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLUszR010N1FlbDYtbmNkdzdLZ2xnMHdGbTFzWERaazNkd2FuU1Q0aUdZRG1hOTVLcTFSYW1xTzdrVlRDaUhURncyZTVKWHQwUW90Q0RzREVwU0p2RHFHVHNrTzhSNjdyb2JqcnhWWm4zUzFJTEw2U3dhU3pXaWN4ZnNHdC1adWM3NHltcWx5R0hoenJFVm1mWWNmN0s1S3dkYXE3MUJHMnhMMF9RRERidk43a2cyOXJxTHc?oc=5",
+   "publisher": "The Conversation",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Independent costings extended to One Nation    NSW Government "
+   "description_excerpt": " Ruling out Opportunity only harms Luxon’s election chances, right? It’s not that simple    The Conversation "
+  },
+  {
+   "title": "Wild animals can’t vote. Here’s where they’re on the ballot anyway.",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9tMXZ0QmZ4VUFkYnVKVUFuM3dUcnk4bU90eFZyUlg5NTNvZnlaZ0RFUUtOLXBmUjR2d3BqOXFJcEYwMXA4aDZ2bmZJR3ZET1ZQTjNPSVhhZGxLZU1DTG5xVmxzV1M1QkNiNmtZUzlnbHRFUGM2RzBJVVlsbG8?oc=5",
+   "publisher": "Vox",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Wild animals can’t vote. Here’s where they’re on the ballot anyway.    Vox "
   },
   {
    "title": "The science of hope",
@@ -232,6 +216,14 @@
    "description_excerpt": " The science of hope    World Wildlife Fund "
   },
   {
+   "title": "Stubbington Meadows opens up new space for people and nature",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWTRMeTFTcGJ6ZlNXclBuSnhLUVlybDZCWmRydnBGUGctcnZDZDB0WVpnZDM4S2ltQnBNNVRfaEZkbzhETnU0YldPaFVJU3ZNLWNHVkRKWkd1UG5hdzNwR3B4TENZd3pBQ3g2V2haakFNNFRiSnA2ZFI4dkVSTVo2N1RQcWlRcTJlQUhqUTMwc1Y3a2VEdm9ocVN5RV9MX2M?oc=5",
+   "publisher": "Inside Ecology",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Stubbington Meadows opens up new space for people and nature    Inside Ecology "
+  },
+  {
    "title": "EU Parliament puts wildlife on the climate agenda ahead of COP31",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOY01nZENmalhDMllWOHYxQTZWbmRBdHpObF92bUpuRmZfR2pVc1FvZGtPRHZxR25uaXgzUHlZWUoxZGFoTWFwQ3FrNVh5UklIcXJTYURleXlUU0IzUE5tVUtQQW9EY3lwdFhYbjhhM0dQWEswWnF0ZnowZzliWjBIcTVnTFB0dWhYX3NaWHF6N0gzYjNjX29QdmhSNWJOZGJi?oc=5",
    "publisher": "International Fund for Animal Welfare | IFAW",
@@ -240,28 +232,36 @@
    "description_excerpt": " EU Parliament puts wildlife on the climate agenda ahead of COP31    International Fund for Animal Welfare | IFAW "
   },
   {
-   "title": "Nearly all coral reefs at risk of collapse by 2075, conservation body warns",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTUN5TWFFSFFPXzVNem5UWGJBdmpVaHFvVzAtY1pPRzlrZXM2WXhEQVJsNDVSTzZla2NvZVNueEcwLV80Si1zcWxDck9rTE1DdWh6S3dfTWpIaG94UzlSY1lMR2RXY3UtRExqdDdXU3RvNzRHTlBtUVV1LWNYSWZ4RVJoTElmbHJHdThjWlpiR2IwVVJQS3hZQVZxdlU?oc=5",
-   "publisher": "RFI",
+   "title": "How Close Is The Amazon To A Tipping Point?",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM1RhRFd2TDQtQS13N2pZVmJUR1JydjlZYkNPelo4eU40a2dMOXlmalZyTTFoUnZzTjNwV1RpOFVFbzdOY2RXTWNwZkRUMG1sZXg0SmM3eVpsZFBMMDVfTFFoQUpObE9aaTZUWmNZbUlzR1RSbE5BcGdPUWRKbm5YZ09MSzFkZDlZOXhBLTY5M1FIaFNHQmo1WGs5OE45VWxtODhIZUZySdIBrAFBVV95cUxOWGlScjdEbmYyeklIYU54MFNHRkViSjZWT0txcXNTUmQ5YXA4eDNmSFV6bzExS0wzVnhZOFlPT0M1TnpzUXZBNUNfVV9YOHpHbmpYQ1Y2MTI4Y0JVOVREeXBlTGlITWE4MEp1a0lsZWtfMU1yWXNtQWs3UzcweGFFY3BVemc4My1YTDVzZWR3RGpmZFFXYldPZE5YVnUzTGY2QXF5U3VWczlCaTZW?oc=5",
+   "publisher": "Deccan Chronicle",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Nearly all coral reefs at risk of collapse by 2075, conservation body warns    RFI "
+   "description_excerpt": " How Close Is The Amazon To A Tipping Point?    Deccan Chronicle "
   },
   {
-   "title": "International Day of the Snow Leopard on October 23",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRXowUVpmOWV6NmVXcTRQX3BNTHJDalVISzZObEpOUHloWXhhWXp4YlI2aXFlOWtOOEh1bGt0TlhRSEhmQTdMZFdwUHJDOUp3LTJOSzBIeng2NlZuLWl0RlBrMjItVndxQnNpeXFBcWhjVlRfWGM5VkE3RnBaTHdjLXhheXkxWTNiX1otemdEbXdETUNpX19wTUJRWlZSXzRNNmltWkFJamlEd3VfVXdvelgzU3U?oc=5",
-   "publisher": "Manorama Yearbook",
+   "title": "International Day of the Snow Leopard: Climate change reducing this big cat’s habitat",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZUdDZlJYOHBISWxUTlZZOVVmRnY5THZIRnRkNEJtWE9YaFlSM3IyOHRSY1VaaEk1OExlc21yYVI1Qk1xVHZSS2VjVDRuTWxCZ0E1ZmlSaFNyWFFuNkYzNTVKbXNraFk3MWtKUFhaMUNSaVJmX2k5TzhTZktNdnN6ajNPb0RyS29VZ09SLWFCZENJdXk1Y3Z1Mm9rUld4M2p0YTRIQnJUVm5rNXM1dUFMREV4WktLMmx3WXgwR1ZMenA?oc=5",
+   "publisher": "Nepalnews.com",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " International Day of the Snow Leopard on October 23    Manorama Yearbook "
+   "description_excerpt": " International Day of the Snow Leopard: Climate change reducing this big cat’s habitat    Nepalnews.com "
   },
   {
-   "title": "Samoan Island Witnesses Explosion of Native Wildlife Following Removal of Invasive Rats and Pigs",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcnRHTWhldXpHZFdja0tLZ0tYQm1qU2JYVzBRNlIzajNmcTVHWjFiSWFMQkd3WXRrVHZfYUJkWHM0bTRGVHFLOGY1cExxbXZ4ZGFxOHotRW4wUWVpQWtmT3NIRWNGR2NadmxTYk5lZ3VaWVJrc3FrYUNqMGp5RHotdjhXcmNscURKZTRtVXFlcFpPYlZJcG5zbDJKd3NvQzJZVHJJZFRQWUxXSkh1SXhxX3dZaUwwbE9iWlVDUEhEcEFWaGVkYTFlUg?oc=5",
-   "publisher": "Good News Network",
+   "title": "International Snow Leopard Day Celebrated to Raise Awareness for Conservation",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPX05hOHQ5dzluaGI2UGlHdlFrSXg0OWVhdjRJRjdmRlRYWHJleHRNUWFqamJoYU9hNmdFd0Rfc2VoT1RNRWwyS3NjQVNfSXBVWTd5ZmxaNl82bS1nREUwZFFkSVlhTVVZYVdzY245UTItTXJ4aFJCN3lqQ1JldjV2YTdTZkNHMHdNNGlwdDM3YllGRkpTMUpwRTRpSFJxVFl0RmJZeWVQbF9HeWtG?oc=5",
+   "publisher": "Ratopati",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Samoan Island Witnesses Explosion of Native Wildlife Following Removal of Invasive Rats and Pigs    Good News Network "
+   "description_excerpt": " International Snow Leopard Day Celebrated to Raise Awareness for Conservation    Ratopati "
+  },
+  {
+   "title": "Union Minister Bhupender Yadav congratulates on completion of 18 years of tiger reintroduction in Sariska Tiger Reserve | Akashvani News",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPd2lwRjhUaE4xWVg1cWdPeDBWRVFpRWlJYzIzRnpJZDMwMEIycThkc1NSaWU5eVhIX3hxNXFUcEM1N1FlSllnQThBUHB0UGxCejJaUVhiaHZ3UElDVTdYOF9WaENfaFVaaVVmU3FySjFlWkViUEJyNmJwVjhOeTk1NDBpVkl0cllES04zb3NSRVpsSWNtNzdHTEx1c1FtV0c3N1J3bi1Zb1QySXQ2NjMzTzloVWFUakRhUHg0TnpNSW43b3RJeVZfdldlTjBsNmFtSUl0bGREVzNhVUlDa2c?oc=5",
+   "publisher": "News On AIR",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Union Minister Bhupender Yadav congratulates on completion of 18 years of tiger reintroduction in Sariska Tiger Reserve | Akashvani News    News On AIR "
   },
   {
    "title": "Telangana forest officer Banothu Naveen earns national honour for supreme sacrifice",
@@ -272,14 +272,6 @@
    "description_excerpt": " Telangana forest officer Banothu Naveen earns national honour for supreme sacrifice    Hyderabad Mail "
   },
   {
-   "title": "David Attenborough's Ocean Film Comes to Portsmouth for Screening",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVUFuQ1lxdW1ZVHFzMjJYNnJCNEFOamR2R3AxTTNwam91YThST2tXbjlzRm5Hc1JSN1BCVUNxcW5tcEE0dFB5bklKMWJ6MjRZY1lxLUg0QU80YTNURm9SU1hTdkt5WHJaZVU5SmV0WV9tTGV0eVhYMzUtNUROb2FUOQ?oc=5",
-   "publisher": "Mirage News",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " David Attenborough's Ocean Film Comes to Portsmouth for Screening    Mirage News "
-  },
-  {
    "title": "Telangana Forest Officer Wins Anti-Poaching Award",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUTAwNms3dFlKWHFQVVVLSjduc01lQXNLVU1ydXZYUVM0NV9ucDVlMXA0RG02Q1BvWjFwT2RFRWU3d3lvUUJQcmFFNHBidGdqOEJrUWlQRHZESC1sOU1EeFQwbFFQekd2MlphcE96OUhhazJXTGNBMU1Ud2tGV19tOXltbktjRU5UaWYzY29RSE83cXRES2RyOQ?oc=5",
    "publisher": "Urban Acres",
@@ -288,20 +280,36 @@
    "description_excerpt": " Telangana Forest Officer Wins Anti-Poaching Award    Urban Acres "
   },
   {
-   "title": "PM Modi extends birthday greetings to Environment Minister Bhupender Yadav, lauds climate and conservation efforts",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdXhEODZSMG50NDgxMUcweFVHU3JvMEExQzhXblltWHFYeVN1ZUlveVV6UFZFUW1PYkZSV2NIRDRnaHBjYUVEb1UzUnhkeXZyRWZpZThfczhzV3djRmJVU1BwZkxkTTQwZFJtS2ZHRDNqdnNuRDZSY3paMEVZR3EyUkVTcW9aWWhGVmJOWkpickp6eUh0c3o1SkpPMUVVY0NTcVJUZ0I5ZzJTOUxNY3FHbTI4MW9LR3NtMlZJWl9icDcydDZ1QUYzUk9UVG9mYnFBSVhEMmhR?oc=5",
-   "publisher": "DD News",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " PM Modi extends birthday greetings to Environment Minister Bhupender Yadav, lauds climate and conservation efforts    DD News "
-  },
-  {
    "title": "World Snow Leopard Day: Community action and new science foster coexistence with humans - news",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWnAza1ZRN2ZsRERSV1duTFhCbDNrMWo5VWZKcDd6VTFrZEhFazNjUTd3bGN6ZUpQSEdocjBiMVNmbm84cmdFY19EYldWc1pTZkh2c24wTk0xXzVCeEtXLU5yc2NONEl6RnRJNk8wNVlWYUREZHEyTkFrVmtXekxyTU90VEI0ZXFYQVpVcVNjcHJ3Zm9RNDhpcUs3RnZKQ1pDWTd1VHlqVlBJbTdaX1hKU08tMi1lNzdRcGdvRy1EV1F0dTF5eFFueE95TXFsWEJl?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcVJMbl9LQ2d0VWM0ZGhmY1lVbzZvM2h2d251Z1RHSnFkUFFmcC00ajZNT2V5UGd1YzZWVHpjdm5qbGg4WWI1cjFiRTlfYW5aRlJWUFM3a21ONkFXc1pzNFBScnZsYVJTbF9lUXF3TThMQXIzcjZlZFh1WkJCZkU3c1BiN19XRjYxOGRCaVFuSmlDVm1fYTg3UjhxTF90Z0dEa2hkbDVibFAyRklSVjJaNU1tVllRNTNISU1FZFY2YjhUNmlhcWc?oc=5",
    "publisher": "news - Mongabay",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " World Snow Leopard Day: Community action and new science foster coexistence with humans    news - Mongabay "
+  },
+  {
+   "title": "New $8 Million Central Asia Conservation Program to Protect Rare Wildlife",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1iYURGQzdhM1ZHeXZnaHhTaF9HS0tiM1lDOFhEN2xpSzVXTjd4UWZla3pwU1VsN0NzT21nS2hkSEFDRVdWVVBvZEVZb1NXR1ZZTmNLS3B4WW9SdGVNSl8yYi1zSGZYbUxHTkVySVBoVTd4R1ZGVWdHeXFn?oc=5",
+   "publisher": "The Times Of Central Asia",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " New $8 Million Central Asia Conservation Program to Protect Rare Wildlife    The Times Of Central Asia "
+  },
+  {
+   "title": "At Cop17, the pressure is on to rescue a deal that could end the destruction of nature",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRjhxN1NIZ3ZLYTZiQW9wNUdvRGdRVlFtY1hXaXRNdzRwMU1TNXVIb0FUemVzaE9QUWxLVkxURUM0cEVGcmZOeVlGU25pUW9oMDRZUjlhMTVjTmtGSG1jOUJoWU51ZlFRb2NWMGRMTkdKQlV1QlBjV0RtdlRPN2dVN2NhaFVVbjVmN3h2c3lKTm1rRzh6dXhwaHZUbUNJOURKZ0tzRUlHNndOMWYydGs4cFh3Zm91d1d1MUFxVA?oc=5",
+   "publisher": "The Guardian",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " At Cop17, the pressure is on to rescue a deal that could end the destruction of nature    The Guardian "
+  },
+  {
+   "title": "The Trump administration is gutting the ESA. These six species show what’s at stake.",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOV1dlTVJmTXRldmhHb1F0TVhBOGdwcWx2aDF5cGtONlY2MWlNSGVEY3ozbmVlRnZQRjlGLV9odVVJRndCTWZKQ3VJdUZyenBvN3hiSFVnbnZOdWV4T2RsT0E2cmhTRi03YlhyWWktc0ktVGhYT2RhYnlBbUpwWFNxZUVkN3pzYnhMdlRxemYtTmxDLTd1N0ljQmtPT1FpLUxoVUxFb2JVODlwUDdKbVJHVk1DUTEwX2x0N09lM2x5NA?oc=5",
+   "publisher": "Montana Free Press",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " The Trump administration is gutting the ESA. These six species show what’s at stake.    Montana Free Press "
   },
   {
    "title": "Over 100 Groups Oppose Sweeping Attacks on Public Lands in Permitting Bill",
@@ -312,20 +320,12 @@
    "description_excerpt": " Over 100 Groups Oppose Sweeping Attacks on Public Lands in Permitting Bill    Center for Biological Diversity "
   },
   {
-   "title": "Struggling monarch butterflies won't get federal protections until at least 2030",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUkNyUm1uWWV0UVVfX2R5X3ZNazBJeVB0TFh2NHJLaGlOZS02Zlk0bjh5ZER4b0hfS3h0QnBPVXRETk1zSVhlWTQwTlFyS0ExdlpJN2VHZ094ejRXdEV5Uk14MlNCRk5tSmlxY202d0NKVEZacnBlbE8yeTN0UFJOWkMxWTVGa1JfUXljdlA5dUNTTElCcWpyS1lEdjdUblB4MjRaZQ?oc=5",
-   "publisher": "Utah Public Radio",
+   "title": "IUCN Warns Virtually All Coral Reef Ecosystems Face High Risk Of Collapse In 50 Years",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQm5YVFk2TmNDVzZXZDdhOXZKeUxsVUFXWEVFUk1pQzdaR285ODJzVFNrZm85U3drNnI1aTBnREZVQkJ0d1ZJZU5uRTZTb1NxbkZJSlVaam5TZEoyR2lFT0I5RlU3dGktREREdGc0LV9GdFhVV1JFcWx2YWdsT2NnZVlXbWdJYUhsUGVyU1JxekstWUFQS2JpbG5FeEtMc0dDWXhHeW0yS0hMdlRzMl83aEVPMA?oc=5",
+   "publisher": "DeeperBlue.com",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Struggling monarch butterflies won't get federal protections until at least 2030    Utah Public Radio "
-  },
-  {
-   "title": "Calvert County Organizations Will Receive Over $450k In Grants From Constellation",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQzF6cVJhRVExV1k3Qjd0c2ZmamR2YWRQWmloOW5RSGdOU0NSdFllSV9mZ0tyR25jZW5qekJxYzNsN3NoRHowX2pvTWI1NXhVQkFlYkc3Wk5mWWdvcFFkcmZ1emdZeFVHZm8xcGp4Mjc1ZjR3Y2pSbFdWSU14WGVGRmhYbWNheVBVRzhMRGNNUWItdXVVZ0RodW5TamVENG92NEg1dFdB?oc=5",
-   "publisher": "The BayNet",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Calvert County Organizations Will Receive Over $450k In Grants From Constellation    The BayNet "
+   "description_excerpt": " IUCN Warns Virtually All Coral Reef Ecosystems Face High Risk Of Collapse In 50 Years    DeeperBlue.com "
   },
   {
    "title": "Conservation easement and migration route designation safeguard a ‘Path of the Pronghorn’ bottleneck",
@@ -336,20 +336,28 @@
    "description_excerpt": " Conservation easement and migration route designation safeguard a ‘Path of the Pronghorn’ bottleneck    hngnews.com "
   },
   {
-   "title": "IUCN Warns Virtually All Coral Reef Ecosystems Face High Risk Of Collapse In 50 Years",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQm5YVFk2TmNDVzZXZDdhOXZKeUxsVUFXWEVFUk1pQzdaR285ODJzVFNrZm85U3drNnI1aTBnREZVQkJ0d1ZJZU5uRTZTb1NxbkZJSlVaam5TZEoyR2lFT0I5RlU3dGktREREdGc0LV9GdFhVV1JFcWx2YWdsT2NnZVlXbWdJYUhsUGVyU1JxekstWUFQS2JpbG5FeEtMc0dDWXhHeW0yS0hMdlRzMl83aEVPMA?oc=5",
-   "publisher": "DeeperBlue.com",
+   "title": "International Day of the Snow Leopard on October 23",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRXowUVpmOWV6NmVXcTRQX3BNTHJDalVISzZObEpOUHloWXhhWXp4YlI2aXFlOWtOOEh1bGt0TlhRSEhmQTdMZFdwUHJDOUp3LTJOSzBIeng2NlZuLWl0RlBrMjItVndxQnNpeXFBcWhjVlRfWGM5VkE3RnBaTHdjLXhheXkxWTNiX1otemdEbXdETUNpX19wTUJRWlZSXzRNNmltWkFJamlEd3VfVXdvelgzU3U?oc=5",
+   "publisher": "Manorama Yearbook",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " IUCN Warns Virtually All Coral Reef Ecosystems Face High Risk Of Collapse In 50 Years    DeeperBlue.com "
+   "description_excerpt": " International Day of the Snow Leopard on October 23    Manorama Yearbook "
   },
   {
-   "title": "Colorado Wildlife Overpass Cut Vehicle-Animal Collisions by 91%",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSlNBSmNCOFJxQ3Z5V21aMl9qd2pPUkNuMmVOS2FsQWNid3NPWEFCS0tnNk9KdEQ5bklFa2Zab3lnM2x0Q0VEa2dNR2phejUwd3ppMlk0U3VpRHlQcVRBRkxNVHliblFPR0VRRXpSek9fN196bUtWSGYtNHNDelBLeVZSNzVMZnVTZ21OSlpnbnFjZzNIUDVDenJVMUNBRzd3ZUE?oc=5",
-   "publisher": "WhoWhatWhy",
+   "title": "PM Modi extends birthday greetings to Environment Minister Bhupender Yadav, lauds climate and conservation efforts",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdXhEODZSMG50NDgxMUcweFVHU3JvMEExQzhXblltWHFYeVN1ZUlveVV6UFZFUW1PYkZSV2NIRDRnaHBjYUVEb1UzUnhkeXZyRWZpZThfczhzV3djRmJVU1BwZkxkTTQwZFJtS2ZHRDNqdnNuRDZSY3paMEVZR3EyUkVTcW9aWWhGVmJOWkpickp6eUh0c3o1SkpPMUVVY0NTcVJUZ0I5ZzJTOUxNY3FHbTI4MW9LR3NtMlZJWl9icDcydDZ1QUYzUk9UVG9mYnFBSVhEMmhR?oc=5",
+   "publisher": "DD News",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Colorado Wildlife Overpass Cut Vehicle-Animal Collisions by 91%    WhoWhatWhy "
+   "description_excerpt": " PM Modi extends birthday greetings to Environment Minister Bhupender Yadav, lauds climate and conservation efforts    DD News "
+  },
+  {
+   "title": "Satellite-Tagged Amur Falcons Return To Manipur’s Tamenglong After Annual Migration",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRGktU2NBMnBXb2NJY1dta2pWdDlrSTdlbWk1bHNtbHlmeTVaWFJsYWZscllCdWE2MC1RSWNvNXhHV21mQzlXU2toTXdWbkpFcUN6ampiazBlVmIyT1dNYkFXemhqYTdNbVRVbUV1UFhoVmZfcDUwdkRZbmpCek9CRDY1TVVaWEF0U25rYmw1cXlmVFBSTFJkUFktazhnRElrUUttXzZKSF9CbjJrS2hOUndBbGtHOTA1TWc?oc=5",
+   "publisher": "Northeast Today",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Satellite-Tagged Amur Falcons Return To Manipur’s Tamenglong After Annual Migration    Northeast Today "
   },
   {
    "title": "Schools urged to champion wildlife conservation",
@@ -358,6 +366,14 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Schools urged to champion wildlife conservation    Herald.co.zw "
+  },
+  {
+   "title": "Snow leopards and climate action strategy - The Sentinel",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZE5ZYmRsb1RyUWlfMjdxTEs2M0ZTNWJsLTU5YzJhal9VUTVyUDFUb0QtMUczZjNOMVM2di1IY25rN0tWZ1pFcEpCZGZYVFBBWmplM1RsOEZjdW1tOFl5T2R1TUVVMlZuVnNqVjBTZWl0RUt1bF9TbHBJSVlBQUxlZ1RzcDJILXRJMzh1OVNtUG42amFqVGfSAaMBQVVfeXFMT3IxOWMyMWhlNTlOMXdFeE15ZXpBWTc3TEF0RkxjTVVYNjVvSjA3NHpON1o3X1NaSjA4LS14Ull0MWw1SlNtUmxjUm5PVXpRczZUeXdyd0VMb3lCMEhoSkdVZE9ra01lYWZncTFBSFZSRldXcjliVVkxbm9fRTkwdnBPblBvTnZyQzRYczF5V1FISTVkODhpVmNJY0hhUHdzREFvNA?oc=5",
+   "publisher": "The Sentinel - of this Land, for its People",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Snow leopards and climate action strategy    The Sentinel - of this Land, for its People "
   },
   {
    "title": "Slain forest officer Naveen selected for anti-poaching award",
@@ -376,46 +392,30 @@
    "description_excerpt": " A year in the skies, 23 countries crossed: Two remarkable Amur falcons return to Manipur    NewsDrum "
   },
   {
-   "title": "Water availability in wetlands crucial for colonial waterbirds breeding: WII",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbEh2X1RRamFUSXVhQnhzNkhaempYbTJ4N25aZEpIVDNXRVl4RGhNNmx6aWREWFYyZTBxdzVlelNFQXlkTWlPNlp3LVQybFIyeVI3TXJtVWU1T2N4aUtEcVd5ajNfdUtxS3p1M2dZMzh1MzFEbHFhNWFQNUFFUy1mSGkzU3IzaFhhQ0stcXItV3BBaDJSOUZqc0pRaGFfeFB2U0xEWVVJdFdqRWZQb040RGdncUnSAbQBQVVfeXFMT2xIdl9UUWphVEl1YUJ4czZIWnpqWG0yeDduWmRKSFQzV0VZeERoTTZsemlkRFhWMmUwcXc1ZXpTRUF5ZE1pTzZady1UMmxSMnlSN01ybVVlNU9jeGlLRHFXeWozX3VLcUt6dTNnWTM4dTMxRGxxYTVhUDVBRVMtZkhpM1NyM2hYYUNLLXFyLVdwQWgyUjlGanNKUWhhX3hQdlNMRFlVSXRXakVmUG9ONERnZ3FJ?oc=5",
-   "publisher": "Social News XYZ",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Water availability in wetlands crucial for colonial waterbirds breeding: WII    Social News XYZ "
-  },
-  {
    "title": "NSW passes landmark legislation to create Great Koala National Park",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPc0tEdUl4blZvZS1RTlNPOG1sUlBMZ3lTZTBGOV9iV1lINUFzM251SkRSWDB1WlppZFdBemNqWk55aUxzeGhET1hPSG1XaU9nbXpDX0ctemIxQkhJMHM1RF8zTlEyaXZiZWcxWDNnZEZaODBaWFhTTEZKNzdYVk40MTJSMlFNdmVQOVQya1hSZzU2VDJiMDYyQlFSTHRqTW9jYng0?oc=5",
    "publisher": "https://streamlinefeed.co.ke/",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " NSW passes landmark legislation to create Great Koala National Park    https://streamlinefeed.co.ke/ "
-  },
-  {
-   "title": "Science of Hope: Indias species recovery amid global wildlife decline",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMTNiSlRIXy1FOXk5NkNoTGdHb0ljX3ppaDhBMjEwTWVvVElpbVNlSUxWQ2JQRHUxTGx1NGVmcVBRR0xCd05PSG0tOUZpeEIycS1rVDc1Um9kaW95ZXZ6MmRidjFpMUVySDdUc2ljWEJzeFlMWWttZ2gyYTB6ZWItZGM5YVVKdUJYbkNMNzFnMTVzVWdjNXJoMkRzaVBPeXZEZl9PUTFOemxFTWcyZ0cteFAxUTltY1Q0QUHSAboBQVVfeXFMTjEzYkpUSF8tRTl5OTZDaExnR29JY196aWg4QTIxME1lb1RJaW1TZUlMVkNiUER1MUxsdTRlZnFQUUdMQndOT0htLTlGaXhCMnEta1Q3NVJvZGlveWV2ejJkYnYxaTFFckg3VHNpY1hCc3hZTFlrbWdoMmEwemViLWRjOWFVSnVCWG5DTDcxZzE1c1VnYzVyaDJEc2lQT3l2RGZfT1ExTnpsRU1nMmdHLXhQMVE5bWNUNEFB?oc=5",
-   "publisher": "NE NOW",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Science of Hope: Indias species recovery amid global wildlife decline    NE NOW "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
   "successful": 49,
-  "mapped_pre_dedupe": 368
+  "mapped_pre_dedupe": 350
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 103,
+   "mapped_pre_dedupe": 99,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 29
+     "mapped_pre_dedupe": 30
     },
     {
      "source": "direct/AllAfrica East Africa",
@@ -425,7 +425,7 @@
     {
      "source": "direct/AllAfrica Central Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 14
+     "mapped_pre_dedupe": 10
     },
     {
      "source": "direct/AllAfrica Southern Africa",
@@ -440,14 +440,14 @@
     {
      "source": "direct/The Conversation Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 1
     }
    ]
   },
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 9,
+   "mapped_pre_dedupe": 5,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
@@ -462,19 +462,19 @@
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 8
+     "mapped_pre_dedupe": 4
     }
    ]
   },
   "europe": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 5,
+   "mapped_pre_dedupe": 6,
    "feeds": [
     {
      "source": "direct/The Conversation France",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/The Conversation España",
@@ -486,7 +486,7 @@
   "global": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 13,
+   "mapped_pre_dedupe": 12,
    "feeds": [
     {
      "source": "direct/Global Voices English",
@@ -511,7 +511,7 @@
     {
      "source": "direct/Mongabay Global",
      "status": "ok",
-     "mapped_pre_dedupe": 10
+     "mapped_pre_dedupe": 9
     },
     {
      "source": "direct/Inter Press Service Headlines",
@@ -523,7 +523,7 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 110,
+   "mapped_pre_dedupe": 111,
    "feeds": [
     {
      "source": "direct/BBC World",
@@ -533,17 +533,17 @@
     {
      "source": "direct/BBC Science",
      "status": "ok",
-     "mapped_pre_dedupe": 8
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/BBC Business",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 17
+     "mapped_pre_dedupe": 22
     },
     {
      "source": "direct/The Guardian World",
@@ -553,12 +553,12 @@
     {
      "source": "direct/The Guardian Environment",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/DW World",
      "status": "ok",
-     "mapped_pre_dedupe": 6
+     "mapped_pre_dedupe": 7
     },
     {
      "source": "direct/France24",
@@ -568,7 +568,7 @@
     {
      "source": "direct/NPR World",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/NPR Science",
@@ -578,7 +578,7 @@
     {
      "source": "direct/The Conversation",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 1
     }
    ]
   },
@@ -597,24 +597,24 @@
   "oceania": {
    "configured": 1,
    "successful": 1,
-   "mapped_pre_dedupe": 1,
+   "mapped_pre_dedupe": 0,
    "feeds": [
     {
      "source": "direct/The Conversation NZ",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     }
    ]
   },
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 111,
+   "mapped_pre_dedupe": 106,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 13
+     "mapped_pre_dedupe": 14
     },
     {
      "source": "direct/RNZ World",
@@ -639,7 +639,7 @@
     {
      "source": "direct/France24 FR",
      "status": "ok",
-     "mapped_pre_dedupe": 19
+     "mapped_pre_dedupe": 14
     },
     {
      "source": "direct/France24 ES",
@@ -654,32 +654,32 @@
     {
      "source": "direct/BBC Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 7
     },
     {
      "source": "direct/BBC Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 5
     },
     {
      "source": "direct/BBC Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Latin America",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/BBC Middle East",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Europe",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 8
     },
     {
      "source": "direct/RNZ Pacific",
@@ -701,24 +701,24 @@
   "south-america": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 10,
+   "mapped_pre_dedupe": 9,
    "feeds": [
     {
      "source": "direct/The Conversation Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/Mongabay Latam",
      "status": "ok",
-     "mapped_pre_dedupe": 8
+     "mapped_pre_dedupe": 6
     }
    ]
   },
   "specialist": {
    "configured": 3,
    "successful": 2,
-   "mapped_pre_dedupe": 5,
+   "mapped_pre_dedupe": 1,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
@@ -728,7 +728,7 @@
     {
      "source": "direct/UN News",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/NASA News",
@@ -739,53 +739,37 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 880,
+  "distinct_unmapped_titles": 879,
   "high_repeat_unmapped_examples": [
    {
-    "title": "The Dutch economy is doing surprisingly well",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV0FtMXktTWppOTlwZ2JHblQwd3cxYnhITXNpZktJUkhlZVV3dS14WTdJdEF3OUV2Sk9oQlhvUzFLMnhDc01WdUp4ZkhIOGdCLXNWWGk5Rmx4TUFIbzREVG1kVG1pYlpwYVh0SXF6LWk4RXdSeEZad0NMbzZRTVFiUC1SbHFKVXJtd1NrRUhhNGpmYm1vcUlXNkhfZVZ4d0NUOWZqWGl3cl8?oc=5",
-    "publisher": "ing think",
+    "title": "What’s happening this week in economics?",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPakZIT0JxM3JJV25jVHR1SjVUTkdCQThCNkRXOWN6T1ctQWN1RUp4MEctbWVEYVRsX3Y2UmZfS2Zhcmg0LUFUaVVadUNsYXJLWHEtRFR2Zm5aYmc2US1jcVd1YnRqTjdURksyZGdiVVRRNTFGRVFrX2l2WkxvX1JHWlFXYXVKcjNYQnNiWkJGSkRBVVlqYmRUcjc1QU55dEVUaWVR?oc=5",
+    "publisher": "Deloitte",
     "feed_occurrences": 8,
     "feed_count": 8,
-    "description_excerpt": " The Dutch economy is doing surprisingly well    ing think "
+    "description_excerpt": " What’s happening this week in economics?    Deloitte "
    },
    {
-    "title": "Youth protests across Europe: the overlapping crises facing Gen Z",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUUpYT01Cc3ZleVlsbjg5UEoteVVUUEFXM0VRRTQ3dzg0RkRfdm8ybllhQUZqZ0dLdXh6czBMbEUzb3dvUExwNnBJWVlsdVpVd2JhOUJ0QTduTGlDUDBmelNLSVF2Sm9rcllVWnptMkFsaURHUnhtQTYyWEFaS1RRRWl1NS1IRnlYajg4ZnlmcEptQmh5WUlWUllyb2JlT2E5?oc=5",
-    "publisher": "The Conversation",
+    "title": "US Growth Holds Up in 2026: Sector Data, PMIs, Housing, Autos and Inflation Outlook - News and Statistics",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcno0Q0hDamVRSW1SRTdSMjhtR1V4RFBkVEFtekNnSWZGR3N0VUlhbHFBQ1FYdm10ZHJqemFWTmdLdFpMaUd2dTRtYkpsU1VtY1VoOWxlOXcyLWlraWtoNDdRQjNJcXVVOFRvS2tmbXJ0ZklfSWR5bWUzOThkaS10NXkySDdEZ0tObEF5YXlMSi1mYzI4cHJ4SnBCelg2SDIyN3VncTV4MTBlemtQ?oc=5",
+    "publisher": "IndexBox",
     "feed_occurrences": 7,
     "feed_count": 7,
-    "description_excerpt": " Youth protests across Europe: the overlapping crises facing Gen Z    The Conversation "
+    "description_excerpt": " US Growth Holds Up in 2026: Sector Data, PMIs, Housing, Autos and Inflation Outlook - News and Statistics    IndexBox "
    },
    {
-    "title": "Ruling out Opportunity only harms Luxon’s election chances, right? It’s not that simple",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLUszR010N1FlbDYtbmNkdzdLZ2xnMHdGbTFzWERaazNkd2FuU1Q0aUdZRG1hOTVLcTFSYW1xTzdrVlRDaUhURncyZTVKWHQwUW90Q0RzREVwU0p2RHFHVHNrTzhSNjdyb2JqcnhWWm4zUzFJTEw2U3dhU3pXaWN4ZnNHdC1adWM3NHltcWx5R0hoenJFVm1mWWNmN0s1S3dkYXE3MUJHMnhMMF9RRERidk43a2cyOXJxTHc?oc=5",
-    "publisher": "The Conversation",
-    "feed_occurrences": 6,
-    "feed_count": 6,
-    "description_excerpt": " Ruling out Opportunity only harms Luxon’s election chances, right? It’s not that simple    The Conversation "
-   },
-   {
-    "title": "Discovery Day: High school students explore a world of health-care careers",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Vbmp1WUwyZm1hT1BEMGFKMVJ3M3l6UkxQQVk2TUJSa2o1bUN3UGp5LVRjZVB6cFRnTnA2anR0c3cyZC1IUkxQaUNhMWJQMzhhLWZobHRpYnZmSDUzQkk0TEE1MjhJWFFGVDNUYTQwSHY?oc=5",
-    "publisher": "Hamilton Health Sciences",
-    "feed_occurrences": 10,
-    "feed_count": 5,
-    "description_excerpt": " Discovery Day: High school students explore a world of health-care careers    Hamilton Health Sciences "
-   },
-   {
-    "title": "Putting a price on the mass migration betrayal",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdG1Ld1pFWVE3eU4zZVdXaGZyOUd4a3hHaE1KanE0Y2xISmhnVVY2ZGlUTGlrUzI4Sl95ek42SUprZUZZckRwcnMyR0tGMTBhc0M1b01LdG1mXzhoT2xLRmJkQzhaWndDTHA1OHQ2d1pOSVpDU0p1MXo0eDhJOTNrMHkxeFlTbUtwQkhqeTNWZUxuV1EteTZFekdTazQ1UQ?oc=5",
-    "publisher": "Yahoo",
+    "title": "Workers Struggles: Europe, Middle East & Africa",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1DSHFURUZseDIxVldYREVaaVhSNkx4QXhvX1BPTk9CTFpIZ1pYSVRxaWRFMmcxWXRJYmZUdkRFU0F1WlkzR2xEVVRqUm1pdXl3RGtUYTBhc1BTbFBoOHk2TklYVVhGTTZD?oc=5",
+    "publisher": "World Socialist Web Site",
     "feed_occurrences": 9,
     "feed_count": 5,
-    "description_excerpt": " Putting a price on the mass migration betrayal    Yahoo "
+    "description_excerpt": " Workers Struggles: Europe, Middle East & Africa    World Socialist Web Site "
    },
    {
     "title": "Researchers Identify Audio from Mysterious 39-Foot Whale Rarely Seen Since Its 2003 Discovery",
     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONW9QRnhIdkdRZS1WY3dxODZJTDdPTjg3VzZ6Y2p6THZuREVKeXhHdHJpWDZ4RE9iY3VVRzZNdzltRXA0aGloQnoxQU1GdHlkRE5wUzRFU3RVMlR4bElOLVZVdFQ0aFNlUDZWeHRNRF9NZG1xaUd6NkpUQl9jSU1pSG42R19QdGd1cGllQ2Q0OFplZy03QnJXUEo2alBPLTdPTFRNR3pOWnFpd2tXSm9oSEdTMUY4X083OHdGWQ?oc=5",
     "publisher": "People.com",
-    "feed_occurrences": 8,
+    "feed_occurrences": 9,
     "feed_count": 5,
     "description_excerpt": " Researchers Identify Audio from Mysterious 39-Foot Whale Rarely Seen Since Its 2003 Discovery    People.com "
    },
@@ -798,20 +782,12 @@
     "description_excerpt": " Serbian Students Challenge Ruling Party in Snap Parliamentary Election    Kurdistan24 "
    },
    {
-    "title": "How Do Israeli Elections Work?",
-    "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5uZHVvVnNQdzBkOU5OeVpXVlY5WTdPZUVrOW01Y05hRG1oQ2Y2MzFYb29GbWpVLWxEVVlnVkZjdzdiQQ?oc=5",
-    "publisher": "الحرة",
+    "title": "Parliament Today: Bloc culture motion awaits Monday vote as supply days continue",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbkFuRWtDRnRJNjBDQ0FKcG1icmZtWUFVX21QenI3RDQwT1RkTERpOWZPaUJPVE5LOGZjd2Rvb2ZWMVUxUU9Xc09USkFudVVGQmk5NnJ1bkkzOEJ3MVB4blZXLWZpbTBmNUhuc0h5MjVuaTZTVjlGS0I0YlJEWHRpLXY0RTdGZkc1akFBVUFIY3E1QWk4QVRNREQ2RU4zMTNJM0VUbnNzazNIQXd4UUE?oc=5",
+    "publisher": "The Hub | More Signal. Less Noise.",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " How Do Israeli Elections Work?    الحرة "
-   },
-   {
-    "title": "At the far right, far from normalisation: Where Marine Le Pen’s party stands in the EU",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa2NxaHJzTi1haTRrQzdUT1pReWx3di05dC1DNXRfTkE0UlUyQ3lobTZkdXM2U1FIQVZ3UmNMUlJTV2FBUFFHMmRtbUo1TGVib2Ffc3Jsa1NpWU5GeDZObkdvRDZGUnpkSmVUcnZhMm5Yck0wcHpFUTB4TXJ4cWRPeVdKZWgzMTRYazFpSk0xLWZBd2p5ZWFESmpRVmhXLTY4MXdUZDJyN0hoaVFxNmJRSDc5a2F0UQ?oc=5",
-    "publisher": "EPC, European Policy Centre",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " At the far right, far from normalisation: Where Marine Le Pen’s party stands in the EU    EPC, European Policy Centre "
+    "description_excerpt": " Parliament Today: Bloc culture motion awaits Monday vote as supply days continue    The Hub | More Signal. Less Noise. "
    },
    {
     "title": "The Moroccan Parliament overwhelmingly supports the program of the new Government of El Mansuri.",
@@ -838,12 +814,20 @@
     "description_excerpt": " Landmark Koala Protection Law Passes NSW Parliament    Mirage News "
    },
    {
-    "title": "Independent costings extended to One Nation",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUF9FQ2JjanhXRS1jWkRaVWNTRW9uTnpJRF90WUprOXZvUjVhNHFXNllLUC1keXBNSWRTbjdhNUFZN0lZa3U2UlJvMng5RFpiRHZyVjJwaTZJM2loUHJEanN2Tk1pNmNtZklUaDI4UnVMYjlJRTZPWGg4LTllaWU2cWY4dVpucmsxdUxncUtoaVo?oc=5",
-    "publisher": "NSW Government",
+    "title": "Ruling out Opportunity only harms Luxon’s election chances, right? It’s not that simple",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLUszR010N1FlbDYtbmNkdzdLZ2xnMHdGbTFzWERaazNkd2FuU1Q0aUdZRG1hOTVLcTFSYW1xTzdrVlRDaUhURncyZTVKWHQwUW90Q0RzREVwU0p2RHFHVHNrTzhSNjdyb2JqcnhWWm4zUzFJTEw2U3dhU3pXaWN4ZnNHdC1adWM3NHltcWx5R0hoenJFVm1mWWNmN0s1S3dkYXE3MUJHMnhMMF9RRERidk43a2cyOXJxTHc?oc=5",
+    "publisher": "The Conversation",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Independent costings extended to One Nation    NSW Government "
+    "description_excerpt": " Ruling out Opportunity only harms Luxon’s election chances, right? It’s not that simple    The Conversation "
+   },
+   {
+    "title": "Wild animals can’t vote. Here’s where they’re on the ballot anyway.",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9tMXZ0QmZ4VUFkYnVKVUFuM3dUcnk4bU90eFZyUlg5NTNvZnlaZ0RFUUtOLXBmUjR2d3BqOXFJcEYwMXA4aDZ2bmZJR3ZET1ZQTjNPSVhhZGxLZU1DTG5xVmxzV1M1QkNiNmtZUzlnbHRFUGM2RzBJVVlsbG8?oc=5",
+    "publisher": "Vox",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Wild animals can’t vote. Here’s where they’re on the ballot anyway.    Vox "
    },
    {
     "title": "The science of hope",
@@ -854,6 +838,14 @@
     "description_excerpt": " The science of hope    World Wildlife Fund "
    },
    {
+    "title": "Stubbington Meadows opens up new space for people and nature",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWTRMeTFTcGJ6ZlNXclBuSnhLUVlybDZCWmRydnBGUGctcnZDZDB0WVpnZDM4S2ltQnBNNVRfaEZkbzhETnU0YldPaFVJU3ZNLWNHVkRKWkd1UG5hdzNwR3B4TENZd3pBQ3g2V2haakFNNFRiSnA2ZFI4dkVSTVo2N1RQcWlRcTJlQUhqUTMwc1Y3a2VEdm9ocVN5RV9MX2M?oc=5",
+    "publisher": "Inside Ecology",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Stubbington Meadows opens up new space for people and nature    Inside Ecology "
+   },
+   {
     "title": "EU Parliament puts wildlife on the climate agenda ahead of COP31",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOY01nZENmalhDMllWOHYxQTZWbmRBdHpObF92bUpuRmZfR2pVc1FvZGtPRHZxR25uaXgzUHlZWUoxZGFoTWFwQ3FrNVh5UklIcXJTYURleXlUU0IzUE5tVUtQQW9EY3lwdFhYbjhhM0dQWEswWnF0ZnowZzliWjBIcTVnTFB0dWhYX3NaWHF6N0gzYjNjX29QdmhSNWJOZGJi?oc=5",
     "publisher": "International Fund for Animal Welfare | IFAW",
@@ -862,28 +854,36 @@
     "description_excerpt": " EU Parliament puts wildlife on the climate agenda ahead of COP31    International Fund for Animal Welfare | IFAW "
    },
    {
-    "title": "Nearly all coral reefs at risk of collapse by 2075, conservation body warns",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTUN5TWFFSFFPXzVNem5UWGJBdmpVaHFvVzAtY1pPRzlrZXM2WXhEQVJsNDVSTzZla2NvZVNueEcwLV80Si1zcWxDck9rTE1DdWh6S3dfTWpIaG94UzlSY1lMR2RXY3UtRExqdDdXU3RvNzRHTlBtUVV1LWNYSWZ4RVJoTElmbHJHdThjWlpiR2IwVVJQS3hZQVZxdlU?oc=5",
-    "publisher": "RFI",
+    "title": "How Close Is The Amazon To A Tipping Point?",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM1RhRFd2TDQtQS13N2pZVmJUR1JydjlZYkNPelo4eU40a2dMOXlmalZyTTFoUnZzTjNwV1RpOFVFbzdOY2RXTWNwZkRUMG1sZXg0SmM3eVpsZFBMMDVfTFFoQUpObE9aaTZUWmNZbUlzR1RSbE5BcGdPUWRKbm5YZ09MSzFkZDlZOXhBLTY5M1FIaFNHQmo1WGs5OE45VWxtODhIZUZySdIBrAFBVV95cUxOWGlScjdEbmYyeklIYU54MFNHRkViSjZWT0txcXNTUmQ5YXA4eDNmSFV6bzExS0wzVnhZOFlPT0M1TnpzUXZBNUNfVV9YOHpHbmpYQ1Y2MTI4Y0JVOVREeXBlTGlITWE4MEp1a0lsZWtfMU1yWXNtQWs3UzcweGFFY3BVemc4My1YTDVzZWR3RGpmZFFXYldPZE5YVnUzTGY2QXF5U3VWczlCaTZW?oc=5",
+    "publisher": "Deccan Chronicle",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Nearly all coral reefs at risk of collapse by 2075, conservation body warns    RFI "
+    "description_excerpt": " How Close Is The Amazon To A Tipping Point?    Deccan Chronicle "
    },
    {
-    "title": "International Day of the Snow Leopard on October 23",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRXowUVpmOWV6NmVXcTRQX3BNTHJDalVISzZObEpOUHloWXhhWXp4YlI2aXFlOWtOOEh1bGt0TlhRSEhmQTdMZFdwUHJDOUp3LTJOSzBIeng2NlZuLWl0RlBrMjItVndxQnNpeXFBcWhjVlRfWGM5VkE3RnBaTHdjLXhheXkxWTNiX1otemdEbXdETUNpX19wTUJRWlZSXzRNNmltWkFJamlEd3VfVXdvelgzU3U?oc=5",
-    "publisher": "Manorama Yearbook",
+    "title": "International Day of the Snow Leopard: Climate change reducing this big cat’s habitat",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZUdDZlJYOHBISWxUTlZZOVVmRnY5THZIRnRkNEJtWE9YaFlSM3IyOHRSY1VaaEk1OExlc21yYVI1Qk1xVHZSS2VjVDRuTWxCZ0E1ZmlSaFNyWFFuNkYzNTVKbXNraFk3MWtKUFhaMUNSaVJmX2k5TzhTZktNdnN6ajNPb0RyS29VZ09SLWFCZENJdXk1Y3Z1Mm9rUld4M2p0YTRIQnJUVm5rNXM1dUFMREV4WktLMmx3WXgwR1ZMenA?oc=5",
+    "publisher": "Nepalnews.com",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " International Day of the Snow Leopard on October 23    Manorama Yearbook "
+    "description_excerpt": " International Day of the Snow Leopard: Climate change reducing this big cat’s habitat    Nepalnews.com "
    },
    {
-    "title": "Samoan Island Witnesses Explosion of Native Wildlife Following Removal of Invasive Rats and Pigs",
-    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcnRHTWhldXpHZFdja0tLZ0tYQm1qU2JYVzBRNlIzajNmcTVHWjFiSWFMQkd3WXRrVHZfYUJkWHM0bTRGVHFLOGY1cExxbXZ4ZGFxOHotRW4wUWVpQWtmT3NIRWNGR2NadmxTYk5lZ3VaWVJrc3FrYUNqMGp5RHotdjhXcmNscURKZTRtVXFlcFpPYlZJcG5zbDJKd3NvQzJZVHJJZFRQWUxXSkh1SXhxX3dZaUwwbE9iWlVDUEhEcEFWaGVkYTFlUg?oc=5",
-    "publisher": "Good News Network",
+    "title": "International Snow Leopard Day Celebrated to Raise Awareness for Conservation",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPX05hOHQ5dzluaGI2UGlHdlFrSXg0OWVhdjRJRjdmRlRYWHJleHRNUWFqamJoYU9hNmdFd0Rfc2VoT1RNRWwyS3NjQVNfSXBVWTd5ZmxaNl82bS1nREUwZFFkSVlhTVVZYVdzY245UTItTXJ4aFJCN3lqQ1JldjV2YTdTZkNHMHdNNGlwdDM3YllGRkpTMUpwRTRpSFJxVFl0RmJZeWVQbF9HeWtG?oc=5",
+    "publisher": "Ratopati",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Samoan Island Witnesses Explosion of Native Wildlife Following Removal of Invasive Rats and Pigs    Good News Network "
+    "description_excerpt": " International Snow Leopard Day Celebrated to Raise Awareness for Conservation    Ratopati "
+   },
+   {
+    "title": "Union Minister Bhupender Yadav congratulates on completion of 18 years of tiger reintroduction in Sariska Tiger Reserve | Akashvani News",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPd2lwRjhUaE4xWVg1cWdPeDBWRVFpRWlJYzIzRnpJZDMwMEIycThkc1NSaWU5eVhIX3hxNXFUcEM1N1FlSllnQThBUHB0UGxCejJaUVhiaHZ3UElDVTdYOF9WaENfaFVaaVVmU3FySjFlWkViUEJyNmJwVjhOeTk1NDBpVkl0cllES04zb3NSRVpsSWNtNzdHTEx1c1FtV0c3N1J3bi1Zb1QySXQ2NjMzTzloVWFUakRhUHg0TnpNSW43b3RJeVZfdldlTjBsNmFtSUl0bGREVzNhVUlDa2c?oc=5",
+    "publisher": "News On AIR",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Union Minister Bhupender Yadav congratulates on completion of 18 years of tiger reintroduction in Sariska Tiger Reserve | Akashvani News    News On AIR "
    },
    {
     "title": "Telangana forest officer Banothu Naveen earns national honour for supreme sacrifice",
@@ -894,155 +894,155 @@
     "description_excerpt": " Telangana forest officer Banothu Naveen earns national honour for supreme sacrifice    Hyderabad Mail "
    },
    {
-    "title": "David Attenborough's Ocean Film Comes to Portsmouth for Screening",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVUFuQ1lxdW1ZVHFzMjJYNnJCNEFOamR2R3AxTTNwam91YThST2tXbjlzRm5Hc1JSN1BCVUNxcW5tcEE0dFB5bklKMWJ6MjRZY1lxLUg0QU80YTNURm9SU1hTdkt5WHJaZVU5SmV0WV9tTGV0eVhYMzUtNUROb2FUOQ?oc=5",
-    "publisher": "Mirage News",
+    "title": "Telangana Forest Officer Wins Anti-Poaching Award",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUTAwNms3dFlKWHFQVVVLSjduc01lQXNLVU1ydXZYUVM0NV9ucDVlMXA0RG02Q1BvWjFwT2RFRWU3d3lvUUJQcmFFNHBidGdqOEJrUWlQRHZESC1sOU1EeFQwbFFQekd2MlphcE96OUhhazJXTGNBMU1Ud2tGV19tOXltbktjRU5UaWYzY29RSE83cXRES2RyOQ?oc=5",
+    "publisher": "Urban Acres",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " David Attenborough's Ocean Film Comes to Portsmouth for Screening    Mirage News "
+    "description_excerpt": " Telangana Forest Officer Wins Anti-Poaching Award    Urban Acres "
    }
   ],
   "country_label_concentration": {
-   "largest_label": "Vietnam",
-   "largest_label_articles": 56,
-   "share_of_country_labelled_articles": 0.099
+   "largest_label": "Nigeria",
+   "largest_label_articles": 46,
+   "share_of_country_labelled_articles": 0.088
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 324,
-  "unique_google_urls_not_in_direct_sample": 639,
+  "unique_direct_urls_not_in_google_sample": 318,
+  "unique_google_urls_not_in_direct_sample": 614,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "AllAfrica East Africa": 29,
-   "AllAfrica West Africa": 29,
+   "AllAfrica West Africa": 30,
    "AllAfrica Southern Africa": 29,
+   "AllAfrica East Africa": 29,
    "RNZ National": 26,
+   "Al Jazeera": 22,
    "The Guardian World": 22,
-   "France24 FR": 19,
-   "France24": 19,
    "BBC World": 18,
-   "Al Jazeera": 17,
+   "France24": 18,
+   "ABC Australia": 14,
+   "France24 FR": 14,
    "France24 ES": 14,
-   "AllAfrica Central Africa": 14,
-   "ABC Australia": 13,
-   "Mongabay Global": 10,
-   "The Diplomat": 8,
-   "Mongabay Latam": 8,
+   "AllAfrica Central Africa": 10,
+   "Mongabay Global": 9,
    "BBC Europe": 8,
-   "BBC Science": 7,
-   "The Guardian Environment": 7,
-   "DW World": 6,
-   "BBC Brasil": 5,
-   "The Conversation": 5,
-   "NPR World": 5,
-   "The Conversation España": 4,
-   "BBC Africa": 4,
+   "DW World": 7,
+   "BBC Brasil": 7,
+   "Mongabay Latam": 6,
+   "NPR World": 6,
+   "The Guardian Environment": 6,
+   "BBC Africa": 5,
+   "BBC Science": 5,
+   "The Diplomat": 4,
    "Guardian Asia": 4,
    "RNZ Pacific": 4,
-   "UN News": 4,
+   "The Conversation España": 4,
+   "The Conversation Brasil": 3,
+   "BBC Business": 3,
    "RNZ World": 3,
-   "BBC Middle East": 3,
-   "BBC Asia": 3
+   "BBC Middle East": 2,
+   "BBC Asia": 2
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 565,
-  "country_labels_count": 100,
+  "country_labelled_articles": 525,
+  "country_labels_count": 99,
   "top_country_subjects": {
-   "Vietnam": 56,
-   "Nigeria": 45,
-   "India": 26,
-   "France": 25,
-   "Israel": 19,
-   "Brazil": 18,
-   "Mexico": 17,
-   "South Africa": 13,
-   "China": 13,
-   "Australia": 12,
-   "United States": 11,
-   "Ukraine": 11,
-   "Canada": 11,
-   "Colombia": 11,
-   "Rwanda": 10,
-   "Uganda": 10,
-   "Kenya": 10,
-   "Iran": 10,
+   "Nigeria": 46,
+   "Vietnam": 39,
+   "France": 29,
+   "India": 27,
+   "Brazil": 21,
+   "South Africa": 14,
+   "Israel": 14,
+   "Kenya": 13,
+   "Mexico": 13,
+   "Ukraine": 12,
+   "Rwanda": 11,
+   "Australia": 11,
+   "Venezuela": 11,
+   "Uganda": 11,
+   "Canada": 10,
+   "Argentina": 10,
+   "Colombia": 9,
    "Russia": 8,
-   "Venezuela": 8,
-   "Argentina": 8,
-   "Peru": 8,
-   "Morocco": 7,
-   "Zimbabwe": 7,
-   "Cuba": 7,
-   "Haiti": 6,
-   "El Salvador": 6,
-   "Malawi": 6,
-   "Serbia": 6,
-   "Singapore": 6
+   "Serbia": 8,
+   "Spain": 8,
+   "China": 8,
+   "Singapore": 7,
+   "Iran": 7,
+   "Chile": 7,
+   "Zimbabwe": 6,
+   "Liberia": 6,
+   "Morocco": 6,
+   "Panama": 6,
+   "Somalia": 6,
+   "New Zealand": 5
   },
-  "distinct_geographic_signal_centers": 324,
+  "distinct_geographic_signal_centers": 327,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 153
+   "mapped_pre_dedupe": 138
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 94
+   "mapped_pre_dedupe": 92
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 139
+   "mapped_pre_dedupe": 144
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 85
+   "mapped_pre_dedupe": 93
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 142
+   "mapped_pre_dedupe": 143
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 95
+   "mapped_pre_dedupe": 94
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 164
+   "mapped_pre_dedupe": 142
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 86
+   "mapped_pre_dedupe": 92
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 92
+   "mapped_pre_dedupe": 89
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 230
+   "mapped_pre_dedupe": 210
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 161
+   "mapped_pre_dedupe": 137
   }
  },
- "duplicates_removed": 873,
+ "duplicates_removed": 820,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1060,42 +1060,41 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-10-23T10:07:57+00:00",
-    "mapped_articles": 936,
-    "geographic_signals": 529,
+    "at": "2026-10-23T15:07:56+00:00",
+    "mapped_articles": 904,
+    "geographic_signals": 513,
     "feeds_ok": 170,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 43,
+    "rejected_matching_occurrences": 56,
     "ambiguous_mapped_signal_count": 1
    }
   ],
   "latest": {
-   "at": "2026-10-23T10:07:57+00:00",
-   "mapped_articles": 936,
-   "geographic_signals": 529,
+   "at": "2026-10-23T15:07:56+00:00",
+   "mapped_articles": 904,
+   "geographic_signals": 513,
    "feeds_ok": 170,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 43,
+   "rejected_matching_occurrences": 56,
    "ambiguous_mapped_signal_count": 1
   },
   "recent_change": {
-   "baseline_at": "2026-10-23T10:07:57+00:00",
+   "baseline_at": "2026-10-23T15:07:56+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
    "Forest": 20,
-   "David": 5,
-   "Union": 5,
-   "Hassan": 4,
+   "Union": 11,
+   "Hassan": 3,
    "Rubio": 1
   },
   "ambiguous_mapped_review": [
    {
     "name": "Ontario",
     "category": "economy",
-    "sampled_article_count": 2,
+    "sampled_article_count": 1,
     "review_reason": "ambiguous_place_name_needs_manual_review"
    }
   ],
