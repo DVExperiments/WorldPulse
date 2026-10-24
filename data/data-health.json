@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-24T17:38:08.541738+00:00",
+ "updated_at": "2026-10-24T19:50:09.101903+00:00",
  "feeds_total": 173,
  "feeds_ok": 170,
  "feeds_failed": [
@@ -12,27 +12,27 @@
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 152
+   "mapped_pre_dedupe": 154
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 82
+   "mapped_pre_dedupe": 87
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 133
+   "mapped_pre_dedupe": 145
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 100
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 138
+   "mapped_pre_dedupe": 145
   },
   "NG": {
    "total": 11,
@@ -42,91 +42,83 @@
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 153
+   "mapped_pre_dedupe": 154
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 103
+   "mapped_pre_dedupe": 99
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 69
+   "mapped_pre_dedupe": 68
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 192
+   "mapped_pre_dedupe": 229
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 119
+   "mapped_pre_dedupe": 148
   }
  },
  "mapped_articles_by_category": {
-  "education": 83,
-  "community": 155,
-  "society": 65,
-  "health": 93,
-  "conflict": 50,
-  "science": 43,
-  "economy": 95,
-  "politics": 62,
-  "rights": 23,
-  "hazards": 15,
-  "environment": 21
+  "education": 80,
+  "community": 167,
+  "health": 89,
+  "society": 66,
+  "politics": 74,
+  "environment": 40,
+  "economy": 93,
+  "conflict": 52,
+  "science": 37,
+  "rights": 19,
+  "hazards": 14
  },
  "mapped_articles_by_location_precision": {
-  "country": 380,
-  "place": 306,
-  "region": 19
+  "country": 400,
+  "place": 309,
+  "region": 22
  },
  "location_evidence_counts": {
-  "description": 137,
-  "headline": 568
+  "description": 138,
+  "headline": 593
  },
  "geographic_quadrants": {
-  "NE": 354,
-  "SW": 109,
-  "NW": 207,
-  "SE": 35
+  "NE": 370,
+  "SW": 106,
+  "NW": 224,
+  "SE": 31
  },
  "geo_signal_count": 431,
- "mapped_total": 705,
+ "mapped_total": 731,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1443,
- "unmapped_distinct_titles": 683,
+ "unmapped_sample_count": 1421,
+ "unmapped_distinct_titles": 676,
  "unmapped_by_feed": {
-  "Google News MX": 194,
-  "Google News US": 146,
-  "Google News BR": 140,
-  "Google News PH": 139,
-  "Google News IN": 138,
-  "Google News ZA": 128,
-  "Google News KE": 111,
-  "Google News AU": 90,
+  "Google News MX": 203,
+  "Google News US": 137,
+  "Google News PH": 136,
+  "Google News KE": 132,
+  "Google News BR": 131,
+  "Google News ZA": 129,
+  "Google News IN": 121,
   "Google News CA": 90,
-  "Google News NG": 85,
-  "Google News GB": 77,
-  "ABC Australia": 12,
-  "The Guardian World": 11,
-  "BBC Brasil": 10,
-  "France24 FR": 9,
+  "Google News AU": 87,
+  "Google News NG": 84,
+  "Google News GB": 73,
+  "ABC Australia": 15,
+  "The Guardian World": 10,
+  "BBC Brasil": 9,
   "Al Jazeera": 8,
-  "RNZ National": 8,
-  "BBC World": 7
+  "France24 FR": 8,
+  "BBC Science": 6,
+  "BBC Business": 6
  },
  "unmapped_examples": [
-  {
-   "title": "UAE’s new climate health plan: What changes for residents as heat and dust risks rise?",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVW1LR18zVEF2WUxqbjVMcUZ0WGFFUDBLWlFmazNHZnNvdWdRc3JtS2pvYm1wVWpHd29KMkp2UV84OW9zVlRqUzdoZS12TTM1ZUtXQnhYX3FPRDJFczkxdXprY0NZbHVZR182Qk1jdks4UlYxYk5OcWtvNl9NVGRaTXBOSWFYQWRGTmN4N2VsWVpzYkgzWlFtTFpnaDRpNWd5VmsycTdZMWYxYjdObUVoV3hEWG9UeUhzWjBKQjE4Vl9Ca2V2WVI0Sg?oc=5",
-   "publisher": "Gulf Business",
-   "feed_occurrences": 9,
-   "feed_count": 9,
-   "description_excerpt": " UAE’s new climate health plan: What changes for residents as heat and dust risks rise?    Gulf Business "
-  },
   {
    "title": "KDP official tells opposition to form government or hold early elections",
    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Ydlc5VnVwT3d1QjRnZlJpa21FeUMwcTBOMWJOc2ZMak9jR2YxRkxQay14b1drZEdwV0xDR0VUZGwtTXhxOXhKLWcwSQ?oc=5",
@@ -134,6 +126,22 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " KDP official tells opposition to form government or hold early elections    The New Region "
+  },
+  {
+   "title": "Joint List ‘decisive’ in efforts to oust Netanyahu, Tibi says, sets terms for backing alternative government",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQb05kd3lvamtFOUFQRHFDSkhVemZadlcyM2ZaVVFuanZzZ0xmeThnQmd2QmZSSmF6UTlHNUR5cVdSV2NUaU1DV1JRSFNYU3Fja25Hd2hKOHI4Mm5seTVCdVVfYnFjRUh2bE5MYzhLcm0tQktJbUprS3o5TmY3cFI2UENpamdzZzc0ejdkTzVvR0R6ZVcxRUtiYm5nMGNYa3kwMmhuVEdzV2dYdHpNUGVRdjl6RHFqREYtbkkxZjUxNWpoRWFGY0xvNVYwLTJkczJEWElPOHVfdkRJdVhTY2M3Mmh5MA?oc=5",
+   "publisher": "Anadolu Ajansı",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Joint List ‘decisive’ in efforts to oust Netanyahu, Tibi says, sets terms for backing alternative government    Anadolu Ajansı "
+  },
+  {
+   "title": "US midterm elections: What are they and what could they mean for Trump?",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLXN5dVIyQUZXMzhDdHRGVUZabHhmUk1kbnZMN1ZsUk9jODQ4YnJCa0JWV2ZRVkVDUWRPTUp1VHJlTEhhY0J6TFBwY0dBZU1uS2pjUGhwVVJhX3JlRjdHNWxDeG1kUTBkT1dhWlg1M18yaFVCdE1CLXhSWWlDVHFPeHo2eEx6QlFnTkpKYkRVZ1cxOWxaQWFF?oc=5",
+   "publisher": "The Business Standard",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " US midterm elections: What are they and what could they mean for Trump?    The Business Standard "
   },
   {
    "title": "Czech coalition advances media overhaul in rushed overnight vote",
@@ -152,28 +160,20 @@
    "description_excerpt": " Overnight protests mark Czech media funding vote as opposition vows fight    Expats.cz "
   },
   {
-   "title": "US midterm elections: What are they and what could they mean for Trump?",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLXN5dVIyQUZXMzhDdHRGVUZabHhmUk1kbnZMN1ZsUk9jODQ4YnJCa0JWV2ZRVkVDUWRPTUp1VHJlTEhhY0J6TFBwY0dBZU1uS2pjUGhwVVJhX3JlRjdHNWxDeG1kUTBkT1dhWlg1M18yaFVCdE1CLXhSWWlDVHFPeHo2eEx6QlFnTkpKYkRVZ1cxOWxaQWFF?oc=5",
-   "publisher": "The Business Standard",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " US midterm elections: What are they and what could they mean for Trump?    The Business Standard "
-  },
-  {
-   "title": "Joint List ‘decisive’ in efforts to oust Netanyahu, Tibi says, sets terms for backing alternative government",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQb05kd3lvamtFOUFQRHFDSkhVemZadlcyM2ZaVVFuanZzZ0xmeThnQmd2QmZSSmF6UTlHNUR5cVdSV2NUaU1DV1JRSFNYU3Fja25Hd2hKOHI4Mm5seTVCdVVfYnFjRUh2bE5MYzhLcm0tQktJbUprS3o5TmY3cFI2UENpamdzZzc0ejdkTzVvR0R6ZVcxRUtiYm5nMGNYa3kwMmhuVEdzV2dYdHpNUGVRdjl6RHFqREYtbkkxZjUxNWpoRWFGY0xvNVYwLTJkczJEWElPOHVfdkRJdVhTY2M3Mmh5MA?oc=5",
-   "publisher": "Anadolu Ajansı",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Joint List ‘decisive’ in efforts to oust Netanyahu, Tibi says, sets terms for backing alternative government    Anadolu Ajansı "
-  },
-  {
    "title": "Parliament confident in IEC's readiness to hold LGE",
    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbFNCaFlIM19DNWtWeEF0WUt3OUlrUzFZdWFaUi11eTlLOC1rVl9QY01tWmZjVlpIVTFlSHVHOERHNWJ0QW5ZTWwwQ0YyS1VUQU1mSVBhazh4TS1LMHNGTUUzZHZuRHkwWVk3eEdBcFRQZUgwMk90R1ptakp4Tk1neEozLWJQOHZYM0cw?oc=5",
    "publisher": "EWN",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Parliament confident in IEC's readiness to hold LGE    EWN "
+  },
+  {
+   "title": "Constitutional amendment body: New idea on caretaker govt framework emerges",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yUWFVWjVnQWNsbGV6S0laQkpKblZLV1Jacld6UnVwQU42ZDhmVFBTRTNYbXVlUDN6enlRZUI5OHFjd014bm5SZFF6TE5Sb3NSVWlRNkx3R0Z4TVJrTllBQXZ4SlROOXRTamfSAXdBVV95cUxPY1NhWDFMRC1fNXJ6UVF0NEdkWlhaN3dUYkk1V3IzM2g3NVhPOFZxcUlDRUlVUmxCbzViMlRSU3Via3lnbGJ1eXhTb2llY2t6V0had2Z6ZUsxS3EtbzlBcW5lM0VwN0wyZUM1dXFGb0ZqUXRqU01Gaw?oc=5",
+   "publisher": "Prothom Alo English",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Constitutional amendment body: New idea on caretaker govt framework emerges    Prothom Alo English "
   },
   {
    "title": "Proposal made to appoint JS speaker as caretaker govt chief: Salahuddin",
@@ -184,6 +184,22 @@
    "description_excerpt": " Proposal made to appoint JS speaker as caretaker govt chief: Salahuddin    Daily Sun "
   },
   {
+   "title": "ND and PASOK «find common ground» under the table for a 3rd Mitsotakis term: The Secret Dinner and the critical role of Samaras",
+   "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQdl9PdHA2N0VZS3BRaVM3ZnhIcXBzUFAwb21oaHZJQlF2SlhfeXVDNHJteFhyamp2bkZwZEdNNFk4anVnU3NObVZsTzlvWXNNenlqWEpnY3NIT3RpdDJ3amd1VjNWMFBlTkhNeUNDVTVfOGJWdFNPdzNERkVFWUxUVElicC01Z3dKM2lWQVJYcUtVSnVYRVZSZ3RkdmRXWU1nNkh1TzdzeHktUmQ4TGNiYWFoTTNYVmkzdi1EdXY1Y1NhTGVqOEtGT3dtS3dnbFJaelVHd2l4dlZIdmFTNkNoLWNJOWRqMUlyNjhpOThMMUltbU9jc0xVZDlsS29raS1yazlBQU50ZUg5ZE5aTnhQRXVsYWpFblczdWxwSXJzWFR3OTYwQ3c?oc=5",
+   "publisher": "Bankingnews",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " ND and PASOK «find common ground» under the table for a 3rd Mitsotakis term: The Secret Dinner and the critical role of Samaras    Bankingnews "
+  },
+  {
+   "title": "\"Rama has destroyed the possibility of dialogue\"/ National protest, Hasimja: Dissolve the Parliament, caretaker government and elections with a new system",
+   "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPVWlFTk44N19VbmxXNHpSbHhYR3lCOTF6MDd4T19jS2pnUV9ZQ2x1SGg4WDhldXhDQW9ZdERRZGdmRzlDdXh4YTQ4bzhENi1XR21ieVBrSm8yOHZjNUxMem1JNjlSdVlFYUJVRTQ5WTh4akg3dzVrOWFGX2dnWFkyV05LMm42S2p3XzdySlNlbmF6U2poTFlpWXVDbXhvWjlxbHM3dW5KV2NxcHhlTHVMTHdtb0tmOHpQRkJKM0F3c2dwUkI2UGZZZzE0anRIVVMxVDByVUczUXNpZ2pCdlZxZS1VcjdLNHlkem53aDlldUpMUnpsbHJNd2tMY1pRWGZKNUZ3WWtjSGtjYVZDNnhNY19PdWg1NmVq?oc=5",
+   "publisher": "Balkanweb.com",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " \"Rama has destroyed the possibility of dialogue\"/ National protest, Hasimja: Dissolve the Parliament, caretaker government and elections with a new system    B"
+  },
+  {
    "title": "Parliament backs IEC election readiness but flags ballot concerns",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMnJJRUR6Q2lpSUNBTmNGQVJVQUhfSHI5cU40aF9ZX2tGeFVYTzVFakVvVUZKZVRqWnB1bnVvclc5OU53TVJVRHB4M1pQeVQxYjNDcnFSZERBbjlhMkRvYmxfWmduaHV1THBzRVVjSkt2LW5FbUdLS2JqMFhIRGg2U2hDQVdQVTlyNWlNTzZQT1o2MEwybXdqZWhwSUNKcmhZRmc?oc=5",
    "publisher": "Algoa FM",
@@ -192,28 +208,12 @@
    "description_excerpt": " Parliament backs IEC election readiness but flags ballot concerns    Algoa FM "
   },
   {
-   "title": "Beyond election promises: Why Caribbean governments must be held accountable for the problems That never seem to disappear",
-   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPU0xCUE9MMEpiczd5SEdiV2VoUkVocGp0V3ZXdUpJN3VBWHI0ZFVxTUtEWmZPZ3gwQWRGYjN4Q2Q5VkFSeWl1V3QxeW9yazQwS01sYWw2MFI5U3JhY043U1puM2FPNDRUNGZVVTl5eHJjZXhRTXhsdXcxcXAtMVkzSWdhWlF4NF9GTU9SWW1EYXc5SUhseWdEcHJmMlJ4V3IzaEhBNURHcEg1SGFoam1wSDFfazJ6SEpUOERwNmpkem42Q3NlSFlfdXF4MG4yc0dQclEzd0M1Qjk5RlNSSjB6MV9ydHI2TkNESU5JS0k3MWpMODdqdWNrSmVfU3A?oc=5",
-   "publisher": "The New Today",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Beyond election promises: Why Caribbean governments must be held accountable for the problems That never seem to disappear    The New Today "
-  },
-  {
    "title": "Back to square one: How MPs reverted to livestream law declared unconstitutional",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOU2MwUllwQjRpb3VIZ3ZMQXZXRnBlMW1xbkQydUFjUHZMR2hIczN6bXdISVN4eW45b2FRTm5Pa3IzTDN2YnNjSEt5ZERvS01EbU9hQ3FfUTY5cGNkc2VXRHBPNGxUcXdsVkl4eHlDSEpHV1M4czlsX3lwNGNuMnFMWGROQUZWYW40V2VOMEJNTENPMlFQc3pIY3g0b0JnQzJKQXdYWngwbmo4RW1zUkFYSld2T0xDVlUtS0xtelJObXNLOTd0NzlQeQ?oc=5",
    "publisher": "Daily Nation",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Back to square one: How MPs reverted to livestream law declared unconstitutional    Daily Nation "
-  },
-  {
-   "title": "Kiir signals possible reduction in government size after elections",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQ0RyaU93M3QxZjdHT3ZHdFYtM0VXS3lsZXZPanNZOTUxMktUUy05SFVtNDNWcmZKVVRYc2d3em5QcjJHWVpGeGMyNG9md2J2Y3h0WmdZcHBkZEhTYWV4NHljdTE2NDRzLUZHWEpiVFVUUFZtRl83RWJpUFV6enp4cEtrdmNEdTQ0eEZJZXZYYlU0d9IBlwFBVV95cUxObWhQLUdjRHY0dFQzME9sTGFIWElKQUJxWXZUekswZ0tTeUhONThjTDVCRHJVRWNZVjhlOG9yU1NJN0F5d2hiUTBIQUU5MmhMY0c3cHdiNnhlamVxTE8yZkcxc2Y2U0RXWUlSeTJUaExkSGpaNFdTMTd4azBWeERTakRUS283MUwtT2RIMjdfenZZakkybTVn?oc=5",
-   "publisher": "Eye Radio",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Kiir signals possible reduction in government size after elections    Eye Radio "
   },
   {
    "title": "Czech media funding vote set for 4 a.m. Saturday morning as protests grow",
@@ -240,6 +240,30 @@
    "description_excerpt": " Does ruling out Opportunity only harm Luxon's election chances?    1News "
   },
   {
+   "title": "Failure of Constitution Bill could lead to dismantling of the Coalition Government - Rabuka",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSXh1TUhmbVN4NzczdldycVNQZEVvX1NGVF9YN3ZVYXJlWUZYTmZjTzItTDFJbVBRaGdHUXNBdHFaaVd1V1I5UkltNE1RMWhNd1g0b1FHclYyTWtpbGtsZmtOMzZyV1FBUnVOMTdJdDBCeW8wbkdETG5jUVRSMXV2MFE2cmVMcjFKVFVwU20tYUE0cDNtTk1hLXVnVzRHOHA2YkoyZ3Y5dE1SMXR1UEVqMWNpUHFWN2NubEpMUFBiV0ZsRmdtYzR4SmFB?oc=5",
+   "publisher": "Fijivillage",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Failure of Constitution Bill could lead to dismantling of the Coalition Government - Rabuka    Fijivillage "
+  },
+  {
+   "title": "Priyanka Chaturvedi questions Election Commission’s silence, backs due process for CEC removal",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTmF0UFJDRTFlYWl2VXJ4OWNjWVZWQy1qU0hzbHRSYzg4bDduRHZHRGNLRWdScGNaUjFsbnVFSW9VeFVRaGhPWW8xSEUxMkU2SWV2RzY4VEUweWZFNkl3RkxoWVVqTzREMnUwU0JMZnVSTVc5WlRkNkdGQU9qVjVnMWNqMGRJbGdfTjFJVWVoUHVBOHdIbXFDWkJtWnl6eEt2UzRMNE80ZERURThTRmZGaEp0R1VvUEJJTWRJVzJlWTdGY3ZkTjlDQmFWONIBywFBVV95cUxNTmF0UFJDRTFlYWl2VXJ4OWNjWVZWQy1qU0hzbHRSYzg4bDduRHZHRGNLRWdScGNaUjFsbnVFSW9VeFVRaGhPWW8xSEUxMkU2SWV2RzY4VEUweWZFNkl3RkxoWVVqTzREMnUwU0JMZnVSTVc5WlRkNkdGQU9qVjVnMWNqMGRJbGdfTjFJVWVoUHVBOHdIbXFDWkJtWnl6eEt2UzRMNE80ZERURThTRmZGaEp0R1VvUEJJTWRJVzJlWTdGY3ZkTjlDQmFWOA?oc=5",
+   "publisher": "Social News XYZ",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Priyanka Chaturvedi questions Election Commission’s silence, backs due process for CEC removal    Social News XYZ "
+  },
+  {
+   "title": "How krill fishing for salmon and supplements puts Antarctic wildlife at risk",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPREdEOG9tTVVxQWxvVXJ4YnFERnZfWWo2VUZVV1V4czNKX1pZWWdYR0lnYUV4WFhGV3EzN00xaGpCRkNRZmswdlNlaG1JU3dTUGlaeExFYnVJdkJ3cVFlTWh3WTJmejZLRzZNZks3WVgzOG5YaWxuSklzaHh2bzlGc0stQVRrSWltbHJfMkdLZmk2M1V2bERlV0dadi1qMWZxM3htTDg2emhIREJMUjYwSjZBYS10SlBXVjlwV0NPMks2MWtM?oc=5",
+   "publisher": "RFI",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " How krill fishing for salmon and supplements puts Antarctic wildlife at risk    RFI "
+  },
+  {
    "title": "Record Coalition of Conservation and Outdoors Organizations Unites Behind Proposition 137",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM3IxSWpEUGx0X001blpONzVDYmV3Q3E4RXRzS0c1c3pFMWNab0RqZ1otaTd0TDZKaHVfc1Z3T2d2aFBlSzIydmtHN1hUTDJvaXc2aUJLZkg1bDZRXzgwWWlxTzlzTGFSS0VqOTFqSFQ4M2xSX181Y3JxbGV2V01aUlEyeUZQLW9aU0pNWXVyUnRLQVYwODMwZ3ctZzl4eVpnMVFNckxrQ1NvRzVIUWxnZGV2RUJwYkwzelkyZ1FfSTNNTms?oc=5",
    "publisher": "Yellow Scene Magazine",
@@ -248,12 +272,20 @@
    "description_excerpt": " Record Coalition of Conservation and Outdoors Organizations Unites Behind Proposition 137    Yellow Scene Magazine "
   },
   {
-   "title": "Tennessee joins ‘Bird City’ network to conserve species, habitat",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPazZjU19tTDdKVHFGRk91NFgxTzBLRlpQZ0R6WURod3M5MzE2NXVJdTYzdjYtZzVndkJJaWdjMTRubVRUVERyazRETUNTcmJFUjJnUlFIekFtUkZFVl9pTjBITFZOdXJMVW11QjVCbzUyUHNIcTk2NWswOERrZjVZbHZuYm8xdzlaLTY1eQ?oc=5",
-   "publisher": "WPLN News",
+   "title": "PRESS RELEASE: Galápagos Smart Island Monitoring System Wins Premios Verdes 2026 Recognition for Conservation Innovation",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUGhQN3BYSDFOS1ZsSmZOWXUzWnpWS2JjX1FIUDJtQmkyd3E0c3gwNmI2RzhGbFYzUmNhUlBGR00zYjJUZk16cldlM1J2WVg1YjI5emhUZG9hUkthWWlITDhxWTJvYXR5NFZFX2dZb2lZME5NUXFrUWx3NmxmTnkxLVdSM3Y3OHM4ZExVVjVLX2Rhckl0bjFUVFEtMWJZMUctTTJaeGQ4eFkwdEtPMEJ0X3h3MFB3OVFqRkJQbDZoMUx5dzlxTENWMjlUNzZNN3N2VkZoZmZHa1hUVGt6REpsclkzdUhMeU8xMFQw?oc=5",
+   "publisher": "Island Conservation",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Tennessee joins ‘Bird City’ network to conserve species, habitat    WPLN News "
+   "description_excerpt": " PRESS RELEASE: Galápagos Smart Island Monitoring System Wins Premios Verdes 2026 Recognition for Conservation Innovation    Island Conservation "
+  },
+  {
+   "title": "Rising temperatures putting koala populations at risk, scientists say - ABC News",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSU9xd19SY3BSRnhfWGpIRmp4dDhhSUFHTHcxclhwTmZPWG9UejQtTXpYYWgtaWs2aWV2SGtFaHlJczJ3amJURWx1V0dMbUhDUFVMdUlCZEdMZGlCVjlSMDY1ckNPa2dVTHl2ZldKbVdwQU1BWFhxSHQ1ZFBvMnVYeXlSTXQ3b2NfWHNsR1ZRS2dicXMzeVFXNWg0YWN5U2cyR0RQZ1hmM3p2eWExS1NJZi1VYjjSAboBQVVfeXFMT2Z2aGEwVWpnTkZlX2lJSjdJbkV3RFBCQ2M1RXNralVEd1ppTUFYTjl4NTJ0MFJtd3FNSHI2TlNFRGhGdWxVZExRSHlzbC1yT2JEMWo0bkp0bHJZZHBzSTJaMzUzMEZOc0tsMUFrQnRfdnVJMVRRaTdHQTY3Sm1LZU9MOC0xTklfQTJLa2J3czVzUjduU0RkM3otOFZTV1JmRHpZQWZzeXRUbGtRRkpQUkJ5QlVTZTZ6MzZR?oc=5",
+   "publisher": "ABC News - Breaking News, Latest News and Videos",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Rising temperatures putting koala populations at risk, scientists say    ABC News - Breaking News, Latest News and Videos "
   },
   {
    "title": "​73% Wildlife Decline: What It Means for Human Survival",
@@ -264,22 +296,6 @@
    "description_excerpt": " ​73% Wildlife Decline: What It Means for Human Survival    news.jagatgururampalji.org "
   },
   {
-   "title": "Feel-Good Friday: Capturing Subway Heat, Rat Rangers, and Women-Led Reef Restoration",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ1Z4TUMtdmctRlJ2cHllNFdBc0RuX2xLZFZraG1waVdSclpEdXVSZENKSHcxOGJLN1J5RnRxaTRQaWJKQ2ZQRmotcjdnQ3JaOHRxR2Q2eEtHVkxWZFVoaWl6OUVSRWFVYWZyVUlPMEYweU1XTGRVMVNqb1FXLU9DYWd0V2FkRUVxdHNUejkxcXZmV3BjZWRmWHU4MHBhRlJkX3U1blVBeHJaaFd1?oc=5",
-   "publisher": "Bluedot Living",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Feel-Good Friday: Capturing Subway Heat, Rat Rangers, and Women-Led Reef Restoration    Bluedot Living "
-  },
-  {
-   "title": "Ecofeminism, CBD COP17, Indigenous Women, Biodiversity Conservation, Environmental Justice",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWDRKQVBTR0p5Qy0tQmdGcjNvUHNNTElYQjZuUFN6dWVXbDQzV3FnTnQxUmV6MFFHMWJKWXJvU1haNmlEaC0yTmh3eUlBNjhHNzVtR2k3aWQ3amI5S3hvQmNITGdTOTJIRkltTktFTm5DVXdmaTNBQWZZOTNDQ3ZPQndNdmhhVlZlSlZGUG1qMW00OUZ2cWJNQmhLNjY1OVdIdkZPR20xLVoyOU5NM1VnOW82a21Fdw?oc=5",
-   "publisher": "The Climate Watch",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Ecofeminism, CBD COP17, Indigenous Women, Biodiversity Conservation, Environmental Justice    The Climate Watch "
-  },
-  {
    "title": "Your B.C. election guide to key climate and environment issues",
    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ISEZMc1c0MTE1c2NKRWtHcEN1Tm5QdUFicmxnSzZ4cVdHZWNGbFEzcm16WUEwM2RrT1hZZWRjdUZzTzNxMmlJUGJHOGJyOHh4TnlqMjVIb3NybnJQeUdzSjdnVGpkSzMxdFFJWlJR?oc=5",
    "publisher": "The Narwhal",
@@ -288,20 +304,20 @@
    "description_excerpt": " Your B.C. election guide to key climate and environment issues    The Narwhal "
   },
   {
-   "title": "How krill fishing for salmon and supplements puts Antarctic wildlife at risk",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcDExTGNzWDVUOE1MTU9QU09BUjZTUVNjcnFtVkRSWnRYcktGTHFsaGpjbUpiaEhSWC1BcTVLOXFXYUFkbmdxRkMtdUNDNVRxRDMtYl80RF9QUXJoMld3YlFpNUdUbHB5SVF3bkE0NTJ2MnhCTTlQQXE3ODJ4Q19IWkd3MnFkN1BsX2lZ?oc=5",
-   "publisher": "AOL.co.uk",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " How krill fishing for salmon and supplements puts Antarctic wildlife at risk    AOL.co.uk "
-  },
-  {
    "title": "Exhibition showcases snow leopard conservation efforts",
    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5wejYzTExpSldpbEt2cmFzVWdzR3ZYZHdGYzFBLTd0RE95NjM5NDBYanRZM1VheHRoNHI5dFNZUTNGN0E4NUpLTg?oc=5",
    "publisher": "Dawn",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Exhibition showcases snow leopard conservation efforts    Dawn "
+  },
+  {
+   "title": "In culmination of 10 years of dedicated efforts, Union Environment Minister and CM (Rajasthan) initiate the process for release of captive-bred Great Indian Bustards into the Wild ",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBwZkFKUDdDdFRZa1FfUllxbklsVW1ScUZzaXBNY0VxRFFWYWJKNlE1Zk9RNHpET2d2YkJKUVhPaVJEVDNLWTNRdDRfN2p2Z3BNWVRfdmU1YlBmckJXWXFQLWQ3YTRrZTZ2eTVMTnhuRVdOdVVYOGhOazBDejU?oc=5",
+   "publisher": "Press Information Bureau",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " In culmination of 10 years of dedicated efforts, Union Environment Minister and CM (Rajasthan) initiate the process for release of captive-bred Great Indian Bu"
   },
   {
    "title": "From Giyani village to the wild: A field ranger’s journey",
@@ -336,14 +352,6 @@
    "description_excerpt": " Assam’s Barekuri marks World Hoolock Gibbon Day with focus on wildlife protection    Northeast News "
   },
   {
-   "title": "Satellite-tagged Amur falcons return to Manipur after crossing 23 countries",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSkNZeFhvYjN0ZEVjUFFxaWNlVXlZZE9NbEIzSkx4U2NpNDBIYWVzUXlSRXpDVFk3WDBGRUtYeHVmcjNMTzNkSVJUUzJxLXQ5SFRlY0t3Wkt1a2tmRUY0NVlUclNDcWdZTWZvdWNXeUUtdGl4aW1QYXVwWWdoTW05QjZWWjl0Ni1OQmkzUXl1VGwzRW1pWXROWkRsX0NvMmV3MXFBdHFLRHhYZ09jcFVBRVRfZw?oc=5",
-   "publisher": "Eastern Mirror",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Satellite-tagged Amur falcons return to Manipur after crossing 23 countries    Eastern Mirror "
-  },
-  {
    "title": "Gen Z are leading the European protests. Here’s why they’re angry",
    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1mdEFPdXFWeGdHUDFPNGZtZVBYbHJLWExRakxtNGNuTjhJN3JGSFJ3QVptMDRUVmd0d2wxRGdFczZXZ0VXRnpxNURsaUxiZXkwZE9waEhZMnBFbHZxaVNGVTdlVVEwX0xZNHR0TFZmSGNKanprWnctZHZ0MzJxcHM?oc=5",
    "publisher": "CNN",
@@ -358,14 +366,6 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Youth Across Europe Protest Budget Shortages, Rising Costs, and Lack of Opportunity    Ratopati "
-  },
-  {
-   "title": "Qalibaf urges ‘awakened’ Western protesters not to let ‘cabal’ bury corruption under identity politics",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOYzE2RV9kVFV6SnFuM2s1UW9FRXZwamc1RDZrandhU2F0cUN6Z21QbzFyTUFPUk1KUm5YVXItZ2wxSDBHRzJENnkxZHhRbEhSOG5kUGp0UkhTVGFsbEFZT25ZbXZjNWNKMVNhR2tyUkpEMHp2Z0NuUU1PcmN2X29lTzM1VGRKa2g2dEtMLXhfMnJnZjdSN3Zvb0xEZzhaOFoxcUY4T3E4VmRVUVN3TjBjRHlDWnh6TER6ZlRpYUhTeG8yejB5MDNRRk9DeXNBTi1kUUdzTk83b1hiT1VKdVJ6alZFVENwVHdBc3BwYU5kLThPWHEtMjdrSQ?oc=5",
-   "publisher": "خبرگزاری بین المللی قدس",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Qalibaf urges ‘awakened’ Western protesters not to let ‘cabal’ bury corruption under identity politics    خبرگزاری بین المللی قدس "
   },
   {
    "title": "Gen Z protests across Europe highlight growing concerns over cost of living, education and housing | Explained",
@@ -404,7 +404,7 @@
  "direct_source_breakdown": {
   "configured": 52,
   "successful": 49,
-  "mapped_pre_dedupe": 193
+  "mapped_pre_dedupe": 185
  },
  "publisher_by_editorial_region": {
   "africa": {
@@ -447,7 +447,7 @@
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 1,
+   "mapped_pre_dedupe": 0,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
@@ -462,7 +462,7 @@
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     }
    ]
   },
@@ -486,12 +486,12 @@
   "global": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 13,
+   "mapped_pre_dedupe": 9,
    "feeds": [
     {
      "source": "direct/Global Voices English",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/Global Voices Spanish",
@@ -511,7 +511,7 @@
     {
      "source": "direct/Mongabay Global",
      "status": "ok",
-     "mapped_pre_dedupe": 10
+     "mapped_pre_dedupe": 5
     },
     {
      "source": "direct/Inter Press Service Headlines",
@@ -523,7 +523,7 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 85,
+   "mapped_pre_dedupe": 88,
    "feeds": [
     {
      "source": "direct/BBC World",
@@ -548,17 +548,17 @@
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/The Guardian Environment",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/DW World",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/France24",
@@ -568,7 +568,7 @@
     {
      "source": "direct/NPR World",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/NPR Science",
@@ -609,12 +609,12 @@
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 83,
+   "mapped_pre_dedupe": 80,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 13
+     "mapped_pre_dedupe": 10
     },
     {
      "source": "direct/RNZ World",
@@ -624,7 +624,7 @@
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 10
+     "mapped_pre_dedupe": 8
     },
     {
      "source": "direct/CBC World",
@@ -639,12 +639,12 @@
     {
      "source": "direct/France24 FR",
      "status": "ok",
-     "mapped_pre_dedupe": 15
+     "mapped_pre_dedupe": 16
     },
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 19
+     "mapped_pre_dedupe": 21
     },
     {
      "source": "direct/DW Español",
@@ -674,12 +674,12 @@
     {
      "source": "direct/BBC Middle East",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Europe",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 5
     },
     {
      "source": "direct/RNZ Pacific",
@@ -701,7 +701,7 @@
   "south-america": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 3,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/The Conversation Brasil",
@@ -711,14 +711,14 @@
     {
      "source": "direct/Mongabay Latam",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     }
    ]
   },
   "specialist": {
    "configured": 3,
    "successful": 2,
-   "mapped_pre_dedupe": 4,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
@@ -733,22 +733,14 @@
     {
      "source": "direct/NASA News",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 2
     }
    ]
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 683,
+  "distinct_unmapped_titles": 676,
   "high_repeat_unmapped_examples": [
-   {
-    "title": "UAE’s new climate health plan: What changes for residents as heat and dust risks rise?",
-    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVW1LR18zVEF2WUxqbjVMcUZ0WGFFUDBLWlFmazNHZnNvdWdRc3JtS2pvYm1wVWpHd29KMkp2UV84OW9zVlRqUzdoZS12TTM1ZUtXQnhYX3FPRDJFczkxdXprY0NZbHVZR182Qk1jdks4UlYxYk5OcWtvNl9NVGRaTXBOSWFYQWRGTmN4N2VsWVpzYkgzWlFtTFpnaDRpNWd5VmsycTdZMWYxYjdObUVoV3hEWG9UeUhzWjBKQjE4Vl9Ca2V2WVI0Sg?oc=5",
-    "publisher": "Gulf Business",
-    "feed_occurrences": 9,
-    "feed_count": 9,
-    "description_excerpt": " UAE’s new climate health plan: What changes for residents as heat and dust risks rise?    Gulf Business "
-   },
    {
     "title": "KDP official tells opposition to form government or hold early elections",
     "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Ydlc5VnVwT3d1QjRnZlJpa21FeUMwcTBOMWJOc2ZMak9jR2YxRkxQay14b1drZEdwV0xDR0VUZGwtTXhxOXhKLWcwSQ?oc=5",
@@ -756,6 +748,22 @@
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " KDP official tells opposition to form government or hold early elections    The New Region "
+   },
+   {
+    "title": "Joint List ‘decisive’ in efforts to oust Netanyahu, Tibi says, sets terms for backing alternative government",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQb05kd3lvamtFOUFQRHFDSkhVemZadlcyM2ZaVVFuanZzZ0xmeThnQmd2QmZSSmF6UTlHNUR5cVdSV2NUaU1DV1JRSFNYU3Fja25Hd2hKOHI4Mm5seTVCdVVfYnFjRUh2bE5MYzhLcm0tQktJbUprS3o5TmY3cFI2UENpamdzZzc0ejdkTzVvR0R6ZVcxRUtiYm5nMGNYa3kwMmhuVEdzV2dYdHpNUGVRdjl6RHFqREYtbkkxZjUxNWpoRWFGY0xvNVYwLTJkczJEWElPOHVfdkRJdVhTY2M3Mmh5MA?oc=5",
+    "publisher": "Anadolu Ajansı",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Joint List ‘decisive’ in efforts to oust Netanyahu, Tibi says, sets terms for backing alternative government    Anadolu Ajansı "
+   },
+   {
+    "title": "US midterm elections: What are they and what could they mean for Trump?",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLXN5dVIyQUZXMzhDdHRGVUZabHhmUk1kbnZMN1ZsUk9jODQ4YnJCa0JWV2ZRVkVDUWRPTUp1VHJlTEhhY0J6TFBwY0dBZU1uS2pjUGhwVVJhX3JlRjdHNWxDeG1kUTBkT1dhWlg1M18yaFVCdE1CLXhSWWlDVHFPeHo2eEx6QlFnTkpKYkRVZ1cxOWxaQWFF?oc=5",
+    "publisher": "The Business Standard",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " US midterm elections: What are they and what could they mean for Trump?    The Business Standard "
    },
    {
     "title": "Czech coalition advances media overhaul in rushed overnight vote",
@@ -774,28 +782,20 @@
     "description_excerpt": " Overnight protests mark Czech media funding vote as opposition vows fight    Expats.cz "
    },
    {
-    "title": "US midterm elections: What are they and what could they mean for Trump?",
-    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLXN5dVIyQUZXMzhDdHRGVUZabHhmUk1kbnZMN1ZsUk9jODQ4YnJCa0JWV2ZRVkVDUWRPTUp1VHJlTEhhY0J6TFBwY0dBZU1uS2pjUGhwVVJhX3JlRjdHNWxDeG1kUTBkT1dhWlg1M18yaFVCdE1CLXhSWWlDVHFPeHo2eEx6QlFnTkpKYkRVZ1cxOWxaQWFF?oc=5",
-    "publisher": "The Business Standard",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " US midterm elections: What are they and what could they mean for Trump?    The Business Standard "
-   },
-   {
-    "title": "Joint List ‘decisive’ in efforts to oust Netanyahu, Tibi says, sets terms for backing alternative government",
-    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQb05kd3lvamtFOUFQRHFDSkhVemZadlcyM2ZaVVFuanZzZ0xmeThnQmd2QmZSSmF6UTlHNUR5cVdSV2NUaU1DV1JRSFNYU3Fja25Hd2hKOHI4Mm5seTVCdVVfYnFjRUh2bE5MYzhLcm0tQktJbUprS3o5TmY3cFI2UENpamdzZzc0ejdkTzVvR0R6ZVcxRUtiYm5nMGNYa3kwMmhuVEdzV2dYdHpNUGVRdjl6RHFqREYtbkkxZjUxNWpoRWFGY0xvNVYwLTJkczJEWElPOHVfdkRJdVhTY2M3Mmh5MA?oc=5",
-    "publisher": "Anadolu Ajansı",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Joint List ‘decisive’ in efforts to oust Netanyahu, Tibi says, sets terms for backing alternative government    Anadolu Ajansı "
-   },
-   {
     "title": "Parliament confident in IEC's readiness to hold LGE",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbFNCaFlIM19DNWtWeEF0WUt3OUlrUzFZdWFaUi11eTlLOC1rVl9QY01tWmZjVlpIVTFlSHVHOERHNWJ0QW5ZTWwwQ0YyS1VUQU1mSVBhazh4TS1LMHNGTUUzZHZuRHkwWVk3eEdBcFRQZUgwMk90R1ptakp4Tk1neEozLWJQOHZYM0cw?oc=5",
     "publisher": "EWN",
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " Parliament confident in IEC's readiness to hold LGE    EWN "
+   },
+   {
+    "title": "Constitutional amendment body: New idea on caretaker govt framework emerges",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yUWFVWjVnQWNsbGV6S0laQkpKblZLV1Jacld6UnVwQU42ZDhmVFBTRTNYbXVlUDN6enlRZUI5OHFjd014bm5SZFF6TE5Sb3NSVWlRNkx3R0Z4TVJrTllBQXZ4SlROOXRTamfSAXdBVV95cUxPY1NhWDFMRC1fNXJ6UVF0NEdkWlhaN3dUYkk1V3IzM2g3NVhPOFZxcUlDRUlVUmxCbzViMlRSU3Via3lnbGJ1eXhTb2llY2t6V0had2Z6ZUsxS3EtbzlBcW5lM0VwN0wyZUM1dXFGb0ZqUXRqU01Gaw?oc=5",
+    "publisher": "Prothom Alo English",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Constitutional amendment body: New idea on caretaker govt framework emerges    Prothom Alo English "
    },
    {
     "title": "Proposal made to appoint JS speaker as caretaker govt chief: Salahuddin",
@@ -806,6 +806,22 @@
     "description_excerpt": " Proposal made to appoint JS speaker as caretaker govt chief: Salahuddin    Daily Sun "
    },
    {
+    "title": "ND and PASOK «find common ground» under the table for a 3rd Mitsotakis term: The Secret Dinner and the critical role of Samaras",
+    "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQdl9PdHA2N0VZS3BRaVM3ZnhIcXBzUFAwb21oaHZJQlF2SlhfeXVDNHJteFhyamp2bkZwZEdNNFk4anVnU3NObVZsTzlvWXNNenlqWEpnY3NIT3RpdDJ3amd1VjNWMFBlTkhNeUNDVTVfOGJWdFNPdzNERkVFWUxUVElicC01Z3dKM2lWQVJYcUtVSnVYRVZSZ3RkdmRXWU1nNkh1TzdzeHktUmQ4TGNiYWFoTTNYVmkzdi1EdXY1Y1NhTGVqOEtGT3dtS3dnbFJaelVHd2l4dlZIdmFTNkNoLWNJOWRqMUlyNjhpOThMMUltbU9jc0xVZDlsS29raS1yazlBQU50ZUg5ZE5aTnhQRXVsYWpFblczdWxwSXJzWFR3OTYwQ3c?oc=5",
+    "publisher": "Bankingnews",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " ND and PASOK «find common ground» under the table for a 3rd Mitsotakis term: The Secret Dinner and the critical role of Samaras    Bankingnews "
+   },
+   {
+    "title": "\"Rama has destroyed the possibility of dialogue\"/ National protest, Hasimja: Dissolve the Parliament, caretaker government and elections with a new system",
+    "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPVWlFTk44N19VbmxXNHpSbHhYR3lCOTF6MDd4T19jS2pnUV9ZQ2x1SGg4WDhldXhDQW9ZdERRZGdmRzlDdXh4YTQ4bzhENi1XR21ieVBrSm8yOHZjNUxMem1JNjlSdVlFYUJVRTQ5WTh4akg3dzVrOWFGX2dnWFkyV05LMm42S2p3XzdySlNlbmF6U2poTFlpWXVDbXhvWjlxbHM3dW5KV2NxcHhlTHVMTHdtb0tmOHpQRkJKM0F3c2dwUkI2UGZZZzE0anRIVVMxVDByVUczUXNpZ2pCdlZxZS1VcjdLNHlkem53aDlldUpMUnpsbHJNd2tMY1pRWGZKNUZ3WWtjSGtjYVZDNnhNY19PdWg1NmVq?oc=5",
+    "publisher": "Balkanweb.com",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " \"Rama has destroyed the possibility of dialogue\"/ National protest, Hasimja: Dissolve the Parliament, caretaker government and elections with a new system    B"
+   },
+   {
     "title": "Parliament backs IEC election readiness but flags ballot concerns",
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMnJJRUR6Q2lpSUNBTmNGQVJVQUhfSHI5cU40aF9ZX2tGeFVYTzVFakVvVUZKZVRqWnB1bnVvclc5OU53TVJVRHB4M1pQeVQxYjNDcnFSZERBbjlhMkRvYmxfWmduaHV1THBzRVVjSkt2LW5FbUdLS2JqMFhIRGg2U2hDQVdQVTlyNWlNTzZQT1o2MEwybXdqZWhwSUNKcmhZRmc?oc=5",
     "publisher": "Algoa FM",
@@ -814,28 +830,12 @@
     "description_excerpt": " Parliament backs IEC election readiness but flags ballot concerns    Algoa FM "
    },
    {
-    "title": "Beyond election promises: Why Caribbean governments must be held accountable for the problems That never seem to disappear",
-    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPU0xCUE9MMEpiczd5SEdiV2VoUkVocGp0V3ZXdUpJN3VBWHI0ZFVxTUtEWmZPZ3gwQWRGYjN4Q2Q5VkFSeWl1V3QxeW9yazQwS01sYWw2MFI5U3JhY043U1puM2FPNDRUNGZVVTl5eHJjZXhRTXhsdXcxcXAtMVkzSWdhWlF4NF9GTU9SWW1EYXc5SUhseWdEcHJmMlJ4V3IzaEhBNURHcEg1SGFoam1wSDFfazJ6SEpUOERwNmpkem42Q3NlSFlfdXF4MG4yc0dQclEzd0M1Qjk5RlNSSjB6MV9ydHI2TkNESU5JS0k3MWpMODdqdWNrSmVfU3A?oc=5",
-    "publisher": "The New Today",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Beyond election promises: Why Caribbean governments must be held accountable for the problems That never seem to disappear    The New Today "
-   },
-   {
     "title": "Back to square one: How MPs reverted to livestream law declared unconstitutional",
     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOU2MwUllwQjRpb3VIZ3ZMQXZXRnBlMW1xbkQydUFjUHZMR2hIczN6bXdISVN4eW45b2FRTm5Pa3IzTDN2YnNjSEt5ZERvS01EbU9hQ3FfUTY5cGNkc2VXRHBPNGxUcXdsVkl4eHlDSEpHV1M4czlsX3lwNGNuMnFMWGROQUZWYW40V2VOMEJNTENPMlFQc3pIY3g0b0JnQzJKQXdYWngwbmo4RW1zUkFYSld2T0xDVlUtS0xtelJObXNLOTd0NzlQeQ?oc=5",
     "publisher": "Daily Nation",
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " Back to square one: How MPs reverted to livestream law declared unconstitutional    Daily Nation "
-   },
-   {
-    "title": "Kiir signals possible reduction in government size after elections",
-    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQ0RyaU93M3QxZjdHT3ZHdFYtM0VXS3lsZXZPanNZOTUxMktUUy05SFVtNDNWcmZKVVRYc2d3em5QcjJHWVpGeGMyNG9md2J2Y3h0WmdZcHBkZEhTYWV4NHljdTE2NDRzLUZHWEpiVFVUUFZtRl83RWJpUFV6enp4cEtrdmNEdTQ0eEZJZXZYYlU0d9IBlwFBVV95cUxObWhQLUdjRHY0dFQzME9sTGFIWElKQUJxWXZUekswZ0tTeUhONThjTDVCRHJVRWNZVjhlOG9yU1NJN0F5d2hiUTBIQUU5MmhMY0c3cHdiNnhlamVxTE8yZkcxc2Y2U0RXWUlSeTJUaExkSGpaNFdTMTd4azBWeERTakRUS283MUwtT2RIMjdfenZZakkybTVn?oc=5",
-    "publisher": "Eye Radio",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Kiir signals possible reduction in government size after elections    Eye Radio "
    },
    {
     "title": "Czech media funding vote set for 4 a.m. Saturday morning as protests grow",
@@ -862,6 +862,30 @@
     "description_excerpt": " Does ruling out Opportunity only harm Luxon's election chances?    1News "
    },
    {
+    "title": "Failure of Constitution Bill could lead to dismantling of the Coalition Government - Rabuka",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSXh1TUhmbVN4NzczdldycVNQZEVvX1NGVF9YN3ZVYXJlWUZYTmZjTzItTDFJbVBRaGdHUXNBdHFaaVd1V1I5UkltNE1RMWhNd1g0b1FHclYyTWtpbGtsZmtOMzZyV1FBUnVOMTdJdDBCeW8wbkdETG5jUVRSMXV2MFE2cmVMcjFKVFVwU20tYUE0cDNtTk1hLXVnVzRHOHA2YkoyZ3Y5dE1SMXR1UEVqMWNpUHFWN2NubEpMUFBiV0ZsRmdtYzR4SmFB?oc=5",
+    "publisher": "Fijivillage",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Failure of Constitution Bill could lead to dismantling of the Coalition Government - Rabuka    Fijivillage "
+   },
+   {
+    "title": "Priyanka Chaturvedi questions Election Commission’s silence, backs due process for CEC removal",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTmF0UFJDRTFlYWl2VXJ4OWNjWVZWQy1qU0hzbHRSYzg4bDduRHZHRGNLRWdScGNaUjFsbnVFSW9VeFVRaGhPWW8xSEUxMkU2SWV2RzY4VEUweWZFNkl3RkxoWVVqTzREMnUwU0JMZnVSTVc5WlRkNkdGQU9qVjVnMWNqMGRJbGdfTjFJVWVoUHVBOHdIbXFDWkJtWnl6eEt2UzRMNE80ZERURThTRmZGaEp0R1VvUEJJTWRJVzJlWTdGY3ZkTjlDQmFWONIBywFBVV95cUxNTmF0UFJDRTFlYWl2VXJ4OWNjWVZWQy1qU0hzbHRSYzg4bDduRHZHRGNLRWdScGNaUjFsbnVFSW9VeFVRaGhPWW8xSEUxMkU2SWV2RzY4VEUweWZFNkl3RkxoWVVqTzREMnUwU0JMZnVSTVc5WlRkNkdGQU9qVjVnMWNqMGRJbGdfTjFJVWVoUHVBOHdIbXFDWkJtWnl6eEt2UzRMNE80ZERURThTRmZGaEp0R1VvUEJJTWRJVzJlWTdGY3ZkTjlDQmFWOA?oc=5",
+    "publisher": "Social News XYZ",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Priyanka Chaturvedi questions Election Commission’s silence, backs due process for CEC removal    Social News XYZ "
+   },
+   {
+    "title": "How krill fishing for salmon and supplements puts Antarctic wildlife at risk",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPREdEOG9tTVVxQWxvVXJ4YnFERnZfWWo2VUZVV1V4czNKX1pZWWdYR0lnYUV4WFhGV3EzN00xaGpCRkNRZmswdlNlaG1JU3dTUGlaeExFYnVJdkJ3cVFlTWh3WTJmejZLRzZNZks3WVgzOG5YaWxuSklzaHh2bzlGc0stQVRrSWltbHJfMkdLZmk2M1V2bERlV0dadi1qMWZxM3htTDg2emhIREJMUjYwSjZBYS10SlBXVjlwV0NPMks2MWtM?oc=5",
+    "publisher": "RFI",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " How krill fishing for salmon and supplements puts Antarctic wildlife at risk    RFI "
+   },
+   {
     "title": "Record Coalition of Conservation and Outdoors Organizations Unites Behind Proposition 137",
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM3IxSWpEUGx0X001blpONzVDYmV3Q3E4RXRzS0c1c3pFMWNab0RqZ1otaTd0TDZKaHVfc1Z3T2d2aFBlSzIydmtHN1hUTDJvaXc2aUJLZkg1bDZRXzgwWWlxTzlzTGFSS0VqOTFqSFQ4M2xSX181Y3JxbGV2V01aUlEyeUZQLW9aU0pNWXVyUnRLQVYwODMwZ3ctZzl4eVpnMVFNckxrQ1NvRzVIUWxnZGV2RUJwYkwzelkyZ1FfSTNNTms?oc=5",
     "publisher": "Yellow Scene Magazine",
@@ -870,146 +894,122 @@
     "description_excerpt": " Record Coalition of Conservation and Outdoors Organizations Unites Behind Proposition 137    Yellow Scene Magazine "
    },
    {
-    "title": "Tennessee joins ‘Bird City’ network to conserve species, habitat",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPazZjU19tTDdKVHFGRk91NFgxTzBLRlpQZ0R6WURod3M5MzE2NXVJdTYzdjYtZzVndkJJaWdjMTRubVRUVERyazRETUNTcmJFUjJnUlFIekFtUkZFVl9pTjBITFZOdXJMVW11QjVCbzUyUHNIcTk2NWswOERrZjVZbHZuYm8xdzlaLTY1eQ?oc=5",
-    "publisher": "WPLN News",
+    "title": "PRESS RELEASE: Galápagos Smart Island Monitoring System Wins Premios Verdes 2026 Recognition for Conservation Innovation",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUGhQN3BYSDFOS1ZsSmZOWXUzWnpWS2JjX1FIUDJtQmkyd3E0c3gwNmI2RzhGbFYzUmNhUlBGR00zYjJUZk16cldlM1J2WVg1YjI5emhUZG9hUkthWWlITDhxWTJvYXR5NFZFX2dZb2lZME5NUXFrUWx3NmxmTnkxLVdSM3Y3OHM4ZExVVjVLX2Rhckl0bjFUVFEtMWJZMUctTTJaeGQ4eFkwdEtPMEJ0X3h3MFB3OVFqRkJQbDZoMUx5dzlxTENWMjlUNzZNN3N2VkZoZmZHa1hUVGt6REpsclkzdUhMeU8xMFQw?oc=5",
+    "publisher": "Island Conservation",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Tennessee joins ‘Bird City’ network to conserve species, habitat    WPLN News "
-   },
-   {
-    "title": "​73% Wildlife Decline: What It Means for Human Survival",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5EMUlQV0duOFlsMEVlMXdDTWZCR0lGMXkybnk4Ym8wY0ZPM3VHLWhDRHB2cXlPNFEyaFRmcGs2LTJZNlJ6ZlhYZEtXZGRqRWhmWDhuLS1MbXJYRkFxd29ZLXc2QmhrQQ?oc=5",
-    "publisher": "news.jagatgururampalji.org",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " ​73% Wildlife Decline: What It Means for Human Survival    news.jagatgururampalji.org "
-   },
-   {
-    "title": "Feel-Good Friday: Capturing Subway Heat, Rat Rangers, and Women-Led Reef Restoration",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ1Z4TUMtdmctRlJ2cHllNFdBc0RuX2xLZFZraG1waVdSclpEdXVSZENKSHcxOGJLN1J5RnRxaTRQaWJKQ2ZQRmotcjdnQ3JaOHRxR2Q2eEtHVkxWZFVoaWl6OUVSRWFVYWZyVUlPMEYweU1XTGRVMVNqb1FXLU9DYWd0V2FkRUVxdHNUejkxcXZmV3BjZWRmWHU4MHBhRlJkX3U1blVBeHJaaFd1?oc=5",
-    "publisher": "Bluedot Living",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Feel-Good Friday: Capturing Subway Heat, Rat Rangers, and Women-Led Reef Restoration    Bluedot Living "
-   },
-   {
-    "title": "Ecofeminism, CBD COP17, Indigenous Women, Biodiversity Conservation, Environmental Justice",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWDRKQVBTR0p5Qy0tQmdGcjNvUHNNTElYQjZuUFN6dWVXbDQzV3FnTnQxUmV6MFFHMWJKWXJvU1haNmlEaC0yTmh3eUlBNjhHNzVtR2k3aWQ3amI5S3hvQmNITGdTOTJIRkltTktFTm5DVXdmaTNBQWZZOTNDQ3ZPQndNdmhhVlZlSlZGUG1qMW00OUZ2cWJNQmhLNjY1OVdIdkZPR20xLVoyOU5NM1VnOW82a21Fdw?oc=5",
-    "publisher": "The Climate Watch",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Ecofeminism, CBD COP17, Indigenous Women, Biodiversity Conservation, Environmental Justice    The Climate Watch "
+    "description_excerpt": " PRESS RELEASE: Galápagos Smart Island Monitoring System Wins Premios Verdes 2026 Recognition for Conservation Innovation    Island Conservation "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Vietnam",
-   "largest_label_articles": 55,
-   "share_of_country_labelled_articles": 0.145
+   "largest_label_articles": 65,
+   "share_of_country_labelled_articles": 0.163
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 171,
-  "unique_google_urls_not_in_direct_sample": 565,
+  "unique_direct_urls_not_in_google_sample": 163,
+  "unique_google_urls_not_in_direct_sample": 602,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
    "France24": 21,
-   "France24 ES": 19,
-   "BBC World": 17,
+   "France24 ES": 21,
+   "The Guardian World": 18,
    "Al Jazeera": 17,
-   "The Guardian World": 16,
-   "France24 FR": 13,
-   "ABC Australia": 13,
-   "Mongabay Global": 10,
-   "RNZ National": 10,
-   "BBC Europe": 7,
+   "BBC World": 17,
+   "France24 FR": 14,
+   "ABC Australia": 10,
+   "RNZ National": 8,
+   "BBC Europe": 5,
+   "Mongabay Global": 5,
+   "NPR World": 4,
    "BBC Science": 4,
    "RNZ Pacific": 4,
-   "NASA News": 4,
-   "Guardian Asia": 3,
    "AllAfrica East Africa": 3,
+   "Guardian Asia": 3,
    "BBC Brasil": 3,
-   "NPR World": 3,
-   "Mongabay Latam": 3,
-   "DW World": 3,
-   "BBC Asia": 2,
-   "BBC Africa": 2,
+   "Global Voices English": 3,
    "BBC Latin America": 2,
-   "Global Voices English": 2,
-   "AllAfrica Central Africa": 1,
-   "Global Voices Spanish": 1,
+   "Mongabay Latam": 2,
+   "The Guardian Environment": 2,
+   "DW World": 2,
+   "BBC Africa": 2,
+   "NASA News": 2,
+   "BBC Middle East": 2,
+   "BBC Asia": 2,
    "RNZ World": 1,
-   "The Diplomat": 1,
-   "The Guardian Environment": 1,
+   "Global Voices Spanish": 1,
+   "Guardian Africa": 1,
    "NPR Science": 1,
-   "Guardian Africa": 1
+   "BBC Business": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 380,
-  "country_labels_count": 85,
+  "country_labelled_articles": 400,
+  "country_labels_count": 88,
   "top_country_subjects": {
-   "Vietnam": 55,
-   "France": 34,
-   "Nigeria": 18,
-   "Mexico": 16,
-   "Brazil": 15,
-   "Ukraine": 14,
+   "Vietnam": 65,
+   "France": 35,
+   "Nigeria": 19,
+   "Mexico": 18,
+   "Brazil": 16,
+   "Israel": 14,
+   "Ukraine": 13,
    "India": 13,
-   "Israel": 11,
-   "Pakistan": 9,
-   "China": 9,
-   "Canada": 8,
+   "Pakistan": 10,
    "Kenya": 8,
-   "Russia": 7,
+   "China": 8,
+   "Canada": 7,
+   "Colombia": 7,
+   "Argentina": 7,
    "Iran": 7,
-   "Cuba": 7,
-   "Peru": 6,
    "Serbia": 6,
-   "Argentina": 6,
+   "Cuba": 6,
+   "Russia": 5,
    "Germany": 5,
    "Panama": 5,
    "United States": 5,
-   "Chile": 5,
-   "Bangladesh": 4,
-   "Taiwan": 4,
+   "Australia": 4,
+   "Peru": 4,
+   "Sudan": 4,
+   "Egypt": 4,
    "Bolivia": 4,
-   "Colombia": 4,
+   "Uganda": 4,
+   "Thailand": 3,
    "Scotland": 3,
-   "Sudan": 3,
-   "Malaysia": 3,
-   "Bulgaria": 3
+   "Ghana": 3
   },
-  "distinct_geographic_signal_centers": 282,
+  "distinct_geographic_signal_centers": 283,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 152
+   "mapped_pre_dedupe": 154
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 82
+   "mapped_pre_dedupe": 87
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 133
+   "mapped_pre_dedupe": 145
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 100
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 138
+   "mapped_pre_dedupe": 145
   },
   "NG": {
    "requests": 11,
@@ -1019,30 +1019,30 @@
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 153
+   "mapped_pre_dedupe": 154
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 103
+   "mapped_pre_dedupe": 99
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 69
+   "mapped_pre_dedupe": 68
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 192
+   "mapped_pre_dedupe": 229
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 119
+   "mapped_pre_dedupe": 148
   }
  },
- "duplicates_removed": 828,
+ "duplicates_removed": 881,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1060,44 +1060,38 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-10-24T17:38:08+00:00",
-    "mapped_articles": 705,
+    "at": "2026-10-24T19:50:09+00:00",
+    "mapped_articles": 731,
     "geographic_signals": 431,
     "feeds_ok": 170,
     "feeds_attempted": 173,
     "rejected_matching_occurrences": 16,
-    "ambiguous_mapped_signal_count": 1
+    "ambiguous_mapped_signal_count": 0
    }
   ],
   "latest": {
-   "at": "2026-10-24T17:38:08+00:00",
-   "mapped_articles": 705,
+   "at": "2026-10-24T19:50:09+00:00",
+   "mapped_articles": 731,
    "geographic_signals": 431,
    "feeds_ok": 170,
    "feeds_attempted": 173,
    "rejected_matching_occurrences": 16,
-   "ambiguous_mapped_signal_count": 1
+   "ambiguous_mapped_signal_count": 0
   },
   "recent_change": {
-   "baseline_at": "2026-10-24T17:38:08+00:00",
+   "baseline_at": "2026-10-24T19:50:09+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Rubio": 4,
+   "Union": 5,
    "Forest": 4,
-   "Union": 4,
-   "David": 4
+   "Rubio": 3,
+   "David": 3,
+   "Hassan": 1
   },
-  "ambiguous_mapped_review": [
-   {
-    "name": "Forest",
-    "category": "environment",
-    "sampled_article_count": 1,
-    "review_reason": "ambiguous_place_name_needs_manual_review"
-   }
-  ],
+  "ambiguous_mapped_review": [],
   "limitations": [
    "This report flags possible mistakes; flags are not proven errors.",
    "Repeated RSS items may inflate rejected matching occurrences.",
