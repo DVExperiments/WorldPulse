@@ -1,48 +1,53 @@
 {
  "schema": 1,
- "updated_at": "2026-10-25T20:54:33.458449+00:00",
+ "updated_at": "2026-10-25T23:18:10.802040+00:00",
  "feeds_total": 173,
- "feeds_ok": 170,
+ "feeds_ok": 165,
  "feeds_failed": [
   "direct/CBC World",
   "direct/ReliefWeb Updates",
-  "direct/DW Español"
+  "direct/UN News",
+  "direct/DW Español",
+  "direct/AllAfrica West Africa",
+  "direct/AllAfrica East Africa",
+  "direct/AllAfrica Central Africa",
+  "direct/AllAfrica Southern Africa"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 134
+   "mapped_pre_dedupe": 136
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 92
+   "mapped_pre_dedupe": 95
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 120
+   "mapped_pre_dedupe": 149
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 93
+   "mapped_pre_dedupe": 98
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 142
+   "mapped_pre_dedupe": 144
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 100
+   "mapped_pre_dedupe": 97
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 132
+   "mapped_pre_dedupe": 145
   },
   "CA": {
    "total": 11,
@@ -52,78 +57,78 @@
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 40
+   "mapped_pre_dedupe": 50
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 199
+   "mapped_pre_dedupe": 220
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 143
+   "mapped_pre_dedupe": 149
   }
  },
  "mapped_articles_by_category": {
-  "education": 76,
-  "politics": 87,
-  "community": 153,
-  "health": 68,
-  "economy": 82,
-  "society": 59,
-  "hazards": 19,
-  "conflict": 54,
-  "science": 31,
-  "environment": 44,
-  "rights": 8
+  "education": 77,
+  "politics": 101,
+  "community": 155,
+  "society": 77,
+  "economy": 77,
+  "health": 71,
+  "science": 38,
+  "conflict": 46,
+  "hazards": 20,
+  "environment": 45,
+  "rights": 10
  },
  "mapped_articles_by_location_precision": {
-  "country": 394,
-  "place": 272,
-  "region": 15
+  "country": 416,
+  "place": 287,
+  "region": 14
  },
  "location_evidence_counts": {
-  "headline": 584,
-  "description": 97
+  "headline": 607,
+  "description": 110
  },
  "geographic_quadrants": {
-  "NE": 369,
-  "SW": 95,
-  "NW": 171,
-  "SE": 46
+  "NE": 384,
+  "SW": 93,
+  "SE": 48,
+  "NW": 192
  },
- "geo_signal_count": 395,
- "mapped_total": 681,
+ "geo_signal_count": 401,
+ "mapped_total": 717,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1266,
- "unmapped_distinct_titles": 593,
+ "unmapped_sample_count": 1353,
+ "unmapped_distinct_titles": 622,
  "unmapped_by_feed": {
-  "Google News MX": 185,
-  "Google News PH": 123,
-  "Google News KE": 121,
+  "Google News MX": 195,
+  "Google News KE": 137,
+  "Google News ZA": 131,
+  "Google News PH": 122,
+  "Google News IN": 119,
   "Google News US": 115,
-  "Google News IN": 113,
-  "Google News ZA": 105,
-  "Google News BR": 88,
-  "Google News CA": 87,
-  "Google News NG": 81,
-  "Google News GB": 72,
-  "Google News AU": 71,
-  "ABC Australia": 16,
-  "BBC Brasil": 12,
-  "RNZ National": 10,
+  "Google News GB": 88,
+  "Google News BR": 87,
+  "Google News AU": 84,
+  "Google News NG": 83,
+  "Google News CA": 82,
+  "ABC Australia": 13,
+  "RNZ National": 12,
+  "BBC Brasil": 11,
   "France24 FR": 10,
+  "The Conversation España": 9,
   "The Guardian World": 8,
-  "BBC Business": 7,
-  "BBC Science": 6
+  "BBC Business": 7
  },
  "unmapped_examples": [
   {
    "title": "Barnham villagers vote for referendum over migrant housing plan",
-   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1sUVBIT2RhLTZJQUhUQnhHRmtPdnpOTGI1OV9pNTMyWjdRcHdNVHIxSW81T1dOZUVHYnpHczRvS2dDalNGZjg4M01NR1FSRzNMenVuYU54cmRsVHJqSFE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNYVhvdm9wdmVVSTJob2s0T1p1bmJNTzJFX1JwbXRuSER6bks5cENDZTdJZ3lJSmNsU1lLTFZJcnlHNWhXMmZFbm9xRFpzRXE1a3Bhcnp1SUpkS2xVVF9qOEpqWU0tNjNuRUZwemFla25qNllOQTlaT09OOGpvUENWZkdjYnZZUkJNVWJiNlNLc1BIc1ZUT0VTSXNQUDR2WGtwSW8zV3B3TU9nbm1DalEtTXc5U3IxYU9JeVJfWDlUVUZHMWs1UTlpN2NSV1FfVmRYT21qUEVyLUFxV29HUng5cTN5WQ?oc=5",
    "publisher": "BBC",
-   "feed_occurrences": 10,
+   "feed_occurrences": 11,
    "feed_count": 9,
    "description_excerpt": " Barnham villagers vote for referendum over migrant housing plan    BBC "
   },
@@ -131,8 +136,8 @@
    "title": "Moi University students warn Ruto over lecturers' strike ahead of 2027 elections",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWUxic3pCQUF1RVQwU2o2SXNfM3FJRlVGNjlFWmxINEdXMU5kTWFNNHdCNXczS2w0ZDUwN05HY3RFZ2Z1ZHJyTjNxQXZNUG4wM0lQQUctSlhqT1R6NVJDOUJFcG8yanVXNEx2YjJQOHVyVm14TXJMSmRVRDF5RnFZUnVCcGhwRVN4NGIweVdNS1FCWmxva0hhTU1qYXQ1TVZjd2MyWVp5MG5XeDNPanRsdU53?oc=5",
    "publisher": "Education News",
-   "feed_occurrences": 9,
-   "feed_count": 9,
+   "feed_occurrences": 8,
+   "feed_count": 8,
    "description_excerpt": " Moi University students warn Ruto over lecturers' strike ahead of 2027 elections    Education News "
   },
   {
@@ -147,7 +152,7 @@
    "title": "French protest groups demand more rallies as Macron faces tough choices",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZVFvNDNUS1pfWHFoLTVLT3VUaWlWR3lrZkdTZy1Md0ZmQUxhc19aNE5PcW1rN3M5RTBYa1Rxb21aX0dsSGgyQzJERkRHNHd0VHJVVzktTjlGOHE1U3ZRSmc5T3g3R0FmLVJYRE5ELU1aUWpTR1JTRS1RRlhyemlXM3hJU0ZOQnJnWGxNaTVlOFlvU0FOY0xDeWxTN0ZLbE1YdDZnUlFZT0ZFQVUtM2FDTTBQenF6eXM?oc=5",
    "publisher": "The Business Standard",
-   "feed_occurrences": 11,
+   "feed_occurrences": 13,
    "feed_count": 5,
    "description_excerpt": " French protest groups demand more rallies as Macron faces tough choices    The Business Standard "
   },
@@ -163,9 +168,25 @@
    "title": "Parents Alerted as Socialist Students Plan UK School Walkout on 20 November",
    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWmZRaXhqNGpIbW5PdnAzdndBVmZjRjA4Q0RyLVhpcHN4TjVEVzNFajVKVXQ2cWdFUXl6SkFiWjhLRWNRYzBYcERVak9FSTFHeXk3S1p2ZWF2dWhnT3drTE1aUHdodENzQ3ZyV1BKbzh5bUlqZERaTEtsbkFMUEd5SW83X0ZDZ3V1MV9NQnFsYlAzWFByTUFLSkJmYUt4OWxicG5JdWVfaFdXcVpkSnVrUVhMSFlNVnBXX0lBWWpqcXB3RkZkbGdWRmtDcTZHZ3dqNjM4?oc=5",
    "publisher": "UKNIP",
-   "feed_occurrences": 8,
+   "feed_occurrences": 9,
    "feed_count": 5,
    "description_excerpt": " Parents Alerted as Socialist Students Plan UK School Walkout on 20 November    UKNIP "
+  },
+  {
+   "title": "Serbian leader Aleksandar Vučić concedes defeat in fiercely contested parliamentary election",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUVBlTFVXRW43NWV4cGFydFFRLVctbVVBeXNvU1daQXlaQUJIRGlTSndQN3hCbXRKMGZqSW5lTDloSFplam55SVQwWWM1ZGpoYzRJRTdDcEhFcUVSNlJKU0k0dVkyLXo3RW1QWklXRWp6Y2ZXUmpsb2MtM0UyaE5FNU5KNnlwc3E5MWJuZkdTbW5DeGQxNlNQWjFkVnpqYjlNQnBlNkpqdG5pR2dSc3dWcjFPNlI0Z2h3R0taNlpfX1otQ1JJQTdjVV9xbnVZZnJjR2wzRQ?oc=5",
+   "publisher": "The Guardian",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Serbian leader Aleksandar Vučić concedes defeat in fiercely contested parliamentary election    The Guardian "
+  },
+  {
+   "title": "Vucic Concedes Defeat In Pivotal Serbian Parliamentary Election",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTGo5YUJma0lTUXd2elpZRWNXUE44am1ubFV3dGFEVnd1TlBINHFOQ0o5UUxLd3QyT0lCb2xVeTl0VUZlNFhCMVItb3Q1R19FZU5qcVhqdEhTb0ZqVzhiR29yZVMtUTdZZnlUcEtnSUcyczAtNWVORVRSR3FoaDhaZ2w2amh2RS1jLTlXTXlpWk9WejQ1LWw1dEx30gGcAUFVX3lxTE9Dc1FMZ05GYTNBR1lXZERxZjdqM0toSjFQUGZXMWtER1ltUFZUSkFrTlU3QnRhLWx2eUIxenNEczFsT09GYUtjdjFxNy1oQXVlc1VaenRfWE5uM1FQMFZqUVpNVU9RdmVlWVQ2YnJrTW4tVTg4Z2tvcHN5b0Q3bG02c25vbkxudFdUbHplZ1h0TWxCVDNXMnBSNEFSSA?oc=5",
+   "publisher": "Radio Free Europe/Radio Liberty",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Vucic Concedes Defeat In Pivotal Serbian Parliamentary Election    Radio Free Europe/Radio Liberty "
   },
   {
    "title": "Israeli elections: What are the possible outcomes?",
@@ -174,6 +195,22 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Israeli elections: What are the possible outcomes?    Al Jazeera "
+  },
+  {
+   "title": "Student List wins Serbian election as Vučić concedes defeat",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNb3B4UGhPUm45bEhUNzRIWVE1cnFoQkhhMTJLWXhTNVlOTlhwY0pXZlFDbUhBeFB0Qm1BUHRyc2VKTzVaRUZCa3BGS0FvOUhMSDZYUVl4N3pyU1M5TC1kTGk4UUtwYWZqbDBTVU9mUmljWUxvX1ljcDlmdHBjNHRvQnYzSkYxbnI1YWdDUV9oUUQ2ekNaTG1RMnBucHVyNnNSRzZnMW1kOVZRanNCbE11NThXaFAyNms?oc=5",
+   "publisher": "Euronews.com",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Student List wins Serbian election as Vučić concedes defeat    Euronews.com "
+  },
+  {
+   "title": "Next election ‘will definitely’ be held under caretaker government, says home minister",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9pYUhDbEJfRGdlWnpCenhGamtTMjFOc3VHWUh1SjVZN1JYM1pkSWxmWTY2ZUNZMWt6TElhRmxrNmZPWkd3MkpjQ2tTOEcyZFp2VFZpdw?oc=5",
+   "publisher": "bdnews24.com",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Next election ‘will definitely’ be held under caretaker government, says home minister    bdnews24.com "
   },
   {
    "title": "Can Large Animals Help Mitigate Climate Change?",
@@ -192,36 +229,28 @@
    "description_excerpt": " New state wildlife action plan considers plants, excludes carnivores    Times Union "
   },
   {
+   "title": "CFAs: Sequoia Park Zoo Conservation Grant Program",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUXJqTGlVNkhtSFJna25oTmRXc3Vwa3hTWkV4UVVpRXUxWVlYRlYtRlRDX2s4X3I4VzVrZDB4dVFNV2VZRmtMTG1OR3RwVW1Pa0hmMGNjaTl1MnViazdDUUwzd25aVWsxVVRldGpJV1lmd2JwZS1UcEN2MjNaVzZrQl9RNHBPaGhqdlZSZm82V3NrN0JSc0tZZtIBngFBVV95cUxOTDVJYVYtbWxWZzJxR3BiY01mWHg0ZkxmSG16dFh4SlZGa2tsZFp6dEpLTnp3bE1YRHZVeWp3X2I1RnB2dUEyVVlIaTlZTnVzNGkxanNpOWxJdzJLQ3JyOHB2NEw5Qjd1LW9xVzNwY01HRzI5czZvQzdwaTctNVJoeHpyaUFzTUZKX1lsbEd2ZWhTREtCbFlZV1RvLTNSUQ?oc=5",
+   "publisher": "fundsforNGOs",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " CFAs: Sequoia Park Zoo Conservation Grant Program    fundsforNGOs "
+  },
+  {
+   "title": "Ecofeminism, CBD COP17, Indigenous Women, Biodiversity Conservation, Environmental Justice",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWDRKQVBTR0p5Qy0tQmdGcjNvUHNNTElYQjZuUFN6dWVXbDQzV3FnTnQxUmV6MFFHMWJKWXJvU1haNmlEaC0yTmh3eUlBNjhHNzVtR2k3aWQ3amI5S3hvQmNITGdTOTJIRkltTktFTm5DVXdmaTNBQWZZOTNDQ3ZPQndNdmhhVlZlSlZGUG1qMW00OUZ2cWJNQmhLNjY1OVdIdkZPR20xLVoyOU5NM1VnOW82a21Fdw?oc=5",
+   "publisher": "The Climate Watch",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Ecofeminism, CBD COP17, Indigenous Women, Biodiversity Conservation, Environmental Justice    The Climate Watch "
+  },
+  {
    "title": "COP17: Trade, climate and finance disputes divide nations as biodiversity talks struggle",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUS12dGkydVIzRUttUVJObTl3OVlsTVdieS1DcVhhUEsyOWNHaEwwcXBCdDRsYW41NXFwZE1fQW4wcUd1WjhDenk3RDVoNTZvcXM0N1B1R3ZnVElvYVY3cmdBanVGSFlnSEVQRlByWFc4dm1ySnJOX0NvYXo1eThoZ3FDdXR0Sk4zeXlxNXF6UnA4aTZDUnhOMFFSeVdZMVZjdGVzQ0stenJSOVRFMndwc0prSWRYZw?oc=5",
    "publisher": "The Climate Watch",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " COP17: Trade, climate and finance disputes divide nations as biodiversity talks struggle    The Climate Watch "
-  },
-  {
-   "title": "From Forests to Finance: How Nature Credits Could Transform Global Conservation and Investment",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxON1pfaHdrTm9md08tWnpvRXRaZFRUcHBSNGRXRk9fRmZCMWJVbXBxclBLVDJPSHZRUXdxOTZ1MXczWkpfV3BLYWlEMzRKVnlpZ2p6ZzhKRWNLeVZrOFNvRUNBSTBOTm5NT0ppdDhDcUFsTWcxanBYR1VON3RZNUJ6MUN1YmpyWnpUeldXbFdnR0xRTm1Ddkh1MzBTeVZqX0JDRmxFWWZ0dzltMHFSaFJic2VfZ0hxUEdlZU1XSkFTOVNhRjhBZlNmNTZwOXdTMnYwMXRMTzVzdS0xREM0Z2JoUUdrQzNvVFJpalhPcWRHTVpHV3pw0gH0AUFVX3lxTE43Wl9od2tOb2Z3Ty1aem9FdFpkVFRwcFI0ZFdGT19GZkIxYlVtcHFyUEtUMk9IdlFRd3E5NnUxdzNaSl9XcEthaUQzNEpWeWlnanpnOEpFY0t5Vms4U29FQ0FJME5Obk1PSml0OENxQWxNZzFqcFhHVU43dFk1QnoxQ3VianJaelR6V1dsV2dHTFFObUN2SHUzMFN5VmpfQkNGbEVZZnR3OW0wcVJoUmJzZV9nSHFQR2VlTVdKQVM5U2FGOEFmU2Y1NnA5d1MydjAxdExPNXN1LTFEQzRnYmhRR2tDM29UUmlqWE9xZEdNWkdXenA?oc=5",
-   "publisher": "Devdiscourse",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " From Forests to Finance: How Nature Credits Could Transform Global Conservation and Investment    Devdiscourse "
-  },
-  {
-   "title": "‘IIC Festival of the Arts’ to explore ecology under ‘Prakriti’ theme",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeW5jVmdsSXZJZmVKTUoybms3VERjUTJ0d1JXejZvMTJsNUJ2WDdwcTBjYUFGNjg3bmM4WDNiOWEwcGlENWNqT2xRX3BULUc0TTVxNHdOeDMyVndpd3JDWnZndXBNVkNxYkJSbEx3Q3NlYkJSWDdtYXpMZmEzazMxQWVIWW5WOTlldmhWei0tN1RrVUlScmtfV0NjRUM3N1B2ZGJFQkI5ekhkMUtaOU0w0gG0AUFVX3lxTE1YcXM2b0pjYzd5U3Y2djZ3V1VHZUJuemotNGZfQ052d3c5X2JHc1IxT1lMZzZ6dDMwSmpHQ2lIMFZHSXBfSHExd2tJc2Y3cnF5N2tDQ09BbFE4aWhIbG5JbjRlZHdVQkdTUHIyd2NNeWlZRW1GVjlmMllSWDlLU3JRU25IZURGNEVYakFvZjQ1UzdrSkREemxHc2RaUjdkQU9kQzBFbWNaSTF4c2QxRHlGUnZqMA?oc=5",
-   "publisher": "MillenniumPost",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " ‘IIC Festival of the Arts’ to explore ecology under ‘Prakriti’ theme    MillenniumPost "
-  },
-  {
-   "title": "From Giyani village to the wild: A field ranger’s journey",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNd2VqdGp5S2N2VURvRlF0V2tsUWxQZkdHcDdmR2E3TXd3SXJzUWlHVTM0NzhLMHljM2UtUXMtUjZTajVvRnZCeUlVZ1FGS01FaVh0OG1aUmRJZXcxdDZyN3R3SGNqQk1BU2pHT3VkWTBsdkptc0NJdmwzN3BMUGR1Wk5iNkVCNG5XWHoySktpZ2IwM29uYzVTdWZzV3p3d256Tk56eHpER3FqYWdCcERjZ3FSZ0ljY3dDM3lVMnlrYlNHNm90MGFhdER0aEFPQQ?oc=5",
-   "publisher": "The Citizen",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " From Giyani village to the wild: A field ranger’s journey    The Citizen "
   },
   {
    "title": "Geopolitical Tension and Funding Cuts Are Crushing Arctic Wildlife Research",
@@ -240,44 +269,12 @@
    "description_excerpt": " Lynnhaven River Now hosts native plant seed collection for local gardeners    WTKR "
   },
   {
-   "title": "COP17 adopts 14 decisions as Africa demands fair share of biodiversity benefits",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNlJQbmduN1hWT2pmNEkzTklpTDR5OVdUSzd2YUZ5S0E0VjNXYzZFbGtOZ0t2Z1dkUF83MXRYa1FQWmZ4dE1HMksweFVjMTFSTFVYUUE3SWRpT3g0a3hJUGxxY0VNSHZIMXVqYUhJbm15ZmFfZ1RIakMzTjdmX1l0RHZmZlVwRFdqZmtQX0hNQmh2SGYweEVYMVNkbTB1WWRkSkRvSzhSS2NIbWZR?oc=5",
-   "publisher": "The Climate Watch",
+   "title": "‘IIC Festival of the Arts’ to explore ecology under ‘Prakriti’ theme",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeW5jVmdsSXZJZmVKTUoybms3VERjUTJ0d1JXejZvMTJsNUJ2WDdwcTBjYUFGNjg3bmM4WDNiOWEwcGlENWNqT2xRX3BULUc0TTVxNHdOeDMyVndpd3JDWnZndXBNVkNxYkJSbEx3Q3NlYkJSWDdtYXpMZmEzazMxQWVIWW5WOTlldmhWei0tN1RrVUlScmtfV0NjRUM3N1B2ZGJFQkI5ekhkMUtaOU0w0gG0AUFVX3lxTE1YcXM2b0pjYzd5U3Y2djZ3V1VHZUJuemotNGZfQ052d3c5X2JHc1IxT1lMZzZ6dDMwSmpHQ2lIMFZHSXBfSHExd2tJc2Y3cnF5N2tDQ09BbFE4aWhIbG5JbjRlZHdVQkdTUHIyd2NNeWlZRW1GVjlmMllSWDlLU3JRU25IZURGNEVYakFvZjQ1UzdrSkREemxHc2RaUjdkQU9kQzBFbWNaSTF4c2QxRHlGUnZqMA?oc=5",
+   "publisher": "MillenniumPost",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " COP17 adopts 14 decisions as Africa demands fair share of biodiversity benefits    The Climate Watch "
-  },
-  {
-   "title": "Center for Biological Diversity Reports Over 100 Groups Oppose Sweeping Attacks on Public Lands in Permitting Bill",
-   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQWHJuQ09nd2EtaFpvODg5MmtYMWFKSUlRdUUyQzRtR0liaVNmeFAwR2I4LUZaajNBXzAydmZGR1AtYlhQQ3lBRHhfa2F4YUJTTkNlM3pWVXVfSWczY05JQ29uRDFjdHZRX2pjR2Z2Vmt4dExkODJsSTRCVW43TXdFc3c3OXpSNVdLRTNreThVREY4Sk0tNWFRcVpMaDhkVkZSSV9yaUQ2TE8tRDg2ZHJ4WDRqcUd1Y0c5TUdtcmNkaGJQSWJsWVZicFNmRVJqeTlMRUFoTkc5MEIydkFxSl9zdDdnYkdPZ0pIeFowc1hsbUlEUE5iN0lFdlphdmJCY0dTckJCbjJIeTF1X1V0Tk5Ja29lbw?oc=5",
-   "publisher": "Sierra Sun Times",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Center for Biological Diversity Reports Over 100 Groups Oppose Sweeping Attacks on Public Lands in Permitting Bill    Sierra Sun Times "
-  },
-  {
-   "title": "Ulster Wildlife Wins Biodiversity Award for Oyster Project",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNN1dOeGR3Vk14angwcHR0cFdOanBveTVIaGtCV3lUZ2NPSXRwMzhtS2NscUk1cmxCSE5paWRZS3A4VmFXY25YbEpSOXNoVk9vWm1BdHk2c2oxaEptejNrdk9najZWbjdQTVY2Zm1lcU14YVBNQ1F2Q1VkcEVBdDh1bGNXVm9yaHZTdzhTbzZjVjdYcl85c3RhQmZISGZQTnNOTEcxNUhKVC16QzlGRnJGSEdYZnplUXdnNEFWWjVvNA?oc=5",
-   "publisher": "afloat.ie",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Ulster Wildlife Wins Biodiversity Award for Oyster Project    afloat.ie "
-  },
-  {
-   "title": "Govt turns to quick-maturing seed, irrigation as climate squeezes farmers",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPaWF4a0x1cmhweW9hMDVjdTRCeHJ3bF81Njl6NjY3ZWFWdGF1Z19oSkVMbkxzN2Q1bjFDZ3pZaXFZRzR0b2lLVGh5eHl1Wi1SSjh6VXZaY1dOZ1ZrWWxwVjI1ek1ya0NmZGFyUDhUWDREdHYzYjkyVGNlRGdHOXlXTXF2YWdyeVJIRWd4OVhXMFBfdW1sdUhDakFybXRqOVc1WU1LUjV2NWp5cldSdHF1dkFtdHMxb0dnTDNxVtIBvAFBVV95cUxPaWF4a0x1cmhweW9hMDVjdTRCeHJ3bF81Njl6NjY3ZWFWdGF1Z19oSkVMbkxzN2Q1bjFDZ3pZaXFZRzR0b2lLVGh5eHl1Wi1SSjh6VXZaY1dOZ1ZrWWxwVjI1ek1ya0NmZGFyUDhUWDREdHYzYjkyVGNlRGdHOXlXTXF2YWdyeVJIRWd4OVhXMFBfdW1sdUhDakFybXRqOVc1WU1LUjV2NWp5cldSdHF1dkFtdHMxb0dnTDNxVg?oc=5",
-   "publisher": "Nilepost",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Govt turns to quick-maturing seed, irrigation as climate squeezes farmers    Nilepost "
-  },
-  {
-   "title": "ZimParks, Ifaw deepen conservation roots in Hwange Schools",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSC1HLTAwZlJYM2VzTkhmY0JWTklnajdvT2xFSVhhNmN0YmdBWVpVNVYwdGREdmxXM2YyNnNhdktqakVXOXhtQjRiSlhrcDlpSzNNQm5aeHpYOWQxemJnNThIbEVMUWNWRkRSR19YLVhRdzNvellUc2xWSU1mR0t4MlhNSC1USm1qdkxKZkUwTnZJSG8?oc=5",
-   "publisher": "Herald.co.zw",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " ZimParks, Ifaw deepen conservation roots in Hwange Schools    Herald.co.zw "
+   "description_excerpt": " ‘IIC Festival of the Arts’ to explore ecology under ‘Prakriti’ theme    MillenniumPost "
   },
   {
    "title": "Video | Cost Of Living, Housing Crisis Fuel Fresh Wave Of Protests Across Europe",
@@ -304,12 +301,36 @@
    "description_excerpt": " Violent clashes, slogans, tear gas and blaze: Another weekend of unrest sweeps Europe | World News    Hindustan Times "
   },
   {
-   "title": "Europe Shaken by Massive Protests Over Inflation and Housing Crisis",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5SN003Nmp5Z0V5Y0J0ZVJGWnFQazF0dEZyYzhzWHBDdWJVZzJxQW9BWXFSS1FxOU9yVmNOcndpSlAtdVptSnhWQTBTODF5TUlzdmlJNjEzbTNybGRjWnlpVnNIRFltUk1GU216d3ln?oc=5",
-   "publisher": "news.sbs.co.kr",
+   "title": "Mass rallies, violent clashes & arrests: Another turbulent weekend in Europe",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNHdsbVJsQVVTWDRsWTBWNDdzTG1USlFtZlQza1VfemNSdWdFaFdyb09hY3lDVzZFTU5SNDdXSTRfME9RbDBrRUNLX2o4TmpRTXlBSl9oX2RUU2xkX1Y5cHdjMVpPeU03V2NQMEZJYW5NX2gzLWtmRE5laDJBaXMweFIxbUZXSUdxZ2tnTHVORVM3c3FET3JzU0NKSDZ1Mkp4eU5WdERWbm56SUpDMDREQ0xEN2I2Vm5NTnhlaFln0gHDAUFVX3lxTFBVeGV0Z0pRRWMxbnZxbTl1czVManJJbkRXZnN2N1Y4RTd5bUYyS1VZN21tZ1U1bnhlUUZLNUJtUUIzaUkzdEJwQkM5c0JUMFJlRXdfNXZBVzZZTWF2clU2UmxPOUxjQXlxNzFiUUs3ejVOS1ZEOVM4YUoyLVFCRzY3RmZPTDdTWkZoZmM4YVQ5QzR5eWUyVWsxbHZ6SVpEc1JaamxaLURIZnVrRkVuTFpoZlBNNG5wM3pkQ09xVXJqYjNsbw?oc=5",
+   "publisher": "MillenniumPost",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Europe Shaken by Massive Protests Over Inflation and Housing Crisis    news.sbs.co.kr "
+   "description_excerpt": " Mass rallies, violent clashes & arrests: Another turbulent weekend in Europe    MillenniumPost "
+  },
+  {
+   "title": "Mass protests and clashes between demonstrators and police across Europe",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQTBrdVNaNFlVTVVGM3BCVlRfUl9QVXNnRHZYUXcwZmpVZmdnVkhjZHlBOWlMaEhhcWxRZkkydExoVFYxZFJ3TzFsbGliYjBfdzQyZHo2dlZpUUZvVTNHd0l3NEczSmJmdXRueVVYQTJYVVJDWFZQblFJTmY0NG9HZ0NmRlJiUzI0eFVVSkVIR29wZ21PMmQ4?oc=5",
+   "publisher": "vreme.com",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Mass protests and clashes between demonstrators and police across Europe    vreme.com "
+  },
+  {
+   "title": "In Photos: Protests Sweep Across Europe",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOa2JIOWtCd1U3UWNHVFFBaWRUYzFfbXBlNUF5R0F1b3NNZUNoWmtzSGJjaE5RVGFKeEJlb1FuY2lrU2RrYVdUN3RNOE9Lcmo2LW9sNFNicTc5MVhZSTZQcUFPNW5PYzB0STRVR0duYUZtZFFCTEFYWTN5cWhfMnI3X3pzNGt0ckZoQTVlNGhtZHhnZm_SAZgBQVVfeXFMT0dHaEtOLVFCbk0tcS1Uc0dGLU8td0M4Qm5SMV9QOGtLRHNFNEwxQW0tVHpkQVBmQ0tTT09ZUTR1Vm1udEJYSEVuVkdLWEtXbnlaOWtRN3lBNFVQTjRLQnJFRWlUSTAtQy1fM2U0ZndlcFU5LWl1bmpKa0VQdG9KcVNVZ2ZGbXVpSHdaWng0ekVKWUZFQjloazM?oc=5",
+   "publisher": "ETV Bharat",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " In Photos: Protests Sweep Across Europe    ETV Bharat "
+  },
+  {
+   "title": "Andreas Feronas: The far right stands to gain when violence eclipses social grievances",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQkJPVzhPR0ptWkhKYV9WeWQ4cXNqNnluSE5TUEtBTGE4U1JEYzZSQmE0QnpRSGtiM19sR2RrdTA0Q05CZUl3NkNYXzBya0lZbG5KOGtCc1VhcXdWRFJjM3Z4LUxXT1lydVNwODVYeUxSZUFQY1ZMNjNITFhFUFU3RWVFRW14dTdjN3ptSGNCVTU4NkNPN25IZElNQXlHUFR3TmswRkR1YWhHeU1pMG5qck1kTDF1MXhVODdWcDViaHRBeVU?oc=5",
+   "publisher": "Philenews",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Andreas Feronas: The far right stands to gain when violence eclipses social grievances    Philenews "
   },
   {
    "title": "Protests Sweep Across Europe Over Living Costs, Housing, and Education",
@@ -320,6 +341,22 @@
    "description_excerpt": " Protests Sweep Across Europe Over Living Costs, Housing, and Education    Barlaman Today "
   },
   {
+   "title": "Tear Gas, Fireworks And Mass Arrests: Inside Another Weekend Of Unrest Across Europe",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQcnFZNlBtb3F3NGQyRlp6Zk5jQjNEaktybGd2d29NUDRDRU03Z2hwNnZBSmJxeXc4TV9xQlQwMFduY1hPMzJOazZlSThmZ2dFelhBYzFZSGJsV3M1RElKZmJsWXgtWHlEeS1iYXlEaFVwY3NJTEZHT1M3bEZ5Ykx6OExNUF9Temo3VmNHSTl3bzNRcVh6OXM2T2YxQ3hTeG90Ymoyd2R1U1paR2xVeXpoUnFaT09QRndrcDhPcWtHT0p2QVdWWVNwdTlpSndPRHdCSWtGY0Q4bW9ScFZxTkltaEVmSHBpS1BrMXFUTmxacnRiZmlE0gH6AUFVX3lxTE5TQktUcW9NZjN2d3BYS3BkeUJGX0ZJTGRkVE9uUkNVNnJCRlJLeXQyTnFzVGdiVDhrUmpUSTFaNkRCdkM0VGNpTTVCOEFlUmdMUzltSzh4TnYydlBfbXhPS1o2ZG4zRGR6RWtCdTB1ZEpDV01mX1Y0d01BallrVTNkZThOU1pkakNtTzBpaW5xTTVYUDZ1dWJ5bFF4aVpEc2FGZHdjUXpVMnY2cG5zbmVJVHJ4R2w4SjE2dmxONW9pWWtyejB3dW40Vy1NN0h4WUpmZVlqcVVSeEFrZHFjXzFlVDdGQXFjMl9KWERnNHBLOTE5aW1tbXozNlE?oc=5",
+   "publisher": "ABP Live English",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Tear Gas, Fireworks And Mass Arrests: Inside Another Weekend Of Unrest Across Europe    ABP Live English "
+  },
+  {
+   "title": "Fresh weekend unrest grips European nations over housing crisis and soaring inflation",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3b3pjSXdnNkE4ckVuRVh1NlJVekI3NnVlR1VfQUpPWjhRTkJ0eG1aWkFGWk5jSHlTQXRhWFFxYnZGWmgtUjFTdDNyNDY0YnRIekdNdC1XeklhWXIweEo1THBhYWVIRlZN?oc=5",
+   "publisher": "prameyanews.com",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Fresh weekend unrest grips European nations over housing crisis and soaring inflation    prameyanews.com "
+  },
+  {
    "title": "Chronic Rheumatic Heart Disease in Older Brazilians: Hospitalizations and In-Hospital Deaths, 2015-2024",
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONGw5YTJIXzQxYndMQVdkNWFkUWh4NTdYS1lQLXJiR3ZvaVVtcGpjUE41ZnZWeXh3bFNKdzY1dktRcndSRVNCQUhqZFJLODdjd28xSGhObHUtQWVIeU1LVjl2WVBnanprMWZEdmIxdE1iWDZmcGRTWWFrQTUxdm54alV2R1NncVc5cXdXcDVJM055cVBubjd6R2g5ekh2WnpkbWlDV0stRlNjSlgwMFRWSXdJcFI0SGI0aDIxRGNUZy1jVk40UFN0M3pjUDBQMTI3RjNOUlF0aw?oc=5",
    "publisher": "Cureus",
@@ -328,28 +365,12 @@
    "description_excerpt": " Chronic Rheumatic Heart Disease in Older Brazilians: Hospitalizations and In-Hospital Deaths, 2015-2024    Cureus "
   },
   {
-   "title": "Mpox virus claims life of one more child",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWEMxaFRhSzhFRC1tRUR5NmJHQVZNcDAxOUtOWC1KaU9zWjUxVklEVlFSeEg1cTBYdmJOdGl4QksyOVh5M2VrQ1BRQkpjaURvUk1fMk5CV0Nqa2JEckxvQlp6STdBNl9EdXVLTmtiOTVnbzJUaU9ieFBSYkZoZlV4YzFjONIBiwFBVV95cUxNNjNnODd6UzNOSlgycEp5OVAxY19jc1hYcXZkU0pucXFGOWUwVmg0MXB2WXJjMEpDVlYzbFFDcm9GY0JDT2ZzeW9WNHhCS1hwYW9aQm5xUVFYV05KcFVweXUxdFpwTnFsYUM1MDI0WlBOUFByUUZnUGliTXo5MFllUU9Ib0twdEpab0Qw?oc=5",
-   "publisher": "The Express Tribune",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Mpox virus claims life of one more child    The Express Tribune "
-  },
-  {
    "title": "Ebola: NCDC tracks 53 contacts, orders hospitals to isolate suspects",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOM0pTV1RtWFlqazZBZmk1YmZOM0ZUQXdKelU3UnZ4R2VlenpFUnJZakpMX2ozWHdHaERQZ2FBYmd0NzZzdWZQVDBQc0xDR0JEVmFocm9uZ0RJRXFxMmxISldvVUZ0Q1JDMHcySGV6aUozNk91NWdaNnlmNTkwblFOSzM3NTNXR1FiaUZ0b0wwbm1wM3VFdy1fd3hnWUFrVDhUREwtdkZxekR2NmfSAasBQVVfeXFMTjNKU1dUbVhZams2QWZpNWJmTjNGVEF3SnpVN1J2eEdlZXp6RVJyWWpKTF9qM1h3R2hEUGdhQWJndDc2c3VmUFQwUHNMQ0dCRFZhaHJvbmdESUVxcTJsSEpXb1VGdENSQzB3MkhlemlKMzZPdTVnWjZ5ZjU5MG5RTkszNzUzV0dRYmlGdG9MMG5tcDN1RXctX3d4Z1lBa1Q4VERMLXZGcXpEdjZn?oc=5",
    "publisher": "Vanguard News",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Ebola: NCDC tracks 53 contacts, orders hospitals to isolate suspects    Vanguard News "
-  },
-  {
-   "title": "Ebola Outbreak Spreads Across Countries as Health Authorities Intensify Surveillance",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb1dXWE9oeHNrUzJfTFdDUkZkNEk5clFrS0g3NVhqeDZydDdvOHd0UXVNcU1nVVBleVphZF9iQzZPdmQ4UER5RW9ZcXUxMFFyUTlPREVMT0Z4THV3VEVXeFdDcUxmRDFYeVpnbXZvdHpKYWxWSTJ2Qk9jU3g4N0NJZVhqRHg4QjJZa0NycHA4MGRia0hBT0FEQktwRFZSYl9WWnhPb0tiUGVzZlg4cXEzaFhRUmpSX28?oc=5",
-   "publisher": "boldnewsonline.com",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Ebola Outbreak Spreads Across Countries as Health Authorities Intensify Surveillance    boldnewsonline.com "
   },
   {
    "title": "Ebola: Health workers must maintain high index of suspicion, experts declare",
@@ -366,22 +387,6 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Ebola: NCDC tracks 53 contacts, orders hospitals to isolate suspected cases    Blueprint Newspapers "
-  },
-  {
-   "title": "Four Mpox cases detected in KP",
-   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE4tbUVjX0NHSjNSLWRzcmtTYmVrN3hBaWZORUZnS3VVQ1BVQXVabjdiZUVDdDE3V2pvWGpuclhWUjBSZjFMQnBaSg?oc=5",
-   "publisher": "Dawn",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Four Mpox cases detected in KP    Dawn "
-  },
-  {
-   "title": "Painkillers, Antibiotics and Kidney Health: CDSCO Advisory Explained",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWF9XX21hNXZPaHNMSlZPNjR5R1ZTUnkzSUZzRm4yMms0YlFiZTdaa2dSZEJqYzVtMGpBT1V0RGlodXRwdnpiVDhmVXFXV1lWTkFzTXdIYm15bU55M1lYeE1LSjQ3dVdKeGZCbUppUmVtdzhzZWppWlJIQmhpbEl5TDhOXzByaHZkaThfZ2g3SEtQWl85OWc?oc=5",
-   "publisher": "www.nationpathindia.com",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Painkillers, Antibiotics and Kidney Health: CDSCO Advisory Explained    www.nationpathindia.com "
   },
   {
    "title": "Ebola: Parties reject campaign suspension",
@@ -403,33 +408,33 @@
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
-  "successful": 49,
-  "mapped_pre_dedupe": 186
+  "successful": 44,
+  "mapped_pre_dedupe": 187
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
-   "successful": 6,
+   "successful": 2,
    "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
-     "status": "ok",
+     "status": "failed",
      "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/AllAfrica East Africa",
-     "status": "ok",
+     "status": "failed",
      "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/AllAfrica Central Africa",
-     "status": "ok",
+     "status": "failed",
      "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/AllAfrica Southern Africa",
-     "status": "ok",
+     "status": "failed",
      "mapped_pre_dedupe": 0
     },
     {
@@ -486,7 +491,7 @@
   "global": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 3,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/Global Voices English",
@@ -496,7 +501,7 @@
     {
      "source": "direct/Global Voices Spanish",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/Global Voices Portuguese",
@@ -523,17 +528,17 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 100,
+   "mapped_pre_dedupe": 98,
    "feeds": [
     {
      "source": "direct/BBC World",
      "status": "ok",
-     "mapped_pre_dedupe": 13
+     "mapped_pre_dedupe": 11
     },
     {
      "source": "direct/BBC Science",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 10
     },
     {
      "source": "direct/BBC Business",
@@ -553,7 +558,7 @@
     {
      "source": "direct/The Guardian Environment",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/DW World",
@@ -609,12 +614,12 @@
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 74,
+   "mapped_pre_dedupe": 78,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 12
     },
     {
      "source": "direct/RNZ World",
@@ -624,7 +629,7 @@
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 11
+     "mapped_pre_dedupe": 13
     },
     {
      "source": "direct/CBC World",
@@ -644,7 +649,7 @@
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 21
+     "mapped_pre_dedupe": 20
     },
     {
      "source": "direct/DW Español",
@@ -654,7 +659,7 @@
     {
      "source": "direct/BBC Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/BBC Africa",
@@ -669,7 +674,7 @@
     {
      "source": "direct/BBC Latin America",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Middle East",
@@ -717,7 +722,7 @@
   },
   "specialist": {
    "configured": 3,
-   "successful": 2,
+   "successful": 1,
    "mapped_pre_dedupe": 0,
    "feeds": [
     {
@@ -727,7 +732,7 @@
     },
     {
      "source": "direct/UN News",
-     "status": "ok",
+     "status": "failed",
      "mapped_pre_dedupe": 0
     },
     {
@@ -739,13 +744,13 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 592,
+  "distinct_unmapped_titles": 621,
   "high_repeat_unmapped_examples": [
    {
     "title": "Barnham villagers vote for referendum over migrant housing plan",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1sUVBIT2RhLTZJQUhUQnhHRmtPdnpOTGI1OV9pNTMyWjdRcHdNVHIxSW81T1dOZUVHYnpHczRvS2dDalNGZjg4M01NR1FSRzNMenVuYU54cmRsVHJqSFE?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNYVhvdm9wdmVVSTJob2s0T1p1bmJNTzJFX1JwbXRuSER6bks5cENDZTdJZ3lJSmNsU1lLTFZJcnlHNWhXMmZFbm9xRFpzRXE1a3Bhcnp1SUpkS2xVVF9qOEpqWU0tNjNuRUZwemFla25qNllOQTlaT09OOGpvUENWZkdjYnZZUkJNVWJiNlNLc1BIc1ZUT0VTSXNQUDR2WGtwSW8zV3B3TU9nbm1DalEtTXc5U3IxYU9JeVJfWDlUVUZHMWs1UTlpN2NSV1FfVmRYT21qUEVyLUFxV29HUng5cTN5WQ?oc=5",
     "publisher": "BBC",
-    "feed_occurrences": 10,
+    "feed_occurrences": 11,
     "feed_count": 9,
     "description_excerpt": " Barnham villagers vote for referendum over migrant housing plan    BBC "
    },
@@ -753,8 +758,8 @@
     "title": "Moi University students warn Ruto over lecturers' strike ahead of 2027 elections",
     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWUxic3pCQUF1RVQwU2o2SXNfM3FJRlVGNjlFWmxINEdXMU5kTWFNNHdCNXczS2w0ZDUwN05HY3RFZ2Z1ZHJyTjNxQXZNUG4wM0lQQUctSlhqT1R6NVJDOUJFcG8yanVXNEx2YjJQOHVyVm14TXJMSmRVRDF5RnFZUnVCcGhwRVN4NGIweVdNS1FCWmxva0hhTU1qYXQ1TVZjd2MyWVp5MG5XeDNPanRsdU53?oc=5",
     "publisher": "Education News",
-    "feed_occurrences": 9,
-    "feed_count": 9,
+    "feed_occurrences": 8,
+    "feed_count": 8,
     "description_excerpt": " Moi University students warn Ruto over lecturers' strike ahead of 2027 elections    Education News "
    },
    {
@@ -769,7 +774,7 @@
     "title": "French protest groups demand more rallies as Macron faces tough choices",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZVFvNDNUS1pfWHFoLTVLT3VUaWlWR3lrZkdTZy1Md0ZmQUxhc19aNE5PcW1rN3M5RTBYa1Rxb21aX0dsSGgyQzJERkRHNHd0VHJVVzktTjlGOHE1U3ZRSmc5T3g3R0FmLVJYRE5ELU1aUWpTR1JTRS1RRlhyemlXM3hJU0ZOQnJnWGxNaTVlOFlvU0FOY0xDeWxTN0ZLbE1YdDZnUlFZT0ZFQVUtM2FDTTBQenF6eXM?oc=5",
     "publisher": "The Business Standard",
-    "feed_occurrences": 11,
+    "feed_occurrences": 13,
     "feed_count": 5,
     "description_excerpt": " French protest groups demand more rallies as Macron faces tough choices    The Business Standard "
    },
@@ -785,9 +790,25 @@
     "title": "Parents Alerted as Socialist Students Plan UK School Walkout on 20 November",
     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWmZRaXhqNGpIbW5PdnAzdndBVmZjRjA4Q0RyLVhpcHN4TjVEVzNFajVKVXQ2cWdFUXl6SkFiWjhLRWNRYzBYcERVak9FSTFHeXk3S1p2ZWF2dWhnT3drTE1aUHdodENzQ3ZyV1BKbzh5bUlqZERaTEtsbkFMUEd5SW83X0ZDZ3V1MV9NQnFsYlAzWFByTUFLSkJmYUt4OWxicG5JdWVfaFdXcVpkSnVrUVhMSFlNVnBXX0lBWWpqcXB3RkZkbGdWRmtDcTZHZ3dqNjM4?oc=5",
     "publisher": "UKNIP",
-    "feed_occurrences": 8,
+    "feed_occurrences": 9,
     "feed_count": 5,
     "description_excerpt": " Parents Alerted as Socialist Students Plan UK School Walkout on 20 November    UKNIP "
+   },
+   {
+    "title": "Serbian leader Aleksandar Vučić concedes defeat in fiercely contested parliamentary election",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUVBlTFVXRW43NWV4cGFydFFRLVctbVVBeXNvU1daQXlaQUJIRGlTSndQN3hCbXRKMGZqSW5lTDloSFplam55SVQwWWM1ZGpoYzRJRTdDcEhFcUVSNlJKU0k0dVkyLXo3RW1QWklXRWp6Y2ZXUmpsb2MtM0UyaE5FNU5KNnlwc3E5MWJuZkdTbW5DeGQxNlNQWjFkVnpqYjlNQnBlNkpqdG5pR2dSc3dWcjFPNlI0Z2h3R0taNlpfX1otQ1JJQTdjVV9xbnVZZnJjR2wzRQ?oc=5",
+    "publisher": "The Guardian",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Serbian leader Aleksandar Vučić concedes defeat in fiercely contested parliamentary election    The Guardian "
+   },
+   {
+    "title": "Vucic Concedes Defeat In Pivotal Serbian Parliamentary Election",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTGo5YUJma0lTUXd2elpZRWNXUE44am1ubFV3dGFEVnd1TlBINHFOQ0o5UUxLd3QyT0lCb2xVeTl0VUZlNFhCMVItb3Q1R19FZU5qcVhqdEhTb0ZqVzhiR29yZVMtUTdZZnlUcEtnSUcyczAtNWVORVRSR3FoaDhaZ2w2amh2RS1jLTlXTXlpWk9WejQ1LWw1dEx30gGcAUFVX3lxTE9Dc1FMZ05GYTNBR1lXZERxZjdqM0toSjFQUGZXMWtER1ltUFZUSkFrTlU3QnRhLWx2eUIxenNEczFsT09GYUtjdjFxNy1oQXVlc1VaenRfWE5uM1FQMFZqUVpNVU9RdmVlWVQ2YnJrTW4tVTg4Z2tvcHN5b0Q3bG02c25vbkxudFdUbHplZ1h0TWxCVDNXMnBSNEFSSA?oc=5",
+    "publisher": "Radio Free Europe/Radio Liberty",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Vucic Concedes Defeat In Pivotal Serbian Parliamentary Election    Radio Free Europe/Radio Liberty "
    },
    {
     "title": "Israeli elections: What are the possible outcomes?",
@@ -796,6 +817,22 @@
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " Israeli elections: What are the possible outcomes?    Al Jazeera "
+   },
+   {
+    "title": "Student List wins Serbian election as Vučić concedes defeat",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNb3B4UGhPUm45bEhUNzRIWVE1cnFoQkhhMTJLWXhTNVlOTlhwY0pXZlFDbUhBeFB0Qm1BUHRyc2VKTzVaRUZCa3BGS0FvOUhMSDZYUVl4N3pyU1M5TC1kTGk4UUtwYWZqbDBTVU9mUmljWUxvX1ljcDlmdHBjNHRvQnYzSkYxbnI1YWdDUV9oUUQ2ekNaTG1RMnBucHVyNnNSRzZnMW1kOVZRanNCbE11NThXaFAyNms?oc=5",
+    "publisher": "Euronews.com",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Student List wins Serbian election as Vučić concedes defeat    Euronews.com "
+   },
+   {
+    "title": "Next election ‘will definitely’ be held under caretaker government, says home minister",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9pYUhDbEJfRGdlWnpCenhGamtTMjFOc3VHWUh1SjVZN1JYM1pkSWxmWTY2ZUNZMWt6TElhRmxrNmZPWkd3MkpjQ2tTOEcyZFp2VFZpdw?oc=5",
+    "publisher": "bdnews24.com",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Next election ‘will definitely’ be held under caretaker government, says home minister    bdnews24.com "
    },
    {
     "title": "Can Large Animals Help Mitigate Climate Change?",
@@ -814,36 +851,28 @@
     "description_excerpt": " New state wildlife action plan considers plants, excludes carnivores    Times Union "
    },
    {
+    "title": "CFAs: Sequoia Park Zoo Conservation Grant Program",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUXJqTGlVNkhtSFJna25oTmRXc3Vwa3hTWkV4UVVpRXUxWVlYRlYtRlRDX2s4X3I4VzVrZDB4dVFNV2VZRmtMTG1OR3RwVW1Pa0hmMGNjaTl1MnViazdDUUwzd25aVWsxVVRldGpJV1lmd2JwZS1UcEN2MjNaVzZrQl9RNHBPaGhqdlZSZm82V3NrN0JSc0tZZtIBngFBVV95cUxOTDVJYVYtbWxWZzJxR3BiY01mWHg0ZkxmSG16dFh4SlZGa2tsZFp6dEpLTnp3bE1YRHZVeWp3X2I1RnB2dUEyVVlIaTlZTnVzNGkxanNpOWxJdzJLQ3JyOHB2NEw5Qjd1LW9xVzNwY01HRzI5czZvQzdwaTctNVJoeHpyaUFzTUZKX1lsbEd2ZWhTREtCbFlZV1RvLTNSUQ?oc=5",
+    "publisher": "fundsforNGOs",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " CFAs: Sequoia Park Zoo Conservation Grant Program    fundsforNGOs "
+   },
+   {
+    "title": "Ecofeminism, CBD COP17, Indigenous Women, Biodiversity Conservation, Environmental Justice",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWDRKQVBTR0p5Qy0tQmdGcjNvUHNNTElYQjZuUFN6dWVXbDQzV3FnTnQxUmV6MFFHMWJKWXJvU1haNmlEaC0yTmh3eUlBNjhHNzVtR2k3aWQ3amI5S3hvQmNITGdTOTJIRkltTktFTm5DVXdmaTNBQWZZOTNDQ3ZPQndNdmhhVlZlSlZGUG1qMW00OUZ2cWJNQmhLNjY1OVdIdkZPR20xLVoyOU5NM1VnOW82a21Fdw?oc=5",
+    "publisher": "The Climate Watch",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Ecofeminism, CBD COP17, Indigenous Women, Biodiversity Conservation, Environmental Justice    The Climate Watch "
+   },
+   {
     "title": "COP17: Trade, climate and finance disputes divide nations as biodiversity talks struggle",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUS12dGkydVIzRUttUVJObTl3OVlsTVdieS1DcVhhUEsyOWNHaEwwcXBCdDRsYW41NXFwZE1fQW4wcUd1WjhDenk3RDVoNTZvcXM0N1B1R3ZnVElvYVY3cmdBanVGSFlnSEVQRlByWFc4dm1ySnJOX0NvYXo1eThoZ3FDdXR0Sk4zeXlxNXF6UnA4aTZDUnhOMFFSeVdZMVZjdGVzQ0stenJSOVRFMndwc0prSWRYZw?oc=5",
     "publisher": "The Climate Watch",
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " COP17: Trade, climate and finance disputes divide nations as biodiversity talks struggle    The Climate Watch "
-   },
-   {
-    "title": "From Forests to Finance: How Nature Credits Could Transform Global Conservation and Investment",
-    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxON1pfaHdrTm9md08tWnpvRXRaZFRUcHBSNGRXRk9fRmZCMWJVbXBxclBLVDJPSHZRUXdxOTZ1MXczWkpfV3BLYWlEMzRKVnlpZ2p6ZzhKRWNLeVZrOFNvRUNBSTBOTm5NT0ppdDhDcUFsTWcxanBYR1VON3RZNUJ6MUN1YmpyWnpUeldXbFdnR0xRTm1Ddkh1MzBTeVZqX0JDRmxFWWZ0dzltMHFSaFJic2VfZ0hxUEdlZU1XSkFTOVNhRjhBZlNmNTZwOXdTMnYwMXRMTzVzdS0xREM0Z2JoUUdrQzNvVFJpalhPcWRHTVpHV3pw0gH0AUFVX3lxTE43Wl9od2tOb2Z3Ty1aem9FdFpkVFRwcFI0ZFdGT19GZkIxYlVtcHFyUEtUMk9IdlFRd3E5NnUxdzNaSl9XcEthaUQzNEpWeWlnanpnOEpFY0t5Vms4U29FQ0FJME5Obk1PSml0OENxQWxNZzFqcFhHVU43dFk1QnoxQ3VianJaelR6V1dsV2dHTFFObUN2SHUzMFN5VmpfQkNGbEVZZnR3OW0wcVJoUmJzZV9nSHFQR2VlTVdKQVM5U2FGOEFmU2Y1NnA5d1MydjAxdExPNXN1LTFEQzRnYmhRR2tDM29UUmlqWE9xZEdNWkdXenA?oc=5",
-    "publisher": "Devdiscourse",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " From Forests to Finance: How Nature Credits Could Transform Global Conservation and Investment    Devdiscourse "
-   },
-   {
-    "title": "‘IIC Festival of the Arts’ to explore ecology under ‘Prakriti’ theme",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeW5jVmdsSXZJZmVKTUoybms3VERjUTJ0d1JXejZvMTJsNUJ2WDdwcTBjYUFGNjg3bmM4WDNiOWEwcGlENWNqT2xRX3BULUc0TTVxNHdOeDMyVndpd3JDWnZndXBNVkNxYkJSbEx3Q3NlYkJSWDdtYXpMZmEzazMxQWVIWW5WOTlldmhWei0tN1RrVUlScmtfV0NjRUM3N1B2ZGJFQkI5ekhkMUtaOU0w0gG0AUFVX3lxTE1YcXM2b0pjYzd5U3Y2djZ3V1VHZUJuemotNGZfQ052d3c5X2JHc1IxT1lMZzZ6dDMwSmpHQ2lIMFZHSXBfSHExd2tJc2Y3cnF5N2tDQ09BbFE4aWhIbG5JbjRlZHdVQkdTUHIyd2NNeWlZRW1GVjlmMllSWDlLU3JRU25IZURGNEVYakFvZjQ1UzdrSkREemxHc2RaUjdkQU9kQzBFbWNaSTF4c2QxRHlGUnZqMA?oc=5",
-    "publisher": "MillenniumPost",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " ‘IIC Festival of the Arts’ to explore ecology under ‘Prakriti’ theme    MillenniumPost "
-   },
-   {
-    "title": "From Giyani village to the wild: A field ranger’s journey",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNd2VqdGp5S2N2VURvRlF0V2tsUWxQZkdHcDdmR2E3TXd3SXJzUWlHVTM0NzhLMHljM2UtUXMtUjZTajVvRnZCeUlVZ1FGS01FaVh0OG1aUmRJZXcxdDZyN3R3SGNqQk1BU2pHT3VkWTBsdkptc0NJdmwzN3BMUGR1Wk5iNkVCNG5XWHoySktpZ2IwM29uYzVTdWZzV3p3d256Tk56eHpER3FqYWdCcERjZ3FSZ0ljY3dDM3lVMnlrYlNHNm90MGFhdER0aEFPQQ?oc=5",
-    "publisher": "The Citizen",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " From Giyani village to the wild: A field ranger’s journey    The Citizen "
    },
    {
     "title": "Geopolitical Tension and Funding Cuts Are Crushing Arctic Wildlife Research",
@@ -862,162 +891,137 @@
     "description_excerpt": " Lynnhaven River Now hosts native plant seed collection for local gardeners    WTKR "
    },
    {
-    "title": "COP17 adopts 14 decisions as Africa demands fair share of biodiversity benefits",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNlJQbmduN1hWT2pmNEkzTklpTDR5OVdUSzd2YUZ5S0E0VjNXYzZFbGtOZ0t2Z1dkUF83MXRYa1FQWmZ4dE1HMksweFVjMTFSTFVYUUE3SWRpT3g0a3hJUGxxY0VNSHZIMXVqYUhJbm15ZmFfZ1RIakMzTjdmX1l0RHZmZlVwRFdqZmtQX0hNQmh2SGYweEVYMVNkbTB1WWRkSkRvSzhSS2NIbWZR?oc=5",
-    "publisher": "The Climate Watch",
+    "title": "‘IIC Festival of the Arts’ to explore ecology under ‘Prakriti’ theme",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeW5jVmdsSXZJZmVKTUoybms3VERjUTJ0d1JXejZvMTJsNUJ2WDdwcTBjYUFGNjg3bmM4WDNiOWEwcGlENWNqT2xRX3BULUc0TTVxNHdOeDMyVndpd3JDWnZndXBNVkNxYkJSbEx3Q3NlYkJSWDdtYXpMZmEzazMxQWVIWW5WOTlldmhWei0tN1RrVUlScmtfV0NjRUM3N1B2ZGJFQkI5ekhkMUtaOU0w0gG0AUFVX3lxTE1YcXM2b0pjYzd5U3Y2djZ3V1VHZUJuemotNGZfQ052d3c5X2JHc1IxT1lMZzZ6dDMwSmpHQ2lIMFZHSXBfSHExd2tJc2Y3cnF5N2tDQ09BbFE4aWhIbG5JbjRlZHdVQkdTUHIyd2NNeWlZRW1GVjlmMllSWDlLU3JRU25IZURGNEVYakFvZjQ1UzdrSkREemxHc2RaUjdkQU9kQzBFbWNaSTF4c2QxRHlGUnZqMA?oc=5",
+    "publisher": "MillenniumPost",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " COP17 adopts 14 decisions as Africa demands fair share of biodiversity benefits    The Climate Watch "
+    "description_excerpt": " ‘IIC Festival of the Arts’ to explore ecology under ‘Prakriti’ theme    MillenniumPost "
    },
    {
-    "title": "Center for Biological Diversity Reports Over 100 Groups Oppose Sweeping Attacks on Public Lands in Permitting Bill",
-    "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQWHJuQ09nd2EtaFpvODg5MmtYMWFKSUlRdUUyQzRtR0liaVNmeFAwR2I4LUZaajNBXzAydmZGR1AtYlhQQ3lBRHhfa2F4YUJTTkNlM3pWVXVfSWczY05JQ29uRDFjdHZRX2pjR2Z2Vmt4dExkODJsSTRCVW43TXdFc3c3OXpSNVdLRTNreThVREY4Sk0tNWFRcVpMaDhkVkZSSV9yaUQ2TE8tRDg2ZHJ4WDRqcUd1Y0c5TUdtcmNkaGJQSWJsWVZicFNmRVJqeTlMRUFoTkc5MEIydkFxSl9zdDdnYkdPZ0pIeFowc1hsbUlEUE5iN0lFdlphdmJCY0dTckJCbjJIeTF1X1V0Tk5Ja29lbw?oc=5",
-    "publisher": "Sierra Sun Times",
+    "title": "Video | Cost Of Living, Housing Crisis Fuel Fresh Wave Of Protests Across Europe",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWlhNSVZvVkE2MHEzRlY5U1pMOW83MGhUblNteUZwVnR0bnQwWnZWWHFkcFVHcUlxNl9vTkdQemI0RS1HblM0Yi1QOE1hY1otSGNBLXc2MVpBT1BhNWYxT1ZWaUh1TmNCeGxoQjlySmt1Q0hzLUdncnpaM3dlVXI5ZS02QnJWR19mdFVMSk8yYXJiNEljVG50TmU4U1p5WFVqblY1TThzcnFDUQ?oc=5",
+    "publisher": "NDTV",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Center for Biological Diversity Reports Over 100 Groups Oppose Sweeping Attacks on Public Lands in Permitting Bill    Sierra Sun Times "
-   },
-   {
-    "title": "Ulster Wildlife Wins Biodiversity Award for Oyster Project",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNN1dOeGR3Vk14angwcHR0cFdOanBveTVIaGtCV3lUZ2NPSXRwMzhtS2NscUk1cmxCSE5paWRZS3A4VmFXY25YbEpSOXNoVk9vWm1BdHk2c2oxaEptejNrdk9najZWbjdQTVY2Zm1lcU14YVBNQ1F2Q1VkcEVBdDh1bGNXVm9yaHZTdzhTbzZjVjdYcl85c3RhQmZISGZQTnNOTEcxNUhKVC16QzlGRnJGSEdYZnplUXdnNEFWWjVvNA?oc=5",
-    "publisher": "afloat.ie",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Ulster Wildlife Wins Biodiversity Award for Oyster Project    afloat.ie "
-   },
-   {
-    "title": "Govt turns to quick-maturing seed, irrigation as climate squeezes farmers",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPaWF4a0x1cmhweW9hMDVjdTRCeHJ3bF81Njl6NjY3ZWFWdGF1Z19oSkVMbkxzN2Q1bjFDZ3pZaXFZRzR0b2lLVGh5eHl1Wi1SSjh6VXZaY1dOZ1ZrWWxwVjI1ek1ya0NmZGFyUDhUWDREdHYzYjkyVGNlRGdHOXlXTXF2YWdyeVJIRWd4OVhXMFBfdW1sdUhDakFybXRqOVc1WU1LUjV2NWp5cldSdHF1dkFtdHMxb0dnTDNxVtIBvAFBVV95cUxPaWF4a0x1cmhweW9hMDVjdTRCeHJ3bF81Njl6NjY3ZWFWdGF1Z19oSkVMbkxzN2Q1bjFDZ3pZaXFZRzR0b2lLVGh5eHl1Wi1SSjh6VXZaY1dOZ1ZrWWxwVjI1ek1ya0NmZGFyUDhUWDREdHYzYjkyVGNlRGdHOXlXTXF2YWdyeVJIRWd4OVhXMFBfdW1sdUhDakFybXRqOVc1WU1LUjV2NWp5cldSdHF1dkFtdHMxb0dnTDNxVg?oc=5",
-    "publisher": "Nilepost",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Govt turns to quick-maturing seed, irrigation as climate squeezes farmers    Nilepost "
-   },
-   {
-    "title": "ZimParks, Ifaw deepen conservation roots in Hwange Schools",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSC1HLTAwZlJYM2VzTkhmY0JWTklnajdvT2xFSVhhNmN0YmdBWVpVNVYwdGREdmxXM2YyNnNhdktqakVXOXhtQjRiSlhrcDlpSzNNQm5aeHpYOWQxemJnNThIbEVMUWNWRkRSR19YLVhRdzNvellUc2xWSU1mR0t4MlhNSC1USm1qdkxKZkUwTnZJSG8?oc=5",
-    "publisher": "Herald.co.zw",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " ZimParks, Ifaw deepen conservation roots in Hwange Schools    Herald.co.zw "
+    "description_excerpt": " Video | Cost Of Living, Housing Crisis Fuel Fresh Wave Of Protests Across Europe    NDTV "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Vietnam",
-   "largest_label_articles": 56,
-   "share_of_country_labelled_articles": 0.142
+   "largest_label_articles": 76,
+   "share_of_country_labelled_articles": 0.183
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 167,
-  "unique_google_urls_not_in_direct_sample": 536,
+  "unique_direct_urls_not_in_google_sample": 169,
+  "unique_google_urls_not_in_direct_sample": 571,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
    "The Guardian World": 23,
    "France24": 21,
-   "France24 ES": 20,
+   "France24 ES": 19,
    "Al Jazeera": 19,
    "France24 FR": 14,
-   "BBC World": 13,
-   "RNZ National": 11,
-   "ABC Australia": 9,
-   "BBC Science": 8,
-   "NPR World": 5,
+   "RNZ National": 13,
+   "ABC Australia": 12,
+   "BBC World": 11,
+   "BBC Science": 9,
    "DW World": 5,
+   "NPR World": 5,
    "BBC Middle East": 4,
-   "The Guardian Environment": 4,
    "BBC Europe": 4,
-   "BBC Latin America": 3,
+   "BBC Brasil": 3,
    "RNZ Pacific": 3,
-   "Global Voices English": 2,
-   "BBC Brasil": 2,
+   "The Guardian Environment": 3,
+   "BBC Latin America": 2,
    "Mongabay Latam": 2,
-   "The Conversation Africa": 2,
-   "BBC Africa": 2,
    "The Conversation France": 2,
+   "BBC Africa": 2,
+   "The Conversation Africa": 2,
+   "Global Voices English": 2,
    "BBC Business": 1,
    "Guardian Africa": 1,
-   "The Conversation Canada": 1,
-   "The Conversation Brasil": 1,
    "The Conversation NZ": 1,
-   "Global Voices Spanish": 1
+   "The Conversation Canada": 1,
+   "The Conversation Brasil": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 394,
-  "country_labels_count": 74,
+  "country_labelled_articles": 416,
+  "country_labels_count": 69,
   "top_country_subjects": {
-   "Vietnam": 56,
-   "Israel": 25,
-   "France": 24,
-   "Nigeria": 21,
-   "Serbia": 20,
-   "Brazil": 17,
+   "Vietnam": 76,
+   "Serbia": 30,
+   "France": 29,
+   "Israel": 22,
+   "Nigeria": 19,
+   "Brazil": 18,
    "India": 13,
-   "Venezuela": 10,
-   "China": 10,
+   "Australia": 12,
+   "Venezuela": 12,
    "Mexico": 10,
-   "Albania": 9,
-   "Iran": 9,
+   "China": 9,
    "Chile": 9,
-   "Qatar": 8,
-   "Australia": 8,
-   "Argentina": 8,
+   "Albania": 8,
+   "Iran": 7,
    "Saudi Arabia": 6,
-   "Canada": 6,
-   "Haiti": 5,
+   "Argentina": 6,
+   "United States": 6,
+   "Qatar": 5,
+   "Scotland": 5,
+   "Panama": 5,
+   "Canada": 5,
+   "Kenya": 5,
    "Ghana": 5,
    "Ukraine": 5,
-   "Yemen": 4,
-   "Scotland": 4,
-   "Panama": 4,
-   "Kenya": 4,
-   "United States": 4,
+   "Haiti": 4,
+   "Bangladesh": 4,
+   "Pakistan": 4,
    "Cyprus": 4,
-   "Bangladesh": 3,
-   "Pakistan": 3,
-   "Hong Kong": 3
+   "Portugal": 4,
+   "Yemen": 3
   },
-  "distinct_geographic_signal_centers": 251,
+  "distinct_geographic_signal_centers": 254,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 134
+   "mapped_pre_dedupe": 136
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 92
+   "mapped_pre_dedupe": 95
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 120
+   "mapped_pre_dedupe": 149
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 93
+   "mapped_pre_dedupe": 98
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 142
+   "mapped_pre_dedupe": 144
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 100
+   "mapped_pre_dedupe": 97
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 132
+   "mapped_pre_dedupe": 145
   },
   "CA": {
    "requests": 11,
@@ -1027,20 +1031,20 @@
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 40
+   "mapped_pre_dedupe": 50
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 199
+   "mapped_pre_dedupe": 220
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 143
+   "mapped_pre_dedupe": 149
   }
  },
- "duplicates_removed": 800,
+ "duplicates_removed": 853,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1058,34 +1062,34 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-10-25T20:54:33+00:00",
-    "mapped_articles": 681,
-    "geographic_signals": 395,
-    "feeds_ok": 170,
+    "at": "2026-10-25T23:18:10+00:00",
+    "mapped_articles": 717,
+    "geographic_signals": 401,
+    "feeds_ok": 165,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 28,
+    "rejected_matching_occurrences": 31,
     "ambiguous_mapped_signal_count": 0
    }
   ],
   "latest": {
-   "at": "2026-10-25T20:54:33+00:00",
-   "mapped_articles": 681,
-   "geographic_signals": 395,
-   "feeds_ok": 170,
+   "at": "2026-10-25T23:18:10+00:00",
+   "mapped_articles": 717,
+   "geographic_signals": 401,
+   "feeds_ok": 165,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 28,
+   "rejected_matching_occurrences": 31,
    "ambiguous_mapped_signal_count": 0
   },
   "recent_change": {
-   "baseline_at": "2026-10-25T20:54:33+00:00",
+   "baseline_at": "2026-10-25T23:18:10+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Union": 10,
+   "Union": 12,
    "David": 6,
-   "Serra": 4,
+   "Serra": 5,
    "Forest": 4,
    "Rubio": 2,
    "Split": 2

@@ -1,36 +1,40 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-10-25T20:54:33.458449+00:00",
+ "updated_at": "2026-10-25T23:18:10.802040+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 110,
-   "successful_empty": 11,
+   "successful_nonempty": 105,
+   "successful_empty": 16,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [
     "google/politics/GB",
     "google/politics/AU",
-    "google/politics/NG",
     "google/politics/CA",
     "google/environment/GB",
     "google/environment/AU",
     "google/environment/NG",
     "google/environment/CA",
+    "google/hazards/US",
+    "google/hazards/IN",
+    "google/hazards/ZA",
+    "google/hazards/PH",
     "google/hazards/BR",
-    "google/science/GB",
-    "google/science/NG"
+    "google/hazards/KE",
+    "google/economy/US",
+    "google/science/GB"
    ],
    "failure_samples": []
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 49,
+   "successful_nonempty": 44,
    "successful_empty": 0,
-   "transport_failure": 3,
+   "transport_failure": 8,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
@@ -44,7 +48,27 @@
      "error": ""
     },
     {
+     "source": "direct/UN News",
+     "error": ""
+    },
+    {
      "source": "direct/DW Español",
+     "error": ""
+    },
+    {
+     "source": "direct/AllAfrica West Africa",
+     "error": ""
+    },
+    {
+     "source": "direct/AllAfrica East Africa",
+     "error": ""
+    },
+    {
+     "source": "direct/AllAfrica Central Africa",
+     "error": ""
+    },
+    {
+     "source": "direct/AllAfrica Southern Africa",
      "error": ""
     }
    ]
@@ -104,7 +128,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "0581b1b6d6db52e8c21cca27bde5e86733cdaa3e11110e8a851979c8154c9653",
+  "frozen_snapshot_fingerprint": "bed58b54c27dab5ce56c8affbc8c5cf91f8526a15cb848001c68c31af649398a",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
