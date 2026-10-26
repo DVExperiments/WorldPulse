@@ -1,20 +1,17 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-10-25T23:18:10.802040+00:00",
+ "updated_at": "2026-10-26T01:46:54.159168+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 105,
-   "successful_empty": 16,
+   "successful_nonempty": 109,
+   "successful_empty": 12,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [
-    "google/politics/GB",
-    "google/politics/AU",
-    "google/politics/CA",
     "google/environment/GB",
     "google/environment/AU",
     "google/environment/NG",
@@ -25,16 +22,16 @@
     "google/hazards/PH",
     "google/hazards/BR",
     "google/hazards/KE",
-    "google/economy/US",
-    "google/science/GB"
+    "google/science/GB",
+    "google/science/NG"
    ],
    "failure_samples": []
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 44,
+   "successful_nonempty": 48,
    "successful_empty": 0,
-   "transport_failure": 8,
+   "transport_failure": 4,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
@@ -48,27 +45,11 @@
      "error": ""
     },
     {
-     "source": "direct/UN News",
-     "error": ""
-    },
-    {
      "source": "direct/DW Español",
      "error": ""
     },
     {
-     "source": "direct/AllAfrica West Africa",
-     "error": ""
-    },
-    {
-     "source": "direct/AllAfrica East Africa",
-     "error": ""
-    },
-    {
-     "source": "direct/AllAfrica Central Africa",
-     "error": ""
-    },
-    {
-     "source": "direct/AllAfrica Southern Africa",
+     "source": "direct/Inter Press Service Headlines",
      "error": ""
     }
    ]
@@ -128,7 +109,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "bed58b54c27dab5ce56c8affbc8c5cf91f8526a15cb848001c68c31af649398a",
+  "frozen_snapshot_fingerprint": "f9c60e7c3d8dfe7cd3e421504c65a24f00f0dc2d8f1598f0acc2bfb653e42a5c",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
