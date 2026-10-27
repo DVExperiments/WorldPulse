@@ -1,104 +1,161 @@
 {
  "schema": 1,
  "release": "v2.5.0",
- "generated_at": "2026-10-27T10:37:58.102892+00:00",
+ "generated_at": "2026-10-27T16:02:40.846734+00:00",
  "mode": "observational_non_mutating",
- "source_rows": 1680,
- "displayed_articles": 944,
- "signal_groups": 502,
- "mapped_location_names": 318,
+ "source_rows": 1657,
+ "displayed_articles": 852,
+ "signal_groups": 427,
+ "mapped_location_names": 283,
  "feeds_total": 173,
  "feeds_failed_by_kind": {
-  "publisher": 3
+  "publisher": 4
  },
  "feeds_successful_empty_by_kind": {
-  "aggregator": 14
+  "aggregator": 9
  },
  "geo_match_basis": {
-  "headline": 1273,
-  "headline-curated": 1,
-  "description": 342,
-  "d4_explicit_country": 15,
-  "headline-multilingual": 7,
-  "description-normalized": 10,
+  "headline": 1278,
+  "headline-curated": 2,
+  "description": 319,
+  "d4_explicit_country": 10,
+  "description-curated": 14,
+  "headline-expanded": 7,
+  "description-normalized": 6,
   "title-normalized": 16,
-  "headline-expanded": 12,
-  "description-expanded": 1,
-  "headline-reviewed-correction": 3
+  "headline-multilingual": 3,
+  "headline-reviewed-correction": 1,
+  "description-expanded": 1
  },
- "unmapped_sample_rows": 1366,
+ "unmapped_sample_rows": 1312,
  "publisher_concentration_hotspots": [
   {
-   "location": "Halifax",
-   "matched_rows": 10,
-   "leading_publisher": "Halifax",
-   "leading_rows": 10,
+   "location": "Bozeman",
+   "matched_rows": 14,
+   "leading_publisher": "Bozeman Daily Chronicle",
+   "leading_rows": 14,
    "publisher_concentration_pct": 100.0,
    "distinct_publishers": 1
   },
   {
-   "location": "Vietnam",
-   "matched_rows": 78,
-   "leading_publisher": "Vietnam.vn",
-   "leading_rows": 73,
-   "publisher_concentration_pct": 93.6,
-   "distinct_publishers": 5
+   "location": "Halifax",
+   "matched_rows": 12,
+   "leading_publisher": "Halifax",
+   "leading_rows": 12,
+   "publisher_concentration_pct": 100.0,
+   "distinct_publishers": 1
   },
   {
    "location": "Kenya",
    "matched_rows": 9,
    "leading_publisher": "AllAfrica East Africa",
-   "leading_rows": 7,
-   "publisher_concentration_pct": 77.8,
-   "distinct_publishers": 2
+   "leading_rows": 9,
+   "publisher_concentration_pct": 100.0,
+   "distinct_publishers": 1
   },
   {
-   "location": "Germany",
-   "matched_rows": 8,
-   "leading_publisher": "United Nations Development Programme",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 62.5,
-   "distinct_publishers": 3
+   "location": "Strait of Hormuz",
+   "matched_rows": 9,
+   "leading_publisher": "Britannica",
+   "leading_rows": 9,
+   "publisher_concentration_pct": 100.0,
+   "distinct_publishers": 1
   },
   {
-   "location": "South Africa",
-   "matched_rows": 34,
-   "leading_publisher": "AllAfrica Southern Africa",
-   "leading_rows": 21,
-   "publisher_concentration_pct": 61.8,
-   "distinct_publishers": 7
-  },
-  {
-   "location": "Rwanda",
-   "matched_rows": 10,
-   "leading_publisher": "AllAfrica Central Africa",
-   "leading_rows": 6,
-   "publisher_concentration_pct": 60.0,
-   "distinct_publishers": 2
-  },
-  {
-   "location": "Canada",
-   "matched_rows": 22,
-   "leading_publisher": "EnergyNow",
-   "leading_rows": 13,
-   "publisher_concentration_pct": 59.1,
+   "location": "Vietnam",
+   "matched_rows": 98,
+   "leading_publisher": "Vietnam.vn",
+   "leading_rows": 88,
+   "publisher_concentration_pct": 89.8,
    "distinct_publishers": 6
   },
   {
-   "location": "Sri Lanka",
-   "matched_rows": 9,
-   "leading_publisher": "A-Z Animals",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 55.6,
+   "location": "Rwanda",
+   "matched_rows": 17,
+   "leading_publisher": "AllAfrica Central Africa",
+   "leading_rows": 12,
+   "publisher_concentration_pct": 70.6,
    "distinct_publishers": 3
   },
   {
-   "location": "Chicago",
-   "matched_rows": 10,
-   "leading_publisher": "ABC7 Chicago",
+   "location": "Zurich",
+   "matched_rows": 8,
+   "leading_publisher": "TheNigeriaLawyer",
    "leading_rows": 5,
+   "publisher_concentration_pct": 62.5,
+   "distinct_publishers": 2
+  },
+  {
+   "location": "Uzbekistan",
+   "matched_rows": 13,
+   "leading_publisher": "Daryo",
+   "leading_rows": 8,
+   "publisher_concentration_pct": 61.5,
+   "distinct_publishers": 2
+  },
+  {
+   "location": "South Africa",
+   "matched_rows": 29,
+   "leading_publisher": "AllAfrica Southern Africa",
+   "leading_rows": 17,
+   "publisher_concentration_pct": 58.6,
+   "distinct_publishers": 6
+  },
+  {
+   "location": "Iran",
+   "matched_rows": 44,
+   "leading_publisher": "ABC News - Breaking News, Latest News and Videos",
+   "leading_rows": 25,
+   "publisher_concentration_pct": 56.8,
+   "distinct_publishers": 11
+  },
+  {
+   "location": "Armenia",
+   "matched_rows": 9,
+   "leading_publisher": "Revoi.in",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 55.6,
+   "distinct_publishers": 2
+  },
+  {
+   "location": "Russia",
+   "matched_rows": 9,
+   "leading_publisher": "Daily Sun",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 55.6,
+   "distinct_publishers": 5
+  },
+  {
+   "location": "Scotland",
+   "matched_rows": 9,
+   "leading_publisher": "BBC Science",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 55.6,
+   "distinct_publishers": 2
+  },
+  {
+   "location": "Texas",
+   "matched_rows": 9,
+   "leading_publisher": "CBS7 | Permian Basin, West Texas News | Midland, TX",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 55.6,
+   "distinct_publishers": 5
+  },
+  {
+   "location": "Canada",
+   "matched_rows": 25,
+   "leading_publisher": "EnergyNow",
+   "leading_rows": 13,
+   "publisher_concentration_pct": 52.0,
+   "distinct_publishers": 8
+  },
+  {
+   "location": "Ghana",
+   "matched_rows": 12,
+   "leading_publisher": "GhanaWeb",
+   "leading_rows": 6,
    "publisher_concentration_pct": 50.0,
-   "distinct_publishers": 4
+   "distinct_publishers": 3
   },
   {
    "location": "Methuen",
@@ -109,76 +166,92 @@
    "distinct_publishers": 2
   },
   {
+   "location": "Netherlands",
+   "matched_rows": 10,
+   "leading_publisher": "InfoMigrants",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 50.0,
+   "distinct_publishers": 5
+  },
+  {
    "location": "Singapore",
    "matched_rows": 10,
    "leading_publisher": "The Business Times",
    "leading_rows": 5,
    "publisher_concentration_pct": 50.0,
-   "distinct_publishers": 2
-  },
-  {
-   "location": "United States",
-   "matched_rows": 8,
-   "leading_publisher": "www.tmgm.com",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 50.0,
    "distinct_publishers": 4
   },
   {
-   "location": "Virginia",
+   "location": "Morocco",
    "matched_rows": 8,
-   "leading_publisher": "WSLS",
+   "leading_publisher": "HESPRESS English - Morocco News",
    "leading_rows": 4,
    "publisher_concentration_pct": 50.0,
    "distinct_publishers": 2
   },
   {
-   "location": "New Zealand",
-   "matched_rows": 19,
-   "leading_publisher": "RNZ National",
-   "leading_rows": 9,
-   "publisher_concentration_pct": 47.4,
-   "distinct_publishers": 5
-  },
-  {
-   "location": "Bangladesh",
-   "matched_rows": 15,
-   "leading_publisher": "Bangladesh Sangbad Sangstha (BSS)",
-   "leading_rows": 7,
-   "publisher_concentration_pct": 46.7,
-   "distinct_publishers": 5
-  },
-  {
    "location": "Paris",
-   "matched_rows": 11,
+   "matched_rows": 8,
    "leading_publisher": "Condé Nast Traveller Middle East",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 45.5,
+   "leading_rows": 4,
+   "publisher_concentration_pct": 50.0,
+   "distinct_publishers": 2
+  },
+  {
+   "location": "New York",
+   "matched_rows": 17,
+   "leading_publisher": "New York Post",
+   "leading_rows": 8,
+   "publisher_concentration_pct": 47.1,
+   "distinct_publishers": 5
+  },
+  {
+   "location": "DR Congo",
+   "matched_rows": 9,
+   "leading_publisher": "UN News",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 44.4,
+   "distinct_publishers": 6
+  },
+  {
+   "location": "Malaysia",
+   "matched_rows": 9,
+   "leading_publisher": "The Sun Malaysia",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 44.4,
    "distinct_publishers": 3
   },
   {
-   "location": "Ethiopia",
+   "location": "Spain",
+   "matched_rows": 9,
+   "leading_publisher": "The Economist",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 44.4,
+   "distinct_publishers": 3
+  },
+  {
+   "location": "Uganda",
    "matched_rows": 12,
    "leading_publisher": "AllAfrica East Africa",
    "leading_rows": 5,
    "publisher_concentration_pct": 41.7,
-   "distinct_publishers": 5
+   "distinct_publishers": 3
   },
   {
-   "location": "Texas",
-   "matched_rows": 12,
-   "leading_publisher": "CBS7 | Permian Basin, West Texas News | Midland, TX",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 41.7,
-   "distinct_publishers": 4
+   "location": "New Zealand",
+   "matched_rows": 22,
+   "leading_publisher": "RNZ National",
+   "leading_rows": 9,
+   "publisher_concentration_pct": 40.9,
+   "distinct_publishers": 6
   },
   {
-   "location": "Uganda",
+   "location": "Mexico",
    "matched_rows": 10,
-   "leading_publisher": "UNESCO",
+   "leading_publisher": "Latin Times",
    "leading_rows": 4,
    "publisher_concentration_pct": 40.0,
-   "distinct_publishers": 4
+   "distinct_publishers": 6
   },
   {
    "location": "Sudan",
@@ -186,124 +259,47 @@
    "leading_publisher": "The Organization for World Peace",
    "leading_rows": 5,
    "publisher_concentration_pct": 38.5,
-   "distinct_publishers": 5
-  },
-  {
-   "location": "South Korea",
-   "matched_rows": 14,
-   "leading_publisher": "VnExpress International",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 35.7,
-   "distinct_publishers": 4
-  },
-  {
-   "location": "London",
-   "matched_rows": 12,
-   "leading_publisher": "London Evening Standard",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 33.3,
    "distinct_publishers": 6
   },
   {
-   "location": "Vitória",
-   "matched_rows": 19,
-   "leading_publisher": "BBC Brasil",
-   "leading_rows": 6,
-   "publisher_concentration_pct": 31.6,
-   "distinct_publishers": 13
-  },
-  {
-   "location": "Ghana",
-   "matched_rows": 16,
-   "leading_publisher": "Adomonline.com",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 31.2,
+   "location": "Kyiv",
+   "matched_rows": 8,
+   "leading_publisher": "The Guardian",
+   "leading_rows": 3,
+   "publisher_concentration_pct": 37.5,
    "distinct_publishers": 5
-  },
-  {
-   "location": "New York",
-   "matched_rows": 17,
-   "leading_publisher": "The New York Academy of Sciences",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 29.4,
-   "distinct_publishers": 5
-  },
-  {
-   "location": "Mexico",
-   "matched_rows": 15,
-   "leading_publisher": "El Sol de México",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 26.7,
-   "distinct_publishers": 7
-  },
-  {
-   "location": "Australia",
-   "matched_rows": 19,
-   "leading_publisher": "The Conversation",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 26.3,
-   "distinct_publishers": 9
-  },
-  {
-   "location": "India",
-   "matched_rows": 31,
-   "leading_publisher": "The Times of India",
-   "leading_rows": 8,
-   "publisher_concentration_pct": 25.8,
-   "distinct_publishers": 10
-  },
-  {
-   "location": "Madrid",
-   "matched_rows": 24,
-   "leading_publisher": "EL PAÍS",
-   "leading_rows": 6,
-   "publisher_concentration_pct": 25.0,
-   "distinct_publishers": 16
-  },
-  {
-   "location": "Gaza",
-   "matched_rows": 16,
-   "leading_publisher": "Devdiscourse",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 25.0,
-   "distinct_publishers": 10
   }
  ],
  "top_mapped_publishers": [
   {
    "publisher": "Vietnam.vn",
-   "matched_rows": 89,
-   "mapped_locations": 10
+   "matched_rows": 105,
+   "mapped_locations": 9
+  },
+  {
+   "publisher": "Al Jazeera",
+   "matched_rows": 36,
+   "mapped_locations": 18
+  },
+  {
+   "publisher": "ABC News - Breaking News, Latest News and Videos",
+   "matched_rows": 30,
+   "mapped_locations": 3
   },
   {
    "publisher": "AllAfrica East Africa",
    "matched_rows": 30,
-   "mapped_locations": 11
+   "mapped_locations": 12
   },
   {
    "publisher": "AllAfrica Southern Africa",
-   "matched_rows": 29,
+   "matched_rows": 30,
    "mapped_locations": 6
-  },
-  {
-   "publisher": "Al Jazeera",
-   "matched_rows": 28,
-   "mapped_locations": 19
   },
   {
    "publisher": "AllAfrica West Africa",
    "matched_rows": 28,
-   "mapped_locations": 8
-  },
-  {
-   "publisher": "The Guardian World",
-   "matched_rows": 27,
-   "mapped_locations": 19
-  },
-  {
-   "publisher": "France24",
-   "matched_rows": 22,
-   "mapped_locations": 16
+   "mapped_locations": 6
   },
   {
    "publisher": "RNZ National",
@@ -311,69 +307,74 @@
    "mapped_locations": 10
   },
   {
-   "publisher": "France24 ES",
+   "publisher": "The Times of India",
+   "matched_rows": 20,
+   "mapped_locations": 8
+  },
+  {
+   "publisher": "The Guardian World",
+   "matched_rows": 20,
+   "mapped_locations": 15
+  },
+  {
+   "publisher": "France24",
    "matched_rows": 19,
-   "mapped_locations": 9
-  },
-  {
-   "publisher": "France 24",
-   "matched_rows": 15,
-   "mapped_locations": 4
-  },
-  {
-   "publisher": "ABC News - Breaking News, Latest News and Videos",
-   "matched_rows": 15,
-   "mapped_locations": 3
+   "mapped_locations": 14
   },
   {
    "publisher": "BBC World",
-   "matched_rows": 15,
+   "matched_rows": 18,
+   "mapped_locations": 15
+  },
+  {
+   "publisher": "France24 ES",
+   "matched_rows": 18,
    "mapped_locations": 11
   },
   {
-   "publisher": "BBC",
-   "matched_rows": 14,
-   "mapped_locations": 2
-  },
-  {
-   "publisher": "The Times of India",
-   "matched_rows": 14,
+   "publisher": "AllAfrica Central Africa",
+   "matched_rows": 17,
    "mapped_locations": 6
   },
   {
-   "publisher": "EnergyNow",
+   "publisher": "The Guardian Nigeria News",
+   "matched_rows": 15,
+   "mapped_locations": 1
+  },
+  {
+   "publisher": "Mongabay Global",
+   "matched_rows": 15,
+   "mapped_locations": 12
+  },
+  {
+   "publisher": "Britannica",
    "matched_rows": 14,
    "mapped_locations": 2
   },
   {
-   "publisher": "Mongabay Global",
+   "publisher": "Bozeman Daily Chronicle",
    "matched_rows": 14,
-   "mapped_locations": 11
+   "mapped_locations": 1
   },
   {
-   "publisher": "The Kyiv Independent",
-   "matched_rows": 13,
-   "mapped_locations": 3
-  },
-  {
-   "publisher": "The Guardian Nigeria News",
+   "publisher": "EnergyNow",
    "matched_rows": 13,
    "mapped_locations": 1
   },
   {
-   "publisher": "PBS",
+   "publisher": "France 24",
    "matched_rows": 12,
    "mapped_locations": 3
   },
   {
-   "publisher": "France24 FR",
-   "matched_rows": 11,
-   "mapped_locations": 9
+   "publisher": "Halifax",
+   "matched_rows": 12,
+   "mapped_locations": 1
   },
   {
-   "publisher": "AllAfrica Central Africa",
+   "publisher": "GhanaWeb",
    "matched_rows": 11,
-   "mapped_locations": 6
+   "mapped_locations": 2
   },
   {
    "publisher": "Ynetnews",
@@ -381,17 +382,17 @@
    "mapped_locations": 1
   },
   {
-   "publisher": "Halifax",
+   "publisher": "The New Indian Express",
    "matched_rows": 10,
-   "mapped_locations": 1
+   "mapped_locations": 2
   },
   {
-   "publisher": "Fakti.bg",
+   "publisher": "BBC Science",
    "matched_rows": 10,
-   "mapped_locations": 3
+   "mapped_locations": 5
   },
   {
-   "publisher": "The Guardian",
+   "publisher": "Latin Times",
    "matched_rows": 9,
    "mapped_locations": 2
   }
