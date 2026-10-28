@@ -1,168 +1,160 @@
 {
  "schema": 1,
  "release": "v2.5.0",
- "generated_at": "2026-10-28T11:41:15.271574+00:00",
+ "generated_at": "2026-10-28T17:25:48.298414+00:00",
  "mode": "observational_non_mutating",
- "source_rows": 1519,
- "displayed_articles": 833,
- "signal_groups": 466,
- "mapped_location_names": 300,
+ "source_rows": 1591,
+ "displayed_articles": 841,
+ "signal_groups": 484,
+ "mapped_location_names": 298,
  "feeds_total": 173,
  "feeds_failed_by_kind": {
-  "publisher": 4
+  "publisher": 3
  },
  "feeds_successful_empty_by_kind": {
   "aggregator": 5
  },
  "geo_match_basis": {
-  "headline": 1131,
-  "description": 337,
-  "d4_explicit_country": 13,
+  "headline": 1163,
+  "description": 376,
+  "d4_explicit_country": 15,
+  "headline-multilingual": 2,
+  "title-normalized": 10,
   "headline-expanded": 6,
   "description-normalized": 6,
-  "description-expanded": 5,
-  "description-multilingual": 1,
-  "description-curated": 2,
-  "title-normalized": 15,
-  "headline-multilingual": 3
+  "headline-curated": 5,
+  "description-expanded": 4,
+  "description-curated": 4
  },
- "unmapped_sample_rows": 1482,
+ "unmapped_sample_rows": 1626,
  "publisher_concentration_hotspots": [
   {
    "location": "Rwanda",
-   "matched_rows": 14,
+   "matched_rows": 12,
    "leading_publisher": "AllAfrica Central Africa",
-   "leading_rows": 14,
+   "leading_rows": 12,
    "publisher_concentration_pct": 100.0,
    "distinct_publishers": 1
   },
   {
-   "location": "Florida, USA",
-   "matched_rows": 10,
-   "leading_publisher": "Florida State University News",
-   "leading_rows": 10,
+   "location": "Namibia",
+   "matched_rows": 9,
+   "leading_publisher": "AllAfrica Southern Africa",
+   "leading_rows": 9,
+   "publisher_concentration_pct": 100.0,
+   "distinct_publishers": 1
+  },
+  {
+   "location": "Austin",
+   "matched_rows": 8,
+   "leading_publisher": "Community Impact Newspaper",
+   "leading_rows": 8,
    "publisher_concentration_pct": 100.0,
    "distinct_publishers": 1
   },
   {
    "location": "Ho Chi Minh City",
-   "matched_rows": 10,
+   "matched_rows": 8,
    "leading_publisher": "Vietnam.vn",
-   "leading_rows": 10,
-   "publisher_concentration_pct": 100.0,
-   "distinct_publishers": 1
-  },
-  {
-   "location": "Jerusalem",
-   "matched_rows": 9,
-   "leading_publisher": "The Jerusalem Post",
-   "leading_rows": 9,
+   "leading_rows": 8,
    "publisher_concentration_pct": 100.0,
    "distinct_publishers": 1
   },
   {
    "location": "Vietnam",
-   "matched_rows": 92,
+   "matched_rows": 69,
    "leading_publisher": "Vietnam.vn",
-   "leading_rows": 83,
-   "publisher_concentration_pct": 90.2,
-   "distinct_publishers": 5
+   "leading_rows": 66,
+   "publisher_concentration_pct": 95.7,
+   "distinct_publishers": 3
+  },
+  {
+   "location": "Manila",
+   "matched_rows": 11,
+   "leading_publisher": "Manila Bulletin",
+   "leading_rows": 10,
+   "publisher_concentration_pct": 90.9,
+   "distinct_publishers": 2
   },
   {
    "location": "Belgrade",
-   "matched_rows": 8,
-   "leading_publisher": "Bozeman Daily Chronicle",
-   "leading_rows": 7,
-   "publisher_concentration_pct": 87.5,
-   "distinct_publishers": 2
-  },
-  {
-   "location": "Austin",
    "matched_rows": 10,
-   "leading_publisher": "Community Impact Newspaper",
+   "leading_publisher": "Bozeman Daily Chronicle",
    "leading_rows": 8,
    "publisher_concentration_pct": 80.0,
-   "distinct_publishers": 2
+   "distinct_publishers": 3
   },
   {
-   "location": "Kenya",
-   "matched_rows": 15,
-   "leading_publisher": "AllAfrica East Africa",
-   "leading_rows": 11,
-   "publisher_concentration_pct": 73.3,
-   "distinct_publishers": 4
-  },
-  {
-   "location": "Saudi Arabia",
-   "matched_rows": 13,
-   "leading_publisher": "intlbm",
-   "leading_rows": 9,
-   "publisher_concentration_pct": 69.2,
+   "location": "Los Angeles",
+   "matched_rows": 12,
+   "leading_publisher": "Los Angeles Times",
+   "leading_rows": 8,
+   "publisher_concentration_pct": 66.7,
    "distinct_publishers": 2
   },
   {
    "location": "South Africa",
-   "matched_rows": 13,
+   "matched_rows": 11,
    "leading_publisher": "AllAfrica Southern Africa",
-   "leading_rows": 9,
-   "publisher_concentration_pct": 69.2,
+   "leading_rows": 7,
+   "publisher_concentration_pct": 63.6,
    "distinct_publishers": 4
   },
   {
-   "location": "Paris",
+   "location": "Detroit",
    "matched_rows": 8,
-   "leading_publisher": "Condé Nast Traveller Middle East",
+   "leading_publisher": "WVVA",
    "leading_rows": 5,
    "publisher_concentration_pct": 62.5,
    "distinct_publishers": 3
   },
   {
-   "location": "Malawi",
-   "matched_rows": 10,
-   "leading_publisher": "AllAfrica Southern Africa",
-   "leading_rows": 6,
-   "publisher_concentration_pct": 60.0,
+   "location": "London",
+   "matched_rows": 8,
+   "leading_publisher": "Queen Mary University of London",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 62.5,
    "distinct_publishers": 2
   },
   {
-   "location": "Manila",
-   "matched_rows": 16,
-   "leading_publisher": "Manila Bulletin",
-   "leading_rows": 9,
-   "publisher_concentration_pct": 56.2,
-   "distinct_publishers": 3
+   "location": "Kenya",
+   "matched_rows": 23,
+   "leading_publisher": "AllAfrica East Africa",
+   "leading_rows": 14,
+   "publisher_concentration_pct": 60.9,
+   "distinct_publishers": 6
   },
   {
-   "location": "Egypt",
+   "location": "Chile",
    "matched_rows": 9,
-   "leading_publisher": "Arab Center Washington DC",
+   "leading_publisher": "Istituto Analisi Relazioni Internazionali",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 55.6,
+   "distinct_publishers": 5
+  },
+  {
+   "location": "Moscow",
+   "matched_rows": 9,
+   "leading_publisher": "Military.com",
    "leading_rows": 5,
    "publisher_concentration_pct": 55.6,
    "distinct_publishers": 4
   },
   {
-   "location": "Pakistan",
-   "matched_rows": 9,
-   "leading_publisher": "Khabarhub",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 55.6,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Tanzania",
+   "location": "Lisbon",
    "matched_rows": 10,
-   "leading_publisher": "The Tanzania Times",
+   "leading_publisher": "Informat.ro",
    "leading_rows": 5,
    "publisher_concentration_pct": 50.0,
    "distinct_publishers": 3
   },
   {
-   "location": "Zimbabwe",
+   "location": "Tehran",
    "matched_rows": 10,
-   "leading_publisher": "International Fund for Animal Welfare | IFAW",
+   "leading_publisher": "Tehran Times",
    "leading_rows": 5,
    "publisher_concentration_pct": 50.0,
-   "distinct_publishers": 4
+   "distinct_publishers": 2
   },
   {
    "location": "Afghanistan",
@@ -181,41 +173,65 @@
    "distinct_publishers": 2
   },
   {
-   "location": "Ethiopia",
+   "location": "Manchester",
+   "matched_rows": 8,
+   "leading_publisher": "Britannica",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 50.0,
+   "distinct_publishers": 3
+  },
+  {
+   "location": "Ontario",
+   "matched_rows": 8,
+   "leading_publisher": "ontario.ca",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 50.0,
+   "distinct_publishers": 2
+  },
+  {
+   "location": "Uganda",
+   "matched_rows": 11,
+   "leading_publisher": "African Wildlife Foundation",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 45.5,
+   "distinct_publishers": 4
+  },
+  {
+   "location": "Darfur",
    "matched_rows": 9,
-   "leading_publisher": "Hiiraan Online",
+   "leading_publisher": "ABC News - Breaking News, Latest News and Videos",
    "leading_rows": 4,
    "publisher_concentration_pct": 44.4,
    "distinct_publishers": 3
   },
   {
-   "location": "Kashmir",
+   "location": "Wyoming",
    "matched_rows": 9,
-   "leading_publisher": "Kashmir Convener",
+   "leading_publisher": "KOTA Territory News",
    "leading_rows": 4,
    "publisher_concentration_pct": 44.4,
-   "distinct_publishers": 5
+   "distinct_publishers": 3
   },
   {
-   "location": "Sudan",
-   "matched_rows": 9,
-   "leading_publisher": "The Eastleigh Voice",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 44.4,
+   "location": "Egypt",
+   "matched_rows": 12,
+   "leading_publisher": "Arab Center Washington DC",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 41.7,
    "distinct_publishers": 6
   },
   {
-   "location": "India",
-   "matched_rows": 43,
-   "leading_publisher": "The Times of India",
-   "leading_rows": 19,
-   "publisher_concentration_pct": 44.2,
-   "distinct_publishers": 12
+   "location": "Pakistan",
+   "matched_rows": 12,
+   "leading_publisher": "Khabarhub",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 41.7,
+   "distinct_publishers": 4
   },
   {
-   "location": "Iran",
+   "location": "Zimbabwe",
    "matched_rows": 12,
-   "leading_publisher": "Arabian Business",
+   "leading_publisher": "International Fund for Animal Welfare | IFAW",
    "leading_rows": 5,
    "publisher_concentration_pct": 41.7,
    "distinct_publishers": 5
@@ -229,96 +245,75 @@
    "distinct_publishers": 4
   },
   {
-   "location": "Mumbai",
-   "matched_rows": 10,
-   "leading_publisher": "www.healthcareexecutive.in",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 40.0,
-   "distinct_publishers": 3
+   "location": "India",
+   "matched_rows": 53,
+   "leading_publisher": "The Times of India",
+   "leading_rows": 20,
+   "publisher_concentration_pct": 37.7,
+   "distinct_publishers": 18
   },
   {
-   "location": "London",
-   "matched_rows": 11,
-   "leading_publisher": "Queen Mary University of London",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 36.4,
-   "distinct_publishers": 5
-  },
-  {
-   "location": "Portugal",
-   "matched_rows": 15,
-   "leading_publisher": "Portugal Resident",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 33.3,
-   "distinct_publishers": 7
-  },
-  {
-   "location": "Syria",
-   "matched_rows": 12,
-   "leading_publisher": "Reuters",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 33.3,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Florida",
-   "matched_rows": 9,
-   "leading_publisher": "ABC News - Breaking News, Latest News and Videos",
+   "location": "Dubai",
+   "matched_rows": 8,
+   "leading_publisher": "www.wam.ae",
    "leading_rows": 3,
-   "publisher_concentration_pct": 33.3,
-   "distinct_publishers": 5
+   "publisher_concentration_pct": 37.5,
+   "distinct_publishers": 3
+  },
+  {
+   "location": "Iran",
+   "matched_rows": 27,
+   "leading_publisher": "EnergyNow.com",
+   "leading_rows": 10,
+   "publisher_concentration_pct": 37.0,
+   "distinct_publishers": 8
   }
  ],
  "top_mapped_publishers": [
   {
    "publisher": "Vietnam.vn",
-   "matched_rows": 107,
-   "mapped_locations": 9
+   "matched_rows": 97,
+   "mapped_locations": 12
   },
   {
    "publisher": "Al Jazeera",
-   "matched_rows": 46,
+   "matched_rows": 45,
    "mapped_locations": 16
   },
   {
    "publisher": "AllAfrica East Africa",
    "matched_rows": 30,
-   "mapped_locations": 12
-  },
-  {
-   "publisher": "AllAfrica West Africa",
-   "matched_rows": 29,
-   "mapped_locations": 5
+   "mapped_locations": 9
   },
   {
    "publisher": "AllAfrica Southern Africa",
    "matched_rows": 29,
-   "mapped_locations": 7
-  },
-  {
-   "publisher": "The Times of India",
-   "matched_rows": 28,
-   "mapped_locations": 3
+   "mapped_locations": 8
   },
   {
    "publisher": "The Guardian World",
-   "matched_rows": 27,
-   "mapped_locations": 17
+   "matched_rows": 28,
+   "mapped_locations": 20
+  },
+  {
+   "publisher": "AllAfrica West Africa",
+   "matched_rows": 28,
+   "mapped_locations": 5
   },
   {
    "publisher": "RNZ National",
-   "matched_rows": 25,
+   "matched_rows": 27,
    "mapped_locations": 15
   },
   {
-   "publisher": "France24",
-   "matched_rows": 22,
-   "mapped_locations": 11
+   "publisher": "The Times of India",
+   "matched_rows": 25,
+   "mapped_locations": 2
   },
   {
-   "publisher": "AllAfrica Central Africa",
-   "matched_rows": 20,
-   "mapped_locations": 6
+   "publisher": "France24",
+   "matched_rows": 24,
+   "mapped_locations": 17
   },
   {
    "publisher": "France24 ES",
@@ -326,9 +321,24 @@
    "mapped_locations": 10
   },
   {
-   "publisher": "France24 FR",
+   "publisher": "AllAfrica Central Africa",
+   "matched_rows": 17,
+   "mapped_locations": 6
+  },
+  {
+   "publisher": "BBC World",
    "matched_rows": 15,
-   "mapped_locations": 5
+   "mapped_locations": 12
+  },
+  {
+   "publisher": "Mongabay Global",
+   "matched_rows": 15,
+   "mapped_locations": 15
+  },
+  {
+   "publisher": "Manila Bulletin",
+   "matched_rows": 14,
+   "mapped_locations": 2
   },
   {
    "publisher": "DW.com",
@@ -336,14 +346,34 @@
    "mapped_locations": 2
   },
   {
-   "publisher": "Manila Bulletin",
+   "publisher": "France24 FR",
+   "matched_rows": 14,
+   "mapped_locations": 11
+  },
+  {
+   "publisher": "The Jerusalem Post",
    "matched_rows": 13,
-   "mapped_locations": 2
+   "mapped_locations": 3
+  },
+  {
+   "publisher": "ABC News - Breaking News, Latest News and Videos",
+   "matched_rows": 13,
+   "mapped_locations": 4
   },
   {
    "publisher": "ABC Australia",
+   "matched_rows": 13,
+   "mapped_locations": 13
+  },
+  {
+   "publisher": "Bozeman Daily Chronicle",
    "matched_rows": 12,
-   "mapped_locations": 11
+   "mapped_locations": 2
+  },
+  {
+   "publisher": "Bioengineer.org",
+   "matched_rows": 12,
+   "mapped_locations": 5
   },
   {
    "publisher": "RNZ Pacific",
@@ -351,49 +381,19 @@
    "mapped_locations": 8
   },
   {
-   "publisher": "Mongabay Global",
-   "matched_rows": 11,
-   "mapped_locations": 11
-  },
-  {
-   "publisher": "The Conversation",
-   "matched_rows": 10,
-   "mapped_locations": 2
-  },
-  {
    "publisher": "Ynetnews",
    "matched_rows": 10,
    "mapped_locations": 1
   },
   {
-   "publisher": "Florida State University News",
+   "publisher": "Independent Newspaper Nigeria",
    "matched_rows": 10,
    "mapped_locations": 1
   },
   {
-   "publisher": "BBC World",
+   "publisher": "El Heraldo de México",
    "matched_rows": 10,
-   "mapped_locations": 9
-  },
-  {
-   "publisher": "The Jerusalem Post",
-   "matched_rows": 9,
-   "mapped_locations": 1
-  },
-  {
-   "publisher": "International Fund for Animal Welfare | IFAW",
-   "matched_rows": 9,
-   "mapped_locations": 2
-  },
-  {
-   "publisher": "Bozeman Daily Chronicle",
-   "matched_rows": 9,
-   "mapped_locations": 2
-  },
-  {
-   "publisher": "intlbm",
-   "matched_rows": 9,
-   "mapped_locations": 1
+   "mapped_locations": 8
   }
  ],
  "same_url_multiple_locations_samples": [],
