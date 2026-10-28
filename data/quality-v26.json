@@ -1,84 +1,95 @@
 {
  "schema": 1,
  "release": "v2.6.0",
- "updated_at": "2026-10-28T05:46:58.873106+00:00",
+ "updated_at": "2026-10-28T11:41:15.271574+00:00",
  "mode": "conservative_live_lexical_withholding_plus_observation",
  "lexical_suppressed_total": 0,
  "lexical_suppressed_by_reason": {},
  "lexical_suppressed_examples": [],
  "deduplication_review": {
-  "canonical_same_place_repeats": 656,
-  "cross_place_url_occurrences": 0,
-  "cross_place_examples": [],
+  "canonical_same_place_repeats": 637,
+  "cross_place_url_occurrences": 2,
+  "cross_place_examples": [
+   {
+    "url": "https://www.france24.com/en/europe/20261028-two-high-speed-trains-collide-in-southern-spain-rail-operator-says",
+    "first": "Madrid",
+    "second": "Spain"
+   },
+   {
+    "url": "https://www.france24.com/es/europa/20261028-al-menos-30-fallecidos-por-un-accidente-de-tren-en-espa%C3%B1a-el-gobierno-apunta-a-un-error-humano",
+    "first": "Spain",
+    "second": "Madrid"
+   }
+  ],
   "note": "Cross-location reuse is not automatically incorrect; preserve separate evidence-backed assignments."
  },
- "top_publisher_share_pct": 6.2,
+ "top_publisher_share_pct": 7.0,
  "top_publishers": [
   {
    "publisher": "Vietnam.vn",
-   "mapped_rows": 96
+   "mapped_rows": 107
   },
   {
    "publisher": "Al Jazeera",
-   "mapped_rows": 51
+   "mapped_rows": 46
   },
   {
    "publisher": "AllAfrica East Africa",
    "mapped_rows": 30
   },
   {
-   "publisher": "AllAfrica Southern Africa",
-   "mapped_rows": 30
-  },
-  {
    "publisher": "AllAfrica West Africa",
-   "mapped_rows": 28
+   "mapped_rows": 29
   },
   {
-   "publisher": "ABC News - Breaking News, Latest News and Videos",
-   "mapped_rows": 25
-  },
-  {
-   "publisher": "The Guardian World",
-   "mapped_rows": 25
+   "publisher": "AllAfrica Southern Africa",
+   "mapped_rows": 29
   },
   {
    "publisher": "The Times of India",
-   "mapped_rows": 23
+   "mapped_rows": 28
+  },
+  {
+   "publisher": "The Guardian World",
+   "mapped_rows": 27
   },
   {
    "publisher": "RNZ National",
-   "mapped_rows": 22
+   "mapped_rows": 25
   },
   {
    "publisher": "France24",
-   "mapped_rows": 19
+   "mapped_rows": 22
+  },
+  {
+   "publisher": "AllAfrica Central Africa",
+   "mapped_rows": 20
   },
   {
    "publisher": "France24 ES",
    "mapped_rows": 19
   },
   {
-   "publisher": "AllAfrica Central Africa",
-   "mapped_rows": 18
+   "publisher": "France24 FR",
+   "mapped_rows": 15
   },
   {
-   "publisher": "Halifax",
-   "mapped_rows": 17
-  },
-  {
-   "publisher": "BBC World",
+   "publisher": "DW.com",
    "mapped_rows": 14
   },
   {
-   "publisher": "El Heraldo de México",
+   "publisher": "Manila Bulletin",
+   "mapped_rows": 13
+  },
+  {
+   "publisher": "ABC Australia",
    "mapped_rows": 12
   }
  ],
- "unmapped_rows": 1453,
- "mapped_raw_rows": 1548,
- "mapped_signal_groups": 454,
- "history_samples": 52,
+ "unmapped_rows": 1482,
+ "mapped_raw_rows": 1519,
+ "mapped_signal_groups": 466,
+ "history_samples": 53,
  "geographic_attribution": "Geographic subject, not verified incident site",
  "limitations": [
   "Rules are narrow reviewed-language safeguards, not a universal multilingual disambiguator.",
