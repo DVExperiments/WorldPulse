@@ -1,266 +1,184 @@
 {
  "schema": 1,
  "release": "v2.5.0",
- "generated_at": "2026-10-29T01:49:51.509741+00:00",
+ "generated_at": "2026-10-29T08:33:34.330608+00:00",
  "mode": "observational_non_mutating",
- "source_rows": 1614,
- "displayed_articles": 860,
- "signal_groups": 492,
- "mapped_location_names": 319,
+ "source_rows": 1494,
+ "displayed_articles": 810,
+ "signal_groups": 470,
+ "mapped_location_names": 310,
  "feeds_total": 173,
  "feeds_failed_by_kind": {
-  "publisher": 4
+  "publisher": 5
  },
  "feeds_successful_empty_by_kind": {
   "aggregator": 4
  },
  "geo_match_basis": {
-  "headline": 1110,
-  "description": 443,
-  "d4_explicit_country": 16,
+  "headline": 1059,
+  "description": 381,
+  "d4_explicit_country": 12,
   "headline-multilingual": 6,
-  "description-normalized": 7,
-  "title-normalized": 10,
-  "headline-reviewed-correction": 1,
+  "description-normalized": 5,
+  "title-normalized": 12,
+  "description-expanded": 7,
   "headline-curated": 5,
-  "headline-expanded": 9,
-  "description-expanded": 1,
-  "description-curated": 5,
-  "description-multilingual": 1
+  "headline-expanded": 6,
+  "description-curated": 1
  },
- "unmapped_sample_rows": 1768,
+ "unmapped_sample_rows": 1674,
  "publisher_concentration_hotspots": [
   {
-   "location": "Namibia",
-   "matched_rows": 10,
-   "leading_publisher": "AllAfrica Southern Africa",
-   "leading_rows": 10,
-   "publisher_concentration_pct": 100.0,
-   "distinct_publishers": 1
-  },
-  {
-   "location": "Dublin",
-   "matched_rows": 8,
-   "leading_publisher": "Trinity College Dublin",
-   "leading_rows": 8,
-   "publisher_concentration_pct": 100.0,
-   "distinct_publishers": 1
-  },
-  {
    "location": "Vietnam",
-   "matched_rows": 82,
+   "matched_rows": 77,
    "leading_publisher": "Vietnam.vn",
-   "leading_rows": 79,
-   "publisher_concentration_pct": 96.3,
+   "leading_rows": 74,
+   "publisher_concentration_pct": 96.1,
    "distinct_publishers": 4
+  },
+  {
+   "location": "Belgrade",
+   "matched_rows": 11,
+   "leading_publisher": "Bozeman Daily Chronicle",
+   "leading_rows": 9,
+   "publisher_concentration_pct": 81.8,
+   "distinct_publishers": 3
   },
   {
    "location": "Rwanda",
    "matched_rows": 13,
    "leading_publisher": "AllAfrica Central Africa",
-   "leading_rows": 12,
-   "publisher_concentration_pct": 92.3,
+   "leading_rows": 10,
+   "publisher_concentration_pct": 76.9,
    "distinct_publishers": 2
-  },
-  {
-   "location": "Belgrade",
-   "matched_rows": 8,
-   "leading_publisher": "Bozeman Daily Chronicle",
-   "leading_rows": 6,
-   "publisher_concentration_pct": 75.0,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "New York",
-   "matched_rows": 20,
-   "leading_publisher": "The New York Times",
-   "leading_rows": 14,
-   "publisher_concentration_pct": 70.0,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Malaysia",
-   "matched_rows": 8,
-   "leading_publisher": "Free Malaysia Today",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 62.5,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Manila",
-   "matched_rows": 8,
-   "leading_publisher": "Manila Bulletin",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 62.5,
-   "distinct_publishers": 2
-  },
-  {
-   "location": "Pakistan",
-   "matched_rows": 8,
-   "leading_publisher": "Gujarat Samachar",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 62.5,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Kenya",
-   "matched_rows": 23,
-   "leading_publisher": "AllAfrica East Africa",
-   "leading_rows": 14,
-   "publisher_concentration_pct": 60.9,
-   "distinct_publishers": 7
   },
   {
    "location": "South Africa",
-   "matched_rows": 12,
+   "matched_rows": 16,
    "leading_publisher": "AllAfrica Southern Africa",
-   "leading_rows": 7,
-   "publisher_concentration_pct": 58.3,
+   "leading_rows": 11,
+   "publisher_concentration_pct": 68.8,
    "distinct_publishers": 3
   },
   {
-   "location": "Lagos",
-   "matched_rows": 9,
-   "leading_publisher": "PM News Nigeria",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 55.6,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Nairobi",
-   "matched_rows": 9,
-   "leading_publisher": "https://streamlinefeed.co.ke/",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 55.6,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Ghana",
-   "matched_rows": 12,
-   "leading_publisher": "Modern Ghana",
-   "leading_rows": 6,
-   "publisher_concentration_pct": 50.0,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Darfur",
+   "location": "Serbia",
    "matched_rows": 8,
    "leading_publisher": "ABC News - Breaking News, Latest News and Videos",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 50.0,
-   "distinct_publishers": 2
-  },
-  {
-   "location": "Guwahati",
-   "matched_rows": 8,
-   "leading_publisher": "Northeast Today",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 50.0,
-   "distinct_publishers": 2
-  },
-  {
-   "location": "New Zealand",
-   "matched_rows": 8,
-   "leading_publisher": "RNZ National",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 50.0,
+   "leading_rows": 5,
+   "publisher_concentration_pct": 62.5,
    "distinct_publishers": 4
+  },
+  {
+   "location": "Malaysia",
+   "matched_rows": 16,
+   "leading_publisher": "Free Malaysia Today",
+   "leading_rows": 9,
+   "publisher_concentration_pct": 56.2,
+   "distinct_publishers": 4
+  },
+  {
+   "location": "Uganda",
+   "matched_rows": 16,
+   "leading_publisher": "AllAfrica East Africa",
+   "leading_rows": 9,
+   "publisher_concentration_pct": 56.2,
+   "distinct_publishers": 3
+  },
+  {
+   "location": "Ethiopia",
+   "matched_rows": 9,
+   "leading_publisher": "AllAfrica East Africa",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 55.6,
+   "distinct_publishers": 2
+  },
+  {
+   "location": "Tanzania",
+   "matched_rows": 9,
+   "leading_publisher": "AllAfrica East Africa",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 55.6,
+   "distinct_publishers": 4
+  },
+  {
+   "location": "Tehran",
+   "matched_rows": 9,
+   "leading_publisher": "Yeni Şafak English",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 55.6,
+   "distinct_publishers": 2
+  },
+  {
+   "location": "Akron",
+   "matched_rows": 10,
+   "leading_publisher": "Signal Akron",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 50.0,
+   "distinct_publishers": 2
+  },
+  {
+   "location": "Germany",
+   "matched_rows": 8,
+   "leading_publisher": "Philippine Canadian Inquirer",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 50.0,
+   "distinct_publishers": 2
   },
   {
    "location": "Springs",
    "matched_rows": 8,
-   "leading_publisher": "Mathrubhumi English",
+   "leading_publisher": "Excelsior Citizen",
    "leading_rows": 4,
    "publisher_concentration_pct": 50.0,
    "distinct_publishers": 2
-  },
-  {
-   "location": "Uzbekistan",
-   "matched_rows": 8,
-   "leading_publisher": "Kun.uz",
-   "leading_rows": 4,
-   "publisher_concentration_pct": 50.0,
-   "distinct_publishers": 2
-  },
-  {
-   "location": "Serbia",
-   "matched_rows": 11,
-   "leading_publisher": "ABC News - Breaking News, Latest News and Videos",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 45.5,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Tehran",
-   "matched_rows": 11,
-   "leading_publisher": "Tehran Times",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 45.5,
-   "distinct_publishers": 3
-  },
-  {
-   "location": "Florida",
-   "matched_rows": 28,
-   "leading_publisher": "Florida Hospital News and Healthcare Report",
-   "leading_rows": 12,
-   "publisher_concentration_pct": 42.9,
-   "distinct_publishers": 6
-  },
-  {
-   "location": "Indonesia",
-   "matched_rows": 12,
-   "leading_publisher": "news - Mongabay",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 41.7,
-   "distinct_publishers": 5
-  },
-  {
-   "location": "Miami",
-   "matched_rows": 12,
-   "leading_publisher": "University of Miami",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 41.7,
-   "distinct_publishers": 7
-  },
-  {
-   "location": "Tanzania",
-   "matched_rows": 12,
-   "leading_publisher": "The Tanzania Times",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 41.7,
-   "distinct_publishers": 5
-  },
-  {
-   "location": "Uganda",
-   "matched_rows": 12,
-   "leading_publisher": "African Wildlife Foundation",
-   "leading_rows": 5,
-   "publisher_concentration_pct": 41.7,
-   "distinct_publishers": 5
   },
   {
    "location": "California",
-   "matched_rows": 13,
+   "matched_rows": 11,
    "leading_publisher": "New York Post",
    "leading_rows": 5,
-   "publisher_concentration_pct": 38.5,
+   "publisher_concentration_pct": 45.5,
+   "distinct_publishers": 7
+  },
+  {
+   "location": "Gaza",
+   "matched_rows": 11,
+   "leading_publisher": "Irish Examiner",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 45.5,
    "distinct_publishers": 4
   },
   {
-   "location": "Lisbon",
-   "matched_rows": 13,
-   "leading_publisher": "Informat.ro",
+   "location": "Miami",
+   "matched_rows": 11,
+   "leading_publisher": "University of Miami",
    "leading_rows": 5,
-   "publisher_concentration_pct": 38.5,
-   "distinct_publishers": 3
+   "publisher_concentration_pct": 45.5,
+   "distinct_publishers": 5
   },
   {
-   "location": "Ontario",
-   "matched_rows": 13,
-   "leading_publisher": "CBC",
+   "location": "Florida",
+   "matched_rows": 26,
+   "leading_publisher": "Florida Hospital News and Healthcare Report",
+   "leading_rows": 11,
+   "publisher_concentration_pct": 42.3,
+   "distinct_publishers": 6
+  },
+  {
+   "location": "United States",
+   "matched_rows": 12,
+   "leading_publisher": "Study International",
    "leading_rows": 5,
-   "publisher_concentration_pct": 38.5,
-   "distinct_publishers": 3
+   "publisher_concentration_pct": 41.7,
+   "distinct_publishers": 8
+  },
+  {
+   "location": "Nigeria",
+   "matched_rows": 50,
+   "leading_publisher": "AllAfrica West Africa",
+   "leading_rows": 20,
+   "publisher_concentration_pct": 40.0,
+   "distinct_publishers": 10
   },
   {
    "location": "Texas",
@@ -269,88 +187,163 @@
    "leading_rows": 5,
    "publisher_concentration_pct": 38.5,
    "distinct_publishers": 5
+  },
+  {
+   "location": "Bangladesh",
+   "matched_rows": 8,
+   "leading_publisher": "The Business Standard",
+   "leading_rows": 3,
+   "publisher_concentration_pct": 37.5,
+   "distinct_publishers": 4
+  },
+  {
+   "location": "Darfur",
+   "matched_rows": 11,
+   "leading_publisher": "ABC News - Breaking News, Latest News and Videos",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 36.4,
+   "distinct_publishers": 4
+  },
+  {
+   "location": "Ontario",
+   "matched_rows": 11,
+   "leading_publisher": "ontario.ca",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 36.4,
+   "distinct_publishers": 3
+  },
+  {
+   "location": "Moscow",
+   "matched_rows": 14,
+   "leading_publisher": "Military.com",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 35.7,
+   "distinct_publishers": 6
+  },
+  {
+   "location": "Portugal",
+   "matched_rows": 26,
+   "leading_publisher": "NDTV",
+   "leading_rows": 9,
+   "publisher_concentration_pct": 34.6,
+   "distinct_publishers": 6
+  },
+  {
+   "location": "China",
+   "matched_rows": 15,
+   "leading_publisher": "China Daily Global Edition",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 33.3,
+   "distinct_publishers": 10
+  },
+  {
+   "location": "Mexico",
+   "matched_rows": 12,
+   "leading_publisher": "Diario AS",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 33.3,
+   "distinct_publishers": 8
+  },
+  {
+   "location": "Syria",
+   "matched_rows": 12,
+   "leading_publisher": "Enab Baladi",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 33.3,
+   "distinct_publishers": 4
+  },
+  {
+   "location": "New York",
+   "matched_rows": 16,
+   "leading_publisher": "The New York Academy of Sciences",
+   "leading_rows": 5,
+   "publisher_concentration_pct": 31.2,
+   "distinct_publishers": 5
+  },
+  {
+   "location": "Kenya",
+   "matched_rows": 13,
+   "leading_publisher": "Ministry of Defence – Kenya",
+   "leading_rows": 4,
+   "publisher_concentration_pct": 30.8,
+   "distinct_publishers": 7
   }
  ],
  "top_mapped_publishers": [
   {
    "publisher": "Vietnam.vn",
-   "matched_rows": 98,
+   "matched_rows": 94,
    "mapped_locations": 10
   },
   {
    "publisher": "Al Jazeera",
-   "matched_rows": 46,
-   "mapped_locations": 18
-  },
-  {
-   "publisher": "AllAfrica East Africa",
-   "matched_rows": 30,
-   "mapped_locations": 9
+   "matched_rows": 39,
+   "mapped_locations": 17
   },
   {
    "publisher": "AllAfrica Southern Africa",
-   "matched_rows": 29,
+   "matched_rows": 30,
    "mapped_locations": 8
+  },
+  {
+   "publisher": "AllAfrica East Africa",
+   "matched_rows": 29,
+   "mapped_locations": 9
   },
   {
    "publisher": "AllAfrica West Africa",
    "matched_rows": 28,
-   "mapped_locations": 5
-  },
-  {
-   "publisher": "The Guardian World",
-   "matched_rows": 26,
-   "mapped_locations": 20
-  },
-  {
-   "publisher": "The New York Times",
-   "matched_rows": 25,
-   "mapped_locations": 2
+   "mapped_locations": 6
   },
   {
    "publisher": "RNZ National",
-   "matched_rows": 25,
+   "matched_rows": 26,
    "mapped_locations": 13
   },
   {
+   "publisher": "The Guardian World",
+   "matched_rows": 25,
+   "mapped_locations": 18
+  },
+  {
    "publisher": "France24",
-   "matched_rows": 23,
+   "matched_rows": 22,
    "mapped_locations": 12
   },
   {
-   "publisher": "France24 ES",
-   "matched_rows": 23,
-   "mapped_locations": 16
-  },
-  {
-   "publisher": "The Times of India",
-   "matched_rows": 20,
+   "publisher": "The New York Times",
+   "matched_rows": 19,
    "mapped_locations": 2
   },
   {
    "publisher": "BBC World",
-   "matched_rows": 17,
-   "mapped_locations": 10
+   "matched_rows": 19,
+   "mapped_locations": 12
   },
   {
    "publisher": "France24 FR",
-   "matched_rows": 17,
-   "mapped_locations": 14
+   "matched_rows": 18,
+   "mapped_locations": 13
   },
   {
    "publisher": "AllAfrica Central Africa",
-   "matched_rows": 17,
-   "mapped_locations": 6
-  },
-  {
-   "publisher": "Florida Hospital News and Healthcare Report",
    "matched_rows": 16,
-   "mapped_locations": 2
+   "mapped_locations": 7
   },
   {
    "publisher": "Mongabay Global",
+   "matched_rows": 16,
+   "mapped_locations": 14
+  },
+  {
+   "publisher": "The Jerusalem Post",
    "matched_rows": 15,
-   "mapped_locations": 15
+   "mapped_locations": 3
+  },
+  {
+   "publisher": "Florida Hospital News and Healthcare Report",
+   "matched_rows": 15,
+   "mapped_locations": 2
   },
   {
    "publisher": "ABC News - Breaking News, Latest News and Videos",
@@ -358,44 +351,49 @@
    "mapped_locations": 3
   },
   {
-   "publisher": "Independent Newspaper Nigeria",
-   "matched_rows": 13,
+   "publisher": "ABC Australia",
+   "matched_rows": 14,
+   "mapped_locations": 9
+  },
+  {
+   "publisher": "The Times of India",
+   "matched_rows": 12,
    "mapped_locations": 1
   },
   {
-   "publisher": "ABC Australia",
+   "publisher": "The Diplomat",
    "matched_rows": 12,
-   "mapped_locations": 10
+   "mapped_locations": 12
   },
   {
    "publisher": "Bozeman Daily Chronicle",
-   "matched_rows": 11,
+   "matched_rows": 10,
    "mapped_locations": 2
   },
   {
-   "publisher": "Portugal Resident",
+   "publisher": "New York Post",
+   "matched_rows": 9,
+   "mapped_locations": 2
+  },
+  {
+   "publisher": "NDTV",
    "matched_rows": 9,
    "mapped_locations": 1
   },
   {
-   "publisher": "Manila Bulletin",
+   "publisher": "Free Malaysia Today",
+   "matched_rows": 9,
+   "mapped_locations": 1
+  },
+  {
+   "publisher": "Outlook India",
    "matched_rows": 9,
    "mapped_locations": 2
   },
   {
-   "publisher": "Education News",
+   "publisher": "The Express Tribune",
    "matched_rows": 9,
    "mapped_locations": 2
-  },
-  {
-   "publisher": "DW.com",
-   "matched_rows": 9,
-   "mapped_locations": 2
-  },
-  {
-   "publisher": "DW World",
-   "matched_rows": 9,
-   "mapped_locations": 9
   }
  ],
  "same_url_multiple_locations_samples": [],
