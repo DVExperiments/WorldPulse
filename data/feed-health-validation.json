@@ -1,13 +1,13 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-10-30T18:53:29.597904+00:00",
+ "updated_at": "2026-10-30T22:59:43.801138+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 116,
-   "successful_empty": 5,
+   "successful_nonempty": 112,
+   "successful_empty": 9,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
@@ -16,15 +16,19 @@
     "google/politics/AU",
     "google/politics/NG",
     "google/politics/CA",
+    "google/hazards/GB",
+    "google/hazards/AU",
+    "google/hazards/NG",
+    "google/hazards/CA",
     "google/hazards/BR"
    ],
    "failure_samples": []
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 49,
+   "successful_nonempty": 47,
    "successful_empty": 0,
-   "transport_failure": 3,
+   "transport_failure": 5,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
@@ -38,7 +42,15 @@
      "error": ""
     },
     {
+     "source": "direct/UN News",
+     "error": ""
+    },
+    {
      "source": "direct/DW Español",
+     "error": ""
+    },
+    {
+     "source": "direct/Inter Press Service Headlines",
      "error": ""
     }
    ]
@@ -98,7 +110,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "d79113aacbcc8b02b0c7b3b522895290c784eecb64ea0bf508da5d3b0c625bc1",
+  "frozen_snapshot_fingerprint": "b64d8b67533a18e5197ad14e459206d37d9e88b8d005aeb86c9ff3efaaf37b48",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
