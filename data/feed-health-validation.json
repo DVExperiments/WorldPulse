@@ -1,13 +1,13 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-10-31T08:55:28.582159+00:00",
+ "updated_at": "2026-10-31T15:21:50.584558+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 114,
-   "successful_empty": 7,
+   "successful_nonempty": 110,
+   "successful_empty": 11,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
@@ -16,17 +16,21 @@
     "google/environment/AU",
     "google/environment/NG",
     "google/environment/CA",
+    "google/hazards/US",
+    "google/hazards/IN",
+    "google/hazards/ZA",
+    "google/hazards/PH",
     "google/hazards/BR",
-    "google/science/GB",
-    "google/science/NG"
+    "google/hazards/KE",
+    "google/science/GB"
    ],
    "failure_samples": []
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 48,
+   "successful_nonempty": 49,
    "successful_empty": 0,
-   "transport_failure": 4,
+   "transport_failure": 3,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
@@ -41,10 +45,6 @@
     },
     {
      "source": "direct/DW Español",
-     "error": ""
-    },
-    {
-     "source": "direct/Inter Press Service Headlines",
      "error": ""
     }
    ]
@@ -104,7 +104,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "fd0861efae46ef4abd01c9da2fb7a0762e7d8d962f4eb773388a72297d8977fb",
+  "frozen_snapshot_fingerprint": "454c567db76c33786f3032eef8e459c88043a03be7e996af051fcb7926d93fa1",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
