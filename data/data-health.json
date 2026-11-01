@@ -1,140 +1,147 @@
 {
  "schema": 1,
- "updated_at": "2026-11-01T09:23:05.200846+00:00",
+ "updated_at": "2026-11-01T16:26:29.817824+00:00",
  "feeds_total": 173,
- "feeds_ok": 169,
+ "feeds_ok": 170,
  "feeds_failed": [
   "direct/CBC World",
   "direct/ReliefWeb Updates",
-  "direct/UN News",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 111
+   "mapped_pre_dedupe": 98
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 53
+   "mapped_pre_dedupe": 56
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 114
+   "mapped_pre_dedupe": 110
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 72
+   "mapped_pre_dedupe": 65
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 106
+   "mapped_pre_dedupe": 92
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 64
+   "mapped_pre_dedupe": 68
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 131
+   "mapped_pre_dedupe": 96
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 70
+   "mapped_pre_dedupe": 82
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 85
+   "mapped_pre_dedupe": 56
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 122
+   "mapped_pre_dedupe": 137
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 117
+   "mapped_pre_dedupe": 104
   }
  },
  "mapped_articles_by_category": {
-  "community": 167,
-  "politics": 46,
-  "health": 62,
-  "conflict": 39,
-  "education": 68,
-  "science": 47,
-  "society": 51,
-  "economy": 53,
-  "environment": 28,
-  "hazards": 9,
-  "rights": 13
+  "education": 55,
+  "politics": 50,
+  "health": 72,
+  "community": 170,
+  "conflict": 38,
+  "society": 38,
+  "economy": 73,
+  "environment": 40,
+  "science": 28,
+  "hazards": 6,
+  "rights": 8
  },
  "mapped_articles_by_location_precision": {
-  "country": 340,
-  "place": 229,
-  "region": 14
+  "country": 338,
+  "place": 228,
+  "region": 12
  },
  "location_evidence_counts": {
-  "headline": 454,
-  "description": 129
+  "headline": 456,
+  "description": 122
  },
  "geographic_quadrants": {
-  "NE": 316,
-  "NW": 167,
-  "SW": 64,
+  "NE": 304,
+  "NW": 172,
+  "SW": 66,
   "SE": 36
  },
- "geo_signal_count": 339,
- "mapped_total": 583,
+ "geo_signal_count": 344,
+ "mapped_total": 578,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1155,
- "unmapped_distinct_titles": 572,
+ "unmapped_sample_count": 1109,
+ "unmapped_distinct_titles": 568,
  "unmapped_by_feed": {
-  "Google News BR": 152,
-  "Google News MX": 134,
-  "Google News PH": 113,
-  "Google News IN": 100,
-  "Google News US": 96,
-  "Google News KE": 93,
-  "Google News CA": 87,
-  "Google News AU": 86,
+  "Google News MX": 160,
+  "Google News BR": 116,
+  "Google News IN": 101,
+  "Google News US": 100,
+  "Google News KE": 98,
+  "Google News PH": 95,
+  "Google News CA": 85,
   "Google News ZA": 77,
-  "Google News NG": 77,
-  "Google News GB": 70,
-  "ABC Australia": 13,
-  "RNZ National": 9,
-  "France24 FR": 7,
-  "France24 ES": 7,
-  "BBC Science": 6,
-  "BBC Brasil": 6,
-  "BBC Business": 3
+  "Google News NG": 71,
+  "Google News GB": 66,
+  "Google News AU": 61,
+  "ABC Australia": 11,
+  "RNZ National": 11,
+  "France24 ES": 8,
+  "BBC Science": 7,
+  "France24 FR": 6,
+  "BBC World": 4,
+  "Al Jazeera": 4
  },
  "unmapped_examples": [
   {
-   "title": "IISc Director Prof. Rangarajan Flags AI’s Promise and Perils at Adani University’s Third Convocation; 374 Students Graduate",
-   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPcmM1cFRITFAzUk5YNFlkNjZmYnJwemd4TnpkYTJ2eWNIRG5xeWQzY1FrYWhseXpLMHBod1ZCQXA4UzV6Z2k4bFZIMFF5VWx4YXI0NHFteHZ5ME1aSnRaSTJvYkJQMU5pUkFrbWYyU18xbm1panVZQm5USnM4Q055dEt1S0pPaXQ1MVA1MTE3VEdNdmxKMzN3enNkS0g0TW81RndDVnBZZ0tOc0xBQ09vSGtKVUdzc001OXk0ZE5SRGhBTjNNWHg2NE9YR3FXdnNtd0I0TWg1VVZtc2JZSm13WmJZemVPNkFKUWstVnh4a0kwOUxKZTUzYWpqRnVTNEQtRVBYNldXZVRCaVHSAZACQVVfeXFMUER5bmdzOTJnQ0Q2YlBIeTJvcVl1VWVQLVRWOVhFaXNDZm5QZnN4eUZpVWFsMnppTl9xTXU5RGJ1cUluOS1NQk9LY1ZhRnpzSkZ2SUk1UG1lVThITzZtX3FwWlRCM211TU05ZXJXbTJSSDREdlNkX3ktSFdNZW5HWFFXTWp1UXQ5NGNMTjNsWkg4NjBITE5saEYxNVluMGh6T1pJbHh5ZTZ6TDk3eC1XdEZ3X3hSZUo0dktUckI3T3IxdVZwU3piS2RNZkdLSkd4Tms1R1Bld0JXVmJrYUpfSi0yZHltSVJSNHl5elFuMTZjc3IwdVZ5OGNkc3NLS1kyb2dKTE9rN3RmTUlUYUJZY0w?oc=5",
-   "publisher": "Republic World",
-   "feed_occurrences": 9,
-   "feed_count": 5,
-   "description_excerpt": " IISc Director Prof. Rangarajan Flags AI’s Promise and Perils at Adani University’s Third Convocation; 374 Students Graduate    Republic World "
+   "title": "Gandaki deploys 46 medical officers to strengthen provincial healthcare services",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTnBueGtaLVNGMUFrUFZYcG1FQUEtNnlvTDdHcFJsZ3hmVUJ0LUJmQlo5cDFMZXBGVEN0azFha1dyVGJ4eTloZGgtbTd1YjRqaURZT2FhR1Q5cFBlSUU0RmJrVjVNTkM4WUMxTkVBaXFBV21BUEowTk1XZEs2QlVQaWF5WWNHZUd4VDd3ZXAybzhXRTNWQnkxX25sb2JCWkNUenFXQnRSVWRlYzBQRzFHYnBHX2V4SlRhalE?oc=5",
+   "publisher": "OnlineKhabar English News",
+   "feed_occurrences": 8,
+   "feed_count": 8,
+   "description_excerpt": " Gandaki deploys 46 medical officers to strengthen provincial healthcare services    OnlineKhabar English News "
   },
   {
-   "title": "Amaltheia Dairy signs conservation easement, Forstag makes final union bid & Bozeman Library to renovate",
-   "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOVUlsV3RUTWpkTnRBdGh6MzJHTHNPdEdVckxsbkxkWDVXSE5CeUtBbmsycHZWNEpDMjhSZldEem1iQ1dudlFzaEVDMENkS2pkWmRzN3pEcmxWMmdwSXlIRDZDU3pXOTZMNDdIcTROYjd0SW43R1JCaVJYRFpndE5zdVpic3VzX3l0SVVKa05EcTVla1dvSERYa3N0R3k4QVhWblVJTllmeFlJZnJ2OGtlTUFqRnJUMWk5eXNIOHFuc2VmbDJXTFN0NjN0WXczMUlNMHdrbjZzamdPNUdnSFFwQUd2YlFRbFp3X2dxcUxWcUtOYjE2M094T1puaDdyUzRzV2JmRzJRdEJQRW4wRFdPc3J0X0MtUTl6MWRsQnpUbUVDSmx1UElFQU0wcThnX3lt?oc=5",
-   "publisher": "Bozeman Daily Chronicle",
-   "feed_occurrences": 8,
+   "title": "French school blockades to restart from Monday: student group",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOajl2Q2RCWEdsd29JbE5IQlFkZjJCNXp5QmpZY0RZOW8wUWpFOXVNWk9CRE5tZm1jTkVxdS1ucHRuVF9DWGE4dGRWMUEyU01Ha3JKWTZwcnZ2WE40aENBemoyQnltYmp5b3NYR2o2c245Ykp1ZWM3NzRkT09Hc1FuRGI0NXhyUW9lN1ByM3p5R1hRVVdYc3N6Z0syaXdlZG1FbTBhRWtqaVlQeVJ1VDYybTZwLVY3TG1pRW95VU9HaDlhZ9IByAFBVV95cUxPdUFyUmlMWjR6Z2NJNVpYQm1qRUd4VlVLQTYtSmRVMl9QdG9teTN6WUVfWWVtWUp5NjA0bi1naDJNczlxLW16TXFKZVRoS3ZtaFlhSkZzTVY2R3c1MnphUU53cGJ5QWFrNDYwdUtlY09zLUF4d2ctLUJHckowUjBUWnNqeldPUkNkVmlwNDVleGs3Tl9DNmdIVGh5ZVBXUXZvQ0Y0SVBtLUVuRU0tcklPTGVua2NqZVJ0TE1NRTdNN00yT2Z2SWtzZw?oc=5",
+   "publisher": "The Hindu",
+   "feed_occurrences": 7,
    "feed_count": 5,
-   "description_excerpt": " Amaltheia Dairy signs conservation easement, Forstag makes final union bid & Bozeman Library to renovate    Bozeman Daily Chronicle "
+   "description_excerpt": " French school blockades to restart from Monday: student group    The Hindu "
+  },
+  {
+   "title": "Latvian Saeima elections 2026: How the election works / Article",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONVlTV3VLT1h5TnJid1VHdm9oMWxMeWp1eFFjZjBVVF9lOW12VVl0aDBjQzFMVGNYSUZXZjN6MVByWV9TaHBvV2pmNkE0MFNZX3V4VXFTY3hfZWRuZEhpbmYxSlBYSmRUVFI5VjJlTnhrVG03TXZNakJyb1lDQTlXYUFjTlc4eFA2YkJvVGRibXV2cEVjdTR6VExvVk1jUDIyLTE4MG9rVHJlX2tuSGxHTHIxWnk2Q012?oc=5",
+   "publisher": "LSM",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Latvian Saeima elections 2026: How the election works / Article    LSM "
   },
   {
    "title": "Uncertain local governments",
@@ -145,20 +152,20 @@
    "description_excerpt": " Uncertain local governments    Dawn "
   },
   {
-   "title": "Polish opposition seeks no-confidence vote to oust Tusk government",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeDQyeHJZSE9qc1FGWHYyZVVwQld3SklXRkdndGo0bXhRVkl5VFZCSUhXRjFfQVJhblU0QnlMaVppVHRwQ0ZmNlU5clJlMXVOZTBtX0pOOUtRYjJhWFVlZVJLeWhNTHhZOUQzdHpGN2E3b1ZxWTNMNEZNMkh6Y1EyV1VWaEdLaWlYZlVveFF5Rm81bDUwUGJMS2s2eUtZbmhiZlRWRA?oc=5",
-   "publisher": "Anadolu Ajansı",
+   "title": "Mkhize warns coalitions could pose fresh challenges for municipalities after elections",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVGVrZ29tQnZ4empUX1hXYnhuMUFObjFMT0Z4WkRQdnlhLW02NENPakNrc0hrTjR5VEh1N1ZneHBKdWpEaHg3d3paMlJ4VUxaaWs5ZUlQV0MyOHBPZkpGcFJsVWhGbUlyQ2thdTZ1QUlnLUxTMTUxd2VJbC1tQVM3enpDQkkxSW8zakFTMjdEZEFZeXFJbnQ3ZERGSl80c2xZU1ZvQ0RXWmVEV09FYmYtMkdIdnJsYUJfX2daWjVvc2x2aTJBUG40MGtGcw?oc=5",
+   "publisher": "Sunday Tribune",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Polish opposition seeks no-confidence vote to oust Tusk government    Anadolu Ajansı "
+   "description_excerpt": " Mkhize warns coalitions could pose fresh challenges for municipalities after elections    Sunday Tribune "
   },
   {
-   "title": "Eisenkot vows to form broad government after inconclusive Israeli election",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObkROWFpoX0FsUThGV3pObnpiU2VxZzM2ZFpzUlBYVmd4ZVREUlllZlpBTVRQWXNqOWlIdDliSzVhNjJYbW9USlc1MW1NM3AzcXBSVmRDRmhCN0VsdzZybVR1TkR3QjVibjBWQklmZ0ZTVmhUUXZTVTY5U2VNUWpua2wzempRRzNtekI3SUYxSFRrWE9GTDJFVFpqSGptblotTkc5NDRTV3lmMWpqN3c0?oc=5",
-   "publisher": "Operativ Məlumat Mərkəzi",
+   "title": "Adirondack Council report examines political, social, environmental forces shaping park",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOV9iRjd5MXhwLURhWU8wbVVzNGJzcmY3X1MxMVhMVldHR3dkR1ZXMDN1UzFEUGhsb1QyRUtOTFpSNUluVXBaNk9pTFJLa0tURngtNGlmLU1oYzR4XzhURjhtNHNyNlVjMFJZVF9EZUl5X2IxWlpDZ1ZKUy04WGZVNkhUdVVCVlIzUXZBeklmQjVtZjRoQno2b1JJSXN4Qk11MEx4d3NIRXc3MjByZ3VPbDVVVWNjSlpZaXZVWV84YlBTZElBaUptc1F3d0xDQQ?oc=5",
+   "publisher": "Adirondack Explorer",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Eisenkot vows to form broad government after inconclusive Israeli election    Operativ Məlumat Mərkəzi "
+   "description_excerpt": " Adirondack Council report examines political, social, environmental forces shaping park    Adirondack Explorer "
   },
   {
    "title": "Why Whales are Climate Heroes – Who also need our Protection",
@@ -169,6 +176,14 @@
    "description_excerpt": " Why Whales are Climate Heroes – Who also need our Protection    Informed Comment "
   },
   {
+   "title": "'Protecting the Congo's forests means protecting people's lives'",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWnFVYlUtUVhiOFFDZFZDYkcwNVdCNnlQTjF4LV9zZWhfWDdmMURocTdnemNQYzE0a00wZ2pmS0p1bHQ3c1ZOWUd1bTJsNGJ3Tm82WjBzUmJubmNtRmNwXzlkc1o5STBrU3lnaC12X2xIWHFMak1SSk5fMU85MjhzRU9aY1BYYTZ1TlRHdzkybEFmM3JZNHJtN2FPQjc3ZTdhdTlV?oc=5",
+   "publisher": "RFI",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " 'Protecting the Congo's forests means protecting people's lives'    RFI "
+  },
+  {
    "title": "Cumberland Forest Project Does Global Conservation in Rural Appalachia",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTE1DNzlVaDhmMC16OTR2UWRJS1haaUVCby1FV2lTX05mU2Y5eFJMaHZCbHk5MmxQTkE3TEU1WWlmWTRmeHl6eE13aDFqMXVYbDk4UlpZM0ZKS19rNDJac0VrQjBkak5HSlEwWlYyb0JZRXl6M0l4Vm1XVm5qY3MyVVpCYU52TXh5MkkyYkFhUlRuZEtUc2tNWjNhLURjMENYQ25NUnVPRlVMZWtZcWV0NUgwbHJodw?oc=5",
    "publisher": "The Good Men Project",
@@ -177,20 +192,52 @@
    "description_excerpt": " Cumberland Forest Project Does Global Conservation in Rural Appalachia    The Good Men Project "
   },
   {
-   "title": "COP17 Put Forth a Clearer Picture of the Biodiversity Crisis—but Not the Ambition to Solve It",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOb2hVZ2dtc1dfdWpHS2JWZ2FiV0RnYTZtbFVNajg1bDdVbm5LLXd6VUFyclMxVG84T1ZQNDI1YV8zMzlFS0JUTmpLNUktNS1WZ05oeVc4ZmlEWkhnRWNEbUtFdTVjQVgyM1pJc2UzMnNCb1FRWHctX2lHVERMVks1V3dxR1dueEVaSlFQUVE1ZXhtLXJqSjJpY1poYnQtT3ZmUGZudWVKdlAyblFrdldYTXFoWnp6akhla3l4SXJKNHd4OFJMQktPT2lXeUUzMmwxd0NnOHdBaTM5T3d6THd3SzBVVERHRzF2YmNSQXBCdDRva0UtWm5DeGcwU0FHYnhmakU5R2pCRQ?oc=5",
-   "publisher": "WCS Newsroom",
+   "title": "When this tunnel of swirling mist and air forms over the sea, move away fast!",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NRkQ1ZE9NcGxZcnhLWmlWMWxrRG1rRkZJbXBka0RQUUZwSEY5akpEa05veUREc05iSHVmZGUwb2w3R3VQMWNPN2Vsei1rYjJ1Zk1OeWxBTjJDMEs5SDB4NVotVjNINWFTeE8xclh0WEotT0k?oc=5",
+   "publisher": "BBC Wildlife Magazine",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " COP17 Put Forth a Clearer Picture of the Biodiversity Crisis—but Not the Ambition to Solve It    WCS Newsroom "
+   "description_excerpt": " When this tunnel of swirling mist and air forms over the sea, move away fast!    BBC Wildlife Magazine "
   },
   {
-   "title": "Nations commit to get nature goals back on track",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZzlLdDhNdDh0UGtTRkRMNVNpS29CekgyVl8tYWMwZG45c3VyRXdOZjZJR3hraTF6b3BGaXMzUHNZZTNfTFlaMHhVQlg5bGZmZVdiRWhTMG82TDNTcG5EWFRjNjNjWEpUTDJmU09QT25iUHNWWGdwZnFDYnYxc2FCZWk3aXpUR1BTZmZSTnJzOGdrT3BjTWtDakZhR3k0WEU?oc=5",
-   "publisher": "香港電台",
+   "title": "Comedy Wildlife Awards 2026: Funniest animals worldwide",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMHh6cUNEY0s0NDJWRFhKYjI0RWhFVjQxbXlaeXZyTFdMc1dyTnliRWpFWk5ZV3d5QnVpcUI4V3NaeERXX2ZUT1gxUEZXeTZrdmU1dEFXQlMtZ3VhWmJZSjZqR2dJTWJDdVBnb3R1dXI5STVhMjY2RWg2Z3ctZHp6eVM4Q3RYQUh1R1pSQnZvRGg5R3hKTXE0MGtB?oc=5",
+   "publisher": "DW.com",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Nations commit to get nature goals back on track    香港電台 "
+   "description_excerpt": " Comedy Wildlife Awards 2026: Funniest animals worldwide    DW.com "
+  },
+  {
+   "title": "National Zoological Park marks 67th Foundation Day with Creative Outreach Activity and Bird Walk",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE41T2pKWVVFV19rQmt6d2lyeWVEel9aY2hOV2xUdF84MU5ySW5ueDFXOWo1eVZfRjhpSzE5NGJvYXJ3blJVRlRvMUMweXNlSmVRR2N6SzZDQmQzMFMybmhJZVR6YjRwSEliSldZ?oc=5",
+   "publisher": "www.pib.gov.in",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " National Zoological Park marks 67th Foundation Day with Creative Outreach Activity and Bird Walk    www.pib.gov.in "
+  },
+  {
+   "title": "Reflections from the 14th Eastern Himalayan Naturenomics Forum, 2026 - Mahabahu.com",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9iSzhNSzFPM3NRaTQwZG5ENXRQLU92bUluZUJuRTA5alhQTlJPVWNsSW90dGYxd25xbXl0cU93blBqczBCak82RXZWeUlBSkxEQTN0clVJeGZiVENzblpLWHM1RmtQRFBKTW1oRzE3VVRyUlnSAXtBVV95cUxOenZNcjV1ODNyaENobDRkLXJtYlBUTTNRSEpHVzBNYmlOd01LVmlzb2hwOFNLdHR4d19KWW5RZHJ5WVdlbHpSS2FScWJ2SWhDcGo5NXgxSUNhWmtJdFlsR3d4SUdMZUdhNDM1bnRfN0JYclVWT3FJSlVlenc?oc=5",
+   "publisher": "Mahabahu.com",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Reflections from the 14th Eastern Himalayan Naturenomics Forum, 2026 - Mahabahu.com    Mahabahu.com "
+  },
+  {
+   "title": "Global Snow Leopard and Ecosystem Protection Programme",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWHRMVmVaWUcycU84cFFQZ1YzLThFd2FVclc2N0V3V0gxaEF2WjRtd0k4UFE4MzJ6SjdrYXNZQzVqS3pqTVc3VnFtTmFXQ0xjYXExQWJwYUdpVGlYVjZ2X1laUHRvVi1USTJoOXNFbVZWWnJBdnNWMXhTSnBiZ21pN2ZXZ1o?oc=5",
+   "publisher": "GK Today",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Global Snow Leopard and Ecosystem Protection Programme    GK Today "
+  },
+  {
+   "title": "It’s almost the size of the UK, incredibly dangerous and deep enough to swallow Mount Fuji and visited by one third of the world’s whales and dolphins",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA1clFxem9fajEyWVF4TmFiLUl4MmJJRFpUWXVmV21paHlSLWI0WGZQVkVCTUhkeVNrc05Cc1ZPRGVsU0pTS2RaSTlUb1h5bUJOY0FLWXpsTVA4YUVKQWwtQ0FvRk1ucTNjS3hOQ3NqRQ?oc=5",
+   "publisher": "BBC Wildlife Magazine",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " It’s almost the size of the UK, incredibly dangerous and deep enough to swallow Mount Fuji and visited by one third of the world’s whales and dolphins    BBC W"
   },
   {
    "title": "The vanishing wings",
@@ -201,12 +248,12 @@
    "description_excerpt": " The vanishing wings    The Express Tribune "
   },
   {
-   "title": "British countryside success story as Cambridgeshire estate records more than 5,000 wildlife species after 50 years of conservation",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSmkyaWNtQ3RuOThDdEliamItQ1JlR25ZakxTdXNrWTE3NEN5YVd1LVR3cmo0dGRmRlZvNFJscGtsSkMxRVhKY2l6RWJQV0RHRnhxbUFvVGtUVGJ5SzBHVW1fWVZ1RXZhNnpWdldWNzJBOHVtVk9YYWUzaU9VcXMzVUR2djQwSmlNalRva1d4aTZtRmJBQlRZTGY0REUtYXNPR1dDcHN3LVRyZ1RraWFWdUdNd2l2QmFhUTF3TUs3ZC0wT2FmNHdQQVhLUkVHM1ZiejhxTFFhYXdNNFU4eXdPcG1xVDljd3VmbzN4Z1JOQkMzcGM?oc=5",
-   "publisher": "Conservative Post",
+   "title": "Tamil Nadu Wildlife Board Gains 30-Member Conservation Panel",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUTVmZ1FIbEtvbC10eVgxNUpWVktadlFLYjlhOFpWOWlfa05oU2w3dG14ckFDQ1pYSkFQS0x1MWFGZWxpRkd3U015VzY2ckY3MnBSYzR4Q0FvNkZMT0lTRWhXdV84d2FLN3FubTRDNU1oUFEzNmozbXhvcVRIOUN6allVaUlKNU1WOTZv?oc=5",
+   "publisher": "urbanacres.in",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " British countryside success story as Cambridgeshire estate records more than 5,000 wildlife species after 50 years of conservation    Conservative Post "
+   "description_excerpt": " Tamil Nadu Wildlife Board Gains 30-Member Conservation Panel    urbanacres.in "
   },
   {
    "title": "State Wetlands Authority Considers Measures To Strengthen Wetland Conservation & Management",
@@ -217,12 +264,12 @@
    "description_excerpt": " State Wetlands Authority Considers Measures To Strengthen Wetland Conservation & Management    Ommcom News "
   },
   {
-   "title": "Looting, petrol bombs, fireworks as protests over living costs and education sweep Europe",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUGtrN3ktTjUtV0g4LXdVQnlNZ25Lb1EwUVBadFFQb2FfQ3AzV0lyVGxfZDVlaGM0LVh2a2t4RWJqUWlXYVExTkg0azdpRlA2SkpETXNYT0ZlQ3o0TEdHbUtNVlZUMld1OFR2dGM4dXRpOHFaYnBqMTR0Q29pV2tQQzh2TkF4TV9VS2dVUWNWX2dFczJDdEFBdTYwRTRQTG96T3dZMjhhNjg3SUxVb2RXUDRMNTJFVUFyd18xTXd1ZjRDY01hcVHSAcsBQVVfeXFMTnhlZndWcFZ6d1B1Y3Z3dzJKUHdsa1hkV2xscjJmeUdHdnh6dVJYa05xNUR3UGFOSWNzR2hpWWUxRGx0blFZanFJc3NrTDNNS2VvVExSVzhBN2ZVVTBKRnNlWUt2bGgzVGlsSUlySzYtcTZHaG1BTEtBMEJSYUlPMG9wYTB0ZEdPUmRfWjB1QXlHQllvV0lXUUdWaHNGaWY1OXFnNHc2UDFsdDV6Y0pPcDZJVHluNVhZczVFckZqRWZ1OEdvTXdGYXpqaXM?oc=5",
-   "publisher": "News9live",
+   "title": "British countryside success story as Cambridgeshire estate records more than 5,000 wildlife species after 50 years of conservation",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSmkyaWNtQ3RuOThDdEliamItQ1JlR25ZakxTdXNrWTE3NEN5YVd1LVR3cmo0dGRmRlZvNFJscGtsSkMxRVhKY2l6RWJQV0RHRnhxbUFvVGtUVGJ5SzBHVW1fWVZ1RXZhNnpWdldWNzJBOHVtVk9YYWUzaU9VcXMzVUR2djQwSmlNalRva1d4aTZtRmJBQlRZTGY0REUtYXNPR1dDcHN3LVRyZ1RraWFWdUdNd2l2QmFhUTF3TUs3ZC0wT2FmNHdQQVhLUkVHM1ZiejhxTFFhYXdNNFU4eXdPcG1xVDljd3VmbzN4Z1JOQkMzcGM?oc=5",
+   "publisher": "Conservative Post",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Looting, petrol bombs, fireworks as protests over living costs and education sweep Europe    News9live "
+   "description_excerpt": " British countryside success story as Cambridgeshire estate records more than 5,000 wildlife species after 50 years of conservation    Conservative Post "
   },
   {
    "title": "What we know about the new CDC director amid praise from doctors - ABC News",
@@ -241,20 +288,20 @@
    "description_excerpt": " Expanding hospitals is not enough. We must plan healthcare resources better    The Daily Star "
   },
   {
-   "title": "Why healthcare remains unaffordable for many Kenyans despite SHA reforms",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONUs3bWNxdWVDMEtNcjJrdEtVeTN5RjQ0Y21zX2x3RFFvOE5hclFyY1FIX2JhMUxDcDRpTXRGOHYyTWU1OGVKb19NcGFqTnZfai11STE0by1vR3ZEY1JlWEZ3amctS0tTRnpDTHc1WnJRSjhkaGlxU0pWblRmUlBpY1FNV01uSmZIU2hyN0JDN0dZQ2p5aFNjWnlpWEM5UnVaZVAydXlxYzJKNTh0bEE?oc=5",
-   "publisher": "People Daily",
+   "title": "Rewriting the future of women's health",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNajNHdFVmUkp3SUk5X0xJeXg4bDFORzJGMTVVVEVvcWNrSzd1dW9acGd1cUZoNkVlSlF6OHREXy1RVXdLRF9OUEZRM1F4TTFlTWFUa1dFY1N6VTYwLVlBRVN2dUUxZE85cEluMHlHOGhzMlprRlJTaHJuWFpNZnFmcnh2eVItTS1peXIzUGJfMGNlMmtHRHpF?oc=5",
+   "publisher": "BioSpectrum Asia",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Why healthcare remains unaffordable for many Kenyans despite SHA reforms    People Daily "
+   "description_excerpt": " Rewriting the future of women's health    BioSpectrum Asia "
   },
   {
-   "title": "Problems with access to free treatment in Elista's hospitals have given rise to criticism of the Ministry of Health of Kalmykia.",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1FNm5DMUloUWFaVVZReDRBZkhzYUJpX0o1YTVCa194NENfVjI2S3JnRFplb2FHVU5UamxOUVotZ3FnOXdBMy1OemJNM184YWtUZEZrSlZQSFo?oc=5",
-   "publisher": "Caucasian Knot",
+   "title": "Bridging the gap: Heart disease, diabetes, and the path to better health",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMXBHQ2FUQThaSzluQUZKYlZlSXkzSHVPSEF1d0J4cEtjZ0lWTUdYMXlwSHBnbGNGX2JqaFZuT0dIV1Z5bWNnNG9hVjAweXdsVHVwTWFnaElpX2NfUFRHNU5ySGI5NXJiNXNiVUY0dUt0ZnFtdGtMTUhPVTE5X2RjcmNpaktTZk14cmpwYm8taXYwbU9vSm4yeWRZcy10ckU0Z3lXb1ktZjBBVU5JYV9HTw?oc=5",
+   "publisher": "The Business Journals",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Problems with access to free treatment in Elista's hospitals have given rise to criticism of the Ministry of Health of Kalmykia.    Caucasian Knot "
+   "description_excerpt": " Bridging the gap: Heart disease, diabetes, and the path to better health    The Business Journals "
   },
   {
    "title": "Toluwanisings: Poor response to health emergencies",
@@ -265,153 +312,105 @@
    "description_excerpt": " Toluwanisings: Poor response to health emergencies    Punch Newspapers "
   },
   {
-   "title": "Infant with Legionnaires’ disease remains in critical condition",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbXFJd0VDOHdZZXBERGVVQWk0MGc2c3VnRHA4c3BLYmdoemZlUkFoMkUteUNrVmQ3RTlHbjNxVk9TX0p5MEtQS3d4S1A3NFM5VXJ4aER0NlUtTWsxR21zZkppa0k3a3lMNXFqcS1FOUNPcTVPak9iSmhFWXNCSnhsT3JINF9haHBKM3dObmVmQ2dvU0hwbkt1cVJnbTdKRl9XTFQtUzRB?oc=5",
-   "publisher": "Knews, Kathimerini",
+   "title": "'I was freaking out,' says Howard University student among 500 unenrolled over tuition payment - ABC News",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNFlUVXNoSl9EY2xZeFpVUzREc0JnbS1wcXNkVjJ2bHViUnl0SlZ4MHBxUHBOdDFXRVBvdHVxazVEUHJBV2tQVUpyRlR1MWZhdjM5N0dFc0RHenFyNVZZUVg4ZmttVzAtZXF4ZzhzbWFGdm5YSU5iUUNMYUg5VnQ5dURlZHBGUkNhX2RfelVJeXhnMnNXZXhxNWp3aTlnY044dmNUNHdmQ3BYR2fSAbABQVVfeXFMTkpiUFRlR2gwekpOLVlfeVdULXkzc2xPcVN3NjZCTnNEZ2o0aWlGZ2VCbWtlSUp3VmxNZ09jTEpiMF81bnlmZW9nRDhYUnVMZnBZWUJaQWVxZFZzdFY5Yl90by03emdseC16dVBPVnBUZU1XYTlubEJsYjFSeTF2SklPSmtBd1BCTzhoVDdZSkctZjBHc0hWQndKTWZ1Yml3SnhEQURnZU95WVh4cHZhdG8?oc=5",
+   "publisher": "ABC News - Breaking News, Latest News and Videos",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Infant with Legionnaires’ disease remains in critical condition    Knews, Kathimerini "
+   "description_excerpt": " 'I was freaking out,' says Howard University student among 500 unenrolled over tuition payment    ABC News - Breaking News, Latest News and Videos "
   },
   {
-   "title": "Flu Vaccinations Among Oregon Healthcare Workers Plunge to 52 Percent, Raising Concerns Ahead of Winter Illness Season",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPOHhLd2ZXSllwdnlYUFd5Z2ZpdkdaVk1EZlQxc091RlNoSE15UGVSVDczcTlCcjd4QnktZjNydnIzX1c0UHIzZ2s4MS1VRUJCR3FmZ29RMnB5OEZqdVA3UU9HMGx4TmFMVFRNVGFtVEZjN0ZCajFQVHdGdjZYTURqYVk4b1ZUcTR3c1ZjZXk1RHJGcjRnajl5MHlwN1cyYnN6QlM0eG1DclpzQTBrWmhoZ3FxMlg0WUdxSjc4VFI3TXd6NDVlNXh0Mm96b0hBbHZHUVQtdmJjS0I3LXJCUGFTa0hDeWZidVE?oc=5",
-   "publisher": "Grants Pass Tribune",
+   "title": "Hunter College professor placed on leave amid investigation into her 'abhorrent' Zoom remarks during public school meeting - ABC News",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdlJQS0dncG5aWnZkTzYzTWFLcFV0SVlCNnhPelZ0ckVFSXFNNnRwOFZyZTJPSDhJSVl0TEVtUUN1Z1c1bkNxSzh0SlBvQTZ0TU5mcWt4anJpRWNUMDNldzhPMEZrcmpEVWpoMFp5bUdsRWM3OVEyRUxQTXZ1RXE5NVVWTnZ6YlZGbEpod0I4TS10OEhnTU11dVoxbjd1d3VtUE93b3YxMmVaUdIBrwFBVV95cUxPb0lsWjJVS01kMjVZMVhQWTJvUGpqZk5UWnRZQkZ6cW10aFlkVzZLNEdGYmNpeU9fMERNM2RPemRHRzNTMVBidUV1LUNpV2N2T19jMHBfR0JqT3VSYkMyaTdJSHBJVVd6X2ZNcDd2VGNMdlNpZEJrbV9WcnBJVFZyRmhwNjdUVmlrdWNfbnlOWnFEdFo3aFhLU3RiNEJiVTVFZEh4Z2dsOFQ4azRhdmZz?oc=5",
+   "publisher": "ABC News - Breaking News, Latest News and Videos",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Flu Vaccinations Among Oregon Healthcare Workers Plunge to 52 Percent, Raising Concerns Ahead of Winter Illness Season    Grants Pass Tribune "
+   "description_excerpt": " Hunter College professor placed on leave amid investigation into her 'abhorrent' Zoom remarks during public school meeting    ABC News - Breaking News, Latest "
   },
   {
-   "title": "Exploring College and Career Pathways for High School Students -",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYU9jQjlvUVp6VFdqeV9FendzZ3ZfbERhbW9HQk9wcmlOaU9nVmRaT2xIYUt3eGhjUFBMOHI2ZkotY1ZzMzAxVDlNX0RqaDg5T21hOU15NTI2M2x3NUlGN1VMa3FuSEE3ZUNuMmVVZS1jeGhxNFhNMW9OcjVkWGV1dEtqejZHTm9NZGM2WlBHbnNBU0hsdk5GSkhjSEpoNXZZZXE4aEpJZ1RZQUwtdmc?oc=5",
-   "publisher": "Northeast Ohio Parent",
+   "title": "CS Ogamba appoints new KUCCPS board member, university council and school unrest officials",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYTFOM041V1pabWtJcEdfTHVLNWhtTWNfalZlWFFmRl9OTjVSZ1ExNy04M0RHYnNkTWlrNk1rRUVpNThISnF4QzE3RlVYQ2VzY3NkTW1pVjhYRzh4MHJGak00UlRBb21LOThYLW1iSkk2cXdNWU4xVHpWVHVCMkExaGthTWNDYnppVlAta0ZXVGplWk9HZWxCcVZOUllQWVBVQnBKalFlbzN1TzJwUGlQTFRsVXFyLUZ0VFZqSXl2RQ?oc=5",
+   "publisher": "Education News",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Exploring College and Career Pathways for High School Students -    Northeast Ohio Parent "
+   "description_excerpt": " CS Ogamba appoints new KUCCPS board member, university council and school unrest officials    Education News "
   },
   {
-   "title": "College applicants are ruling out schools over state politics",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNU2Zsd1NyZ2RYMEVPQzVfdzRKbXkyOGV0ZHRFeTdHbm1PUUt5ekw2U3kzaWNqc3oxZUdfMEVoVEt1UkJJV3lKUmVsQ1VxNFlFaDRwWVRXa1FwNEJvbTJFaDY0SkFCS2NvRGZsQmhGY093MjNqR0hISk9UelZZelZBNTNwQ01uWlN5SzZvenZBZkFjc0ZUbEpYLVppX2VtUTZGeVhwSXdTQ0FBU3Vjc0MwUnFOdUktRTdoeEJab0tYU25WUUNiMk02NUJSTEtUQQ?oc=5",
-   "publisher": "USA Today",
+   "title": "Covenant University Releases Newly Approved 2026/2027 School Fees for Nursing Science and Physiology",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQ2J2M1B5bDJfa29OdE83dDJNVGd2TVdySmF4QW1PcTAwOTJnOTN1NWJvTDg3SFo4TDhlZ1R4Q00wYzB0MW02WE9Vd0M0d0ZjQ3I5OG52cDJaWmdScURjb3B2UnV6eWw2MUJDYUxkRHpVQXlMZ1lyNXpQSjBPWWxJMnpSd0hkd1JYSFlRNmhqeVMzWkFIZGVzOElSc04xdXFoREpObjBNOGdaaWYyLW52WDE1djVYRDExYkxWUTB4VTA3VndwOEo0?oc=5",
+   "publisher": "Legit News",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " College applicants are ruling out schools over state politics    USA Today "
+   "description_excerpt": " Covenant University Releases Newly Approved 2026/2027 School Fees for Nursing Science and Physiology    Legit News "
   },
   {
-   "title": "French student unions call for renewed school, university blockades starting Tuesday",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOX01rd01mUTNEMk9pVEFKODBUaHhBalZHbV90cTFlalRaYWVGbTFiOXZaRENBR0JlLXVzQ19wTzdBM2hBZTMxNDFycVVFUVJQbktiai1LU3ZyS0tNRExCX3FHVnR3WHZMVXJMZlJhX195ZENxN3ZLaE9OckFrV0N5dWpSS2EyNmtYdUdZNGNybExCY0lma0RFNkJlSi1VSF9VcVZ6SVpGZjdHZE9NWnVJNnpEcVRPNF9YU3JfemZlNTc?oc=5",
-   "publisher": "Anadolu Ajansı",
+   "title": "French Student Unions Call For Renewed School, University Blockades Starting Tuesday",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYlk5RjFpQU43SHBhT29JeEVVYzNZdUZnQXFYVHVHZlJYbDhkTF9hRHROa2tKOXNwZXo4M3NnNHhPeEltTVB3RUw1S2NhMEEzNmEwM3lVUkFpTG1CSkRfV3o3c09OSXlWNktORVNVZnVJSHdab05YczRfSDQwUVZtN3Y5c2VyREhWU2pJNjVtUUxVU29ZVGtsSzZYR3NlaXNkSVBFUkdacTAxQ1pMNktUWnI5aw?oc=5",
+   "publisher": "Menafn",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " French student unions call for renewed school, university blockades starting Tuesday    Anadolu Ajansı "
+   "description_excerpt": " French Student Unions Call For Renewed School, University Blockades Starting Tuesday    Menafn "
   },
   {
-   "title": "What U.S. Universities Don’t Tell International Students (But Should)",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZkt6RksxTmYwVXZUSndNWVYzWWFiekNCQXVXdEhxVDc0cnZqd2Z4SjY3SFVIQ3R4ZHhBeWlIVjdFY0U1RGp1d3dCaHM5dFdseFA4aWwtd2VWZkFiNHFjb01Cci1BTXNSVFZYV3FIYkZIME1JZkRGN3hoSHJkck9yZHlKdUlOLUtNS1ZtRzI3VGI0SDlQdXAzaw?oc=5",
-   "publisher": "CollegeNews",
+   "title": "Rebecca waited more than a decade for housing. Her town fears what's coming next",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZzVtVGcycldqSmllckxITEV3dU02cDZzX0xNNTlTeHBibmUwXzJucEdqWmI1c0FuNmkyc09kR1NWTUNrQzlmMzJFbTUySDluckM3T1JlZFp4UUhuV0VMNUQ1TkUtQ0VSeEpmOWxtV0JaNWE2azZJN0NDRElxaWw1QkMwckdaQ0ROeE51V0l0emEwNUVyRFRremxHYk9MY0thX0pFeTJhOUo?oc=5",
+   "publisher": "SBS",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " What U.S. Universities Don’t Tell International Students (But Should)    CollegeNews "
+   "description_excerpt": " Rebecca waited more than a decade for housing. Her town fears what's coming next    SBS "
   },
   {
-   "title": "Minnesota's Fall Review Process Gives St. Cloud Tech High School Seniors Automatic College Admission Offers",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1pNlVhVXVHaFh5QXNkc1ZNTEd0cUtSZ29VblRrOWtUMzdhZm14MUJWSjdlWEItSVZDWk92RnJxUTM5WTZnSkctU1FjZk9vTTlYa3VyMFRLb19lRkNDZ2dlTllsOFVldHZvNXJOQw?oc=5",
-   "publisher": "WJON",
+   "title": "Hotel denies 'completely untrue' claims it is housing migrant groups",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUmZ5d3haMVNsTXZ5V2FJQXh0NktVRzhmOG5qVUZaSnVTaGZ1UXVyMk5lNV9UTGZVYzVFRVlMcjJPX2NmT2dCTE9vZHltNU5nR21rUkI5eU1TZ3hmY3FrVnVfSEdZV2tNNDZpb3drR3dqNUdGTzMzR18zZjVuQy1pOXJmUnVLMXVMZGlSUGZVd3BCaTExSF9Hc0JhQ2NBU2RBZV9XaWh6LU1tcXNWUVE?oc=5",
+   "publisher": "Lancashire Telegraph",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Minnesota's Fall Review Process Gives St. Cloud Tech High School Seniors Automatic College Admission Offers    WJON "
+   "description_excerpt": " Hotel denies 'completely untrue' claims it is housing migrant groups    Lancashire Telegraph "
   },
   {
-   "title": "Welcome to the school where Gen Z learns philanthropy—with a 100% job placement rate",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPODJobVIwWlRKa3dyaUE4UFRoZDd1V3dMMW5TY0w0dUI1QnkzWl9sd0hOd0JxZzIwSkFFOWRFcGwxNnFNQ1RmNmZiMUxNSnVPUkp4cXNoNGNCOWNWU0dMa2NYM3JDS24xbGNtcUpCajlKNnY3RS1YT0ZBdW9BRGpKeWZfNlZQMGlMWEdMRjdXd3dlTEh5ak9fY3ZWdnpqdFc1V1pLclRHbDNjby16TXJmTHl4LV9ZOElkZkp1bUJ2bHRUMVZQQmtqdXNQampzY0hZVklReDh0OU5Qdw?oc=5",
-   "publisher": "Fortune",
+   "title": "Working and homeless: Mulgrave candidates split on public housing fix",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNY1ByajgweTNPaUtYWm4zMHpsSDNmX051aWhQWjduSExYbGUwaU1ySjF6aHJxSzg2dkJsNjdyaHJCVzR6VnFKQ3cyWkRNWWt5OVpfOUhwTWFDMG1uaDc1ajc2LXhRcFp2d09tRnp2eUtqQ3RwQmFEZ2wxZDZwR213UDRXQnc3Y3dpaWI3dzFYQnk3ZWVXaTZRVi00UG5pMEJobmRicUJ4d3FFQ0YzdFM0cFRtcjdaNE8xT0l0dWtjanBPUQ?oc=5",
+   "publisher": "Dandenong Star Journal",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Welcome to the school where Gen Z learns philanthropy—with a 100% job placement rate    Fortune "
+   "description_excerpt": " Working and homeless: Mulgrave candidates split on public housing fix    Dandenong Star Journal "
   },
   {
-   "title": "American Students Spend 1,231 Hours In School A Year. Here's How Your State Compares",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaWNBXzZnMEdUTndELUZHT002a3lhYTBTbXVqc2d0c3VxVVNFSkhIczJaT3M5ZEdOaVFaTkRWT19Sd0VLbjBWN0pOdWRpN29UdTVPMlJOREJhVEpnS0F3YkNhNFFnVDE0dE40YUdtLVdWd1JDYXRubDBBb1hqTGh5Mzh0ZEE5cjdQVlZqcnZ6UDZMdw?oc=5",
-   "publisher": "The College Investor",
+   "title": "Pandita asks majority community to play positive role for migrants return",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ1AwajdCWk9wOHV3VktkcXZxZ2VfSUJBVjJuYUJ1WDBPbXNGeFhXU1d5SEp2YVNXOTRMa05aalV6am5aVjlNc1R5cHZQa0J4ZUJMRXF3U2dPQU4wbEp6eVlkRGd5VDJmcFJVMHZiMnlFdjNFQzlzdWJZU3pSTm5nclIwNTZjU0ZwbVY1YkZ2TENQSmZ1SGZsVEYtMzNNcEJLNi1fdUJZNEPSAawBQVVfeXFMTi00Ynp0RHZ6XzMtdUM5aEF5bkFCbktETUFyNHNXNUNkeHhEVDFnaXprSHIzVmJhYU1oMDNvbUoyUEFxM0J1Y3k2NkxiZ1JCeUhTcklKd0Z0QzZleUcyeEZUZFdtcXhabk1XRVpFbWcxNVpabERLSnd2T0JLVlo3Uk52LUpZcVRoMkpjVUY0V3J1RnNBbk9OejJWdnYyZXNqMF80TXRvaTFjTDRVWA?oc=5",
+   "publisher": "Daily Excelsior",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " American Students Spend 1,231 Hours In School A Year. Here's How Your State Compares    The College Investor "
+   "description_excerpt": " Pandita asks majority community to play positive role for migrants return    Daily Excelsior "
   },
   {
-   "title": "French student unions call for fresh school, university blockades as protests continue",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE56a1dUOTZyV3NHd2xkRWFETEJyV2twZ0M4cXEtNFNWZzg3bVIyVFNtRzNpOUw1dHhkMHN5NGptblJlcWdPN3FNZVZfMVdDWDZBYmI3ZElMM1I?oc=5",
-   "publisher": "TRT World",
+   "title": "Local community unites to launch new Sunday market in £15,000 bid to boost businesses",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPajdpQ1lNNWV3SXM0QlNza2FFVUc1cDBvQU5VNEhFaVhKSXpYSE5McHBGS21aWVU2Qkp0SHBNNllvMms4VFBWVXVxa1dBcXUyNjBPWHpVeWUzUnlTTUw3STdqSzB1Z1NLa2dFQ0FodnFMWVhCOC1RREdHbFpnLVdEQkp0UmQ1R3VmZGwxR0ZYejlOcU1ucGpMUEdxX0NyTURXamJDbA?oc=5",
+   "publisher": "GB News",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " French student unions call for fresh school, university blockades as protests continue    TRT World "
+   "description_excerpt": " Local community unites to launch new Sunday market in £15,000 bid to boost businesses    GB News "
   },
   {
-   "title": "French students to renew school, university blockades Tuesday",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUFhRRVVTdEtLemI2V0VrME1jcWhmNi1fZ1dZNl9WSjZ1MEpyWWRTSExoS0wxeXBQOWlDN0NIeG1nT29GX0NuT0ZtZXFjeGF4UkQ2b0tkTzhaOHBBaTFuSW41U1hPM09vNUtDaDhyenpWdTFjdF9iVlZwQWpMYjE1NlozR2FIdkgwS0pibWJQcWpaeW4yVkxYa0pDWEtBXzhr?oc=5",
-   "publisher": "Yeni Şafak English",
+   "title": "Several key employment reports and more corporate earnings updates will fill out a busy week",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaGhkSGJZWWxSSVFFNzFrcUk5dERlYkFkUjUtOFFSaGh0cEp1UkVYdlJjdkNqa1pySzZQY29PNFJWeUEwWS0xVHVub29nd19Kb25TMnhwVjk2ZGpXOGFialliOERxQ1R2VktIdW01ZnRHeXhYOU5mTURWTHRSRGJHMms3M05fX3dielF2bDFZZHlPUDlCUGwwektPejlrcWcxSEJzUlRfUHhrd0RyVFZDZEZYYzJLcUZqLWZEdy1WUWNiMG9wOGtZ?oc=5",
+   "publisher": "WRAL",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " French students to renew school, university blockades Tuesday    Yeni Şafak English "
-  },
-  {
-   "title": "French student unions call for high school and university blockades Tuesday and Thursday",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVDhSNUVVYUNzeEQzSUxyTkRYWWNLdkNubkpUeWQtdUV6Qi1mMXgxenNiWkxhSFF2Z2s3QlhicEFLVlRPdnJBQzZkenowaVJBRmswdGFIZHZ1UnZGUVRlckxub0ZDUWJBb2Z2eC1iN25rLUcxb00zTkV5eEU5NW82a1A1WHdwZFB0N25ScmR2bkotQS1Qcjh4NVZzd19wekc5Zi14eElRZlhYbDVPQ3Z0dzJhT0NxOUZUbWJxaVhMeE5NZjZYa1V6VDhR0gHPAUFVX3lxTE9YQ2pxV2xJanQ2LTQwVEdiSGVRekpVdE9LWnMxcl9mdENMeVFRWWtUZ0pDYl83em9LNmRueE91VzdWVTRLWG42Q296dWxxdzB6Rjd5UnZTOTdkOFBqZm15ZktBQ1o5YlNlWWJ3SG1YZE5BNjEtd2h0Q1RIRjVTRmt5SzZuOURkY1VZdlR0MUhnLUFoQjZmbkN1MmNrOFVfVUVsdi1NbDlEdXlKSXZNejlIdExmZUVPVGx6U0xXQ3pQRnBkWmR1Q0N4Wno4MUlqWQ?oc=5",
-   "publisher": "A News",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " French student unions call for high school and university blockades Tuesday and Thursday    A News "
-  },
-  {
-   "title": "German students rally against cuts and conscription",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObllybE9pUXctX3dDTXoxTElzRGlxcTFrWDJzVnh5MmhYY0VVZHJsaUtiNkJfU1JudzhydkIyX3MxMzJZMmFEeUdRTTN5WS1FMzA4bkt6b2tSV1N5V0t1bmZ6RHNHMEdrWWNpYTNUSVZUbGlPOGVSUmsyWllMbE52bjNmVGdBTDlBQk9vQ0NvcFdKcEJPeldYc1g3Tzk?oc=5",
-   "publisher": "Hürriyet Daily News",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " German students rally against cuts and conscription    Hürriyet Daily News "
-  },
-  {
-   "title": "'Nearly half a million' flood French streets as protests turn violent",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1rZjdHLTNMdl9COTlTMWNuTDNmaW94WnludUFrUWtISFpPNE5QQVZmRFU0X2k4NlMxQTBuR0hjZWF5MjVuV3NIdGJtbmxya1ZobzlvQ0FSRDc?oc=5",
-   "publisher": "TRT World",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " 'Nearly half a million' flood French streets as protests turn violent    TRT World "
-  },
-  {
-   "title": "French student unions call for school & university closures",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1qUjlQY29wQWFOMGVGZmxvd3Brd0ZOWTFJcmxVTkVUMkVLLW5Zbmd4MDZzdWZQRXN1VmZ4MlB2aDdoRU04NUluY1lGdm9MZTQ2ZkVr?oc=5",
-   "publisher": "وكالة سبأ",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " French student unions call for school & university closures    وكالة سبأ "
-  },
-  {
-   "title": "Govt committed to opening university pathways for ‘pondok’ students, says PM",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMTlHY0xVdVh4NXBydmVGTF9HTm81M25rUm9pSktid3lVSXpJYUg4M2hmOTlQaTRvVTdIcmp3TGZsOEVXSV9uVFpxNXlhQ0ZSbDJ5bGEybFRyZjVpbGxKMGI2Sm9wRXV6ZHZFbDd2bkNMdUR0NFJibjJsVkNYTlY3WlJRQVJtakk0RUFTaXBVcElVZVlnNWZWenAwOGVRRG1YSzhjazBNNTV0SG00WFhYN3ZOVC1CTVVReTBLUmhnTTI0SW8xeVNJNkpBc9IB0AFBVV95cUxPdUc5ay1LTTZpVDlITDhBXzJSMlZicXZqd1h1ZGRhUVdZWmlZUjE2bElySlAwYUt6RVhPZFRheGo5R2M4a2hsSnRZLU0taENLWWpQU1l2SjZsTGR3YXNkTWRaWmFkMThBU25tTl9vcnlnZjExOURmTDVPMmhTVWJmdFh0a2hwRjhZLVRLY3FkZnBNS2V2MGNieDNOM01WU3ZQV3VCZW1CclBIVFJZV0FfXzZjel9ZbENlUE9ld29rbHZRQmU1ZW96cU5McnJSLVBy?oc=5",
-   "publisher": "Malay Mail",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Govt committed to opening university pathways for ‘pondok’ students, says PM    Malay Mail "
-  },
-  {
-   "title": "Our problem with Ruto education reforms: What unions, private schools, parents want changed",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMTRFTjItRU1ncUNzcWtDdFUxNEt5Y1dkQ1NhN0l3RDVDLUJBTm9sUlJ5aFdZdUZZdEhMSjY3bUd0QTlaTGEtV0E0MUF5Qno1SU8wQXJjeV9LeXhlV1FON2dsaHR0a1hYazhaN0FKRmUzTTVPN09ZNzB4cHRlanQybUE1T0dvLTRIaW9WdlBEemlKQ3IyUUFZUGdEakZReHNIVWRnWDlMemxuSVZrMkJXdVAybjU4Z3UtMmxUaTB2VHExSGlhdTQzMkFRMWVoVzBnNmZfUS1n?oc=5",
-   "publisher": "Daily Nation",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Our problem with Ruto education reforms: What unions, private schools, parents want changed    Daily Nation "
+   "description_excerpt": " Several key employment reports and more corporate earnings updates will fill out a busy week    WRAL "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
-  "successful": 48,
-  "mapped_pre_dedupe": 183
+  "successful": 49,
+  "mapped_pre_dedupe": 184
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 0,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
@@ -441,19 +440,19 @@
     {
      "source": "direct/The Conversation Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 2
     }
    ]
   },
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 1,
+   "mapped_pre_dedupe": 3,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/The Conversation Indonesia",
@@ -463,7 +462,7 @@
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     }
    ]
   },
@@ -487,12 +486,12 @@
   "global": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 3,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/Global Voices English",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/Global Voices Spanish",
@@ -524,42 +523,42 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 88,
+   "mapped_pre_dedupe": 84,
    "feeds": [
     {
      "source": "direct/BBC World",
      "status": "ok",
-     "mapped_pre_dedupe": 13
+     "mapped_pre_dedupe": 11
     },
     {
      "source": "direct/BBC Science",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Business",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 23
+     "mapped_pre_dedupe": 21
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 19
     },
     {
      "source": "direct/The Guardian Environment",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/DW World",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/France24",
@@ -586,12 +585,12 @@
   "north-america": {
    "configured": 1,
    "successful": 1,
-   "mapped_pre_dedupe": 0,
+   "mapped_pre_dedupe": 1,
    "feeds": [
     {
      "source": "direct/The Conversation Canada",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     }
    ]
   },
@@ -610,12 +609,12 @@
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 85,
+   "mapped_pre_dedupe": 83,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 12
+     "mapped_pre_dedupe": 14
     },
     {
      "source": "direct/RNZ World",
@@ -625,7 +624,7 @@
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 14
     },
     {
      "source": "direct/CBC World",
@@ -640,12 +639,12 @@
     {
      "source": "direct/France24 FR",
      "status": "ok",
-     "mapped_pre_dedupe": 17
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 17
+     "mapped_pre_dedupe": 16
     },
     {
      "source": "direct/DW Español",
@@ -655,12 +654,12 @@
     {
      "source": "direct/BBC Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/BBC Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/BBC Asia",
@@ -675,17 +674,17 @@
     {
      "source": "direct/BBC Middle East",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/BBC Europe",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/RNZ Pacific",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/Guardian Africa",
@@ -695,14 +694,14 @@
     {
      "source": "direct/Guardian Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     }
    ]
   },
   "south-america": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 2,
+   "mapped_pre_dedupe": 3,
    "feeds": [
     {
      "source": "direct/The Conversation Brasil",
@@ -712,14 +711,14 @@
     {
      "source": "direct/Mongabay Latam",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     }
    ]
   },
   "specialist": {
    "configured": 3,
-   "successful": 1,
-   "mapped_pre_dedupe": 0,
+   "successful": 2,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
@@ -728,8 +727,8 @@
     },
     {
      "source": "direct/UN News",
-     "status": "failed",
-     "mapped_pre_dedupe": 0
+     "status": "ok",
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/NASA News",
@@ -740,23 +739,31 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 572,
+  "distinct_unmapped_titles": 568,
   "high_repeat_unmapped_examples": [
    {
-    "title": "IISc Director Prof. Rangarajan Flags AI’s Promise and Perils at Adani University’s Third Convocation; 374 Students Graduate",
-    "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPcmM1cFRITFAzUk5YNFlkNjZmYnJwemd4TnpkYTJ2eWNIRG5xeWQzY1FrYWhseXpLMHBod1ZCQXA4UzV6Z2k4bFZIMFF5VWx4YXI0NHFteHZ5ME1aSnRaSTJvYkJQMU5pUkFrbWYyU18xbm1panVZQm5USnM4Q055dEt1S0pPaXQ1MVA1MTE3VEdNdmxKMzN3enNkS0g0TW81RndDVnBZZ0tOc0xBQ09vSGtKVUdzc001OXk0ZE5SRGhBTjNNWHg2NE9YR3FXdnNtd0I0TWg1VVZtc2JZSm13WmJZemVPNkFKUWstVnh4a0kwOUxKZTUzYWpqRnVTNEQtRVBYNldXZVRCaVHSAZACQVVfeXFMUER5bmdzOTJnQ0Q2YlBIeTJvcVl1VWVQLVRWOVhFaXNDZm5QZnN4eUZpVWFsMnppTl9xTXU5RGJ1cUluOS1NQk9LY1ZhRnpzSkZ2SUk1UG1lVThITzZtX3FwWlRCM211TU05ZXJXbTJSSDREdlNkX3ktSFdNZW5HWFFXTWp1UXQ5NGNMTjNsWkg4NjBITE5saEYxNVluMGh6T1pJbHh5ZTZ6TDk3eC1XdEZ3X3hSZUo0dktUckI3T3IxdVZwU3piS2RNZkdLSkd4Tms1R1Bld0JXVmJrYUpfSi0yZHltSVJSNHl5elFuMTZjc3IwdVZ5OGNkc3NLS1kyb2dKTE9rN3RmTUlUYUJZY0w?oc=5",
-    "publisher": "Republic World",
-    "feed_occurrences": 9,
-    "feed_count": 5,
-    "description_excerpt": " IISc Director Prof. Rangarajan Flags AI’s Promise and Perils at Adani University’s Third Convocation; 374 Students Graduate    Republic World "
+    "title": "Gandaki deploys 46 medical officers to strengthen provincial healthcare services",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTnBueGtaLVNGMUFrUFZYcG1FQUEtNnlvTDdHcFJsZ3hmVUJ0LUJmQlo5cDFMZXBGVEN0azFha1dyVGJ4eTloZGgtbTd1YjRqaURZT2FhR1Q5cFBlSUU0RmJrVjVNTkM4WUMxTkVBaXFBV21BUEowTk1XZEs2QlVQaWF5WWNHZUd4VDd3ZXAybzhXRTNWQnkxX25sb2JCWkNUenFXQnRSVWRlYzBQRzFHYnBHX2V4SlRhalE?oc=5",
+    "publisher": "OnlineKhabar English News",
+    "feed_occurrences": 8,
+    "feed_count": 8,
+    "description_excerpt": " Gandaki deploys 46 medical officers to strengthen provincial healthcare services    OnlineKhabar English News "
    },
    {
-    "title": "Amaltheia Dairy signs conservation easement, Forstag makes final union bid & Bozeman Library to renovate",
-    "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOVUlsV3RUTWpkTnRBdGh6MzJHTHNPdEdVckxsbkxkWDVXSE5CeUtBbmsycHZWNEpDMjhSZldEem1iQ1dudlFzaEVDMENkS2pkWmRzN3pEcmxWMmdwSXlIRDZDU3pXOTZMNDdIcTROYjd0SW43R1JCaVJYRFpndE5zdVpic3VzX3l0SVVKa05EcTVla1dvSERYa3N0R3k4QVhWblVJTllmeFlJZnJ2OGtlTUFqRnJUMWk5eXNIOHFuc2VmbDJXTFN0NjN0WXczMUlNMHdrbjZzamdPNUdnSFFwQUd2YlFRbFp3X2dxcUxWcUtOYjE2M094T1puaDdyUzRzV2JmRzJRdEJQRW4wRFdPc3J0X0MtUTl6MWRsQnpUbUVDSmx1UElFQU0wcThnX3lt?oc=5",
-    "publisher": "Bozeman Daily Chronicle",
-    "feed_occurrences": 8,
+    "title": "French school blockades to restart from Monday: student group",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOajl2Q2RCWEdsd29JbE5IQlFkZjJCNXp5QmpZY0RZOW8wUWpFOXVNWk9CRE5tZm1jTkVxdS1ucHRuVF9DWGE4dGRWMUEyU01Ha3JKWTZwcnZ2WE40aENBemoyQnltYmp5b3NYR2o2c245Ykp1ZWM3NzRkT09Hc1FuRGI0NXhyUW9lN1ByM3p5R1hRVVdYc3N6Z0syaXdlZG1FbTBhRWtqaVlQeVJ1VDYybTZwLVY3TG1pRW95VU9HaDlhZ9IByAFBVV95cUxPdUFyUmlMWjR6Z2NJNVpYQm1qRUd4VlVLQTYtSmRVMl9QdG9teTN6WUVfWWVtWUp5NjA0bi1naDJNczlxLW16TXFKZVRoS3ZtaFlhSkZzTVY2R3c1MnphUU53cGJ5QWFrNDYwdUtlY09zLUF4d2ctLUJHckowUjBUWnNqeldPUkNkVmlwNDVleGs3Tl9DNmdIVGh5ZVBXUXZvQ0Y0SVBtLUVuRU0tcklPTGVua2NqZVJ0TE1NRTdNN00yT2Z2SWtzZw?oc=5",
+    "publisher": "The Hindu",
+    "feed_occurrences": 7,
     "feed_count": 5,
-    "description_excerpt": " Amaltheia Dairy signs conservation easement, Forstag makes final union bid & Bozeman Library to renovate    Bozeman Daily Chronicle "
+    "description_excerpt": " French school blockades to restart from Monday: student group    The Hindu "
+   },
+   {
+    "title": "Latvian Saeima elections 2026: How the election works / Article",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONVlTV3VLT1h5TnJid1VHdm9oMWxMeWp1eFFjZjBVVF9lOW12VVl0aDBjQzFMVGNYSUZXZjN6MVByWV9TaHBvV2pmNkE0MFNZX3V4VXFTY3hfZWRuZEhpbmYxSlBYSmRUVFI5VjJlTnhrVG03TXZNakJyb1lDQTlXYUFjTlc4eFA2YkJvVGRibXV2cEVjdTR6VExvVk1jUDIyLTE4MG9rVHJlX2tuSGxHTHIxWnk2Q012?oc=5",
+    "publisher": "LSM",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Latvian Saeima elections 2026: How the election works / Article    LSM "
    },
    {
     "title": "Uncertain local governments",
@@ -767,20 +774,20 @@
     "description_excerpt": " Uncertain local governments    Dawn "
    },
    {
-    "title": "Polish opposition seeks no-confidence vote to oust Tusk government",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeDQyeHJZSE9qc1FGWHYyZVVwQld3SklXRkdndGo0bXhRVkl5VFZCSUhXRjFfQVJhblU0QnlMaVppVHRwQ0ZmNlU5clJlMXVOZTBtX0pOOUtRYjJhWFVlZVJLeWhNTHhZOUQzdHpGN2E3b1ZxWTNMNEZNMkh6Y1EyV1VWaEdLaWlYZlVveFF5Rm81bDUwUGJMS2s2eUtZbmhiZlRWRA?oc=5",
-    "publisher": "Anadolu Ajansı",
+    "title": "Mkhize warns coalitions could pose fresh challenges for municipalities after elections",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVGVrZ29tQnZ4empUX1hXYnhuMUFObjFMT0Z4WkRQdnlhLW02NENPakNrc0hrTjR5VEh1N1ZneHBKdWpEaHg3d3paMlJ4VUxaaWs5ZUlQV0MyOHBPZkpGcFJsVWhGbUlyQ2thdTZ1QUlnLUxTMTUxd2VJbC1tQVM3enpDQkkxSW8zakFTMjdEZEFZeXFJbnQ3ZERGSl80c2xZU1ZvQ0RXWmVEV09FYmYtMkdIdnJsYUJfX2daWjVvc2x2aTJBUG40MGtGcw?oc=5",
+    "publisher": "Sunday Tribune",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Polish opposition seeks no-confidence vote to oust Tusk government    Anadolu Ajansı "
+    "description_excerpt": " Mkhize warns coalitions could pose fresh challenges for municipalities after elections    Sunday Tribune "
    },
    {
-    "title": "Eisenkot vows to form broad government after inconclusive Israeli election",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObkROWFpoX0FsUThGV3pObnpiU2VxZzM2ZFpzUlBYVmd4ZVREUlllZlpBTVRQWXNqOWlIdDliSzVhNjJYbW9USlc1MW1NM3AzcXBSVmRDRmhCN0VsdzZybVR1TkR3QjVibjBWQklmZ0ZTVmhUUXZTVTY5U2VNUWpua2wzempRRzNtekI3SUYxSFRrWE9GTDJFVFpqSGptblotTkc5NDRTV3lmMWpqN3c0?oc=5",
-    "publisher": "Operativ Məlumat Mərkəzi",
+    "title": "Adirondack Council report examines political, social, environmental forces shaping park",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOV9iRjd5MXhwLURhWU8wbVVzNGJzcmY3X1MxMVhMVldHR3dkR1ZXMDN1UzFEUGhsb1QyRUtOTFpSNUluVXBaNk9pTFJLa0tURngtNGlmLU1oYzR4XzhURjhtNHNyNlVjMFJZVF9EZUl5X2IxWlpDZ1ZKUy04WGZVNkhUdVVCVlIzUXZBeklmQjVtZjRoQno2b1JJSXN4Qk11MEx4d3NIRXc3MjByZ3VPbDVVVWNjSlpZaXZVWV84YlBTZElBaUptc1F3d0xDQQ?oc=5",
+    "publisher": "Adirondack Explorer",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Eisenkot vows to form broad government after inconclusive Israeli election    Operativ Məlumat Mərkəzi "
+    "description_excerpt": " Adirondack Council report examines political, social, environmental forces shaping park    Adirondack Explorer "
    },
    {
     "title": "Why Whales are Climate Heroes – Who also need our Protection",
@@ -791,6 +798,14 @@
     "description_excerpt": " Why Whales are Climate Heroes – Who also need our Protection    Informed Comment "
    },
    {
+    "title": "'Protecting the Congo's forests means protecting people's lives'",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWnFVYlUtUVhiOFFDZFZDYkcwNVdCNnlQTjF4LV9zZWhfWDdmMURocTdnemNQYzE0a00wZ2pmS0p1bHQ3c1ZOWUd1bTJsNGJ3Tm82WjBzUmJubmNtRmNwXzlkc1o5STBrU3lnaC12X2xIWHFMak1SSk5fMU85MjhzRU9aY1BYYTZ1TlRHdzkybEFmM3JZNHJtN2FPQjc3ZTdhdTlV?oc=5",
+    "publisher": "RFI",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " 'Protecting the Congo's forests means protecting people's lives'    RFI "
+   },
+   {
     "title": "Cumberland Forest Project Does Global Conservation in Rural Appalachia",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTE1DNzlVaDhmMC16OTR2UWRJS1haaUVCby1FV2lTX05mU2Y5eFJMaHZCbHk5MmxQTkE3TEU1WWlmWTRmeHl6eE13aDFqMXVYbDk4UlpZM0ZKS19rNDJac0VrQjBkak5HSlEwWlYyb0JZRXl6M0l4Vm1XVm5qY3MyVVpCYU52TXh5MkkyYkFhUlRuZEtUc2tNWjNhLURjMENYQ25NUnVPRlVMZWtZcWV0NUgwbHJodw?oc=5",
     "publisher": "The Good Men Project",
@@ -799,20 +814,52 @@
     "description_excerpt": " Cumberland Forest Project Does Global Conservation in Rural Appalachia    The Good Men Project "
    },
    {
-    "title": "COP17 Put Forth a Clearer Picture of the Biodiversity Crisis—but Not the Ambition to Solve It",
-    "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOb2hVZ2dtc1dfdWpHS2JWZ2FiV0RnYTZtbFVNajg1bDdVbm5LLXd6VUFyclMxVG84T1ZQNDI1YV8zMzlFS0JUTmpLNUktNS1WZ05oeVc4ZmlEWkhnRWNEbUtFdTVjQVgyM1pJc2UzMnNCb1FRWHctX2lHVERMVks1V3dxR1dueEVaSlFQUVE1ZXhtLXJqSjJpY1poYnQtT3ZmUGZudWVKdlAyblFrdldYTXFoWnp6akhla3l4SXJKNHd4OFJMQktPT2lXeUUzMmwxd0NnOHdBaTM5T3d6THd3SzBVVERHRzF2YmNSQXBCdDRva0UtWm5DeGcwU0FHYnhmakU5R2pCRQ?oc=5",
-    "publisher": "WCS Newsroom",
+    "title": "When this tunnel of swirling mist and air forms over the sea, move away fast!",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NRkQ1ZE9NcGxZcnhLWmlWMWxrRG1rRkZJbXBka0RQUUZwSEY5akpEa05veUREc05iSHVmZGUwb2w3R3VQMWNPN2Vsei1rYjJ1Zk1OeWxBTjJDMEs5SDB4NVotVjNINWFTeE8xclh0WEotT0k?oc=5",
+    "publisher": "BBC Wildlife Magazine",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " COP17 Put Forth a Clearer Picture of the Biodiversity Crisis—but Not the Ambition to Solve It    WCS Newsroom "
+    "description_excerpt": " When this tunnel of swirling mist and air forms over the sea, move away fast!    BBC Wildlife Magazine "
    },
    {
-    "title": "Nations commit to get nature goals back on track",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZzlLdDhNdDh0UGtTRkRMNVNpS29CekgyVl8tYWMwZG45c3VyRXdOZjZJR3hraTF6b3BGaXMzUHNZZTNfTFlaMHhVQlg5bGZmZVdiRWhTMG82TDNTcG5EWFRjNjNjWEpUTDJmU09QT25iUHNWWGdwZnFDYnYxc2FCZWk3aXpUR1BTZmZSTnJzOGdrT3BjTWtDakZhR3k0WEU?oc=5",
-    "publisher": "香港電台",
+    "title": "Comedy Wildlife Awards 2026: Funniest animals worldwide",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMHh6cUNEY0s0NDJWRFhKYjI0RWhFVjQxbXlaeXZyTFdMc1dyTnliRWpFWk5ZV3d5QnVpcUI4V3NaeERXX2ZUT1gxUEZXeTZrdmU1dEFXQlMtZ3VhWmJZSjZqR2dJTWJDdVBnb3R1dXI5STVhMjY2RWg2Z3ctZHp6eVM4Q3RYQUh1R1pSQnZvRGg5R3hKTXE0MGtB?oc=5",
+    "publisher": "DW.com",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Nations commit to get nature goals back on track    香港電台 "
+    "description_excerpt": " Comedy Wildlife Awards 2026: Funniest animals worldwide    DW.com "
+   },
+   {
+    "title": "National Zoological Park marks 67th Foundation Day with Creative Outreach Activity and Bird Walk",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE41T2pKWVVFV19rQmt6d2lyeWVEel9aY2hOV2xUdF84MU5ySW5ueDFXOWo1eVZfRjhpSzE5NGJvYXJ3blJVRlRvMUMweXNlSmVRR2N6SzZDQmQzMFMybmhJZVR6YjRwSEliSldZ?oc=5",
+    "publisher": "www.pib.gov.in",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " National Zoological Park marks 67th Foundation Day with Creative Outreach Activity and Bird Walk    www.pib.gov.in "
+   },
+   {
+    "title": "Reflections from the 14th Eastern Himalayan Naturenomics Forum, 2026 - Mahabahu.com",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9iSzhNSzFPM3NRaTQwZG5ENXRQLU92bUluZUJuRTA5alhQTlJPVWNsSW90dGYxd25xbXl0cU93blBqczBCak82RXZWeUlBSkxEQTN0clVJeGZiVENzblpLWHM1RmtQRFBKTW1oRzE3VVRyUlnSAXtBVV95cUxOenZNcjV1ODNyaENobDRkLXJtYlBUTTNRSEpHVzBNYmlOd01LVmlzb2hwOFNLdHR4d19KWW5RZHJ5WVdlbHpSS2FScWJ2SWhDcGo5NXgxSUNhWmtJdFlsR3d4SUdMZUdhNDM1bnRfN0JYclVWT3FJSlVlenc?oc=5",
+    "publisher": "Mahabahu.com",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Reflections from the 14th Eastern Himalayan Naturenomics Forum, 2026 - Mahabahu.com    Mahabahu.com "
+   },
+   {
+    "title": "Global Snow Leopard and Ecosystem Protection Programme",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWHRMVmVaWUcycU84cFFQZ1YzLThFd2FVclc2N0V3V0gxaEF2WjRtd0k4UFE4MzJ6SjdrYXNZQzVqS3pqTVc3VnFtTmFXQ0xjYXExQWJwYUdpVGlYVjZ2X1laUHRvVi1USTJoOXNFbVZWWnJBdnNWMXhTSnBiZ21pN2ZXZ1o?oc=5",
+    "publisher": "GK Today",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Global Snow Leopard and Ecosystem Protection Programme    GK Today "
+   },
+   {
+    "title": "It’s almost the size of the UK, incredibly dangerous and deep enough to swallow Mount Fuji and visited by one third of the world’s whales and dolphins",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA1clFxem9fajEyWVF4TmFiLUl4MmJJRFpUWXVmV21paHlSLWI0WGZQVkVCTUhkeVNrc05Cc1ZPRGVsU0pTS2RaSTlUb1h5bUJOY0FLWXpsTVA4YUVKQWwtQ0FvRk1ucTNjS3hOQ3NqRQ?oc=5",
+    "publisher": "BBC Wildlife Magazine",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " It’s almost the size of the UK, incredibly dangerous and deep enough to swallow Mount Fuji and visited by one third of the world’s whales and dolphins    BBC W"
    },
    {
     "title": "The vanishing wings",
@@ -823,12 +870,12 @@
     "description_excerpt": " The vanishing wings    The Express Tribune "
    },
    {
-    "title": "British countryside success story as Cambridgeshire estate records more than 5,000 wildlife species after 50 years of conservation",
-    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSmkyaWNtQ3RuOThDdEliamItQ1JlR25ZakxTdXNrWTE3NEN5YVd1LVR3cmo0dGRmRlZvNFJscGtsSkMxRVhKY2l6RWJQV0RHRnhxbUFvVGtUVGJ5SzBHVW1fWVZ1RXZhNnpWdldWNzJBOHVtVk9YYWUzaU9VcXMzVUR2djQwSmlNalRva1d4aTZtRmJBQlRZTGY0REUtYXNPR1dDcHN3LVRyZ1RraWFWdUdNd2l2QmFhUTF3TUs3ZC0wT2FmNHdQQVhLUkVHM1ZiejhxTFFhYXdNNFU4eXdPcG1xVDljd3VmbzN4Z1JOQkMzcGM?oc=5",
-    "publisher": "Conservative Post",
+    "title": "Tamil Nadu Wildlife Board Gains 30-Member Conservation Panel",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUTVmZ1FIbEtvbC10eVgxNUpWVktadlFLYjlhOFpWOWlfa05oU2w3dG14ckFDQ1pYSkFQS0x1MWFGZWxpRkd3U015VzY2ckY3MnBSYzR4Q0FvNkZMT0lTRWhXdV84d2FLN3FubTRDNU1oUFEzNmozbXhvcVRIOUN6allVaUlKNU1WOTZv?oc=5",
+    "publisher": "urbanacres.in",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " British countryside success story as Cambridgeshire estate records more than 5,000 wildlife species after 50 years of conservation    Conservative Post "
+    "description_excerpt": " Tamil Nadu Wildlife Board Gains 30-Member Conservation Panel    urbanacres.in "
    },
    {
     "title": "State Wetlands Authority Considers Measures To Strengthen Wetland Conservation & Management",
@@ -839,12 +886,12 @@
     "description_excerpt": " State Wetlands Authority Considers Measures To Strengthen Wetland Conservation & Management    Ommcom News "
    },
    {
-    "title": "Looting, petrol bombs, fireworks as protests over living costs and education sweep Europe",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUGtrN3ktTjUtV0g4LXdVQnlNZ25Lb1EwUVBadFFQb2FfQ3AzV0lyVGxfZDVlaGM0LVh2a2t4RWJqUWlXYVExTkg0azdpRlA2SkpETXNYT0ZlQ3o0TEdHbUtNVlZUMld1OFR2dGM4dXRpOHFaYnBqMTR0Q29pV2tQQzh2TkF4TV9VS2dVUWNWX2dFczJDdEFBdTYwRTRQTG96T3dZMjhhNjg3SUxVb2RXUDRMNTJFVUFyd18xTXd1ZjRDY01hcVHSAcsBQVVfeXFMTnhlZndWcFZ6d1B1Y3Z3dzJKUHdsa1hkV2xscjJmeUdHdnh6dVJYa05xNUR3UGFOSWNzR2hpWWUxRGx0blFZanFJc3NrTDNNS2VvVExSVzhBN2ZVVTBKRnNlWUt2bGgzVGlsSUlySzYtcTZHaG1BTEtBMEJSYUlPMG9wYTB0ZEdPUmRfWjB1QXlHQllvV0lXUUdWaHNGaWY1OXFnNHc2UDFsdDV6Y0pPcDZJVHluNVhZczVFckZqRWZ1OEdvTXdGYXpqaXM?oc=5",
-    "publisher": "News9live",
+    "title": "British countryside success story as Cambridgeshire estate records more than 5,000 wildlife species after 50 years of conservation",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSmkyaWNtQ3RuOThDdEliamItQ1JlR25ZakxTdXNrWTE3NEN5YVd1LVR3cmo0dGRmRlZvNFJscGtsSkMxRVhKY2l6RWJQV0RHRnhxbUFvVGtUVGJ5SzBHVW1fWVZ1RXZhNnpWdldWNzJBOHVtVk9YYWUzaU9VcXMzVUR2djQwSmlNalRva1d4aTZtRmJBQlRZTGY0REUtYXNPR1dDcHN3LVRyZ1RraWFWdUdNd2l2QmFhUTF3TUs3ZC0wT2FmNHdQQVhLUkVHM1ZiejhxTFFhYXdNNFU4eXdPcG1xVDljd3VmbzN4Z1JOQkMzcGM?oc=5",
+    "publisher": "Conservative Post",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Looting, petrol bombs, fireworks as protests over living costs and education sweep Europe    News9live "
+    "description_excerpt": " British countryside success story as Cambridgeshire estate records more than 5,000 wildlife species after 50 years of conservation    Conservative Post "
    },
    {
     "title": "What we know about the new CDC director amid praise from doctors - ABC News",
@@ -853,194 +900,149 @@
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " What we know about the new CDC director amid praise from doctors    ABC News - Breaking News, Latest News and Videos "
-   },
-   {
-    "title": "Expanding hospitals is not enough. We must plan healthcare resources better",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU2wyMnF6Ry1KUmEtanF1ZGkzMXlsZy1WQzVyeFZ4ZUJPcXNDVlF1d1c4NnU2akNRdGlUQzNoanUxbkhxcW4tUWlOLURlNTZscEIwOFAzeGl2MDdFOE9QTXBKTGxtQjRwejhEbXlsQXhtOUs0UmMwcjlscHhSN3RORThQTEg1RXZ5S3dJZjVid0xleDl1S1FpWFFaNjQ4QXVUR2UwZ0pBQ05ybnhwUWF6UGo1Sl9UUDZLZnFLeXpJMzZhTEtvWGc?oc=5",
-    "publisher": "The Daily Star",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Expanding hospitals is not enough. We must plan healthcare resources better    The Daily Star "
-   },
-   {
-    "title": "Why healthcare remains unaffordable for many Kenyans despite SHA reforms",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONUs3bWNxdWVDMEtNcjJrdEtVeTN5RjQ0Y21zX2x3RFFvOE5hclFyY1FIX2JhMUxDcDRpTXRGOHYyTWU1OGVKb19NcGFqTnZfai11STE0by1vR3ZEY1JlWEZ3amctS0tTRnpDTHc1WnJRSjhkaGlxU0pWblRmUlBpY1FNV01uSmZIU2hyN0JDN0dZQ2p5aFNjWnlpWEM5UnVaZVAydXlxYzJKNTh0bEE?oc=5",
-    "publisher": "People Daily",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Why healthcare remains unaffordable for many Kenyans despite SHA reforms    People Daily "
-   },
-   {
-    "title": "Problems with access to free treatment in Elista's hospitals have given rise to criticism of the Ministry of Health of Kalmykia.",
-    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1FNm5DMUloUWFaVVZReDRBZkhzYUJpX0o1YTVCa194NENfVjI2S3JnRFplb2FHVU5UamxOUVotZ3FnOXdBMy1OemJNM184YWtUZEZrSlZQSFo?oc=5",
-    "publisher": "Caucasian Knot",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Problems with access to free treatment in Elista's hospitals have given rise to criticism of the Ministry of Health of Kalmykia.    Caucasian Knot "
-   },
-   {
-    "title": "Toluwanisings: Poor response to health emergencies",
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5sY2paOEpPbHpHMHhQMGdNRnRCUTNPTUdndVhlZEctUjFWTkRsMi1WZzNFd0lnd2h1cXpkRjQ0Q2lIVHhkbEo4QW5MZmt4dlkzclN5QUFWQUxzT0M4R2ZpZWxMNXNoaUQ4cWFCQ1lwQndHWlU2YTNzNGRR?oc=5",
-    "publisher": "Punch Newspapers",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Toluwanisings: Poor response to health emergencies    Punch Newspapers "
-   },
-   {
-    "title": "Infant with Legionnaires’ disease remains in critical condition",
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbXFJd0VDOHdZZXBERGVVQWk0MGc2c3VnRHA4c3BLYmdoemZlUkFoMkUteUNrVmQ3RTlHbjNxVk9TX0p5MEtQS3d4S1A3NFM5VXJ4aER0NlUtTWsxR21zZkppa0k3a3lMNXFqcS1FOUNPcTVPak9iSmhFWXNCSnhsT3JINF9haHBKM3dObmVmQ2dvU0hwbkt1cVJnbTdKRl9XTFQtUzRB?oc=5",
-    "publisher": "Knews, Kathimerini",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Infant with Legionnaires’ disease remains in critical condition    Knews, Kathimerini "
-   },
-   {
-    "title": "Flu Vaccinations Among Oregon Healthcare Workers Plunge to 52 Percent, Raising Concerns Ahead of Winter Illness Season",
-    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPOHhLd2ZXSllwdnlYUFd5Z2ZpdkdaVk1EZlQxc091RlNoSE15UGVSVDczcTlCcjd4QnktZjNydnIzX1c0UHIzZ2s4MS1VRUJCR3FmZ29RMnB5OEZqdVA3UU9HMGx4TmFMVFRNVGFtVEZjN0ZCajFQVHdGdjZYTURqYVk4b1ZUcTR3c1ZjZXk1RHJGcjRnajl5MHlwN1cyYnN6QlM0eG1DclpzQTBrWmhoZ3FxMlg0WUdxSjc4VFI3TXd6NDVlNXh0Mm96b0hBbHZHUVQtdmJjS0I3LXJCUGFTa0hDeWZidVE?oc=5",
-    "publisher": "Grants Pass Tribune",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Flu Vaccinations Among Oregon Healthcare Workers Plunge to 52 Percent, Raising Concerns Ahead of Winter Illness Season    Grants Pass Tribune "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Vietnam",
-   "largest_label_articles": 53,
-   "share_of_country_labelled_articles": 0.156
+   "largest_label_articles": 41,
+   "share_of_country_labelled_articles": 0.121
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 159,
-  "unique_google_urls_not_in_direct_sample": 449,
+  "unique_direct_urls_not_in_google_sample": 166,
+  "unique_google_urls_not_in_direct_sample": 431,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "Al Jazeera": 23,
-   "France24": 19,
-   "France24 FR": 17,
-   "The Guardian World": 16,
-   "RNZ National": 15,
+   "Al Jazeera": 21,
+   "France24": 20,
+   "The Guardian World": 19,
+   "France24 FR": 18,
    "France24 ES": 15,
-   "BBC World": 12,
-   "ABC Australia": 12,
-   "BBC Europe": 7,
-   "BBC Brasil": 4,
+   "RNZ National": 14,
+   "ABC Australia": 14,
+   "BBC World": 11,
+   "BBC Europe": 6,
    "NPR World": 4,
    "RNZ Pacific": 4,
+   "DW World": 4,
    "The Conversation France": 4,
-   "DW World": 3,
-   "The Guardian Environment": 3,
-   "Mongabay Latam": 2,
+   "BBC Brasil": 3,
+   "Guardian Asia": 3,
+   "Mongabay Latam": 3,
    "BBC Asia": 2,
-   "Guardian Asia": 2,
-   "BBC Science": 2,
-   "BBC Latin America": 1,
-   "Mongabay Global": 1,
-   "Global Voices Spanish": 1,
+   "The Conversation Africa": 2,
+   "Mongabay Indonesia": 2,
+   "UN News": 2,
+   "BBC Business": 2,
+   "The Diplomat": 1,
+   "BBC Science": 1,
    "Guardian Africa": 1,
-   "Mongabay Indonesia": 1,
-   "Global Voices English": 1,
-   "BBC Business": 1,
-   "BBC Africa": 1
+   "Global Voices Spanish": 1,
+   "The Conversation Canada": 1,
+   "BBC Middle East": 1,
+   "Mongabay Global": 1,
+   "The Guardian Environment": 1,
+   "BBC Latin America": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 340,
-  "country_labels_count": 73,
+  "country_labelled_articles": 338,
+  "country_labels_count": 78,
   "top_country_subjects": {
-   "Vietnam": 53,
-   "France": 31,
-   "Israel": 28,
-   "India": 16,
+   "Vietnam": 41,
+   "France": 32,
+   "Israel": 23,
+   "India": 14,
    "Iran": 12,
-   "Mexico": 12,
-   "Nigeria": 11,
+   "Mexico": 11,
    "Germany": 9,
-   "Ukraine": 9,
-   "Brazil": 9,
-   "North Korea": 6,
-   "Portugal": 6,
-   "Venezuela": 6,
-   "Russia": 6,
-   "Ireland": 5,
-   "Puerto Rico": 5,
-   "United States": 5,
-   "Colombia": 5,
-   "China": 5,
-   "Canada": 4,
-   "Serbia": 4,
-   "Poland": 4,
-   "Lebanon": 4,
-   "Bangladesh": 4,
-   "Panama": 3,
-   "Senegal": 3,
-   "Réunion": 3,
-   "Belarus": 3,
-   "Spain": 3,
-   "Qatar": 3
+   "United States": 8,
+   "Bangladesh": 7,
+   "Canada": 7,
+   "Qatar": 7,
+   "Nigeria": 7,
+   "China": 7,
+   "Brazil": 6,
+   "Colombia": 6,
+   "North Korea": 5,
+   "Senegal": 5,
+   "Samoa": 5,
+   "Egypt": 5,
+   "Serbia": 5,
+   "Poland": 5,
+   "Indonesia": 5,
+   "Australia": 4,
+   "Ireland": 4,
+   "Puerto Rico": 4,
+   "Paraguay": 4,
+   "Ukraine": 4,
+   "Argentina": 4,
+   "Bahrain": 3,
+   "Venezuela": 3
   },
-  "distinct_geographic_signal_centers": 234,
+  "distinct_geographic_signal_centers": 232,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 111
+   "mapped_pre_dedupe": 98
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 53
+   "mapped_pre_dedupe": 56
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 114
+   "mapped_pre_dedupe": 110
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 72
+   "mapped_pre_dedupe": 65
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 106
+   "mapped_pre_dedupe": 92
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 64
+   "mapped_pre_dedupe": 68
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 131
+   "mapped_pre_dedupe": 96
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 70
+   "mapped_pre_dedupe": 82
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 85
+   "mapped_pre_dedupe": 56
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 122
+   "mapped_pre_dedupe": 137
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 117
+   "mapped_pre_dedupe": 104
   }
  },
- "duplicates_removed": 645,
+ "duplicates_removed": 570,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1058,44 +1060,38 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-01T09:23:05+00:00",
-    "mapped_articles": 583,
-    "geographic_signals": 339,
-    "feeds_ok": 169,
+    "at": "2026-11-01T16:26:29+00:00",
+    "mapped_articles": 578,
+    "geographic_signals": 344,
+    "feeds_ok": 170,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 16,
-    "ambiguous_mapped_signal_count": 1
+    "rejected_matching_occurrences": 19,
+    "ambiguous_mapped_signal_count": 0
    }
   ],
   "latest": {
-   "at": "2026-11-01T09:23:05+00:00",
-   "mapped_articles": 583,
-   "geographic_signals": 339,
-   "feeds_ok": 169,
+   "at": "2026-11-01T16:26:29+00:00",
+   "mapped_articles": 578,
+   "geographic_signals": 344,
+   "feeds_ok": 170,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 16,
-   "ambiguous_mapped_signal_count": 1
+   "rejected_matching_occurrences": 19,
+   "ambiguous_mapped_signal_count": 0
   },
   "recent_change": {
-   "baseline_at": "2026-11-01T09:23:05+00:00",
+   "baseline_at": "2026-11-01T16:26:29+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Union": 8,
+   "Rubio": 5,
    "Forest": 5,
-   "Rubio": 2,
+   "Split": 5,
+   "Union": 3,
    "Serra": 1
   },
-  "ambiguous_mapped_review": [
-   {
-    "name": "Ontario",
-    "category": "science",
-    "sampled_article_count": 1,
-    "review_reason": "ambiguous_place_name_needs_manual_review"
-   }
-  ],
+  "ambiguous_mapped_review": [],
   "limitations": [
    "This report flags possible mistakes; flags are not proven errors.",
    "Repeated RSS items may inflate rejected matching occurrences.",
