@@ -1,13 +1,13 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-11-03T15:12:41.479901+00:00",
+ "updated_at": "2026-11-03T21:03:36.360194+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 111,
-   "successful_empty": 10,
+   "successful_nonempty": 108,
+   "successful_empty": 13,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
@@ -20,8 +20,11 @@
     "google/environment/AU",
     "google/environment/NG",
     "google/environment/CA",
-    "google/hazards/BR",
-    "google/science/GB"
+    "google/hazards/GB",
+    "google/hazards/AU",
+    "google/hazards/NG",
+    "google/hazards/CA",
+    "google/hazards/BR"
    ],
    "failure_samples": []
   },
@@ -103,7 +106,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "69ae9992f8b5fd4082f15d05246702da0c7f6086b0183d3df4aeb3410e99ded1",
+  "frozen_snapshot_fingerprint": "333f4b613e68b0453c7783e9306709acdd6a5f9b51f10b828cb919cb7c97ad3c",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
