@@ -1,124 +1,142 @@
 {
  "schema": 1,
- "updated_at": "2026-11-03T00:03:19.878605+00:00",
+ "updated_at": "2026-11-03T06:53:03.359267+00:00",
  "feeds_total": 173,
- "feeds_ok": 170,
+ "feeds_ok": 168,
  "feeds_failed": [
+  "direct/France24",
   "direct/CBC World",
   "direct/ReliefWeb Updates",
+  "direct/UN News",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 105
+   "mapped_pre_dedupe": 142
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 73
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 125
+   "mapped_pre_dedupe": 137
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 77
+   "mapped_pre_dedupe": 87
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 141
+   "mapped_pre_dedupe": 130
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 46
+   "mapped_pre_dedupe": 72
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 134
+   "mapped_pre_dedupe": 127
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 51
+   "mapped_pre_dedupe": 93
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 68
+   "mapped_pre_dedupe": 106
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 149
+   "mapped_pre_dedupe": 165
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 123
+   "mapped_pre_dedupe": 125
   }
  },
  "mapped_articles_by_category": {
-  "politics": 88,
-  "conflict": 84,
+  "science": 67,
+  "education": 73,
   "community": 266,
-  "health": 82,
-  "education": 74,
+  "conflict": 86,
+  "politics": 64,
+  "health": 88,
   "hazards": 13,
-  "science": 42,
-  "economy": 76,
-  "society": 53,
-  "environment": 30,
-  "rights": 15
+  "society": 64,
+  "environment": 42,
+  "economy": 87,
+  "rights": 21
  },
  "mapped_articles_by_location_precision": {
-  "country": 466,
-  "place": 345,
-  "region": 12
+  "country": 483,
+  "place": 371,
+  "region": 17
  },
  "location_evidence_counts": {
-  "headline": 698,
-  "description": 125
+  "description": 155,
+  "headline": 716
  },
  "geographic_quadrants": {
-  "NE": 373,
-  "SE": 138,
-  "SW": 85,
-  "NW": 227
+  "NE": 412,
+  "SE": 120,
+  "NW": 244,
+  "SW": 95
  },
- "geo_signal_count": 468,
- "mapped_total": 823,
+ "geo_signal_count": 481,
+ "mapped_total": 871,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1533,
- "unmapped_distinct_titles": 770,
+ "unmapped_sample_count": 1632,
+ "unmapped_distinct_titles": 791,
  "unmapped_by_feed": {
-  "Google News MX": 169,
-  "Google News ZA": 163,
-  "Google News PH": 156,
-  "Google News IN": 139,
-  "Google News US": 131,
-  "Google News KE": 123,
-  "Google News BR": 117,
-  "Google News GB": 114,
-  "Google News AU": 102,
-  "Google News CA": 82,
-  "Google News NG": 70,
-  "RNZ National": 27,
-  "ABC Australia": 13,
-  "BBC World": 9,
-  "BBC Brasil": 9,
-  "Al Jazeera": 8,
-  "France24 ES": 8,
+  "Google News KE": 162,
+  "Google News US": 160,
+  "Google News MX": 158,
+  "Google News IN": 149,
+  "Google News BR": 148,
+  "Google News PH": 139,
+  "Google News ZA": 138,
+  "Google News AU": 115,
+  "Google News CA": 113,
+  "Google News NG": 93,
+  "Google News GB": 92,
+  "RNZ National": 20,
+  "ABC Australia": 16,
+  "BBC Brasil": 14,
+  "BBC Business": 10,
+  "BBC World": 8,
+  "France24 FR": 8,
   "The Conversation France": 8
  },
  "unmapped_examples": [
+  {
+   "title": "Americans head to midterms with inflation weighing on their wallets and Trump's economic record",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY3hZV1Q2Rm1YLUlvZnM4azhsWTFocWIzbDUwZjhCQm1ZLVh2VHd4MzZwcEFHZ0l0QTdKYjk1YmNIVWM3Q0F6T29CazcycXhNLUJfdjROY0pQQUlXSXJkcm1pWFdfRGpqWmlNcXlYWHhHN3lncExhN3lFajlBeHVFSzl3NW9kMVZvT2w4WDMzS0pEUC00VlhB0gGcAUFVX3lxTE5nMVg1RU13OHc4WjkwNXBqUk9hVG80dGx1NkplOUpHN2JkSUJRT2hfNkdHTXg4STJlUF9FX0E1cDNCMGlOekdCNE9PcUo2bHhhTWk3Y0sxTDZyT3U2WkVPR3F5WFIxYlVRVGlEcEJIbGkzWnFfcmdGUXFIejU4QUk4NUlQQlgyMjN0S2h4akloQ0EzMlQ3T2tlcDNTRg?oc=5",
+   "publisher": "Firstpost",
+   "feed_occurrences": 9,
+   "feed_count": 9,
+   "description_excerpt": " Americans head to midterms with inflation weighing on their wallets and Trump's economic record    Firstpost "
+  },
+  {
+   "title": "From youth protests to international class struggle: What perspective is necessary?",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE12a2JTbEFDYUpCN2x2MDJfNzBGcUxzbmJwZXltSFdxZmNtbFp2R3FvTFNCUW1hRGRxa3Rfa2RPN2dPSWdUV21jNFQxOWtlODFSc0hQOWl2TFdSNTk1cFVKSTBRT2MtQXJM?oc=5",
+   "publisher": "World Socialist Web Site",
+   "feed_occurrences": 10,
+   "feed_count": 5,
+   "description_excerpt": " From youth protests to international class struggle: What perspective is necessary?    World Socialist Web Site "
+  },
   {
    "title": "Survey finds gaps in use of cardiovascular-kidney-metabolic syndrome tools",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORklsVWd4eUNlcVJzNVNfdUdnZDNmRlFtZmFOeVQ0bDNFeldnMlpsZzFpQTF0MHRNa0h1UTdlcV9KM0UzMldBaFdvU3FBSUZpSlBMbi1HbjN1bVM5XzdOa1BwbXdrcFVIUUN6SGFhX3M0dTNYbkVsNVlUN2p2dU94di1hYzJUS1RRYlZpTzRrby1ZY1FSRnFhdFBCQ0RkZVdSYkR2R19ZdmdSUQ?oc=5",
@@ -139,17 +157,9 @@
    "title": "French school protests resume on smaller scale as students return from break",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPb1V5QVBweV9vQlV1X1kxZWJPRWp0VXc3M1FWNHljRWNjVlMzRmhLVnBUOFItNFZpdlJhOWNsbkV0VWNWR0R3ZjIzUk1sNzBsXzVoLTRQUV9ianhRQXVCN09icHRDNzJwbEItZ2xKQWM4WEV5TGt1T3N5VkFfSW9WeVU0SEFqWjBGMXM4NjFMbW0yUEQ2YVZOS2lmbFRTT3JBUnFVLVRScGMtdDQ?oc=5",
    "publisher": "Reuters",
-   "feed_occurrences": 9,
+   "feed_occurrences": 8,
    "feed_count": 5,
    "description_excerpt": " French school protests resume on smaller scale as students return from break    Reuters "
-  },
-  {
-   "title": "Dinosaur blood—oldest discovery rewrites what fossils can reveal about the past",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUlNsRWh2Njk1LTNINWZET1h0UmkwS1JCdUhEMHpCQkhyUlJBYW9fR1dKX3JXS3hWV1plNEdHbWhEU3VjdGNBQktCZTljaG1EcDJtZVE4ZlRYSlVPa3Z0UVFTMVNfcllTQWp0Q3dtQmoyQW8xNlBfXzVhT21UMXVBTA?oc=5",
-   "publisher": "Phys.org",
-   "feed_occurrences": 7,
-   "feed_count": 5,
-   "description_excerpt": " Dinosaur blood—oldest discovery rewrites what fossils can reveal about the past    Phys.org "
   },
   {
    "title": "Netanyahu lost his majority in parliament. Now he claims elections were stolen",
@@ -168,6 +178,14 @@
    "description_excerpt": " Israeli officials say elections will stand after Netanyahu claimed Arabs stole vote    Spectrum News "
   },
   {
+   "title": "Parliament Matters Bulletin: What’s coming up in Parliament this week? 2-4 November 2026",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbVoya2FWSnhkdGRuMmVjYlcybHoxckFYcWMxaF9qMFUycDRyTEdUcWZ4NFdHN3Z6cm5JNWk4MThLZnFCcklQcXUwZURMbDRaQ2pDWGVuTTJyMjlCX01OTVdNRkhncVpxUk5adFRMem1qVE1tUUgwX3kwT2hiZDloT3pSYmVBZ1dPX2c?oc=5",
+   "publisher": "Hansard Society",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Parliament Matters Bulletin: What’s coming up in Parliament this week? 2-4 November 2026    Hansard Society "
+  },
+  {
    "title": "An overhang election could be terrible for our democracy",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPa3ZURE5TNDFrRk9GdXhMcXMtTC1NNWVlX0RNeXluVkRvRm5IelJvMTlLQjY1Y2pwWjEta3ZzTllhTTJLaWJtX0FlYk9yOUlHVUtEMm9DN0xqT1JuTUo2WnJrUjl4N1pWeDhodTlFSWZuSE02R3B5Yi1ZUkU1VElsdXIwcjFhbDBjQUdGOG1RdGE3TFZ1ZFRtWHRKdXd1ZkdiczVj?oc=5",
    "publisher": "The Spinoff",
@@ -184,20 +202,20 @@
    "description_excerpt": " Mitsotakis urges ministers to prioritize government work over election campaigns    eKathimerini.com "
   },
   {
-   "title": "Israeli officials say results stand as Netanyahu claims election ‘stolen’",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbVhJTExQVkd6REJ0WXJRTWFZWEJnTjBTdmc0TDZ4UHZRbUFyRldfWHB4d0pabWREaExka1p6amhVcGtWcGJfYWtuTVpxZ2d2QWphUktYUTVyUXFGYndha1RrYldJbXNjdHNaWHhBQ1pBVGh1V1BsTnliVGZMR3B1Ql9OVWpNYkw4NXV6a0JjbC05eVZfMVdaLVBxMHRmMzdPcUVfMW9hUDdqaVhreGpGanpR0gG3AUFVX3lxTE5HNEp2UnlhdXk5RHNpOS1OWEJSYmFIeWh0TFFPUHJSLTV6dTFsbkxnNHFQVTk5UUhzNWhSQ1U5NzVpSXNxUjN4NWV5Q041S2V5OHNvSnJOVVd0b3QzbDNLV29fcjRKeFc1SmY4UG11ZWdsTWtlTDZKVXhFU202Rlc5VU40c2VlcU5od2RzbHpCcUVob0Zsel9aOXBPLUZkbnk5TmlhYUU3NE40NUoyQzdOR1RvckVONA?oc=5",
-   "publisher": "Al Jazeera",
+   "title": "Herzog Begins Talks to End Netanyahu's Rule Amid Deadlock",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVWdMNXhZT3MwYVFfbEM3TXZWN0o3TVJ4WUltNkZvOUh2X3VvRG9iT1JwZGlqa3FxNmZBazQxbUVZbXE5NXRuT2NaZVRYQ3prV19MbjdSWUFnNHR3dUU3NVNIRFAySzJzYjBYRmZBemw2YnhRczFhc0VVVFNJRFhxZk5HLTY?oc=5",
+   "publisher": "조선일보",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Israeli officials say results stand as Netanyahu claims election ‘stolen’    Al Jazeera "
+   "description_excerpt": " Herzog Begins Talks to End Netanyahu's Rule Amid Deadlock    조선일보 "
   },
   {
-   "title": "Latvian Saeima elections 2026: Myths and Misconceptions / Article",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYTJRX2F2RW53X2RXWmc1ZXdmLVBoTnNicFk4c3dBZ0xxWldoSFpQcEpxaWsxOTVPMnBTbl91aTVRejJyN0JYdTFjcjkyN2xQYnltOGhKLW5adFU2Y2lqei1sdXppWGdSUm9EakhFekFhQmhjRzlUQURfdmlBeW5FOEFaZEw5eGhoakRUaDFyamphd2xiLVhqS3pueC1wd0w4VmZlQldfUExfVXl6NzcxXzRtdFUtUGljYU0w?oc=5",
-   "publisher": "LSM",
+   "title": "Israeli Opposition Joins Forces to Support Eisenkot to Form Government, Arab Party to Join?",
+   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE92YnRlWk9yMHUtR3ozZjF0eXR1dWR4THQxdF8zRVVhZkZqNVBkeEFkS0Rock5lemRxSU8xRXFtWWFUd9IBQkFVX3lxTE92YnRlWk9yMHUtR3ozZjF0eXR1dWR4THQxdF8zRVVhZkZqNVBkeEFkS0Rock5lemRxSU8xRXFtWWFUdw?oc=5",
+   "publisher": "VOI.ID",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Latvian Saeima elections 2026: Myths and Misconceptions / Article    LSM "
+   "description_excerpt": " Israeli Opposition Joins Forces to Support Eisenkot to Form Government, Arab Party to Join?    VOI.ID "
   },
   {
    "title": "Likely shape of new Latvian government emerges / Article",
@@ -208,28 +226,12 @@
    "description_excerpt": " Likely shape of new Latvian government emerges / Article    LSM "
   },
   {
-   "title": "Only an independent caretaker government can ensure free and fair elections",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQSjlILXM4ZEVZejRuMUkzUFVuN29hbXdjS2x3Q2Q2REFLY0hUMWpTeHJqS3dWVGZVZEhhSGl3NS1xVnNnenpwMUpGdjZHVkIwalpVeWs4R041QWZwRlRBbDBtcm9GWGFWZ3pCRWhBd00xTDVQZkRQTDRRc3BNbm5oeGJjOFh0dld3YkpNOXBfREVmQ1JUSk1JWDg3OXE5RmRseWdUUmpxaDF5a3VkYllzbnFtYTFYVzZzUE1yd3NZeUVxZm1xLVdmUnozU0JwYXh4d28tT2t1RHZZclk?oc=5",
-   "publisher": "The Daily Star",
+   "title": "Three-way contests could make a big difference in Victoria’s election",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdjZrb21pTFVXUDU1NFRhaUllSkNIUFNFTmppQUFRM0FHbFVMcENZeFg4ZXNPVW5vblFEYTAzNHdyMnRKbkduVnRRMjhmSFdLNWNPSF9NQ0RtU25NNGNyVERIR3gtakVEWlAydkdzNDVWOXZyNkNuNWVNZjFZNFVPZXYtVW9lQjRTTHJ2LVJRcVpwVFIxUUxtVHN3NXZ3ZllUQXMxRk9wOHZicmVieWVuVVVlaFQ?oc=5",
+   "publisher": "AFR",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Only an independent caretaker government can ensure free and fair elections    The Daily Star "
-  },
-  {
-   "title": "Former Israeli Prime Minister Bennett's party backs Eisenkot to form next government",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zVHBOdjVIeDAzWHlqSkY5bkFiYVZhTjdPcm1qMXk5MzlNUl9WT0FoUlQtd2FuakUxaDVjVzdBNVlOOGR0RWd3bXRtZmdhWXNTMnQwbnBNYUk?oc=5",
-   "publisher": "TRT World",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Former Israeli Prime Minister Bennett's party backs Eisenkot to form next government    TRT World "
-  },
-  {
-   "title": "‘Come for debate’: Amit Shah challenges Rahul Gandhi to special parliament session on ‘vote chori’",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaGJOa1NNUW9kNTh5RDNmQXFfaU1SWEM2Ukota3ZCRWVScWM2ck9ralFMeTBmZzJ2UVFBVncxNTRHMzkyczhEd2FGS3RvcDV5TXFrc2V4Wm5wc3lmcnB6ZGhHaXpzelhaOThzV0dRQW1kTTRkREEtbEdxTHRyVEZjU3gzUTk2N1Z4Z2ZoQnQ2TWFRZ1MzTGhNSGlwTGlNU0c3NVBMT0ViSWVXWVVqNktYX1R2UzR1M0Z2R1BtSXZNOGlfUmdMa0p2QnNZVzF1V2JsT3NkYTdEdlZjUXPSAeABQVVfeXFMUC1DNFVmbzI1VVA5dVNuTGYyUGE5N0FyZ0lsX3JJM3B6a1gxWmNaZFUwcFV2MmdrSkVaT0YybDBRVFM1RXVJXzNneVBzSU91ZUtHWmJXYUc1eWpCMDdHSWZwZV8tS1lxMHVjTEM2WjdjRW9VQTRZUjdndTRoa3hpTDVKQ1dsdkptSmpLaHhwbUNIQmRteHBLV2Z5Ni1jaG5uVGtnbWJRMzhvcWNFUGU5b2J6ZmpvUVUzaDI4bndXaGNIUmM4b0t5eDByNjh2NFBfa3c4bXlQR0tGTk03ZzlsLVg?oc=5",
-   "publisher": "The Week",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " ‘Come for debate’: Amit Shah challenges Rahul Gandhi to special parliament session on ‘vote chori’    The Week "
+   "description_excerpt": " Three-way contests could make a big difference in Victoria’s election    AFR "
   },
   {
    "title": "Parliament calls for peaceful participation in elections as special voting begins",
@@ -240,20 +242,36 @@
    "description_excerpt": " Parliament calls for peaceful participation in elections as special voting begins    EWN "
   },
   {
-   "title": "Netanyahu ready to form govt with Eisenkot, claims report: Concerned over Arab parties backing opposition; ...",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxON3hwc09QVThPTC1vY01WM2lHQXFLMENDNHpqQkVPZDFiSXEyUFJQVHBVbUhuODVrODI2S2xYaE1BRHEzZXN0eFRFMmRBbGdVa1JpVVJHeWhHZ0o0eElySC1KYmFyanJ2Z0hJVUN6V0dFc1otaUN4YTQzSklKV0RfRENvNFJfaW5rMXh4YnFuRmFaTFhHRXlGXzhaamF5V2VZQzVMUXVOYTJabU5HWWExRkZXQkJrOWFPV29FLWwwaXpMcWZob2fSAcsBQVVfeXFMUGttdmdIbzVUSGg1aDBWZVUxT21RbEpIOW1QZXEwWEZCRlJDUnBaX0JVQkR1RzFueXZIVVFFRWh6RU0xVVhRc2lvUDJDMjI0dkhYSU9DdkdoVk9yWkxURjVSYXdfeUJXYms4bTFMWXJuTlBxeGpoMjlvSUVTbFp3cUtlS3RlMkQ2Z2ZHVV9GYVFfcS1KZWg3NDVlY1pOQkVVd1VjX25rQ1lSYlRuRS1Sa0x1X3pld0JNZ1UxcjZiQktRMDRVSzZzLVhaOFE?oc=5",
-   "publisher": "Bhaskar English",
+   "title": "‘Come for debate’: Amit Shah challenges Rahul Gandhi to special parliament session on ‘vote chori’",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaGJOa1NNUW9kNTh5RDNmQXFfaU1SWEM2Ukota3ZCRWVScWM2ck9ralFMeTBmZzJ2UVFBVncxNTRHMzkyczhEd2FGS3RvcDV5TXFrc2V4Wm5wc3lmcnB6ZGhHaXpzelhaOThzV0dRQW1kTTRkREEtbEdxTHRyVEZjU3gzUTk2N1Z4Z2ZoQnQ2TWFRZ1MzTGhNSGlwTGlNU0c3NVBMT0ViSWVXWVVqNktYX1R2UzR1M0Z2R1BtSXZNOGlfUmdMa0p2QnNZVzF1V2JsT3NkYTdEdlZjUXPSAeABQVVfeXFMUC1DNFVmbzI1VVA5dVNuTGYyUGE5N0FyZ0lsX3JJM3B6a1gxWmNaZFUwcFV2MmdrSkVaT0YybDBRVFM1RXVJXzNneVBzSU91ZUtHWmJXYUc1eWpCMDdHSWZwZV8tS1lxMHVjTEM2WjdjRW9VQTRZUjdndTRoa3hpTDVKQ1dsdkptSmpLaHhwbUNIQmRteHBLV2Z5Ni1jaG5uVGtnbWJRMzhvcWNFUGU5b2J6ZmpvUVUzaDI4bndXaGNIUmM4b0t5eDByNjh2NFBfa3c4bXlQR0tGTk03ZzlsLVg?oc=5",
+   "publisher": "The Week",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Netanyahu ready to form govt with Eisenkot, claims report: Concerned over Arab parties backing opposition; ...    Bhaskar English "
+   "description_excerpt": " ‘Come for debate’: Amit Shah challenges Rahul Gandhi to special parliament session on ‘vote chori’    The Week "
   },
   {
-   "title": "2026 Pheasant Numbers Stable; Still Below Long-term Average",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSFl6bS03TkJxVFl1NTY0Yjk5VmNnTlNfbzByQzZkU1dJcjlNckQ2YXFFeDNSVmVITXo3S01wVU5mRHNMMENpM05DZEtxZzZ5QkJTY1hIMkNVRkN0OWVaalpJSTI3N0JWNXZ0UE9hbEh6NDNoVkFwUktKWlptNkFKNC1HbXAxT2pfYkZlMkhlSDhFaDlGSUd5ZjR6cGJRY016bWIycXJaSkU0Zw?oc=5",
-   "publisher": "Oklahoma Department of Wildlife Conservation",
+   "title": "Netanyahu calls on opposition to form a government without Arab parties",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9uSmNVa1JrVDdka09idklrcVlEX0dSVWZHZFRuc3c3VENNWWQtTGZlbjlpbmNhazlQYVZOQmdTRnNCQ29WTW5vZXN4SklVbW9zZlhB?oc=5",
+   "publisher": "شبكة تواصل الإخبارية",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " 2026 Pheasant Numbers Stable; Still Below Long-term Average    Oklahoma Department of Wildlife Conservation "
+   "description_excerpt": " Netanyahu calls on opposition to form a government without Arab parties    شبكة تواصل الإخبارية "
+  },
+  {
+   "title": "Parliament questions Mangaung’s 38 municipal appointments before elections",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVTFKQWJveURlSEx2WGlBeFByamh5ckV0ejlqWFdHWkRpbU1vb2FpMGE3TnRqLVpmbWR3VkdnUjJYTXBmSGZnbFI1RkEtSXNjZXByS0g2VkxGLTRjWWtEOFcxRnczQ0ZjNlNBUjM5TEFxVUs5Y1kyZVplRDdSMUQ1R1JJMjNvVVRKYmlEMkxiZGlIcFprc3BqOVMzb0lLWC0zVnNadF9jMG9CNU5GUzRVZzJlUklEckhJOXc?oc=5",
+   "publisher": "IOL",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Parliament questions Mangaung’s 38 municipal appointments before elections    IOL "
+  },
+  {
+   "title": "‘Everyone has a voice’: Idaho Conservation League names new executive director",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaEZ5THJhc2M4aWJyZEx5Q2wyNlI3MlBHdF9lbWhTQkZxQTRRaWpialVQb25JQWRtRi1iVXdoc21ieEVBb0gwdV81SDVCNHFvRjR0U05oa2pmZFpEUWExdV8zRFVDVWV4blkyS2w2ZHg2MjluRHdiTEV2dUFVeE9uR1VYMktJOXkwUWtNcWQ1Y2p5SHNaNWNfQWRJUXo0TFlWX2o5bDJxZmdmYmJrdVEwa1ZLU2lSUQ?oc=5",
+   "publisher": "Idaho Capital Sun",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " ‘Everyone has a voice’: Idaho Conservation League names new executive director    Idaho Capital Sun "
   },
   {
    "title": "Large Animals Are Living Carbon Stores. Does That Make Saving Them a Climate Solution?",
@@ -264,12 +282,12 @@
    "description_excerpt": " Large Animals Are Living Carbon Stores. Does That Make Saving Them a Climate Solution?    The Good Men Project "
   },
   {
-   "title": "‘Everyone has a voice’: Idaho Conservation League names new executive director",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaEZ5THJhc2M4aWJyZEx5Q2wyNlI3MlBHdF9lbWhTQkZxQTRRaWpialVQb25JQWRtRi1iVXdoc21ieEVBb0gwdV81SDVCNHFvRjR0U05oa2pmZFpEUWExdV8zRFVDVWV4blkyS2w2ZHg2MjluRHdiTEV2dUFVeE9uR1VYMktJOXkwUWtNcWQ1Y2p5SHNaNWNfQWRJUXo0TFlWX2o5bDJxZmdmYmJrdVEwa1ZLU2lSUQ?oc=5",
-   "publisher": "Idaho Capital Sun",
+   "title": "European Protected Areas Climate Gaps & Connectivity",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0ySFJvUkJTRmdzX3VVdXY4YjYzNUFxM05pSUpKR201MUNZY1ROSzN6TWpPa0swZmI2N2xyanRXUFR6QnFEYnhGd3Jta0RuOGZZRnZreW5BWFVoRXds?oc=5",
+   "publisher": "Scientific Frontline",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " ‘Everyone has a voice’: Idaho Conservation League names new executive director    Idaho Capital Sun "
+   "description_excerpt": " European Protected Areas Climate Gaps & Connectivity    Scientific Frontline "
   },
   {
    "title": "Semi-Arid Olive Groves Offer Hope for Biodiversity as Climate Changes",
@@ -288,14 +306,6 @@
    "description_excerpt": " Eastern Brook Trout Conservation: NSLM Climate Forum    DC Life Magazine "
   },
   {
-   "title": "The World Has a Biodiversity Plan. Now We Need to Deliver It.",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbE1QTVBLS3lwZTJFejZ0VTN3RzJEdG1xYkhTVElPaThMYzhMdzVWVDNIakxHUE5rVWhMVVZaVFVEb3I5WlJHMklOeU5yeFMzRFhTYk94WS0yODNpYk5qcGtXelBkQ3Fkb2FOaVZwWFc3aEx3Q2JUbnEyZEd4WWpZTXJlZzlybno0cHlteVNR?oc=5",
-   "publisher": "NRDC",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " The World Has a Biodiversity Plan. Now We Need to Deliver It.    NRDC "
-  },
-  {
    "title": "Licence granted for historic return of beavers to waters around Loch Ness",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZWlLQlljdkFEcll4SWdPVEUwTklRVDhYZ0E3YV9oN2d3MTl1NHlaZXBoeERTdnIwbFhpbGNIQ05qc19lT3VJaHV6YjJRMm5ZYWduc1hEek1NTUNyd1BYUDcybEF3T2V2bUY4WXF0NFpMOU1wM0hkYlh4R1pIaGRHVGx5LVdyY1ZOY1BLNl95QjVsYi1lRThpdXJwU3RNc0Y5R0QyN0RJSktzVmhCU3U1Mg?oc=5",
    "publisher": "Inside Ecology",
@@ -304,20 +314,20 @@
    "description_excerpt": " Licence granted for historic return of beavers to waters around Loch Ness    Inside Ecology "
   },
   {
-   "title": "Eastern Kentucky conservation project tied to global efforts",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUlB0cUFKMFNPYURNSzlEZDhQQXBjbEZMVFBSS0JDaDd5Y1htRHNRaHlBSENfZ0hqdmRFQUxkOTJCb1JDRFl6ejd5cXZ4UmI2R25hUkNrNG16UWFVeEktRHNMRl9uRTJTZUs0N1FEWndDdTgyS2kyT3k3Qm1lSjVndF9HckE1aXNBS3ZrOTAwTTNQWElN?oc=5",
-   "publisher": "Hoptown Chronicle",
+   "title": "CM Vijay, Forests Minister, to head reconstituted State Board for Wildlife",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPd2NBOWFkUkRPM2U0eHV1NWN6TmZ0T2UyRWlRcnpjWUZOem95QV9NaVZEMjhWbXNnZnBFVnRNSlFMYTFFWWxRa0dETlcwZklZOEVXRXQ2TTUtYWVFMDE2T0V2ZFRWYlNRaXhFNXdBZ1dxMXZQRmZyLUl2Ym1MQW9BeGZmY1dFaVljR0VQS2RBYTljQjFGdTNaXzIwaUNPX2VLYjhCRjc1Z0FpN1R1VUw0dFhtTUZUaWdEV0VGbm1tLUx2dWRqX3RkVXVKdFRqWFpi0gHeAUFVX3lxTE1scWlGTEI4Zk4zUlpzQnpKd3FzVHlhc203emdSbU1la19VS0JTRi1YMmphczRuRDVxUWRPX2JtcklBUHBBQ29kNUVHQTJoQVQ5ZzJtTEdwZjhRUVEtNTFMa1BYZHNwQ0hOU1U0c20zM2trQUFZaXIxQU9jbFlIenBZR1p4NHhuWnpJRVFQeG5pakU2RlFGVTVPVnZQY0kzMExmOFdtYXIxb2pjWk1qV0k3cVJZdmdEM0xkLUxMdWU3WVhnN1dBNjdYUXhISzV6SXRWdVN5Tl9zNlN1T05Mdw?oc=5",
+   "publisher": "The New Indian Express",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Eastern Kentucky conservation project tied to global efforts    Hoptown Chronicle "
+   "description_excerpt": " CM Vijay, Forests Minister, to head reconstituted State Board for Wildlife    The New Indian Express "
   },
   {
-   "title": "How AI Could Help Us Waste Less Food",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1hZzdLQnpxZUszeEJwYl9DZzBDZ2hOT3JFWjA4ZXJ3NmRwMzByS0p6cHdxdFNJV3BwOXpwelYwNHZ2RTJXU0VsWk15bndwSi1FLVVWWmMyWWdsbWpUVkVXZlRVb0VXX2k4X0syYjZoSXo?oc=5",
-   "publisher": "Bluedot Living",
+   "title": "Tamil Nadu rejigs wildlife board, appoints MLAs, experts",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWVg3MGg1OGlZUUxBNnJqNUN5V3lVREFNOVQ2TW9paWV0ajNQdXJ6aWFkN2NBbzFXY0ZaX2RyZmdTaWg3WlRIZGwtM0xKN2FKSVJoYWt4QWFrTEc4M1ZNa0s1MzJieGQ5bGdDUC11cmtoTVhQZ0lpdUJacmlUVUd5cVRkVzhLN1N5X2tGUGxMMDJQZTdMeEHSAaMBQVVfeXFMUE5Lb2FKVnlka0tqbmFwZU0xWDhiY1l6a2xKQy1rdVRQbmZycHJrOGhmYjE4V2hRcl8xaXJfcF80NUd1ODljX3hkOUw1MUlrYUZQRHR3WHkxY2kwaVplNzNpbmxfeWhnZGVsZ25kRm5ERkx2cHRodlh5S1czRl92dS1CVkdCR191UlMwMzFMc19ERE9HUlhid25pTTJYcGRJdUZUdw?oc=5",
+   "publisher": "DT Next",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " How AI Could Help Us Waste Less Food    Bluedot Living "
+   "description_excerpt": " Tamil Nadu rejigs wildlife board, appoints MLAs, experts    DT Next "
   },
   {
    "title": "Great migration: How climate change is redrawing wildlife maps",
@@ -328,12 +338,12 @@
    "description_excerpt": " Great migration: How climate change is redrawing wildlife maps    Down To Earth "
   },
   {
-   "title": "'Human swan' Sacha Dench warns of toxic lead ammunition danger",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE13alVQVFZxZC1DbURlZFByX0ptcFVybHprN3RCczd6LXV3Q0lhM1ItcGhoWi1nazJ6TEFVbjg5aVZqWm1GTGZ2Vl80U1p6aFBkYWNQbldIY0xtME0?oc=5",
-   "publisher": "BBC",
+   "title": "Tamil Nadu government reconstitutes State Board for Wildlife",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRVdrWWdjQzhjVGhkZGhMZ3RjalRCUU5OV3pXWldBbUtQSFNGa2dja3ZUTmRuUUVlTmh0VGFGQkJpNVFHZGU5VTBtc3o2dUJocDJCRVpwX1pka1hlbF9DRUdBR1gtYzFmSDBiMGlRbXljVDBRVm9rTllhOHA2Vkc5bENCa2phdEJ6eDNaQnd4Z0hBNExwLXVNa1pTTVRnTkdDcGRoeFROZXMyYmNKaDJyQ01vV25qSVJfbDRncXJJTk9UOTJ6azNxZVFTX0Z1WFV60gHQAUFVX3lxTFBFV2tZZ2NDOGNUaGRkaExndGNqVEJRTk5XeldaV0FtS1BIU0ZrZ2NrdlROZG5RRWVOaHRUYUZCQmk1UUdkZTlVMG1zejZ1QmhwMkJFWnBfWmRrWGVsX0NFR0FHWC1jMWZIMGIwaVFteWNUMFFWb2tOWWE4cDZWRzlsQ0JramF0Qnp4M1pCd3hnSEE0THAtdU1rWlNNVGdOR0NwZGh4VE5lczJiY0poMnJDTW9XbmpJUl9sNGdxcklOT1Q5MnprM3FlUVNfRnVYVXo?oc=5",
+   "publisher": "The Hindu",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " 'Human swan' Sacha Dench warns of toxic lead ammunition danger    BBC "
+   "description_excerpt": " Tamil Nadu government reconstitutes State Board for Wildlife    The Hindu "
   },
   {
    "title": "Press Note Details: Press Information Bureau",
@@ -342,22 +352,6 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Press Note Details: Press Information Bureau    www.pib.gov.in "
-  },
-  {
-   "title": "Tamil Nadu government reconstitutes State Board for Wildlife",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTzZ0X0hWZG1jMnNqeGVtYXhrS19Zb0QyV3lkRmJTU3RrUTRXa0MzbjFKczFZTldxU0RmdG9nNkxmR0Zmd0VjSl9GUVBFN2YydkhwSklsM183Wk9keUNrb1p0b0xjQlUycUs0UU41bklPWGhMOUZIaEhQZ0lJa2ZwMHF5M3NsYjlDRkhiSkY0VS1wZFowaWVtQkFnVVliYVl6Wk5DQ0V1Wk1RNFZKbjdpMFVJU1UyUkJUb24ydmxXOG00UnBoRm1jemNR0gHQAUFVX3lxTFBFV2tZZ2NDOGNUaGRkaExndGNqVEJRTk5XeldaV0FtS1BIU0ZrZ2NrdlROZG5RRWVOaHRUYUZCQmk1UUdkZTlVMG1zejZ1QmhwMkJFWnBfWmRrWGVsX0NFR0FHWC1jMWZIMGIwaVFteWNUMFFWb2tOWWE4cDZWRzlsQ0JramF0Qnp4M1pCd3hnSEE0THAtdU1rWlNNVGdOR0NwZGh4VE5lczJiY0poMnJDTW9XbmpJUl9sNGdxcklOT1Q5MnprM3FlUVNfRnVYVXo?oc=5",
-   "publisher": "The Hindu",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Tamil Nadu government reconstitutes State Board for Wildlife    The Hindu "
-  },
-  {
-   "title": "‘Lowland insects under stress’",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZkI1ZDJiQXlydExUSk5adzJNTTJKUEJTcVFMa1Bqb2stdnZyWnFoY0JjclpFT3V3SHhtNjNKLUY1dHJPRWJlYXR5cGpPcERYV1M5UkFzbE1LcnJBUG44c3BIdjZybHBPX1ZNMnVSS1Y0cGtPZ3lhNnFIMHAwajJhNmlCMkRHNDZINU9uVtIBjAFBVV95cUxNZkI1ZDJiQXlydExUSk5adzJNTTJKUEJTcVFMa1Bqb2stdnZyWnFoY0JjclpFT3V3SHhtNjNKLUY1dHJPRWJlYXR5cGpPcERYV1M5UkFzbE1LcnJBUG44c3BIdjZybHBPX1ZNMnVSS1Y0cGtPZ3lhNnFIMHAwajJhNmlCMkRHNDZINU9uVg?oc=5",
-   "publisher": "Down To Earth",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " ‘Lowland insects under stress’    Down To Earth "
   },
   {
    "title": "Penguin Palooza 2026 returns to Stony Point, Betty’s Bay",
@@ -384,12 +378,20 @@
    "description_excerpt": " Mekedatu Project Clears Legal Hurdle Before Survey Approval    Urban Acres "
   },
   {
-   "title": "Tamil Nadu Govt Reconstitutes State Board for Wildlife, Appoints MLAs & Experts",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOc2J2ajd4XzhsV0IxUzNlYzY1US0zTjNBSHFEekUydVctUTRRVUl6cXR2aWM1Y2dvRDI4cFBlV05FajEtWWo2QlFVTG9wb3BBQ1FVUWRULTEzQ0RST0FsbEEtQXZZQXNoczhodzd2ekZ4azVGMl9uTFRFVkwzTUlTMVJULTk4QXM0c2l2YjZFaWpSQU0zZW5rZlRKYWt4VFBld0JGcURNVElqVU5ZWGtCaTNDX1BCcGxzYTBMTzVVSQ?oc=5",
-   "publisher": "Oneindia",
+   "title": "Workshop to map how hazards could cut off coastal communities",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNcWEyUnFHT0pGU1JIMV9ZNGRyZ01EZ3Y3WlJXQUdPSzNWYlNtX1dCOHFuYTF3aTljZGFNbUJrNGs3eDItN2xFVWV1YzlvaEN5aF9TZEFFa0J3cGFFMTZYci02RU5QT3FKekYtZzRzdXJQUGlKdVVkeXU1VXZkUkdtUlRBNjFCaVpPbDZqMm0xSFdWSmg5NXB5bHo1aVRUSmpBQko1b0FCYUVnZjFEaExoX0NXd1MxOEdrQ1N0S0xQTF83TE9reDdQSlliSVlsYTR6VnMzZUwyeUtydFdYMmc?oc=5",
+   "publisher": "The News Guard",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Tamil Nadu Govt Reconstitutes State Board for Wildlife, Appoints MLAs & Experts    Oneindia "
+   "description_excerpt": " Workshop to map how hazards could cut off coastal communities    The News Guard "
+  },
+  {
+   "title": "A global youthquake is happening. Promises we made young people have been broken – and they know it",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMkRsOTlKZWZKUXhWaDA0b0VURHBoeGpzd2tVamVyeEZBY0RhYk9HTEV3a21MTkNIS2pQRUh6aGRsa1ZFVWhiZ3JaNGk3OF9qVkdud2ctUnFlcF9VbF9DTVFNcERoNmJPVDJVUF9MS3FYZVJzRGVQaGF0a1VWQVBHdkYwVVBNRXJqbXBfTDlfSGl6U1o0WDNpUG5GUlJ2STQycy13dmcxanFheUdpczh3ZGQxY0tUdEU?oc=5",
+   "publisher": "The Guardian",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " A global youthquake is happening. Promises we made young people have been broken – and they know it    The Guardian "
   },
   {
    "title": "From Europe to Asia, have open protests become a norm across the world | Gravitas",
@@ -403,19 +405,19 @@
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
-  "successful": 49,
-  "mapped_pre_dedupe": 352
+  "successful": 47,
+  "mapped_pre_dedupe": 339
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 111,
+   "mapped_pre_dedupe": 112,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 29
+     "mapped_pre_dedupe": 30
     },
     {
      "source": "direct/AllAfrica East Africa",
@@ -447,12 +449,12 @@
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 14,
+   "mapped_pre_dedupe": 13,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/The Conversation Indonesia",
@@ -462,14 +464,14 @@
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 8
+     "mapped_pre_dedupe": 9
     }
    ]
   },
   "europe": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 4,
+   "mapped_pre_dedupe": 3,
    "feeds": [
     {
      "source": "direct/The Conversation France",
@@ -479,24 +481,24 @@
     {
      "source": "direct/The Conversation España",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     }
    ]
   },
   "global": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 18,
+   "mapped_pre_dedupe": 20,
    "feeds": [
     {
      "source": "direct/Global Voices English",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/Global Voices Spanish",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/Global Voices Portuguese",
@@ -511,19 +513,19 @@
     {
      "source": "direct/Mongabay Global",
      "status": "ok",
-     "mapped_pre_dedupe": 12
+     "mapped_pre_dedupe": 14
     },
     {
      "source": "direct/Inter Press Service Headlines",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 2
     }
    ]
   },
   "international": {
    "configured": 11,
-   "successful": 11,
-   "mapped_pre_dedupe": 93,
+   "successful": 10,
+   "mapped_pre_dedupe": 79,
    "feeds": [
     {
      "source": "direct/BBC World",
@@ -538,17 +540,17 @@
     {
      "source": "direct/BBC Business",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 17
+     "mapped_pre_dedupe": 21
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 21
     },
     {
      "source": "direct/The Guardian Environment",
@@ -562,8 +564,8 @@
     },
     {
      "source": "direct/France24",
-     "status": "ok",
-     "mapped_pre_dedupe": 20
+     "status": "failed",
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/NPR World",
@@ -597,34 +599,34 @@
   "oceania": {
    "configured": 1,
    "successful": 1,
-   "mapped_pre_dedupe": 4,
+   "mapped_pre_dedupe": 3,
    "feeds": [
     {
      "source": "direct/The Conversation NZ",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     }
    ]
   },
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 97,
+   "mapped_pre_dedupe": 101,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 12
+     "mapped_pre_dedupe": 9
     },
     {
      "source": "direct/RNZ World",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 24
     },
     {
      "source": "direct/CBC World",
@@ -639,12 +641,12 @@
     {
      "source": "direct/France24 FR",
      "status": "ok",
-     "mapped_pre_dedupe": 18
+     "mapped_pre_dedupe": 16
     },
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 17
     },
     {
      "source": "direct/DW Español",
@@ -664,37 +666,37 @@
     {
      "source": "direct/BBC Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 7
     },
     {
      "source": "direct/BBC Latin America",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Middle East",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/BBC Europe",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/RNZ Pacific",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/Guardian Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/Guardian Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 4
     }
    ]
   },
@@ -717,8 +719,8 @@
   },
   "specialist": {
    "configured": 3,
-   "successful": 2,
-   "mapped_pre_dedupe": 6,
+   "successful": 1,
+   "mapped_pre_dedupe": 3,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
@@ -727,20 +729,36 @@
     },
     {
      "source": "direct/UN News",
-     "status": "ok",
-     "mapped_pre_dedupe": 2
+     "status": "failed",
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/NASA News",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     }
    ]
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 770,
+  "distinct_unmapped_titles": 791,
   "high_repeat_unmapped_examples": [
+   {
+    "title": "Americans head to midterms with inflation weighing on their wallets and Trump's economic record",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY3hZV1Q2Rm1YLUlvZnM4azhsWTFocWIzbDUwZjhCQm1ZLVh2VHd4MzZwcEFHZ0l0QTdKYjk1YmNIVWM3Q0F6T29CazcycXhNLUJfdjROY0pQQUlXSXJkcm1pWFdfRGpqWmlNcXlYWHhHN3lncExhN3lFajlBeHVFSzl3NW9kMVZvT2w4WDMzS0pEUC00VlhB0gGcAUFVX3lxTE5nMVg1RU13OHc4WjkwNXBqUk9hVG80dGx1NkplOUpHN2JkSUJRT2hfNkdHTXg4STJlUF9FX0E1cDNCMGlOekdCNE9PcUo2bHhhTWk3Y0sxTDZyT3U2WkVPR3F5WFIxYlVRVGlEcEJIbGkzWnFfcmdGUXFIejU4QUk4NUlQQlgyMjN0S2h4akloQ0EzMlQ3T2tlcDNTRg?oc=5",
+    "publisher": "Firstpost",
+    "feed_occurrences": 9,
+    "feed_count": 9,
+    "description_excerpt": " Americans head to midterms with inflation weighing on their wallets and Trump's economic record    Firstpost "
+   },
+   {
+    "title": "From youth protests to international class struggle: What perspective is necessary?",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE12a2JTbEFDYUpCN2x2MDJfNzBGcUxzbmJwZXltSFdxZmNtbFp2R3FvTFNCUW1hRGRxa3Rfa2RPN2dPSWdUV21jNFQxOWtlODFSc0hQOWl2TFdSNTk1cFVKSTBRT2MtQXJM?oc=5",
+    "publisher": "World Socialist Web Site",
+    "feed_occurrences": 10,
+    "feed_count": 5,
+    "description_excerpt": " From youth protests to international class struggle: What perspective is necessary?    World Socialist Web Site "
+   },
    {
     "title": "Survey finds gaps in use of cardiovascular-kidney-metabolic syndrome tools",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORklsVWd4eUNlcVJzNVNfdUdnZDNmRlFtZmFOeVQ0bDNFeldnMlpsZzFpQTF0MHRNa0h1UTdlcV9KM0UzMldBaFdvU3FBSUZpSlBMbi1HbjN1bVM5XzdOa1BwbXdrcFVIUUN6SGFhX3M0dTNYbkVsNVlUN2p2dU94di1hYzJUS1RRYlZpTzRrby1ZY1FSRnFhdFBCQ0RkZVdSYkR2R19ZdmdSUQ?oc=5",
@@ -761,17 +779,9 @@
     "title": "French school protests resume on smaller scale as students return from break",
     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPb1V5QVBweV9vQlV1X1kxZWJPRWp0VXc3M1FWNHljRWNjVlMzRmhLVnBUOFItNFZpdlJhOWNsbkV0VWNWR0R3ZjIzUk1sNzBsXzVoLTRQUV9ianhRQXVCN09icHRDNzJwbEItZ2xKQWM4WEV5TGt1T3N5VkFfSW9WeVU0SEFqWjBGMXM4NjFMbW0yUEQ2YVZOS2lmbFRTT3JBUnFVLVRScGMtdDQ?oc=5",
     "publisher": "Reuters",
-    "feed_occurrences": 9,
+    "feed_occurrences": 8,
     "feed_count": 5,
     "description_excerpt": " French school protests resume on smaller scale as students return from break    Reuters "
-   },
-   {
-    "title": "Dinosaur blood—oldest discovery rewrites what fossils can reveal about the past",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUlNsRWh2Njk1LTNINWZET1h0UmkwS1JCdUhEMHpCQkhyUlJBYW9fR1dKX3JXS3hWV1plNEdHbWhEU3VjdGNBQktCZTljaG1EcDJtZVE4ZlRYSlVPa3Z0UVFTMVNfcllTQWp0Q3dtQmoyQW8xNlBfXzVhT21UMXVBTA?oc=5",
-    "publisher": "Phys.org",
-    "feed_occurrences": 7,
-    "feed_count": 5,
-    "description_excerpt": " Dinosaur blood—oldest discovery rewrites what fossils can reveal about the past    Phys.org "
    },
    {
     "title": "Netanyahu lost his majority in parliament. Now he claims elections were stolen",
@@ -790,6 +800,14 @@
     "description_excerpt": " Israeli officials say elections will stand after Netanyahu claimed Arabs stole vote    Spectrum News "
    },
    {
+    "title": "Parliament Matters Bulletin: What’s coming up in Parliament this week? 2-4 November 2026",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbVoya2FWSnhkdGRuMmVjYlcybHoxckFYcWMxaF9qMFUycDRyTEdUcWZ4NFdHN3Z6cm5JNWk4MThLZnFCcklQcXUwZURMbDRaQ2pDWGVuTTJyMjlCX01OTVdNRkhncVpxUk5adFRMem1qVE1tUUgwX3kwT2hiZDloT3pSYmVBZ1dPX2c?oc=5",
+    "publisher": "Hansard Society",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Parliament Matters Bulletin: What’s coming up in Parliament this week? 2-4 November 2026    Hansard Society "
+   },
+   {
     "title": "An overhang election could be terrible for our democracy",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPa3ZURE5TNDFrRk9GdXhMcXMtTC1NNWVlX0RNeXluVkRvRm5IelJvMTlLQjY1Y2pwWjEta3ZzTllhTTJLaWJtX0FlYk9yOUlHVUtEMm9DN0xqT1JuTUo2WnJrUjl4N1pWeDhodTlFSWZuSE02R3B5Yi1ZUkU1VElsdXIwcjFhbDBjQUdGOG1RdGE3TFZ1ZFRtWHRKdXd1ZkdiczVj?oc=5",
     "publisher": "The Spinoff",
@@ -806,20 +824,20 @@
     "description_excerpt": " Mitsotakis urges ministers to prioritize government work over election campaigns    eKathimerini.com "
    },
    {
-    "title": "Israeli officials say results stand as Netanyahu claims election ‘stolen’",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbVhJTExQVkd6REJ0WXJRTWFZWEJnTjBTdmc0TDZ4UHZRbUFyRldfWHB4d0pabWREaExka1p6amhVcGtWcGJfYWtuTVpxZ2d2QWphUktYUTVyUXFGYndha1RrYldJbXNjdHNaWHhBQ1pBVGh1V1BsTnliVGZMR3B1Ql9OVWpNYkw4NXV6a0JjbC05eVZfMVdaLVBxMHRmMzdPcUVfMW9hUDdqaVhreGpGanpR0gG3AUFVX3lxTE5HNEp2UnlhdXk5RHNpOS1OWEJSYmFIeWh0TFFPUHJSLTV6dTFsbkxnNHFQVTk5UUhzNWhSQ1U5NzVpSXNxUjN4NWV5Q041S2V5OHNvSnJOVVd0b3QzbDNLV29fcjRKeFc1SmY4UG11ZWdsTWtlTDZKVXhFU202Rlc5VU40c2VlcU5od2RzbHpCcUVob0Zsel9aOXBPLUZkbnk5TmlhYUU3NE40NUoyQzdOR1RvckVONA?oc=5",
-    "publisher": "Al Jazeera",
+    "title": "Herzog Begins Talks to End Netanyahu's Rule Amid Deadlock",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVWdMNXhZT3MwYVFfbEM3TXZWN0o3TVJ4WUltNkZvOUh2X3VvRG9iT1JwZGlqa3FxNmZBazQxbUVZbXE5NXRuT2NaZVRYQ3prV19MbjdSWUFnNHR3dUU3NVNIRFAySzJzYjBYRmZBemw2YnhRczFhc0VVVFNJRFhxZk5HLTY?oc=5",
+    "publisher": "조선일보",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Israeli officials say results stand as Netanyahu claims election ‘stolen’    Al Jazeera "
+    "description_excerpt": " Herzog Begins Talks to End Netanyahu's Rule Amid Deadlock    조선일보 "
    },
    {
-    "title": "Latvian Saeima elections 2026: Myths and Misconceptions / Article",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYTJRX2F2RW53X2RXWmc1ZXdmLVBoTnNicFk4c3dBZ0xxWldoSFpQcEpxaWsxOTVPMnBTbl91aTVRejJyN0JYdTFjcjkyN2xQYnltOGhKLW5adFU2Y2lqei1sdXppWGdSUm9EakhFekFhQmhjRzlUQURfdmlBeW5FOEFaZEw5eGhoakRUaDFyamphd2xiLVhqS3pueC1wd0w4VmZlQldfUExfVXl6NzcxXzRtdFUtUGljYU0w?oc=5",
-    "publisher": "LSM",
+    "title": "Israeli Opposition Joins Forces to Support Eisenkot to Form Government, Arab Party to Join?",
+    "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE92YnRlWk9yMHUtR3ozZjF0eXR1dWR4THQxdF8zRVVhZkZqNVBkeEFkS0Rock5lemRxSU8xRXFtWWFUd9IBQkFVX3lxTE92YnRlWk9yMHUtR3ozZjF0eXR1dWR4THQxdF8zRVVhZkZqNVBkeEFkS0Rock5lemRxSU8xRXFtWWFUdw?oc=5",
+    "publisher": "VOI.ID",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Latvian Saeima elections 2026: Myths and Misconceptions / Article    LSM "
+    "description_excerpt": " Israeli Opposition Joins Forces to Support Eisenkot to Form Government, Arab Party to Join?    VOI.ID "
    },
    {
     "title": "Likely shape of new Latvian government emerges / Article",
@@ -830,28 +848,12 @@
     "description_excerpt": " Likely shape of new Latvian government emerges / Article    LSM "
    },
    {
-    "title": "Only an independent caretaker government can ensure free and fair elections",
-    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQSjlILXM4ZEVZejRuMUkzUFVuN29hbXdjS2x3Q2Q2REFLY0hUMWpTeHJqS3dWVGZVZEhhSGl3NS1xVnNnenpwMUpGdjZHVkIwalpVeWs4R041QWZwRlRBbDBtcm9GWGFWZ3pCRWhBd00xTDVQZkRQTDRRc3BNbm5oeGJjOFh0dld3YkpNOXBfREVmQ1JUSk1JWDg3OXE5RmRseWdUUmpxaDF5a3VkYllzbnFtYTFYVzZzUE1yd3NZeUVxZm1xLVdmUnozU0JwYXh4d28tT2t1RHZZclk?oc=5",
-    "publisher": "The Daily Star",
+    "title": "Three-way contests could make a big difference in Victoria’s election",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdjZrb21pTFVXUDU1NFRhaUllSkNIUFNFTmppQUFRM0FHbFVMcENZeFg4ZXNPVW5vblFEYTAzNHdyMnRKbkduVnRRMjhmSFdLNWNPSF9NQ0RtU25NNGNyVERIR3gtakVEWlAydkdzNDVWOXZyNkNuNWVNZjFZNFVPZXYtVW9lQjRTTHJ2LVJRcVpwVFIxUUxtVHN3NXZ3ZllUQXMxRk9wOHZicmVieWVuVVVlaFQ?oc=5",
+    "publisher": "AFR",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Only an independent caretaker government can ensure free and fair elections    The Daily Star "
-   },
-   {
-    "title": "Former Israeli Prime Minister Bennett's party backs Eisenkot to form next government",
-    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zVHBOdjVIeDAzWHlqSkY5bkFiYVZhTjdPcm1qMXk5MzlNUl9WT0FoUlQtd2FuakUxaDVjVzdBNVlOOGR0RWd3bXRtZmdhWXNTMnQwbnBNYUk?oc=5",
-    "publisher": "TRT World",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Former Israeli Prime Minister Bennett's party backs Eisenkot to form next government    TRT World "
-   },
-   {
-    "title": "‘Come for debate’: Amit Shah challenges Rahul Gandhi to special parliament session on ‘vote chori’",
-    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaGJOa1NNUW9kNTh5RDNmQXFfaU1SWEM2Ukota3ZCRWVScWM2ck9ralFMeTBmZzJ2UVFBVncxNTRHMzkyczhEd2FGS3RvcDV5TXFrc2V4Wm5wc3lmcnB6ZGhHaXpzelhaOThzV0dRQW1kTTRkREEtbEdxTHRyVEZjU3gzUTk2N1Z4Z2ZoQnQ2TWFRZ1MzTGhNSGlwTGlNU0c3NVBMT0ViSWVXWVVqNktYX1R2UzR1M0Z2R1BtSXZNOGlfUmdMa0p2QnNZVzF1V2JsT3NkYTdEdlZjUXPSAeABQVVfeXFMUC1DNFVmbzI1VVA5dVNuTGYyUGE5N0FyZ0lsX3JJM3B6a1gxWmNaZFUwcFV2MmdrSkVaT0YybDBRVFM1RXVJXzNneVBzSU91ZUtHWmJXYUc1eWpCMDdHSWZwZV8tS1lxMHVjTEM2WjdjRW9VQTRZUjdndTRoa3hpTDVKQ1dsdkptSmpLaHhwbUNIQmRteHBLV2Z5Ni1jaG5uVGtnbWJRMzhvcWNFUGU5b2J6ZmpvUVUzaDI4bndXaGNIUmM4b0t5eDByNjh2NFBfa3c4bXlQR0tGTk03ZzlsLVg?oc=5",
-    "publisher": "The Week",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " ‘Come for debate’: Amit Shah challenges Rahul Gandhi to special parliament session on ‘vote chori’    The Week "
+    "description_excerpt": " Three-way contests could make a big difference in Victoria’s election    AFR "
    },
    {
     "title": "Parliament calls for peaceful participation in elections as special voting begins",
@@ -862,28 +864,28 @@
     "description_excerpt": " Parliament calls for peaceful participation in elections as special voting begins    EWN "
    },
    {
-    "title": "Netanyahu ready to form govt with Eisenkot, claims report: Concerned over Arab parties backing opposition; ...",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxON3hwc09QVThPTC1vY01WM2lHQXFLMENDNHpqQkVPZDFiSXEyUFJQVHBVbUhuODVrODI2S2xYaE1BRHEzZXN0eFRFMmRBbGdVa1JpVVJHeWhHZ0o0eElySC1KYmFyanJ2Z0hJVUN6V0dFc1otaUN4YTQzSklKV0RfRENvNFJfaW5rMXh4YnFuRmFaTFhHRXlGXzhaamF5V2VZQzVMUXVOYTJabU5HWWExRkZXQkJrOWFPV29FLWwwaXpMcWZob2fSAcsBQVVfeXFMUGttdmdIbzVUSGg1aDBWZVUxT21RbEpIOW1QZXEwWEZCRlJDUnBaX0JVQkR1RzFueXZIVVFFRWh6RU0xVVhRc2lvUDJDMjI0dkhYSU9DdkdoVk9yWkxURjVSYXdfeUJXYms4bTFMWXJuTlBxeGpoMjlvSUVTbFp3cUtlS3RlMkQ2Z2ZHVV9GYVFfcS1KZWg3NDVlY1pOQkVVd1VjX25rQ1lSYlRuRS1Sa0x1X3pld0JNZ1UxcjZiQktRMDRVSzZzLVhaOFE?oc=5",
-    "publisher": "Bhaskar English",
+    "title": "‘Come for debate’: Amit Shah challenges Rahul Gandhi to special parliament session on ‘vote chori’",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaGJOa1NNUW9kNTh5RDNmQXFfaU1SWEM2Ukota3ZCRWVScWM2ck9ralFMeTBmZzJ2UVFBVncxNTRHMzkyczhEd2FGS3RvcDV5TXFrc2V4Wm5wc3lmcnB6ZGhHaXpzelhaOThzV0dRQW1kTTRkREEtbEdxTHRyVEZjU3gzUTk2N1Z4Z2ZoQnQ2TWFRZ1MzTGhNSGlwTGlNU0c3NVBMT0ViSWVXWVVqNktYX1R2UzR1M0Z2R1BtSXZNOGlfUmdMa0p2QnNZVzF1V2JsT3NkYTdEdlZjUXPSAeABQVVfeXFMUC1DNFVmbzI1VVA5dVNuTGYyUGE5N0FyZ0lsX3JJM3B6a1gxWmNaZFUwcFV2MmdrSkVaT0YybDBRVFM1RXVJXzNneVBzSU91ZUtHWmJXYUc1eWpCMDdHSWZwZV8tS1lxMHVjTEM2WjdjRW9VQTRZUjdndTRoa3hpTDVKQ1dsdkptSmpLaHhwbUNIQmRteHBLV2Z5Ni1jaG5uVGtnbWJRMzhvcWNFUGU5b2J6ZmpvUVUzaDI4bndXaGNIUmM4b0t5eDByNjh2NFBfa3c4bXlQR0tGTk03ZzlsLVg?oc=5",
+    "publisher": "The Week",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Netanyahu ready to form govt with Eisenkot, claims report: Concerned over Arab parties backing opposition; ...    Bhaskar English "
+    "description_excerpt": " ‘Come for debate’: Amit Shah challenges Rahul Gandhi to special parliament session on ‘vote chori’    The Week "
    },
    {
-    "title": "2026 Pheasant Numbers Stable; Still Below Long-term Average",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSFl6bS03TkJxVFl1NTY0Yjk5VmNnTlNfbzByQzZkU1dJcjlNckQ2YXFFeDNSVmVITXo3S01wVU5mRHNMMENpM05DZEtxZzZ5QkJTY1hIMkNVRkN0OWVaalpJSTI3N0JWNXZ0UE9hbEh6NDNoVkFwUktKWlptNkFKNC1HbXAxT2pfYkZlMkhlSDhFaDlGSUd5ZjR6cGJRY016bWIycXJaSkU0Zw?oc=5",
-    "publisher": "Oklahoma Department of Wildlife Conservation",
+    "title": "Netanyahu calls on opposition to form a government without Arab parties",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9uSmNVa1JrVDdka09idklrcVlEX0dSVWZHZFRuc3c3VENNWWQtTGZlbjlpbmNhazlQYVZOQmdTRnNCQ29WTW5vZXN4SklVbW9zZlhB?oc=5",
+    "publisher": "شبكة تواصل الإخبارية",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " 2026 Pheasant Numbers Stable; Still Below Long-term Average    Oklahoma Department of Wildlife Conservation "
+    "description_excerpt": " Netanyahu calls on opposition to form a government without Arab parties    شبكة تواصل الإخبارية "
    },
    {
-    "title": "Large Animals Are Living Carbon Stores. Does That Make Saving Them a Climate Solution?",
-    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONmZBNTl1ZWZTcTBWUXJRMzhCX1ZCcWo1Und4WUdqSUtodHdqOTJWcWpPb0V3ZWdiR2lXeWIyUHA1QUpPbU15UG5LUE5zVW9XQVJjLThQWHF0NW9OaDAwV25ZdHB4UU1BWm0wR2h3ZDIxaGlMb1pfZjdoN1JpWXZsWWFjVDRXZnBUSVdJQXVHYmV3eDhTc2oxV3lfUHNYdS1XS0UtclVlRF96ZC1qbkExaUJuTFdxU2dtSGctZE1hZlhWdnBYSjRKOA?oc=5",
-    "publisher": "The Good Men Project",
+    "title": "Parliament questions Mangaung’s 38 municipal appointments before elections",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVTFKQWJveURlSEx2WGlBeFByamh5ckV0ejlqWFdHWkRpbU1vb2FpMGE3TnRqLVpmbWR3VkdnUjJYTXBmSGZnbFI1RkEtSXNjZXByS0g2VkxGLTRjWWtEOFcxRnczQ0ZjNlNBUjM5TEFxVUs5Y1kyZVplRDdSMUQ1R1JJMjNvVVRKYmlEMkxiZGlIcFprc3BqOVMzb0lLWC0zVnNadF9jMG9CNU5GUzRVZzJlUklEckhJOXc?oc=5",
+    "publisher": "IOL",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Large Animals Are Living Carbon Stores. Does That Make Saving Them a Climate Solution?    The Good Men Project "
+    "description_excerpt": " Parliament questions Mangaung’s 38 municipal appointments before elections    IOL "
    },
    {
     "title": "‘Everyone has a voice’: Idaho Conservation League names new executive director",
@@ -894,163 +896,163 @@
     "description_excerpt": " ‘Everyone has a voice’: Idaho Conservation League names new executive director    Idaho Capital Sun "
    },
    {
-    "title": "Semi-Arid Olive Groves Offer Hope for Biodiversity as Climate Changes",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLUFET0t4cXpOZWZMTzlMcktJWmpZZjdWSzFRT1d4QmpyQ1F5MjNFbXFBTF9oX0hWVnNwcEtpempVOTFOT1c1c0sxSE1UVzZtOGdub3QtQ2EwbEZOTldDdWlUWV9NU1BNVWowbFB5LUljX0xmQWVVRkZfLUdtSUZBS3prWjF6X0E1RDFnanlqeEtPc1pzSGpPOEVwLXcwamFEeVBqYW1OTXJoUVBzcV8wWGp3?oc=5",
-    "publisher": "Olive Oil Times",
+    "title": "Large Animals Are Living Carbon Stores. Does That Make Saving Them a Climate Solution?",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONmZBNTl1ZWZTcTBWUXJRMzhCX1ZCcWo1Und4WUdqSUtodHdqOTJWcWpPb0V3ZWdiR2lXeWIyUHA1QUpPbU15UG5LUE5zVW9XQVJjLThQWHF0NW9OaDAwV25ZdHB4UU1BWm0wR2h3ZDIxaGlMb1pfZjdoN1JpWXZsWWFjVDRXZnBUSVdJQXVHYmV3eDhTc2oxV3lfUHNYdS1XS0UtclVlRF96ZC1qbkExaUJuTFdxU2dtSGctZE1hZlhWdnBYSjRKOA?oc=5",
+    "publisher": "The Good Men Project",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Semi-Arid Olive Groves Offer Hope for Biodiversity as Climate Changes    Olive Oil Times "
+    "description_excerpt": " Large Animals Are Living Carbon Stores. Does That Make Saving Them a Climate Solution?    The Good Men Project "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Vietnam",
-   "largest_label_articles": 44,
-   "share_of_country_labelled_articles": 0.094
+   "largest_label_articles": 74,
+   "share_of_country_labelled_articles": 0.153
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 329,
-  "unique_google_urls_not_in_direct_sample": 519,
+  "unique_direct_urls_not_in_google_sample": 306,
+  "unique_google_urls_not_in_direct_sample": 599,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "AllAfrica West Africa": 29,
+   "AllAfrica West Africa": 30,
    "AllAfrica East Africa": 29,
    "AllAfrica Southern Africa": 28,
+   "RNZ National": 24,
    "AllAfrica Central Africa": 23,
-   "RNZ National": 20,
-   "France24": 20,
-   "The Guardian World": 20,
+   "Al Jazeera": 21,
+   "The Guardian World": 21,
    "BBC World": 18,
-   "France24 FR": 18,
-   "Al Jazeera": 17,
-   "France24 ES": 16,
-   "ABC Australia": 12,
-   "Mongabay Global": 12,
-   "The Diplomat": 8,
+   "France24 ES": 17,
+   "France24 FR": 16,
+   "Mongabay Global": 14,
+   "ABC Australia": 9,
+   "The Diplomat": 9,
    "DW World": 8,
-   "RNZ Pacific": 7,
+   "BBC Asia": 7,
+   "RNZ Pacific": 6,
    "BBC Brasil": 5,
-   "Mongabay Indonesia": 5,
-   "The Guardian Environment": 4,
-   "BBC Europe": 4,
-   "The Conversation NZ": 4,
-   "BBC Latin America": 4,
-   "NASA News": 4,
+   "Guardian Asia": 4,
    "Mongabay Latam": 4,
-   "Inter Press Service Headlines": 4,
-   "BBC Asia": 3,
-   "The Conversation España": 3,
+   "The Guardian Environment": 4,
+   "BBC Europe": 3,
+   "NASA News": 3,
+   "Global Voices English": 3,
+   "RNZ World": 3,
    "NPR World": 3,
+   "The Conversation NZ": 3,
+   "Mongabay Indonesia": 3,
+   "Guardian Africa": 3,
    "The Conversation Africa": 2,
-   "Global Voices English": 2
+   "BBC Latin America": 2
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 466,
-  "country_labels_count": 98,
+  "country_labelled_articles": 483,
+  "country_labels_count": 92,
   "top_country_subjects": {
-   "Vietnam": 44,
-   "Nigeria": 23,
-   "Kenya": 21,
-   "Israel": 20,
-   "Ukraine": 20,
+   "Vietnam": 74,
+   "Nigeria": 24,
+   "Ukraine": 21,
    "Iran": 20,
-   "South Africa": 20,
-   "France": 18,
-   "Rwanda": 14,
-   "China": 14,
-   "India": 12,
-   "Canada": 11,
-   "Venezuela": 10,
-   "Colombia": 9,
+   "Israel": 16,
+   "South Africa": 16,
+   "Rwanda": 13,
+   "Kenya": 13,
+   "France": 13,
+   "Colombia": 12,
+   "Mexico": 12,
+   "China": 12,
+   "Ethiopia": 10,
+   "Canada": 10,
+   "Brazil": 10,
+   "Germany": 9,
    "Russia": 9,
-   "United States": 9,
-   "Mexico": 8,
-   "Brazil": 7,
-   "Mozambique": 7,
+   "Australia": 9,
+   "India": 9,
+   "United States": 8,
+   "Venezuela": 8,
    "Ghana": 7,
-   "Australia": 7,
-   "Bulgaria": 6,
-   "Indonesia": 6,
-   "Germany": 6,
-   "Malawi": 5,
+   "Indonesia": 7,
+   "Malawi": 6,
+   "Portugal": 5,
+   "Malaysia": 5,
    "Somalia": 4,
-   "New Zealand": 4,
-   "Portugal": 4,
-   "Peru": 4,
-   "Egypt": 3
+   "Uganda": 4,
+   "Zimbabwe": 4,
+   "Bulgaria": 4
   },
-  "distinct_geographic_signal_centers": 298,
+  "distinct_geographic_signal_centers": 314,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 105
+   "mapped_pre_dedupe": 142
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 73
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 125
+   "mapped_pre_dedupe": 137
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 77
+   "mapped_pre_dedupe": 87
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 141
+   "mapped_pre_dedupe": 130
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 46
+   "mapped_pre_dedupe": 72
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 134
+   "mapped_pre_dedupe": 127
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 51
+   "mapped_pre_dedupe": 93
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 68
+   "mapped_pre_dedupe": 106
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 149
+   "mapped_pre_dedupe": 165
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 123
+   "mapped_pre_dedupe": 125
   }
  },
- "duplicates_removed": 637,
+ "duplicates_removed": 725,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
   "available": true,
   "reason": "GeoNames cities15000 loaded",
-  "cities_loaded": 37139,
-  "candidate_names": 12653,
-  "ambiguous_names": 1418,
+  "cities_loaded": 37142,
+  "candidate_names": 12654,
+  "ambiguous_names": 1417,
   "downloaded": true
  },
  "warning": "Unmapped count includes repeated feed entries. RSS geo-matching reflects place mentions, not necessarily where events occurred.",
@@ -1060,35 +1062,35 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-03T00:03:19+00:00",
-    "mapped_articles": 823,
-    "geographic_signals": 468,
-    "feeds_ok": 170,
+    "at": "2026-11-03T06:53:03+00:00",
+    "mapped_articles": 871,
+    "geographic_signals": 481,
+    "feeds_ok": 168,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 22,
-    "ambiguous_mapped_signal_count": 2
+    "rejected_matching_occurrences": 20,
+    "ambiguous_mapped_signal_count": 3
    }
   ],
   "latest": {
-   "at": "2026-11-03T00:03:19+00:00",
-   "mapped_articles": 823,
-   "geographic_signals": 468,
-   "feeds_ok": 170,
+   "at": "2026-11-03T06:53:03+00:00",
+   "mapped_articles": 871,
+   "geographic_signals": 481,
+   "feeds_ok": 168,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 22,
-   "ambiguous_mapped_signal_count": 2
+   "rejected_matching_occurrences": 20,
+   "ambiguous_mapped_signal_count": 3
   },
   "recent_change": {
-   "baseline_at": "2026-11-03T00:03:19+00:00",
+   "baseline_at": "2026-11-03T06:53:03+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Rubio": 7,
-   "Split": 6,
-   "Union": 4,
-   "Forest": 3,
+   "Union": 8,
+   "Split": 5,
+   "Rubio": 4,
+   "Forest": 1,
    "David": 1,
    "Serra": 1
   },
@@ -1096,6 +1098,12 @@
    {
     "name": "Forest",
     "category": "community",
+    "sampled_article_count": 1,
+    "review_reason": "ambiguous_place_name_needs_manual_review"
+   },
+   {
+    "name": "Ontario",
+    "category": "health",
     "sampled_article_count": 1,
     "review_reason": "ambiguous_place_name_needs_manual_review"
    },
