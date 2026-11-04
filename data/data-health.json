@@ -1,180 +1,147 @@
 {
  "schema": 1,
- "updated_at": "2026-11-04T16:21:09.310143+00:00",
+ "updated_at": "2026-11-04T22:14:39.489981+00:00",
  "feeds_total": 173,
- "feeds_ok": 169,
+ "feeds_ok": 170,
  "feeds_failed": [
   "direct/CBC World",
   "direct/ReliefWeb Updates",
-  "direct/DW Español",
-  "direct/Global Voices English"
+  "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 82
+   "mapped_pre_dedupe": 86
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 56
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 87
+   "mapped_pre_dedupe": 96
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 63
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 81
+   "mapped_pre_dedupe": 96
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 64
+   "mapped_pre_dedupe": 59
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 100
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 65
+   "mapped_pre_dedupe": 62
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 60
+   "mapped_pre_dedupe": 54
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 115
+   "mapped_pre_dedupe": 122
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 82
+   "mapped_pre_dedupe": 94
   }
  },
  "mapped_articles_by_category": {
-  "conflict": 68,
-  "community": 254,
-  "politics": 58,
-  "health": 60,
-  "rights": 20,
-  "education": 47,
-  "society": 47,
-  "economy": 65,
+  "conflict": 61,
+  "community": 277,
+  "politics": 59,
+  "rights": 26,
+  "economy": 70,
+  "society": 48,
+  "health": 69,
+  "education": 42,
   "science": 16,
-  "environment": 26,
-  "hazards": 3
+  "environment": 22,
+  "hazards": 2
  },
  "mapped_articles_by_location_precision": {
-  "country": 374,
-  "place": 278,
-  "region": 12
+  "country": 394,
+  "place": 284,
+  "region": 14
  },
  "location_evidence_counts": {
-  "headline": 559,
-  "description": 105
+  "headline": 586,
+  "description": 106
  },
  "geographic_quadrants": {
-  "NE": 274,
-  "SE": 115,
-  "NW": 197,
-  "SW": 78
+  "NE": 285,
+  "SE": 116,
+  "NW": 212,
+  "SW": 79
  },
- "geo_signal_count": 381,
- "mapped_total": 664,
+ "geo_signal_count": 396,
+ "mapped_total": 692,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1344,
- "unmapped_distinct_titles": 680,
+ "unmapped_sample_count": 1325,
+ "unmapped_distinct_titles": 675,
  "unmapped_by_feed": {
-  "Google News BR": 153,
-  "Google News US": 130,
-  "Google News ZA": 116,
+  "Google News BR": 138,
+  "Google News US": 129,
+  "Google News KE": 124,
+  "Google News PH": 122,
+  "Google News ZA": 121,
+  "Google News IN": 120,
   "Google News MX": 116,
-  "Google News KE": 116,
-  "Google News PH": 113,
-  "Google News IN": 112,
-  "Google News AU": 84,
-  "Google News CA": 77,
-  "Google News GB": 76,
-  "Google News NG": 76,
-  "RNZ National": 22,
-  "ABC Australia": 18,
+  "Google News NG": 77,
+  "Google News CA": 73,
+  "Google News AU": 70,
+  "Google News GB": 69,
+  "RNZ National": 24,
+  "ABC Australia": 13,
   "The Conversation España": 12,
-  "BBC Brasil": 11,
-  "The Guardian World": 10,
   "The Conversation France": 10,
-  "Al Jazeera": 9
+  "BBC Brasil": 9,
+  "BBC Business": 7,
+  "Al Jazeera": 7
  },
  "unmapped_examples": [
   {
-   "title": "Deals tracker: Novant Health acquires Northern Regional Hospital",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOFRqZk11amFzZnlZQnpGLWRMLUZDaXF3bUJGcUVMSTRXNVoxQzRzY2FHY3FpWjM2WWV3LVFReTJmQ0R6X2NWa3RwQ1BTcVBnT3pjV0JabVRaQ1QwNTd4MVZXeDNzR1MyRFdwT1ZXRHd0cDNJbUluYnFoUGNxM2s0dXZpNC1vaXN4ZEY4SWdHQjE?oc=5",
-   "publisher": "Modern Healthcare",
-   "feed_occurrences": 13,
-   "feed_count": 9,
-   "description_excerpt": " Deals tracker: Novant Health acquires Northern Regional Hospital    Modern Healthcare "
+   "title": "Google to turn off Search for students at schools that opt out of AI",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaFlRRm9RZ3hUT2xSY3VIOUhkU3hVRVp5clRLMkFCbzhfcXVrZ2M3dmtMQThURnlzbVdwSmMxR1hHZGJxSml2eG1VTVpINVN6WDNCU3diRFhCcWtiQy1WZzRQZUZOWVdwWVRnZXVGcld1bWF4c09FMWVCS3V0VFRJdmpsX1Jfa2kzVGRHMkYyRndTVHM5anFsX0c1cEs3ZWRUUlZ1RW1qQ0J3WklUSXZiZ2w0TTRoa3VKbjlzXzNn?oc=5",
+   "publisher": "EdTech Innovation Hub",
+   "feed_occurrences": 7,
+   "feed_count": 7,
+   "description_excerpt": " Google to turn off Search for students at schools that opt out of AI    EdTech Innovation Hub "
   },
   {
-   "title": "Why are Europe’s governments struggling to respond to growing protests?",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVGxoYm5sNjYzQUVubGg0T0NPSUhNQjVqazlRaFhpWW9PY09PZU1pREVOMDJpcTJrR0ZKaHB4eW5yX0t5dEFMOGMzTENtMzdtUXhfSHJSMjlzTi1HeUFlRjMzMEZPNjlLb1EtbDJjSHlIS2NzbnZGbUlHX0NJNDhzdlF5LUFtWE5HZFhxc19YTDU0VWU4QUpGYnIycXNNV3hhTnI3RFRvN2ZvR2k0cUM00gG0AUFVX3lxTE9heDFPVGhHazdrMmpVQ0dDN1BSSGhVYjZwUjhBWDNkbXgySmVXR1N3Y2JWa1JGWFlib0NCRm44Ty12Y19QTVBMb2ZmU0tFMnRpTGlKQ3haMXRJaTlYaUhKVXRfLUZvb0E1Nm9mWFVxZ2UxZWRPdURWNkVDYmM3ZGFSeWJ2UXdUVFNZMkdjWGZ0V3BFanMtSU80TnpqR09ZMGRSWWJFN0dYYm9kN3BVTnNpeUZfNw?oc=5",
+   "title": "Danish students join European protest wave against education funding cuts",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcGQwc0pOVFpUUjA0Q3N2WDMycTFTemlQSnpaQVBNeWROZWtxMDU2QTZwYmphaUhxR1RPY1dyUkY4MUhqUmhfNERabk1JbG95M1I5YldUNmpKRng2d21YZG15cnIyNUNyR3JYaU1WVEJkVE5VdEZiZjZzOF9lOWpOQ3N4VTB3a2Naa0RIeGdTWjMzeFNrR2tXY1A3aGhpQ3V4M2VuTmZIbWphZXZzVjNmVkxwdTXSAboBQVVfeXFMUGV2QnV0Vm9EY3c4c0pNdU9iT2RWZnBJVnNaaHpqWnVWUVZyRmtkSkhZY3lXM1c2TC01VDlWR0ZIb1l2cy1mNXVPa1hYUGVDNzVjVnNxZFRIMUtWZ082M0RqMlZLUVdfNGJfMU1FREZqdVYycExLNlVXdGlGTWpmXzZfTzJjWHNaaS0ydmpicHJnNy1FMGVPYWJrUnpIV0syQ0RuZEI5YlpVaGJXd01DRTkyM2VaMzh5SExn?oc=5",
    "publisher": "Al Jazeera",
    "feed_occurrences": 6,
    "feed_count": 6,
-   "description_excerpt": " Why are Europe’s governments struggling to respond to growing protests?    Al Jazeera "
+   "description_excerpt": " Danish students join European protest wave against education funding cuts    Al Jazeera "
   },
   {
-   "title": "Columbia University student detained by Homeland Security agents in dorm released - ABC News",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYjFIUEc1bm9lWlItR1NjYldPUFVvRjJ1OTBRNHdMazdYSEhsUDA0bndvWDA4YTJZUXdqTkFsNnZHdDNXNDRxT3BCZWdDd2dRZ3RsUlpFV2NodTBQb3NBaEhaVVJsYzczMHF4M3dUenVoS05YeWV0TENIVEN1bGRyX212Si1KMlByS25yZDFJSF9DTTczQTlqUmNLYUZHbGgyaVdwWXZuRVVVNEdq0gGyAUFVX3lxTE5wZ21SbkpzUGM3RkJJLTdlOWd5NmxtbHhVRm52SGZTTDRNUkoxenQwWFlTRWhRWjZKZGx4eGZ6amw5WU9PZTFZOGk3MHFkeWRkZl9QQXlHWXlvTzVyelZwcDVXeUoxNC1RdXZSREFHT2FRVVZTSl9NajJ6X3lUWmc0V1JVMjZUbWRwc3dsUGdla2ZhblNXc185MWtwbmFTYjZmdFloc2FaQnQ1N3I4WWJ0aVE?oc=5",
-   "publisher": "ABC News - Breaking News, Latest News and Videos",
+   "title": "From education to housing protests, Palestine’s flag spreads across Europe",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYWVfZ1lvc3JJSkJ2aGUxZThUSklqeS01YVM3VWxpTGpCV3BydVp5cmUzeFFVVUFlMURlQXpXSzFEaVRuWDkzZjQyZnBnMllRYmlFS2xoUWZHYUt0ODVlZ1VZdF9vOE1TN2RnT1p4cHVHNHNlOXEtX2tGLTdGbHVwMWpqMDPSAYoBQVVfeXFMTnI4Z0taZlZjejNwbkMwcDBKQWlDS2RVdVlOM05iVE5KcV9pby1IQUkyV3RZZUV0N2lKN2RCczgzenA3NDdUY1pQT1VtUmQwYW9qUTdQeXNMaDlQX2llQ0NYZGdCYk9LU2NlT1E2SUlZQUFVSnNka1lWQzJ3RlFfOGJiZF9rRFVyMlVn?oc=5",
+   "publisher": "Al Jazeera",
    "feed_occurrences": 10,
    "feed_count": 5,
-   "description_excerpt": " Columbia University student detained by Homeland Security agents in dorm released    ABC News - Breaking News, Latest News and Videos "
-  },
-  {
-   "title": "Students blockade dozens of French schools, universities",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNkI4Rk5vamFsaUpoUU1pY2lBOTJDUUlfeHRfU2JuZHRqVTdaZ1kzWnNEb2dLZTNwQUstSkRvTWFQTm9qZ1VhYmNSZmItdVdFcVFQRUloaUdhZVk4M0F0aUYyd1BESEdmanN2bW1OOXE0VzVLZzYydmtNb015QUVVUG5RSDltcjJqajJ5dldHVWtNaWNiVFZ6dlNtaHJ6d0dv?oc=5",
-   "publisher": "New Age BD",
-   "feed_occurrences": 6,
-   "feed_count": 5,
-   "description_excerpt": " Students blockade dozens of French schools, universities    New Age BD "
-  },
-  {
-   "title": "Finnish Parliament expresses confidence in Orpo government: 95 votes to 77 — YLE News",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOXUtTVdGYWd5bGFaaXljOVdxOEs5SkQ1QXMtd0hTbXFraUtLV3pVTmw1M1JxSmFWVV8xOXBtNllZMXY4RmdOZjYyZnBwaUtqMi0yQ1h4OUVHZDBlLVQ3LVgxX1c5R0xENEFqMW96cGpCOGFHUFROU19aSkNEVVVPV1NuUThRbklVUnN5QmFMdlhadkdIWWY4SE9SV0UtRjJTVDVtSFdB?oc=5",
-   "publisher": "UA.NEWS",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Finnish Parliament expresses confidence in Orpo government: 95 votes to 77 — YLE News    UA.NEWS "
-  },
-  {
-   "title": "Foreign AI election interference claims under Online Safety Act probe, ministry tells Parliament",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVVZHSlZQeG9uU2h4S011QXZZTzA4TWxTbl9WSkR2WDVPSmd4LTFZTlV4ejB0MGtBMEJKbnZIekZSTGxMY1Bvdlc5cjhZcElsYTNMOEFrcHFTeWMySjVGbEd2ZWNtdnhKcE1wV29JSHA1UTB4VDl0cGNkdS1mMlk4cXV6aVM5U2ZCYjUyaEd0WQ?oc=5",
-   "publisher": "Yahoo",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Foreign AI election interference claims under Online Safety Act probe, ministry tells Parliament    Yahoo "
-  },
-  {
-   "title": "Commission finds no fraud in Israeli election as results certified - ABC News & Headlines",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ0tydUdMcXdXcHZQMHZONDdSWENNeGNZVi1Lc1p3QjN5MUp2Ry1YQ29rQWl0VC16Y2NUWDVOelRhcmhVb2tyNmdYTUV1WFFHcFNDUWlodFkyTm5wTzQyX2R1TlRHazI3RmV0VUFHZ0VBTW80cFZlSWMwZmhIN3E1R0FQamJod1RuZUdKYkJGRmIzQ0NLRzRyRHBOYkk?oc=5",
-   "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Commission finds no fraud in Israeli election as results certified    ABC News & Headlines – Australian Broadcasting Corporation "
+   "description_excerpt": " From education to housing protests, Palestine’s flag spreads across Europe    Al Jazeera "
   },
   {
    "title": "PM Orpo's government survives confidence vote by 95-77",
@@ -185,20 +152,12 @@
    "description_excerpt": " PM Orpo's government survives confidence vote by 95-77    Yle "
   },
   {
-   "title": "Likely shape of new Latvian government emerges / Article",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVjVPRjc5TFRhS05RdW5RYXZ4MWZkYzRZVTNKOWQ1THZLU0hvT19YcEh4WHAxaVljdmI4am9iczhHZzl6MzhDenducXpmbVoxakwwZTEzU2xvM0I5NzUzQlFCTFJRYjY0WDFZVW5GRVhYcU5maEMxZHRwYkl6YVJjTlpvZDBSMko0dUFGeEw0R3ZhUUVLYVEydzdLX3p3YTg3NVo3ZzU2TldHUGZBdFlDRg?oc=5",
-   "publisher": "LSM",
+   "title": "Foreign AI election interference claims under Online Safety Act probe, ministry tells Parliament",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVVZHSlZQeG9uU2h4S011QXZZTzA4TWxTbl9WSkR2WDVPSmd4LTFZTlV4ejB0MGtBMEJKbnZIekZSTGxMY1Bvdlc5cjhZcElsYTNMOEFrcHFTeWMySjVGbEd2ZWNtdnhKcE1wV29JSHA1UTB4VDl0cGNkdS1mMlk4cXV6aVM5U2ZCYjUyaEd0WQ?oc=5",
+   "publisher": "Yahoo",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Likely shape of new Latvian government emerges / Article    LSM "
-  },
-  {
-   "title": "Deadlines for forming a new government: The countdown begins",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeG5qWVhTbHoydllfbWhrN3FTcFF1dTZ2Q3NZZTlkWmtLQ2VpYVZZSUpwQ3NSRHNieXF1VExlQnBnZ3JYeWZRbFYteEdiLXZia0VXdGQ2Z3JQS1A3R2k4bTU1NXRWNF85bklfeHhnOEw0azR5aXM1MVNtNTYzS042Nm1wVVItcXNkMTQ4a3FBOGRIaGxGd29WcUtlRXdXWGc?oc=5",
-   "publisher": "NIN.rs",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Deadlines for forming a new government: The countdown begins    NIN.rs "
+   "description_excerpt": " Foreign AI election interference claims under Online Safety Act probe, ministry tells Parliament    Yahoo "
   },
   {
    "title": "Mass. voters pass Question 6 to create a 'Nature for All' fund",
@@ -218,7 +177,7 @@
   },
   {
    "title": "Saadiyat Beach retains Audubon certification",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTUZmeTl2eTB0WWlFdlZwX254TUFJNHFoZE9yRktkY1NvT3FJUnduc041UllscnB1ck84TlF2M2tPY3dIbGxCaHQ4bTVyTlNUMnFGU1RySko4MG12bnIwZDMtN05odXRVNHROcUdhYUpUTXRLTWhsaGVubEZwLUxYZ0NzUHVnZFdjcjlZUzBqWEdScVVDc2ZJV2RaMzVlU0VLWGloYzZBM1JELUhkZWVV?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWTg0b3ZCNklKWmxINmRmUi1USGlKMkh6MjA4RnYwRXBxTmg3YTVYWjVWS1E3UmVuVjJUai10MUgxRjFxN1IxdmJGbTN3cDhicW43OUcwMTVVNlhSLXNkN2pXN0llODZMaVA0cVdzWGVIM1o2R2NvaE02R0RNX0xscWdSaWliU1RpaDNGZ0ZkS1JKZjRyMmE3Ymw2SWdYdmFXbGlWMXU0S09ndXZfVHBWb0ZTRkg?oc=5",
    "publisher": "Golf Business News",
    "feed_occurrences": 5,
    "feed_count": 5,
@@ -241,62 +200,6 @@
    "description_excerpt": " Human-Elephant Conflict Could Explode Across Southern Africa As Scientists Warn of a Growing Crisis    SciTechDaily "
   },
   {
-   "title": "Rare breeding bird report confirms a new species breeding for the UK",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTFZfRkRsOXp0TUl3TC1heXJHeUhGWDBqdG5LZ1R6OG0yZUU3d2c0RVlvVE5VUFM1M3lTOHRWUHhtcnM4dUpoZl9vcFlMSGdtblNiT2N3aHNhU29OY2xvbFhqd25ocUJXNk9wU2gxT0ZEaFVXdW5Mcl9xUi1vTkcwTWtaaUZlUEtzNzlZTDBZaHFISmk4dzA2X05hSG5hUk1ISnBGM0FQV2FQdw?oc=5",
-   "publisher": "Inside Ecology",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Rare breeding bird report confirms a new species breeding for the UK    Inside Ecology "
-  },
-  {
-   "title": "Union Environment Minister interacts with Mid-Career Training Participants of Indian Forest Service; Highlights Conservation Achievements and Emerging Challenges",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5CVlFJM1M0a285VlU3MENmdm5rdjNGdzlsS2gyaXVkaktBZEt5UTgzZDlGTTE2SGFYdC05MHlrbHlfSWQ0N2JGQ1ZnVzI5VnM5ZUhHd3lFVnZFaFRldVBiaHFQWHRLRy1FdFU0Z0ZQM3kxV3hTTUp1Sjl0aE8?oc=5",
-   "publisher": "पीआईबी",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Union Environment Minister interacts with Mid-Career Training Participants of Indian Forest Service; Highlights Conservation Achievements and Emerging Challeng"
-  },
-  {
-   "title": "Bauer Media Outdoor UK and The Wildlife Trusts mark five years of impact in Out of Home",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaGhmcTBPNEE4bC1ZS3prcTdMU3FQLUdlcHZuM3Y3N0xhNnpZc2dhclFBR05wMXNVRk5fd292U2ZYVlFhblVGMnd2ZElJdXZVaFU3TFdqVFNEZ180eU93QjI5VEd2aXY5RkotSlZ6VnNlRC15TUNkTHF3U0NfaGM0MnU1alkza3YwVjh0YnVWTEZ0Sk12YWxwMU1qX0EyR1VNUzlCN2plc2U2aTJ5Nk1zd2ctY2pwbnp2S29hZU5MOTNRQzQ?oc=5",
-   "publisher": "Inside Ecology",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Bauer Media Outdoor UK and The Wildlife Trusts mark five years of impact in Out of Home    Inside Ecology "
-  },
-  {
-   "title": "Study calls for a rethink on how we manage the threats posed by hazardous species",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yRC1odVl1U1BhMUJBaWZOV0tQbUxTT1JKVWsyLVhtRWxWa1p3QVc0TjdPRnphaUZtdUkyWmdFcjdDdERvUGc1RHdTVVpaeXMwQ2JLV3hPSVQ3NGtf?oc=5",
-   "publisher": "EurekAlert!",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Study calls for a rethink on how we manage the threats posed by hazardous species    EurekAlert! "
-  },
-  {
-   "title": "The RSPB’s Bird of the Year is back – which of our feathered friends will get your vote?",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY0JqQ0IzY2Q4cVhnSWNvVW0zTkFENVl1Y2JxVkZHTHZXV04xMGFhSW5SMkxpOHZjTThMXzJBSUFLWmMwemhsNzNxYTNFRHVSZ2c1c2hTZnM0dDhZU3hlMG0wcGxFYWJncW04Z0o3YlZ5Wi1CSXlRMUVWbUd1enhocVMwVTNXTEVNV3BDMVdwZ0o4UDAyTmZSVXJoSXFac2tUZmxZTFZYSGticXNvY0VlSTVsdGd4NWdRZlZuOW15aw?oc=5",
-   "publisher": "Inside Ecology",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " The RSPB’s Bird of the Year is back – which of our feathered friends will get your vote?    Inside Ecology "
-  },
-  {
-   "title": "Across a Fevered Pacific Ocean, Seabirds Are Starving",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbzhpcjRSeTRNTmRGWldjT1VMSFlyNUtOYk1JZFZ3ZkJLZzVLaEJPMmRuZ09NS19iVm1YOGIweDI1R3JtdjUyS1VBck5QcDZNSkF6RXcyTUlKNUVRV1g0YzYxbUxBcUVtb0ZVZVF4YzBHN1o5M1REQVdmVE1wTHJzcmR5TkJfeG1oay1vZG5rT1FRWThaTjEzRExoSThHTEN4MzZvUGI5S2ExRk10d29BZUFmSS01eWR4M2JF?oc=5",
-   "publisher": "National Geographic",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Across a Fevered Pacific Ocean, Seabirds Are Starving    National Geographic "
-  },
-  {
-   "title": "Why the US Midterms Matter for the Cl…",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQ20yQmhMLXY3TmNYWDl6T3d0b3pscmxReVdsNWJZbGpGUk1QVWY2TEoxUVdCSUxvdDNlazZGa3JfTTZIQ3VPbEM5T3lRcDR6Vlk0Y1k0NmxjWm1qNjBSbEIwRmNVQTZQcW85SVVKVTB6azlUbkVUNHVEZE9XNVd6SUcxb1pkajREMDUtdFpJR055bXhyU1ZBcEp3VUNldUZzb0FETnhIcndQZUI0RmtMdE85VkpKVnhxb19FYklvcm5wUQ?oc=5",
-   "publisher": "Earth Island Institute",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Why the US Midterms Matter for the Cl…    Earth Island Institute "
-  },
-  {
    "title": "Gaur spotted at 3,542 metres, tiger at 3,966 metres as study reveals new high-altitude wildlife records in Sikkim",
    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNN2xQMXhJcnRSVWRoUzI1T1RmUmtxbllPR1N1SGZmbjMxU1VxM2FHVkkteXpzNXlfaVdVeHRFZHBEOTVhSXJPWmpxUlVqMFBqZDROWV9XclNONXh6SmhLWHF0UlFhdTNRamdzRThlcWF5VlZHOVYzQWRTdVkxVFBkb215QTliU1Iwd0oxZXAtY0N1czJPY1VJVE01MHItUXNYbV9icDBIRUpidDduQnBKeDdxQ1lNUUhYRWlkRTQ3TnFyOTBWa242UjNnVGFnWEMyalI1UkpZN09kOGs3cGNBOHR6QUZXYmVJSFBMTTBubGN4eUxhVXfSAYMCQVVfeXFMUFp0VFdQM0cyMGtQTjltNTVLYjltRi1ScnFPU2phOVF6WTIwTFp5XzVicVU2NGVLTlV1WkpxdFZpMTAzRGlVVXFRUEFMTHhodFhoSThEUU5xSzNTSFRlT2RVMmx1ZnNjd1VsZjNmc05pbVlkZUtFak9ydGJXWV9tSXVGM2FSUXBqSEo1MDhwTGUyMkZVMG9oVUcxdmYwNkd4Tml6MWdWV3lZWlRjSzJDeWVsNTFoQUhmelliWTFCcndyVEVxWXI0U09wVGlLRVYwQjB0NEJYbVE5blB0ZktmVEZDc3o1TnIxM2xlNHd1MVlBbzNRSzYzQjFXcllPVTYxMmR3bw?oc=5",
    "publisher": "Down To Earth",
@@ -305,20 +208,68 @@
    "description_excerpt": " Gaur spotted at 3,542 metres, tiger at 3,966 metres as study reveals new high-altitude wildlife records in Sikkim    Down To Earth "
   },
   {
-   "title": "Using technology to help people connect with wildlife",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVnBKTGliZ0s4TDJVMDJHVDVRWFJaWHM3ckNienBBYWpzOHlDbWZJRl9Bal83eDRxQkRjcm5XRXNVZHVWQllaTWlXTVlMdHlKWlhkcFVzWjhnRE4wNmNuMUEzZjhUWTFZMVIydE43R25obW9qV2hiTVFkemdwNmRmS0R4eFRBY1NUazQ3MU90ano2b3hXYXV6d2s5b3FhLWtRY01Caw?oc=5",
-   "publisher": "North East Bylines",
+   "title": "Rare breeding bird report confirms a new species breeding for the UK",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTFZfRkRsOXp0TUl3TC1heXJHeUhGWDBqdG5LZ1R6OG0yZUU3d2c0RVlvVE5VUFM1M3lTOHRWUHhtcnM4dUpoZl9vcFlMSGdtblNiT2N3aHNhU29OY2xvbFhqd25ocUJXNk9wU2gxT0ZEaFVXdW5Mcl9xUi1vTkcwTWtaaUZlUEtzNzlZTDBZaHFISmk4dzA2X05hSG5hUk1ISnBGM0FQV2FQdw?oc=5",
+   "publisher": "Inside Ecology",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Using technology to help people connect with wildlife    North East Bylines "
+   "description_excerpt": " Rare breeding bird report confirms a new species breeding for the UK    Inside Ecology "
   },
   {
-   "title": "Coral Traceability Welcomed, but Reef Fishery Must Shift to Aquaculture",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOS2dZbmdVTnlFYU8xUXVNRno2cjA3bElZMFhLcjc5Vmk0Z2JCeURUNnRzbmo0TGQxTGxqTEZVZWN3VWtvc1VGUXFzbE85aVlITEswTHo2eEpqYTh5VXMtNV92ZXk3WWRsdUc1NmMzaE9VY1ZvNGlvelRJclE5aHNGVmZCUXlUVFU?oc=5",
-   "publisher": "Mirage News",
+   "title": "Rutgers Awarded $4.2 Million To Advance Climate Resilience and Ecological Restoration in Woodbridge",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPa0E1b1pqWUVVWFRNb1M1MnV0UEI5RW9JS2lMaWcyVWhvSjBQVHpQdV9WMUltQmo1ZFhQRVZYQVlXcDJ6WnhmVWtJRjZsem11eko4ZVItUWYyZ05fQjFlN0NfYUdsYTRpTEJzbm9MSUhQQ2hKMHlkSkNmZ21yaVFvZklrWUVHV0F6VWhEOU91Q19UQjBYVGtCbGh0c1pnWXlkZTlqNDNuam1qTWR4UXpsSVBXR1g0bUhoWnIzcg?oc=5",
+   "publisher": "Rutgers University",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Coral Traceability Welcomed, but Reef Fishery Must Shift to Aquaculture    Mirage News "
+   "description_excerpt": " Rutgers Awarded $4.2 Million To Advance Climate Resilience and Ecological Restoration in Woodbridge    Rutgers University "
+  },
+  {
+   "title": "Voters Just Decided on 7 Ballot Measures That Will Impact How You Use Public Lands",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaFBsNXdqX2RmaTFBejlPMFBQNVo2TXllNmdfZ2Q0YlI4UGlvMDREdXJ6YUZMeWVjOW51SmkzSHhlNkNidTI4R0Q1UDRfNjZxcE1tb1VESk85a0J4elZqMEpzLWlCbnlJYXBnc3VjWDN4TjhhS1cwOWR0ZXZqTk04cnNkR2l0QTc4SjVQSnUyaWVDMllIU3NoYVFlWkJKbnM4eW9nbQ?oc=5",
+   "publisher": "Outside Magazine",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Voters Just Decided on 7 Ballot Measures That Will Impact How You Use Public Lands    Outside Magazine "
+  },
+  {
+   "title": "NH Conservation Districts Announce Sixth Round of",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSVhaeUY3ZV85YjF1MUZWakx3OXBZVmlvWnNPQVVEaDVld1M3dWtWanNpZDktX3ZrVEtNVWdIMENFQ1oxSFJtbTRMZS1GbW91VWQzcTEyV3IyalNFcVJwb215eE5xRlI3YXFCWnc2eVZzRFViaWpuaFhEMDdvbzFKN2FkMWlDekw2QnJGNk9KVE5MMlAzc25vNndJTzNiYVpiN1hZbUVFLXY2NUNBZ2E2MEloN1hydDdlTXJzQzQ5cVRteWIxd3ZoZWFISzU?oc=5",
+   "publisher": "Morning Ag Clips",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " NH Conservation Districts Announce Sixth Round of    Morning Ag Clips "
+  },
+  {
+   "title": "Coloradans participate in 2026 Roadside Wildlife Count",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUmN6VTFRdl9MeWhFRURzU0Y0SjhzM2hKWm9FYXVwU0pvcVhXa0pLcWVuWXFIQnRPeERtUE5tSzdlb3Z1eU5Qb29wRzdTMVBjUWZ6eURHSEloc0QtWHNRMXU3cUR6dWtFNFZvTEdLTEN1eTFOVnJFQkZqS3pITDY4TXNyRlg5Z1Y4cVVSZUtLRGQ4SGt3clNfdnZJUGlOWVhNTWxraC1Bc1J1YzJMcHdWRQ?oc=5",
+   "publisher": "Environment America",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Coloradans participate in 2026 Roadside Wildlife Count    Environment America "
+  },
+  {
+   "title": "Saadiyat Beach Golf Club retains Audubon International certification",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUFJ2WHdPVWVQZDFiX3RkcXZxWlVpQnRHM1FXU3plZm51LThPbnNodnZLVnVHeXF3NS1HeXF2VUhUSnVlMGpsb2VINHZTekdXLXJOT1FNQVJ1QnYtYkF0N01rSGlWc0pONVNpbF9PZkhLbm9KR3dZQXNMcXpCbHFLeVBSVlNOY2k0Ukw5RVY2cXE?oc=5",
+   "publisher": "Golf Course Industry",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Saadiyat Beach Golf Club retains Audubon International certification    Golf Course Industry "
+  },
+  {
+   "title": "National Trust to 'maintain spirit' of Flatford Wildlife Garden",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84Z01PaDEtcXVTb3RCMW5mOEtINEFvS0M5bFlxOXlYeEtjbi1wMml0Y0p5UGc2YTZCSHVpc1M1MVNYc29jS3ItN2RiNzRPdVVHX05Db1Z5bHVPN0k?oc=5",
+   "publisher": "BBC",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " National Trust to 'maintain spirit' of Flatford Wildlife Garden    BBC "
+  },
+  {
+   "title": "Ponds to be created to improve wildlife habitats",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQS3JsWWs1NDdiaVgzb1JoVUFyZHRBMHhNVzA0bjZsREJhWTRUS2l3cm1UMzJWb3hXdUpLcnVKU0FsYVVZN3B2ZFVyU1ZoeGd4bE04eHkwdFR2NlBlbWhTNFFxMG5ycEdzVTB1QnZJUV9LWFhfS1lJSzdveExWQlpYblRLUEVSZFRSbVFzbHNVWGxGNnZuZEJuMGszZk4yemxtUEpjdjlBdw?oc=5",
+   "publisher": "South Lanarkshire View",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Ponds to be created to improve wildlife habitats    South Lanarkshire View "
   },
   {
    "title": "Call for strict protection of forests and wildlife",
@@ -329,20 +280,20 @@
    "description_excerpt": " Call for strict protection of forests and wildlife    Nagaland Post "
   },
   {
-   "title": "Marsh Re's Saper: Climate and energy – a defining facultative opportunity in Asia Pacific",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVE43dGdabXVidWlGRjlTU0wtOU5JRWd0M2ZCcUNlc1hYdlNDR3ZUZjQwbG5wRGZfTDNDekx0bENZS3hSZWxQcVJ3V0xyYXVleGJqb1JnT25ielp4bGhPbldhQ2VXUXZJaEhqUWFtNG9XcGw5TmNEZTBFWDhXSkxvdmEtRXhRVGF3YndQMEs0eVNyUlRPTDZZZjFVV0h0bEpuMW5jUGhYMFl6eENHck80clppS2w5X3FDaW1Sc2ZsS3h3WWoxbVY2Rg?oc=5",
-   "publisher": "theinsurer.com",
+   "title": "Why Wildlife Conservation Needs More Than Tiger Safaris | Dr Saket Badola, IFS | Indian Masterminds",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWVgwRjd5TDR1N0k3MHhrd1h1bVplQmROZTBLR1RIQnF6WlUwcktVUlY2a1c5MDdxcEU1S0xXem05NDRtbVFBMnhMLWhQLTlnbmVLM0Fya3VYaWswbkNWbnEtOUlOQjJlZmdQaHZfbG9ORnRsNHNaUUVEUTN4Zi1UMWRQTWxTVTdPNFRyY1hZcHBrRFF2ZU5QUEszclg1RS1EbEduNGVvRU1SU2RTUWVkdm00elc0bFB3WUI3bHdKdTlDd3lvMTVWMktXOUFSbHdPcC1hMDdn?oc=5",
+   "publisher": "Indian Masterminds",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Marsh Re's Saper: Climate and energy – a defining facultative opportunity in Asia Pacific    theinsurer.com "
+   "description_excerpt": " Why Wildlife Conservation Needs More Than Tiger Safaris | Dr Saket Badola, IFS | Indian Masterminds    Indian Masterminds "
   },
   {
-   "title": "From education to housing protests, Palestine’s flag spreads across Europe",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYWVfZ1lvc3JJSkJ2aGUxZThUSklqeS01YVM3VWxpTGpCV3BydVp5cmUzeFFVVUFlMURlQXpXSzFEaVRuWDkzZjQyZnBnMllRYmlFS2xoUWZHYUt0ODVlZ1VZdF9vOE1TN2RnT1p4cHVHNHNlOXEtX2tGLTdGbHVwMWpqMDPSAYoBQVVfeXFMTnI4Z0taZlZjejNwbkMwcDBKQWlDS2RVdVlOM05iVE5KcV9pby1IQUkyV3RZZUV0N2lKN2RCczgzenA3NDdUY1pQT1VtUmQwYW9qUTdQeXNMaDlQX2llQ0NYZGdCYk9LU2NlT1E2SUlZQUFVSnNka1lWQzJ3RlFfOGJiZF9rRFVyMlVn?oc=5",
-   "publisher": "Al Jazeera",
+   "title": "“Our Forests Are Our Ecological Infrastructure” | Bhupender Yadav at Eco Warrior Awards 2026",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbUU2M3RjRk1hR3ZPZ3JJdDlTaWE4U1ZKUnh2UkhrWGxYUWNldFBzR0thcFdGWFlKS0RZN29QMnAzUXF4cjZucGhPeWNyT2cwdXVpV2tOdVNLNmNFU1JZT1FqeXRJUXE5WVdCSHlUNGRTTU1IUHBzSV9rMWlKOHNZUWtFS25HNTZBRjF2dGFudEFKQWp5NThfUkNrbEc4U0JRazRLVU9DWnB6NDFrMlNnLXBfWXY4TTV2OHZ5UnFyVTNyMnkyR05od09VMGUzUQ?oc=5",
+   "publisher": "Indian Masterminds",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " From education to housing protests, Palestine’s flag spreads across Europe    Al Jazeera "
+   "description_excerpt": " “Our Forests Are Our Ecological Infrastructure” | Bhupender Yadav at Eco Warrior Awards 2026    Indian Masterminds "
   },
   {
    "title": "French Unrest Spreads Across Europe",
@@ -361,6 +312,14 @@
    "description_excerpt": " Protests Continue, Spread Across Europe    NewsForKids.net "
   },
   {
+   "title": "Why are Europe’s governments struggling to respond to growing protests?",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVGxoYm5sNjYzQUVubGg0T0NPSUhNQjVqazlRaFhpWW9PY09PZU1pREVOMDJpcTJrR0ZKaHB4eW5yX0t5dEFMOGMzTENtMzdtUXhfSHJSMjlzTi1HeUFlRjMzMEZPNjlLb1EtbDJjSHlIS2NzbnZGbUlHX0NJNDhzdlF5LUFtWE5HZFhxc19YTDU0VWU4QUpGYnIycXNNV3hhTnI3RFRvN2ZvR2k0cUM00gG0AUFVX3lxTE9heDFPVGhHazdrMmpVQ0dDN1BSSGhVYjZwUjhBWDNkbXgySmVXR1N3Y2JWa1JGWFlib0NCRm44Ty12Y19QTVBMb2ZmU0tFMnRpTGlKQ3haMXRJaTlYaUhKVXRfLUZvb0E1Nm9mWFVxZ2UxZWRPdURWNkVDYmM3ZGFSeWJ2UXdUVFNZMkdjWGZ0V3BFanMtSU80TnpqR09ZMGRSWWJFN0dYYm9kN3BVTnNpeUZfNw?oc=5",
+   "publisher": "Al Jazeera",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Why are Europe’s governments struggling to respond to growing protests?    Al Jazeera "
+  },
+  {
    "title": "Violent attack breaks out at Greek university as three in hospital with injuries",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOekJadWtKd1ljLUVkcjY5YkZaZG5uWWhabTZXZzQ3bEVCZ2w0anVsNGhZT2dINnM2WnpLTUdqbndGdzktM1ItSWdza3lmUFN5RzF1dHc0czNmUDI0TVBtRDZBcFI0a29PMnZvTG41UXBPLXNCdExtWTlUZW9KejBnMFR4bDJmN0k5c1h6cGMwaS04NVRKSGNDNjB1bTBYN1ZxVlZ4Wg?oc=5",
    "publisher": "The Independent",
@@ -377,41 +336,81 @@
    "description_excerpt": " Congress gave Nebraska millions for rural healthcare. Most isn’t getting to rural hospitals.    Flatwater Free Press "
   },
   {
-   "title": "Ebola disease outbreak 2026: How MSF is responding",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaHh3TFlDZ05hYUNDR2swZzQxbWtjYnNBQ0tDTEcxT3NpRmtSR19zeTRsVFpuUVBJU2VpTXZFMjRIZlZTMzM5d25EZUFoR21EeVhGUXdYRVhIc3luMHVfd0NBOWJfWUZJbTlTMXZVUHdkTlZtTi1OdlV6Zlhhcy1OUWYyRjllUENBZVdXSEZkT3V1TG1mQ3c?oc=5",
-   "publisher": "Doctors Without Borders",
+   "title": "How can counting the dead help the living?",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTWtsUDcyZkpLeGN3RHNBN05hSm00MXRCOUJJcTc4dTFtVXZXZENrWGxWbVVzbE9PbzdiN0F4bTg4QkxGSU12YWVmZVJzZnhXanlNLTBTcGwwaHR1WUdYbmxxRlVwbDJ2aE9BbXotZ1h2VGJ5cEVia2Z1RDBheE1oeThHOTFVZGs?oc=5",
+   "publisher": "Nuffield Department of Population Health",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Ebola disease outbreak 2026: How MSF is responding    Doctors Without Borders "
+   "description_excerpt": " How can counting the dead help the living?    Nuffield Department of Population Health "
   },
   {
-   "title": "RSV-related hospital costs high in kids with underlying medical conditions",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNd3NSQmtkVmZqOWFZblNiLTNrdFVqcEdBdE1YUHRZeEJNcnhxcjJlTWVTM0ZiVFpxUWZfYlVHT0QxZV9ZY09RemVxYjdDek9tVGtJdzB6WGpvb2ZhM3Y2Zzg0aFpmV2NnYlNVcEJCUThYUXdyTzAwTDNqWTE2LXNsbGM5RVhpNVFjellBMjJheXVYWmRWQmtJeW0tcTJXTlFrRzRIb2Z4RzY5N1BCUUViTmtZeHlsZ2pCUTBqdl9tSDc3dHM?oc=5",
-   "publisher": "CIDRAP",
+   "title": "While battling Ebola and facing U.S. restrictions, Congo is hit by another deadly bacterial disease",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMUc4RXA0OFBsWjlBOS10SnN2MTM0VTR2LUFTRW54YUtEM2hLQ3FheTlTcVp3ODN5eV9va1FMLXNnY3pNT2dBZHpyeXhGZTJvTXYxbks2LS1wZmRFQTc0SHVRZk9YSE5SdnA2VVpGdmNGdzdfdFJpcFhqZ1g2RG0xQUduV196eXJxWHVJbUo2XzJzUEhNOUR5UFd3bWFTeTlOZnUxZFh2Nlh5TzZtaXNtM1V3alpsZlFibVExN3pJU2ZUMUt4RHpMdW1tM3p3c1pj?oc=5",
+   "publisher": "Business Insider Africa",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " RSV-related hospital costs high in kids with underlying medical conditions    CIDRAP "
+   "description_excerpt": " While battling Ebola and facing U.S. restrictions, Congo is hit by another deadly bacterial disease    Business Insider Africa "
   },
   {
-   "title": "Flu-like Illnesses Surge by 31% Nationwide, DOH Urges Preventive Measures",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNDRfYmJQSXhhb0VVdXlyU3luNmlfRnBiOUZGdU9aNWVyUXQ1TXFQSFRlSnNiYkExWTRGUTkxTF9vR1l4Sk9iMVFSQlNhOE1yN01HTXY2aUotZDNGMHg2OUpzeGd5ZVJESS1vcVlUYUZRWUhMQjdUYXA0dEx2ZGdWMk5MT2stLWhGOTBPZXV3?oc=5",
-   "publisher": "Daily Tribune",
+   "title": "How losing measles elimination status could affect public health and families",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOc05GNXc3dC03Q3dqNUxTWUtOZ3BrcDEyc2dtTHBEZ3c3aU9IazlZWVc5T3hRbDM0d2VXN2hwTXdBME1CelBhd2xCRmtjWFhtVU1WUE1zdjUzU3NKQUJ5cnN6ZkFMaDZDLXI2a1ZqRTJHWlA5UFpVMmUyVl9yYlVjb2FjVFA5RTZZS2JEbWRB?oc=5",
+   "publisher": "Association of Health Care Journalists",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Flu-like Illnesses Surge by 31% Nationwide, DOH Urges Preventive Measures    Daily Tribune "
+   "description_excerpt": " How losing measles elimination status could affect public health and families    Association of Health Care Journalists "
+  },
+  {
+   "title": "Bridging the Gap: Heart Disease, Diabetes, and the Path to Better Health",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQXFEOHhhdjZqYnBYVnVfajNmWnBIWWVRZkRyUE9aUnFpQlZpZ09kaTBhQ252cTBEcUNnbzVja0ZmVzNWTWVzN0M5bVBzMEQ4YU1ydkV2S3IwaDBBMVRLMmdOYWZwYzhFMHRMQl9pTjJnbWE3c1dSM0tXb3FVanVINDBhRGtLdw?oc=5",
+   "publisher": "BUCKSCO.Today",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Bridging the Gap: Heart Disease, Diabetes, and the Path to Better Health    BUCKSCO.Today "
+  },
+  {
+   "title": "How to build a college list that won’t break the bank",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUEtMTzBCbTI1a2JJZ3RwX0o1NUpIUlMwbXlJS1E2VGNQMmdQYm5LQ0lHU24yclJhOFlDMW1GRVZTanl6VWE1d09NRVJTYUI3UXltYWF5WlIwY0YyOGNBaU5YeDUyOFZ0NXdTUnltVXhOUmJqbUI5Vzh2RExjS0ladUtnSFJDTVZyVTg3clVmMFVsTE9rd1RnUXJ4UlRGVWtRTlBF?oc=5",
+   "publisher": "The Washington Post",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " How to build a college list that won’t break the bank    The Washington Post "
+  },
+  {
+   "title": "Utah’s biggest university has fewer students. It points to an LDS Church change allowing women as young as 18 to serve missions.",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOaWlKakpNOWhvVWk5X1VrZTFmWm9HQkZqa2xaR1NweDVZbWRxNDJVTjg4Qjl3T0lnRVpqNEZ4Z3NfejlsU054X0g2RTcxcmNfT0hWNXJkbVNud3V4Nlo4VFNjamZpeGFOUzRhNDBDdVBnVFRTTE5lMjljYlcwVEdUZFZobDloQQ?oc=5",
+   "publisher": "The Salt Lake Tribune",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Utah’s biggest university has fewer students. It points to an LDS Church change allowing women as young as 18 to serve missions.    The Salt Lake Tribune "
+  },
+  {
+   "title": "'I was freaking out,' says Howard University student among 500 unenrolled over tuition payment - ABC News",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNFlUVXNoSl9EY2xZeFpVUzREc0JnbS1wcXNkVjJ2bHViUnl0SlZ4MHBxUHBOdDFXRVBvdHVxazVEUHJBV2tQVUpyRlR1MWZhdjM5N0dFc0RHenFyNVZZUVg4ZmttVzAtZXF4ZzhzbWFGdm5YSU5iUUNMYUg5VnQ5dURlZHBGUkNhX2RfelVJeXhnMnNXZXhxNWp3aTlnY044dmNUNHdmQ3BYR2fSAbABQVVfeXFMTkpiUFRlR2gwekpOLVlfeVdULXkzc2xPcVN3NjZCTnNEZ2o0aWlGZ2VCbWtlSUp3VmxNZ09jTEpiMF81bnlmZW9nRDhYUnVMZnBZWUJaQWVxZFZzdFY5Yl90by03emdseC16dVBPVnBUZU1XYTlubEJsYjFSeTF2SklPSmtBd1BCTzhoVDdZSkctZjBHc0hWQndKTWZ1Yml3SnhEQURnZU95WVh4cHZhdG8?oc=5",
+   "publisher": "ABC News - Breaking News, Latest News and Videos",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " 'I was freaking out,' says Howard University student among 500 unenrolled over tuition payment    ABC News - Breaking News, Latest News and Videos "
+  },
+  {
+   "title": "High school students explore careers in healthcare",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPX3VLNmF1eHdDN3dJS2NTUGY4U21LRVBkYlNzNXVqVnV2VFBlUnJtR0ZuOFc5RnpSUkFEUWFLbEdlbHhIU1doVG1FVTZPUTIzQkdMekYtYkx5eWtMR1hUSmhuNnZBY0hwcVBjVWV6enVGY0hDRmtqblJVRDdvVTRhZjJLc2VoUDI0VFZTSmZwUG1rV3Qyb0dvX0drRXlQYjNxYnRMQw?oc=5",
+   "publisher": "Manistee News Advocate",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " High school students explore careers in healthcare    Manistee News Advocate "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
-  "successful": 48,
-  "mapped_pre_dedupe": 318
+  "successful": 49,
+  "mapped_pre_dedupe": 339
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 99,
+   "mapped_pre_dedupe": 102,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
@@ -421,12 +420,12 @@
     {
      "source": "direct/AllAfrica East Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 27
+     "mapped_pre_dedupe": 28
     },
     {
      "source": "direct/AllAfrica Central Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 12
+     "mapped_pre_dedupe": 14
     },
     {
      "source": "direct/AllAfrica Southern Africa",
@@ -448,7 +447,7 @@
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 8,
+   "mapped_pre_dedupe": 16,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
@@ -463,46 +462,46 @@
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 9
     }
    ]
   },
   "europe": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 5,
+   "mapped_pre_dedupe": 3,
    "feeds": [
     {
      "source": "direct/The Conversation France",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/The Conversation España",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 1
     }
    ]
   },
   "global": {
    "configured": 6,
-   "successful": 5,
-   "mapped_pre_dedupe": 14,
+   "successful": 6,
+   "mapped_pre_dedupe": 13,
    "feeds": [
     {
      "source": "direct/Global Voices English",
-     "status": "failed",
-     "mapped_pre_dedupe": 0
+     "status": "ok",
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/Global Voices Spanish",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/Global Voices Portuguese",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/Global Voices French",
@@ -524,12 +523,12 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 79,
+   "mapped_pre_dedupe": 85,
    "feeds": [
     {
      "source": "direct/BBC World",
      "status": "ok",
-     "mapped_pre_dedupe": 12
+     "mapped_pre_dedupe": 13
     },
     {
      "source": "direct/BBC Science",
@@ -539,17 +538,17 @@
     {
      "source": "direct/BBC Business",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 15
+     "mapped_pre_dedupe": 19
     },
     {
      "source": "direct/The Guardian Environment",
@@ -559,12 +558,12 @@
     {
      "source": "direct/DW World",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 5
     },
     {
      "source": "direct/France24",
      "status": "ok",
-     "mapped_pre_dedupe": 21
+     "mapped_pre_dedupe": 20
     },
     {
      "source": "direct/NPR World",
@@ -586,36 +585,36 @@
   "north-america": {
    "configured": 1,
    "successful": 1,
-   "mapped_pre_dedupe": 0,
+   "mapped_pre_dedupe": 1,
    "feeds": [
     {
      "source": "direct/The Conversation Canada",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     }
    ]
   },
   "oceania": {
    "configured": 1,
    "successful": 1,
-   "mapped_pre_dedupe": 0,
+   "mapped_pre_dedupe": 1,
    "feeds": [
     {
      "source": "direct/The Conversation NZ",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     }
    ]
   },
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 107,
+   "mapped_pre_dedupe": 113,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 12
     },
     {
      "source": "direct/RNZ World",
@@ -625,7 +624,7 @@
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 25
+     "mapped_pre_dedupe": 21
     },
     {
      "source": "direct/CBC World",
@@ -640,12 +639,12 @@
     {
      "source": "direct/France24 FR",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 17
     },
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 22
     },
     {
      "source": "direct/DW Español",
@@ -655,12 +654,12 @@
     {
      "source": "direct/BBC Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 8
     },
     {
      "source": "direct/BBC Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 7
     },
     {
      "source": "direct/BBC Asia",
@@ -670,7 +669,7 @@
     {
      "source": "direct/BBC Latin America",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/BBC Middle East",
@@ -680,29 +679,29 @@
     {
      "source": "direct/BBC Europe",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 7
     },
     {
      "source": "direct/RNZ Pacific",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/Guardian Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/Guardian Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     }
    ]
   },
   "south-america": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 4,
+   "mapped_pre_dedupe": 3,
    "feeds": [
     {
      "source": "direct/The Conversation Brasil",
@@ -712,7 +711,7 @@
     {
      "source": "direct/Mongabay Latam",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     }
    ]
   },
@@ -740,63 +739,31 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 680,
+  "distinct_unmapped_titles": 675,
   "high_repeat_unmapped_examples": [
    {
-    "title": "Deals tracker: Novant Health acquires Northern Regional Hospital",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOFRqZk11amFzZnlZQnpGLWRMLUZDaXF3bUJGcUVMSTRXNVoxQzRzY2FHY3FpWjM2WWV3LVFReTJmQ0R6X2NWa3RwQ1BTcVBnT3pjV0JabVRaQ1QwNTd4MVZXeDNzR1MyRFdwT1ZXRHd0cDNJbUluYnFoUGNxM2s0dXZpNC1vaXN4ZEY4SWdHQjE?oc=5",
-    "publisher": "Modern Healthcare",
-    "feed_occurrences": 13,
-    "feed_count": 9,
-    "description_excerpt": " Deals tracker: Novant Health acquires Northern Regional Hospital    Modern Healthcare "
+    "title": "Google to turn off Search for students at schools that opt out of AI",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaFlRRm9RZ3hUT2xSY3VIOUhkU3hVRVp5clRLMkFCbzhfcXVrZ2M3dmtMQThURnlzbVdwSmMxR1hHZGJxSml2eG1VTVpINVN6WDNCU3diRFhCcWtiQy1WZzRQZUZOWVdwWVRnZXVGcld1bWF4c09FMWVCS3V0VFRJdmpsX1Jfa2kzVGRHMkYyRndTVHM5anFsX0c1cEs3ZWRUUlZ1RW1qQ0J3WklUSXZiZ2w0TTRoa3VKbjlzXzNn?oc=5",
+    "publisher": "EdTech Innovation Hub",
+    "feed_occurrences": 7,
+    "feed_count": 7,
+    "description_excerpt": " Google to turn off Search for students at schools that opt out of AI    EdTech Innovation Hub "
    },
    {
-    "title": "Why are Europe’s governments struggling to respond to growing protests?",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVGxoYm5sNjYzQUVubGg0T0NPSUhNQjVqazlRaFhpWW9PY09PZU1pREVOMDJpcTJrR0ZKaHB4eW5yX0t5dEFMOGMzTENtMzdtUXhfSHJSMjlzTi1HeUFlRjMzMEZPNjlLb1EtbDJjSHlIS2NzbnZGbUlHX0NJNDhzdlF5LUFtWE5HZFhxc19YTDU0VWU4QUpGYnIycXNNV3hhTnI3RFRvN2ZvR2k0cUM00gG0AUFVX3lxTE9heDFPVGhHazdrMmpVQ0dDN1BSSGhVYjZwUjhBWDNkbXgySmVXR1N3Y2JWa1JGWFlib0NCRm44Ty12Y19QTVBMb2ZmU0tFMnRpTGlKQ3haMXRJaTlYaUhKVXRfLUZvb0E1Nm9mWFVxZ2UxZWRPdURWNkVDYmM3ZGFSeWJ2UXdUVFNZMkdjWGZ0V3BFanMtSU80TnpqR09ZMGRSWWJFN0dYYm9kN3BVTnNpeUZfNw?oc=5",
+    "title": "Danish students join European protest wave against education funding cuts",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcGQwc0pOVFpUUjA0Q3N2WDMycTFTemlQSnpaQVBNeWROZWtxMDU2QTZwYmphaUhxR1RPY1dyUkY4MUhqUmhfNERabk1JbG95M1I5YldUNmpKRng2d21YZG15cnIyNUNyR3JYaU1WVEJkVE5VdEZiZjZzOF9lOWpOQ3N4VTB3a2Naa0RIeGdTWjMzeFNrR2tXY1A3aGhpQ3V4M2VuTmZIbWphZXZzVjNmVkxwdTXSAboBQVVfeXFMUGV2QnV0Vm9EY3c4c0pNdU9iT2RWZnBJVnNaaHpqWnVWUVZyRmtkSkhZY3lXM1c2TC01VDlWR0ZIb1l2cy1mNXVPa1hYUGVDNzVjVnNxZFRIMUtWZ082M0RqMlZLUVdfNGJfMU1FREZqdVYycExLNlVXdGlGTWpmXzZfTzJjWHNaaS0ydmpicHJnNy1FMGVPYWJrUnpIV0syQ0RuZEI5YlpVaGJXd01DRTkyM2VaMzh5SExn?oc=5",
     "publisher": "Al Jazeera",
     "feed_occurrences": 6,
     "feed_count": 6,
-    "description_excerpt": " Why are Europe’s governments struggling to respond to growing protests?    Al Jazeera "
+    "description_excerpt": " Danish students join European protest wave against education funding cuts    Al Jazeera "
    },
    {
-    "title": "Columbia University student detained by Homeland Security agents in dorm released - ABC News",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYjFIUEc1bm9lWlItR1NjYldPUFVvRjJ1OTBRNHdMazdYSEhsUDA0bndvWDA4YTJZUXdqTkFsNnZHdDNXNDRxT3BCZWdDd2dRZ3RsUlpFV2NodTBQb3NBaEhaVVJsYzczMHF4M3dUenVoS05YeWV0TENIVEN1bGRyX212Si1KMlByS25yZDFJSF9DTTczQTlqUmNLYUZHbGgyaVdwWXZuRVVVNEdq0gGyAUFVX3lxTE5wZ21SbkpzUGM3RkJJLTdlOWd5NmxtbHhVRm52SGZTTDRNUkoxenQwWFlTRWhRWjZKZGx4eGZ6amw5WU9PZTFZOGk3MHFkeWRkZl9QQXlHWXlvTzVyelZwcDVXeUoxNC1RdXZSREFHT2FRVVZTSl9NajJ6X3lUWmc0V1JVMjZUbWRwc3dsUGdla2ZhblNXc185MWtwbmFTYjZmdFloc2FaQnQ1N3I4WWJ0aVE?oc=5",
-    "publisher": "ABC News - Breaking News, Latest News and Videos",
+    "title": "From education to housing protests, Palestine’s flag spreads across Europe",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYWVfZ1lvc3JJSkJ2aGUxZThUSklqeS01YVM3VWxpTGpCV3BydVp5cmUzeFFVVUFlMURlQXpXSzFEaVRuWDkzZjQyZnBnMllRYmlFS2xoUWZHYUt0ODVlZ1VZdF9vOE1TN2RnT1p4cHVHNHNlOXEtX2tGLTdGbHVwMWpqMDPSAYoBQVVfeXFMTnI4Z0taZlZjejNwbkMwcDBKQWlDS2RVdVlOM05iVE5KcV9pby1IQUkyV3RZZUV0N2lKN2RCczgzenA3NDdUY1pQT1VtUmQwYW9qUTdQeXNMaDlQX2llQ0NYZGdCYk9LU2NlT1E2SUlZQUFVSnNka1lWQzJ3RlFfOGJiZF9rRFVyMlVn?oc=5",
+    "publisher": "Al Jazeera",
     "feed_occurrences": 10,
     "feed_count": 5,
-    "description_excerpt": " Columbia University student detained by Homeland Security agents in dorm released    ABC News - Breaking News, Latest News and Videos "
-   },
-   {
-    "title": "Students blockade dozens of French schools, universities",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNkI4Rk5vamFsaUpoUU1pY2lBOTJDUUlfeHRfU2JuZHRqVTdaZ1kzWnNEb2dLZTNwQUstSkRvTWFQTm9qZ1VhYmNSZmItdVdFcVFQRUloaUdhZVk4M0F0aUYyd1BESEdmanN2bW1OOXE0VzVLZzYydmtNb015QUVVUG5RSDltcjJqajJ5dldHVWtNaWNiVFZ6dlNtaHJ6d0dv?oc=5",
-    "publisher": "New Age BD",
-    "feed_occurrences": 6,
-    "feed_count": 5,
-    "description_excerpt": " Students blockade dozens of French schools, universities    New Age BD "
-   },
-   {
-    "title": "Finnish Parliament expresses confidence in Orpo government: 95 votes to 77 — YLE News",
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOXUtTVdGYWd5bGFaaXljOVdxOEs5SkQ1QXMtd0hTbXFraUtLV3pVTmw1M1JxSmFWVV8xOXBtNllZMXY4RmdOZjYyZnBwaUtqMi0yQ1h4OUVHZDBlLVQ3LVgxX1c5R0xENEFqMW96cGpCOGFHUFROU19aSkNEVVVPV1NuUThRbklVUnN5QmFMdlhadkdIWWY4SE9SV0UtRjJTVDVtSFdB?oc=5",
-    "publisher": "UA.NEWS",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Finnish Parliament expresses confidence in Orpo government: 95 votes to 77 — YLE News    UA.NEWS "
-   },
-   {
-    "title": "Foreign AI election interference claims under Online Safety Act probe, ministry tells Parliament",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVVZHSlZQeG9uU2h4S011QXZZTzA4TWxTbl9WSkR2WDVPSmd4LTFZTlV4ejB0MGtBMEJKbnZIekZSTGxMY1Bvdlc5cjhZcElsYTNMOEFrcHFTeWMySjVGbEd2ZWNtdnhKcE1wV29JSHA1UTB4VDl0cGNkdS1mMlk4cXV6aVM5U2ZCYjUyaEd0WQ?oc=5",
-    "publisher": "Yahoo",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Foreign AI election interference claims under Online Safety Act probe, ministry tells Parliament    Yahoo "
-   },
-   {
-    "title": "Commission finds no fraud in Israeli election as results certified - ABC News & Headlines",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ0tydUdMcXdXcHZQMHZONDdSWENNeGNZVi1Lc1p3QjN5MUp2Ry1YQ29rQWl0VC16Y2NUWDVOelRhcmhVb2tyNmdYTUV1WFFHcFNDUWlodFkyTm5wTzQyX2R1TlRHazI3RmV0VUFHZ0VBTW80cFZlSWMwZmhIN3E1R0FQamJod1RuZUdKYkJGRmIzQ0NLRzRyRHBOYkk?oc=5",
-    "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Commission finds no fraud in Israeli election as results certified    ABC News & Headlines – Australian Broadcasting Corporation "
+    "description_excerpt": " From education to housing protests, Palestine’s flag spreads across Europe    Al Jazeera "
    },
    {
     "title": "PM Orpo's government survives confidence vote by 95-77",
@@ -807,20 +774,12 @@
     "description_excerpt": " PM Orpo's government survives confidence vote by 95-77    Yle "
    },
    {
-    "title": "Likely shape of new Latvian government emerges / Article",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVjVPRjc5TFRhS05RdW5RYXZ4MWZkYzRZVTNKOWQ1THZLU0hvT19YcEh4WHAxaVljdmI4am9iczhHZzl6MzhDenducXpmbVoxakwwZTEzU2xvM0I5NzUzQlFCTFJRYjY0WDFZVW5GRVhYcU5maEMxZHRwYkl6YVJjTlpvZDBSMko0dUFGeEw0R3ZhUUVLYVEydzdLX3p3YTg3NVo3ZzU2TldHUGZBdFlDRg?oc=5",
-    "publisher": "LSM",
+    "title": "Foreign AI election interference claims under Online Safety Act probe, ministry tells Parliament",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVVZHSlZQeG9uU2h4S011QXZZTzA4TWxTbl9WSkR2WDVPSmd4LTFZTlV4ejB0MGtBMEJKbnZIekZSTGxMY1Bvdlc5cjhZcElsYTNMOEFrcHFTeWMySjVGbEd2ZWNtdnhKcE1wV29JSHA1UTB4VDl0cGNkdS1mMlk4cXV6aVM5U2ZCYjUyaEd0WQ?oc=5",
+    "publisher": "Yahoo",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Likely shape of new Latvian government emerges / Article    LSM "
-   },
-   {
-    "title": "Deadlines for forming a new government: The countdown begins",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeG5qWVhTbHoydllfbWhrN3FTcFF1dTZ2Q3NZZTlkWmtLQ2VpYVZZSUpwQ3NSRHNieXF1VExlQnBnZ3JYeWZRbFYteEdiLXZia0VXdGQ2Z3JQS1A3R2k4bTU1NXRWNF85bklfeHhnOEw0azR5aXM1MVNtNTYzS042Nm1wVVItcXNkMTQ4a3FBOGRIaGxGd29WcUtlRXdXWGc?oc=5",
-    "publisher": "NIN.rs",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Deadlines for forming a new government: The countdown begins    NIN.rs "
+    "description_excerpt": " Foreign AI election interference claims under Online Safety Act probe, ministry tells Parliament    Yahoo "
    },
    {
     "title": "Mass. voters pass Question 6 to create a 'Nature for All' fund",
@@ -840,7 +799,7 @@
    },
    {
     "title": "Saadiyat Beach retains Audubon certification",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTUZmeTl2eTB0WWlFdlZwX254TUFJNHFoZE9yRktkY1NvT3FJUnduc041UllscnB1ck84TlF2M2tPY3dIbGxCaHQ4bTVyTlNUMnFGU1RySko4MG12bnIwZDMtN05odXRVNHROcUdhYUpUTXRLTWhsaGVubEZwLUxYZ0NzUHVnZFdjcjlZUzBqWEdScVVDc2ZJV2RaMzVlU0VLWGloYzZBM1JELUhkZWVV?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWTg0b3ZCNklKWmxINmRmUi1USGlKMkh6MjA4RnYwRXBxTmg3YTVYWjVWS1E3UmVuVjJUai10MUgxRjFxN1IxdmJGbTN3cDhicW43OUcwMTVVNlhSLXNkN2pXN0llODZMaVA0cVdzWGVIM1o2R2NvaE02R0RNX0xscWdSaWliU1RpaDNGZ0ZkS1JKZjRyMmE3Ymw2SWdYdmFXbGlWMXU0S09ndXZfVHBWb0ZTRkg?oc=5",
     "publisher": "Golf Business News",
     "feed_occurrences": 5,
     "feed_count": 5,
@@ -863,6 +822,14 @@
     "description_excerpt": " Human-Elephant Conflict Could Explode Across Southern Africa As Scientists Warn of a Growing Crisis    SciTechDaily "
    },
    {
+    "title": "Gaur spotted at 3,542 metres, tiger at 3,966 metres as study reveals new high-altitude wildlife records in Sikkim",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNN2xQMXhJcnRSVWRoUzI1T1RmUmtxbllPR1N1SGZmbjMxU1VxM2FHVkkteXpzNXlfaVdVeHRFZHBEOTVhSXJPWmpxUlVqMFBqZDROWV9XclNONXh6SmhLWHF0UlFhdTNRamdzRThlcWF5VlZHOVYzQWRTdVkxVFBkb215QTliU1Iwd0oxZXAtY0N1czJPY1VJVE01MHItUXNYbV9icDBIRUpidDduQnBKeDdxQ1lNUUhYRWlkRTQ3TnFyOTBWa242UjNnVGFnWEMyalI1UkpZN09kOGs3cGNBOHR6QUZXYmVJSFBMTTBubGN4eUxhVXfSAYMCQVVfeXFMUFp0VFdQM0cyMGtQTjltNTVLYjltRi1ScnFPU2phOVF6WTIwTFp5XzVicVU2NGVLTlV1WkpxdFZpMTAzRGlVVXFRUEFMTHhodFhoSThEUU5xSzNTSFRlT2RVMmx1ZnNjd1VsZjNmc05pbVlkZUtFak9ydGJXWV9tSXVGM2FSUXBqSEo1MDhwTGUyMkZVMG9oVUcxdmYwNkd4Tml6MWdWV3lZWlRjSzJDeWVsNTFoQUhmelliWTFCcndyVEVxWXI0U09wVGlLRVYwQjB0NEJYbVE5blB0ZktmVEZDc3o1TnIxM2xlNHd1MVlBbzNRSzYzQjFXcllPVTYxMmR3bw?oc=5",
+    "publisher": "Down To Earth",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Gaur spotted at 3,542 metres, tiger at 3,966 metres as study reveals new high-altitude wildlife records in Sikkim    Down To Earth "
+   },
+   {
     "title": "Rare breeding bird report confirms a new species breeding for the UK",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTFZfRkRsOXp0TUl3TC1heXJHeUhGWDBqdG5LZ1R6OG0yZUU3d2c0RVlvVE5VUFM1M3lTOHRWUHhtcnM4dUpoZl9vcFlMSGdtblNiT2N3aHNhU29OY2xvbFhqd25ocUJXNk9wU2gxT0ZEaFVXdW5Mcl9xUi1vTkcwTWtaaUZlUEtzNzlZTDBZaHFISmk4dzA2X05hSG5hUk1ISnBGM0FQV2FQdw?oc=5",
     "publisher": "Inside Ecology",
@@ -871,179 +838,211 @@
     "description_excerpt": " Rare breeding bird report confirms a new species breeding for the UK    Inside Ecology "
    },
    {
-    "title": "Union Environment Minister interacts with Mid-Career Training Participants of Indian Forest Service; Highlights Conservation Achievements and Emerging Challenges",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5CVlFJM1M0a285VlU3MENmdm5rdjNGdzlsS2gyaXVkaktBZEt5UTgzZDlGTTE2SGFYdC05MHlrbHlfSWQ0N2JGQ1ZnVzI5VnM5ZUhHd3lFVnZFaFRldVBiaHFQWHRLRy1FdFU0Z0ZQM3kxV3hTTUp1Sjl0aE8?oc=5",
-    "publisher": "पीआईबी",
+    "title": "Rutgers Awarded $4.2 Million To Advance Climate Resilience and Ecological Restoration in Woodbridge",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPa0E1b1pqWUVVWFRNb1M1MnV0UEI5RW9JS2lMaWcyVWhvSjBQVHpQdV9WMUltQmo1ZFhQRVZYQVlXcDJ6WnhmVWtJRjZsem11eko4ZVItUWYyZ05fQjFlN0NfYUdsYTRpTEJzbm9MSUhQQ2hKMHlkSkNmZ21yaVFvZklrWUVHV0F6VWhEOU91Q19UQjBYVGtCbGh0c1pnWXlkZTlqNDNuam1qTWR4UXpsSVBXR1g0bUhoWnIzcg?oc=5",
+    "publisher": "Rutgers University",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Union Environment Minister interacts with Mid-Career Training Participants of Indian Forest Service; Highlights Conservation Achievements and Emerging Challeng"
+    "description_excerpt": " Rutgers Awarded $4.2 Million To Advance Climate Resilience and Ecological Restoration in Woodbridge    Rutgers University "
    },
    {
-    "title": "Bauer Media Outdoor UK and The Wildlife Trusts mark five years of impact in Out of Home",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaGhmcTBPNEE4bC1ZS3prcTdMU3FQLUdlcHZuM3Y3N0xhNnpZc2dhclFBR05wMXNVRk5fd292U2ZYVlFhblVGMnd2ZElJdXZVaFU3TFdqVFNEZ180eU93QjI5VEd2aXY5RkotSlZ6VnNlRC15TUNkTHF3U0NfaGM0MnU1alkza3YwVjh0YnVWTEZ0Sk12YWxwMU1qX0EyR1VNUzlCN2plc2U2aTJ5Nk1zd2ctY2pwbnp2S29hZU5MOTNRQzQ?oc=5",
-    "publisher": "Inside Ecology",
+    "title": "Voters Just Decided on 7 Ballot Measures That Will Impact How You Use Public Lands",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaFBsNXdqX2RmaTFBejlPMFBQNVo2TXllNmdfZ2Q0YlI4UGlvMDREdXJ6YUZMeWVjOW51SmkzSHhlNkNidTI4R0Q1UDRfNjZxcE1tb1VESk85a0J4elZqMEpzLWlCbnlJYXBnc3VjWDN4TjhhS1cwOWR0ZXZqTk04cnNkR2l0QTc4SjVQSnUyaWVDMllIU3NoYVFlWkJKbnM4eW9nbQ?oc=5",
+    "publisher": "Outside Magazine",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Bauer Media Outdoor UK and The Wildlife Trusts mark five years of impact in Out of Home    Inside Ecology "
+    "description_excerpt": " Voters Just Decided on 7 Ballot Measures That Will Impact How You Use Public Lands    Outside Magazine "
    },
    {
-    "title": "Study calls for a rethink on how we manage the threats posed by hazardous species",
-    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yRC1odVl1U1BhMUJBaWZOV0tQbUxTT1JKVWsyLVhtRWxWa1p3QVc0TjdPRnphaUZtdUkyWmdFcjdDdERvUGc1RHdTVVpaeXMwQ2JLV3hPSVQ3NGtf?oc=5",
-    "publisher": "EurekAlert!",
+    "title": "NH Conservation Districts Announce Sixth Round of",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSVhaeUY3ZV85YjF1MUZWakx3OXBZVmlvWnNPQVVEaDVld1M3dWtWanNpZDktX3ZrVEtNVWdIMENFQ1oxSFJtbTRMZS1GbW91VWQzcTEyV3IyalNFcVJwb215eE5xRlI3YXFCWnc2eVZzRFViaWpuaFhEMDdvbzFKN2FkMWlDekw2QnJGNk9KVE5MMlAzc25vNndJTzNiYVpiN1hZbUVFLXY2NUNBZ2E2MEloN1hydDdlTXJzQzQ5cVRteWIxd3ZoZWFISzU?oc=5",
+    "publisher": "Morning Ag Clips",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Study calls for a rethink on how we manage the threats posed by hazardous species    EurekAlert! "
+    "description_excerpt": " NH Conservation Districts Announce Sixth Round of    Morning Ag Clips "
    },
    {
-    "title": "The RSPB’s Bird of the Year is back – which of our feathered friends will get your vote?",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY0JqQ0IzY2Q4cVhnSWNvVW0zTkFENVl1Y2JxVkZHTHZXV04xMGFhSW5SMkxpOHZjTThMXzJBSUFLWmMwemhsNzNxYTNFRHVSZ2c1c2hTZnM0dDhZU3hlMG0wcGxFYWJncW04Z0o3YlZ5Wi1CSXlRMUVWbUd1enhocVMwVTNXTEVNV3BDMVdwZ0o4UDAyTmZSVXJoSXFac2tUZmxZTFZYSGticXNvY0VlSTVsdGd4NWdRZlZuOW15aw?oc=5",
-    "publisher": "Inside Ecology",
+    "title": "Coloradans participate in 2026 Roadside Wildlife Count",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUmN6VTFRdl9MeWhFRURzU0Y0SjhzM2hKWm9FYXVwU0pvcVhXa0pLcWVuWXFIQnRPeERtUE5tSzdlb3Z1eU5Qb29wRzdTMVBjUWZ6eURHSEloc0QtWHNRMXU3cUR6dWtFNFZvTEdLTEN1eTFOVnJFQkZqS3pITDY4TXNyRlg5Z1Y4cVVSZUtLRGQ4SGt3clNfdnZJUGlOWVhNTWxraC1Bc1J1YzJMcHdWRQ?oc=5",
+    "publisher": "Environment America",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " The RSPB’s Bird of the Year is back – which of our feathered friends will get your vote?    Inside Ecology "
+    "description_excerpt": " Coloradans participate in 2026 Roadside Wildlife Count    Environment America "
+   },
+   {
+    "title": "Saadiyat Beach Golf Club retains Audubon International certification",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUFJ2WHdPVWVQZDFiX3RkcXZxWlVpQnRHM1FXU3plZm51LThPbnNodnZLVnVHeXF3NS1HeXF2VUhUSnVlMGpsb2VINHZTekdXLXJOT1FNQVJ1QnYtYkF0N01rSGlWc0pONVNpbF9PZkhLbm9KR3dZQXNMcXpCbHFLeVBSVlNOY2k0Ukw5RVY2cXE?oc=5",
+    "publisher": "Golf Course Industry",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Saadiyat Beach Golf Club retains Audubon International certification    Golf Course Industry "
+   },
+   {
+    "title": "National Trust to 'maintain spirit' of Flatford Wildlife Garden",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84Z01PaDEtcXVTb3RCMW5mOEtINEFvS0M5bFlxOXlYeEtjbi1wMml0Y0p5UGc2YTZCSHVpc1M1MVNYc29jS3ItN2RiNzRPdVVHX05Db1Z5bHVPN0k?oc=5",
+    "publisher": "BBC",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " National Trust to 'maintain spirit' of Flatford Wildlife Garden    BBC "
+   },
+   {
+    "title": "Ponds to be created to improve wildlife habitats",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQS3JsWWs1NDdiaVgzb1JoVUFyZHRBMHhNVzA0bjZsREJhWTRUS2l3cm1UMzJWb3hXdUpLcnVKU0FsYVVZN3B2ZFVyU1ZoeGd4bE04eHkwdFR2NlBlbWhTNFFxMG5ycEdzVTB1QnZJUV9LWFhfS1lJSzdveExWQlpYblRLUEVSZFRSbVFzbHNVWGxGNnZuZEJuMGszZk4yemxtUEpjdjlBdw?oc=5",
+    "publisher": "South Lanarkshire View",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Ponds to be created to improve wildlife habitats    South Lanarkshire View "
+   },
+   {
+    "title": "Call for strict protection of forests and wildlife",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNTNUczJEWTBtVy02Tks2WmNVM3dNNzlFN2VKYVExTzNFSHFPeDk2aDQxRl9qNm9EM2VrUk9RTkI3Q19uUnlLZ3lIcUh3LWZuQmFWSFItLVNiOERHYnRjLTIwaEl4RDBpd2VnNVFoMmk0b2hWMUhrNG5rTGhhV2c3cFpn?oc=5",
+    "publisher": "Nagaland Post",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Call for strict protection of forests and wildlife    Nagaland Post "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Iran",
-   "largest_label_articles": 30,
-   "share_of_country_labelled_articles": 0.08
+   "largest_label_articles": 33,
+   "share_of_country_labelled_articles": 0.084
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 292,
-  "unique_google_urls_not_in_direct_sample": 381,
+  "unique_direct_urls_not_in_google_sample": 311,
+  "unique_google_urls_not_in_direct_sample": 391,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "AllAfrica West Africa": 29,
    "AllAfrica Southern Africa": 29,
-   "AllAfrica East Africa": 27,
-   "RNZ National": 25,
-   "France24": 21,
-   "France24 ES": 19,
-   "Al Jazeera": 16,
-   "France24 FR": 16,
-   "The Guardian World": 15,
-   "BBC World": 12,
-   "AllAfrica Central Africa": 12,
-   "BBC Brasil": 9,
-   "BBC Europe": 9,
+   "AllAfrica West Africa": 29,
+   "AllAfrica East Africa": 28,
+   "RNZ National": 21,
+   "France24 ES": 20,
+   "France24": 20,
+   "The Guardian World": 19,
+   "Al Jazeera": 18,
+   "France24 FR": 17,
+   "AllAfrica Central Africa": 14,
+   "BBC World": 13,
+   "ABC Australia": 12,
+   "The Diplomat": 9,
+   "BBC Brasil": 8,
+   "BBC Africa": 7,
+   "BBC Europe": 7,
    "Mongabay Global": 7,
-   "ABC Australia": 7,
+   "RNZ Pacific": 6,
    "Mongabay Indonesia": 5,
-   "RNZ Pacific": 5,
-   "DW World": 4,
-   "Mongabay Latam": 4,
-   "The Conversation España": 4,
-   "BBC Africa": 3,
-   "NPR World": 3,
+   "DW World": 5,
+   "Guardian Asia": 4,
+   "Guardian Africa": 4,
    "Inter Press Service Headlines": 3,
+   "Mongabay Latam": 3,
+   "NPR World": 3,
    "The Guardian Environment": 3,
-   "Guardian Africa": 3,
-   "Global Voices Spanish": 3,
-   "Guardian Asia": 3,
-   "BBC Business": 2,
-   "BBC Middle East": 2,
-   "BBC Latin America": 2
+   "The Conversation Indonesia": 2,
+   "BBC Science": 2,
+   "BBC Asia": 2,
+   "The Conversation France": 2
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 374,
-  "country_labels_count": 80,
+  "country_labelled_articles": 394,
+  "country_labels_count": 79,
   "top_country_subjects": {
-   "Iran": 30,
-   "Nigeria": 30,
-   "South Africa": 24,
-   "France": 20,
-   "Israel": 18,
-   "United States": 15,
+   "Iran": 33,
+   "Nigeria": 26,
+   "Israel": 21,
+   "South Africa": 20,
+   "France": 17,
+   "United States": 16,
+   "Canada": 15,
+   "Mexico": 13,
    "Vietnam": 13,
-   "Kenya": 11,
-   "Rwanda": 10,
-   "Mexico": 10,
+   "Rwanda": 12,
+   "Kenya": 12,
+   "China": 10,
+   "Malawi": 9,
    "India": 9,
-   "China": 8,
-   "Ethiopia": 7,
-   "Australia": 7,
-   "Canada": 7,
-   "Colombia": 7,
-   "Brazil": 7,
-   "Ukraine": 6,
-   "Malawi": 6,
+   "Ukraine": 8,
+   "New Zealand": 8,
+   "Ghana": 6,
+   "Portugal": 6,
+   "Colombia": 6,
+   "Australia": 6,
    "Spain": 6,
-   "Venezuela": 6,
-   "Malaysia": 6,
-   "Ghana": 5,
-   "Mozambique": 5,
-   "New Zealand": 5,
-   "Portugal": 4,
-   "Thailand": 4,
+   "Venezuela": 5,
+   "Ethiopia": 5,
+   "Brazil": 5,
+   "Uganda": 5,
+   "Malaysia": 5,
    "Russia": 4,
-   "Uganda": 4,
-   "Indonesia": 4
+   "Mozambique": 4,
+   "Bangladesh": 4,
+   "Chile": 4
   },
-  "distinct_geographic_signal_centers": 253,
+  "distinct_geographic_signal_centers": 256,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 82
+   "mapped_pre_dedupe": 86
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 56
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 87
+   "mapped_pre_dedupe": 96
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 63
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 81
+   "mapped_pre_dedupe": 96
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 64
+   "mapped_pre_dedupe": 59
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 100
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 65
+   "mapped_pre_dedupe": 62
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 60
+   "mapped_pre_dedupe": 54
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 115
+   "mapped_pre_dedupe": 122
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 82
+   "mapped_pre_dedupe": 94
   }
  },
- "duplicates_removed": 493,
+ "duplicates_removed": 535,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1061,34 +1060,33 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-04T16:21:09+00:00",
-    "mapped_articles": 664,
-    "geographic_signals": 381,
-    "feeds_ok": 169,
+    "at": "2026-11-04T22:14:39+00:00",
+    "mapped_articles": 692,
+    "geographic_signals": 396,
+    "feeds_ok": 170,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 10,
+    "rejected_matching_occurrences": 2,
     "ambiguous_mapped_signal_count": 0
    }
   ],
   "latest": {
-   "at": "2026-11-04T16:21:09+00:00",
-   "mapped_articles": 664,
-   "geographic_signals": 381,
-   "feeds_ok": 169,
+   "at": "2026-11-04T22:14:39+00:00",
+   "mapped_articles": 692,
+   "geographic_signals": 396,
+   "feeds_ok": 170,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 10,
+   "rejected_matching_occurrences": 2,
    "ambiguous_mapped_signal_count": 0
   },
   "recent_change": {
-   "baseline_at": "2026-11-04T16:21:09+00:00",
+   "baseline_at": "2026-11-04T22:14:39+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Union": 6,
-   "David": 3,
-   "Split": 1
+   "Split": 1,
+   "Union": 1
   },
   "ambiguous_mapped_review": [],
   "limitations": [
