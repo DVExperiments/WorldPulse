@@ -1,13 +1,13 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-11-05T09:52:05.411544+00:00",
+ "updated_at": "2026-11-05T18:03:09.135290+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 116,
-   "successful_empty": 5,
+   "successful_nonempty": 111,
+   "successful_empty": 10,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
@@ -16,15 +16,20 @@
     "google/politics/AU",
     "google/politics/NG",
     "google/politics/CA",
+    "google/environment/GB",
+    "google/environment/AU",
+    "google/environment/NG",
+    "google/environment/CA",
+    "google/hazards/ZA",
     "google/hazards/BR"
    ],
    "failure_samples": []
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 49,
+   "successful_nonempty": 48,
    "successful_empty": 0,
-   "transport_failure": 3,
+   "transport_failure": 4,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
@@ -35,6 +40,10 @@
     },
     {
      "source": "direct/ReliefWeb Updates",
+     "error": ""
+    },
+    {
+     "source": "direct/UN News",
      "error": ""
     },
     {
@@ -98,7 +107,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "33053543786287b5fad742d034af67f6cf4d12ef876b4c0b64f76180be12cf2a",
+  "frozen_snapshot_fingerprint": "9cb1d2d7a85cc5639236e6612993abd8de38dbffc15d24d15575d530e02357ff",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
