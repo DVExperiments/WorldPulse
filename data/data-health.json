@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-07T10:25:44.869789+00:00",
+ "updated_at": "2026-11-07T16:38:22.592004+00:00",
  "feeds_total": 173,
  "feeds_ok": 170,
  "feeds_failed": [
@@ -12,121 +12,113 @@
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 73
+   "mapped_pre_dedupe": 56
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 52
+   "mapped_pre_dedupe": 45
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 90
+   "mapped_pre_dedupe": 67
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 45
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 73
+   "mapped_pre_dedupe": 54
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 58
+   "mapped_pre_dedupe": 48
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 77
+   "mapped_pre_dedupe": 62
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 44
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 57
+   "mapped_pre_dedupe": 66
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 127
+   "mapped_pre_dedupe": 143
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 72
+   "mapped_pre_dedupe": 58
   }
  },
  "mapped_articles_by_category": {
-  "community": 227,
-  "conflict": 57,
-  "society": 45,
-  "education": 46,
-  "politics": 47,
-  "economy": 62,
-  "health": 52,
-  "environment": 28,
-  "science": 18,
-  "rights": 10,
-  "hazards": 7
+  "education": 53,
+  "community": 178,
+  "conflict": 44,
+  "politics": 40,
+  "health": 58,
+  "society": 37,
+  "economy": 57,
+  "environment": 22,
+  "rights": 17,
+  "science": 21,
+  "hazards": 11
  },
  "mapped_articles_by_location_precision": {
-  "country": 344,
-  "place": 250,
+  "country": 281,
+  "place": 252,
   "region": 5
  },
  "location_evidence_counts": {
-  "headline": 505,
-  "description": 94
+  "description": 91,
+  "headline": 447
  },
  "geographic_quadrants": {
-  "NE": 250,
-  "NW": 186,
-  "SE": 63,
-  "SW": 100
+  "NE": 239,
+  "SE": 44,
+  "SW": 101,
+  "NW": 154
  },
- "geo_signal_count": 355,
- "mapped_total": 599,
+ "geo_signal_count": 338,
+ "mapped_total": 538,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1080,
- "unmapped_distinct_titles": 556,
+ "unmapped_sample_count": 1011,
+ "unmapped_distinct_titles": 488,
  "unmapped_by_feed": {
-  "Google News MX": 126,
-  "Google News BR": 119,
-  "Google News US": 108,
+  "Google News BR": 109,
+  "Google News MX": 106,
+  "Google News IN": 105,
+  "Google News US": 103,
   "Google News ZA": 101,
-  "Google News IN": 98,
-  "Google News KE": 98,
-  "Google News PH": 95,
-  "Google News CA": 54,
-  "Google News NG": 53,
+  "Google News PH": 97,
+  "Google News KE": 91,
   "Google News AU": 51,
-  "Google News GB": 45,
-  "RNZ National": 16,
-  "ABC Australia": 14,
-  "BBC World": 12,
-  "BBC Science": 10,
-  "BBC Business": 10,
-  "The Guardian World": 7,
-  "Al Jazeera": 6
+  "Google News NG": 49,
+  "Google News CA": 48,
+  "Google News GB": 46,
+  "RNZ National": 17,
+  "ABC Australia": 13,
+  "France24 FR": 10,
+  "BBC Science": 7,
+  "BBC Business": 6,
+  "BBC World": 5,
+  "Al Jazeera": 5
  },
  "unmapped_examples": [
-  {
-   "title": "Health and care sector latest developments",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWk4zWmpSM2JfSUxoeXRpRGlGLTc1czM5T3NwWHY0U3RCTDBMYlpqMDlwYk9nWjM5dy1wQlY1TXJQcVBWSnB3UzR2cXVvT1BjbXJLUEszVkpxMHZpd3hqTUJiRUxRY2QzSmVxMVR1S0lGeURKZzFpZW9YbklWaVJlRElfXy1WMkk?oc=5",
-   "publisher": "The NHS Alliance",
-   "feed_occurrences": 7,
-   "feed_count": 7,
-   "description_excerpt": " Health and care sector latest developments    The NHS Alliance "
-  },
   {
    "title": "How climate change worsens heatwaves, droughts, wildfires and floods",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBha2hSMWluWVdKUHpEZUNyTVFmVC1idnd2cFY5eDNxckF6OFE2NGxzb2lSVnNMYlA5aklTVk5CdldkSXpzV3ptX1YxVEdEdG5vaXU2b2FkUHR3QQ?oc=5",
@@ -134,6 +126,54 @@
    "feed_occurrences": 7,
    "feed_count": 6,
    "description_excerpt": " How climate change worsens heatwaves, droughts, wildfires and floods    BBC "
+  },
+  {
+   "title": "A knife-edge result, 3 possible outcomes: what comes next after NZ’s election?",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVEpCeHk2cDBrLXM3b2k2R2NiWEEtdzVRdUFIX0pteGpHRm1WclRFYWJLTVJYRTFSVk5xYW8yN0NTS1ppR1dKYTNrRktUWHptbGpVek4wLWY2VjRESUMtRk9xNUpwVWhRY3BmWUpzOVpENG40QUpCMFlrQTR1R3Jkck9LY1B1dnNEUzUxOWw4ZzViTEdoX3hHQWZUUTlUamlyUGpIbVlDTjJqQlZIaFE?oc=5",
+   "publisher": "The Conversation",
+   "feed_occurrences": 6,
+   "feed_count": 6,
+   "description_excerpt": " A knife-edge result, 3 possible outcomes: what comes next after NZ’s election?    The Conversation "
+  },
+  {
+   "title": "NZ’s next government hangs in the balance: 2026 election results at a glance",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdm94RXJBdURzYWRkN2c4NFY4VEVnRENid0tkSUJnRE5hYTFBdE9ycDlfSWt2UlZmLUpqdkwyZ1Bab0gwXzhVUVdEVloxSEp6TTF5ZWdPYng4ZU5mRUV1ZmVzekZranNQNmFRTmxuYkZmYlhWNVlHWUdNYU5feVZPUGdZVVlPcG5KV3hYRWd4b0hGOE5CWVFtM3ZmTGpTRnBSdXpkQUJWanA2U2xqd0E?oc=5",
+   "publisher": "The Conversation",
+   "feed_occurrences": 6,
+   "feed_count": 6,
+   "description_excerpt": " NZ’s next government hangs in the balance: 2026 election results at a glance    The Conversation "
+  },
+  {
+   "title": "Health and care sector latest developments",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWk4zWmpSM2JfSUxoeXRpRGlGLTc1czM5T3NwWHY0U3RCTDBMYlpqMDlwYk9nWjM5dy1wQlY1TXJQcVBWSnB3UzR2cXVvT1BjbXJLUEszVkpxMHZpd3hqTUJiRUxRY2QzSmVxMVR1S0lGeURKZzFpZW9YbklWaVJlRElfXy1WMkk?oc=5",
+   "publisher": "The NHS Alliance",
+   "feed_occurrences": 6,
+   "feed_count": 6,
+   "description_excerpt": " Health and care sector latest developments    The NHS Alliance "
+  },
+  {
+   "title": "Inflation, housing, jobs and corporate earnings will dominate the business calendar this week",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPb0hsN092M083bUhrLUJKQW9WdTNtWktqeFpFU1Z3TnJEQktIeXNrMjc0WHJkdzF1TjlmTzBEVzVtX1hGejFWb1BwX2J3TzF1QWtrMXp3cDF3djBlYUl3VkhJVUk0UWxxTWMxdFpoTUlId0Y2bEpISnVXbHZfWjVnVTJTZlRScVJZYnhtZ25xX0k2TURCc1g3VHJIWVB4YlFERmtncTFQRlB4bTBxajV3MGZtc1gxbTJHR05nZERJLURLZw?oc=5",
+   "publisher": "The Washington Post",
+   "feed_occurrences": 10,
+   "feed_count": 5,
+   "description_excerpt": " Inflation, housing, jobs and corporate earnings will dominate the business calendar this week    The Washington Post "
+  },
+  {
+   "title": "Why Europe's student protests signal a deeper education crisis",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB6TlJOMUZVYllsVnZBOVQ3ZWJwVEVsZnJGX0pyanZCRUFCQTloVGJVNmFDRkJQWUs1WVQ5Z3RuZHVZTDF6aEIzcjh1Y3RKeDJsMmh6VGdzLXA?oc=5",
+   "publisher": "TRT World",
+   "feed_occurrences": 6,
+   "feed_count": 5,
+   "description_excerpt": " Why Europe's student protests signal a deeper education crisis    TRT World "
+  },
+  {
+   "title": "How many seats are needed to form a government in NZ? 61, and here is who has ruled out whom",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNXzJTNmxDVUdkcFFsaTF1NVRBeXVxemNXZFhyWWRKbmtJTkFQbjZXVGRhSno2cDNNYlV3cGd0OUR3R1k5NHFUQ2VtVFcyaVQzT3NIZVlqdDZoMHFrRlJ5WUZndDR5enJUSDlWT19Ga0NuQy1IWUFpcWZGTm9KYXoyblNyRGJFcXAwN2tOZlRpYUJDS0Z4WkRRa1VZQmxaTjBYbnJ6NTExZTh5cnl1T29zZUxQZGtVZw?oc=5",
+   "publisher": "Nacionale",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " How many seats are needed to form a government in NZ? 61, and here is who has ruled out whom    Nacionale "
   },
   {
    "title": "Explainer: What is an overhang and how could it change the election tonight?",
@@ -144,28 +184,12 @@
    "description_excerpt": " Explainer: What is an overhang and how could it change the election tonight?    RNZ "
   },
   {
-   "title": "Election 2026: You’ve heard a lot about an overhang. What does it mean?",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcFlzSDVBV0ctZUp4MXFOaGsxYTNaZjVqWEV2NGZkOTNQck1yNjBGa0xwUGdnSWpTcmQ3M0kyUjJFV1ROWnFINHctbnF6amJEN09pUTQyWUV5UEREcUU5d1I5bjhkcVY4cm5QM0hkTXh6cUl3ZjFacEl2UDNxUHhTRHZ2X0V2WnBKcTllMVE5d1V4UktLZk9fMTMtcTl4aTJhRENiYlU5bGlwaDBkTUNoUUV4X2hWd0plQlpRTmJPdDNWd2o0U0NzSUVSTzVnVGc?oc=5",
-   "publisher": "NZ Herald",
+   "title": "Is Nicola Willis out of Parliament? Very likely, because National won seats but lost party votes",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONTJrWDJJTURzb1IxRWdJOEI2RFhxak1uUmF2MWZ5ZTNJZC0tZGlpeTlVcWprTnBpN2c2ZU5NeGs3MFJzb2FyY0RqWWozYW5tSHZkUlVSYnRHZ2pSdmVoUFZmczFEMG5DRnlhNU9ReWlqZHdBSVNkTG9YMmduaWNiV0NnazBqTGplRDlKcGREZW1zMV9IcW0yRm0waUc3T0t1UnNHTG1CWlBMbks5b0hGdVV3?oc=5",
+   "publisher": "Nacionale",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Election 2026: You’ve heard a lot about an overhang. What does it mean?    NZ Herald "
-  },
-  {
-   "title": "Election results: Top National MPs may be out of Parliament",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdG9zZzA2cm9HbzJzc0VwbGdtZ1JsNXNCamZlejd4bEFFbHVKNzRGMFFsd1hqSV9tdFRVSkVhWFNob0dtNzY2ZlluVFdSangwdHpwZHJ3YlFfODVXdzNVSVpLNGZWVWRwTzc5d3M3RFNTVFdHOVJnMEtUbmxkcVdBTzVmVjAyRmdhaE82SmtLSFhqdTJwcS1KX2ZPU0VreERVZVZLOG9FcTBTb2NEcDNDSU5KQmNCQ2s?oc=5",
-   "publisher": "RNZ",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Election results: Top National MPs may be out of Parliament    RNZ "
-  },
-  {
-   "title": "'Politics is a brutal business': These are the MPs facing the axe",
-   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPNkxhUzVHUG15al8xNGVmTE1MQmFIYzVfOERydUFwNFdMRWZSNTNQdHowZ21vcnV6dF9vMXdhN1ZTdW5wQzZzeU9OZHpJREl4LUxBTl9wUjBfMUhzZWVBWkMtZmVDWjBSV2p3aFJyUVdFQ1ZzUGFES3U1SUx3b0pqVmU0R1lvTkw4Z1lEWW9Kak1uUFl4MDVReFlwd2I1c1RfYXJJSFhXNDJ4Q3dobHVDWHhsd3daXzZsWUM3cV9kVnh0YVBscXZPT0x0TGNZQi1SNVZTaGJBb1FvN1dyYjdIRDN2R3hrSmJUWWxFTUZoOWVSWlRxdjV6SUxyUWU4WTla?oc=5",
-   "publisher": "NZ Herald",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " 'Politics is a brutal business': These are the MPs facing the axe    NZ Herald "
+   "description_excerpt": " Is Nicola Willis out of Parliament? Very likely, because National won seats but lost party votes    Nacionale "
   },
   {
    "title": "Election results: 'We did it!' - Opportunity very likely to enter Parliament",
@@ -176,20 +200,52 @@
    "description_excerpt": " Election results: 'We did it!' - Opportunity very likely to enter Parliament    RNZ "
   },
   {
-   "title": "Gerry Brownlee faces exit from Parliament, takes aim at vote-splitting campaign",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNVdYLXFIUlA5V2swN1FfTGlZRUxDeHNGYjlva3BCaHRzdXAyY1pMRFM0SmhkZjlXNUxOMVN1SEhQT3dhaUNGV0IyQ3BiTG5acEY1RS1naC1BdlVoZ1YtLWN6MHo4QTU3VTd0WGZaOW56ZzZkWENwVkRhblFzX0Y5V3hqNjlyODRSVFc4c3UzUFNpbjQ3MmdyNVJDWkVwazNnZl9EcURYVTg3bUhhMW1YMm92TXdmZw?oc=5",
-   "publisher": "The Press",
+   "title": "Explainer: What are coalition negotiations and how long could they take?",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOTlmN08wWnZkT3FXcXRLcW0zU1c4QVpxamtCdzIyd0NqRW80UUtBaDRMZU45U19ULTRWTW5tSjhWS2tkdm1nd2NyaXNncHRWOFJxZWhkdzJlSTBRQ3ZtTlQxSmFZWnJGTFZDWXIxd2N2dTlobFNLemU4UG80ZWItdWx1Q2F4QVFYaFluU0JKd2RNek1SV2wzUkpUX1QzMEFwQ3Y5dERwaTF4NzlWeFlGVmZ0VlBzaWdHR1RMdzVwdGV6MlI1aUhN?oc=5",
+   "publisher": "RNZ",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Gerry Brownlee faces exit from Parliament, takes aim at vote-splitting campaign    The Press "
+   "description_excerpt": " Explainer: What are coalition negotiations and how long could they take?    RNZ "
   },
   {
-   "title": "Disappointed, looking for a silver lining: Nicola Willis faces Parliament exit",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZUE3MlMwOWJtbG5lZVFNc1MyVi13akxhMFBlblhlSFd1ZjNOODI5cjhFaXplREcyUER2M0VZeUhXdHRRYW9OSUlOd19UT0cyOEdlLU5DQ0xwM2otVURsZFAwUEI2SGN3VjYzb2hBSlNYVTJaZHFqelJvNS00d2d4VU9FOXF2ZEpyUnVLMDhpVEJtaHZ5bmdWeVkwNFg1SDhNdnUwYUJrRWt2V2hvNXlDV0RoTGY?oc=5",
-   "publisher": "Stuff.co.nz",
+   "title": "Election results: Top National MPs may be out of Parliament",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdG9zZzA2cm9HbzJzc0VwbGdtZ1JsNXNCamZlejd4bEFFbHVKNzRGMFFsd1hqSV9tdFRVSkVhWFNob0dtNzY2ZlluVFdSangwdHpwZHJ3YlFfODVXdzNVSVpLNGZWVWRwTzc5d3M3RFNTVFdHOVJnMEtUbmxkcVdBTzVmVjAyRmdhaE82SmtLSFhqdTJwcS1KX2ZPU0VreERVZVZLOG9FcTBTb2NEcDNDSU5KQmNCQ2s?oc=5",
+   "publisher": "RNZ",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Disappointed, looking for a silver lining: Nicola Willis faces Parliament exit    Stuff.co.nz "
+   "description_excerpt": " Election results: Top National MPs may be out of Parliament    RNZ "
+  },
+  {
+   "title": "When do we find out the NZ election results? Knife-edge on election night; official result on 27 November",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPV1M5eU0zNi1xUmUwclRZOVNBLThuZlIwSUZkcEFINjNlSEdPWE9YaVV0Y25zMDhCaU9KQWpMNGhGSXZsWDIxQ1djZ3JHenZod2dRV216OHZ2bWRGNzdxbllyblU0LWxud0Y0ekFubXFzM1dadjZJSWdwSEo0UGFUZ2tENE5NS0hwdkZ5RDJGTW1rOWpUUVkwakEyLUhjZHlhZ05sSVhDQVI1T18tUlBVNWw3Y2VWdw?oc=5",
+   "publisher": "Nacionale",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " When do we find out the NZ election results? Knife-edge on election night; official result on 27 November    Nacionale "
+  },
+  {
+   "title": "'Disappointment': Nats deputy leader Nicola Willis among MPs facing the axe",
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPNkxhUzVHUG15al8xNGVmTE1MQmFIYzVfOERydUFwNFdMRWZSNTNQdHowZ21vcnV6dF9vMXdhN1ZTdW5wQzZzeU9OZHpJREl4LUxBTl9wUjBfMUhzZWVBWkMtZmVDWjBSV2p3aFJyUVdFQ1ZzUGFES3U1SUx3b0pqVmU0R1lvTkw4Z1lEWW9Kak1uUFl4MDVReFlwd2I1c1RfYXJJSFhXNDJ4Q3dobHVDWHhsd3daXzZsWUM3cV9kVnh0YVBscXZPT0x0TGNZQi1SNVZTaGJBb1FvN1dyYjdIRDN2R3hrSmJUWWxFTUZoOWVSWlRxdjV6SUxyUWU4WTla?oc=5",
+   "publisher": "NZ Herald",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " 'Disappointment': Nats deputy leader Nicola Willis among MPs facing the axe    NZ Herald "
+  },
+  {
+   "title": "Several top National MPs likely to be out of Parliament",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSDdlRjZKSEF6QURESDdCclF5RGh1R25HbmZTSlZ4RWxHOXF6dzFPZWpqa2stNU01d2hRYW5ONDhPcy01OGgwdXltTlZaY0dhWF83SnZVZjFkcFJwTmdNUVNYVlViN2x1WmM5alNianZtbjQ1MDNNSVUyVU81eTRmOHZKc1R0RWJlQjY0RDRqTkViN3NGSXc?oc=5",
+   "publisher": "1News",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Several top National MPs likely to be out of Parliament    1News "
+  },
+  {
+   "title": "'Pathway to next govt': Luxon strikes hopeful note as election results deadlocked",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOb2ViZzZHaURIMFVjVFFaUEg3aXdEU1dCTkx1Y3NVNXRuX0JLNDlCdDRZdGR5QXMtSGszbmd0N0RPQlI0dzhIa0ZhQUstZ3NMV2ZWLVFyS2lYRGtHLWp6aHJCamNOc01wT2s1S2hyY3NING45MGI3Q0E2NGRIZUNRc2lvQkxmYUZIOGEwa0x1N1d5TGZCRUIya05oVUktQlMtX3BleXJIMDZKNDJTVHpPcndpeFhRYWVlMF83TjBLOVdxRjJia21FTmNfZmRNa2NrdmdsMmhhZjlSeG8?oc=5",
+   "publisher": "NZ Herald",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " 'Pathway to next govt': Luxon strikes hopeful note as election results deadlocked    NZ Herald "
   },
   {
    "title": "Environmental groups embrace AI, even as they warn of data center impacts",
@@ -200,20 +256,20 @@
    "description_excerpt": " Environmental groups embrace AI, even as they warn of data center impacts    Reuters "
   },
   {
+   "title": "Trump officials weigh major overhaul of National Park Service, Fish and Wildlife",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcDV4dGhqcTFtcEVobzlQNGpVQm9XLVFMbm45ZHJHVEFsQVRhaERSVDQwaVRBZ2FBOVhWaThzYnZTdzBPZ3JBNzFldGRQaE5rNUx0elFZdTNrdWtuc3c1N1RSM2VrTmF1XzIxeGhLUGxQZzNjM25lOFlzT3l1WHIxTDRxVTJkeklYSThUZXNKenpFUnEyZHFUSGozQlViNGZ0MEZkOFJZTFVOMmFJTF9BME8zMW5Bbl9ES0VjaDhwdXVLdEhUOFV3RmUwU2RxUzhiMENCcDdleE4?oc=5",
+   "publisher": "The Washington Post",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Trump officials weigh major overhaul of National Park Service, Fish and Wildlife    The Washington Post "
+  },
+  {
    "title": "Environmental groups turn to AI despite climate concerns, say benefits outweigh costs",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB2N0N1S2x2cnFuakhtRjExVHVoZTQ4ei1kdkVaMUZRQ045UXpnN3RFSkFxV2s1al9XWXl3RnU1QlczZTl0RWhXaVp3NWtJUlpId21mRnQ5SGE?oc=5",
    "publisher": "TRT World",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Environmental groups turn to AI despite climate concerns, say benefits outweigh costs    TRT World "
-  },
-  {
-   "title": "It’s a bumper year for wild mushrooms – here’s what you could find in the woods today",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalN2bGdPbnZxc0xNcmlYU1NhNTJmY0ZXWklxM05HV0dUVWpNYlFwbThmNnpYT2dfcGlJR2pvZUItS096NFJRX2wzUVRiVjdPVFViLW5uQ2hfM1FROGtWdm1KWEIzS3dsV3JIMmRzSzNtS2R1Z3l6UFBLRHVTdWNoU19GcUllUVptQjgzVUFpZ2UybFhEWDZfdUJITTdkZXlOa1hTTHhGU0VFM1JFWkJZdnFlNVNTOWVCRV9F?oc=5",
-   "publisher": "Inside Ecology",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " It’s a bumper year for wild mushrooms – here’s what you could find in the woods today    Inside Ecology "
   },
   {
    "title": "15 Green Groups Use AI, All Fear Data Centers [2026] - https://tech-insider.org/",
@@ -232,12 +288,12 @@
    "description_excerpt": " Conservation Groups Adopt AI Tools While Warning of Data Center Strain    BigGo Finance "
   },
   {
-   "title": "CBD COP17: Did the world deliver for wildlife?",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVU9tU3FJcEZVWW5oZFBhOWlCNmhiNDNwMDlvZG1jTW5YY0o2bFo4ejNSOGZsVnV2aUxheEtCYldzMEpsNHNOdUktNnhWS21QUlNNUl9IbXJCeHE4ZDB5amVyZEhVX2tPVEt3TDB6Y2hfVWtXQzNoZlBQRGVjR3Jabks1Y2M?oc=5",
-   "publisher": "We Are Born Free",
+   "title": "It’s a bumper year for wild mushrooms – here’s what you could find in the woods today",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalN2bGdPbnZxc0xNcmlYU1NhNTJmY0ZXWklxM05HV0dUVWpNYlFwbThmNnpYT2dfcGlJR2pvZUItS096NFJRX2wzUVRiVjdPVFViLW5uQ2hfM1FROGtWdm1KWEIzS3dsV3JIMmRzSzNtS2R1Z3l6UFBLRHVTdWNoU19GcUllUVptQjgzVUFpZ2UybFhEWDZfdUJITTdkZXlOa1hTTHhGU0VFM1JFWkJZdnFlNVNTOWVCRV9F?oc=5",
+   "publisher": "Inside Ecology",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " CBD COP17: Did the world deliver for wildlife?    We Are Born Free "
+   "description_excerpt": " It’s a bumper year for wild mushrooms – here’s what you could find in the woods today    Inside Ecology "
   },
   {
    "title": "More Than 3,500 Acres Added to Maya Forest Corridor for Conservation",
@@ -248,36 +304,12 @@
    "description_excerpt": " More Than 3,500 Acres Added to Maya Forest Corridor for Conservation    Love FM Belize "
   },
   {
-   "title": "MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWnZJNnFfQ3VYYU02UldhTjZPMm1IUWFheGVxNmRJaHQ0LUxyY1FZanFleEp3aXZoelRuNnBMQUo5a01vSU44SEgtbHo3WWxlWFJiTFRwNHJpLUpOcFF2aTZHcUp2aFBVbFNTUmhmNVhHZkV1ZlBFN05ScXd6QWNFSXFyZFExemdBRU5VWWJpLVBKdGpHVl80VkZhenJMR3VpZE5OQXJPVEduSnJIVTNJNWZKWGlrSWsxN1FiWlVOa1JyOUtoeXdGbWZoWQ?oc=5",
-   "publisher": "Inside Ecology",
+   "title": "Environment Minister Bhupender Yadav Highlights Conservation Achievements, Urges IFS Officers to Address Emerging Challenges",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNjJ4TUJFSFJfT2JQc3dZOEJsNzV1Vmxpa2V5MFJOLUhpSWt5U2d1d1BLYS1Gc1hudFhmMXViTDZPMGstS2xCd01LNmxpd3ZpZDcxeHU5MlFWY2hUcG1LVlJNZ2hqbjlCTGVpNkxhVUhPZ1FkYl8wbGFKTUtNLTJIUl90T0RHOEJwS1RyRGpxbHdmVWxwb0ltZUpLblpyT2NPY2N0SUl0Z2JvcDRuVEppbmV1OFppUVl4aGoyRE4tYjVXWUxyT0xZNGNjc2huaTBkTXJqN0hNRjRDazdRdU9VdFdDbw?oc=5",
+   "publisher": "DD News",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes    Inside Ecology "
-  },
-  {
-   "title": "Historic return of beavers to waters around Loch Ness",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQkpjU2QwT25BSHk3TGZhQ0xJZVJYWm03QkVLSXFacDhQblhKT2FXLXRrZGk2OGlvUTF4Q0RaTDJmeGF3QUVDWEdMWU1NT2hSTjlSck9kVUE0WGJmcDRtYWhZaHczbXk3OVJ5b0MwTjdycno3TmFKakhWWU1Jd3pzWVpKcDdQSWRURVNtbmpWMHJvRmswUFE?oc=5",
-   "publisher": "Inside Ecology",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Historic return of beavers to waters around Loch Ness    Inside Ecology "
-  },
-  {
-   "title": "Environment Ministry, WCS plant 1,000 trees in Mondulkiri",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX1pDOERLcXlCTG5NY1AwUWpjVUV4Mmp6TzJTVElaNkN4aGR1V1ZPd29EbTRNSTJacWxjd0otbU5tbnAyU29aNUhRZmprZzA5TTF0WXN5ZUZsbGZnMjQ4aTJVWE83djhYYmtNYXRlcG52LWYwTFQ0MTBpR0lVRDk5X096SVkzdjdUS1pGb3R0d3JMdUNGZXVCbW9vRQ?oc=5",
-   "publisher": "Khmer Times",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Environment Ministry, WCS plant 1,000 trees in Mondulkiri    Khmer Times "
-  },
-  {
-   "title": "Free wildlife event in Droxford aims to inspire action across the Meon Valley",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQ3I4TjBOb25QN2RaZEEzUVpZRWFpZlJfYUhXRFdMSHh3czdmbWhVRl9jelFjeWZiWlJEVnU2Um5qbDJqb25TY2QyRFVvYmlwOU9mNU5VS1E4bG15MjJBX0tOZy1sbVprX1ZITTVGWVowcFVXWjNZVlVXbjBkMExudHZWS1IwYk1TbUpxeE9yMjJNQmJ3MUt3d05vcTFwa01tTm4xX1lScHpkODRD?oc=5",
-   "publisher": "Meon Valley Times",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Free wildlife event in Droxford aims to inspire action across the Meon Valley    Meon Valley Times "
+   "description_excerpt": " Environment Minister Bhupender Yadav Highlights Conservation Achievements, Urges IFS Officers to Address Emerging Challenges    DD News "
   },
   {
    "title": "AI boosts conservation but increases data center electricity and water",
@@ -288,14 +320,6 @@
    "description_excerpt": " AI boosts conservation but increases data center electricity and water    NewsBytes "
   },
   {
-   "title": "Prince William's Wildfire Warning: Could Disaster Prevention Become His Next Royal Priority?",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNFRLN2JQZkZQUVdhMXo4YmcxV0oxVjNxclNZdEJxcW91NkpXdEltdGdoOG0wTzd3Rmh0NTVDMFBQNnlJNkZGcjZiUmlGREpLSkFveERReHdVU01GVmV0U3ZERndCZFVnLVRpUzhxTWdlaW14b2VMeldKbC1pbU9ORG9DNk5yN3dWVkNvQTE4bzU?oc=5",
-   "publisher": "The Royal Observer",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Prince William's Wildfire Warning: Could Disaster Prevention Become His Next Royal Priority?    The Royal Observer "
-  },
-  {
    "title": "Mass Protests Sweep Europe Over Cost of Living, Corruption and Education",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTGhfWG42bkUyaVdyekNCcXZkSVdLTm11SmM5TWhsV0tMNWVDdXVWTE5LVkM4YXVPTGRVV1FXLUxjdmE3anpWWWhQSXR5b2NYNWcteFR0WU1mNXRCSFBTZ0hsdGg0QzhpUEVrSHRUVkE2YlBRckJGTkV6b0h1QmIzYlJvVlRIUjkweWtWOTI1c2FBS3owSXNZcUFqQ0ZfbldsVDJTMWh3?oc=5",
    "publisher": "https://globalpost.com/",
@@ -304,12 +328,12 @@
    "description_excerpt": " Mass Protests Sweep Europe Over Cost of Living, Corruption and Education    https://globalpost.com/ "
   },
   {
-   "title": "‘A global political awakening’: how gen Z protests are sweeping the world",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcmxxcUcweFA2WWlycmN5WFE2RV9hcW1nS0wzeEdONXB3UmpDdUtzdnlFZnQwUHFHaTE4UGNCT1ppa2pTZnY3Y3VEZ2F4U1lMdmljbW00T2MzY0djc3JxcGpFM3AyTFdRZXlpZHlaRDJEWlFMcHQxLUdBUXNjUjY0bkZaQ3pqQQ?oc=5",
-   "publisher": "The Guardian",
+   "title": "How media coverage shapes student perception of crime",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVDVpSmFTODZTSk80YWF3akVkNHZtRmNDazB4cmJiZWFIb0l1V0RJQVhYZ3ptdjlUanNGemJzazFKNHN0NUJzakRfekc5TC04eGVYeEx5UEFBWXBudVduM0xLSy1GTWN5ekFnQkx4anJMSmdfOWlneUwzeUl6enBldERqMFZSb3FXVGItY2xtc2stV1lZTkcxVw?oc=5",
+   "publisher": "Maroon",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " ‘A global political awakening’: how gen Z protests are sweeping the world    The Guardian "
+   "description_excerpt": " How media coverage shapes student perception of crime    Maroon "
   },
   {
    "title": "Hundreds of Thousands Protest Across Europe",
@@ -320,20 +344,20 @@
    "description_excerpt": " Hundreds of Thousands Protest Across Europe    https://globalpost.com/ "
   },
   {
-   "title": "‘A global political awakening’: how Gen Z protests are spreading worldwide",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQXzBoczFJUW1Mc0tSdzQ0d285eC1ZZWtyUWNEWG13VzgwRDFWWGFJMEw3MjlQZi1mWXBJdTRnMXNFTWRBeV9qQURKUzc1T2pTdkxvdVA0TWoybVRVLWszNnYtX2J4cnpISUYtOFdCZjlLb3pVcGtISW0yNnBfZWgzWEJTSQ?oc=5",
-   "publisher": "Mezha.net",
+   "title": "New ICD codes will soon permit doctors to track medetomidine toxicity and withdrawal",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdE1BeVZhTTUxajVoZFpwWkJDT2xoSXJESWktQUItcml5b2JWeXdBOXYwT0JzVXRHenJ2N2ZEdFk4eTNxOXk4YjhXNXNDUDlwSi1oZGQ1WmdfMDB2a0s0WkZ4SnFXT2R6UUdtN0xJdmNSeHRqMlJLVjdySmhTSEZ0VkZMa0t5MWpuRHFDbnBxWHJJR2w1REV3UDVQZndlamo4TmJjbkJyYzFCMnVTUmlPWjlB?oc=5",
+   "publisher": "Inquirer.com",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " ‘A global political awakening’: how Gen Z protests are spreading worldwide    Mezha.net "
+   "description_excerpt": " New ICD codes will soon permit doctors to track medetomidine toxicity and withdrawal    Inquirer.com "
   },
   {
-   "title": "Xbox Games Coming November 9-13: Football Manager 27, TANUKI and More",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSlRZQ19nMVhBXzZOZTJZSWMwd2tLeEhTaWFqUkhrZ2xteGQ4eUF2eFdIcjZpMzRSOWFYSHVtZmlsMFRGVzB5WDE3N0hlYTRsejdsNUtIcnF2OWRiQktvYmsyR0xrcF9kUjV5STQwYWY3S3llQ05WSXc4SnBKQXd2MzlB?oc=5",
-   "publisher": "Mezha.net",
+   "title": "SSM HEALTH GOOD SAMARITAN HOSPITAL OFFERS HEART SCREENING TO DETECT CORONARY ARTERY DISEASE",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaWFBU0Qxd2hjX2phQTBveDA0bHhLMjdVNHlELU9LYTh5MzhMWTdlandCLUZ6YnVlSHE2QXJFVkFfaG9wQnlNVW5fQlpGeUhkUnpvNnlZdVh2SjVkczNXMmtqMk5QNEhwcXhGM3Y1eERyWVh1dXZyY1NybnpKb0t1RFo5VV8tM1Rhel9lWnNNLXNSRE5ZZjFnREJxUVJ6cVozaWpGQ25EYWo1ZjYwOW9BWEpRQjNqREdncEU0eTQ0QjJIR0p5RDNXaw?oc=5",
+   "publisher": "WFIW",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Xbox Games Coming November 9-13: Football Manager 27, TANUKI and More    Mezha.net "
+   "description_excerpt": " SSM HEALTH GOOD SAMARITAN HOSPITAL OFFERS HEART SCREENING TO DETECT CORONARY ARTERY DISEASE    WFIW "
   },
   {
    "title": "The British Ophthalmological Surveillance Unit: active surveillance of rare eye disease in the digital era",
@@ -344,36 +368,20 @@
    "description_excerpt": " The British Ophthalmological Surveillance Unit: active surveillance of rare eye disease in the digital era    Nature "
   },
   {
-   "title": "Facing US Sanctions Over Alleged Xinjiang Ties, BGI Turns Spotlight on Illumina’s Business in the Region",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSml0elR6Tk9ZZ0dNa0E1RmIxZElVTEhLcFNqZGFxYnRDc1p5TG9WQjYydmdnc2IzR0QzUkJSSXJRUk4wMW9PWGNvb0pCd0VrdXpGdG1GQ2dKbW9YTXM2dGtLLWtSdlZHclk3SjdHMkdZNFhDdDNxY1FJdnBjRVFkWDVib2FwOFBTSEtFSTA2aXhKUEhqX2tiZGstUW1lakk?oc=5",
-   "publisher": "GenomeWeb",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Facing US Sanctions Over Alleged Xinjiang Ties, BGI Turns Spotlight on Illumina’s Business in the Region    GenomeWeb "
-  },
-  {
-   "title": "MedStar Health Offers Non-Invasive Treatment for Essential Tremor and Parkinson's Disease",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNaHpac09rZlhwUldRSnZCTkZEZUhoU1Nzejd6bGU4MExHUU9oS1otWU5jQTdDbExUOEZZX2c2cFpWbUV2MUJnRnZ2NWVMdTJuQW5NNTc5dXR5ckR1R3BKWlFZeFNfNFlJeGtsZC1nb21XVU5xSWhPc1ZENXMyd0UzLW5XMUJQYTN5dDJodF9PYlhHZUV6RTVVNkk1bFZwOGxJeXE1dFZzaXV6NEZjVTRYdUp6ZHF2VWFhZDRSSzdmXzlDeTRQUTYxTUdPRDFNUUdWZy1JUGpSUU9kd2Yy?oc=5",
-   "publisher": "PR Newswire",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " MedStar Health Offers Non-Invasive Treatment for Essential Tremor and Parkinson's Disease    PR Newswire "
-  },
-  {
-   "title": "Feinstein Institutes Secures $3.4M NIH Grant to Harness AI for Early Delirium Detection and Prevention in Hospitals",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPNS1WdW1qWS0xTWphUFFwTkNNRUtFd2luZHRQZXFqQVJmbGM5MWxaVHhQVDl5SGRtaHVvYnJwamNVNldHOXl2ZGRlVE1oTEZvak1uSXJSd0h5MlJici1aTmZIelhMU3NnajNMNzVxWU5iV2o0a0ZOamRaQUpFSHZhOEx1QVZIOHVEd25Qa3NLZE5lSWF4S2tnRm9rT2VmTE1NeUJWbEhwZ25RNVRnc3FnWXltYXNTQTNjb1dQUjI4ZDMtMXE3OFJUSnFMWUR5dDFLRjhFSGF2ak5ENE9DUjNRWkw2Wm1fY3Ffd2R6aWdDV2RlV2VoZy1pUTNGT2M5dHplR1lGTg?oc=5",
-   "publisher": "Business Wire",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Feinstein Institutes Secures $3.4M NIH Grant to Harness AI for Early Delirium Detection and Prevention in Hospitals    Business Wire "
-  },
-  {
    "title": "Respiratory Virus Update: Nov. 6, 2026",
    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53Q1doQXF0cHBjbWthU0pmSUlWYlo2OUdDRUNMc25OeHNIa1Exa2JmRmdFcWtId2xQTU9FNzFGM1RUWjBLNk1ObmZraVAtQzJzWlFEUW5BRno4Yzhvd24yZ1M4MjBsd3Y0cGc?oc=5",
    "publisher": "San Mateo County Health",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Respiratory Virus Update: Nov. 6, 2026    San Mateo County Health "
+  },
+  {
+   "title": "How losing measles elimination status could affect public health and families",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOc05GNXc3dC03Q3dqNUxTWUtOZ3BrcDEyc2dtTHBEZ3c3aU9IazlZWVc5T3hRbDM0d2VXN2hwTXdBME1CelBhd2xCRmtjWFhtVU1WUE1zdjUzU3NKQUJ5cnN6ZkFMaDZDLXI2a1ZqRTJHWlA5UFpVMmUyVl9yYlVjb2FjVFA5RTZZS2JEbWRB?oc=5",
+   "publisher": "Association of Health Care Journalists",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " How losing measles elimination status could affect public health and families    Association of Health Care Journalists "
   },
   {
    "title": "Climate Change Is Bringing Dengue Fever to the High Himalayas",
@@ -384,58 +392,50 @@
    "description_excerpt": " Climate Change Is Bringing Dengue Fever to the High Himalayas    Inside Climate News "
   },
   {
-   "title": "When West Nile virus attacks the brain: Severe cases rise in parts of the US",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUUxjc3U1Zm5aWjA3WUI1bzFPMHN6VllrZ2pjQzYwZV9oX2JQVm5qVnRzZ21iUTUwRGdORzY3Y2xrdF9KbEQ2cURFVG5DNDFwYjNCQVRFZkZMRmptQkhxRUlrNjNCLWZ5Q0RrNzVIWW9mbnViVDQtNWdjbVllbkhEZldNQnhzWVliLUI0X1N0dGFWd2FhcGVaclRuVkFqb2pnb3Q5SHhLa1UtaWwzd1E?oc=5",
-   "publisher": "KNSI",
+   "title": "Routine Invasive Procedures for Stable Heart Disease Offer No Long-Term Survival Advantage Over Drug Therapy",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPTVl5Sm93REY3MmlObVAxbl95cDR6bXRVUzZGcGFPalNJX2RyR1k2S2hscnBjZEhLb0pVM2M0d3JmeTBHZldGby1RdnBzbjdBalktNzJ3ZnJQaEMxWDVRSDJFeGdnNHk0OXFOWkpHaXVfMURBY3ZpMlFXTW03NXdma09ITy1hNFFzQVFjeGRnLVR4WGlwbElSSFgtYVdTV2dpelRqbTB5MzZ2WFJnaXliQ0Z6OEkzR1J2bko3R2V0MHdtMkNfbEZ3bnhndmU4U0VnVnR6c2J1akQ3TFpjZXNpVWtQSzl4M3pkaVpCQmtZeVV5Q3A0NzNj?oc=5",
+   "publisher": "PR Newswire",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " When West Nile virus attacks the brain: Severe cases rise in parts of the US    KNSI "
-  },
-  {
-   "title": "UK Commits $120M to AI Health Hubs Detecting Disease Years Ahead; Garmin Joins",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUDkyRWJ6VjRUbl8xbjNEcU15dWF6ODhEUTZNMjBzbWw4S3NhMGY1Q0U5dEoxalNBbWNqd1U1dGtDYkF4RXl3SnNnbktReEp1YU1XTk1XRzJuSlFlUWhQSmIxZ2RvNTdVNHowMHdBdWYxREVIOU9nNkZodXBJSkp1Q2s0UVpvanA4RjNWc1czRFVYN1RRZk5MQ0MtQUw4MFFyRE11WGRzNHlDem1TamlzaGpRSWY1S1NvbHFXMFpodU91UlNVOERj?oc=5",
-   "publisher": "Tech Times",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " UK Commits $120M to AI Health Hubs Detecting Disease Years Ahead; Garmin Joins    Tech Times "
+   "description_excerpt": " Routine Invasive Procedures for Stable Heart Disease Offer No Long-Term Survival Advantage Over Drug Therapy    PR Newswire "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
   "successful": 49,
-  "mapped_pre_dedupe": 279
+  "mapped_pre_dedupe": 206
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 61,
+   "mapped_pre_dedupe": 23,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 30
+     "mapped_pre_dedupe": 19
     },
     {
      "source": "direct/AllAfrica East Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 15
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/AllAfrica Central Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/AllAfrica Southern Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 14
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/Africa Arguments",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/The Conversation Africa",
@@ -447,12 +447,12 @@
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 14,
+   "mapped_pre_dedupe": 8,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/The Conversation Indonesia",
@@ -462,19 +462,19 @@
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 10
+     "mapped_pre_dedupe": 3
     }
    ]
   },
   "europe": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 3,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/The Conversation France",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/The Conversation España",
@@ -511,19 +511,19 @@
     {
      "source": "direct/Mongabay Global",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/Inter Press Service Headlines",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     }
    ]
   },
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 93,
+   "mapped_pre_dedupe": 83,
    "feeds": [
     {
      "source": "direct/BBC World",
@@ -533,7 +533,7 @@
     {
      "source": "direct/BBC Science",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Business",
@@ -543,22 +543,22 @@
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 19
+     "mapped_pre_dedupe": 20
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 23
+     "mapped_pre_dedupe": 21
     },
     {
      "source": "direct/The Guardian Environment",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/DW World",
      "status": "ok",
-     "mapped_pre_dedupe": 12
+     "mapped_pre_dedupe": 7
     },
     {
      "source": "direct/France24",
@@ -609,12 +609,12 @@
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 89,
+   "mapped_pre_dedupe": 79,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 11
+     "mapped_pre_dedupe": 12
     },
     {
      "source": "direct/RNZ World",
@@ -624,7 +624,7 @@
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 12
+     "mapped_pre_dedupe": 11
     },
     {
      "source": "direct/CBC World",
@@ -639,12 +639,12 @@
     {
      "source": "direct/France24 FR",
      "status": "ok",
-     "mapped_pre_dedupe": 19
+     "mapped_pre_dedupe": 14
     },
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 19
+     "mapped_pre_dedupe": 20
     },
     {
      "source": "direct/DW Español",
@@ -654,17 +654,17 @@
     {
      "source": "direct/BBC Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/BBC Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/BBC Latin America",
@@ -674,51 +674,51 @@
     {
      "source": "direct/BBC Middle East",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/BBC Europe",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/RNZ Pacific",
      "status": "ok",
-     "mapped_pre_dedupe": 6
+     "mapped_pre_dedupe": 5
     },
     {
      "source": "direct/Guardian Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/Guardian Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 5
     }
    ]
   },
   "south-america": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 8,
+   "mapped_pre_dedupe": 3,
    "feeds": [
     {
      "source": "direct/The Conversation Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/Mongabay Latam",
      "status": "ok",
-     "mapped_pre_dedupe": 6
+     "mapped_pre_dedupe": 3
     }
    ]
   },
   "specialist": {
    "configured": 3,
    "successful": 2,
-   "mapped_pre_dedupe": 3,
+   "mapped_pre_dedupe": 0,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
@@ -728,7 +728,7 @@
     {
      "source": "direct/UN News",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/NASA News",
@@ -739,16 +739,8 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 556,
+  "distinct_unmapped_titles": 488,
   "high_repeat_unmapped_examples": [
-   {
-    "title": "Health and care sector latest developments",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWk4zWmpSM2JfSUxoeXRpRGlGLTc1czM5T3NwWHY0U3RCTDBMYlpqMDlwYk9nWjM5dy1wQlY1TXJQcVBWSnB3UzR2cXVvT1BjbXJLUEszVkpxMHZpd3hqTUJiRUxRY2QzSmVxMVR1S0lGeURKZzFpZW9YbklWaVJlRElfXy1WMkk?oc=5",
-    "publisher": "The NHS Alliance",
-    "feed_occurrences": 7,
-    "feed_count": 7,
-    "description_excerpt": " Health and care sector latest developments    The NHS Alliance "
-   },
    {
     "title": "How climate change worsens heatwaves, droughts, wildfires and floods",
     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBha2hSMWluWVdKUHpEZUNyTVFmVC1idnd2cFY5eDNxckF6OFE2NGxzb2lSVnNMYlA5aklTVk5CdldkSXpzV3ptX1YxVEdEdG5vaXU2b2FkUHR3QQ?oc=5",
@@ -756,6 +748,54 @@
     "feed_occurrences": 7,
     "feed_count": 6,
     "description_excerpt": " How climate change worsens heatwaves, droughts, wildfires and floods    BBC "
+   },
+   {
+    "title": "A knife-edge result, 3 possible outcomes: what comes next after NZ’s election?",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVEpCeHk2cDBrLXM3b2k2R2NiWEEtdzVRdUFIX0pteGpHRm1WclRFYWJLTVJYRTFSVk5xYW8yN0NTS1ppR1dKYTNrRktUWHptbGpVek4wLWY2VjRESUMtRk9xNUpwVWhRY3BmWUpzOVpENG40QUpCMFlrQTR1R3Jkck9LY1B1dnNEUzUxOWw4ZzViTEdoX3hHQWZUUTlUamlyUGpIbVlDTjJqQlZIaFE?oc=5",
+    "publisher": "The Conversation",
+    "feed_occurrences": 6,
+    "feed_count": 6,
+    "description_excerpt": " A knife-edge result, 3 possible outcomes: what comes next after NZ’s election?    The Conversation "
+   },
+   {
+    "title": "NZ’s next government hangs in the balance: 2026 election results at a glance",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdm94RXJBdURzYWRkN2c4NFY4VEVnRENid0tkSUJnRE5hYTFBdE9ycDlfSWt2UlZmLUpqdkwyZ1Bab0gwXzhVUVdEVloxSEp6TTF5ZWdPYng4ZU5mRUV1ZmVzekZranNQNmFRTmxuYkZmYlhWNVlHWUdNYU5feVZPUGdZVVlPcG5KV3hYRWd4b0hGOE5CWVFtM3ZmTGpTRnBSdXpkQUJWanA2U2xqd0E?oc=5",
+    "publisher": "The Conversation",
+    "feed_occurrences": 6,
+    "feed_count": 6,
+    "description_excerpt": " NZ’s next government hangs in the balance: 2026 election results at a glance    The Conversation "
+   },
+   {
+    "title": "Health and care sector latest developments",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWk4zWmpSM2JfSUxoeXRpRGlGLTc1czM5T3NwWHY0U3RCTDBMYlpqMDlwYk9nWjM5dy1wQlY1TXJQcVBWSnB3UzR2cXVvT1BjbXJLUEszVkpxMHZpd3hqTUJiRUxRY2QzSmVxMVR1S0lGeURKZzFpZW9YbklWaVJlRElfXy1WMkk?oc=5",
+    "publisher": "The NHS Alliance",
+    "feed_occurrences": 6,
+    "feed_count": 6,
+    "description_excerpt": " Health and care sector latest developments    The NHS Alliance "
+   },
+   {
+    "title": "Inflation, housing, jobs and corporate earnings will dominate the business calendar this week",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPb0hsN092M083bUhrLUJKQW9WdTNtWktqeFpFU1Z3TnJEQktIeXNrMjc0WHJkdzF1TjlmTzBEVzVtX1hGejFWb1BwX2J3TzF1QWtrMXp3cDF3djBlYUl3VkhJVUk0UWxxTWMxdFpoTUlId0Y2bEpISnVXbHZfWjVnVTJTZlRScVJZYnhtZ25xX0k2TURCc1g3VHJIWVB4YlFERmtncTFQRlB4bTBxajV3MGZtc1gxbTJHR05nZERJLURLZw?oc=5",
+    "publisher": "The Washington Post",
+    "feed_occurrences": 10,
+    "feed_count": 5,
+    "description_excerpt": " Inflation, housing, jobs and corporate earnings will dominate the business calendar this week    The Washington Post "
+   },
+   {
+    "title": "Why Europe's student protests signal a deeper education crisis",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB6TlJOMUZVYllsVnZBOVQ3ZWJwVEVsZnJGX0pyanZCRUFCQTloVGJVNmFDRkJQWUs1WVQ5Z3RuZHVZTDF6aEIzcjh1Y3RKeDJsMmh6VGdzLXA?oc=5",
+    "publisher": "TRT World",
+    "feed_occurrences": 6,
+    "feed_count": 5,
+    "description_excerpt": " Why Europe's student protests signal a deeper education crisis    TRT World "
+   },
+   {
+    "title": "How many seats are needed to form a government in NZ? 61, and here is who has ruled out whom",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNXzJTNmxDVUdkcFFsaTF1NVRBeXVxemNXZFhyWWRKbmtJTkFQbjZXVGRhSno2cDNNYlV3cGd0OUR3R1k5NHFUQ2VtVFcyaVQzT3NIZVlqdDZoMHFrRlJ5WUZndDR5enJUSDlWT19Ga0NuQy1IWUFpcWZGTm9KYXoyblNyRGJFcXAwN2tOZlRpYUJDS0Z4WkRRa1VZQmxaTjBYbnJ6NTExZTh5cnl1T29zZUxQZGtVZw?oc=5",
+    "publisher": "Nacionale",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " How many seats are needed to form a government in NZ? 61, and here is who has ruled out whom    Nacionale "
    },
    {
     "title": "Explainer: What is an overhang and how could it change the election tonight?",
@@ -766,28 +806,12 @@
     "description_excerpt": " Explainer: What is an overhang and how could it change the election tonight?    RNZ "
    },
    {
-    "title": "Election 2026: You’ve heard a lot about an overhang. What does it mean?",
-    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcFlzSDVBV0ctZUp4MXFOaGsxYTNaZjVqWEV2NGZkOTNQck1yNjBGa0xwUGdnSWpTcmQ3M0kyUjJFV1ROWnFINHctbnF6amJEN09pUTQyWUV5UEREcUU5d1I5bjhkcVY4cm5QM0hkTXh6cUl3ZjFacEl2UDNxUHhTRHZ2X0V2WnBKcTllMVE5d1V4UktLZk9fMTMtcTl4aTJhRENiYlU5bGlwaDBkTUNoUUV4X2hWd0plQlpRTmJPdDNWd2o0U0NzSUVSTzVnVGc?oc=5",
-    "publisher": "NZ Herald",
+    "title": "Is Nicola Willis out of Parliament? Very likely, because National won seats but lost party votes",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONTJrWDJJTURzb1IxRWdJOEI2RFhxak1uUmF2MWZ5ZTNJZC0tZGlpeTlVcWprTnBpN2c2ZU5NeGs3MFJzb2FyY0RqWWozYW5tSHZkUlVSYnRHZ2pSdmVoUFZmczFEMG5DRnlhNU9ReWlqZHdBSVNkTG9YMmduaWNiV0NnazBqTGplRDlKcGREZW1zMV9IcW0yRm0waUc3T0t1UnNHTG1CWlBMbks5b0hGdVV3?oc=5",
+    "publisher": "Nacionale",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Election 2026: You’ve heard a lot about an overhang. What does it mean?    NZ Herald "
-   },
-   {
-    "title": "Election results: Top National MPs may be out of Parliament",
-    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdG9zZzA2cm9HbzJzc0VwbGdtZ1JsNXNCamZlejd4bEFFbHVKNzRGMFFsd1hqSV9tdFRVSkVhWFNob0dtNzY2ZlluVFdSangwdHpwZHJ3YlFfODVXdzNVSVpLNGZWVWRwTzc5d3M3RFNTVFdHOVJnMEtUbmxkcVdBTzVmVjAyRmdhaE82SmtLSFhqdTJwcS1KX2ZPU0VreERVZVZLOG9FcTBTb2NEcDNDSU5KQmNCQ2s?oc=5",
-    "publisher": "RNZ",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Election results: Top National MPs may be out of Parliament    RNZ "
-   },
-   {
-    "title": "'Politics is a brutal business': These are the MPs facing the axe",
-    "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPNkxhUzVHUG15al8xNGVmTE1MQmFIYzVfOERydUFwNFdMRWZSNTNQdHowZ21vcnV6dF9vMXdhN1ZTdW5wQzZzeU9OZHpJREl4LUxBTl9wUjBfMUhzZWVBWkMtZmVDWjBSV2p3aFJyUVdFQ1ZzUGFES3U1SUx3b0pqVmU0R1lvTkw4Z1lEWW9Kak1uUFl4MDVReFlwd2I1c1RfYXJJSFhXNDJ4Q3dobHVDWHhsd3daXzZsWUM3cV9kVnh0YVBscXZPT0x0TGNZQi1SNVZTaGJBb1FvN1dyYjdIRDN2R3hrSmJUWWxFTUZoOWVSWlRxdjV6SUxyUWU4WTla?oc=5",
-    "publisher": "NZ Herald",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " 'Politics is a brutal business': These are the MPs facing the axe    NZ Herald "
+    "description_excerpt": " Is Nicola Willis out of Parliament? Very likely, because National won seats but lost party votes    Nacionale "
    },
    {
     "title": "Election results: 'We did it!' - Opportunity very likely to enter Parliament",
@@ -798,20 +822,52 @@
     "description_excerpt": " Election results: 'We did it!' - Opportunity very likely to enter Parliament    RNZ "
    },
    {
-    "title": "Gerry Brownlee faces exit from Parliament, takes aim at vote-splitting campaign",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNVdYLXFIUlA5V2swN1FfTGlZRUxDeHNGYjlva3BCaHRzdXAyY1pMRFM0SmhkZjlXNUxOMVN1SEhQT3dhaUNGV0IyQ3BiTG5acEY1RS1naC1BdlVoZ1YtLWN6MHo4QTU3VTd0WGZaOW56ZzZkWENwVkRhblFzX0Y5V3hqNjlyODRSVFc4c3UzUFNpbjQ3MmdyNVJDWkVwazNnZl9EcURYVTg3bUhhMW1YMm92TXdmZw?oc=5",
-    "publisher": "The Press",
+    "title": "Explainer: What are coalition negotiations and how long could they take?",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOTlmN08wWnZkT3FXcXRLcW0zU1c4QVpxamtCdzIyd0NqRW80UUtBaDRMZU45U19ULTRWTW5tSjhWS2tkdm1nd2NyaXNncHRWOFJxZWhkdzJlSTBRQ3ZtTlQxSmFZWnJGTFZDWXIxd2N2dTlobFNLemU4UG80ZWItdWx1Q2F4QVFYaFluU0JKd2RNek1SV2wzUkpUX1QzMEFwQ3Y5dERwaTF4NzlWeFlGVmZ0VlBzaWdHR1RMdzVwdGV6MlI1aUhN?oc=5",
+    "publisher": "RNZ",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Gerry Brownlee faces exit from Parliament, takes aim at vote-splitting campaign    The Press "
+    "description_excerpt": " Explainer: What are coalition negotiations and how long could they take?    RNZ "
    },
    {
-    "title": "Disappointed, looking for a silver lining: Nicola Willis faces Parliament exit",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZUE3MlMwOWJtbG5lZVFNc1MyVi13akxhMFBlblhlSFd1ZjNOODI5cjhFaXplREcyUER2M0VZeUhXdHRRYW9OSUlOd19UT0cyOEdlLU5DQ0xwM2otVURsZFAwUEI2SGN3VjYzb2hBSlNYVTJaZHFqelJvNS00d2d4VU9FOXF2ZEpyUnVLMDhpVEJtaHZ5bmdWeVkwNFg1SDhNdnUwYUJrRWt2V2hvNXlDV0RoTGY?oc=5",
-    "publisher": "Stuff.co.nz",
+    "title": "Election results: Top National MPs may be out of Parliament",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdG9zZzA2cm9HbzJzc0VwbGdtZ1JsNXNCamZlejd4bEFFbHVKNzRGMFFsd1hqSV9tdFRVSkVhWFNob0dtNzY2ZlluVFdSangwdHpwZHJ3YlFfODVXdzNVSVpLNGZWVWRwTzc5d3M3RFNTVFdHOVJnMEtUbmxkcVdBTzVmVjAyRmdhaE82SmtLSFhqdTJwcS1KX2ZPU0VreERVZVZLOG9FcTBTb2NEcDNDSU5KQmNCQ2s?oc=5",
+    "publisher": "RNZ",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Disappointed, looking for a silver lining: Nicola Willis faces Parliament exit    Stuff.co.nz "
+    "description_excerpt": " Election results: Top National MPs may be out of Parliament    RNZ "
+   },
+   {
+    "title": "When do we find out the NZ election results? Knife-edge on election night; official result on 27 November",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPV1M5eU0zNi1xUmUwclRZOVNBLThuZlIwSUZkcEFINjNlSEdPWE9YaVV0Y25zMDhCaU9KQWpMNGhGSXZsWDIxQ1djZ3JHenZod2dRV216OHZ2bWRGNzdxbllyblU0LWxud0Y0ekFubXFzM1dadjZJSWdwSEo0UGFUZ2tENE5NS0hwdkZ5RDJGTW1rOWpUUVkwakEyLUhjZHlhZ05sSVhDQVI1T18tUlBVNWw3Y2VWdw?oc=5",
+    "publisher": "Nacionale",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " When do we find out the NZ election results? Knife-edge on election night; official result on 27 November    Nacionale "
+   },
+   {
+    "title": "'Disappointment': Nats deputy leader Nicola Willis among MPs facing the axe",
+    "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPNkxhUzVHUG15al8xNGVmTE1MQmFIYzVfOERydUFwNFdMRWZSNTNQdHowZ21vcnV6dF9vMXdhN1ZTdW5wQzZzeU9OZHpJREl4LUxBTl9wUjBfMUhzZWVBWkMtZmVDWjBSV2p3aFJyUVdFQ1ZzUGFES3U1SUx3b0pqVmU0R1lvTkw4Z1lEWW9Kak1uUFl4MDVReFlwd2I1c1RfYXJJSFhXNDJ4Q3dobHVDWHhsd3daXzZsWUM3cV9kVnh0YVBscXZPT0x0TGNZQi1SNVZTaGJBb1FvN1dyYjdIRDN2R3hrSmJUWWxFTUZoOWVSWlRxdjV6SUxyUWU4WTla?oc=5",
+    "publisher": "NZ Herald",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " 'Disappointment': Nats deputy leader Nicola Willis among MPs facing the axe    NZ Herald "
+   },
+   {
+    "title": "Several top National MPs likely to be out of Parliament",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSDdlRjZKSEF6QURESDdCclF5RGh1R25HbmZTSlZ4RWxHOXF6dzFPZWpqa2stNU01d2hRYW5ONDhPcy01OGgwdXltTlZaY0dhWF83SnZVZjFkcFJwTmdNUVNYVlViN2x1WmM5alNianZtbjQ1MDNNSVUyVU81eTRmOHZKc1R0RWJlQjY0RDRqTkViN3NGSXc?oc=5",
+    "publisher": "1News",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Several top National MPs likely to be out of Parliament    1News "
+   },
+   {
+    "title": "'Pathway to next govt': Luxon strikes hopeful note as election results deadlocked",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOb2ViZzZHaURIMFVjVFFaUEg3aXdEU1dCTkx1Y3NVNXRuX0JLNDlCdDRZdGR5QXMtSGszbmd0N0RPQlI0dzhIa0ZhQUstZ3NMV2ZWLVFyS2lYRGtHLWp6aHJCamNOc01wT2s1S2hyY3NING45MGI3Q0E2NGRIZUNRc2lvQkxmYUZIOGEwa0x1N1d5TGZCRUIya05oVUktQlMtX3BleXJIMDZKNDJTVHpPcndpeFhRYWVlMF83TjBLOVdxRjJia21FTmNfZmRNa2NrdmdsMmhhZjlSeG8?oc=5",
+    "publisher": "NZ Herald",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " 'Pathway to next govt': Luxon strikes hopeful note as election results deadlocked    NZ Herald "
    },
    {
     "title": "Environmental groups embrace AI, even as they warn of data center impacts",
@@ -822,6 +878,14 @@
     "description_excerpt": " Environmental groups embrace AI, even as they warn of data center impacts    Reuters "
    },
    {
+    "title": "Trump officials weigh major overhaul of National Park Service, Fish and Wildlife",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcDV4dGhqcTFtcEVobzlQNGpVQm9XLVFMbm45ZHJHVEFsQVRhaERSVDQwaVRBZ2FBOVhWaThzYnZTdzBPZ3JBNzFldGRQaE5rNUx0elFZdTNrdWtuc3c1N1RSM2VrTmF1XzIxeGhLUGxQZzNjM25lOFlzT3l1WHIxTDRxVTJkeklYSThUZXNKenpFUnEyZHFUSGozQlViNGZ0MEZkOFJZTFVOMmFJTF9BME8zMW5Bbl9ES0VjaDhwdXVLdEhUOFV3RmUwU2RxUzhiMENCcDdleE4?oc=5",
+    "publisher": "The Washington Post",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Trump officials weigh major overhaul of National Park Service, Fish and Wildlife    The Washington Post "
+   },
+   {
     "title": "Environmental groups turn to AI despite climate concerns, say benefits outweigh costs",
     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB2N0N1S2x2cnFuakhtRjExVHVoZTQ4ei1kdkVaMUZRQ045UXpnN3RFSkFxV2s1al9XWXl3RnU1QlczZTl0RWhXaVp3NWtJUlpId21mRnQ5SGE?oc=5",
     "publisher": "TRT World",
@@ -830,219 +894,155 @@
     "description_excerpt": " Environmental groups turn to AI despite climate concerns, say benefits outweigh costs    TRT World "
    },
    {
-    "title": "It’s a bumper year for wild mushrooms – here’s what you could find in the woods today",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalN2bGdPbnZxc0xNcmlYU1NhNTJmY0ZXWklxM05HV0dUVWpNYlFwbThmNnpYT2dfcGlJR2pvZUItS096NFJRX2wzUVRiVjdPVFViLW5uQ2hfM1FROGtWdm1KWEIzS3dsV3JIMmRzSzNtS2R1Z3l6UFBLRHVTdWNoU19GcUllUVptQjgzVUFpZ2UybFhEWDZfdUJITTdkZXlOa1hTTHhGU0VFM1JFWkJZdnFlNVNTOWVCRV9F?oc=5",
-    "publisher": "Inside Ecology",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " It’s a bumper year for wild mushrooms – here’s what you could find in the woods today    Inside Ecology "
-   },
-   {
     "title": "15 Green Groups Use AI, All Fear Data Centers [2026] - https://tech-insider.org/",
     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcHl6MDl1TjFqTmtlelFiY2lsWTEzVUo5NHNveXJyeTYzYWRKMy1vUmVWNEVIZUZ0UUU0S3I3aExmQzI4QkhVMVhmbUU1bTZrdjljcEZaOEVxdzRtemhYdmhhY3NIb0JPam50RjBPQ2dlOVFYQWxiX01wQ1NabHRKbFdJSlRIVDdwUEN6ZzY4UWxCRHNzUVFJ?oc=5",
     "publisher": "https://tech-insider.org/",
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " 15 Green Groups Use AI, All Fear Data Centers [2026]    https://tech-insider.org/ "
-   },
-   {
-    "title": "Conservation Groups Adopt AI Tools While Warning of Data Center Strain",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1aMmdibjlKZVVtQUI3SUFMblQtX1hTQ29Eb1F1eHY3OTNGc0VGa19wa1JUcmFwOWVnNk9nQUVjVG04QURaeWFORElMM1pWeVdfOXUyMFZLTjhzYUJ0WGhqTWtOVDlfcmMycGNMVVNaRXRwSEVvYkE?oc=5",
-    "publisher": "BigGo Finance",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Conservation Groups Adopt AI Tools While Warning of Data Center Strain    BigGo Finance "
-   },
-   {
-    "title": "CBD COP17: Did the world deliver for wildlife?",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVU9tU3FJcEZVWW5oZFBhOWlCNmhiNDNwMDlvZG1jTW5YY0o2bFo4ejNSOGZsVnV2aUxheEtCYldzMEpsNHNOdUktNnhWS21QUlNNUl9IbXJCeHE4ZDB5amVyZEhVX2tPVEt3TDB6Y2hfVWtXQzNoZlBQRGVjR3Jabks1Y2M?oc=5",
-    "publisher": "We Are Born Free",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " CBD COP17: Did the world deliver for wildlife?    We Are Born Free "
-   },
-   {
-    "title": "More Than 3,500 Acres Added to Maya Forest Corridor for Conservation",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNGp0MTFQZjhBMmV3cEFTZ1VvWGxfeGFseGMxNkM5V0dTZW5fMUU1cGdXOFdIekRzS183eUxzVGk3a2FXaURjZHdUMWhJWGxkVjJwUnp4TGlMUlNHNk9jbGNxdXBHcTc5WExCSUFjWWJ4N0tGaGE3cXFTaFpwdHh1ZVplTWFzajN4VlZkSjgwbG4?oc=5",
-    "publisher": "Love FM Belize",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " More Than 3,500 Acres Added to Maya Forest Corridor for Conservation    Love FM Belize "
-   },
-   {
-    "title": "MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWnZJNnFfQ3VYYU02UldhTjZPMm1IUWFheGVxNmRJaHQ0LUxyY1FZanFleEp3aXZoelRuNnBMQUo5a01vSU44SEgtbHo3WWxlWFJiTFRwNHJpLUpOcFF2aTZHcUp2aFBVbFNTUmhmNVhHZkV1ZlBFN05ScXd6QWNFSXFyZFExemdBRU5VWWJpLVBKdGpHVl80VkZhenJMR3VpZE5OQXJPVEduSnJIVTNJNWZKWGlrSWsxN1FiWlVOa1JyOUtoeXdGbWZoWQ?oc=5",
-    "publisher": "Inside Ecology",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes    Inside Ecology "
-   },
-   {
-    "title": "Historic return of beavers to waters around Loch Ness",
-    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQkpjU2QwT25BSHk3TGZhQ0xJZVJYWm03QkVLSXFacDhQblhKT2FXLXRrZGk2OGlvUTF4Q0RaTDJmeGF3QUVDWEdMWU1NT2hSTjlSck9kVUE0WGJmcDRtYWhZaHczbXk3OVJ5b0MwTjdycno3TmFKakhWWU1Jd3pzWVpKcDdQSWRURVNtbmpWMHJvRmswUFE?oc=5",
-    "publisher": "Inside Ecology",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Historic return of beavers to waters around Loch Ness    Inside Ecology "
-   },
-   {
-    "title": "Environment Ministry, WCS plant 1,000 trees in Mondulkiri",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX1pDOERLcXlCTG5NY1AwUWpjVUV4Mmp6TzJTVElaNkN4aGR1V1ZPd29EbTRNSTJacWxjd0otbU5tbnAyU29aNUhRZmprZzA5TTF0WXN5ZUZsbGZnMjQ4aTJVWE83djhYYmtNYXRlcG52LWYwTFQ0MTBpR0lVRDk5X096SVkzdjdUS1pGb3R0d3JMdUNGZXVCbW9vRQ?oc=5",
-    "publisher": "Khmer Times",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Environment Ministry, WCS plant 1,000 trees in Mondulkiri    Khmer Times "
-   },
-   {
-    "title": "Free wildlife event in Droxford aims to inspire action across the Meon Valley",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQ3I4TjBOb25QN2RaZEEzUVpZRWFpZlJfYUhXRFdMSHh3czdmbWhVRl9jelFjeWZiWlJEVnU2Um5qbDJqb25TY2QyRFVvYmlwOU9mNU5VS1E4bG15MjJBX0tOZy1sbVprX1ZITTVGWVowcFVXWjNZVlVXbjBkMExudHZWS1IwYk1TbUpxeE9yMjJNQmJ3MUt3d05vcTFwa01tTm4xX1lScHpkODRD?oc=5",
-    "publisher": "Meon Valley Times",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Free wildlife event in Droxford aims to inspire action across the Meon Valley    Meon Valley Times "
    }
   ],
   "country_label_concentration": {
-   "largest_label": "Nigeria",
-   "largest_label_articles": 28,
-   "share_of_country_labelled_articles": 0.081
+   "largest_label": "Vietnam",
+   "largest_label_articles": 31,
+   "share_of_country_labelled_articles": 0.11
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 258,
-  "unique_google_urls_not_in_direct_sample": 354,
+  "unique_direct_urls_not_in_google_sample": 191,
+  "unique_google_urls_not_in_direct_sample": 355,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "AllAfrica West Africa": 30,
-   "The Guardian World": 23,
-   "France24": 21,
-   "Al Jazeera": 19,
-   "France24 FR": 19,
-   "France24 ES": 16,
-   "AllAfrica East Africa": 15,
-   "AllAfrica Southern Africa": 14,
-   "DW World": 12,
-   "ABC Australia": 11,
+   "The Guardian World": 21,
+   "France24": 20,
+   "Al Jazeera": 20,
+   "France24 ES": 19,
+   "AllAfrica West Africa": 19,
+   "France24 FR": 14,
+   "ABC Australia": 12,
    "RNZ National": 11,
-   "The Diplomat": 10,
    "BBC World": 8,
-   "BBC Brasil": 7,
-   "Mongabay Latam": 6,
-   "The Guardian Environment": 5,
+   "DW World": 7,
+   "BBC Brasil": 6,
+   "Mongabay Global": 6,
    "RNZ Pacific": 5,
-   "Mongabay Global": 5,
-   "BBC Europe": 4,
-   "Mongabay Indonesia": 3,
-   "UN News": 3,
-   "BBC Africa": 3,
-   "Guardian Asia": 3,
-   "The Conversation France": 3,
-   "BBC Science": 2,
-   "Guardian Africa": 2,
+   "Guardian Asia": 5,
+   "Mongabay Indonesia": 4,
+   "The Diplomat": 3,
+   "Mongabay Latam": 3,
+   "AllAfrica Southern Africa": 3,
    "BBC Latin America": 2,
+   "The Conversation France": 2,
+   "The Guardian Environment": 2,
+   "BBC Africa": 2,
    "NPR World": 2,
-   "The Conversation Brasil": 2,
-   "Inter Press Service Headlines": 1
+   "Global Voices English": 1,
+   "AllAfrica East Africa": 1,
+   "The Conversation Indonesia": 1,
+   "Global Voices Spanish": 1,
+   "BBC Europe": 1,
+   "BBC Science": 1,
+   "BBC Asia": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 344,
-  "country_labels_count": 75,
+  "country_labelled_articles": 281,
+  "country_labels_count": 72,
   "top_country_subjects": {
-   "Nigeria": 28,
-   "Vietnam": 28,
-   "France": 24,
-   "Iran": 17,
-   "Israel": 12,
-   "Kenya": 12,
-   "Canada": 11,
-   "China": 11,
-   "India": 11,
+   "Vietnam": 31,
+   "Nigeria": 22,
+   "France": 17,
+   "Iran": 15,
+   "New Zealand": 12,
    "United States": 9,
-   "Yemen": 8,
-   "South Africa": 8,
-   "Ukraine": 8,
-   "Argentina": 8,
    "Paraguay": 8,
-   "Portugal": 8,
+   "Israel": 8,
+   "India": 8,
+   "Mexico": 8,
+   "China": 8,
+   "Yemen": 7,
+   "Uruguay": 7,
+   "Venezuela": 7,
    "Brazil": 7,
-   "New Zealand": 6,
-   "Australia": 6,
-   "Ghana": 6,
-   "Venezuela": 6,
-   "Mexico": 5,
-   "Germany": 5,
-   "Liberia": 4,
-   "Bangladesh": 4,
-   "Uruguay": 4,
+   "Bangladesh": 5,
+   "Kenya": 5,
+   "Canada": 5,
+   "Argentina": 5,
+   "Chile": 5,
+   "South Africa": 4,
    "Colombia": 4,
-   "Chile": 4,
-   "Haiti": 4,
-   "Tanzania": 3
+   "Ghana": 4,
+   "Ukraine": 4,
+   "Australia": 4,
+   "Nepal": 3,
+   "Portugal": 3,
+   "Spain": 3,
+   "Bahrain": 2,
+   "Uganda": 2
   },
-  "distinct_geographic_signal_centers": 240,
+  "distinct_geographic_signal_centers": 238,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 73
+   "mapped_pre_dedupe": 56
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 52
+   "mapped_pre_dedupe": 45
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 90
+   "mapped_pre_dedupe": 67
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 45
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 73
+   "mapped_pre_dedupe": 54
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 58
+   "mapped_pre_dedupe": 48
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 77
+   "mapped_pre_dedupe": 62
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 44
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 57
+   "mapped_pre_dedupe": 66
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 127
+   "mapped_pre_dedupe": 143
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 72
+   "mapped_pre_dedupe": 58
   }
  },
- "duplicates_removed": 473,
+ "duplicates_removed": 356,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1060,33 +1060,33 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-07T10:25:44+00:00",
-    "mapped_articles": 599,
-    "geographic_signals": 355,
+    "at": "2026-11-07T16:38:22+00:00",
+    "mapped_articles": 538,
+    "geographic_signals": 338,
     "feeds_ok": 170,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 21,
+    "rejected_matching_occurrences": 15,
     "ambiguous_mapped_signal_count": 2
    }
   ],
   "latest": {
-   "at": "2026-11-07T10:25:44+00:00",
-   "mapped_articles": 599,
-   "geographic_signals": 355,
+   "at": "2026-11-07T16:38:22+00:00",
+   "mapped_articles": 538,
+   "geographic_signals": 338,
    "feeds_ok": 170,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 21,
+   "rejected_matching_occurrences": 15,
    "ambiguous_mapped_signal_count": 2
   },
   "recent_change": {
-   "baseline_at": "2026-11-07T10:25:44+00:00",
+   "baseline_at": "2026-11-07T16:38:22+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Union": 11,
-   "Forest": 9,
+   "Forest": 7,
+   "Union": 7,
    "Rubio": 1
   },
   "ambiguous_mapped_review": [
