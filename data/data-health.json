@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-06T23:32:19.273565+00:00",
+ "updated_at": "2026-11-07T03:15:11.113289+00:00",
  "feeds_total": 173,
  "feeds_ok": 169,
  "feeds_failed": [
@@ -13,42 +13,42 @@
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 83
+   "mapped_pre_dedupe": 81
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 53
+   "mapped_pre_dedupe": 51
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 90
+   "mapped_pre_dedupe": 91
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 54
+   "mapped_pre_dedupe": 57
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 92
+   "mapped_pre_dedupe": 85
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 56
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 85
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 63
   },
   "BR": {
    "total": 11,
@@ -58,68 +58,76 @@
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 120
+   "mapped_pre_dedupe": 123
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 86
+   "mapped_pre_dedupe": 84
   }
  },
  "mapped_articles_by_category": {
-  "community": 278,
-  "society": 48,
-  "politics": 46,
-  "economy": 53,
-  "education": 49,
+  "community": 270,
+  "society": 46,
+  "education": 51,
+  "politics": 50,
+  "economy": 55,
   "conflict": 58,
-  "health": 44,
-  "environment": 35,
+  "health": 45,
+  "environment": 34,
   "science": 17,
-  "rights": 13,
-  "hazards": 10
+  "rights": 11,
+  "hazards": 8
  },
  "mapped_articles_by_location_precision": {
-  "country": 361,
-  "place": 285,
-  "region": 5
+  "country": 366,
+  "place": 272,
+  "region": 7
  },
  "location_evidence_counts": {
-  "headline": 554,
-  "description": 97
+  "headline": 549,
+  "description": 96
  },
  "geographic_quadrants": {
-  "NE": 271,
-  "SE": 88,
-  "NW": 202,
-  "SW": 90
+  "NE": 264,
+  "SE": 91,
+  "NW": 197,
+  "SW": 93
  },
- "geo_signal_count": 383,
- "mapped_total": 651,
+ "geo_signal_count": 367,
+ "mapped_total": 645,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1156,
- "unmapped_distinct_titles": 596,
+ "unmapped_sample_count": 1140,
+ "unmapped_distinct_titles": 572,
  "unmapped_by_feed": {
-  "Google News MX": 124,
-  "Google News BR": 120,
-  "Google News IN": 107,
-  "Google News PH": 105,
-  "Google News US": 104,
-  "Google News KE": 102,
-  "Google News ZA": 101,
-  "Google News AU": 61,
-  "Google News NG": 59,
+  "Google News BR": 121,
+  "Google News MX": 117,
+  "Google News IN": 110,
+  "Google News US": 108,
+  "Google News ZA": 106,
+  "Google News PH": 104,
+  "Google News KE": 103,
+  "Google News NG": 60,
   "Google News CA": 58,
-  "Google News GB": 56,
-  "RNZ National": 23,
-  "ABC Australia": 18,
-  "BBC Business": 13,
+  "Google News AU": 57,
+  "Google News GB": 52,
+  "ABC Australia": 16,
+  "RNZ National": 16,
+  "BBC Business": 12,
   "BBC Science": 11,
-  "The Guardian World": 11,
-  "BBC World": 10,
-  "Al Jazeera": 8
+  "Al Jazeera": 10,
+  "The Guardian World": 10,
+  "BBC World": 9
  },
  "unmapped_examples": [
+  {
+   "title": "Health and care sector latest developments",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWk4zWmpSM2JfSUxoeXRpRGlGLTc1czM5T3NwWHY0U3RCTDBMYlpqMDlwYk9nWjM5dy1wQlY1TXJQcVBWSnB3UzR2cXVvT1BjbXJLUEszVkpxMHZpd3hqTUJiRUxRY2QzSmVxMVR1S0lGeURKZzFpZW9YbklWaVJlRElfXy1WMkk?oc=5",
+   "publisher": "The NHS Alliance",
+   "feed_occurrences": 7,
+   "feed_count": 7,
+   "description_excerpt": " Health and care sector latest developments    The NHS Alliance "
+  },
   {
    "title": "How climate change worsens heatwaves, droughts, wildfires and floods",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBha2hSMWluWVdKUHpEZUNyTVFmVC1idnd2cFY5eDNxckF6OFE2NGxzb2lSVnNMYlA5aklTVk5CdldkSXpzV3ptX1YxVEdEdG5vaXU2b2FkUHR3QQ?oc=5",
@@ -127,14 +135,6 @@
    "feed_occurrences": 7,
    "feed_count": 6,
    "description_excerpt": " How climate change worsens heatwaves, droughts, wildfires and floods    BBC "
-  },
-  {
-   "title": "Deadlines for terms of office, the constitution of the Assembly and the new government",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZGNmcVRiMWJWS0ZDbV9xTEhRZ0ZYR3ZlSVRhYm1naFBrTXpZT3dTekZEeVFmQzkxbDF1TTFnb0dRck1ZTDN5ZktBU0NIUXFVa1ZuaVhBMjdmNVcwMjhxSV8zX00tcHdaWGt6d1BzTFNkT05QU1pfSGpHQzhQX0RjNGZpaWZMVndhY1JGSTBNcw?oc=5",
-   "publisher": "vreme.com",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Deadlines for terms of office, the constitution of the Assembly and the new government    vreme.com "
   },
   {
    "title": "The political arithmetic of Kulbergs’ government – Rajevskis explains how a parliamentary majority will be secured",
@@ -145,20 +145,28 @@
    "description_excerpt": " The political arithmetic of Kulbergs’ government – Rajevskis explains how a parliamentary majority will be secured    Baltic News Network "
   },
   {
+   "title": "Deadlines for terms of office, the constitution of the Assembly and the new government",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZGNmcVRiMWJWS0ZDbV9xTEhRZ0ZYR3ZlSVRhYm1naFBrTXpZT3dTekZEeVFmQzkxbDF1TTFnb0dRck1ZTDN5ZktBU0NIUXFVa1ZuaVhBMjdmNVcwMjhxSV8zX00tcHdaWGt6d1BzTFNkT05QU1pfSGpHQzhQX0RjNGZpaWZMVndhY1JGSTBNcw?oc=5",
+   "publisher": "vreme.com",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Deadlines for terms of office, the constitution of the Assembly and the new government    vreme.com "
+  },
+  {
+   "title": "Legislative blitz: anti-Netanyahu bloc races to undo judicial reform before new government takes office",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBHb3A4QWppbVB0dUw3NG1XQlBKNXctYmpxdWdrMmNjTUpnNHJqU1ctcVlyVnBya3BDNlY4UFFGeGZ0X1E0OXA3ME1mMk9zemtMN1Qzb0JVTQ?oc=5",
+   "publisher": "Ynetnews",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Legislative blitz: anti-Netanyahu bloc races to undo judicial reform before new government takes office    Ynetnews "
+  },
+  {
    "title": "The Serbian Government, in its technical mandate, called for the constitution of the Assembly as soon as possible",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNVjZsTEUtSEdndHVpUFh0enlpbjd1eWlXWVhfVVRZYVUxc0dTa0xtUVhhWlp6eS1yV2lkWTB5aWZKM3BHZm1INllneEM2X1pCa1lTblRnTXh0eFlTOXVGUFFFbWVyU2xpTXpoMllxMVBXZllQQzZtYTRlazI3aHBWc2dlMDFvcE8yMEZfQkdHUG5HUkZ4eEMzV2hJZ01oUlN2azE5aDlycC1zZXRCbkcwWUtBbm54YS02UzdPSFJLdDJiVGtVWWM5eFRCVXdabmNuOVdWd2sxZy1qZ0VvaW1WMjI2empWZkpwUW00YnJRUXpHQdIB4wFBVV95cUxQMGNtbFMweVFnYUI4VnVvakFZYXJEMVRFTjEyLW5hRUxnSjFqWlptVWhpVU1tRU1lV21JUmU1dVhnbk9PRXM4Ql9vOXVKUGR1VlN4NzVOYXFRRjVHTkQwZjg0ajNmdkd5VDdjR2FWSFpMamlzZnl2XzBlQVNWN0x6NTRwNWF6YjdiX05wbGVmal9oWEF2TU50R1FidVNQcWJkWGZPbEtFNkFUSjhVTGtFTkFOY1NuNGt1RzNZdTRXTHlUV0xBWTRRTnZNVkNKcFU5ZEN3ZHhNWnU1UWJtMW8xRjlvcw?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMGNtbFMweVFnYUI4VnVvakFZYXJEMVRFTjEyLW5hRUxnSjFqWlptVWhpVU1tRU1lV21JUmU1dVhnbk9PRXM4Ql9vOXVKUGR1VlN4NzVOYXFRRjVHTkQwZjg0ajNmdkd5VDdjR2FWSFpMamlzZnl2XzBlQVNWN0x6NTRwNWF6YjdiX05wbGVmal9oWEF2TU50R1FidVNQcWJkWGZPbEtFNkFUSjhVTGtFTkFOY1NuNGt1RzNZdTRXTHlUV0xBWTRRTnZNVkNKcFU5ZEN3ZHhNWnU1UWJtMW8xRjlvc9IB4wFBVV95cUxQMGNtbFMweVFnYUI4VnVvakFZYXJEMVRFTjEyLW5hRUxnSjFqWlptVWhpVU1tRU1lV21JUmU1dVhnbk9PRXM4Ql9vOXVKUGR1VlN4NzVOYXFRRjVHTkQwZjg0ajNmdkd5VDdjR2FWSFpMamlzZnl2XzBlQVNWN0x6NTRwNWF6YjdiX05wbGVmal9oWEF2TU50R1FidVNQcWJkWGZPbEtFNkFUSjhVTGtFTkFOY1NuNGt1RzNZdTRXTHlUV0xBWTRRTnZNVkNKcFU5ZEN3ZHhNWnU1UWJtMW8xRjlvcw?oc=5",
    "publisher": "vijesti.me",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " The Serbian Government, in its technical mandate, called for the constitution of the Assembly as soon as possible    vijesti.me "
-  },
-  {
-   "title": "Four election night scenarios - featuring Christopher Luxon’s worst nightmare",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMTFiRktMeEdqV0V1dkVWZzU5LWZ4cGJWVFBoT0Z3THc0VllvUjNpelh4WnNXd2REbnVNZGJrUUg0dXhjaGwzT3MxUXVad0t2SWFnVVpqMS1oQjhUcXl4empBdEpVLTFlcDFkdm1iTFhjY2lxalpkd3kwNVhFeDFEMDVEam1JV0stM2YxRDRnNGNBaTJ3LW4tVGVkMVoyOEItYlAtWE5IYVVvbkRXVF9xSmF1bUY0NXc3T01F?oc=5",
-   "publisher": "RNZ",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Four election night scenarios - featuring Christopher Luxon’s worst nightmare    RNZ "
   },
   {
    "title": "It’s a bumper year for wild mushrooms – here’s what you could find in the woods today",
@@ -169,12 +177,12 @@
    "description_excerpt": " It’s a bumper year for wild mushrooms – here’s what you could find in the woods today    Inside Ecology "
   },
   {
-   "title": "Conservation Succeeds When We Work Together",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40TVEwMTI2eFEwOUNtZHBlMXFYU3ZKY1puUHlGS2ZwWEhWU2pKdUhaUWpmOWRkRmR3RVhUdHhnMk9nR3ZGS1E1aTd0bGhMM284TlB6eld6Vm9mM0paNlh2QlJ1TUk0dVBSbGtXWUR1NERLbWROenFGNExn?oc=5",
+   "title": "Feel-Good Friday: Conservation Succeeds, Women Fight Fires, Gen Z Rescues Medical Supplies, and Blind Dolphins Find Sanctuary",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNnpEVE5VNGtncjFfTzI1X2JNWTAyMXJxMU5NQmgySVNsNzc5eldfdGRVRDZsUExRdDF3bnFhenVreFV2WWtSZm9mdVJYQUUzM3F6bElfWDRfdTUwUmRrT0ZreFRPb1VTektyOHR1UXJYcjJDa0FYaEhSejg1S21DbFhLazY4MXhDR0xEYWxwQzY2RlRnT3NBbmxPN3VNaXFxU2ppLVhHU2l2ckVsOERyRzJ5dmFWeGt4TWtfdHptQzJ0TTJjZ2ZPU29BZVVHb0FTQ1JXME1CdDBKVm8tM1NkOW1B?oc=5",
    "publisher": "Bluedot Living",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Conservation Succeeds When We Work Together    Bluedot Living "
+   "description_excerpt": " Feel-Good Friday: Conservation Succeeds, Women Fight Fires, Gen Z Rescues Medical Supplies, and Blind Dolphins Find Sanctuary    Bluedot Living "
   },
   {
    "title": "CBD COP17: Did the world deliver for wildlife?",
@@ -183,6 +191,62 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " CBD COP17: Did the world deliver for wildlife?    We Are Born Free "
+  },
+  {
+   "title": "MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWnZJNnFfQ3VYYU02UldhTjZPMm1IUWFheGVxNmRJaHQ0LUxyY1FZanFleEp3aXZoelRuNnBMQUo5a01vSU44SEgtbHo3WWxlWFJiTFRwNHJpLUpOcFF2aTZHcUp2aFBVbFNTUmhmNVhHZkV1ZlBFN05ScXd6QWNFSXFyZFExemdBRU5VWWJpLVBKdGpHVl80VkZhenJMR3VpZE5OQXJPVEduSnJIVTNJNWZKWGlrSWsxN1FiWlVOa1JyOUtoeXdGbWZoWQ?oc=5",
+   "publisher": "Inside Ecology",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes    Inside Ecology "
+  },
+  {
+   "title": "Environment Ministry, WCS plant 1,000 trees in Mondulkiri",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX1pDOERLcXlCTG5NY1AwUWpjVUV4Mmp6TzJTVElaNkN4aGR1V1ZPd29EbTRNSTJacWxjd0otbU5tbnAyU29aNUhRZmprZzA5TTF0WXN5ZUZsbGZnMjQ4aTJVWE83djhYYmtNYXRlcG52LWYwTFQ0MTBpR0lVRDk5X096SVkzdjdUS1pGb3R0d3JMdUNGZXVCbW9vRQ?oc=5",
+   "publisher": "Khmer Times",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Environment Ministry, WCS plant 1,000 trees in Mondulkiri    Khmer Times "
+  },
+  {
+   "title": "Free wildlife event in Droxford aims to inspire action across the Meon Valley",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQ3I4TjBOb25QN2RaZEEzUVpZRWFpZlJfYUhXRFdMSHh3czdmbWhVRl9jelFjeWZiWlJEVnU2Um5qbDJqb25TY2QyRFVvYmlwOU9mNU5VS1E4bG15MjJBX0tOZy1sbVprX1ZITTVGWVowcFVXWjNZVlVXbjBkMExudHZWS1IwYk1TbUpxeE9yMjJNQmJ3MUt3d05vcTFwa01tTm4xX1lScHpkODRD?oc=5",
+   "publisher": "Meon Valley Times",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Free wildlife event in Droxford aims to inspire action across the Meon Valley    Meon Valley Times "
+  },
+  {
+   "title": "Historic return of beavers to waters around Loch Ness",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQkpjU2QwT25BSHk3TGZhQ0xJZVJYWm03QkVLSXFacDhQblhKT2FXLXRrZGk2OGlvUTF4Q0RaTDJmeGF3QUVDWEdMWU1NT2hSTjlSck9kVUE0WGJmcDRtYWhZaHczbXk3OVJ5b0MwTjdycno3TmFKakhWWU1Jd3pzWVpKcDdQSWRURVNtbmpWMHJvRmswUFE?oc=5",
+   "publisher": "Inside Ecology",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Historic return of beavers to waters around Loch Ness    Inside Ecology "
+  },
+  {
+   "title": "NatureTrack Film Festival uses storytelling to inspire connection with the natural world - News Channel 3-12",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNODRVeklFazdIM1RxdUtIUzg0enItTWdKMnc1SG9xd2RDMEU5bURXNXVzTkl3bTlvbzNhNVdMY3lZbHY1S0lLeDgxRGZfYUxFVUtsaDE3MDFUNlRrTDY0RTNsVDI0c3c3NmcxX19NNVhRcmJUblFXaG9NSzVBU1dBMHNMazRiZlRzTU5vQTlta3kwZmt2Vy1oX2Q5TW1wdUtGTmF2VTRRbXR6Z3ZkYXVQdmxJWkx2bU1mREViRUVtT253YUJhSGNWVU1PTVB1bGM?oc=5",
+   "publisher": "News Channel 3-12",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " NatureTrack Film Festival uses storytelling to inspire connection with the natural world    News Channel 3-12 "
+  },
+  {
+   "title": "Ted Turner conservation doc to screen at TCA",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPT1NCUURnYVBBd2hESkktX29IZmE0ekZrNEZwODRlY3VzSnpaWkNFMm5tQzNXS0JTOXlndlA3NzZMRkRLcGo0aXNHejRnUlk0Vm5IUXNqQkpiMU9Md00yOEZUUGVCc2VhTkxaa0ZWb25BMXVOQzUxOExzdDBaLXZGQlVYQU1aeWdob2FTczdYeUJzZGkzVnVjTWZMRlJMeFpUaU84TUpoUkVFQ0RzV0JzXzhiNXhMa1gxQjRVbkhQeW5qRmVZbW0wbDJnbVM0bTFEb0E?oc=5",
+   "publisher": "The Taos News",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Ted Turner conservation doc to screen at TCA    The Taos News "
+  },
+  {
+   "title": "2026 WWF EFN Grant Recipients",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWlBEUy0wTEsyYzJ1WVhFcGh2RlF6aFlXODQ4VmxZNm4xdlRfbTFwMVR6TTNmSm4wNl9PeTlaQzZXcXplcjR1b2EyNXJvcTlVLUhacFQ3S2ZrVXRVTlVpMzdGYTRrb3dodUwxazZCRXRQMWNnSzBtTGtHVl9TY3hraUwwSnVCb3FBTU5rdVJmNV84Q19PeGpVcnJaRGtEaHhlNGNHTGtxQ2hmc2pubGZYeTJWeUs0SWRVMi1sM2h5UVlOVkdJWG9zV2JUcEpxZGUyNmF6MHI4S1RNRWdvODVBNVo2WkhYSlU2VlFaVDlVUQ?oc=5",
+   "publisher": "World Wildlife Fund",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " 2026 WWF EFN Grant Recipients    World Wildlife Fund "
   },
   {
    "title": "‘This is a huge day’: Conservation groups seal deal to permanently conserve Awendaw's White Tract",
@@ -209,12 +273,12 @@
    "description_excerpt": " Feds Unveil Plan to Overhaul National Wildlife Refuges, Get More ‘Boots on the Ground’    Outdoor Life "
   },
   {
-   "title": "2026 WWF EFN Grant Recipients",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWlBEUy0wTEsyYzJ1WVhFcGh2RlF6aFlXODQ4VmxZNm4xdlRfbTFwMVR6TTNmSm4wNl9PeTlaQzZXcXplcjR1b2EyNXJvcTlVLUhacFQ3S2ZrVXRVTlVpMzdGYTRrb3dodUwxazZCRXRQMWNnSzBtTGtHVl9TY3hraUwwSnVCb3FBTU5rdVJmNV84Q19PeGpVcnJaRGtEaHhlNGNHTGtxQ2hmc2pubGZYeTJWeUs0SWRVMi1sM2h5UVlOVkdJWG9zV2JUcEpxZGUyNmF6MHI4S1RNRWdvODVBNVo2WkhYSlU2VlFaVDlVUQ?oc=5",
-   "publisher": "World Wildlife Fund",
+   "title": "Conservation Succeeds When We Work Together",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40TVEwMTI2eFEwOUNtZHBlMXFYU3ZKY1puUHlGS2ZwWEhWU2pKdUhaUWpmOWRkRmR3RVhUdHhnMk9nR3ZGS1E1aTd0bGhMM284TlB6eld6Vm9mM0paNlh2QlJ1TUk0dVBSbGtXWUR1NERLbWROenFGNExn?oc=5",
+   "publisher": "Bluedot Living",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " 2026 WWF EFN Grant Recipients    World Wildlife Fund "
+   "description_excerpt": " Conservation Succeeds When We Work Together    Bluedot Living "
   },
   {
    "title": "Why on Earth are tropical wild animals so colourful and diverse?",
@@ -225,14 +289,6 @@
    "description_excerpt": " Why on Earth are tropical wild animals so colourful and diverse?    BBC Wildlife Magazine "
   },
   {
-   "title": "The UN's climate conference starts next week – will nature feature as strongly as it needs to?",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeTZubEVPbjVabnQyd2N2TjF2TlROc09TZ3M1VS1IWkZNanZ6VnRHSUJ1ZjRwdFdyQ2ZKdl9IU1g0RnZtWUhxOGdYcjh6ek1VNE5JRzNLUjMwRktFblk4ek54YkxPd3ZMN0pLcHBRVTRNOENNWE5NWF9XZzJOWkFtYWN1Wk5WZHRNbHRWU1FQUGlyc3d1VjJ6SWJqcUNxay1sOHFqWS0yM1pvTlBYT21mcXRsM2llcExLSFI1TTlNS2NrUmhBd1FNaUhR?oc=5",
-   "publisher": "The Wildlife Trusts",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " The UN's climate conference starts next week – will nature feature as strongly as it needs to?    The Wildlife Trusts "
-  },
-  {
    "title": "Michigan is quietly leading the nation in a timber program to fund wildlife habitat",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdGtUVG9tYzlJSWZ2eDRNVjBDTWlVTUxqcjVNREhqMVQ0NEQ2bkExNy1zUkQwbTRBdE9NQ3YyRGdfVlZ6Tzl5Y0pFWHZNenhRck5tQ1oxNUppaGttVXYyaWNMOXRLUDFJYkczY3l5SnhjYnVFQ3N4QUxIdTZUaGRqQm4wR0l3VktWMzN4WUtrUzdRZVZsZUJyVVRNYy1QWFpEOHJIdV9URXJ4Unl6WFVUUmJUY1UzYWRsandfSjB0LVpac2Nwb1dkQzZR?oc=5",
    "publisher": "MLive.com",
@@ -241,60 +297,12 @@
    "description_excerpt": " Michigan is quietly leading the nation in a timber program to fund wildlife habitat    MLive.com "
   },
   {
-   "title": "MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWnZJNnFfQ3VYYU02UldhTjZPMm1IUWFheGVxNmRJaHQ0LUxyY1FZanFleEp3aXZoelRuNnBMQUo5a01vSU44SEgtbHo3WWxlWFJiTFRwNHJpLUpOcFF2aTZHcUp2aFBVbFNTUmhmNVhHZkV1ZlBFN05ScXd6QWNFSXFyZFExemdBRU5VWWJpLVBKdGpHVl80VkZhenJMR3VpZE5OQXJPVEduSnJIVTNJNWZKWGlrSWsxN1FiWlVOa1JyOUtoeXdGbWZoWQ?oc=5",
-   "publisher": "Inside Ecology",
+   "title": "The UN's climate conference starts next week – will nature feature as strongly as it needs to?",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeTZubEVPbjVabnQyd2N2TjF2TlROc09TZ3M1VS1IWkZNanZ6VnRHSUJ1ZjRwdFdyQ2ZKdl9IU1g0RnZtWUhxOGdYcjh6ek1VNE5JRzNLUjMwRktFblk4ek54YkxPd3ZMN0pLcHBRVTRNOENNWE5NWF9XZzJOWkFtYWN1Wk5WZHRNbHRWU1FQUGlyc3d1VjJ6SWJqcUNxay1sOHFqWS0yM1pvTlBYT21mcXRsM2llcExLSFI1TTlNS2NrUmhBd1FNaUhR?oc=5",
+   "publisher": "The Wildlife Trusts",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes    Inside Ecology "
-  },
-  {
-   "title": "Feel-Good Friday: Conservation Succeeds, Women Fight Fires, Gen Z Rescues Medical Supplies, and Blind Dolphins Find Sanctuary",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNnpEVE5VNGtncjFfTzI1X2JNWTAyMXJxMU5NQmgySVNsNzc5eldfdGRVRDZsUExRdDF3bnFhenVreFV2WWtSZm9mdVJYQUUzM3F6bElfWDRfdTUwUmRrT0ZreFRPb1VTektyOHR1UXJYcjJDa0FYaEhSejg1S21DbFhLazY4MXhDR0xEYWxwQzY2RlRnT3NBbmxPN3VNaXFxU2ppLVhHU2l2ckVsOERyRzJ5dmFWeGt4TWtfdHptQzJ0TTJjZ2ZPU29BZVVHb0FTQ1JXME1CdDBKVm8tM1NkOW1B?oc=5",
-   "publisher": "Bluedot Living",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Feel-Good Friday: Conservation Succeeds, Women Fight Fires, Gen Z Rescues Medical Supplies, and Blind Dolphins Find Sanctuary    Bluedot Living "
-  },
-  {
-   "title": "Historic return of beavers to waters around Loch Ness",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQkpjU2QwT25BSHk3TGZhQ0xJZVJYWm03QkVLSXFacDhQblhKT2FXLXRrZGk2OGlvUTF4Q0RaTDJmeGF3QUVDWEdMWU1NT2hSTjlSck9kVUE0WGJmcDRtYWhZaHczbXk3OVJ5b0MwTjdycno3TmFKakhWWU1Jd3pzWVpKcDdQSWRURVNtbmpWMHJvRmswUFE?oc=5",
-   "publisher": "Inside Ecology",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Historic return of beavers to waters around Loch Ness    Inside Ecology "
-  },
-  {
-   "title": "When a forest guard’s wisdom meets the algorithm",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMHVtX3MydGx3dl9fbnVjYnlkcWUzUzI3bEc5ZGdwM1hEUF9UMnJtOGxscGdvQklXNnZjdW9XSXdWaHVVZnA1ZDVBcEgyVG43TG96NGlkVktzUEd1eHB6aUZ1czZ2bFJyZFVvOWRqVzFLNUZnbEtvWXFLSFU2NEs4UWdTMVFBVGJyS0pSX2tNeXdYOGpRanJPN2ctTzFVY3VKU2530gGqAUFVX3lxTE5KcVI5ckE3Yl9IZ2hSUXRfd2xfVmNST19xQTBPLWdEblRwaUNGRGtkV2FlZzhNUFdJemUxbHpQMW9tZHN2MTFTd3VKVmhYNzM2aEN0WkNnZmJxM3loLVVYOVN5QnhnQi1jZ0pncldFWmkxNk9aN3JQczZDZG1BTk1VemttdTNkckFZbXhrYjg4REdJSW5OTjlUbWVqeDBFQ240ZE53cnEzTGFn?oc=5",
-   "publisher": "The Indian Express",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " When a forest guard’s wisdom meets the algorithm    The Indian Express "
-  },
-  {
-   "title": "Environment Ministry, WCS plant 1,000 trees in Mondulkiri",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX1pDOERLcXlCTG5NY1AwUWpjVUV4Mmp6TzJTVElaNkN4aGR1V1ZPd29EbTRNSTJacWxjd0otbU5tbnAyU29aNUhRZmprZzA5TTF0WXN5ZUZsbGZnMjQ4aTJVWE83djhYYmtNYXRlcG52LWYwTFQ0MTBpR0lVRDk5X096SVkzdjdUS1pGb3R0d3JMdUNGZXVCbW9vRQ?oc=5",
-   "publisher": "Khmer Times",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Environment Ministry, WCS plant 1,000 trees in Mondulkiri    Khmer Times "
-  },
-  {
-   "title": "Free wildlife event in Droxford aims to inspire action across the Meon Valley",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQ3I4TjBOb25QN2RaZEEzUVpZRWFpZlJfYUhXRFdMSHh3czdmbWhVRl9jelFjeWZiWlJEVnU2Um5qbDJqb25TY2QyRFVvYmlwOU9mNU5VS1E4bG15MjJBX0tOZy1sbVprX1ZITTVGWVowcFVXWjNZVlVXbjBkMExudHZWS1IwYk1TbUpxeE9yMjJNQmJ3MUt3d05vcTFwa01tTm4xX1lScHpkODRD?oc=5",
-   "publisher": "Meon Valley Times",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Free wildlife event in Droxford aims to inspire action across the Meon Valley    Meon Valley Times "
-  },
-  {
-   "title": "Union Environment Minister interacts with Mid-Career Training Participants of Indian Forest Service; Highlights Conservation Achievements and Emerging Challenges",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9ucTgzbWNjOXdMeWhFQjVTSGRvYVlOREd6T0FtVUVVX0x2NUc4Z1AxTG5yVmV3TGJHZ1FlcTZWZ2RvSlA0WXR3TGxma1VqVnhRMDJwQTdGaFlvRzFxQkxkekRTMWFZbGgtajY4?oc=5",
-   "publisher": "www.pib.gov.in",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Union Environment Minister interacts with Mid-Career Training Participants of Indian Forest Service; Highlights Conservation Achievements and Emerging Challeng"
+   "description_excerpt": " The UN's climate conference starts next week – will nature feature as strongly as it needs to?    The Wildlife Trusts "
   },
   {
    "title": "Prince William's Wildfire Warning: Could Disaster Prevention Become His Next Royal Priority?",
@@ -321,6 +329,14 @@
    "description_excerpt": " Caltech, Dr. Lucy Jones launching disaster resilience center to bring science and policy together    Press Telegram "
   },
   {
+   "title": "Mass Protests Sweep Europe Over Cost of Living, Corruption and Education",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTGhfWG42bkUyaVdyekNCcXZkSVdLTm11SmM5TWhsV0tMNWVDdXVWTE5LVkM4YXVPTGRVV1FXLUxjdmE3anpWWWhQSXR5b2NYNWcteFR0WU1mNXRCSFBTZ0hsdGg0QzhpUEVrSHRUVkE2YlBRckJGTkV6b0h1QmIzYlJvVlRIUjkweWtWOTI1c2FBS3owSXNZcUFqQ0ZfbldsVDJTMWh3?oc=5",
+   "publisher": "https://globalpost.com/",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Mass Protests Sweep Europe Over Cost of Living, Corruption and Education    https://globalpost.com/ "
+  },
+  {
    "title": "As French students protest, they bear the mantle of May ’68",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMW10a1JWVEgwU2EyYlcxR2dfMHhTSGFOdzY0ZTJ5VVVLaTY3MVdKeVhHRGMyZEJHQmpsalVOZEVmUEJjZm10a0tBQktCaXJ3MUJXVk9kZzRuZldRUXJlVjBSRW9ENDBhTTN6dTV3MVFZSjhjR0g3TWg2dVY5M3QzNHZKN2dXYkVrWWhiVDRhS3R1d2FUbHpWQ2dveUZFQURpaHM0XzJXWlZYZFE?oc=5",
    "publisher": "The Christian Science Monitor",
@@ -343,6 +359,14 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Europe is protesting – workers and students are fed up    Workers.org "
+  },
+  {
+   "title": "Hundreds of Thousands Protest Across Europe",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUEpEem9BUFByeFlhWmgyUk51aTRhdzJ2VWJqNGJUeUktLS1zYzc5OXFNalA0NWpuR1pQU1ltdktnSW05Uk01enNJOGhHOUJHcEN1NG92cmlZaWNWRFNsNWNiNjVNQUxFcGpsdlZYYkZYdEJIWnZEUU5SZWE1cU1YRw?oc=5",
+   "publisher": "https://globalpost.com/",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Hundreds of Thousands Protest Across Europe    https://globalpost.com/ "
   },
   {
    "title": "‘A global political awakening’: how Gen Z protests are spreading worldwide",
@@ -375,43 +399,19 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Facing US Sanctions Over Alleged Xinjiang Ties, BGI Turns Spotlight on Illumina’s Business in the Region    GenomeWeb "
-  },
-  {
-   "title": "New technology to spot illness years earlier gets UKRI backing - UKRI",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOXFSMEk4eFduWU5IREFYZ1UzVU4yUXR1Z2NYWWN0WVg2WmE5VjYzM3NEbjh0YTZCSF9QdkJNcU9veFV0VmhTXzQ3a1BnTHNKVDY2WkNGcllxSXlTWGd5UTY3S2M0LVdqNzlIVlJBZTd1a3EweVRmSEVqSjVYWHR6bjI2LXg3U25fRnVCLWpaVkhBS0E?oc=5",
-   "publisher": "UKRI – UK Research and Innovation",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " New technology to spot illness years earlier gets UKRI backing    UKRI – UK Research and Innovation "
-  },
-  {
-   "title": "MedStar Health Offers Non-Invasive Treatment for Essential Tremor and Parkinson's Disease",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNaHpac09rZlhwUldRSnZCTkZEZUhoU1Nzejd6bGU4MExHUU9oS1otWU5jQTdDbExUOEZZX2c2cFpWbUV2MUJnRnZ2NWVMdTJuQW5NNTc5dXR5ckR1R3BKWlFZeFNfNFlJeGtsZC1nb21XVU5xSWhPc1ZENXMyd0UzLW5XMUJQYTN5dDJodF9PYlhHZUV6RTVVNkk1bFZwOGxJeXE1dFZzaXV6NEZjVTRYdUp6ZHF2VWFhZDRSSzdmXzlDeTRQUTYxTUdPRDFNUUdWZy1JUGpSUU9kd2Yy?oc=5",
-   "publisher": "PR Newswire",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " MedStar Health Offers Non-Invasive Treatment for Essential Tremor and Parkinson's Disease    PR Newswire "
-  },
-  {
-   "title": "Feinstein Institutes Secures $3.4M NIH Grant to Harness AI for Early Delirium Detection and Prevention in Hospitals",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPNS1WdW1qWS0xTWphUFFwTkNNRUtFd2luZHRQZXFqQVJmbGM5MWxaVHhQVDl5SGRtaHVvYnJwamNVNldHOXl2ZGRlVE1oTEZvak1uSXJSd0h5MlJici1aTmZIelhMU3NnajNMNzVxWU5iV2o0a0ZOamRaQUpFSHZhOEx1QVZIOHVEd25Qa3NLZE5lSWF4S2tnRm9rT2VmTE1NeUJWbEhwZ25RNVRnc3FnWXltYXNTQTNjb1dQUjI4ZDMtMXE3OFJUSnFMWUR5dDFLRjhFSGF2ak5ENE9DUjNRWkw2Wm1fY3Ffd2R6aWdDV2RlV2VoZy1pUTNGT2M5dHplR1lGTg?oc=5",
-   "publisher": "Business Wire",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Feinstein Institutes Secures $3.4M NIH Grant to Harness AI for Early Delirium Detection and Prevention in Hospitals    Business Wire "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
   "successful": 48,
-  "mapped_pre_dedupe": 333
+  "mapped_pre_dedupe": 319
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 93,
+   "mapped_pre_dedupe": 94,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
@@ -431,7 +431,7 @@
     {
      "source": "direct/AllAfrica Southern Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 27
+     "mapped_pre_dedupe": 28
     },
     {
      "source": "direct/Africa Arguments",
@@ -448,22 +448,22 @@
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 21,
+   "mapped_pre_dedupe": 17,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/The Conversation Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 14
+     "mapped_pre_dedupe": 12
     }
    ]
   },
@@ -487,7 +487,7 @@
   "global": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 16,
+   "mapped_pre_dedupe": 14,
    "feeds": [
     {
      "source": "direct/Global Voices English",
@@ -497,7 +497,7 @@
     {
      "source": "direct/Global Voices Spanish",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/Global Voices Portuguese",
@@ -512,7 +512,7 @@
     {
      "source": "direct/Mongabay Global",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 8
     },
     {
      "source": "direct/Inter Press Service Headlines",
@@ -524,12 +524,12 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 93,
+   "mapped_pre_dedupe": 89,
    "feeds": [
     {
      "source": "direct/BBC World",
      "status": "ok",
-     "mapped_pre_dedupe": 12
+     "mapped_pre_dedupe": 11
     },
     {
      "source": "direct/BBC Science",
@@ -544,12 +544,12 @@
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 17
+     "mapped_pre_dedupe": 15
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 17
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/The Guardian Environment",
@@ -579,7 +579,7 @@
     {
      "source": "direct/The Conversation",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 0
     }
    ]
   },
@@ -598,24 +598,24 @@
   "oceania": {
    "configured": 1,
    "successful": 1,
-   "mapped_pre_dedupe": 1,
+   "mapped_pre_dedupe": 0,
    "feeds": [
     {
      "source": "direct/The Conversation NZ",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     }
    ]
   },
   "regional": {
    "configured": 17,
    "successful": 14,
-   "mapped_pre_dedupe": 95,
+   "mapped_pre_dedupe": 91,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 9
     },
     {
      "source": "direct/RNZ World",
@@ -625,7 +625,7 @@
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 14
     },
     {
      "source": "direct/CBC World",
@@ -645,7 +645,7 @@
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 18
+     "mapped_pre_dedupe": 19
     },
     {
      "source": "direct/DW Español",
@@ -670,7 +670,7 @@
     {
      "source": "direct/BBC Latin America",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/BBC Middle East",
@@ -680,12 +680,12 @@
     {
      "source": "direct/BBC Europe",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/RNZ Pacific",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/Guardian Africa",
@@ -695,7 +695,7 @@
     {
      "source": "direct/Guardian Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     }
    ]
   },
@@ -740,8 +740,16 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 596,
+  "distinct_unmapped_titles": 572,
   "high_repeat_unmapped_examples": [
+   {
+    "title": "Health and care sector latest developments",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWk4zWmpSM2JfSUxoeXRpRGlGLTc1czM5T3NwWHY0U3RCTDBMYlpqMDlwYk9nWjM5dy1wQlY1TXJQcVBWSnB3UzR2cXVvT1BjbXJLUEszVkpxMHZpd3hqTUJiRUxRY2QzSmVxMVR1S0lGeURKZzFpZW9YbklWaVJlRElfXy1WMkk?oc=5",
+    "publisher": "The NHS Alliance",
+    "feed_occurrences": 7,
+    "feed_count": 7,
+    "description_excerpt": " Health and care sector latest developments    The NHS Alliance "
+   },
    {
     "title": "How climate change worsens heatwaves, droughts, wildfires and floods",
     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBha2hSMWluWVdKUHpEZUNyTVFmVC1idnd2cFY5eDNxckF6OFE2NGxzb2lSVnNMYlA5aklTVk5CdldkSXpzV3ptX1YxVEdEdG5vaXU2b2FkUHR3QQ?oc=5",
@@ -749,14 +757,6 @@
     "feed_occurrences": 7,
     "feed_count": 6,
     "description_excerpt": " How climate change worsens heatwaves, droughts, wildfires and floods    BBC "
-   },
-   {
-    "title": "Deadlines for terms of office, the constitution of the Assembly and the new government",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZGNmcVRiMWJWS0ZDbV9xTEhRZ0ZYR3ZlSVRhYm1naFBrTXpZT3dTekZEeVFmQzkxbDF1TTFnb0dRck1ZTDN5ZktBU0NIUXFVa1ZuaVhBMjdmNVcwMjhxSV8zX00tcHdaWGt6d1BzTFNkT05QU1pfSGpHQzhQX0RjNGZpaWZMVndhY1JGSTBNcw?oc=5",
-    "publisher": "vreme.com",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Deadlines for terms of office, the constitution of the Assembly and the new government    vreme.com "
    },
    {
     "title": "The political arithmetic of Kulbergs’ government – Rajevskis explains how a parliamentary majority will be secured",
@@ -767,20 +767,28 @@
     "description_excerpt": " The political arithmetic of Kulbergs’ government – Rajevskis explains how a parliamentary majority will be secured    Baltic News Network "
    },
    {
+    "title": "Deadlines for terms of office, the constitution of the Assembly and the new government",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZGNmcVRiMWJWS0ZDbV9xTEhRZ0ZYR3ZlSVRhYm1naFBrTXpZT3dTekZEeVFmQzkxbDF1TTFnb0dRck1ZTDN5ZktBU0NIUXFVa1ZuaVhBMjdmNVcwMjhxSV8zX00tcHdaWGt6d1BzTFNkT05QU1pfSGpHQzhQX0RjNGZpaWZMVndhY1JGSTBNcw?oc=5",
+    "publisher": "vreme.com",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Deadlines for terms of office, the constitution of the Assembly and the new government    vreme.com "
+   },
+   {
+    "title": "Legislative blitz: anti-Netanyahu bloc races to undo judicial reform before new government takes office",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBHb3A4QWppbVB0dUw3NG1XQlBKNXctYmpxdWdrMmNjTUpnNHJqU1ctcVlyVnBya3BDNlY4UFFGeGZ0X1E0OXA3ME1mMk9zemtMN1Qzb0JVTQ?oc=5",
+    "publisher": "Ynetnews",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Legislative blitz: anti-Netanyahu bloc races to undo judicial reform before new government takes office    Ynetnews "
+   },
+   {
     "title": "The Serbian Government, in its technical mandate, called for the constitution of the Assembly as soon as possible",
-    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNVjZsTEUtSEdndHVpUFh0enlpbjd1eWlXWVhfVVRZYVUxc0dTa0xtUVhhWlp6eS1yV2lkWTB5aWZKM3BHZm1INllneEM2X1pCa1lTblRnTXh0eFlTOXVGUFFFbWVyU2xpTXpoMllxMVBXZllQQzZtYTRlazI3aHBWc2dlMDFvcE8yMEZfQkdHUG5HUkZ4eEMzV2hJZ01oUlN2azE5aDlycC1zZXRCbkcwWUtBbm54YS02UzdPSFJLdDJiVGtVWWM5eFRCVXdabmNuOVdWd2sxZy1qZ0VvaW1WMjI2empWZkpwUW00YnJRUXpHQdIB4wFBVV95cUxQMGNtbFMweVFnYUI4VnVvakFZYXJEMVRFTjEyLW5hRUxnSjFqWlptVWhpVU1tRU1lV21JUmU1dVhnbk9PRXM4Ql9vOXVKUGR1VlN4NzVOYXFRRjVHTkQwZjg0ajNmdkd5VDdjR2FWSFpMamlzZnl2XzBlQVNWN0x6NTRwNWF6YjdiX05wbGVmal9oWEF2TU50R1FidVNQcWJkWGZPbEtFNkFUSjhVTGtFTkFOY1NuNGt1RzNZdTRXTHlUV0xBWTRRTnZNVkNKcFU5ZEN3ZHhNWnU1UWJtMW8xRjlvcw?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMGNtbFMweVFnYUI4VnVvakFZYXJEMVRFTjEyLW5hRUxnSjFqWlptVWhpVU1tRU1lV21JUmU1dVhnbk9PRXM4Ql9vOXVKUGR1VlN4NzVOYXFRRjVHTkQwZjg0ajNmdkd5VDdjR2FWSFpMamlzZnl2XzBlQVNWN0x6NTRwNWF6YjdiX05wbGVmal9oWEF2TU50R1FidVNQcWJkWGZPbEtFNkFUSjhVTGtFTkFOY1NuNGt1RzNZdTRXTHlUV0xBWTRRTnZNVkNKcFU5ZEN3ZHhNWnU1UWJtMW8xRjlvc9IB4wFBVV95cUxQMGNtbFMweVFnYUI4VnVvakFZYXJEMVRFTjEyLW5hRUxnSjFqWlptVWhpVU1tRU1lV21JUmU1dVhnbk9PRXM4Ql9vOXVKUGR1VlN4NzVOYXFRRjVHTkQwZjg0ajNmdkd5VDdjR2FWSFpMamlzZnl2XzBlQVNWN0x6NTRwNWF6YjdiX05wbGVmal9oWEF2TU50R1FidVNQcWJkWGZPbEtFNkFUSjhVTGtFTkFOY1NuNGt1RzNZdTRXTHlUV0xBWTRRTnZNVkNKcFU5ZEN3ZHhNWnU1UWJtMW8xRjlvcw?oc=5",
     "publisher": "vijesti.me",
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " The Serbian Government, in its technical mandate, called for the constitution of the Assembly as soon as possible    vijesti.me "
-   },
-   {
-    "title": "Four election night scenarios - featuring Christopher Luxon’s worst nightmare",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMTFiRktMeEdqV0V1dkVWZzU5LWZ4cGJWVFBoT0Z3THc0VllvUjNpelh4WnNXd2REbnVNZGJrUUg0dXhjaGwzT3MxUXVad0t2SWFnVVpqMS1oQjhUcXl4empBdEpVLTFlcDFkdm1iTFhjY2lxalpkd3kwNVhFeDFEMDVEam1JV0stM2YxRDRnNGNBaTJ3LW4tVGVkMVoyOEItYlAtWE5IYVVvbkRXVF9xSmF1bUY0NXc3T01F?oc=5",
-    "publisher": "RNZ",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Four election night scenarios - featuring Christopher Luxon’s worst nightmare    RNZ "
    },
    {
     "title": "It’s a bumper year for wild mushrooms – here’s what you could find in the woods today",
@@ -791,12 +799,12 @@
     "description_excerpt": " It’s a bumper year for wild mushrooms – here’s what you could find in the woods today    Inside Ecology "
    },
    {
-    "title": "Conservation Succeeds When We Work Together",
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40TVEwMTI2eFEwOUNtZHBlMXFYU3ZKY1puUHlGS2ZwWEhWU2pKdUhaUWpmOWRkRmR3RVhUdHhnMk9nR3ZGS1E1aTd0bGhMM284TlB6eld6Vm9mM0paNlh2QlJ1TUk0dVBSbGtXWUR1NERLbWROenFGNExn?oc=5",
+    "title": "Feel-Good Friday: Conservation Succeeds, Women Fight Fires, Gen Z Rescues Medical Supplies, and Blind Dolphins Find Sanctuary",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNnpEVE5VNGtncjFfTzI1X2JNWTAyMXJxMU5NQmgySVNsNzc5eldfdGRVRDZsUExRdDF3bnFhenVreFV2WWtSZm9mdVJYQUUzM3F6bElfWDRfdTUwUmRrT0ZreFRPb1VTektyOHR1UXJYcjJDa0FYaEhSejg1S21DbFhLazY4MXhDR0xEYWxwQzY2RlRnT3NBbmxPN3VNaXFxU2ppLVhHU2l2ckVsOERyRzJ5dmFWeGt4TWtfdHptQzJ0TTJjZ2ZPU29BZVVHb0FTQ1JXME1CdDBKVm8tM1NkOW1B?oc=5",
     "publisher": "Bluedot Living",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Conservation Succeeds When We Work Together    Bluedot Living "
+    "description_excerpt": " Feel-Good Friday: Conservation Succeeds, Women Fight Fires, Gen Z Rescues Medical Supplies, and Blind Dolphins Find Sanctuary    Bluedot Living "
    },
    {
     "title": "CBD COP17: Did the world deliver for wildlife?",
@@ -805,6 +813,62 @@
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " CBD COP17: Did the world deliver for wildlife?    We Are Born Free "
+   },
+   {
+    "title": "MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWnZJNnFfQ3VYYU02UldhTjZPMm1IUWFheGVxNmRJaHQ0LUxyY1FZanFleEp3aXZoelRuNnBMQUo5a01vSU44SEgtbHo3WWxlWFJiTFRwNHJpLUpOcFF2aTZHcUp2aFBVbFNTUmhmNVhHZkV1ZlBFN05ScXd6QWNFSXFyZFExemdBRU5VWWJpLVBKdGpHVl80VkZhenJMR3VpZE5OQXJPVEduSnJIVTNJNWZKWGlrSWsxN1FiWlVOa1JyOUtoeXdGbWZoWQ?oc=5",
+    "publisher": "Inside Ecology",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes    Inside Ecology "
+   },
+   {
+    "title": "Environment Ministry, WCS plant 1,000 trees in Mondulkiri",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX1pDOERLcXlCTG5NY1AwUWpjVUV4Mmp6TzJTVElaNkN4aGR1V1ZPd29EbTRNSTJacWxjd0otbU5tbnAyU29aNUhRZmprZzA5TTF0WXN5ZUZsbGZnMjQ4aTJVWE83djhYYmtNYXRlcG52LWYwTFQ0MTBpR0lVRDk5X096SVkzdjdUS1pGb3R0d3JMdUNGZXVCbW9vRQ?oc=5",
+    "publisher": "Khmer Times",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Environment Ministry, WCS plant 1,000 trees in Mondulkiri    Khmer Times "
+   },
+   {
+    "title": "Free wildlife event in Droxford aims to inspire action across the Meon Valley",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQ3I4TjBOb25QN2RaZEEzUVpZRWFpZlJfYUhXRFdMSHh3czdmbWhVRl9jelFjeWZiWlJEVnU2Um5qbDJqb25TY2QyRFVvYmlwOU9mNU5VS1E4bG15MjJBX0tOZy1sbVprX1ZITTVGWVowcFVXWjNZVlVXbjBkMExudHZWS1IwYk1TbUpxeE9yMjJNQmJ3MUt3d05vcTFwa01tTm4xX1lScHpkODRD?oc=5",
+    "publisher": "Meon Valley Times",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Free wildlife event in Droxford aims to inspire action across the Meon Valley    Meon Valley Times "
+   },
+   {
+    "title": "Historic return of beavers to waters around Loch Ness",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQkpjU2QwT25BSHk3TGZhQ0xJZVJYWm03QkVLSXFacDhQblhKT2FXLXRrZGk2OGlvUTF4Q0RaTDJmeGF3QUVDWEdMWU1NT2hSTjlSck9kVUE0WGJmcDRtYWhZaHczbXk3OVJ5b0MwTjdycno3TmFKakhWWU1Jd3pzWVpKcDdQSWRURVNtbmpWMHJvRmswUFE?oc=5",
+    "publisher": "Inside Ecology",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Historic return of beavers to waters around Loch Ness    Inside Ecology "
+   },
+   {
+    "title": "NatureTrack Film Festival uses storytelling to inspire connection with the natural world - News Channel 3-12",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNODRVeklFazdIM1RxdUtIUzg0enItTWdKMnc1SG9xd2RDMEU5bURXNXVzTkl3bTlvbzNhNVdMY3lZbHY1S0lLeDgxRGZfYUxFVUtsaDE3MDFUNlRrTDY0RTNsVDI0c3c3NmcxX19NNVhRcmJUblFXaG9NSzVBU1dBMHNMazRiZlRzTU5vQTlta3kwZmt2Vy1oX2Q5TW1wdUtGTmF2VTRRbXR6Z3ZkYXVQdmxJWkx2bU1mREViRUVtT253YUJhSGNWVU1PTVB1bGM?oc=5",
+    "publisher": "News Channel 3-12",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " NatureTrack Film Festival uses storytelling to inspire connection with the natural world    News Channel 3-12 "
+   },
+   {
+    "title": "Ted Turner conservation doc to screen at TCA",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPT1NCUURnYVBBd2hESkktX29IZmE0ekZrNEZwODRlY3VzSnpaWkNFMm5tQzNXS0JTOXlndlA3NzZMRkRLcGo0aXNHejRnUlk0Vm5IUXNqQkpiMU9Md00yOEZUUGVCc2VhTkxaa0ZWb25BMXVOQzUxOExzdDBaLXZGQlVYQU1aeWdob2FTczdYeUJzZGkzVnVjTWZMRlJMeFpUaU84TUpoUkVFQ0RzV0JzXzhiNXhMa1gxQjRVbkhQeW5qRmVZbW0wbDJnbVM0bTFEb0E?oc=5",
+    "publisher": "The Taos News",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Ted Turner conservation doc to screen at TCA    The Taos News "
+   },
+   {
+    "title": "2026 WWF EFN Grant Recipients",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWlBEUy0wTEsyYzJ1WVhFcGh2RlF6aFlXODQ4VmxZNm4xdlRfbTFwMVR6TTNmSm4wNl9PeTlaQzZXcXplcjR1b2EyNXJvcTlVLUhacFQ3S2ZrVXRVTlVpMzdGYTRrb3dodUwxazZCRXRQMWNnSzBtTGtHVl9TY3hraUwwSnVCb3FBTU5rdVJmNV84Q19PeGpVcnJaRGtEaHhlNGNHTGtxQ2hmc2pubGZYeTJWeUs0SWRVMi1sM2h5UVlOVkdJWG9zV2JUcEpxZGUyNmF6MHI4S1RNRWdvODVBNVo2WkhYSlU2VlFaVDlVUQ?oc=5",
+    "publisher": "World Wildlife Fund",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " 2026 WWF EFN Grant Recipients    World Wildlife Fund "
    },
    {
     "title": "‘This is a huge day’: Conservation groups seal deal to permanently conserve Awendaw's White Tract",
@@ -831,201 +895,137 @@
     "description_excerpt": " Feds Unveil Plan to Overhaul National Wildlife Refuges, Get More ‘Boots on the Ground’    Outdoor Life "
    },
    {
-    "title": "2026 WWF EFN Grant Recipients",
-    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWlBEUy0wTEsyYzJ1WVhFcGh2RlF6aFlXODQ4VmxZNm4xdlRfbTFwMVR6TTNmSm4wNl9PeTlaQzZXcXplcjR1b2EyNXJvcTlVLUhacFQ3S2ZrVXRVTlVpMzdGYTRrb3dodUwxazZCRXRQMWNnSzBtTGtHVl9TY3hraUwwSnVCb3FBTU5rdVJmNV84Q19PeGpVcnJaRGtEaHhlNGNHTGtxQ2hmc2pubGZYeTJWeUs0SWRVMi1sM2h5UVlOVkdJWG9zV2JUcEpxZGUyNmF6MHI4S1RNRWdvODVBNVo2WkhYSlU2VlFaVDlVUQ?oc=5",
-    "publisher": "World Wildlife Fund",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " 2026 WWF EFN Grant Recipients    World Wildlife Fund "
-   },
-   {
-    "title": "Why on Earth are tropical wild animals so colourful and diverse?",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA0QnBfbWFTSWNrYVY4aVBmc1N4bXBMMnI0MVZXeHBvWkJIdkpENjNxZ3VuVF9QQ1BrQmJzWEgzUXN1Z0hPblZKZGlfbmtjRTk4Wll2aTVGdHZ1N2Y3NDNJZExKbGI0Yk1jVXNUMFpIaHhHaGZ3VWpR?oc=5",
-    "publisher": "BBC Wildlife Magazine",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Why on Earth are tropical wild animals so colourful and diverse?    BBC Wildlife Magazine "
-   },
-   {
-    "title": "The UN's climate conference starts next week – will nature feature as strongly as it needs to?",
-    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeTZubEVPbjVabnQyd2N2TjF2TlROc09TZ3M1VS1IWkZNanZ6VnRHSUJ1ZjRwdFdyQ2ZKdl9IU1g0RnZtWUhxOGdYcjh6ek1VNE5JRzNLUjMwRktFblk4ek54YkxPd3ZMN0pLcHBRVTRNOENNWE5NWF9XZzJOWkFtYWN1Wk5WZHRNbHRWU1FQUGlyc3d1VjJ6SWJqcUNxay1sOHFqWS0yM1pvTlBYT21mcXRsM2llcExLSFI1TTlNS2NrUmhBd1FNaUhR?oc=5",
-    "publisher": "The Wildlife Trusts",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " The UN's climate conference starts next week – will nature feature as strongly as it needs to?    The Wildlife Trusts "
-   },
-   {
-    "title": "Michigan is quietly leading the nation in a timber program to fund wildlife habitat",
-    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdGtUVG9tYzlJSWZ2eDRNVjBDTWlVTUxqcjVNREhqMVQ0NEQ2bkExNy1zUkQwbTRBdE9NQ3YyRGdfVlZ6Tzl5Y0pFWHZNenhRck5tQ1oxNUppaGttVXYyaWNMOXRLUDFJYkczY3l5SnhjYnVFQ3N4QUxIdTZUaGRqQm4wR0l3VktWMzN4WUtrUzdRZVZsZUJyVVRNYy1QWFpEOHJIdV9URXJ4Unl6WFVUUmJUY1UzYWRsandfSjB0LVpac2Nwb1dkQzZR?oc=5",
-    "publisher": "MLive.com",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Michigan is quietly leading the nation in a timber program to fund wildlife habitat    MLive.com "
-   },
-   {
-    "title": "MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWnZJNnFfQ3VYYU02UldhTjZPMm1IUWFheGVxNmRJaHQ0LUxyY1FZanFleEp3aXZoelRuNnBMQUo5a01vSU44SEgtbHo3WWxlWFJiTFRwNHJpLUpOcFF2aTZHcUp2aFBVbFNTUmhmNVhHZkV1ZlBFN05ScXd6QWNFSXFyZFExemdBRU5VWWJpLVBKdGpHVl80VkZhenJMR3VpZE5OQXJPVEduSnJIVTNJNWZKWGlrSWsxN1FiWlVOa1JyOUtoeXdGbWZoWQ?oc=5",
-    "publisher": "Inside Ecology",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " MTG-I2 delivers remarkable first images, previewing a weather view of Europe every 2.5 minutes    Inside Ecology "
-   },
-   {
-    "title": "Feel-Good Friday: Conservation Succeeds, Women Fight Fires, Gen Z Rescues Medical Supplies, and Blind Dolphins Find Sanctuary",
-    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNnpEVE5VNGtncjFfTzI1X2JNWTAyMXJxMU5NQmgySVNsNzc5eldfdGRVRDZsUExRdDF3bnFhenVreFV2WWtSZm9mdVJYQUUzM3F6bElfWDRfdTUwUmRrT0ZreFRPb1VTektyOHR1UXJYcjJDa0FYaEhSejg1S21DbFhLazY4MXhDR0xEYWxwQzY2RlRnT3NBbmxPN3VNaXFxU2ppLVhHU2l2ckVsOERyRzJ5dmFWeGt4TWtfdHptQzJ0TTJjZ2ZPU29BZVVHb0FTQ1JXME1CdDBKVm8tM1NkOW1B?oc=5",
+    "title": "Conservation Succeeds When We Work Together",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40TVEwMTI2eFEwOUNtZHBlMXFYU3ZKY1puUHlGS2ZwWEhWU2pKdUhaUWpmOWRkRmR3RVhUdHhnMk9nR3ZGS1E1aTd0bGhMM284TlB6eld6Vm9mM0paNlh2QlJ1TUk0dVBSbGtXWUR1NERLbWROenFGNExn?oc=5",
     "publisher": "Bluedot Living",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Feel-Good Friday: Conservation Succeeds, Women Fight Fires, Gen Z Rescues Medical Supplies, and Blind Dolphins Find Sanctuary    Bluedot Living "
-   },
-   {
-    "title": "Historic return of beavers to waters around Loch Ness",
-    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQkpjU2QwT25BSHk3TGZhQ0xJZVJYWm03QkVLSXFacDhQblhKT2FXLXRrZGk2OGlvUTF4Q0RaTDJmeGF3QUVDWEdMWU1NT2hSTjlSck9kVUE0WGJmcDRtYWhZaHczbXk3OVJ5b0MwTjdycno3TmFKakhWWU1Jd3pzWVpKcDdQSWRURVNtbmpWMHJvRmswUFE?oc=5",
-    "publisher": "Inside Ecology",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Historic return of beavers to waters around Loch Ness    Inside Ecology "
-   },
-   {
-    "title": "When a forest guard’s wisdom meets the algorithm",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMHVtX3MydGx3dl9fbnVjYnlkcWUzUzI3bEc5ZGdwM1hEUF9UMnJtOGxscGdvQklXNnZjdW9XSXdWaHVVZnA1ZDVBcEgyVG43TG96NGlkVktzUEd1eHB6aUZ1czZ2bFJyZFVvOWRqVzFLNUZnbEtvWXFLSFU2NEs4UWdTMVFBVGJyS0pSX2tNeXdYOGpRanJPN2ctTzFVY3VKU2530gGqAUFVX3lxTE5KcVI5ckE3Yl9IZ2hSUXRfd2xfVmNST19xQTBPLWdEblRwaUNGRGtkV2FlZzhNUFdJemUxbHpQMW9tZHN2MTFTd3VKVmhYNzM2aEN0WkNnZmJxM3loLVVYOVN5QnhnQi1jZ0pncldFWmkxNk9aN3JQczZDZG1BTk1VemttdTNkckFZbXhrYjg4REdJSW5OTjlUbWVqeDBFQ240ZE53cnEzTGFn?oc=5",
-    "publisher": "The Indian Express",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " When a forest guard’s wisdom meets the algorithm    The Indian Express "
-   },
-   {
-    "title": "Environment Ministry, WCS plant 1,000 trees in Mondulkiri",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX1pDOERLcXlCTG5NY1AwUWpjVUV4Mmp6TzJTVElaNkN4aGR1V1ZPd29EbTRNSTJacWxjd0otbU5tbnAyU29aNUhRZmprZzA5TTF0WXN5ZUZsbGZnMjQ4aTJVWE83djhYYmtNYXRlcG52LWYwTFQ0MTBpR0lVRDk5X096SVkzdjdUS1pGb3R0d3JMdUNGZXVCbW9vRQ?oc=5",
-    "publisher": "Khmer Times",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Environment Ministry, WCS plant 1,000 trees in Mondulkiri    Khmer Times "
+    "description_excerpt": " Conservation Succeeds When We Work Together    Bluedot Living "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Nigeria",
    "largest_label_articles": 33,
-   "share_of_country_labelled_articles": 0.091
+   "share_of_country_labelled_articles": 0.09
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 305,
+  "unique_direct_urls_not_in_google_sample": 297,
   "unique_google_urls_not_in_direct_sample": 361,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "AllAfrica East Africa": 29,
    "AllAfrica West Africa": 29,
-   "AllAfrica Southern Africa": 27,
+   "AllAfrica East Africa": 29,
+   "AllAfrica Southern Africa": 28,
    "France24": 22,
    "France24 FR": 20,
-   "Al Jazeera": 17,
-   "The Guardian World": 17,
+   "The Guardian World": 18,
    "France24 ES": 16,
-   "RNZ National": 16,
-   "The Diplomat": 14,
-   "BBC World": 12,
+   "Al Jazeera": 15,
+   "RNZ National": 14,
+   "The Diplomat": 12,
+   "BBC World": 11,
    "DW World": 9,
-   "Mongabay Global": 9,
+   "ABC Australia": 9,
+   "Mongabay Global": 8,
    "The Guardian Environment": 8,
-   "ABC Australia": 7,
-   "BBC Europe": 7,
    "Mongabay Latam": 7,
-   "RNZ Pacific": 7,
-   "AllAfrica Central Africa": 6,
    "BBC Brasil": 6,
-   "Mongabay Indonesia": 5,
+   "BBC Europe": 6,
+   "AllAfrica Central Africa": 6,
+   "Mongabay Indonesia": 4,
    "BBC Asia": 4,
+   "BBC Africa": 3,
    "NPR World": 3,
    "UN News": 3,
-   "BBC Africa": 3,
-   "Global Voices Spanish": 3,
-   "Global Voices English": 2,
-   "The Conversation Brasil": 2,
+   "Guardian Asia": 3,
+   "RNZ Pacific": 3,
    "Inter Press Service Headlines": 2,
-   "The Conversation Indonesia": 2
+   "BBC Middle East": 2,
+   "The Conversation Brasil": 2,
+   "Guardian Africa": 2
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 361,
-  "country_labels_count": 75,
+  "country_labelled_articles": 366,
+  "country_labels_count": 70,
   "top_country_subjects": {
    "Nigeria": 33,
-   "France": 25,
+   "France": 26,
    "Vietnam": 25,
-   "South Africa": 14,
+   "South Africa": 15,
+   "Kenya": 15,
    "Israel": 14,
-   "Kenya": 14,
    "Canada": 12,
    "India": 12,
-   "China": 11,
-   "Ukraine": 10,
-   "Iran": 9,
-   "Argentina": 9,
-   "Portugal": 8,
-   "United States": 7,
+   "Iran": 10,
+   "United States": 10,
+   "China": 10,
+   "Ukraine": 9,
+   "Portugal": 9,
+   "Argentina": 8,
+   "Australia": 7,
    "Uganda": 7,
    "Venezuela": 7,
+   "Tanzania": 6,
    "Yemen": 6,
+   "Uruguay": 6,
    "Mexico": 6,
    "Paraguay": 6,
-   "Uruguay": 5,
-   "Tanzania": 5,
+   "Brazil": 5,
    "Spain": 5,
-   "Ghana": 5,
-   "Australia": 4,
-   "Peru": 4,
+   "Germany": 5,
    "Malawi": 4,
-   "Lebanon": 4,
-   "Brazil": 4,
-   "Indonesia": 4,
-   "Mozambique": 4
+   "Colombia": 4,
+   "New Zealand": 4,
+   "Mozambique": 4,
+   "Ireland": 4
   },
-  "distinct_geographic_signal_centers": 257,
+  "distinct_geographic_signal_centers": 246,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 83
+   "mapped_pre_dedupe": 81
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 53
+   "mapped_pre_dedupe": 51
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 90
+   "mapped_pre_dedupe": 91
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 54
+   "mapped_pre_dedupe": 57
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 92
+   "mapped_pre_dedupe": 85
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 56
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 85
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 63
   },
   "BR": {
    "requests": 11,
@@ -1035,22 +1035,22 @@
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 120
+   "mapped_pre_dedupe": 123
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 86
+   "mapped_pre_dedupe": 84
   }
  },
- "duplicates_removed": 513,
+ "duplicates_removed": 500,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
   "available": true,
   "reason": "GeoNames cities15000 loaded",
   "cities_loaded": 37152,
-  "candidate_names": 12660,
+  "candidate_names": 12663,
   "ambiguous_names": 1417,
   "downloaded": true
  },
@@ -1061,45 +1061,44 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-06T23:32:19+00:00",
-    "mapped_articles": 651,
-    "geographic_signals": 383,
+    "at": "2026-11-07T03:15:11+00:00",
+    "mapped_articles": 645,
+    "geographic_signals": 367,
     "feeds_ok": 169,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 23,
+    "rejected_matching_occurrences": 8,
     "ambiguous_mapped_signal_count": 2
    }
   ],
   "latest": {
-   "at": "2026-11-06T23:32:19+00:00",
-   "mapped_articles": 651,
-   "geographic_signals": 383,
+   "at": "2026-11-07T03:15:11+00:00",
+   "mapped_articles": 645,
+   "geographic_signals": 367,
    "feeds_ok": 169,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 23,
+   "rejected_matching_occurrences": 8,
    "ambiguous_mapped_signal_count": 2
   },
   "recent_change": {
-   "baseline_at": "2026-11-06T23:32:19+00:00",
+   "baseline_at": "2026-11-07T03:15:11+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Union": 13,
-   "Forest": 8,
-   "Rubio": 2
+   "Union": 5,
+   "Forest": 3
   },
   "ambiguous_mapped_review": [
    {
     "name": "Ontario",
-    "category": "society",
-    "sampled_article_count": 1,
+    "category": "economy",
+    "sampled_article_count": 2,
     "review_reason": "ambiguous_place_name_needs_manual_review"
    },
    {
     "name": "Ontario",
-    "category": "economy",
+    "category": "society",
     "sampled_article_count": 1,
     "review_reason": "ambiguous_place_name_needs_manual_review"
    }
