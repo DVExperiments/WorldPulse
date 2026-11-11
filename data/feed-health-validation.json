@@ -1,13 +1,13 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-11-11T06:44:23.242100+00:00",
+ "updated_at": "2026-11-11T14:44:26.180508+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 115,
-   "successful_empty": 6,
+   "successful_nonempty": 111,
+   "successful_empty": 10,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
@@ -16,6 +16,10 @@
     "google/politics/AU",
     "google/politics/NG",
     "google/politics/CA",
+    "google/environment/GB",
+    "google/environment/AU",
+    "google/environment/NG",
+    "google/environment/CA",
     "google/hazards/BR",
     "google/science/GB"
    ],
@@ -103,7 +107,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "8965a10d4b8f62d28c2179b51c7e255ba62d9c740a75ff012adc683457fb8356",
+  "frozen_snapshot_fingerprint": "dc78936ebcc00c0ab91299f59b774cb826d73b408632193360bcc927d4acd3b4",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
