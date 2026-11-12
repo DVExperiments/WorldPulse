@@ -1,22 +1,28 @@
 {
  "schema": 1,
  "release": "v2.6.0",
- "updated_at": "2026-11-11T21:35:44.949532+00:00",
+ "updated_at": "2026-11-12T02:32:38.118047+00:00",
  "mode": "conservative_live_lexical_withholding_plus_observation",
  "lexical_suppressed_total": 0,
  "lexical_suppressed_by_reason": {},
  "lexical_suppressed_examples": [],
  "deduplication_review": {
-  "canonical_same_place_repeats": 527,
-  "cross_place_url_occurrences": 0,
-  "cross_place_examples": [],
+  "canonical_same_place_repeats": 478,
+  "cross_place_url_occurrences": 1,
+  "cross_place_examples": [
+   {
+    "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261111-en-directo-le%C3%B3n-xiv-visita-la-c%C3%A1rcel-de-devoto-un-lugar-emblem%C3%A1tico-para-el-papa-francisco-y-lleva-un-mensaje-de-esperanza-a-los-presos",
+    "first": "Peru",
+    "second": "Argentina"
+   }
+  ],
   "note": "Cross-location reuse is not automatically incorrect; preserve separate evidence-backed assignments."
  },
- "top_publisher_share_pct": 2.5,
+ "top_publisher_share_pct": 2.9,
  "top_publishers": [
   {
    "publisher": "Al Jazeera",
-   "mapped_rows": 31
+   "mapped_rows": 33
   },
   {
    "publisher": "AllAfrica West Africa",
@@ -31,19 +37,11 @@
    "mapped_rows": 29
   },
   {
-   "publisher": "The Guardian World",
-   "mapped_rows": 26
-  },
-  {
-   "publisher": "Vietnam.vn",
-   "mapped_rows": 23
-  },
-  {
    "publisher": "France24",
-   "mapped_rows": 23
+   "mapped_rows": 22
   },
   {
-   "publisher": "France24 FR",
+   "publisher": "The Guardian World",
    "mapped_rows": 21
   },
   {
@@ -51,15 +49,27 @@
    "mapped_rows": 21
   },
   {
+   "publisher": "Vietnam.vn",
+   "mapped_rows": 20
+  },
+  {
+   "publisher": "France24 FR",
+   "mapped_rows": 20
+  },
+  {
+   "publisher": "RNZ National",
+   "mapped_rows": 17
+  },
+  {
    "publisher": "kalkine.ca",
-   "mapped_rows": 19
+   "mapped_rows": 16
   },
   {
    "publisher": "Florida Hospital News and Healthcare Report",
    "mapped_rows": 15
   },
   {
-   "publisher": "AllAfrica Central Africa",
+   "publisher": "BBC World",
    "mapped_rows": 15
   },
   {
@@ -67,17 +77,13 @@
    "mapped_rows": 14
   },
   {
-   "publisher": "BBC World",
+   "publisher": "AllAfrica Central Africa",
    "mapped_rows": 14
-  },
-  {
-   "publisher": "ABC Australia",
-   "mapped_rows": 12
   }
  ],
- "unmapped_rows": 1125,
- "mapped_raw_rows": 1238,
- "mapped_signal_groups": 436,
+ "unmapped_rows": 1104,
+ "mapped_raw_rows": 1154,
+ "mapped_signal_groups": 409,
  "history_samples": 96,
  "geographic_attribution": "Geographic subject, not verified incident site",
  "limitations": [
