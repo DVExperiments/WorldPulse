@@ -1,19 +1,20 @@
 {
  "schema": 1,
- "updated_at": "2026-11-12T23:53:39.529588+00:00",
+ "updated_at": "2026-11-13T06:50:53.741920+00:00",
  "feeds_total": 173,
- "feeds_ok": 169,
+ "feeds_ok": 168,
  "feeds_failed": [
   "direct/CBC World",
   "direct/ReliefWeb Updates",
-  "direct/UN News",
+  "direct/France24 FR",
+  "direct/France24 ES",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 96
   },
   "GB": {
    "total": 11,
@@ -23,118 +24,110 @@
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 97
+   "mapped_pre_dedupe": 93
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 55
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 94
+   "mapped_pre_dedupe": 86
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 54
+   "mapped_pre_dedupe": 53
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 96
+   "mapped_pre_dedupe": 90
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 57
+   "mapped_pre_dedupe": 56
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 49
+   "mapped_pre_dedupe": 44
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 108
+   "mapped_pre_dedupe": 99
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 94
   }
  },
  "mapped_articles_by_category": {
-  "community": 269,
-  "conflict": 49,
-  "economy": 39,
-  "education": 57,
-  "health": 64,
-  "society": 34,
-  "politics": 47,
-  "environment": 33,
-  "science": 31,
-  "rights": 17,
-  "hazards": 8
+  "community": 249,
+  "conflict": 47,
+  "economy": 41,
+  "society": 33,
+  "health": 63,
+  "politics": 46,
+  "education": 51,
+  "science": 29,
+  "environment": 28,
+  "rights": 15,
+  "hazards": 7
  },
  "mapped_articles_by_location_precision": {
-  "country": 359,
-  "place": 280,
-  "region": 9
+  "country": 362,
+  "place": 240,
+  "region": 7
  },
  "location_evidence_counts": {
-  "headline": 533,
-  "description": 115
+  "headline": 517,
+  "description": 92
  },
  "geographic_quadrants": {
-  "NE": 263,
-  "NW": 207,
-  "SW": 75,
-  "SE": 103
+  "NE": 265,
+  "NW": 192,
+  "SE": 89,
+  "SW": 63
  },
- "geo_signal_count": 387,
- "mapped_total": 648,
+ "geo_signal_count": 382,
+ "mapped_total": 609,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1261,
- "unmapped_distinct_titles": 644,
+ "unmapped_sample_count": 1324,
+ "unmapped_distinct_titles": 654,
  "unmapped_by_feed": {
-  "Google News BR": 129,
-  "Google News MX": 127,
-  "Google News ZA": 121,
-  "Google News IN": 117,
-  "Google News KE": 114,
-  "Google News US": 113,
-  "Google News PH": 113,
-  "Google News NG": 68,
-  "Google News CA": 64,
-  "Google News GB": 61,
+  "Google News ZA": 138,
+  "Google News BR": 133,
+  "Google News KE": 133,
+  "Google News IN": 132,
+  "Google News MX": 129,
+  "Google News PH": 125,
+  "Google News US": 124,
+  "Google News NG": 67,
+  "Google News CA": 66,
   "Google News AU": 61,
-  "RNZ National": 24,
-  "ABC Australia": 18,
-  "BBC Business": 12,
-  "BBC World": 11,
+  "Google News GB": 57,
+  "RNZ National": 21,
+  "BBC Business": 13,
+  "ABC Australia": 13,
+  "BBC World": 12,
+  "The Guardian World": 11,
   "The Conversation España": 11,
-  "The Conversation France": 9,
-  "BBC Science": 8
+  "The Conversation France": 9
  },
  "unmapped_examples": [
   {
    "title": "Health and care sector latest developments",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWk4zWmpSM2JfSUxoeXRpRGlGLTc1czM5T3NwWHY0U3RCTDBMYlpqMDlwYk9nWjM5dy1wQlY1TXJQcVBWSnB3UzR2cXVvT1BjbXJLUEszVkpxMHZpd3hqTUJiRUxRY2QzSmVxMVR1S0lGeURKZzFpZW9YbklWaVJlRElfXy1WMkk?oc=5",
    "publisher": "The NHS Alliance",
-   "feed_occurrences": 10,
+   "feed_occurrences": 13,
    "feed_count": 9,
    "description_excerpt": " Health and care sector latest developments    The NHS Alliance "
-  },
-  {
-   "title": "Art trail celebrates arrival of black bears at zoo",
-   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WZVE4N2pPekNyVmdBWFFubWtfMXJiQXM4a2QyWGZabWhURTNvQl83U3F2WVhfazVqTDVhYmdLYi02UTMtd3QydjJrYzNHX05vVGNsQlJHNVpZNGpac3c?oc=5",
-   "publisher": "BBC",
-   "feed_occurrences": 6,
-   "feed_count": 6,
-   "description_excerpt": " Art trail celebrates arrival of black bears at zoo    BBC "
   },
   {
    "title": "El Niño threatens health, too – early warnings done right can save lives",
@@ -185,6 +178,14 @@
    "description_excerpt": " Will Jetten I collapse today? Parliament to vote on tax plan as coalition trembles    NL Times "
   },
   {
+   "title": "Cabinet collapse looms as VVD pledges to vote against tax plan",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZHJWV05VOXhSV0toS0pnc29sMjFQWl8xQWRqUmhtSEIybkNtdF9OR2FjNV9ic3ZNZml6TURBbXAxcFhtVm9QaEVMSG9SYlRhb3hYWGZ5aVd5MTBuTndVNmdwUWtNUDBUSzllZDdxVGkyUC12dmtVNDlzV2NBWDhrQm5WZk56VW9ZU3dIMHJ2NmlBRXdWNEJaemJUVmc?oc=5",
+   "publisher": "DutchNews.nl",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Cabinet collapse looms as VVD pledges to vote against tax plan    DutchNews.nl "
+  },
+  {
    "title": "LoP Ssenyonyi faults ‘unbalanced’ Parliament Bill, dares mover to subject Ministers to elections",
    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNaTBMeHRxSVhKb2FCNHlrb21JWDFvVHI0b1NjUmZZZDRvemt5aGVFVzhSd2Z4NjdrbFNqMmlieU9yaWxvWDl1Y3UzNFltY0U5a2wyTGNnRkdOX085VEFLNjZfS1JicjNKQ3d6UUZ6X1ZJV1NySUlFaXpWNmM0ZFV6SWw0cFNmZjJyeUVpODBPX0J1NUg2X19zVGJ3VDNZWUZtU0s2WjQyNHlBR2hBVmJUcDVqVzAwYVVrWmY4aWZ4UmxsSTZVcXJHYmcyYWJSWnJJbVBlcXNEWXdGSWczVUIxd0xB?oc=5",
    "publisher": "Daily Monitor",
@@ -199,6 +200,14 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Ssenyonyi Questions Selective Elections in Proposed Parliament Reforms    Nilepost "
+  },
+  {
+   "title": "Women's quota bill: Centre plans special Parliament session, expects 15-18 vote margin",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdS1XNzZEeFV4NTE0Q3FyNFpJTzd0dVptRFlFTlZWYUxoeS1XdUJ0WVFJZ0JwbjZ2OWxpalkwaUhETGszTlJoWVkzQ3VibEgwNXlJZlJENU9RN214TGdrY3NnV3NiSFdoWjR2bE1YTkVMUGlSbXBhcDZSQWxWZW5yTHRJZy1ZYmFnNnNNZ3ZMYUZsV0hTZzd3eXRsQkxxZFlrNkN0LURNT1kzY0d0VVg4VnRSbW8wNGQzcWdyak1zV2V5Y3I3OGNLY19aRWdrVGfSAdwBQVVfeXFMT0pjbmZsVmdDeXhsZ3VpMzNhTGQ0WjZDMDFaNGxuYmJwc05pS24tODJhQ2QtRUlfY051VjZKNW9WaXNCRXJEMTRXR2RwYUlxLWJlZ29UY21WdlY4Zzk1VF9lTHZhTF9wQVNGY3FqWnloVmh3SFNMcGc3blNOcWpsaXRIczhHejh0VjhDWW5fU1hJbE1XVFNVTnRSVnpadG1WekppLTVZZFEtS2dpT1BLOWJjS1RzNE1aTllNaHFhTHNaYmM1NVFuX2k2MUpYTTJiRVBsemxLdEZnZWZzVQ?oc=5",
+   "publisher": "The New Indian Express",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Women's quota bill: Centre plans special Parliament session, expects 15-18 vote margin    The New Indian Express "
   },
   {
    "title": "ANC opens talks after election rout",
@@ -217,6 +226,22 @@
    "description_excerpt": " ASU professor named state’s wildlife veterinarian    ASU News "
   },
   {
+   "title": "Global Small Grants of Up to US$10,000 for Research, Conservation and Community Initiatives - fundsforNGOs",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbE93b2x4bDJtdmx5dWMxbm1CMURpa041c1A5WGJaVlJBcVRQd1lQN0Jwc3pZUnhUT19iTWZ5UWNZdkRyQnM5S3FOS0pZQjdob0Y4bGJvOUNwdnNxZ0Ruc185QkZWN1ZIcnd5VW0xc2wwUnZpcG9oMmdsY29ka3NMbFBQeEstX1lYXzNpZ1Bxa0EyeWkwS25kMTYxUUhsQUFqQU9maGRIRVBSdkJTSTZGUzY5SklHOEdqRFFiZkdiQUc1ZXZtdXFzcmd1Z9IBywFBVV95cUxQbE93b2x4bDJtdmx5dWMxbm1CMURpa041c1A5WGJaVlJBcVRQd1lQN0Jwc3pZUnhUT19iTWZ5UWNZdkRyQnM5S3FOS0pZQjdob0Y4bGJvOUNwdnNxZ0Ruc185QkZWN1ZIcnd5VW0xc2wwUnZpcG9oMmdsY29ka3NMbFBQeEstX1lYXzNpZ1Bxa0EyeWkwS25kMTYxUUhsQUFqQU9maGRIRVBSdkJTSTZGUzY5SklHOEdqRFFiZkdiQUc1ZXZtdXFzcmd1Zw?oc=5",
+   "publisher": "fundsforNGOs - Grants and Resources for Sustainability",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Global Small Grants of Up to US$10,000 for Research, Conservation and Community Initiatives    fundsforNGOs - Grants and Resources for Sustainability "
+  },
+  {
+   "title": "Opinion: New Colorado governor has opportunity to modernize wildlife conservation",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX3pHY3BBM3A3RlVkZDJ5c2I5TlNMaWVEVy0wenRNQ2lzMkRwYnV6eVQ4dGQya0ludUx4NXFIdkZhT0xqaEE3TmlJLXB4WXNadTIwM09DWklZNGtaellyMWNKdEdXUWR6NXdjaWhlNGxuRXpLRXdRQlZ5cWJkc2dQeC1vdVFBcVNqQnVSNXkwY3poVlFH?oc=5",
+   "publisher": "The Colorado Sun",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Opinion: New Colorado governor has opportunity to modernize wildlife conservation    The Colorado Sun "
+  },
+  {
    "title": "Bird Flu's Wildlife Toll Raises New Conservation Questions",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZFhsQmtPWnpxSnRXNWtWdWd1bkl1bVFrUW95MnNkYndLUTNLeDJxRkJTdVVNazhwdERBczF5OHVQd2hDZ1pkVzZaYjBlSGNsS0ZTcDFNX25tRG83TTY2aG5YYTJ3d2ZVZ19GNmVGbzRRUW9CSHE4ZERPMFk4MVBkYUNEUHlYQlFpSHBoVHdVcldtYVFTdzJOczloaElwazk1WklLdGRhRk5nV3Joam1yZm1sNXFQemVvdktqcHhHRGZ0aWs?oc=5",
    "publisher": "Nature World News",
@@ -231,6 +256,22 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Nature leaping back: Salmon thriving 10 years after river restoration at Wild Haweswater    Inside Ecology "
+  },
+  {
+   "title": "Georgia experts explain why leaf litter is a lifeline for pollinators",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRWlsX0UzbmI4d2hvZEg1ekdCZXh4Q2JndTU1X1ZtT09xanZGZ0hicGliR05BeEVteHh6dDFOTlVJaGdZeGZQbmJZMXZvVElpd1JKU3VaM3hDUDh4VWZBeEZCS2FIOUgzVDlmS2dmdjBLMnpBNXZHMTA1UzZpRFhoaWVSWFRMMkhRYjRZNE5hdTJ6TDZBdlF3UVJNVGxqdWlPWXd6bzF5elFEY1p2cHF2YWJJVUJvSjJEclZCQU5mdzFBNjB4c2FqalBUYjZRTW01ZTdjdXNVUkM1QQ?oc=5",
+   "publisher": "The Augusta Chronicle",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Georgia experts explain why leaf litter is a lifeline for pollinators    The Augusta Chronicle "
+  },
+  {
+   "title": "German chemical sector enraged by Merz's backing of EU carbon scheme",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPelpqZW9QTjlQTVZMY3VreTRJNXJlQmsyNHp3UTlXUHNPQlE1dW9ESEd5N1NDWVhIbDduZEN2ekdfLXEzUUtzZ3FmMDMtM0lVRXlaZUdESGFBU18yRG1fVlUxRWREVkhkdnB5TXZrQUpvQXY4RHFoTURlZVhMeUhPNlYtb25wZnQzaURSclpmTEJkZlhIbkdMSTBkSWRWN1MxQVlURlVRUldScWJEQWF4VA?oc=5",
+   "publisher": "RFI",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " German chemical sector enraged by Merz's backing of EU carbon scheme    RFI "
   },
   {
    "title": "Bird species boom at Bool Lagoon",
@@ -249,6 +290,14 @@
    "description_excerpt": " Assam Records First-Ever Nesting Of Oriental Darter, Marking Major Milestone In Wildlife Conservation    Northeast Today "
   },
   {
+   "title": "Land near Anglesey Abbey back with National Trust after 60 years",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9SY3Q0OENoUnpKdE0tOUtPZmZwMWp4OFZKYzZ2dUphWURRRklXQWJzNnVrcUFrcGc2R2dMbDIzaThxOVV2UzVGREhuUDZhc3R1NGx5cXRBSmQ1MS1GcVE?oc=5",
+   "publisher": "BBC",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Land near Anglesey Abbey back with National Trust after 60 years    BBC "
+  },
+  {
    "title": "Rare birds thriving after zookeepers and a feathery foster parent stepped in to save them",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMUYzMjc4TzVaZmgtaTdjWndyUUVmWFJ2R0daVS1IY1h1eFlCdElrQVZHalVxTlRnaW1wUjM5bHQydnBlUjRHMFJqb0ZRLVRrblg0bGlpNnJtZUl1WUhJSy0zbWwzVURKa0pMQWlvZ1lsT055SWlmVHBjdGRfVy03d1N6MHowMjNnRU1GSXpCbXhEZ0k5MUg1MVBuSWtodE9mdFc5M1BTM2E2b3VWSWIzaGRBel83QXlFV21BdlB1VkpEOWJrLWc?oc=5",
    "publisher": "Inside Ecology",
@@ -257,28 +306,12 @@
    "description_excerpt": " Rare birds thriving after zookeepers and a feathery foster parent stepped in to save them    Inside Ecology "
   },
   {
-   "title": "Opinion: New Colorado governor has opportunity to modernize wildlife conservation",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX3pHY3BBM3A3RlVkZDJ5c2I5TlNMaWVEVy0wenRNQ2lzMkRwYnV6eVQ4dGQya0ludUx4NXFIdkZhT0xqaEE3TmlJLXB4WXNadTIwM09DWklZNGtaellyMWNKdEdXUWR6NXdjaWhlNGxuRXpLRXdRQlZ5cWJkc2dQeC1vdVFBcVNqQnVSNXkwY3poVlFH?oc=5",
-   "publisher": "The Colorado Sun",
+   "title": "Adani slashes Maharashtra power project cost by 99%, its forest dues plummet; Centre orders probe",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU3k5SXVSejRIcHE5QU9LbThiTXI2elVPeTdnVHZSZ1lYTXQwcW01ejhNbmt1NDk0SzhjRGZ2U1hTVzVOeW1jNWk5MDkzaXYyc25TaFpEX2Z0OWVka01rVm45b0xVRzJSeThoamJ3ejlUbXlMX0tqclRCSXVVVXlYQ0podXZOMHRGN0Jwd1RCZm9yYmdrV0pzcGljNTluc19tWHpHRkZxd3kyVWZJNDdxa0l6MERuTGNpbHBiblc3b9IBxgFBVV95cUxQMFVULTJQYmVKMHRsVThlRVgwNmVWSmZIeENHYkYyZWIxN3pHS1BPQnY5bFdPSHg3NFo0dkpNZjdEWXctLUdKNU9CZzN3RFdVdFctanZJNTBaZFpiZGd3T2t4M1kxQ0FScVVRbndPTXYxYXRRbzJMSGlwRjFNU3pzOEZ1MXozSGFMeGNRMTJBQmM3X1h0ZkdWRXh0aWtKVnc0WTlVMzIyNjhHeHVNQlU4Zk55ZlRzZkJ1b2xRNXJ3dFZib3NtV3c?oc=5",
+   "publisher": "The Indian Express",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Opinion: New Colorado governor has opportunity to modernize wildlife conservation    The Colorado Sun "
-  },
-  {
-   "title": "Georgia experts explain why leaf litter is a lifeline for pollinators",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRWlsX0UzbmI4d2hvZEg1ekdCZXh4Q2JndTU1X1ZtT09xanZGZ0hicGliR05BeEVteHh6dDFOTlVJaGdZeGZQbmJZMXZvVElpd1JKU3VaM3hDUDh4VWZBeEZCS2FIOUgzVDlmS2dmdjBLMnpBNXZHMTA1UzZpRFhoaWVSWFRMMkhRYjRZNE5hdTJ6TDZBdlF3UVJNVGxqdWlPWXd6bzF5elFEY1p2cHF2YWJJVUJvSjJEclZCQU5mdzFBNjB4c2FqalBUYjZRTW01ZTdjdXNVUkM1QQ?oc=5",
-   "publisher": "The Augusta Chronicle",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Georgia experts explain why leaf litter is a lifeline for pollinators    The Augusta Chronicle "
-  },
-  {
-   "title": "We can save more endangered species, says William at conservation awards",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSFkwRjduNmh1NTJmU2tNdm5ZT1VwQ082ODRraTRHdXU2TDlLTHdPNTFvNkZXWjVwbVpsc1RBNXBoT3BadExBSTJlQXVBMG1seWdXemoxVHhRQUxYZG5VdkFoYllXdDYybHJxbmZvNFlUTmhONTd0ZzgxdTFpR3NkZEY3dzFmTHRxYlhTMlJ6R1Q5STdhV2VKQkQ3WjI4NHRpTnVULVZtN3RrdXNiRTFZX3EtcVVFeEE?oc=5",
-   "publisher": "Border Telegraph",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " We can save more endangered species, says William at conservation awards    Border Telegraph "
+   "description_excerpt": " Adani slashes Maharashtra power project cost by 99%, its forest dues plummet; Centre orders probe    The Indian Express "
   },
   {
    "title": "Budget 2027: Rs.5 billion set aside for El Niño preparedness as government strengthens wildlife protection",
@@ -287,6 +320,14 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Budget 2027: Rs.5 billion set aside for El Niño preparedness as government strengthens wildlife protection    Hiru News "
+  },
+  {
+   "title": "Adani Green Cuts Tarali Project Cost by 99%, Wildlife Deposit Falls to Rs 2.27 Crore",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQckZfd29HcE13Nm84VFZaMkxXOEI2MTlaWFRNa05EN0UxWG12TjRaV1RuWm90bkpUVnktNTNIZUJxdlFzNFV6RHdRZWc1cjVkWkNqVmMwM0pXb0JnZi15OUNvbWdMeEZ4aXZqZElna3R1MnliT1FzSVIzVXBkMTFydmlUOTF4eU9lX2I1WUdad2lIdExfS190YjJGZ3VWZXhpMWZ4Q0hwWC1NWGJzTFVxOG8yYjRBN0N5LVFvUVhEMDhfTkFrXzJnXw?oc=5",
+   "publisher": "Business Upturn",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Adani Green Cuts Tarali Project Cost by 99%, Wildlife Deposit Falls to Rs 2.27 Crore    Business Upturn "
   },
   {
    "title": "Caltech Launches New Disaster Resilience Center",
@@ -313,28 +354,20 @@
    "description_excerpt": " Gen Z Rises Up Across the World    Socialist Alternative "
   },
   {
-   "title": "New Colorado housing survey shows housing is too expensive for most residents",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTklacGV5SlpvSjFkbF9RNnhiX21LVlB3YklvSjBvQ3dtYnppXzVZY3J5MVZKaThtcDg3NWpsTWh5cDdQcEhfbzBFMW1XUjJ5MzZ2LVcwejM5QzdTVXF6SFpLanZIcWlKUFpocUFTdW9sVTdTUV9tSzhzNVJEdTBaQkt0NzRESjJlR01oVWJVMm1rQi1ad2QzM1JZVVlyQllTX3BnRjJhYmlCdTF6dDZ0OFh2aHFUUEha?oc=5",
-   "publisher": "CBS News",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " New Colorado housing survey shows housing is too expensive for most residents    CBS News "
-  },
-  {
-   "title": "Violence breaks out as Spaniards strike, protest housing costs",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSk1XdWxtS3M3Nmdrd2EyRVRidnBGUXlqcWFiaFQ3aUw5bWtkVXhIY3pZU3Z4OHZtN054bzJrLUNzclVRQzhOczhuZ0FFaGxnUTJXZkxVc2FYTjlQOXR5c3EtUlhVUFh0RWFLNHBtSmxkQ2ZLSEc4VWFJSlA1VEFLZVE1VGpVWWZOZXhMOWoyLWFPd3lXVElhWXRNYVNLUXR0cVVubG1wa29acHVCR3FJ?oc=5",
-   "publisher": "AFR",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Violence breaks out as Spaniards strike, protest housing costs    AFR "
-  },
-  {
    "title": "HHS announces funding for development of PTSD treatment, study on emerging mental illness remedies",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSEtfaGFtdmM2MUtVOXdNMVpTNzE4Zy1pODdRMC1LMENFSkhxRDg0dlZQSE5Bb3F6YmxILU5XYkJPc1VBSTh6d1JFUm9CRHFuZXk1NzZzRVowRWxEamlKZ2RDdUFYcFl0bVhLWTY0NWRORkhZY2VJODBFRWdRbE1qYnF4NnBjQmRfWndkX1ctWmtXdllWWC1lQ2ZyOUx2cV9RZHB6R0VsS0tvSmVuM1JQWVpGVUhOZXd5Z3hjeUNETVhVWXU4c3dJbkRMbkc?oc=5",
    "publisher": "American Hospital Association",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " HHS announces funding for development of PTSD treatment, study on emerging mental illness remedies    American Hospital Association "
+  },
+  {
+   "title": "What we know about the new CDC director amid praise from doctors - ABC News",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRHZoVl9jM2xfc2MwRGxKOWlCNTh0Mm1VeUxneGp4T1BtU0VKZjItV1RlNEkwNFVXdFh6XzM4V1dTc3FhbWFneXBCSmp1VmZRWDh3WGtIcmJFSDBac3FKaS14Ukx0S1hQMGFnVElLZlV3MFU3U0tjQkRacFdNdVhBYWdTN1cyTzNrNnfSAY8BQVVfeXFMUFpldUZTWjlhQm5nN2dVT0lMSHp4RVVfbEN5bl9KcEMwSkRTOEJNM1lZbks3c0g2aG5UR19nTGlHaVAxNkZTNi1jeDBkUWNEdURzLXVHbkE0dGxzdDc3WmhyWEtMSC1ydTJxWUZMY0xVYy1oSndvYUl0eUJiem5FVEstX3kybTRxczdNRDg4X0U?oc=5",
+   "publisher": "ABC News - Breaking News, Latest News and Videos",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " What we know about the new CDC director amid praise from doctors    ABC News - Breaking News, Latest News and Videos "
   },
   {
    "title": "Measles: What’s at stake if the US loses elimination status",
@@ -345,12 +378,20 @@
    "description_excerpt": " Measles: What’s at stake if the US loses elimination status    Association of Health Care Journalists "
   },
   {
-   "title": "America’s oldest hospital and the future of brain science",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZUd4NnQ3RzFlSjltdy1nR3BqMzJ3QjNFV0EzUjdDa3U3Nmo0TFQwQ1AtM1ZReDRlMFkyOWdRb3FNWURjcjlDRkRsR0dWN2lxTjJhcnFtc245SXFndkFPODRJRXg0UURQYXBTQ1FGekJXMDl3QmNWZURfVXE2VXk3VVdRZnAtZEFVeTY2bGNnRUwtWXV2?oc=5",
-   "publisher": "Penn Medicine",
+   "title": "European Study Identifies Healthcare Coordination Gaps Across Five Nations During Pandemic",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRlB3bHg1VzREdHg0NVZ0MzF5RXhiN2ZkTlZDa1NTd3gzOHJlVW81VnJNSkVMZnB1VTN3T0x4dWFsZXlBb25jazF1RGpRRWxyVWVMQ2ZEWFRrcFFGWE5nZVlhZXROcm5iOHdJdTBvVk8tN2xndjNvanVFSHllOW5RM29YTS1NUkdNcnNENmlCX0JybFJSbEV1eGNpZkVERl9UdTlYUnlrODg4ZUNYMVJTLWY5cU93QQ?oc=5",
+   "publisher": "Bioengineer.org",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " America’s oldest hospital and the future of brain science    Penn Medicine "
+   "description_excerpt": " European Study Identifies Healthcare Coordination Gaps Across Five Nations During Pandemic    Bioengineer.org "
+  },
+  {
+   "title": "WNY hospitals respond to increases flu cases and hospitalizations",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbU52VFJ4STFRYTBPbnJHOGJqLVBVa0tyTUZPb0hIaXFQb1d5eG9fY1NiTjN4cWt5TEFfTkFSaG1mUGg5czY2cE9tRXVkSEdUY1VXU2wxRU1xanhzbTBsZDhGeFh5S3liR0FkRXNMbmRPYktIajk0SUtDbDVEVG5HRUlldEUyTWFpOXk3bDlfXzVaZ3NfNFpSYlg2MEgwUC01akdrSA?oc=5",
+   "publisher": "WKBW",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " WNY hospitals respond to increases flu cases and hospitalizations    WKBW "
   },
   {
    "title": "Bay Area’s Early Flu Season Could Bring Multiple Waves of Illness This Winter",
@@ -359,59 +400,19 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Bay Area’s Early Flu Season Could Bring Multiple Waves of Illness This Winter    SFist "
-  },
-  {
-   "title": "Congo Ebola outbreak still out of control after six months, MSF says",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdGYtSlBocHpZUE9ldnZXb054T1V0c012WkVoTVNFeW81R3FBek1zVzY4NjV1dnYtM3k1d1BGcU1wcEJtbnJYcjQ1eWRpZU1UT0hfVUM0NzZOaFFmd19HZE5TUmVzWTh1M044V1NCYl9DdDBEOEpoclVtdHlOdlNaMmJPeVJhMW41Zi1OU1VYZzBiOVRxRTEtUFZleFdFdXNXQXZmdGpDT0JaaWx1Wk5OckRSU3lxXzBWdWFRdnVhRTg3X3ZkVjBucU1pOXlyOWdYVUE?oc=5",
-   "publisher": "Reuters",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Congo Ebola outbreak still out of control after six months, MSF says    Reuters "
-  },
-  {
-   "title": "Forty-two Guadalcanal health workers trained to keep care going during climate-related emergencies",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNQUJiM1AtbS1FSTVmUEs0WDB4SnVZRUIwT083Z0hoaWtnTmhFeWd2T0pPbjJ0NVVEazMtNzhrZ2dkdVJvRHU3dmxkQU03OFM1RG04OFNTWUhiUFdPSXhPM1FkY0puc2IzRjMzU24zdUNPS0hYMHJYRmFKd25lYXRwTFlmM1pfRVdVMG9DNUdSS2JjQ2UxVFlFaXZBUWU4bHNWcVZGSXR1STRqaXZzOG9lbHlTTkpTN0ZQbHBoQjUwbFhReHZEbzN2TEZjZmZUdzFLTlhhOTJXM2NUTVFGd0h5VnRhYw?oc=5",
-   "publisher": "World Health Organization (WHO)",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Forty-two Guadalcanal health workers trained to keep care going during climate-related emergencies    World Health Organization (WHO) "
-  },
-  {
-   "title": "ICID 2026 Infectious Disease Congress: Wastewater Now Detects Outbreaks Up to a Week Before Hospitals Do",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNN1M2YmJDYnAtTnBmV0g3SW5CUGlUVDhoRFQ1aGhJZndjWVF5WmJkNGJHQmVsVWxLeFdSNVRMemlWQnJlZFpQT3c3SDEwb3FmQ05vS2FiNEowb0FDd3RHQmRHMnNEYTNZSGxkaVJocmc4UnhiZ3k5bFROalQxWWd5S0hjLS00dTVUaVBFZFZKYV9LMEtRd3c1aWlGSS1YaEdHMTROd3pPSG5FSXpIejdGeHJINjhoZFAxaHZoUklwdVJmVXpxaTVHdF9HaV9WdllCbVFGY1AzTy1qOV9VRVk3V1hVXzE?oc=5",
-   "publisher": "Tech Times",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " ICID 2026 Infectious Disease Congress: Wastewater Now Detects Outbreaks Up to a Week Before Hospitals Do    Tech Times "
-  },
-  {
-   "title": "Man’s secret use of synthetic testosterone for cows nearly destroyed his heart",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdDliTjI4V20zSFY5ZmduSkE0Rl80cmgtYlJXa0kzZHhkZHh0U0RwZ2lkSmxzd1l1ZHhTVHJ4V2FVYXUyT3ZoQm5oV0lHdlFrYTVDaV93d0VnekZwdEVvTVhYUF9Sd3M1cHMxcHRpT1VTenBJTF93QkpBd1RFNzkwWEdaaXhOS3RmSlVIUzg4NU81UmZfZ0RmVThDRnhKckFKYXFtaHBOcWdWYW9QczRsX1VsdmxzZEJl?oc=5",
-   "publisher": "Ars Technica",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Man’s secret use of synthetic testosterone for cows nearly destroyed his heart    Ars Technica "
-  },
-  {
-   "title": "Flu and Covid shots continue at VMH Community and Home Care - Allamakee Public Health",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPRmR6MGMyckxzbGJfTnhhMnJtbTJzX2RLNmdyWEJHWDlmX0hFMGpsUFk0aURnZXNpaUpiUndWdlVfN2hfTE9PMnVneEQwdWVmdjRwYy1Rcm5XdVgyaElPUF9QdzYyM1Q4ZnhmQ1pIaW9XX0stU2N4d3J6THV3ZUwxNVo3dW9CdVdLMk8xeEs4X191d1FTYmh1bS12U1J3dlZWUW1NN3pNcUZ3YzZKaVV3UVVjNzNpQmliVHZxaWNEWUtndWo1VGY5U3BGQQ?oc=5",
-   "publisher": "Waukon Standard Newspaper",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Flu and Covid shots continue at VMH Community and Home Care - Allamakee Public Health    Waukon Standard Newspaper "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
-  "successful": 48,
-  "mapped_pre_dedupe": 340
+  "successful": 47,
+  "mapped_pre_dedupe": 297
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 104,
+   "mapped_pre_dedupe": 105,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
@@ -426,7 +427,7 @@
     {
      "source": "direct/AllAfrica Central Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 17
     },
     {
      "source": "direct/AllAfrica Southern Africa",
@@ -448,22 +449,22 @@
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 12,
+   "mapped_pre_dedupe": 13,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/The Conversation Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 6
+     "mapped_pre_dedupe": 9
     }
    ]
   },
@@ -492,12 +493,12 @@
     {
      "source": "direct/Global Voices English",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/Global Voices Spanish",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/Global Voices Portuguese",
@@ -524,7 +525,7 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 102,
+   "mapped_pre_dedupe": 100,
    "feeds": [
     {
      "source": "direct/BBC World",
@@ -534,27 +535,27 @@
     {
      "source": "direct/BBC Science",
      "status": "ok",
-     "mapped_pre_dedupe": 6
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/BBC Business",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 19
+     "mapped_pre_dedupe": 20
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/The Guardian Environment",
      "status": "ok",
-     "mapped_pre_dedupe": 8
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/DW World",
@@ -564,7 +565,7 @@
     {
      "source": "direct/France24",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 22
     },
     {
      "source": "direct/NPR World",
@@ -579,7 +580,7 @@
     {
      "source": "direct/The Conversation",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 1
     }
    ]
   },
@@ -609,13 +610,13 @@
   },
   "regional": {
    "configured": 17,
-   "successful": 15,
-   "mapped_pre_dedupe": 92,
+   "successful": 13,
+   "mapped_pre_dedupe": 45,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 12
     },
     {
      "source": "direct/RNZ World",
@@ -625,7 +626,7 @@
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 18
+     "mapped_pre_dedupe": 10
     },
     {
      "source": "direct/CBC World",
@@ -639,13 +640,13 @@
     },
     {
      "source": "direct/France24 FR",
-     "status": "ok",
-     "mapped_pre_dedupe": 20
+     "status": "failed",
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/France24 ES",
-     "status": "ok",
-     "mapped_pre_dedupe": 20
+     "status": "failed",
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/DW Español",
@@ -660,12 +661,12 @@
     {
      "source": "direct/BBC Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/BBC Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/BBC Latin America",
@@ -685,7 +686,7 @@
     {
      "source": "direct/RNZ Pacific",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/Guardian Africa",
@@ -695,7 +696,7 @@
     {
      "source": "direct/Guardian Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 3
     }
    ]
   },
@@ -718,8 +719,8 @@
   },
   "specialist": {
    "configured": 3,
-   "successful": 1,
-   "mapped_pre_dedupe": 4,
+   "successful": 2,
+   "mapped_pre_dedupe": 8,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
@@ -728,35 +729,27 @@
     },
     {
      "source": "direct/UN News",
-     "status": "failed",
-     "mapped_pre_dedupe": 0
+     "status": "ok",
+     "mapped_pre_dedupe": 5
     },
     {
      "source": "direct/NASA News",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     }
    ]
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 644,
+  "distinct_unmapped_titles": 654,
   "high_repeat_unmapped_examples": [
    {
     "title": "Health and care sector latest developments",
     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWk4zWmpSM2JfSUxoeXRpRGlGLTc1czM5T3NwWHY0U3RCTDBMYlpqMDlwYk9nWjM5dy1wQlY1TXJQcVBWSnB3UzR2cXVvT1BjbXJLUEszVkpxMHZpd3hqTUJiRUxRY2QzSmVxMVR1S0lGeURKZzFpZW9YbklWaVJlRElfXy1WMkk?oc=5",
     "publisher": "The NHS Alliance",
-    "feed_occurrences": 10,
+    "feed_occurrences": 13,
     "feed_count": 9,
     "description_excerpt": " Health and care sector latest developments    The NHS Alliance "
-   },
-   {
-    "title": "Art trail celebrates arrival of black bears at zoo",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WZVE4N2pPekNyVmdBWFFubWtfMXJiQXM4a2QyWGZabWhURTNvQl83U3F2WVhfazVqTDVhYmdLYi02UTMtd3QydjJrYzNHX05vVGNsQlJHNVpZNGpac3c?oc=5",
-    "publisher": "BBC",
-    "feed_occurrences": 6,
-    "feed_count": 6,
-    "description_excerpt": " Art trail celebrates arrival of black bears at zoo    BBC "
    },
    {
     "title": "El Niño threatens health, too – early warnings done right can save lives",
@@ -807,6 +800,14 @@
     "description_excerpt": " Will Jetten I collapse today? Parliament to vote on tax plan as coalition trembles    NL Times "
    },
    {
+    "title": "Cabinet collapse looms as VVD pledges to vote against tax plan",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZHJWV05VOXhSV0toS0pnc29sMjFQWl8xQWRqUmhtSEIybkNtdF9OR2FjNV9ic3ZNZml6TURBbXAxcFhtVm9QaEVMSG9SYlRhb3hYWGZ5aVd5MTBuTndVNmdwUWtNUDBUSzllZDdxVGkyUC12dmtVNDlzV2NBWDhrQm5WZk56VW9ZU3dIMHJ2NmlBRXdWNEJaemJUVmc?oc=5",
+    "publisher": "DutchNews.nl",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Cabinet collapse looms as VVD pledges to vote against tax plan    DutchNews.nl "
+   },
+   {
     "title": "LoP Ssenyonyi faults ‘unbalanced’ Parliament Bill, dares mover to subject Ministers to elections",
     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNaTBMeHRxSVhKb2FCNHlrb21JWDFvVHI0b1NjUmZZZDRvemt5aGVFVzhSd2Z4NjdrbFNqMmlieU9yaWxvWDl1Y3UzNFltY0U5a2wyTGNnRkdOX085VEFLNjZfS1JicjNKQ3d6UUZ6X1ZJV1NySUlFaXpWNmM0ZFV6SWw0cFNmZjJyeUVpODBPX0J1NUg2X19zVGJ3VDNZWUZtU0s2WjQyNHlBR2hBVmJUcDVqVzAwYVVrWmY4aWZ4UmxsSTZVcXJHYmcyYWJSWnJJbVBlcXNEWXdGSWczVUIxd0xB?oc=5",
     "publisher": "Daily Monitor",
@@ -821,6 +822,14 @@
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " Ssenyonyi Questions Selective Elections in Proposed Parliament Reforms    Nilepost "
+   },
+   {
+    "title": "Women's quota bill: Centre plans special Parliament session, expects 15-18 vote margin",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdS1XNzZEeFV4NTE0Q3FyNFpJTzd0dVptRFlFTlZWYUxoeS1XdUJ0WVFJZ0JwbjZ2OWxpalkwaUhETGszTlJoWVkzQ3VibEgwNXlJZlJENU9RN214TGdrY3NnV3NiSFdoWjR2bE1YTkVMUGlSbXBhcDZSQWxWZW5yTHRJZy1ZYmFnNnNNZ3ZMYUZsV0hTZzd3eXRsQkxxZFlrNkN0LURNT1kzY0d0VVg4VnRSbW8wNGQzcWdyak1zV2V5Y3I3OGNLY19aRWdrVGfSAdwBQVVfeXFMT0pjbmZsVmdDeXhsZ3VpMzNhTGQ0WjZDMDFaNGxuYmJwc05pS24tODJhQ2QtRUlfY051VjZKNW9WaXNCRXJEMTRXR2RwYUlxLWJlZ29UY21WdlY4Zzk1VF9lTHZhTF9wQVNGY3FqWnloVmh3SFNMcGc3blNOcWpsaXRIczhHejh0VjhDWW5fU1hJbE1XVFNVTnRSVnpadG1WekppLTVZZFEtS2dpT1BLOWJjS1RzNE1aTllNaHFhTHNaYmM1NVFuX2k2MUpYTTJiRVBsemxLdEZnZWZzVQ?oc=5",
+    "publisher": "The New Indian Express",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Women's quota bill: Centre plans special Parliament session, expects 15-18 vote margin    The New Indian Express "
    },
    {
     "title": "ANC opens talks after election rout",
@@ -839,6 +848,22 @@
     "description_excerpt": " ASU professor named state’s wildlife veterinarian    ASU News "
    },
    {
+    "title": "Global Small Grants of Up to US$10,000 for Research, Conservation and Community Initiatives - fundsforNGOs",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbE93b2x4bDJtdmx5dWMxbm1CMURpa041c1A5WGJaVlJBcVRQd1lQN0Jwc3pZUnhUT19iTWZ5UWNZdkRyQnM5S3FOS0pZQjdob0Y4bGJvOUNwdnNxZ0Ruc185QkZWN1ZIcnd5VW0xc2wwUnZpcG9oMmdsY29ka3NMbFBQeEstX1lYXzNpZ1Bxa0EyeWkwS25kMTYxUUhsQUFqQU9maGRIRVBSdkJTSTZGUzY5SklHOEdqRFFiZkdiQUc1ZXZtdXFzcmd1Z9IBywFBVV95cUxQbE93b2x4bDJtdmx5dWMxbm1CMURpa041c1A5WGJaVlJBcVRQd1lQN0Jwc3pZUnhUT19iTWZ5UWNZdkRyQnM5S3FOS0pZQjdob0Y4bGJvOUNwdnNxZ0Ruc185QkZWN1ZIcnd5VW0xc2wwUnZpcG9oMmdsY29ka3NMbFBQeEstX1lYXzNpZ1Bxa0EyeWkwS25kMTYxUUhsQUFqQU9maGRIRVBSdkJTSTZGUzY5SklHOEdqRFFiZkdiQUc1ZXZtdXFzcmd1Zw?oc=5",
+    "publisher": "fundsforNGOs - Grants and Resources for Sustainability",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Global Small Grants of Up to US$10,000 for Research, Conservation and Community Initiatives    fundsforNGOs - Grants and Resources for Sustainability "
+   },
+   {
+    "title": "Opinion: New Colorado governor has opportunity to modernize wildlife conservation",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX3pHY3BBM3A3RlVkZDJ5c2I5TlNMaWVEVy0wenRNQ2lzMkRwYnV6eVQ4dGQya0ludUx4NXFIdkZhT0xqaEE3TmlJLXB4WXNadTIwM09DWklZNGtaellyMWNKdEdXUWR6NXdjaWhlNGxuRXpLRXdRQlZ5cWJkc2dQeC1vdVFBcVNqQnVSNXkwY3poVlFH?oc=5",
+    "publisher": "The Colorado Sun",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Opinion: New Colorado governor has opportunity to modernize wildlife conservation    The Colorado Sun "
+   },
+   {
     "title": "Bird Flu's Wildlife Toll Raises New Conservation Questions",
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZFhsQmtPWnpxSnRXNWtWdWd1bkl1bVFrUW95MnNkYndLUTNLeDJxRkJTdVVNazhwdERBczF5OHVQd2hDZ1pkVzZaYjBlSGNsS0ZTcDFNX25tRG83TTY2aG5YYTJ3d2ZVZ19GNmVGbzRRUW9CSHE4ZERPMFk4MVBkYUNEUHlYQlFpSHBoVHdVcldtYVFTdzJOczloaElwazk1WklLdGRhRk5nV3Joam1yZm1sNXFQemVvdktqcHhHRGZ0aWs?oc=5",
     "publisher": "Nature World News",
@@ -855,38 +880,6 @@
     "description_excerpt": " Nature leaping back: Salmon thriving 10 years after river restoration at Wild Haweswater    Inside Ecology "
    },
    {
-    "title": "Bird species boom at Bool Lagoon",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRjNKa2h5cEVWb3ZUN1lOb09ETzR5MHMzS0ZwcEFqTlE0NWp6S0RLQWhrRk1JVDJwa09pQm9DRzg2WkV2Q3lUQ05uOUFSWTJ0RXk4QlRYYlFYWXRXTjl4U21fN1JuY192ODFsZFRhM3lBa1FSSnk0VmtCZ0JvZ243U0tIOXRWcm5pdzdob2s5amR0RnRlTlNNMEZSQ0p4dw?oc=5",
-    "publisher": "Department for Environment and Water",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Bird species boom at Bool Lagoon    Department for Environment and Water "
-   },
-   {
-    "title": "Assam Records First-Ever Nesting Of Oriental Darter, Marking Major Milestone In Wildlife Conservation",
-    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeE02TDRVVjJWNnhobmdBajdBRUtPU2h6LWg1QUxUWkYzZldkMzNnUVBlZmNYY21fVDh3dGZRZ0c1dFpyZS1mb0dPWVN2OHlFcE4talEzcG4tcFBtUTFEMkdEcWJSalZRUjFsYXZlNEFnM3N0Z2M3Rk9scjBDYVdjZElfNzZUeDJGS1M0ZFl4VnkybUdnUG9lNnJucTJYRmtpQlIyUEtPWEdzOWlCVlFCZ1hMcWFzNGp1Q2RHWXE1MEozT2xqNDVxTkREVksyV3o4MGVQSzh6alptZ1E?oc=5",
-    "publisher": "Northeast Today",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Assam Records First-Ever Nesting Of Oriental Darter, Marking Major Milestone In Wildlife Conservation    Northeast Today "
-   },
-   {
-    "title": "Rare birds thriving after zookeepers and a feathery foster parent stepped in to save them",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMUYzMjc4TzVaZmgtaTdjWndyUUVmWFJ2R0daVS1IY1h1eFlCdElrQVZHalVxTlRnaW1wUjM5bHQydnBlUjRHMFJqb0ZRLVRrblg0bGlpNnJtZUl1WUhJSy0zbWwzVURKa0pMQWlvZ1lsT055SWlmVHBjdGRfVy03d1N6MHowMjNnRU1GSXpCbXhEZ0k5MUg1MVBuSWtodE9mdFc5M1BTM2E2b3VWSWIzaGRBel83QXlFV21BdlB1VkpEOWJrLWc?oc=5",
-    "publisher": "Inside Ecology",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Rare birds thriving after zookeepers and a feathery foster parent stepped in to save them    Inside Ecology "
-   },
-   {
-    "title": "Opinion: New Colorado governor has opportunity to modernize wildlife conservation",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX3pHY3BBM3A3RlVkZDJ5c2I5TlNMaWVEVy0wenRNQ2lzMkRwYnV6eVQ4dGQya0ludUx4NXFIdkZhT0xqaEE3TmlJLXB4WXNadTIwM09DWklZNGtaellyMWNKdEdXUWR6NXdjaWhlNGxuRXpLRXdRQlZ5cWJkc2dQeC1vdVFBcVNqQnVSNXkwY3poVlFH?oc=5",
-    "publisher": "The Colorado Sun",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Opinion: New Colorado governor has opportunity to modernize wildlife conservation    The Colorado Sun "
-   },
-   {
     "title": "Georgia experts explain why leaf litter is a lifeline for pollinators",
     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRWlsX0UzbmI4d2hvZEg1ekdCZXh4Q2JndTU1X1ZtT09xanZGZ0hicGliR05BeEVteHh6dDFOTlVJaGdZeGZQbmJZMXZvVElpd1JKU3VaM3hDUDh4VWZBeEZCS2FIOUgzVDlmS2dmdjBLMnpBNXZHMTA1UzZpRFhoaWVSWFRMMkhRYjRZNE5hdTJ6TDZBdlF3UVJNVGxqdWlPWXd6bzF5elFEY1p2cHF2YWJJVUJvSjJEclZCQU5mdzFBNjB4c2FqalBUYjZRTW01ZTdjdXNVUkM1QQ?oc=5",
     "publisher": "The Augusta Chronicle",
@@ -895,23 +888,31 @@
     "description_excerpt": " Georgia experts explain why leaf litter is a lifeline for pollinators    The Augusta Chronicle "
    },
    {
-    "title": "We can save more endangered species, says William at conservation awards",
-    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSFkwRjduNmh1NTJmU2tNdm5ZT1VwQ082ODRraTRHdXU2TDlLTHdPNTFvNkZXWjVwbVpsc1RBNXBoT3BadExBSTJlQXVBMG1seWdXemoxVHhRQUxYZG5VdkFoYllXdDYybHJxbmZvNFlUTmhONTd0ZzgxdTFpR3NkZEY3dzFmTHRxYlhTMlJ6R1Q5STdhV2VKQkQ3WjI4NHRpTnVULVZtN3RrdXNiRTFZX3EtcVVFeEE?oc=5",
-    "publisher": "Border Telegraph",
+    "title": "German chemical sector enraged by Merz's backing of EU carbon scheme",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPelpqZW9QTjlQTVZMY3VreTRJNXJlQmsyNHp3UTlXUHNPQlE1dW9ESEd5N1NDWVhIbDduZEN2ekdfLXEzUUtzZ3FmMDMtM0lVRXlaZUdESGFBU18yRG1fVlUxRWREVkhkdnB5TXZrQUpvQXY4RHFoTURlZVhMeUhPNlYtb25wZnQzaURSclpmTEJkZlhIbkdMSTBkSWRWN1MxQVlURlVRUldScWJEQWF4VA?oc=5",
+    "publisher": "RFI",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " We can save more endangered species, says William at conservation awards    Border Telegraph "
+    "description_excerpt": " German chemical sector enraged by Merz's backing of EU carbon scheme    RFI "
+   },
+   {
+    "title": "Bird species boom at Bool Lagoon",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRjNKa2h5cEVWb3ZUN1lOb09ETzR5MHMzS0ZwcEFqTlE0NWp6S0RLQWhrRk1JVDJwa09pQm9DRzg2WkV2Q3lUQ05uOUFSWTJ0RXk4QlRYYlFYWXRXTjl4U21fN1JuY192ODFsZFRhM3lBa1FSSnk0VmtCZ0JvZ243U0tIOXRWcm5pdzdob2s5amR0RnRlTlNNMEZSQ0p4dw?oc=5",
+    "publisher": "Department for Environment and Water",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Bird species boom at Bool Lagoon    Department for Environment and Water "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Nigeria",
-   "largest_label_articles": 28,
-   "share_of_country_labelled_articles": 0.078
+   "largest_label_articles": 27,
+   "share_of_country_labelled_articles": 0.075
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 315,
+  "unique_direct_urls_not_in_google_sample": 281,
   "unique_google_urls_not_in_direct_sample": 348,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
@@ -919,78 +920,78 @@
    "AllAfrica East Africa": 29,
    "AllAfrica Southern Africa": 28,
    "AllAfrica West Africa": 28,
-   "The Guardian World": 20,
-   "France24": 20,
-   "France24 ES": 20,
-   "France24 FR": 19,
-   "Al Jazeera": 19,
-   "RNZ National": 18,
-   "AllAfrica Central Africa": 16,
+   "France24": 22,
+   "Al Jazeera": 20,
+   "The Guardian World": 18,
+   "AllAfrica Central Africa": 17,
+   "ABC Australia": 12,
+   "RNZ National": 10,
    "DW World": 10,
    "BBC World": 9,
-   "The Guardian Environment": 8,
+   "The Diplomat": 9,
    "NPR World": 8,
-   "ABC Australia": 7,
    "Mongabay Latam": 6,
    "Mongabay Global": 6,
-   "The Diplomat": 6,
-   "RNZ Pacific": 5,
-   "Guardian Asia": 5,
+   "The Guardian Environment": 6,
    "BBC Europe": 5,
-   "NASA News": 4,
+   "UN News": 5,
+   "BBC Africa": 4,
    "The Conversation Canada": 4,
    "BBC Brasil": 4,
-   "Mongabay Indonesia": 3,
-   "The Conversation Indonesia": 3,
-   "BBC Africa": 3,
-   "BBC Science": 3,
+   "BBC Asia": 3,
+   "NASA News": 3,
+   "Guardian Asia": 3,
+   "Global Voices English": 3,
    "Inter Press Service Headlines": 3,
-   "The Conversation": 2
+   "Mongabay Indonesia": 2,
+   "The Conversation NZ": 2,
+   "BBC Science": 2,
+   "The Conversation France": 2
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 359,
-  "country_labels_count": 86,
+  "country_labelled_articles": 362,
+  "country_labels_count": 84,
   "top_country_subjects": {
-   "Nigeria": 28,
-   "Vietnam": 19,
-   "Canada": 16,
-   "Kenya": 16,
-   "Brazil": 15,
-   "Ukraine": 14,
+   "Nigeria": 27,
+   "Ukraine": 16,
+   "Vietnam": 16,
+   "Canada": 15,
+   "India": 15,
    "China": 14,
-   "France": 11,
-   "India": 11,
+   "Brazil": 14,
+   "Uganda": 12,
+   "Iran": 11,
+   "South Africa": 10,
+   "Kenya": 10,
    "Rwanda": 10,
-   "Israel": 10,
-   "Ghana": 9,
-   "Spain": 9,
+   "Israel": 9,
    "Mexico": 9,
-   "South Africa": 8,
-   "Iran": 8,
-   "Zimbabwe": 7,
-   "Australia": 6,
-   "Uganda": 6,
+   "Australia": 8,
+   "Spain": 8,
+   "Colombia": 7,
+   "Ghana": 7,
+   "Indonesia": 7,
+   "France": 7,
    "Mozambique": 6,
-   "United States": 6,
-   "Colombia": 6,
-   "Indonesia": 6,
-   "Somalia": 5,
+   "Sudan": 5,
+   "Puerto Rico": 5,
+   "Russia": 5,
+   "Zimbabwe": 5,
    "Portugal": 5,
-   "Puerto Rico": 4,
-   "Malawi": 4,
-   "Russia": 4,
+   "Somalia": 4,
    "Venezuela": 4,
+   "United States": 4,
    "Chile": 4
   },
-  "distinct_geographic_signal_centers": 259,
+  "distinct_geographic_signal_centers": 246,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 96
   },
   "GB": {
    "requests": 11,
@@ -1000,50 +1001,50 @@
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 97
+   "mapped_pre_dedupe": 93
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 55
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 94
+   "mapped_pre_dedupe": 86
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 54
+   "mapped_pre_dedupe": 53
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 96
+   "mapped_pre_dedupe": 90
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 57
+   "mapped_pre_dedupe": 56
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 49
+   "mapped_pre_dedupe": 44
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 108
+   "mapped_pre_dedupe": 99
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 101
+   "mapped_pre_dedupe": 94
   }
  },
- "duplicates_removed": 547,
+ "duplicates_removed": 505,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1061,36 +1062,44 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-12T23:53:39+00:00",
-    "mapped_articles": 648,
-    "geographic_signals": 387,
-    "feeds_ok": 169,
+    "at": "2026-11-13T06:50:53+00:00",
+    "mapped_articles": 609,
+    "geographic_signals": 382,
+    "feeds_ok": 168,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 8,
-    "ambiguous_mapped_signal_count": 0
+    "rejected_matching_occurrences": 17,
+    "ambiguous_mapped_signal_count": 1
    }
   ],
   "latest": {
-   "at": "2026-11-12T23:53:39+00:00",
-   "mapped_articles": 648,
-   "geographic_signals": 387,
-   "feeds_ok": 169,
+   "at": "2026-11-13T06:50:53+00:00",
+   "mapped_articles": 609,
+   "geographic_signals": 382,
+   "feeds_ok": 168,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 8,
-   "ambiguous_mapped_signal_count": 0
+   "rejected_matching_occurrences": 17,
+   "ambiguous_mapped_signal_count": 1
   },
   "recent_change": {
-   "baseline_at": "2026-11-12T23:53:39+00:00",
+   "baseline_at": "2026-11-13T06:50:53+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Union": 5,
-   "Forest": 2,
-   "David": 1
+   "Forest": 7,
+   "Union": 6,
+   "David": 3,
+   "Serra": 1
   },
-  "ambiguous_mapped_review": [],
+  "ambiguous_mapped_review": [
+   {
+    "name": "Ontario",
+    "category": "health",
+    "sampled_article_count": 1,
+    "review_reason": "ambiguous_place_name_needs_manual_review"
+   }
+  ],
   "limitations": [
    "This report flags possible mistakes; flags are not proven errors.",
    "Repeated RSS items may inflate rejected matching occurrences.",
