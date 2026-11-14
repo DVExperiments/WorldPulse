@@ -1,59 +1,58 @@
 {
  "schema": 1,
- "updated_at": "2026-11-14T15:51:09.564055+00:00",
+ "updated_at": "2026-11-14T20:44:55.930362+00:00",
  "feeds_total": 173,
- "feeds_ok": 169,
+ "feeds_ok": 170,
  "feeds_failed": [
   "direct/CBC World",
   "direct/ReliefWeb Updates",
-  "direct/UN News",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 90
+   "mapped_pre_dedupe": 82
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 45
+   "mapped_pre_dedupe": 40
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 90
+   "mapped_pre_dedupe": 73
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 46
+   "mapped_pre_dedupe": 38
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 91
+   "mapped_pre_dedupe": 69
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 44
+   "mapped_pre_dedupe": 40
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 78
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 46
+   "mapped_pre_dedupe": 40
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 58
+   "mapped_pre_dedupe": 50
   },
   "MX": {
    "total": 11,
@@ -63,61 +62,61 @@
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 91
+   "mapped_pre_dedupe": 81
   }
  },
  "mapped_articles_by_category": {
-  "education": 48,
-  "community": 194,
-  "health": 55,
-  "conflict": 40,
-  "politics": 41,
-  "society": 45,
+  "education": 52,
+  "community": 159,
+  "health": 51,
+  "politics": 40,
+  "society": 36,
+  "conflict": 42,
+  "economy": 35,
   "science": 24,
-  "economy": 39,
-  "environment": 25,
-  "rights": 27,
-  "hazards": 7
+  "environment": 18,
+  "hazards": 10,
+  "rights": 15
  },
  "mapped_articles_by_location_precision": {
-  "country": 298,
-  "place": 239,
-  "region": 8
+  "country": 272,
+  "place": 204,
+  "region": 6
  },
  "location_evidence_counts": {
-  "description": 112,
-  "headline": 433
+  "description": 104,
+  "headline": 378
  },
  "geographic_quadrants": {
-  "NE": 228,
-  "NW": 183,
-  "SE": 54,
-  "SW": 80
+  "NE": 225,
+  "SE": 38,
+  "NW": 153,
+  "SW": 66
  },
- "geo_signal_count": 359,
- "mapped_total": 545,
+ "geo_signal_count": 322,
+ "mapped_total": 482,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1144,
- "unmapped_distinct_titles": 578,
+ "unmapped_sample_count": 1052,
+ "unmapped_distinct_titles": 502,
  "unmapped_by_feed": {
-  "Google News MX": 125,
-  "Google News US": 124,
-  "Google News BR": 124,
-  "Google News ZA": 110,
-  "Google News IN": 108,
-  "Google News KE": 106,
-  "Google News PH": 102,
-  "Google News NG": 64,
+  "Google News MX": 107,
+  "Google News US": 106,
+  "Google News BR": 101,
+  "Google News IN": 98,
+  "Google News ZA": 98,
+  "Google News PH": 98,
+  "Google News KE": 98,
+  "Google News NG": 65,
+  "Google News AU": 64,
+  "Google News GB": 62,
   "Google News CA": 60,
-  "Google News AU": 58,
-  "Google News GB": 56,
+  "ABC Australia": 11,
   "BBC World": 10,
-  "ABC Australia": 9,
-  "RNZ National": 9,
-  "BBC Business": 8,
-  "France24 ES": 8,
-  "The Guardian World": 7,
-  "The Guardian Environment": 7
+  "RNZ National": 10,
+  "Al Jazeera": 6,
+  "France24": 6,
+  "France24 ES": 6,
+  "BBC Brasil": 6
  },
  "unmapped_examples": [
   {
@@ -129,12 +128,12 @@
    "description_excerpt": " Market Movers blog: Microsoft shares shudder on global Outlook outage while tech rivals benefit    Investment Week "
   },
   {
-   "title": "What to Look Out for in Economic Data This Week (November 16-20)",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MeVNwMVVnVmhvRWo4b0N4WkhCRXQxTVRtb2ZmTWhCSmd4eERsN3Nfdllwejg0eG5ueFFCRUdPTzVUaXh4dEFZaWJqN3FFZnlFWTBlZ2ZvVkFFRzVScTR3TXRhZGl6MHp2RUF1clppVDRvR1lveC1FaXNCeXQ?oc=5",
-   "publisher": "Kiplinger",
-   "feed_occurrences": 9,
-   "feed_count": 9,
-   "description_excerpt": " What to Look Out for in Economic Data This Week (November 16-20)    Kiplinger "
+   "title": "Europe’s Economic Recovery Slows as Employment Stagnates and America Pulls Ahead",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5Qb0loRnBnWTV4UWlueVY3bkdyWGtBT0U0c1BtNnJ1R2VKLWphMlNoUlZYT093VExRRWdsNkxoS1FuUG5oYmc0SkRxTHR5T0V0TWJRdHA4Y2NMMlJ2Tlg3QXg5UWE2WmI1Zi1MaGYtS1VhVEht?oc=5",
+   "publisher": "EU Today",
+   "feed_occurrences": 7,
+   "feed_count": 7,
+   "description_excerpt": " Europe’s Economic Recovery Slows as Employment Stagnates and America Pulls Ahead    EU Today "
   },
   {
    "title": "Liberman once brought down Netanyahu. Now he could derail Eisenkot too",
@@ -145,28 +144,20 @@
    "description_excerpt": " Liberman once brought down Netanyahu. Now he could derail Eisenkot too    Ynetnews "
   },
   {
+   "title": "Netanyahu calls for national unity, Eisenkot rejects his ‘political tricks’",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03QkRVVkpmUlNmaXBscWdlTEJGN2hCdGxQbFJ0M0l1SVlzMk1idm1MZ0poczNaV2JWcVNVU09xWWNKSkJOcFBfNmpKSzk3SFY5NzRXR0dR?oc=5",
+   "publisher": "Ynetnews",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Netanyahu calls for national unity, Eisenkot rejects his ‘political tricks’    Ynetnews "
+  },
+  {
    "title": "Senator Warns Against Premature Parliamentary Dissolution",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTl9oRnU5c3RhLUhEQ1hKbE5MM3Nub1RUNlNiSE9ib2hFSklYS3FwZ0xSa18tWm05VUxhaUh3UkZaeDFTYWdpUldRbVBycFFUTXpQdHhwRlZBSXhIVjl3Rkwya3BtN1pNTWgwRlAtbzRPU1RHTW1jdHpVbmhPRWJfb2h0Sk5vS3dpTzdNZENkdmNzYW8?oc=5",
    "publisher": "Sarawak Tribune",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Senator Warns Against Premature Parliamentary Dissolution    Sarawak Tribune "
-  },
-  {
-   "title": "Arab Joint List hints at talks with Israeli opposition, outlines demands",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT2lYankwZmEyaWh3YlZ6eVNtX0xUWjRRYUVOTTFPSlBES0ljeHhyTzN4c1dlX3luVl9Va2lGUDN4bkU4czlNRUR1TVJKdjhDSjRUN0NUeVZlWURhbm5mU0RMeXhXTmpQdW9LRjV1OGlnR2czQVVRSkhmdFZwdEE0NkM5bF9vWEZ4dm5HU0ZQSUE3NWFKckw4dTJYaXBZSkNyZzV6OXRxVFhqRzdkai00TkttTFVXd9IBuwFBVV95cUxPdDU4bU1TLVRkbUZ1RXEyTV9wMHczNkgyenlZeTVjWHo0bUpmb29rQjFrY29QM2lqRk4xQ3ZZbG9yQTB5ZWo4RmR2WjlfQTA4bEdJY1M3Q2xYdUxHX3VvU1Zta1l3R3ZlTFhpOU05TmtWRlF5ZmEyV2l2bUc1WHZnd2l0LUphcm1Ha0YtRFJjOUhmcVpsS095b3NtTzBmaGRjenIxRE8wQWREUHJSMGVuQnl4dTlfbE9BVVBv?oc=5",
-   "publisher": "Middle East Monitor",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Arab Joint List hints at talks with Israeli opposition, outlines demands    Middle East Monitor "
-  },
-  {
-   "title": "Public Health and Wellbeing Amendment (State of Emergency Extension and Other Matters) Bill 2020",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbG9FdGw3Ukh2eDVSRTRLUEdTUkE5MGdIRWx3M0tJVWFXTkRHOVh1d3B3aklwUXFNMzdhUmJMTUZPdE1xcW1IeXhxWXpDUkM3bDRQSzVMWUN2Qm5YRFFoX2d6YnU3RzBPaE1feWsxVGRCZ0tSejRLZGRYOUhubFhRZlk5VmhTLTBhUVFzb3RxdnM0ZW92WTFiajVINURDSzBFWW91bFhEcw?oc=5",
-   "publisher": "Parliament of Victoria",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Public Health and Wellbeing Amendment (State of Emergency Extension and Other Matters) Bill 2020    Parliament of Victoria "
   },
   {
    "title": "The 16 MPs (likely) voted out of Parliament",
@@ -177,12 +168,28 @@
    "description_excerpt": " The 16 MPs (likely) voted out of Parliament    RNZ "
   },
   {
-   "title": "Mount Waverley electorate planning",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSWlhZXJXMkM1VHFFYks1ZnNvdGRGaWZMbnY4b2locldvQzNIQUdfbTRmbFlfamxrdktCN2ZyYlE1ZTN2bENYUWVnMkE3X3BjcW5MMmNiVnU1OEV5RmZuTzBJMWxNMlgtdnFjT2t2MWdQdkc3Yk1KX0VVVXNWWXByMXE4Mmp1MjlZS1htSW9vMTBDa3oxTUl0bXNMUEFMcW5wSVY4TzZMdGQ?oc=5",
-   "publisher": "Parliament of Victoria",
+   "title": "An uncertain road to the country's next government - what could happen next",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeVNZU3RiMDFDd01uTkxlNVNnY0NnQ05ta3dPVUFJU1o5ZXFSSXpVcWNERDE5SFhwXzVKSVUteDF3dmVkTFFqTnZacWZBVFVPRHJIRVF2VndJdmI2eXhYTF9TcTJWX2M3QXZnLVRzdktXZmdWVWNIQmtEWnhCM2ZFQUp5MVY0VTJBZ1ZtSnZ4THdqNnE2eDNVOFZYaFpYTng4bDhRS1RXdHBkLUpHLUpYcGpBcXdDNVpiM2lXbDlHdw?oc=5",
+   "publisher": "Interest.co.nz",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Mount Waverley electorate planning    Parliament of Victoria "
+   "description_excerpt": " An uncertain road to the country's next government - what could happen next    Interest.co.nz "
+  },
+  {
+   "title": "Liberal Democrat Voice",
+   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5iWGpCNmlTYzF6UmU0RVpUMlBod1I5TmhIcXYwYXBhNHRyZTdZNU0wdXBzX3k3NzNCZjhOd0NTTVdQQQ?oc=5",
+   "publisher": "Liberal Democrat Voice",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Liberal Democrat Voice    Liberal Democrat Voice "
+  },
+  {
+   "title": "Dutch coalition survives marathon crisis talks over 'millionaire tax'",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQSDB0ekhzeFRzTzJXcUpMcThvTXh5NFBNNTZYX2RPWEtrRjlpYnhsUlRmNW9JU2RHUzk5a2pmQ1VLc09oVkVGTzllUlVtTFZPczNXbkdYRVlEbGEzbHhYdG1TZWw4VkdxSXB5ZGpneDFfYmRTZjVjVjhHSDhkaFhJcnBxWWpGQ3FaYXRLemxSY3hVdnQ2RHJMT2dIZlpYSU9jaF80R0dybk9xZ1BhU0stajVxZU9HdEVyWlRfOHRZZ25RaE5mbXNiaE9HVFFBM1lFaUlYLVJiWElZci1Fcm9fV3U5dUdhYlN5RVhuX3ZfMEVFYVpocmc?oc=5",
+   "publisher": "The Derrick",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Dutch coalition survives marathon crisis talks over 'millionaire tax'    The Derrick "
   },
   {
    "title": "FWCC hits back at Ro Filipe Tuisawau",
@@ -193,44 +200,20 @@
    "description_excerpt": " FWCC hits back at Ro Filipe Tuisawau    Fijivillage "
   },
   {
-   "title": "New Bay Area Maps Highlight Wildlife Movements to Aid Their Survival",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWDQzU1h5NW1RWkFwR0otdHJrUlA1OW1BUGVhNlhxQXo4MWZEY1dFTXVIRUNrQ1ZaU0Vtbm81SFZLbi1obmhSN2o4MGR3R0ltdXZpWmthNUFNTG5XWkl6dV8wZGJWZ2xCR1lsbUFudzZ0M1JIVFdlVTVKM3JRNVpSMTVybjAzZXkwdXkzX2U0WDZ5UEhJVWlHOHhxNEFpS3RQZmZVQnN2Nms2TlVqTFJXZnBlSS1tNXF1S2RkX1NMdERVZV9yYmhKMVpCLWEwUUk?oc=5",
-   "publisher": "Center for Biological Diversity",
+   "title": "Christopher Luxon is behaving like he’s won the election. Has he?",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOY2puazdZcUhFTVc1UFhJM3FaRmpSb2pXZ1d3UXJZSGUycUJmTTlPU24tOVFnZTVFWEtkQzc0b0VrclNFUTAwY1JXMmF5ZVctc2dFMEltYTRZYVdfbkhnbkRwZ0FJQV9hd295SnFjMWo1eGw0UzBCN3pxV3MzZWlFS0RfcGV3bFdjdEExcTJRSXM4eWMyMjBIUjVYVEpVem9MRlhlUXg4ZHQwamdWWl82T3hFRTFsYUxES2laVV9OdjJ2djZqRUVoVG9aVG9Pc2w3NFBn?oc=5",
+   "publisher": "NZ Herald",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " New Bay Area Maps Highlight Wildlife Movements to Aid Their Survival    Center for Biological Diversity "
+   "description_excerpt": " Christopher Luxon is behaving like he’s won the election. Has he?    NZ Herald "
   },
   {
-   "title": "Which of these species does not live in the Eastern Himalayas?",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcjREMUJOVUhkSHdQUW0zUmpGV2tLamJLZlQwVmliM0l6aGtqYWNMemtIUlpaT2RjWE5TR19BMWd2ejZqelhIcHZPU3ZKbG95SFF6Z0xWaHh1REZ0NF9kUHR0aGVIMlJHVVRmWkpaTlpGM19QaGQ5a2RSRERpNFh0a0YyYW4tQ25aRUhSUldIS2lRVlR6ZXlZZksyNmNrSzB6dmc?oc=5",
-   "publisher": "World Wildlife Fund",
+   "title": "“Decision by lot”: 4 Tied ward races settled by draw as 5 by-elections loom",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeDdlTE1qZVdRMUxVV1JqUXBIUXFVc0tub2pMLVhmMTktTHJmbnJtVFlfRC0tOWxYYWhMa0VPRXREYkFuUk1mV0RWRC0tQml5Z0VyS2hoVHhIMVd3YmxieWRrQ3pkclAxaGZWclM2VDVLLVNqSlBmb1Q0NnFGLVhBU2JPbVNRa2kwYy13am9yUkpQUXdoakg3YTJvbTJHMVllTGctMlFzRXJMblpQV1NtQ1hsMA?oc=5",
+   "publisher": "Briefly News",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Which of these species does not live in the Eastern Himalayas?    World Wildlife Fund "
-  },
-  {
-   "title": "Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc0JTN25tcWRlcHJnbGxkbm9la2FYUVMyNmJobjhQSjlsb2tocW5LMzB3bFVCeC1yT0tOcTd0RjNQRWdDZHctcE56UVo5cEdTOV9IaDZxOE9EODFyZmRXSkxvRUltanctZXhkTVRldXo5UF9RRjZYTnNsUFAxOWFJQU0xdFotLWt6d3ZOMmNvejdadXNGaVlyY1VrX2dmaVNfaklBVTRJM1gycUdDSlppOXMyZU5xTUdKb0ZaMlN2OUdST2FVbUlqV0FTb2Z6QQ?oc=5",
-   "publisher": "Vet Candy",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation    Vet Candy "
-  },
-  {
-   "title": "New PA climate plan set to protect parks",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQalY2cUI1V0pzRHZYSXY0eGotdUxDMHo2b093VGFlS3NudHhNY2ZCMjdKU0UtMTlOUFhOVnE3Q3l3c0oxUlduMWhrcUZ6RlpRTEJxeUM4Tm5iSUpLUVFnOFR6Qjd5cEF1Y1pucEJsZWhyWFlyYXlaZThvMHRlQllsSVNPMVNQaWI0b1c1dVFZbGFRZHpCcGpPMWwzcw?oc=5",
-   "publisher": "Altoona Mirror",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " New PA climate plan set to protect parks    Altoona Mirror "
-  },
-  {
-   "title": "Wildlife and Nature Books for Gift-Giving",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1PdXN4NUp5T2UxTU4yc1ZLZ2tsVGlYLUVDUzB1OElpWkhsTDJ1dlZBRlpFejRLcFd0dTdGckVMNnhyYkNmMFZkZGdVclpXYzVoZTNDVDhOUVhZSnVrMnhOOVZxbzUwVWlRMXJn?oc=5",
-   "publisher": "The Revelator",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Wildlife and Nature Books for Gift-Giving    The Revelator "
+   "description_excerpt": " “Decision by lot”: 4 Tied ward races settled by draw as 5 by-elections loom    Briefly News "
   },
   {
    "title": "2026 WWF EFN Grant Recipients",
@@ -241,12 +224,28 @@
    "description_excerpt": " 2026 WWF EFN Grant Recipients    World Wildlife Fund "
   },
   {
-   "title": "Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMmNMY0N2aTR3akpsbWNCYkV6U05nRHkyazZOQkYxYVlYa2pjT1FrWkxxUllxUnl0QWFjWVM1SDBrc2FjcWUyb215dVlIWGUtTEhUTjJvRDQ2dV9BZU80NGtJenY0Z29xSnJFeWZxZlE3bEt5MVlGQ2ZSa3pYZUxCY0VDSlhmQXVPbHlCUUhaX3VBd3NvV21xTXlMTjJlVEsyMTJPSHBmbl9LOVp6akZ6SHZQTy1rZk1WOVl5c0ZqaTBNbWxBSnozdjA1TGlQaVZiYURuVVNR0gHbAUFVX3lxTE83SDRYa0t3U1h1NUVoUkpwcUdEcTZkTFlTQUFiVmR5bndhX1ZXMU56RHNWbUFIclhITjc5VVFwcDlDRlJiQ010VkVvYmdma2V3bEF2MlZoQUFuTk1pZk9RUkdObThIX0RWSVhNQ3B0UmYwQXFpY181OG9aUVA1NG5Xa18yTW5ENVdNRUxBRzdkc3dWZHVCTlItSGYtME1zNVM0M0g4QmF1bE5YODcydjNTZEFZOUNXLUpzYWxXQ1FpQVdyVEdjVWM1OWhZdUI5dmJRUjdlV0JGekZpWQ?oc=5",
-   "publisher": "TheWire.in",
+   "title": "New PA climate plan set to protect parks",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQalY2cUI1V0pzRHZYSXY0eGotdUxDMHo2b093VGFlS3NudHhNY2ZCMjdKU0UtMTlOUFhOVnE3Q3l3c0oxUlduMWhrcUZ6RlpRTEJxeUM4Tm5iSUpLUVFnOFR6Qjd5cEF1Y1pucEJsZWhyWFlyYXlaZThvMHRlQllsSVNPMVNQaWI0b1c1dVFZbGFRZHpCcGpPMWwzcw?oc=5",
+   "publisher": "Altoona Mirror",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore    TheWire.in "
+   "description_excerpt": " New PA climate plan set to protect parks    Altoona Mirror "
+  },
+  {
+   "title": "Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc0JTN25tcWRlcHJnbGxkbm9la2FYUVMyNmJobjhQSjlsb2tocW5LMzB3bFVCeC1yT0tOcTd0RjNQRWdDZHctcE56UVo5cEdTOV9IaDZxOE9EODFyZmRXSkxvRUltanctZXhkTVRldXo5UF9RRjZYTnNsUFAxOWFJQU0xdFotLWt6d3ZOMmNvejdadXNGaVlyY1VrX2dmaVNfaklBVTRJM1gycUdDSlppOXMyZU5xTUdKb0ZaMlN2OUdST2FVbUlqV0FTb2Z6QQ?oc=5",
+   "publisher": "Vet Candy",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation    Vet Candy "
+  },
+  {
+   "title": "Which of these species does not live in the Eastern Himalayas?",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcjREMUJOVUhkSHdQUW0zUmpGV2tLamJLZlQwVmliM0l6aGtqYWNMemtIUlpaT2RjWE5TR19BMWd2ejZqelhIcHZPU3ZKbG95SFF6Z0xWaHh1REZ0NF9kUHR0aGVIMlJHVVRmWkpaTlpGM19QaGQ5a2RSRERpNFh0a0YyYW4tQ25aRUhSUldIS2lRVlR6ZXlZZksyNmNrSzB6dmc?oc=5",
+   "publisher": "World Wildlife Fund",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Which of these species does not live in the Eastern Himalayas?    World Wildlife Fund "
   },
   {
    "title": "THIS WEEK IN CLIMATE ACTION – NOVEMBER 13, 2026",
@@ -257,20 +256,12 @@
    "description_excerpt": " THIS WEEK IN CLIMATE ACTION – NOVEMBER 13, 2026    League of Conservation Voters "
   },
   {
-   "title": "Wild Facts About Snowy Owls",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1qY0FvRGp6OGx6R1VxQ0JHeFZldFB2dXhneXlHTVM4V1ZVQldUR1V6NF81b1ZlcnV0NEZRN3duek5HTG1wTlZNd3ZnYWNhWXFFaGJfaVJyVmkzZjA2VUVpRVo5N20?oc=5",
-   "publisher": "Bluedot Living",
+   "title": "Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMmNMY0N2aTR3akpsbWNCYkV6U05nRHkyazZOQkYxYVlYa2pjT1FrWkxxUllxUnl0QWFjWVM1SDBrc2FjcWUyb215dVlIWGUtTEhUTjJvRDQ2dV9BZU80NGtJenY0Z29xSnJFeWZxZlE3bEt5MVlGQ2ZSa3pYZUxCY0VDSlhmQXVPbHlCUUhaX3VBd3NvV21xTXlMTjJlVEsyMTJPSHBmbl9LOVp6akZ6SHZQTy1rZk1WOVl5c0ZqaTBNbWxBSnozdjA1TGlQaVZiYURuVVNR0gHbAUFVX3lxTE83SDRYa0t3U1h1NUVoUkpwcUdEcTZkTFlTQUFiVmR5bndhX1ZXMU56RHNWbUFIclhITjc5VVFwcDlDRlJiQ010VkVvYmdma2V3bEF2MlZoQUFuTk1pZk9RUkdObThIX0RWSVhNQ3B0UmYwQXFpY181OG9aUVA1NG5Xa18yTW5ENVdNRUxBRzdkc3dWZHVCTlItSGYtME1zNVM0M0g4QmF1bE5YODcydjNTZEFZOUNXLUpzYWxXQ1FpQVdyVEdjVWM1OWhZdUI5dmJRUjdlV0JGekZpWQ?oc=5",
+   "publisher": "TheWire.in",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Wild Facts About Snowy Owls    Bluedot Living "
-  },
-  {
-   "title": "Jersey Zoo plans to expand orangutan and gibbon facilities",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5UktWOHpTUEFueFVGZ1FTaWxmTUg0VkVLME9xVll0bExJYXpRTnFKZXBLQTVHdENfT1VXSUdxTmR2YjhHcl9DaXBWa2JSaTY1S2FObFEtZHJUSkk?oc=5",
-   "publisher": "BBC",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Jersey Zoo plans to expand orangutan and gibbon facilities    BBC "
+   "description_excerpt": " Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore    TheWire.in "
   },
   {
    "title": "State loses 795 sq km of forest cover in a decade",
@@ -289,14 +280,6 @@
    "description_excerpt": " Adani slashes Maharashtra power project cost by 99%, its forest dues plummet; Centre orders probe    The Indian Express "
   },
   {
-   "title": "Blue-green algae bloom confirmed in Huntsville’s Mary Lake",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPazFsRjhKQzJTRTcyVEZOWHZ2eU1VdVZVOEJseHVBc1Y5aWg1dFVBdURzaTZxdDM3WG5LUlhUQ1NNemszSklUelVvQ1JHWUxiN0dmX05oYzNzdzFMaU0xanY0VmlmbkpiYWVFajZsSDFveXhEcTFsaHVSQlFaZ2k3bUpWbGRoTlVUOVJGMjhnRmJoZVpnWVMwT3ItQWhKWTVnNHo2NEpBYjU2M1c1bG40VHZqYw?oc=5",
-   "publisher": "My Muskoka Now",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Blue-green algae bloom confirmed in Huntsville’s Mary Lake    My Muskoka Now "
-  },
-  {
    "title": "ESWATINI EYES TUSK CONSERVATION PARTNERSHIP",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSC1nYjA2TUJsZFN4R2ZUeTEtaTZnQ3BVMVNEdXRYZWFLYzlwYUlSV2QxQXR3M09WY0xpWFhpTml5dVZnS1ZKMkNXbHRjUGdKS2VnOHF3VlFDU05zcThSRXE0SklVMGgtSDNVRTdWa2VNbGFYT0hQa1c5RzZ0Zm5kM3NiN1lTWEE?oc=5",
    "publisher": "Eswatini Positive News",
@@ -305,36 +288,12 @@
    "description_excerpt": " ESWATINI EYES TUSK CONSERVATION PARTNERSHIP    Eswatini Positive News "
   },
   {
-   "title": "45 years after adoption, wildlife law awareness remains poor in Nagaland",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTl8yXzhZNHhMSng3aGpYMW9MM0Fxckl6OXFsc3ZWV3FZdVJHQ1pGaFVXNXJfT0hucEVRYS1WdVh4YWdCVV9HVm9GZlpHNUxtWTBmc2U5dk82cmlsSENrcjlEX1p3cGFSSlE3bmRVN2ZFTDRfTTJHc0JMX3JraFQ4djFFWWdYWW5wMW1MVHNtMXV4OERkWldqY1Uzb2k2WE5pM19mNkl2aEs2U3FIUFE?oc=5",
-   "publisher": "Eastern Mirror",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " 45 years after adoption, wildlife law awareness remains poor in Nagaland    Eastern Mirror "
-  },
-  {
-   "title": "Serious Allegations surface against Adani Green; Group clarifies",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWDZTbVdWSTlKdHFqdGozTXI4VU5qZE8td01QSV9CS2tOdzYyaWF4Qk5lU3o1dS1BejhsRXFkLUhOeFRnR1lZT2wtdHo0Vl9sMDkweW9OWVhZTkJvMkh1OGdyc0FHbm9BOXJFU2JQZzMzZFFpZEFnejZSTjFvc21PLTV5SXJHMjU4NzA1czBVaDg4cGc?oc=5",
-   "publisher": "The News Insight",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Serious Allegations surface against Adani Green; Group clarifies    The News Insight "
-  },
-  {
    "title": "Funding for national climate change adaptation absent in latest budget, experts say",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRXAtTERqQ2E2bTZIQzVrT3laaHFhOV9wWlowSWtpejNkZW5XR2lxaVdUYkR5cE55ZFBfMHdKRE85TG03UjBxeENLc2JMR0NXUmpZcEpLNm45bW1wOGdUeXNKZDBieEpxZ3lpRVA2dTFBVjlDRlhaTGtaTVhCemVCOG1Kbl9Bc3RZeF8xVUdGSXQ4ZGFTWUl5cDd3NDRxM3pYUnZIenVkYlFHUEktODU5VUI3Y1pqb1BTN09v?oc=5",
    "publisher": "iPolitics",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Funding for national climate change adaptation absent in latest budget, experts say    iPolitics "
-  },
-  {
-   "title": "Portland City Council approves reduced fuel storage along Willamette River amid Cascadia concerns",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPb1Uzd1llak1fTm9oZVh4dGVvc2dWQmxXbzh4M3FrWjJZWEFWVm9GS3RaNVZ0aXJrblRXdnZoVnJBY05DOEZ6QVdYeWFzTVRjOWlVbWNRRk5odzJfdEtydWQ1NWlZNFliaVFUcEdFaTI5NXR4TWdsMnZwV3ZaWTdjWUt3Tm5HeFVXeWNnZGptaXl6dGVEcEQ0?oc=5",
-   "publisher": "Yahoo",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Portland City Council approves reduced fuel storage along Willamette River amid Cascadia concerns    Yahoo "
   },
   {
    "title": "Gen Z protests: Do Baby Boomers really have it better than young people?",
@@ -361,6 +320,14 @@
    "description_excerpt": " Mobile Health Clinics Paired with Community Engagement May Increase Rural Vaccine Coverage    Bioengineer.org "
   },
   {
+   "title": "Climate change threatens to revive once-eradicated diseases in Eastern Mediterranean",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4waVRUaWtWbDQycWJPa0dDSUNPbVZ6SGQ1MGlGcEdUQ1ZTUnFSUmU0OUJlejlBTlFXaG14UTVKemJvb3Z6alo4a1dEQTlhSDBTdnJv?oc=5",
+   "publisher": "سانا",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Climate change threatens to revive once-eradicated diseases in Eastern Mediterranean    سانا "
+  },
+  {
    "title": "IEA-USP brings maternal and infant healthcare and respiratory disease prevention initiative to Marajó",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQN2xoZGtZcWJnaS1IZjFUdEVkMm83bFBhYk12OUFBekx2RXFMZDVyR1dTTGFtbDgzS09CVGhRalFPemhBb0RCeU9rTlNoZ3VEaTNLdHJCNHZWY19HaHc4a2NObDd5VmF3Y2pDZkpDb1c3ZGY4ZGNKeHNHYWl2SlFNWmVWTzVpUTA?oc=5",
    "publisher": "Sanofi Brasil",
@@ -369,12 +336,12 @@
    "description_excerpt": " IEA-USP brings maternal and infant healthcare and respiratory disease prevention initiative to Marajó    Sanofi Brasil "
   },
   {
-   "title": "Climate change threatens to revive once-eradicated diseases in Eastern Mediterranean",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4waVRUaWtWbDQycWJPa0dDSUNPbVZ6SGQ1MGlGcEdUQ1ZTUnFSUmU0OUJlejlBTlFXaG14UTVKemJvb3Z6alo4a1dEQTlhSDBTdnJv?oc=5",
-   "publisher": "سانا",
+   "title": "Depression and Cardiometabolic Disease Jointly Triple Cognitive Impairment Odds in Adults",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOUV3RkpLcUtFeE5sWUtMV1RvVzY1WlB5Qlc3LW9OZzJtQWxBMDVDbm1jb2tiaFZoRXBwTTRnanlFeGI0eUNCdkIwci15NmZIdU1Tc0hzN2dIamkyRElKMC01LTE3VVlRbDYxVHV1cFdwRkUxX3lGQjlNZkdLRWk2WDlSSVdYdUNkTE9jekNLQmF2aWE2NVExV1BYMlJSd3lDYXVwbmFucE9jZXU4SXlib2I2dEY?oc=5",
+   "publisher": "Bioengineer.org",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Climate change threatens to revive once-eradicated diseases in Eastern Mediterranean    سانا "
+   "description_excerpt": " Depression and Cardiometabolic Disease Jointly Triple Cognitive Impairment Odds in Adults    Bioengineer.org "
   },
   {
    "title": "How Does Iona University Rank Among America's Best Colleges?",
@@ -385,12 +352,12 @@
    "description_excerpt": " How Does Iona University Rank Among America's Best Colleges?    U.S. News & World Report "
   },
   {
-   "title": "Regents: This is the most high school grads Iowa will see for decades",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPR0Jia211emlQcEVFMDM3cDJHNDRVRmdMSmxjdTI5T0JzUHdBZU9rODFDeTNHbDM5Yl9uUjFESzhTVjczUGcwM3RfNTZ2bDl2bnVnbnllTko5YUFPV1RXRVRiRUpOUUZqZlVSeFpiQUdfbnA4bEJVa3J1TkNHRlNRc3ZZak9kWlRneXQ1ZDZ6YVBzUXlqaW81ZXhaeDM3V3NsNTRKYTVyaVo4SWZFLVRyMnRkcVpwLXZjb2VpdWFXZGo4VG5qUWc?oc=5",
-   "publisher": "The Gazette",
+   "title": "Catastrophic Plunge in U.S. University Incoming Freshmen Enrollment: Which Colleges and Universities Can Survive the Crisis?",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhdkp6VV9hbmo2dmMzOC10Zi05OUctYjZ0NmVvRmhnVGNabEFFT1doZFhpaWF6V0hmcGt3RDNuLXFrTG9FZ01GbnhNQ0UtZVJrRi1Z?oc=5",
+   "publisher": "36Kr",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Regents: This is the most high school grads Iowa will see for decades    The Gazette "
+   "description_excerpt": " Catastrophic Plunge in U.S. University Incoming Freshmen Enrollment: Which Colleges and Universities Can Survive the Crisis?    36Kr "
   },
   {
    "title": "Are universities safe for students?",
@@ -399,39 +366,71 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Are universities safe for students?    PantherNOW "
+  },
+  {
+   "title": "LifeSciKY hosted high school students for exploration of biotech careers at BioInnovation Summit",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWjVPVVEtSC1HaDgzc3J6NmtyUm5PQzBoaWFFLVdTWW1uaE4zaVgtblZvZWkzemwyaDlnYXFnVXgyNEpYd3IzQkphbkNud1JXRnQzV05XWFNtbTFxQl9QNEpKM184UzVURTJoT0lCcGs1WHI2eDVZUUNVSk1qWG5tN05oazNqNjBCWjN3Q3NwN3FqejV5ODhyajU2VnBVcjc0dmVURE5KeTZiZlhZaDhIbV9qV1V2cDFLWWQwN3piREI0a2VBelNV?oc=5",
+   "publisher": "NKyTribune",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " LifeSciKY hosted high school students for exploration of biotech careers at BioInnovation Summit    NKyTribune "
+  },
+  {
+   "title": "University surprises first admitted students at their high schools",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1WN2pEcHFtdUNNeEc0VHJYRGlvWTEwNUs5RVI2cHZtNnk4RHQ2alJKMXlLaWpqRVQ4SkdQZWFOWDR1OVhzMHEyYmRwOVhMVmVkQ3BfRkF0S0NSdm5WT1BlbWNIQklBMVE?oc=5",
+   "publisher": "Quinnipiac University",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " University surprises first admitted students at their high schools    Quinnipiac University "
+  },
+  {
+   "title": "Regents: This is the most high school grads Iowa will see for decades",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPR0Jia211emlQcEVFMDM3cDJHNDRVRmdMSmxjdTI5T0JzUHdBZU9rODFDeTNHbDM5Yl9uUjFESzhTVjczUGcwM3RfNTZ2bDl2bnVnbnllTko5YUFPV1RXRVRiRUpOUUZqZlVSeFpiQUdfbnA4bEJVa3J1TkNHRlNRc3ZZak9kWlRneXQ1ZDZ6YVBzUXlqaW81ZXhaeDM3V3NsNTRKYTVyaVo4SWZFLVRyMnRkcVpwLXZjb2VpdWFXZGo4VG5qUWc?oc=5",
+   "publisher": "The Gazette",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Regents: This is the most high school grads Iowa will see for decades    The Gazette "
+  },
+  {
+   "title": "More Than 1000 Students From 18 Schools, 6 Colleges Celebrate Children's Day At Rashtrapati Nilayam",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQal9IclVBNGlfTUE1Nl9uUXBaSU5ueFhxdERPUl95Wk5BUXR2OFN3WER1T012U0VQSVo3dVpTbmpBMk5OZElkVUY0SjBzNGhlN3ZzbGJabmsySGwtWFJueHp0Y1lRRUNFT0RGZFlkdWRtaUhlMFpHUUxCaEtvVFVLUmZON3hBSWNjT1RGeGFLX3lNZjlEV0dPamdacjRzUnp2MEFvT3QtekRVb0V1ZS1GZmRybVJQb1k3NEdCSWp2V3l2SFEtUzlBdl9sQTR6a1VCbnRkaG5ob1ZLdVoyRVo5TUFNcF9Uc3p3V1MtSjk3dUdiZy1JbEHSAfsBQVVfeXFMTkxDbXVQa2kydHBYMVlaSUpHVDdjS21VaXJHekZBc3VMN1hEQmVlTUhvQ3h1MVNzRTdXVHlmdzhwNk1SSVFGMHoyVWdfczMxOGVNaWtKYkNiNnF4WlFUZXIwRnJTdUxob2IyeVpYS0luNFZYUy01V1pZZEJDM1dlQzhKX1otSURVN2c0cGhPNjI2WnVfbms4cEIzeEJlVnJwZDMzT3kxalE0Zno3OG11SUNJSUVmME9Gb1BDZ2V4cS1kbXR1N05haE5neEVIQ1ZoQS10TTZXZGxkd05oenpHclBYanEtNzhqWVg4QWxHS0F5Z3h1bU5tUXZRbnM?oc=5",
+   "publisher": "Deccan Chronicle",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " More Than 1000 Students From 18 Schools, 6 Colleges Celebrate Children's Day At Rashtrapati Nilayam    Deccan Chronicle "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
-  "successful": 48,
-  "mapped_pre_dedupe": 218
+  "successful": 49,
+  "mapped_pre_dedupe": 167
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 45,
+   "mapped_pre_dedupe": 0,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 15
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/AllAfrica East Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/AllAfrica Central Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/AllAfrica Southern Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/Africa Arguments",
@@ -448,12 +447,12 @@
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 5,
+   "mapped_pre_dedupe": 4,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/The Conversation Indonesia",
@@ -463,7 +462,7 @@
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 0
     }
    ]
   },
@@ -487,7 +486,7 @@
   "global": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 7,
+   "mapped_pre_dedupe": 4,
    "feeds": [
     {
      "source": "direct/Global Voices English",
@@ -512,7 +511,7 @@
     {
      "source": "direct/Mongabay Global",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/Inter Press Service Headlines",
@@ -524,17 +523,17 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 80,
+   "mapped_pre_dedupe": 78,
    "feeds": [
     {
      "source": "direct/BBC World",
      "status": "ok",
-     "mapped_pre_dedupe": 10
+     "mapped_pre_dedupe": 8
     },
     {
      "source": "direct/BBC Science",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Business",
@@ -544,22 +543,22 @@
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 19
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 15
+     "mapped_pre_dedupe": 17
     },
     {
      "source": "direct/The Guardian Environment",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/DW World",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 8
     },
     {
      "source": "direct/France24",
@@ -610,12 +609,12 @@
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 77,
+   "mapped_pre_dedupe": 76,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 14
     },
     {
      "source": "direct/RNZ World",
@@ -625,7 +624,7 @@
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 10
     },
     {
      "source": "direct/CBC World",
@@ -645,7 +644,7 @@
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/DW Español",
@@ -655,7 +654,7 @@
     {
      "source": "direct/BBC Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Africa",
@@ -665,12 +664,12 @@
     {
      "source": "direct/BBC Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/BBC Latin America",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/BBC Middle East",
@@ -680,7 +679,7 @@
     {
      "source": "direct/BBC Europe",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/RNZ Pacific",
@@ -718,8 +717,8 @@
   },
   "specialist": {
    "configured": 3,
-   "successful": 1,
-   "mapped_pre_dedupe": 0,
+   "successful": 2,
+   "mapped_pre_dedupe": 1,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
@@ -728,8 +727,8 @@
     },
     {
      "source": "direct/UN News",
-     "status": "failed",
-     "mapped_pre_dedupe": 0
+     "status": "ok",
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/NASA News",
@@ -740,7 +739,7 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 578,
+  "distinct_unmapped_titles": 502,
   "high_repeat_unmapped_examples": [
    {
     "title": "Market Movers blog: Microsoft shares shudder on global Outlook outage while tech rivals benefit",
@@ -751,12 +750,12 @@
     "description_excerpt": " Market Movers blog: Microsoft shares shudder on global Outlook outage while tech rivals benefit    Investment Week "
    },
    {
-    "title": "What to Look Out for in Economic Data This Week (November 16-20)",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MeVNwMVVnVmhvRWo4b0N4WkhCRXQxTVRtb2ZmTWhCSmd4eERsN3Nfdllwejg0eG5ueFFCRUdPTzVUaXh4dEFZaWJqN3FFZnlFWTBlZ2ZvVkFFRzVScTR3TXRhZGl6MHp2RUF1clppVDRvR1lveC1FaXNCeXQ?oc=5",
-    "publisher": "Kiplinger",
-    "feed_occurrences": 9,
-    "feed_count": 9,
-    "description_excerpt": " What to Look Out for in Economic Data This Week (November 16-20)    Kiplinger "
+    "title": "Europe’s Economic Recovery Slows as Employment Stagnates and America Pulls Ahead",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5Qb0loRnBnWTV4UWlueVY3bkdyWGtBT0U0c1BtNnJ1R2VKLWphMlNoUlZYT093VExRRWdsNkxoS1FuUG5oYmc0SkRxTHR5T0V0TWJRdHA4Y2NMMlJ2Tlg3QXg5UWE2WmI1Zi1MaGYtS1VhVEht?oc=5",
+    "publisher": "EU Today",
+    "feed_occurrences": 7,
+    "feed_count": 7,
+    "description_excerpt": " Europe’s Economic Recovery Slows as Employment Stagnates and America Pulls Ahead    EU Today "
    },
    {
     "title": "Liberman once brought down Netanyahu. Now he could derail Eisenkot too",
@@ -767,28 +766,20 @@
     "description_excerpt": " Liberman once brought down Netanyahu. Now he could derail Eisenkot too    Ynetnews "
    },
    {
+    "title": "Netanyahu calls for national unity, Eisenkot rejects his ‘political tricks’",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03QkRVVkpmUlNmaXBscWdlTEJGN2hCdGxQbFJ0M0l1SVlzMk1idm1MZ0poczNaV2JWcVNVU09xWWNKSkJOcFBfNmpKSzk3SFY5NzRXR0dR?oc=5",
+    "publisher": "Ynetnews",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Netanyahu calls for national unity, Eisenkot rejects his ‘political tricks’    Ynetnews "
+   },
+   {
     "title": "Senator Warns Against Premature Parliamentary Dissolution",
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTl9oRnU5c3RhLUhEQ1hKbE5MM3Nub1RUNlNiSE9ib2hFSklYS3FwZ0xSa18tWm05VUxhaUh3UkZaeDFTYWdpUldRbVBycFFUTXpQdHhwRlZBSXhIVjl3Rkwya3BtN1pNTWgwRlAtbzRPU1RHTW1jdHpVbmhPRWJfb2h0Sk5vS3dpTzdNZENkdmNzYW8?oc=5",
     "publisher": "Sarawak Tribune",
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " Senator Warns Against Premature Parliamentary Dissolution    Sarawak Tribune "
-   },
-   {
-    "title": "Arab Joint List hints at talks with Israeli opposition, outlines demands",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT2lYankwZmEyaWh3YlZ6eVNtX0xUWjRRYUVOTTFPSlBES0ljeHhyTzN4c1dlX3luVl9Va2lGUDN4bkU4czlNRUR1TVJKdjhDSjRUN0NUeVZlWURhbm5mU0RMeXhXTmpQdW9LRjV1OGlnR2czQVVRSkhmdFZwdEE0NkM5bF9vWEZ4dm5HU0ZQSUE3NWFKckw4dTJYaXBZSkNyZzV6OXRxVFhqRzdkai00TkttTFVXd9IBuwFBVV95cUxPdDU4bU1TLVRkbUZ1RXEyTV9wMHczNkgyenlZeTVjWHo0bUpmb29rQjFrY29QM2lqRk4xQ3ZZbG9yQTB5ZWo4RmR2WjlfQTA4bEdJY1M3Q2xYdUxHX3VvU1Zta1l3R3ZlTFhpOU05TmtWRlF5ZmEyV2l2bUc1WHZnd2l0LUphcm1Ha0YtRFJjOUhmcVpsS095b3NtTzBmaGRjenIxRE8wQWREUHJSMGVuQnl4dTlfbE9BVVBv?oc=5",
-    "publisher": "Middle East Monitor",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Arab Joint List hints at talks with Israeli opposition, outlines demands    Middle East Monitor "
-   },
-   {
-    "title": "Public Health and Wellbeing Amendment (State of Emergency Extension and Other Matters) Bill 2020",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbG9FdGw3Ukh2eDVSRTRLUEdTUkE5MGdIRWx3M0tJVWFXTkRHOVh1d3B3aklwUXFNMzdhUmJMTUZPdE1xcW1IeXhxWXpDUkM3bDRQSzVMWUN2Qm5YRFFoX2d6YnU3RzBPaE1feWsxVGRCZ0tSejRLZGRYOUhubFhRZlk5VmhTLTBhUVFzb3RxdnM0ZW92WTFiajVINURDSzBFWW91bFhEcw?oc=5",
-    "publisher": "Parliament of Victoria",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Public Health and Wellbeing Amendment (State of Emergency Extension and Other Matters) Bill 2020    Parliament of Victoria "
    },
    {
     "title": "The 16 MPs (likely) voted out of Parliament",
@@ -799,12 +790,28 @@
     "description_excerpt": " The 16 MPs (likely) voted out of Parliament    RNZ "
    },
    {
-    "title": "Mount Waverley electorate planning",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSWlhZXJXMkM1VHFFYks1ZnNvdGRGaWZMbnY4b2locldvQzNIQUdfbTRmbFlfamxrdktCN2ZyYlE1ZTN2bENYUWVnMkE3X3BjcW5MMmNiVnU1OEV5RmZuTzBJMWxNMlgtdnFjT2t2MWdQdkc3Yk1KX0VVVXNWWXByMXE4Mmp1MjlZS1htSW9vMTBDa3oxTUl0bXNMUEFMcW5wSVY4TzZMdGQ?oc=5",
-    "publisher": "Parliament of Victoria",
+    "title": "An uncertain road to the country's next government - what could happen next",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeVNZU3RiMDFDd01uTkxlNVNnY0NnQ05ta3dPVUFJU1o5ZXFSSXpVcWNERDE5SFhwXzVKSVUteDF3dmVkTFFqTnZacWZBVFVPRHJIRVF2VndJdmI2eXhYTF9TcTJWX2M3QXZnLVRzdktXZmdWVWNIQmtEWnhCM2ZFQUp5MVY0VTJBZ1ZtSnZ4THdqNnE2eDNVOFZYaFpYTng4bDhRS1RXdHBkLUpHLUpYcGpBcXdDNVpiM2lXbDlHdw?oc=5",
+    "publisher": "Interest.co.nz",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Mount Waverley electorate planning    Parliament of Victoria "
+    "description_excerpt": " An uncertain road to the country's next government - what could happen next    Interest.co.nz "
+   },
+   {
+    "title": "Liberal Democrat Voice",
+    "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5iWGpCNmlTYzF6UmU0RVpUMlBod1I5TmhIcXYwYXBhNHRyZTdZNU0wdXBzX3k3NzNCZjhOd0NTTVdQQQ?oc=5",
+    "publisher": "Liberal Democrat Voice",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Liberal Democrat Voice    Liberal Democrat Voice "
+   },
+   {
+    "title": "Dutch coalition survives marathon crisis talks over 'millionaire tax'",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQSDB0ekhzeFRzTzJXcUpMcThvTXh5NFBNNTZYX2RPWEtrRjlpYnhsUlRmNW9JU2RHUzk5a2pmQ1VLc09oVkVGTzllUlVtTFZPczNXbkdYRVlEbGEzbHhYdG1TZWw4VkdxSXB5ZGpneDFfYmRTZjVjVjhHSDhkaFhJcnBxWWpGQ3FaYXRLemxSY3hVdnQ2RHJMT2dIZlpYSU9jaF80R0dybk9xZ1BhU0stajVxZU9HdEVyWlRfOHRZZ25RaE5mbXNiaE9HVFFBM1lFaUlYLVJiWElZci1Fcm9fV3U5dUdhYlN5RVhuX3ZfMEVFYVpocmc?oc=5",
+    "publisher": "The Derrick",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Dutch coalition survives marathon crisis talks over 'millionaire tax'    The Derrick "
    },
    {
     "title": "FWCC hits back at Ro Filipe Tuisawau",
@@ -815,44 +822,20 @@
     "description_excerpt": " FWCC hits back at Ro Filipe Tuisawau    Fijivillage "
    },
    {
-    "title": "New Bay Area Maps Highlight Wildlife Movements to Aid Their Survival",
-    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWDQzU1h5NW1RWkFwR0otdHJrUlA1OW1BUGVhNlhxQXo4MWZEY1dFTXVIRUNrQ1ZaU0Vtbm81SFZLbi1obmhSN2o4MGR3R0ltdXZpWmthNUFNTG5XWkl6dV8wZGJWZ2xCR1lsbUFudzZ0M1JIVFdlVTVKM3JRNVpSMTVybjAzZXkwdXkzX2U0WDZ5UEhJVWlHOHhxNEFpS3RQZmZVQnN2Nms2TlVqTFJXZnBlSS1tNXF1S2RkX1NMdERVZV9yYmhKMVpCLWEwUUk?oc=5",
-    "publisher": "Center for Biological Diversity",
+    "title": "Christopher Luxon is behaving like he’s won the election. Has he?",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOY2puazdZcUhFTVc1UFhJM3FaRmpSb2pXZ1d3UXJZSGUycUJmTTlPU24tOVFnZTVFWEtkQzc0b0VrclNFUTAwY1JXMmF5ZVctc2dFMEltYTRZYVdfbkhnbkRwZ0FJQV9hd295SnFjMWo1eGw0UzBCN3pxV3MzZWlFS0RfcGV3bFdjdEExcTJRSXM4eWMyMjBIUjVYVEpVem9MRlhlUXg4ZHQwamdWWl82T3hFRTFsYUxES2laVV9OdjJ2djZqRUVoVG9aVG9Pc2w3NFBn?oc=5",
+    "publisher": "NZ Herald",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " New Bay Area Maps Highlight Wildlife Movements to Aid Their Survival    Center for Biological Diversity "
+    "description_excerpt": " Christopher Luxon is behaving like he’s won the election. Has he?    NZ Herald "
    },
    {
-    "title": "Which of these species does not live in the Eastern Himalayas?",
-    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcjREMUJOVUhkSHdQUW0zUmpGV2tLamJLZlQwVmliM0l6aGtqYWNMemtIUlpaT2RjWE5TR19BMWd2ejZqelhIcHZPU3ZKbG95SFF6Z0xWaHh1REZ0NF9kUHR0aGVIMlJHVVRmWkpaTlpGM19QaGQ5a2RSRERpNFh0a0YyYW4tQ25aRUhSUldIS2lRVlR6ZXlZZksyNmNrSzB6dmc?oc=5",
-    "publisher": "World Wildlife Fund",
+    "title": "“Decision by lot”: 4 Tied ward races settled by draw as 5 by-elections loom",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeDdlTE1qZVdRMUxVV1JqUXBIUXFVc0tub2pMLVhmMTktTHJmbnJtVFlfRC0tOWxYYWhMa0VPRXREYkFuUk1mV0RWRC0tQml5Z0VyS2hoVHhIMVd3YmxieWRrQ3pkclAxaGZWclM2VDVLLVNqSlBmb1Q0NnFGLVhBU2JPbVNRa2kwYy13am9yUkpQUXdoakg3YTJvbTJHMVllTGctMlFzRXJMblpQV1NtQ1hsMA?oc=5",
+    "publisher": "Briefly News",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Which of these species does not live in the Eastern Himalayas?    World Wildlife Fund "
-   },
-   {
-    "title": "Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc0JTN25tcWRlcHJnbGxkbm9la2FYUVMyNmJobjhQSjlsb2tocW5LMzB3bFVCeC1yT0tOcTd0RjNQRWdDZHctcE56UVo5cEdTOV9IaDZxOE9EODFyZmRXSkxvRUltanctZXhkTVRldXo5UF9RRjZYTnNsUFAxOWFJQU0xdFotLWt6d3ZOMmNvejdadXNGaVlyY1VrX2dmaVNfaklBVTRJM1gycUdDSlppOXMyZU5xTUdKb0ZaMlN2OUdST2FVbUlqV0FTb2Z6QQ?oc=5",
-    "publisher": "Vet Candy",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation    Vet Candy "
-   },
-   {
-    "title": "New PA climate plan set to protect parks",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQalY2cUI1V0pzRHZYSXY0eGotdUxDMHo2b093VGFlS3NudHhNY2ZCMjdKU0UtMTlOUFhOVnE3Q3l3c0oxUlduMWhrcUZ6RlpRTEJxeUM4Tm5iSUpLUVFnOFR6Qjd5cEF1Y1pucEJsZWhyWFlyYXlaZThvMHRlQllsSVNPMVNQaWI0b1c1dVFZbGFRZHpCcGpPMWwzcw?oc=5",
-    "publisher": "Altoona Mirror",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " New PA climate plan set to protect parks    Altoona Mirror "
-   },
-   {
-    "title": "Wildlife and Nature Books for Gift-Giving",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1PdXN4NUp5T2UxTU4yc1ZLZ2tsVGlYLUVDUzB1OElpWkhsTDJ1dlZBRlpFejRLcFd0dTdGckVMNnhyYkNmMFZkZGdVclpXYzVoZTNDVDhOUVhZSnVrMnhOOVZxbzUwVWlRMXJn?oc=5",
-    "publisher": "The Revelator",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Wildlife and Nature Books for Gift-Giving    The Revelator "
+    "description_excerpt": " “Decision by lot”: 4 Tied ward races settled by draw as 5 by-elections loom    Briefly News "
    },
    {
     "title": "2026 WWF EFN Grant Recipients",
@@ -863,12 +846,28 @@
     "description_excerpt": " 2026 WWF EFN Grant Recipients    World Wildlife Fund "
    },
    {
-    "title": "Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore",
-    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMmNMY0N2aTR3akpsbWNCYkV6U05nRHkyazZOQkYxYVlYa2pjT1FrWkxxUllxUnl0QWFjWVM1SDBrc2FjcWUyb215dVlIWGUtTEhUTjJvRDQ2dV9BZU80NGtJenY0Z29xSnJFeWZxZlE3bEt5MVlGQ2ZSa3pYZUxCY0VDSlhmQXVPbHlCUUhaX3VBd3NvV21xTXlMTjJlVEsyMTJPSHBmbl9LOVp6akZ6SHZQTy1rZk1WOVl5c0ZqaTBNbWxBSnozdjA1TGlQaVZiYURuVVNR0gHbAUFVX3lxTE83SDRYa0t3U1h1NUVoUkpwcUdEcTZkTFlTQUFiVmR5bndhX1ZXMU56RHNWbUFIclhITjc5VVFwcDlDRlJiQ010VkVvYmdma2V3bEF2MlZoQUFuTk1pZk9RUkdObThIX0RWSVhNQ3B0UmYwQXFpY181OG9aUVA1NG5Xa18yTW5ENVdNRUxBRzdkc3dWZHVCTlItSGYtME1zNVM0M0g4QmF1bE5YODcydjNTZEFZOUNXLUpzYWxXQ1FpQVdyVEdjVWM1OWhZdUI5dmJRUjdlV0JGekZpWQ?oc=5",
-    "publisher": "TheWire.in",
+    "title": "New PA climate plan set to protect parks",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQalY2cUI1V0pzRHZYSXY0eGotdUxDMHo2b093VGFlS3NudHhNY2ZCMjdKU0UtMTlOUFhOVnE3Q3l3c0oxUlduMWhrcUZ6RlpRTEJxeUM4Tm5iSUpLUVFnOFR6Qjd5cEF1Y1pucEJsZWhyWFlyYXlaZThvMHRlQllsSVNPMVNQaWI0b1c1dVFZbGFRZHpCcGpPMWwzcw?oc=5",
+    "publisher": "Altoona Mirror",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore    TheWire.in "
+    "description_excerpt": " New PA climate plan set to protect parks    Altoona Mirror "
+   },
+   {
+    "title": "Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc0JTN25tcWRlcHJnbGxkbm9la2FYUVMyNmJobjhQSjlsb2tocW5LMzB3bFVCeC1yT0tOcTd0RjNQRWdDZHctcE56UVo5cEdTOV9IaDZxOE9EODFyZmRXSkxvRUltanctZXhkTVRldXo5UF9RRjZYTnNsUFAxOWFJQU0xdFotLWt6d3ZOMmNvejdadXNGaVlyY1VrX2dmaVNfaklBVTRJM1gycUdDSlppOXMyZU5xTUdKb0ZaMlN2OUdST2FVbUlqV0FTb2Z6QQ?oc=5",
+    "publisher": "Vet Candy",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation    Vet Candy "
+   },
+   {
+    "title": "Which of these species does not live in the Eastern Himalayas?",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcjREMUJOVUhkSHdQUW0zUmpGV2tLamJLZlQwVmliM0l6aGtqYWNMemtIUlpaT2RjWE5TR19BMWd2ejZqelhIcHZPU3ZKbG95SFF6Z0xWaHh1REZ0NF9kUHR0aGVIMlJHVVRmWkpaTlpGM19QaGQ5a2RSRERpNFh0a0YyYW4tQ25aRUhSUldIS2lRVlR6ZXlZZksyNmNrSzB6dmc?oc=5",
+    "publisher": "World Wildlife Fund",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Which of these species does not live in the Eastern Himalayas?    World Wildlife Fund "
    },
    {
     "title": "THIS WEEK IN CLIMATE ACTION – NOVEMBER 13, 2026",
@@ -879,20 +878,12 @@
     "description_excerpt": " THIS WEEK IN CLIMATE ACTION – NOVEMBER 13, 2026    League of Conservation Voters "
    },
    {
-    "title": "Wild Facts About Snowy Owls",
-    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1qY0FvRGp6OGx6R1VxQ0JHeFZldFB2dXhneXlHTVM4V1ZVQldUR1V6NF81b1ZlcnV0NEZRN3duek5HTG1wTlZNd3ZnYWNhWXFFaGJfaVJyVmkzZjA2VUVpRVo5N20?oc=5",
-    "publisher": "Bluedot Living",
+    "title": "Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMmNMY0N2aTR3akpsbWNCYkV6U05nRHkyazZOQkYxYVlYa2pjT1FrWkxxUllxUnl0QWFjWVM1SDBrc2FjcWUyb215dVlIWGUtTEhUTjJvRDQ2dV9BZU80NGtJenY0Z29xSnJFeWZxZlE3bEt5MVlGQ2ZSa3pYZUxCY0VDSlhmQXVPbHlCUUhaX3VBd3NvV21xTXlMTjJlVEsyMTJPSHBmbl9LOVp6akZ6SHZQTy1rZk1WOVl5c0ZqaTBNbWxBSnozdjA1TGlQaVZiYURuVVNR0gHbAUFVX3lxTE83SDRYa0t3U1h1NUVoUkpwcUdEcTZkTFlTQUFiVmR5bndhX1ZXMU56RHNWbUFIclhITjc5VVFwcDlDRlJiQ010VkVvYmdma2V3bEF2MlZoQUFuTk1pZk9RUkdObThIX0RWSVhNQ3B0UmYwQXFpY181OG9aUVA1NG5Xa18yTW5ENVdNRUxBRzdkc3dWZHVCTlItSGYtME1zNVM0M0g4QmF1bE5YODcydjNTZEFZOUNXLUpzYWxXQ1FpQVdyVEdjVWM1OWhZdUI5dmJRUjdlV0JGekZpWQ?oc=5",
+    "publisher": "TheWire.in",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Wild Facts About Snowy Owls    Bluedot Living "
-   },
-   {
-    "title": "Jersey Zoo plans to expand orangutan and gibbon facilities",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5UktWOHpTUEFueFVGZ1FTaWxmTUg0VkVLME9xVll0bExJYXpRTnFKZXBLQTVHdENfT1VXSUdxTmR2YjhHcl9DaXBWa2JSaTY1S2FObFEtZHJUSkk?oc=5",
-    "publisher": "BBC",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Jersey Zoo plans to expand orangutan and gibbon facilities    BBC "
+    "description_excerpt": " Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore    TheWire.in "
    },
    {
     "title": "State loses 795 sq km of forest cover in a decade",
@@ -901,136 +892,143 @@
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " State loses 795 sq km of forest cover in a decade    Nagaland Post "
+   },
+   {
+    "title": "Adani slashes Maharashtra power project cost by 99%, its forest dues plummet; Centre orders probe",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU3k5SXVSejRIcHE5QU9LbThiTXI2elVPeTdnVHZSZ1lYTXQwcW01ejhNbmt1NDk0SzhjRGZ2U1hTVzVOeW1jNWk5MDkzaXYyc25TaFpEX2Z0OWVka01rVm45b0xVRzJSeThoamJ3ejlUbXlMX0tqclRCSXVVVXlYQ0podXZOMHRGN0Jwd1RCZm9yYmdrV0pzcGljNTluc19tWHpHRkZxd3kyVWZJNDdxa0l6MERuTGNpbHBiblc3b9IBxgFBVV95cUxQMFVULTJQYmVKMHRsVThlRVgwNmVWSmZIeENHYkYyZWIxN3pHS1BPQnY5bFdPSHg3NFo0dkpNZjdEWXctLUdKNU9CZzN3RFdVdFctanZJNTBaZFpiZGd3T2t4M1kxQ0FScVVRbndPTXYxYXRRbzJMSGlwRjFNU3pzOEZ1MXozSGFMeGNRMTJBQmM3X1h0ZkdWRXh0aWtKVnc0WTlVMzIyNjhHeHVNQlU4Zk55ZlRzZkJ1b2xRNXJ3dFZib3NtV3c?oc=5",
+    "publisher": "The Indian Express",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Adani slashes Maharashtra power project cost by 99%, its forest dues plummet; Centre orders probe    The Indian Express "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Vietnam",
-   "largest_label_articles": 34,
-   "share_of_country_labelled_articles": 0.114
+   "largest_label_articles": 44,
+   "share_of_country_labelled_articles": 0.162
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 202,
-  "unique_google_urls_not_in_direct_sample": 359,
+  "unique_direct_urls_not_in_google_sample": 158,
+  "unique_google_urls_not_in_direct_sample": 334,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "Al Jazeera": 20,
+   "Al Jazeera": 19,
    "France24 FR": 19,
    "France24": 18,
-   "ABC Australia": 16,
-   "AllAfrica East Africa": 16,
-   "France24 ES": 16,
-   "AllAfrica West Africa": 15,
-   "The Guardian World": 15,
-   "BBC World": 10,
-   "AllAfrica Southern Africa": 9,
-   "RNZ National": 9,
-   "DW World": 9,
-   "AllAfrica Central Africa": 5,
-   "BBC Europe": 4,
-   "Mongabay Global": 4,
-   "BBC Science": 3,
-   "The Guardian Environment": 3,
+   "France24 ES": 18,
+   "The Guardian World": 17,
+   "ABC Australia": 14,
+   "RNZ National": 10,
+   "DW World": 8,
+   "BBC World": 8,
+   "The Guardian Environment": 4,
+   "Mongabay Indonesia": 4,
+   "BBC Europe": 3,
+   "BBC Asia": 3,
    "BBC Africa": 3,
-   "BBC Brasil": 3,
-   "Mongabay Indonesia": 3,
-   "The Conversation France": 2,
-   "The Diplomat": 2,
    "Mongabay Latam": 2,
-   "BBC Asia": 2,
+   "BBC Brasil": 2,
+   "The Conversation France": 2,
+   "BBC Science": 2,
    "NPR World": 1,
+   "Inter Press Service Headlines": 1,
+   "BBC Business": 1,
+   "UN News": 1,
+   "Mongabay Global": 1,
+   "Guardian Africa": 1,
    "Global Voices Spanish": 1,
-   "BBC Latin America": 1,
+   "RNZ Pacific": 1,
+   "Guardian Asia": 1,
    "Global Voices English": 1,
-   "RNZ World": 1,
-   "RNZ Pacific": 1
+   "RNZ World": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 298,
-  "country_labels_count": 78,
+  "country_labelled_articles": 272,
+  "country_labels_count": 76,
   "top_country_subjects": {
-   "Vietnam": 34,
-   "Mexico": 18,
-   "France": 17,
-   "Nigeria": 16,
-   "United States": 15,
+   "Vietnam": 44,
+   "Mexico": 17,
+   "France": 12,
    "Ukraine": 11,
+   "India": 11,
+   "Nigeria": 10,
+   "Australia": 9,
    "Israel": 9,
-   "India": 9,
-   "Colombia": 8,
-   "China": 8,
-   "Canada": 7,
-   "Australia": 6,
-   "Kenya": 6,
-   "Spain": 6,
-   "Iran": 5,
+   "Portugal": 8,
+   "United States": 8,
+   "Iran": 7,
+   "Bolivia": 7,
+   "China": 6,
    "Russia": 5,
-   "Bolivia": 5,
-   "South Africa": 5,
-   "Namibia": 4,
-   "Puerto Rico": 4,
-   "Sudan": 4,
-   "Kazakhstan": 4,
-   "Hungary": 4,
-   "Rwanda": 3,
-   "Germany": 3,
+   "Spain": 5,
+   "Colombia": 5,
+   "Italy": 4,
+   "Canada": 4,
+   "Philippines": 3,
+   "Yemen": 3,
    "Peru": 3,
-   "Venezuela": 3,
-   "Brazil": 3,
-   "Ethiopia": 3,
-   "New Zealand": 3
+   "Kazakhstan": 3,
+   "Sudan": 3,
+   "Cuba": 3,
+   "New Zealand": 3,
+   "Honduras": 2,
+   "Uzbekistan": 2,
+   "Singapore": 2,
+   "Brazil": 2,
+   "Germany": 2
   },
-  "distinct_geographic_signal_centers": 252,
+  "distinct_geographic_signal_centers": 231,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 90
+   "mapped_pre_dedupe": 82
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 45
+   "mapped_pre_dedupe": 40
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 90
+   "mapped_pre_dedupe": 73
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 46
+   "mapped_pre_dedupe": 38
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 91
+   "mapped_pre_dedupe": 69
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 44
+   "mapped_pre_dedupe": 40
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 89
+   "mapped_pre_dedupe": 78
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 46
+   "mapped_pre_dedupe": 40
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 58
+   "mapped_pre_dedupe": 50
   },
   "MX": {
    "requests": 11,
@@ -1040,10 +1038,10 @@
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 91
+   "mapped_pre_dedupe": 81
   }
  },
- "duplicates_removed": 480,
+ "duplicates_removed": 393,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1061,42 +1059,35 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-14T15:51:09+00:00",
-    "mapped_articles": 545,
-    "geographic_signals": 359,
-    "feeds_ok": 169,
+    "at": "2026-11-14T20:44:55+00:00",
+    "mapped_articles": 482,
+    "geographic_signals": 322,
+    "feeds_ok": 170,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 16,
-    "ambiguous_mapped_signal_count": 1
+    "rejected_matching_occurrences": 14,
+    "ambiguous_mapped_signal_count": 0
    }
   ],
   "latest": {
-   "at": "2026-11-14T15:51:09+00:00",
-   "mapped_articles": 545,
-   "geographic_signals": 359,
-   "feeds_ok": 169,
+   "at": "2026-11-14T20:44:55+00:00",
+   "mapped_articles": 482,
+   "geographic_signals": 322,
+   "feeds_ok": 170,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 16,
-   "ambiguous_mapped_signal_count": 1
+   "rejected_matching_occurrences": 14,
+   "ambiguous_mapped_signal_count": 0
   },
   "recent_change": {
-   "baseline_at": "2026-11-14T15:51:09+00:00",
+   "baseline_at": "2026-11-14T20:44:55+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Forest": 11,
-   "Union": 5
+   "Forest": 10,
+   "Union": 4
   },
-  "ambiguous_mapped_review": [
-   {
-    "name": "Ontario",
-    "category": "education",
-    "sampled_article_count": 1,
-    "review_reason": "ambiguous_place_name_needs_manual_review"
-   }
-  ],
+  "ambiguous_mapped_review": [],
   "limitations": [
    "This report flags possible mistakes; flags are not proven errors.",
    "Repeated RSS items may inflate rejected matching occurrences.",
