@@ -1,13 +1,13 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-11-13T21:40:07.383481+00:00",
+ "updated_at": "2026-11-14T01:50:49.239220+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 109,
-   "successful_empty": 12,
+   "successful_nonempty": 108,
+   "successful_empty": 13,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
@@ -21,17 +21,18 @@
     "google/hazards/NG",
     "google/hazards/CA",
     "google/hazards/BR",
-    "google/science/GB",
+    "google/society/BR",
     "google/science/AU",
-    "google/science/NG"
+    "google/science/NG",
+    "google/science/CA"
    ],
    "failure_samples": []
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 48,
+   "successful_nonempty": 47,
    "successful_empty": 0,
-   "transport_failure": 4,
+   "transport_failure": 5,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
@@ -42,6 +43,10 @@
     },
     {
      "source": "direct/ReliefWeb Updates",
+     "error": ""
+    },
+    {
+     "source": "direct/UN News",
      "error": ""
     },
     {
@@ -109,7 +114,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "8c72ff022c11a370a5b6f275b82ec93f2058a8d112558b96c08070adc36ff411",
+  "frozen_snapshot_fingerprint": "55f1346395a9227931ce18b0f7b9f3001351e212282fe8894dcb67f48d189588",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
