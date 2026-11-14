@@ -1,139 +1,148 @@
 {
  "schema": 1,
- "updated_at": "2026-11-14T09:00:34.728933+00:00",
+ "updated_at": "2026-11-14T15:51:09.564055+00:00",
  "feeds_total": 173,
- "feeds_ok": 170,
+ "feeds_ok": 169,
  "feeds_failed": [
   "direct/CBC World",
   "direct/ReliefWeb Updates",
+  "direct/UN News",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 73
+   "mapped_pre_dedupe": 90
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 56
+   "mapped_pre_dedupe": 45
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 80
+   "mapped_pre_dedupe": 90
   },
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 46
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 84
+   "mapped_pre_dedupe": 91
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 44
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 79
+   "mapped_pre_dedupe": 89
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 58
+   "mapped_pre_dedupe": 46
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 50
+   "mapped_pre_dedupe": 58
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 116
+   "mapped_pre_dedupe": 117
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 85
+   "mapped_pre_dedupe": 91
   }
  },
  "mapped_articles_by_category": {
-  "community": 265,
-  "education": 42,
-  "conflict": 39,
-  "politics": 42,
-  "society": 42,
-  "economy": 58,
-  "health": 54,
-  "hazards": 10,
-  "science": 25,
-  "environment": 26,
-  "rights": 26
+  "education": 48,
+  "community": 194,
+  "health": 55,
+  "conflict": 40,
+  "politics": 41,
+  "society": 45,
+  "science": 24,
+  "economy": 39,
+  "environment": 25,
+  "rights": 27,
+  "hazards": 7
  },
  "mapped_articles_by_location_precision": {
-  "country": 356,
-  "place": 262,
-  "region": 11
+  "country": 298,
+  "place": 239,
+  "region": 8
  },
  "location_evidence_counts": {
-  "headline": 524,
-  "description": 105
+  "description": 112,
+  "headline": 433
  },
  "geographic_quadrants": {
-  "NE": 255,
-  "NW": 204,
-  "SE": 97,
-  "SW": 73
+  "NE": 228,
+  "NW": 183,
+  "SE": 54,
+  "SW": 80
  },
- "geo_signal_count": 389,
- "mapped_total": 629,
+ "geo_signal_count": 359,
+ "mapped_total": 545,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1193,
- "unmapped_distinct_titles": 607,
+ "unmapped_sample_count": 1144,
+ "unmapped_distinct_titles": 578,
  "unmapped_by_feed": {
-  "Google News US": 133,
-  "Google News MX": 133,
-  "Google News BR": 131,
-  "Google News IN": 123,
-  "Google News KE": 121,
-  "Google News PH": 120,
-  "Google News ZA": 118,
-  "Google News NG": 54,
-  "Google News CA": 50,
-  "Google News AU": 46,
-  "Google News GB": 44,
-  "BBC World": 11,
-  "BBC Business": 10,
+  "Google News MX": 125,
+  "Google News US": 124,
+  "Google News BR": 124,
+  "Google News ZA": 110,
+  "Google News IN": 108,
+  "Google News KE": 106,
+  "Google News PH": 102,
+  "Google News NG": 64,
+  "Google News CA": 60,
+  "Google News AU": 58,
+  "Google News GB": 56,
+  "BBC World": 10,
   "ABC Australia": 9,
+  "RNZ National": 9,
+  "BBC Business": 8,
   "France24 ES": 8,
-  "The Conversation France": 8,
-  "BBC Science": 7,
-  "RNZ National": 7
+  "The Guardian World": 7,
+  "The Guardian Environment": 7
  },
  "unmapped_examples": [
   {
-   "title": "South African vineyards are showing how conservation and farming can thrive together",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMldsckFwUERLLXppRERUNmZOc1Z0T3JKTEc4RjdXcDBiRUhzeUtOV1JQbTlCaFRPeUNqa0FDSDJBMlF1ZERZVnY3ZGJhRU9ldVNKT1Y0ZkRCM3BGQk9HX0Y5TGd0dVQ2bm9fMndVcjFZa1NfVlVHZHo2VlJLQXJ4LWFrbFlTLVFwbjJ5MXQ3UWZLV3ZPNzB3aHBxV1RQemFNQ0w2cG5ZUnFrYVRfWjRDNGFoUkV2V25uaVc0?oc=5",
-   "publisher": "The Conversation",
-   "feed_occurrences": 6,
-   "feed_count": 6,
-   "description_excerpt": " South African vineyards are showing how conservation and farming can thrive together    The Conversation "
+   "title": "Market Movers blog: Microsoft shares shudder on global Outlook outage while tech rivals benefit",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5mZHNUUnlOeExDV2hSRjhxWEs0blpwaGhqUzIzQ054d1JaTnNIcGZWbkhtTDVwZFdwUXM5ekRkX2Z5UFJEWW5uMGtRSzVnd2NwZDFRUWZnYm9JWHFlTUptZzJGSHdKOS1oTEJxOUk0bFRWdw?oc=5",
+   "publisher": "Investment Week",
+   "feed_occurrences": 9,
+   "feed_count": 9,
+   "description_excerpt": " Market Movers blog: Microsoft shares shudder on global Outlook outage while tech rivals benefit    Investment Week "
   },
   {
-   "title": "Cabo Verde’s presidential election: the stakes in one of Africa’s most stable democracies",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVWZta2xzcVRxc1lnNDV3REhlZGFDcC1FTWtmMmljcUdMOUdpSjlYV1VHaWRvX2hQZVp3aGRwTzBmbHNPeU5tTFpzcHZQUXpCam9SdlcwZlRoWjVSb0VEQUpVUE1SeUJvbXA5RlFjMEZ2OEp1cTd2aVEzb3c4b1RuLU5XakxKS1MyM3VrMFBwNE1Fek5EOG9NNlVLQlZaYld1UVBleEZmYk1ob1JwclREeHl4TzVwcWg3d3hNNExEUGRrdU9nNHVKQVlkTQ?oc=5",
-   "publisher": "Polity.org.za",
+   "title": "What to Look Out for in Economic Data This Week (November 16-20)",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MeVNwMVVnVmhvRWo4b0N4WkhCRXQxTVRtb2ZmTWhCSmd4eERsN3Nfdllwejg0eG5ueFFCRUdPTzVUaXh4dEFZaWJqN3FFZnlFWTBlZ2ZvVkFFRzVScTR3TXRhZGl6MHp2RUF1clppVDRvR1lveC1FaXNCeXQ?oc=5",
+   "publisher": "Kiplinger",
+   "feed_occurrences": 9,
+   "feed_count": 9,
+   "description_excerpt": " What to Look Out for in Economic Data This Week (November 16-20)    Kiplinger "
+  },
+  {
+   "title": "Liberman once brought down Netanyahu. Now he could derail Eisenkot too",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBOQU5yZG80aE00b0dOY2JvVEsxQU94cDBWR0l0cVY1ZHVGdGJnZEhfSXFWR285eF9CNWhIbFp4TElUZk9tOFpwUkVzNlNManAxWDJoeGxVcG1sZ201SWxxZlk4bTZIb0RPY3ZOQXFB?oc=5",
+   "publisher": "Ynetnews",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Cabo Verde’s presidential election: the stakes in one of Africa’s most stable democracies    Polity.org.za "
+   "description_excerpt": " Liberman once brought down Netanyahu. Now he could derail Eisenkot too    Ynetnews "
   },
   {
    "title": "Senator Warns Against Premature Parliamentary Dissolution",
@@ -144,6 +153,22 @@
    "description_excerpt": " Senator Warns Against Premature Parliamentary Dissolution    Sarawak Tribune "
   },
   {
+   "title": "Arab Joint List hints at talks with Israeli opposition, outlines demands",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT2lYankwZmEyaWh3YlZ6eVNtX0xUWjRRYUVOTTFPSlBES0ljeHhyTzN4c1dlX3luVl9Va2lGUDN4bkU4czlNRUR1TVJKdjhDSjRUN0NUeVZlWURhbm5mU0RMeXhXTmpQdW9LRjV1OGlnR2czQVVRSkhmdFZwdEE0NkM5bF9vWEZ4dm5HU0ZQSUE3NWFKckw4dTJYaXBZSkNyZzV6OXRxVFhqRzdkai00TkttTFVXd9IBuwFBVV95cUxPdDU4bU1TLVRkbUZ1RXEyTV9wMHczNkgyenlZeTVjWHo0bUpmb29rQjFrY29QM2lqRk4xQ3ZZbG9yQTB5ZWo4RmR2WjlfQTA4bEdJY1M3Q2xYdUxHX3VvU1Zta1l3R3ZlTFhpOU05TmtWRlF5ZmEyV2l2bUc1WHZnd2l0LUphcm1Ha0YtRFJjOUhmcVpsS095b3NtTzBmaGRjenIxRE8wQWREUHJSMGVuQnl4dTlfbE9BVVBv?oc=5",
+   "publisher": "Middle East Monitor",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Arab Joint List hints at talks with Israeli opposition, outlines demands    Middle East Monitor "
+  },
+  {
+   "title": "Public Health and Wellbeing Amendment (State of Emergency Extension and Other Matters) Bill 2020",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbG9FdGw3Ukh2eDVSRTRLUEdTUkE5MGdIRWx3M0tJVWFXTkRHOVh1d3B3aklwUXFNMzdhUmJMTUZPdE1xcW1IeXhxWXpDUkM3bDRQSzVMWUN2Qm5YRFFoX2d6YnU3RzBPaE1feWsxVGRCZ0tSejRLZGRYOUhubFhRZlk5VmhTLTBhUVFzb3RxdnM0ZW92WTFiajVINURDSzBFWW91bFhEcw?oc=5",
+   "publisher": "Parliament of Victoria",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Public Health and Wellbeing Amendment (State of Emergency Extension and Other Matters) Bill 2020    Parliament of Victoria "
+  },
+  {
    "title": "The 16 MPs (likely) voted out of Parliament",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPR2t2dGZHM2FfWW9iUjJRZTRueFJ5RnRhaWhQbm03ci1NS2p4eF9NVHBXTHVwWkhnMVhlYkRsUlRTTjU2bDRtR19XaC1JcmlYbDE4UHNBMVRTdVA5SlJsbjR0Y2JPc3l4RWUxdFh5LXQ0LTB4YUlwRlZtWGtFOTlkdmxzUFpfT0h4T3B2VDVRSG9sOEhwZlF6Y1pOREQwc1Rn?oc=5",
    "publisher": "RNZ",
@@ -152,12 +177,12 @@
    "description_excerpt": " The 16 MPs (likely) voted out of Parliament    RNZ "
   },
   {
-   "title": "Is MMP stuffed?",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE91Q0lTTzRLU054c1gzVWRjNjJKQm9nWDd0RUtrSHRnRnQ0bHJBRWtBbmN0SUtIYXJKQ0RkNVBxVGUxYWRYT2tEQTliZkRBdFI3RTI0d0c1NnEyTEtmbG5NaXlpZlZRZw?oc=5",
-   "publisher": "Stuff.co.nz",
+   "title": "Mount Waverley electorate planning",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSWlhZXJXMkM1VHFFYks1ZnNvdGRGaWZMbnY4b2locldvQzNIQUdfbTRmbFlfamxrdktCN2ZyYlE1ZTN2bENYUWVnMkE3X3BjcW5MMmNiVnU1OEV5RmZuTzBJMWxNMlgtdnFjT2t2MWdQdkc3Yk1KX0VVVXNWWXByMXE4Mmp1MjlZS1htSW9vMTBDa3oxTUl0bXNMUEFMcW5wSVY4TzZMdGQ?oc=5",
+   "publisher": "Parliament of Victoria",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Is MMP stuffed?    Stuff.co.nz "
+   "description_excerpt": " Mount Waverley electorate planning    Parliament of Victoria "
   },
   {
    "title": "FWCC hits back at Ro Filipe Tuisawau",
@@ -168,28 +193,12 @@
    "description_excerpt": " FWCC hits back at Ro Filipe Tuisawau    Fijivillage "
   },
   {
-   "title": "Has the Modi govt rounded up 360 MPs?: Who could switch sides on Delimitation Bill? Last time it fell short...",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYjdyM1NKWk9tRHJOeUN0UkRBY2I3RWdZRmRibXBxR1dvMDJqV1puWWQybmtqTnRBa2lFM3dVclplcmZhV1JLWGZiUGhSLVp3elRaVnI5ak96OVBtWGZ2Ynp4eUlYZmgyTlhMOGFvZmpEci1KN0VXTmo5RTMyc3lYTWFTVVdVNm94RVBQM04zTXZGSlBWaUQwdTlYYUl3enpWUE8zeE9NaHVISF9mb1otQkVEcDJSRHlnQmtEZUtJeGdmVTjSAcgBQVVfeXFMUE9SbkYxaV92U09qNzBLLW5sdlJmaUltbWNsZ2RfMEhvajNidE93em5KVEhreW9FczJSSS1RaGZhNHJwMkdoNUVGUjhIZzRyZEwtSmRpSzFiWUt6THJKLUJ2MWFMQzFGN05CdGhjeFRBLWxiY1VuZVUwNlJwaklGYkJxeWlvNlN2UUJRSHdrMVRhdG1rdGsxZWNjOVk0UUdIWmxmYzQyeUNValBnYndZV3hSZlFZRWphd05veEpOZ0dlZXRiZzhXdC0?oc=5",
-   "publisher": "Bhaskar English",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Has the Modi govt rounded up 360 MPs?: Who could switch sides on Delimitation Bill? Last time it fell short...    Bhaskar English "
-  },
-  {
    "title": "New Bay Area Maps Highlight Wildlife Movements to Aid Their Survival",
    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWDQzU1h5NW1RWkFwR0otdHJrUlA1OW1BUGVhNlhxQXo4MWZEY1dFTXVIRUNrQ1ZaU0Vtbm81SFZLbi1obmhSN2o4MGR3R0ltdXZpWmthNUFNTG5XWkl6dV8wZGJWZ2xCR1lsbUFudzZ0M1JIVFdlVTVKM3JRNVpSMTVybjAzZXkwdXkzX2U0WDZ5UEhJVWlHOHhxNEFpS3RQZmZVQnN2Nms2TlVqTFJXZnBlSS1tNXF1S2RkX1NMdERVZV9yYmhKMVpCLWEwUUk?oc=5",
    "publisher": "Center for Biological Diversity",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " New Bay Area Maps Highlight Wildlife Movements to Aid Their Survival    Center for Biological Diversity "
-  },
-  {
-   "title": "Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc0JTN25tcWRlcHJnbGxkbm9la2FYUVMyNmJobjhQSjlsb2tocW5LMzB3bFVCeC1yT0tOcTd0RjNQRWdDZHctcE56UVo5cEdTOV9IaDZxOE9EODFyZmRXSkxvRUltanctZXhkTVRldXo5UF9RRjZYTnNsUFAxOWFJQU0xdFotLWt6d3ZOMmNvejdadXNGaVlyY1VrX2dmaVNfaklBVTRJM1gycUdDSlppOXMyZU5xTUdKb0ZaMlN2OUdST2FVbUlqV0FTb2Z6QQ?oc=5",
-   "publisher": "Vet Candy",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation    Vet Candy "
   },
   {
    "title": "Which of these species does not live in the Eastern Himalayas?",
@@ -200,12 +209,12 @@
    "description_excerpt": " Which of these species does not live in the Eastern Himalayas?    World Wildlife Fund "
   },
   {
-   "title": "Poop loop: Why climate policy must count our wild animals",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ1RRYy1lSzhpbWx6UnZCNU5JSDIyODEyVkt6YlZidWU5NXNUNmVTenNuNzdCem85aE5rc1RYand2ay00a2JkYS0xMEpwbFdWQUptSXdWbnYyM0c2WmhWT2YxcmRFdEN0ZlJZREpBSEMtNXFSVHdodnpUSWowT2d4Ni1LbFVEcDIxaEFhUUoySnhyamRsaUE0MkVIZVVkenBOQy1Ub2VncS1hRzdKWUZLVF9pODJ3Qks0ZUE?oc=5",
-   "publisher": "Oceanographic Magazine",
+   "title": "Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc0JTN25tcWRlcHJnbGxkbm9la2FYUVMyNmJobjhQSjlsb2tocW5LMzB3bFVCeC1yT0tOcTd0RjNQRWdDZHctcE56UVo5cEdTOV9IaDZxOE9EODFyZmRXSkxvRUltanctZXhkTVRldXo5UF9RRjZYTnNsUFAxOWFJQU0xdFotLWt6d3ZOMmNvejdadXNGaVlyY1VrX2dmaVNfaklBVTRJM1gycUdDSlppOXMyZU5xTUdKb0ZaMlN2OUdST2FVbUlqV0FTb2Z6QQ?oc=5",
+   "publisher": "Vet Candy",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Poop loop: Why climate policy must count our wild animals    Oceanographic Magazine "
+   "description_excerpt": " Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation    Vet Candy "
   },
   {
    "title": "New PA climate plan set to protect parks",
@@ -224,28 +233,44 @@
    "description_excerpt": " Wildlife and Nature Books for Gift-Giving    The Revelator "
   },
   {
-   "title": "“If they could do this almost 100 years ago, could we replicate it in a modern-day maritime version?” The 1930s US president who inspired marine conservation scheme",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZ3BHVFE3c1lrNUpkejNYbFR4S2FkdE0zT0w4Y1phNHF5bzVOenBWVXQ0NjQxOXJ6YUp4Ny1lMFBMUW9IQWN1bVJkQXlaMmY1OWFvMUU4aG5WcE1MVDlseGwwbjZoQnRmdFpqUVZUN1l4ZWVWczZDaXlmNE5JTW9QMA?oc=5",
-   "publisher": "BBC Wildlife Magazine",
+   "title": "2026 WWF EFN Grant Recipients",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWlBEUy0wTEsyYzJ1WVhFcGh2RlF6aFlXODQ4VmxZNm4xdlRfbTFwMVR6TTNmSm4wNl9PeTlaQzZXcXplcjR1b2EyNXJvcTlVLUhacFQ3S2ZrVXRVTlVpMzdGYTRrb3dodUwxazZCRXRQMWNnSzBtTGtHVl9TY3hraUwwSnVCb3FBTU5rdVJmNV84Q19PeGpVcnJaRGtEaHhlNGNHTGtxQ2hmc2pubGZYeTJWeUs0SWRVMi1sM2h5UVlOVkdJWG9zV2JUcEpxZGUyNmF6MHI4S1RNRWdvODVBNVo2WkhYSlU2VlFaVDlVUQ?oc=5",
+   "publisher": "World Wildlife Fund",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " “If they could do this almost 100 years ago, could we replicate it in a modern-day maritime version?” The 1930s US president who inspired marine conservation s"
+   "description_excerpt": " 2026 WWF EFN Grant Recipients    World Wildlife Fund "
   },
   {
-   "title": "Jimmy Carter hunted turkey on this Georgia land, and his family farmed peanuts there. Now it is set to open to the public as a wildlife area",
-   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPVHl3M05Wc3JGaFJfZV8tV08yZ2M2cjZfMkt6MndhVGxicGxrMWE5aTBEZ21JX0ZYYzhnTXUtTGhqX2ZFUjZkM2ZqcllEZFNLUmxubnoxcDB3SGxBWlRfTG1IdGhlWDFJRHo0aExzUUpQTV9YcGZLRVdydjQtY1JTdElmMU8tQW12a0d1dzRNcGdwd3hxTHV2VFptdTZELWdOb2pyeEtDblM5cU92Mzk3NVI2NFpJMVotRl9kdl9fRVV4amQxczdLWHF3YW5ZUUxCY1dVRDRBb0l0SlY5UjVYa3hfY3Q3c0FoN2FOeEdTZXRsNDZiM2EzbldHa25aUXV1Y3c3aVlrbXFnMS1CTHV4LU1n?oc=5",
-   "publisher": "Futura, le média qui explore le monde",
+   "title": "Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMmNMY0N2aTR3akpsbWNCYkV6U05nRHkyazZOQkYxYVlYa2pjT1FrWkxxUllxUnl0QWFjWVM1SDBrc2FjcWUyb215dVlIWGUtTEhUTjJvRDQ2dV9BZU80NGtJenY0Z29xSnJFeWZxZlE3bEt5MVlGQ2ZSa3pYZUxCY0VDSlhmQXVPbHlCUUhaX3VBd3NvV21xTXlMTjJlVEsyMTJPSHBmbl9LOVp6akZ6SHZQTy1rZk1WOVl5c0ZqaTBNbWxBSnozdjA1TGlQaVZiYURuVVNR0gHbAUFVX3lxTE83SDRYa0t3U1h1NUVoUkpwcUdEcTZkTFlTQUFiVmR5bndhX1ZXMU56RHNWbUFIclhITjc5VVFwcDlDRlJiQ010VkVvYmdma2V3bEF2MlZoQUFuTk1pZk9RUkdObThIX0RWSVhNQ3B0UmYwQXFpY181OG9aUVA1NG5Xa18yTW5ENVdNRUxBRzdkc3dWZHVCTlItSGYtME1zNVM0M0g4QmF1bE5YODcydjNTZEFZOUNXLUpzYWxXQ1FpQVdyVEdjVWM1OWhZdUI5dmJRUjdlV0JGekZpWQ?oc=5",
+   "publisher": "TheWire.in",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Jimmy Carter hunted turkey on this Georgia land, and his family farmed peanuts there. Now it is set to open to the public as a wildlife area    Futura, le médi"
+   "description_excerpt": " Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore    TheWire.in "
   },
   {
-   "title": "A Changing Climate May Expand Ibisbill Habitat, but Mining Threatens Its Survival",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOLWtYSWg3ZnNaUm91WF82RGk3dDNUOFBHNVdFUWpYR2tzZFg0MHdzV1hadHo2ZTFPSXdiMFRLLWk5UVVSRmZFQnQ4c19Gdjg4TjVIRHdGV3NXZTdtNHhfZVlFZ3E2MDBQd3B5ZV84N0d2TkZ3Ull3WnRCdWtaclhFc2dKVkNJT0NlOTg1OHlGLTQzblFGWFY4azVDcE5TeVlhRmxQVXdZRENZZ1hPUTQtVXZSbU9OXzZ3Ynl5ZFBVZw?oc=5",
-   "publisher": "Ground Report",
+   "title": "THIS WEEK IN CLIMATE ACTION – NOVEMBER 13, 2026",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdDFSREpzTVhNUjNuaU5rc3lpWTlFTlJNc1JtZFJjaVE4c0RUak12WUlCQWlKR1BQcllxU1JpdlNyMmZuZTM0a054TEx4YWh3N0dDQTNtaTJhajZOdDJFaVV0QUtZZUNiTWhNVFdWeEw2ZU43ZlhNVXBhS2hWNmg3QVFkYmQ?oc=5",
+   "publisher": "League of Conservation Voters",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " A Changing Climate May Expand Ibisbill Habitat, but Mining Threatens Its Survival    Ground Report "
+   "description_excerpt": " THIS WEEK IN CLIMATE ACTION – NOVEMBER 13, 2026    League of Conservation Voters "
+  },
+  {
+   "title": "Wild Facts About Snowy Owls",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1qY0FvRGp6OGx6R1VxQ0JHeFZldFB2dXhneXlHTVM4V1ZVQldUR1V6NF81b1ZlcnV0NEZRN3duek5HTG1wTlZNd3ZnYWNhWXFFaGJfaVJyVmkzZjA2VUVpRVo5N20?oc=5",
+   "publisher": "Bluedot Living",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Wild Facts About Snowy Owls    Bluedot Living "
+  },
+  {
+   "title": "Jersey Zoo plans to expand orangutan and gibbon facilities",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5UktWOHpTUEFueFVGZ1FTaWxmTUg0VkVLME9xVll0bExJYXpRTnFKZXBLQTVHdENfT1VXSUdxTmR2YjhHcl9DaXBWa2JSaTY1S2FObFEtZHJUSkk?oc=5",
+   "publisher": "BBC",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Jersey Zoo plans to expand orangutan and gibbon facilities    BBC "
   },
   {
    "title": "State loses 795 sq km of forest cover in a decade",
@@ -256,14 +281,6 @@
    "description_excerpt": " State loses 795 sq km of forest cover in a decade    Nagaland Post "
   },
   {
-   "title": "Remote Pacific atoll survey reveals our 'most intact ecosystems'",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdEVqb29pNnN1U1pCaWtZMFpMVU1CQ1VfdUlNZmVVRWh3c0hpUEgtNmNsUHBDRlpBb1ZsV1l6d1JfNjBESTRxRF9VTzdlRl9QSWUxamExdXpYQ0p3eDhRSEx3SkoxYzBhX0c1RFdMdVZhUW10SGl5UWp5aW42RjA3YkJWTFBRemNLdnpIZW5EZmx5eHozbE1yclNFeE10VFp2Q2w0Ug?oc=5",
-   "publisher": "Oceanographic Magazine",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Remote Pacific atoll survey reveals our 'most intact ecosystems'    Oceanographic Magazine "
-  },
-  {
    "title": "Adani slashes Maharashtra power project cost by 99%, its forest dues plummet; Centre orders probe",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU3k5SXVSejRIcHE5QU9LbThiTXI2elVPeTdnVHZSZ1lYTXQwcW01ejhNbmt1NDk0SzhjRGZ2U1hTVzVOeW1jNWk5MDkzaXYyc25TaFpEX2Z0OWVka01rVm45b0xVRzJSeThoamJ3ejlUbXlMX0tqclRCSXVVVXlYQ0podXZOMHRGN0Jwd1RCZm9yYmdrV0pzcGljNTluc19tWHpHRkZxd3kyVWZJNDdxa0l6MERuTGNpbHBiblc3b9IBxgFBVV95cUxQMFVULTJQYmVKMHRsVThlRVgwNmVWSmZIeENHYkYyZWIxN3pHS1BPQnY5bFdPSHg3NFo0dkpNZjdEWXctLUdKNU9CZzN3RFdVdFctanZJNTBaZFpiZGd3T2t4M1kxQ0FScVVRbndPTXYxYXRRbzJMSGlwRjFNU3pzOEZ1MXozSGFMeGNRMTJBQmM3X1h0ZkdWRXh0aWtKVnc0WTlVMzIyNjhHeHVNQlU4Zk55ZlRzZkJ1b2xRNXJ3dFZib3NtV3c?oc=5",
    "publisher": "The Indian Express",
@@ -272,12 +289,20 @@
    "description_excerpt": " Adani slashes Maharashtra power project cost by 99%, its forest dues plummet; Centre orders probe    The Indian Express "
   },
   {
-   "title": "Conservation in a changing climate gets a research boost",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPc3o1RXBzSDExZnVsc3IyVlFWdFFIbjdTVWZMQy1LdzFwVHJxTVRYbldPUnFxbUxSVnV1VzNxM2VZMW40a1ljSEZDdHVBREx2ZDFUOHhBOWxGMzdGT2dFQV9tc1JoODg1MktRNlhEMEdFNWFkb2pLUkFqdmxZR0Ytem9LejBKWUoyVFlZWEFiOERGeGhC?oc=5",
-   "publisher": "SAPeople",
+   "title": "Blue-green algae bloom confirmed in Huntsville’s Mary Lake",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPazFsRjhKQzJTRTcyVEZOWHZ2eU1VdVZVOEJseHVBc1Y5aWg1dFVBdURzaTZxdDM3WG5LUlhUQ1NNemszSklUelVvQ1JHWUxiN0dmX05oYzNzdzFMaU0xanY0VmlmbkpiYWVFajZsSDFveXhEcTFsaHVSQlFaZ2k3bUpWbGRoTlVUOVJGMjhnRmJoZVpnWVMwT3ItQWhKWTVnNHo2NEpBYjU2M1c1bG40VHZqYw?oc=5",
+   "publisher": "My Muskoka Now",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Conservation in a changing climate gets a research boost    SAPeople "
+   "description_excerpt": " Blue-green algae bloom confirmed in Huntsville’s Mary Lake    My Muskoka Now "
+  },
+  {
+   "title": "ESWATINI EYES TUSK CONSERVATION PARTNERSHIP",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSC1nYjA2TUJsZFN4R2ZUeTEtaTZnQ3BVMVNEdXRYZWFLYzlwYUlSV2QxQXR3M09WY0xpWFhpTml5dVZnS1ZKMkNXbHRjUGdKS2VnOHF3VlFDU05zcThSRXE0SklVMGgtSDNVRTdWa2VNbGFYT0hQa1c5RzZ0Zm5kM3NiN1lTWEE?oc=5",
+   "publisher": "Eswatini Positive News",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " ESWATINI EYES TUSK CONSERVATION PARTNERSHIP    Eswatini Positive News "
   },
   {
    "title": "45 years after adoption, wildlife law awareness remains poor in Nagaland",
@@ -288,52 +313,12 @@
    "description_excerpt": " 45 years after adoption, wildlife law awareness remains poor in Nagaland    Eastern Mirror "
   },
   {
-   "title": "Two cheetahs find a new home at Pilanesberg National Park",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdU9qX2taMWMwenk3cVBVcjk1UWVya2d5STlEU0hXajl4RE0xUlB0ZkJYdTdBZkN6MTdYNWNocmhVU0NCT2FHdWVhY3QwUFllT05qMVh3WlUtTTNXNmVjSWg3SnRDY1dPMG91S0QyMlV1V0Z2ajVQSUt5MExsN0ZscXJSYjE?oc=5",
-   "publisher": "SAPeople",
+   "title": "Serious Allegations surface against Adani Green; Group clarifies",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWDZTbVdWSTlKdHFqdGozTXI4VU5qZE8td01QSV9CS2tOdzYyaWF4Qk5lU3o1dS1BejhsRXFkLUhOeFRnR1lZT2wtdHo0Vl9sMDkweW9OWVhZTkJvMkh1OGdyc0FHbm9BOXJFU2JQZzMzZFFpZEFnejZSTjFvc21PLTV5SXJHMjU4NzA1czBVaDg4cGc?oc=5",
+   "publisher": "The News Insight",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Two cheetahs find a new home at Pilanesberg National Park    SAPeople "
-  },
-  {
-   "title": "In Bengal, Forest Shrinkage, Development Pressures Escalate Human-Elephant Conflict, Extract Cruel Cost",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOWmxjTkZxZG1JOVRiNVdFeVBuOU1GeDZ4bEJFSHdsTFhFNUI4ZnBETUg1SnNTVnBQU0F6VWtvWElERmU5UEFzWGZaOEdLalMyb0F3eHJXclpOVDFXcWZGdlpwN2NqeEFPVkFkZG41V1VVUDZOT29mWTg5Z2pMNVJhNWk2WVMxS1hfR0VDVVRONnJ5LVpTbUUxNDJrUjZWRC0tRzV1WUxkcS1qT0k3dFRlLWQ2OVVOcncyUUZ3X3h0ZktYMVNNTWtqWlZwTzNzdzY4WHFvd0JxUlZQNUN1eXRRWm9RODRtZUNq0gHuAUFVX3lxTE1QMlR4ekxWVDV5YzlvdmNvYlhfc19NNzg3SWxMdUxDMDQ0N0d1OUdSNzQxV2kwVjhxQXU2SjkwQXZpd3JrdnlZUWpkc0FFZUg3QU5CUE9NbmoxNzdlU1lCVWZCaVh0VWo4V1Zsa2Y1SWFfc2ptOTVpbldFT1c3QlBnTXFyWlNmMW1sQTdtb095a1liY1V3dzdxcjdNQnpmV0ZfckhWN1RZUTJUeVlwWlktZmxqcjZPM19WZTczRVBjSUg5S0UwYS00MDZGQUcxMTE0US1mODU4dHQ0SnM3UmFKUTdtTW1HMDU0R1cxYkE?oc=5",
-   "publisher": "ETV Bharat",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " In Bengal, Forest Shrinkage, Development Pressures Escalate Human-Elephant Conflict, Extract Cruel Cost    ETV Bharat "
-  },
-  {
-   "title": "Department of Wildlife Conservation receives 84 new single-cab vehicles",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUTQtdTVTZFNhRTRJWE41bExNbnVaRUc4dHNjTHVWNTBmZ3hSLUNGNms1c0VLODNoQTduWU1Nb0g3U3d5a0NfS0Fwc2ZUU25pQko4TGdMckdrVjFqUWpNN2xHVVhDZnJ0eXp4cGpmZGE5U1dEVThyNEZpcHljS1p3YmFsMWFMXy1IRkc3NkFRc2R0SG11bVRJS3FYYTZtc3gxcll2OU5wY0NfZlVCUVE?oc=5",
-   "publisher": "Hiru News",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Department of Wildlife Conservation receives 84 new single-cab vehicles    Hiru News "
-  },
-  {
-   "title": "Adani Hydropower Project Cost Row in Maharashtra Explained",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdnJveHZoR1NFbWN1cTJNTVYxakEwSXY4d1JmRUR0UFV6LVRvMWNVNDJ4SUZ0aXBEM0tLbFpLQmZqTXA4TFA0ZDZ0MGtUSWtlNUdUc09Zb3ZJeXRoYXZnM3NLM0JLNThTbmZUdGJXcWdMbHY0T2lqRUNRd3lmblJxNjJJQmlhVDJSeVM3YjBBWWpHZw?oc=5",
-   "publisher": "Urban Acres",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Adani Hydropower Project Cost Row in Maharashtra Explained    Urban Acres "
-  },
-  {
-   "title": "Maharashtra Power Project Cost Cut Row: Congress Seeks JPC Probe",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSDVlaS0xMlRPREx5VTlvckxNRXJkQ0lxUG90WG1MWmMwLUF4OUZISTU1eWhIOHFXeGVmSkdHU0JEVUlEQS03UXVjR1RlbVVwbnhhNEdVd1pydlZubjNVaHRIa01oNmZYbk1Ia0JKdGw0TmNWVEdiR3FqazJuaE4yalJpcEVLdjdKZ296N2loaWZmRE0xT2Q3djhVNWdGRXItQTJ3NWhlanpkcmxaYWlqS05RcktFOFA4QmhkY2tLcGI?oc=5",
-   "publisher": "Dainik Jagran MP CG",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Maharashtra Power Project Cost Cut Row: Congress Seeks JPC Probe    Dainik Jagran MP CG "
-  },
-  {
-   "title": "Portland City Council approves reduced fuel storage along Willamette River amid Cascadia concerns",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPb1Uzd1llak1fTm9oZVh4dGVvc2dWQmxXbzh4M3FrWjJZWEFWVm9GS3RaNVZ0aXJrblRXdnZoVnJBY05DOEZ6QVdYeWFzTVRjOWlVbWNRRk5odzJfdEtydWQ1NWlZNFliaVFUcEdFaTI5NXR4TWdsMnZwV3ZaWTdjWUt3Tm5HeFVXeWNnZGptaXl6dGVEcEQ0?oc=5",
-   "publisher": "Yahoo",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Portland City Council approves reduced fuel storage along Willamette River amid Cascadia concerns    Yahoo "
+   "description_excerpt": " Serious Allegations surface against Adani Green; Group clarifies    The News Insight "
   },
   {
    "title": "Funding for national climate change adaptation absent in latest budget, experts say",
@@ -344,12 +329,12 @@
    "description_excerpt": " Funding for national climate change adaptation absent in latest budget, experts say    iPolitics "
   },
   {
-   "title": "Civil protection mechanism: making the EU crisis-ready",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRk1rbHAtVnduTWNVQWNvMFF3QTdZVmZIVUU3LTN1MEptTl82NVduLWdMMWpVOGc2QVFBYUdqRU1JbVI2VDA4SXd6Z0RBOFBlanNEbWxHSllwMmFWWEpQY20wUnpnRjZBSy1ZU0xxdTZTQjJHdDh0Z3kzS0Q0djhNeDVjNTZ0OG1PYVMzbkpmUkxvX1hnWHc?oc=5",
-   "publisher": "The European Sting",
+   "title": "Portland City Council approves reduced fuel storage along Willamette River amid Cascadia concerns",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPb1Uzd1llak1fTm9oZVh4dGVvc2dWQmxXbzh4M3FrWjJZWEFWVm9GS3RaNVZ0aXJrblRXdnZoVnJBY05DOEZ6QVdYeWFzTVRjOWlVbWNRRk5odzJfdEtydWQ1NWlZNFliaVFUcEdFaTI5NXR4TWdsMnZwV3ZaWTdjWUt3Tm5HeFVXeWNnZGptaXl6dGVEcEQ0?oc=5",
+   "publisher": "Yahoo",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Civil protection mechanism: making the EU crisis-ready    The European Sting "
+   "description_excerpt": " Portland City Council approves reduced fuel storage along Willamette River amid Cascadia concerns    Yahoo "
   },
   {
    "title": "Gen Z protests: Do Baby Boomers really have it better than young people?",
@@ -360,20 +345,28 @@
    "description_excerpt": " Gen Z protests: Do Baby Boomers really have it better than young people?    DW.com "
   },
   {
-   "title": "After weeks of uproar, PPS superintendent will recommend plan to close 10 schools",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUXlLZnFmNGFMSWhrcTFPUmplTDdMLS16dlRkTGQyOHViTS1ZRk90WXVkR2w5MmZuYi1BVjVyOERhMG05QXJ6cmVpZHFFam8tLUxQeE9LLV9lX3Faa01sQ1pfNkVNSGRlN25ZZTFDM3gxTEVmaW9nWHE1MGY3WnRtcXFQSU9taVNQZ2FKOTRuLTlmOHZyOWdCeFhTY2lwRTBGb2FTQVhnSVo3TWNXU2cyanJfallsaGEtM1czSGFNbm56N3N1LVhCcGJB?oc=5",
-   "publisher": "OregonLive.com",
+   "title": "Years of Yore: Flu, smallpox make headlines",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNYjRWUmo5ZUJjcHZjNnpMWUhkb3kzNFVTVUpoMkI2YldOSGQxNElOc1g3MTdlYkY2V0RRUDJGM2ZQSzVLM0IzbzVJRDNrdEZCa3Y1ZENXU2pZTGFzWkhlSWk4R0xJM3Q3SDNleEEzS3ZzT2g2cVVOM0JEeS1RV0lSUzA2ZWRSeDdyNnNwTG9kVDhSOTBaaldFRmRoMGU4T2EzSTBjcFRCb1FKYzRaQkVGX2c3YnNnd3pYUG9ESXluNXBLeWNreUlkbm5SRTM?oc=5",
+   "publisher": "Mesabi Tribune",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " After weeks of uproar, PPS superintendent will recommend plan to close 10 schools    OregonLive.com "
+   "description_excerpt": " Years of Yore: Flu, smallpox make headlines    Mesabi Tribune "
   },
   {
-   "title": "Depression and Cardiometabolic Disease Jointly Triple Cognitive Impairment Odds in Adults",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOUV3RkpLcUtFeE5sWUtMV1RvVzY1WlB5Qlc3LW9OZzJtQWxBMDVDbm1jb2tiaFZoRXBwTTRnanlFeGI0eUNCdkIwci15NmZIdU1Tc0hzN2dIamkyRElKMC01LTE3VVlRbDYxVHV1cFdwRkUxX3lGQjlNZkdLRWk2WDlSSVdYdUNkTE9jekNLQmF2aWE2NVExV1BYMlJSd3lDYXVwbmFucE9jZXU4SXlib2I2dEY?oc=5",
+   "title": "Mobile Health Clinics Paired with Community Engagement May Increase Rural Vaccine Coverage",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT3VUS0ZPTkt5Wko3TkFieXhGNnMxQlB3cC1QMzdkVG5ITnAtazJZSkFScTAyb2xVaVBtYlRpWm9FdmJrdms5a1lsZGpiV1YxZWZuU2VCcXBfM0g3MU1hYWZBM0s5WXJiU0ZTZElGTDZHbjFlWTlZeGc1UFVLbl9PbDBhQVdEUzRGOE5pWUxoTV9MekNnaW1ZaENkZjNHX0pUR3d3OXVqRnNhVVR2ZTBlWHpHU2dzQQ?oc=5",
    "publisher": "Bioengineer.org",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Depression and Cardiometabolic Disease Jointly Triple Cognitive Impairment Odds in Adults    Bioengineer.org "
+   "description_excerpt": " Mobile Health Clinics Paired with Community Engagement May Increase Rural Vaccine Coverage    Bioengineer.org "
+  },
+  {
+   "title": "IEA-USP brings maternal and infant healthcare and respiratory disease prevention initiative to Marajó",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQN2xoZGtZcWJnaS1IZjFUdEVkMm83bFBhYk12OUFBekx2RXFMZDVyR1dTTGFtbDgzS09CVGhRalFPemhBb0RCeU9rTlNoZ3VEaTNLdHJCNHZWY19HaHc4a2NObDd5VmF3Y2pDZkpDb1c3ZGY4ZGNKeHNHYWl2SlFNWmVWTzVpUTA?oc=5",
+   "publisher": "Sanofi Brasil",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " IEA-USP brings maternal and infant healthcare and respiratory disease prevention initiative to Marajó    Sanofi Brasil "
   },
   {
    "title": "Climate change threatens to revive once-eradicated diseases in Eastern Mediterranean",
@@ -384,70 +377,78 @@
    "description_excerpt": " Climate change threatens to revive once-eradicated diseases in Eastern Mediterranean    سانا "
   },
   {
-   "title": "Ugandan Study Links Peripheral Clinics to Zoonotic Specimen Referral Gaps",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcGYyckhlTWJHblo0c2t1STUyanhKT1dUbU5VRldueEQyTlhLdzFfTm9KaEtWbU1EQVlXRlV6Z211aXZMUEFNRFJJLW1SMXdRd20wczQxb3RTcE5UYXY3QS16VHBfNHpFV2U2ZURCY1k3ZG5TRnNTUlJVV1BSeWgtTVJYTkxSN0xrOE9yMWZnVllvVl9UZFdDZ0pHVVhsVm8?oc=5",
-   "publisher": "Bioengineer.org",
+   "title": "How Does Iona University Rank Among America's Best Colleges?",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1qWTRrVF9pRjlyUGpDVWQxVXJyTUdBS2pRNDlvUmsxYnF4UWNsdmUtUHgyTDRrM0MybmtQem5xMHhyaTdnLUpDbkxxNTNZREFlWFVra1p4NnJieDVzbjh6SVRVTEVvUTk4?oc=5",
+   "publisher": "U.S. News & World Report",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Ugandan Study Links Peripheral Clinics to Zoonotic Specimen Referral Gaps    Bioengineer.org "
+   "description_excerpt": " How Does Iona University Rank Among America's Best Colleges?    U.S. News & World Report "
   },
   {
-   "title": "UAE health ranking: Good on sugar taxes and vaccines, but tobacco control lags",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRHhOcGlkalRrQXhFb2FndFBENzZCRjdmYkZBTnRSM09LZ2daTy1IQVFlMkhKZ2lUOEl1Q3k5N09zT1hwLWFzRlctemo5MDZEekVoX19nWXM3Q1FBanJkSlEyMjJEa29pRnVHU0xRc20xaFFOY2ZDODc0SjhYTG1TM1FwSzZyMkFDYW45cnFsQ1FUYW40N1g1ekxrRDlBTkkwLUpvVV9RbTllNWhCdnNZWV9yOG1SUmJMOGlPN2pZOFg5c2FCUzRzUQ?oc=5",
-   "publisher": "The National",
+   "title": "Regents: This is the most high school grads Iowa will see for decades",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPR0Jia211emlQcEVFMDM3cDJHNDRVRmdMSmxjdTI5T0JzUHdBZU9rODFDeTNHbDM5Yl9uUjFESzhTVjczUGcwM3RfNTZ2bDl2bnVnbnllTko5YUFPV1RXRVRiRUpOUUZqZlVSeFpiQUdfbnA4bEJVa3J1TkNHRlNRc3ZZak9kWlRneXQ1ZDZ6YVBzUXlqaW81ZXhaeDM3V3NsNTRKYTVyaVo4SWZFLVRyMnRkcVpwLXZjb2VpdWFXZGo4VG5qUWc?oc=5",
+   "publisher": "The Gazette",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " UAE health ranking: Good on sugar taxes and vaccines, but tobacco control lags    The National "
+   "description_excerpt": " Regents: This is the most high school grads Iowa will see for decades    The Gazette "
+  },
+  {
+   "title": "Are universities safe for students?",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE80NkZ5OGNKcC1ZMjhQU3lIMTRybXZFbUVGdnk2T0NmZURHMTZXdUIxclllMUZYZjFBUV82S1gyU3g4cEx3dTRxNVlIRWVBWEhSbWt3MC1DbGJzeUNfemFLT3hERU9lS1I1bHVnMnB4eWpjMUNfc3N3SQ?oc=5",
+   "publisher": "PantherNOW",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Are universities safe for students?    PantherNOW "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
-  "successful": 49,
-  "mapped_pre_dedupe": 307
+  "successful": 48,
+  "mapped_pre_dedupe": 218
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 101,
+   "mapped_pre_dedupe": 45,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 29
+     "mapped_pre_dedupe": 15
     },
     {
      "source": "direct/AllAfrica East Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 30
+     "mapped_pre_dedupe": 16
     },
     {
      "source": "direct/AllAfrica Central Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 11
+     "mapped_pre_dedupe": 5
     },
     {
      "source": "direct/AllAfrica Southern Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 29
+     "mapped_pre_dedupe": 9
     },
     {
      "source": "direct/Africa Arguments",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/The Conversation Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     }
    ]
   },
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 14,
+   "mapped_pre_dedupe": 5,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
@@ -462,14 +463,14 @@
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 11
+     "mapped_pre_dedupe": 2
     }
    ]
   },
   "europe": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 3,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/The Conversation France",
@@ -479,14 +480,14 @@
     {
      "source": "direct/The Conversation España",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     }
    ]
   },
   "global": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 8,
+   "mapped_pre_dedupe": 7,
    "feeds": [
     {
      "source": "direct/Global Voices English",
@@ -511,7 +512,7 @@
     {
      "source": "direct/Mongabay Global",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/Inter Press Service Headlines",
@@ -523,7 +524,7 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 93,
+   "mapped_pre_dedupe": 80,
    "feeds": [
     {
      "source": "direct/BBC World",
@@ -533,37 +534,37 @@
     {
      "source": "direct/BBC Science",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/BBC Business",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 19
+     "mapped_pre_dedupe": 20
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 21
+     "mapped_pre_dedupe": 15
     },
     {
      "source": "direct/The Guardian Environment",
      "status": "ok",
-     "mapped_pre_dedupe": 6
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/DW World",
      "status": "ok",
-     "mapped_pre_dedupe": 12
+     "mapped_pre_dedupe": 9
     },
     {
      "source": "direct/France24",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/NPR World",
@@ -609,7 +610,7 @@
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 76,
+   "mapped_pre_dedupe": 77,
    "feeds": [
     {
      "source": "direct/ABC Australia",
@@ -639,7 +640,7 @@
     {
      "source": "direct/France24 FR",
      "status": "ok",
-     "mapped_pre_dedupe": 17
+     "mapped_pre_dedupe": 19
     },
     {
      "source": "direct/France24 ES",
@@ -659,12 +660,12 @@
     {
      "source": "direct/BBC Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/BBC Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Latin America",
@@ -674,7 +675,7 @@
     {
      "source": "direct/BBC Middle East",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/BBC Europe",
@@ -689,7 +690,7 @@
     {
      "source": "direct/Guardian Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/Guardian Asia",
@@ -701,24 +702,24 @@
   "south-america": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 8,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/The Conversation Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/Mongabay Latam",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 2
     }
    ]
   },
   "specialist": {
    "configured": 3,
-   "successful": 2,
-   "mapped_pre_dedupe": 4,
+   "successful": 1,
+   "mapped_pre_dedupe": 0,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
@@ -727,8 +728,8 @@
     },
     {
      "source": "direct/UN News",
-     "status": "ok",
-     "mapped_pre_dedupe": 4
+     "status": "failed",
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/NASA News",
@@ -739,23 +740,31 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 606,
+  "distinct_unmapped_titles": 578,
   "high_repeat_unmapped_examples": [
    {
-    "title": "South African vineyards are showing how conservation and farming can thrive together",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMldsckFwUERLLXppRERUNmZOc1Z0T3JKTEc4RjdXcDBiRUhzeUtOV1JQbTlCaFRPeUNqa0FDSDJBMlF1ZERZVnY3ZGJhRU9ldVNKT1Y0ZkRCM3BGQk9HX0Y5TGd0dVQ2bm9fMndVcjFZa1NfVlVHZHo2VlJLQXJ4LWFrbFlTLVFwbjJ5MXQ3UWZLV3ZPNzB3aHBxV1RQemFNQ0w2cG5ZUnFrYVRfWjRDNGFoUkV2V25uaVc0?oc=5",
-    "publisher": "The Conversation",
-    "feed_occurrences": 6,
-    "feed_count": 6,
-    "description_excerpt": " South African vineyards are showing how conservation and farming can thrive together    The Conversation "
+    "title": "Market Movers blog: Microsoft shares shudder on global Outlook outage while tech rivals benefit",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5mZHNUUnlOeExDV2hSRjhxWEs0blpwaGhqUzIzQ054d1JaTnNIcGZWbkhtTDVwZFdwUXM5ekRkX2Z5UFJEWW5uMGtRSzVnd2NwZDFRUWZnYm9JWHFlTUptZzJGSHdKOS1oTEJxOUk0bFRWdw?oc=5",
+    "publisher": "Investment Week",
+    "feed_occurrences": 9,
+    "feed_count": 9,
+    "description_excerpt": " Market Movers blog: Microsoft shares shudder on global Outlook outage while tech rivals benefit    Investment Week "
    },
    {
-    "title": "Cabo Verde’s presidential election: the stakes in one of Africa’s most stable democracies",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVWZta2xzcVRxc1lnNDV3REhlZGFDcC1FTWtmMmljcUdMOUdpSjlYV1VHaWRvX2hQZVp3aGRwTzBmbHNPeU5tTFpzcHZQUXpCam9SdlcwZlRoWjVSb0VEQUpVUE1SeUJvbXA5RlFjMEZ2OEp1cTd2aVEzb3c4b1RuLU5XakxKS1MyM3VrMFBwNE1Fek5EOG9NNlVLQlZaYld1UVBleEZmYk1ob1JwclREeHl4TzVwcWg3d3hNNExEUGRrdU9nNHVKQVlkTQ?oc=5",
-    "publisher": "Polity.org.za",
+    "title": "What to Look Out for in Economic Data This Week (November 16-20)",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MeVNwMVVnVmhvRWo4b0N4WkhCRXQxTVRtb2ZmTWhCSmd4eERsN3Nfdllwejg0eG5ueFFCRUdPTzVUaXh4dEFZaWJqN3FFZnlFWTBlZ2ZvVkFFRzVScTR3TXRhZGl6MHp2RUF1clppVDRvR1lveC1FaXNCeXQ?oc=5",
+    "publisher": "Kiplinger",
+    "feed_occurrences": 9,
+    "feed_count": 9,
+    "description_excerpt": " What to Look Out for in Economic Data This Week (November 16-20)    Kiplinger "
+   },
+   {
+    "title": "Liberman once brought down Netanyahu. Now he could derail Eisenkot too",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBOQU5yZG80aE00b0dOY2JvVEsxQU94cDBWR0l0cVY1ZHVGdGJnZEhfSXFWR285eF9CNWhIbFp4TElUZk9tOFpwUkVzNlNManAxWDJoeGxVcG1sZ201SWxxZlk4bTZIb0RPY3ZOQXFB?oc=5",
+    "publisher": "Ynetnews",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Cabo Verde’s presidential election: the stakes in one of Africa’s most stable democracies    Polity.org.za "
+    "description_excerpt": " Liberman once brought down Netanyahu. Now he could derail Eisenkot too    Ynetnews "
    },
    {
     "title": "Senator Warns Against Premature Parliamentary Dissolution",
@@ -766,6 +775,22 @@
     "description_excerpt": " Senator Warns Against Premature Parliamentary Dissolution    Sarawak Tribune "
    },
    {
+    "title": "Arab Joint List hints at talks with Israeli opposition, outlines demands",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT2lYankwZmEyaWh3YlZ6eVNtX0xUWjRRYUVOTTFPSlBES0ljeHhyTzN4c1dlX3luVl9Va2lGUDN4bkU4czlNRUR1TVJKdjhDSjRUN0NUeVZlWURhbm5mU0RMeXhXTmpQdW9LRjV1OGlnR2czQVVRSkhmdFZwdEE0NkM5bF9vWEZ4dm5HU0ZQSUE3NWFKckw4dTJYaXBZSkNyZzV6OXRxVFhqRzdkai00TkttTFVXd9IBuwFBVV95cUxPdDU4bU1TLVRkbUZ1RXEyTV9wMHczNkgyenlZeTVjWHo0bUpmb29rQjFrY29QM2lqRk4xQ3ZZbG9yQTB5ZWo4RmR2WjlfQTA4bEdJY1M3Q2xYdUxHX3VvU1Zta1l3R3ZlTFhpOU05TmtWRlF5ZmEyV2l2bUc1WHZnd2l0LUphcm1Ha0YtRFJjOUhmcVpsS095b3NtTzBmaGRjenIxRE8wQWREUHJSMGVuQnl4dTlfbE9BVVBv?oc=5",
+    "publisher": "Middle East Monitor",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Arab Joint List hints at talks with Israeli opposition, outlines demands    Middle East Monitor "
+   },
+   {
+    "title": "Public Health and Wellbeing Amendment (State of Emergency Extension and Other Matters) Bill 2020",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbG9FdGw3Ukh2eDVSRTRLUEdTUkE5MGdIRWx3M0tJVWFXTkRHOVh1d3B3aklwUXFNMzdhUmJMTUZPdE1xcW1IeXhxWXpDUkM3bDRQSzVMWUN2Qm5YRFFoX2d6YnU3RzBPaE1feWsxVGRCZ0tSejRLZGRYOUhubFhRZlk5VmhTLTBhUVFzb3RxdnM0ZW92WTFiajVINURDSzBFWW91bFhEcw?oc=5",
+    "publisher": "Parliament of Victoria",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Public Health and Wellbeing Amendment (State of Emergency Extension and Other Matters) Bill 2020    Parliament of Victoria "
+   },
+   {
     "title": "The 16 MPs (likely) voted out of Parliament",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPR2t2dGZHM2FfWW9iUjJRZTRueFJ5RnRhaWhQbm03ci1NS2p4eF9NVHBXTHVwWkhnMVhlYkRsUlRTTjU2bDRtR19XaC1JcmlYbDE4UHNBMVRTdVA5SlJsbjR0Y2JPc3l4RWUxdFh5LXQ0LTB4YUlwRlZtWGtFOTlkdmxzUFpfT0h4T3B2VDVRSG9sOEhwZlF6Y1pOREQwc1Rn?oc=5",
     "publisher": "RNZ",
@@ -774,12 +799,12 @@
     "description_excerpt": " The 16 MPs (likely) voted out of Parliament    RNZ "
    },
    {
-    "title": "Is MMP stuffed?",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE91Q0lTTzRLU054c1gzVWRjNjJKQm9nWDd0RUtrSHRnRnQ0bHJBRWtBbmN0SUtIYXJKQ0RkNVBxVGUxYWRYT2tEQTliZkRBdFI3RTI0d0c1NnEyTEtmbG5NaXlpZlZRZw?oc=5",
-    "publisher": "Stuff.co.nz",
+    "title": "Mount Waverley electorate planning",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSWlhZXJXMkM1VHFFYks1ZnNvdGRGaWZMbnY4b2locldvQzNIQUdfbTRmbFlfamxrdktCN2ZyYlE1ZTN2bENYUWVnMkE3X3BjcW5MMmNiVnU1OEV5RmZuTzBJMWxNMlgtdnFjT2t2MWdQdkc3Yk1KX0VVVXNWWXByMXE4Mmp1MjlZS1htSW9vMTBDa3oxTUl0bXNMUEFMcW5wSVY4TzZMdGQ?oc=5",
+    "publisher": "Parliament of Victoria",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Is MMP stuffed?    Stuff.co.nz "
+    "description_excerpt": " Mount Waverley electorate planning    Parliament of Victoria "
    },
    {
     "title": "FWCC hits back at Ro Filipe Tuisawau",
@@ -790,28 +815,12 @@
     "description_excerpt": " FWCC hits back at Ro Filipe Tuisawau    Fijivillage "
    },
    {
-    "title": "Has the Modi govt rounded up 360 MPs?: Who could switch sides on Delimitation Bill? Last time it fell short...",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYjdyM1NKWk9tRHJOeUN0UkRBY2I3RWdZRmRibXBxR1dvMDJqV1puWWQybmtqTnRBa2lFM3dVclplcmZhV1JLWGZiUGhSLVp3elRaVnI5ak96OVBtWGZ2Ynp4eUlYZmgyTlhMOGFvZmpEci1KN0VXTmo5RTMyc3lYTWFTVVdVNm94RVBQM04zTXZGSlBWaUQwdTlYYUl3enpWUE8zeE9NaHVISF9mb1otQkVEcDJSRHlnQmtEZUtJeGdmVTjSAcgBQVVfeXFMUE9SbkYxaV92U09qNzBLLW5sdlJmaUltbWNsZ2RfMEhvajNidE93em5KVEhreW9FczJSSS1RaGZhNHJwMkdoNUVGUjhIZzRyZEwtSmRpSzFiWUt6THJKLUJ2MWFMQzFGN05CdGhjeFRBLWxiY1VuZVUwNlJwaklGYkJxeWlvNlN2UUJRSHdrMVRhdG1rdGsxZWNjOVk0UUdIWmxmYzQyeUNValBnYndZV3hSZlFZRWphd05veEpOZ0dlZXRiZzhXdC0?oc=5",
-    "publisher": "Bhaskar English",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Has the Modi govt rounded up 360 MPs?: Who could switch sides on Delimitation Bill? Last time it fell short...    Bhaskar English "
-   },
-   {
     "title": "New Bay Area Maps Highlight Wildlife Movements to Aid Their Survival",
     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWDQzU1h5NW1RWkFwR0otdHJrUlA1OW1BUGVhNlhxQXo4MWZEY1dFTXVIRUNrQ1ZaU0Vtbm81SFZLbi1obmhSN2o4MGR3R0ltdXZpWmthNUFNTG5XWkl6dV8wZGJWZ2xCR1lsbUFudzZ0M1JIVFdlVTVKM3JRNVpSMTVybjAzZXkwdXkzX2U0WDZ5UEhJVWlHOHhxNEFpS3RQZmZVQnN2Nms2TlVqTFJXZnBlSS1tNXF1S2RkX1NMdERVZV9yYmhKMVpCLWEwUUk?oc=5",
     "publisher": "Center for Biological Diversity",
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " New Bay Area Maps Highlight Wildlife Movements to Aid Their Survival    Center for Biological Diversity "
-   },
-   {
-    "title": "Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc0JTN25tcWRlcHJnbGxkbm9la2FYUVMyNmJobjhQSjlsb2tocW5LMzB3bFVCeC1yT0tOcTd0RjNQRWdDZHctcE56UVo5cEdTOV9IaDZxOE9EODFyZmRXSkxvRUltanctZXhkTVRldXo5UF9RRjZYTnNsUFAxOWFJQU0xdFotLWt6d3ZOMmNvejdadXNGaVlyY1VrX2dmaVNfaklBVTRJM1gycUdDSlppOXMyZU5xTUdKb0ZaMlN2OUdST2FVbUlqV0FTb2Z6QQ?oc=5",
-    "publisher": "Vet Candy",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation    Vet Candy "
    },
    {
     "title": "Which of these species does not live in the Eastern Himalayas?",
@@ -822,12 +831,12 @@
     "description_excerpt": " Which of these species does not live in the Eastern Himalayas?    World Wildlife Fund "
    },
    {
-    "title": "Poop loop: Why climate policy must count our wild animals",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ1RRYy1lSzhpbWx6UnZCNU5JSDIyODEyVkt6YlZidWU5NXNUNmVTenNuNzdCem85aE5rc1RYand2ay00a2JkYS0xMEpwbFdWQUptSXdWbnYyM0c2WmhWT2YxcmRFdEN0ZlJZREpBSEMtNXFSVHdodnpUSWowT2d4Ni1LbFVEcDIxaEFhUUoySnhyamRsaUE0MkVIZVVkenBOQy1Ub2VncS1hRzdKWUZLVF9pODJ3Qks0ZUE?oc=5",
-    "publisher": "Oceanographic Magazine",
+    "title": "Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc0JTN25tcWRlcHJnbGxkbm9la2FYUVMyNmJobjhQSjlsb2tocW5LMzB3bFVCeC1yT0tOcTd0RjNQRWdDZHctcE56UVo5cEdTOV9IaDZxOE9EODFyZmRXSkxvRUltanctZXhkTVRldXo5UF9RRjZYTnNsUFAxOWFJQU0xdFotLWt6d3ZOMmNvejdadXNGaVlyY1VrX2dmaVNfaklBVTRJM1gycUdDSlppOXMyZU5xTUdKb0ZaMlN2OUdST2FVbUlqV0FTb2Z6QQ?oc=5",
+    "publisher": "Vet Candy",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Poop loop: Why climate policy must count our wild animals    Oceanographic Magazine "
+    "description_excerpt": " Krill Oil in Pet Food and Supplements Raises Concerns Over Antarctic Wildlife Conservation    Vet Candy "
    },
    {
     "title": "New PA climate plan set to protect parks",
@@ -846,28 +855,44 @@
     "description_excerpt": " Wildlife and Nature Books for Gift-Giving    The Revelator "
    },
    {
-    "title": "“If they could do this almost 100 years ago, could we replicate it in a modern-day maritime version?” The 1930s US president who inspired marine conservation scheme",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZ3BHVFE3c1lrNUpkejNYbFR4S2FkdE0zT0w4Y1phNHF5bzVOenBWVXQ0NjQxOXJ6YUp4Ny1lMFBMUW9IQWN1bVJkQXlaMmY1OWFvMUU4aG5WcE1MVDlseGwwbjZoQnRmdFpqUVZUN1l4ZWVWczZDaXlmNE5JTW9QMA?oc=5",
-    "publisher": "BBC Wildlife Magazine",
+    "title": "2026 WWF EFN Grant Recipients",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWlBEUy0wTEsyYzJ1WVhFcGh2RlF6aFlXODQ4VmxZNm4xdlRfbTFwMVR6TTNmSm4wNl9PeTlaQzZXcXplcjR1b2EyNXJvcTlVLUhacFQ3S2ZrVXRVTlVpMzdGYTRrb3dodUwxazZCRXRQMWNnSzBtTGtHVl9TY3hraUwwSnVCb3FBTU5rdVJmNV84Q19PeGpVcnJaRGtEaHhlNGNHTGtxQ2hmc2pubGZYeTJWeUs0SWRVMi1sM2h5UVlOVkdJWG9zV2JUcEpxZGUyNmF6MHI4S1RNRWdvODVBNVo2WkhYSlU2VlFaVDlVUQ?oc=5",
+    "publisher": "World Wildlife Fund",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " “If they could do this almost 100 years ago, could we replicate it in a modern-day maritime version?” The 1930s US president who inspired marine conservation s"
+    "description_excerpt": " 2026 WWF EFN Grant Recipients    World Wildlife Fund "
    },
    {
-    "title": "Jimmy Carter hunted turkey on this Georgia land, and his family farmed peanuts there. Now it is set to open to the public as a wildlife area",
-    "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPVHl3M05Wc3JGaFJfZV8tV08yZ2M2cjZfMkt6MndhVGxicGxrMWE5aTBEZ21JX0ZYYzhnTXUtTGhqX2ZFUjZkM2ZqcllEZFNLUmxubnoxcDB3SGxBWlRfTG1IdGhlWDFJRHo0aExzUUpQTV9YcGZLRVdydjQtY1JTdElmMU8tQW12a0d1dzRNcGdwd3hxTHV2VFptdTZELWdOb2pyeEtDblM5cU92Mzk3NVI2NFpJMVotRl9kdl9fRVV4amQxczdLWHF3YW5ZUUxCY1dVRDRBb0l0SlY5UjVYa3hfY3Q3c0FoN2FOeEdTZXRsNDZiM2EzbldHa25aUXV1Y3c3aVlrbXFnMS1CTHV4LU1n?oc=5",
-    "publisher": "Futura, le média qui explore le monde",
+    "title": "Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMmNMY0N2aTR3akpsbWNCYkV6U05nRHkyazZOQkYxYVlYa2pjT1FrWkxxUllxUnl0QWFjWVM1SDBrc2FjcWUyb215dVlIWGUtTEhUTjJvRDQ2dV9BZU80NGtJenY0Z29xSnJFeWZxZlE3bEt5MVlGQ2ZSa3pYZUxCY0VDSlhmQXVPbHlCUUhaX3VBd3NvV21xTXlMTjJlVEsyMTJPSHBmbl9LOVp6akZ6SHZQTy1rZk1WOVl5c0ZqaTBNbWxBSnozdjA1TGlQaVZiYURuVVNR0gHbAUFVX3lxTE83SDRYa0t3U1h1NUVoUkpwcUdEcTZkTFlTQUFiVmR5bndhX1ZXMU56RHNWbUFIclhITjc5VVFwcDlDRlJiQ010VkVvYmdma2V3bEF2MlZoQUFuTk1pZk9RUkdObThIX0RWSVhNQ3B0UmYwQXFpY181OG9aUVA1NG5Xa18yTW5ENVdNRUxBRzdkc3dWZHVCTlItSGYtME1zNVM0M0g4QmF1bE5YODcydjNTZEFZOUNXLUpzYWxXQ1FpQVdyVEdjVWM1OWhZdUI5dmJRUjdlV0JGekZpWQ?oc=5",
+    "publisher": "TheWire.in",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Jimmy Carter hunted turkey on this Georgia land, and his family farmed peanuts there. Now it is set to open to the public as a wildlife area    Futura, le médi"
+    "description_excerpt": " Adani Slashes Maharashtra Project Cost by 99% in Affidavit, Conservation Dues Shrink by Rs 225 Crore    TheWire.in "
    },
    {
-    "title": "A Changing Climate May Expand Ibisbill Habitat, but Mining Threatens Its Survival",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOLWtYSWg3ZnNaUm91WF82RGk3dDNUOFBHNVdFUWpYR2tzZFg0MHdzV1hadHo2ZTFPSXdiMFRLLWk5UVVSRmZFQnQ4c19Gdjg4TjVIRHdGV3NXZTdtNHhfZVlFZ3E2MDBQd3B5ZV84N0d2TkZ3Ull3WnRCdWtaclhFc2dKVkNJT0NlOTg1OHlGLTQzblFGWFY4azVDcE5TeVlhRmxQVXdZRENZZ1hPUTQtVXZSbU9OXzZ3Ynl5ZFBVZw?oc=5",
-    "publisher": "Ground Report",
+    "title": "THIS WEEK IN CLIMATE ACTION – NOVEMBER 13, 2026",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdDFSREpzTVhNUjNuaU5rc3lpWTlFTlJNc1JtZFJjaVE4c0RUak12WUlCQWlKR1BQcllxU1JpdlNyMmZuZTM0a054TEx4YWh3N0dDQTNtaTJhajZOdDJFaVV0QUtZZUNiTWhNVFdWeEw2ZU43ZlhNVXBhS2hWNmg3QVFkYmQ?oc=5",
+    "publisher": "League of Conservation Voters",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " A Changing Climate May Expand Ibisbill Habitat, but Mining Threatens Its Survival    Ground Report "
+    "description_excerpt": " THIS WEEK IN CLIMATE ACTION – NOVEMBER 13, 2026    League of Conservation Voters "
+   },
+   {
+    "title": "Wild Facts About Snowy Owls",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1qY0FvRGp6OGx6R1VxQ0JHeFZldFB2dXhneXlHTVM4V1ZVQldUR1V6NF81b1ZlcnV0NEZRN3duek5HTG1wTlZNd3ZnYWNhWXFFaGJfaVJyVmkzZjA2VUVpRVo5N20?oc=5",
+    "publisher": "Bluedot Living",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Wild Facts About Snowy Owls    Bluedot Living "
+   },
+   {
+    "title": "Jersey Zoo plans to expand orangutan and gibbon facilities",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5UktWOHpTUEFueFVGZ1FTaWxmTUg0VkVLME9xVll0bExJYXpRTnFKZXBLQTVHdENfT1VXSUdxTmR2YjhHcl9DaXBWa2JSaTY1S2FObFEtZHJUSkk?oc=5",
+    "publisher": "BBC",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Jersey Zoo plans to expand orangutan and gibbon facilities    BBC "
    },
    {
     "title": "State loses 795 sq km of forest cover in a decade",
@@ -876,173 +901,149 @@
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " State loses 795 sq km of forest cover in a decade    Nagaland Post "
-   },
-   {
-    "title": "Remote Pacific atoll survey reveals our 'most intact ecosystems'",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdEVqb29pNnN1U1pCaWtZMFpMVU1CQ1VfdUlNZmVVRWh3c0hpUEgtNmNsUHBDRlpBb1ZsV1l6d1JfNjBESTRxRF9VTzdlRl9QSWUxamExdXpYQ0p3eDhRSEx3SkoxYzBhX0c1RFdMdVZhUW10SGl5UWp5aW42RjA3YkJWTFBRemNLdnpIZW5EZmx5eHozbE1yclNFeE10VFp2Q2w0Ug?oc=5",
-    "publisher": "Oceanographic Magazine",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Remote Pacific atoll survey reveals our 'most intact ecosystems'    Oceanographic Magazine "
-   },
-   {
-    "title": "Adani slashes Maharashtra power project cost by 99%, its forest dues plummet; Centre orders probe",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU3k5SXVSejRIcHE5QU9LbThiTXI2elVPeTdnVHZSZ1lYTXQwcW01ejhNbmt1NDk0SzhjRGZ2U1hTVzVOeW1jNWk5MDkzaXYyc25TaFpEX2Z0OWVka01rVm45b0xVRzJSeThoamJ3ejlUbXlMX0tqclRCSXVVVXlYQ0podXZOMHRGN0Jwd1RCZm9yYmdrV0pzcGljNTluc19tWHpHRkZxd3kyVWZJNDdxa0l6MERuTGNpbHBiblc3b9IBxgFBVV95cUxQMFVULTJQYmVKMHRsVThlRVgwNmVWSmZIeENHYkYyZWIxN3pHS1BPQnY5bFdPSHg3NFo0dkpNZjdEWXctLUdKNU9CZzN3RFdVdFctanZJNTBaZFpiZGd3T2t4M1kxQ0FScVVRbndPTXYxYXRRbzJMSGlwRjFNU3pzOEZ1MXozSGFMeGNRMTJBQmM3X1h0ZkdWRXh0aWtKVnc0WTlVMzIyNjhHeHVNQlU4Zk55ZlRzZkJ1b2xRNXJ3dFZib3NtV3c?oc=5",
-    "publisher": "The Indian Express",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Adani slashes Maharashtra power project cost by 99%, its forest dues plummet; Centre orders probe    The Indian Express "
-   },
-   {
-    "title": "Conservation in a changing climate gets a research boost",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPc3o1RXBzSDExZnVsc3IyVlFWdFFIbjdTVWZMQy1LdzFwVHJxTVRYbldPUnFxbUxSVnV1VzNxM2VZMW40a1ljSEZDdHVBREx2ZDFUOHhBOWxGMzdGT2dFQV9tc1JoODg1MktRNlhEMEdFNWFkb2pLUkFqdmxZR0Ytem9LejBKWUoyVFlZWEFiOERGeGhC?oc=5",
-    "publisher": "SAPeople",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Conservation in a changing climate gets a research boost    SAPeople "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Vietnam",
-   "largest_label_articles": 28,
-   "share_of_country_labelled_articles": 0.079
+   "largest_label_articles": 34,
+   "share_of_country_labelled_articles": 0.114
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 293,
-  "unique_google_urls_not_in_direct_sample": 346,
+  "unique_direct_urls_not_in_google_sample": 202,
+  "unique_google_urls_not_in_direct_sample": 359,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "AllAfrica East Africa": 30,
-   "AllAfrica Southern Africa": 29,
-   "AllAfrica West Africa": 29,
-   "The Guardian World": 21,
-   "France24": 20,
-   "Al Jazeera": 19,
-   "France24 FR": 17,
+   "Al Jazeera": 20,
+   "France24 FR": 19,
+   "France24": 18,
    "ABC Australia": 16,
+   "AllAfrica East Africa": 16,
    "France24 ES": 16,
-   "DW World": 12,
-   "The Diplomat": 11,
-   "AllAfrica Central Africa": 11,
+   "AllAfrica West Africa": 15,
+   "The Guardian World": 15,
    "BBC World": 10,
+   "AllAfrica Southern Africa": 9,
    "RNZ National": 9,
-   "The Guardian Environment": 6,
-   "Mongabay Global": 5,
-   "Mongabay Latam": 5,
-   "UN News": 4,
+   "DW World": 9,
+   "AllAfrica Central Africa": 5,
    "BBC Europe": 4,
-   "The Conversation Brasil": 3,
-   "BBC Asia": 3,
+   "Mongabay Global": 4,
+   "BBC Science": 3,
+   "The Guardian Environment": 3,
+   "BBC Africa": 3,
    "BBC Brasil": 3,
    "Mongabay Indonesia": 3,
-   "Guardian Africa": 2,
-   "BBC Science": 2,
-   "BBC Business": 2,
    "The Conversation France": 2,
+   "The Diplomat": 2,
+   "Mongabay Latam": 2,
+   "BBC Asia": 2,
    "NPR World": 1,
+   "Global Voices Spanish": 1,
+   "BBC Latin America": 1,
+   "Global Voices English": 1,
    "RNZ World": 1,
-   "The Conversation Africa": 1
+   "RNZ Pacific": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 356,
-  "country_labels_count": 86,
+  "country_labelled_articles": 298,
+  "country_labels_count": 78,
   "top_country_subjects": {
-   "Vietnam": 28,
-   "Nigeria": 27,
-   "United States": 19,
-   "Mexico": 16,
-   "Kenya": 14,
-   "China": 14,
-   "Ukraine": 12,
-   "Israel": 10,
-   "Spain": 10,
-   "South Africa": 9,
-   "France": 9,
+   "Vietnam": 34,
+   "Mexico": 18,
+   "France": 17,
+   "Nigeria": 16,
+   "United States": 15,
+   "Ukraine": 11,
+   "Israel": 9,
    "India": 9,
-   "Australia": 8,
-   "Namibia": 8,
    "Colombia": 8,
-   "Iran": 8,
-   "Malawi": 7,
+   "China": 8,
    "Canada": 7,
-   "Brazil": 6,
-   "Puerto Rico": 5,
-   "Rwanda": 5,
-   "Indonesia": 5,
-   "Mozambique": 5,
-   "Peru": 4,
-   "Uganda": 4,
-   "Russia": 4,
-   "Bolivia": 4,
-   "Sudan": 3,
+   "Australia": 6,
+   "Kenya": 6,
+   "Spain": 6,
+   "Iran": 5,
+   "Russia": 5,
+   "Bolivia": 5,
+   "South Africa": 5,
+   "Namibia": 4,
+   "Puerto Rico": 4,
+   "Sudan": 4,
+   "Kazakhstan": 4,
+   "Hungary": 4,
+   "Rwanda": 3,
    "Germany": 3,
-   "Venezuela": 3
+   "Peru": 3,
+   "Venezuela": 3,
+   "Brazil": 3,
+   "Ethiopia": 3,
+   "New Zealand": 3
   },
-  "distinct_geographic_signal_centers": 261,
+  "distinct_geographic_signal_centers": 252,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 73
+   "mapped_pre_dedupe": 90
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 56
+   "mapped_pre_dedupe": 45
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 80
+   "mapped_pre_dedupe": 90
   },
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 46
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 84
+   "mapped_pre_dedupe": 91
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 55
+   "mapped_pre_dedupe": 44
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 79
+   "mapped_pre_dedupe": 89
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 58
+   "mapped_pre_dedupe": 46
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 50
+   "mapped_pre_dedupe": 58
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 116
+   "mapped_pre_dedupe": 117
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 85
+   "mapped_pre_dedupe": 91
   }
  },
- "duplicates_removed": 469,
+ "duplicates_removed": 480,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1060,39 +1061,39 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-14T09:00:34+00:00",
-    "mapped_articles": 629,
-    "geographic_signals": 389,
-    "feeds_ok": 170,
+    "at": "2026-11-14T15:51:09+00:00",
+    "mapped_articles": 545,
+    "geographic_signals": 359,
+    "feeds_ok": 169,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 26,
+    "rejected_matching_occurrences": 16,
     "ambiguous_mapped_signal_count": 1
    }
   ],
   "latest": {
-   "at": "2026-11-14T09:00:34+00:00",
-   "mapped_articles": 629,
-   "geographic_signals": 389,
-   "feeds_ok": 170,
+   "at": "2026-11-14T15:51:09+00:00",
+   "mapped_articles": 545,
+   "geographic_signals": 359,
+   "feeds_ok": 169,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 26,
+   "rejected_matching_occurrences": 16,
    "ambiguous_mapped_signal_count": 1
   },
   "recent_change": {
-   "baseline_at": "2026-11-14T09:00:34+00:00",
+   "baseline_at": "2026-11-14T15:51:09+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Forest": 17,
-   "Union": 9
+   "Forest": 11,
+   "Union": 5
   },
   "ambiguous_mapped_review": [
    {
     "name": "Ontario",
     "category": "education",
-    "sampled_article_count": 2,
+    "sampled_article_count": 1,
     "review_reason": "ambiguous_place_name_needs_manual_review"
    }
   ],
