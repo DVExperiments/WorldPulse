@@ -1,14 +1,14 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-11-18T09:12:32.667137+00:00",
+ "updated_at": "2026-11-18T18:07:59.907216+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 111,
+   "successful_nonempty": 112,
    "successful_empty": 9,
-   "transport_failure": 1,
+   "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [
@@ -22,24 +22,23 @@
     "google/environment/CA",
     "google/hazards/BR"
    ],
-   "failure_samples": [
-    {
-     "source": "google/community/NG",
-     "error": ""
-    }
-   ]
+   "failure_samples": []
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 50,
+   "successful_nonempty": 49,
    "successful_empty": 0,
-   "transport_failure": 2,
+   "transport_failure": 3,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
    "failure_samples": [
     {
      "source": "direct/CBC World",
+     "error": ""
+    },
+    {
+     "source": "direct/UN News",
      "error": ""
     },
     {
@@ -103,7 +102,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "fed952a9e56ffe0e2be7bfbac5df5aa8dddca5d484673de59acc9e552e0fba2e",
+  "frozen_snapshot_fingerprint": "e62e1ec1191af171a30b9df1b2c01b006fbc18c059ec3af7cab911b8f8828092",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
