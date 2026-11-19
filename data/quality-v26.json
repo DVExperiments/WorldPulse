@@ -1,38 +1,50 @@
 {
  "schema": 1,
  "release": "v2.6.0",
- "updated_at": "2026-11-19T07:58:32.189633+00:00",
+ "updated_at": "2026-11-19T17:24:34.733100+00:00",
  "mode": "conservative_live_lexical_withholding_plus_observation",
  "lexical_suppressed_total": 0,
  "lexical_suppressed_by_reason": {},
  "lexical_suppressed_examples": [],
  "deduplication_review": {
-  "canonical_same_place_repeats": 525,
-  "cross_place_url_occurrences": 0,
-  "cross_place_examples": [],
+  "canonical_same_place_repeats": 523,
+  "cross_place_url_occurrences": 3,
+  "cross_place_examples": [
+   {
+    "url": "https://www.france24.com/es/europa/20261119-los-aliados-de-ucrania-se-re%C3%BAnen-en-berl%C3%ADn",
+    "first": "China",
+    "second": "Kyiv"
+   },
+   {
+    "url": "https://www.france24.com/es/asia-pac%C3%ADfico/20261118-en-directo-trump-es-recibido-por-xi-jinping-y-estrecha-la-mano-a-putin-en-su-llegada-a-la-cumbre-apec",
+    "first": "Shenzhen",
+    "second": "Réunion"
+   },
+   {
+    "url": "https://www.france24.com/es/asia-pac%C3%ADfico/20261118-en-directo-trump-es-recibido-por-xi-jinping-y-estrecha-la-mano-a-putin-en-su-llegada-a-la-cumbre-apec",
+    "first": "Shenzhen",
+    "second": "China"
+   }
+  ],
   "note": "Cross-location reuse is not automatically incorrect; preserve separate evidence-backed assignments."
  },
- "top_publisher_share_pct": 5.3,
+ "top_publisher_share_pct": 4.2,
  "top_publishers": [
   {
    "publisher": "Vietnam.vn",
-   "mapped_rows": 69
+   "mapped_rows": 51
   },
   {
-   "publisher": "AllAfrica West Africa",
+   "publisher": "AllAfrica East Africa",
+   "mapped_rows": 30
+  },
+  {
+   "publisher": "Al Jazeera",
    "mapped_rows": 29
   },
   {
    "publisher": "AllAfrica Southern Africa",
    "mapped_rows": 29
-  },
-  {
-   "publisher": "Al Jazeera",
-   "mapped_rows": 28
-  },
-  {
-   "publisher": "AllAfrica East Africa",
-   "mapped_rows": 28
   },
   {
    "publisher": "The Guardian World",
@@ -43,41 +55,45 @@
    "mapped_rows": 25
   },
   {
+   "publisher": "AllAfrica West Africa",
+   "mapped_rows": 25
+  },
+  {
+   "publisher": "www.tmgm.com",
+   "mapped_rows": 20
+  },
+  {
    "publisher": "France24",
-   "mapped_rows": 23
-  },
-  {
-   "publisher": "France24 FR",
-   "mapped_rows": 22
-  },
-  {
-   "publisher": "France24 ES",
-   "mapped_rows": 19
-  },
-  {
-   "publisher": "Bioengineer.org",
    "mapped_rows": 18
   },
   {
-   "publisher": "BBC World",
+   "publisher": "ReliefWeb Updates",
    "mapped_rows": 17
   },
   {
-   "publisher": "ReliefWeb Updates",
+   "publisher": "AllAfrica Central Africa",
    "mapped_rows": 16
   },
   {
-   "publisher": "The New York Times",
+   "publisher": "BBC World",
    "mapped_rows": 15
   },
   {
-   "publisher": "Facebook",
-   "mapped_rows": 15
+   "publisher": "BBC",
+   "mapped_rows": 13
+  },
+  {
+   "publisher": "ABC Australia",
+   "mapped_rows": 12
+  },
+  {
+   "publisher": "France24 ES",
+   "mapped_rows": 12
   }
  ],
- "unmapped_rows": 1293,
- "mapped_raw_rows": 1302,
- "mapped_signal_groups": 452,
+ "unmapped_rows": 1351,
+ "mapped_raw_rows": 1225,
+ "mapped_signal_groups": 398,
  "history_samples": 96,
  "geographic_attribution": "Geographic subject, not verified incident site",
  "limitations": [
