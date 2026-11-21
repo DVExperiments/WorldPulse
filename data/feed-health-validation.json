@@ -1,40 +1,44 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-11-21T03:59:54.369665+00:00",
+ "updated_at": "2026-11-21T12:42:11.978995+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 116,
-   "successful_empty": 5,
+   "successful_nonempty": 108,
+   "successful_empty": 13,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [
+    "google/politics/GB",
+    "google/politics/AU",
+    "google/politics/NG",
+    "google/politics/CA",
     "google/environment/GB",
     "google/environment/AU",
     "google/environment/NG",
     "google/environment/CA",
-    "google/hazards/BR"
+    "google/hazards/BR",
+    "google/rights/GB",
+    "google/rights/AU",
+    "google/rights/NG",
+    "google/rights/CA"
    ],
    "failure_samples": []
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 49,
+   "successful_nonempty": 50,
    "successful_empty": 0,
-   "transport_failure": 3,
+   "transport_failure": 2,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
    "failure_samples": [
     {
      "source": "direct/CBC World",
-     "error": ""
-    },
-    {
-     "source": "direct/ReliefWeb Updates",
      "error": ""
     },
     {
@@ -98,7 +102,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "91188e885c6f6cf82dbd466d6aa0c5cfda2e5e648d7d5699d1e54e467c5e54c2",
+  "frozen_snapshot_fingerprint": "2805866444ebb63d0726e964fd0460f1cbd27d41fc16dac1280557329a62e7e1",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
