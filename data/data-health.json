@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-22T21:17:59.262883+00:00",
+ "updated_at": "2026-11-23T01:59:23.668142+00:00",
  "feeds_total": 173,
  "feeds_ok": 171,
  "feeds_failed": [
@@ -11,12 +11,12 @@
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 86
+   "mapped_pre_dedupe": 79
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 81
+   "mapped_pre_dedupe": 58
   },
   "IN": {
    "total": 11,
@@ -26,121 +26,113 @@
   "AU": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 57
   },
   "ZA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 73
+   "mapped_pre_dedupe": 94
   },
   "NG": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 60
   },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 88
+   "mapped_pre_dedupe": 77
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 61
+   "mapped_pre_dedupe": 57
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 54
+   "mapped_pre_dedupe": 42
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 133
+   "mapped_pre_dedupe": 131
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 91
+   "mapped_pre_dedupe": 75
   }
  },
  "mapped_articles_by_category": {
-  "education": 46,
-  "science": 42,
-  "community": 155,
-  "society": 42,
-  "economy": 79,
-  "health": 55,
-  "politics": 36,
-  "conflict": 39,
-  "environment": 36,
-  "rights": 10,
-  "hazards": 3
+  "education": 53,
+  "community": 184,
+  "society": 38,
+  "politics": 45,
+  "conflict": 36,
+  "environment": 35,
+  "economy": 61,
+  "health": 46,
+  "science": 24,
+  "rights": 9,
+  "hazards": 1
  },
  "mapped_articles_by_location_precision": {
-  "country": 282,
-  "place": 250,
-  "region": 11
+  "country": 273,
+  "place": 246,
+  "region": 13
  },
  "location_evidence_counts": {
-  "description": 129,
-  "headline": 414
+  "description": 107,
+  "headline": 425
  },
  "geographic_quadrants": {
-  "NE": 275,
-  "NW": 160,
-  "SE": 56,
-  "SW": 52
+  "NE": 254,
+  "NW": 165,
+  "SE": 60,
+  "SW": 53
  },
- "geo_signal_count": 352,
- "mapped_total": 543,
+ "geo_signal_count": 339,
+ "mapped_total": 532,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1198,
- "unmapped_distinct_titles": 551,
+ "unmapped_sample_count": 1131,
+ "unmapped_distinct_titles": 528,
  "unmapped_by_feed": {
-  "Google News PH": 149,
-  "Google News US": 148,
-  "Google News KE": 133,
-  "Google News MX": 127,
-  "Google News IN": 117,
-  "Google News ZA": 112,
-  "Google News BR": 78,
-  "Google News GB": 63,
-  "Google News CA": 51,
-  "Google News AU": 50,
-  "Google News NG": 49,
-  "RNZ National": 18,
-  "ABC Australia": 16,
-  "BBC Science": 12,
-  "BBC World": 11,
-  "BBC Brasil": 9,
-  "France24": 6,
-  "Al Jazeera": 5
+  "Google News ZA": 131,
+  "Google News MX": 123,
+  "Google News US": 114,
+  "Google News IN": 113,
+  "Google News PH": 111,
+  "Google News KE": 108,
+  "Google News BR": 79,
+  "Google News CA": 61,
+  "Google News AU": 57,
+  "Google News GB": 56,
+  "Google News NG": 54,
+  "RNZ National": 19,
+  "ABC Australia": 14,
+  "BBC Science": 10,
+  "BBC Brasil": 8,
+  "BBC World": 7,
+  "Al Jazeera": 7,
+  "The Guardian World": 7
  },
  "unmapped_examples": [
   {
-   "title": "Parents and schools must guide learners towards responsible social media use",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONjRnMXFFYmpocTE3cDk0MTdSUTFqNjBqa3dBckNKZEtXUjN2OUZ2YTVDSzRjNlVuRWFiNkNaSDFpMThRYjNVUW9BTFVobExuV25kVG82dE9nSmJFeTZuMUtJcFl0aXUyUEI1MjcwSGNHd2hoblk4YWQyMjdNNEUxa04zZm9aQld3X3BPZ2o1Y2gwQlhLRXZwWXpaY09vLUExR21ldVRic0hMX0RsWGc?oc=5",
-   "publisher": "Education News",
-   "feed_occurrences": 7,
-   "feed_count": 7,
-   "description_excerpt": " Parents and schools must guide learners towards responsible social media use    Education News "
+   "title": "Columbia University student detained by Homeland Security agents in dorm released - ABC News",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYjFIUEc1bm9lWlItR1NjYldPUFVvRjJ1OTBRNHdMazdYSEhsUDA0bndvWDA4YTJZUXdqTkFsNnZHdDNXNDRxT3BCZWdDd2dRZ3RsUlpFV2NodTBQb3NBaEhaVVJsYzczMHF4M3dUenVoS05YeWV0TENIVEN1bGRyX212Si1KMlByS25yZDFJSF9DTTczQTlqUmNLYUZHbGgyaVdwWXZuRVVVNEdq0gGyAUFVX3lxTE5wZ21SbkpzUGM3RkJJLTdlOWd5NmxtbHhVRm52SGZTTDRNUkoxenQwWFlTRWhRWjZKZGx4eGZ6amw5WU9PZTFZOGk3MHFkeWRkZl9QQXlHWXlvTzVyelZwcDVXeUoxNC1RdXZSREFHT2FRVVZTSl9NajJ6X3lUWmc0V1JVMjZUbWRwc3dsUGdla2ZhblNXc185MWtwbmFTYjZmdFloc2FaQnQ1N3I4WWJ0aVE?oc=5",
+   "publisher": "ABC News - Breaking News, Latest News and Videos",
+   "feed_occurrences": 10,
+   "feed_count": 5,
+   "description_excerpt": " Columbia University student detained by Homeland Security agents in dorm released    ABC News - Breaking News, Latest News and Videos "
   },
   {
    "title": "AUD/USD Outlook: Macro Forces Collide Ahead of US, AU Inflation",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQM1AyN2VlMk9LcjVfdkFKMTlhTVB2VEUtUFhJbTZUTmxlQUNYMzZSYS1Fb0g1LWJCN2N5WWo2X2k4elJYUUpOb2RDWWJucE50SzVTNHJMZHlNNTZZaGI3TGE0NGIxR1VZeHVrbHJYRHNuUElOV1ZtWTNRN1NGMGExSG9iMndJVzJ2dC1kTWtyRzktMFBmbkxKd2ZfUjJWQ3pqdXpIYmxSWUhTMS0tVEtoVTBndmRYUzk10gG4AUFVX3lxTFAzUDI3ZWUyT0tyNV92QUoxOWFNUHZURS1QWEltNlRObGVBQ1gzNlJhLUVvSDUtYkI3Y3lZajZfaTh6UlhRSk5vZENZYm5wTnRLNVM0ckxkeU01NlloYjdMYTQ0YjFHVVl4dWtsclhEc25QSU5XVm1ZM1E3U0YwYTFIb2Iyd0lXMnZ0LWRNa3JHOS0wUGZuTEp3Zl9SMlZDemp1ekhibFJZSFMxLS1US2hVMGd2ZFhTOTU?oc=5",
    "publisher": "FOREX.com",
-   "feed_occurrences": 9,
+   "feed_occurrences": 10,
    "feed_count": 5,
    "description_excerpt": " AUD/USD Outlook: Macro Forces Collide Ahead of US, AU Inflation    FOREX.com "
-  },
-  {
-   "title": "Columbia University student detained by Homeland Security agents in dorm released - ABC News",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYjFIUEc1bm9lWlItR1NjYldPUFVvRjJ1OTBRNHdMazdYSEhsUDA0bndvWDA4YTJZUXdqTkFsNnZHdDNXNDRxT3BCZWdDd2dRZ3RsUlpFV2NodTBQb3NBaEhaVVJsYzczMHF4M3dUenVoS05YeWV0TENIVEN1bGRyX212Si1KMlByS25yZDFJSF9DTTczQTlqUmNLYUZHbGgyaVdwWXZuRVVVNEdq0gGyAUFVX3lxTE5wZ21SbkpzUGM3RkJJLTdlOWd5NmxtbHhVRm52SGZTTDRNUkoxenQwWFlTRWhRWjZKZGx4eGZ6amw5WU9PZTFZOGk3MHFkeWRkZl9QQXlHWXlvTzVyelZwcDVXeUoxNC1RdXZSREFHT2FRVVZTSl9NajJ6X3lUWmc0V1JVMjZUbWRwc3dsUGdla2ZhblNXc185MWtwbmFTYjZmdFloc2FaQnQ1N3I4WWJ0aVE?oc=5",
-   "publisher": "ABC News - Breaking News, Latest News and Videos",
-   "feed_occurrences": 7,
-   "feed_count": 5,
-   "description_excerpt": " Columbia University student detained by Homeland Security agents in dorm released    ABC News - Breaking News, Latest News and Videos "
   },
   {
    "title": "French government pulls through no-confidence vote in parliament",
@@ -167,6 +159,14 @@
    "description_excerpt": " Strongman’s Son Nominated for Premier of Bosnia’s Serb Entity    Bloomberg.com "
   },
   {
+   "title": "Gadi Eisenkot invites Netanyahu's Likud party for coalition talks",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZnFWVnVKdVBWYnNPRmdZei0wcHJZOEFIVTQyT0ExX0haU1hFS04yOWxEZ1EtaGx6d1FpVllPMmdGendkNGwxTllZQTNIQmpYSEZ3T3dCMThWMjdZbTk0Q2dKNUQ0X0xqdEh2UXctSHphbkd6TzNwaGNYSWJOOFBpZFJYdjlJREV3RlF5YVRhNVBKMTNrUXVlb00zSUtzUksxMU9XcjRBR05HcXpjbHc?oc=5",
+   "publisher": "Euronews.com",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Gadi Eisenkot invites Netanyahu's Likud party for coalition talks    Euronews.com "
+  },
+  {
    "title": "Which 'Government' Will Erhürman Have by His Side After 6 December? - POLITIS",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRHlHOWV0V2xoaURCcHVsRE53TWlUeUI3NmNNSTR0R0pOQ1EzYmxCenFGa1NBQjlxVUhpcFVfYmd3THYtb3FaZ2pSQnNsZ3ZtSGhWMVJnckFhX1BXQmlVRjFsZnFhVm1EVzNfRm5RTXpWd1JFVmtFYllrRHNEclotLXBmQWpRVXVpTXVhTDd3bVg0dFh3djZ4QTlWSzFUX0VJRmt1WU9WNjFDeWM?oc=5",
    "publisher": "POLITIS - To the point",
@@ -183,20 +183,28 @@
    "description_excerpt": " SNP to put Burnham in power in hung parliament over Farage with 'no upfront demands'    The Herald "
   },
   {
+   "title": "Viewpoint – From selection to election",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdkZ1WVQ0cHdLVV9VR0cyUk5xMXUtTF8ySk9WVGxRN2lha2xwNGRFSlV4VXJKM2NMc0NDb0NYOUNIV1FyUTdxdzQzZDNHcmwyYTRScWtXNzhvZjBUUENndUV5cFJTQmdRTWdlb1djMDVtV2JxSXpHcW14blFlNlp3dkJB?oc=5",
+   "publisher": "Local Matters",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Viewpoint – From selection to election    Local Matters "
+  },
+  {
+   "title": "Labor faces wipeout in brutal new poll",
+   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOVVRzWUVNNTBYSnBOZms4R0x4ZmFpTGk4ZjIzbVJHUmctRnpkVUQ2VElESFRfQlRhN3MwdTY3MUZvMnBKYkZST1h4aERoZk9kRnB1aFlKVXBJeXNUZFc1V09jOVptQTgxQXNjVFVMZ01abHB3bDUzblhvRm10aGR2RklsVS1yMWlJblNBcm5pV3lDa0hhOEVONVBCYjRUNnVYTkNMVnI5d3VNd1JZaFhRVXA2ZHhZbnhRcFFhVXhPODVLejZzY2lJZDZiZVVLVUQwYkpyZGx1c1NKem9ibU5vay1ZSWVEYndIV0ExZlZVWmdLQVQ0LXpwRjktdEFla3FuVVM4THJuZGthZGFKa0dodU9lVdIBmAJBVV95cUxQNTBuRUpHREM1YTBZdU12cktheDhGamN2VnlYaEo1enk0LXBKQXozQTVQZkFsTmxGd2drQkFXMW80V3Q1bUltSW1IcThCcVFZeFA4ODBBM0RrX0J3TDI3VU9EeFo4dzRaRGZCczU3ZTB5Q0xfbVNudFg3ZGVRNTh4bTVyb0N5QVFUMm0tRGFncUU2ZG9Rak9RdTd3SUQwOS1rYVhFeUNZc25ZRlp2T0FIQmtfWXA1SG56WlQ4Wk1ObHp3clVMZHhIcmFPZWFPTzZMNGxoYzl3cS03elpHT0hrRVY2WnY4cjJ2bEpBVTBQU203ejRWTTMyd2JrYzEyRkpMNnhTZ3ZhcC1hUkdvN1VaSU9aWjl3QXhw?oc=5",
+   "publisher": "News.com.au",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Labor faces wipeout in brutal new poll    News.com.au "
+  },
+  {
    "title": "PSOE-A will stand up this week in Parliament to the \"denialism\" of the PP-Vox Government and to the \"national priority\"",
    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU3BxUGMzaENrQVdfaG5sZUh4YTlnM2lIQkVFUFh6WU1KLVY4NTRhdXFoNF9sSnVLb1lIS1h6WWVVNGdlZVZMTFUxYWVuMEZWcWJMYWhYSzJsa3FwZWtDME54bWFPZld2anlMZlBCdWwwOERTRXFLV2dQVDNpNzgybVlFRktFLXZCU0NzOXFHbmRsNmhxNGFLMVZhdmNBQlF3a0VPR29VVzZ6YUl0cFJLSDlfR3BxUHF6TkF5ano4R0JtLWpYck1hTi1NQUlGYmVkbi1XeEZ0UEFvOE8xR21TLWtOSWcyak9ubHfSAe8BQVVfeXFMUHM5UTFtU1JXZVNLaVNLekRLbmNQdzM0VUd6bWtDNXlBRHNEY2hyOUc4Zkd0emtQb010UjR2SXdramVTNzN6SHlLbXRuMDdHRkp6MV9uOGx1b1Z6NjFFQkppT2E5N3AwTzh4UzVBMzQzVEhrRWp4TjhHUlkzSXlxbFZzdmFDZlRDN3o0TXBhRXhiM0ZMdnRUVGl1OUZ2dUJCVnhva2xkV2lDTFlmdklmdmZpRjBBUFRZaXRKZEFMMUNTb1JtVHA0T3MxX2F2cDllcXczd3gzZ0ZEaFBFTHIwVFhpc1hBTGk2cENMeUlBUDQ?oc=5",
    "publisher": "Demócrata",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " PSOE-A will stand up this week in Parliament to the \"denialism\" of the PP-Vox Government and to the \"national priority\"    Demócrata "
-  },
-  {
-   "title": "Rajendra Rai Enters Parliament for Third Time, Discusses Development and Policy",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4YThaS3NGanJUVjVEQVhvVUJkYXBfVnBqbzlZbm00azl0OHZfVjFFSnZOQXBuN0JrYUNvRTRqdm9aNWpoQlJySEdweUlXZkk3M1dyVy1wam9sR1FXMDdDTkd2VWhTQUdpRGtlU2xn?oc=5",
-   "publisher": "Ratopati",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Rajendra Rai Enters Parliament for Third Time, Discusses Development and Policy    Ratopati "
   },
   {
    "title": "The PP-A will demand from the Government in Parliament that it ensure the \"economic sufficiency\" of pensions",
@@ -207,20 +215,12 @@
    "description_excerpt": " The PP-A will demand from the Government in Parliament that it ensure the \"economic sufficiency\" of pensions    Demócrata "
   },
   {
-   "title": "Why I backed splitting the party vote",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5lTmFHWnVJZ1dNUGVsYkVtbmptcm1MZjIwRjdicXlPd3VPVklqZWFEV3c5R0dnUmo2X0VYd242eUJ6NzFwZ1ZSZlduRWNzVXVCTmtPZnBXZy1kQUdNWUx1N3RwbXp4TkFFa2xBN0duTFpKSDlQMHc?oc=5",
-   "publisher": "Times.co.nz",
+   "title": "Rajendra Rai Enters Parliament for Third Time, Discusses Development and Policy",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4YThaS3NGanJUVjVEQVhvVUJkYXBfVnBqbzlZbm00azl0OHZfVjFFSnZOQXBuN0JrYUNvRTRqdm9aNWpoQlJySEdweUlXZkk3M1dyVy1wam9sR1FXMDdDTkd2VWhTQUdpRGtlU2xn?oc=5",
+   "publisher": "Ratopati",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Why I backed splitting the party vote    Times.co.nz "
-  },
-  {
-   "title": "SNP would vote for Andy Burnham in event of hung parliament, reports say",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPeTJNSDBwLUdqU29rS3RNaXhoRGpjTk9TUWN1OHI2TUpKb0dIdmRSR2xSdU5GMGo3RjBCSXcyMEZuVElYRThxRzRTMnc0WlJhVmNDY2tEZTB6cm9OX3czMzN1Ymgzc28xR2ZkcTh6WHNrb3R6aE5RVzhjdy00SlJheVo3Ul9uSVNxQ0QxX3BvUm4?oc=5",
-   "publisher": "The National Scot",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " SNP would vote for Andy Burnham in event of hung parliament, reports say    The National Scot "
+   "description_excerpt": " Rajendra Rai Enters Parliament for Third Time, Discusses Development and Policy    Ratopati "
   },
   {
    "title": "Why connectivity matters in a changing climate",
@@ -231,12 +231,28 @@
    "description_excerpt": " Why connectivity matters in a changing climate    World Wildlife Fund "
   },
   {
+   "title": "Conservation Group Hits Major Milestone in Elephant Rescue Effort",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYlpYMGR5TjRUMHJQdC13Q01TZUxkX016S2VHV2NyNWhKQ0YwSTFqUTBpcXhiTjAzUThMN05LblZCYThTUkk4bzQ3aXJNLTVpZnZoTjVXVzJUV2V1cy1MM1NYQW42Nk1jWXFtZWdPSWtSVmdvZmY2ZWpIRWdiU1c5cXdROEZIdWpOcXdaaA?oc=5",
+   "publisher": "Earth.Org",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Conservation Group Hits Major Milestone in Elephant Rescue Effort    Earth.Org "
+  },
+  {
    "title": "Antarctic protection stalls again as CCAMLR fails MPA delivery",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU0NSU0V5WGNuYl9qUUNkR25XRWIyQ0pqQTBQNDNWTHFmWDdyZE9YM25BaENNUHRkaHl1VkNUU01lM1lKbW5EbmVfQ3pFMHlNSGtTdHAxZ3N1d0F1MVdCbWpvczBkT0ZZWHhOdDRyOFN0MmQ3UDJiTEpremZVN29oYTA5dUdWbjR4bEw4RnUwMklIZVlSLWNlaXJPNjR5TjRPcFpMXw?oc=5",
    "publisher": "Oceanographic Magazine",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Antarctic protection stalls again as CCAMLR fails MPA delivery    Oceanographic Magazine "
+  },
+  {
+   "title": "At an Italian hedgehog hospital, tiny patients face the strain of a warming climate",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbDNSSjNXTnRsNkFXZWtWS2R2aTBmZEhzYnMzaUZWeHIyQkxUUUlqLUtsYlJDRkNMckNCdnR0Mi1vbUVDWVdTczVvVXpVMVJLcVRUSjZ6OWhnYUswYm1Oc2xJUzFOQUlfemF5NWdxRndJeTB1cy1JZ3M3bzhhcDB5QzRIZ0tMWlk3NlJzREcwRWM2S2pRU3YxREdCZEVlaDZUVlctS3N0UTVxZw?oc=5",
+   "publisher": "WXXV News 25",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " At an Italian hedgehog hospital, tiny patients face the strain of a warming climate    WXXV News 25 "
   },
   {
    "title": "What's next for WWF’s conservation priorities before Congress",
@@ -255,12 +271,12 @@
    "description_excerpt": " Anderson: Minnesota desperately needs a conservation-minded governor. Is it Klobuchar?    Star Tribune "
   },
   {
-   "title": "Something strange is happening beneath Antarctica’s icy waters – and the world could pay the price",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSWZkVjJEZ2twR3dSVDFrSkFQZlU1UGd5WXUxVDdob2lhUkZFMjVCelV2X3d2bFJMVGJuS2hUeE51dGF1Q0dSTEZqVm1JRGo0VTk4d0xhak5GWGJRcmJSUW5WMk1hc0pEUUI4czhCMVJtampMUFJsY1pOWkljNzlyY1V3cl9ZUjBVdnpvVnI3SVd1OG1UdlNfak9wZjdZQQ?oc=5",
-   "publisher": "BBC Wildlife Magazine",
+   "title": "National Zoological Park organizes 22nd Sunday Bird Walk to Promote Citizen Science and Conservation Awareness; Records 45 Bird Species",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aSTVPbUZnazducGhHblJadUZtcVZvZkhFMjFxZmJLaDRvVEJjTURpdVRYSHZDR3Jqd2dPdW54ZXdJNVRKSW9GVkRTaHU2ek1aZElLTFd1ZEd2cU9Bb0VYNE9ocw?oc=5",
+   "publisher": "pib.gov.in",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Something strange is happening beneath Antarctica’s icy waters – and the world could pay the price    BBC Wildlife Magazine "
+   "description_excerpt": " National Zoological Park organizes 22nd Sunday Bird Walk to Promote Citizen Science and Conservation Awareness; Records 45 Bird Species    pib.gov.in "
   },
   {
    "title": "Dozens turn out for Droxford wildlife event",
@@ -271,36 +287,12 @@
    "description_excerpt": " Dozens turn out for Droxford wildlife event    Meon Valley Times "
   },
   {
-   "title": "National Zoological Park organizes 22nd Sunday Bird Walk to Promote Citizen Science and Conservation Awareness; Records 45 Bird Species",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GODlHZFVwTVRMRzVJclBibThaSGlzMC1tSjdEVjNINVhjVjhZRGF0NXBxVjY2V0N6MzNBbDdZdTVmYk0xcHNNRWszZ0ZCVTM0azYyN3I2dE44LU9fM08yUlJHeHRfQWZrcnNB?oc=5",
-   "publisher": "www.pib.gov.in",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " National Zoological Park organizes 22nd Sunday Bird Walk to Promote Citizen Science and Conservation Awareness; Records 45 Bird Species    www.pib.gov.in "
-  },
-  {
    "title": "Local communities should lead nature conservation, says Bhutanese expert Dorji",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBGbHNpZElQM2FMZDZBN3ZtbGdteWVwUVZkaHdRU24xMmdWLXVYdmR6dE16Xzd6bWtMakV1dHNhaWFsY2tJeF9LZHRrbHlIeXdMVUJGVjlVSXU?oc=5",
    "publisher": "Khabarhub",
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Local communities should lead nature conservation, says Bhutanese expert Dorji    Khabarhub "
-  },
-  {
-   "title": "First Lady calls for collective action to protect wildlife while empowering communities",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQkd3TXdXLUxWVUVvQk16b0lnOGNOZ1J3a0NfOGJxNEEtYlBNQmtCMmQ2c1g2OVRMTDQ4aEE2WGxtMlhaVm56Y3kteTdPdE9HQUl3MU9UM1psMjR2VTZLc0dMYUY1c1dwem5Hckt3MjJtNWhsZWEteGkwOFpkcVdKeDBwZEJELUlGRUVhLTJnTWhpWl9Cd2xHNzJSMmhzQS03MHZ5Mk1nMjEwV040RW40a08yVDF3RTVEWlBCTGpn?oc=5",
-   "publisher": "Herald.co.zw",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " First Lady calls for collective action to protect wildlife while empowering communities    Herald.co.zw "
-  },
-  {
-   "title": "Dharitri Youth Conclave: Climate champs to gather for Green Heroes Summit",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSmdxYy04T0FReXZvZnpzQzNKWlV4dFRMR2RLSjFwNGREZ0RvcHNmcjREbXZuYWEzT3FaRVFUbWRiWGZCSncwQmJiYjA1N1RORDZ0X1JITUNjZzljUUxVSTlEbDl1aTJMQm5OT2dCSUlQTThKWW1VdkJoc3V2ci0yR05pakkzSktqZGJBRFVaLTBMQzlmZDdPN0QzRFhCVFc4VHfSAaIBQVVfeXFMUEpncWMtOE9BUXl2b2Z6c0MzSlpVeHRUTEdkS0oxcDRkRGdEb3BzZnI0RG12bmFhM09xWkVRVG1kYlhmQkp3MEJiYmIwNTdUTkQ2dF9SSE1DY2c5Y1FMVUk5RGw5dWkyTEJuTk9nQklJUE04SlltVXZCaHN1dnItMkdOaWpJM0pLamRiQURVWi0wTEM5ZmQ3TzdEM0RYQlRXOFR3?oc=5",
-   "publisher": "OrissaPOST",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Dharitri Youth Conclave: Climate champs to gather for Green Heroes Summit    OrissaPOST "
   },
   {
    "title": "Thousands protest across Europe over living costs and housing",
@@ -319,28 +311,28 @@
    "description_excerpt": " Protests sweep across Europe over living costs, wages, public services    chinadailyhk "
   },
   {
-   "title": "Gen Z protests are making their way to the UK soon",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWEdzYjZMSHViRllTY2hhb295T1dDZHpSbnBKaGxrTGNBdmo3QzNLVnBURTJycFJYMGd3STRvQWZpcEc3NGRhS3lGc0xJZ2FGYWw4WTBadFRuaVpiS0NqNlg3bTJqR3RITmIxR2tDd3Z4emZuRVd4RXZzUHYxWjhacHZUeUFrNEZDWG5QVEJyZ3VCT1lNWGxFS1pR?oc=5",
-   "publisher": "Gulf Today",
+   "title": "The European revolt may be coming to the UK",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPalBaSFIzaXVqVUk1Wk9NTmJhT3Y3dTJ0a2llMXNMaEk1QjZqLW1nN245TWdtb0Q5ZnoySWlLRTFwMlY4eE8xV0M4TTYwMFd5b0tkNmg1d2xBN3hNYU16NE5qNEZEXzJJN2puUjdSamhLTGxWY2MzSFhtSzJSSTlsVHpIdlp1S3FQai1sSXdjV25MYVZncEEwWdIBmAFBVV95cUxPalBaSFIzaXVqVUk1Wk9NTmJhT3Y3dTJ0a2llMXNMaEk1QjZqLW1nN245TWdtb0Q5ZnoySWlLRTFwMlY4eE8xV0M4TTYwMFd5b0tkNmg1d2xBN3hNYU16NE5qNEZEXzJJN2puUjdSamhLTGxWY2MzSFhtSzJSSTlsVHpIdlp1S3FQai1sSXdjV25MYVZncEEwWQ?oc=5",
+   "publisher": "Al Jazeera",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Gen Z protests are making their way to the UK soon    Gulf Today "
+   "description_excerpt": " The European revolt may be coming to the UK    Al Jazeera "
   },
   {
-   "title": "Young People Protest Conscription and Rising Costs Across Europe",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5KUDdMS3UyQmZSMWpsajNRajZuNzRUVnVkY18zWEp5enh0NnExVUZkdWlVWWg0M3lIandVUHpqUlZGQUx1QzhpaG1hbXJPMDR1aHgzN0taOF9WNVZEMlRHeFZVX1hGNTY3SnhycFl0T3E?oc=5",
-   "publisher": "cwibc.co.id",
+   "title": "Pavica Čabrijan challenges criticism of youth protests",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORnI4blR3NGhDNWptaDlLOTZfc09HSHdKSV82TFU2dTVpZW50Wi1FNno0YTFxcFdaVjVCelRRUFcyX1VwMkdZaUJTUk1kbnZ4bDR5NDg2VDlxZnozdmE1bnI5UjYzQlNOZ1lUVVZxZUF1NFlSLU9KaldwLWJkZjJTZm5CMGZRbG55ZU9nLXBZMUVrWVV5c2kxcEtTaDRnc1l2NVEzV3c3ai1zRkNwYlotZmlJTXpFQQ?oc=5",
+   "publisher": "KarloBag.eu",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Young People Protest Conscription and Rising Costs Across Europe    cwibc.co.id "
+   "description_excerpt": " Pavica Čabrijan challenges criticism of youth protests    KarloBag.eu "
   },
   {
-   "title": "What we know about the new CDC director amid praise from doctors - ABC News",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRHZoVl9jM2xfc2MwRGxKOWlCNTh0Mm1VeUxneGp4T1BtU0VKZjItV1RlNEkwNFVXdFh6XzM4V1dTc3FhbWFneXBCSmp1VmZRWDh3WGtIcmJFSDBac3FKaS14Ukx0S1hQMGFnVElLZlV3MFU3U0tjQkRacFdNdVhBYWdTN1cyTzNrNnfSAY8BQVVfeXFMUFpldUZTWjlhQm5nN2dVT0lMSHp4RVVfbEN5bl9KcEMwSkRTOEJNM1lZbks3c0g2aG5UR19nTGlHaVAxNkZTNi1jeDBkUWNEdURzLXVHbkE0dGxzdDc3WmhyWEtMSC1ydTJxWUZMY0xVYy1oSndvYUl0eUJiem5FVEstX3kybTRxczdNRDg4X0U?oc=5",
-   "publisher": "ABC News - Breaking News, Latest News and Videos",
+   "title": "Hospital Antimicrobial Stewardship Assessment Tools Lack Standardization and Validation Across Health Systems",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdFdaVGRmVzExT2tYSndjTjkzejM0SnVQOWZEdnVEamQ2Zk0zdllrMWZ6dU1lWWRfTTR3TDdHbEJSSlZXT0dUMmdWSzZzYTM3U2VVbFk3cW9lWnNpcE9PMndLdFhha3hJNFhQZUZOYzE0OF8xZ0kyb0JSYW9kT0VRZG1KT20zLTVGYVRXNUN5cU5hRE9NMldGb2JfQjd1NjB1ZDB5RzVjYTR1TG9CaEMzYkJ1aHNJYTdhR1NqSlNKLS1TQlVxX2twNDBvREZ6RDA?oc=5",
+   "publisher": "Bioengineer.org",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " What we know about the new CDC director amid praise from doctors    ABC News - Breaking News, Latest News and Videos "
+   "description_excerpt": " Hospital Antimicrobial Stewardship Assessment Tools Lack Standardization and Validation Across Health Systems    Bioengineer.org "
   },
   {
    "title": "Healthcare Buildings Market Forecast to 2035: Growth Driven by Aging Demographics and Chronic Disease Burden",
@@ -351,14 +343,6 @@
    "description_excerpt": " Healthcare Buildings Market Forecast to 2035: Growth Driven by Aging Demographics and Chronic Disease Burden    IndexBox "
   },
   {
-   "title": "Native News Weekly (November 22, 2026): D.C. Briefs",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZzhpeE5kLWdLQm1FYVh6UkQ0Z01TNDhWemZ6dG5SVk85cFNrRFJMRUgycmdOdGFkWmxDME4tUHhnTFZoaXlHd0JvZDdTb21FQ2lfamR2ZkJrbXdiTUtqbTlWUDdIRWd3WnVsS1J3aDNxSjBxQkRNVUVnTGxSZ2l6ZmN5N01SekpxaFFZb0NR?oc=5",
-   "publisher": "Native News Online",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Native News Weekly (November 22, 2026): D.C. Briefs    Native News Online "
-  },
-  {
    "title": "Why Do Some Zimbabweans Turn to Spiritual Healers to Treat Serious Illness?",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNamdXS040aF9mUjEzR243dkp4aE1RRDdxeUJpUVN4aVAxc21zVzRVVG1fOXlyYXpDMkNuSUstNUx5MkQ5MXhaN21xa0ZmQmZnRkc1OEdMTEx3YkY2SHVGU3k5SVhqc3Y2QWVGU1NZay1TSWVNTjBDQzItdVNSLVZwcXBrWjZ2MUVpYjVjWmFfUUNFbFgwLTJHU3ZjNC14a2tBRFdUQmFpcno?oc=5",
    "publisher": "The Xylom",
@@ -367,28 +351,12 @@
    "description_excerpt": " Why Do Some Zimbabweans Turn to Spiritual Healers to Treat Serious Illness?    The Xylom "
   },
   {
-   "title": "Forum: Are we missing important indicators of heart disease risk?",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMjdvWTlGcnZOZ19uTEVpTGkyUkRKYnJfcThsUlZuaDQ3WHpoSVVqYUF3M2dDRnVFN3ZtUnM4NDdRZ0hGdDY3OWxXMjdSX2Z5Sy15akdkdkxNNHZuYVhKQVBpN1dXVXVwckxHSjNPbzAxOHhMdnpRR09xYnpMOURlVU1uVi1udG1LeDM1UUZDVm11cG1COGZBWGlNSElUa1hpWmxHc0YyYWUxQQ?oc=5",
-   "publisher": "The Straits Times",
+   "title": "Native News Weekly (November 22, 2026): D.C. Briefs",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZzhpeE5kLWdLQm1FYVh6UkQ0Z01TNDhWemZ6dG5SVk85cFNrRFJMRUgycmdOdGFkWmxDME4tUHhnTFZoaXlHd0JvZDdTb21FQ2lfamR2ZkJrbXdiTUtqbTlWUDdIRWd3WnVsS1J3aDNxSjBxQkRNVUVnTGxSZ2l6ZmN5N01SekpxaFFZb0NR?oc=5",
+   "publisher": "Native News Online",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Forum: Are we missing important indicators of heart disease risk?    The Straits Times "
-  },
-  {
-   "title": "Woman’s short hospital stay turned into seven weeks for woman whose antibiotics didn’t work",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZURJamczTllUbDczMWhsVUNyelN4YkI2NC1uMS1YOC1icnVlZVlfTXJmSmJ1NGpBdnVJaXhOSGViT1BVZk5CTXpjcVdkX3hIYURYMGpJY2FMa2t3NlpkTEYyRUM1UGlPdDZYYTdLQXdaWFZhVlpMdTl3SHFoOTFxT1hUQllRZFJNN1E2TV9IZWpLaVJYUURtSnVQbEp2MkdJa0VwZDZOSnBDX09KcTFZbWpaRFB5TGJSSDBrS05ZdmtVNF9s?oc=5",
-   "publisher": "Wrexham.com",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Woman’s short hospital stay turned into seven weeks for woman whose antibiotics didn’t work    Wrexham.com "
-  },
-  {
-   "title": "US Measles Cases Top 5,838, Highest Since 1991, with 646 Patients Hospitalized",
-   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFByN2pRd3lTMktDaHJLZlBRWkpUc3hjVHA1Yng1NWZSdHE1VnJWMElmM0V5UWJxNXFRM3FiX1RqZWV3SXpUYkVhRXNtU2liRXJYaHNTLUxpaEk4OWR1OGJxZzZQZHR4UE5sM1l6X0s0NHl3bTJu?oc=5",
-   "publisher": "Aktualita.co",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " US Measles Cases Top 5,838, Highest Since 1991, with 646 Patients Hospitalized    Aktualita.co "
+   "description_excerpt": " Native News Weekly (November 22, 2026): D.C. Briefs    Native News Online "
   },
   {
    "title": "Woman sues health minister and Aspen, alleging Covid vaccine gave her autoimmune disease",
@@ -397,19 +365,51 @@
    "feed_occurrences": 5,
    "feed_count": 5,
    "description_excerpt": " Woman sues health minister and Aspen, alleging Covid vaccine gave her autoimmune disease    News24 "
+  },
+  {
+   "title": "After Keralam teenager, now singer shares fairness cream ordeal: ‘Yet to fully recover’",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQQkt2M0JYYXBPVkJHZldlYkhaYVVFMmVTZkVOcmtYTTNtNmQ1Y3BJRFk5ZXhjR0lJQU5TT2ZybEktR2RmVlVpWmxRUkdVNUt1Uk13NENNdVBEYmptelc3cGI1MXI5N1JKOXBHam9LeEdkdHhMbjgzSXl5ZXdwUzFaaktmdWVhMUF6VFZOaDdMSmdFS1BFTU5ocWVSa201SmplVEkyYVVYcFg2eWtWZGhjYl9na3FoVFVTNmxCTXBieU10dFBWQUE2MGtyQVhYUjhQY2JFcDhtSll1Q0xkSzZmMGZxc0JQbmpY0gHvAUFVX3lxTFB0dkZhS3VWb1VZdkUwRXZMQjktNldRam5RSHJhUTlRcUtoSWdwNTdaZm9oOW9WSTB3MkVheFBSOFg0VW1zT0V3Ulg5a1dsNzZQZEU3NVY5cnZlSlFEOVlHclRFTE5VTlVUUFRKeTJIOW1rZHFHZnFnbmdIZWRmYnh3MzhrZjJjTGdkWG0xR1BRRUFRMzFCNGo4czk5MlgwNGxPWDRzQzFrMUNtRHFBQk0yNmRQZXZJc0lnWEhTdVVLT2N1eUdqdVJ5R29RT3c2TU02VU5hR0N2VUNXSWdGOTJIUVF0Z3pUeDBMQUtTQXRz?oc=5",
+   "publisher": "The Indian Express",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " After Keralam teenager, now singer shares fairness cream ordeal: ‘Yet to fully recover’    The Indian Express "
+  },
+  {
+   "title": "National Patient Experience Surveys Overlook Health Inequalities Across Nine Countries",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMENpRmFUSHhuclE4c1VfNUd2dWw1bDBPbXF2TzNMeU9iY0FmS2FtdVh3bERLdVlueEZQdTl1Um1XX19NZXU0eXF2Z0UxYXB2WjZkYWZBWTEyc1ByMGFoVjNGN210d2MwMGg2bS1rQnZ2R1JTR3d3TFhvNnFzVXcxb0VWVy1DNnhJb19IQWRORW1tb1BxaE1DZ3FyaGxiX3BqOGgwOVFrZ25GMnJmS3RidQ?oc=5",
+   "publisher": "Bioengineer.org",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " National Patient Experience Surveys Overlook Health Inequalities Across Nine Countries    Bioengineer.org "
+  },
+  {
+   "title": "Congo Ebola Outbreak Linked to Spillover Clustered Near 1976 Lineage",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNVNNcHpPTDl6RFBPQ0ZWUHZtcndMWXQzSXdMNGpEaXZudWY3YVdpZ2hPaDVGM2MwSlJpUy1kbUhjcHFTcEhrcFdCT3ZzVFVwc1l4ZEE4UFdha1NyYUwxSzIyalp6cE9kRW03VzY4VTFNb3lrNlhyZHN1aDFwYS1kdlpjeTRsQkFJSFdkODBSZjh1ZUdueklROQ?oc=5",
+   "publisher": "Bioengineer.org",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Congo Ebola Outbreak Linked to Spillover Clustered Near 1976 Lineage    Bioengineer.org "
+  },
+  {
+   "title": "A Growing Public Health Worry: Prolonged Sitting",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSW96THhzRW41V2Q0RTNFTzlzZGlYS3dKZDNpNTZGRmdjaE1uZWNDUVJsV0R1WWJDcW1DcTBSZ2dUalBfQ3BVOEVwdXFZc2I0d0pwaEhtYUNCQ1NGY2FiazdpNWRDa0xCV092QXU4ZEIzRGJKSlhQLVo4dm5ScE1ZSHFFdDJENGYzT085VjdDTU5NVXJza1hj?oc=5",
+   "publisher": "The Good Men Project",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " A Growing Public Health Worry: Prolonged Sitting    The Good Men Project "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
   "successful": 50,
-  "mapped_pre_dedupe": 179
+  "mapped_pre_dedupe": 198
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 2,
+   "mapped_pre_dedupe": 3,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
@@ -434,7 +434,7 @@
     {
      "source": "direct/Africa Arguments",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/The Conversation Africa",
@@ -446,12 +446,12 @@
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 5,
+   "mapped_pre_dedupe": 4,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/The Conversation Indonesia",
@@ -522,32 +522,32 @@
   "international": {
    "configured": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 76,
+   "mapped_pre_dedupe": 72,
    "feeds": [
     {
      "source": "direct/BBC World",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/BBC Science",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/BBC Business",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 22
+     "mapped_pre_dedupe": 20
     },
     {
      "source": "direct/The Guardian Environment",
@@ -562,12 +562,12 @@
     {
      "source": "direct/France24",
      "status": "ok",
-     "mapped_pre_dedupe": 16
+     "mapped_pre_dedupe": 19
     },
     {
      "source": "direct/NPR World",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/NPR Science",
@@ -608,22 +608,22 @@
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 77,
+   "mapped_pre_dedupe": 92,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 11
     },
     {
      "source": "direct/RNZ World",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 13
+     "mapped_pre_dedupe": 23
     },
     {
      "source": "direct/CBC World",
@@ -638,12 +638,12 @@
     {
      "source": "direct/France24 FR",
      "status": "ok",
-     "mapped_pre_dedupe": 19
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 19
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/DW Español",
@@ -653,7 +653,7 @@
     {
      "source": "direct/BBC Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/BBC Africa",
@@ -663,7 +663,7 @@
     {
      "source": "direct/BBC Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/BBC Latin America",
@@ -683,7 +683,7 @@
     {
      "source": "direct/RNZ Pacific",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 5
     },
     {
      "source": "direct/Guardian Africa",
@@ -717,12 +717,12 @@
   "specialist": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 6,
+   "mapped_pre_dedupe": 14,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 11
     },
     {
      "source": "direct/UN News",
@@ -738,31 +738,23 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 551,
+  "distinct_unmapped_titles": 528,
   "high_repeat_unmapped_examples": [
    {
-    "title": "Parents and schools must guide learners towards responsible social media use",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONjRnMXFFYmpocTE3cDk0MTdSUTFqNjBqa3dBckNKZEtXUjN2OUZ2YTVDSzRjNlVuRWFiNkNaSDFpMThRYjNVUW9BTFVobExuV25kVG82dE9nSmJFeTZuMUtJcFl0aXUyUEI1MjcwSGNHd2hoblk4YWQyMjdNNEUxa04zZm9aQld3X3BPZ2o1Y2gwQlhLRXZwWXpaY09vLUExR21ldVRic0hMX0RsWGc?oc=5",
-    "publisher": "Education News",
-    "feed_occurrences": 7,
-    "feed_count": 7,
-    "description_excerpt": " Parents and schools must guide learners towards responsible social media use    Education News "
+    "title": "Columbia University student detained by Homeland Security agents in dorm released - ABC News",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYjFIUEc1bm9lWlItR1NjYldPUFVvRjJ1OTBRNHdMazdYSEhsUDA0bndvWDA4YTJZUXdqTkFsNnZHdDNXNDRxT3BCZWdDd2dRZ3RsUlpFV2NodTBQb3NBaEhaVVJsYzczMHF4M3dUenVoS05YeWV0TENIVEN1bGRyX212Si1KMlByS25yZDFJSF9DTTczQTlqUmNLYUZHbGgyaVdwWXZuRVVVNEdq0gGyAUFVX3lxTE5wZ21SbkpzUGM3RkJJLTdlOWd5NmxtbHhVRm52SGZTTDRNUkoxenQwWFlTRWhRWjZKZGx4eGZ6amw5WU9PZTFZOGk3MHFkeWRkZl9QQXlHWXlvTzVyelZwcDVXeUoxNC1RdXZSREFHT2FRVVZTSl9NajJ6X3lUWmc0V1JVMjZUbWRwc3dsUGdla2ZhblNXc185MWtwbmFTYjZmdFloc2FaQnQ1N3I4WWJ0aVE?oc=5",
+    "publisher": "ABC News - Breaking News, Latest News and Videos",
+    "feed_occurrences": 10,
+    "feed_count": 5,
+    "description_excerpt": " Columbia University student detained by Homeland Security agents in dorm released    ABC News - Breaking News, Latest News and Videos "
    },
    {
     "title": "AUD/USD Outlook: Macro Forces Collide Ahead of US, AU Inflation",
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQM1AyN2VlMk9LcjVfdkFKMTlhTVB2VEUtUFhJbTZUTmxlQUNYMzZSYS1Fb0g1LWJCN2N5WWo2X2k4elJYUUpOb2RDWWJucE50SzVTNHJMZHlNNTZZaGI3TGE0NGIxR1VZeHVrbHJYRHNuUElOV1ZtWTNRN1NGMGExSG9iMndJVzJ2dC1kTWtyRzktMFBmbkxKd2ZfUjJWQ3pqdXpIYmxSWUhTMS0tVEtoVTBndmRYUzk10gG4AUFVX3lxTFAzUDI3ZWUyT0tyNV92QUoxOWFNUHZURS1QWEltNlRObGVBQ1gzNlJhLUVvSDUtYkI3Y3lZajZfaTh6UlhRSk5vZENZYm5wTnRLNVM0ckxkeU01NlloYjdMYTQ0YjFHVVl4dWtsclhEc25QSU5XVm1ZM1E3U0YwYTFIb2Iyd0lXMnZ0LWRNa3JHOS0wUGZuTEp3Zl9SMlZDemp1ekhibFJZSFMxLS1US2hVMGd2ZFhTOTU?oc=5",
     "publisher": "FOREX.com",
-    "feed_occurrences": 9,
+    "feed_occurrences": 10,
     "feed_count": 5,
     "description_excerpt": " AUD/USD Outlook: Macro Forces Collide Ahead of US, AU Inflation    FOREX.com "
-   },
-   {
-    "title": "Columbia University student detained by Homeland Security agents in dorm released - ABC News",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYjFIUEc1bm9lWlItR1NjYldPUFVvRjJ1OTBRNHdMazdYSEhsUDA0bndvWDA4YTJZUXdqTkFsNnZHdDNXNDRxT3BCZWdDd2dRZ3RsUlpFV2NodTBQb3NBaEhaVVJsYzczMHF4M3dUenVoS05YeWV0TENIVEN1bGRyX212Si1KMlByS25yZDFJSF9DTTczQTlqUmNLYUZHbGgyaVdwWXZuRVVVNEdq0gGyAUFVX3lxTE5wZ21SbkpzUGM3RkJJLTdlOWd5NmxtbHhVRm52SGZTTDRNUkoxenQwWFlTRWhRWjZKZGx4eGZ6amw5WU9PZTFZOGk3MHFkeWRkZl9QQXlHWXlvTzVyelZwcDVXeUoxNC1RdXZSREFHT2FRVVZTSl9NajJ6X3lUWmc0V1JVMjZUbWRwc3dsUGdla2ZhblNXc185MWtwbmFTYjZmdFloc2FaQnQ1N3I4WWJ0aVE?oc=5",
-    "publisher": "ABC News - Breaking News, Latest News and Videos",
-    "feed_occurrences": 7,
-    "feed_count": 5,
-    "description_excerpt": " Columbia University student detained by Homeland Security agents in dorm released    ABC News - Breaking News, Latest News and Videos "
    },
    {
     "title": "French government pulls through no-confidence vote in parliament",
@@ -789,6 +781,14 @@
     "description_excerpt": " Strongman’s Son Nominated for Premier of Bosnia’s Serb Entity    Bloomberg.com "
    },
    {
+    "title": "Gadi Eisenkot invites Netanyahu's Likud party for coalition talks",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZnFWVnVKdVBWYnNPRmdZei0wcHJZOEFIVTQyT0ExX0haU1hFS04yOWxEZ1EtaGx6d1FpVllPMmdGendkNGwxTllZQTNIQmpYSEZ3T3dCMThWMjdZbTk0Q2dKNUQ0X0xqdEh2UXctSHphbkd6TzNwaGNYSWJOOFBpZFJYdjlJREV3RlF5YVRhNVBKMTNrUXVlb00zSUtzUksxMU9XcjRBR05HcXpjbHc?oc=5",
+    "publisher": "Euronews.com",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Gadi Eisenkot invites Netanyahu's Likud party for coalition talks    Euronews.com "
+   },
+   {
     "title": "Which 'Government' Will Erhürman Have by His Side After 6 December? - POLITIS",
     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRHlHOWV0V2xoaURCcHVsRE53TWlUeUI3NmNNSTR0R0pOQ1EzYmxCenFGa1NBQjlxVUhpcFVfYmd3THYtb3FaZ2pSQnNsZ3ZtSGhWMVJnckFhX1BXQmlVRjFsZnFhVm1EVzNfRm5RTXpWd1JFVmtFYllrRHNEclotLXBmQWpRVXVpTXVhTDd3bVg0dFh3djZ4QTlWSzFUX0VJRmt1WU9WNjFDeWM?oc=5",
     "publisher": "POLITIS - To the point",
@@ -805,20 +805,28 @@
     "description_excerpt": " SNP to put Burnham in power in hung parliament over Farage with 'no upfront demands'    The Herald "
    },
    {
+    "title": "Viewpoint – From selection to election",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdkZ1WVQ0cHdLVV9VR0cyUk5xMXUtTF8ySk9WVGxRN2lha2xwNGRFSlV4VXJKM2NMc0NDb0NYOUNIV1FyUTdxdzQzZDNHcmwyYTRScWtXNzhvZjBUUENndUV5cFJTQmdRTWdlb1djMDVtV2JxSXpHcW14blFlNlp3dkJB?oc=5",
+    "publisher": "Local Matters",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Viewpoint – From selection to election    Local Matters "
+   },
+   {
+    "title": "Labor faces wipeout in brutal new poll",
+    "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOVVRzWUVNNTBYSnBOZms4R0x4ZmFpTGk4ZjIzbVJHUmctRnpkVUQ2VElESFRfQlRhN3MwdTY3MUZvMnBKYkZST1h4aERoZk9kRnB1aFlKVXBJeXNUZFc1V09jOVptQTgxQXNjVFVMZ01abHB3bDUzblhvRm10aGR2RklsVS1yMWlJblNBcm5pV3lDa0hhOEVONVBCYjRUNnVYTkNMVnI5d3VNd1JZaFhRVXA2ZHhZbnhRcFFhVXhPODVLejZzY2lJZDZiZVVLVUQwYkpyZGx1c1NKem9ibU5vay1ZSWVEYndIV0ExZlZVWmdLQVQ0LXpwRjktdEFla3FuVVM4THJuZGthZGFKa0dodU9lVdIBmAJBVV95cUxQNTBuRUpHREM1YTBZdU12cktheDhGamN2VnlYaEo1enk0LXBKQXozQTVQZkFsTmxGd2drQkFXMW80V3Q1bUltSW1IcThCcVFZeFA4ODBBM0RrX0J3TDI3VU9EeFo4dzRaRGZCczU3ZTB5Q0xfbVNudFg3ZGVRNTh4bTVyb0N5QVFUMm0tRGFncUU2ZG9Rak9RdTd3SUQwOS1rYVhFeUNZc25ZRlp2T0FIQmtfWXA1SG56WlQ4Wk1ObHp3clVMZHhIcmFPZWFPTzZMNGxoYzl3cS03elpHT0hrRVY2WnY4cjJ2bEpBVTBQU203ejRWTTMyd2JrYzEyRkpMNnhTZ3ZhcC1hUkdvN1VaSU9aWjl3QXhw?oc=5",
+    "publisher": "News.com.au",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Labor faces wipeout in brutal new poll    News.com.au "
+   },
+   {
     "title": "PSOE-A will stand up this week in Parliament to the \"denialism\" of the PP-Vox Government and to the \"national priority\"",
     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU3BxUGMzaENrQVdfaG5sZUh4YTlnM2lIQkVFUFh6WU1KLVY4NTRhdXFoNF9sSnVLb1lIS1h6WWVVNGdlZVZMTFUxYWVuMEZWcWJMYWhYSzJsa3FwZWtDME54bWFPZld2anlMZlBCdWwwOERTRXFLV2dQVDNpNzgybVlFRktFLXZCU0NzOXFHbmRsNmhxNGFLMVZhdmNBQlF3a0VPR29VVzZ6YUl0cFJLSDlfR3BxUHF6TkF5ano4R0JtLWpYck1hTi1NQUlGYmVkbi1XeEZ0UEFvOE8xR21TLWtOSWcyak9ubHfSAe8BQVVfeXFMUHM5UTFtU1JXZVNLaVNLekRLbmNQdzM0VUd6bWtDNXlBRHNEY2hyOUc4Zkd0emtQb010UjR2SXdramVTNzN6SHlLbXRuMDdHRkp6MV9uOGx1b1Z6NjFFQkppT2E5N3AwTzh4UzVBMzQzVEhrRWp4TjhHUlkzSXlxbFZzdmFDZlRDN3o0TXBhRXhiM0ZMdnRUVGl1OUZ2dUJCVnhva2xkV2lDTFlmdklmdmZpRjBBUFRZaXRKZEFMMUNTb1JtVHA0T3MxX2F2cDllcXczd3gzZ0ZEaFBFTHIwVFhpc1hBTGk2cENMeUlBUDQ?oc=5",
     "publisher": "Demócrata",
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " PSOE-A will stand up this week in Parliament to the \"denialism\" of the PP-Vox Government and to the \"national priority\"    Demócrata "
-   },
-   {
-    "title": "Rajendra Rai Enters Parliament for Third Time, Discusses Development and Policy",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4YThaS3NGanJUVjVEQVhvVUJkYXBfVnBqbzlZbm00azl0OHZfVjFFSnZOQXBuN0JrYUNvRTRqdm9aNWpoQlJySEdweUlXZkk3M1dyVy1wam9sR1FXMDdDTkd2VWhTQUdpRGtlU2xn?oc=5",
-    "publisher": "Ratopati",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Rajendra Rai Enters Parliament for Third Time, Discusses Development and Policy    Ratopati "
    },
    {
     "title": "The PP-A will demand from the Government in Parliament that it ensure the \"economic sufficiency\" of pensions",
@@ -829,20 +837,12 @@
     "description_excerpt": " The PP-A will demand from the Government in Parliament that it ensure the \"economic sufficiency\" of pensions    Demócrata "
    },
    {
-    "title": "Why I backed splitting the party vote",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5lTmFHWnVJZ1dNUGVsYkVtbmptcm1MZjIwRjdicXlPd3VPVklqZWFEV3c5R0dnUmo2X0VYd242eUJ6NzFwZ1ZSZlduRWNzVXVCTmtPZnBXZy1kQUdNWUx1N3RwbXp4TkFFa2xBN0duTFpKSDlQMHc?oc=5",
-    "publisher": "Times.co.nz",
+    "title": "Rajendra Rai Enters Parliament for Third Time, Discusses Development and Policy",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4YThaS3NGanJUVjVEQVhvVUJkYXBfVnBqbzlZbm00azl0OHZfVjFFSnZOQXBuN0JrYUNvRTRqdm9aNWpoQlJySEdweUlXZkk3M1dyVy1wam9sR1FXMDdDTkd2VWhTQUdpRGtlU2xn?oc=5",
+    "publisher": "Ratopati",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Why I backed splitting the party vote    Times.co.nz "
-   },
-   {
-    "title": "SNP would vote for Andy Burnham in event of hung parliament, reports say",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPeTJNSDBwLUdqU29rS3RNaXhoRGpjTk9TUWN1OHI2TUpKb0dIdmRSR2xSdU5GMGo3RjBCSXcyMEZuVElYRThxRzRTMnc0WlJhVmNDY2tEZTB6cm9OX3czMzN1Ymgzc28xR2ZkcTh6WHNrb3R6aE5RVzhjdy00SlJheVo3Ul9uSVNxQ0QxX3BvUm4?oc=5",
-    "publisher": "The National Scot",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " SNP would vote for Andy Burnham in event of hung parliament, reports say    The National Scot "
+    "description_excerpt": " Rajendra Rai Enters Parliament for Third Time, Discusses Development and Policy    Ratopati "
    },
    {
     "title": "Why connectivity matters in a changing climate",
@@ -853,12 +853,28 @@
     "description_excerpt": " Why connectivity matters in a changing climate    World Wildlife Fund "
    },
    {
+    "title": "Conservation Group Hits Major Milestone in Elephant Rescue Effort",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYlpYMGR5TjRUMHJQdC13Q01TZUxkX016S2VHV2NyNWhKQ0YwSTFqUTBpcXhiTjAzUThMN05LblZCYThTUkk4bzQ3aXJNLTVpZnZoTjVXVzJUV2V1cy1MM1NYQW42Nk1jWXFtZWdPSWtSVmdvZmY2ZWpIRWdiU1c5cXdROEZIdWpOcXdaaA?oc=5",
+    "publisher": "Earth.Org",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Conservation Group Hits Major Milestone in Elephant Rescue Effort    Earth.Org "
+   },
+   {
     "title": "Antarctic protection stalls again as CCAMLR fails MPA delivery",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU0NSU0V5WGNuYl9qUUNkR25XRWIyQ0pqQTBQNDNWTHFmWDdyZE9YM25BaENNUHRkaHl1VkNUU01lM1lKbW5EbmVfQ3pFMHlNSGtTdHAxZ3N1d0F1MVdCbWpvczBkT0ZZWHhOdDRyOFN0MmQ3UDJiTEpremZVN29oYTA5dUdWbjR4bEw4RnUwMklIZVlSLWNlaXJPNjR5TjRPcFpMXw?oc=5",
     "publisher": "Oceanographic Magazine",
     "feed_occurrences": 5,
     "feed_count": 5,
     "description_excerpt": " Antarctic protection stalls again as CCAMLR fails MPA delivery    Oceanographic Magazine "
+   },
+   {
+    "title": "At an Italian hedgehog hospital, tiny patients face the strain of a warming climate",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbDNSSjNXTnRsNkFXZWtWS2R2aTBmZEhzYnMzaUZWeHIyQkxUUUlqLUtsYlJDRkNMckNCdnR0Mi1vbUVDWVdTczVvVXpVMVJLcVRUSjZ6OWhnYUswYm1Oc2xJUzFOQUlfemF5NWdxRndJeTB1cy1JZ3M3bzhhcDB5QzRIZ0tMWlk3NlJzREcwRWM2S2pRU3YxREdCZEVlaDZUVlctS3N0UTVxZw?oc=5",
+    "publisher": "WXXV News 25",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " At an Italian hedgehog hospital, tiny patients face the strain of a warming climate    WXXV News 25 "
    },
    {
     "title": "What's next for WWF’s conservation priorities before Congress",
@@ -877,123 +893,107 @@
     "description_excerpt": " Anderson: Minnesota desperately needs a conservation-minded governor. Is it Klobuchar?    Star Tribune "
    },
    {
-    "title": "Something strange is happening beneath Antarctica’s icy waters – and the world could pay the price",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSWZkVjJEZ2twR3dSVDFrSkFQZlU1UGd5WXUxVDdob2lhUkZFMjVCelV2X3d2bFJMVGJuS2hUeE51dGF1Q0dSTEZqVm1JRGo0VTk4d0xhak5GWGJRcmJSUW5WMk1hc0pEUUI4czhCMVJtampMUFJsY1pOWkljNzlyY1V3cl9ZUjBVdnpvVnI3SVd1OG1UdlNfak9wZjdZQQ?oc=5",
-    "publisher": "BBC Wildlife Magazine",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Something strange is happening beneath Antarctica’s icy waters – and the world could pay the price    BBC Wildlife Magazine "
-   },
-   {
-    "title": "Dozens turn out for Droxford wildlife event",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14cnRfSlNxSnk1aFJNZkJ4MVRLQzBkTDBaYjBVMUFQR3c1T1lSV2IwU3JkT0FCWGhHVGhtckhtVVpmVDdHenNQSEFjRnpUTXNBZFBsS3JQWXIxZS12Q2E2NFI1WmNMTG9IM3pmTGYxMlNUWi1pWFk0Y3NuVjVJcU0?oc=5",
-    "publisher": "Meon Valley Times",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Dozens turn out for Droxford wildlife event    Meon Valley Times "
-   },
-   {
     "title": "National Zoological Park organizes 22nd Sunday Bird Walk to Promote Citizen Science and Conservation Awareness; Records 45 Bird Species",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GODlHZFVwTVRMRzVJclBibThaSGlzMC1tSjdEVjNINVhjVjhZRGF0NXBxVjY2V0N6MzNBbDdZdTVmYk0xcHNNRWszZ0ZCVTM0azYyN3I2dE44LU9fM08yUlJHeHRfQWZrcnNB?oc=5",
-    "publisher": "www.pib.gov.in",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aSTVPbUZnazducGhHblJadUZtcVZvZkhFMjFxZmJLaDRvVEJjTURpdVRYSHZDR3Jqd2dPdW54ZXdJNVRKSW9GVkRTaHU2ek1aZElLTFd1ZEd2cU9Bb0VYNE9ocw?oc=5",
+    "publisher": "pib.gov.in",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " National Zoological Park organizes 22nd Sunday Bird Walk to Promote Citizen Science and Conservation Awareness; Records 45 Bird Species    www.pib.gov.in "
+    "description_excerpt": " National Zoological Park organizes 22nd Sunday Bird Walk to Promote Citizen Science and Conservation Awareness; Records 45 Bird Species    pib.gov.in "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Vietnam",
-   "largest_label_articles": 44,
-   "share_of_country_labelled_articles": 0.156
+   "largest_label_articles": 37,
+   "share_of_country_labelled_articles": 0.136
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 161,
-  "unique_google_urls_not_in_direct_sample": 399,
+  "unique_direct_urls_not_in_google_sample": 177,
+  "unique_google_urls_not_in_direct_sample": 367,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
-   "The Guardian World": 22,
-   "Al Jazeera": 20,
-   "France24 ES": 19,
-   "France24 FR": 19,
-   "France24": 16,
-   "RNZ National": 12,
-   "ABC Australia": 9,
-   "BBC World": 6,
-   "Mongabay Indonesia": 5,
-   "RNZ Pacific": 4,
-   "NPR World": 4,
+   "RNZ National": 22,
+   "The Guardian World": 20,
+   "France24": 19,
+   "France24 ES": 18,
+   "Al Jazeera": 18,
+   "France24 FR": 18,
+   "ABC Australia": 11,
+   "ReliefWeb Updates": 11,
+   "BBC World": 5,
+   "RNZ Pacific": 5,
+   "BBC Brasil": 4,
+   "Mongabay Indonesia": 4,
+   "RNZ World": 4,
+   "BBC Europe": 3,
    "Guardian Asia": 3,
+   "The Guardian Environment": 3,
    "Mongabay Latam": 3,
    "The Conversation Canada": 3,
-   "The Guardian Environment": 3,
-   "ReliefWeb Updates": 3,
-   "BBC Brasil": 3,
-   "BBC Europe": 3,
-   "RNZ World": 2,
+   "NPR World": 3,
+   "BBC Business": 2,
+   "The Conversation France": 2,
+   "The Conversation Brasil": 2,
    "NASA News": 2,
    "The Conversation Africa": 2,
-   "The Conversation Brasil": 2,
-   "The Conversation France": 2,
-   "UN News": 1,
    "DW World": 1,
-   "BBC Science": 1,
-   "The Conversation NZ": 1,
-   "BBC Business": 1,
-   "Inter Press Service Headlines": 1,
-   "Global Voices English": 1
+   "BBC Africa": 1,
+   "Africa Arguments": 1,
+   "Guardian Africa": 1,
+   "UN News": 1,
+   "Inter Press Service Headlines": 1
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 282,
+  "country_labelled_articles": 273,
   "country_labels_count": 73,
   "top_country_subjects": {
-   "Vietnam": 44,
-   "Nigeria": 14,
-   "France": 12,
-   "Colombia": 11,
+   "Vietnam": 37,
+   "India": 15,
+   "Colombia": 13,
+   "Israel": 12,
    "China": 11,
-   "Mexico": 10,
-   "India": 10,
-   "Israel": 9,
-   "Australia": 9,
-   "Portugal": 9,
-   "Indonesia": 8,
-   "Bangladesh": 7,
-   "Brazil": 7,
+   "Australia": 10,
+   "Nigeria": 9,
+   "France": 8,
+   "Mexico": 8,
+   "Panama": 7,
+   "Indonesia": 7,
    "Canada": 7,
-   "Iran": 6,
-   "Ukraine": 6,
-   "Panama": 5,
-   "South Korea": 5,
+   "Portugal": 6,
+   "Spain": 6,
+   "Iran": 5,
+   "Bangladesh": 5,
+   "Brazil": 5,
+   "Sudan": 4,
    "United States": 4,
-   "Bahrain": 4,
-   "Kenya": 4,
-   "Nepal": 4,
-   "Sudan": 3,
-   "Uganda": 3,
+   "Ukraine": 4,
+   "South Africa": 4,
+   "South Korea": 4,
+   "Fiji": 4,
+   "New Zealand": 3,
+   "Japan": 3,
+   "Afghanistan": 3,
    "Ghana": 3,
+   "Nepal": 3,
    "Ireland": 3,
-   "Fiji": 3,
-   "Argentina": 3,
-   "South Africa": 3,
-   "Libya": 2
+   "Argentina": 3
   },
-  "distinct_geographic_signal_centers": 239,
+  "distinct_geographic_signal_centers": 230,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 86
+   "mapped_pre_dedupe": 79
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 81
+   "mapped_pre_dedupe": 58
   },
   "IN": {
    "requests": 11,
@@ -1003,45 +1003,45 @@
   "AU": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 57
   },
   "ZA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 73
+   "mapped_pre_dedupe": 94
   },
   "NG": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 59
+   "mapped_pre_dedupe": 60
   },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 88
+   "mapped_pre_dedupe": 77
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 61
+   "mapped_pre_dedupe": 57
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 54
+   "mapped_pre_dedupe": 42
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 133
+   "mapped_pre_dedupe": 131
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 91
+   "mapped_pre_dedupe": 75
   }
  },
- "duplicates_removed": 499,
+ "duplicates_removed": 474,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1059,38 +1059,40 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-22T21:17:59+00:00",
-    "mapped_articles": 543,
-    "geographic_signals": 352,
+    "at": "2026-11-23T01:59:23+00:00",
+    "mapped_articles": 532,
+    "geographic_signals": 339,
     "feeds_ok": 171,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 3,
+    "rejected_matching_occurrences": 4,
     "ambiguous_mapped_signal_count": 1
    }
   ],
   "latest": {
-   "at": "2026-11-22T21:17:59+00:00",
-   "mapped_articles": 543,
-   "geographic_signals": 352,
+   "at": "2026-11-23T01:59:23+00:00",
+   "mapped_articles": 532,
+   "geographic_signals": 339,
    "feeds_ok": 171,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 3,
+   "rejected_matching_occurrences": 4,
    "ambiguous_mapped_signal_count": 1
   },
   "recent_change": {
-   "baseline_at": "2026-11-22T21:17:59+00:00",
+   "baseline_at": "2026-11-23T01:59:23+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Union": 3
+   "David": 2,
+   "Split": 1,
+   "Union": 1
   },
   "ambiguous_mapped_review": [
    {
     "name": "Ontario",
     "category": "community",
-    "sampled_article_count": 2,
+    "sampled_article_count": 1,
     "review_reason": "ambiguous_place_name_needs_manual_review"
    }
   ],
