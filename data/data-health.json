@@ -1,139 +1,171 @@
 {
  "schema": 1,
- "updated_at": "2026-11-24T06:27:24.059556+00:00",
+ "updated_at": "2026-11-24T18:22:08.721986+00:00",
  "feeds_total": 173,
  "feeds_ok": 170,
  "feeds_failed": [
-  "google/community/AU",
   "direct/CBC World",
+  "direct/UN News",
   "direct/DW Español"
  ],
  "google_feeds_by_region": {
   "US": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 102
+   "mapped_pre_dedupe": 91
   },
   "GB": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 62
+   "mapped_pre_dedupe": 68
   },
   "IN": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 97
+   "mapped_pre_dedupe": 107
   },
   "AU": {
-   "total": 11,
-   "ok": 10,
-   "mapped_pre_dedupe": 79
-  },
-  "ZA": {
-   "total": 11,
-   "ok": 11,
-   "mapped_pre_dedupe": 120
-  },
-  "NG": {
    "total": 11,
    "ok": 11,
    "mapped_pre_dedupe": 85
   },
+  "ZA": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 107
+  },
+  "NG": {
+   "total": 11,
+   "ok": 11,
+   "mapped_pre_dedupe": 62
+  },
   "PH": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 97
+   "mapped_pre_dedupe": 107
   },
   "CA": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 70
+   "mapped_pre_dedupe": 83
   },
   "BR": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 65
+   "mapped_pre_dedupe": 63
   },
   "MX": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 168
+   "mapped_pre_dedupe": 151
   },
   "KE": {
    "total": 11,
    "ok": 11,
-   "mapped_pre_dedupe": 123
+   "mapped_pre_dedupe": 96
   }
  },
  "mapped_articles_by_category": {
-  "environment": 54,
-  "society": 60,
-  "community": 304,
-  "health": 93,
-  "economy": 73,
-  "politics": 67,
-  "conflict": 46,
-  "education": 53,
-  "science": 42,
-  "rights": 27,
+  "community": 297,
+  "environment": 66,
+  "conflict": 45,
+  "society": 45,
+  "health": 91,
+  "education": 70,
+  "science": 38,
+  "politics": 48,
+  "rights": 23,
+  "economy": 65,
   "hazards": 5
  },
  "mapped_articles_by_location_precision": {
-  "place": 378,
-  "country": 435,
-  "region": 11
+  "country": 424,
+  "place": 359,
+  "region": 10
  },
  "location_evidence_counts": {
-  "headline": 704,
-  "description": 120
+  "headline": 680,
+  "description": 113
  },
  "geographic_quadrants": {
-  "NE": 364,
-  "NW": 249,
-  "SE": 127,
-  "SW": 84
+  "NE": 322,
+  "NW": 222,
+  "SE": 144,
+  "SW": 105
  },
- "geo_signal_count": 488,
- "mapped_total": 824,
+ "geo_signal_count": 463,
+ "mapped_total": 793,
  "geo_match_rate_note": "Do not divide mapped records by total fetched: repeat entries, missing timestamps and expired items distort the rate.",
- "unmapped_sample_count": 1663,
- "unmapped_distinct_titles": 855,
+ "unmapped_sample_count": 1642,
+ "unmapped_distinct_titles": 850,
  "unmapped_by_feed": {
-  "Google News MX": 189,
-  "Google News US": 178,
-  "Google News KE": 178,
-  "Google News ZA": 171,
-  "Google News IN": 140,
-  "Google News PH": 139,
-  "Google News BR": 134,
-  "Google News CA": 91,
-  "Google News NG": 87,
-  "Google News GB": 85,
-  "Google News AU": 81,
-  "RNZ National": 22,
-  "BBC Business": 17,
-  "ABC Australia": 15,
+  "Google News ZA": 179,
+  "Google News IN": 175,
+  "Google News PH": 163,
+  "Google News US": 155,
+  "Google News MX": 154,
+  "Google News BR": 149,
+  "Google News KE": 142,
+  "Google News AU": 101,
+  "Google News CA": 94,
+  "Google News GB": 84,
+  "Google News NG": 77,
+  "RNZ National": 21,
+  "ABC Australia": 13,
   "The Conversation France": 12,
-  "France24 FR": 11,
-  "The Conversation España": 11,
-  "BBC World": 10
+  "BBC Business": 11,
+  "BBC World": 10,
+  "France24 FR": 8,
+  "The Conversation España": 8
  },
  "unmapped_examples": [
   {
-   "title": "𝐇𝐞𝐚𝐥𝐭𝐡 𝐟𝐚𝐜𝐢𝐥𝐢𝐭𝐲 𝐮𝐩𝐠𝐫𝐚𝐝𝐞𝐬 𝐭𝐨 𝐞𝐱𝐩𝐚𝐧𝐝 𝐚𝐜𝐜𝐞𝐬𝐬 𝐭𝐨 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐡𝐞𝐚𝐥𝐭𝐡𝐜𝐚𝐫𝐞 The Murang’a County Government is stepping up investment in health infrastructure, with new hospital units and dispe",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE44bXNYY25hRTRoYzNNWHpBTXdVd25mUl82NGYwck94UjIxbHRUbU53VnNXNmtrYUxmX2gtZDdiMVRaN1BFWFowS1NaYmJVMmZQby1nNG8xUGN5TVUwUWpkd2VyZUJDWkd2TVJpZFZGcWYyc0U?oc=5",
-   "publisher": "Facebook",
-   "feed_occurrences": 8,
-   "feed_count": 8,
-   "description_excerpt": " 𝐇𝐞𝐚𝐥𝐭𝐡 𝐟𝐚𝐜𝐢𝐥𝐢𝐭𝐲 𝐮𝐩𝐠𝐫𝐚𝐝𝐞𝐬 𝐭𝐨 𝐞𝐱𝐩𝐚𝐧𝐝 𝐚𝐜𝐜𝐞𝐬𝐬 𝐭𝐨 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐡𝐞𝐚𝐥𝐭𝐡𝐜𝐚𝐫𝐞 The Murang’a County Government is stepping up investment in health infrastructure, with new hos"
+   "title": "Piddington women's concerns about asylum not racist, says think tank",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1UUHBtUHI1UmZVeWtud2QtM1d6OTRBXzRHekVySDBsRGxyMlJyaGtTeUJJQkdkU3NOc0dFbERaSi13WWFnVWkyWU1jaTBmX3hoeFp1WmFWcV80b19rUXc?oc=5",
+   "publisher": "BBC",
+   "feed_occurrences": 6,
+   "feed_count": 6,
+   "description_excerpt": " Piddington women's concerns about asylum not racist, says think tank    BBC "
   },
   {
-   "title": "Swedish Voters Warm to Prospect of Snap Vote as Talks Logjammed",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSlk5MlVhN3hrU01pQVZBYlJJVHNoc05hMzdBa0JPcGlodWhBUENyXy04Sk1SMFZ0OVI3VTJIWUhkR1NoeE9JU21XVFpvWTRUdjM5LVJES0NOVlJsVl9COEVoZlVQVER0dUFDUFZVMmIwVk9UdHlOQ0lNOFJPT0h2YVNOdWw5UDZwb0JuTF9ESy1BcWUyaUNUQUJIaVNsSkozYnl6RHdCNlpLcXlYY1JuczFGRktoX282?oc=5",
-   "publisher": "Bloomberg.com",
+   "title": "Swedish parliament to vote on Moderates leader Kristersson to remain prime minister",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNmIwdlItRHVUTTBjRHdoaE9SUG5FdEU2ZmJ1ckkydGtiV0hha3ZObzlGeW1NXzNzUnpvb1pCZjVqdFJKakRIMTFJaTRkTVZULWlvRGJfZ1JfelllVGNSWXR0OVRrUGZJWGdnZUNPdkU0ZFQweDRaN2VTcFVxSVZiX1NyOVRFZUpMTE5lYWVONTdQc1lETEFpR01UUWQtelJ1UmRuWnlic0JyWXpld2Q3N2NYSlNKVWVGd2o3NHoxMzA1cmM?oc=5",
+   "publisher": "The Straits Times",
+   "feed_occurrences": 10,
+   "feed_count": 5,
+   "description_excerpt": " Swedish parliament to vote on Moderates leader Kristersson to remain prime minister    The Straits Times "
+  },
+  {
+   "title": "Young protesters hit the streets across Europe",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRnRSOG1JbWRWbDZud3B1b29VS1VYbXJNcjBhNXkwaGZCWHFJaF8xWmtkNTgxYVViZDBOa1VEeTVsdElJWDM1SWFxaHNWYTY0TEU0dVdPa0dlQTBmUTFpcVVQWmhGRnYxUENiSHY1cVljdGYxamlHSnVSVUhkVmVCVlIweHRrbXZrOUZpdEZPYXNucjZOVDFjNkF2VE9MaFpG?oc=5",
+   "publisher": "The Daily Star",
+   "feed_occurrences": 9,
+   "feed_count": 5,
+   "description_excerpt": " Young protesters hit the streets across Europe    The Daily Star "
+  },
+  {
+   "title": "Albanese and Taylor focus their troops on election as government pushes agenda through packed pre-Christmas sitting week",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPMjZPSm9GY3ljbjkwbC1yNU1WVGcyYUstOFl5SzdzVWFmcXdKRkJSNzJ5N242bDNvMFFVbnNYamVyQWJXTUdXakdUTnVzWnZjTGM5aVhkS0xxYmtfakJabTk0RmVKR2FfTG5JVzFKRmxtTFNaSEZacHR0VmdwQnlfbGNuOFBXWGxFemN6YXpJaGxtVU5PZ08zNVpUUTQ2Y0lmMXVES3VpT3RLTXlxeTZFQ1BSbW1Mb0NhWWs0MXE4UE1zZEFsUVdYSE5abzZwNEV3VFcwUTJvRmIxOXNNcGYwbzlfMm5vRXRkaWYw?oc=5",
+   "publisher": "The Conversation",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Swedish Voters Warm to Prospect of Snap Vote as Talks Logjammed    Bloomberg.com "
+   "description_excerpt": " Albanese and Taylor focus their troops on election as government pushes agenda through packed pre-Christmas sitting week    The Conversation "
+  },
+  {
+   "title": "Swedish parliament to vote on Moderates leader Kristersson to remain PM",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdGxraHZUV3hiNmVaYk84UjV0aHJNd0ZsTUNxVTlZaVpRVnRHYURkTWN1MlZtOUNSV3VkWGZZLVZEWFpaVmxTRnJadVQwQmR2THM3YWx1eEpONk14SXZqV1Q1THZFWi0xNUtadGVRb2JVLXRMWWFrM2pqcVNlT2oweEJlSGsxZ2wwalVTZ0NuemlOVTNyZi1VMDNRdEJ0QUlUNHBuTUVlZUtDYklz?oc=5",
+   "publisher": "Report.az",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Swedish parliament to vote on Moderates leader Kristersson to remain PM    Report.az "
+  },
+  {
+   "title": "No deal-making deadline for government negotiations",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcXFMMWJqQmRmSm1oSU9iX1NHUzFyQXU4eURYR0t4TDdYNEtrSW85OE9wcWFvbUlvNlVtOGk4WDdIT1c0SHJ6LTNGNTBBVnRUeDU2c042bFVWMGl2cXZJQ21KdnRfZ29NU3FheVlHNGpoOFU2S2dodDg0bGc3RUEyMGowMWNoVmdzeUpxeW5icU95MENV?oc=5",
+   "publisher": "Stuff",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " No deal-making deadline for government negotiations    Stuff "
   },
   {
    "title": "What Victoria's upper house might look like after the state election - ABC News & Headlines",
@@ -144,100 +176,20 @@
    "description_excerpt": " What Victoria's upper house might look like after the state election    ABC News & Headlines – Australian Broadcasting Corporation "
   },
   {
-   "title": "Peace agreements are signed on paper, but…",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZjhNc2l1Nk5NUDdUS1dSY3BhS2hCMFJobWo2TkpZSGFsVk9uTEZPUk0xWmx6S1dmT0JTMm5kY3ZtczdEcTZDZjZzZmt1SFV5SEo3V3BSNDN3aWVuLU5pX3VyelVGbl9uMTFGcHhNbElYamdHazBGN1pUd0lfa0RHVWRB0gGHAUFVX3lxTE1Qc2NEVXhqNGQwaGlNMEVXeS04S29ULUZwV1ZIbEphc0owUGlqdTc4alNuZWpNakpHbkhtQjFwS0NtNXVTUFdvdDRXRk01cWRneUpOa2hKd0JrVHZCU21TblBRZnplNjJiV3BnM2ROWWZpdDNQZ016NDc0UnZZbmZyUEN0dHhLYw?oc=5",
-   "publisher": "Inquirer.net",
+   "title": "Government assures Parliament of readiness for 2027 National General Elections",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQS14NlNpbS04bXp3MlNLcHhPZHVPdTBEdnMxZEpTdlViTHh5THZDY2R6ZTBUYkFLeW1tZXNXTnQtbW15MjFDR2ZqOG5RaVdxMGpEQ1VBM19USHd5U1RRbHpSM1RhV1BKb3pFM1ZrWEZoMXpqa0tHc1RRcklZb2MxUnlUS1ZGcExhempNUkJ4dzdyWUlldmEzU1hYTk5maktVa3RMa1J0T0Y3YlhXSzFN?oc=5",
+   "publisher": "Post Courier",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Peace agreements are signed on paper, but…    Inquirer.net "
+   "description_excerpt": " Government assures Parliament of readiness for 2027 National General Elections    Post Courier "
   },
   {
-   "title": "NCFC rejects proposal over election nominators",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbkktdDFseTJRY3BtbUtRRVozOFZ0d3dQTWowM0RwNXhKMzJwVGQ0TmJvYVZVSnVSaEZPcHNWcWJ5UG5XQkduNEZWek9FNVhoS09PSEc2MTNkTy1MRmxUTTk2Q0cxM1U4OUxRMk80MTBQOHlmakxxTjZWZXIySWJ2VFdjWkJTQk15UThQbHV3?oc=5",
-   "publisher": "Cayman News Service",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " NCFC rejects proposal over election nominators    Cayman News Service "
-  },
-  {
-   "title": "Deery: How Wilson rebuilt fractured Libs into government-in-waiting",
-   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOMXRITVR0eWVYQjNOTG5ERzhsY3hfVndKNU4zR2xweUEzQlNOWVN3YXRPSW0wa2tROFpTMGFpLWszTF9jWFUzN1FxdF9KY093b1YtSkNLS29JUUx3QTRSRk15akNJbzJKWDlhVE44UVhQcjBPRnNYX1dvSWpnR0g2Ymt4a1ljMFZWRm50MkNrS3hSZ3MtaWRJcjJjZjMwX3RyYWpfclh6eS1lY1pNM2hGVXQ3RWJFbTlyMVc4bnlnQVZydkFUZlNfTzI1d2ZQbHZTb0ExNVlTaXFKU1NVMjBEMk5OZW96am1YNGlZLVd1SXIxdXhqRGczSm9yTHRpOGx3WWxnRHI0VWpQSEgzTWl6N0d5MWdVX2FmOWxiUElUcVFfQQ?oc=5",
-   "publisher": "Herald Sun",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Deery: How Wilson rebuilt fractured Libs into government-in-waiting    Herald Sun "
-  },
-  {
-   "title": "Political alliance challenges NEC election postponement in Supreme Court",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNenZRd3RZTVc5VW1xT3NNZmoxWHV6NzVMZnRpYVhLTzA2N2VDaXFtT3MwaXhoZC1qYWtUYVpmM05wWWl4bTFaSjI2SU5qUW9VODBFbkdTVXdRcDRXMzFHVE1sVnh6U0dUVjFsamR0N0Zra3pnSjgxRlp0T092YmZzWkVDWEZWMi1IZFlyVFRxaF9UQ0p2UXdKQWh6UkhVNTFDSFE?oc=5",
-   "publisher": "Sudans Post",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Political alliance challenges NEC election postponement in Supreme Court    Sudans Post "
-  },
-  {
-   "title": "Conservatives want MPs to vote on government's plan for permanent residents",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaVpCTDNZQ2FIck04OFBoTmpLdmxHekstekdxWFFBemROdmxGQ0lqSldFTmtQU2xHUm1GVGV3X1NQNnVnYklrTGlpWHdVQk9aZ0gxTmtacEtLV2lRU0J3VkE5Tk5DN1RJVDNoLXVhYXFMaHFtcUo3aV9aci1UQjRJNmZIZ1BmMFBySUpUSXUxVklKanU3MmRidjByZnI4LVVrOWphMFZhbW9ERnFkMzRrMS13eGdaWHp2aWFV?oc=5",
-   "publisher": "Castanet",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Conservatives want MPs to vote on government's plan for permanent residents    Castanet "
-  },
-  {
-   "title": "“Disturbing”: Major coal mine expansion government’s last act in parliament before the election",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb2pRTEJacmZoQkk3YXEwTEs3TzNuYzZoTmMxTHZBNXdmZTlRN1F5THRjZDdjOWhwNWstYVZDczF0MjFmQm5OWXM3czlRR1B3ckRBLTZMMS1RbnRwbEtGMnlRQzVRdmdRbXljdmVOQUVPc1ZGTXRWUWpWQnlHX29GWTNNN1FWdGF2OGpZZlllMW9fTmtnOUZsZ05oaUR5ajNlaU9WeF9KdEE1OTNYQlQ4U3RvVGREdUR2NmtzajJKb3ZlblpXN3BV?oc=5",
-   "publisher": "The National Tribune",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " “Disturbing”: Major coal mine expansion government’s last act in parliament before the election    The National Tribune "
-  },
-  {
-   "title": "Zille calls for electoral reform to stop small parties ‘making government unstable’",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbFhiVWVCMXBFWmh3X0g4dWNsd1BxZm93Y3dVenVUVDJjUVJwVnVQSGNIcmhKQ3BLQ0JyeU44ZkZES2dwMVhSRjBYNEFESDZXSDZFVmxQRjZTRGhRbC1sa1k2eUFjQnVMamFOckpGMzZJQWZVTS1GVGVFbV92c0xhelJoTmY5NG9ienlXWGJsa1pfcWVRaGhDRjdPWER4aWd0Y2pYYVd0amo0dnh3WklGZXE1MnJORzdzNDBhSVdMUG40WkJvb0E?oc=5",
-   "publisher": "News24",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Zille calls for electoral reform to stop small parties ‘making government unstable’    News24 "
-  },
-  {
-   "title": "UK’s nature healthcheck doesn’t stack up in wildlife’s favour – but volunteers are collecting plenty of crucial data",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdjcyRld0Wm1EWU1sYTJoNVgtbTFKd2U2YkxfNDczZFVZQVZ5dG9mM0p1dTZqaWpwRGE5bk5ZdWdMQjBTenFqUHpSRkF4ZHFsdXg4bkNwNllvNGdxTXJKRTJxYWN6VEJVcDNVYl90MnBPY2dWb2dTR2hWd3c0MnBLNllKdENYbjFOVHhrdS1fZjMzVHJEY21FcmlnbGVoakJDdjlMWUxQZXA3dEFzWk5XUW90MUZlRWhJUThaN1dDSTFlY3p2QnowQk5ibmpuaDQ2UlYyTExtTTFQZkRkOXY5ZzNNMA?oc=5",
-   "publisher": "Inside Ecology",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " UK’s nature healthcheck doesn’t stack up in wildlife’s favour – but volunteers are collecting plenty of crucial data    Inside Ecology "
-  },
-  {
-   "title": "Emerging Bioacoustic Technologies Advance Global Wildlife Monitoring and Conservation Science",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTTBTTlFUYlRIMFBtWUNoZlhiMzQyZVp6ZFZXWTJUcURhTEg1R2FJWlE4SXo5a3ZybjZmU1Y1M1M0bU5jNExQcDV2ckhtTnNodkw2Y2Z4TUw4SkZGUmJNa0tJbjUzbWh4TXJlVUM2bWlBNWo1ODBMc0ZocDlGUk5oNF9yU0hBQWtYV1dwQl9ETHVVa1ZwZzVLb0VhdzgtSmdlVkRJdXZud3V1ZllBNFk1WWFFZGN6ak9pRUE?oc=5",
+   "title": "Philosophers Propose Right to a Livable Locality for Non-Human Organisms",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOXl1UUh1QjZ2b3NBX0otX0FwVjRjZTYySjdWQXU3MzdRUThvN0U4TDhPRFpoa2l6cU9lYk9UUFdOR2lsVFA3ajNDMTZZN2ZnM01xcjNhdWJKQ2JjVTBYdjJxYmJvTVhFX0RQbWJMT01EOHJ0T2psWGdNaEhZNy0waHJwZjVjVUp1dlZlRm1NclkxWG1WRVFkd2NReXRUUQ?oc=5",
    "publisher": "Bioengineer.org",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Emerging Bioacoustic Technologies Advance Global Wildlife Monitoring and Conservation Science    Bioengineer.org "
-  },
-  {
-   "title": "Himalayan marmot droppings could offer new clues to climate change and Alpine ecosystem shifts",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZVFCYnhzSDJHVS1WM1o4RGMwbHJqYzdadW5JY1BmWVZwcjJJX29vVkFSeWJnUXROVE0xXzlFdm1jT0gxVFA5NkI1ME0zUU8zYVVtNGY3UDJOc1djanpwUm1jVDFDNEg3dEFDbFdKOTMxcnpsTmZvNUZGQXRSdmtlaVdrdGdienVEenZPSGY5TWg3Z1R4YmR1aDVXQnlXbElNVWJjX3BGMG1iZ3c5dDhUS2c0RlA2MFJPeThrTA?oc=5",
-   "publisher": "DD News",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Himalayan marmot droppings could offer new clues to climate change and Alpine ecosystem shifts    DD News "
-  },
-  {
-   "title": "Union Environment Minister chairs 92nd Meeting of the Standing Committee of the National Board for Wildlife",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBjeWtNS1prMGgzV2Nac1NzODBkYjc1ZHZVbzQ4Y0QxMGhIS0IxMHdDcnBoZjhoZU4tdG9oLU4wX3Rib19URG1VZVVlT2FpMUh2UkU0TUhvZF83ZldPRnl5eWwyQ1R5RjhNN01SY1NkQW82aUtyaklyUVl3?oc=5",
-   "publisher": "www.pib.gov.in",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Union Environment Minister chairs 92nd Meeting of the Standing Committee of the National Board for Wildlife    www.pib.gov.in "
-  },
-  {
-   "title": "COP31 ends without major climate agreement with divisions over fossil fuels and finance",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeFZSWGk4OGJ5U0lQZUVTVXZDNDBLT3ZqMmJuV0c0Q3RBYWUyeXZLMXNDWGl1anRxN2xidXpuMmE2YXhJNHJLOVhWRVAwMzU1ZWt0cU0xMTNjcUJOOUFweERZREpVWTgyUUVoNzhTT25DZnRYZ3doUWhOTXhWRTBkYTl5N250WGczRmRlNnZKQzdYalBGWnBVWjJ4cHN1R1hSSUxaQ0NZckExVnRJcGFpZ3pTeG5yTVlQVmc1S1E0T1BWMFU?oc=5",
-   "publisher": "Inside Ecology",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " COP31 ends without major climate agreement with divisions over fossil fuels and finance    Inside Ecology "
+   "description_excerpt": " Philosophers Propose Right to a Livable Locality for Non-Human Organisms    Bioengineer.org "
   },
   {
    "title": "Forestry Corporation Loses $18m in One Year",
@@ -248,20 +200,52 @@
    "description_excerpt": " Forestry Corporation Loses $18m in One Year    Mirage News "
   },
   {
-   "title": "Mountain Day 2027: Mountain Animals Need Peace, Not Shotguns",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRVplaHdUVWhfQzBQLXhjR1UyQXVQeHN6RjdreEI1aG9aRTVJLWpJOTdmYVdId2pMNlIzRmF4MVZsNG5OWlhxdVlEekt6a0FWTkotTjRSaWc1VmRNam9TcFpvZktTMkVjWlVyRVpKUkJ1NEh5YjFiSnBfNmVOQVl3dXlFSGtsckJUVkpCd0paSFQ?oc=5",
-   "publisher": "Wild beim Wild",
+   "title": "Emerging Bioacoustic Technologies Advance Global Wildlife Monitoring and Conservation Science",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTTBTTlFUYlRIMFBtWUNoZlhiMzQyZVp6ZFZXWTJUcURhTEg1R2FJWlE4SXo5a3ZybjZmU1Y1M1M0bU5jNExQcDV2ckhtTnNodkw2Y2Z4TUw4SkZGUmJNa0tJbjUzbWh4TXJlVUM2bWlBNWo1ODBMc0ZocDlGUk5oNF9yU0hBQWtYV1dwQl9ETHVVa1ZwZzVLb0VhdzgtSmdlVkRJdXZud3V1ZllBNFk1WWFFZGN6ak9pRUE?oc=5",
+   "publisher": "Bioengineer.org",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Mountain Day 2027: Mountain Animals Need Peace, Not Shotguns    Wild beim Wild "
+   "description_excerpt": " Emerging Bioacoustic Technologies Advance Global Wildlife Monitoring and Conservation Science    Bioengineer.org "
   },
   {
-   "title": "Massive Turnout, Conservation, Tusker Lite Neon Rave mark 2026 Virunga Gorilla Marathon",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaDQtRUotT1AyemJFdUNGVC1sWTNJaGFScE5uajNfR2Fac2t0ZVdTSzNtc21UYnRmTnBaLXNCMkNweVRhNXVmMTdfSURBay1XUDRuR01qRzZFcmo4clJRNGxJd3JBZGI0bTRNLXdhZEFFT0wwdjJXT1NuQjliWTFReG9iZ05zTUZXdHMyVmttbGEycXpnMXZvRDJJMlpjVW9iVnRyWHJ1TzJZQ1BhTzhETVBYcDI2bmpYb1RVRNIBxAFBVV95cUxNaXNiUG9QREZaTllscDE0VDRNakV6VmNVU3g1cmpSYnpoM1phZWtEMmp6M010M05Kb29CR3c1aEVhbTBXWV9QaEVWalFMMUZUb2tkampzM1hYcndxbzBsd2Vqb014SEk5UkNsQU5iWk9IS0N5VS1nY1lvM1lvX3pRZzFDZ05fdERfT3Vicl90a2w5MWRRNXZWRzZDNkVnTThrNlZJNF9KZE11RDBEeC1tMG12MUJkTzRQOG1uTldJU3NIRDVZ?oc=5",
-   "publisher": "Nilepost",
+   "title": "Tourism ministry sued over Sh20.8bn wildlife conservation deal",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUUdqcnhWQlhndlJlaWZfQWpJSFkwTFhncEhrLW5DUHF2MEgtcUxlVWdtWWRSNWZsVmRFa0I5UVl2TzVvR2kzM2NEX2x5SlNKT2dxQThwam5uQlZUNkFpMjJ1bUZmU2xzQzVWSERaQ3RESXRKYng5VHI4VnFvTWluM2czUjl6akZrbW9tR0tuRmgzOWNGOTVVbHdyWWFOREpS?oc=5",
+   "publisher": "Daily Nation",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Massive Turnout, Conservation, Tusker Lite Neon Rave mark 2026 Virunga Gorilla Marathon    Nilepost "
+   "description_excerpt": " Tourism ministry sued over Sh20.8bn wildlife conservation deal    Daily Nation "
+  },
+  {
+   "title": "Loons fill Adirondack lakes, but fewer chicks are replacing them, study finds",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxONDVmZEwtY25tNWtYNHBaWTgwSXB5NDFfcHVnamVXSWMwX3pJbzctRU4xUk1ZdXEtTkhtT0F5N0Rjd0dGSmt4UHI5VUNESXVaVFBDc0lvOVVMTlM2MmxWWmhmZDBTTmRpWjBVMTliTHBudms3NjI4WXlYWEg1U0dPS1lfanI0dFdtSTNkU3FhaEtQRDYxRWt4VElYMm1zQmNqZDVLQ2JneDBNakRqTEF3NzV5cklMd2dZdWthNzF4NUxvSEFiaFoyeWt0N3ljWFQ2WXc?oc=5",
+   "publisher": "Adirondack Explorer",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Loons fill Adirondack lakes, but fewer chicks are replacing them, study finds    Adirondack Explorer "
+  },
+  {
+   "title": "Conservation Group Buys Over 47,000 Acres of Land to Save 200,000 Displaced Walruses as Sea Ice Melts",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUWpfcUc0RHJqRkhYNmpubUNOekkyQ1U0cWdZRW1BazNBZU40dFpSMGZEQUV1LWlHeTR4M0xqNmU3RmYwV0wtY21wNmRjX1hSMEJzeEs4UUpfb2RLWVJ2WFR1ekZrQXZzdnhfb3JlUnlVOEt6dXEzTnZGdEVja2ZIVDJ5WkVUQWxyVGh2Z25xOEtxOGRCQUhkM3F4cGV3dVRmY0QycFpIczZjYkJt?oc=5",
+   "publisher": "People.com",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Conservation Group Buys Over 47,000 Acres of Land to Save 200,000 Displaced Walruses as Sea Ice Melts    People.com "
+  },
+  {
+   "title": "$100m regional plan proposed to protect Himalayan herbs and mushrooms",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOVhpZDRsQmd0REtSSmQzOFhDZXRyeV9MaHlzQmMta1pEVnc5WmRrN3llbUpwYWVEX3VXS3ZZOWhSOUNRUkFYZkpleG5vbDcyZkxXcENLSXBlQTBmc05vRTItUFlwcDFHWU03bG50V2x6NFd1aVhaSEdueEtjSFJvMEx3Y1Y2Z0Y1Tm90d3ViTllqUUhERkpPSHl4bUNUQQ?oc=5",
+   "publisher": "The Climate Watch",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " $100m regional plan proposed to protect Himalayan herbs and mushrooms    The Climate Watch "
+  },
+  {
+   "title": "Indigenous land management practices can deliver improved conservation outcomes, study notes",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRC11bzIyVUJRX2UxdTNYcURMR1FneUhRLXQ1dlRCTGRSTUJRRnlVQnhGY0U5Q3Z0alBzbDloUWs5Q2hkUGQwb2NPWEJKZUctR2tJRXRTU01PZFM2N3ljbF9xSjBrQkVyVTBkZ1czamJUeFlwcHNBSTZERmlBWWxRSWx4dFJGWTRKQjRIM2JPUkNMTC1PSUw2cWRyeTVHUy1yeEgwRUxMdEM5UDBFWjYycHcxSzVHSnRPRlVIZXhNVHFObDRISHc?oc=5",
+   "publisher": "The National Tribune",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Indigenous land management practices can deliver improved conservation outcomes, study notes    The National Tribune "
   },
   {
    "title": "Bhupender Yadav highlights local communities’ role in wildlife conservation",
@@ -272,52 +256,52 @@
    "description_excerpt": " Bhupender Yadav highlights local communities’ role in wildlife conservation    Social News XYZ "
   },
   {
-   "title": "Sundance-winning 'Nuisance Bear' to open ALT EFF 2026",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZ2JpS0txLTBYQXBMa2R5MWlDaTdESS1zbmJQendBb3BsVFZOWUxxOGhIQUlsX19UQ25Rb0VpWWxrQ0R5MF9IY2tMdXpsWm80ZWJDRUhiTWhTZTFGd0R2SVZHcENhMlFMaG43YWJlMzc3TGVUSy1sUktWNXJvcUJyTW9ZbDVlWEZCb2JmaDFGRG5SUXk4aktrNkFidDI2dw?oc=5",
-   "publisher": "Big News Network.com",
+   "title": "Dharitri Youth Conclave 2026: From climate concerns to collective action",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWDBoOGdMN3A1REdRWFkwZFJidWhrZ3MyNEdub19VMzZUamF4NnhaQ0ZQOHB4VXhzNGw5dTJZdVBxOVJ4WGxtN1h2cndna2ZOYXJmaHZqdEhEa25zUXlQeGJTUFgwZ1d2UGo3RFNTemptRUh0UEpKbENsN0hScFg3cmlDN2toWWVSS1BzNERWeDdhSzdVRGJqQzVUc2d5djNa0gGgAUFVX3lxTFBYMGg4Z0w3cDVER1FYWTBkUmJ1aGtnczI0R25vX1UzNlRqYXg2eFpDRlA4cHhVeHM0bDl1Mll1UHE5UnhYbG03WHZyd2drZk5hcmZodmp0SERrbnNReVB4YlNQWDBnV3ZQajdEU1N6am1FSHRQSkpsQ2w3SFJwWDdyaUM3a2hZZVJLUHM0RFZ4N2FLN1VEYmpDNVRzZ3l2M1o?oc=5",
+   "publisher": "OrissaPOST",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Sundance-winning 'Nuisance Bear' to open ALT EFF 2026    Big News Network.com "
+   "description_excerpt": " Dharitri Youth Conclave 2026: From climate concerns to collective action    OrissaPOST "
   },
   {
-   "title": "Bhupender Yadav Chairs 92nd NBWL Meeting; 133 Development Proposals Reviewed for Wildlife Clearance",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSi02YTRqTDBIbzJKU1hLd1A5M1NUWnVnNFkyVEFiTHdIdU1sZ1lxT083NjA0aE1tN3NOME44c3lXU2tRZ0E0RU1kaWJRTjgyQmE3Qk91SHJWcEM4VXZReEtxRHlCMVRmYi1hWDc3c1piTnNJM2JjTFVKX0RCZE1JenB1OW1hVWFPRV9BOFZQbEZiOVZwTTVMWU9IYk5JZHFRXzM1a3VQd2oxcGthdHc?oc=5",
-   "publisher": "Indian Masterminds",
+   "title": "Protecting Wildlife Requires Gender Equity",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNejJhWi0tQktFYzEwa3Z2VC1pUi1jaXhrOFpaLXBMd1BKNE03eGc2a3ZxTUt2a3M3Z3d3Y094RHdPTjlXSXA4cl9paUpzbmpUa0JEM1VockE5RlduN2NndVNZYzhPcFNQWEMwb2pKSmV0Snc4bGNxd3BSbXBTQzRnbElDb2ladHdJTVZJRWJBNkc?oc=5",
+   "publisher": "The Good Men Project",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Bhupender Yadav Chairs 92nd NBWL Meeting; 133 Development Proposals Reviewed for Wildlife Clearance    Indian Masterminds "
+   "description_excerpt": " Protecting Wildlife Requires Gender Equity    The Good Men Project "
   },
   {
-   "title": "'Nuisance Bear' to open All Living Things Environmental Film Festival",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdUFVc3VzdjNibWtNN1ZBdnJLY1dWTHY5b0FlejJOdFRYQTZPQXV0OXpMOTN2bTI1Nzg1ZktqanRJUjhJc3F2eEVJSjRaMEZSVDlKdnNFS0VqLS1oUmxkRk1jUjQ4eERnSnRYRERDOEtqdlp5bE9IeWc0N25tTm1XdzhHTEZKa3pmS0I1c0dMcWpoUVV1TElWaG5RMFM?oc=5",
-   "publisher": "NewsBytes",
+   "title": "Jersey fire service draft plan warns of flood and wildfire risks",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTDRJTDhrZG9iY0JDOURROHg0RktsNURsQkRzQVFhcUxzTEE5a0RZOUh1SnEyZmFnU2ZVY2tLQXdsVjlFZ1BEc1BKaDlEYm81Z0E1YURjSDVuMjhOVVhrX0dmVHJYWjVrZmFGcnBNTnNoZTI1YndLUGNsc1o4cVVtdmdnVG1MVzJ1ZjlmbEhXUQ?oc=5",
+   "publisher": "cedarnews.net",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " 'Nuisance Bear' to open All Living Things Environmental Film Festival    NewsBytes "
+   "description_excerpt": " Jersey fire service draft plan warns of flood and wildfire risks    cedarnews.net "
   },
   {
-   "title": "Student-Led Protests Sweep Europe, Demanding Higher Wages, Lower Rents and Better Schools",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeWFwVjczRlNMOWlDYnFERjIzOGJpb1JrS29FYmJNUlhnaXVUclk1R05BZGp2VlRNVG9kUXNwMlhOWU8zal9xWEhsSVdVRkprU2VJN1J2SlFSZGZmMWtNczFGOG5DbnVnRkhFemZGV1g2UEhYRXpkNktHM0l3TnVGbUtBYjBEYWxKd0FoSHJCS245NVpQemxhcGgtai1acW44UWwyNUlrLVRhMkhaaTNHTEZ3c1cwWkgtOWdoMjRuNWgxWEhBZms3bWlZSk1yTlRudHlF?oc=5",
-   "publisher": "Democracy Now!",
+   "title": "One for all, or all for one? – Future of social democracy - ips-journal.eu",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPamtVb1FGTjVwTXI0T0lPRlJWSlhPZHpxTUlNdW82dElGM09ENldXXzI2YTdYRUlVRXVBbUJqSzFfUmNEbE56Sk9ramdVa1J6Snh5ZjFFR0Q5V3diMWt4RlJvSlFsUU5IX3JZcnlOVlpVSXpqNDJWNTNLNWhfdkxBWnNnNmsyenhqcFRMblN6c05XalJEaHBQZw?oc=5",
+   "publisher": "ips-journal.eu",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Student-Led Protests Sweep Europe, Demanding Higher Wages, Lower Rents and Better Schools    Democracy Now! "
+   "description_excerpt": " One for all, or all for one? – Future of social democracy    ips-journal.eu "
   },
   {
-   "title": "Protests sweep across Europe over living costs",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVFoteFRzRS1ld3dpc2QtWmJiZUlQcVhHZVdQb1RuTGE4akVFcnVlbnZaVVk0LU9jalAwRF9FcUJ1cVg5S3VNQm9PaVFyaWFYcndxV0xqcncwTkthaHpZTjJLRWRjWnVldFBPMjBYYnVSZ3ZZWXJqeWNzMF91T0RlTXkwbTlaZS1CRWlIUWloaUZldU5H?oc=5",
-   "publisher": "Pension Policy International",
+   "title": "Who Pays When Europe Gets Protest Policing Wrong?",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeWZhSjBFaG5PTXhxbjFCQWFSWi1IMFVOM0l0MmduTTQ0Xy1iVE9mV24ycGpkQWVSRnpEcU9iQ05HTURvMWQzelNwVVNnYzZkUFpPRXI3T3JhM0JQdTkxek1xcGRGUUVsbXZoM3didWViNDhuVHE4VWw5aEVucnZSek5nRVhxSTVnOVlxLUJCaDA?oc=5",
+   "publisher": "Fair Observer",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Protests sweep across Europe over living costs    Pension Policy International "
+   "description_excerpt": " Who Pays When Europe Gets Protest Policing Wrong?    Fair Observer "
   },
   {
-   "title": "Korea's 5% Foreign Resident Era: Open Coexistence Path",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWmotNWZETlZFTXJqc1FxVU8tc21LZVVWanBJMzhGSW5KQ0QwZnZkalQzcUROT0h1TlVwclRyYWxCSnNCanVXbHZmelZXaWpjTml0T21IeERydl9tcDVLOHpuMlBseVFUZERMMlJqazFRNTlGYzd4RGFhR0tqX25SdjJFbHJtQ0k?oc=5",
-   "publisher": "조선일보",
+   "title": "European Youth Protests Renew Debate Over Living Costs and Defence Spending",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAwMzQwX0FQTHlDOVE1T0JaLXRoV01peXlPczd1bnZuMDlqbklxdlJaaVpCeEY0dU5MZG9Fd1F2ekQzdVN3Rlh0MDI0aVFRQW9PT3d3M25OaVJqVGhCWlZJeGRtYmJMdGNVUGNic05zazJCVE1YYmViWW9qcXg?oc=5",
+   "publisher": "EU Today",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Korea's 5% Foreign Resident Era: Open Coexistence Path    조선일보 "
+   "description_excerpt": " European Youth Protests Renew Debate Over Living Costs and Defence Spending    EU Today "
   },
   {
    "title": "What Is Behind Europe’s Student Unrest?",
@@ -328,12 +312,44 @@
    "description_excerpt": " What Is Behind Europe’s Student Unrest?    The National Interest "
   },
   {
-   "title": "Europe’s hot autumn of protests is a symptom of economic breakdown",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeTViWUJzN09sVl94aHVSS2hXc0tmN0J4dmw5cDZnTFE3Mkxia2tEMEhQM3h4VVBkRnlmSlhEMWV3RGpoWDlUTmY2a1l2b1l3ZXhyU3hyVG1HT0xvV2lOUlVqQUZRQ3pDSW5Zc1hCZzMzUElzUV9yVlJSZzVRYlVRU21weTF2X3ByVlpDZG5hWkpPQXJZdG5uVWVSY1p4REUwTElTZkRvdXJqaUhQMjZuaWFEZ9IBuAFBVV95cUxQemtYVUlQMmZLWEc0bERhV0Ezc0tWMEZzMFFjd0VqdW95dzdkeFN0bTRhM3pCRmtKemZWVjc4WEVIb1pPb3E2WWF5LTNtVkE5RHE0NkNNcnhQY1NHQ3JlSWY0SW5BcW41aFdFVmlCRk5SS0QyVUJnVGdDOFhfX2s2WlZZSDRFSFVSTWFvZUNIYVRzOUhiMzJlOG1fdDcwVFVxcFNzR3N4Z082N0xSeXducHZYZEpxd3Z3?oc=5",
-   "publisher": "Al Jazeera",
+   "title": "Korea's 5% Foreign Resident Era: Open Coexistence Path",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWmotNWZETlZFTXJqc1FxVU8tc21LZVVWanBJMzhGSW5KQ0QwZnZkalQzcUROT0h1TlVwclRyYWxCSnNCanVXbHZmelZXaWpjTml0T21IeERydl9tcDVLOHpuMlBseVFUZERMMlJqazFRNTlGYzd4RGFhR0tqX25SdjJFbHJtQ0k?oc=5",
+   "publisher": "조선일보",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Europe’s hot autumn of protests is a symptom of economic breakdown    Al Jazeera "
+   "description_excerpt": " Korea's 5% Foreign Resident Era: Open Coexistence Path    조선일보 "
+  },
+  {
+   "title": "European Youth Strike: A Million Students Mobilise Against War and Austerity",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rd05jYWJYSHBNVWxHV0dNQ2l3ZVhET0VlLWR3bGd4bkItZU8yUlY4TUctcDdzdjJkZGlrQ2I4YlUtdHQ3YkkxYmdfOUtTZ1UzTjJ5OXNsSVp5bm9JVEtB?oc=5",
+   "publisher": "Savage Minds | Substack",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " European Youth Strike: A Million Students Mobilise Against War and Austerity    Savage Minds | Substack "
+  },
+  {
+   "title": "Half of Canadians Believe Youth-Led Protests Could Emerge Here, with Younger and Less Secure Canadians Most Likely to Expect Them",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNSVZpUEg3YXVOS2ZiOV9pSklwdjVHRVVYaGZZNTlybnF4MHF2UGxpWV9UYlBjWThXdUJpZU8zWkRISVYyNnN4WWZrU2JpZEpoRkxTUUpmSkxJZnhMSkZwblZibEoxN0x0eUN1enRYM1h3OGFkSHI5ZjZJcFROX2RnM0hfZTdLWUxscXRxYnlnWEFveS1HQlpXOXpfcXFuZHNHVk5rMnVrdVRXOUpDdU5xMGNZSUhTY1pKa1d5VVhHZXJnNEtod2hCT1F5V0RiR0JzWGZhZ3VJeFk5QUJVcWwyQmczSWxfUQ?oc=5",
+   "publisher": "Abacus Data",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Half of Canadians Believe Youth-Led Protests Could Emerge Here, with Younger and Less Secure Canadians Most Likely to Expect Them    Abacus Data "
+  },
+  {
+   "title": "GREDA proposes star ratings for student hostels as universities point to commercial loans",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPOU1jS2phUFRXcGJTUjZlcHZXWHVneW9GZHYyM2ZyZHVsTDQteXB5Ny1mTmNzdVYzYWlLaGEzNnp6b19XQUtHekRpM2FGcnlYVkF1MktsRkgxVmpxbURtM3N6S0tPWXE4UUlJODhNOVhyV3hHMXgzazdYSFlCT09GeXFFRll2VU8yT3NoVlR0OA?oc=5",
+   "publisher": "3News",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " GREDA proposes star ratings for student hostels as universities point to commercial loans    3News "
+  },
+  {
+   "title": "Students fear Essex University cannot match barracks security if soldiers move in",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRmkxbkpLNkxFV1FvZTRqeGxqNGtwZXAyV2ExdXRpcG1GTlByRzdwTzdMM2wzYmxJbUlELVQ1NldxcDZCeE40MG0zYUpnYk1kd2ItSGEtZWdpQ1lkeGZUd1p6dDZ4dmF4RV9BdzBEQUNXbllyNFo5VzlXRnh5dnFENHdpbkd4bkpJbEo1Q2JKUHlJZ21SUUxTZUlsbWdPNGc?oc=5",
+   "publisher": "Colchester Gazette",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " Students fear Essex University cannot match barracks security if soldiers move in    Colchester Gazette "
   },
   {
    "title": "Who should pay for student accommodation? – Universities demand national conversation",
@@ -344,88 +360,72 @@
    "description_excerpt": " Who should pay for student accommodation? – Universities demand national conversation    MyJoyOnline "
   },
   {
-   "title": "Chukwudi Ubah Earns International Recognition",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbUdFOXZaSEtiQUtGY3pXNGtyQUFzUFA3VVl1YUhELVN5ZGRIV1l2ZWUxMFBYUGkxZDFQWUNaQ0dCbWhkbUJpc2lHTEFacElCZUJxWWFZYTJrQjJMTDZUV2RONUxBWndxYzZFWVFZV3JXUW9sVEEyN1FpdWNkbFR1cjdqc1FuRjBlSHRIVlZHdW9GWk9FajNJOGZjdHlBYi0zM2RVSzQ1MktaQTBHeVlLUXRPTnhyeTJvSVBMUDJYZzVGdzlhamc?oc=5",
-   "publisher": "ECU News Services",
+   "title": "MAHA model’s first cohort snags $47M for chronic disease coaching",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeWlrRG9oN19Rb3lCTi14T0gydm84VmhlZk5JS1hFT2tsb3l3MWNVTFFJNGtXUURnWXFIbkJkRVZZT2hQMl9lOGdjTUNaVU44RWtTd3E0a0ZzQkNhWk0xYkNuT3d6bTJMQzVyOExKT2hIMXlDQ2w0MjR6ZVhoMFFmckhhRzlPZEhQSVN0OE1vVnNkWnVFUUpPYmZvQmJHaVlERXdLWTFaMmtKLUk?oc=5",
+   "publisher": "Healthcare Dive",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Chukwudi Ubah Earns International Recognition    ECU News Services "
+   "description_excerpt": " MAHA model’s first cohort snags $47M for chronic disease coaching    Healthcare Dive "
   },
   {
-   "title": "Rural Chinese Communities Outpace Cities in Five-Year Hypertension Detection Program",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMDYwVFBoNVhXSVQtZWM2MERFdVFybmlxcDRKb2FKSjZhRFFvN3EwUzJyQURPWDQyTDRna3lQUXV2VHM0VzBORmVxSTA5LUZ0OWItb2pzMndpWDdpUmthT2t4SUh0SHE5bVRsd0szbzdIZlJiS2hQREV6bEx0YUFLOUU5TUM0cTlKWmJfbTkxTWtDSUlQQXVfOUJPeFhtM3dialgzTHdfNFZCNUNqQkE?oc=5",
+   "title": "UAMS Participating in Nationwide Study to Find Best Treatment for Life-Threatening Vascular Condition",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOUJuOThlU2Nxb3NfWlRCZHZvTGV2dUhmWlVqTVFTV25RQ18wRGwwTm45eEpyTUhpdEZZakx5ZFZXVkVWUjVPT1pQbEFGNENnUzAyV3R5eFdLZ05seVFMTmZXV3l6LVRaanhWMWx0cG9DbUxKT3poZjd5amFxY3ZRME9SSWVCUUpWbklzMEdGZmxLSHRKRUtqSW92MGtDWFlCSWg1SXZINXZoMldDQkNBVFh0UGFDazZoNi1TZEJvZ3VNVlViY0ZTdE9PamZsUWRu?oc=5",
+   "publisher": "UAMS News",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " UAMS Participating in Nationwide Study to Find Best Treatment for Life-Threatening Vascular Condition    UAMS News "
+  },
+  {
+   "title": "South Carolina flu cases rise as hospital limits visitors",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcWRFNTFWOVkyZkVkTUZkZGlvbm45R29RZTltUERXaXR3clE2d0dhVVlSOTJqUXNVdFdwM2N5eHJYS1dpUGltcW9FejlMcldEakpIMDhVc0V5LWpXWjY0NC1YdWoteVdvYjE2aE1POG5KdDJDeTB2RVNmczFnRjVZQktnM1Y5TWlwbmVsdm5WT01TejdCWUZvNjJlU0hma0pwSEkwNTVpU2NsWFRwYkxHdFhwQm5qRF8tNTlyaVIxLTZSWW9taFhUV05fZW1BZl9lNXY1OQ?oc=5",
+   "publisher": "Bluffton Today",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " South Carolina flu cases rise as hospital limits visitors    Bluffton Today "
+  },
+  {
+   "title": "CPHIA 2026 Opens with Focus on Health Sovereignty and Action - Home",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV3VnSENfMzhkU0tYbjJvZm1WSDRkQS1JajNYb0o2a19aVGNCREVnWDBFMU9oQV84TG12XzJlR3pMQ3pkN3dRMzAxVkRiRXRnZWpEcVdLNDBNd2c0SHVLRGJ4TGJYczl2cE5QZ3BvMG10THBWUEtVQWF1bWlkN3FYZUZaU3ZEUnRiUFN3REluOGVXVmJHOURzbg?oc=5",
+   "publisher": "Home – Africa CDC",
+   "feed_occurrences": 5,
+   "feed_count": 5,
+   "description_excerpt": " CPHIA 2026 Opens with Focus on Health Sovereignty and Action    Home – Africa CDC "
+  },
+  {
+   "title": "Hospital Data Evaluates Machine Learning Models for Regional Cardiovascular Disease Prediction",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYVNPQUFrMU1EOWt5eE1NZ041bUsydG9oVF9ZRGs2U0t4NVU0VGJuNG10TUx0OTJ5VEY4TlNzQllxV25BZjZzNGJERVdyMTd4WXZGMWNXaDhBbmI0ME4tY2F4MW1XQlRQVVhhMkhSRXczMnFncG1FN190VTRfWm8tcXhfdWZkd0dtTWwxbV9BVkllYl9LaTdiMGlNNVh4cXhTMzRmOU54bmQzWkRIanM5Ung4SnYtRlVpSkxJ?oc=5",
    "publisher": "Bioengineer.org",
    "feed_occurrences": 5,
    "feed_count": 5,
-   "description_excerpt": " Rural Chinese Communities Outpace Cities in Five-Year Hypertension Detection Program    Bioengineer.org "
-  },
-  {
-   "title": "Air pollution reprograms brain's immune cells, harms healthy brains and accelerates Alzheimer's disease, new study finds",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZFFpTFBOR3pfU0NTM1FRazZrLTFjV1RoVFVhXzYyeEdPTUljSW90VXh3cWJlV0RzaFpqTzFXd3ZHRHJ6WWZ6ZTh4ZVQzRHBGYUh4c2tVeHVVZHJlNU9mUU5QZC12Wlc0WWVIWXJfNnRIdnMyeWI5NWdoX1lidjU3ZW5pTEFOZTlS?oc=5",
-   "publisher": "Medical Xpress",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Air pollution reprograms brain's immune cells, harms healthy brains and accelerates Alzheimer's disease, new study finds    Medical Xpress "
-  },
-  {
-   "title": "Binghamton pharmacy professor highlights risks of “urgent care at home” antimicrobial kits",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYjQ0OFY5NXdqTDhvYnVtbkI2VDVCYnp6bUwxM2Q4bGRaSGxPSFRhZUlZdmhDU0dhMERUWEs2R1FJN1VrYkQ0LVlLX2NCNWpDMDlRWGlkSHVaVmh6TWtlS1lPanZwVUpmSTJmWGprd1ZiSHJQcEtuWnJ0U05jaUNOQ0ZBY0s2a3VGQjg1eVVvS3IzbkxpRWd3LWRNTEZiSnpBVDJycXhGRkdIelNNc3g4dXJMRjBWNVI4T0RqaVItVktWb2F6UmF0bWZNSQ?oc=5",
-   "publisher": "Binghamton University",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Binghamton pharmacy professor highlights risks of “urgent care at home” antimicrobial kits    Binghamton University "
-  },
-  {
-   "title": "Biomass Fuel Linked to Higher COPD Risk Than Smoking in Gansu",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRHBtLWVodXFCVUkwYzg4YWJmclgxaWNLZlJ6VVVoSlhubkpORm5WS2lnU3JPMXhQbzQxQWNrbkxwWllLOS02RTBpU1liNWg1N1gzQWtJdzI1SGxYXzJaLTJsWmZIVk41TnAwWHBQMnRRR1JncXlRUjhlZnVoMHpmYzZNd2otVl9qNXZlQUtYQQ?oc=5",
-   "publisher": "Bioengineer.org",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Biomass Fuel Linked to Higher COPD Risk Than Smoking in Gansu    Bioengineer.org "
-  },
-  {
-   "title": "COVID-19 Surges Temporarily Cut Hospital Outpatient Therapy for Chronic Neurological Conditions",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNThfSzRkZHZFREYxSUJjNzZ0NTRIZ3VQUDcydmg2NjlwM3J1RFc4elc3bnp2UGxTYUJJQTA4VXY2YkpqcTlZQ0FxOHZaWC0wVl9QczR0ZXlteUlHclRkQUZNYmwtTEZ3aXJLb0dTOUdPbWlZZUFXQy1MR1pEenlSd1BQZ2JKS3FtRHRvOHlOOVJNdkVxS1hPRllNdkxZV3kzcjlqMUkyUk5FSXdiNG1ERk1hTTR3RXhwa0RlOQ?oc=5",
-   "publisher": "Bioengineer.org",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " COVID-19 Surges Temporarily Cut Hospital Outpatient Therapy for Chronic Neurological Conditions    Bioengineer.org "
-  },
-  {
-   "title": "Institutional Tensions Divide Chinese Health Agencies Over Free Antiretroviral Drug Delivery",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcUNqOHZyUDdyNU9MRjBrZlJuRmJyeUx2LTd1c2IxVDg0OVU1akZCcGkzczJjVEJYT2plbkRFM0dYVExCMVFOWHp5cnVjZmxNc3VlRmdwRnNxNzFsMnhiS0FhX2g0RFdScnoxWk01c3ZZT2dxTkpjVzhETHJzc3l6eTFHOURmRlMxVUF0VmpFYUczdm5QUnZoMjhIZGhoc1ViQUREYVQ0SndiZ3dCdGpSUWJSQmtVSkZp?oc=5",
-   "publisher": "Bioengineer.org",
-   "feed_occurrences": 5,
-   "feed_count": 5,
-   "description_excerpt": " Institutional Tensions Divide Chinese Health Agencies Over Free Antiretroviral Drug Delivery    Bioengineer.org "
+   "description_excerpt": " Hospital Data Evaluates Machine Learning Models for Regional Cardiovascular Disease Prediction    Bioengineer.org "
   }
  ],
  "unmapped_review_file": "data/unmatched-review.json",
  "direct_source_breakdown": {
   "configured": 52,
-  "successful": 50,
-  "mapped_pre_dedupe": 367
+  "successful": 49,
+  "mapped_pre_dedupe": 369
  },
  "publisher_by_editorial_region": {
   "africa": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 109,
+   "mapped_pre_dedupe": 108,
    "feeds": [
     {
      "source": "direct/AllAfrica West Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 28
+     "mapped_pre_dedupe": 29
     },
     {
      "source": "direct/AllAfrica East Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 28
+     "mapped_pre_dedupe": 29
     },
     {
      "source": "direct/AllAfrica Central Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 22
+     "mapped_pre_dedupe": 18
     },
     {
      "source": "direct/AllAfrica Southern Africa",
@@ -435,7 +435,7 @@
     {
      "source": "direct/Africa Arguments",
      "status": "ok",
-     "mapped_pre_dedupe": 0
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/The Conversation Africa",
@@ -447,7 +447,7 @@
   "asia": {
    "configured": 3,
    "successful": 3,
-   "mapped_pre_dedupe": 18,
+   "mapped_pre_dedupe": 12,
    "feeds": [
     {
      "source": "direct/Mongabay Indonesia",
@@ -457,36 +457,36 @@
     {
      "source": "direct/The Conversation Indonesia",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 1
     },
     {
      "source": "direct/The Diplomat",
      "status": "ok",
-     "mapped_pre_dedupe": 9
+     "mapped_pre_dedupe": 4
     }
    ]
   },
   "europe": {
    "configured": 2,
    "successful": 2,
-   "mapped_pre_dedupe": 5,
+   "mapped_pre_dedupe": 0,
    "feeds": [
     {
      "source": "direct/The Conversation France",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/The Conversation España",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     }
    ]
   },
   "global": {
    "configured": 6,
    "successful": 6,
-   "mapped_pre_dedupe": 12,
+   "mapped_pre_dedupe": 15,
    "feeds": [
     {
      "source": "direct/Global Voices English",
@@ -511,12 +511,12 @@
     {
      "source": "direct/Mongabay Global",
      "status": "ok",
-     "mapped_pre_dedupe": 8
+     "mapped_pre_dedupe": 10
     },
     {
      "source": "direct/Inter Press Service Headlines",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 4
     }
    ]
   },
@@ -528,37 +528,37 @@
     {
      "source": "direct/BBC World",
      "status": "ok",
-     "mapped_pre_dedupe": 10
+     "mapped_pre_dedupe": 11
     },
     {
      "source": "direct/BBC Science",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/BBC Business",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/Al Jazeera",
      "status": "ok",
-     "mapped_pre_dedupe": 21
+     "mapped_pre_dedupe": 20
     },
     {
      "source": "direct/The Guardian World",
      "status": "ok",
-     "mapped_pre_dedupe": 24
+     "mapped_pre_dedupe": 29
     },
     {
      "source": "direct/The Guardian Environment",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 5
     },
     {
      "source": "direct/DW World",
      "status": "ok",
-     "mapped_pre_dedupe": 5
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/France24",
@@ -568,7 +568,7 @@
     {
      "source": "direct/NPR World",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/NPR Science",
@@ -578,53 +578,53 @@
     {
      "source": "direct/The Conversation",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     }
    ]
   },
   "north-america": {
    "configured": 1,
    "successful": 1,
-   "mapped_pre_dedupe": 1,
+   "mapped_pre_dedupe": 2,
    "feeds": [
     {
      "source": "direct/The Conversation Canada",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     }
    ]
   },
   "oceania": {
    "configured": 1,
    "successful": 1,
-   "mapped_pre_dedupe": 2,
+   "mapped_pre_dedupe": 1,
    "feeds": [
     {
      "source": "direct/The Conversation NZ",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 1
     }
    ]
   },
   "regional": {
    "configured": 17,
    "successful": 15,
-   "mapped_pre_dedupe": 93,
+   "mapped_pre_dedupe": 111,
    "feeds": [
     {
      "source": "direct/ABC Australia",
      "status": "ok",
-     "mapped_pre_dedupe": 10
+     "mapped_pre_dedupe": 12
     },
     {
      "source": "direct/RNZ World",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/RNZ National",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 19
     },
     {
      "source": "direct/CBC World",
@@ -639,12 +639,12 @@
     {
      "source": "direct/France24 FR",
      "status": "ok",
-     "mapped_pre_dedupe": 13
+     "mapped_pre_dedupe": 16
     },
     {
      "source": "direct/France24 ES",
      "status": "ok",
-     "mapped_pre_dedupe": 14
+     "mapped_pre_dedupe": 19
     },
     {
      "source": "direct/DW Español",
@@ -654,47 +654,47 @@
     {
      "source": "direct/BBC Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 3
+     "mapped_pre_dedupe": 8
     },
     {
      "source": "direct/BBC Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/BBC Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 4
     },
     {
      "source": "direct/BBC Latin America",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/BBC Middle East",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/BBC Europe",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/RNZ Pacific",
      "status": "ok",
-     "mapped_pre_dedupe": 7
+     "mapped_pre_dedupe": 6
     },
     {
      "source": "direct/Guardian Africa",
      "status": "ok",
-     "mapped_pre_dedupe": 2
+     "mapped_pre_dedupe": 3
     },
     {
      "source": "direct/Guardian Asia",
      "status": "ok",
-     "mapped_pre_dedupe": 8
+     "mapped_pre_dedupe": 11
     }
    ]
   },
@@ -706,29 +706,29 @@
     {
      "source": "direct/The Conversation Brasil",
      "status": "ok",
-     "mapped_pre_dedupe": 1
+     "mapped_pre_dedupe": 2
     },
     {
      "source": "direct/Mongabay Latam",
      "status": "ok",
-     "mapped_pre_dedupe": 4
+     "mapped_pre_dedupe": 3
     }
    ]
   },
   "specialist": {
    "configured": 3,
-   "successful": 3,
-   "mapped_pre_dedupe": 24,
+   "successful": 2,
+   "mapped_pre_dedupe": 17,
    "feeds": [
     {
      "source": "direct/ReliefWeb Updates",
      "status": "ok",
-     "mapped_pre_dedupe": 20
+     "mapped_pre_dedupe": 17
     },
     {
      "source": "direct/UN News",
-     "status": "ok",
-     "mapped_pre_dedupe": 4
+     "status": "failed",
+     "mapped_pre_dedupe": 0
     },
     {
      "source": "direct/NASA News",
@@ -739,23 +739,55 @@
   }
  },
  "geographic_mapping_review": {
-  "distinct_unmapped_titles": 855,
+  "distinct_unmapped_titles": 850,
   "high_repeat_unmapped_examples": [
    {
-    "title": "𝐇𝐞𝐚𝐥𝐭𝐡 𝐟𝐚𝐜𝐢𝐥𝐢𝐭𝐲 𝐮𝐩𝐠𝐫𝐚𝐝𝐞𝐬 𝐭𝐨 𝐞𝐱𝐩𝐚𝐧𝐝 𝐚𝐜𝐜𝐞𝐬𝐬 𝐭𝐨 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐡𝐞𝐚𝐥𝐭𝐡𝐜𝐚𝐫𝐞 The Murang’a County Government is stepping up investment in health infrastructure, with new hospital units and dispe",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE44bXNYY25hRTRoYzNNWHpBTXdVd25mUl82NGYwck94UjIxbHRUbU53VnNXNmtrYUxmX2gtZDdiMVRaN1BFWFowS1NaYmJVMmZQby1nNG8xUGN5TVUwUWpkd2VyZUJDWkd2TVJpZFZGcWYyc0U?oc=5",
-    "publisher": "Facebook",
-    "feed_occurrences": 8,
-    "feed_count": 8,
-    "description_excerpt": " 𝐇𝐞𝐚𝐥𝐭𝐡 𝐟𝐚𝐜𝐢𝐥𝐢𝐭𝐲 𝐮𝐩𝐠𝐫𝐚𝐝𝐞𝐬 𝐭𝐨 𝐞𝐱𝐩𝐚𝐧𝐝 𝐚𝐜𝐜𝐞𝐬𝐬 𝐭𝐨 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐡𝐞𝐚𝐥𝐭𝐡𝐜𝐚𝐫𝐞 The Murang’a County Government is stepping up investment in health infrastructure, with new hos"
+    "title": "Piddington women's concerns about asylum not racist, says think tank",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1UUHBtUHI1UmZVeWtud2QtM1d6OTRBXzRHekVySDBsRGxyMlJyaGtTeUJJQkdkU3NOc0dFbERaSi13WWFnVWkyWU1jaTBmX3hoeFp1WmFWcV80b19rUXc?oc=5",
+    "publisher": "BBC",
+    "feed_occurrences": 6,
+    "feed_count": 6,
+    "description_excerpt": " Piddington women's concerns about asylum not racist, says think tank    BBC "
    },
    {
-    "title": "Swedish Voters Warm to Prospect of Snap Vote as Talks Logjammed",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSlk5MlVhN3hrU01pQVZBYlJJVHNoc05hMzdBa0JPcGlodWhBUENyXy04Sk1SMFZ0OVI3VTJIWUhkR1NoeE9JU21XVFpvWTRUdjM5LVJES0NOVlJsVl9COEVoZlVQVER0dUFDUFZVMmIwVk9UdHlOQ0lNOFJPT0h2YVNOdWw5UDZwb0JuTF9ESy1BcWUyaUNUQUJIaVNsSkozYnl6RHdCNlpLcXlYY1JuczFGRktoX282?oc=5",
-    "publisher": "Bloomberg.com",
+    "title": "Swedish parliament to vote on Moderates leader Kristersson to remain prime minister",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNmIwdlItRHVUTTBjRHdoaE9SUG5FdEU2ZmJ1ckkydGtiV0hha3ZObzlGeW1NXzNzUnpvb1pCZjVqdFJKakRIMTFJaTRkTVZULWlvRGJfZ1JfelllVGNSWXR0OVRrUGZJWGdnZUNPdkU0ZFQweDRaN2VTcFVxSVZiX1NyOVRFZUpMTE5lYWVONTdQc1lETEFpR01UUWQtelJ1UmRuWnlic0JyWXpld2Q3N2NYSlNKVWVGd2o3NHoxMzA1cmM?oc=5",
+    "publisher": "The Straits Times",
+    "feed_occurrences": 10,
+    "feed_count": 5,
+    "description_excerpt": " Swedish parliament to vote on Moderates leader Kristersson to remain prime minister    The Straits Times "
+   },
+   {
+    "title": "Young protesters hit the streets across Europe",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRnRSOG1JbWRWbDZud3B1b29VS1VYbXJNcjBhNXkwaGZCWHFJaF8xWmtkNTgxYVViZDBOa1VEeTVsdElJWDM1SWFxaHNWYTY0TEU0dVdPa0dlQTBmUTFpcVVQWmhGRnYxUENiSHY1cVljdGYxamlHSnVSVUhkVmVCVlIweHRrbXZrOUZpdEZPYXNucjZOVDFjNkF2VE9MaFpG?oc=5",
+    "publisher": "The Daily Star",
+    "feed_occurrences": 9,
+    "feed_count": 5,
+    "description_excerpt": " Young protesters hit the streets across Europe    The Daily Star "
+   },
+   {
+    "title": "Albanese and Taylor focus their troops on election as government pushes agenda through packed pre-Christmas sitting week",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPMjZPSm9GY3ljbjkwbC1yNU1WVGcyYUstOFl5SzdzVWFmcXdKRkJSNzJ5N242bDNvMFFVbnNYamVyQWJXTUdXakdUTnVzWnZjTGM5aVhkS0xxYmtfakJabTk0RmVKR2FfTG5JVzFKRmxtTFNaSEZacHR0VmdwQnlfbGNuOFBXWGxFemN6YXpJaGxtVU5PZ08zNVpUUTQ2Y0lmMXVES3VpT3RLTXlxeTZFQ1BSbW1Mb0NhWWs0MXE4UE1zZEFsUVdYSE5abzZwNEV3VFcwUTJvRmIxOXNNcGYwbzlfMm5vRXRkaWYw?oc=5",
+    "publisher": "The Conversation",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Swedish Voters Warm to Prospect of Snap Vote as Talks Logjammed    Bloomberg.com "
+    "description_excerpt": " Albanese and Taylor focus their troops on election as government pushes agenda through packed pre-Christmas sitting week    The Conversation "
+   },
+   {
+    "title": "Swedish parliament to vote on Moderates leader Kristersson to remain PM",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdGxraHZUV3hiNmVaYk84UjV0aHJNd0ZsTUNxVTlZaVpRVnRHYURkTWN1MlZtOUNSV3VkWGZZLVZEWFpaVmxTRnJadVQwQmR2THM3YWx1eEpONk14SXZqV1Q1THZFWi0xNUtadGVRb2JVLXRMWWFrM2pqcVNlT2oweEJlSGsxZ2wwalVTZ0NuemlOVTNyZi1VMDNRdEJ0QUlUNHBuTUVlZUtDYklz?oc=5",
+    "publisher": "Report.az",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Swedish parliament to vote on Moderates leader Kristersson to remain PM    Report.az "
+   },
+   {
+    "title": "No deal-making deadline for government negotiations",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcXFMMWJqQmRmSm1oSU9iX1NHUzFyQXU4eURYR0t4TDdYNEtrSW85OE9wcWFvbUlvNlVtOGk4WDdIT1c0SHJ6LTNGNTBBVnRUeDU2c042bFVWMGl2cXZJQ21KdnRfZ29NU3FheVlHNGpoOFU2S2dodDg0bGc3RUEyMGowMWNoVmdzeUpxeW5icU95MENV?oc=5",
+    "publisher": "Stuff",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " No deal-making deadline for government negotiations    Stuff "
    },
    {
     "title": "What Victoria's upper house might look like after the state election - ABC News & Headlines",
@@ -766,100 +798,20 @@
     "description_excerpt": " What Victoria's upper house might look like after the state election    ABC News & Headlines – Australian Broadcasting Corporation "
    },
    {
-    "title": "Peace agreements are signed on paper, but…",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZjhNc2l1Nk5NUDdUS1dSY3BhS2hCMFJobWo2TkpZSGFsVk9uTEZPUk0xWmx6S1dmT0JTMm5kY3ZtczdEcTZDZjZzZmt1SFV5SEo3V3BSNDN3aWVuLU5pX3VyelVGbl9uMTFGcHhNbElYamdHazBGN1pUd0lfa0RHVWRB0gGHAUFVX3lxTE1Qc2NEVXhqNGQwaGlNMEVXeS04S29ULUZwV1ZIbEphc0owUGlqdTc4alNuZWpNakpHbkhtQjFwS0NtNXVTUFdvdDRXRk01cWRneUpOa2hKd0JrVHZCU21TblBRZnplNjJiV3BnM2ROWWZpdDNQZ016NDc0UnZZbmZyUEN0dHhLYw?oc=5",
-    "publisher": "Inquirer.net",
+    "title": "Government assures Parliament of readiness for 2027 National General Elections",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQS14NlNpbS04bXp3MlNLcHhPZHVPdTBEdnMxZEpTdlViTHh5THZDY2R6ZTBUYkFLeW1tZXNXTnQtbW15MjFDR2ZqOG5RaVdxMGpEQ1VBM19USHd5U1RRbHpSM1RhV1BKb3pFM1ZrWEZoMXpqa0tHc1RRcklZb2MxUnlUS1ZGcExhempNUkJ4dzdyWUlldmEzU1hYTk5maktVa3RMa1J0T0Y3YlhXSzFN?oc=5",
+    "publisher": "Post Courier",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Peace agreements are signed on paper, but…    Inquirer.net "
+    "description_excerpt": " Government assures Parliament of readiness for 2027 National General Elections    Post Courier "
    },
    {
-    "title": "NCFC rejects proposal over election nominators",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbkktdDFseTJRY3BtbUtRRVozOFZ0d3dQTWowM0RwNXhKMzJwVGQ0TmJvYVZVSnVSaEZPcHNWcWJ5UG5XQkduNEZWek9FNVhoS09PSEc2MTNkTy1MRmxUTTk2Q0cxM1U4OUxRMk80MTBQOHlmakxxTjZWZXIySWJ2VFdjWkJTQk15UThQbHV3?oc=5",
-    "publisher": "Cayman News Service",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " NCFC rejects proposal over election nominators    Cayman News Service "
-   },
-   {
-    "title": "Deery: How Wilson rebuilt fractured Libs into government-in-waiting",
-    "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOMXRITVR0eWVYQjNOTG5ERzhsY3hfVndKNU4zR2xweUEzQlNOWVN3YXRPSW0wa2tROFpTMGFpLWszTF9jWFUzN1FxdF9KY093b1YtSkNLS29JUUx3QTRSRk15akNJbzJKWDlhVE44UVhQcjBPRnNYX1dvSWpnR0g2Ymt4a1ljMFZWRm50MkNrS3hSZ3MtaWRJcjJjZjMwX3RyYWpfclh6eS1lY1pNM2hGVXQ3RWJFbTlyMVc4bnlnQVZydkFUZlNfTzI1d2ZQbHZTb0ExNVlTaXFKU1NVMjBEMk5OZW96am1YNGlZLVd1SXIxdXhqRGczSm9yTHRpOGx3WWxnRHI0VWpQSEgzTWl6N0d5MWdVX2FmOWxiUElUcVFfQQ?oc=5",
-    "publisher": "Herald Sun",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Deery: How Wilson rebuilt fractured Libs into government-in-waiting    Herald Sun "
-   },
-   {
-    "title": "Political alliance challenges NEC election postponement in Supreme Court",
-    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNenZRd3RZTVc5VW1xT3NNZmoxWHV6NzVMZnRpYVhLTzA2N2VDaXFtT3MwaXhoZC1qYWtUYVpmM05wWWl4bTFaSjI2SU5qUW9VODBFbkdTVXdRcDRXMzFHVE1sVnh6U0dUVjFsamR0N0Zra3pnSjgxRlp0T092YmZzWkVDWEZWMi1IZFlyVFRxaF9UQ0p2UXdKQWh6UkhVNTFDSFE?oc=5",
-    "publisher": "Sudans Post",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Political alliance challenges NEC election postponement in Supreme Court    Sudans Post "
-   },
-   {
-    "title": "Conservatives want MPs to vote on government's plan for permanent residents",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaVpCTDNZQ2FIck04OFBoTmpLdmxHekstekdxWFFBemROdmxGQ0lqSldFTmtQU2xHUm1GVGV3X1NQNnVnYklrTGlpWHdVQk9aZ0gxTmtacEtLV2lRU0J3VkE5Tk5DN1RJVDNoLXVhYXFMaHFtcUo3aV9aci1UQjRJNmZIZ1BmMFBySUpUSXUxVklKanU3MmRidjByZnI4LVVrOWphMFZhbW9ERnFkMzRrMS13eGdaWHp2aWFV?oc=5",
-    "publisher": "Castanet",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Conservatives want MPs to vote on government's plan for permanent residents    Castanet "
-   },
-   {
-    "title": "“Disturbing”: Major coal mine expansion government’s last act in parliament before the election",
-    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb2pRTEJacmZoQkk3YXEwTEs3TzNuYzZoTmMxTHZBNXdmZTlRN1F5THRjZDdjOWhwNWstYVZDczF0MjFmQm5OWXM3czlRR1B3ckRBLTZMMS1RbnRwbEtGMnlRQzVRdmdRbXljdmVOQUVPc1ZGTXRWUWpWQnlHX29GWTNNN1FWdGF2OGpZZlllMW9fTmtnOUZsZ05oaUR5ajNlaU9WeF9KdEE1OTNYQlQ4U3RvVGREdUR2NmtzajJKb3ZlblpXN3BV?oc=5",
-    "publisher": "The National Tribune",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " “Disturbing”: Major coal mine expansion government’s last act in parliament before the election    The National Tribune "
-   },
-   {
-    "title": "Zille calls for electoral reform to stop small parties ‘making government unstable’",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbFhiVWVCMXBFWmh3X0g4dWNsd1BxZm93Y3dVenVUVDJjUVJwVnVQSGNIcmhKQ3BLQ0JyeU44ZkZES2dwMVhSRjBYNEFESDZXSDZFVmxQRjZTRGhRbC1sa1k2eUFjQnVMamFOckpGMzZJQWZVTS1GVGVFbV92c0xhelJoTmY5NG9ienlXWGJsa1pfcWVRaGhDRjdPWER4aWd0Y2pYYVd0amo0dnh3WklGZXE1MnJORzdzNDBhSVdMUG40WkJvb0E?oc=5",
-    "publisher": "News24",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Zille calls for electoral reform to stop small parties ‘making government unstable’    News24 "
-   },
-   {
-    "title": "UK’s nature healthcheck doesn’t stack up in wildlife’s favour – but volunteers are collecting plenty of crucial data",
-    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdjcyRld0Wm1EWU1sYTJoNVgtbTFKd2U2YkxfNDczZFVZQVZ5dG9mM0p1dTZqaWpwRGE5bk5ZdWdMQjBTenFqUHpSRkF4ZHFsdXg4bkNwNllvNGdxTXJKRTJxYWN6VEJVcDNVYl90MnBPY2dWb2dTR2hWd3c0MnBLNllKdENYbjFOVHhrdS1fZjMzVHJEY21FcmlnbGVoakJDdjlMWUxQZXA3dEFzWk5XUW90MUZlRWhJUThaN1dDSTFlY3p2QnowQk5ibmpuaDQ2UlYyTExtTTFQZkRkOXY5ZzNNMA?oc=5",
-    "publisher": "Inside Ecology",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " UK’s nature healthcheck doesn’t stack up in wildlife’s favour – but volunteers are collecting plenty of crucial data    Inside Ecology "
-   },
-   {
-    "title": "Emerging Bioacoustic Technologies Advance Global Wildlife Monitoring and Conservation Science",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTTBTTlFUYlRIMFBtWUNoZlhiMzQyZVp6ZFZXWTJUcURhTEg1R2FJWlE4SXo5a3ZybjZmU1Y1M1M0bU5jNExQcDV2ckhtTnNodkw2Y2Z4TUw4SkZGUmJNa0tJbjUzbWh4TXJlVUM2bWlBNWo1ODBMc0ZocDlGUk5oNF9yU0hBQWtYV1dwQl9ETHVVa1ZwZzVLb0VhdzgtSmdlVkRJdXZud3V1ZllBNFk1WWFFZGN6ak9pRUE?oc=5",
+    "title": "Philosophers Propose Right to a Livable Locality for Non-Human Organisms",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOXl1UUh1QjZ2b3NBX0otX0FwVjRjZTYySjdWQXU3MzdRUThvN0U4TDhPRFpoa2l6cU9lYk9UUFdOR2lsVFA3ajNDMTZZN2ZnM01xcjNhdWJKQ2JjVTBYdjJxYmJvTVhFX0RQbWJMT01EOHJ0T2psWGdNaEhZNy0waHJwZjVjVUp1dlZlRm1NclkxWG1WRVFkd2NReXRUUQ?oc=5",
     "publisher": "Bioengineer.org",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Emerging Bioacoustic Technologies Advance Global Wildlife Monitoring and Conservation Science    Bioengineer.org "
-   },
-   {
-    "title": "Himalayan marmot droppings could offer new clues to climate change and Alpine ecosystem shifts",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZVFCYnhzSDJHVS1WM1o4RGMwbHJqYzdadW5JY1BmWVZwcjJJX29vVkFSeWJnUXROVE0xXzlFdm1jT0gxVFA5NkI1ME0zUU8zYVVtNGY3UDJOc1djanpwUm1jVDFDNEg3dEFDbFdKOTMxcnpsTmZvNUZGQXRSdmtlaVdrdGdienVEenZPSGY5TWg3Z1R4YmR1aDVXQnlXbElNVWJjX3BGMG1iZ3c5dDhUS2c0RlA2MFJPeThrTA?oc=5",
-    "publisher": "DD News",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Himalayan marmot droppings could offer new clues to climate change and Alpine ecosystem shifts    DD News "
-   },
-   {
-    "title": "Union Environment Minister chairs 92nd Meeting of the Standing Committee of the National Board for Wildlife",
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBjeWtNS1prMGgzV2Nac1NzODBkYjc1ZHZVbzQ4Y0QxMGhIS0IxMHdDcnBoZjhoZU4tdG9oLU4wX3Rib19URG1VZVVlT2FpMUh2UkU0TUhvZF83ZldPRnl5eWwyQ1R5RjhNN01SY1NkQW82aUtyaklyUVl3?oc=5",
-    "publisher": "www.pib.gov.in",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " Union Environment Minister chairs 92nd Meeting of the Standing Committee of the National Board for Wildlife    www.pib.gov.in "
-   },
-   {
-    "title": "COP31 ends without major climate agreement with divisions over fossil fuels and finance",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeFZSWGk4OGJ5U0lQZUVTVXZDNDBLT3ZqMmJuV0c0Q3RBYWUyeXZLMXNDWGl1anRxN2xidXpuMmE2YXhJNHJLOVhWRVAwMzU1ZWt0cU0xMTNjcUJOOUFweERZREpVWTgyUUVoNzhTT25DZnRYZ3doUWhOTXhWRTBkYTl5N250WGczRmRlNnZKQzdYalBGWnBVWjJ4cHN1R1hSSUxaQ0NZckExVnRJcGFpZ3pTeG5yTVlQVmc1S1E0T1BWMFU?oc=5",
-    "publisher": "Inside Ecology",
-    "feed_occurrences": 5,
-    "feed_count": 5,
-    "description_excerpt": " COP31 ends without major climate agreement with divisions over fossil fuels and finance    Inside Ecology "
+    "description_excerpt": " Philosophers Propose Right to a Livable Locality for Non-Human Organisms    Bioengineer.org "
    },
    {
     "title": "Forestry Corporation Loses $18m in One Year",
@@ -870,20 +822,52 @@
     "description_excerpt": " Forestry Corporation Loses $18m in One Year    Mirage News "
    },
    {
-    "title": "Mountain Day 2027: Mountain Animals Need Peace, Not Shotguns",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRVplaHdUVWhfQzBQLXhjR1UyQXVQeHN6RjdreEI1aG9aRTVJLWpJOTdmYVdId2pMNlIzRmF4MVZsNG5OWlhxdVlEekt6a0FWTkotTjRSaWc1VmRNam9TcFpvZktTMkVjWlVyRVpKUkJ1NEh5YjFiSnBfNmVOQVl3dXlFSGtsckJUVkpCd0paSFQ?oc=5",
-    "publisher": "Wild beim Wild",
+    "title": "Emerging Bioacoustic Technologies Advance Global Wildlife Monitoring and Conservation Science",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTTBTTlFUYlRIMFBtWUNoZlhiMzQyZVp6ZFZXWTJUcURhTEg1R2FJWlE4SXo5a3ZybjZmU1Y1M1M0bU5jNExQcDV2ckhtTnNodkw2Y2Z4TUw4SkZGUmJNa0tJbjUzbWh4TXJlVUM2bWlBNWo1ODBMc0ZocDlGUk5oNF9yU0hBQWtYV1dwQl9ETHVVa1ZwZzVLb0VhdzgtSmdlVkRJdXZud3V1ZllBNFk1WWFFZGN6ak9pRUE?oc=5",
+    "publisher": "Bioengineer.org",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Mountain Day 2027: Mountain Animals Need Peace, Not Shotguns    Wild beim Wild "
+    "description_excerpt": " Emerging Bioacoustic Technologies Advance Global Wildlife Monitoring and Conservation Science    Bioengineer.org "
    },
    {
-    "title": "Massive Turnout, Conservation, Tusker Lite Neon Rave mark 2026 Virunga Gorilla Marathon",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaDQtRUotT1AyemJFdUNGVC1sWTNJaGFScE5uajNfR2Fac2t0ZVdTSzNtc21UYnRmTnBaLXNCMkNweVRhNXVmMTdfSURBay1XUDRuR01qRzZFcmo4clJRNGxJd3JBZGI0bTRNLXdhZEFFT0wwdjJXT1NuQjliWTFReG9iZ05zTUZXdHMyVmttbGEycXpnMXZvRDJJMlpjVW9iVnRyWHJ1TzJZQ1BhTzhETVBYcDI2bmpYb1RVRNIBxAFBVV95cUxNaXNiUG9QREZaTllscDE0VDRNakV6VmNVU3g1cmpSYnpoM1phZWtEMmp6M010M05Kb29CR3c1aEVhbTBXWV9QaEVWalFMMUZUb2tkampzM1hYcndxbzBsd2Vqb014SEk5UkNsQU5iWk9IS0N5VS1nY1lvM1lvX3pRZzFDZ05fdERfT3Vicl90a2w5MWRRNXZWRzZDNkVnTThrNlZJNF9KZE11RDBEeC1tMG12MUJkTzRQOG1uTldJU3NIRDVZ?oc=5",
-    "publisher": "Nilepost",
+    "title": "Tourism ministry sued over Sh20.8bn wildlife conservation deal",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUUdqcnhWQlhndlJlaWZfQWpJSFkwTFhncEhrLW5DUHF2MEgtcUxlVWdtWWRSNWZsVmRFa0I5UVl2TzVvR2kzM2NEX2x5SlNKT2dxQThwam5uQlZUNkFpMjJ1bUZmU2xzQzVWSERaQ3RESXRKYng5VHI4VnFvTWluM2czUjl6akZrbW9tR0tuRmgzOWNGOTVVbHdyWWFOREpS?oc=5",
+    "publisher": "Daily Nation",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Massive Turnout, Conservation, Tusker Lite Neon Rave mark 2026 Virunga Gorilla Marathon    Nilepost "
+    "description_excerpt": " Tourism ministry sued over Sh20.8bn wildlife conservation deal    Daily Nation "
+   },
+   {
+    "title": "Loons fill Adirondack lakes, but fewer chicks are replacing them, study finds",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxONDVmZEwtY25tNWtYNHBaWTgwSXB5NDFfcHVnamVXSWMwX3pJbzctRU4xUk1ZdXEtTkhtT0F5N0Rjd0dGSmt4UHI5VUNESXVaVFBDc0lvOVVMTlM2MmxWWmhmZDBTTmRpWjBVMTliTHBudms3NjI4WXlYWEg1U0dPS1lfanI0dFdtSTNkU3FhaEtQRDYxRWt4VElYMm1zQmNqZDVLQ2JneDBNakRqTEF3NzV5cklMd2dZdWthNzF4NUxvSEFiaFoyeWt0N3ljWFQ2WXc?oc=5",
+    "publisher": "Adirondack Explorer",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Loons fill Adirondack lakes, but fewer chicks are replacing them, study finds    Adirondack Explorer "
+   },
+   {
+    "title": "Conservation Group Buys Over 47,000 Acres of Land to Save 200,000 Displaced Walruses as Sea Ice Melts",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUWpfcUc0RHJqRkhYNmpubUNOekkyQ1U0cWdZRW1BazNBZU40dFpSMGZEQUV1LWlHeTR4M0xqNmU3RmYwV0wtY21wNmRjX1hSMEJzeEs4UUpfb2RLWVJ2WFR1ekZrQXZzdnhfb3JlUnlVOEt6dXEzTnZGdEVja2ZIVDJ5WkVUQWxyVGh2Z25xOEtxOGRCQUhkM3F4cGV3dVRmY0QycFpIczZjYkJt?oc=5",
+    "publisher": "People.com",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Conservation Group Buys Over 47,000 Acres of Land to Save 200,000 Displaced Walruses as Sea Ice Melts    People.com "
+   },
+   {
+    "title": "$100m regional plan proposed to protect Himalayan herbs and mushrooms",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOVhpZDRsQmd0REtSSmQzOFhDZXRyeV9MaHlzQmMta1pEVnc5WmRrN3llbUpwYWVEX3VXS3ZZOWhSOUNRUkFYZkpleG5vbDcyZkxXcENLSXBlQTBmc05vRTItUFlwcDFHWU03bG50V2x6NFd1aVhaSEdueEtjSFJvMEx3Y1Y2Z0Y1Tm90d3ViTllqUUhERkpPSHl4bUNUQQ?oc=5",
+    "publisher": "The Climate Watch",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " $100m regional plan proposed to protect Himalayan herbs and mushrooms    The Climate Watch "
+   },
+   {
+    "title": "Indigenous land management practices can deliver improved conservation outcomes, study notes",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRC11bzIyVUJRX2UxdTNYcURMR1FneUhRLXQ1dlRCTGRSTUJRRnlVQnhGY0U5Q3Z0alBzbDloUWs5Q2hkUGQwb2NPWEJKZUctR2tJRXRTU01PZFM2N3ljbF9xSjBrQkVyVTBkZ1czamJUeFlwcHNBSTZERmlBWWxRSWx4dFJGWTRKQjRIM2JPUkNMTC1PSUw2cWRyeTVHUy1yeEgwRUxMdEM5UDBFWjYycHcxSzVHSnRPRlVIZXhNVHFObDRISHc?oc=5",
+    "publisher": "The National Tribune",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Indigenous land management practices can deliver improved conservation outcomes, study notes    The National Tribune "
    },
    {
     "title": "Bhupender Yadav highlights local communities’ role in wildlife conservation",
@@ -894,155 +878,171 @@
     "description_excerpt": " Bhupender Yadav highlights local communities’ role in wildlife conservation    Social News XYZ "
    },
    {
-    "title": "Sundance-winning 'Nuisance Bear' to open ALT EFF 2026",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZ2JpS0txLTBYQXBMa2R5MWlDaTdESS1zbmJQendBb3BsVFZOWUxxOGhIQUlsX19UQ25Rb0VpWWxrQ0R5MF9IY2tMdXpsWm80ZWJDRUhiTWhTZTFGd0R2SVZHcENhMlFMaG43YWJlMzc3TGVUSy1sUktWNXJvcUJyTW9ZbDVlWEZCb2JmaDFGRG5SUXk4aktrNkFidDI2dw?oc=5",
-    "publisher": "Big News Network.com",
+    "title": "Dharitri Youth Conclave 2026: From climate concerns to collective action",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWDBoOGdMN3A1REdRWFkwZFJidWhrZ3MyNEdub19VMzZUamF4NnhaQ0ZQOHB4VXhzNGw5dTJZdVBxOVJ4WGxtN1h2cndna2ZOYXJmaHZqdEhEa25zUXlQeGJTUFgwZ1d2UGo3RFNTemptRUh0UEpKbENsN0hScFg3cmlDN2toWWVSS1BzNERWeDdhSzdVRGJqQzVUc2d5djNa0gGgAUFVX3lxTFBYMGg4Z0w3cDVER1FYWTBkUmJ1aGtnczI0R25vX1UzNlRqYXg2eFpDRlA4cHhVeHM0bDl1Mll1UHE5UnhYbG03WHZyd2drZk5hcmZodmp0SERrbnNReVB4YlNQWDBnV3ZQajdEU1N6am1FSHRQSkpsQ2w3SFJwWDdyaUM3a2hZZVJLUHM0RFZ4N2FLN1VEYmpDNVRzZ3l2M1o?oc=5",
+    "publisher": "OrissaPOST",
     "feed_occurrences": 5,
     "feed_count": 5,
-    "description_excerpt": " Sundance-winning 'Nuisance Bear' to open ALT EFF 2026    Big News Network.com "
+    "description_excerpt": " Dharitri Youth Conclave 2026: From climate concerns to collective action    OrissaPOST "
+   },
+   {
+    "title": "Protecting Wildlife Requires Gender Equity",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNejJhWi0tQktFYzEwa3Z2VC1pUi1jaXhrOFpaLXBMd1BKNE03eGc2a3ZxTUt2a3M3Z3d3Y094RHdPTjlXSXA4cl9paUpzbmpUa0JEM1VockE5RlduN2NndVNZYzhPcFNQWEMwb2pKSmV0Snc4bGNxd3BSbXBTQzRnbElDb2ladHdJTVZJRWJBNkc?oc=5",
+    "publisher": "The Good Men Project",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Protecting Wildlife Requires Gender Equity    The Good Men Project "
+   },
+   {
+    "title": "Jersey fire service draft plan warns of flood and wildfire risks",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTDRJTDhrZG9iY0JDOURROHg0RktsNURsQkRzQVFhcUxzTEE5a0RZOUh1SnEyZmFnU2ZVY2tLQXdsVjlFZ1BEc1BKaDlEYm81Z0E1YURjSDVuMjhOVVhrX0dmVHJYWjVrZmFGcnBNTnNoZTI1YndLUGNsc1o4cVVtdmdnVG1MVzJ1ZjlmbEhXUQ?oc=5",
+    "publisher": "cedarnews.net",
+    "feed_occurrences": 5,
+    "feed_count": 5,
+    "description_excerpt": " Jersey fire service draft plan warns of flood and wildfire risks    cedarnews.net "
    }
   ],
   "country_label_concentration": {
    "largest_label": "Nigeria",
-   "largest_label_articles": 30,
-   "share_of_country_labelled_articles": 0.069
+   "largest_label_articles": 28,
+   "share_of_country_labelled_articles": 0.066
   },
   "note": "High concentration or unmapped examples require manual inspection; no automatic suppression, no inferred geolocation."
  },
  "publisher_network_contributions": {
-  "unique_direct_urls_not_in_google_sample": 339,
-  "unique_google_urls_not_in_direct_sample": 512,
+  "unique_direct_urls_not_in_google_sample": 333,
+  "unique_google_urls_not_in_direct_sample": 488,
   "urls_found_in_both_channels": 0,
   "warning": "URL comparisons underestimate syndication and Google News links often differ from publisher URLs; counts are not verified distinct real-world events",
   "direct_feed_unique_url_contributions": {
+   "The Guardian World": 29,
    "AllAfrica Southern Africa": 29,
-   "AllAfrica East Africa": 28,
-   "AllAfrica West Africa": 28,
-   "The Guardian World": 24,
-   "AllAfrica Central Africa": 22,
-   "France24": 21,
-   "Al Jazeera": 21,
-   "RNZ National": 20,
-   "ReliefWeb Updates": 20,
-   "France24 ES": 13,
-   "France24 FR": 13,
-   "ABC Australia": 10,
-   "BBC World": 10,
-   "The Diplomat": 9,
-   "Mongabay Global": 8,
-   "Guardian Asia": 8,
-   "RNZ Pacific": 7,
-   "The Guardian Environment": 7,
+   "AllAfrica East Africa": 29,
+   "AllAfrica West Africa": 29,
+   "Al Jazeera": 20,
+   "France24": 20,
+   "RNZ National": 19,
+   "AllAfrica Central Africa": 18,
+   "France24 ES": 17,
+   "ReliefWeb Updates": 17,
+   "France24 FR": 15,
+   "ABC Australia": 12,
+   "BBC World": 11,
+   "Guardian Asia": 11,
+   "Mongabay Global": 10,
+   "BBC Brasil": 8,
    "Mongabay Indonesia": 7,
-   "BBC Africa": 7,
-   "DW World": 5,
-   "BBC Europe": 4,
-   "The Conversation France": 4,
-   "Mongabay Latam": 4,
-   "UN News": 4,
-   "BBC Business": 3,
+   "BBC Europe": 6,
+   "RNZ Pacific": 6,
+   "The Guardian Environment": 5,
+   "BBC Asia": 4,
+   "Inter Press Service Headlines": 4,
+   "The Diplomat": 4,
+   "NPR World": 4,
    "BBC Science": 3,
-   "BBC Brasil": 3,
-   "Inter Press Service Headlines": 3,
-   "BBC Asia": 2
+   "Mongabay Latam": 3,
+   "BBC Africa": 3,
+   "Guardian Africa": 3,
+   "DW World": 3,
+   "The Conversation Canada": 2
   }
  },
  "coverage_overview": {
-  "country_labelled_articles": 435,
-  "country_labels_count": 110,
+  "country_labelled_articles": 424,
+  "country_labels_count": 97,
   "top_country_subjects": {
-   "Nigeria": 30,
-   "India": 27,
-   "Vietnam": 17,
-   "China": 17,
-   "South Africa": 16,
-   "Rwanda": 15,
-   "Ukraine": 13,
-   "France": 12,
-   "Mexico": 12,
-   "Uganda": 11,
-   "Iran": 10,
+   "Nigeria": 28,
+   "China": 23,
+   "Ukraine": 19,
+   "Kenya": 16,
+   "India": 16,
+   "Colombia": 14,
+   "Australia": 14,
+   "Senegal": 13,
+   "Rwanda": 13,
+   "France": 13,
+   "South Africa": 12,
+   "Vietnam": 11,
+   "Indonesia": 9,
    "Israel": 9,
-   "Spain": 9,
-   "Kenya": 9,
-   "Colombia": 9,
-   "Australia": 8,
+   "Brazil": 8,
+   "Mexico": 8,
    "Canada": 8,
-   "New Zealand": 7,
-   "Zimbabwe": 6,
-   "Malawi": 6,
-   "South Korea": 6,
-   "Bangladesh": 6,
-   "United Kingdom": 5,
-   "Russia": 5,
-   "Liberia": 5,
-   "Somalia": 5,
-   "Indonesia": 5,
-   "Singapore": 4,
-   "Syria": 4,
+   "Namibia": 7,
+   "Nepal": 7,
+   "Somalia": 7,
+   "New Zealand": 6,
+   "Tanzania": 6,
+   "Spain": 5,
+   "Japan": 5,
+   "Ecuador": 5,
+   "Liberia": 4,
+   "Zimbabwe": 4,
+   "Kazakhstan": 4,
+   "Cuba": 4,
    "United States": 4
   },
-  "distinct_geographic_signal_centers": 327,
+  "distinct_geographic_signal_centers": 312,
   "warning": "Articles matched to cities/regions are not included in country-labelled counts; lack of mapped articles does not mean no news occurred"
  },
  "source_editions": {
   "US": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 102
+   "mapped_pre_dedupe": 91
   },
   "GB": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 62
+   "mapped_pre_dedupe": 68
   },
   "IN": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 97
+   "mapped_pre_dedupe": 107
   },
   "AU": {
-   "requests": 11,
-   "successful": 10,
-   "mapped_pre_dedupe": 79
-  },
-  "ZA": {
-   "requests": 11,
-   "successful": 11,
-   "mapped_pre_dedupe": 120
-  },
-  "NG": {
    "requests": 11,
    "successful": 11,
    "mapped_pre_dedupe": 85
   },
+  "ZA": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 107
+  },
+  "NG": {
+   "requests": 11,
+   "successful": 11,
+   "mapped_pre_dedupe": 62
+  },
   "PH": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 97
+   "mapped_pre_dedupe": 107
   },
   "CA": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 70
+   "mapped_pre_dedupe": 83
   },
   "BR": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 65
+   "mapped_pre_dedupe": 63
   },
   "MX": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 168
+   "mapped_pre_dedupe": 151
   },
   "KE": {
    "requests": 11,
    "successful": 11,
-   "mapped_pre_dedupe": 123
+   "mapped_pre_dedupe": 96
   }
  },
- "duplicates_removed": 611,
+ "duplicates_removed": 596,
  "gazetteer_entries": 1204,
  "contextual_alias_groups": 16,
  "global_gazetteer": {
@@ -1060,35 +1060,36 @@
   "retention_days": 90,
   "observations": [
    {
-    "at": "2026-11-24T06:27:24+00:00",
-    "mapped_articles": 824,
-    "geographic_signals": 488,
+    "at": "2026-11-24T18:22:08+00:00",
+    "mapped_articles": 793,
+    "geographic_signals": 463,
     "feeds_ok": 170,
     "feeds_attempted": 173,
-    "rejected_matching_occurrences": 32,
+    "rejected_matching_occurrences": 19,
     "ambiguous_mapped_signal_count": 1
    }
   ],
   "latest": {
-   "at": "2026-11-24T06:27:24+00:00",
-   "mapped_articles": 824,
-   "geographic_signals": 488,
+   "at": "2026-11-24T18:22:08+00:00",
+   "mapped_articles": 793,
+   "geographic_signals": 463,
    "feeds_ok": 170,
    "feeds_attempted": 173,
-   "rejected_matching_occurrences": 32,
+   "rejected_matching_occurrences": 19,
    "ambiguous_mapped_signal_count": 1
   },
   "recent_change": {
-   "baseline_at": "2026-11-24T06:27:24+00:00",
+   "baseline_at": "2026-11-24T18:22:08+00:00",
    "geographic_signals_delta": 0,
    "rejected_occurrences_delta": 0,
    "feed_successes_delta": 0
   },
   "rejected_place_labels_in_examples": {
-   "Union": 22,
-   "David": 5,
-   "Forest": 3,
-   "Serra": 2
+   "Union": 9,
+   "David": 6,
+   "Split": 2,
+   "Forest": 1,
+   "Serra": 1
   },
   "ambiguous_mapped_review": [
    {
