@@ -1,13 +1,13 @@
 {
  "schema": 1,
  "release": "v2.4D.19.2",
- "updated_at": "2026-11-26T04:27:29.459431+00:00",
+ "updated_at": "2026-11-26T14:30:18.136629+00:00",
  "mode": "observation_and_offline_drills",
  "feed_outcomes": {
   "aggregator": {
    "total": 121,
-   "successful_nonempty": 109,
-   "successful_empty": 12,
+   "successful_nonempty": 112,
+   "successful_empty": 9,
    "transport_failure": 0,
    "unknown_item_count": 0,
    "unknown_status": 0,
@@ -20,18 +20,15 @@
     "google/environment/AU",
     "google/environment/NG",
     "google/environment/CA",
-    "google/hazards/BR",
-    "google/rights/AU",
-    "google/rights/NG",
-    "google/rights/CA"
+    "google/hazards/BR"
    ],
    "failure_samples": []
   },
   "publisher": {
    "total": 52,
-   "successful_nonempty": 50,
+   "successful_nonempty": 44,
    "successful_empty": 0,
-   "transport_failure": 2,
+   "transport_failure": 8,
    "unknown_item_count": 0,
    "unknown_status": 0,
    "empty_samples": [],
@@ -41,7 +38,31 @@
      "error": ""
     },
     {
+     "source": "direct/UN News",
+     "error": ""
+    },
+    {
      "source": "direct/DW Español",
+     "error": ""
+    },
+    {
+     "source": "direct/AllAfrica West Africa",
+     "error": ""
+    },
+    {
+     "source": "direct/AllAfrica East Africa",
+     "error": ""
+    },
+    {
+     "source": "direct/AllAfrica Central Africa",
+     "error": ""
+    },
+    {
+     "source": "direct/AllAfrica Southern Africa",
+     "error": ""
+    },
+    {
+     "source": "direct/Inter Press Service Headlines",
      "error": ""
     }
    ]
@@ -101,7 +122,7 @@
     "google_successful_empty": 0
    }
   ],
-  "frozen_snapshot_fingerprint": "b0d63d0cfde77f0b0721abaff53f222750f9f9c8f596624d5ee2a8d590488f05",
+  "frozen_snapshot_fingerprint": "1ff0a1c47c8c3bdf6d5eafac3cd6fd7bb322ebe03bd851d6b345c14111b97e37",
   "note": "Synthetic in-memory scenarios confirm gate decisions and snapshot immutability; they do not simulate network fetches, GitHub commits, or guarantee future source availability."
  },
  "limits": [
